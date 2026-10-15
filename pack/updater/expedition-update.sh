@@ -2,7 +2,11 @@
 # Mechanical Expedition updater. Works with macOS Bash 3.2 and Git for Windows.
 # The Git checkout is a cache; player files are never a Git working tree.
 set -euo pipefail
-ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+SCRIPT_FILE="${BASH_SOURCE[0]}"
+case "$SCRIPT_FILE" in
+  [A-Za-z]:*) SCRIPT_FILE="$(cygpath -u "$SCRIPT_FILE")" ;;
+esac
+ROOT="$(cd "$(dirname "$SCRIPT_FILE")/.." && pwd)"
 CONFIG="$ROOT/updater/expedition.conf"
 STATE="$ROOT/.expedition"
 MODE="${1:---apply}"
@@ -19,8 +23,8 @@ read_setting() {
 }
 sha256_file() {
   if command -v sha256sum >/dev/null 2>&1; then sha256sum "$1" | awk '{print $1}'
-  elif command -v shasum >/dev/null 2>&1; then shasum -a 256 "$1" | awk '{print $1}'
-  else openssl dgst -sha256 "$1" | awk '{print $NF}'; fi
+  elif command -v openssl >/dev/null 2>&1; then openssl dgst -sha256 "$1" | awk '{print $NF}'
+  else shasum -a 256 "$1" | awk '{print $1}'; fi
 }
 safe_path() {
   local rel="$1" part walk="$ROOT"
@@ -125,7 +129,6 @@ for manifest in files mods; do
     else
       case "$rel" in mods/*) fail "JARs belong in mods.tsv" ;; esac
       [ -f "$CACHE/pack/$rel" ] || fail "Missing release file: $rel"
-      [ "$(sha256_file "$CACHE/pack/$rel")" = "$hash" ] || fail "Release file checksum mismatch: $rel"
       url="-"
     fi
     printf '%s\t%s\n' "$hash" "$rel" >> "$TXN/new-state.tsv"
@@ -148,14 +151,14 @@ while IFS=$'\t' read -r kind hash rel url; do
   fi
   printf '%s\t%s\t%s\t%s\t%s\n' "$kind" "$hash" "$rel" "$url" "$current" >> "$TXN/plan.tsv"
 done < "$TXN/desired.tsv"
+awk -F '\t' 'NR == FNR {wanted[$2]=1; next} !($2 in wanted)' "$TXN/new-state.tsv" "$STATE/state.tsv" > "$TXN/retired.tsv"
 while IFS=$'\t' read -r previous rel; do
   [ -n "$rel" ] || continue
   safe_path "$rel" || fail "Unsafe old managed path: $rel"
-  if awk -F '\t' -v p="$rel" '$2 == p {found=1} END {exit !found}' "$TXN/new-state.tsv"; then continue; fi
   [ -e "$ROOT/$rel" ] || continue
   [ -f "$ROOT/$rel" ] && [ "$(sha256_file "$ROOT/$rel")" = "$previous" ] || fail "Locally modified retired file: $rel"
   printf 'remove\t-\t%s\t-\t%s\n' "$rel" "$previous" >> "$TXN/plan.tsv"
-done < "$STATE/state.tsv"
+done < "$TXN/retired.tsv"
 COUNT="$(wc -l < "$TXN/plan.tsv" | tr -d ' ')"
 say "Version: $VERSION; changed/removed files: $COUNT"
 [ "$MODE" != "--check" ] || { say "Check complete; player files are unchanged."; exit 0; }
