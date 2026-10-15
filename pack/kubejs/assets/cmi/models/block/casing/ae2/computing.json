@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/cube_bottom_top",
+	"textures": {
+		"bottom": "cmi:block/casing/ae2/smart_bottom",
+		"side": "cmi:block/casing/ae2/computing_side",
+		"top": "cmi:block/casing/ae2/computing_top"
+	}
+}

@@ -1,0 +1,106 @@
+{
+	// Changes the number of messages kept in chat history (100 in vanilla).
+	// DEFAULT: `100`
+	"maxChatHistory": 100,
+	// If enabled, a HUD will be drawn on the screen showing useful performance statistics.
+	// DEFAULT: `false`
+	"hudEnabled": false,
+	// The horizontal alignment of the HUD.
+	// OPTIONS: `LEFT`, `RIGHT`
+	// DEFAULT: `LEFT`
+	"hudAlignmentX": "LEFT",
+	// The vertical alignment of the HUD.
+	// OPTIONS: `TOP`, `BOTTOM`
+	// DEFAULT: `TOP`
+	"hudAlignmentY": "TOP",
+	// The HUD will be offset this many pixels horizontally from the screen edge.
+	// DEFAULT: `5`
+	"hudMarginX": 5,
+	// The HUD will be offset this many pixels vertically from the screen edge.
+	// DEFAULT: `5`
+	"hudMarginY": 5,
+	// If enabled, a background will be drawn behind HUD text.
+	// DEFAULT: `true`
+	"hudBackground": true,
+	// If enabled, HUD text will be drawn with a shadow.
+	// DEFAULT: `true`
+	"hudShadow": true,
+	// The HUD refresh rate (in ticks). `0` will refresh it every frame.
+	// Lower values may reduce performance.
+	// DEFAULT: `1`
+	"hudRefreshRateTicks": 1,
+	// Determines much information about FPS should be displayed in the HUD.
+	// OPTIONS:
+	// 	`NONE`: No FPS information will be displayed in the HUD.
+	// 	`SIMPLE`: HUD will display a simple, accurate FPS value.
+	// 	`EXTENDED`: HUD will display FPS, as well as a MIN (0.1% low), MAX (high), and AVG (average) FPS value.
+	// DEFAULT: `SIMPLE`
+	"hudShowFPS": "SIMPLE",
+	// The amount of frame time history to keep (in seconds).
+	// Larger values will result in smoother average values, at the cost of higher memory usage if average FPS is very high.
+	// Only applicable if `hudShowFPS` is set to `EXTENDED`.
+	// DEFAULT: `10.0`
+	"hudFrameTimeBufferSize": 10.0,
+	// If enabled, the HUD will show CPU usage.
+	// DEFAULT: `false`
+	"hudShowCPU": false,
+	// If enabled, the HUD will show Memory usage.
+	// DEFAULT: `false`
+	"hudShowMemory": false,
+	// If enabled, the HUD will show the player's coordinates.
+	// DEFAULT: `false`
+	"hudShowCoordinates": false,
+	// Reverts the fix for MC-26678.
+	// DEFAULT: `false`
+	"revertDamageCameraTilt": false,
+	// Restores potions effects to their original form.
+	// Re-joining the server in multiplayer or closing and opening the world in singleplayer may be necessary to affect particles.
+	// DEFAULT: `false`
+	"revertPotions": false,
+	// Removes transparency from block outlines.
+	// DEFAULT: `false`
+	"enableOpaqueBlockOutlines": false,
+	// Disables animations for water, lava, fire, etc.
+	// DEFAULT: `false`
+	"disableTextureAnimations": false,
+	// Disables all toast messages.
+	// DEFAULT: `false`
+	"hideAllToasts": false,
+	// Disables toast messages for receiving Advancements.
+	// DEFAULT: `false`
+	"hideAdvancementToasts": false,
+	// Disables toast messages for unlocking Recipes.
+	// DEFAULT: `false`
+	"hideRecipeToasts": false,
+	// Disables toasts for System messages.
+	// DEFAULT: `false`
+	"hideSystemToasts": false,
+	// Disables the Tutorial.
+	// DEFAULT: `false`
+	"hideTutorialToasts": false,
+	// Prevents all particles from rendering.
+	// DEFAULT: `false`
+	"hideParticles": false,
+	// Prevents specific particles from rendering based on their ID. For example, `minecraft:block`.
+	// Also supports modded particles.
+	// DEFAULT: `[ ]`
+	"hideParticlesByID": [ ],
+	// Higher values cycle faster. Lower values cycle slower.
+	// DEFAULT: `0.5`
+	"chromaSpeed": 1.0,
+	// Enable Chroma on block outlines.
+	// DEFAULT: `false`
+	"enableChromaBlockOutlines": false,
+	// Enable Chroma on tooltip outlines.
+	// DEFAULT: `false`
+	"enableChromaToolTips": true,
+	// Enable Chroma on HUD text.
+	// DEFAULT: `false`
+	"enableChromaHUD": true,
+	// Removes darkness and all client-side lighting calculations, resulting in a decent performance boost on some systems.
+	// May cause issues with shaders, dynamic lighting, and light overlay mods.
+	// DEFAULT: `false`
+	"enableGamma": false,
+	// Used internally. Don't modify this.
+	"configVersion": 1,
+}

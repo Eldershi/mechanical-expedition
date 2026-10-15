@@ -1,0 +1,917 @@
+{
+  "baseRepository": "https://github.com/Eternal-Snowstorm/Create-Mechanism-and-Innovation",
+  "baseCommit": "a87ff71c8aaeca32d3eab224d15994c70b1e7473",
+  "sources": {
+    "mods/Ad-Astra-Giselle-Addon-forge-1.20.1-6.27.jar": {
+      "url": "https://edge.forgecdn.net/files/9106/214/Ad-Astra-Giselle-Addon-forge-1.20.1-6.27.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ad_astra-forge-1.20.1-1.15.21.jar": {
+      "url": "https://edge.forgecdn.net/files/8833/730/ad_astra-forge-1.20.1-1.15.21.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ae2ct-1.20.1-1.1.1.jar": {
+      "url": "https://edge.forgecdn.net/files/7182/165/ae2ct-1.20.1-1.1.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/AEInfinityBooster-1.20.1-1.0.0+51.jar": {
+      "url": "https://edge.forgecdn.net/files/6482/257/AEInfinityBooster-1.20.1-1.0.0+51.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/alexscaves-2.0.2.jar": {
+      "url": "https://edge.forgecdn.net/files/5848/216/alexscaves-2.0.2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/alltheleaks-1.1.3+1.20.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/8779/54/alltheleaks-1.1.3+1.20.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/appleskin-forge-mc1.20.1-2.5.1.jar": {
+      "url": "https://edge.forgecdn.net/files/4770/828/appleskin-forge-mc1.20.1-2.5.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ae2wtlib-15.3.3-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/7251/206/ae2wtlib-15.3.3-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/appliedenergistics2-forge-15.4.11.jar": {
+      "url": "https://edge.forgecdn.net/files/8991/271/appliedenergistics2-forge-15.4.11.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Applied-Mekanistics-1.4.3.jar": {
+      "url": "https://edge.forgecdn.net/files/7244/744/Applied-Mekanistics-1.4.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/architectury-9.2.14-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/5137/938/architectury-9.2.14-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/asteorbar-forge-1.20.1-1.5.3.jar": {
+      "url": "https://edge.forgecdn.net/files/7121/0/asteorbar-forge-1.20.1-1.5.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/athena-forge-1.20.1-3.1.2.jar": {
+      "url": "https://edge.forgecdn.net/files/5176/879/athena-forge-1.20.1-3.1.2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/AttributeFix-Forge-1.20.1-21.0.5.jar": {
+      "url": "https://edge.forgecdn.net/files/7612/291/AttributeFix-Forge-1.20.1-21.0.5.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/auratip-forge-1.20.1-1.1.1-beta.jar": {
+      "url": "https://edge.forgecdn.net/files/8078/922/auratip-forge-1.20.1-1.1.1-beta.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/balm-forge-1.20.1-7.3.44.jar": {
+      "url": "https://edge.forgecdn.net/files/8969/708/balm-forge-1.20.1-7.3.44.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/BCLib-20.0.13.jar": {
+      "url": "https://edge.forgecdn.net/files/8590/585/BCLib-20.0.13.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/betterfpsdist-1.20.1-6.0.jar": {
+      "url": "https://edge.forgecdn.net/files/5723/247/betterfpsdist-1.20.1-6.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/biomespy-1.3.3-all.jar": {
+      "url": "https://edge.forgecdn.net/files/7488/30/biomespy-1.3.3-all.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/botarium-forge-1.20.1-2.3.4.jar": {
+      "url": "https://edge.forgecdn.net/files/5486/70/botarium-forge-1.20.1-2.3.4.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/catalogue-forge-1.20.1-1.8.0.jar": {
+      "url": "https://edge.forgecdn.net/files/4766/90/catalogue-forge-1.20.1-1.8.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/certain_questing_additions-forge-1.2.0.3+mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8385/712/certain_questing_additions-forge-1.2.0.3+mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/citadel-2.6.3-1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/7476/570/citadel-2.6.3-1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/cloth-config-11.1.136-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/5729/105/cloth-config-11.1.136-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Clumps-forge-1.20.1-12.0.0.4.jar": {
+      "url": "https://edge.forgecdn.net/files/5278/538/Clumps-forge-1.20.1-12.0.0.4.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/cofh_core-1.20.1-11.0.2.56.jar": {
+      "url": "https://edge.forgecdn.net/files/5374/122/cofh_core-1.20.1-11.0.2.56.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/colorwheel_patcher-forge-1.0.5+mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/7924/940/colorwheel_patcher-forge-1.0.5+mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/colorwheel-forge-1.3.0+mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8990/882/colorwheel-forge-1.3.0+mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/compressedengineering-1.4.10.jar": {
+      "url": "https://edge.forgecdn.net/files/8845/416/compressedengineering-1.4.10.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/configured-forge-1.20.1-2.2.3.jar": {
+      "url": "https://edge.forgecdn.net/files/5180/900/configured-forge-1.20.1-2.2.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/constructionwand-1.20.1-2.11.jar": {
+      "url": "https://edge.forgecdn.net/files/4684/54/constructionwand-1.20.1-2.11.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Controlling-forge-1.20.1-12.0.2.jar": {
+      "url": "https://edge.forgecdn.net/files/4646/682/Controlling-forge-1.20.1-12.0.2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/copycats-3.0.10+mc.1.20.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/8822/431/copycats-3.0.10+mc.1.20.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/craftingstationjei-1.20.1-Forge-2.2.0.jar": {
+      "url": "https://edge.forgecdn.net/files/8851/289/craftingstationjei-1.20.1-Forge-2.2.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/createbetterfps-1.20.1-1.1.3.jar": {
+      "url": "https://edge.forgecdn.net/files/8918/86/createbetterfps-1.20.1-1.1.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/bigcontraptions-1.0.jar": {
+      "url": "https://edge.forgecdn.net/files/5108/576/bigcontraptions-1.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/create_central_kitchen-1.20.1-for-create-6.0.8-1.5.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8760/859/create_central_kitchen-1.20.1-for-create-6.0.8-1.5.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/create_connected-1.2.3-mc1.20.1-all.jar": {
+      "url": "https://edge.forgecdn.net/files/8290/615/create_connected-1.2.3-mc1.20.1-all.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/createcoolingfan-forge-1.20.1-1.3.0.jar": {
+      "url": "https://edge.forgecdn.net/files/8615/633/createcoolingfan-forge-1.20.1-1.3.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/create_jetpack_curios-1.2.0-forge-1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/5887/734/create_jetpack_curios-1.2.0-forge-1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/CreateCyberGoggles-1.20.1-7.2.3-Forge.jar": {
+      "url": "https://edge.forgecdn.net/files/8622/914/CreateCyberGoggles-1.20.1-7.2.3-Forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/createdeco-2.0.3-1.20.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/6373/226/createdeco-2.0.3-1.20.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/createdieselgenerators-1.20.1-1.3.12.jar": {
+      "url": "https://edge.forgecdn.net/files/7932/785/createdieselgenerators-1.20.1-1.3.12.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/CreateDragonsPlus-1.11.9.jar": {
+      "url": "https://edge.forgecdn.net/files/8937/74/CreateDragonsPlus-1.11.9.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/create-enchantment-industry-2.5.4b.jar": {
+      "url": "https://edge.forgecdn.net/files/9104/689/create-enchantment-industry-2.5.4b.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/fluidlogistics-1.3.1-mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/9018/442/fluidlogistics-1.3.1-mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/interlocked-1.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8829/48/interlocked-1.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/create_jetpack-forge-4.4.6.jar": {
+      "url": "https://edge.forgecdn.net/files/7285/444/create_jetpack-forge-4.4.6.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Railway-Automation-1.20.1-1.0.jar": {
+      "url": "https://edge.forgecdn.net/files/8676/39/Railway-Automation-1.20.1-1.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/create_rns-1.3.1-1.20.1-6.jar": {
+      "url": "https://edge.forgecdn.net/files/8729/953/create_rns-1.3.1-1.20.1-6.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Create-Steam-Ages-1.0.jar": {
+      "url": "https://edge.forgecdn.net/files/8639/23/Create-Steam-Ages-1.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Steam_Rails-1.7.3+forge-mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8745/475/Steam_Rails-1.7.3+forge-mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/steampowered-1.20.1-3.1.0.jar": {
+      "url": "https://cdn.modrinth.com/data/J7eSzkL7/versions/JjQ6e6M5/steampowered-1.20.1-3.1.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/create-1.20.1-6.0.8.jar": {
+      "url": "https://edge.forgecdn.net/files/7178/761/create-1.20.1-6.0.8.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/createaddition-1.20.1-1.3.3.jar": {
+      "url": "https://edge.forgecdn.net/files/7208/610/createaddition-1.20.1-1.3.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/CTM-1.20.1-1.1.10.jar": {
+      "url": "https://edge.forgecdn.net/files/5983/309/CTM-1.20.1-1.1.10.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/cupboard-1.20.1-4.2.jar": {
+      "url": "https://edge.forgecdn.net/files/8889/41/cupboard-1.20.1-4.2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/curios-forge-5.14.1+1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/6418/456/curios-forge-5.14.1+1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/CustomWindowTitle-Forge-1.20+v1.2.0.jar": {
+      "url": "https://edge.forgecdn.net/files/4584/612/CustomWindowTitle-Forge-1.20+v1.2.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/drippyloadingscreen_forge_3.1.5_MC_1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8552/902/drippyloadingscreen_forge_3.1.5_MC_1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/EdenRing-20.0.2.jar": {
+      "url": "https://edge.forgecdn.net/files/7788/701/EdenRing-20.0.2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/embeddium-0.3.31+mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/5681/725/embeddium-0.3.31+mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/entityculling-forge-1.10.5-mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8287/86/entityculling-forge-1.10.5-mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/EventJS-1.20.1-1.4.3.jar": {
+      "url": "https://edge.forgecdn.net/files/7143/82/EventJS-1.20.1-1.4.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ExtendedAE-1.20-1.4.21-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/8918/777/ExtendedAE-1.20-1.4.21-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ExplorersCompass-1.20.1-1.4.0-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/7892/927/ExplorersCompass-1.20.1-1.4.0-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/extendedae_plus-1.6.3.jar": {
+      "url": "https://edge.forgecdn.net/files/8998/236/extendedae_plus-1.6.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ExtremeSoundMuffler-3.51-forge-1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/7469/697/ExtremeSoundMuffler-3.51-forge-1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/fancymenu_forge_3.9.14_MC_1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/9002/946/fancymenu_forge_3.9.14_MC_1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/FarmersDelight-1.20.1-1.3.4.jar": {
+      "url": "https://edge.forgecdn.net/files/8765/179/FarmersDelight-1.20.1-1.3.4.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/FastLeafDecay-32.jar": {
+      "url": "https://edge.forgecdn.net/files/5375/681/FastLeafDecay-32.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/FastSuite-1.20.1-5.1.2.jar": {
+      "url": "https://edge.forgecdn.net/files/7527/943/FastSuite-1.20.1-5.1.2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ferritecore-6.0.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/4810/975/ferritecore-6.0.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/flerovium-forge-1.20.1-1.2.19-all.jar": {
+      "url": "https://edge.forgecdn.net/files/8284/677/flerovium-forge-1.20.1-1.2.19-all.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ftb-chunks-forge-2001.3.8.jar": {
+      "url": "https://edge.forgecdn.net/files/8216/874/ftb-chunks-forge-2001.3.8.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ftb-essentials-forge-2001.2.4.jar": {
+      "url": "https://edge.forgecdn.net/files/7609/948/ftb-essentials-forge-2001.2.4.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ftb-library-forge-2001.2.13.jar": {
+      "url": "https://edge.forgecdn.net/files/8226/927/ftb-library-forge-2001.2.13.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ftb-quests-forge-2001.4.22.jar": {
+      "url": "https://edge.forgecdn.net/files/8078/538/ftb-quests-forge-2001.4.22.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ftb-teams-forge-2001.3.2.jar": {
+      "url": "https://edge.forgecdn.net/files/7499/810/ftb-teams-forge-2001.3.2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ftb-xmod-compat-forge-2.1.3.jar": {
+      "url": "https://edge.forgecdn.net/files/6402/486/ftb-xmod-compat-forge-2.1.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ftbxaerocompat-forge-1.1.3.jar": {
+      "url": "https://edge.forgecdn.net/files/7655/63/ftbxaerocompat-forge-1.1.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/FunctionalStorageJS-1.3.jar": {
+      "url": "https://edge.forgecdn.net/files/8807/502/FunctionalStorageJS-1.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/functionalstorage-1.20.1-1.2.14.jar": {
+      "url": "https://edge.forgecdn.net/files/8412/552/functionalstorage-1.20.1-1.2.14.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/fzzy_config-0.7.7+1.20.1+forge.jar": {
+      "url": "https://edge.forgecdn.net/files/8883/366/fzzy_config-0.7.7+1.20.1+forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/geckolib-forge-1.20.1-4.8.4.jar": {
+      "url": "https://edge.forgecdn.net/files/8285/794/geckolib-forge-1.20.1-4.8.4.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/gbf-1.0.2.jar": {
+      "url": "https://edge.forgecdn.net/files/8448/863/gbf-1.0.2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Glodium-1.20-1.5-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/5226/922/Glodium-1.20-1.5-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/GoProne-forge-1.20.1-3.1.1.jar": {
+      "url": "https://edge.forgecdn.net/files/4656/519/GoProne-forge-1.20.1-3.1.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/guideme-20.1.15.jar": {
+      "url": "https://edge.forgecdn.net/files/8204/776/guideme-20.1.15.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/hotai-1.0.jar": {
+      "url": "https://edge.forgecdn.net/files/5071/575/hotai-1.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Iceberg-1.20.1-forge-1.1.25.jar": {
+      "url": "https://edge.forgecdn.net/files/5838/149/Iceberg-1.20.1-forge-1.1.25.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar": {
+      "url": "https://edge.forgecdn.net/files/8348/481/ImmediatelyFast-Forge-1.5.5+1.20.4.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/immersive_aircraft-1.5.0+1.20.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/8865/821/immersive_aircraft-1.5.0+1.20.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ImmersiveEngineering-1.20.1-10.2.0-183.jar": {
+      "url": "https://edge.forgecdn.net/files/6206/989/ImmersiveEngineering-1.20.1-10.2.0-183.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/immersivefixes-1.7.0.jar": {
+      "url": "https://edge.forgecdn.net/files/8905/564/immersivefixes-1.7.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ImmersiveIndustry-1.20.1-0.2.4.jar": {
+      "url": "https://edge.forgecdn.net/files/7530/803/ImmersiveIndustry-1.20.1-0.2.4.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/immersive_machinery-0.2.1+1.20.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/8846/276/immersive_machinery-0.2.1+1.20.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/immersive_melodies-0.8.0+1.20.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/8842/209/immersive_melodies-0.8.0+1.20.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Industrial Platform-1.20.1-2.0.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8979/564/Industrial%20Platform-1.20.1-2.0.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/item-filters-forge-2001.1.0-build.59.jar": {
+      "url": "https://edge.forgecdn.net/files/4838/266/item-filters-forge-2001.1.0-build.59.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/JadeAddons-1.20.1-Forge-5.5.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8203/724/JadeAddons-1.20.1-Forge-5.5.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Jade-1.20.1-Forge-11.13.3.jar": {
+      "url": "https://edge.forgecdn.net/files/8479/276/Jade-1.20.1-Forge-11.13.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/JavaScriptJS-2001-1.0.3.jar": {
+      "url": "https://edge.forgecdn.net/files/6837/807/JavaScriptJS-2001-1.0.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/jeiintegration_1.20.1-10.0.0.jar": {
+      "url": "https://edge.forgecdn.net/files/4999/754/jeiintegration_1.20.1-10.0.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/jei_plus_plus-1.0.5-1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8870/204/jei_plus_plus-1.0.5-1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/jei-1.20.1-forge-15.59.0.212.jar": {
+      "url": "https://edge.forgecdn.net/files/8895/264/jei-1.20.1-forge-15.59.0.212.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/jupiter-2.3.7-1.20.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/7738/299/jupiter-2.3.7-1.20.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/jecharacters-1.20.1-forge-4.6.11.jar": {
+      "url": "https://edge.forgecdn.net/files/8771/525/jecharacters-1.20.1-forge-4.6.11.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/[1.20.1] forge-JECT-2.4.0.jar": {
+      "url": "https://edge.forgecdn.net/files/8464/852/%5B1.20.1%5D%20forge-JECT-2.4.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/kaleidoscopecookery_automation-1.0.1.jar": {
+      "url": "https://edge.forgecdn.net/files/7685/895/kaleidoscopecookery_automation-1.0.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/kaleidoscopecookery-1.6.0-forge+mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/9019/240/kaleidoscopecookery-1.6.0-forge+mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/kaleidoscope_end-1.0.14-forge+mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8323/717/kaleidoscope_end-1.0.14-forge+mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/kaleidoscope_nether-1.1.8-forge+mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8252/557/kaleidoscope_nether-1.1.8-forge+mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/kaleidoscopetavern-1.2.0-forge+mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8350/841/kaleidoscopetavern-1.2.0-forge+mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/5028/413/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/kotlinforforge-4.12.0-all.jar": {
+      "url": "https://edge.forgecdn.net/files/7291/67/kotlinforforge-4.12.0-all.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Ksyxis-1.4.6.jar": {
+      "url": "https://edge.forgecdn.net/files/9102/78/Ksyxis-1.4.6.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/kubejsadditions-forge-4.3.4.jar": {
+      "url": "https://edge.forgecdn.net/files/6302/185/kubejsadditions-forge-4.3.4.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/kubejs-create-forge-2001.3.0-build.8.jar": {
+      "url": "https://edge.forgecdn.net/files/6265/498/kubejs-create-forge-2001.3.0-build.8.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/kubejs-mekanism-forge-2001.1.5.1-build.2.jar": {
+      "url": "https://edge.forgecdn.net/files/5532/573/kubejs-mekanism-forge-2001.1.5.1-build.2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/kubejsthermalaugments-1.20.1-1.0.0.jar": {
+      "url": "https://edge.forgecdn.net/files/6039/588/kubejsthermalaugments-1.20.1-1.0.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/kubejs-thermal-2001.1.10-build.5.jar": {
+      "url": "https://edge.forgecdn.net/files/8043/140/kubejs-thermal-2001.1.10-build.5.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/kubejs-forge-2001.6.5-build.26.jar": {
+      "url": "https://edge.forgecdn.net/files/8020/595/kubejs-forge-2001.6.5-build.26.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/leawind_third_person-v2.2.0-mc1.20-1.20.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/5961/735/leawind_third_person-v2.2.0-mc1.20-1.20.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/lmft-1.0.4+1.20.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/4892/299/lmft-1.0.4+1.20.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/lootjs-forge-1.20.1-2.13.1.jar": {
+      "url": "https://edge.forgecdn.net/files/7551/186/lootjs-forge-1.20.1-2.13.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/lootr-forge-1.20-0.7.35.94.jar": {
+      "url": "https://edge.forgecdn.net/files/7263/76/lootr-forge-1.20-0.7.35.94.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Mantle-1.20.1-1.11.117.jar": {
+      "url": "https://edge.forgecdn.net/files/8809/819/Mantle-1.20.1-1.11.117.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/placeablemaxwell-2.1.2+1.20.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/7422/406/placeablemaxwell-2.1.2+1.20.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/me_beam_former-1.3.0.jar": {
+      "url": "https://edge.forgecdn.net/files/7765/493/me_beam_former-1.3.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/meplacementtool-2.1.4-forge1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8097/758/meplacementtool-2.1.4-forge1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/mekagenjei-1.2.1-20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8129/5/mekagenjei-1.2.1-20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/MekanismGenerators-1.20.1-10.4.16.80.jar": {
+      "url": "https://edge.forgecdn.net/files/6552/914/MekanismGenerators-1.20.1-10.4.16.80.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/MekanismPipezFix-1.20.1-1.0.1.jar": {
+      "url": "https://edge.forgecdn.net/files/7661/925/MekanismPipezFix-1.20.1-1.0.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Mekanism-1.20.1-10.4.16.80.jar": {
+      "url": "https://edge.forgecdn.net/files/6552/911/Mekanism-1.20.1-10.4.16.80.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar": {
+      "url": "https://edge.forgecdn.net/files/5109/692/melody_forge_1.0.3_MC_1.20.1-1.20.4.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/modelfix-1.15.jar": {
+      "url": "https://edge.forgecdn.net/files/5200/949/modelfix-1.15.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ModernUI-Forge-1.20.1-3.12.0.1-universal.jar": {
+      "url": "https://edge.forgecdn.net/files/6956/345/ModernUI-Forge-1.20.1-3.12.0.1-universal.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/modernfix-forge-5.27.87+mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/9101/811/modernfix-forge-5.27.87+mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/moreburners-1.20.1-0.3.5.jar": {
+      "url": "https://edge.forgecdn.net/files/7395/216/moreburners-1.20.1-0.3.5.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/MouseTweaks-forge-mc1.20.1-2.25.1.jar": {
+      "url": "https://edge.forgecdn.net/files/5338/457/MouseTweaks-forge-mc1.20.1-2.25.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/MultiBuilderTool-1.20.1-1.0.28.jar": {
+      "url": "https://edge.forgecdn.net/files/8988/728/MultiBuilderTool-1.20.1-1.0.28.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/multiblocked2-1.20.1-1.0.40.jar": {
+      "url": "https://edge.forgecdn.net/files/8933/40/multiblocked2-1.20.1-1.0.40.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/MyNethersDelight-1.20.1-1.10.4-backport.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8636/385/MyNethersDelight-1.20.1-1.10.4-backport.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/NaturesCompass-1.20.1-1.12.0-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/7892/948/NaturesCompass-1.20.1-1.12.0-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/neoecoae-20.4.2.jar": {
+      "url": "https://edge.forgecdn.net/files/8739/989/neoecoae-20.4.2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/netherportalfix-forge-1.20-13.0.1.jar": {
+      "url": "https://edge.forgecdn.net/files/4939/735/netherportalfix-forge-1.20-13.0.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/noisium-forge-2.3.0+mc1.20-1.20.1.jar": {
+      "url": "https://cdn.modrinth.com/data/KuNKN7d2/versions/gbYUKrDP/noisium-forge-2.3.0+mc1.20-1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/nolijium-0.1.3.jar": {
+      "url": "https://edge.forgecdn.net/files/5592/871/nolijium-0.1.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/notenoughcrashes-4.4.9+1.20.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/6598/273/notenoughcrashes-4.4.9+1.20.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Not Enough Recipe Book-FORGE-0.4.1+1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/5760/231/Not%20Enough%20Recipe%20Book-FORGE-0.4.1+1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/OctoLib-FORGE-0.5.0.1+1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/6274/623/OctoLib-FORGE-0.5.0.1+1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/oculus-mc1.20.1-1.8.0.jar": {
+      "url": "https://edge.forgecdn.net/files/6020/952/oculus-mc1.20.1-1.8.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/OELib-forge-1.20.1-0.2.4.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8063/317/OELib-forge-1.20.1-0.2.4.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/OneEnoughBlock-1.1.3.1-hotfix.jar": {
+      "url": "https://edge.forgecdn.net/files/7884/515/OneEnoughBlock-1.1.3.1-hotfix.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/OneEnoughFluid-1.1.1-hotfix.jar": {
+      "url": "https://edge.forgecdn.net/files/7884/506/OneEnoughFluid-1.1.1-hotfix.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/OneEnoughItem-1.0.8.jar": {
+      "url": "https://edge.forgecdn.net/files/7939/113/OneEnoughItem-1.0.8.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/packetfixer-3.3.2-1.18-1.20.4-merged.jar": {
+      "url": "https://edge.forgecdn.net/files/7872/374/packetfixer-3.3.2-1.18-1.20.4-merged.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Paintings-forge-1.20.1-11.0.0.2.jar": {
+      "url": "https://edge.forgecdn.net/files/5196/35/Paintings-forge-1.20.1-11.0.0.2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Patchouli-1.20.1-85-FORGE.jar": {
+      "url": "https://edge.forgecdn.net/files/7731/17/Patchouli-1.20.1-85-FORGE.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Paxi-1.20-Forge-4.0.jar": {
+      "url": "https://edge.forgecdn.net/files/4749/994/Paxi-1.20-Forge-4.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/pipez_optimizer-1.0.8-1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/9101/724/pipez_optimizer-1.0.8-1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/pipez-forge-1.20.1-1.2.26.jar": {
+      "url": "https://edge.forgecdn.net/files/6945/379/pipez-forge-1.20.1-1.2.26.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Placebo-1.20.1-8.6.3.jar": {
+      "url": "https://edge.forgecdn.net/files/6274/231/Placebo-1.20.1-8.6.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar": {
+      "url": "https://edge.forgecdn.net/files/4587/214/player-animation-lib-forge-1.0.2-rc1+1.20.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/polylib-forge-2000.0.3-build.143.jar": {
+      "url": "https://edge.forgecdn.net/files/5350/440/polylib-forge-2000.0.3-build.143.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/polymorph-forge-0.49.11+1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8854/504/polymorph-forge-0.49.11+1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/polyeng-forge-0.1.1-1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/5282/394/polyeng-forge-0.1.1-1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/powerful_dummy-20-0.0.10.jar": {
+      "url": "https://edge.forgecdn.net/files/8876/874/powerful_dummy-20-0.0.10.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/powerfuljs-1.6.1.jar": {
+      "url": "https://edge.forgecdn.net/files/4951/461/powerfuljs-1.6.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Prism-1.20.1-forge-1.0.5.jar": {
+      "url": "https://edge.forgecdn.net/files/4650/325/Prism-1.20.1-forge-1.0.5.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/probejs-6.0.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/5227/399/probejs-6.0.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/quest_enhance-1.20.1-forge-3.13.jar": {
+      "url": "https://edge.forgecdn.net/files/9098/926/quest_enhance-1.20.1-forge-3.13.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/quick-pack-forge-1.5.1+1.20.1-all-srg.jar": {
+      "url": "https://edge.forgecdn.net/files/9005/22/quick-pack-forge-1.5.1+1.20.1-all-srg.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/resourcefulconfig-forge-1.20.1-2.1.3.jar": {
+      "url": "https://edge.forgecdn.net/files/6231/176/resourcefulconfig-forge-1.20.1-2.1.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/resourcefullib-forge-1.20.1-2.1.29.jar": {
+      "url": "https://edge.forgecdn.net/files/5659/871/resourcefullib-forge-1.20.1-2.1.29.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/rhino-forge-2001.2.3-build.10.jar": {
+      "url": "https://edge.forgecdn.net/files/6186/971/rhino-forge-2001.2.3-build.10.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/rubidium-extra-0.5.4.4+mc1.20.1-build.131.jar": {
+      "url": "https://edge.forgecdn.net/files/6101/745/rubidium-extra-0.5.4.4+mc1.20.1-build.131.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Searchables-forge-1.20.1-1.0.3.jar": {
+      "url": "https://edge.forgecdn.net/files/5284/15/Searchables-forge-1.20.1-1.0.3.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/servercore-forge-1.5.2+1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/5929/264/servercore-forge-1.5.2+1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/smartercontraptionstorage-1.20.1-6.0.0-1.4.5.jar": {
+      "url": "https://edge.forgecdn.net/files/7383/922/smartercontraptionstorage-1.20.1-6.0.0-1.4.5.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/smoothboot(reloaded)-mc1.20.1-0.0.4.jar": {
+      "url": "https://edge.forgecdn.net/files/5016/280/smoothboot%28reloaded%29-mc1.20.1-0.0.4.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/sophisticatedbackpacks-1.20.1-3.26.9.2194.jar": {
+      "url": "https://edge.forgecdn.net/files/9083/935/sophisticatedbackpacks-1.20.1-3.26.9.2194.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/sophisticatedcore-1.20.1-1.5.6.2383.jar": {
+      "url": "https://edge.forgecdn.net/files/9112/479/sophisticatedcore-1.20.1-1.5.6.2383.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/SophisticatedSorter-forge-1.20.1-1.1.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8879/811/SophisticatedSorter-forge-1.20.1-1.1.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/solcarrot-1.20.1-1.15.1.jar": {
+      "url": "https://edge.forgecdn.net/files/4888/575/solcarrot-1.20.1-1.15.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/stellarcreateoptimization-forge-1.20.1-1.1.1fix.jar": {
+      "url": "https://edge.forgecdn.net/files/9076/130/stellarcreateoptimization-forge-1.20.1-1.1.1fix.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/supermartijn642configlib-1.1.8-forge-mc1.20.jar": {
+      "url": "https://edge.forgecdn.net/files/4715/408/supermartijn642configlib-1.1.8-forge-mc1.20.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/supermartijn642corelib-1.1.25-forge-mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/9083/446/supermartijn642corelib-1.1.25-forge-mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/tconstruct_js-1.0.6.jar": {
+      "url": "https://edge.forgecdn.net/files/8352/452/tconstruct_js-1.0.6.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/thermalconstruct-1.20.1-0.0.5.jar": {
+      "url": "https://edge.forgecdn.net/files/8902/176/thermalconstruct-1.20.1-0.0.5.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/thermal_expansion-1.20.1-11.0.1.29.jar": {
+      "url": "https://edge.forgecdn.net/files/5372/749/thermal_expansion-1.20.1-11.0.1.29.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ThermalExtra-3.3.3-1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8920/473/ThermalExtra-3.3.3-1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/thermal_foundation-1.20.1-11.0.6.70.jar": {
+      "url": "https://edge.forgecdn.net/files/5443/583/thermal_foundation-1.20.1-11.0.6.70.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/thermal_innovation-1.20.1-11.0.1.23.jar": {
+      "url": "https://edge.forgecdn.net/files/5372/751/thermal_innovation-1.20.1-11.0.1.23.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/thermal_integration-1.20.1-11.0.1.27.jar": {
+      "url": "https://edge.forgecdn.net/files/5374/210/thermal_integration-1.20.1-11.0.1.27.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/thermal_parallel-1.0.1-beta.2.jar": {
+      "url": "https://edge.forgecdn.net/files/8048/253/thermal_parallel-1.0.1-beta.2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/ticktweaks-forge-1.2.5.jar": {
+      "url": "https://edge.forgecdn.net/files/6980/171/ticktweaks-forge-1.2.5.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/curiotiab-1.20.1-2.0.2.jar": {
+      "url": "https://edge.forgecdn.net/files/4810/683/curiotiab-1.20.1-2.0.2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/time-in-a-bottle-4.1.1-mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8988/876/time-in-a-bottle-4.1.1-mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/TConstruct-1.20.1-3.12.1.231.jar": {
+      "url": "https://edge.forgecdn.net/files/8944/121/TConstruct-1.20.1-3.12.1.231.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/TconPlanner-1.20.1-forge-1.8.0.jar": {
+      "url": "https://edge.forgecdn.net/files/8600/413/TconPlanner-1.20.1-forge-1.8.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Tinker-Wood-1.20.1-1.0.0.jar": {
+      "url": "https://edge.forgecdn.net/files/6603/394/Tinker-Wood-1.20.1-1.0.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/tinkersmossymodifier-forge-1.20-1.20.1-1.0.0.jar": {
+      "url": "https://edge.forgecdn.net/files/7886/434/tinkersmossymodifier-forge-1.20-1.20.1-1.0.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/titanium-1.20.1-3.8.35.jar": {
+      "url": "https://edge.forgecdn.net/files/8426/836/titanium-1.20.1-3.8.35.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/Torcherino-forge-1.20.1-20.0.0.jar": {
+      "url": "https://edge.forgecdn.net/files/4722/725/Torcherino-forge-1.20.1-20.0.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/trashcans-1.1.1a-forge-mc1.20.4.jar": {
+      "url": "https://edge.forgecdn.net/files/9009/341/trashcans-1.1.1a-forge-mc1.20.4.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/TreeChop-1.20.1-forge-0.19.0-fixed.jar": {
+      "url": "https://edge.forgecdn.net/files/5565/422/TreeChop-1.20.1-forge-0.19.0-fixed.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/treetap-1.20.1-0.5.0.jar": {
+      "url": "https://edge.forgecdn.net/files/5922/848/treetap-1.20.1-0.5.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/tslatentitystatus-forge-1.20.1-1.6.6.jar": {
+      "url": "https://edge.forgecdn.net/files/9033/346/tslatentitystatus-forge-1.20.1-1.6.6.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/UntranslatedItems-forge-1.20.1-1.21.jar": {
+      "url": "https://edge.forgecdn.net/files/8678/2/UntranslatedItems-forge-1.20.1-1.21.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/uti_afac-1.1.6+1.20.1-forge.jar": {
+      "url": "https://edge.forgecdn.net/files/8628/628/uti_afac-1.1.6+1.20.1-forge.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/vartapack-forge-mc1.20.1-1.1.3-mc1.20.1.jar": {
+      "url": "https://edge.forgecdn.net/files/8221/174/vartapack-forge-mc1.20.1-1.1.3-mc1.20.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/vintageimprovements-1.20.1-0.3.7.9.jar": {
+      "url": "https://edge.forgecdn.net/files/8941/689/vintageimprovements-1.20.1-0.3.7.9.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/vintage_kubejs-1.20.1-1.0.0rc-2.jar": {
+      "url": "https://edge.forgecdn.net/files/5607/145/vintage_kubejs-1.20.1-1.0.0rc-2.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/WunderLib-20.0.1.jar": {
+      "url": "https://edge.forgecdn.net/files/7486/522/WunderLib-20.0.1.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/xaerominimap-forge-1.20.1-26.6.0.jar": {
+      "url": "https://edge.forgecdn.net/files/9067/172/xaerominimap-forge-1.20.1-26.6.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/xaeroworldmap-forge-1.20.1-1.47.0.jar": {
+      "url": "https://edge.forgecdn.net/files/9067/273/xaeroworldmap-forge-1.20.1-1.47.0.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/CrosshairBobbing-1.10.jar": {
+      "url": "https://edge.forgecdn.net/files/6159/805/CrosshairBobbing-1.10.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/YungsApi-1.20-Forge-4.0.6.jar": {
+      "url": "https://edge.forgecdn.net/files/5769/971/YungsApi-1.20-Forge-4.0.6.jar",
+      "origin": "upstream_manifest"
+    },
+    "mods/CMI Core-1.3-1.20.1-all.jar": {
+      "url": "https://raw.githubusercontent.com/Eternal-Snowstorm/Create-Mechanism-and-Innovation/a87ff71c8aaeca32d3eab224d15994c70b1e7473/mods/CMI%20Core-1.3-1.20.1-all.jar",
+      "origin": "public_upstream_git",
+      "commit": "a87ff71c8aaeca32d3eab224d15994c70b1e7473"
+    },
+    "mods/Nebula Tinker-1.0.0.jar": {
+      "url": "https://raw.githubusercontent.com/Eternal-Snowstorm/Create-Mechanism-and-Innovation/a87ff71c8aaeca32d3eab224d15994c70b1e7473/mods/Nebula%20Tinker-1.0.0.jar",
+      "origin": "public_upstream_git",
+      "commit": "a87ff71c8aaeca32d3eab224d15994c70b1e7473"
+    },
+    "mods/Storage Tweaks-1.1.jar": {
+      "url": "https://raw.githubusercontent.com/Eternal-Snowstorm/Create-Mechanism-and-Innovation/a87ff71c8aaeca32d3eab224d15994c70b1e7473/mods/Storage%20Tweaks-1.1.jar",
+      "origin": "public_upstream_git",
+      "commit": "a87ff71c8aaeca32d3eab224d15994c70b1e7473"
+    },
+    "mods/achievement_toast-1.20.1-forge-1.0.0.jar": {
+      "url": "https://raw.githubusercontent.com/Eternal-Snowstorm/Create-Mechanism-and-Innovation/a87ff71c8aaeca32d3eab224d15994c70b1e7473/mods/achievement_toast-1.20.1-forge-1.0.0.jar",
+      "origin": "public_upstream_git",
+      "commit": "a87ff71c8aaeca32d3eab224d15994c70b1e7473"
+    },
+    "mods/easyrepair-forge-1.20.1-1.1.7.jar": {
+      "url": "https://raw.githubusercontent.com/Eternal-Snowstorm/Create-Mechanism-and-Innovation/a87ff71c8aaeca32d3eab224d15994c70b1e7473/mods/easyrepair-forge-1.20.1-1.1.7.jar",
+      "origin": "public_upstream_git",
+      "commit": "a87ff71c8aaeca32d3eab224d15994c70b1e7473"
+    },
+    "mods/kubejs-immersive-engineering-2001.5.29-build.23.jar": {
+      "url": "https://mediafilez.forgecdn.net/files/6593/605/kubejs-immersive-engineering-2001.5.29-build.23.jar",
+      "origin": "public_dependency_fix",
+      "page": "https://www.curseforge.com/minecraft/mc-mods/kubejs-immersive-engineering-unofficial/files/6593605"
+    }
+  },
+  "note": "Public source mapping only; no QQ exports, account data, saved worlds or local logs."
+}

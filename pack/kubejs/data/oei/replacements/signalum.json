@@ -1,0 +1,14 @@
+[
+	{
+		"matchItems": [
+			"#forge:plates/signalum"
+		],
+		"resultItems": "vintageimprovements:signalum_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/signalum"
+		],
+		"resultItems": "vintageimprovements:signalum_rod"
+	}
+]

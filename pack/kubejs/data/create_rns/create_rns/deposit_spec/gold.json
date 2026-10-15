@@ -1,0 +1,6 @@
+{
+	"scanner_icon_item": "minecraft:raw_gold",
+	"dimension": "minecraft:overworld",
+	"map_icon_item": "minecraft:raw_gold",
+	"structure": "cmi:ore_node/gold_node"
+}

@@ -1,0 +1,21 @@
+new Schema("createaddition:rolling")
+	.simpleKey("result", "outputItem")
+	.simpleKey("input", "inputItem")
+
+new Schema("createaddition:charging")
+	.simpleKey("result", "outputItem")
+	.simpleKey("input", "inputItem")
+	.simpleKey("energy", "intNumber", 100)
+	.simpleKey("maxChargeRate", "intNumber", 100)
+
+new Schema("createaddition:liquid_burning")
+	.dynamicKey((component, builder) => {
+		return component.get("inputFluid")()
+			.or(new builder(2)
+				.add(component.get("fluidTag")().key("fluidTag"))
+				.add(component.get("intNumber")().key("amount"))
+				.inputRole())
+			.key("input")
+	})
+	.simpleKey("burnTime", "intNumber", 20 * 5)
+	.simpleKey("superheated", "bool", false)

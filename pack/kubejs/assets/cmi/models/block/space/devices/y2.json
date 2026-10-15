@@ -1,0 +1,6 @@
+{
+	"parent": "cmi:block/space/devices/base",
+	"textures": {
+		"0":"cmi:block/devices/type/y2"
+	}
+}

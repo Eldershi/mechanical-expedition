@@ -1,0 +1,12 @@
+new Schema("tconstruct:melting_fuel")
+	.simpleKey("fluid", "inputFluid")
+	.simpleKey("duration", "intNumber", 150)
+	.simpleKey("rate", "intNumber", 10)
+	.simpleKey("temperature", "intNumber", 1000)
+
+new Schema("tconstruct:melting")
+	.simpleKey("result", "outputFluid")
+	.simpleKey("byproducts", "outputFluidArray", null)
+	.simpleKey("ingredient", "inputItem", null)
+	.simpleKey("time", "intNumber", 100)
+	.simpleKey("temperature", "intNumber", 100)

@@ -1,0 +1,300 @@
+{
+	filename: "expedition_technology"
+	group: ""
+	icon: "cmi:precision_mechanism"
+	id: "40C38D01CD30EB4A"
+	order_index: -1
+	title: "远征·科技总览"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "1312785FEC83F13F"
+			title: "冶炼与基础制造"
+			icon: "cmi:wooden_mechanism"
+			x: 0.0d
+			y: 0.0d
+			description: ["从匠魂与基础加工开始，建立存储和热能构件供应。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			tasks: [
+				{
+					id: "5C72495FF6F08B83"
+					type: "item"
+					item: "cmi:wooden_mechanism"
+					consume_items: false
+				}
+				{
+					id: "763BF505311E1A12"
+					type: "item"
+					item: "cmi:stone_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "2C4B15BB4352C1D1"
+			title: "动能工厂"
+			icon: "cmi:andesite_mechanism"
+			x: 4.0d
+			y: 0.0d
+			description: ["搭建持续供料的机械动力产线。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["1312785FEC83F13F"]
+			tasks: [
+				{
+					id: "2C848E26FDB73394"
+					type: "item"
+					item: "cmi:andesite_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "7F193B86852BF4F7"
+			title: "流体工艺"
+			icon: "cmi:copper_mechanism"
+			x: 8.0d
+			y: 0.0d
+			description: ["把流体构件接入橡胶、焦化与流体处理。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["2C4B15BB4352C1D1"]
+			tasks: [
+				{
+					id: "5ABBE96CC5ADC80C"
+					type: "item"
+					item: "cmi:copper_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "49FAC7F5B7F68763"
+			title: "蒸汽动力"
+			icon: "cmi:bronze_mechanism"
+			x: 12.0d
+			y: 0.0d
+			description: ["建设燃料、热量、锅炉与蒸汽动力系统。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["7F193B86852BF4F7"]
+			tasks: [
+				{
+					id: "2079063D8FF2FDFC"
+					type: "item"
+					item: "cmi:bronze_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "4CD9E4503188C96B"
+			title: "铁路与远方矿点"
+			icon: "cmi:railway_mechanism"
+			x: 0.0d
+			y: 3.0d
+			description: ["利用铁路组织矿点补给与基地之间的运输。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["49FAC7F5B7F68763"]
+			tasks: [
+				{
+					id: "3DFB21B9F171873E"
+					type: "item"
+					item: "cmi:railway_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "07572AE4030D628D"
+			title: "电力与精密制造"
+			icon: "cmi:coil_mechanism"
+			x: 4.0d
+			y: 3.0d
+			description: ["建立线圈与精密构件产线；铁路运输可并行建设。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["49FAC7F5B7F68763"]
+			tasks: [
+				{
+					id: "5B8EE81878232AC4"
+					type: "item"
+					item: "cmi:coil_mechanism"
+					consume_items: false
+				}
+				{
+					id: "332EC328297C9EAE"
+					type: "item"
+					item: "create:precision_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "0FBC53BEE0AB7A92"
+			title: "炼钢、石化与智能控制"
+			icon: "cmi:pig_iron_mechanism"
+			x: 8.0d
+			y: 3.0d
+			description: ["接续炼钢、石油化工、智能构件与AE物流。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["07572AE4030D628D"]
+			tasks: [
+				{
+					id: "4F45594E2146AE63"
+					type: "item"
+					item: "cmi:pig_iron_mechanism"
+					consume_items: false
+				}
+				{
+					id: "7AC6D2A0C3AA1702"
+					type: "item"
+					item: "cmi:smart_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "781F7DBDB354CCCA"
+			title: "基础通用工业"
+			icon: "cmi:basic_mekanism_mechanism"
+			x: 12.0d
+			y: 3.0d
+			description: ["参考无限构件的通用构件分层，沿革新构件当前配方推进。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["0FBC53BEE0AB7A92"]
+			tasks: [
+				{
+					id: "0390EECE92C50821"
+					type: "item"
+					item: "cmi:basic_mekanism_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "34CA8BCB18DF335C"
+			title: "高级通用工业"
+			icon: "cmi:advanced_mekanism_mechanism"
+			x: 0.0d
+			y: 6.0d
+			description: ["扩大设备能力与材料加工；每项工艺以当前JEI为准。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["781F7DBDB354CCCA"]
+			tasks: [
+				{
+					id: "5C5B64C7DC640DC1"
+					type: "item"
+					item: "cmi:advanced_mekanism_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "4F6B5D4FCE22096B"
+			title: "精英通用工业"
+			icon: "cmi:elite_mekanism_mechanism"
+			x: 4.0d
+			y: 6.0d
+			description: ["逐步建设高阶化工和通用设备供应。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["34CA8BCB18DF335C"]
+			tasks: [
+				{
+					id: "69787823685AC190"
+					type: "item"
+					item: "cmi:elite_mekanism_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "2F98A75C5ED1E23E"
+			title: "终极通用工业"
+			icon: "cmi:ultimate_mekanism_mechanism"
+			x: 8.0d
+			y: 6.0d
+			description: ["形成后期工业与高能研究所需的基础设施。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["4F6B5D4FCE22096B"]
+			tasks: [
+				{
+					id: "392337CE3C9A0BAA"
+					type: "item"
+					item: "cmi:ultimate_mekanism_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "20D4DD69DFF2908E"
+			title: "计算与数据"
+			icon: "cmi:computing_mechanism"
+			x: 12.0d
+			y: 6.0d
+			description: ["建设计算构件与数据处理能力，支援后续工程。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["781F7DBDB354CCCA"]
+			tasks: [
+				{
+					id: "4991CAECC2C9FC6C"
+					type: "item"
+					item: "cmi:computing_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "167D4DC0804DA7FF"
+			title: "航空工程"
+			icon: "cmi:aeronautic_mechanism"
+			x: 12.0d
+			y: 9.0d
+			description: ["从轻质材料、石化和电子工艺走向航空构件。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["781F7DBDB354CCCA"]
+			tasks: [
+				{
+					id: "5A896FEC3E07CFC0"
+					type: "item"
+					item: "cmi:aeronautic_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "2D798437EF7625A7"
+			title: "宇航工程"
+			icon: "cmi:astronautic_mechanism"
+			x: 16.0d
+			y: 9.0d
+			description: ["接续气密、生命保障、分级火箭与异星资源。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["167D4DC0804DA7FF"]
+			tasks: [
+				{
+					id: "275F32B97B7C121A"
+					type: "item"
+					item: "cmi:astronautic_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "38BA9E1BF0E22AAF"
+			title: "核工业"
+			icon: "cmi:nuclear_mechanism"
+			x: 8.0d
+			y: 9.0d
+			description: ["沿当前核构件配方建设核工业；本章不触发爆炸。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["2F98A75C5ED1E23E"]
+			tasks: [
+				{
+					id: "753A20F0CC3BFFC9"
+					type: "item"
+					item: "cmi:nuclear_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "474488820BF6B55C"
+			title: "反物质工程"
+			icon: "cmi:antimatter_mechanism"
+			x: 8.0d
+			y: 12.0d
+			description: ["作为五心与最终工程的技术基础。无限构件终点配方与五心尚待适配。" "这是迁移测试总览，连线表示建议学习顺序。实际加工条件由原配方决定；取得物品不会自动验证整条产线。"]
+			dependencies: ["38BA9E1BF0E22AAF" "20D4DD69DFF2908E"]
+			tasks: [
+				{
+					id: "4E9CC21E1613A841"
+					type: "item"
+					item: "cmi:antimatter_mechanism"
+					consume_items: false
+				}
+			]
+		}
+	]
+}

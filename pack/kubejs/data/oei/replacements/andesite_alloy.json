@@ -1,0 +1,8 @@
+[
+	{
+		"matchItems": [
+			"#forge:plates/andesite_alloy"
+		],
+		"resultItems": "vintageimprovements:andesite_sheet"
+	}
+]
