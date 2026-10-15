@@ -1,0 +1,25 @@
+StartupEvents.registry("block", (event) => {
+	CmiGlobal.mechanismGroup.forEach((type) => {
+		event.create(`${Cmi.MODID}:${type}_machine`, "cardinal")
+			.soundType(SoundType.METAL)
+			.waterlogged()
+			.model(`${Cmi.MODID}:block/machine_block/${type}`)
+			.requiresTool(true)
+			.notSolid()
+			.defaultCutout()
+			.blockEntity((entity) => {
+				let mechanism = Ingredient.of(`#create:mechanisms/${type}`)
+				let flashDrive = Ingredient.of(`#${Cmi.MODID}:mechanism_flash_drives/${type}`)
+
+				entity.enableSync()
+				entity.inventory(9, 3, [mechanism, flashDrive])
+				entity.rightClickOpensInventory()
+				entity.attachCapability(attachItemHandlerCapability())
+			})
+			.tagBlock(CmiToolType.PICKAXE.tag())
+			.tagBlock(CmiMiningLevel.WOODEN.tag())
+			.tagBlock(CmiGlobal.WRENCH_PICKUP)
+			.tag("cmi:block/machine_block")
+			.tag(`cmi:block/machine_block/${type}`)
+	})
+})

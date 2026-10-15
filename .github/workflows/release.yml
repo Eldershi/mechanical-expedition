@@ -1,0 +1,50 @@
+name: Build client release
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get release source
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          COMMIT: ${{ github.sha }}
+        run: |
+          gh repo clone "$REPOSITORY" release-source
+          cd release-source
+          git checkout "$COMMIT"
+      - name: Check updater behavior
+        working-directory: release-source
+        run: python3 tools/test_updater.py
+      - name: Build and hash client package
+        working-directory: release-source
+        run: |
+          python3 tools/package_repository.py
+          VERSION=$(python3 -c 'import json; print(json.load(open("source-manifest.json"))["version"])')
+          git archive --format=zip --output="dist/mechanical-expedition-$VERSION-source.zip" HEAD
+          cd dist
+          sha256sum *.mrpack *-source.zip > SHA256SUMS
+      - name: Publish development release
+        working-directory: release-source
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          EVENT_REF: ${{ github.ref_name }}
+          EVENT_KIND: ${{ github.event_name }}
+          COMMIT: ${{ github.sha }}
+        run: |
+          VERSION=$(python3 -c 'import json; print(json.load(open("source-manifest.json"))["version"])')
+          TAG="v$VERSION"
+          if [ "$EVENT_KIND" = "push" ] && [ "$EVENT_REF" != "$TAG" ]; then
+            echo "Tag and package version differ; stopping."
+            exit 1
+          fi
+          gh release create "$TAG" dist/*.mrpack dist/*-source.zip dist/SHA256SUMS --repo "$REPOSITORY" --target "$COMMIT" --prerelease --title "Mechanical Expedition $VERSION" --notes-file RELEASE-NOTES.md

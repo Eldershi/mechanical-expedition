@@ -1,0 +1,169 @@
+
+#All settings below will only take effect after restarting the server or client.
+[general]
+
+	#Steam Hammer Settings
+	[general.steam_hammer]
+		#Steam consumption per run of steam hammer (mB)
+		#type: int
+		#default: 1000
+		#Range: 0 ~ 1000000
+		steam_consumption = 1000
+		#Steam capacity in steam hammer (mB)
+		#type: int
+		#default: 10000
+		#Range: 1000 ~ 1000000
+		steam_capacity = 10000
+		#Stress impact of steam hammer (su)
+		#type: double
+		#default: 16.0
+		#Range: 0.0 ~ 64.0
+		stress_impact = 16.0
+
+	#Accelerator Motor Settings
+	[general.accelerator_motor]
+		#Default speed when placing the Accelerator Motor (RPM)
+		#type: int
+		#default: 16
+		#Range: 1 ~ 256
+		default_speed = 16
+		#Maximum RPM the accelerator motor
+		#type: int
+		#default: 128
+		#Range: 1 ~ 256
+		max_speed = 128
+
+	#Advanced Spout Settings
+	[general.advanced_spout]
+		#Filling time in ticks
+		#20 ticks = 1 second
+		#Original spout uses 20 ticks
+		#type: int
+		#default: 5
+		#Range: 1 ~ 100
+		filling_time = 5
+		#Fluid capacity in mB (millibuckets)
+		#1000 mB = 1 bucket
+		#Original spout uses 1000 mB
+		#type: int
+		#default: 5000
+		#Range: 2000 ~ 64000
+		capacity = 5000
+
+	#Void Dust Collector Settings
+	[general.void_dust_collector]
+		#Work time
+		#20 ticks = 1 second
+		#type: int
+		#default: 20
+		#Range: 1 ~ 100000
+		work_time = 20
+		#Energy consumed per tick of void dust collector (FE)
+		#type: int
+		#default: 100
+		#Range: > 0
+		energy_consumption = 100
+		#Energy capacity of void dust collector (FE)
+		#type: int
+		#default: 50000
+		#Range: > 0
+		energy_capacity = 50000
+		#Max receive of void dust collector (FE)
+		#type: int
+		#default: 1000
+		#Range: > 0
+		max_receive = 1000
+		#Maximum work height of void dust collector
+		#type: int
+		#default: -60
+		#Range: -63 ~ 319
+		max_work_height = -60
+		#Minimum work height of void dust collector
+		#Collector doesnt work if greater than max height
+		#type: int
+		#default: -63
+		#Range: -63 ~ 319
+		min_work_height = -63
+
+	#Solar Boiler Settings
+	[general.solar_boilder]
+		#Water consumption and steam production per tick
+		#type: int
+		#default: 19
+		#Range: 1 ~ 1024
+		bronze_pre_tick_consum_and_production = 19
+		#Boiler's Fluid Capacity
+		#type: int
+		#default: 4000
+		#Range: 1 ~ 100000000
+		bronze_boiler_capacity = 4000
+		#Water consumption and steam production per tick
+		#type: int
+		#default: 38
+		#Range: 1 ~ 1024
+		cast_iron_pre_tick_consum_and_production = 38
+		#Boiler's Fluid Capacity
+		#type: int
+		#default: 8000
+		#Range: 1 ~ 100000000
+		cast_iron_boiler_capacity = 8000
+		#Water consumption and steam production per tick
+		#type: int
+		#default: 75
+		#Range: 1 ~ 1024
+		steel_pre_tick_consum_and_production = 75
+		#Boiler's Fluid Capacity
+		#type: int
+		#default: 12000
+		#Range: 1 ~ 100000000
+		steel_boiler_capacity = 12000
+		#Efficiency multiplier when the boiler runs on artificial light (block light)
+		#1.0 = same as natural light, 0.5 = half efficiency. Set to 0.0 to disable artificial light mode.
+		#type: double
+		#default: 0.5
+		#Range: 0.0 ~ 1.0
+		artificial_light_efficiency_multiplier = 0.5
+		#Efficiency multiplier when the boiler runs under natural light while it is raining
+		#1.0 = same as clear weather, 0.5 = half efficiency. Set to 0.0 to disable running in rain.
+		#type: double
+		#default: 0.5
+		#Range: 0.0 ~ 1.0
+		rain_efficiency_multiplier = 0.5
+		#Efficiency multiplier when the boiler runs under natural light during a thunderstorm
+		#1.0 = same as clear weather, 0.25 = quarter efficiency. Set to 0.0 to disable running in thunderstorms.
+		#type: double
+		#default: 0.25
+		#Range: 0.0 ~ 1.0
+		thunder_efficiency_multiplier = 0.25
+
+	#Space Elevator Settings
+	[general.space_elevator]
+		#Enable the multi-slot cargo grid in the space elevator storage UI
+		#type: boolean
+		#default: false
+		"Enable cargo grid" = false
+
+	#Geothermal Generator Settings
+	[general.geothermal_generator]
+		#Per tick production FE
+		#20 ticks = 1 second
+		#type: int
+		#Range: 1 ~ 500000
+		production_efficiency = 5000
+
+	#Metal Detector Settings
+	[general.metal_detector]
+		#Play sound with Metal Detector when turned on
+		play_sound = true
+
+	#Reinforced Coke Oven Settings
+	[general.reinforced_coke_oven]
+		#Reinforced coke oven will smoke at work
+		#If you think Caton can choose to close
+		#type: boolean
+		smoking_at_working = true
+		#Reinforced coke oven frequency of smoke at work (Tick)
+		#type: int
+		#Range: 1 ~ 20
+		smoking_frequency = 5
+

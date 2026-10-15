@@ -1,0 +1,27 @@
+# 机械动力：远征 · 开发测试版
+
+基于 Re_Construction / Team Nebula 的革新构件 Beta 2.5.0。
+
+## 安装
+
+在支持 Modrinth 整合包格式的启动器中导入 `.mrpack` 文件。启动器会安装 Minecraft 1.20.1、Forge 47.4.10 并按清单下载226个模组。Java使用17，建议分配8GB内存。首次下载需要联网。
+
+本文件是客户端发行说明。服务端另行适配，不能把该客户端包直接当成服务端运行。
+
+## 更新
+
+先退出游戏。Windows安装 Git for Windows 后双击 `updater/update.bat`；macOS双击 `updater/update.command`，也可以在实例根目录执行 `bash updater/update.sh`。Linux同样使用 `.sh`。首次与后续更新使用同一个入口。
+
+只检查、不应用：`bash updater/update.sh --check`。
+
+更新器从 `updater/expedition.conf` 指定的远征仓库读取版本，不使用作者原仓库的强制重置功能。它先准备并校验全部变更，再备份、应用；失败时恢复本批已改文件。
+
+存档、服务器列表、按键与画面设置、截图、地图数据不在更新范围。玩家自行添加且未被发行清单管理的模组也会保留。若修改了发行版管理的配置或脚本，更新会提示冲突并停下，保留本地文件；请先另存自己的修改，再恢复发行版文件后重试。
+
+日志在 `.expedition/logs/`，每批备份在 `.expedition/backups/`。日志只保存在本机。更新器不会自动发送文件、登录账号或接受游戏条款。
+
+## 当前内容
+
+包含革新构件原有科技流程、远征科技总览和里程碑审计。完整无限构件后期与五心尚在适配中。本版本用于测试，版本号与革新构件分开。
+
+上游来源和许可见 `UPSTREAM.md`、`LICENSE`、`License.md`；逐模组下载来源见 `SOURCE.json`。

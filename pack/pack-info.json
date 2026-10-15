@@ -1,0 +1,15 @@
+{
+  "packId": "mechanical-expedition",
+  "name": "机械动力：远征",
+  "version": "0.1.0-dev.1",
+  "channel": "dev",
+  "minecraft": "1.20.1",
+  "forge": "47.4.10",
+  "repository": "https://github.com/Eldershi/mechanical-expedition.git",
+  "ref": "main",
+  "baseRepository": "https://github.com/Eternal-Snowstorm/Create-Mechanism-and-Innovation",
+  "baseCommit": "a87ff71c8aaeca32d3eab224d15994c70b1e7473",
+  "base": "Create: Mechanisms and Innovations Beta 2.5.0",
+  "distribution": "client",
+  "status": "development_test"
+}

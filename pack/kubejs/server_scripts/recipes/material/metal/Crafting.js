@@ -1,0 +1,108 @@
+ServerEvents.recipes((event) => {
+	let { kubejs } = event.getRecipes()
+
+	CmiMetal.getAll().forEach((material) => {
+		let metal = material.getId()
+		const INGOT = `#forge:ingots/${metal}`
+		const NUGGET = `#forge:nuggets/${metal}`
+		const BLOCK = `#forge:storage_blocks/${metal}`
+		const RAW_ORE = `#forge:raw_materials/${metal}`
+		const RAW_BLOCK = `#forge:storage_blocks/raw_${metal}`
+		const RAW_NUGGET = `#forge:raw_nuggets/${metal}`
+		const CRUSHED = `#create:crushed_raw_materials/${metal}`
+
+		if (Ingredient.isNotNull(BLOCK)) {
+			kubejs.shapeless(highPriorityItem(INGOT, 9), [
+				BLOCK
+			])
+			kubejs.shaped(BLOCK, [
+				"AAA",
+				"AAA",
+				"AAA"
+			], {
+				A: INGOT
+			})
+		} else {
+			// console.warn(`No storage block found for ${metal}!`)
+		}
+		if (Ingredient.isNotNull(NUGGET)) {
+			kubejs.shapeless(highPriorityItem(NUGGET, 9), [
+				INGOT
+			])
+			kubejs.shaped(INGOT, [
+				"AAA",
+				"AAA",
+				"AAA"
+			], {
+				A: NUGGET
+			})
+		} else {
+			// console.warn(`No nugget found for ${metal}!`)
+		}
+		if (Ingredient.isNotNull(RAW_ORE)) {
+			if (Ingredient.isNotNull(RAW_BLOCK)) {
+				kubejs.shapeless(highPriorityItem(RAW_ORE, 9), [
+					RAW_BLOCK
+				])
+
+				kubejs.shaped(RAW_BLOCK, [
+					"AAA",
+					"AAA",
+					"AAA"
+				], {
+					A: RAW_ORE
+				})
+			} else {
+				// console.warn(`No storage block found for raw ${metal}!`)
+			}
+		} else {
+			// console.warn(`No raw material found for ${metal}!`)
+		}
+
+		if (Ingredient.isNotNull(CRUSHED)) {
+			if (Ingredient.isNotNull(RAW_NUGGET)) {
+				kubejs.shapeless(highPriorityItem(RAW_NUGGET, 4), [
+					CRUSHED
+				])
+				kubejs.shaped(CRUSHED, [
+					"AA",
+					"AA"
+				], {
+					A: RAW_NUGGET
+				})
+			} else {
+				// console.warn(`No nugget found for raw ${metal}!`)
+			}
+		} else {
+			// console.warn(`No crushed vers found for raw ${metal}!`)
+		}
+
+		event.remove([
+			{
+				type: "minecraft:crafting_shapeless",
+				output: INGOT
+			}, {
+				type: "minecraft:crafting_shaped",
+				output: INGOT
+			}, {
+				type: "minecraft:crafting_shapeless",
+				output: NUGGET
+			}, {
+				type: "minecraft:crafting_shapeless",
+				output: BLOCK
+			}, {
+				type: "minecraft:crafting_shaped",
+				output: BLOCK
+			}, {
+				type: "minecraft:crafting_shapeless",
+				output: RAW_ORE
+			}, {
+				type: "minecraft:crafting_shapeless",
+				output: RAW_BLOCK
+			}, {
+				type: "minecraft:crafting_shaped",
+				output: RAW_BLOCK
+			}
+		])
+	})
+})

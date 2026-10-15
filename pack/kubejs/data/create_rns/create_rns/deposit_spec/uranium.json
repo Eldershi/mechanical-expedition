@@ -1,0 +1,6 @@
+{
+	"scanner_icon_item": "immersiveengineering:raw_uranium",
+	"dimension": "cmi:dionysus",
+	"map_icon_item": "immersiveengineering:raw_uranium",
+	"structure": "cmi:ore_node/uranium_node"
+}

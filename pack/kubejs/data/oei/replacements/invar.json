@@ -1,0 +1,14 @@
+[
+	{
+		"matchItems": [
+			"#forge:plates/invar"
+		],
+		"resultItems": "vintageimprovements:invar_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/invar"
+		],
+		"resultItems": "vintageimprovements:invar_rod"
+	}
+]
