@@ -13,7 +13,7 @@ if not exist "%GIT_BASH%" (
   pause
   exit /b 1
 )
-"%GIT_BASH%" "%~dp0expedition-update.sh" %*
+"%GIT_BASH%" --login "%~dp0expedition-update.sh" %*
 set "UPDATE_RC=%ERRORLEVEL%"
 if not "%UPDATE_RC%"=="0" echo Update stopped. See the message and .expedition/logs/.
 pause

@@ -11,6 +11,8 @@
 
 玩家使用导入包中的 `updater/update.bat`（Windows）或 `updater/update.command`（macOS）。Git for Windows为Windows入口提供Git、Bash和curl；macOS使用本地Git与系统工具。详见 `pack/README.md`。
 
+当前是私有开发仓库。远程更新需要仓库访问权限与GitHub认证；此配置不使私有源码或Release附件变成匿名可下载。对外先发送版本导入包和对应源码包。未来可以将更新源单独公开，或把本仓库改为公开后启用免登录更新。
+
 ## 发布习惯
 
 每次发布在远征开发工作区运行 `distribution/build_release.py`，它会依据当前已验证实例重建清单与导入包。检查构建报告，运行 `distribution/test_updater.py`，再提交生成的更新仓库，打上独立版本标签并发布对应 `.mrpack` 与源码ZIP。

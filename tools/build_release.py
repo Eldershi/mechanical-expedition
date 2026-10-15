@@ -126,17 +126,19 @@ def build(config_path, output):
     (pack / "README.md").write_text((HERE / "PLAYER-GUIDE.md").read_text())
 
     sources = {}
-    for row in csv.reader((INSTANCE / "updater/update.tsv").read_text().splitlines(), delimiter="\t"):
+    for row in csv.reader((BASE / "updater/update.tsv").read_text().splitlines(), delimiter="\t"):
         if len(row) < 3 or not row[1]:
             continue
         expected, relative, url = row[:3]
         source = INSTANCE / relative
-        if hash_file(source, "sha1") != expected:
-            raise ValueError(f"Upstream download hash mismatch: {relative}")
+        if not source.exists() or hash_file(source, "sha1") != expected:
+            continue
         sources[relative] = {"url": https_url(url), "origin": "upstream_manifest"}
     # Fixed public Git objects cover upstream's bundled custom mods and two omitted utilities.
     for relative in tracked:
         if not relative.startswith("mods/") or not relative.endswith(".jar"):
+            continue
+        if not (INSTANCE / relative).exists():
             continue
         blob = subprocess.check_output(["git", "-C", str(BASE), "show", f"{commit}:{relative}"])
         if hashlib.sha256(blob).hexdigest() != hash_file(INSTANCE / relative):
@@ -151,6 +153,14 @@ def build(config_path, output):
             if hash_file(INSTANCE / relative, "sha1") != fix["sha1"]:
                 raise ValueError(f"Local dependency fix hash mismatch: {relative}")
             sources[relative] = {"url": https_url(fix["download"]), "origin": "public_dependency_fix", "page": fix["source"]}
+    for extra in config.get("additionalSources", []):
+        relative = extra["path"]
+        validate_path(relative)
+        if not relative.startswith("mods/") or not relative.endswith(".jar"):
+            raise ValueError("Additional source must name one mod JAR")
+        if hash_file(INSTANCE / relative) != extra["sha256"]:
+            raise ValueError(f"Additional source checksum mismatch: {relative}")
+        sources[relative] = {"url": https_url(extra["url"]), "origin": "explicit_release_source"}
     mods = []
     for source in sorted((INSTANCE / "mods").glob("*.jar")):
         relative = "mods/" + source.name

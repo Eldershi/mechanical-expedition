@@ -18,7 +18,7 @@ jobs:
           REPOSITORY: ${{ github.repository }}
           COMMIT: ${{ github.sha }}
         run: |
-          gh repo clone "$REPOSITORY" release-source
+          git -c credential.helper= -c 'credential.helper=!gh auth git-credential' clone "https://github.com/$REPOSITORY.git" release-source
           cd release-source
           git checkout "$COMMIT"
       - name: Check updater behavior
