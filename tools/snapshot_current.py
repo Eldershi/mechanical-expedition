@@ -95,6 +95,7 @@ def main():
     parser.add_argument("--project", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--instance", type=Path)
+    parser.add_argument("--server-source", type=Path)
     args = parser.parse_args()
     project = args.project.resolve()
     output = args.output.resolve()
@@ -125,15 +126,6 @@ def main():
 
     def write_file(scope, relative, blob, source=None):
         if scope == "server":
-            if relative in {
-                "kubejs/server_scripts/expedition/SelectedParallelRecipes.js",
-                "config/ftbquests/quests/chapters/steam_railway.snbt",
-                "config/simplebackups-common.toml",
-                "config/curios-common.toml",
-                "config/zfastnoise.mixin.properties",
-            }:
-                excluded.append({"scope": scope, "path": relative, "reason": "common content is supplied by the current client snapshot"})
-                return
             shared = current / "client" / relative
             if shared.is_file() and shared.read_bytes() == blob:
                 return
@@ -179,9 +171,19 @@ def main():
         custom_mods.append(path.name)
     for name in PATCHED_DEPENDENCIES:
         path = active / "mods" / name
+        if not path.is_file():
+            continue
         write_file("client", "mods/" + name, read_stable(path), path)
 
-    deployment = project / "servers/cmi-expedition/deployment"
+    server_candidates = (
+        Path(__file__).resolve().parents[1] / "current/server",
+        project / "clients/cmi-expedition/distribution/repository/current/server",
+        project / "current/server",
+    )
+    published_server = next((path for path in server_candidates if path.is_dir()), None)
+    deployment = (args.server_source.resolve() if args.server_source else
+                  published_server if published_server else
+                  project / "servers/cmi-expedition/deployment")
     publication.SOURCE = deployment
     publication.FOLDERS = ["config", "defaultconfigs", "hotai", "ldlib"]
     candidates, omissions = publication.discover()
@@ -275,9 +277,12 @@ def main():
         lock_rows.append(row)
     lock = {"schemaVersion": 1, "minecraft": "1.20.1", "forge": "47.4.10", "mods": lock_rows}
     (current / "mods.lock.json").write_bytes(encoded(lock))
-    hnn = "config/paxi/resourcepacks/Expedition-HNN-v23-Original-Predictions-1.20.1.zip"
-    if not (current / "client" / hnn).is_file():
-        raise RuntimeError("Current HNN resource pack was not preserved")
+    order_file = current / "client/config/paxi/resourcepack_load_order.json"
+    load_order = json.loads(order_file.read_text()).get("loadOrder", []) if order_file.is_file() else []
+    for name in load_order:
+        if not any((current / "client" / folder / name).exists()
+                   for folder in ("config/paxi/resourcepacks", "resourcepacks")):
+            raise RuntimeError(f"Configured resource pack was not preserved: {name}")
     stats = {}
     for scope in ("client", "server"):
         selected = [row for row in files if row["scope"] == scope]
@@ -287,9 +292,9 @@ def main():
               "modsWithVerifiedDownloadUrl": len(lock_rows) - len(missing_downloads),
               "modsWithoutVerifiedDownloadUrl": missing_downloads,
               "clientProductionCustomJars": custom_mods,
-              "hnnPack": hnn,
+              "resourcePackLoadOrder": load_order,
               "sourceModified": False,
-              "serverSource": "project deployment overlay"}
+              "serverSource": "reviewed dedicated-server overlay"}
     (output.parent / "snapshot-result.json").write_bytes(encoded(report))
     print(json.dumps({"summary": stats, "modCount": len(lock_rows),
                       "modsWithVerifiedDownloadUrl": len(lock_rows) - len(missing_downloads),
