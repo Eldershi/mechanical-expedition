@@ -1,0 +1,33 @@
+{
+  "type": "lithostitched:set_structure_spawn_condition",
+  "structures": [
+    "nova_structures:tavern_acacia",
+    "nova_structures:tavern_birch",
+    "nova_structures:tavern_cherry",
+    "nova_structures:tavern_dark_oak",
+    "nova_structures:tavern_desert",
+    "nova_structures:tavern_jungle",
+    "nova_structures:tavern_oak",
+    "nova_structures:tavern_snowy",
+    "nova_structures:tavern_spruce"
+  ],
+  "append": true,
+  "spawn_condition": {
+    "type": "lithostitched:grid",
+    "radius": 32,
+    "distance_between_points": 16,
+    "condition": {
+      "type": "lithostitched:height_filter",
+      "range_type": "heightmap_relative",
+      "heightmap": "OCEAN_FLOOR_WG",
+      "permitted_range": {
+        "min_inclusive": -10,
+        "max_inclusive": 10
+      }
+    },
+    "allowed_count": {
+      "min_inclusive": 25,
+      "max_inclusive": 25
+    }
+  }
+}

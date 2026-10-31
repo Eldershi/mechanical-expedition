@@ -1,0 +1,130 @@
+// priority: -1600
+// Read-only HNN registry audit after reload. Never creates entities or edits inventories.
+let ExpeditionIronsHnnLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+let ExpeditionIronsHnnRegistry = Java.loadClass('dev.shadowsoffire.hostilenetworks.data.DataModelRegistry')
+let ExpeditionIronsHnnConfig = Java.loadClass('dev.shadowsoffire.hostilenetworks.HostileConfig')
+let expeditionIronsHnnAuditCountdown = -1
+let expeditionIronsHnnAuditAttempts = 0
+
+function expeditionIronsHnnStack(stack) {
+  return {item: String(ForgeRegistries.ITEMS.getKey(stack.getItem())), count: Number(stack.getCount())}
+}
+
+function expeditionIronsHnnExpectedStack(spec, fallback) {
+  let value = spec || {item: fallback, count: 1}
+  return {item: String(value.item), count: value.count == null ? 1 : Number(value.count)}
+}
+
+function expeditionIronsHnnSameStack(actual, expected) {
+  return actual.item === expected.item && actual.count === expected.count
+}
+
+function expeditionAuditIronsHnn() {
+  let config = JSON.parse(String(JsonIO.readJson('kubejs/config/expedition-irons-hnn-models.json')))
+  if (!config || !Array.isArray(config.models) || config.models.length !== 11) {
+    throw new Error('Expected exactly 11 Iron\'s Spellbooks model specifications')
+  }
+  let registry = ExpeditionIronsHnnRegistry.INSTANCE
+  let failures = []
+  let rows = []
+  let seenIds = {}
+  let seenEntities = {}
+  let rightClickToAttune = Boolean(ExpeditionIronsHnnConfig.rightClickToAttune)
+  let blankRegistered = ForgeRegistries.ITEMS.containsKey(new ExpeditionIronsHnnLocation('hostilenetworks:blank_data_model'))
+  if (!rightClickToAttune || !blankRegistered) {
+    failures.push({kind: 'blank_attunement_unavailable', rightClickToAttune: rightClickToAttune,
+      blankItemRegistered: blankRegistered})
+  }
+  config.models.forEach(spec => {
+    if (seenIds[spec.id] || seenEntities[spec.entity]) {
+      failures.push({kind: 'duplicate_expected_specification', id: spec.id, entity: spec.entity})
+    }
+    seenIds[spec.id] = true
+    seenEntities[spec.entity] = true
+    let modelId = new ExpeditionIronsHnnLocation(spec.id)
+    let entityId = new ExpeditionIronsHnnLocation(spec.entity)
+    let entityRegistered = ForgeRegistries.ENTITY_TYPES.containsKey(entityId)
+    let model = registry.getValue(modelId)
+    let row = {id: spec.id, entity: spec.entity, entityRegistered: entityRegistered,
+      modelPresent: model != null}
+    rows.push(row)
+    if (!entityRegistered || model == null) {
+      failures.push({kind: 'model_or_entity_missing', id: spec.id, entity: spec.entity,
+        entityRegistered: entityRegistered, modelPresent: model != null})
+      return
+    }
+    row.actualEntity = String(ForgeRegistries.ENTITY_TYPES.getKey(model.type()))
+    let mapped = registry.getForEntity(ForgeRegistries.ENTITY_TYPES.getValue(entityId))
+    row.attunementModelId = mapped == null ? null : String(registry.getKey(mapped))
+    row.blankAttunementMappingAvailable = rightClickToAttune && blankRegistered && row.attunementModelId === spec.id
+    row.holderBound = registry.holder(modelId).isBound()
+    row.simCost = Number(model.simCost())
+    row.input = expeditionIronsHnnStack(model.input())
+    row.baseDrop = expeditionIronsHnnStack(model.baseDrop())
+    let expectedInput = expeditionIronsHnnExpectedStack(spec.input, 'hostilenetworks:prediction_matrix')
+    let expectedBaseDrop = expeditionIronsHnnExpectedStack(spec.base_drop, 'hostilenetworks:overworld_prediction')
+    row.inputRegistered = ForgeRegistries.ITEMS.containsKey(new ExpeditionIronsHnnLocation(row.input.item)) && !model.input().isEmpty()
+    row.baseDropRegistered = ForgeRegistries.ITEMS.containsKey(new ExpeditionIronsHnnLocation(row.baseDrop.item)) && !model.baseDrop().isEmpty()
+    if (row.actualEntity !== spec.entity || !row.blankAttunementMappingAvailable || !row.holderBound) {
+      failures.push({kind: 'model_entity_mapping', id: spec.id, actualEntity: row.actualEntity,
+        expectedEntity: spec.entity, attunementModelId: row.attunementModelId, holderBound: row.holderBound})
+    }
+    if (row.simCost !== Number(spec.sim_cost) || !row.inputRegistered || !row.baseDropRegistered ||
+        !expeditionIronsHnnSameStack(row.input, expectedInput) || !expeditionIronsHnnSameStack(row.baseDrop, expectedBaseDrop)) {
+      failures.push({kind: 'simulation_parameters', id: spec.id, actualCost: row.simCost,
+        expectedCost: spec.sim_cost, input: row.input, expectedInput: expectedInput,
+        baseDrop: row.baseDrop, expectedBaseDrop: expectedBaseDrop,
+        inputRegistered: row.inputRegistered, baseDropRegistered: row.baseDropRegistered})
+    }
+    row.fabricatorDrops = []
+    let drops = model.fabDrops()
+    let expectedDrops = spec.fabricator_drops
+    if (!Array.isArray(expectedDrops) || expectedDrops.length === 0) throw new Error('Missing expected drops for ' + spec.id)
+    if (drops.size() !== expectedDrops.length) {
+      failures.push({kind: 'fabricator_drop_count', id: spec.id, actual: drops.size(), expected: expectedDrops.length})
+    }
+    for (let i = 0; i < drops.size(); i++) {
+      let stack = drops.get(i)
+      let actual = expeditionIronsHnnStack(stack)
+      let registered = ForgeRegistries.ITEMS.containsKey(new ExpeditionIronsHnnLocation(actual.item)) && !stack.isEmpty()
+      let expected = i < expectedDrops.length ? expeditionIronsHnnExpectedStack(expectedDrops[i], '') : null
+      row.fabricatorDrops.push({item: actual.item, count: actual.count, registered: registered})
+      if (!registered || expected == null || !expeditionIronsHnnSameStack(actual, expected)) {
+        failures.push({kind: 'fabricator_drop', id: spec.id, index: i, actual: actual,
+          expected: expected, registered: registered})
+      }
+    }
+  })
+  let report = {schemaVersion: 1, checkedAtEpochMs: Date.now(), attempt: expeditionIronsHnnAuditAttempts,
+    expectedModelCount: config.models.length, registeredModelCount: registry.getKeys().size(),
+    rightClickToAttune: rightClickToAttune, blankItemRegistered: blankRegistered,
+    models: rows, failures: failures, passed: failures.length === 0,
+    verificationScope: 'Runtime registry, entity-to-model attunement mapping, simulation inputs/cost and fabricator drops; no player interaction or machine operation performed.'}
+  JsonIO.write('kubejs/exported/expedition-irons-hnn-audit.json', report)
+  console.info('[Irons HNN Audit] passed=' + report.passed + ', models=' + rows.length + ', failures=' + failures.length)
+  return report.passed
+}
+
+function expeditionQueueIronsHnnAudit() {
+  expeditionIronsHnnAuditAttempts = 0
+  expeditionIronsHnnAuditCountdown = 80
+}
+ServerEvents.loaded(event => expeditionQueueIronsHnnAudit())
+ServerEvents.afterRecipes(event => expeditionQueueIronsHnnAudit())
+ServerEvents.tick(event => {
+  if (expeditionIronsHnnAuditCountdown < 0) return
+  if (expeditionIronsHnnAuditCountdown-- > 0) return
+  expeditionIronsHnnAuditAttempts++
+  try {
+    let passed = expeditionAuditIronsHnn()
+    expeditionIronsHnnAuditCountdown = !passed && expeditionIronsHnnAuditAttempts < 3 ? 80 : -1
+  } catch (error) {
+    JsonIO.write('kubejs/exported/expedition-irons-hnn-audit.json', {
+      schemaVersion: 1, checkedAtEpochMs: Date.now(), passed: false,
+      attempt: expeditionIronsHnnAuditAttempts,
+      failures: [{kind: 'audit_exception', error: String(error)}]
+    })
+    console.error('[Irons HNN Audit] passed=false, error=' + error)
+    expeditionIronsHnnAuditCountdown = expeditionIronsHnnAuditAttempts < 3 ? 80 : -1
+  }
+})

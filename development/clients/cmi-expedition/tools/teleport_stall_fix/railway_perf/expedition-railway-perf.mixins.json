@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "expedition.teleport.railwayperf.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": ["RoutePlannerHeightCacheMixin", "AdaptiveHeightSamplerBudgetMixin"],
+  "injectors": {"defaultRequire": 1}
+}

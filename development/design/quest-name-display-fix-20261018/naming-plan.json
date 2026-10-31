@@ -1,0 +1,2450 @@
+{
+  "schemaVersion": 1,
+  "kind": "missing-main-quest-title-naming-plan",
+  "createdAt": "2026-10-18T11:09:42.580076+00:00",
+  "titleOnly": true,
+  "formalFilesModified": false,
+  "preserveAllSubtitlesIncludingJokes": true,
+  "preserveDescriptionsAndTaskSemantics": true,
+  "sourceFiles": {
+    "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json": "5b8e29e73136d32ce78c3df1c8e231d918e4668a640a22b4649d9640fb9fd5b5",
+    "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/manifest.json": "9d3d48087e8d0d889e7388a27309f95e0b5cf23545b11d8018fccc9680c878c4",
+    "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Items.js": "cf41d81625066fa1ccb01a20ce086590292a16b14a0052a71bc6c0ad8a32817e",
+    "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js": "94333bcb18916ec4a9e5c4e6385b684e25392fff10c8d87a1788f5033a8e8e5e",
+    "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mechanisms.js": "638e68cbca5c92ae43f509b7bff719226fa21eb9961b15ad30de88921c3b9ae7",
+    "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mbd2.js": "8e3a1c8a63a82e2e29ad6ef52b0d60a18f9e6d4895c453140eab4e79c2d96d32",
+    "servers/cmi-expedition/instance/mods/ImmersiveEngineering-1.20.1-10.2.0-183.jar": "061dd0e8e066dc39277736d5607a47a18fee4aff428de3363882f96e5c405aaa",
+    "servers/cmi-expedition/instance/mods/ImmersiveIndustry-1.20.1-0.2.4.jar": "c0363b0a8e0ba440ddffb7c354d005efa3f8a016d281e28486d5a835bc61095e",
+    "servers/cmi-expedition/instance/mods/create-1.20.1-6.0.8.jar": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+    "servers/cmi-expedition/instance/mods/ThermalExtra-3.3.3-1.20.1.jar": "d2563a89f15847637bad72bc219c9c9329c3a66b7151fd1bef46bf3313bd05ff",
+    "servers/cmi-expedition/instance/mods/vintageimprovements-1.20.1-0.3.7.9.jar": "f94c75ac1c09146c78c2273c4c91809f60520a81bd03043465a6bde6cd953da2",
+    "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+    "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+    "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832"
+  },
+  "rows": [
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "6BA8D6727D497F84",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "铁路构件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:railway_mechanism",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 7948,
+        "jeiKey": "item|cmi:railway_mechanism",
+        "jeiObservedName": "铁路构件",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mechanisms.js",
+          "line": 71,
+          "helperLine": 17,
+          "appliedLines": [
+            98,
+            102
+          ],
+          "translationKey": "item.cmi.railway_mechanism",
+          "value": "铁路构件"
+        },
+        "sourceQuestIndex": 2,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "25B06B6489D3FB78",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "致密坚固板",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "64F12B529477C62C",
+        "taskType": "item",
+        "existingTaskTitle": "致密坚固板",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:plates/dense_obsidian"
+          }
+        },
+        "sourceQuestIndex": 3,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "2FE21275DACCE692",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "坚固板",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "2F61B9E8D79DAE69",
+        "taskType": "item",
+        "existingTaskTitle": "坚固板",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:plates/obsidian"
+          }
+        },
+        "sourceQuestIndex": 4,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "2E72074B83610585",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "汽鸣铁道",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "4AD5422AE72805BE",
+        "taskType": "checkmark",
+        "existingTaskTitle": "汽鸣铁道",
+        "sourceQuestIndex": 5,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "7C2BCD18D1BCEEC9",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "列车时刻表",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "create:schedule",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 30237,
+        "jeiKey": "item|create:schedule",
+        "jeiObservedName": "列车时刻表",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/create-1.20.1-6.0.8.jar",
+          "member": "assets/create/lang/zh_cn.json",
+          "memberSHA256": "ec45f580827c618998a8da1a1d6c02c4651f3aa9437a8bd8285871bd91018f80",
+          "translationKey": "item.create.schedule",
+          "value": "列车时刻表"
+        },
+        "sourceQuestIndex": 7,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "5BB078BA5116FE68",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "青铜构件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:bronze_mechanism",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 7947,
+        "jeiKey": "item|cmi:bronze_mechanism",
+        "jeiObservedName": "蒸汽构件",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mechanisms.js",
+          "line": 93,
+          "helperLine": 17,
+          "appliedLines": [
+            98,
+            102
+          ],
+          "translationKey": "item.cmi.bronze_mechanism",
+          "value": "青铜构件"
+        },
+        "nameDifference": "当前明确KubeJS中文语言名优先；JEI为既有快照旧显示名，物品ID不变。",
+        "sourceQuestIndex": 9,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "667B8EFCF3ACD51D",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "前往下界维度",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "6421E2122AF59746",
+        "taskType": "dimension",
+        "existingTaskTitle": "前往下界维度",
+        "dimension": "minecraft:the_nether",
+        "sourceQuestIndex": 13,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "4A19D6FEC975D2B9",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "下界构件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:nether_mechanism",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 7942,
+        "jeiKey": "item|cmi:nether_mechanism",
+        "jeiObservedName": "下界构件",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mechanisms.js",
+          "line": 88,
+          "helperLine": 17,
+          "appliedLines": [
+            98,
+            102
+          ],
+          "translationKey": "item.cmi.nether_mechanism",
+          "value": "下界构件"
+        },
+        "sourceQuestIndex": 16,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "04004B46385E2AF2",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "烈焰人燃烧室",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "create:blaze_burner",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 16804,
+        "jeiKey": "item|create:blaze_burner",
+        "jeiObservedName": "烈焰人燃烧室",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/create-1.20.1-6.0.8.jar",
+          "member": "assets/create/lang/zh_cn.json",
+          "memberSHA256": "ec45f580827c618998a8da1a1d6c02c4651f3aa9437a8bd8285871bd91018f80",
+          "translationKey": "block.create.blaze_burner",
+          "value": "烈焰人燃烧室"
+        },
+        "sourceQuestIndex": 18,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "354FD58AE7B802BC",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "硫粉",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "680C74AB729DB665",
+        "taskType": "item",
+        "existingTaskTitle": "硫粉",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:dusts/sulfur"
+          }
+        },
+        "sourceQuestIndex": 20,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "78250BAEED3506BA",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "压缩机",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "vintageimprovements:vacuum_chamber",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 6835,
+        "jeiKey": "item|vintageimprovements:vacuum_chamber",
+        "jeiObservedName": "压缩机",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/vintageimprovements-1.20.1-0.3.7.9.jar",
+          "member": "assets/vintageimprovements/lang/zh_cn.json",
+          "memberSHA256": "990539cc0a7c2f8c280a5a0808825a8ce8df426ae19dfea1657907a540560207",
+          "translationKey": "block.vintageimprovements.vacuum_chamber",
+          "value": "压缩机"
+        },
+        "sourceQuestIndex": 21,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "4C2F1D5F0FAA50F3",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "熔融硫化橡胶桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:cured_rubber_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27167,
+        "jeiKey": "item|cmi:cured_rubber_bucket",
+        "jeiObservedName": "熔融硫化橡胶桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 18,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.cured_rubber_bucket",
+          "value": "熔融硫化橡胶桶"
+        },
+        "sourceQuestIndex": 22,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "74A6E21C20513CEE",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "硫化橡胶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "thermal:cured_rubber",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 20849,
+        "jeiKey": "item|thermal:cured_rubber",
+        "jeiObservedName": "硫化橡胶",
+        "sourceQuestIndex": 23,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "7FDB7DDAD23BB4C1",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "高级焦炉",
+      "basis": {
+        "kind": "existing_icon_primary_item_for_multi_target_goal",
+        "itemId": "cmi:reinforced_coke_oven",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 8009,
+        "jeiKey": "item|cmi:reinforced_coke_oven",
+        "jeiObservedName": "高级焦炉",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mbd2.js",
+          "line": 34,
+          "helperLine": 8,
+          "translationKey": "block.cmi.reinforced_coke_oven",
+          "value": "高级焦炉"
+        },
+        "taskCount": 5,
+        "otherTaskTargetsRetained": true,
+        "sourceQuestIndex": 25,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "steam_railway.snbt",
+      "questId": "6859E72B22446793",
+      "beforehash": "6beae6d912cdcd133088a551921771224ac54cdd4e7b421c36f163c39de83533",
+      "proposedTitle": "黄铜流体管道",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "ad_astra:desh_fluid_pipe",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 7429,
+        "jeiKey": "item|ad_astra:desh_fluid_pipe",
+        "jeiObservedName": "黄铜流体管道",
+        "sourceQuestIndex": 26,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/steam_railway.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "662A1304331857B0",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "线圈构件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:coil_mechanism",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 7949,
+        "jeiKey": "item|cmi:coil_mechanism",
+        "jeiObservedName": "线圈构件",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mechanisms.js",
+          "line": 84,
+          "helperLine": 17,
+          "appliedLines": [
+            98,
+            102
+          ],
+          "translationKey": "item.cmi.coil_mechanism",
+          "value": "线圈构件"
+        },
+        "sourceQuestIndex": 0,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "534E0D3A9FB9955E",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "电动机转子",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:motor_rotor",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 26664,
+        "jeiKey": "item|cmi:motor_rotor",
+        "jeiObservedName": "电动机转子",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Items.js",
+          "line": 178,
+          "helperLine": 7,
+          "translationKey": "item.cmi.motor_rotor",
+          "value": "电动机转子"
+        },
+        "sourceQuestIndex": 1,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "7C2DCC26298ACC51",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "熔融铅桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "tconstruct:molten_lead_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 13795,
+        "jeiKey": "item|tconstruct:molten_lead_bucket",
+        "jeiObservedName": "熔融铅桶",
+        "sourceQuestIndex": 5,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "1EF0004B28066AF0",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "红石粉",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "14D503AC6E5D88B8",
+        "taskType": "item",
+        "existingTaskTitle": "红石粉",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:dusts/redstone"
+          }
+        },
+        "sourceQuestIndex": 6,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "68A82E2E7552EF90",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "真空管",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "immersiveengineering:electron_tube",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 21092,
+        "jeiKey": "item|immersiveengineering:electron_tube",
+        "jeiObservedName": "真空管",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/ImmersiveEngineering-1.20.1-10.2.0-183.jar",
+          "member": "assets/immersiveengineering/lang/zh_cn.json",
+          "memberSHA256": "3f248178df00547bea90517960c256c51c7ff07e90589094549ec2f4ee6a93e8",
+          "translationKey": "item.immersiveengineering.electron_tube",
+          "value": "真空管"
+        },
+        "sourceQuestIndex": 8,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "27A9E301280210E8",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "琥珀金板",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "01561824A41E7C8E",
+        "taskType": "item",
+        "existingTaskTitle": "琥珀金板",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:plates/electrum"
+          }
+        },
+        "sourceQuestIndex": 9,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "66F1898DB743301D",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "镍锭",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "49ABD38B1A997B63",
+        "taskType": "item",
+        "existingTaskTitle": "镍锭",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:ingots/nickel"
+          }
+        },
+        "sourceQuestIndex": 10,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "14470BD1A85DE01D",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "工程构件零件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:engineering_mechanism_part",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 32125,
+        "jeiKey": "item|cmi:engineering_mechanism_part",
+        "jeiObservedName": "工程构件零件",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mechanisms.js",
+          "line": 54,
+          "helperLine": 46,
+          "translationKey": "item.cmi.engineering_mechanism_part",
+          "value": "工程构件零件"
+        },
+        "sourceQuestIndex": 11,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "6CCEECDF932F5041",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "康铜锭",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "3FD660B699767BA7",
+        "taskType": "item",
+        "existingTaskTitle": "康铜锭",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:ingots/constantan"
+          }
+        },
+        "sourceQuestIndex": 12,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "541572E2CD225DD7",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "钒锭",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "2D97AE6C82E2AAF2",
+        "taskType": "item",
+        "existingTaskTitle": "钒锭",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:ingots/vanadium"
+          }
+        },
+        "sourceQuestIndex": 15,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "1B38A75357F7EF12",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "玫瑰石英",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "create:rose_quartz",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 30287,
+        "jeiKey": "item|create:rose_quartz",
+        "jeiObservedName": "玫瑰石英",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/create-1.20.1-6.0.8.jar",
+          "member": "assets/create/lang/zh_cn.json",
+          "memberSHA256": "ec45f580827c618998a8da1a1d6c02c4651f3aa9437a8bd8285871bd91018f80",
+          "translationKey": "item.create.rose_quartz",
+          "value": "玫瑰石英"
+        },
+        "sourceQuestIndex": 16,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "20227AC2A1D37ED9",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "纯净石英粉",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "5FF7D62CA37AC933",
+        "taskType": "item",
+        "existingTaskTitle": "纯净石英粉",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:dusts/pure_quartz"
+          }
+        },
+        "sourceQuestIndex": 17,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "4D6A6FE3DAF7BBB8",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "石英粉",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "142A07EDE8031266",
+        "taskType": "item",
+        "existingTaskTitle": "石英粉",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:dusts/quartz"
+          }
+        },
+        "sourceQuestIndex": 18,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "12610CFD86470A7D",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "纯净沙桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:pure_sand_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27171,
+        "jeiKey": "item|cmi:pure_sand_bucket",
+        "jeiObservedName": "纯净沙桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 15,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.pure_sand_bucket",
+          "value": "纯净沙桶"
+        },
+        "sourceQuestIndex": 19,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "343FF83E544BCB9D",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "石英",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "076D552EC1F0CCAE",
+        "taskType": "item",
+        "existingTaskTitle": "石英",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:gems/quartz"
+          }
+        },
+        "sourceQuestIndex": 20,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "597C6E45B2C2B855",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "沙子",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "206625DAF8971359",
+        "taskType": "item",
+        "existingTaskTitle": "沙子",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:sand"
+          }
+        },
+        "sourceQuestIndex": 21,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "44F9F9937CF8A987",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "感光构件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:photosensitive_mechanism",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 7955,
+        "jeiKey": "item|cmi:photosensitive_mechanism",
+        "jeiObservedName": "感光构件",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mechanisms.js",
+          "line": 66,
+          "helperLine": 17,
+          "appliedLines": [
+            98,
+            102
+          ],
+          "translationKey": "item.cmi.photosensitive_mechanism",
+          "value": "感光构件"
+        },
+        "sourceQuestIndex": 22,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "3E77FFA67682D3E5",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "磨制玫瑰石英",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "create:polished_rose_quartz",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 30288,
+        "jeiKey": "item|create:polished_rose_quartz",
+        "jeiObservedName": "磨制玫瑰石英",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/create-1.20.1-6.0.8.jar",
+          "member": "assets/create/lang/zh_cn.json",
+          "memberSHA256": "ec45f580827c618998a8da1a1d6c02c4651f3aa9437a8bd8285871bd91018f80",
+          "translationKey": "item.create.polished_rose_quartz",
+          "value": "磨制玫瑰石英"
+        },
+        "sourceQuestIndex": 23,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "095B15FB9AA8B9AB",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "电子管",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "create:electron_tube",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 30295,
+        "jeiKey": "item|create:electron_tube",
+        "jeiObservedName": "电子管",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/create-1.20.1-6.0.8.jar",
+          "member": "assets/create/lang/zh_cn.json",
+          "memberSHA256": "ec45f580827c618998a8da1a1d6c02c4651f3aa9437a8bd8285871bd91018f80",
+          "translationKey": "item.create.electron_tube",
+          "value": "电子管"
+        },
+        "sourceQuestIndex": 24,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "1570B04A1D692BCC",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "精密构件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "create:precision_mechanism",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 7969,
+        "jeiKey": "item|create:precision_mechanism",
+        "jeiObservedName": "精密构件",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/create-1.20.1-6.0.8.jar",
+          "member": "assets/create/lang/zh_cn.json",
+          "memberSHA256": "ec45f580827c618998a8da1a1d6c02c4651f3aa9437a8bd8285871bd91018f80",
+          "translationKey": "item.create.precision_mechanism",
+          "value": "精密构件"
+        },
+        "sourceQuestIndex": 25,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "2E5B74230C1BCE67",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "大齿轮(半成品)",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "01361B7E9E043C9C",
+        "taskType": "item",
+        "existingTaskTitle": "大齿轮(半成品)",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "create:incomplete_large_cogwheels"
+          }
+        },
+        "sourceQuestIndex": 26,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "5BE72CC5C35C3BF0",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "银锭",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "191124021833D620",
+        "taskType": "item",
+        "existingTaskTitle": "银锭",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:ingots/silver"
+          }
+        },
+        "sourceQuestIndex": 27,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "precision_component.snbt",
+      "questId": "0FD5009A9709ACE5",
+      "beforehash": "30a86e692aa4652566a93df13e2bb65a11604c24fd313a4ead9b9c6b8aad1dcd",
+      "proposedTitle": "金锭",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "21E0C29ECEA2CB6E",
+        "taskType": "item",
+        "existingTaskTitle": "金锭",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:ingots/gold"
+          }
+        },
+        "sourceQuestIndex": 28,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/precision_component.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "16B82E736AC7FDCE",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "铝土",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "17C274929566069F",
+        "taskType": "item",
+        "existingTaskTitle": "铝土",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:raw_materials/aluminum"
+          }
+        },
+        "sourceQuestIndex": 0,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "3709AF32680BD5CD",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "铝粉",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "78FB17A77B69DE5D",
+        "taskType": "item",
+        "existingTaskTitle": "铝粉",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:dusts/aluminum"
+          }
+        },
+        "sourceQuestIndex": 1,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "2849DC36ACEA7681",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "简易电解槽",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "immersiveindustry:electrolyzer",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 6802,
+        "jeiKey": "item|immersiveindustry:electrolyzer",
+        "jeiObservedName": "简易电解槽",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/ImmersiveIndustry-1.20.1-0.2.4.jar",
+          "member": "assets/immersiveindustry/lang/zh_cn.json",
+          "memberSHA256": "50bcb079e99ea8e4e0ba5f745b2005fa6a846080b493080f62e1693276a88788",
+          "translationKey": "block.immersiveindustry.electrolyzer",
+          "value": "简易电解槽"
+        },
+        "sourceQuestIndex": 2,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "4FB2832A045C402D",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "部件装配机",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "thermal_extra:component_assembly",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 9314,
+        "jeiKey": "item|thermal_extra:component_assembly",
+        "jeiObservedName": "部件装配机",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/ThermalExtra-3.3.3-1.20.1.jar",
+          "member": "assets/thermal_extra/lang/zh_cn.json",
+          "memberSHA256": "64d81ed2552088e7e3e56a0614391384251807ff8142edbbf7b0212d9019d153",
+          "translationKey": "block.thermal_extra.component_assembly",
+          "value": "部件装配机"
+        },
+        "sourceQuestIndex": 4,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "16854FB39C805578",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "热力构件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:thermal_mechanism",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 7956,
+        "jeiKey": "item|cmi:thermal_mechanism",
+        "jeiObservedName": "热力构件",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mechanisms.js",
+          "line": 69,
+          "helperLine": 17,
+          "appliedLines": [
+            98,
+            102
+          ],
+          "translationKey": "item.cmi.thermal_mechanism",
+          "value": "热力构件"
+        },
+        "sourceQuestIndex": 5,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "3B5279119699AECC",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "热力构件组件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:thermal_mechanism_augment",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 26579,
+        "jeiKey": "item|cmi:thermal_mechanism_augment",
+        "jeiObservedName": "热力构件组件",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mechanisms.js",
+          "line": 69,
+          "helperLine": 28,
+          "appliedLines": [
+            98,
+            102
+          ],
+          "translationKey": "item.cmi.thermal_mechanism_augment",
+          "value": "热力构件组件"
+        },
+        "sourceQuestIndex": 7,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "4A054CCC2FFE7258",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "康铜齿轮",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "0AC4FD56241818FE",
+        "taskType": "item",
+        "existingTaskTitle": "康铜齿轮",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:gears/constantan"
+          }
+        },
+        "sourceQuestIndex": 8,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "3CDC0B1303B8785C",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "红石伺服器",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "thermal:redstone_servo",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 20861,
+        "jeiKey": "item|thermal:redstone_servo",
+        "jeiObservedName": "红石伺服器",
+        "sourceQuestIndex": 9,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "490BA0C159C3FF63",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "红石通量线圈",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "thermal:rf_coil",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 20863,
+        "jeiKey": "item|thermal:rf_coil",
+        "jeiObservedName": "红石通量线圈",
+        "sourceQuestIndex": 10,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "1CE6C98F16861ADB",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "钒板",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "6050878AEAB2DED8",
+        "taskType": "item",
+        "existingTaskTitle": "钒板",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:plates/vanadium"
+          }
+        },
+        "sourceQuestIndex": 11,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "68D40E9E67F5C986",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "结晶器",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "thermal:machine_crystallizer",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 20810,
+        "jeiKey": "item|thermal:machine_crystallizer",
+        "jeiObservedName": "结晶器",
+        "sourceQuestIndex": 12,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "6A57D13406E9D6AA",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "纯净石英",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "23ACB513D4F55A08",
+        "taskType": "item",
+        "existingTaskTitle": "纯净石英",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:prisms/pure_quartz"
+          }
+        },
+        "sourceQuestIndex": 13,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "19422BB1CF729FC7",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "晶体催生剂桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:crystal_catalyt_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27177,
+        "jeiKey": "item|cmi:crystal_catalyt_bucket",
+        "jeiObservedName": "晶体催生剂桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 38,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.crystal_catalyt_bucket",
+          "value": "晶体催生剂桶"
+        },
+        "sourceQuestIndex": 14,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "0468B914C2718A62",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "纯净石英粉",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "6F0ABC73BE8C8319",
+        "taskType": "item",
+        "existingTaskTitle": "纯净石英粉",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:dusts/pure_quartz"
+          }
+        },
+        "sourceQuestIndex": 15,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "7986071E20EEF73C",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "二极管",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "thermal:laser_diode",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 20862,
+        "jeiKey": "item|thermal:laser_diode",
+        "jeiObservedName": "二极管",
+        "sourceQuestIndex": 16,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "6E87F1A6C2A966BD",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "电子元件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "immersiveengineering:component_electronic",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 21074,
+        "jeiKey": "item|immersiveengineering:component_electronic",
+        "jeiObservedName": "电子元件",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/ImmersiveEngineering-1.20.1-10.2.0-183.jar",
+          "member": "assets/immersiveengineering/lang/zh_cn.json",
+          "memberSHA256": "3f248178df00547bea90517960c256c51c7ff07e90589094549ec2f4ee6a93e8",
+          "translationKey": "item.immersiveengineering.component_electronic",
+          "value": "电子元件"
+        },
+        "sourceQuestIndex": 17,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "79461202D5061059",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "轻型工程构件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:light_engineering_mechanism",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 7950,
+        "jeiKey": "item|cmi:light_engineering_mechanism",
+        "jeiObservedName": "轻型工程构件",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mechanisms.js",
+          "line": 73,
+          "helperLine": 17,
+          "appliedLines": [
+            98,
+            102
+          ],
+          "translationKey": "item.cmi.light_engineering_mechanism",
+          "value": "轻型工程构件"
+        },
+        "sourceQuestIndex": 18,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "6B467317FA711CD2",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "铁机械零件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "immersiveengineering:component_iron",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 21072,
+        "jeiKey": "item|immersiveengineering:component_iron",
+        "jeiObservedName": "铁机械零件",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/ImmersiveEngineering-1.20.1-10.2.0-183.jar",
+          "member": "assets/immersiveengineering/lang/zh_cn.json",
+          "memberSHA256": "3f248178df00547bea90517960c256c51c7ff07e90589094549ec2f4ee6a93e8",
+          "translationKey": "item.immersiveengineering.component_iron",
+          "value": "铁机械零件"
+        },
+        "sourceQuestIndex": 19,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "042CA25C2CE9F78C",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "轻型工程构件组件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:light_engineering_mechanism_augment",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 26576,
+        "jeiKey": "item|cmi:light_engineering_mechanism_augment",
+        "jeiObservedName": "轻型工程构件组件",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mechanisms.js",
+          "line": 73,
+          "helperLine": 28,
+          "appliedLines": [
+            98,
+            102
+          ],
+          "translationKey": "item.cmi.light_engineering_mechanism_augment",
+          "value": "轻型工程构件组件"
+        },
+        "sourceQuestIndex": 20,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "7AADB534F537AA83",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "钢锭",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "648D76926B4351AD",
+        "taskType": "item",
+        "existingTaskTitle": "钢锭",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:ingots/steel"
+          }
+        },
+        "sourceQuestIndex": 23,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "3B2F46F5F77D366F",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "熔融钢桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "tconstruct:molten_steel_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 13781,
+        "jeiKey": "item|tconstruct:molten_steel_bucket",
+        "jeiObservedName": "熔融钢桶",
+        "sourceQuestIndex": 24,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "6DB900D5F5AF7298",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "精炼铁方坯",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:refined_iron_bloom",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 26788,
+        "jeiKey": "item|cmi:refined_iron_bloom",
+        "jeiObservedName": "精炼铁方坯",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Items.js",
+          "line": 56,
+          "helperLine": 7,
+          "translationKey": "item.cmi.refined_iron_bloom",
+          "value": "精炼铁方坯"
+        },
+        "sourceQuestIndex": 25,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "3279F199633ED633",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "石灰粉",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "66AA5B5E01D903D7",
+        "taskType": "item",
+        "existingTaskTitle": "石灰粉",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:dusts/lime"
+          }
+        },
+        "sourceQuestIndex": 26,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "0CCAD3D0E6741560",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "石灰石",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "204B1E7083C1DC84",
+        "taskType": "item",
+        "existingTaskTitle": "石灰石",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:or",
+          "tag": {
+            "items": [
+              {
+                "Count": 1,
+                "id": "itemfilters:tag",
+                "tag": {
+                  "value": "create:stone_types/limestone"
+                }
+              },
+              {
+                "Count": 1,
+                "id": "minecraft:pointed_dripstone"
+              }
+            ]
+          }
+        },
+        "sourceQuestIndex": 27,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "7E4CDE7C3CBA9410",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "压缩机",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "vintageimprovements:vacuum_chamber",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 6835,
+        "jeiKey": "item|vintageimprovements:vacuum_chamber",
+        "jeiObservedName": "压缩机",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/vintageimprovements-1.20.1-0.3.7.9.jar",
+          "member": "assets/vintageimprovements/lang/zh_cn.json",
+          "memberSHA256": "990539cc0a7c2f8c280a5a0808825a8ce8df426ae19dfea1657907a540560207",
+          "translationKey": "block.vintageimprovements.vacuum_chamber",
+          "value": "压缩机"
+        },
+        "sourceQuestIndex": 28,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "037CEC7A15BC0B2F",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "铸铁",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "4DCEE1A96D9C8974",
+        "taskType": "item",
+        "existingTaskTitle": "铸铁",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:or",
+          "tag": {
+            "items": [
+              {
+                "Count": 1,
+                "id": "itemfilters:tag",
+                "tag": {
+                  "value": "forge:ingots/cast_iron"
+                }
+              },
+              {
+                "Count": 1,
+                "id": "itemfilters:tag",
+                "tag": {
+                  "value": "forge:dusts/cast_iron"
+                }
+              }
+            ]
+          }
+        },
+        "sourceQuestIndex": 29,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "0FA1A601134C5105",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "焦煤粉",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "1C5ADED58164F7A9",
+        "taskType": "item",
+        "existingTaskTitle": "焦煤粉",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:dusts/coal_coke"
+          }
+        },
+        "sourceQuestIndex": 30,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "44580C9FC3A043D2",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "琥珀金",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "0D8C5A4E33CCFCE9",
+        "taskType": "item",
+        "existingTaskTitle": "琥珀金",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:ingots/electrum"
+          }
+        },
+        "sourceQuestIndex": 34,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "1C57F09A72DA8E22",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "琥珀金线轴",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "createaddition:electrum_spool",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 16817,
+        "jeiKey": "item|createaddition:electrum_spool",
+        "jeiObservedName": "琥珀金线轴",
+        "sourceQuestIndex": 35,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "6A3204F0275C1DEA",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "逻辑处理器",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "ae2:logic_processor",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 28727,
+        "jeiKey": "item|ae2:logic_processor",
+        "jeiObservedName": "逻辑处理器",
+        "sourceQuestIndex": 36,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "721C20E88A98122E",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "高定向热解石墨锭",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "1E82041A14AC257D",
+        "taskType": "item",
+        "existingTaskTitle": "高定向热解石墨锭",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:ingots/hop_graphite"
+          }
+        },
+        "sourceQuestIndex": 37,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "430B1B3285C99CD3",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "高定向热解石墨粉",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "01D4DC16E9365AFC",
+        "taskType": "item",
+        "existingTaskTitle": "高定向热解石墨粉",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:dusts/hop_graphite"
+          }
+        },
+        "sourceQuestIndex": 38,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "54B7DF3F4B9BD3A4",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "智能构件",
+      "basis": {
+        "kind": "existing_icon_primary_item_for_multi_target_goal",
+        "itemId": "cmi:smart_mechanism",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 7952,
+        "jeiKey": "item|cmi:smart_mechanism",
+        "jeiObservedName": "智能构件",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mechanisms.js",
+          "line": 76,
+          "helperLine": 17,
+          "appliedLines": [
+            98,
+            102
+          ],
+          "translationKey": "item.cmi.smart_mechanism",
+          "value": "智能构件"
+        },
+        "taskCount": 2,
+        "otherTaskTargetsRetained": true,
+        "sourceQuestIndex": 40,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "7FE4DF4D3DC699B1",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "银齿轮",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "082396FFAEE8722C",
+        "taskType": "item",
+        "existingTaskTitle": "银齿轮",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:gears/silver"
+          }
+        },
+        "sourceQuestIndex": 41,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "050A77C0A80CFE30",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "硅板",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "65534F07EFC45AEF",
+        "taskType": "item",
+        "existingTaskTitle": "硅板",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:plates/silicon"
+          }
+        },
+        "sourceQuestIndex": 42,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "59831FBE15050279",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "硅",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "5AD0128863855339",
+        "taskType": "item",
+        "existingTaskTitle": "硅",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:silicon"
+          }
+        },
+        "sourceQuestIndex": 43,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "2C9E29DF253C975B",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "控制芯片",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "create_connected:control_chip",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 32563,
+        "jeiKey": "item|create_connected:control_chip",
+        "jeiObservedName": "控制芯片",
+        "sourceQuestIndex": 44,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "6095C38E6A48D0AE",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "智能构件组件",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:smart_mechanism_augment",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 26578,
+        "jeiKey": "item|cmi:smart_mechanism_augment",
+        "jeiObservedName": "智能构件组件",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Mechanisms.js",
+          "line": 76,
+          "helperLine": 28,
+          "appliedLines": [
+            98,
+            102
+          ],
+          "translationKey": "item.cmi.smart_mechanism_augment",
+          "value": "智能构件组件"
+        },
+        "sourceQuestIndex": 45,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "38BB8180763D8FB1",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "石墨电极",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "immersiveengineering:graphite_electrode",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 21213,
+        "jeiKey": "item|immersiveengineering:graphite_electrode",
+        "jeiObservedName": "石墨电极",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/ImmersiveEngineering-1.20.1-10.2.0-183.jar",
+          "member": "assets/immersiveengineering/lang/zh_cn.json",
+          "memberSHA256": "3f248178df00547bea90517960c256c51c7ff07e90589094549ec2f4ee6a93e8",
+          "translationKey": "item.immersiveengineering.graphite_electrode",
+          "value": "石墨电极"
+        },
+        "sourceQuestIndex": 47,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "00C55399CC674B4A",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "流体精炼机",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "thermal:machine_refinery",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 20806,
+        "jeiKey": "item|thermal:machine_refinery",
+        "jeiObservedName": "流体精炼机",
+        "sourceQuestIndex": 48,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "7CE3BF3F7F7FC1D9",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "原油桶",
+      "basis": {
+        "kind": "existing_icon_primary_item_for_multi_target_goal",
+        "itemId": "createdieselgenerators:crude_oil_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 5101,
+        "jeiKey": "item|createdieselgenerators:crude_oil_bucket",
+        "jeiObservedName": "原油桶",
+        "taskCount": 2,
+        "otherTaskTargetsRetained": true,
+        "sourceQuestIndex": 49,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "7686008595B8C539",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "重油桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "thermal:heavy_oil_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 21042,
+        "jeiKey": "item|thermal:heavy_oil_bucket",
+        "jeiObservedName": "重油桶",
+        "sourceQuestIndex": 51,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "16FAD51B29F98F9A",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "润滑油桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "thermal_extra:lubricant_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 9492,
+        "jeiKey": "item|thermal_extra:lubricant_bucket",
+        "jeiObservedName": "润滑油桶",
+        "sourceQuestIndex": 52,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "25726C8061FF0AB3",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "汽油桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "createdieselgenerators:gasoline_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 5104,
+        "jeiKey": "item|createdieselgenerators:gasoline_bucket",
+        "jeiObservedName": "汽油桶",
+        "sourceQuestIndex": 53,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "11B2066810421699",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "含硫柴油桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:sulfric_diesel_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27123,
+        "jeiKey": "item|cmi:sulfric_diesel_bucket",
+        "jeiObservedName": "含硫柴油桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 32,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.sulfric_diesel_bucket",
+          "value": "含硫柴油桶"
+        },
+        "sourceQuestIndex": 54,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "2916D3E15559DF0C",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "煤油桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:kerosene_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27122,
+        "jeiKey": "item|cmi:kerosene_bucket",
+        "jeiObservedName": "煤油桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 22,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.kerosene_bucket",
+          "value": "煤油桶"
+        },
+        "sourceQuestIndex": 55,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "55A9C7A7B27A8822",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "硫粉",
+      "basis": {
+        "kind": "existing_chinese_task_title",
+        "taskId": "22F3ED8D9B1F7F29",
+        "taskType": "item",
+        "existingTaskTitle": "硫粉",
+        "unchangedItemOrFilter": {
+          "Count": 1,
+          "id": "itemfilters:tag",
+          "tag": {
+            "value": "forge:dusts/sulfur"
+          }
+        },
+        "sourceQuestIndex": 56,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "19F77A03547567E0",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "柴油桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "createdieselgenerators:diesel_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 5103,
+        "jeiKey": "item|createdieselgenerators:diesel_bucket",
+        "jeiObservedName": "柴油桶",
+        "sourceQuestIndex": 57,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "0E3481D80180E00C",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "石脑油桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "thermal_extra:naphtha_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 9493,
+        "jeiKey": "item|thermal_extra:naphtha_bucket",
+        "jeiObservedName": "石脑油桶",
+        "sourceQuestIndex": 58,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "77C1F236B853FAAE",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "轻烯烃桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:light_olefin_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27130,
+        "jeiKey": "item|cmi:light_olefin_bucket",
+        "jeiObservedName": "轻烯烃桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 46,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.light_olefin_bucket",
+          "value": "轻烯烃桶"
+        },
+        "sourceQuestIndex": 59,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "5E07A1EE010AE757",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "轻硅醚桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:light_silicone_ether_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27134,
+        "jeiKey": "item|cmi:light_silicone_ether_bucket",
+        "jeiObservedName": "轻硅醚桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 47,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.light_silicone_ether_bucket",
+          "value": "轻硅醚桶"
+        },
+        "sourceQuestIndex": 60,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "693C6976F07FA0F5",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "聚硅醚桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:polysilicone_ether_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27137,
+        "jeiKey": "item|cmi:polysilicone_ether_bucket",
+        "jeiObservedName": "聚硅醚桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 48,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.polysilicone_ether_bucket",
+          "value": "聚硅醚桶"
+        },
+        "sourceQuestIndex": 62,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "5D4F15DF8FB903D5",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "硅橡胶",
+      "basis": {
+        "kind": "first_primary_item_for_multi_target_goal",
+        "itemId": "cmi:silicon_rubber",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 26667,
+        "jeiKey": "item|cmi:silicon_rubber",
+        "jeiObservedName": "硅橡胶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Items.js",
+          "line": 379,
+          "helperLine": 7,
+          "translationKey": "item.cmi.silicon_rubber",
+          "value": "硅橡胶"
+        },
+        "taskCount": 2,
+        "otherTaskTargetsRetained": true,
+        "sourceQuestIndex": 63,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "2809F6E25BE835B0",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "急速冷冻机",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "thermal:machine_chiller",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 20805,
+        "jeiKey": "item|thermal:machine_chiller",
+        "jeiObservedName": "急速冷冻机",
+        "sourceQuestIndex": 64,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "05D42E0B78A3982E",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "醋酸桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:vinegar_acid_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27129,
+        "jeiKey": "item|cmi:vinegar_acid_bucket",
+        "jeiObservedName": "醋酸桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 50,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.vinegar_acid_bucket",
+          "value": "醋酸桶"
+        },
+        "sourceQuestIndex": 65,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "762D51AFDCA86F29",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "醋桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:vinegar_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27121,
+        "jeiKey": "item|cmi:vinegar_bucket",
+        "jeiObservedName": "醋桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 66,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.vinegar_bucket",
+          "value": "醋桶"
+        },
+        "sourceQuestIndex": 66,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "5DE46B617DB0CEC6",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "分馏塔控制器",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "createdieselgenerators:distillation_controller",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 5079,
+        "jeiKey": "item|createdieselgenerators:distillation_controller",
+        "jeiObservedName": "分馏塔控制器",
+        "sourceQuestIndex": 67,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "6F36365885BD89B1",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "汽油桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "createdieselgenerators:gasoline_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 5104,
+        "jeiKey": "item|createdieselgenerators:gasoline_bucket",
+        "jeiObservedName": "汽油桶",
+        "sourceQuestIndex": 68,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "3B09C0DEB5D3ECB2",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "蒸汽桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "mekanism:steam_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 20178,
+        "jeiKey": "item|mekanism:steam_bucket",
+        "jeiObservedName": "蒸汽桶",
+        "sourceQuestIndex": 69,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "654FBA59B16DF4C6",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "裂化汽油桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:cracked_gasoline_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27124,
+        "jeiKey": "item|cmi:cracked_gasoline_bucket",
+        "jeiObservedName": "裂化汽油桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 72,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.cracked_gasoline_bucket",
+          "value": "裂化汽油桶"
+        },
+        "sourceQuestIndex": 70,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "5B786D0B9FC5A444",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "轻烯烃桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:light_olefin_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27130,
+        "jeiKey": "item|cmi:light_olefin_bucket",
+        "jeiObservedName": "轻烯烃桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 46,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.light_olefin_bucket",
+          "value": "轻烯烃桶"
+        },
+        "sourceQuestIndex": 71,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "0FF8EDFBF1C6AF7A",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "苯桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:benzene_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27131,
+        "jeiKey": "item|cmi:benzene_bucket",
+        "jeiObservedName": "苯桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 33,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.benzene_bucket",
+          "value": "苯桶"
+        },
+        "sourceQuestIndex": 72,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "660DD436C6CEFCBD",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "石脑油桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "thermal_extra:naphtha_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 9493,
+        "jeiKey": "item|thermal_extra:naphtha_bucket",
+        "jeiObservedName": "石脑油桶",
+        "sourceQuestIndex": 73,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "27CAE5D991F9DC02",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "苯酚桶",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "cmi:phenol_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 27135,
+        "jeiKey": "item|cmi:phenol_bucket",
+        "jeiObservedName": "苯酚桶",
+        "currentLanguage": {
+          "path": "clients/cmi-expedition/instance/kubejs/client_scripts/lang/zh_cn/Fluids.js",
+          "line": 52,
+          "helperLines": [
+            7,
+            11
+          ],
+          "translationKey": "item.cmi.phenol_bucket",
+          "value": "苯酚桶"
+        },
+        "sourceQuestIndex": 74,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "161C0524EEDE5FC5",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "殷钢板",
+      "basis": {
+        "kind": "registered_item_chinese_name",
+        "itemId": "vintageimprovements:invar_sheet",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 20946,
+        "jeiKey": "item|vintageimprovements:invar_sheet",
+        "jeiObservedName": "殷钢板",
+        "nativeChineseLanguage": {
+          "path": "servers/cmi-expedition/instance/mods/vintageimprovements-1.20.1-0.3.7.9.jar",
+          "member": "assets/vintageimprovements/lang/zh_cn.json",
+          "memberSHA256": "990539cc0a7c2f8c280a5a0808825a8ce8df426ae19dfea1657907a540560207",
+          "translationKey": "item.vintageimprovements.invar_sheet",
+          "value": "殷钢板"
+        },
+        "sourceQuestIndex": 75,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "3385196C9E4B2773",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "原油桶",
+      "basis": {
+        "kind": "existing_icon_primary_item_for_multi_target_goal",
+        "itemId": "createdieselgenerators:crude_oil_bucket",
+        "jeiSource": "tools/quest-workbench/runs/20261018-022135/instance/jei-exports/items.json",
+        "jeiRecordIndex": 5101,
+        "jeiKey": "item|createdieselgenerators:crude_oil_bucket",
+        "jeiObservedName": "原油桶",
+        "taskCount": 2,
+        "otherTaskTargetsRetained": true,
+        "sourceQuestIndex": 76,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    },
+    {
+      "chapterFilename": "ascend_on_burning_oil.snbt",
+      "questId": "49A04F3F89F58A31",
+      "beforehash": "d42c5750ebef87e56643d589842b7a569f5057c2d272233763fbca10ce554832",
+      "proposedTitle": "设备加速与整合组件",
+      "basis": {
+        "kind": "checkmark_subject_from_existing_description",
+        "taskId": "53F738D2BFB1CEA6",
+        "taskTitle": "如果你觉得设备运行太慢...",
+        "descriptionSubject": "热力整合组件提高设备运行速率；仅给说明卡补主名，任务仍为原checkmark。",
+        "sourceQuestIndex": 77,
+        "sourceChapterPath": "clients/cmi-expedition/instance/config/ftbquests/quests/chapters/ascend_on_burning_oil.snbt",
+        "subtitleAndDescriptionPolicy": "原subtitle、玩笑小标题、正文和所有非title字段保持原字节；不把subtitle当作物品主名。"
+      }
+    }
+  ],
+  "summary": {
+    "plannedTitles": 105,
+    "chapters": {
+      "steam_railway.snbt": {
+        "chapterTitle": "汽鸣铁道",
+        "quests": 28,
+        "titlesToAdd": 15,
+        "missingTitleQuestsWithSubtitle": 9
+      },
+      "precision_component.snbt": {
+        "chapterTitle": "精智元件",
+        "quests": 32,
+        "titlesToAdd": 23,
+        "missingTitleQuestsWithSubtitle": 12
+      },
+      "ascend_on_burning_oil.snbt": {
+        "chapterTitle": "油燃而升",
+        "quests": 78,
+        "titlesToAdd": 67,
+        "missingTitleQuestsWithSubtitle": 9
+      }
+    },
+    "missingTitles": 105,
+    "pureHexTitles": 0,
+    "unresolved": [],
+    "sourceChapterChangedDuringRead": [],
+    "jeiItems": 52932,
+    "jeiExportAborted": false,
+    "jeiSnapshotBoundary": "Existing completed workbench export; item names are real item records, not fluid records with equal IDs. No new game or exporter was run. The manifest records2 recipe-level failures; every ordinary item named in these rows has a successful item record.",
+    "currentLanguageDifferencesFromSnapshot": [
+      {
+        "questId": "5BB078BA5116FE68",
+        "itemId": "cmi:bronze_mechanism",
+        "snapshotName": "蒸汽构件",
+        "currentLanguageName": "青铜构件"
+      }
+    ]
+  },
+  "applyBoundary": "Only insert/replace the main quest.title on the105 specified questIds in the three snapshot chapters. Do not remove or alter subtitle, description, tasks, ID, links, dependencies, rewards, positions or any other field. Multi-target names use the existing icon/primary product as heading; all original AND/OR target semantics remain unchanged."
+}

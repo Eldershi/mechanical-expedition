@@ -1,0 +1,71 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "irons_spellbooks"
+    }
+  ],
+  "entity": "irons_spellbooks:dead_king",
+  "variants": [],
+  "name": "entity.irons_spellbooks.dead_king",
+  "name_color": "#BA8BE3",
+  "gui_scale": 0.5,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 4096,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix",
+    "count": 1
+  },
+  "base_drop": {
+    "item": "hostilenetworks:overworld_prediction",
+    "count": 1
+  },
+  "fabricator_drops": [
+    {
+      "item": "irons_spellbooks:arcane_essence",
+      "count": 32
+    },
+    {
+      "item": "irons_spellbooks:blank_rune",
+      "count": 4
+    },
+    {
+      "item": "irons_spellbooks:rare_ink",
+      "count": 1
+    },
+    {
+      "item": "irons_spellbooks:epic_ink",
+      "count": 1
+    },
+    {
+      "item": "irons_spellbooks:legendary_ink",
+      "count": 1
+    },
+    {
+      "item": "irons_spellbooks:blood_staff",
+      "count": 1
+    },
+    {
+      "item": "irons_spellbooks:necronomicon_spell_book",
+      "count": 1
+    },
+    {
+      "item": "irons_spellbooks:bone_key",
+      "count": 1
+    }
+  ],
+  "tier_data": [
+    6,
+    54,
+    354,
+    1254
+  ],
+  "data_per_kill": [
+    3,
+    12,
+    30,
+    45
+  ]
+}

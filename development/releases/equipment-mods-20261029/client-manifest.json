@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "patchId": "expedition-equipment-mods-20261029",
+  "validationStatus": "validated",
+  "protectedCatalogs": {
+    "kubejs/config/expedition-selected-native-recipes.json": "632403220a1945a80bc4be0422a246640da7fc3fc002873311cb8325cb1d79fa",
+    "kubejs/config/expedition-pre-steam-recipes.json": "491121916ff2d50e229296b5db698c0d58503092c1066a35def07bdbde0b7030",
+    "kubejs/config/expedition-material-unification.json": "d30cf70f77966d47b5a97fbce8e58059585c744e16382500a47dbab49f65d8f0"
+  },
+  "operations": [
+    {
+      "path": "kubejs/server_scripts/expedition/EquipmentEarlyNativeRecipes.js",
+      "action": "write",
+      "beforeSha256": null,
+      "afterSha256": "30586a73b3d1e6b40d68d5139cfeb287e0d59808060e026adc1150ca64ec1982",
+      "bytes": 2486
+    },
+    {
+      "path": "kubejs/server_scripts/expedition/EquipmentNativeRecipeRepair.js",
+      "action": "write",
+      "beforeSha256": null,
+      "afterSha256": "a7f2b29fda625e82ee573d6b6b90d2c1af7552ed2b16559e47c77ae6c91f6f33",
+      "bytes": 2433
+    },
+    {
+      "path": "kubejs/server_scripts/expedition/ProtectionPixelRespawnCompat.js",
+      "action": "write",
+      "beforeSha256": null,
+      "afterSha256": "056649044c64d872df1aef124606a7e184339a377b04923342a14ec7cabef24f",
+      "bytes": 2016
+    },
+    {
+      "path": "mods/ScorchedGuns-0.5.5-1.20.1.jar",
+      "action": "write",
+      "beforeSha256": null,
+      "afterSha256": "f339dd8444eaf4623449cd11db092beb1f02f14f5d03045a0394070b0ea50170",
+      "bytes": 19173074
+    },
+    {
+      "path": "mods/framework-forge-1.20.1-0.8.0.jar",
+      "action": "write",
+      "beforeSha256": null,
+      "afterSha256": "37c267f46d8b8dfa81bae8c9fa9fa6467e456cadecae10722ee91b43437f25a0",
+      "bytes": 383868
+    },
+    {
+      "path": "mods/protection_pixel-2.2.1-forge-1.20.1.jar",
+      "action": "write",
+      "beforeSha256": null,
+      "afterSha256": "d94b944dce3a4cc0d88c167366bf9e95efa5e58212403df7fec463d490f36592",
+      "bytes": 3256926
+    }
+  ],
+  "summary": {
+    "writes": 6,
+    "deletes": 0,
+    "payloadBytes": 22820803
+  },
+  "mods": [
+    {
+      "file": "protection_pixel-2.2.1-forge-1.20.1.jar",
+      "ids": [
+        "protection_pixel"
+      ],
+      "versions": [
+        "2.2.1"
+      ]
+    },
+    {
+      "file": "ScorchedGuns-0.5.5-1.20.1.jar",
+      "ids": [
+        "scguns"
+      ],
+      "versions": [
+        "0.5.5"
+      ]
+    },
+    {
+      "file": "framework-forge-1.20.1-0.8.0.jar",
+      "ids": [
+        "framework"
+      ],
+      "versions": [
+        "0.8.0"
+      ]
+    }
+  ],
+  "validationEvidence": "evidence/validated/summary.json"
+}

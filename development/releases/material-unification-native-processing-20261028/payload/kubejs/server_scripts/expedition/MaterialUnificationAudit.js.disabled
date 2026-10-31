@@ -1,0 +1,122 @@
+// priority: -1600
+// Read-only audit after data/recipe reload settles. No inventory/world edits.
+let ExpeditionMaterialAuditLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+let ExpeditionMaterialReplacementCache = Java.loadClass('com.mafuyu404.oneenoughitem.init.ItemReplacementCache')
+let expeditionMaterialAuditCountdown = -1
+let expeditionMaterialAuditAttempts = 0
+
+function expeditionMaterialAuditIds(ingredient) {
+  let result = []
+  let ids = Ingredient.of(ingredient).getItemIds().toArray()
+  for (let i = 0; i < ids.length; i++) result.push(String(ids[i]))
+  return result.sort()
+}
+
+function expeditionMaterialReadRecipe(manager, ids) {
+  for (let i = 0; i < ids.length; i++) {
+    let optional = manager.byKey(new ExpeditionMaterialAuditLocation(ids[i]))
+    if (optional.isPresent()) return {id: ids[i], recipe: optional.get()}
+  }
+  return null
+}
+
+function expeditionAuditMaterialUnification(server) {
+  let config = JSON.parse(String(JsonIO.readJson('kubejs/config/expedition-material-unification.json')))
+  let failures = []
+  let groups = []
+  config.groups.forEach(group => {
+    let members = expeditionMaterialAuditIds('#' + group.tag)
+    let aliases = []
+    group.items.forEach(id => {
+      let registered = ForgeRegistries.ITEMS.containsKey(new ExpeditionMaterialAuditLocation(id))
+      let stack = Item.of(id, 4)
+      let actualId = String(stack.id)
+      let inTag = Ingredient.of('#' + group.tag).test(stack)
+      let cacheResult = ExpeditionMaterialReplacementCache.matchItem(id)
+      let detail = {sourceId: id, registered: registered, actualId: actualId,
+        expectedId: group.canonical, amount: stack.count, tagMatches: inTag,
+        oeiCacheResult: cacheResult == null ? null : String(cacheResult)}
+      aliases.push(detail)
+      if (!registered || actualId !== group.canonical || !inTag || stack.count !== 4) {
+        failures.push({kind: 'material_alias', group: group.name, detail: detail})
+      }
+    })
+    groups.push({name: group.name, tag: group.tag, canonical: group.canonical,
+      tagMembers: members, aliases: aliases})
+  })
+  let protectedItems = []
+  config.protectedItems.forEach(id => {
+    let actual = String(Item.of(id).id)
+    protectedItems.push({id: id, actualId: actual, preserved: actual === id})
+    if (actual !== id) failures.push({kind: 'protected_item_changed', id: id, actualId: actual})
+  })
+  let manager = server.getRecipeManager()
+  let obsidian = config.groups.filter(group => group.name === 'obsidian_dust')[0]
+  let recipeChecks = []
+  config.obsidianRepresentativeRecipes.forEach(spec => {
+    let found = expeditionMaterialReadRecipe(manager, spec.ids)
+    if (found == null) {
+      failures.push({kind: 'representative_recipe_missing', ids: spec.ids})
+      recipeChecks.push({ids: spec.ids, present: false})
+      return
+    }
+    // Create's SequencedAssemblyRecipe deliberately keeps the starting input
+    // in getIngredient(); the inherited vanilla getIngredients() is empty.
+    // Its actual appliesTo(stack) path tests this same starting ingredient.
+    let recipeClass = String(found.recipe.getClass().getName())
+    let accessor = spec.kind
+    let startingIngredientJson = null
+    if (recipeClass === 'com.simibubi.create.content.processing.sequenced.SequencedAssemblyRecipe') {
+      accessor = 'createStartingIngredient'
+      startingIngredientJson = JSON.parse(String(found.recipe.getIngredient().toJson()))
+    }
+    let checks = []
+    obsidian.items.forEach(id => {
+      let stack = Item.of(id, spec.amount)
+      let matched = false
+      if (accessor === 'createStartingIngredient') matched = found.recipe.getIngredient().test(stack)
+      else if (accessor === 'mekItemInput') matched = found.recipe.getItemInput().test(stack)
+      else if (accessor === 'mekMainInput') matched = found.recipe.getMainInput().test(stack)
+      else {
+        let ingredients = found.recipe.getIngredients()
+        for (let i = 0; i < ingredients.size(); i++) {
+          if (ingredients.get(i).test(stack)) matched = true
+        }
+      }
+      checks.push({sourceId: id, actualId: String(stack.id), matched: matched})
+      if (!matched) failures.push({kind: 'representative_recipe_input', recipeId: found.id, sourceId: id})
+    })
+    recipeChecks.push({id: found.id, present: true, recipeClass: recipeClass,
+      accessor: accessor, startingIngredientJson: startingIngredientJson, checks: checks})
+  })
+  let report = {schemaVersion: 1, attempt: expeditionMaterialAuditAttempts,
+    groups: groups, protectedItems: protectedItems, obsidianRecipeChecks: recipeChecks,
+    failures: failures, passed: failures.length === 0,
+    worldBlockTexturesRequireClientResourceReload: true}
+  JsonIO.write('kubejs/exported/expedition-material-unification-audit.json', report)
+  console.info('[Material Unification Audit] passed=' + report.passed + ', groups=' + groups.length + ', failures=' + failures.length)
+  return report.passed
+}
+
+function expeditionQueueMaterialAudit() {
+  expeditionMaterialAuditAttempts = 0
+  expeditionMaterialAuditCountdown = 80
+}
+ServerEvents.loaded(event => expeditionQueueMaterialAudit())
+ServerEvents.afterRecipes(event => expeditionQueueMaterialAudit())
+ServerEvents.tick(event => {
+  if (expeditionMaterialAuditCountdown < 0) return
+  if (expeditionMaterialAuditCountdown-- > 0) return
+  expeditionMaterialAuditAttempts++
+  try {
+    let passed = expeditionAuditMaterialUnification(event.server)
+    expeditionMaterialAuditCountdown = !passed && expeditionMaterialAuditAttempts < 3 ? 80 : -1
+  } catch (error) {
+    JsonIO.write('kubejs/exported/expedition-material-unification-audit.json', {
+      schemaVersion: 1, passed: false, attempt: expeditionMaterialAuditAttempts,
+      error: String(error), failures: [{kind: 'audit_exception', error: String(error)}]
+    })
+    console.error('[Material Unification Audit] ' + error)
+    expeditionMaterialAuditCountdown = expeditionMaterialAuditAttempts < 3 ? 80 : -1
+  }
+})

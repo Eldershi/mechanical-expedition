@@ -1,0 +1,45 @@
+{
+  "type": "lithostitched:set_structure_spawn_condition",
+  "structures": [
+    "dungeons_arise:illager_fort"
+  ],
+  "append": true,
+  "spawn_condition": [
+    {
+      "type": "lithostitched:grid",
+      "radius": 114,
+      "distance_between_points": 114,
+      "condition": {
+        "type": "lithostitched:height_filter",
+        "range_type": "heightmap_relative",
+        "heightmap": "OCEAN_FLOOR_WG",
+        "permitted_range": {
+          "min_inclusive": -43,
+          "max_inclusive": 29
+        }
+      },
+      "allowed_count": {
+        "min_inclusive": 9,
+        "max_inclusive": 9
+      }
+    },
+    {
+      "type": "lithostitched:grid",
+      "radius": 48,
+      "distance_between_points": 24,
+      "condition": {
+        "type": "lithostitched:height_filter",
+        "range_type": "heightmap_relative",
+        "heightmap": "OCEAN_FLOOR_WG",
+        "permitted_range": {
+          "min_inclusive": -21,
+          "max_inclusive": 7
+        }
+      },
+      "allowed_count": {
+        "min_inclusive": 25,
+        "max_inclusive": 25
+      }
+    }
+  ]
+}

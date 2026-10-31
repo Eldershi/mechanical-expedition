@@ -1,0 +1,65 @@
+{
+  "biomesoplenty:trees_jade_cliffs": {
+    "biomes": [
+      "biomesoplenty:jade_cliffs"
+    ],
+    "types": [
+      "other:biomesoplenty:bush_tree",
+      "tree"
+    ]
+  },
+  "geophilic:taiga/grove/logs": {
+    "biomes": [
+      "minecraft:grove"
+    ],
+    "types": [
+      "other:minecraft:block_column",
+      "tree"
+    ]
+  },
+  "terralith:highlands/alpine/bushes": {
+    "biomes": [
+      "terralith:alpine_highlands"
+    ],
+    "types": [
+      "tree"
+    ]
+  },
+  "terralith:highlands/steppe/bush": {
+    "biomes": [
+      "terralith:mountain_steppe"
+    ],
+    "types": [
+      "tree"
+    ]
+  },
+  "geophilic:windswept/hills/logs": {
+    "biomes": [
+      "minecraft:windswept_hills",
+      "minecraft:windswept_gravelly_hills"
+    ],
+    "types": [
+      "other:minecraft:block_column",
+      "tree"
+    ]
+  },
+  "geophilic:windswept/bushes": {
+    "biomes": [
+      "minecraft:windswept_hills",
+      "minecraft:windswept_gravelly_hills",
+      "minecraft:windswept_forest"
+    ],
+    "types": [
+      "tree"
+    ]
+  },
+  "geophilic:windswept/forest/logs": {
+    "biomes": [
+      "minecraft:windswept_forest"
+    ],
+    "types": [
+      "other:minecraft:block_column",
+      "tree"
+    ]
+  }
+}

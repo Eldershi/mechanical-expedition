@@ -1,0 +1,164 @@
+{
+  "status": "Draft for visual review",
+  "change": "Tighter layout and wider selected Veridium highlights",
+  "source_version": "english-v11-front-highlight",
+  "side_images": false,
+  "CREATE": "unchanged flat gold front; foreground of both rows",
+  "minecraft_create_RGBA_unchanged": true,
+  "lower_font_body_depth_camera_native_grain_unchanged": true,
+  "lower_brightness_saturation_retained_from_v11": true,
+  "lower_highlights": "Selected light-facing bands widened to match CREATE edge weight",
+  "upper_to_lower_row_distance_reduction_px": 110,
+  "wording": "EXPEDITION main; EXPEDITIONS alternate only",
+  "placements": {
+    "expedition": {
+      "canvas": [
+        3204,
+        1481
+      ],
+      "crop": [
+        748,
+        45,
+        3952,
+        1526
+      ],
+      "minecraft_stage_xy": [
+        788,
+        85
+      ],
+      "create_stage_xy": [
+        1295,
+        565
+      ],
+      "expedition_stage_xy": [
+        803,
+        1000
+      ],
+      "stage_changes_vs_v11": {
+        "minecraft_dy": 0,
+        "create_dy": -74,
+        "expedition_dy": -110
+      },
+      "CREATE_overlaps_upper_depth_bounds_px": 61,
+      "CREATE_overlaps_lower_roof_bounds_px": 89,
+      "layer_order_back_to_front": [
+        "Veridium-EXPEDITION",
+        "Industrial-Iron-MINECRAFT",
+        "CREATE-front-only"
+      ],
+      "layers": [
+        {
+          "name": "Veridium-EXPEDITION",
+          "xy": [
+            55,
+            955
+          ],
+          "size": [
+            3093,
+            486
+          ],
+          "rgba_sha256": "ba285d012b215acc8499a3512f73552a975059c0d3255dd1d0fa85b545fc8468"
+        },
+        {
+          "name": "Industrial-Iron-MINECRAFT",
+          "xy": [
+            40,
+            40
+          ],
+          "size": [
+            3124,
+            541
+          ],
+          "rgba_sha256": "48cdb0e3b099a9b457e9e9cf8d3c12e039d68940e5de21bb7262c9cc03af3012"
+        },
+        {
+          "name": "CREATE-front-only",
+          "xy": [
+            547,
+            520
+          ],
+          "size": [
+            2109,
+            524
+          ],
+          "rgba_sha256": "21951cc517007cecd08a4ccf2c8c4b440cd261123bcedef44751ba8ffd2b6584"
+        }
+      ]
+    },
+    "expeditions": {
+      "canvas": [
+        3511,
+        1481
+      ],
+      "crop": [
+        594,
+        45,
+        4105,
+        1526
+      ],
+      "minecraft_stage_xy": [
+        788,
+        85
+      ],
+      "create_stage_xy": [
+        1295,
+        565
+      ],
+      "expedition_stage_xy": [
+        634,
+        1000
+      ],
+      "stage_changes_vs_v11": {
+        "minecraft_dy": 0,
+        "create_dy": -74,
+        "expedition_dy": -110
+      },
+      "CREATE_overlaps_upper_depth_bounds_px": 61,
+      "CREATE_overlaps_lower_roof_bounds_px": 89,
+      "layer_order_back_to_front": [
+        "Veridium-EXPEDITIONS",
+        "Industrial-Iron-MINECRAFT",
+        "CREATE-front-only"
+      ],
+      "layers": [
+        {
+          "name": "Veridium-EXPEDITIONS",
+          "xy": [
+            40,
+            955
+          ],
+          "size": [
+            3431,
+            486
+          ],
+          "rgba_sha256": "008727fdeb7207ba6dc81eea4f071e07138eb1b5ed8a92ff4f931f6dd60577d7"
+        },
+        {
+          "name": "Industrial-Iron-MINECRAFT",
+          "xy": [
+            194,
+            40
+          ],
+          "size": [
+            3124,
+            541
+          ],
+          "rgba_sha256": "48cdb0e3b099a9b457e9e9cf8d3c12e039d68940e5de21bb7262c9cc03af3012"
+        },
+        {
+          "name": "CREATE-front-only",
+          "xy": [
+            701,
+            520
+          ],
+          "size": [
+            2109,
+            524
+          ],
+          "rgba_sha256": "21951cc517007cecd08a4ccf2c8c4b440cd261123bcedef44751ba8ffd2b6584"
+        }
+      ]
+    }
+  },
+  "live_client_changed": false
+}

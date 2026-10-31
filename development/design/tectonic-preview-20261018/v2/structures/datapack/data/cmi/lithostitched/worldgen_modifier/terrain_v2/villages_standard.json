@@ -1,0 +1,82 @@
+{
+  "type": "lithostitched:set_structure_spawn_condition",
+  "structures": [
+    "ctov:medium/village_christmas",
+    "ctov:medium/village_dark_forest",
+    "ctov:medium/village_desert",
+    "ctov:medium/village_jungle",
+    "ctov:medium/village_mesa",
+    "ctov:medium/village_mesa_fortified",
+    "ctov:medium/village_mushroom",
+    "ctov:medium/village_plains",
+    "ctov:medium/village_plains_fortified",
+    "ctov:medium/village_savanna",
+    "ctov:medium/village_savanna_na",
+    "ctov:medium/village_snowy_igloo",
+    "ctov:medium/village_taiga",
+    "ctov:medium/village_taiga_fortified",
+    "minecraft:village_desert",
+    "minecraft:village_plains",
+    "minecraft:village_savanna",
+    "minecraft:village_snowy",
+    "minecraft:village_taiga",
+    "towns_and_towers:exclusives/village_classic",
+    "towns_and_towers:exclusives/village_iberian",
+    "towns_and_towers:exclusives/village_mediterranean",
+    "towns_and_towers:exclusives/village_rustic",
+    "towns_and_towers:exclusives/village_swedish",
+    "towns_and_towers:exclusives/village_tudor",
+    "towns_and_towers:village_badlands",
+    "towns_and_towers:village_birch_forest",
+    "towns_and_towers:village_flower_forest",
+    "towns_and_towers:village_forest",
+    "towns_and_towers:village_jungle",
+    "towns_and_towers:village_meadow",
+    "towns_and_towers:village_mushroom_fields",
+    "towns_and_towers:village_old_growth_taiga",
+    "towns_and_towers:village_savanna_plateau",
+    "towns_and_towers:village_snowy_taiga",
+    "towns_and_towers:village_sparse_jungle",
+    "towns_and_towers:village_sunflower_plains",
+    "towns_and_towers:village_wooded_badlands"
+  ],
+  "append": true,
+  "spawn_condition": [
+    {
+      "type": "lithostitched:grid",
+      "radius": 80,
+      "distance_between_points": 80,
+      "condition": {
+        "type": "lithostitched:height_filter",
+        "range_type": "heightmap_relative",
+        "heightmap": "OCEAN_FLOOR_WG",
+        "permitted_range": {
+          "min_inclusive": -32,
+          "max_inclusive": 32
+        }
+      },
+      "allowed_count": {
+        "min_inclusive": 9,
+        "max_inclusive": 9
+      }
+    },
+    {
+      "type": "lithostitched:grid",
+      "radius": 32,
+      "distance_between_points": 16,
+      "condition": {
+        "type": "lithostitched:height_filter",
+        "range_type": "heightmap_relative",
+        "heightmap": "OCEAN_FLOOR_WG",
+        "permitted_range": {
+          "min_inclusive": -10,
+          "max_inclusive": 10
+        }
+      },
+      "allowed_count": {
+        "min_inclusive": 25,
+        "max_inclusive": 25
+      }
+    }
+  ]
+}

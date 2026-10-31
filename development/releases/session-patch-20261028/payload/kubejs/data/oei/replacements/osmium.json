@@ -1,0 +1,58 @@
+[
+  {
+    "matchItems": [
+      "#forge:ingots/osmium",
+      "alltheores:osmium_ingot"
+    ],
+    "resultItems": "mekanism:ingot_osmium"
+  },
+  {
+    "matchItems": [
+      "#forge:nuggets/osmium",
+      "alltheores:osmium_nugget"
+    ],
+    "resultItems": "mekanism:nugget_osmium"
+  },
+  {
+    "matchItems": [
+      "#forge:raw_materials/osmium",
+      "alltheores:raw_osmium"
+    ],
+    "resultItems": "mekanism:raw_osmium"
+  },
+  {
+    "matchItems": [
+      "#forge:storage_blocks/raw_osmium",
+      "alltheores:raw_osmium_block"
+    ],
+    "resultItems": "mekanism:block_raw_osmium"
+  },
+  {
+    "matchItems": [
+      "#forge:storage_blocks/osmium",
+      "alltheores:osmium_block"
+    ],
+    "resultItems": "mekanism:block_osmium"
+  },
+  {
+    "matchItems": [
+      "#forge:dusts/osmium",
+      "alltheores:osmium_dust"
+    ],
+    "resultItems": "mekanism:dust_osmium"
+  },
+  {
+    "matchItems": [
+      "#forge:plates/osmium",
+      "alltheores:osmium_plate"
+    ],
+    "resultItems": "vintageimprovements:osmium_sheet"
+  },
+  {
+    "matchItems": [
+      "#forge:rods/osmium",
+      "alltheores:osmium_rod"
+    ],
+    "resultItems": "vintageimprovements:osmium_rod"
+  }
+]

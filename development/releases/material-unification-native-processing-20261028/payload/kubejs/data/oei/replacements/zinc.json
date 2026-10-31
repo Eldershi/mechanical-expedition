@@ -1,0 +1,71 @@
+[
+  {
+    "matchItems": [
+      "#forge:ingots/zinc",
+      "alltheores:zinc_ingot"
+    ],
+    "resultItems": "create:zinc_ingot"
+  },
+  {
+    "matchItems": [
+      "#forge:nuggets/zinc",
+      "alltheores:zinc_nugget"
+    ],
+    "resultItems": "create:zinc_nugget"
+  },
+  {
+    "matchItems": [
+      "#forge:raw_materials/zinc",
+      "alltheores:raw_zinc"
+    ],
+    "resultItems": "create:raw_zinc"
+  },
+  {
+    "matchItems": [
+      "#forge:storage_blocks/raw_zinc",
+      "alltheores:raw_zinc_block"
+    ],
+    "resultItems": "create:raw_zinc_block"
+  },
+  {
+    "matchItems": [
+      "#forge:storage_blocks/zinc",
+      "alltheores:zinc_block"
+    ],
+    "resultItems": "create:zinc_block"
+  },
+  {
+    "matchItems": [
+      "#forge:plates/zinc",
+      "alltheores:zinc_plate",
+      "createaddition:zinc_sheet"
+    ],
+    "resultItems": "vintageimprovements:zinc_sheet"
+  },
+  {
+    "matchItems": [
+      "#forge:dusts/zinc",
+      "alltheores:zinc_dust"
+    ],
+    "resultItems": "thermal_extra:zinc_dust"
+  },
+  {
+    "matchItems": [
+      "#forge:rods/zinc",
+      "alltheores:zinc_rod"
+    ],
+    "resultItems": "vintageimprovements:zinc_rod"
+  },
+  {
+    "matchItems": [
+      "alltheores:zinc_ore"
+    ],
+    "resultItems": "create:zinc_ore"
+  },
+  {
+    "matchItems": [
+      "alltheores:deepslate_zinc_ore"
+    ],
+    "resultItems": "create:deepslate_zinc_ore"
+  }
+]

@@ -1,0 +1,672 @@
+{
+  "schemaVersion": 1,
+  "sourceVersion": "irons_spellbooks-1.20.1-3.16.3",
+  "models": [
+    {
+      "id": "expedition:irons_spellbooks/necromancer",
+      "displayName": "亡灵术士",
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "irons_spellbooks"
+        }
+      ],
+      "entity": "irons_spellbooks:necromancer",
+      "variants": [],
+      "name": "entity.irons_spellbooks.necromancer",
+      "name_color": "#7B5AA6",
+      "gui_scale": 0.8,
+      "gui_x_offset": 0,
+      "gui_y_offset": 0,
+      "gui_z_offset": 0,
+      "sim_cost": 256,
+      "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+      },
+      "base_drop": {
+        "item": "hostilenetworks:overworld_prediction",
+        "count": 1
+      },
+      "fabricator_drops": [
+        {
+          "item": "irons_spellbooks:arcane_essence",
+          "count": 16
+        }
+      ],
+      "tier_data": [
+        6,
+        54,
+        354,
+        1254
+      ],
+      "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+      ]
+    },
+    {
+      "id": "expedition:irons_spellbooks/pyromancer",
+      "displayName": "炽焰术士",
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "irons_spellbooks"
+        }
+      ],
+      "entity": "irons_spellbooks:pyromancer",
+      "variants": [],
+      "name": "entity.irons_spellbooks.pyromancer",
+      "name_color": "#F28C28",
+      "gui_scale": 0.8,
+      "gui_x_offset": 0,
+      "gui_y_offset": 0,
+      "gui_z_offset": 0,
+      "sim_cost": 256,
+      "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+      },
+      "base_drop": {
+        "item": "hostilenetworks:nether_prediction",
+        "count": 1
+      },
+      "fabricator_drops": [
+        {
+          "item": "irons_spellbooks:arcane_essence",
+          "count": 16
+        },
+        {
+          "item": "irons_spellbooks:common_ink",
+          "count": 4
+        },
+        {
+          "item": "irons_spellbooks:uncommon_ink",
+          "count": 2
+        },
+        {
+          "item": "irons_spellbooks:rare_ink",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:epic_ink",
+          "count": 1
+        }
+      ],
+      "tier_data": [
+        6,
+        54,
+        354,
+        1254
+      ],
+      "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+      ]
+    },
+    {
+      "id": "expedition:irons_spellbooks/cryomancer",
+      "displayName": "冰霜术士",
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "irons_spellbooks"
+        }
+      ],
+      "entity": "irons_spellbooks:cryomancer",
+      "variants": [],
+      "name": "entity.irons_spellbooks.cryomancer",
+      "name_color": "#72D8F0",
+      "gui_scale": 0.8,
+      "gui_x_offset": 0,
+      "gui_y_offset": 0,
+      "gui_z_offset": 0,
+      "sim_cost": 256,
+      "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+      },
+      "base_drop": {
+        "item": "hostilenetworks:overworld_prediction",
+        "count": 1
+      },
+      "fabricator_drops": [
+        {
+          "item": "irons_spellbooks:arcane_essence",
+          "count": 16
+        },
+        {
+          "item": "irons_spellbooks:common_ink",
+          "count": 4
+        },
+        {
+          "item": "irons_spellbooks:uncommon_ink",
+          "count": 2
+        },
+        {
+          "item": "irons_spellbooks:rare_ink",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:epic_ink",
+          "count": 1
+        }
+      ],
+      "tier_data": [
+        6,
+        54,
+        354,
+        1254
+      ],
+      "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+      ]
+    },
+    {
+      "id": "expedition:irons_spellbooks/archevoker",
+      "displayName": "高位唤魔者",
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "irons_spellbooks"
+        }
+      ],
+      "entity": "irons_spellbooks:archevoker",
+      "variants": [],
+      "name": "entity.irons_spellbooks.archevoker",
+      "name_color": "#B37BE3",
+      "gui_scale": 0.8,
+      "gui_x_offset": 0,
+      "gui_y_offset": 0,
+      "gui_z_offset": 0,
+      "sim_cost": 512,
+      "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+      },
+      "base_drop": {
+        "item": "hostilenetworks:overworld_prediction",
+        "count": 1
+      },
+      "fabricator_drops": [
+        {
+          "item": "irons_spellbooks:arcane_essence",
+          "count": 16
+        },
+        {
+          "item": "irons_spellbooks:common_ink",
+          "count": 4
+        },
+        {
+          "item": "irons_spellbooks:uncommon_ink",
+          "count": 2
+        },
+        {
+          "item": "irons_spellbooks:rare_ink",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:epic_ink",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:evocation_rune",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:evoker_spell_book",
+          "count": 1
+        }
+      ],
+      "tier_data": [
+        6,
+        54,
+        354,
+        1254
+      ],
+      "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+      ]
+    },
+    {
+      "id": "expedition:irons_spellbooks/apothecarist",
+      "displayName": "药剂师",
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "irons_spellbooks"
+        }
+      ],
+      "entity": "irons_spellbooks:apothecarist",
+      "variants": [],
+      "name": "entity.irons_spellbooks.apothecarist",
+      "name_color": "#8BC34A",
+      "gui_scale": 0.8,
+      "gui_x_offset": 0,
+      "gui_y_offset": 0,
+      "gui_z_offset": 0,
+      "sim_cost": 256,
+      "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+      },
+      "base_drop": {
+        "item": "hostilenetworks:overworld_prediction",
+        "count": 1
+      },
+      "fabricator_drops": [
+        {
+          "item": "irons_spellbooks:arcane_essence",
+          "count": 16
+        },
+        {
+          "item": "irons_spellbooks:common_ink",
+          "count": 4
+        },
+        {
+          "item": "irons_spellbooks:uncommon_ink",
+          "count": 2
+        },
+        {
+          "item": "irons_spellbooks:rare_ink",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:epic_ink",
+          "count": 1
+        }
+      ],
+      "tier_data": [
+        6,
+        54,
+        354,
+        1254
+      ],
+      "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+      ]
+    },
+    {
+      "id": "expedition:irons_spellbooks/priest",
+      "displayName": "牧师",
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "irons_spellbooks"
+        }
+      ],
+      "entity": "irons_spellbooks:priest",
+      "variants": [],
+      "name": "entity.irons_spellbooks.priest",
+      "name_color": "#F2E6A2",
+      "gui_scale": 0.8,
+      "gui_x_offset": 0,
+      "gui_y_offset": 0,
+      "gui_z_offset": 0,
+      "sim_cost": 256,
+      "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+      },
+      "base_drop": {
+        "item": "hostilenetworks:overworld_prediction",
+        "count": 1
+      },
+      "fabricator_drops": [
+        {
+          "item": "irons_spellbooks:arcane_essence",
+          "count": 16
+        },
+        {
+          "item": "irons_spellbooks:common_ink",
+          "count": 4
+        },
+        {
+          "item": "irons_spellbooks:uncommon_ink",
+          "count": 2
+        },
+        {
+          "item": "irons_spellbooks:rare_ink",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:epic_ink",
+          "count": 1
+        }
+      ],
+      "tier_data": [
+        6,
+        54,
+        354,
+        1254
+      ],
+      "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+      ]
+    },
+    {
+      "id": "expedition:irons_spellbooks/cultist",
+      "displayName": "邪教徒",
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "irons_spellbooks"
+        }
+      ],
+      "entity": "irons_spellbooks:cultist",
+      "variants": [],
+      "name": "entity.irons_spellbooks.cultist",
+      "name_color": "#C94464",
+      "gui_scale": 0.8,
+      "gui_x_offset": 0,
+      "gui_y_offset": 0,
+      "gui_z_offset": 0,
+      "sim_cost": 256,
+      "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+      },
+      "base_drop": {
+        "item": "hostilenetworks:overworld_prediction",
+        "count": 1
+      },
+      "fabricator_drops": [
+        {
+          "item": "irons_spellbooks:arcane_essence",
+          "count": 16
+        },
+        {
+          "item": "irons_spellbooks:common_ink",
+          "count": 4
+        },
+        {
+          "item": "irons_spellbooks:uncommon_ink",
+          "count": 2
+        },
+        {
+          "item": "irons_spellbooks:rare_ink",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:epic_ink",
+          "count": 1
+        }
+      ],
+      "tier_data": [
+        6,
+        54,
+        354,
+        1254
+      ],
+      "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+      ]
+    },
+    {
+      "id": "expedition:irons_spellbooks/citadel_keeper",
+      "displayName": "远古骑士",
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "irons_spellbooks"
+        }
+      ],
+      "entity": "irons_spellbooks:citadel_keeper",
+      "variants": [],
+      "name": "entity.irons_spellbooks.citadel_keeper",
+      "name_color": "#CF754C",
+      "gui_scale": 0.6,
+      "gui_x_offset": 0,
+      "gui_y_offset": 0,
+      "gui_z_offset": 0,
+      "sim_cost": 1024,
+      "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+      },
+      "base_drop": {
+        "item": "hostilenetworks:nether_prediction",
+        "count": 1
+      },
+      "fabricator_drops": [
+        {
+          "item": "irons_spellbooks:cinder_essence",
+          "count": 4
+        },
+        {
+          "item": "minecraft:netherite_scrap",
+          "count": 4
+        }
+      ],
+      "tier_data": [
+        6,
+        54,
+        354,
+        1254
+      ],
+      "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+      ]
+    },
+    {
+      "id": "expedition:irons_spellbooks/ice_spider",
+      "displayName": "冰霜蜘蛛",
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "irons_spellbooks"
+        }
+      ],
+      "entity": "irons_spellbooks:ice_spider",
+      "variants": [],
+      "name": "entity.irons_spellbooks.ice_spider",
+      "name_color": "#9BDDED",
+      "gui_scale": 0.8,
+      "gui_x_offset": 0,
+      "gui_y_offset": 0,
+      "gui_z_offset": 0,
+      "sim_cost": 256,
+      "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+      },
+      "base_drop": {
+        "item": "hostilenetworks:overworld_prediction",
+        "count": 1
+      },
+      "fabricator_drops": [
+        {
+          "item": "irons_spellbooks:arcane_essence",
+          "count": 16
+        },
+        {
+          "item": "minecraft:string",
+          "count": 16
+        },
+        {
+          "item": "irons_spellbooks:icy_fang",
+          "count": 2
+        }
+      ],
+      "tier_data": [
+        6,
+        54,
+        354,
+        1254
+      ],
+      "data_per_kill": [
+        1,
+        4,
+        10,
+        18
+      ]
+    },
+    {
+      "id": "expedition:irons_spellbooks/dead_king",
+      "displayName": "死者之王",
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "irons_spellbooks"
+        }
+      ],
+      "entity": "irons_spellbooks:dead_king",
+      "variants": [],
+      "name": "entity.irons_spellbooks.dead_king",
+      "name_color": "#BA8BE3",
+      "gui_scale": 0.5,
+      "gui_x_offset": 0,
+      "gui_y_offset": 0,
+      "gui_z_offset": 0,
+      "sim_cost": 4096,
+      "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+      },
+      "base_drop": {
+        "item": "hostilenetworks:overworld_prediction",
+        "count": 1
+      },
+      "fabricator_drops": [
+        {
+          "item": "irons_spellbooks:arcane_essence",
+          "count": 32
+        },
+        {
+          "item": "irons_spellbooks:blank_rune",
+          "count": 4
+        },
+        {
+          "item": "irons_spellbooks:rare_ink",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:epic_ink",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:legendary_ink",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:blood_staff",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:necronomicon_spell_book",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:bone_key",
+          "count": 1
+        }
+      ],
+      "tier_data": [
+        6,
+        54,
+        354,
+        1254
+      ],
+      "data_per_kill": [
+        3,
+        12,
+        30,
+        45
+      ]
+    },
+    {
+      "id": "expedition:irons_spellbooks/fire_boss",
+      "displayName": "提洛斯回响·原初受火者",
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "irons_spellbooks"
+        }
+      ],
+      "entity": "irons_spellbooks:fire_boss",
+      "variants": [],
+      "name": "entity.irons_spellbooks.fire_boss",
+      "name_color": "#FF7138",
+      "gui_scale": 0.4,
+      "gui_x_offset": 0,
+      "gui_y_offset": 0,
+      "gui_z_offset": 0,
+      "sim_cost": 8192,
+      "input": {
+        "item": "hostilenetworks:prediction_matrix",
+        "count": 1
+      },
+      "base_drop": {
+        "item": "hostilenetworks:nether_prediction",
+        "count": 1
+      },
+      "fabricator_drops": [
+        {
+          "item": "irons_spellbooks:arcane_essence",
+          "count": 32
+        },
+        {
+          "item": "irons_spellbooks:cinder_essence",
+          "count": 8
+        },
+        {
+          "item": "irons_spellbooks:divine_soulshard",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:decrepit_scythe",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:betrayer_signet",
+          "count": 1
+        },
+        {
+          "item": "irons_spellbooks:decrepit_key",
+          "count": 1
+        }
+      ],
+      "tier_data": [
+        6,
+        54,
+        354,
+        1254
+      ],
+      "data_per_kill": [
+        3,
+        12,
+        30,
+        45
+      ]
+    }
+  ],
+  "notes": [
+    "Additive independent models; existing models and recipes are not changed.",
+    "Random spell scrolls are omitted because their loot function creates required spell NBT.",
+    "Boss keys come from native per-player loot tables.",
+    "Summons, projectiles, corpse/soul, debug entities and dynamic equipment-only entities are excluded.",
+    "Catacombs zombie and magehunter vindicator use vanilla runtime entity types and retain vanilla HNN coverage."
+  ]
+}
