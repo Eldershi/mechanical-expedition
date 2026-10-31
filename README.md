@@ -13,11 +13,13 @@
 
 当前游戏源码包含原配方并行、材料统一与原生加工、松烟墨、任务书、铁魔法 HNN 模型与资源包、装备兼容、女仆与仓储兼容，以及服务端生成、传送和随机刻补丁。实际模组依赖以 `current/mods.lock.json` 为准。
 
+交错电网 [Create: Power Grid](integrations/mods/powergrid.json) 使用 0.6.2 Forge 1.20.1 版，客户端与服务端均需安装；要求 Create `[6.0.7,6.1.0)`、Architectury `[9.2.14,)`。
+
 敌对神经网络外观资源由独立项目 [create-style-hnn](https://github.com/Eldershi/create-style-hnn) 维护；下载与版本信息见[资源引用](integrations/resourcepacks/create-style-hnn.json)。
 
 戴森球客户端外观由独立仓库 [create-style-dyson](https://github.com/Eldershi/create-style-dyson) 维护；精确提交、包与脚本校验值见 [集成引用](integrations/resourcepacks/create-style-dyson.json)。完整模型、贴图与构建输入已在该独立项目公开，[客户端安装包](https://github.com/Eldershi/create-style-dyson/releases/tag/v1.0.0-mc1.20.1)包含配套资源ZIP与渲染脚本；整合包仓库只保存Paxi配置与集成引用。快照工具会验证已声明外部文件的SHA并省略其内容，缺少原文件或哈希不符时会拒绝生成快照。
 
-模组锁文件共有 395 项：376 项有哈希匹配的下载来源，14 项保存了本地补丁包，5 项仅有精确哈希，尚缺可核实的下载定位。
+模组锁文件共有 396 项：377 项有哈希匹配的下载来源，14 项保存了本地补丁包，5 项仅有精确哈希，尚缺可核实的下载定位。
 
 `current/client/` 是受管游戏文件的源码快照，第三方模组通过锁文件定位。它不包含账号、存档、玩家数据、服务器列表、地图、备份、运行缓存或一次性测试探针。`current/server/` 是专用服务端覆盖层，需要与公共游戏内容和对应服务端依赖一起使用。
 

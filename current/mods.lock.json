@@ -3274,6 +3274,16 @@
       "downloadHash": "5ef42f7b9e1ac85fb5b87c2a25c1077900b95ceed4004b1cb953f1e4ac432c4c"
     },
     {
+      "filename": "powergrid-mc1.20.1-0.6.2.jar",
+      "sha256": "9a0a0cdb6b60d42bfaa8898d606e4a1a084e09335a62ce0853549a3bf6027991",
+      "sha1": "e29587d7049786465c0b4000c00300b4dff87f5a",
+      "bytes": 5653584,
+      "downloadUrl": "https://cdn.modrinth.com/data/eWiBLJ9R/versions/CBWW1upo/powergrid-mc1.20.1-0.6.2.jar",
+      "downloadUrlSource": "https://api.modrinth.com/v2/version/CBWW1upo",
+      "downloadHashFormat": "sha512",
+      "downloadHash": "df8a9cc405d59a1004aaafcf78fcc484da02871e358f1382266f557ed33637efa17f731b42e808e9e22db49f7f135c37e02681848a5a75a596833732e69a8b00"
+    },
+    {
       "filename": "probejs-6.0.1-forge.jar",
       "sha256": "139b586b87a8bad536e0a8983fc01c48e8ff46fb2e5881b52ac8b59f44b1e609",
       "sha1": "5380211b1c2891f454a136545721526b184d8513",

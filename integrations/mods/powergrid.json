@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "modId": "powergrid",
+  "name": "Create: Power Grid",
+  "version": "0.6.2",
+  "minecraft": "1.20.1",
+  "loader": "forge",
+  "java": 17,
+  "requiredOn": [
+    "client",
+    "server"
+  ],
+  "dependencies": [
+    {
+      "modId": "forge",
+      "versionRange": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "modId": "create",
+      "versionRange": "[6.0.7,6.1.0)",
+      "side": "BOTH"
+    },
+    {
+      "modId": "architectury",
+      "versionRange": "[9.2.14,)",
+      "side": "BOTH"
+    }
+  ],
+  "artifact": {
+    "filename": "powergrid-mc1.20.1-0.6.2.jar",
+    "bytes": 5653584,
+    "sha256": "9a0a0cdb6b60d42bfaa8898d606e4a1a084e09335a62ce0853549a3bf6027991",
+    "sha1": "e29587d7049786465c0b4000c00300b4dff87f5a",
+    "sha512": "df8a9cc405d59a1004aaafcf78fcc484da02871e358f1382266f557ed33637efa17f731b42e808e9e22db49f7f135c37e02681848a5a75a596833732e69a8b00",
+    "downloadUrl": "https://cdn.modrinth.com/data/eWiBLJ9R/versions/CBWW1upo/powergrid-mc1.20.1-0.6.2.jar"
+  },
+  "officialMetadataUrl": "https://api.modrinth.com/v2/version/CBWW1upo",
+  "officialVersionPage": "https://modrinth.com/mod/power-grid/version/CBWW1upo",
+  "officialCurseForgeFile": "https://www.curseforge.com/minecraft/mc-mods/power-grid/files/8880703",
+  "sourceRepository": "https://github.com/patryk3211/PowerGrid",
+  "license": "Apache-2.0"
+}
