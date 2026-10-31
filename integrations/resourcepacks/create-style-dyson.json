@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "create-style-dyson",
   "repository": "https://github.com/Eldershi/create-style-dyson",
-  "sourceCommit": "aeb0241a82b8f706770290bd07ae1ad80c6e695a",
+  "sourceCommit": "4b83507d5c3a545887a49a2852efaa13675db615",
   "minecraft": "1.20.1",
   "forge": "47.4.10",
   "clientFiles": [
@@ -47,7 +47,7 @@
     "tag": "v1.0.0-mc1.20.1",
     "url": "https://github.com/Eldershi/create-style-dyson/releases/tag/v1.0.0-mc1.20.1",
     "clientBundleURL": "https://github.com/Eldershi/create-style-dyson/releases/download/v1.0.0-mc1.20.1/Create-Style-Dyson-1.0.0-MC1.20.1-Client.zip",
-    "clientBundleSHA256": "6aa826165b9661bef1be74e97e55d57a0090598c6cfca0cdc2c328cf225e99fd",
+    "clientBundleSHA256": "9e4dc4869f738aa694491f9d83c55ca1e70db4f75057b3c8f481d31a769af717",
     "sourceArchiveURL": "https://github.com/Eldershi/create-style-dyson/archive/refs/tags/v1.0.0-mc1.20.1.zip",
     "sourceArtFiles": 49,
     "compiledResourceFiles": 246
