@@ -90,6 +90,67 @@ def hashes(path):
     raise RuntimeError(f"Mod changed while hashing: {path.name}")
 
 
+def external_resource_files(project, active):
+    """Verify exact client files maintained by separately published projects."""
+    roots = [Path(__file__).resolve().parents[1] / "integrations/resourcepacks",
+             project / "integrations/resourcepacks",
+             project / "clients/cmi-expedition/distribution/repository/integrations/resourcepacks"]
+    result = {}
+    seen = set()
+    for root in roots:
+        root = root.resolve()
+        if root in seen:
+            continue
+        seen.add(root)
+        for manifest in sorted(root.glob("*.json")):
+            if manifest.is_symlink():
+                raise RuntimeError("External integration manifest must not be a symlink")
+            entries = json.loads(read_stable(manifest)).get("clientFiles", [])
+            if not isinstance(entries, list):
+                raise RuntimeError("External integration clientFiles must be a list")
+            for entry in entries:
+                if not isinstance(entry, dict):
+                    raise RuntimeError("External integration clientFiles entry must be an object")
+                relative, expected = entry.get("path"), entry.get("sha256")
+                if (not isinstance(relative, str) or not relative or "\\" in relative
+                        or "\x00" in relative or re.match(r"^[A-Za-z]:", relative)):
+                    raise RuntimeError("External integration path must be a client-relative POSIX path")
+                path = PurePosixPath(relative)
+                if path.is_absolute() or ".." in path.parts or path.as_posix() != relative or relative == ".":
+                    raise RuntimeError("External integration path must be a normalized client-relative path")
+                if not isinstance(expected, str) or not re.fullmatch(r"[0-9a-f]{64}", expected):
+                    raise RuntimeError("External integration sha256 must be lowercase hexadecimal")
+                source = active.joinpath(*path.parts)
+                if any(active.joinpath(*path.parts[:i]).is_symlink() for i in range(1, len(path.parts) + 1)):
+                    raise RuntimeError(f"External integration source must not be symlinked: {relative}")
+                if not source.is_file() or not source.resolve().is_relative_to(active.resolve()):
+                    raise RuntimeError(f"External integration source is missing or outside client: {relative}")
+                blob = read_stable(source)
+                if digest(blob) != expected:
+                    raise RuntimeError(f"External integration source hash mismatch: {relative}")
+                if relative in result and result[relative]["sha256"] != expected:
+                    raise RuntimeError(f"Conflicting external integration hashes: {relative}")
+                item = result.setdefault(relative, {"path": relative, "sha256": expected,
+                                                     "bytes": len(blob), "manifests": []})
+                reference = "integrations/resourcepacks/" + manifest.name
+                if reference not in item["manifests"]:
+                    item["manifests"].append(reference)
+    return result
+
+
+def configured_pack_preserved(current_client, active, name, external):
+    for folder in ("config/paxi/resourcepacks", "resourcepacks"):
+        relative = folder + "/" + name
+        if (current_client / relative).exists():
+            return True
+        if relative in external:
+            source = active.joinpath(*PurePosixPath(relative).parts)
+            if not source.is_file() or digest(read_stable(source)) != external[relative]["sha256"]:
+                raise RuntimeError(f"Configured external resource pack hash mismatch: {name}")
+            return True
+    return False
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--project", required=True, type=Path)
@@ -112,6 +173,7 @@ def main():
     publication = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(publication)
     original_skip = publication.skip_reason
+    external = external_resource_files(project, active)
 
     def skip(relative):
         return original_skip(relative) or production_exclusion(relative)
@@ -125,6 +187,12 @@ def main():
     files = []
 
     def write_file(scope, relative, blob, source=None):
+        if scope == "client" and relative in external:
+            if digest(blob) != external[relative]["sha256"]:
+                raise RuntimeError(f"External integration source changed: {relative}")
+            excluded.append({"scope": scope, "path": relative,
+                             "reason": "verified external resource integration; bytes omitted"})
+            return
         if scope == "server":
             shared = current / "client" / relative
             if shared.is_file() and shared.read_bytes() == blob:
@@ -281,8 +349,7 @@ def main():
     order_file = current / "client/config/paxi/resourcepack_load_order.json"
     load_order = json.loads(order_file.read_text()).get("loadOrder", []) if order_file.is_file() else []
     for name in load_order:
-        if not any((current / "client" / folder / name).exists()
-                   for folder in ("config/paxi/resourcepacks", "resourcepacks")):
+        if not configured_pack_preserved(current / "client", active, name, external):
             raise RuntimeError(f"Configured resource pack was not preserved: {name}")
     stats = {}
     for scope in ("client", "server"):
@@ -294,6 +361,7 @@ def main():
               "modsWithoutVerifiedDownloadUrl": missing_downloads,
               "clientProductionCustomJars": custom_mods,
               "resourcePackLoadOrder": load_order,
+              "externalResourceReferences": list(external.values()),
               "sourceModified": False,
               "serverSource": "reviewed dedicated-server overlay"}
     (output.parent / "snapshot-result.json").write_bytes(encoded(report))
