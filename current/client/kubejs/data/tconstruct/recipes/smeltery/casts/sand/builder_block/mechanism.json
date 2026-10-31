@@ -1,0 +1,11 @@
+{
+	"type": "tconstruct:item_part_builder",
+	"pattern": "cmi:mechanism",
+	"pattern_item": {
+		"item": "minecraft:sand"
+	},
+	"result": {
+		"count": 4,
+		"item": "cmi:mechanism_sand_cast"
+	}
+}

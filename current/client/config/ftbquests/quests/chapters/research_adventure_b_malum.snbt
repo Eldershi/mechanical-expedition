@@ -1,0 +1,1314 @@
+{
+	id: "23A1BB9C89C9AB85"
+	filename: "research_adventure_b_malum"
+	title: "灵灾"
+	group: "25C542C40E64ED41"
+	order_index: 208
+	icon: "malum:runewood_log"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "346368DAEF66BBF8"
+			title: "符文木：材料与树脂"
+			icon: "malum:runewood_log"
+			x: -6.867d
+			y: -2.317d
+			optional: false
+			tasks: [
+				{
+					id: "58E1699033B44758"
+					type: "item"
+					item: "malum:runewood_log"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/fa7241b4548a543ebe4aff16.png width:32 height:32 align:center}"
+				"在平原/森林寻找橙黄叶符文木，砍木并保留树苗。"
+				"在平原/森林寻找橙黄叶符文木，砍木并保留树苗。富脂原木先用斧去皮，再用玻璃瓶收集树脂。树脂可进一步作黏液替代物。这里用手册补证，不给旧字幕缺失主语补字。"
+				"取得符文原木。"
+				"符文木图腾：刻印有顺序。"
+				"精炼灵魂石：下矿与烧炼。"
+			]
+		}
+		{
+			id: "0611653B06979057"
+			title: "精炼灵魂石：下矿与烧炼"
+			icon: "malum:processed_soulstone"
+			x: -8.972d
+			y: -0.925d
+			optional: false
+			tasks: [
+				{
+					id: "25D99E82B2BB027D"
+					type: "item"
+					item: "malum:processed_soulstone"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/21c397423df9b886304e9565.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/a475192b7552dc7db204be5f.png width:240 height:120 align:center}"
+				"配方输入：粗灵魂石×1。工作能力：烧炼。"
+				"采集灵魂石矿获得原料，按烧炼配方制精炼灵魂石。经验晶和天然石英是其他资源分支，不要求五种矿一次集齐。"
+				"取得精制灵魂石。"
+				"粗制镰刀：第一次收魂。"
+				"精魂祭坛：中央物品与四格辅料。"
+				"魂染钢：进入装备分支。"
+				"魂染钢装备：选一件检查用途。"
+			]
+		}
+		{
+			id: "669F9FEC430EED6E"
+			title: "粗制镰刀：第一次收魂"
+			icon: "malum:crude_scythe"
+			x: -7.287d
+			y: 4.901d
+			optional: false
+			tasks: [
+				{
+					id: "26F9C291727723BB"
+					type: "item"
+					item: "malum:crude_scythe"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7cd526729679809fda2ab94d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/409b99429cd75c8ab3b00cee.png width:240 height:120 align:center}"
+				"配方输入：铁锭×1，重复3槽。精制灵魂石×1。防腐木棍×1 或 木棍×1（共3个任选一种备选），重复2槽。"
+				"以配方制作镰刀，用它完成生物击杀，收集飞出的精魄。镰刀是会损耗耐久的工作工具。不能只携带就算收魂。"
+				"取得粗制镰刀。"
+				"魂染钢装备：选一件检查用途。"
+				"精魄：按配方选择猎物。"
+			]
+		}
+		{
+			id: "29D57DAA137CEB4F"
+			title: "精魄：按配方选择猎物"
+			icon: "malum:sacred_spirit"
+			x: -5.873d
+			y: 1.47d
+			optional: false
+			tasks: [
+				{
+					id: "2ADCFC7F8236F7F8"
+					type: "item"
+					item: "malum:sacred_spirit"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1d63713f377e62b4b2cb8b4a.png width:32 height:32 align:center}"
+				"神圣/邪恶/奥术和四元素等精魄各有生物来源。"
+				"神圣/邪恶/奥术和四元素等精魄各有生物来源。先选择要制作的物品，再猎取对应生物，收集所需精魄。"
+				"取得神圣精魂。"
+				"神圣金：试做一轮灌注。"
+				"可选加速：神圣方尖碑。"
+				"污秽石与扭曲石：分出新工艺。"
+				"精魂修复：材料、精魄、待修工具。"
+			]
+		}
+		{
+			id: "6E572B45B754ADB7"
+			title: "精魂祭坛：中央物品与四格辅料"
+			icon: "malum:spirit_altar"
+			x: -2.443d
+			y: 0.795d
+			optional: false
+			tasks: [
+				{
+					id: "797FE7780A558FE7"
+					type: "item"
+					item: "malum:spirit_altar"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/88c88714e6f39cb87ed8798d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/83021c26dbc7d946d7dc7035.png width:240 height:120 align:center}"
+				"配方输入：精制灵魂石×1。金锭×1，重复2槽。符文木板×1，重复4槽。"
+				"用符文木制作祭坛与物品台。中央放待灌注物和要求的精魄，四格内物品台放辅料。齐备后自动进行，等中央产物出现再取。此为手册补证。"
+				"取得精魂祭坛。"
+				"神圣金：试做一轮灌注。"
+				"魂染钢：进入装备分支。"
+				"精魂布匹：储存比堆收集更实用。"
+				"可选加速：神圣方尖碑。"
+			]
+		}
+		{
+			id: "0D8F383886B84783"
+			title: "神圣金：试做一轮灌注"
+			icon: "malum:hallowed_gold_ingot"
+			x: 1.367d
+			y: -4.901d
+			optional: false
+			tasks: [
+				{
+					id: "55956EEB131E1FB5"
+					type: "item"
+					item: "malum:hallowed_gold_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "48B6A1109F18D8D4"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/bed688a64c57f43b22ab3e56.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/84c7994363549da94b9bd813.png width:240 height:309 align:center}"
+				"配方输入：神圣精魂×2。奥术精魂×1。下界石英×4 或 石英硫簇×4（共3个任选一种备选）。金锭×1。工作能力：精魂灌注。"
+				"准备配方要求的金与神圣精魄，中央/辅料按图分放，等待灌注得到神圣金。检查产物再安排加速方尖碑或精魄罐。不用制作所有饰品证明系统运转。"
+				"取得神圣金锭。"
+				"可选加速：神圣方尖碑。"
+				"符文工艺与装备外观选修。"
+				"魂染钢：进入装备分支。"
+			]
+		}
+		{
+			id: "3E24617D655E3DB9"
+			title: "魂染钢：进入装备分支"
+			icon: "malum:soul_stained_steel_ingot"
+			x: 2.247d
+			y: -2.276d
+			optional: false
+			tasks: [
+				{
+					id: "6061BEFFB0431194"
+					type: "item"
+					item: "malum:soul_stained_steel_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/b580f97b48c1012b21047aa3.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/a7b5282150e6cb489bdffade.png width:240 height:309 align:center}"
+				"配方输入：邪恶精魂×3。大地精魂×1。奥术精魂×1。精制灵魂石×4。铁锭×1。工作能力：精魂灌注。"
+				"使用铁、灵魂石和配方所列精魄灌注魂染钢，取一轮产物。它可升级镰刀与做护甲，工具/护甲用途是并行选项。不要求先穿整套才能继续祭坛。"
+				"取得魂染钢锭。"
+				"魂染钢装备：选一件检查用途。"
+				"精魂布匹：储存比堆收集更实用。"
+			]
+		}
+		{
+			id: "362B9DA8430CBCAA"
+			title: "精魂布匹：储存比堆收集更实用"
+			icon: "malum:spirit_fabric"
+			x: 0.763d
+			y: 4.288d
+			optional: false
+			tasks: [
+				{
+					id: "41421FB969E2DF43"
+					type: "item"
+					item: "malum:spirit_fabric"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/41fd91866158665d46d23adf.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/57f965361d50ef83c6451584.png width:240 height:309 align:center}"
+				"配方输入：邪恶精魂×2。大地精魂×1。澄空精魂×1。线×2 或 扭缠细枝×2（共3个任选一种备选）。咒灰×1。白色羊毛×2 或 橙色羊毛×2（共17个任选一种备选）。工作能力：精魂灌注。"
+				"按灌注配方生产精魂布匹，优先做精魂布袋整理后续精魄。布袋是容量有限的便携工具。精魄罐每罐只存一种，二者作用不同。"
+				"取得精魂布匹。"
+				"可选加速：神圣方尖碑。"
+			]
+		}
+		{
+			id: "477C9534DCA104B0"
+			title: "可选加速：神圣方尖碑"
+			icon: "malum:runewood_obelisk"
+			x: 3.998d
+			y: -4.83d
+			optional: true
+			tasks: [
+				{
+					id: "574CF0C9A2156E19"
+					type: "item"
+					item: "malum:runewood_obelisk"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/71b57a540ddb9bd99bce18b7.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/7b2adfd6de2a59f6e245a8ea.png width:240 height:309 align:center}"
+				"配方输入：澄空精魂×16。神圣精魂×8。神圣金锭×2。咒灰×1。符文木板×2。工作能力：精魂灌注。"
+				"在祭坛附近放最多四座神圣方尖碑，每座增加四分之一处理速度。经验方尖碑是附魔能力装置，不能拿来替代灌注加速。先能稳定完成一轮，再投入加速。"
+				"取得符文木方尖碑。"
+				"污秽石与扭曲石：分出新工艺。"
+			]
+		}
+		{
+			id: "00CAC4CFB28BA40A"
+			title: "污秽石与扭曲石：分出新工艺"
+			icon: "malum:tainted_rock"
+			x: 4.173d
+			y: 2.324d
+			optional: false
+			tasks: [
+				{
+					id: "7876E45753C53A1C"
+					type: "item"
+					item: "malum:tainted_rock"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3cb39d42632b4bf815f07c28.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/6c24a50e5d71daf2577d1f40.png width:240 height:309 align:center}"
+				"配方输入：神圣精魂×1。奥术精魂×1。圆石×16 或 黑石×16（共22个任选一种备选）。工作能力：精魂灌注。"
+				"分别按灌注配方转换石头，得到两种灵性石材。它们用于修复基座、精魂坩埚等不同工作能力。不是通用魔法能量转换器。保留配方各自精魄条件。"
+				"取得污秽石。"
+				"精魂修复：材料、精魄、待修工具。"
+				"精魂坩埚：促符会损耗。"
+				"可选调谐：速度与失稳取舍。"
+			]
+		}
+		{
+			id: "1C51DA0C0AEE4578"
+			title: "精魂修复：材料、精魄、待修工具"
+			icon: "malum:repair_pylon"
+			x: 6.248d
+			y: 4.627d
+			optional: true
+			tasks: [
+				{
+					id: "16B1D9783F1374D3"
+					type: "item"
+					item: "malum:repair_pylon"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/167d2af02f0596b6a6112b5e.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/1d157b95643a24d9c3917db6.png width:240 height:309 align:center}"
+				"配方输入：神圣精魂×16。澄空精魂×16。碧水精魂×16。狱火精魂×16。污秽石×8。扭曲石×8。污秽石物品台×1。工作能力：精魂灌注。"
+				"在修复基座放配方修复材料及精魄，附近物品台放待修工具。观察工具耐久实际增加后完成，不以拿到基座代替修复完成。可修物品、修复量按修复配方查。"
+				"取得修复基柱。"
+				"精魂坩埚：促符会损耗。"
+			]
+		}
+		{
+			id: "73FDCE7BFA82F48D"
+			title: "精魂坩埚：促符会损耗"
+			icon: "malum:spirit_crucible"
+			x: 3.646d
+			y: 4.894d
+			optional: false
+			tasks: [
+				{
+					id: "00E46249F1D3064A"
+					type: "item"
+					item: "malum:spirit_crucible"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/746f17a1443884a494e44539.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/442c82871ba8f2b397cc04b5.png width:240 height:309 align:center}"
+				"配方输入：狱火精魂×12。奥术精魂×4。咒灰×2。污秽石×8。扭曲石×8。熔炉×1。工作能力：精魂灌注。"
+				"用两类灵性石材等配方建坩埚。放入对应炼金促符与配方精魄，等产物。促符是耐久催化剂而非无限工具，也不是每次整件消耗。不要误写为普通矿石粉碎。"
+				"取得精魂坩埚。"
+				"可选调谐：速度与失稳取舍。"
+			]
+		}
+		{
+			id: "2965D25E4EAE687F"
+			title: "可选调谐：速度与失稳取舍"
+			icon: "malum:spirit_catalyzer"
+			x: 6.811d
+			y: 2.043d
+			optional: true
+			tasks: [
+				{
+					id: "5F9B8A21D953E4A3"
+					type: "item"
+					item: "malum:spirit_catalyzer"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/082ca22073d37ce0a84ffc20.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/261c78281e951a2b8684cf04.png width:240 height:309 align:center}"
+				"配方输入：狱火精魂×8。澄空精魂×8。污秽石×4。灵火×1。扭曲石×4。扭曲石物品台×1。工作能力：精魂灌注。"
+				"坩埚旁放精魂催化器并供燃料。最多八台可加速，但提高促符额外损耗风险。用调谐音叉看属性、选择调节。增幅件最多四件装坩埚，具体效果按提示。先拿低成本促符试验。"
+				"取得精魂催化器。"
+				"符文木图腾：刻印有顺序。"
+			]
+		}
+		{
+			id: "638845C7ED042D63"
+			title: "符文木图腾：刻印有顺序"
+			icon: "malum:runewood_totem_base"
+			x: 8.552d
+			y: -3.441d
+			optional: false
+			tasks: [
+				{
+					id: "0EFADDECD1ADE983"
+					type: "item"
+					item: "malum:runewood_totem_base"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/20300f46fb1ca6266670d6f7.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b1f84cecffeab5f27ecd0639.png width:240 height:309 align:center}"
+				"{image:expedition_research:textures/quests/58225df18f1b5a4ef350096d.png width:240 height:309 align:center}"
+				"{image:expedition_research:textures/quests/7492718cfb19c27f8395f59e.png width:240 height:309 align:center}"
+				"{image:expedition_research:textures/quests/a3736d8f606edb8782e6e739.png width:240 height:309 align:center}"
+				"{image:expedition_research:textures/quests/666ebfd433ab5f55bca2dbf9.png width:240 height:309 align:center}"
+				"{image:expedition_research:textures/quests/4073a1d276ffee59bdbd8aaf.png width:240 height:309 align:center}"
+				"{image:expedition_research:textures/quests/74b75592096f19c8b63b9816.png width:240 height:309 align:center}"
+				"{image:expedition_research:textures/quests/96e039323be115c3f1024c42.png width:240 height:309 align:center}"
+				"{image:expedition_research:textures/quests/fbb88150a009cdac6538b9f9.png width:240 height:309 align:center}"
+				"{image:expedition_research:textures/quests/3ebce560b3df4b8bb47144ca.png width:240 height:309 align:center}"
+				"{image:expedition_research:textures/quests/7c3a3deb3a6abc80e263980a.png width:240 height:309 align:center}"
+				"{image:expedition_research:textures/quests/932777aa3543a09953d2ad8a.png width:240 height:309 align:center}"
+				"{image:expedition_research:textures/quests/f133be12e9bc442d648bbce9.png width:240 height:309 align:center}"
+				"{image:expedition_research:textures/quests/414c4ce8a2048bae5a479a95.png width:240 height:309 align:center}"
+				"配方输入：澄空精魂×2。碧水精魂×2。大地精魂×2。狱火精魂×2。邪术精魂×1。符文木板×6。咒灰×2。符文原木×4。工作能力：精魂灌注。"
+				"基座上竖符文木原木，按配方查询精魂仪式页面的符文序列逐层以精魄右击刻印，每新刻一层消耗1枚精魄，右击基座启动。刻好后的图腾后续运行可使用。持图腾法杖看范围。相同仪式的范围重叠会互相干扰；按需要选择图腾，并留出间距。"
+				"取得符文木图腾基座。"
+				"释缚：五枚奥术符文的变化。"
+			]
+		}
+		{
+			id: "02392D3F1FA01E90"
+			title: "释缚：五枚奥术符文的变化"
+			icon: "malum:soulwood_log"
+			x: 8.972d
+			y: -2.277d
+			optional: true
+			tasks: [
+				{
+					id: "4FB9385DB6F714CD"
+					type: "item"
+					item: "malum:soulwood_log"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/bc627849fed984c81ebfbe64.png width:32 height:32 align:center}"
+				"在隔离场地为符文木图腾刻五层奥术符文（建造消耗共5枚奥术精魄），启动释缚，观察灵魂木和地形变化。"
+				"在隔离场地为符文木图腾刻五层奥术符文（建造消耗共5枚奥术精魄），启动释缚，观察灵魂木和地形变化。灵魂木图腾使用同样精魄排列可有不同效果，查各自页面，不能套用符文木治疗等结论。"
+				"取得灵魂原木。"
+				"符文工艺与装备外观选修。"
+			]
+		}
+		{
+			id: "50FBF0D4D2AF5D72"
+			title: "符文工艺与装备外观选修"
+			icon: "malum:runic_workbench"
+			x: 8.501d
+			y: 1.051d
+			optional: true
+			tasks: [
+				{
+					id: "11E00B36A1353440"
+					type: "item"
+					item: "malum:runic_workbench"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/2aaa740df41d2ab535a3d744.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f707b60f3560191c12873f8a.png width:240 height:309 align:center}"
+				"配方输入：碧水精魂×16。神圣精魂×8。符文木板×4。神圣金锭×2。符文木物品台×1。工作能力：精魂灌注。"
+				"制作符板后在符文工作台按配方灌入精魄，佩戴合适符文。与图腾实体范围效果分开理解。织物工作台只改变可用装备外观。符文/饰品各取所需，不放到主工艺必做链。"
+				"取得符文工作台。"
+				"魂染钢装备：选一件检查用途。"
+			]
+		}
+		{
+			id: "6785465A72E3315B"
+			title: "魂染钢装备：选一件验证用途"
+			icon: "malum:soul_stained_steel_scythe"
+			x: 6.678d
+			y: -1.878d
+			optional: true
+			tasks: [
+				{
+					id: "2377E67269FEC91C"
+					type: "item"
+					item: "malum:soul_stained_steel_scythe"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3f0724284c4a775e38ed236a.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/0bf6d88a20b566279a99f300.png width:240 height:309 align:center}"
+				"配方输入：大地精魂×16。邪恶精魂×8。奥术精魂×8。魂染钢锭×4。咒灰×2。精制灵魂石×4。粗制镰刀×1。工作能力：精魂灌注。"
+				"升级镰刀用于持续收魂，或按配方做护甲观察灵魂护盾。具体数值受配置与战斗模组影响，先做一件检查。"
+				"取得魂染钢镰刀。"
+				"按所选分支继续，或返回魔法总览选择另一体系。"
+			]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:611653b06979057" "q:669f9fec430eed6e"]
+		}
+		{
+			nodes: ["q:611653b06979057" "a:4c81aee9-e1c8-5318-9a5b-f113496c1de2"]
+		}
+		{
+			nodes: ["a:4c81aee9-e1c8-5318-9a5b-f113496c1de2" "a:66e10a7b-e10c-5c54-8b66-2e1f871e1f28"]
+		}
+		{
+			nodes: ["a:66e10a7b-e10c-5c54-8b66-2e1f871e1f28" "q:6e572b45b754adb7"]
+		}
+		{
+			nodes: ["q:611653b06979057" "a:6ff0f2ba-5638-5974-a221-52a016fdc47d"]
+		}
+		{
+			nodes: ["a:6ff0f2ba-5638-5974-a221-52a016fdc47d" "a:eff56cfb-d457-5583-98e2-f85eb371455e"]
+		}
+		{
+			nodes: ["a:eff56cfb-d457-5583-98e2-f85eb371455e" "q:3e24617d655e3db9"]
+		}
+		{
+			nodes: ["q:611653b06979057" "a:38191da2-7aed-54bd-a838-a606305e4b03"]
+		}
+		{
+			nodes: ["a:38191da2-7aed-54bd-a838-a606305e4b03" "a:75e090c0-f654-5152-b7b0-a6c8ed91de13"]
+		}
+		{
+			nodes: ["a:75e090c0-f654-5152-b7b0-a6c8ed91de13" "q:6785465a72e3315b"]
+		}
+		{
+			nodes: ["q:29d57daa137ceb4f" "a:8cde0d07-4084-584b-be9d-a350381ebb75"]
+		}
+		{
+			nodes: ["a:8cde0d07-4084-584b-be9d-a350381ebb75" "a:1e94ba44-2c97-5091-ac05-2b0007cb3499"]
+		}
+		{
+			nodes: ["a:1e94ba44-2c97-5091-ac05-2b0007cb3499" "q:d8f383886b84783"]
+		}
+		{
+			nodes: ["q:29d57daa137ceb4f" "a:45f3c815-fdfd-5af3-93f9-8dd989a26b02"]
+		}
+		{
+			nodes: ["a:45f3c815-fdfd-5af3-93f9-8dd989a26b02" "a:ef2db307-e85a-5914-80a9-9fbbbee761d2"]
+		}
+		{
+			nodes: ["a:ef2db307-e85a-5914-80a9-9fbbbee761d2" "q:477c9534dca104b0"]
+		}
+		{
+			nodes: ["q:29d57daa137ceb4f" "a:a8425712-0814-56c3-b94a-0489a6554b92"]
+		}
+		{
+			nodes: ["a:a8425712-0814-56c3-b94a-0489a6554b92" "a:5e077e25-cc32-5957-bf2e-baeb35a761f8"]
+		}
+		{
+			nodes: ["a:5e077e25-cc32-5957-bf2e-baeb35a761f8" "q:cac4cfb28ba40a"]
+		}
+		{
+			nodes: ["q:29d57daa137ceb4f" "a:fc38cb54-5787-5af3-8515-df267294221d"]
+		}
+		{
+			nodes: ["a:fc38cb54-5787-5af3-8515-df267294221d" "a:07a72416-8007-581e-95ac-674a2cc635f8"]
+		}
+		{
+			nodes: ["a:07a72416-8007-581e-95ac-674a2cc635f8" "q:1c51da0c0aee4578"]
+		}
+		{
+			nodes: ["q:29d57daa137ceb4f" "a:7d819fca-0b36-5b04-84d5-490da7ae471f"]
+		}
+		{
+			nodes: ["a:7d819fca-0b36-5b04-84d5-490da7ae471f" "a:4dc9564f-f215-5142-87b3-ba680db27323"]
+		}
+		{
+			nodes: ["a:4dc9564f-f215-5142-87b3-ba680db27323" "q:50fbf0d4d2af5d72"]
+		}
+		{
+			nodes: ["q:29d57daa137ceb4f" "q:6e572b45b754adb7"]
+		}
+		{
+			nodes: ["q:6e572b45b754adb7" "q:d8f383886b84783"]
+		}
+		{
+			nodes: ["q:6e572b45b754adb7" "a:8cc68797-f55a-5799-932e-d08eeda15ce5"]
+		}
+		{
+			nodes: ["a:8cc68797-f55a-5799-932e-d08eeda15ce5" "a:7974d8eb-f012-5fce-a174-ea37682b9373"]
+		}
+		{
+			nodes: ["a:7974d8eb-f012-5fce-a174-ea37682b9373" "q:3e24617d655e3db9"]
+		}
+		{
+			nodes: ["q:6e572b45b754adb7" "a:14a29311-6095-588d-acee-fade28b33569"]
+		}
+		{
+			nodes: ["a:14a29311-6095-588d-acee-fade28b33569" "a:07e691e7-458f-5772-8426-907131cada52"]
+		}
+		{
+			nodes: ["a:07e691e7-458f-5772-8426-907131cada52" "q:362b9da8430cbcaa"]
+		}
+		{
+			nodes: ["q:6e572b45b754adb7" "a:007d1ac7-84ce-5438-a0fb-668757d5a9ed"]
+		}
+		{
+			nodes: ["a:007d1ac7-84ce-5438-a0fb-668757d5a9ed" "a:28d9608d-0236-53a6-8c83-f926851558b6"]
+		}
+		{
+			nodes: ["a:28d9608d-0236-53a6-8c83-f926851558b6" "q:477c9534dca104b0"]
+		}
+		{
+			nodes: ["q:6e572b45b754adb7" "a:b6f04bea-86c3-5eb1-9e3a-0c8e36ddf9c7"]
+		}
+		{
+			nodes: ["a:b6f04bea-86c3-5eb1-9e3a-0c8e36ddf9c7" "a:bcb0c9ac-3c5c-53a1-b431-6ad00900c1aa"]
+		}
+		{
+			nodes: ["a:bcb0c9ac-3c5c-53a1-b431-6ad00900c1aa" "q:cac4cfb28ba40a"]
+		}
+		{
+			nodes: ["q:6e572b45b754adb7" "a:bdbc0b7b-0b19-5b7f-b178-ba79c4213f59"]
+		}
+		{
+			nodes: ["a:bdbc0b7b-0b19-5b7f-b178-ba79c4213f59" "a:e489a4a3-052f-52e4-9189-2b15478a7f08"]
+		}
+		{
+			nodes: ["a:e489a4a3-052f-52e4-9189-2b15478a7f08" "q:1c51da0c0aee4578"]
+		}
+		{
+			nodes: ["q:6e572b45b754adb7" "a:b0bb25a6-8fa3-5e7f-9006-1dce332fb7f8"]
+		}
+		{
+			nodes: ["a:b0bb25a6-8fa3-5e7f-9006-1dce332fb7f8" "a:5c0f88b7-f624-57a3-82d2-892d7c815402"]
+		}
+		{
+			nodes: ["a:5c0f88b7-f624-57a3-82d2-892d7c815402" "q:73fdce7bfa82f48d"]
+		}
+		{
+			nodes: ["q:6e572b45b754adb7" "a:733e16c4-91d3-5a3d-b953-00d30b03c0e9"]
+		}
+		{
+			nodes: ["a:733e16c4-91d3-5a3d-b953-00d30b03c0e9" "a:f8708b30-e71b-5551-9324-0fb066463aa9"]
+		}
+		{
+			nodes: ["a:f8708b30-e71b-5551-9324-0fb066463aa9" "q:2965d25e4eae687f"]
+		}
+		{
+			nodes: ["q:6e572b45b754adb7" "a:6a4f1cca-7582-51c2-bada-651653e4fc66"]
+		}
+		{
+			nodes: ["a:6a4f1cca-7582-51c2-bada-651653e4fc66" "a:2047db71-1d87-5291-9fcf-d7f620c59ef9"]
+		}
+		{
+			nodes: ["a:2047db71-1d87-5291-9fcf-d7f620c59ef9" "q:638845c7ed042d63"]
+		}
+		{
+			nodes: ["q:6e572b45b754adb7" "a:f5964e28-d3ef-5b76-b9f7-6b06ea20350f"]
+		}
+		{
+			nodes: ["a:f5964e28-d3ef-5b76-b9f7-6b06ea20350f" "a:e204e2db-8610-5010-b1ee-d5a0ae8e88b8"]
+		}
+		{
+			nodes: ["a:e204e2db-8610-5010-b1ee-d5a0ae8e88b8" "q:50fbf0d4d2af5d72"]
+		}
+		{
+			nodes: ["q:6e572b45b754adb7" "a:d2e08b4e-50ec-5f55-9d21-718a1ea43f95"]
+		}
+		{
+			nodes: ["a:d2e08b4e-50ec-5f55-9d21-718a1ea43f95" "a:53ac04fe-b6b7-52a1-9fba-3ba68faa0291"]
+		}
+		{
+			nodes: ["a:53ac04fe-b6b7-52a1-9fba-3ba68faa0291" "q:6785465a72e3315b"]
+		}
+		{
+			nodes: ["q:d8f383886b84783" "a:48189b6e-e949-5560-b011-3c8f5a23302e"]
+		}
+		{
+			nodes: ["a:48189b6e-e949-5560-b011-3c8f5a23302e" "a:e30daea1-5aa0-5c75-b2fa-ebfa733128b9"]
+		}
+		{
+			nodes: ["a:e30daea1-5aa0-5c75-b2fa-ebfa733128b9" "q:477c9534dca104b0"]
+		}
+		{
+			nodes: ["q:d8f383886b84783" "a:1c122fdb-5b66-5b33-a936-323fd9162206"]
+		}
+		{
+			nodes: ["a:1c122fdb-5b66-5b33-a936-323fd9162206" "a:cfc9b801-9f6b-581d-a84a-192a1581095c"]
+		}
+		{
+			nodes: ["a:cfc9b801-9f6b-581d-a84a-192a1581095c" "q:50fbf0d4d2af5d72"]
+		}
+		{
+			nodes: ["q:d8f383886b84783" "q:3e24617d655e3db9"]
+		}
+		{
+			nodes: ["q:cac4cfb28ba40a" "q:1c51da0c0aee4578"]
+		}
+		{
+			nodes: ["q:cac4cfb28ba40a" "a:7ad60894-27e7-59c7-871b-bbb5c11521ca"]
+		}
+		{
+			nodes: ["a:7ad60894-27e7-59c7-871b-bbb5c11521ca" "a:08154a0f-91d6-50e9-9fce-93d873a835dc"]
+		}
+		{
+			nodes: ["a:08154a0f-91d6-50e9-9fce-93d873a835dc" "q:73fdce7bfa82f48d"]
+		}
+		{
+			nodes: ["q:cac4cfb28ba40a" "a:14356296-dc61-5d33-84e4-327ede339b96"]
+		}
+		{
+			nodes: ["a:14356296-dc61-5d33-84e4-327ede339b96" "a:add00799-404b-51e8-94bb-2b63674c67d7"]
+		}
+		{
+			nodes: ["a:add00799-404b-51e8-94bb-2b63674c67d7" "q:2965d25e4eae687f"]
+		}
+		{
+			nodes: ["q:346368daef66bbf8" "a:4ac4955d-eec0-581f-ae85-25acfe1c9180"]
+		}
+		{
+			nodes: ["a:4ac4955d-eec0-581f-ae85-25acfe1c9180" "a:7796de1f-7979-5f88-af14-6b50cdb9c99c"]
+		}
+		{
+			nodes: ["a:7796de1f-7979-5f88-af14-6b50cdb9c99c" "q:638845c7ed042d63"]
+		}
+		{
+			nodes: ["q:346368daef66bbf8" "q:611653b06979057"]
+		}
+		{
+			nodes: ["q:3e24617d655e3db9" "a:c3609ee2-ab98-5854-b35e-6f304262931f"]
+		}
+		{
+			nodes: ["a:c3609ee2-ab98-5854-b35e-6f304262931f" "a:db6e9db2-c79f-51a4-a361-960d2d4e0dca"]
+		}
+		{
+			nodes: ["a:db6e9db2-c79f-51a4-a361-960d2d4e0dca" "q:6785465a72e3315b"]
+		}
+		{
+			nodes: ["q:3e24617d655e3db9" "q:362b9da8430cbcaa"]
+		}
+		{
+			nodes: ["q:669f9fec430eed6e" "a:22c736c6-bcee-5adf-ae29-405f97839ebf"]
+		}
+		{
+			nodes: ["a:22c736c6-bcee-5adf-ae29-405f97839ebf" "a:b4ad4770-b33f-5163-b51d-31e2dddf31c1"]
+		}
+		{
+			nodes: ["a:b4ad4770-b33f-5163-b51d-31e2dddf31c1" "q:6785465a72e3315b"]
+		}
+		{
+			nodes: ["q:669f9fec430eed6e" "q:29d57daa137ceb4f"]
+		}
+		{
+			nodes: ["q:362b9da8430cbcaa" "q:477c9534dca104b0"]
+		}
+		{
+			nodes: ["q:477c9534dca104b0" "q:cac4cfb28ba40a"]
+		}
+		{
+			nodes: ["q:1c51da0c0aee4578" "q:73fdce7bfa82f48d"]
+		}
+		{
+			nodes: ["q:73fdce7bfa82f48d" "q:2965d25e4eae687f"]
+		}
+		{
+			nodes: ["q:2965d25e4eae687f" "q:638845c7ed042d63"]
+		}
+		{
+			nodes: ["q:638845c7ed042d63" "q:2392d3f1fa01e90"]
+		}
+		{
+			nodes: ["q:2392d3f1fa01e90" "q:50fbf0d4d2af5d72"]
+		}
+		{
+			nodes: ["q:50fbf0d4d2af5d72" "q:6785465a72e3315b"]
+		}
+	]
+	images: [
+		{
+			x: -1.727d
+			y: -2.692d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4ac4955d-eec0-581f-ae85-25acfe1c9180"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.412d
+			y: -3.066d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7796de1f-7979-5f88-af14-6b50cdb9c99c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.796d
+			y: -0.352d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4c81aee9-e1c8-5318-9a5b-f113496c1de2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.619d
+			y: 0.222d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:66e10a7b-e10c-5c54-8b66-2e1f871e1f28"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.232d
+			y: -1.375d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6ff0f2ba-5638-5974-a221-52a016fdc47d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.493d
+			y: -1.826d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:eff56cfb-d457-5583-98e2-f85eb371455e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.755d
+			y: -1.243d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:38191da2-7aed-54bd-a838-a606305e4b03"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.461d
+			y: -1.56d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:75e090c0-f654-5152-b7b0-a6c8ed91de13"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.632d
+			y: 2.641d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:22c736c6-bcee-5adf-ae29-405f97839ebf"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.023d
+			y: 0.382d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b4ad4770-b33f-5163-b51d-31e2dddf31c1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.46d
+			y: -0.654d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8cde0d07-4084-584b-be9d-a350381ebb75"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.046d
+			y: -2.777d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1e94ba44-2c97-5091-ac05-2b0007cb3499"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.583d
+			y: -0.63d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:45f3c815-fdfd-5af3-93f9-8dd989a26b02"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.708d
+			y: -2.73d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ef2db307-e85a-5914-80a9-9fbbbee761d2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.524d
+			y: 1.755d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a8425712-0814-56c3-b94a-0489a6554b92"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.824d
+			y: 2.039d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5e077e25-cc32-5957-bf2e-baeb35a761f8"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.833d
+			y: 2.522d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fc38cb54-5787-5af3-8515-df267294221d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.208d
+			y: 3.575d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:07a72416-8007-581e-95ac-674a2cc635f8"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.082d
+			y: 1.33d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7d819fca-0b36-5b04-84d5-490da7ae471f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.71d
+			y: 1.191d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4dc9564f-f215-5142-87b3-ba680db27323"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.88d
+			y: -0.229d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8cc68797-f55a-5799-932e-d08eeda15ce5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.684d
+			y: -1.252d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7974d8eb-f012-5fce-a174-ea37682b9373"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.374d
+			y: 1.959d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:14a29311-6095-588d-acee-fade28b33569"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.306d
+			y: 3.124d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:07e691e7-458f-5772-8426-907131cada52"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.296d
+			y: -1.08d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:007d1ac7-84ce-5438-a0fb-668757d5a9ed"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.851d
+			y: -2.955d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:28d9608d-0236-53a6-8c83-f926851558b6"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.238d
+			y: 1.305d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b6f04bea-86c3-5eb1-9e3a-0c8e36ddf9c7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.968d
+			y: 1.814d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bcb0c9ac-3c5c-53a1-b431-6ad00900c1aa"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.454d
+			y: 2.072d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bdbc0b7b-0b19-5b7f-b178-ba79c4213f59"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.351d
+			y: 3.35d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e489a4a3-052f-52e4-9189-2b15478a7f08"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.413d
+			y: 2.161d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b0bb25a6-8fa3-5e7f-9006-1dce332fb7f8"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.616d
+			y: 3.528d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5c0f88b7-f624-57a3-82d2-892d7c815402"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.642d
+			y: 1.211d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:733e16c4-91d3-5a3d-b953-00d30b03c0e9"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.726d
+			y: 1.627d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f8708b30-e71b-5551-9324-0fb066463aa9"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.222d
+			y: -0.617d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6a4f1cca-7582-51c2-bada-651653e4fc66"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.887d
+			y: -2.029d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2047db71-1d87-5291-9fcf-d7f620c59ef9"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.205d
+			y: 0.88d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f5964e28-d3ef-5b76-b9f7-6b06ea20350f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.853d
+			y: 0.966d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e204e2db-8610-5010-b1ee-d5a0ae8e88b8"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.597d
+			y: -0.096d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d2e08b4e-50ec-5f55-9d21-718a1ea43f95"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.638d
+			y: -0.987d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:53ac04fe-b6b7-52a1-9fba-3ba68faa0291"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.244d
+			y: -4.877d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:48189b6e-e949-5560-b011-3c8f5a23302e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.121d
+			y: -4.854d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e30daea1-5aa0-5c75-b2fa-ebfa733128b9"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.745d
+			y: -2.917d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1c122fdb-5b66-5b33-a936-323fd9162206"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.123d
+			y: -0.933d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:cfc9b801-9f6b-581d-a84a-192a1581095c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.724d
+			y: -2.143d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c3609ee2-ab98-5854-b35e-6f304262931f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.201d
+			y: -2.011d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:db6e9db2-c79f-51a4-a361-960d2d4e0dca"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.997d
+			y: 3.181d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7ad60894-27e7-59c7-871b-bbb5c11521ca"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.822d
+			y: 4.037d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:08154a0f-91d6-50e9-9fce-93d873a835dc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.052d
+			y: 2.23d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:14356296-dc61-5d33-84e4-327ede339b96"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.932d
+			y: 2.137d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:add00799-404b-51e8-94bb-2b63674c67d7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "matchItems": [
+      "mekanism:dust_obsidian",
+      "enderio:powdered_obsidian",
+      "thermal_extra:obsidian_dust"
+    ],
+    "resultItems": "create:powdered_obsidian"
+  }
+]

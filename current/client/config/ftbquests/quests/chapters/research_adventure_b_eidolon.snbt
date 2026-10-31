@@ -1,0 +1,843 @@
+{
+	id: "6AA168ED864CE22F"
+	filename: "research_adventure_b_eidolon"
+	title: "幻梦"
+	group: "25C542C40E64ED41"
+	order_index: 211
+	icon: "eidolon:codex"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "4491E170A8A87A7A"
+			title: "秘仪教典：腐肉与书入门"
+			icon: "eidolon:codex"
+			x: -9.72d
+			y: 0.36d
+			optional: false
+			tasks: [
+				{
+					id: "79CCE8D4EFFB1A08"
+					type: "item"
+					item: "eidolon:codex"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d3213e02a8bb7b6561de18cd.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/cab490f46528edb20e2e069b.png width:240 height:120 align:center}"
+				"配方输入：书×1。腐肉×1。"
+				"用腐肉和书制作教典，也可先检查怪奇宝典已有条目。打开材料、仪式、吟唱页，保留已解锁知识。获得书不等于自动学会所有符号。"
+				"取得秘仪教典。"
+				"白镴：铅铁混合再烧炼。"
+			]
+		}
+		{
+			id: "4404D38C2BB99302"
+			title: "白镴：铅铁混合再烧炼"
+			icon: "eidolon:pewter_ingot"
+			x: -7.351d
+			y: -0.026d
+			optional: false
+			tasks: [
+				{
+					id: "0D23F44FFDED5CEA"
+					type: "item"
+					item: "eidolon:pewter_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/04c403a1acf164f0d6ffe736.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/906859620d89d4dfb7ca45ab.png width:240 height:120 align:center}"
+				"配方输入：白镴混合物×1。工作能力：烧炼。"
+				"一份合格铅锭与一份铁锭合成两份白镴混合物，再熔炼为白镴锭。标签允许其他模组铅/铁，不要求特定矿源。银装备和怪物心脏是旁支，别全部锁在炼金入口。"
+				"取得白镴锭。"
+				"仪式刀：特殊草药来源。"
+				"火盆与石之手：按仪式放材料。"
+				"坩埚：水沸后按阶段投入。"
+				"死神镰刀：另一条碎片来源。"
+			]
+		}
+		{
+			id: "3DF399E388E3F71D"
+			title: "魔力工作台：额外四个材料槽"
+			icon: "eidolon:worktable"
+			x: -4.1d
+			y: 1.66d
+			optional: false
+			tasks: [
+				{
+					id: "5D002C4FC8CE2D70"
+					type: "item"
+					item: "eidolon:worktable"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/be7382630ef02cbdbf38e2d3.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/34a039228afd2531ba10e72c.png width:240 height:120 align:center}"
+				"配方输入：白镴嵌材×1。紫色地毯×1，重复3槽。橡木木板×1 或 云杉木板×1（共189个任选一种备选），重复3槽。"
+				"制作工作台，按教典图案摆3×3主料及四个附加魔法材料槽。工具/象征符是否消耗查配方类别实现。不要把普通合成台当作等价工作能力。先做基础仪式工具。"
+				"取得魔力工作台。"
+				"仪式刀：特殊草药来源。"
+				"死神镰刀：另一条碎片来源。"
+				"渡鸦斗篷：羽毛来源和实用终点。"
+			]
+		}
+		{
+			id: "167565D460A0D1ED"
+			title: "仪式刀：特殊草药来源"
+			icon: "eidolon:athame"
+			x: -5.4d
+			y: -1.8d
+			optional: false
+			tasks: [
+				{
+					id: "7A4D425AE5D8A8F6"
+					type: "item"
+					item: "eidolon:athame"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f2f83ccdb140fa2a76b521d9.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/dbefa2cba99765323261b18c.png width:240 height:296 align:center}"
+				"配方输入：白镴锭×1。白镴嵌材×1。末影珍珠×1 或 腐化珍珠×1（共9个任选一种备选）。金粒×1。银粒×1。工作能力：魔力工作台。主料和附加材料按槽消耗。象征符由TheurgySymbolItem原样返还，可重复使用。"
+				"做仪式刀后对丛林树叶、睡莲、蕨和白色郁金香等允许植物收集草药。是概率掉落，先查目标草药来源。可用种植机复种。骨粉不代替初始获得种子/草药。"
+				"取得仪式刀。"
+				"火盆与石之手：按仪式放材料。"
+			]
+		}
+		{
+			id: "1034CD30DAE3642B"
+			title: "火盆与石之手：按仪式放材料"
+			icon: "eidolon:brazier"
+			x: -3.24d
+			y: -1.8d
+			optional: false
+			tasks: [
+				{
+					id: "0572A3A65E864408"
+					type: "item"
+					item: "eidolon:brazier"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/833ec831d38af289592d7014.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/1c0ff65583552b3068e4b2ff.png width:240 height:120 align:center}"
+				"{image:expedition_research:textures/quests/06705818e4a6d0b6df0a187e.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/969498a959ffda0f767f8d94.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/e43e1fbc651a7e7170b2a7ce.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/3aec39839148454b361bc2a9.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/3bfafa895564c9d90f412267.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/ebaa42995199bdc0c7400abd.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/16745006af2a282098a12804.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/e744cb0f423eeac40bd4103d.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/44c8671d2252ba04865deb19.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/214136d3fe9f0d368d7e8c08.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/d7b57163541e3a9a9a97fb52.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/74712ec5321618441fcdefc2.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/ef1cd69b9e9d29eb0aa4cf2c.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/8c9674361bd5d6639b0e6d78.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/c6770174fedc932d002e51c2.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/c6a701b0f976079a5b245ae1.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/1c5755cbb63cd2dfd29e704c.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/3ac45f217c583a4098811466.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/b262f5b206c02a00e78a08a0.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/e8858bf8950d9a379fd73065.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/49260696d7482e5937881be5.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/de30c9b1f0764baf480691fc.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/66f350a3f41a94b7079d20af.png width:240 height:296 align:center}"
+				"{image:expedition_research:textures/quests/eb64b331cdb59754803c3ee2.png width:240 height:296 align:center}"
+				"配方输入：白镴锭×1，重复3槽。煤炭块×1。防腐木棍×1 或 木棍×1（共3个任选一种备选），重复2槽。"
+				"火盆中央放主物品，周围石之手放辅料，需焦点的仪式再放暗蚀焦点和焦点物。打火石点燃启动，空手熄灭中止。不是所有火盆仪式都要求召唤魔杖或暗蚀焦点。"
+				"取得火盆。"
+				"灵魂碎片：先用基础献祭。"
+			]
+		}
+		{
+			id: "0F6B5ED316DA8372"
+			title: "灵魂碎片：先用基础献祭"
+			icon: "eidolon:soul_shard"
+			x: -1.08d
+			y: -1.8d
+			optional: false
+			tasks: [
+				{
+					id: "1A496C740AAF7DEA"
+					type: "item"
+					item: "eidolon:soul_shard"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3525331209fbadff069a1ea4.png width:32 height:32 align:center}"
+				"基础仪式：火盆骨粉，石之手红石，附近准备可献祭的亡灵生物，点火收取灵魂碎片。"
+				"基础仪式：火盆骨粉，石之手红石，附近准备可献祭的亡灵生物，点火收取灵魂碎片。死神镰刀是之后可选的主动获取路线，不能拿它反锁第一份碎片。"
+				"取得灵魂碎片。"
+				"小型灵魂宝石：三段炼金。"
+				"死神镰刀：另一条碎片来源。"
+				"坩埚：水沸后按阶段投入。"
+			]
+		}
+		{
+			id: "23C15D8AE8522A32"
+			title: "坩埚：水沸后按阶段投入"
+			icon: "eidolon:crucible"
+			x: -2.39d
+			y: -0.49d
+			optional: false
+			tasks: [
+				{
+					id: "687B63B3950D2BE4"
+					type: "item"
+					item: "eidolon:crucible"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/31a05c92fa60cc2d16e0c457.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/18e8b2f02efac252ce59c76a.png width:240 height:120 align:center}"
+				"配方输入：白镴锭×1，重复7槽。"
+				"坩埚下方火源，倒一桶水，等沸腾。按教典配方阶段投料，等颜色/音效变化再做下一阶段。空手搅拌次数是操作的一部分。失败后重新换水，不能把无序投入当同一配方。"
+				"取得坩埚。"
+				"小型灵魂宝石：三段炼金。"
+			]
+		}
+		{
+			id: "50E7BF169868AD63"
+			title: "小型灵魂宝石：三段炼金"
+			icon: "eidolon:lesser_soul_gem"
+			x: 0.956d
+			y: 3.024d
+			optional: false
+			tasks: [
+				{
+					id: "3B5C191F9563D817"
+					type: "item"
+					item: "eidolon:lesser_soul_gem"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3756bd7d2af90b4391eb7f78.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/17838766b39e9438ef08eabd.png width:240 height:296 align:center}"
+				"配方输入：红石粉×2。青金石×2。灵魂碎片×4。下界石英×1 或 石英硫簇×1（共3个任选一种备选）。工作能力：坩埚。"
+				"沸水中第一段2红石+2青金石。第二段4灵魂碎片，空手搅拌两次。第三段1石英。每段完成再进入下一段，得到小型灵魂宝石。"
+				"取得小型灵魂宝石。"
+				"木祭坛：塑像与祈祷位置。"
+			]
+		}
+		{
+			id: "7F40B8601C03EEFE"
+			title: "木祭坛：塑像与祈祷位置"
+			icon: "eidolon:wooden_altar"
+			x: 3.24d
+			y: 1.66d
+			optional: false
+			tasks: [
+				{
+					id: "05B87CB7CF34B07D"
+					type: "item"
+					item: "eidolon:wooden_altar"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7eb91844b2c71d71f7f5c79e.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/52e4f60c331294eda594c133.png width:240 height:120 align:center}"
+				"配方输入：橡木台阶×1 或 云杉木台阶×1（共153个任选一种备选），重复3槽。橡木木板×1 或 云杉木板×1（共189个任选一种备选），重复4槽。"
+				"搭木制祭坛并在上方放稻草塑像。灯、头骨、盆栽等不同类别提升能力，同类装饰取最高效果，不能靠无限堆同一蜡烛。先打开教典符号页，确认已学会祈祷所需符号。"
+				"取得木制祭坛。"
+				"黑暗路径：女巫教学与逐日祈祷。"
+			]
+		}
+		{
+			id: "0B70D7C0D9345536"
+			title: "黑暗路径：女巫教学与逐日祈祷"
+			icon: "eidolon:unholy_symbol"
+			x: 5.4d
+			y: -1.35d
+			optional: true
+			tasks: [
+				{
+					id: "1EBC25694DEEFDF2"
+					type: "item"
+					item: "eidolon:unholy_symbol"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "22C36BA1AB8BFE14"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d951ceb5a0821004a05cf780.png width:32 height:32 align:center}"
+				"把教典交给女巫学习邪恶符号。在有效祭坛前每日做一次黑暗祈祷，按解锁提示尝试新咒术。"
+				"把教典交给女巫学习邪恶符号。在有效祭坛前每日做一次黑暗祈祷，按解锁提示尝试新咒术。献祭咒术需要满血杯等自身条件，掌握黑暗触摸后对掉落白镴嵌材吟唱得亵渎象征符。"
+				"取得亵渎象征符。"
+				"死神镰刀：另一条碎片来源。"
+				"光明路径：牧师教学与光明触摸。"
+			]
+		}
+		{
+			id: "71053B8C3AE3A401"
+			title: "光明路径：牧师教学与光明触摸"
+			icon: "eidolon:holy_symbol"
+			x: 5.4d
+			y: 2.52d
+			optional: true
+			tasks: [
+				{
+					id: "38567F0240610EDE"
+					type: "item"
+					item: "eidolon:holy_symbol"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "2B915C1149880156"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a5d73cbda3872713a347ffe5.png width:32 height:32 align:center}"
+				"由牧师教授神圣符号。有效祭坛前按已解锁祈祷推进，香炉圣洁草药洗礼后再尝试光明触摸。"
+				"由牧师教授神圣符号。有效祭坛前按已解锁祈祷推进，香炉圣洁草药洗礼后再尝试光明触摸。两条信仰支路不要求同时完成。"
+				"取得圣洁象征符。"
+				"死神镰刀：另一条碎片来源。"
+			]
+		}
+		{
+			id: "1A9B8C34DBE4DC33"
+			title: "死神镰刀：另一条碎片来源"
+			icon: "eidolon:reaper_scythe"
+			x: 6.948d
+			y: 0.634d
+			optional: true
+			tasks: [
+				{
+					id: "50D500F1BEDCA818"
+					type: "item"
+					item: "eidolon:reaper_scythe"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/14e2cd4f6f57523c2577facd.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b3794e4c98d5a5e6b7b61706.png width:240 height:296 align:center}"
+				"配方输入：白镴锭×1，重复3槽。防腐木棍×1 或 木棍×1（共3个任选一种备选），重复2槽。圣洁象征符×1 或 亵渎象征符×1。褴褛之布×1，重复2槽。灵魂碎片×1。工作能力：魔力工作台。主料和附加材料按槽消耗。象征符由TheurgySymbolItem原样返还，可重复使用。"
+				"有象征符和第一份灵魂碎片后，再用白镴、褴褛之布等在魔力工作台制镰刀。以镰刀击杀亡灵直接取得碎片，扩充后续炼金供给。镰刀不会替代基础献祭的入口。"
+				"取得死神镰刀。"
+				"研究：先记录，再完成步骤。"
+			]
+		}
+		{
+			id: "032A620DE4398B61"
+			title: "研究：先记录，再完成步骤"
+			icon: "eidolon:notetaking_tools"
+			x: 7.56d
+			y: -3.96d
+			optional: true
+			tasks: [
+				{
+					id: "44A61DBDB73F1E14"
+					type: "item"
+					item: "eidolon:notetaking_tools"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "5F8C59726FBD1479"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/2fa6478c3b8b6f8278e95195.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/4884fca553211c1d3cb9816f.png width:240 height:120 align:center}"
+				"配方输入：羊皮纸×1。魔法墨水×1。羽毛×1 或 渡鸦羽毛×1（共4个任选一种备选）。秘金粒×1。"
+				"用记笔记工具记录支持的生物，将研究笔记放研究台，逐项交界面要求的材料/经验，最后盖奥术封印。"
+				"取得笔记工具。"
+				"渡鸦斗篷：羽毛来源和实用终点。"
+			]
+		}
+		{
+			id: "07C0A790147257F1"
+			title: "渡鸦斗篷：羽毛来源和实用终点"
+			icon: "eidolon:raven_cloak"
+			x: 9.72d
+			y: -3.96d
+			optional: true
+			tasks: [
+				{
+					id: "324F8C3D18FFEC8F"
+					type: "item"
+					item: "eidolon:raven_cloak"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6bf8ede1f3610d5992c8764f.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/53a5984f5ea877d918ed92ad.png width:240 height:296 align:center}"
+				"配方输入：渡鸦羽毛×1，重复4槽。邪恶织物×1，重复3槽。褴褛之布×1，重复2槽。引力腰带×1。幻翼膜×1，重复2槽。工作能力：魔力工作台。主料和附加材料按槽消耗。象征符由TheurgySymbolItem原样返还，可重复使用。"
+				"密林寻找渡鸦，用甜菜种子驯服繁殖，收集飞行掉落羽毛，再按配方做斗篷。并行选骸骨圣骑或术士装备即可，不要求全收集。"
+				"取得渡鸦斗篷。"
+				"召唤魔杖：精英掉落与存魂。"
+			]
+		}
+		{
+			id: "5F4F4758C7279B1E"
+			title: "召唤魔杖：精英掉落与存魂"
+			icon: "eidolon:summoning_staff"
+			x: 9.72d
+			y: 2.52d
+			optional: true
+			tasks: [
+				{
+					id: "125469ADA9B47433"
+					type: "item"
+					item: "eidolon:summoning_staff"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/85455bc26563d3f7a6e3365e.png width:32 height:32 align:center}"
+				"在袭击等真实遭遇击败亡灵巫师取得召唤魔杖。"
+				"在袭击等真实遭遇击败亡灵巫师取得召唤魔杖。按对应火盆仪式以杖为焦点，目标满足低血量要求后点火储存。"
+				"取得召唤魔杖。"
+				"按所选分支继续，或返回魔法总览选择另一体系。"
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "08108F0CEED947FA"
+			linked_quest: "21A0C3C8C8E2915B"
+			x: -9.72d
+			y: 3.96d
+			size: 0.75d
+			shape: "rsquare"
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:8108f0ceed947fa" "q:3df399e388e3f71d"]
+		}
+		{
+			nodes: ["l:8108f0ceed947fa" "a:36670567-429b-5812-8afb-a5506ddd0a5a"]
+		}
+		{
+			nodes: ["a:36670567-429b-5812-8afb-a5506ddd0a5a" "a:f6fc7959-8991-535b-9d3e-487820a6fb55"]
+		}
+		{
+			nodes: ["a:f6fc7959-8991-535b-9d3e-487820a6fb55" "q:7f40b8601c03eefe"]
+		}
+		{
+			nodes: ["q:4404d38c2bb99302" "a:e836827f-b62e-5338-b88b-1095fd5b5c6a"]
+		}
+		{
+			nodes: ["a:e836827f-b62e-5338-b88b-1095fd5b5c6a" "a:87e78f3e-104b-5947-8a55-9bb48125a432"]
+		}
+		{
+			nodes: ["a:87e78f3e-104b-5947-8a55-9bb48125a432" "q:167565d460a0d1ed"]
+		}
+		{
+			nodes: ["q:4404d38c2bb99302" "a:3556411f-e487-539f-800b-f5cd53e7a96a"]
+		}
+		{
+			nodes: ["a:3556411f-e487-539f-800b-f5cd53e7a96a" "a:f5a7ae96-329f-52ca-a4b4-3253dd9c2940"]
+		}
+		{
+			nodes: ["a:f5a7ae96-329f-52ca-a4b4-3253dd9c2940" "q:1034cd30dae3642b"]
+		}
+		{
+			nodes: ["q:4404d38c2bb99302" "a:4c482800-4c2a-529c-a0fa-e6136ccb9472"]
+		}
+		{
+			nodes: ["a:4c482800-4c2a-529c-a0fa-e6136ccb9472" "a:f48cd8e4-7d11-59f9-8b74-7b2ca3271704"]
+		}
+		{
+			nodes: ["a:f48cd8e4-7d11-59f9-8b74-7b2ca3271704" "q:23c15d8ae8522a32"]
+		}
+		{
+			nodes: ["q:4404d38c2bb99302" "a:43bca020-0580-5d73-a55d-093031e05e28"]
+		}
+		{
+			nodes: ["a:43bca020-0580-5d73-a55d-093031e05e28" "a:038193ee-dcf2-5450-bbc6-621b15ab7197"]
+		}
+		{
+			nodes: ["a:038193ee-dcf2-5450-bbc6-621b15ab7197" "q:1a9b8c34dbe4dc33"]
+		}
+		{
+			nodes: ["q:4404d38c2bb99302" "a:01f740a6-3e77-5155-854e-74448cb666ce"]
+		}
+		{
+			nodes: ["a:01f740a6-3e77-5155-854e-74448cb666ce" "a:21ce8748-8bf1-5057-92e9-a4dcc0a7ca57"]
+		}
+		{
+			nodes: ["a:21ce8748-8bf1-5057-92e9-a4dcc0a7ca57" "q:3df399e388e3f71d"]
+		}
+		{
+			nodes: ["q:3df399e388e3f71d" "q:167565d460a0d1ed"]
+		}
+		{
+			nodes: ["q:3df399e388e3f71d" "a:e5d5f141-0900-51e7-8a49-38f7f07bc748"]
+		}
+		{
+			nodes: ["a:e5d5f141-0900-51e7-8a49-38f7f07bc748" "a:a7e13462-3f67-5066-965a-3c3dc9ded5f2"]
+		}
+		{
+			nodes: ["a:a7e13462-3f67-5066-965a-3c3dc9ded5f2" "q:1a9b8c34dbe4dc33"]
+		}
+		{
+			nodes: ["q:3df399e388e3f71d" "a:40173869-f43f-5669-bf2d-fbd137100dcb"]
+		}
+		{
+			nodes: ["a:40173869-f43f-5669-bf2d-fbd137100dcb" "a:4129ec89-3f55-59a7-becb-49605aaf63db"]
+		}
+		{
+			nodes: ["a:4129ec89-3f55-59a7-becb-49605aaf63db" "q:7c0a790147257f1"]
+		}
+		{
+			nodes: ["q:f6b5ed316da8372" "a:3d00bea8-8796-5c04-8551-9eb33b305959"]
+		}
+		{
+			nodes: ["a:3d00bea8-8796-5c04-8551-9eb33b305959" "a:4436b435-a8dc-5f65-b4a0-b2a50fe406b1"]
+		}
+		{
+			nodes: ["a:4436b435-a8dc-5f65-b4a0-b2a50fe406b1" "q:50e7bf169868ad63"]
+		}
+		{
+			nodes: ["q:f6b5ed316da8372" "a:d8d055d7-0f63-59a5-81a1-d9d2b1571b3c"]
+		}
+		{
+			nodes: ["a:d8d055d7-0f63-59a5-81a1-d9d2b1571b3c" "a:12698111-e774-5b25-831e-c5e1902605a2"]
+		}
+		{
+			nodes: ["a:12698111-e774-5b25-831e-c5e1902605a2" "q:1a9b8c34dbe4dc33"]
+		}
+		{
+			nodes: ["q:f6b5ed316da8372" "q:23c15d8ae8522a32"]
+		}
+		{
+			nodes: ["q:23c15d8ae8522a32" "q:50e7bf169868ad63"]
+		}
+		{
+			nodes: ["q:71053b8c3ae3a401" "q:1a9b8c34dbe4dc33"]
+		}
+		{
+			nodes: ["q:b70d7c0d9345536" "a:dc469266-16b3-5947-bd34-b8e67c970f27"]
+		}
+		{
+			nodes: ["a:dc469266-16b3-5947-bd34-b8e67c970f27" "a:b6e8d149-cacc-50f9-9e4a-d9446a85c4e7"]
+		}
+		{
+			nodes: ["a:b6e8d149-cacc-50f9-9e4a-d9446a85c4e7" "q:1a9b8c34dbe4dc33"]
+		}
+		{
+			nodes: ["q:b70d7c0d9345536" "q:71053b8c3ae3a401"]
+		}
+		{
+			nodes: ["q:4491e170a8a87a7a" "q:4404d38c2bb99302"]
+		}
+		{
+			nodes: ["q:167565d460a0d1ed" "q:1034cd30dae3642b"]
+		}
+		{
+			nodes: ["q:1034cd30dae3642b" "q:f6b5ed316da8372"]
+		}
+		{
+			nodes: ["q:50e7bf169868ad63" "q:7f40b8601c03eefe"]
+		}
+		{
+			nodes: ["q:7f40b8601c03eefe" "q:b70d7c0d9345536"]
+		}
+		{
+			nodes: ["q:1a9b8c34dbe4dc33" "q:32a620de4398b61"]
+		}
+		{
+			nodes: ["q:32a620de4398b61" "q:7c0a790147257f1"]
+		}
+		{
+			nodes: ["q:7c0a790147257f1" "q:5f4f4758c7279b1e"]
+		}
+	]
+	images: [
+		{
+			x: -6.267d
+			y: 0.536d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:01f740a6-3e77-5155-854e-74448cb666ce"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.184d
+			y: 1.098d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:21ce8748-8bf1-5057-92e9-a4dcc0a7ca57"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.701d
+			y: -0.617d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e836827f-b62e-5338-b88b-1095fd5b5c6a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.05d
+			y: -1.209d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:87e78f3e-104b-5947-8a55-9bb48125a432"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.981d
+			y: -0.617d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3556411f-e487-539f-800b-f5cd53e7a96a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.61d
+			y: -1.209d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f5a7ae96-329f-52ca-a4b4-3253dd9c2940"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.697d
+			y: -0.181d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4c482800-4c2a-529c-a0fa-e6136ccb9472"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.044d
+			y: -0.335d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f48cd8e4-7d11-59f9-8b74-7b2ca3271704"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.585d
+			y: 0.194d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:43bca020-0580-5d73-a55d-093031e05e28"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.182d
+			y: 0.414d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:038193ee-dcf2-5450-bbc6-621b15ab7197"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.4d
+			y: 3.193d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:36670567-429b-5812-8afb-a5506ddd0a5a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.08d
+			y: 2.427d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f6fc7959-8991-535b-9d3e-487820a6fb55"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.417d
+			y: 1.318d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e5d5f141-0900-51e7-8a49-38f7f07bc748"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.265d
+			y: 0.976d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a7e13462-3f67-5066-965a-3c3dc9ded5f2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.507d
+			y: -0.213d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:40173869-f43f-5669-bf2d-fbd137100dcb"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.113d
+			y: -2.087d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4129ec89-3f55-59a7-becb-49605aaf63db"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.401d
+			y: -0.192d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3d00bea8-8796-5c04-8551-9eb33b305959"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.277d
+			y: 1.416d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4436b435-a8dc-5f65-b4a0-b2a50fe406b1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.596d
+			y: -0.989d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d8d055d7-0f63-59a5-81a1-d9d2b1571b3c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.272d
+			y: -0.177d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:12698111-e774-5b25-831e-c5e1902605a2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.916d
+			y: -0.689d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:dc469266-16b3-5947-bd34-b8e67c970f27"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.432d
+			y: -0.027d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b6e8d149-cacc-50f9-9e4a-d9446a85c4e7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

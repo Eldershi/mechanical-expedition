@@ -1,0 +1,716 @@
+{
+	id: "2E1E915E6363FF12"
+	filename: "research_adventure_a_twilight"
+	title: "暮色森林"
+	group: "54D4CAA40ADB5408"
+	order_index: 201
+	icon: "minecraft:diamond"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "5C63E22CDDAE44B6"
+			title: "激活暮色传送门"
+			icon: "minecraft:diamond"
+			x: -11.88d
+			y: -1.08d
+			optional: false
+			tasks: [
+				{
+					id: "73C9AB9B4A1D4FE9"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/75923cf57c58fce6d2bd94da.png width:32 height:32 align:center}"
+				"按portal标签：2×2水面，周边合格植物与边缘方块。激活物默认钻石。"
+				"把激活物丢到水池，确认变成传送门再入内，标记返程坐标。"
+				"抵达独立维度。"
+				"先读L进度与地图。夜视是建议而非入场资格。"
+			]
+		}
+		{
+			id: "7A2DA127CEE7B72A"
+			title: "制作魔法地图核心"
+			icon: "twilightforest:magic_map_focus"
+			x: -11.88d
+			y: -3.24d
+			optional: true
+			tasks: [
+				{
+					id: "6903E3783928E46A"
+					type: "item"
+					item: "twilightforest:magic_map_focus"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/389c23d55e1e5d98cb658446.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/ccb5b2f030f4cf13ef005072.png width:240 height:120 align:center}"
+				"渡鸦羽毛＋火炬浆果＋萤石粉。死灵书模型预测还有替代来源。"
+				"在工作台合核心。不要把某一来源锁成唯一。"
+				"得到地图关键材料。"
+				"加8纸制地图，结构探索与Boss路线共用。"
+			]
+		}
+		{
+			id: "56981958904B4D7D"
+			title: "用魔法地图定位结构"
+			icon: "twilightforest:magic_map"
+			x: -9.72d
+			y: -3.24d
+			optional: true
+			tasks: [
+				{
+					id: "2BC0BF4602265257"
+					type: "item"
+					item: "twilightforest:magic_map"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c8969d373016a2e9298adbcd.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/7966a3ebdfd823476c452644.png width:240 height:120 align:center}"
+				"核心与8纸。"
+				"初始化地图，识别娜迦庭院、巫妖塔和各群系。保留地面返程标记。"
+				"导航工具。"
+				"先挑战娜迦。地图不影响资格，直接发现也可。"
+			]
+		}
+		{
+			id: "679B86E7F9409629"
+			title: "获得娜迦进度"
+			icon: "twilightforest:naga_courtyard_miniature_structure"
+			x: -7.56d
+			y: -1.08d
+			optional: false
+			tasks: [
+				{
+					id: "58250C87A8DFD294"
+					type: "advancement"
+					advancement: "twilightforest:progress_naga"
+					criterion: ""
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/58cf98f56768e863a5a4de9f.png width:32 height:32 align:center}" "娜迦庭院。准备基础战斗装备。" "按冲撞节奏避让/输出并确认进度，拾取鳞片或奖杯。" "巫妖资格沿此进度判断。"]
+		}
+		{
+			id: "3A71520BD117C2B7"
+			title: "取得巫妖进度后选择分支"
+			icon: "twilightforest:lich_tower_miniature_structure"
+			x: -5.4d
+			y: -1.08d
+			optional: false
+			tasks: [
+				{
+					id: "654079E9D4483281"
+					type: "advancement"
+					advancement: "twilightforest:progress_lich"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/496d1a03e5286f535ddf2cc6.png width:32 height:32 align:center}"
+				"娜迦进度＋巫妖战斗或允许的战利品条件。"
+				"处理护盾法球与仆从，完成后查进度。"
+				"同时开放沼泽、雪地、黑暗森林三条分支。"
+				"三支顺序任选，不用先雪怪再米诺菇。"
+			]
+		}
+		{
+			id: "7ACA6AE5DC4085DA"
+			title: "探索迷宫并取得沙拉酱肉"
+			icon: "twilightforest:meef_stroganoff"
+			x: -3.24d
+			y: -4.68d
+			optional: false
+			tasks: [
+				{
+					id: "21EF7CD83BBB2504"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9f20214b2f23359df4fc232d.png width:32 height:32 align:center}"
+				"巫妖资格。迷宫地图/效率镐是建议。"
+				"逐层探索迷宫并检查绊线陷阱，在二层挑战米诺菇，拿牛头人沙拉酱肉。"
+				"食物与奖杯。"
+				"下一步必须吃肉取得进度，单纯击杀不等于解除火焰沼泽。"
+			]
+		}
+		{
+			id: "2C86BA0975F5A4F5"
+			title: "吃下牛头人沙拉酱肉"
+			icon: "twilightforest:meef_stroganoff"
+			x: -1.08d
+			y: -4.68d
+			optional: false
+			tasks: [
+				{
+					id: "5FF72042EB417619"
+					type: "advancement"
+					advancement: "twilightforest:progress_labyrinth"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9f20214b2f23359df4fc232d.png width:32 height:32 align:center}"
+				"巫妖进度与一份沙拉酱肉。"
+				"实际食用。留意进度提示。"
+				"解除火焰沼泽门禁。"
+				"进入九头蛇巢穴。"
+			]
+		}
+		{
+			id: "69942DDDCDF519F1"
+			title: "在有效攻击窗口挑战九头蛇"
+			icon: "twilightforest:hydra_trophy"
+			x: 3.24d
+			y: -4.68d
+			optional: false
+			tasks: [
+				{
+					id: "53D6D180EE4BDECB"
+					type: "advancement"
+					advancement: "twilightforest:progress_hydra"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/06aa3bc8ac1819b4245f23ff.png width:32 height:32 align:center}"
+				"沙拉酱肉进度。火抗/远程为推荐准备。"
+				"攻击张嘴头部，躲开近距撕咬。完成击杀/奖杯/参战的允许条件。"
+				"九头蛇进度与炽热之血/肉排等。"
+				"炽铁可用血或泪，汇合高地仍需另两支资格。"
+			]
+		}
+		{
+			id: "6D033A641E7CDB81"
+			title: "雪地支线：雪怪首领"
+			icon: "twilightforest:alpha_yeti_fur"
+			x: -1.08d
+			y: -1.08d
+			optional: false
+			tasks: [
+				{
+					id: "5BFFAAB001737209"
+					type: "advancement"
+					advancement: "twilightforest:progress_yeti"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/56af1a254c4a7445a764eccb.png width:32 height:32 align:center}"
+				"巫妖进度。"
+				"在雪怪巢穴近战与远程切换，取首领毛皮/奖杯并核进度。"
+				"解除冰川门禁。"
+				"攀上极光宫殿挑战冰雪女王。"
+			]
+		}
+		{
+			id: "49BA83AB17AAF9D4"
+			title: "冰川支线：冰雪女王"
+			icon: "twilightforest:snow_queen_trophy"
+			x: 3.24d
+			y: -1.08d
+			optional: false
+			tasks: [
+				{
+					id: "66818469094D6181"
+					type: "advancement"
+					advancement: "twilightforest:progress_glacier"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6bc1b718f4f1346bd770e42c.png width:32 height:32 align:center}"
+				"雪怪首领进度。宫殿内携带可靠移动/远程。"
+				"处理冰晶，抓下砸和头部暴露窗口，取得进度与随机弓。"
+				"冰川支线完成。三发弓/追踪弓为随机备选。"
+				"不要求用此弓打别支Boss。继续高地前等另外两支。"
+			]
+		}
+		{
+			id: "48C1725308CD94B1"
+			title: "黑森林支线：打开要塞入口"
+			icon: "twilightforest:trophy_pedestal"
+			x: -3.24d
+			y: 2.52d
+			optional: false
+			tasks: [
+				{
+					id: "24386466AAD72440"
+					type: "advancement"
+					advancement: "twilightforest:progress_trophy_pedestal"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d1f320a5be709dda3a6a16d2.png width:32 height:32 align:center}"
+				"巫妖进度与trophies标签中任一种合格奖杯。"
+				"把奖杯放在入口基座。"
+				"护盾开门与基座进度。奖杯可回收。"
+				"探索要塞，挑战六位幻影骑士。"
+			]
+		}
+		{
+			id: "68797B43B73B290B"
+			title: "完成幻影骑士遭遇"
+			icon: "twilightforest:knight_phantom_trophy"
+			x: -1.08d
+			y: 2.52d
+			optional: false
+			tasks: [
+				{
+					id: "2F3786F2F0E54389"
+					type: "advancement"
+					advancement: "twilightforest:progress_knights"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/05cf1a78bbabc69286d8a5fa.png width:32 height:32 align:center}"
+				"基座进度。要塞Boss房位置可能需继续探索。"
+				"找Boss房，处理出现躯干的骑士，确认全骑士/战利品或参战条件。"
+				"解除黑森林腹地结界。"
+				"爬黑暗高塔。骑士金属装备为可选收获。"
+			]
+		}
+		{
+			id: "4D5AC5F88952F906"
+			title: "黑暗高塔的钥匙与陷阱"
+			icon: "twilightforest:tower_key"
+			x: 1.08d
+			y: 3.37d
+			optional: false
+			tasks: [
+				{
+					id: "6F9C053C2106656D"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/494e070ba86da0096c539d10.png width:32 height:32 align:center}"
+				"幻影骑士进度。带基本红石触发件与照明。"
+				"按结构探索副塔取4钥匙开锁门。观察建造器、反建器与反应堆。"
+				"抵达塔顶。不是拿到钥匙就已通塔。"
+				"给恶魂陷阱充能并在合适时机启动。"
+			]
+		}
+		{
+			id: "5EC044FF18661219"
+			title: "用恶魂陷阱反制暮初恶魂"
+			icon: "twilightforest:ur_ghast_trophy"
+			x: 3.24d
+			y: 2.52d
+			optional: false
+			tasks: [
+				{
+					id: "4231FB57555ACCC0"
+					type: "advancement"
+					advancement: "twilightforest:progress_ur_ghast"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/75126a6844f34e4afa9755f4.png width:32 height:32 align:center}"
+				"幻影骑士进度与塔顶遭遇。"
+				"处理周围小恶魂，为陷阱充能。哭泣时用陷阱拉住再输出。"
+				"获得进度、炽热之泪与奖杯。"
+				"与九头蛇、冰雪女王进度汇合，高地才解除。"
+			]
+		}
+		{
+			id: "556D46121F480C5B"
+			title: "炽铁：血与泪是任选材料"
+			icon: "twilightforest:fiery_ingot"
+			x: 6.12d
+			y: 4.68d
+			optional: true
+			tasks: [
+				{
+					id: "4F27AC6F802965CF"
+					type: "item"
+					item: "twilightforest:fiery_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/2906a5875754b52b7e044078.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d8cb9dc819548f12a9e13d35.png width:240 height:120 align:center}"
+				"炽热之血或炽热之泪，任一种＋铁锭。"
+				"在工作台合成。不要要求同时集齐两个Boss材料。"
+				"同一炽铁装备工艺，来源可选。"
+				"装备升级为选修，不反过来锁各支挑战。"
+			]
+		}
+		{
+			id: "4D87E0D0C560E386"
+			title: "三支进度汇合到高地"
+			icon: "twilightforest:uberous_soil"
+			x: 6.12d
+			y: -1.08d
+			optional: false
+			tasks: [
+				{
+					id: "5C4A9C39C9277894"
+					type: "advancement"
+					advancement: "twilightforest:progress_merge"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a6860097e814de79406bcd75.png width:32 height:32 align:center}"
+				"九头蛇＋暮初恶魂＋冰雪女王三个进度全部完成。"
+				"检查三项资格，确认高地酸雨结界解除再进入。"
+				"高地可探索资格。"
+				"巨魔洞窟找魔豆/肥沃泥土，上云取巨人镐。"
+			]
+		}
+		{
+			id: "20D3269DCE8AF2A4"
+			title: "从巨人镐推进到余烬之灯"
+			icon: "twilightforest:lamp_of_cinders"
+			x: 9.0d
+			y: -1.08d
+			optional: false
+			tasks: [
+				{
+					id: "51D7B2930DD957E9"
+					type: "advancement"
+					advancement: "twilightforest:progress_troll"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/0abc15036b6291856ad14f3e.png width:32 height:32 align:center}"
+				"高地汇合资格。云上巨人与巨型黑曜石路线。"
+				"魔豆配肥沃泥土生长茎可登云。其他上升方式为任选一种。用巨人镐开巨型黑曜石箱取灯。"
+				"灯用于清理荆棘。灯进度还检查progress_merge。"
+				"到终焉高原结束可检查路线。"
+			]
+		}
+		{
+			id: "4668D498C6A1058E"
+			title: "抵达终焉高原"
+			icon: "minecraft:structure_void"
+			x: 11.88d
+			y: -1.08d
+			optional: false
+			tasks: [
+				{
+					id: "31A2E38FB02C7C98"
+					type: "advancement"
+					advancement: "twilightforest:progression_end"
+					criterion: ""
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/8ab1272d920115d7cd5615a4.png width:32 height:32 align:center}" "余烬之灯进度与终焉高原位置。" "烧开荆棘继续探索，检查抵达进度。" "没有可检查最终Boss战。"]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:679b86e7f9409629" "q:3a71520bd117c2b7"]
+		}
+		{
+			nodes: ["q:3a71520bd117c2b7" "a:4fd32990-537d-5b2c-b807-b4be9acd63e9"]
+		}
+		{
+			nodes: ["a:4fd32990-537d-5b2c-b807-b4be9acd63e9" "a:d72623c7-1759-5730-b0ba-f79c89d49bb0"]
+		}
+		{
+			nodes: ["a:d72623c7-1759-5730-b0ba-f79c89d49bb0" "q:2c86ba0975f5a4f5"]
+		}
+		{
+			nodes: ["q:3a71520bd117c2b7" "a:5da748e2-e6c7-514b-8f13-8e0c9a8a9ffc"]
+		}
+		{
+			nodes: ["a:5da748e2-e6c7-514b-8f13-8e0c9a8a9ffc" "a:1def8667-a3c4-5a05-b811-85ee6ec9a610"]
+		}
+		{
+			nodes: ["a:1def8667-a3c4-5a05-b811-85ee6ec9a610" "q:6d033a641e7cdb81"]
+		}
+		{
+			nodes: ["q:3a71520bd117c2b7" "a:376fcf12-e1cc-53ed-8884-b9c3d912bdfc"]
+		}
+		{
+			nodes: ["a:376fcf12-e1cc-53ed-8884-b9c3d912bdfc" "a:2c20ec59-0bde-53d5-b2fb-a37d3f532051"]
+		}
+		{
+			nodes: ["a:2c20ec59-0bde-53d5-b2fb-a37d3f532051" "q:48c1725308cd94b1"]
+		}
+		{
+			nodes: ["q:3a71520bd117c2b7" "q:7aca6ae5dc4085da"]
+		}
+		{
+			nodes: ["q:2c86ba0975f5a4f5" "q:69942dddcdf519f1"]
+		}
+		{
+			nodes: ["q:6d033a641e7cdb81" "q:49ba83ab17aaf9d4"]
+		}
+		{
+			nodes: ["q:48c1725308cd94b1" "q:68797b43b73b290b"]
+		}
+		{
+			nodes: ["q:68797b43b73b290b" "a:73862b34-c0d6-512e-8329-9ea69efad1d5"]
+		}
+		{
+			nodes: ["a:73862b34-c0d6-512e-8329-9ea69efad1d5" "a:1c57c87f-97d4-5344-8491-99ddd22ce530"]
+		}
+		{
+			nodes: ["a:1c57c87f-97d4-5344-8491-99ddd22ce530" "q:5ec044ff18661219"]
+		}
+		{
+			nodes: ["q:68797b43b73b290b" "q:4d5ac5f88952f906"]
+		}
+		{
+			nodes: ["q:69942dddcdf519f1" "a:6537c4bb-f3fa-57ff-8f77-a8bd47832c96"]
+		}
+		{
+			nodes: ["a:6537c4bb-f3fa-57ff-8f77-a8bd47832c96" "a:84526862-08b0-55b7-8ba8-9d7dbde698e9"]
+		}
+		{
+			nodes: ["a:84526862-08b0-55b7-8ba8-9d7dbde698e9" "q:4d87e0d0c560e386"]
+		}
+		{
+			nodes: ["q:69942dddcdf519f1" "a:a93578c0-d1e5-5c92-bb78-acf85d2a4414"]
+		}
+		{
+			nodes: ["a:a93578c0-d1e5-5c92-bb78-acf85d2a4414" "a:2825e067-45b5-5021-a4f1-9c6c7fd8dba7"]
+		}
+		{
+			nodes: ["a:2825e067-45b5-5021-a4f1-9c6c7fd8dba7" "q:556d46121f480c5b"]
+		}
+		{
+			nodes: ["q:5ec044ff18661219" "a:1ae4af2d-f635-56c3-9183-322abdb503f7"]
+		}
+		{
+			nodes: ["a:1ae4af2d-f635-56c3-9183-322abdb503f7" "a:62b66976-b1fe-5359-af76-247e9f7676df"]
+		}
+		{
+			nodes: ["a:62b66976-b1fe-5359-af76-247e9f7676df" "q:4d87e0d0c560e386"]
+		}
+		{
+			nodes: ["q:5ec044ff18661219" "q:556d46121f480c5b"]
+		}
+		{
+			nodes: ["q:49ba83ab17aaf9d4" "a:c5845eaf-d642-5862-9f47-c28e057ea4d0"]
+		}
+		{
+			nodes: ["a:c5845eaf-d642-5862-9f47-c28e057ea4d0" "a:7d050485-0ae9-5329-9a8e-c0c35a377072"]
+		}
+		{
+			nodes: ["a:7d050485-0ae9-5329-9a8e-c0c35a377072" "q:4d87e0d0c560e386"]
+		}
+		{
+			nodes: ["q:4d87e0d0c560e386" "q:20d3269dce8af2a4"]
+		}
+		{
+			nodes: ["q:20d3269dce8af2a4" "q:4668d498c6a1058e"]
+		}
+		{
+			nodes: ["q:7a2da127cee7b72a" "q:56981958904b4d7d"]
+		}
+		{
+			nodes: ["q:5c63e22cddae44b6" "q:7a2da127cee7b72a"]
+		}
+		{
+			nodes: ["q:56981958904b4d7d" "q:679b86e7f9409629"]
+		}
+		{
+			nodes: ["q:7aca6ae5dc4085da" "q:2c86ba0975f5a4f5"]
+		}
+		{
+			nodes: ["q:4d5ac5f88952f906" "q:5ec044ff18661219"]
+		}
+	]
+	images: [
+		{
+			x: -3.96d
+			y: -2.28d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4fd32990-537d-5b2c-b807-b4be9acd63e9"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.52d
+			y: -3.48d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d72623c7-1759-5730-b0ba-f79c89d49bb0"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.96d
+			y: -1.08d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5da748e2-e6c7-514b-8f13-8e0c9a8a9ffc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.52d
+			y: -1.08d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1def8667-a3c4-5a05-b811-85ee6ec9a610"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.68d
+			y: 0.12d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:376fcf12-e1cc-53ed-8884-b9c3d912bdfc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.96d
+			y: 1.32d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2c20ec59-0bde-53d5-b2fb-a37d3f532051"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.2d
+			y: -1.56d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a93578c0-d1e5-5c92-bb78-acf85d2a4414"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.16d
+			y: 1.56d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2825e067-45b5-5021-a4f1-9c6c7fd8dba7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.2d
+			y: -3.48d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6537c4bb-f3fa-57ff-8f77-a8bd47832c96"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.16d
+			y: -2.28d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:84526862-08b0-55b7-8ba8-9d7dbde698e9"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.2d
+			y: -1.08d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c5845eaf-d642-5862-9f47-c28e057ea4d0"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.16d
+			y: -1.08d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7d050485-0ae9-5329-9a8e-c0c35a377072"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.36d
+			y: 2.52d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:73862b34-c0d6-512e-8329-9ea69efad1d5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.8d
+			y: 2.52d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1c57c87f-97d4-5344-8491-99ddd22ce530"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.2d
+			y: 1.32d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1ae4af2d-f635-56c3-9183-322abdb503f7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.16d
+			y: 0.12d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:62b66976-b1fe-5359-af76-247e9f7676df"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

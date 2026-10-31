@@ -1,0 +1,166 @@
+{
+	filename: "expedition_technology"
+	group: "050255AE19A93344"
+	icon: "cmi:smart_mechanism"
+	id: "40C38D01CD30EB4A"
+	order_index: 0
+	title: "动力与工业基础总览"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	quests: [
+		{
+			id: "49FAC7F5B7F68763"
+			title: "蒸汽动力"
+			icon: "cmi:bronze_mechanism"
+			x: -8.0d
+			y: -1.0d
+			description: ["准备青铜构件，建立燃料、供水与蒸汽动力。青铜板经构件模具成形、浇入熔融青铜，再装入齿轮半成品、青铜板和机械零件。" "先让一套锅炉与引擎持续驱动加工工位，再扩展供水和燃料缓存。"]
+			tasks: [
+				{
+					id: "2079063D8FF2FDFC"
+					type: "item"
+					item: "cmi:bronze_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "4CD9E4503188C96B"
+			title: "铁路与远方矿点"
+			icon: "cmi:railway_mechanism"
+			x: -2.0d
+			y: -4.0d
+			description: ["用致密坚固板、熔融工业铁、齿轮、黄铜板与机械零件制造铁路构件。" "连接车站、轨道和装卸点，设置时刻表，把远方矿点的产物送回基地。铁路运输与精密制造可以并行准备。"]
+			tasks: [
+				{
+					id: "3DFB21B9F171873E"
+					type: "item"
+					item: "cmi:railway_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "07572AE4030D628D"
+			title: "首批精密构件"
+			icon: "cmi:coil_mechanism"
+			x: -2.0d
+			y: 2.0d
+			description: ["黄铜板经模具成形、浇入熔融黄铜，再装入电子管、齿轮半成品与机械零件，得到首批精密构件。" "接入组件装配与工程零件后，再扩展线圈和电气设备。"]
+			tasks: [
+				{
+					id: "332EC328297C9EAE"
+					type: "item"
+					item: "create:precision_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "0FBC53BEE0AB7A92"
+			title: "炼钢、石化与智能控制"
+			icon: "cmi:pig_iron_mechanism"
+			x: 6.0d
+			y: 2.0d
+			description: ["分开建设炼钢、原油分馏、塑料和硅材料供应。生铁构件使用生铁材料与魔力零件，智能构件接续处理器与工程零件。" "首批AE处理器可走机械序列组装；得到智能构件后再扩建压印与装配生产。为不同油品和化工中间产物分别准备缓存。"]
+			tasks: [
+				{
+					id: "4F45594E2146AE63"
+					type: "item"
+					item: "cmi:pig_iron_mechanism"
+					consume_items: false
+				}
+				{
+					id: "7AC6D2A0C3AA1702"
+					type: "item"
+					item: "cmi:smart_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "61A447533BE35575"
+			title: "工程零件与线圈"
+			icon: "cmi:coil_mechanism"
+			x: 2.0d
+			y: 6.0d
+			description: ["先用组件装配机生产工程零件，再准备转子、铁板、红石酸与琥珀金板，制作线圈构件。" "工程零件也服务智能、轻工与重工生产，适合建立共用供料。"]
+			tasks: [
+				{
+					id: "5B8EE81878232AC4"
+					type: "item"
+					item: "cmi:coil_mechanism"
+					consume_items: false
+				}
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "52B4177464AB2C81"
+			linked_quest: "7B0B079E71A7815D"
+			x: -12.0d
+			y: -1.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "14ED8F8EEB1FA0DF"
+			linked_quest: "211642A0702308A1"
+			x: 2.0d
+			y: -4.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "790C282AAFEE617A"
+			linked_quest: "1570B04A1D692BCC"
+			x: -6.0d
+			y: 2.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "77444406B0FC7C97"
+			linked_quest: "304F1C5501224675"
+			x: -2.0d
+			y: 6.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "6CA4B2611D5726CD"
+			linked_quest: "54B7DF3F4B9BD3A4"
+			x: 10.0d
+			y: 2.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:52b4177464ab2c81" "q:49fac7f5b7f68763"]
+		}
+		{
+			nodes: ["q:49fac7f5b7f68763" "q:4cd9e4503188c96b"]
+		}
+		{
+			nodes: ["q:49fac7f5b7f68763" "q:7572ae4030d628d"]
+		}
+		{
+			nodes: ["q:4cd9e4503188c96b" "l:14ed8f8eeb1fa0df"]
+		}
+		{
+			nodes: ["l:790c282aafee617a" "q:7572ae4030d628d"]
+		}
+		{
+			nodes: ["l:77444406b0fc7c97" "q:61a447533be35575"]
+		}
+		{
+			nodes: ["q:7572ae4030d628d" "q:fbc53bee0ab7a92"]
+		}
+		{
+			nodes: ["q:fbc53bee0ab7a92" "l:6ca4b2611d5726cd"]
+		}
+	]
+}

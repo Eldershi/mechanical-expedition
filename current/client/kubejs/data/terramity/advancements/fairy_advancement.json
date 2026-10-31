@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "terramity:fairy_dust"
+    },
+    "title": {
+      "translate": "advancements.fairy_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.fairy_advancement.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fairy_advancement_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "terramity:terramity_parent_advancement"
+}

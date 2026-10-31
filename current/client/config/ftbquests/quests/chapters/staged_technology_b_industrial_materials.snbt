@@ -1,0 +1,79 @@
+{
+	id: "167D591257DB3F19"
+	filename: "staged_technology_b_industrial_materials"
+	title: "工业合金与锇材料"
+	group: "5B22564DA513617D"
+	order_index: 39
+	icon: "cmi:pure_semi_molten_osmium"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [{
+			id: "1671818ACB0646EB"
+			title: "车窑制半熔融锇"
+			icon: "cmi:pure_semi_molten_osmium"
+			x: 3.1d
+			y: 2.3d
+			optional: false
+			tasks: [
+				{
+					id: "361231E5C200E61E"
+					type: "item"
+					item: "cmi:pure_semi_molten_osmium"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3963ce1b40218aeb9999bde3.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/395b9c9d5ca0f2c33808740c.png width:240 height:126 align:center}"
+				"锇锭与车窑FE。该配方time100/tickEnergy10，其他车窑配方可能需流体。"
+				"按手册形成车窑，侧面入物、托盘出物，运行锇配方。"
+				"得到半熔融锇。批量能力只按实际槽位，不能用一次取得证明满负载运行。"
+				"在结晶器用1000mB水制富集锇结晶。"
+			]
+		} {
+			id: "3BD13AC3FE993063"
+			title: "电弧炉制造不锈钢"
+			icon: "cmi:stainless_steel_ingot"
+			x: 0.1d
+			y: -0.1d
+			optional: false
+			tasks: [
+				{
+					id: "3125A18D6F63F303"
+					type: "item"
+					item: "cmi:stainless_steel_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/42e1dd560d31b309be465453.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/4b70826c30878c33b684f8ae.png width:240 height:95 align:center}"
+				"选定配方：钢、铬和殷钢。电极和机器是可使用能力。"
+				"分别放钢主原料及铬/殷钢添加剂，供能并排出渣。"
+				"取得不锈钢。"
+				"不锈钢用于后期机壳与集成工作站接口。"
+			]
+		}]
+	quest_links: [
+		{
+			id: "2A7E952592271615"
+			linked_quest: "101D899A5AB27BBA"
+			x: -3.1d
+			y: -2.3d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:2a7e952592271615" "q:3bd13ac3fe993063"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

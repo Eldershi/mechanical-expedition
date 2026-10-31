@@ -1,0 +1,19 @@
+{
+  "gui.xaero_infodisplay_angles": "朝向角度",
+  "gui.xaero_infodisplay_biome": "生物群系",
+  "gui.xaero_infodisplay_chunk_coords": "区块坐标",
+  "gui.xaero_infodisplay_coords": "坐标",
+  "gui.xaero_infodisplay_custom_sub_world": "自定义路径点子世界",
+  "gui.xaero_infodisplay_dimension": "维度",
+  "gui.xaero_infodisplay_highlights": "高亮信息（如领地）",
+  "gui.xaero_infodisplay_light_level": "亮度等级",
+  "gui.xaero_infodisplay_light_overlay_indicator": "亮度叠加层状态",
+  "gui.xaero_infodisplay_manual_cave_mode_indicator": "手动洞穴模式状态",
+  "gui.xaero_infodisplay_overworld_coords": "主世界坐标",
+  "gui.xaero_infodisplay_real_time": "现实时间",
+  "gui.xaero_infodisplay_time": "游戏时间",
+  "gui.xaero_infodisplay_weather": "天气",
+  "gui.xaero_waypoint_filter_box": "路径点筛选",
+  "gui.xaero_waypoint_filter_box_suggestion": "筛选……",
+  "gui.xaero_waypoint_shared2": "%1$s 分享了名为“%2$s”的路径点！"
+}

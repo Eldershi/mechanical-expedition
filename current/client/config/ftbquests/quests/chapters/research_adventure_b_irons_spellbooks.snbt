@@ -1,0 +1,490 @@
+{
+	id: "5C6E821EA5A3E7C8"
+	filename: "research_adventure_b_irons_spellbooks"
+	title: "铁魔法"
+	group: "25C542C40E64ED41"
+	order_index: 209
+	icon: "irons_spellbooks:scroll"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "3DA661A1C503C00B"
+			title: "先探索取得一张卷轴"
+			icon: "irons_spellbooks:scroll"
+			x: -10.08d
+			y: 1.8d
+			optional: false
+			tasks: [
+				{
+					id: "4EDE33962AAFDB13"
+					type: "item"
+					item: "irons_spellbooks:scroll"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1df07c10d24d25747252429b.png width:32 height:32 align:center}"
+				"从魔法结构宝箱、对应法师掉落或交易获得卷轴。"
+				"从魔法结构宝箱、对应法师掉落或交易获得卷轴。卷轴带法术与等级数据，单一scroll物品ID不能检测你想要的具体法术。先保存一张适合自保的，不要求九学派齐全。"
+				"取得无 法术卷轴。"
+				"基础法术书：反复使用法术。"
+			]
+		}
+		{
+			id: "6186FF943085DA1A"
+			title: "基础法术书：反复使用法术"
+			icon: "irons_spellbooks:copper_spell_book"
+			x: -7.92d
+			y: 1.8d
+			optional: false
+			tasks: [
+				{
+					id: "1F166D084324460B"
+					type: "item"
+					item: "irons_spellbooks:copper_spell_book"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "2DF7A2D195BCD061"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/73d9d0284056af7bdb713e0b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/6a5e33d64a09f201706f9dc5.png width:240 height:120 align:center}"
+				"配方输入：铜锭×1，重复2槽。纸×1，重复6槽。线×1。"
+				"制作基础书，槽位和加成看提示。与抄写台配合将卷轴录入，比直接消耗卷轴更适合持续游玩。早期装备不要求先杀Boss，铜书/铁书按自己的材料选择。"
+				"取得初学者日志。"
+				"法术抄写台：卷轴写入书。"
+			]
+		}
+		{
+			id: "0073C2F7430134A4"
+			title: "法术抄写台：卷轴写入书"
+			icon: "irons_spellbooks:inscription_table"
+			x: -5.76d
+			y: 1.8d
+			optional: false
+			tasks: [
+				{
+					id: "330153815FD00B74"
+					type: "item"
+					item: "irons_spellbooks:inscription_table"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e50bcceb6a1bcd04fed80498.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d81192e197d85ac650b97d93.png width:240 height:120 align:center}"
+				"配方输入：书×1。橡木台阶×1 或 云杉木台阶×1（共153个任选一种备选），重复3槽。橡木栅栏×1 或 金合欢木栅栏×1（共113个任选一种备选），重复2槽。"
+				"上格放书，下格放卷轴，选空槽并确认抄写。随后装备到对应槽，用设置中的施法/轮盘按键测试。可移除的普通书与不可改写的独特书不同。"
+				"取得法术抄写台。"
+				"墨水：品质与法术等级。"
+			]
+		}
+		{
+			id: "4D9F4BA33E699492"
+			title: "墨水：品质与法术等级"
+			icon: "irons_spellbooks:common_ink"
+			x: -3.6d
+			y: -0.36d
+			optional: false
+			tasks: [
+				{
+					id: "03C21108E6268B31"
+					type: "item"
+					item: "irons_spellbooks:common_ink"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c3d22fea14e44f2044918168.png width:32 height:32 align:center}"
+				"五种墨水品质并行保留来源：宝箱、法师掉落、交易与炼金转换。"
+				"五种墨水品质并行保留来源：宝箱、法师掉落、交易与炼金转换。特定法术有最低等级，普通墨水不能制作所有法术。先按撰写台选择目标再备墨水，别把五级都刷满。"
+				"取得普通墨水。"
+				"炼金锅：墨水升级与回收。"
+			]
+		}
+		{
+			id: "32125F9B08DF7362"
+			title: "炼金锅：墨水升级与回收"
+			icon: "irons_spellbooks:alchemist_cauldron"
+			x: -1.44d
+			y: -0.36d
+			optional: false
+			tasks: [
+				{
+					id: "6252ECE955E06B36"
+					type: "item"
+					item: "irons_spellbooks:alchemist_cauldron"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/808d74e80612b0713bc29b61.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/a1453c14bfc5ccb374a5e6f9.png width:240 height:120 align:center}"
+				"配方输入：铁锭×1，重复4槽。炼药锅×1。奥术源质×1，重复2槽。灰烬源质×1。"
+				"用四瓶低级墨水加对应升级材料，等锅内转换再用瓶提取。多余卷轴回收墨水有失败率，不拿随机回收作为唯一来源。具体投入数量/升级辅料查配方图。"
+				"取得炼金锅。"
+				"学派核心：按需求选一条。"
+			]
+		}
+		{
+			id: "04AB598A4DAB8A96"
+			title: "学派核心：按需求选一条"
+			icon: "irons_spellbooks:divine_pearl"
+			x: -3.6d
+			y: 3.96d
+			optional: false
+			tasks: [
+				{
+					id: "538F205BF73F301E"
+					type: "item"
+					item: "irons_spellbooks:divine_pearl"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/aec5b55883bdcfc55a0c242e.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/ac7058e15c896b1fdbf08d8d.png width:240 height:120 align:center}"
+				"配方输入：金锭×1。紫水晶碎片×1。"
+				"神圣珍珠可用金与紫水晶合成。冰封骨头来自流浪者，雷电瓶对闪电苦力怕取用，猩红精华按炼金锅说明制取。每学派选一种核心，任选一种不是把所有核心放同一台。邪术另有知识条件。"
+				"取得神圣珍珠。"
+				"卷轴撰写台：墨水、纸与学派核心。"
+			]
+		}
+		{
+			id: "5C6D58F631E9DF37"
+			title: "卷轴撰写台：墨水、纸与学派核心"
+			icon: "irons_spellbooks:scroll_forge"
+			x: -1.44d
+			y: 1.8d
+			optional: false
+			tasks: [
+				{
+					id: "69DAB6931FBC0325"
+					type: "item"
+					item: "irons_spellbooks:scroll_forge"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ef380590adcc6379a3604e48.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/1081e4c8717ed5c87b70d5a9.png width:240 height:120 align:center}"
+				"{image:expedition_research:textures/quests/357637aa34fb83d6ec752b13.png width:144 height:114 align:center}"
+				"{image:expedition_research:textures/quests/e0869332e9663607b339e69b.png width:144 height:114 align:center}"
+				"{image:expedition_research:textures/quests/33107be0bff674c2d32dbafc.png width:144 height:114 align:center}"
+				"{image:expedition_research:textures/quests/ea8568b2045c8b51ee2fd0a8.png width:144 height:114 align:center}"
+				"{image:expedition_research:textures/quests/69534afd06d34e0b933e7866.png width:144 height:114 align:center}"
+				"{image:expedition_research:textures/quests/ceafd865f05b396273ee25e7.png width:144 height:114 align:center}"
+				"{image:expedition_research:textures/quests/adb041d6e18a7ef1d12ae28a.png width:144 height:114 align:center}"
+				"{image:expedition_research:textures/quests/439528c617fcfe1c90199cf6.png width:144 height:114 align:center}"
+				"{image:expedition_research:textures/quests/d29ba0a7b6d5d2d9af6221ad.png width:144 height:114 align:center}"
+				"{image:expedition_research:textures/quests/02f1e8fbf4e8f9917dc3bc4d.png width:144 height:114 align:center}"
+				"配方输入：磨制深板岩×1，重复3槽。哭泣的黑曜石×1，重复4槽。"
+				"第一格墨水决定品质，中间纸，第三格学派核心决定可选法术。右边列表选择并制作。配方展示的学派列表不是所有法术都立刻可学。邪术要先读对应手稿。"
+				"取得卷轴撰写台。"
+				"奥术铁砧：提升已有法术。"
+			]
+		}
+		{
+			id: "51456745FBEDB065"
+			title: "奥术铁砧：提升已有法术"
+			icon: "irons_spellbooks:arcane_anvil"
+			x: 1.44d
+			y: 1.8d
+			optional: false
+			tasks: [
+				{
+					id: "2DDB6C30388B4027"
+					type: "item"
+					item: "irons_spellbooks:arcane_anvil"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6e9b1b468add7a1f8f2174b6.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/7ea7f8da9430531834fd42d4.png width:240 height:120 align:center}"
+				"配方输入：紫水晶块×1，重复3槽。钻石×1。磨制深板岩×1，重复2槽。铁砧×1。"
+				"用三块紫水晶块、钻石、两块磨制深板岩和铁砧制作奥术铁砧。基础配方没有下界合金。把卷轴与下一等级所需品质墨水组合，读输出的具体法术等级再确认。"
+				"取得奥术铁砧。"
+				"邪术手稿：逐法术知识解锁。"
+			]
+		}
+		{
+			id: "698AEC1A0DECBF06"
+			title: "邪术手稿：逐法术知识解锁"
+			icon: "irons_spellbooks:eldritch_manuscript"
+			x: 1.44d
+			y: -1.8d
+			optional: true
+			tasks: [
+				{
+					id: "61B45EBF4C5D675C"
+					type: "item"
+					item: "irons_spellbooks:eldritch_manuscript"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "672A7D23DE6BDFCD"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d16d0826b705fec13f1d9bfb.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/9bc65baa8b33dd90640582bf.png width:240 height:120 align:center}"
+				"配方输入：远古知识碎片×1，重复8槽。回响碎片×1。"
+				"从宝箱或交易收集远古知识碎片，按配方与回响碎片拼手稿，使用后学会一个对应邪术，才可制作/施放它。"
+				"取得邪术手稿。"
+				"法术布料与学派装备。"
+			]
+		}
+		{
+			id: "5B89103DAD287FE7"
+			title: "法术布料与学派装备"
+			icon: "irons_spellbooks:magic_cloth"
+			x: 3.6d
+			y: 3.96d
+			optional: true
+			tasks: [
+				{
+					id: "0288C4D706D34C6D"
+					type: "item"
+					item: "irons_spellbooks:magic_cloth"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/01bdd5bd6667d9a9303d4a54.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/aa0677ba53763c037a506d3d.png width:240 height:120 align:center}"
+				"配方输入：奥术源质×1，重复8槽。白色羊毛×1 或 橙色羊毛×1（共17个任选一种备选）。"
+				"探索获取奥术源质，用布料与所选学派符文做对应护甲。只选适合法术的一套。可用游方法师或泛用战斗法师路线，无需同时练所有学派。装备本身不等于战斗毕业。"
+				"取得奥术布匹。"
+				"扩槽与注入：检查输出NBT。"
+				"升级法球：选择属性再强化。"
+			]
+		}
+		{
+			id: "30834E91069C3E62"
+			title: "升级法球：选择属性再强化"
+			icon: "irons_spellbooks:upgrade_orb"
+			x: 5.76d
+			y: 3.96d
+			optional: true
+			tasks: [
+				{
+					id: "33C6D3864756960F"
+					type: "item"
+					item: "irons_spellbooks:upgrade_orb"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/441c83864f7c3a14200a3720.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/612a06aa6369e65ac2e83775.png width:240 height:120 align:center}"
+				"配方输入：奥术锭×1，重复4槽。灰烬源质×1，重复4槽。秘银锭×1。"
+				"先做基础法球，再以八枚相应符文转为属性法球，在奥术铁砧强化支持的装备。次数以配置/界面为准。忏悔石移除升级与移除注入法术的返还逻辑不同，先看输出再操作。"
+				"取得空白升级法球。"
+				"地下墓穴：死者之王可选挑战。"
+			]
+		}
+		{
+			id: "0536DA4F94000544"
+			title: "地下墓穴：死者之王可选挑战"
+			icon: "irons_spellbooks:wayward_compass"
+			x: 7.92d
+			y: -1.35d
+			optional: true
+			tasks: [
+				{
+					id: "72DF78C63F950C41"
+					type: "item"
+					item: "irons_spellbooks:wayward_compass"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3a64c03dc7908141e53ef232.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/1e9e8af007a193df1fbae6d2.png width:240 height:120 align:center}"
+				"配方输入：奥术源质×1，重复4槽。铁锭×1，重复4槽。灵魂灯笼×1。"
+				"制作归途指南针并探索其指向的地下墓穴。清理机关、确认补给后唤醒王座上的死者之王。有复活阶段。亡灵律典/猩红神杖的掉落不作为其他魔法体系入门条件。"
+				"取得归途指南针。"
+				"提洛斯回响：独立后期远征。"
+			]
+		}
+		{
+			id: "42D0D871392A9B8C"
+			title: "提洛斯回响：独立后期远征"
+			icon: "minecraft:book"
+			x: 10.08d
+			y: -1.8d
+			optional: true
+			tasks: [
+				{
+					id: "3EACF078B6FF4DF7"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["寻找下界的炽魂标记，备好寻魂烬铃与战斗补给。" "在标记附近使用寻魂烬铃，成功召唤受火者。生存模式中会消耗一枚铃；附近已有受火者时无法再次召唤。" "确认受火者已现身，再开始战斗。"]
+		}
+		{
+			id: "53A7627436815826"
+			title: "法杖、药剂与法术门户选修"
+			icon: "irons_spellbooks:graybeard_staff"
+			x: 3.6d
+			y: -3.96d
+			optional: true
+			tasks: [
+				{
+					id: "440EACA1FF99D73E"
+					type: "item"
+					item: "irons_spellbooks:graybeard_staff"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e3b4957943d1e03cf04ac61e.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d4db209c819597258b8cbd71.png width:240 height:120 align:center}"
+				"配方输入：奥术源质×1。木锹×1。铁锭×1。"
+				"法杖可代替快捷键施放书中选中的法术。不是独立解锁所有法术。传送门法术/框架和饰品是独立实用路线。先将法术抄入法术书并备足法力，再选择顺手的施放方式。"
+				"取得长者手杖。"
+				"扩槽与注入：检查输出NBT。"
+			]
+		}
+		{
+			id: "56194D8D5BC578BC"
+			title: "扩槽与注入：检查输出NBT"
+			icon: "irons_spellbooks:lesser_spell_slot_upgrade"
+			x: 5.76d
+			y: 1.8d
+			optional: true
+			tasks: [
+				{
+					id: "6FBA24E6739B7DF3"
+					type: "item"
+					item: "irons_spellbooks:lesser_spell_slot_upgrade"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1c8f1e9793b9046944036b28.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/de820d31d7ca96590d6a270a.png width:240 height:120 align:center}"
+				"配方输入：疣猪皮×1，重复6槽。奥术布匹×1，重复3槽。"
+				"在奥术铁砧对允许的书扩槽，或对允许的武器/护甲注入法术。具体可支持目标和最大槽位以实现及配置为准。生存完成需检查输出书槽/法术数据，取得升级物只证明材料已齐。"
+				"取得小型法术槽升级。"
+				"按所选分支继续，或返回魔法总览选择另一体系。"
+			]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:5b89103dad287fe7" "a:d16a68f4-7a0a-5aa5-bdf6-6cd77ae26dca"]
+		}
+		{
+			nodes: ["a:d16a68f4-7a0a-5aa5-bdf6-6cd77ae26dca" "a:f4d4523b-a77d-57e5-b7c5-a77069710fc6"]
+		}
+		{
+			nodes: ["a:f4d4523b-a77d-57e5-b7c5-a77069710fc6" "q:56194d8d5bc578bc"]
+		}
+		{
+			nodes: ["q:5b89103dad287fe7" "q:30834e91069c3e62"]
+		}
+		{
+			nodes: ["q:3da661a1c503c00b" "q:6186ff943085da1a"]
+		}
+		{
+			nodes: ["q:6186ff943085da1a" "q:73c2f7430134a4"]
+		}
+		{
+			nodes: ["q:73c2f7430134a4" "q:4d9f4ba33e699492"]
+		}
+		{
+			nodes: ["q:4d9f4ba33e699492" "q:32125f9b08df7362"]
+		}
+		{
+			nodes: ["q:32125f9b08df7362" "q:4ab598a4dab8a96"]
+		}
+		{
+			nodes: ["q:4ab598a4dab8a96" "q:5c6d58f631e9df37"]
+		}
+		{
+			nodes: ["q:5c6d58f631e9df37" "q:51456745fbedb065"]
+		}
+		{
+			nodes: ["q:51456745fbedb065" "q:698aec1a0decbf06"]
+		}
+		{
+			nodes: ["q:698aec1a0decbf06" "q:5b89103dad287fe7"]
+		}
+		{
+			nodes: ["q:30834e91069c3e62" "q:536da4f94000544"]
+		}
+		{
+			nodes: ["q:536da4f94000544" "q:42d0d871392a9b8c"]
+		}
+		{
+			nodes: ["q:42d0d871392a9b8c" "q:53a7627436815826"]
+		}
+		{
+			nodes: ["q:53a7627436815826" "q:56194d8d5bc578bc"]
+		}
+	]
+	images: [
+		{
+			x: 4.32d
+			y: 3.24d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d16a68f4-7a0a-5aa5-bdf6-6cd77ae26dca"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.04d
+			y: 2.52d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f4d4523b-a77d-57e5-b7c5-a77069710fc6"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

@@ -1,0 +1,16 @@
+
+#Mod settings
+["Tinkers Mossy Modifier Mod"]
+	#Enable double repair value in sun
+	DoubleRepairInSun = true
+	#Enable double repair value in rain
+	DoubleRepairInRain = false
+	#Repair once x game ticks has passed
+	RepairEvery = 150
+	#Default value is 2, formula is (2 + mossyLevel) * (2 if sun/rain is enabled)
+	BaseRepairValue = 2
+	#Enable draining of experience to repair, like Mending Moss
+	EXPDrain = false
+	#If EXPDrain is enabled. How much experience should be drained each repair
+	BaseEXPDrainValue = 1
+

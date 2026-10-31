@@ -1,0 +1,58 @@
+{
+  "type": "lithostitched:set_structure_spawn_condition",
+  "structures": [
+    "ctov:small/village_christmas",
+    "ctov:small/village_dark_forest",
+    "ctov:small/village_desert",
+    "ctov:small/village_jungle",
+    "ctov:small/village_mesa",
+    "ctov:small/village_mesa_fortified",
+    "ctov:small/village_mushroom",
+    "ctov:small/village_plains",
+    "ctov:small/village_plains_fortified",
+    "ctov:small/village_savanna",
+    "ctov:small/village_savanna_na",
+    "ctov:small/village_snowy_igloo",
+    "ctov:small/village_taiga",
+    "ctov:small/village_taiga_fortified"
+  ],
+  "append": true,
+  "spawn_condition": [
+    {
+      "type": "lithostitched:grid",
+      "radius": 64,
+      "distance_between_points": 64,
+      "condition": {
+        "type": "lithostitched:height_filter",
+        "range_type": "heightmap_relative",
+        "heightmap": "OCEAN_FLOOR_WG",
+        "permitted_range": {
+          "min_inclusive": -28,
+          "max_inclusive": 28
+        }
+      },
+      "allowed_count": {
+        "min_inclusive": 9,
+        "max_inclusive": 9
+      }
+    },
+    {
+      "type": "lithostitched:grid",
+      "radius": 24,
+      "distance_between_points": 12,
+      "condition": {
+        "type": "lithostitched:height_filter",
+        "range_type": "heightmap_relative",
+        "heightmap": "OCEAN_FLOOR_WG",
+        "permitted_range": {
+          "min_inclusive": -8,
+          "max_inclusive": 8
+        }
+      },
+      "allowed_count": {
+        "min_inclusive": 25,
+        "max_inclusive": 25
+      }
+    }
+  ]
+}

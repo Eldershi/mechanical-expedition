@@ -1,0 +1,227 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "start"
+	group: "6A6C7C5BAEF247E2"
+	icon: "minecraft:cooked_beef"
+	id: "7CF1214F39DD4E53"
+	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "tconstruct:encyclopedia"
+			id: "5D0FEBD3FC3443C6"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					advancement: "tconstruct:world/tinkers_gadgetry"
+					criterion: ""
+					id: "38AE6723616811F0"
+					type: "advancement"
+				}
+				{
+					advancement: "tconstruct:smeltery/puny_smelting"
+					criterion: ""
+					id: "702C4D9F27FA5D05"
+					type: "advancement"
+				}
+				{
+					advancement: "tconstruct:smeltery/mighty_smelting"
+					criterion: ""
+					id: "625DD53EACF288DD"
+					type: "advancement"
+				}
+				{
+					advancement: "tconstruct:foundry/fantastic_foundry"
+					criterion: ""
+					id: "63E9B4ED78A7CE49"
+					type: "advancement"
+				}
+			]
+			subtitle: "可以查看所有的材料及工具数据"
+			tasks: [{
+				id: "726B99C8AA64D96B"
+				item: "tconstruct:encyclopedia"
+				type: "item"
+			}]
+			title: "知识扩充"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			icon: "minecraft:oak_log"
+			dependencies: ["21ED583750523195"]
+			description: ["这是我为数不多能徒手挖掘的材料"]
+			id: "5DC78DC9A01883A1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "54681A0AC1BE477B"
+				item: "cmi:initial_item_kit"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "44B1FA50FDE179A9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "原木"
+				type: "item"
+			}]
+			title: "从木头开始..."
+			x: 4.0d
+			y: 0.0d
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+		{
+			description: [
+				"妈的, 烧的真他妈充分."
+				"要不是紧急逃生仓, 我怕是也和这船体一样支离破碎了. "
+				"空气含氧量34%, 地表重力加速度10.28m*s^-2, 有地球生物存活...啊, 这就是伊甸了. "
+				"重力, 我操的只是略不正常, 比上次那个巴...巴兰尼科夫先生发现的星球好太多了."
+				"既然这样, 得赶紧想办法活下去, 才能争取与地球的通讯..."
+			]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "ad_astra:tier_4_rocket"
+				tag: { }
+			}
+			id: "21ED583750523195"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 64
+				id: "7921A777ABA1D383"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.8d
+			subtitle: "紧急求助!紧急求助!"
+			tasks: [{
+				id: "22D0220F20C29089"
+				title: "从航天事故生还"
+				type: "checkmark"
+			}]
+			title: "劫后余生"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21ED583750523195"]
+			description: [
+				"这是一把很普通的弓, 它的韧性和柔度较好, 可以快速拉满射出紫水晶晶簇, 为您提供基础的防身. "
+				"如果您碰到由热力系列(指名道姓&c狂风人&r和&c岩石人&r)添加的拥有远程攻击能力的怪物, 就用它进行反击吧. "
+				"橡胶木板可以用于修复这把弓, 请一定要活下去. "
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "41A9A5F81771CD4F"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "1AED3A4B90A6614F"
+					item: {
+						Count: 1
+						id: "tconstruct:longbow"
+						tag: {
+							Damage: 0
+							owner: [I;
+								290990735
+								69617159
+								-1729868015
+								-1156403660
+							]
+							tic_broken: 0b
+							tic_materials: [
+								"cmi:rubberwood"
+								"cmi:rubberwood"
+								"cmi:amethyst"
+								"cmi:rope"
+							]
+							tic_modifiers: [{
+								level: 1
+								name: "tconstruct:crystalshot"
+							}]
+							tic_multipliers: {
+								"tconstruct:durability": 1.5f
+							}
+							tic_persistent: { }
+							tic_stats: {
+								"tconstruct:accuracy": 0.85f
+								"tconstruct:attack_damage": 3.2f
+								"tconstruct:draw_speed": 1.5f
+								"tconstruct:durability": 351.0f
+								"tconstruct:velocity": 0.8f
+							}
+							tic_volatile_data: {
+								abilities: 1
+								upgrades: 2
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3D333E50E3192974"
+					item: "thermal:rubberwood_planks"
+					title: "修补材料"
+					type: "item"
+				}
+			]
+			subtitle: "就请拿着它走下去吧"
+			tasks: [{
+				id: "4CAC16543EDBED94"
+				title: "如果您处于困境"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			description: ["村庄可以提供补给、交易与临时落脚点，探索时留意村民的住处。"]
+			id: "35D993D8B21B6A08"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.5d
+			tasks: [{
+				icon: "tconstruct:smeltery_controller"
+				id: "540EA61DF6E6697E"
+				structure: "#minecraft:village"
+				title: "到达村庄"
+				type: "structure"
+			}]
+			title: "到达村庄"
+			x: 8.0d
+			y: 0.0d
+		}
+
+
+
+	]
+	title: "开局与生存"
+}

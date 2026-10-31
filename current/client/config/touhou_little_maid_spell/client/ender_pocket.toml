@@ -1,0 +1,15 @@
+#是否显示末影口袋的女仆状态 HUD
+#Whether the Ender Pocket maid status HUD is visible
+hudEnabled = true
+#HUD 横坐标，单位为缩放后的 GUI 像素
+#HUD X position in scaled GUI pixels
+#Range: 0 ~ 8192
+hudX = 6
+#HUD 纵坐标，单位为缩放后的 GUI 像素
+#HUD Y position in scaled GUI pixels
+#Range: 0 ~ 8192
+hudY = 6
+#在末影口袋 HUD 中隐藏的女仆 UUID 列表
+#Maid UUIDs hidden from the Ender Pocket HUD
+hudHiddenMaidUuids = []
+

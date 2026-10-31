@@ -1,0 +1,10 @@
+{
+  "type": "forge:remove_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "entity_types": [
+    "born_in_chaos_v1:maggot",
+    "born_in_chaos_v1:corpse_fly"
+  ]
+}

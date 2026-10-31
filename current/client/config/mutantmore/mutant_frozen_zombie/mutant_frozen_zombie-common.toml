@@ -1,0 +1,72 @@
+
+[STATS]
+	"Experience Reward (default: 40)" = 40
+	"Max Health (default: 100)" = 100.0
+	"Movement Speed (default: 0.22)" = 0.22
+	"Knockback Resistance (default: 1)" = 1.0
+	"Armour Value (default: 2)" = 2.0
+	"Armour Toughness (default: 0)" = 0.0
+	"Target Players Range (in blocks, default: 64)" = 64.0
+	"Target Mobs Range (in blocks, default: 20)" = 20.0
+	"Melee Attack Damage (default: 6)" = 6.0
+	"Melee Attack Freezing Effect Duration (in ticks, default: 140)" = 140
+	"Melee Attack Freezing Effect Level (default: 0)" = 0
+	"Thrown Icicle Damage (default: 12)" = 12.0
+	"Thrown Icicle Disable Shields Duration (in ticks, default: 60)" = 60
+	"Thrown Icicle Freezing Effect Duration (in ticks, default: 100)" = 100
+	"Thrown Icicle Freezing Effect Level (default: 0)" = 0
+	"Lost Life Extra Thrown Icicle Amount (default: 1)" = 1
+	"Roar Ability Minimum Summoned Zombies (default: 3)" = 3
+	"Roar Ability Maximum Summoned Zombies (default: 7)" = 7
+	"Roar Ability Summon Zombies Range (in blocks, default: 10)" = 10
+	"Roar Ability Summoned Zombie Type (default: \"dungeons_mobs:frozen_zombie\")" = "dungeons_mobs:frozen_zombie"
+	"Roar Ability Snowstorm Duration (default: 300)" = 300
+	"Roar Ability Snowstorm Horizontal Radius (in blocks, default: 20)" = 20.0
+	"Roar Ability Snowstorm Vertical Radius (in blocks, default: 10)" = 10.0
+	"Roar Ability Snowstorm Freeze Speed (per tick, default: 1)" = 1
+	"Roar Ability Snowstorm Maximum Freeze Amount (mobs get damaged at 140, default: 200)" = 200
+	"Ice Smash Attack Damage (default: 14)" = 14.0
+	"Ice Smash Attack Disable Shields Duration (in ticks, default: 400)" = 400
+	"Icicle Spike Damage (default: 16)" = 16.0
+	"Icicle Spike Row Length (default: 30)" = 30
+	"Icicle Spike Freezing Effect Duration (in ticks, default: 100)" = 100
+	"Icicle Spike Freezing Effect Level (default: 1)" = 1
+	"Attacks Ignore Hurt Invulnerability (default: true)" = true
+
+[AI]
+	"Uses Melee Attack (default: true)" = true
+	"Melee Attack Maximum Use Distance (in blocks, default: 4)" = 4.0
+	"Melee Attack Cooldown (in ticks, default: 20)" = 20
+	"Uses Icicle Throw Attack (default: true)" = true
+	"Icicle Throw Attack Cooldown (in ticks, default: 10)" = 10
+	"Icicle Throw Attack Minimum Use Distance (in blocks, default: 4)" = 4.0
+	"Icicle Throw Attack Maximum Use Distance (in blocks, default: 30)" = 30.0
+	"Uses Roar Ability (default: true)" = true
+	"Roar Ability Minimum Cooldown (in ticks, default: 500)" = 500
+	"Roar Ability Maximum Cooldown (in ticks, default: 800)" = 800
+	"Uses Snow Throw Attack (default: true)" = true
+	"Snow Throw Attack Cooldown (in ticks, default: 100)" = 100
+	"Uses Ice Smash Attack (default: true)" = true
+	"Uses Icicle Slam Attack (default: true)" = true
+	"Icicle Slam Attack Minimum Cooldown (in ticks, default: 200)" = 200
+	"Icicle Slam Attack Maximum Cooldown (in ticks, default: 400)" = 400
+	"Icicle Slam Attack Maximum Use Distance (in blocks, default: 40)" = 40.0
+	"Attacks Players (default: true)" = true
+	"Attacks Baby Turtles (default: true)" = true
+	"Following Target Movement Speed Multiplier (default: 1.2)" = 1.2
+	"Following Target Movement Speed Multiplier Snowstorm (default: 1.6)" = 1.6
+	"Following Target Close Enough Distance (in blocks, default: 20)" = 20.0
+
+[DEATH]
+	"Revive Times (default: 2)" = 2
+
+[GRIEFING]
+	"Walk Griefing (default: true)" = true
+	"Walk Griefing Drops Blocks (default: false)" = false
+	"Hurt Griefing (default: true)" = true
+	"Hurt Griefing Drops Blocks (default: false)" = false
+	"Snowstorm Griefing (default: true)" = true
+
+[SPAWNING]
+	"Despawns (default: false)" = false
+

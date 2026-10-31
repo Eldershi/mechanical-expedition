@@ -1,0 +1,426 @@
+{
+	id: "51D1A0055547AF44"
+	filename: "research_technology_c_space_integration_prepare"
+	title: "航天·供氧与出发准备"
+	group: "3346A01E0EAFD002"
+	order_index: 46
+	icon: "minecraft:book"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "6521F53C3D898739"
+			title: "IE炼油厂调配火箭燃油接口"
+			icon: "minecraft:book"
+			x: 7.0d
+			y: -5.65d
+			optional: true
+			tasks: [
+				{
+					id: "02C1BD08B4A68006"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/aa54517346f3486ebe63710a.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/5170aa013bec2458b4255f09.png width:240 height:126 align:center}"
+				"25mB氧流体、250mB煤油、木炭粉催化剂及IE炼油厂FE。输入是Forge流体。"
+				"按RocketFuelProcess配方双路供液并保留木炭粉催化，完成能量120的配方。"
+				"合法氧气在同一输入槽任选。燃油只是一阶燃料的一个选项。"
+				"50mB 燃油进入出口，催化剂保留。供液和产液量分别核对。"
+				"交检查际燃料接收与航天用途。不新增T3、Boss或异界门槛。"
+			]
+		}
+		{
+			id: "5FF5B0E081F021FE"
+			title: "打开银河系漫游指南"
+			icon: "patchouli:guide_book"
+			x: -7.5d
+			y: -0.15d
+			optional: false
+			tasks: [
+				{
+					id: "55BEADF507F26F08"
+					type: "item"
+					item: "patchouli:guide_book"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/f195c5d160d5600110121b22.png width:32 height:32 align:center}" "已有怪奇宝典，或能制作独立指南。" "能区分说明与构件配方。" "分别准备电力、氧气和火箭零件。"]
+		}
+		{
+			id: "18607CD35178CF9C"
+			title: "准备液态氧物流"
+			icon: "minecraft:book"
+			x: -4.5d
+			y: -4.15d
+			optional: false
+			tasks: [
+				{
+					id: "0270F0D372D4FE90"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7fe944acc7f2dfb9f21c91ae.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/97c3a15e16a6e25cb0bd28bc.png width:240 height:97 align:center}"
+				"已有可产氧的机器和气体/流体转换能力。"
+				"选择旋转冷凝器的冷凝模式，将Mekanism氧气变成同名液态氧。气体管和流体管分别接对储罐。"
+				"获得流体 氧气。它与化学品气态氧不是同一检测目标。"
+				"将液态氧接入氧气装载机。也可查光合反应液精炼的独立路线。"
+			]
+		}
+		{
+			id: "1728AD7C502EDA85"
+			title: "装配氧气装载机"
+			icon: "ad_astra:oxygen_loader"
+			x: -1.5d
+			y: -4.15d
+			optional: false
+			tasks: [
+				{
+					id: "0E0440D8838DE9F7"
+					type: "item"
+					item: "ad_astra:oxygen_loader"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7ad729cc7291cd6aeb1aa152.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/5dbdb044a02898d49e170243.png width:240 height:120 align:center}"
+				"准备机器、供电和氧气流体。"
+				"把流体输到输入罐，供电后放入未充满的航天服或氧气储罐。确认氧量增加。"
+				"完成补氧接口，而非从水直接制氧。"
+				"为全套航天装备准备余量。"
+			]
+		}
+		{
+			id: "1CCD913BE0EFD3BC"
+			title: "转换并装载航天氧气"
+			icon: "minecraft:book"
+			x: 1.5d
+			y: -3.3d
+			optional: false
+			tasks: [
+				{
+					id: "6190DEFC4C526C5F"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["运行装载机，核对输入减少和装备氧量增加。" "获得可装入航天装备的Ad Astra氧气。" "做出出发前与返航前两次氧量检查。"]
+		}
+		{
+			id: "10BC7A03475694F0"
+			title: "准备航天头盔"
+			icon: "ad_astra:space_helmet"
+			x: -1.5d
+			y: -1.15d
+			optional: false
+			tasks: [
+				{
+					id: "126CB8F0095F4227"
+					type: "item"
+					item: "ad_astra:space_helmet"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/8e7081b6abcb3e8121817015.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/5529913130e77bd1545c981a.png width:240 height:120 align:center}"
+				"需要完整防护与充氧。单有胸甲不能表示全套。"
+				"按配方制作并穿戴。胸甲在装载机中补氧，其他部位检查是否穿上。"
+				"取得远征的对应防护件。"
+				"与其余部件一同做发射完成。"
+			]
+		}
+		{
+			id: "0F3E1BF11F8A20D2"
+			title: "准备航天胸甲"
+			icon: "ad_astra:space_suit"
+			x: -1.5d
+			y: 1.35d
+			optional: false
+			tasks: [
+				{
+					id: "4259F500B2281EE2"
+					type: "item"
+					item: "ad_astra:space_suit"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/bd87794887099ba2a7b743db.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/532a39b4b46745c04137fa29.png width:240 height:120 align:center}"
+				"需要完整防护与充氧。单有胸甲不能表示全套。"
+				"按配方制作并穿戴。胸甲在装载机中补氧，其他部位检查是否穿上。"
+				"取得远征的对应防护件。"
+				"与其余部件一同做发射完成。"
+			]
+		}
+		{
+			id: "2BF280B954FCA397"
+			title: "准备航天护腿"
+			icon: "ad_astra:space_pants"
+			x: -1.5d
+			y: 3.85d
+			optional: false
+			tasks: [
+				{
+					id: "4F46C8FDCAB11C55"
+					type: "item"
+					item: "ad_astra:space_pants"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/94f91d3d6baf4b7232014bd6.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/3546ebb632154a2f72c0b992.png width:240 height:120 align:center}"
+				"需要完整防护与充氧。单有胸甲不能表示全套。"
+				"按配方制作并穿戴。胸甲在装载机中补氧，其他部位检查是否穿上。"
+				"取得远征的对应防护件。"
+				"与其余部件一同做发射完成。"
+			]
+		}
+		{
+			id: "6120C5EB18EDDE88"
+			title: "准备航天靴子"
+			icon: "ad_astra:space_boots"
+			x: -1.5d
+			y: 6.35d
+			optional: false
+			tasks: [
+				{
+					id: "0D22520D4D707E60"
+					type: "item"
+					item: "ad_astra:space_boots"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9823817067f910a0444faa61.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/9d2f9e6960fd69247780f182.png width:240 height:120 align:center}"
+				"需要完整防护与充氧。单有胸甲不能表示全套。"
+				"按配方制作并穿戴。胸甲在装载机中补氧，其他部位检查是否穿上。"
+				"取得远征的对应防护件。"
+				"与其余部件一同做发射完成。"
+			]
+		}
+		{
+			id: "28589AF4FB0BDA5B"
+			title: "携带备用氧气"
+			icon: "ad_astra:gas_tank"
+			x: 4.5d
+			y: -4.15d
+			optional: true
+			tasks: [
+				{
+					id: "7597AFFCBD0B689D"
+					type: "item"
+					item: "ad_astra:gas_tank"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d6dcf53ac117b27711aa3f14.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/7bdd83bc0aaee4ba65ea5ede.png width:240 height:120 align:center}"
+				"已经能把Ad Astra氧气装入装备。"
+				"给便携储罐补氧，长按使用向随身装备分配。记录实际增加的氧量。"
+				"有可携带的补给来源。"
+				"保留返航氧气、食物与无需氧气的照明。"
+			]
+		}
+		{
+			id: "1395EF178B2AFF61"
+			title: "准备二级可用的凛冰溶液"
+			icon: "minecraft:book"
+			x: 1.5d
+			y: 0.85d
+			optional: true
+			tasks: [
+				{
+					id: "1C5DB92D23BE2036"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9d8bc366680596d8309d3c77.png width:240 height:97 align:center}"
+				"具备对应Mek气体冷凝能力和上游氢氧燃料。"
+				"按旋转冷凝配方处理氢氧燃料，收集200mB凛冰溶液。"
+				"凛冰溶液可用于一阶、二阶火箭。"
+				"若继续三级，生产甲烷燃油或联氨燃油。"
+			]
+		}
+		{
+			id: "5CAA6E885F8DB0BB"
+			title: "化学反应釜制造甲烷燃油"
+			icon: "minecraft:book"
+			x: 4.5d
+			y: 3.35d
+			optional: true
+			tasks: [
+				{
+					id: "63D276175050962A"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ae40960f08e617eb12044735.png width:240 height:117 align:center}"
+				"反应釜成型，准备100mB凛冰溶液、8凛冰晶体与16000FE。"
+				"输入材料，运行160tick并收集100mB甲烷燃油。分开气体、液体和物品端口。"
+				"获得一至三阶可用的火箭燃料。"
+				"三级远征前先在火箭GUI确认加注成功。"
+			]
+		}
+		{
+			id: "02C57AADB9D8272F"
+			title: "制造四级所需联氨燃油"
+			icon: "minecraft:book"
+			x: 1.5d
+			y: 5.85d
+			optional: true
+			tasks: [
+				{
+					id: "40DEF9FFC6E1F40D"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ae8231564e2003fad21fbf85.png width:240 height:117 align:center}"
+				"反应釜成型，准备100mB联氨、100mB氮氧化物和20000FE。"
+				"运行160tick，收集50mB联氨燃油。对两路输入设过滤，防止混罐。"
+				"获得一至四阶标签允许的联氨燃油。"
+				"四级火箭只接受tier4标签中的该流体。"
+			]
+		}
+		{
+			id: "6C4CF69064BA2C10"
+			title: "可选：自动加注火箭"
+			icon: "ad_astra_giselle_addon:fuel_loader"
+			x: 7.5d
+			y: 0.85d
+			optional: true
+			tasks: [
+				{
+					id: "3A4F7082D8FE83BB"
+					type: "item"
+					item: "ad_astra_giselle_addon:fuel_loader"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a18980bc7a6fc3ce1d80ddd3.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f9c8401a86a0003a91c43f93.png width:240 height:120 align:center}"
+				"已准备合格燃料和加注器。"
+				"按附属的加注范围和火箭等级接入，先做一次单火箭加注测试，再接储罐。"
+				"把手动桶装补给扩展为加注站。"
+				"观察火箭内部流体增加后才算自动化成功。"
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "7E0591C3BF36CCE6"
+			linked_quest: "4BFC30473684A5A5"
+			x: 1.3d
+			y: -6.35d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "5460164C3F6A7993"
+			linked_quest: "64AF7C9457ED0B6A"
+			x: 10.0d
+			y: -5.65d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "554444C5E3D26EA3"
+			linked_quest: "3FB802D2B93DB101"
+			x: 4.5d
+			y: 0.85d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [
+		{
+			x: 2.5d
+			y: -2.317d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:44864a0d-aadd-5631-94df-f5699efc1eb1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.5d
+			y: -0.483d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ad25ae2a-0959-5af0-96ac-a8b8d1fd5cbe"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:7e0591c3bf36cce6" "q:28589af4fb0bda5b"]
+		}
+		{
+			nodes: ["l:7e0591c3bf36cce6" "q:6c4cf69064ba2c10"]
+		}
+		{
+			nodes: ["q:28589af4fb0bda5b" "q:1728ad7c502eda85"]
+		}
+		{
+			nodes: ["q:28589af4fb0bda5b" "a:44864a0d-aadd-5631-94df-f5699efc1eb1"]
+		}
+		{
+			nodes: ["a:44864a0d-aadd-5631-94df-f5699efc1eb1" "a:ad25ae2a-0959-5af0-96ac-a8b8d1fd5cbe"]
+		}
+		{
+			nodes: ["a:ad25ae2a-0959-5af0-96ac-a8b8d1fd5cbe" "q:f3e1bf11f8a20d2"]
+		}
+		{
+			nodes: ["q:1728ad7c502eda85" "q:1ccd913be0efd3bc"]
+		}
+		{
+			nodes: ["l:5460164c3f6a7993" "q:6521f53c3d898739"]
+		}
+		{
+			nodes: ["l:554444c5e3d26ea3" "q:1395ef178b2aff61"]
+		}
+		{
+			nodes: ["q:1395ef178b2aff61" "q:5caa6e885f8db0bb"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

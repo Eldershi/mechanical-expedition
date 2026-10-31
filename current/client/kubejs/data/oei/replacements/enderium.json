@@ -1,0 +1,14 @@
+[
+	{
+		"matchItems": [
+			"#forge:plates/enderium"
+		],
+		"resultItems": "vintageimprovements:enderium_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/enderium"
+		],
+		"resultItems": "vintageimprovements:enderium_rod"
+	}
+]

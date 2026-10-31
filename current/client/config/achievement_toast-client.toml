@@ -1,0 +1,218 @@
+
+#Steam 风格成就弹窗
+[general]
+	#总开关。关掉后完全恢复原版行为。
+	enabled = true
+	#预设：STEAM / XBOX / VANILLA / MINIMAL / GLASS / CUSTOM。
+	#下面各项若为 PRESET 则跟随此预设。
+	#Allowed Values: STEAM, XBOX, VANILLA, MINIMAL, GLASS, CUSTOM
+	preset = "STEAM"
+	#同屏最多显示几个，超出时丢弃最旧的。
+	#Range: 1 ~ 12
+	max_on_screen = 4
+	#隐藏原版右上角小方框（推荐开启，否则会看到两个提示）。
+	hide_vanilla_toast = true
+	#单机按 ESC 暂停时，冻结弹窗倒计时。
+	pause_when_paused = true
+	#强制隐藏第一行类型标签。
+	hide_label = false
+	#强制隐藏描述行。
+	hide_description = false
+	#忽略隐藏进度（hidden:true）的弹窗。
+	ignore_hidden = false
+
+#哪类进度触发弹窗
+[trigger]
+	task = true
+	goal = true
+	challenge = true
+	#类型标签。填翻译键或直接填文本都行。
+	label_task = "achievement_toast.label.task"
+	label_goal = "achievement_toast.label.goal"
+	label_challenge = "achievement_toast.label.challenge"
+
+#动效与停留时间
+[timing]
+	#PRESET / SNAPPY / STANDARD / RELAXED / CUSTOM
+	#Allowed Values: PRESET, SNAPPY, STANDARD, RELAXED, CUSTOM
+	profile = "PRESET"
+	#profile = CUSTOM 时生效：滑入毫秒（0 = 纯淡入）
+	#Range: 0 ~ 3000
+	slide_in_ms = 320
+	#Range: 500 ~ 60000
+	hold_ms = 5000
+	#Range: 0 ~ 3000
+	slide_out_ms = 420
+
+#位置与堆叠
+[position]
+	#PRESET 或 TOP_LEFT/TOP_RIGHT/BOTTOM_LEFT/BOTTOM_RIGHT
+	#Allowed Values: PRESET, TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	anchor = "PRESET"
+	#PRESET/AUTO/FROM_LEFT/FROM_RIGHT/FROM_TOP/FROM_BOTTOM/FADE
+	#Allowed Values: PRESET, AUTO, FROM_LEFT, FROM_RIGHT, FROM_TOP, FROM_BOTTOM, FADE
+	slide = "PRESET"
+	#弹窗距屏幕边的横向间距。0 = 完全贴边。
+	#Range: 0 ~ 400
+	offset_x = 0
+	#弹窗距屏幕边的纵向间距。0 = 完全贴边。
+	#Range: 0 ~ 400
+	offset_y = 0
+	#Range: 0 ~ 60
+	gap = 6
+	newest_first = true
+
+#音效
+[sound]
+	#PRESET / NONE / STEAM / XBOX / MINIMAL / VANILLA_LEVELUP / VANILLA_TOAST / CUSTOM
+	#Allowed Values: PRESET, NONE, STEAM, XBOX, MINIMAL, VANILLA_LEVELUP, VANILLA_TOAST, CUSTOM
+	choice = "VANILLA_TOAST"
+	#choice = CUSTOM 时使用的音效 id（可写任意已注册音效）
+	custom_id = "achievement_toast:achievement"
+	#Range: 0.0 ~ 1.0
+	volume = 0.7
+	#Range: 0.5 ~ 2.0
+	pitch = 1.0
+	#连续解锁时每个弹窗音高递增（Steam 式上行音阶）。0 = 关闭
+	#Range: 0.0 ~ 0.5
+	pitch_step = 0.08
+
+#样式细节（只有 source = CUSTOM 时整段生效）
+[style]
+	#PRESET：跟随预设；CUSTOM：使用下面这些值
+	#Allowed Values: PRESET, CUSTOM
+	source = "PRESET"
+	#Range: 80 ~ 600
+	width = 220
+	#Range: 20 ~ 200
+	height = 52
+	#0 = 方角。
+	#Range: 0 ~ 40
+	corner_radius = 0
+	#Range: 0 ~ 3
+	border_width = 1
+	background_top = "#F21B2836"
+	background_bottom = "#F2243B54"
+	border_color = "#704A6E8A"
+	accent_color = "#FF66C0F4"
+	#Allowed Values: NONE, LEFT, RIGHT, TOP, BOTTOM
+	accent_position = "RIGHT"
+	label_color = "#FF66C0F4"
+	title_color = "#FFFFFFFF"
+	description_color = "#FFA7B6C2"
+	icon_panel = true
+	#图标底框比图标每边多几像素（0 = 底框与图标同尺寸）
+	#Range: 0 ~ 16
+	icon_panel_pad = 2
+	#1.0 = 16×16，2.0 = 32×32。底框尺寸 = 图标 + 2×底框内边距。
+	#Range: 1.0 ~ 3.0
+	icon_scale = 1.5
+	text_shadow = true
+	show_label = true
+	#Range: 1 ~ 10
+	bar_height = 3
+	bar_color = "#FF66C0F4"
+	bar_track_color = "#55203A4E"
+
+#成就进度
+[progress]
+	#追踪客户端进度表，检测部分完成（关掉只检测“完成”那一刻）
+	track_progress = true
+	#部分完成也弹窗（多条件成就）
+	show_partial = true
+	#只在跨越 N% 整数档时弹（0 = 每次进展都弹）
+	#Range: 0 ~ 50
+	partial_step = 0
+	#NEVER 不显示；MULTI 仅多条件成就显示；ALWAYS 总是显示
+	#Allowed Values: NEVER, MULTI, ALWAYS
+	bar = "MULTI"
+	#已完成的成就不显示进度条
+	hide_bar_when_done = true
+
+#点击弹窗的行为（需要打开任意界面才有鼠标光标）
+[click]
+	#Allowed Values: NONE, OPEN_ADVANCEMENTS, RUN_COMMAND, OPEN_QUEST
+	action = "OPEN_ADVANCEMENTS"
+	#action = RUN_COMMAND 时执行的命令（不带斜杠）
+	command = ""
+	close_on_click = true
+
+#FTB Quests / FTB Library 等模组提示 → 转成 Steam 弹窗
+[ftb]
+	enabled = true
+	#按类名前缀识别要接管的模组提示
+	package_prefixes = ["dev.ftb.mods."]
+	#隐藏这些模组原本的提示（避免两个弹窗）
+	hide_original = true
+	#兜底标签：只在嗅探不到模组提示自带文案时使用
+	#FTB 任务提示自带「任务已完成！」「奖励已领取！」，会优先用它们
+	label = "achievement_toast.label.quest"
+	#提示里没有物品图标时用什么（物品 id）
+	fallback_icon = "minecraft:written_book"
+	#手指定标题字段名（留空 = 自动嗅探，日志会打印实际用的字段）
+	title_field = ""
+	icon_field = ""
+	#点击任务弹窗的行为
+	#OPEN_QUEST = 直接跳到那个任务（在任务书里定位它）
+	#拿不到任务 id 的提示（如「获得物品」）自动退回按 click_command 处理
+	#Allowed Values: NONE, OPEN_ADVANCEMENTS, RUN_COMMAND, OPEN_QUEST
+	click_action = "OPEN_QUEST"
+	#click_action = RUN_COMMAND 时执行的命令；
+	#也是 OPEN_QUEST 拿不到任务 id 时的兜底（默认用 FTB 官方命令打开任务书）
+	click_command = "ftbquests open_book"
+	#允许按任务数据里的金光标签 / 本机白名单决定哪些任务弹窗带金光
+	#（还要 [glow] 段开启）
+	glow = true
+	#金光任务 id 白名单 —— 只在本机生效，上传/同步都带不走。
+	#★ 推荐：FTB 任务编辑界面 →「外观」栏勾选「完成时金框」。
+	#    它把标记写进任务数据（tags 字段），跟着任务上传到服务器并广播给客户端，
+	#    所以别的玩家（装本模组即可）也能看到金光，服务端不用装本模组。
+	#这个白名单只影响你自己，留着当兜底：十进制 id，或 Ctrl+Shift 悬停看到的十六进制。
+	glow_quests = []
+
+#金光效果（挑战类成就自动生效；FTB 任务按任务数据里的标签生效）
+[glow]
+	#总开关。关掉后任何来源都不画金光。
+	enabled = true
+	#challenge 类型的成就自动加金光（task / goal 不加）。
+	on_challenge = true
+	#紧贴图标底框外沿描一圈金边（就是参考图里那圈贴框的金线）。
+	frame = true
+	color = "#FFFFD24A"
+	#贴着框那圈暖光的厚度（像素），0 = 金光全关。会旋转的放射光刺比它更长，伸到约 1.7 倍远。
+	#Range: 0 ~ 32
+	radius = 10
+	#金光旋转速度（度/秒），负值反向，0 = 不转。
+	#Range: -720.0 ~ 720.0
+	spin_speed = 45.0
+	#呼吸强度：0 = 恒定不闪，1 = 最明显。
+	#Range: 0.0 ~ 1.0
+	pulse = 0.45
+
+#成就总览 HUD（默认按 H 切换显示）
+[overview]
+	enabled = true
+	#TOGGLE = 按一下开关（默认）；HOLD = 按住显示
+	#Allowed Values: HOLD, TOGGLE
+	mode = "TOGGLE"
+	#面板位置。默认居中，避开右下角的弹窗
+	#Allowed Values: CENTER, TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	anchor = "CENTER"
+	#Range: 160 ~ 420
+	width = 240
+	#整体缩放，小屏或大 GUI 缩放时调小
+	#Range: 0.6 ~ 1.6
+	scale = 1.0
+	#显示每个分页（故事/下界/末地…）的完成度
+	show_tabs = true
+	#Range: 1 ~ 16
+	max_tabs = 6
+	show_recent = true
+	#最近解锁显示几条，0 = 不显示该段
+	#Range: 0 ~ 10
+	recent_count = 5
+	#隐藏成就计入分母（原版成就树是计入的）
+	count_hidden = true
+	#分页根节点计入分母。若每页比原版多 1，把这项关掉
+	count_roots = true
+

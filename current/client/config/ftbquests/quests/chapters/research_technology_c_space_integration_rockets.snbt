@@ -1,0 +1,2102 @@
+{
+	id: "62624853D847AA5E"
+	filename: "research_technology_c_space_integration_rockets"
+	title: "航天·火箭零件与总装"
+	group: "3346A01E0EAFD002"
+	order_index: 47
+	icon: "ad_astra:nasa_workbench"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "7A3C7360FB6E1896"
+			title: "准备NASA工作台"
+			icon: "ad_astra:nasa_workbench"
+			x: -12.233d
+			y: -0.502d
+			optional: false
+			tasks: [
+				{
+					id: "23589AC5C5ACF757"
+					type: "item"
+					item: "ad_astra:nasa_workbench"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a09797802785880abe424770.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/bc72e44c35cb2d89efaa1ead.png width:240 height:120 align:center}"
+				"已取得钢板、铁杆和合成台等配方材料。"
+				"放置工作台，按14槽火箭配方装配。"
+				"提供手动火箭总装能力。"
+				"也可选择附属的自动NASA工作台。"
+			]
+		}
+		{
+			id: "587CCEE1C9562FB4"
+			title: "可选：自动NASA工作台"
+			icon: "ad_astra_giselle_addon:automation_nasa_workbench"
+			x: -10.708d
+			y: 5.412d
+			optional: true
+			tasks: [
+				{
+					id: "3C5546C1FFE86EF8"
+					type: "item"
+					item: "ad_astra_giselle_addon:automation_nasa_workbench"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/8d633ae22d5a7e3b753eedd1.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/e3350ded1bf7ce3b09425544.png width:240 height:120 align:center}"
+				"已有手动总装经验且需要重复制造。"
+				"制作附属工作台，按NASA类别接入自动投料与取出。先用单批检查槽位。"
+				"同一总装类别的替代加工能力。"
+				"手动或自动工作台任选一条，二者不做全部满足门槛。"
+			]
+		}
+		{
+			id: "018F3F36C8761306"
+			title: "加工一级箭体"
+			icon: "cmi:tier_1_rocket_body"
+			x: -11.924d
+			y: -5.86d
+			optional: false
+			tasks: [
+				{
+					id: "1FA1FE5A46BDE5D9"
+					type: "item"
+					item: "cmi:tier_1_rocket_body"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/686bd0d67fd594bda9062a30.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/ab3450f028d6095e855f8729.png width:240 height:108 align:center}"
+				"工作站已能运行。材料按此节点的配方查询独立槽位准备。"
+				"在集成工作站制作一级箭体。箭体使用硅橡胶，尾翼和头锥用熔融埃忒恩，将所需液体接入机器的流体输入。"
+				"获得cmi命名空间的一级箭体。"
+				"总装每枚使用6箭体、4尾翼、1头锥，提前按批计算。"
+			]
+		}
+		{
+			id: "17AF4BA6AAF41417"
+			title: "加工一级尾翼"
+			icon: "cmi:tier_1_rocket_fin"
+			x: -4.569d
+			y: -6.705d
+			optional: false
+			tasks: [
+				{
+					id: "24E569861CB5F749"
+					type: "item"
+					item: "cmi:tier_1_rocket_fin"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e5c7cc86848e1ac3dab37b76.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f94d0a5421fbc295715fae15.png width:240 height:108 align:center}"
+				"工作站已能运行。材料按此节点的配方查询独立槽位准备。"
+				"在集成工作站制作一级尾翼。箭体使用硅橡胶，尾翼和头锥用熔融埃忒恩，将所需液体接入机器的流体输入。"
+				"获得cmi命名空间的一级尾翼。"
+				"总装每枚使用6箭体、4尾翼、1头锥，提前按批计算。"
+			]
+		}
+		{
+			id: "4E5BF1667FF803BA"
+			title: "加工一级头锥"
+			icon: "cmi:tier_1_rocket_nose_cone"
+			x: -3.839d
+			y: -9.236d
+			optional: false
+			tasks: [
+				{
+					id: "6B2704B52E7F394E"
+					type: "item"
+					item: "cmi:tier_1_rocket_nose_cone"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e65ac57fda26106b8d1fa0a1.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/be1371eb54c30ceeb0fdb915.png width:240 height:108 align:center}"
+				"工作站已能运行。材料按此节点的配方查询独立槽位准备。"
+				"在集成工作站制作一级头锥。箭体使用硅橡胶，尾翼和头锥用熔融埃忒恩，将所需液体接入机器的流体输入。"
+				"获得cmi命名空间的一级头锥。"
+				"总装每枚使用6箭体、4尾翼、1头锥，提前按批计算。"
+			]
+		}
+		{
+			id: "433EDE77E858AD56"
+			title: "加工一级引擎"
+			icon: "ad_astra:steel_engine"
+			x: -11.133d
+			y: -4.031d
+			optional: false
+			tasks: [
+				{
+					id: "7291EAF8E0CD25FF"
+					type: "item"
+					item: "ad_astra:steel_engine"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/dcfcfbf7f0a82ed1c30ed20a.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/c1eef2d6463afea5f82fda10.png width:240 height:108 align:center}"
+				"准备工作站、等级复合板材和共享材料。"
+				"按工作站配方制作。确认取到对应等级成品，不拿上一阶同外形零件替代。"
+				"得到一级引擎。"
+				"每枚火箭准备1引擎和2储罐。"
+			]
+		}
+		{
+			id: "3825537D1410EFFB"
+			title: "加工一级储罐"
+			icon: "ad_astra:steel_tank"
+			x: -5.414d
+			y: -0.737d
+			optional: false
+			tasks: [
+				{
+					id: "7E5D60B886654A4D"
+					type: "item"
+					item: "ad_astra:steel_tank"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c55cd0c545bb30ef4a1dba71.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/af5452c7255042a446f3f9e5.png width:240 height:108 align:center}"
+				"准备工作站、等级复合板材和共享材料。"
+				"按工作站配方制作。确认取到对应等级成品，不拿上一阶同外形零件替代。"
+				"得到一级储罐。"
+				"每枚火箭准备1引擎和2储罐。"
+			]
+		}
+		{
+			id: "7155210392641F4C"
+			title: "总装一级火箭"
+			icon: "ad_astra:tier_1_rocket"
+			x: 1.023d
+			y: -4.442d
+			optional: false
+			tasks: [
+				{
+					id: "179CCFC1B207238C"
+					type: "item"
+					item: "ad_astra:tier_1_rocket"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/80b6fcfa85755186e7ac4cb4.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/eac53e6cc1b0dd1a42e05743.png width:240 height:195 align:center}"
+				"对应等级专用零件齐备，NASA类工作台二选一。"
+				"按14槽装配：头锥1、箭体6、尾翼4、储罐2、引擎1。输出1枚火箭。"
+				"一级火箭本体完成，但尚未代表能够安全发射。"
+				"核对此等级燃料、目的地和生存装备，再做起降完成。"
+			]
+		}
+		{
+			id: "7A3A0DF3FEDA4970"
+			title: "加工二级箭体"
+			icon: "cmi:tier_2_rocket_body"
+			x: -9.555d
+			y: 2.692d
+			optional: true
+			tasks: [
+				{
+					id: "655ADD76D949531A"
+					type: "item"
+					item: "cmi:tier_2_rocket_body"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7a45f97304a6b76202d26066.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/9983a54814dc944524a18363.png width:240 height:108 align:center}"
+				"工作站已能运行。材料按此节点的配方查询独立槽位准备。"
+				"在集成工作站制作二级箭体。箭体使用硅橡胶，尾翼和头锥用熔融埃忒恩，将所需液体接入机器的流体输入。"
+				"获得cmi命名空间的二级箭体。"
+				"总装每枚使用6箭体、4尾翼、1头锥，提前按批计算。"
+			]
+		}
+		{
+			id: "422DFEB009856B83"
+			title: "加工二级尾翼"
+			icon: "cmi:tier_2_rocket_fin"
+			x: -8.306d
+			y: -0.688d
+			optional: true
+			tasks: [
+				{
+					id: "488F08F02D31E231"
+					type: "item"
+					item: "cmi:tier_2_rocket_fin"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7045f0ede2ab9fcbfa4f7e0f.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/cb93218bcf6f598bd9c9ddf0.png width:240 height:108 align:center}"
+				"工作站已能运行。材料按此节点的配方查询独立槽位准备。"
+				"在集成工作站制作二级尾翼。箭体使用硅橡胶，尾翼和头锥用熔融埃忒恩，将所需液体接入机器的流体输入。"
+				"获得cmi命名空间的二级尾翼。"
+				"总装每枚使用6箭体、4尾翼、1头锥，提前按批计算。"
+			]
+		}
+		{
+			id: "3DA4C11E5F4C6B59"
+			title: "加工二级头锥"
+			icon: "cmi:tier_2_rocket_nose_cone"
+			x: -2.982d
+			y: 0.227d
+			optional: true
+			tasks: [
+				{
+					id: "6A81002935237902"
+					type: "item"
+					item: "cmi:tier_2_rocket_nose_cone"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/950cfa56a5e30e9d647dece2.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/393c088d50763da9e7e3d512.png width:240 height:108 align:center}"
+				"工作站已能运行。材料按此节点的配方查询独立槽位准备。"
+				"在集成工作站制作二级头锥。箭体使用硅橡胶，尾翼和头锥用熔融埃忒恩，将所需液体接入机器的流体输入。"
+				"获得cmi命名空间的二级头锥。"
+				"总装每枚使用6箭体、4尾翼、1头锥，提前按批计算。"
+			]
+		}
+		{
+			id: "13A83D9D4A224183"
+			title: "加工二级引擎"
+			icon: "ad_astra:desh_engine"
+			x: -7.939d
+			y: 6.117d
+			optional: true
+			tasks: [
+				{
+					id: "3F268879549526E5"
+					type: "item"
+					item: "ad_astra:desh_engine"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/236c935793b0c5f057f6a403.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/1f68b90c32774ba706d5d3af.png width:240 height:108 align:center}"
+				"准备工作站、等级复合板材和共享材料。"
+				"按工作站配方制作。确认取到对应等级成品，不拿上一阶同外形零件替代。"
+				"得到二级引擎。"
+				"每枚火箭准备1引擎和2储罐。"
+			]
+		}
+		{
+			id: "34FD15A1090C7C04"
+			title: "加工二级储罐"
+			icon: "ad_astra:desh_tank"
+			x: -4.36d
+			y: 6.815d
+			optional: true
+			tasks: [
+				{
+					id: "1CCCE1D2CD68AB14"
+					type: "item"
+					item: "ad_astra:desh_tank"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/484c1a34ec0393190e6e13a3.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/3ee9b366b08cdbb671ad3d58.png width:240 height:108 align:center}"
+				"准备工作站、等级复合板材和共享材料。"
+				"按工作站配方制作。确认取到对应等级成品，不拿上一阶同外形零件替代。"
+				"得到二级储罐。"
+				"每枚火箭准备1引擎和2储罐。"
+			]
+		}
+		{
+			id: "75843FCDC1966205"
+			title: "总装二级火箭"
+			icon: "ad_astra:tier_2_rocket"
+			x: -1.819d
+			y: 3.713d
+			optional: true
+			tasks: [
+				{
+					id: "5CB46F6EF9405930"
+					type: "item"
+					item: "ad_astra:tier_2_rocket"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ad1f91ee92b738df226029a6.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/2984d0e53271854146ebd57a.png width:240 height:195 align:center}"
+				"对应等级专用零件齐备，NASA类工作台二选一。"
+				"按14槽装配：头锥1、箭体6、尾翼4、储罐2、引擎1。输出1枚火箭。"
+				"二级火箭本体完成，但尚未代表能够安全发射。"
+				"核对此等级燃料、目的地和生存装备，再做起降完成。"
+			]
+		}
+		{
+			id: "3991D13B18905ECA"
+			title: "加工三级箭体"
+			icon: "cmi:tier_3_rocket_body"
+			x: 5.084d
+			y: -9.401d
+			optional: true
+			tasks: [
+				{
+					id: "3F800366E0263E9E"
+					type: "item"
+					item: "cmi:tier_3_rocket_body"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a345544a8bc206f19a9856e2.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/76a4ce90ffb348639ac22117.png width:240 height:108 align:center}"
+				"工作站已能运行。材料按此节点的配方查询独立槽位准备。"
+				"在集成工作站制作三级箭体。箭体使用硅橡胶，尾翼和头锥用熔融埃忒恩，将所需液体接入机器的流体输入。"
+				"获得cmi命名空间的三级箭体。"
+				"总装每枚使用6箭体、4尾翼、1头锥，提前按批计算。"
+			]
+		}
+		{
+			id: "7C599EC1A98A9B6E"
+			title: "加工三级尾翼"
+			icon: "cmi:tier_3_rocket_fin"
+			x: 6.693d
+			y: -7.817d
+			optional: true
+			tasks: [
+				{
+					id: "637DEE2A006BA571"
+					type: "item"
+					item: "cmi:tier_3_rocket_fin"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/78e629766a5a75d3ccd4a9c4.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/ea2764e0b9889cb7e800cf5a.png width:240 height:108 align:center}"
+				"工作站已能运行。材料按此节点的配方查询独立槽位准备。"
+				"在集成工作站制作三级尾翼。箭体使用硅橡胶，尾翼和头锥用熔融埃忒恩，将所需液体接入机器的流体输入。"
+				"获得cmi命名空间的三级尾翼。"
+				"总装每枚使用6箭体、4尾翼、1头锥，提前按批计算。"
+			]
+		}
+		{
+			id: "4837C7C5B8D4316B"
+			title: "加工三级头锥"
+			icon: "cmi:tier_3_rocket_nose_cone"
+			x: 8.926d
+			y: -8.683d
+			optional: true
+			tasks: [
+				{
+					id: "735CEFDA1CA254CF"
+					type: "item"
+					item: "cmi:tier_3_rocket_nose_cone"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3ae261999a24001d7b18883b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f5ae45270a84b993dd1ca358.png width:240 height:108 align:center}"
+				"工作站已能运行。材料按此节点的配方查询独立槽位准备。"
+				"在集成工作站制作三级头锥。箭体使用硅橡胶，尾翼和头锥用熔融埃忒恩，将所需液体接入机器的流体输入。"
+				"获得cmi命名空间的三级头锥。"
+				"总装每枚使用6箭体、4尾翼、1头锥，提前按批计算。"
+			]
+		}
+		{
+			id: "6BC0E48065A191EA"
+			title: "加工三级引擎"
+			icon: "ad_astra:ostrum_engine"
+			x: 6.742d
+			y: -6.003d
+			optional: true
+			tasks: [
+				{
+					id: "4B3F9AAF94472848"
+					type: "item"
+					item: "ad_astra:ostrum_engine"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/70d2d4e149e62b2485ba9ea0.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/71aff7f901058e1442d821f4.png width:240 height:108 align:center}"
+				"准备工作站、等级复合板材和共享材料。"
+				"按工作站配方制作。确认取到对应等级成品，不拿上一阶同外形零件替代。"
+				"得到三级引擎。"
+				"每枚火箭准备1引擎和2储罐。"
+			]
+		}
+		{
+			id: "02BAA31CFFF1E17C"
+			title: "加工三级储罐"
+			icon: "ad_astra:ostrum_tank"
+			x: 9.014d
+			y: -0.539d
+			optional: true
+			tasks: [
+				{
+					id: "3561A8C6D2AA9C27"
+					type: "item"
+					item: "ad_astra:ostrum_tank"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/db3c5aa60a34d1252a9134c5.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/a253a6388fcc19933de2e9c0.png width:240 height:108 align:center}"
+				"准备工作站、等级复合板材和共享材料。"
+				"按工作站配方制作。确认取到对应等级成品，不拿上一阶同外形零件替代。"
+				"得到三级储罐。"
+				"每枚火箭准备1引擎和2储罐。"
+			]
+		}
+		{
+			id: "25D68FEDC946D6DF"
+			title: "总装三级火箭"
+			icon: "ad_astra:tier_3_rocket"
+			x: 12.205d
+			y: -6.138d
+			optional: true
+			tasks: [
+				{
+					id: "5BE38E1193A2FA9B"
+					type: "item"
+					item: "ad_astra:tier_3_rocket"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6dc357b599ed0dec8a16b7d2.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/aa653fda4c2ba46326d305b6.png width:240 height:195 align:center}"
+				"对应等级专用零件齐备，NASA类工作台二选一。"
+				"按14槽装配：头锥1、箭体6、尾翼4、储罐2、引擎1。输出1枚火箭。"
+				"三级火箭本体完成，但尚未代表能够安全发射。"
+				"核对此等级燃料、目的地和生存装备，再做起降完成。"
+			]
+		}
+		{
+			id: "0B093D859F018743"
+			title: "加工四级箭体"
+			icon: "cmi:tier_4_rocket_body"
+			x: 3.848d
+			y: -1.016d
+			optional: true
+			tasks: [
+				{
+					id: "0C061BDE2E796FCD"
+					type: "item"
+					item: "cmi:tier_4_rocket_body"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d8c150dfc09dae581aa0b19a.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/52b4589c7a283917cdb8e6c3.png width:240 height:108 align:center}"
+				"工作站已能运行。材料按此节点的配方查询独立槽位准备。"
+				"在集成工作站制作四级箭体。箭体使用硅橡胶，尾翼和头锥用熔融埃忒恩，将所需液体接入机器的流体输入。"
+				"获得cmi命名空间的四级箭体。"
+				"总装每枚使用6箭体、4尾翼、1头锥，提前按批计算。"
+			]
+		}
+		{
+			id: "276E1716E8466790"
+			title: "加工四级尾翼"
+			icon: "cmi:tier_4_rocket_fin"
+			x: 7.625d
+			y: 2.814d
+			optional: true
+			tasks: [
+				{
+					id: "08603D3B03C0120C"
+					type: "item"
+					item: "cmi:tier_4_rocket_fin"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/472877003518b94487c2b289.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/dcf1d7b1449ff30be48a07c7.png width:240 height:108 align:center}"
+				"工作站已能运行。材料按此节点的配方查询独立槽位准备。"
+				"在集成工作站制作四级尾翼。箭体使用硅橡胶，尾翼和头锥用熔融埃忒恩，将所需液体接入机器的流体输入。"
+				"获得cmi命名空间的四级尾翼。"
+				"总装每枚使用6箭体、4尾翼、1头锥，提前按批计算。"
+			]
+		}
+		{
+			id: "59F82FC1D5AB5870"
+			title: "加工四级头锥"
+			icon: "cmi:tier_4_rocket_nose_cone"
+			x: 9.902d
+			y: 0.687d
+			optional: true
+			tasks: [
+				{
+					id: "25030D0C1B56A0AA"
+					type: "item"
+					item: "cmi:tier_4_rocket_nose_cone"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/8c4e359b00afbc1078f3135b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/930912ec6b5da2490c53591e.png width:240 height:108 align:center}"
+				"工作站已能运行。材料按此节点的配方查询独立槽位准备。"
+				"在集成工作站制作四级头锥。箭体使用硅橡胶，尾翼和头锥用熔融埃忒恩，将所需液体接入机器的流体输入。"
+				"获得cmi命名空间的四级头锥。"
+				"总装每枚使用6箭体、4尾翼、1头锥，提前按批计算。"
+			]
+		}
+		{
+			id: "300DBEFAF887C0E6"
+			title: "加工四级引擎"
+			icon: "ad_astra:calorite_engine"
+			x: 6.142d
+			y: 4.014d
+			optional: true
+			tasks: [
+				{
+					id: "53F32EEACD4A8D7E"
+					type: "item"
+					item: "ad_astra:calorite_engine"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ba663974bfa480a641450581.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/571e8f9749fd1ed18cf0f1ad.png width:240 height:108 align:center}"
+				"准备工作站、等级复合板材和共享材料。"
+				"按工作站配方制作。确认取到对应等级成品，不拿上一阶同外形零件替代。"
+				"得到四级引擎。"
+				"每枚火箭准备1引擎和2储罐。"
+			]
+		}
+		{
+			id: "7241B757A91C1670"
+			title: "加工四级储罐"
+			icon: "ad_astra:calorite_tank"
+			x: 7.82d
+			y: 6.405d
+			optional: true
+			tasks: [
+				{
+					id: "6A0F6DED2D002DCA"
+					type: "item"
+					item: "ad_astra:calorite_tank"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/17d1ac7ee1d7f27e29c55027.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/2218fc5406b630edfa8f8eca.png width:240 height:108 align:center}"
+				"准备工作站、等级复合板材和共享材料。"
+				"按工作站配方制作。确认取到对应等级成品，不拿上一阶同外形零件替代。"
+				"得到四级储罐。"
+				"每枚火箭准备1引擎和2储罐。"
+			]
+		}
+		{
+			id: "57D23A719AB4365B"
+			title: "总装四级火箭"
+			icon: "ad_astra:tier_4_rocket"
+			x: 12.233d
+			y: 4.422d
+			optional: true
+			tasks: [
+				{
+					id: "3D23428498FBB016"
+					type: "item"
+					item: "ad_astra:tier_4_rocket"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/661b4258fddd31ff3474beab.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/40825534656d7ba3cd857a96.png width:240 height:195 align:center}"
+				"对应等级专用零件齐备，NASA类工作台二选一。"
+				"按14槽装配：头锥1、箭体6、尾翼4、储罐2、引擎1。输出1枚火箭。"
+				"四级火箭本体完成，但尚未代表能够安全发射。"
+				"核对此等级燃料、目的地和生存装备，再做起降完成。"
+			]
+		}
+		{
+			id: "7B27892479681CCF"
+			title: "布置发射台"
+			icon: "ad_astra:launch_pad"
+			x: 1.198d
+			y: 9.401d
+			optional: false
+			tasks: [
+				{
+					id: "4666394129060CC3"
+					type: "item"
+					item: "ad_astra:launch_pad"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/bdf22079c05a0334329d0660.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/a847a353b09672dab66e7667.png width:240 height:120 align:center}"
+				"已取得火箭与开阔起降场。"
+				"放置发射台并在中心放火箭。潜行交互检查燃料罐、货舱与回程物资。"
+				"发射站准备好。"
+				"按跳跃键起飞，在着陆器下降时按跳跃键缓降。"
+			]
+		}
+		{
+			id: "02C8C66AF47F7757"
+			title: "完成首次起飞与安全返回"
+			icon: "minecraft:book"
+			x: 5.198d
+			y: 9.401d
+			optional: false
+			tasks: [
+				{
+					id: "20D5513808B251E3"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/817791f241c888aa1ae59ed3.png width:240 height:135 align:center}"
+				"火箭加注合格燃料。全套防护穿戴、氧气充足、返航物资齐备。"
+				"按等级合法燃料任选一种。"
+				"记录起飞维度与坐标、目的地、燃料种类/量、穿戴。着陆后取回物资，重新布置发射台再返航。"
+				"完成一次真实航天循环。"
+				"在月面建立补给点，再推进材料产线。"
+			]
+		}
+	]
+	quest_links: [{
+			id: "1AB5B46B6918D4FD"
+			linked_quest: "2BF7E103DDD10828"
+			x: -10.309d
+			y: -8.006d
+			size: 0.75d
+			shape: "rsquare"
+		}]
+	images: [
+		{
+			x: -7.814d
+			y: -1.815d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:97d7cd1a-4b42-531b-b4d9-e85e36988a2f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.396d
+			y: -3.129d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:013ac56a-20ba-57f5-8b1e-741667b7e2f9"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.762d
+			y: 0.903d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fb21fc73-33fd-5e3e-b1ea-db70d29cef32"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.29d
+			y: 2.308d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e211d898-3e12-5fde-a655-5f0d54d3e438"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.087d
+			y: -2.381d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:da56888a-02b9-5e26-835c-bdc63fbbcdb0"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.059d
+			y: -4.259d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f05b875f-4c92-51ed-b7b5-14f916e353b0"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.078d
+			y: 1.139d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:10fe5542-ef1b-5bc1-a444-94156cafa40c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.078d
+			y: 2.781d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a43b49e4-8347-5950-abf6-9afc1203e8d3"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.396d
+			y: -7.572d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1865ffe4-fe21-52bd-9253-e3cea3b5046b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.482d
+			y: -7.139d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fe55fc8f-8a29-591e-84bf-e99a341a1be9"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.152d
+			y: -8.416d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0b93166c-9cb8-56b7-8f17-bcd180b130b0"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.996d
+			y: -8.826d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6d35ddd5-7a3b-5285-b3ee-e003c669932e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -10.584d
+			y: -6.681d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:62e2a77a-c7fe-5189-992d-0896601be491"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -10.858d
+			y: -5.356d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:cfb0f67f-6df2-5797-a7b3-08eeceede130"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.677d
+			y: -5.583d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c25945e4-4148-5d5b-8665-455e3477a366"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.046d
+			y: -3.16d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3a75de29-04dc-560e-b3cc-f2a4774d130d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -10.058d
+			y: -4.44d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d4da87af-a1a3-57a2-9536-2354ca4ac5dd"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.806d
+			y: -0.874d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6a04a679-0f1f-5819-922e-7c88a1cd6415"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.641d
+			y: -5.567d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ab706047-71c5-5917-9b39-cc7cabdcdabb"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.974d
+			y: -3.127d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:165845ed-52d0-5f60-80cd-f87fd617c147"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.867d
+			y: -5.262d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b92358b9-b972-5579-ac3a-362d05b45bdb"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.424d
+			y: -2.517d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7c1dae7a-94d2-5023-815a-cbf61fe8cb56"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.519d
+			y: -3.298d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ede9e372-4c50-5a10-8ca7-2b51ff13a7ca"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.729d
+			y: 1.409d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:965c1f65-5289-5f39-93aa-be62966f971e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.326d
+			y: -3.066d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:9e92bd57-441e-5c2d-a675-0534531ee1a7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.343d
+			y: 1.875d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:db4cdc0f-0894-5a35-bd77-26f0676bddb2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.178d
+			y: -8.471d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:632fee83-8f96-5e61-a046-7873ec064fbe"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.047d
+			y: -8.936d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ead3e91f-66fd-570b-b90a-dce71921782c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.642d
+			y: -7.943d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e83a331c-f0ce-515c-8c4a-49a37689c3a9"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.026d
+			y: -7.88d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:81923a8a-51a7-5128-ab8a-29a58d0f51ed"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.897d
+			y: -8.232d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4d04cd79-a005-5e45-bf85-c6d3444056c1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.514d
+			y: -8.457d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c3aa7074-8367-5fbf-8aa1-f637c65a2ec0"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.625d
+			y: -7.338d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5cc9e7d5-1dda-53af-909a-030bd37849e1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.058d
+			y: -6.671d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d763896c-8a55-5e1e-a961-ce4e667baa9b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.868d
+			y: -5.517d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:642c1f73-ff1b-5af2-ac22-f87bf847fb8e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.573d
+			y: -3.028d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:30f82e9c-c722-5db5-9e5e-f3a838c7f6bc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.59d
+			y: -5.676d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:64f50a49-e905-5bbb-ad4e-2539eccedce1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.871d
+			y: -3.346d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bfad0531-0b1c-5daa-b227-acbb35851b3f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.331d
+			y: -4.399d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e58209e6-37a0-51d1-83d8-a2dc9409a171"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.647d
+			y: -0.793d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f848c709-b9fe-5886-aa27-e1ca29ea94fa"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.572d
+			y: -5.108d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ab3b6c5a-e9e4-5c4b-a43f-e195268fd844"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.165d
+			y: -2.211d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bb1f02da-ff63-5116-889b-e20652dc1326"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.825d
+			y: -3.999d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:dd7b2931-ea1c-566a-8240-0ec9aa23ffda"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.658d
+			y: 0.007d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:10ecad53-4d13-546e-b7d8-bc46f5f7541c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.266d
+			y: -3.202d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7d634d35-51d5-5552-b9ca-421449001fe6"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.777d
+			y: 1.601d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c9210be8-408a-58fe-b00c-f301f334e606"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.218d
+			y: -7.638d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:05776687-5702-5118-a336-30e2d91e11ee"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.598d
+			y: -6.04d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5020d998-d107-5c6a-a256-1de5a6d7fa18"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.608d
+			y: -5.387d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bda72c37-9e27-5e29-8dce-a09a6cacf46e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.293d
+			y: -4.915d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e977ae28-2b4f-5c2e-9c87-803c81880845"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.705d
+			y: -5.951d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1828fc1f-0bbf-5038-879b-72416f81b99f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.841d
+			y: -5.196d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8dc0dc4b-a5e2-51b7-a612-8b537aa2909d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.081d
+			y: -4.168d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:52f7a768-fbf7-5058-9d97-dc88bc1bf5ae"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.029d
+			y: -4.305d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:037424c2-bbc2-51d0-8d7b-8504cbbd55ac"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.798d
+			y: 2.127d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1de63897-148d-5cd0-9914-667561126695"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.887d
+			y: -1.157d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:47989b75-a908-5d82-9f56-bd6f139e1056"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.745d
+			y: 4.846d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:313a5a41-f635-566e-8e9d-e12db93a78f0"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.782d
+			y: 4.279d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bdef2812-0a35-5600-8225-8a20e329a09b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.07d
+			y: 1.562d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f151ed8b-8598-5f80-a438-41a29342453f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.567d
+			y: -2.288d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0c284a1f-f635-5265-a940-bc4afe5bd945"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.061d
+			y: 5.082d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:919a5675-7c70-503b-91a8-e29c9bdd238d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.586d
+			y: 4.752d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d0a2ae05-e5cb-56fe-a85a-a6c3bf23a7da"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.594d
+			y: 1.389d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f6802838-89f1-5f14-99b1-2f745520af65"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.207d
+			y: 2.551d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:083c93b4-2a8c-532b-b9a4-719f62abddb8"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.976d
+			y: 3.032d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d2647872-3873-525f-8e37-4fe1d2bab1e7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.398d
+			y: 3.373d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:91f820a7-8a65-550a-88e4-60769678eda5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.144d
+			y: 0.779d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8cec16cd-459f-5b2c-9065-a5c686757f01"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.981d
+			y: 2.246d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1bcce6db-4ede-5179-b44c-3fe8d68431a4"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.899d
+			y: 5.316d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f739d51b-2807-596b-933e-b8cef7703f2a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.859d
+			y: 4.514d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e78f066b-33b4-58a9-9d99-1ac74d2daf9a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 10.019d
+			y: -7.835d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5baeaf44-e22b-5dba-9e1b-04c354c7a175"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 11.112d
+			y: -6.986d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:cda66e71-caa6-51cb-b706-71f89d13e2b8"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 7.458d
+			y: -8.313d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b1dd927b-e198-5d1f-93f7-d89215331018"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 9.831d
+			y: -7.226d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3bd7c707-846c-55a2-823d-b0fdd06b05e4"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 8.53d
+			y: -7.257d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:9816aed6-c42d-5850-ae02-415384a00584"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 10.368d
+			y: -6.698d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7b3b89d1-84ff-5ba3-9726-e17d76012dd2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 8.563d
+			y: -6.048d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8fd2b2c3-e2bf-5658-b0cb-fc03ab9d5eba"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 10.384d
+			y: -6.093d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0fe9c0f6-9894-5f93-a6c1-6b38edacce5c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 10.679d
+			y: 1.932d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bc925ff9-2ea8-5530-9770-c37800579607"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 11.456d
+			y: 3.177d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c8e35507-bcb6-52b6-abea-4148a9c61fd5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.643d
+			y: 0.797d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f6c586e1-1b56-5661-81cb-4bd1cafbc5c8"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 9.438d
+			y: 2.609d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:51c11dba-ed1d-58ee-abab-4b418388eadf"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 9.161d
+			y: 3.35d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1cb21a72-da5b-5f56-ad25-36d2221344c1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 10.697d
+			y: 3.886d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f65174f8-a9fd-5abe-ac93-bb6dcee1b6df"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 8.172d
+			y: 4.15d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:deef46b0-70d0-52e2-a009-b7f4ee9c41e6"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 10.203d
+			y: 4.286d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fed7415c-5457-598b-b0e8-170883fb3022"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:7a3c7360fb6e1896" "q:587ccee1c9562fb4"]
+		}
+		{
+			nodes: ["q:7a3c7360fb6e1896" "a:97d7cd1a-4b42-531b-b4d9-e85e36988a2f"]
+		}
+		{
+			nodes: ["a:97d7cd1a-4b42-531b-b4d9-e85e36988a2f" "a:013ac56a-20ba-57f5-8b1e-741667b7e2f9"]
+		}
+		{
+			nodes: ["a:013ac56a-20ba-57f5-8b1e-741667b7e2f9" "q:7155210392641f4c"]
+		}
+		{
+			nodes: ["q:7a3c7360fb6e1896" "a:fb21fc73-33fd-5e3e-b1ea-db70d29cef32"]
+		}
+		{
+			nodes: ["a:fb21fc73-33fd-5e3e-b1ea-db70d29cef32" "a:e211d898-3e12-5fde-a655-5f0d54d3e438"]
+		}
+		{
+			nodes: ["a:e211d898-3e12-5fde-a655-5f0d54d3e438" "q:75843fcdc1966205"]
+		}
+		{
+			nodes: ["q:7a3c7360fb6e1896" "a:da56888a-02b9-5e26-835c-bdc63fbbcdb0"]
+		}
+		{
+			nodes: ["a:da56888a-02b9-5e26-835c-bdc63fbbcdb0" "a:f05b875f-4c92-51ed-b7b5-14f916e353b0"]
+		}
+		{
+			nodes: ["a:f05b875f-4c92-51ed-b7b5-14f916e353b0" "q:25d68fedc946d6df"]
+		}
+		{
+			nodes: ["q:7a3c7360fb6e1896" "a:10fe5542-ef1b-5bc1-a444-94156cafa40c"]
+		}
+		{
+			nodes: ["a:10fe5542-ef1b-5bc1-a444-94156cafa40c" "a:a43b49e4-8347-5950-abf6-9afc1203e8d3"]
+		}
+		{
+			nodes: ["a:a43b49e4-8347-5950-abf6-9afc1203e8d3" "q:57d23a719ab4365b"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "q:18f3f36c8761306"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:1865ffe4-fe21-52bd-9253-e3cea3b5046b"]
+		}
+		{
+			nodes: ["a:1865ffe4-fe21-52bd-9253-e3cea3b5046b" "a:fe55fc8f-8a29-591e-84bf-e99a341a1be9"]
+		}
+		{
+			nodes: ["a:fe55fc8f-8a29-591e-84bf-e99a341a1be9" "q:17af4ba6aaf41417"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:0b93166c-9cb8-56b7-8f17-bcd180b130b0"]
+		}
+		{
+			nodes: ["a:0b93166c-9cb8-56b7-8f17-bcd180b130b0" "a:6d35ddd5-7a3b-5285-b3ee-e003c669932e"]
+		}
+		{
+			nodes: ["a:6d35ddd5-7a3b-5285-b3ee-e003c669932e" "q:4e5bf1667ff803ba"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:62e2a77a-c7fe-5189-992d-0896601be491"]
+		}
+		{
+			nodes: ["a:62e2a77a-c7fe-5189-992d-0896601be491" "a:cfb0f67f-6df2-5797-a7b3-08eeceede130"]
+		}
+		{
+			nodes: ["a:cfb0f67f-6df2-5797-a7b3-08eeceede130" "q:433ede77e858ad56"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:c25945e4-4148-5d5b-8665-455e3477a366"]
+		}
+		{
+			nodes: ["a:c25945e4-4148-5d5b-8665-455e3477a366" "a:3a75de29-04dc-560e-b3cc-f2a4774d130d"]
+		}
+		{
+			nodes: ["a:3a75de29-04dc-560e-b3cc-f2a4774d130d" "q:3825537d1410effb"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:d4da87af-a1a3-57a2-9536-2354ca4ac5dd"]
+		}
+		{
+			nodes: ["a:d4da87af-a1a3-57a2-9536-2354ca4ac5dd" "a:6a04a679-0f1f-5819-922e-7c88a1cd6415"]
+		}
+		{
+			nodes: ["a:6a04a679-0f1f-5819-922e-7c88a1cd6415" "q:7a3a0df3feda4970"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:ab706047-71c5-5917-9b39-cc7cabdcdabb"]
+		}
+		{
+			nodes: ["a:ab706047-71c5-5917-9b39-cc7cabdcdabb" "a:165845ed-52d0-5f60-80cd-f87fd617c147"]
+		}
+		{
+			nodes: ["a:165845ed-52d0-5f60-80cd-f87fd617c147" "q:422dfeb009856b83"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:b92358b9-b972-5579-ac3a-362d05b45bdb"]
+		}
+		{
+			nodes: ["a:b92358b9-b972-5579-ac3a-362d05b45bdb" "a:7c1dae7a-94d2-5023-815a-cbf61fe8cb56"]
+		}
+		{
+			nodes: ["a:7c1dae7a-94d2-5023-815a-cbf61fe8cb56" "q:3da4c11e5f4c6b59"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:ede9e372-4c50-5a10-8ca7-2b51ff13a7ca"]
+		}
+		{
+			nodes: ["a:ede9e372-4c50-5a10-8ca7-2b51ff13a7ca" "a:965c1f65-5289-5f39-93aa-be62966f971e"]
+		}
+		{
+			nodes: ["a:965c1f65-5289-5f39-93aa-be62966f971e" "q:13a83d9d4a224183"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:9e92bd57-441e-5c2d-a675-0534531ee1a7"]
+		}
+		{
+			nodes: ["a:9e92bd57-441e-5c2d-a675-0534531ee1a7" "a:db4cdc0f-0894-5a35-bd77-26f0676bddb2"]
+		}
+		{
+			nodes: ["a:db4cdc0f-0894-5a35-bd77-26f0676bddb2" "q:34fd15a1090c7c04"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:632fee83-8f96-5e61-a046-7873ec064fbe"]
+		}
+		{
+			nodes: ["a:632fee83-8f96-5e61-a046-7873ec064fbe" "a:ead3e91f-66fd-570b-b90a-dce71921782c"]
+		}
+		{
+			nodes: ["a:ead3e91f-66fd-570b-b90a-dce71921782c" "q:3991d13b18905eca"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:e83a331c-f0ce-515c-8c4a-49a37689c3a9"]
+		}
+		{
+			nodes: ["a:e83a331c-f0ce-515c-8c4a-49a37689c3a9" "a:81923a8a-51a7-5128-ab8a-29a58d0f51ed"]
+		}
+		{
+			nodes: ["a:81923a8a-51a7-5128-ab8a-29a58d0f51ed" "q:7c599ec1a98a9b6e"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:4d04cd79-a005-5e45-bf85-c6d3444056c1"]
+		}
+		{
+			nodes: ["a:4d04cd79-a005-5e45-bf85-c6d3444056c1" "a:c3aa7074-8367-5fbf-8aa1-f637c65a2ec0"]
+		}
+		{
+			nodes: ["a:c3aa7074-8367-5fbf-8aa1-f637c65a2ec0" "q:4837c7c5b8d4316b"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:5cc9e7d5-1dda-53af-909a-030bd37849e1"]
+		}
+		{
+			nodes: ["a:5cc9e7d5-1dda-53af-909a-030bd37849e1" "a:d763896c-8a55-5e1e-a961-ce4e667baa9b"]
+		}
+		{
+			nodes: ["a:d763896c-8a55-5e1e-a961-ce4e667baa9b" "q:6bc0e48065a191ea"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:642c1f73-ff1b-5af2-ac22-f87bf847fb8e"]
+		}
+		{
+			nodes: ["a:642c1f73-ff1b-5af2-ac22-f87bf847fb8e" "a:30f82e9c-c722-5db5-9e5e-f3a838c7f6bc"]
+		}
+		{
+			nodes: ["a:30f82e9c-c722-5db5-9e5e-f3a838c7f6bc" "q:2baa31cfff1e17c"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:64f50a49-e905-5bbb-ad4e-2539eccedce1"]
+		}
+		{
+			nodes: ["a:64f50a49-e905-5bbb-ad4e-2539eccedce1" "a:bfad0531-0b1c-5daa-b227-acbb35851b3f"]
+		}
+		{
+			nodes: ["a:bfad0531-0b1c-5daa-b227-acbb35851b3f" "q:b093d859f018743"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:e58209e6-37a0-51d1-83d8-a2dc9409a171"]
+		}
+		{
+			nodes: ["a:e58209e6-37a0-51d1-83d8-a2dc9409a171" "a:f848c709-b9fe-5886-aa27-e1ca29ea94fa"]
+		}
+		{
+			nodes: ["a:f848c709-b9fe-5886-aa27-e1ca29ea94fa" "q:276e1716e8466790"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:ab3b6c5a-e9e4-5c4b-a43f-e195268fd844"]
+		}
+		{
+			nodes: ["a:ab3b6c5a-e9e4-5c4b-a43f-e195268fd844" "a:bb1f02da-ff63-5116-889b-e20652dc1326"]
+		}
+		{
+			nodes: ["a:bb1f02da-ff63-5116-889b-e20652dc1326" "q:59f82fc1d5ab5870"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:dd7b2931-ea1c-566a-8240-0ec9aa23ffda"]
+		}
+		{
+			nodes: ["a:dd7b2931-ea1c-566a-8240-0ec9aa23ffda" "a:10ecad53-4d13-546e-b7d8-bc46f5f7541c"]
+		}
+		{
+			nodes: ["a:10ecad53-4d13-546e-b7d8-bc46f5f7541c" "q:300dbefaf887c0e6"]
+		}
+		{
+			nodes: ["l:1ab5b46b6918d4fd" "a:7d634d35-51d5-5552-b9ca-421449001fe6"]
+		}
+		{
+			nodes: ["a:7d634d35-51d5-5552-b9ca-421449001fe6" "a:c9210be8-408a-58fe-b00c-f301f334e606"]
+		}
+		{
+			nodes: ["a:c9210be8-408a-58fe-b00c-f301f334e606" "q:7241b757a91c1670"]
+		}
+		{
+			nodes: ["q:4e5bf1667ff803ba" "a:05776687-5702-5118-a336-30e2d91e11ee"]
+		}
+		{
+			nodes: ["a:05776687-5702-5118-a336-30e2d91e11ee" "a:5020d998-d107-5c6a-a256-1de5a6d7fa18"]
+		}
+		{
+			nodes: ["a:5020d998-d107-5c6a-a256-1de5a6d7fa18" "q:7155210392641f4c"]
+		}
+		{
+			nodes: ["q:18f3f36c8761306" "a:bda72c37-9e27-5e29-8dce-a09a6cacf46e"]
+		}
+		{
+			nodes: ["a:bda72c37-9e27-5e29-8dce-a09a6cacf46e" "a:e977ae28-2b4f-5c2e-9c87-803c81880845"]
+		}
+		{
+			nodes: ["a:e977ae28-2b4f-5c2e-9c87-803c81880845" "q:7155210392641f4c"]
+		}
+		{
+			nodes: ["q:17af4ba6aaf41417" "a:1828fc1f-0bbf-5038-879b-72416f81b99f"]
+		}
+		{
+			nodes: ["a:1828fc1f-0bbf-5038-879b-72416f81b99f" "a:8dc0dc4b-a5e2-51b7-a612-8b537aa2909d"]
+		}
+		{
+			nodes: ["a:8dc0dc4b-a5e2-51b7-a612-8b537aa2909d" "q:7155210392641f4c"]
+		}
+		{
+			nodes: ["q:3825537d1410effb" "q:7155210392641f4c"]
+		}
+		{
+			nodes: ["q:433ede77e858ad56" "a:52f7a768-fbf7-5058-9d97-dc88bc1bf5ae"]
+		}
+		{
+			nodes: ["a:52f7a768-fbf7-5058-9d97-dc88bc1bf5ae" "a:037424c2-bbc2-51d0-8d7b-8504cbbd55ac"]
+		}
+		{
+			nodes: ["a:037424c2-bbc2-51d0-8d7b-8504cbbd55ac" "q:7155210392641f4c"]
+		}
+		{
+			nodes: ["q:587ccee1c9562fb4" "a:1de63897-148d-5cd0-9914-667561126695"]
+		}
+		{
+			nodes: ["a:1de63897-148d-5cd0-9914-667561126695" "a:47989b75-a908-5d82-9f56-bd6f139e1056"]
+		}
+		{
+			nodes: ["a:47989b75-a908-5d82-9f56-bd6f139e1056" "q:7155210392641f4c"]
+		}
+		{
+			nodes: ["q:587ccee1c9562fb4" "a:313a5a41-f635-566e-8e9d-e12db93a78f0"]
+		}
+		{
+			nodes: ["a:313a5a41-f635-566e-8e9d-e12db93a78f0" "a:bdef2812-0a35-5600-8225-8a20e329a09b"]
+		}
+		{
+			nodes: ["a:bdef2812-0a35-5600-8225-8a20e329a09b" "q:75843fcdc1966205"]
+		}
+		{
+			nodes: ["q:587ccee1c9562fb4" "a:f151ed8b-8598-5f80-a438-41a29342453f"]
+		}
+		{
+			nodes: ["a:f151ed8b-8598-5f80-a438-41a29342453f" "a:0c284a1f-f635-5265-a940-bc4afe5bd945"]
+		}
+		{
+			nodes: ["a:0c284a1f-f635-5265-a940-bc4afe5bd945" "q:25d68fedc946d6df"]
+		}
+		{
+			nodes: ["q:587ccee1c9562fb4" "a:919a5675-7c70-503b-91a8-e29c9bdd238d"]
+		}
+		{
+			nodes: ["a:919a5675-7c70-503b-91a8-e29c9bdd238d" "a:d0a2ae05-e5cb-56fe-a85a-a6c3bf23a7da"]
+		}
+		{
+			nodes: ["a:d0a2ae05-e5cb-56fe-a85a-a6c3bf23a7da" "q:57d23a719ab4365b"]
+		}
+		{
+			nodes: ["q:3da4c11e5f4c6b59" "a:f6802838-89f1-5f14-99b1-2f745520af65"]
+		}
+		{
+			nodes: ["a:f6802838-89f1-5f14-99b1-2f745520af65" "a:083c93b4-2a8c-532b-b9a4-719f62abddb8"]
+		}
+		{
+			nodes: ["a:083c93b4-2a8c-532b-b9a4-719f62abddb8" "q:75843fcdc1966205"]
+		}
+		{
+			nodes: ["q:7a3a0df3feda4970" "a:d2647872-3873-525f-8e37-4fe1d2bab1e7"]
+		}
+		{
+			nodes: ["a:d2647872-3873-525f-8e37-4fe1d2bab1e7" "a:91f820a7-8a65-550a-88e4-60769678eda5"]
+		}
+		{
+			nodes: ["a:91f820a7-8a65-550a-88e4-60769678eda5" "q:75843fcdc1966205"]
+		}
+		{
+			nodes: ["q:422dfeb009856b83" "a:8cec16cd-459f-5b2c-9065-a5c686757f01"]
+		}
+		{
+			nodes: ["a:8cec16cd-459f-5b2c-9065-a5c686757f01" "a:1bcce6db-4ede-5179-b44c-3fe8d68431a4"]
+		}
+		{
+			nodes: ["a:1bcce6db-4ede-5179-b44c-3fe8d68431a4" "q:75843fcdc1966205"]
+		}
+		{
+			nodes: ["q:34fd15a1090c7c04" "q:75843fcdc1966205"]
+		}
+		{
+			nodes: ["q:13a83d9d4a224183" "a:f739d51b-2807-596b-933e-b8cef7703f2a"]
+		}
+		{
+			nodes: ["a:f739d51b-2807-596b-933e-b8cef7703f2a" "a:e78f066b-33b4-58a9-9d99-1ac74d2daf9a"]
+		}
+		{
+			nodes: ["a:e78f066b-33b4-58a9-9d99-1ac74d2daf9a" "q:75843fcdc1966205"]
+		}
+		{
+			nodes: ["q:4837c7c5b8d4316b" "a:5baeaf44-e22b-5dba-9e1b-04c354c7a175"]
+		}
+		{
+			nodes: ["a:5baeaf44-e22b-5dba-9e1b-04c354c7a175" "a:cda66e71-caa6-51cb-b706-71f89d13e2b8"]
+		}
+		{
+			nodes: ["a:cda66e71-caa6-51cb-b706-71f89d13e2b8" "q:25d68fedc946d6df"]
+		}
+		{
+			nodes: ["q:3991d13b18905eca" "a:b1dd927b-e198-5d1f-93f7-d89215331018"]
+		}
+		{
+			nodes: ["a:b1dd927b-e198-5d1f-93f7-d89215331018" "a:3bd7c707-846c-55a2-823d-b0fdd06b05e4"]
+		}
+		{
+			nodes: ["a:3bd7c707-846c-55a2-823d-b0fdd06b05e4" "q:25d68fedc946d6df"]
+		}
+		{
+			nodes: ["q:7c599ec1a98a9b6e" "a:9816aed6-c42d-5850-ae02-415384a00584"]
+		}
+		{
+			nodes: ["a:9816aed6-c42d-5850-ae02-415384a00584" "a:7b3b89d1-84ff-5ba3-9726-e17d76012dd2"]
+		}
+		{
+			nodes: ["a:7b3b89d1-84ff-5ba3-9726-e17d76012dd2" "q:25d68fedc946d6df"]
+		}
+		{
+			nodes: ["q:2baa31cfff1e17c" "q:25d68fedc946d6df"]
+		}
+		{
+			nodes: ["q:6bc0e48065a191ea" "a:8fd2b2c3-e2bf-5658-b0cb-fc03ab9d5eba"]
+		}
+		{
+			nodes: ["a:8fd2b2c3-e2bf-5658-b0cb-fc03ab9d5eba" "a:0fe9c0f6-9894-5f93-a6c1-6b38edacce5c"]
+		}
+		{
+			nodes: ["a:0fe9c0f6-9894-5f93-a6c1-6b38edacce5c" "q:25d68fedc946d6df"]
+		}
+		{
+			nodes: ["q:59f82fc1d5ab5870" "a:bc925ff9-2ea8-5530-9770-c37800579607"]
+		}
+		{
+			nodes: ["a:bc925ff9-2ea8-5530-9770-c37800579607" "a:c8e35507-bcb6-52b6-abea-4148a9c61fd5"]
+		}
+		{
+			nodes: ["a:c8e35507-bcb6-52b6-abea-4148a9c61fd5" "q:57d23a719ab4365b"]
+		}
+		{
+			nodes: ["q:b093d859f018743" "a:f6c586e1-1b56-5661-81cb-4bd1cafbc5c8"]
+		}
+		{
+			nodes: ["a:f6c586e1-1b56-5661-81cb-4bd1cafbc5c8" "a:51c11dba-ed1d-58ee-abab-4b418388eadf"]
+		}
+		{
+			nodes: ["a:51c11dba-ed1d-58ee-abab-4b418388eadf" "q:57d23a719ab4365b"]
+		}
+		{
+			nodes: ["q:276e1716e8466790" "a:1cb21a72-da5b-5f56-ad25-36d2221344c1"]
+		}
+		{
+			nodes: ["a:1cb21a72-da5b-5f56-ad25-36d2221344c1" "a:f65174f8-a9fd-5abe-ac93-bb6dcee1b6df"]
+		}
+		{
+			nodes: ["a:f65174f8-a9fd-5abe-ac93-bb6dcee1b6df" "q:57d23a719ab4365b"]
+		}
+		{
+			nodes: ["q:7241b757a91c1670" "q:57d23a719ab4365b"]
+		}
+		{
+			nodes: ["q:300dbefaf887c0e6" "a:deef46b0-70d0-52e2-a009-b7f4ee9c41e6"]
+		}
+		{
+			nodes: ["a:deef46b0-70d0-52e2-a009-b7f4ee9c41e6" "a:fed7415c-5457-598b-b0e8-170883fb3022"]
+		}
+		{
+			nodes: ["a:fed7415c-5457-598b-b0e8-170883fb3022" "q:57d23a719ab4365b"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

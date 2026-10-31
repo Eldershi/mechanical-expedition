@@ -1,0 +1,256 @@
+{
+	id: "0803D640DA9A1663"
+	filename: "staged_technology_b_advanced_process_interfaces"
+	title: "钨、卤水与跨体系材料接口"
+	group: "5B22564DA513617D"
+	order_index: 40
+	icon: "cmi:lithium_containing_electrolyte_bucket"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "02B9237774CD43EF"
+			title: "工业电解回收含锂电解液"
+			icon: "cmi:lithium_containing_electrolyte_bucket"
+			x: 0.0d
+			y: 5.7d
+			optional: false
+			tasks: [
+				{
+					id: "7B23A39ADAF28B2E"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/97b99770dba97fa24bea251d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/39d6de407f3a303a9c452a12.png width:240 height:119 align:center}"
+				"200mB废卤水、工业电解槽、2石墨电极及连续FE。large_only=true。"
+				"装2电极，输入废卤水，侧面红石面不处于关机条件。运行200ticks。"
+				"100mB含锂电解液与1盐产出，电极状态可检查。停电失败边界清楚。"
+				"送Mekanism蒸馏取锂。"
+			]
+		}
+		{
+			id: "059E3A5F6CA1428D"
+			title: "IE聚合与吸热脱水制HDPE丸"
+			icon: "mekanism:hdpe_pellet"
+			x: 3.0d
+			y: 1.2d
+			optional: false
+			tasks: [
+				{
+					id: "4D70D009D85DF3F6"
+					type: "item"
+					item: "mekanism:hdpe_pellet"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f8891dce90170b9890091b10.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/506016158b91467e1b27a45e.png width:240 height:92 align:center}"
+				"10mB乙烯＋聚乙烯催化板制1mB HDPE。累积1000mB后脱水。"
+				"保持IE催化板、能量与液体输出，再把1000mB高密度聚乙烯流体送吸热脱水机。"
+				"得到1HDPE丸。该路线原料累计与催化剂不耗分开计算，不能把1mB当1000mB。"
+				"保留Mekanism其他路线。"
+			]
+		}
+		{
+			id: "3609A07C53B3EDDA"
+			title: "灌装结构玻璃接口"
+			icon: "mekanism:structural_glass"
+			x: 3.0d
+			y: 5.2d
+			optional: false
+			tasks: [
+				{
+					id: "430FBCEE0611256F"
+					type: "item"
+					item: "mekanism:structural_glass"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f00e896a415bbc2ea5b28526.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/bb157b4001126f61196d0a24.png width:240 height:98 align:center}"
+				"石英玻璃与200mB结构塑胶。结构塑胶由轻醛＋聚乙烯醇经IE铜板催化取得。"
+				"选择热力灌装结构玻璃配方，供料供液，收结构玻璃。"
+				"结构玻璃输出。"
+				"作为实际接口，保留明确200mB消耗。"
+			]
+		}
+		{
+			id: "511C400FBE6393D2"
+			title: "吸热脱水与钨材料"
+			icon: "thermal_extra:endothermic_dehydrator"
+			x: 0.0d
+			y: -1.3d
+			optional: true
+			tasks: [
+				{
+					id: "3DD968C13A495F52"
+					type: "item"
+					item: "thermal_extra:endothermic_dehydrator"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/efa5a0fc50d4f35b61b24de2.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/e0a373a30bef8fb78442b3b1.png width:240 height:95 align:center}"
+				"供正确固液原料与FE，脱水制钨反应物。HDPE为独立配方。"
+				"实际目标输出。两条用途不要求同时运行。"
+				"按后期钨材料或HDPE需求选建。"
+			]
+		}
+		{
+			id: "5D7F4F8A37C75BF9"
+			title: "硝化起爆机必须配催化剂"
+			icon: "thermal_extra:nitratic_igniter"
+			x: -3.0d
+			y: -0.8d
+			optional: true
+			tasks: [
+				{
+					id: "474ECA7BE26F94C4"
+					type: "item"
+					item: "thermal_extra:nitratic_igniter"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/90dc35dc52f359f219b467a5.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/61446c5db0805eeecba914e3.png width:240 height:95 align:center}"
+				"机器组件配方、选定矿物、FE和催化剂TNT/硝化纤维素。"
+				"选择粗钨或锇配方，按催化剂类别放料，留足主副产空间。不套其他包炸药配方。"
+				"主产与概率副产输出。"
+				"粗钨粉送脱水机。不是开放世界引爆任务。"
+			]
+		}
+		{
+			id: "4F2CB28E97579E74"
+			title: "流体混合机制溴与废卤水"
+			icon: "thermal_extra:fluid_mixer"
+			x: -3.0d
+			y: 5.2d
+			optional: true
+			tasks: [
+				{
+					id: "5A55175714C57A82"
+					type: "item"
+					item: "thermal_extra:fluid_mixer"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3daea45ee43e793b460b9a21.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/2f3fdb241832bbe1579635c7.png width:240 height:98 align:center}"
+				"100mB碱性卤水＋100mB液态氯，FE。"
+				"分别接两股流体，配置两个流体输出，避免满罐堵塞。"
+				"100mB废卤水与100mB溴输出。此处氯是Forge流体。"
+				"废卤水送工业电解取含锂电解液。核化学氯的转换。"
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "3F376BCF029154E0"
+			linked_quest: "304F1C5501224675"
+			x: -3.0d
+			y: -3.5d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "73277F1C02B857A8"
+			linked_quest: "7D751BF89E8C67BD"
+			x: 0.2d
+			y: -5.7d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [
+		{
+			x: -2.0d
+			y: -2.767d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:63ac8b85-a4de-5e62-a43a-ab1005a59983"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.0d
+			y: -2.033d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c832298b-e370-5411-9e48-4ebc2f0d8a37"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.0d
+			y: -2.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:739d49af-9be3-560c-8397-94c7060c9b16"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.0d
+			y: -1.7d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4ce09c32-cec6-5d45-9432-d63569e6249b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:3f376bcf029154e0" "l:73277f1c02b857a8"]
+		}
+		{
+			nodes: ["l:3f376bcf029154e0" "a:63ac8b85-a4de-5e62-a43a-ab1005a59983"]
+		}
+		{
+			nodes: ["a:63ac8b85-a4de-5e62-a43a-ab1005a59983" "a:c832298b-e370-5411-9e48-4ebc2f0d8a37"]
+		}
+		{
+			nodes: ["a:c832298b-e370-5411-9e48-4ebc2f0d8a37" "q:511c400fbe6393d2"]
+		}
+		{
+			nodes: ["l:3f376bcf029154e0" "a:739d49af-9be3-560c-8397-94c7060c9b16"]
+		}
+		{
+			nodes: ["a:739d49af-9be3-560c-8397-94c7060c9b16" "a:4ce09c32-cec6-5d45-9432-d63569e6249b"]
+		}
+		{
+			nodes: ["a:4ce09c32-cec6-5d45-9432-d63569e6249b" "q:5d7f4f8a37c75bf9"]
+		}
+		{
+			nodes: ["q:4f2cb28e97579e74" "q:2b9237774cd43ef"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

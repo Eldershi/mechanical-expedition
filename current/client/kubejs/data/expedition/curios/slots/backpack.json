@@ -1,0 +1,13 @@
+{
+  "replace": true,
+  "size": 1,
+  "operation": "SET",
+  "order": 41,
+  "icon": "curios:slot/empty_back_slot",
+  "use_native_gui": true,
+  "add_cosmetic": false,
+  "render_toggle": true,
+  "validators": [
+    "expedition:backpack"
+  ]
+}

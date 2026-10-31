@@ -1,0 +1,213 @@
+
+[LuckyClover]
+	#If it's true, Lucky Clover will drop banned items (like Debug and Creative items)
+	LuckyCloverCreative = false
+	#If it's true, Lucky Clover will get random stack size of item (depends on the max stack size of this item)
+	LuckyCloverStack = false
+	#Define the cooldown of Lucky Clover (in MC tick)
+	#Range: > 0
+	LuckyCloverCD = 20
+	#A list of items which can never be obtained from Lucky Clover.
+	LuckyCloverBlacklistItems = ["minecraft:bedrock", "minecraft:command_block", "minecraft:repeating_command_block", "minecraft:chain_command_block", "minecraft:command_block_minecart", "minecraft:jigsaw", "minecraft:structure_block", "minecraft:structure_void", "minecraft:barrier", "minecraft:light", "minecraft:potion", "minecraft:knowledge_book", "minecraft:end_portal_frame", "create:handheld_worldshaper", "enigmaticlegacy:enigmatic_item", "enigmaticlegacy:the_judgement"]
+	#A list of keywords. Items ID with those keywords can never be obtained from Lucky Clover.
+	#If you want to ban all items from one mod, write "mod_id:", example: "avaritia:"
+	LuckyCloverBlacklistKeywords = ["creative", "debug"]
+	#(Not recommended!) A list of items which Lucky Clover can only contain. Empty means no whitelist.
+	LuckyCloverWhitelistItems = []
+	#A list of keywords. Lucky Clover can only contain Items which their ID with those keywords. Empty means no whitelist.
+	#If you want to add all items from one mod or only from minecraft, write "mod_id:", example: "minecraft:", "farmersdelight:"
+	LuckyCloverWhitelistKeywords = []
+	#If it's true, Lucky Clover will lose the ability of dropping items.
+	LuckyCloverDisable = false
+
+[LuckyNugget]
+	#Define the duration of effects which gives by Lucky Nugget (in tick)
+	#Range: > 0
+	LuckyNuggetDuration = 6000
+	#Define the amplifier (level) of effects which gives by Lucky Nugget (0 means I, 1 means II and so on.)
+	#Range: 0 ~ 100
+	LuckyNuggetAmp = 0
+	#If it's true, the duration of effects gives by Lucky Nugget will be infinite.
+	LuckyNuggetInfinite = false
+
+[BadApple]
+	#Define the possibility of obtaining bad apple item after you ate an apple.
+	#Range: 0 ~ 100
+	BadAppleRate = 3
+	#Define the possibility of obtaining bad apple item after you ate an apple when you have Bad Omen effect.
+	#Range: 0 ~ 100
+	BadAppleRateWithBadOmen = 35
+
+[DevourSword]
+	#Whether to enable the capability of shooting sword.
+	ShootingSwords = true
+	#Define the amount of damage increased by each sword.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	DamageAdd = 0.5
+	#Define the percentage of damage inherited from Devour Sword (Devoured sword number * damage inherit * damage add).
+	#Range: 0.0 ~ 1.7976931348623157E308
+	DamageInherit = 0.5
+	#Define the sword amount requirement for increase the shooting sword amount.
+	#Range: > 0
+	UpgradeAmount = 9
+	#Define the max shooting sword amount.
+	#Range: > 1
+	MaxShootingAmount = 6
+
+[DevourKnife]
+	#Define the amount of damage increased by each knife.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	DamageAdd = 0.25
+
+[DivineHalo]
+	#Define the recover cooldown of Divine Halo (in seconds).
+	#Range: > 0
+	RecoverCooldown = 15
+	#Define the cooldown of Divine Halo (in seconds) when this item is trying to revive the player.
+	#Range: > 0
+	ReviveCooldown = 300
+	#Define the percentage of damage reduction by Divine Halo when the ability is totally recovered.
+	#Range: 0.0 ~ 100.0
+	MaxReduction = 100.0
+	#Define the percentage of damage reduction by Divine Halo when the ability is totally consumed.
+	#Range: 0.0 ~ 100.0
+	MinReduction = 30.0
+	#The ability of Divine Halo will decrease when you taken damage. Define the percentage of ability consumption.
+	#Range: 0.0 ~ 100.0
+	DecreaseReduction = 10.0
+
+[DivineShard]
+	#Define the number of negative effect which need to be cured at one time for purify challenge.
+	#Range: > 1
+	EffectChallenge = 10
+	#Define the hit time from Warden for ward challenge.
+	#Range: > 1
+	WardenChallenge = 100
+	#Define height requirement for sky challenge.
+	#Range: > -64
+	SkyChallenge = 1000
+	#Define the totem active time requirement for tough challenge.
+	#Range: > 1
+	TotemChallenge = 16
+	#Define the villager reputation provided by Red Frame Glasses
+	#Range: > 1
+	GlassReputation = 70
+
+[TemplateShroud]
+	#Whether to enable the capability of providing absorption hearts.
+	AbsorbAbility = true
+	#Define the amount of armor increased by each template.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	ArmorAdd = 1.0
+	#Define the cooldown of the capability of providing absorption hearts.
+	#Range: > 0
+	AbsorbCooldown = 15
+
+[WateringCan]
+	#Whether to enable the infinite enchantment on watering can.
+	WateringCanInfinite = true
+
+[HeirloomKnife]
+	#Define the min damage provided by sword from Heirloom Knife.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	MinDamageRage = 5.0
+	#Define the max damage provided by sword from Heirloom Knife.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	MaxDamageRage = 8.0
+	#Should Heirloom Knife use Lucky Clover blacklist configs?
+	KnifeUseCloverBlacklist = true
+	#A list of sword items which Heirloom Knife can only contain. Empty means no whitelist.
+	#If anything in this list, it will not be limited by the blacklist from Lucky Clover.
+	HeirloomKnifeWhitelistItems = []
+	#A list of sword items which can never be obtained from Heirloom Knife.
+	#This list is based on the Lucky Clover blacklist, use KnifeUseCloverBlacklist to control this.
+	HeirloomKnifeBlacklistItems = ["smc:devour_sword"]
+	#A list of knife items which Heirloom Cleaver can only contain. Empty means no whitelist.
+	#If anything in this list, it will not be limited by the blacklist from Lucky Clover.
+	HeirloomCleaverWhitelistItems = []
+	#A list of knife items which can never be obtained from Heirloom Cleaver.
+	#This list is based on the Lucky Clover blacklist, use KnifeUseCloverBlacklist to control this.
+	HeirloomCleaverBlacklistItems = []
+
+[CoffeeItem]
+	#Define the cooldown of Java Coffee (in MC tick)
+	#Range: > 0
+	CoffeeCD = 200
+
+[MCrSword]
+	#Whether to enable the all damage hit ability of MCr Sword (MCr Sword will apply all type of damage on the target).
+	MCrAllDamageAbility = false
+
+[Calibur]
+	#Define the required effect ID for pull out Calibur block.
+	CaliburRequiredEffectID = "minecraft:strength"
+	#Define the required effect level for pull out Calibur block. 0 means I, 1 means II and so on.
+	#Range: 0 ~ 100
+	CaliburRequiredEffectLevel = 4
+
+[Excalibur]
+	#Define the base damage of sword aura from Excalibur.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	AuraBaseDamage = 15.0
+	#Define the extra damage of sword aura from Excalibur. This number is the percentage of damage based on the percentage of target's current health.
+	#Range: 0.0 ~ 100.0
+	AuraExtraDamage = 5.0
+	#Define the Divine Judgement enchantment provided minimum percentage of damage for sword aura (the larger value between AuraBaseDamage * DivinePercentage and AuraExtraDamage)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	DivinePercentage = 0.3
+
+[GiantJinGuBang]
+	#Define the dot damage of Giant JinGu Bang from Ruyi Jingu Bang after landed.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	BangBaseDamage = 10.0
+	#Define the extra damage of Giant JinGu Bang from Ruyi Jingu Bang. This number is the percentage of damage based on the percentage of target's current health.
+	#Range: 0.0 ~ 100.0
+	BangExtraDamage = 25.0
+	#Define the cooldown of Ruyi Jingu Bang ability (in MC tick)
+	#Range: > 0
+	BangAbilityCD = 200
+
+[RainBow]
+	#Define the number of falling arrows when raining.
+	#Range: > 0
+	ArrowNumberRain = 10
+	#Define the number of falling arrows when thundering.
+	#Range: > 0
+	ArrowNumberThunder = 15
+
+[PerkinWand]
+	#Define the base damage of perkin wand bullet.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	MagicBulletDamage = 6.0
+	#Define the extra damage of perkin wand bullet from Damage Spell.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	DamageSpellDamage = 1.2
+
+[MiniBedrock]
+	#Define the probability of popping Mini Bedrock item on bedrock explosion (probability is 1 / x)
+	#Range: > 0
+	BedrockPopRate = 128000
+	#Whether to enable the Mini Bedrock ability and obtaining.
+	EnableMiniBedrock = true
+
+[VillageStructures]
+	#Whether to enable Latrine structures placing in Villages.
+	EnableLatrine = true
+	#Whether to enable Fault House structures placing in Villages.
+	EnableFaultHouse = true
+
+[GrandSword]
+	#Define the chance of getting extra loots for Grand Sword.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	GrandSwordChange = 25.0
+
+[SavageSword]
+	#Define the extra damage of Savage Sword by each different trim pattern and materials.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	SavageSwordDamage = 25.0
+
+[EmperorsNewSword]
+	#Define the max extra damage of Emperor's New Sword when the visibility percent is decreasing.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	EmperorsNewSwordDamage = 150.0
+

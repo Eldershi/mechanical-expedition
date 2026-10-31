@@ -1,0 +1,122 @@
+{
+	filename: "expedition_computing_energy"
+	group: "03D71190792A021E"
+	icon: "cmi:antimatter_mechanism"
+	id: "13F1F75F1A5F8D58"
+	order_index: 0
+	title: "计算与高能工程总览"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	quests: [
+		{
+			id: "20D4DD69DFF2908E"
+			title: "计算与数据"
+			icon: "cmi:computing_mechanism"
+			x: -5.0d
+			y: -3.0d
+			description: ["准备计算基座、并发处理器、超导处理器、结构塑料、冷却器和通用零件，生产计算构件。" "建设有稳定供电和通道的ME网络，把样板、处理订单与库存反馈接到实际产线上。"]
+			tasks: [
+				{
+					id: "4991CAECC2C9FC6C"
+					type: "item"
+					item: "cmi:computing_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "38BA9E1BF0E22AAF"
+			title: "核工业"
+			icon: "cmi:nuclear_mechanism"
+			x: -5.0d
+			y: 3.0d
+			description: ["准备核构件基座、量子零件、复合钨钢板、冷却器、硅橡胶和裂变核心。裂变核心也可由集成工作站制造。" "把燃料、冷却、废料储存与后处理分开建设，逐段检查输入与去向，再持续生产核材料。"]
+			tasks: [
+				{
+					id: "753A20F0CC3BFFC9"
+					type: "item"
+					item: "cmi:nuclear_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "474488820BF6B55C"
+			title: "反物质工程"
+			icon: "cmi:antimatter_mechanism"
+			x: 5.0d
+			y: 3.0d
+			description: ["将钚、钋颗粒与反物质基座、量子零件、黏铁液和钛合金线圈汇入构件生产。" "另行建设高能反物质生产与供能设施，按实际需要向装备和后续工程供料。"]
+			tasks: [
+				{
+					id: "4E9CC21E1613A841"
+					type: "item"
+					item: "cmi:antimatter_mechanism"
+					consume_items: false
+				}
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "2940AA8775029BE8"
+			linked_quest: "3307636D8634B0DE"
+			x: -10.0d
+			y: -3.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "723CF1EFFC1102FF"
+			linked_quest: "46BA9BA6A4CD96BA"
+			x: -5.0d
+			y: -7.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "0D9E6A44B7C38475"
+			linked_quest: "25CF0940F94151F8"
+			x: 0.0d
+			y: -7.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "1BCACDC5DB28DB43"
+			linked_quest: "2486CFBE14133E4A"
+			x: -5.0d
+			y: 7.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "19FE8C2E91438E13"
+			linked_quest: "7F374350577223E5"
+			x: 5.0d
+			y: 7.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:2940aa8775029be8" "q:20d4dd69dff2908e"]
+		}
+		{
+			nodes: ["l:723cf1effc1102ff" "q:20d4dd69dff2908e"]
+		}
+		{
+			nodes: ["q:20d4dd69dff2908e" "l:d9e6a44b7c38475"]
+		}
+		{
+			nodes: ["q:38ba9e1bf0e22aaf" "l:1bcacdc5db28db43"]
+		}
+		{
+			nodes: ["q:38ba9e1bf0e22aaf" "q:474488820bf6b55c"]
+		}
+		{
+			nodes: ["l:1bcacdc5db28db43" "l:19fe8c2e91438e13"]
+		}
+	]
+}

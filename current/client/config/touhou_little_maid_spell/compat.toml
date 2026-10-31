@@ -1,0 +1,8 @@
+
+#联动相关配置
+#Integration configurations
+[compat]
+	#启动时安装内置 TLM 模型包并覆盖同名文件；自行维护 tlm_custom_pack 时请关闭
+	#Installs the bundled TLM model pack on launch, overwriting matching files; disable if managed manually.
+	autoInstallTlmModelPack = true
+

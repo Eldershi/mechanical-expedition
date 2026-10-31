@@ -1,0 +1,93 @@
+
+[STATS]
+	"Experience Reward (default: 50)" = 50
+	"Max Health (default: 250)" = 250.0
+	"Movement Speed (default: 0.25)" = 0.25
+	"Fly Sideways Speed (default: 0.2)" = 0.2
+	"Fly Sideways Change Direction Speed (default: 0.004)" = 0.004
+	"Fly Forwards/Backwards Speed (default: 0.25)" = 0.25
+	"Fly Upwards Speed (default: 0.1)" = 0.1
+	"Knockback Resistance (default: 1)" = 1.0
+	"Armour Value (default: 10)" = 10.0
+	"Armour Toughness Value (default: 0)" = 0.0
+	"Target Players Range (in blocks, default: 64)" = 64.0
+	"Target Mobs Range (in blocks, default: 25)" = 25.0
+	"Fireball Damage (default: 12)" = 12.0
+	"Fireball Explosion Damage (default: 10)" = 10.0
+	"Fireball Explosion Size (default: 3)" = 3.0
+	"Fireball Fire Duration (in seconds, default: 5)" = 5
+	"Rod Projectile Damage (default: 4)" = 4.0
+	"Rod Projectile Fire Duration (in seconds, default: 3)" = 3
+	"Can Be Stunned (default: true)" = true
+	"Stun Shockwave Damage (default: 20)" = 20.0
+	"Stun Shockwave Fire Duration (in seconds, default: 7)" = 7
+	"Stun Shockwave Disable Shields Duration (in ticks, default: 100)" = 100
+	"Stun Shockwave Range (default: 7.5)" = 7.5
+	"Attacks Ignore Hurt Invulnerability (default: true)" = true
+	"Shield Broken Duration (in ticks, default: 300)" = 300
+
+[AI]
+	"Uses Fireball Attack (default: true)" = true
+	"Fireball Attack Extra Fireballs Health Threshold 1 (in percent, default: 75)" = 75
+	"Fireball Attack Extra Fireballs Health Threshold 2 (in percent, default: 50)" = 50
+	"Fireball Attack Cooldown (in ticks, default: 100)" = 100
+	"Uses Rod Shot Attack (default: true)" = true
+	"Rod Shot Cooldown (in ticks, default: 600)" = 600
+	"Rod Shot Shoot Rodlings Maximum Nearby Rodlings (default: 1)" = 1
+	"Rod Shot Rodling Amount (default: 2)" = 2
+	"Rod Shot Shoot Armoured Rodlings Health Threshold (in percent, default: 50)" = 50
+	"Rod Shot Shoot Shielded Rodlings Health Threshold (in percent, default: 25)" = 25
+	"Rod Shot Shoot Armoured Rodlings Chance (in percent, default: 50)" = 50
+	"Rod Shot Shoot Shielded Rodlings Chance (in percent, default: 50)" = 50
+	"Uses Fly Ability (default: true)" = true
+	"Fly Height (default: 2)" = 2.0
+	"Flying Landing Spot Search Range Horizontal (in blocks, default: 15)" = 15
+	"Flying Landing Spot Search Range Vertical (in blocks, default: 10)" = 10
+	"Flying Approach Target Minimum Distance (in blocks, default: 20)" = 20.0
+	"Flying Avoid Target Maximum Distance (in blocks, default: 15)" = 15.0
+	"Fly Health Threshold (in percent, default: 50)" = 50
+	"Below Target Start Flying Minimum Distance (in blocks, default: 10)" = 10.0
+	"Flies For (in ticks, default: 300)" = 300
+	"Fly Cooldown (in ticks, default: 400)" = 400
+	"Avoids Corridors (default: true)" = true
+	"Avoiding Corridor Movement Speed Multiplier (default: 1.5)" = 1.5
+	"Avoids Target (default: true)" = true
+	"Start Avoiding Target Maximum Distance (in blocks, default: 10)" = 10.0
+	"Stop Avoiding Target Minimum Distance (in blocks, default: 15)" = 15.0
+	"Avoiding Target Movement Speed Multiplier (default: 1.35)" = 1.35
+	"Attacks Players (default: true)" = true
+	"Following Target Movement Speed Multiplier (default: 1.35)" = 1.35
+	"Following Target Close Enough Distance (in blocks, default: 20)" = 20.0
+
+[DEATH]
+	"Explodes Into Parts (default: true)" = true
+	"Parts Glow (default: false)" = false
+	"Part Collision Damage (default: 8)" = 8.0
+	"Parts Fire Duration (in seconds, default: 5)" = 5
+	"Parts Despawn After (in ticks, default: 6000)" = 6000
+	"Dropped Part Amount (default: 32)" = 32
+	"Dropped Rodling Amount (default: 1)" = 1
+
+[GRIEFING]
+	"Walk Griefing (default: true)" = true
+	"Walk Griefing Drops Blocks (default: false)" = false
+	"Hurt Griefing (default: true)" = true
+	"Hurt Griefing Drops Blocks (default: false)" = false
+	"Fireball Griefing (default: true)" = true
+	"Fireball Griefing Drops Blocks (default: false)" = false
+	"Fireball Explosions Leave Fire (default: true)" = true
+	"Rod Projectile Griefing (default: true)" = true
+	"Rod Projectile Griefing Drops Blocks (default: false)" = false
+	"Rod Projectiles Leave Fire (default: true)" = true
+	"Heat Griefing (default: true)" = true
+	"Heat Griefing Chance (per tick, the action is performed if a random number between 0 and this is 0, default: 20)" = 20
+
+["HEAT ZONE"]
+	"Heat Zone Horizontal Radius (in blocks, default: 10)" = 10.0
+	"Heat Zone Vertical Radius (in blocks, default: 5)" = 5.0
+	"Heat Speed (per tick, default: 0.005)" = 0.005
+	"Affects Fire Immune Mobs (default: false)" = false
+
+[SPAWNING]
+	"Despawns (default: false)" = false
+

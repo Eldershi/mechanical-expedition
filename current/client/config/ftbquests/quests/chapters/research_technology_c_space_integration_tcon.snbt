@@ -1,0 +1,216 @@
+{
+	id: "6DE22E2401A87F38"
+	filename: "research_technology_c_space_integration_tcon"
+	title: "匠魂·熔炼与构件铸造"
+	group: "050255AE19A93344"
+	order_index: 28
+	icon: "tconstruct:smeltery_controller"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "5106BFE412F97876"
+			title: "路线：铜浇铸冶炼炉控制器"
+			icon: "tconstruct:smeltery_controller"
+			x: -5.5d
+			y: -2.0d
+			optional: true
+			tasks: [
+				{
+					id: "48C200286A6BA6D9"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f016aee95377ba1a91f18a21.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/0824ebe6093164492c9c9538.png width:240 height:119 align:center}"
+				"有铸造盆、可接受的焦黑块与360mB熔融铜。"
+				"在盆中放一个焦黑块，浇入360mB铜，得到控制器。被浇块消耗。"
+				"一条恢复的蒸汽前配方成立。"
+				"也可使用构件工作台路线，任选一种方式制作。"
+			]
+		}
+		{
+			id: "429A2F41DD0A74B2"
+			title: "构件路线：合成冶炼炉控制器"
+			icon: "tconstruct:smeltery_controller"
+			x: -5.5d
+			y: 2.0d
+			optional: true
+			tasks: [
+				{
+					id: "153732FB30D62F2E"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f016aee95377ba1a91f18a21.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/5d7953d46456d7cfe2ce666a.png width:240 height:120 align:center}"
+				"已有铜构件、铁构件、硫化橡胶和焦黑材料。"
+				"按工作台配方合成控制器。也可选择铜浇铸控制器的路线。"
+				"与魔改控制器配方并行。"
+				"只需要其中一条提供的控制器即可建炉。"
+			]
+		}
+		{
+			id: "565F6DA622BFBC30"
+			title: "完成矩形冶炼炉与浇铸"
+			icon: "minecraft:book"
+			x: -1.5d
+			y: 0.0d
+			optional: false
+			tasks: [
+				{
+					id: "224372C45233F307"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["任选一路取得控制器。准备焦黑合法炉体、排液口、燃料和铸造装置。" "按矩形结构建造，底部不放玻璃。控制器识别后熔化一批金属并成功浇铸。" "得到可运行的熔炼/合金/浇铸能力。" "需要副产物时再考虑熔铸炉。不要把两类炉子能力混用。"]
+		}
+		{
+			id: "11BC5A8010B39AE6"
+			title: "金构件铸模与可复用浇铸"
+			icon: "cmi:mechanism_cast"
+			x: 2.5d
+			y: -2.0d
+			optional: true
+			tasks: [
+				{
+					id: "3450BBDB08EE6C23"
+					type: "item"
+					item: "cmi:mechanism_cast"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/fb9140145171474834ef5431.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/9c91f2536adabb3755316b31.png width:240 height:119 align:center}"
+				"浇铸铸模时原型构件消耗。后续用金铸模浇构件基座时铸模不消耗。"
+				"把一次性制模与重复生产区分开。"
+				"若不想消耗构件制金模，可查沙模压模路线。沙模铸造会消耗沙模。"
+			]
+		}
+		{
+			id: "5C55CEA486CC3D23"
+			title: "补充：铸造坚固板"
+			icon: "create:sturdy_sheet"
+			x: 5.5d
+			y: -2.0d
+			optional: true
+			tasks: [
+				{
+					id: "676FDA4FF78B6BE4"
+					type: "item"
+					item: "create:sturdy_sheet"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f633922962d341c582c8488d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/6dee943f9bd56ca0f3962fdb.png width:240 height:119 align:center}"
+				"有90mB熔融黑曜石和板铸模。"
+				"选择金板模或沙板模其中一种配方。金模可使用，沙模一次性消耗，冷却60tick。"
+				"给现有Create路线增加真实铸造备选。"
+				"返回Create已覆盖的铁路/设备用途，不重复建基础章。"
+			]
+		}
+		{
+			id: "68D5CE15FFC27295"
+			title: "丝绢浇铸"
+			icon: "tconstruct:silky_cloth"
+			x: 2.5d
+			y: 2.0d
+			optional: true
+			tasks: [
+				{
+					id: "2963BF7C37D4F157"
+					type: "item"
+					item: "tconstruct:silky_cloth"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/31e0dd3a00ac05322269392c.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d70254952e0d8121129150e9.png width:240 height:119 align:center}"
+				"有农夫乐事帆布与90mB熔融玫瑰金。"
+				"帆布放铸件台，浇90mB玫瑰金，冷却40tick。帆布消耗。"
+				"得到用于后续强化或修复包的丝绢。"
+			]
+		}
+		{
+			id: "1D9F2C07149AB372"
+			title: "补充：时运强化路线"
+			icon: "minecraft:book"
+			x: 5.5d
+			y: 2.0d
+			optional: true
+			tasks: [
+				{
+					id: "722AC3C45E6F6DA3"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["工具属于允许标签。第一次需要1能力槽。" "选蓝染料/钻石/钻石块对应等级。每级四槽各63青金石，或四槽各7青金石块，两种配方择一。" "后续等级是否可装须看实际工具已装强化与槽位，不能只交一堆青金石。"]
+		}
+	]
+	quest_links: [ ]
+	images: [
+		{
+			x: -4.167d
+			y: -1.333d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fa3f8f75-0136-5ddb-bf03-b33aecedf23d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.833d
+			y: -0.667d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:389ebe7b-46e1-52c3-8cb2-e4d0a9a90dc0"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:5106bfe412f97876" "a:fa3f8f75-0136-5ddb-bf03-b33aecedf23d"]
+		}
+		{
+			nodes: ["a:fa3f8f75-0136-5ddb-bf03-b33aecedf23d" "a:389ebe7b-46e1-52c3-8cb2-e4d0a9a90dc0"]
+		}
+		{
+			nodes: ["a:389ebe7b-46e1-52c3-8cb2-e4d0a9a90dc0" "q:565f6da622bfbc30"]
+		}
+		{
+			nodes: ["q:429a2f41dd0a74b2" "q:565f6da622bfbc30"]
+		}
+		{
+			nodes: ["q:565f6da622bfbc30" "q:11bc5a8010b39ae6"]
+		}
+		{
+			nodes: ["q:565f6da622bfbc30" "q:5c55cea486cc3d23"]
+		}
+		{
+			nodes: ["q:565f6da622bfbc30" "q:68d5ce15ffc27295"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

@@ -1,0 +1,1949 @@
+{
+	id: "4664E34EBB1AC1AD"
+	filename: "research_technology_a_tech_core_chem"
+	title: "供能、气液化工与矿物链"
+	group: "5B22564DA513617D"
+	order_index: 34
+	icon: "mekanismgenerators:wind_generator"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "6B5539E9CD52BD58"
+			title: "建立独立供电"
+			icon: "mekanismgenerators:wind_generator"
+			x: -15.968d
+			y: -6.667d
+			optional: false
+			tasks: [
+				{
+					id: "796A65B57EDBB2B3"
+					type: "item"
+					item: "mekanismgenerators:wind_generator"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "7A24F52084C3BF49"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/01b7ed2f7c851998b41394ac.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/c7a160ebb6885c461ef99ea4.png width:240 height:120 align:center}"
+				"选定工艺：合成。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 锇锭 ×1 / 锇锭 ×1。"
+				"材料槽1： 锇锭 ×1 / 锇锭 ×1。"
+				"材料槽2： 灌注合金 ×1。"
+				"材料槽3： 锇锭 ×1 / 锇锭 ×1。"
+				"材料槽4： 能量板 ×1。"
+				"材料槽5： 基础控制电路 ×1。"
+				"材料槽6： 能量板 ×1。"
+				"选择风力作为示例电源，或沿用供电。"
+				"风力发电机 ×1。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "4009BF92D3EB065A"
+			title: "建设感应矩阵"
+			icon: "mekanism:induction_casing"
+			x: -11.668d
+			y: -6.667d
+			optional: true
+			tasks: [
+				{
+					id: "5DE92555B851ADE1"
+					type: "item"
+					item: "mekanism:induction_casing"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4f557a0a39fa9ee1944dcfb3.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/1474a12427c06d24041a0777.png width:240 height:108 align:center}"
+				"选定工艺：集成工作站。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 结构塑胶 ×100mB。"
+				"材料槽1： 不锈钢机壳 ×1。"
+				"材料槽2： 铝板 ×2。"
+				"材料槽3： 钒板 ×2。"
+				"按结构示例搭外壳端口，内部至少配置感应元件与供应器才分别提供容量与吞吐。储能容量不能替代发电。"
+				"感应外壳 ×2。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "45B38B05C932A18D"
+			title: "分离水与盐水"
+			icon: "mekanism:electrolytic_separator"
+			x: -16.006d
+			y: 0.277d
+			optional: false
+			tasks: [
+				{
+					id: "14CED7DB9DA802BB"
+					type: "item"
+					item: "mekanism:electrolytic_separator"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/15bcde6330b9e81ba4055957.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/3697936f00e6feaac027054e.png width:240 height:120 align:center}"
+				"选定工艺：合成。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 铁锭 ×1。"
+				"材料槽1： 红石粉 ×1。"
+				"材料槽2： 铁锭 ×1。"
+				"材料槽3： 灌注合金 ×1。"
+				"材料槽4： 电解核心 ×1。"
+				"材料槽5： 灌注合金 ×1。"
+				"材料槽6： 铁锭 ×1。"
+				"材料槽7： 红石粉 ×1。"
+				"材料槽8： 铁锭 ×1。"
+				"水电解得氢氧。输出两端需配置，清空或合理排放不用的气体才能持续运行。速度升级前测供电余量。"
+				"电解分离器 ×1。"
+			]
+		}
+		{
+			id: "07CFEC113B9C0356"
+			title: "获得化学氢"
+			icon: "minecraft:book"
+			x: -11.218d
+			y: -0.667d
+			optional: false
+			tasks: [
+				{
+					id: "6C1CFD40C94D20BA"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/b62f8e9f7506aeaee4aacfbc.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/8987c5b8c27f4fa607c528f0.png width:240 height:140 align:center}"
+				"选定工艺：三相电解机。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 水 ×1000mB。"
+				"按电解配方观察氢、氧分别产生，使用加压管道与兼容化学储罐。"
+				"氢气 ×500。"
+				"氧气 ×1000。"
+			]
+		}
+		{
+			id: "1E34E078DE5AAC81"
+			title: "保留氧气用途"
+			icon: "minecraft:book"
+			x: -11.668d
+			y: 2.333d
+			optional: false
+			tasks: [
+				{
+					id: "7EEED46E36BC8C4D"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7fe944acc7f2dfb9f21c91ae.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/22a9c2304cebc3a3562f198b.png width:240 height:140 align:center}"
+				"选定工艺：三相电解机。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 重水 ×1000mB。"
+				"矿物提纯需要硝化甘油。"
+				"氘 ×500。"
+				"氧气 ×1000。"
+			]
+		}
+		{
+			id: "3E4776FF125CEB0C"
+			title: "制取生物燃料"
+			icon: "mekanism:bio_fuel"
+			x: -15.016d
+			y: -2.169d
+			optional: true
+			tasks: [
+				{
+					id: "28A2FB8E43638222"
+					type: "item"
+					item: "mekanism:bio_fuel"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7c309af3d9567459a2e2aa22.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/c008a8eaaa547e9e62197195.png width:240 height:98 align:center}"
+				"选定工艺：粉碎机。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 苔藓块 ×1。"
+				"用实际粉碎配方加工农产，农作物可以手种或由农场供给。"
+				"生物燃料 ×5。"
+			]
+		}
+		{
+			id: "59B3214DB37F9B99"
+			title: "运行乙烯反应"
+			icon: "minecraft:book"
+			x: -9.026d
+			y: -3.42d
+			optional: true
+			tasks: [
+				{
+					id: "6F6CA11E733DC968"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a836288e898ab1dcf537882c.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/91936f3054abf85cb6892a1d.png width:240 height:92 align:center}"
+				"选定工艺：加压反应室。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 生物燃料 ×2 / 生物质 ×2。"
+				"材料槽1： 水 ×10mB。"
+				"材料槽2： 氢气 ×100化学单位。"
+				"2生物燃料或生物质、10mB水、100化学氢得到基片及100乙烯。准备基片出口，防止副产堵塞。"
+				"基片 ×1。"
+				"乙烯 ×100。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "18F4C4CCEA5263A3"
+			title: "回收基片"
+			icon: "mekanism:substrate"
+			x: -7.358d
+			y: -2.664d
+			optional: true
+			tasks: [
+				{
+					id: "4CED3FBE7D3E18A6"
+					type: "item"
+					item: "mekanism:substrate"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/97d9bfe0f54e7ffeac49a98c.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/91936f3054abf85cb6892a1d.png width:240 height:92 align:center}"
+				"选定工艺：加压反应室。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 生物燃料 ×2 / 生物质 ×2。"
+				"材料槽1： 水 ×10mB。"
+				"材料槽2： 氢气 ×100化学单位。"
+				"基片与乙烯由同一次反应产出，准备一批原料即可。后续用途可在配方查询中查看。"
+				"基片 ×1。"
+				"乙烯 ×100。"
+			]
+		}
+		{
+			id: "0F94176032EE047B"
+			title: "接入燃气发电"
+			icon: "mekanismgenerators:gas_burning_generator"
+			x: -3.107d
+			y: -8.509d
+			optional: true
+			tasks: [
+				{
+					id: "584322D01C127DCB"
+					type: "item"
+					item: "mekanismgenerators:gas_burning_generator"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "7D5981A2B90745CC"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/33a423c8bc50f64d1ba8e376.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/089ed7890fdd5c800c92baaf.png width:240 height:120 align:center}"
+				"选定工艺：合成。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 锇锭 ×1 / 锇锭 ×1。"
+				"材料槽1： 灌注合金 ×1。"
+				"材料槽2： 锇锭 ×1 / 锇锭 ×1。"
+				"材料槽3： 不锈钢机壳 ×1。"
+				"材料槽4： 电解核心 ×1。"
+				"材料槽5： 不锈钢机壳 ×1。"
+				"材料槽6： 锇锭 ×1 / 锇锭 ×1。"
+				"材料槽7： 灌注合金 ×1。"
+				"材料槽8： 锇锭 ×1 / 锇锭 ×1。"
+				"用气体燃料属性核适用燃料。接乙烯后记录持续净能量，扣除制氢和反应设备耗能。"
+				"燃气发电机 ×1。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "46F1E200D82F6767"
+			title: "完成乙烯供电闭环"
+			icon: "minecraft:book"
+			x: 0.332d
+			y: -6.667d
+			optional: true
+			tasks: [
+				{
+					id: "75BA5BBD38146215"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["相应设备已成型、辅助供给及输出余量均就绪。" "连续生产至少两批，氢、水和农产能补给，基片不堵，发电端输出进入真实负载。记录能量收支，不承诺教程额定功率。" "逐条观察动作所述状态，保存投料、结果与失败条件。背包拥有设备不算完成。" "返回章节选择其他并行目标。"]
+		}
+		{
+			id: "2D4526EE56FA009D"
+			title: "选择一种HDPE路线"
+			icon: "mekanism:hdpe_pellet"
+			x: -6.159d
+			y: -1.544d
+			optional: true
+			tasks: [
+				{
+					id: "78FE7581971DE864"
+					type: "item"
+					item: "mekanism:hdpe_pellet"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f8891dce90170b9890091b10.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/596e8008967fc09bd7fdcfb9.png width:240 height:92 align:center}"
+				"选定工艺：加压反应室。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 基片 ×1。"
+				"材料槽1： 液态乙烯 ×50mB。"
+				"材料槽2： 氧气 ×10化学单位。"
+				"配方查询同时保留基片加液态乙烯加氧的PRC配方，以及HDPE流体热力吸热冷凝路线。两种配方为任选一种，本图选PRC工艺示例，不能要求两条都建。"
+				"高密度聚乙烯丸 ×1。"
+			]
+		}
+		{
+			id: "19A5192F8806216E"
+			title: "加工HDPE板材"
+			icon: "mekanism:hdpe_sheet"
+			x: -2.668d
+			y: -0.667d
+			optional: true
+			tasks: [
+				{
+					id: "008DF00EB294ADA4"
+					type: "item"
+					item: "mekanism:hdpe_sheet"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/02550d79e5aa29cae378f0c7.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/00686ef47136a35980fa3fd5.png width:240 height:98 align:center}"
+				"选定工艺：富集仓。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 高密度聚乙烯丸 ×3。"
+				"核片材配方，再将其用于SPS或装备组件。不添加任何五心方案材料要求。"
+				"高密度聚乙烯片 ×1。"
+			]
+		}
+		{
+			id: "12DB131FFA083A5E"
+			title: "建热力蒸馏结构"
+			icon: "mekanism:thermal_evaporation_controller"
+			x: -14.668d
+			y: 6.333d
+			optional: true
+			tasks: [
+				{
+					id: "66CE4DEFD98EA08B"
+					type: "item"
+					item: "mekanism:thermal_evaporation_controller"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/0e21ce21cc2ad4bc3d9c92fa.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/40f50158eea110d302c6645b.png width:240 height:95 align:center}"
+				"选定工艺：部件装配机。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 热力蒸馏方块 ×1。"
+				"材料槽1： 照明面板 ×1。"
+				"材料槽2： 热力构件 ×1。"
+				"按多方块配方查询结构说明搭建，接水和热量，控制器成型后检查实际可加工配方。控制器物品不等于塔成型。"
+				"热力蒸馏控制器 ×1。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "38A358C40DDA92D1"
+			title: "按路线取得盐水"
+			icon: "minecraft:book"
+			x: -11.668d
+			y: 6.333d
+			optional: true
+			tasks: [
+				{
+					id: "1E57B77B6D9F2D8F"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/47919328d8e9b9ef0b036e12.png width:240 height:117 align:center}"
+				"选定工艺：化学反应釜。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 水 ×50mB。"
+				"材料槽1： 盐 ×1。"
+				"水蒸盐水条目被移除，优先本页配方与海水加工。不要只因建好蒸馏塔就承诺产盐水。"
+				"盐水 ×50。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "13574690D86FE794"
+			title: "供应化学氯化氢"
+			icon: "minecraft:book"
+			x: -8.682d
+			y: 7.68d
+			optional: false
+			tasks: [
+				{
+					id: "5B8044FC2D17DC42"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/63fdec13fecd7aae78c230b4.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f44f6d5c86c2e1830c9297c7.png width:240 height:119 align:center}"
+				"选定工艺：化学灌注器。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 氢气 ×1化学单位。"
+				"材料槽1： 氯气 ×1化学单位。"
+				"可核化学灌注或气液转换。若走流体来源，先转换到气体，再进入压射室。"
+				"氯化氢气体 ×1。"
+			]
+		}
+		{
+			id: "1F27ADFD263BF5BE"
+			title: "供应化学硫酸"
+			icon: "minecraft:book"
+			x: -5.668d
+			y: 6.333d
+			optional: false
+			tasks: [
+				{
+					id: "4089E7380363D0AF"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d8e420a19370bebe400ee23f.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/82e88f3795c8a55df002f821.png width:240 height:119 align:center}"
+				"选定工艺：化学灌注器。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 三氧化硫 ×1化学单位。"
+				"材料槽1： 水蒸气 ×1化学单位。"
+				"按灌注或气液转换供给。酸的Forge流体形态与化学品形态分开。"
+				"硫酸 ×1。"
+			]
+		}
+		{
+			id: "2955D7BE858AF8F3"
+			title: "把铁矿送入浆液线"
+			icon: "minecraft:book"
+			x: -2.668d
+			y: 6.333d
+			optional: true
+			tasks: [
+				{
+					id: "7439264A6387868B"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a52c5a2365cfcae200018141.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/30220e3148a40415a8e403ff.png width:240 height:117 align:center}"
+				"选定工艺：化学溶解室。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 粗铁 ×3。"
+				"材料槽1： 硫酸 ×100化学单位。"
+				"选3粗铁到2000污浊浆液或1矿石到1000的配方。不要把粗矿和矿石统一说成五倍。"
+				"污浊铁浆液 ×2000。"
+			]
+		}
+		{
+			id: "2137CC793967F2C3"
+			title: "清洗铁浆液"
+			icon: "minecraft:book"
+			x: 0.332d
+			y: 6.333d
+			optional: true
+			tasks: [
+				{
+					id: "08093499459BB4F0"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ebeeb02203f3d60b9db4b6e0.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/1826a07e10b68cf3e0510e2a.png width:240 height:96 align:center}"
+				"选定工艺：化学清洗机。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 水 ×5mB。"
+				"材料槽1： 污浊铁浆液 ×1化学单位。"
+				"每1污浊浆液配5mB水到1纯净浆液。持续监视水与两个浆液缓冲。"
+				"纯净铁浆液 ×1。"
+			]
+		}
+		{
+			id: "1A280E0CF500929F"
+			title: "结晶铁晶体"
+			icon: "mekanism:crystal_iron"
+			x: 3.332d
+			y: 6.333d
+			optional: true
+			tasks: [
+				{
+					id: "165789FB6294F18A"
+					type: "item"
+					item: "mekanism:crystal_iron"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/decbc2986b4f2503633684bf.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/ef2126d8a8b4fbd19c60fee9.png width:240 height:135 align:center}"
+				"选定工艺：化学结晶器。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 纯净铁浆液 ×200化学单位。"
+				"每200纯净浆液到1铁晶体。2000浆液得10晶体，后续逐步压射、提纯、粉碎、富集、熔炼。"
+				"铁晶体 ×1。"
+			]
+		}
+		{
+			id: "415FDC31D9711378"
+			title: "压射铁碎片"
+			icon: "mekanism:shard_iron"
+			x: 7.945d
+			y: 6.754d
+			optional: false
+			tasks: [
+				{
+					id: "344670A7E38BBB0C"
+					type: "item"
+					item: "mekanism:shard_iron"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/42a944fd6a6f33ff8479f61c.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/1af2677aacfce497200e66cc.png width:240 height:98 align:center}"
+				"选定工艺：化学压射室。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 铁晶体 ×1。"
+				"材料槽1： 氯化氢气体 ×200化学单位。"
+				"本页选晶体转碎片。也有矿石和粗矿直接压射配方，均保留为并行入口。"
+				"铁碎片 ×1。"
+			]
+		}
+		{
+			id: "130E529DC066C5B2"
+			title: "备好提纯用硝化甘油"
+			icon: "minecraft:book"
+			x: 8.185d
+			y: 0.936d
+			optional: false
+			tasks: [
+				{
+					id: "4CB773AC6040BF18"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/36e60df2dad783cc74f5f347.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/9300362c3ff1db7d920cd935.png width:240 height:120 align:center}"
+				"选定工艺：物品到气体。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 三硝基甲苯 ×1。"
+				"TNT物料气体转换为该化学品。"
+				"硝化甘油 ×100。"
+			]
+		}
+		{
+			id: "745974F98E3047A3"
+			title: "获得铁碎块"
+			icon: "mekanism:clump_iron"
+			x: 9.071d
+			y: 8.785d
+			optional: false
+			tasks: [
+				{
+					id: "6B6E528955021836"
+					type: "item"
+					item: "mekanism:clump_iron"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/5b1e6f340db78ad31f40d451.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/a39c39b550a9956da3970803.png width:240 height:98 align:center}"
+				"选定工艺：提纯仓。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 铁碎片 ×1。"
+				"材料槽1： 硝化甘油 ×200化学单位。"
+				"选择碎片加硝化甘油路线。另有粗矿直提纯，不能强迫先走浆液路线。"
+				"铁碎块 ×1。"
+			]
+		}
+		{
+			id: "69FC19B48E45CA8B"
+			title: "粉碎铁碎块"
+			icon: "mekanism:dirty_dust_iron"
+			x: 12.375d
+			y: 5.564d
+			optional: false
+			tasks: [
+				{
+					id: "2FB60E81E6CCDBE4"
+					type: "item"
+					item: "mekanism:dirty_dust_iron"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/b3e147c14dc868b815fe9f1f.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d542467b9b08b06f06e2f920.png width:240 height:98 align:center}"
+				"选定工艺：粉碎机。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 铁碎块 ×1。"
+				"进入粉碎机到污浊铁粉，正常配置物品输入、输出和供电。"
+				"污浊铁粉 ×1。"
+			]
+		}
+		{
+			id: "43748BC1528455B9"
+			title: "富集为净铁粉"
+			icon: "thermal:iron_dust"
+			x: 16.144d
+			y: 3.539d
+			optional: false
+			tasks: [
+				{
+					id: "4C325B6C9589022F"
+					type: "item"
+					item: "thermal:iron_dust"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ba15cf51bfa33111a7d92a5d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/82f53eea4c3bb0325c01a4ff.png width:240 height:98 align:center}"
+				"选定工艺：富集仓。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 污浊铁粉 ×1。"
+				"污浊粉进富集仓，统一产物为铁粉，再熔炼。"
+				"铁粉 ×1。"
+			]
+		}
+		{
+			id: "52834384F7746EAF"
+			title: "熔炼回铁锭"
+			icon: "minecraft:iron_ingot"
+			x: 17.498d
+			y: 5.531d
+			optional: false
+			tasks: [
+				{
+					id: "6A56E4913824AF71"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/b1f6f48d3d3347c70513d42d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/ec569d7b9fe1bb5f2cdeb9c9.png width:240 height:98 align:center}"
+				"选定工艺：电力熔炼炉。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 铁粉 ×1。"
+				"本图选择净铁粉熔炼到锭作矿线终点。原版冶炼、战利品、其他加工仍是并行取得方式。"
+				"铁锭 ×1。"
+			]
+		}
+		{
+			id: "7E951C9DFDBE4B15"
+			title: "完成一条完整矿线"
+			icon: "minecraft:book"
+			x: 18.332d
+			y: 2.333d
+			optional: false
+			tasks: [
+				{
+					id: "5BC6308E784CB647"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["相应设备已成型、辅助供给及输出余量均就绪。" "先用一种矿试一整批，记录实际投料、浆液与锭数。再切换第二种，确认无残液锁死。按资源与设备选择合适的倍矿路线。" "逐条观察动作所述状态，保存投料、结果与失败条件。背包拥有设备不算完成。" "返回章节选择其他并行目标。"]
+		}
+	]
+	quest_links: [
+		{
+			id: "7A9A5415202B690C"
+			linked_quest: "2E225FAE7D082D4A"
+			x: -17.557d
+			y: -9.044d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "67A5F642E008CAD9"
+			linked_quest: "201416BE3860DAB0"
+			x: -17.808d
+			y: -5.574d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "28B16A70D8672E29"
+			linked_quest: "449F767EA8BC229D"
+			x: -17.991d
+			y: -2.635d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "189CE292BAA1A5BE"
+			linked_quest: "304F1C5501224675"
+			x: -17.668d
+			y: 4.133d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "2E7D74D2AADE6399"
+			linked_quest: "29687F679B32112A"
+			x: -14.585d
+			y: -7.878d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "449B9AA7CD8809EC"
+			linked_quest: "2BF7E103DDD10828"
+			x: -12.626d
+			y: -3.763d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "2EFD11F67BEFD70C"
+			linked_quest: "54C4C31965D04893"
+			x: -18.332d
+			y: -4.257d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "61A34CBE40CA3C29"
+			linked_quest: "0D54CCAFFA345070"
+			x: -12.475d
+			y: -1.417d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "085A22AB9329430B"
+			linked_quest: "42FD3BDE813E7D87"
+			x: -7.23d
+			y: 1.002d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "61E3A22A266CF88A"
+			linked_quest: "153A5E2AB3532D4D"
+			x: -11.668d
+			y: 4.133d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "2028E03646EE4505"
+			linked_quest: "26CBF47C767A4D26"
+			x: -5.668d
+			y: 4.533d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "2D8A8938EF021F74"
+			linked_quest: "6B981CBBC8B51741"
+			x: -1.995d
+			y: 9.044d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "459F0E63AE1A8190"
+			linked_quest: "7BC627E0D2CEB654"
+			x: 0.332d
+			y: 4.133d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "260F579FB87CA4A2"
+			linked_quest: "64E6C5FC933F07F5"
+			x: 3.941d
+			y: 7.615d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "750FC5B7245AA0DC"
+			linked_quest: "2E2B0401C7981A35"
+			x: 4.631d
+			y: 5.032d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "433F953BB441E423"
+			linked_quest: "4261BB2F0B43ACE2"
+			x: -14.006d
+			y: -6.464d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "6FDA527F41A77C8D"
+			linked_quest: "475DDFEBE10DFC88"
+			x: -14.468d
+			y: 1.933d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [
+		{
+			x: -17.04d
+			y: -5.937d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7d94ab3f-a12d-5bcf-81ec-c19a4c8b7bad"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -16.523d
+			y: -2.83d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:89e7b05d-2a80-5179-8f62-72b76d665e55"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -12.74d
+			y: -8.866d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:769a07d3-9d62-5089-b2af-0e7f098ee7ce"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.924d
+			y: -8.687d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ed80bf52-5ccb-5e5b-b8a5-1f7931e8df2c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -17.195d
+			y: -5.938d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:55d0e67e-edcb-5c84-9a07-5a37eb6b2a11"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -16.581d
+			y: -6.303d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:eeacd257-86e5-56cf-9071-69322960b910"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -17.317d
+			y: -3.979d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5c253142-e717-5b1a-9f22-434c9e269254"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -16.642d
+			y: -5.323d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3d8e6ecc-b36d-5308-8c2b-8f4227128e37"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -16.663d
+			y: -3.911d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6b843fda-49c0-53a7-bf79-19a57f218d67"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -15.334d
+			y: -5.188d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:34a5c11d-c8b6-5937-a99e-95c7ba412f60"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -17.329d
+			y: -1.664d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:765b463b-e750-50ff-abad-fef9aa695c16"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -16.668d
+			y: -0.694d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ce67b8ef-faba-5a5d-a4de-1f9198cc2057"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -13.03d
+			y: -4.593d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5db59b95-9864-583f-b2ec-8d18d4568849"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.068d
+			y: -6.551d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:530f2e10-88c5-5fda-9dab-64a4b1332143"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.33d
+			y: 3.78d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:af4bdd46-4109-5c3e-9d0a-0b241c436c26"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.838d
+			y: 2.028d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e75f7a30-82d7-5295-844e-f0b0913dea85"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -16.668d
+			y: 4.866d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bd7fe9f6-63c7-5c16-9952-af457a80fdee"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -15.668d
+			y: 5.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:9c9636d6-5346-5d60-aae8-88aa1c8a6230"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -13.613d
+			y: -7.474d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5376f012-a375-5f56-b913-34e85caa175d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -12.64d
+			y: -7.071d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:20793c63-d0b8-5fca-a2e7-e3b8b40506ce"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -10.759d
+			y: -8.088d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:17b02d65-581b-5b29-aa6d-53db9d27f8f3"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.933d
+			y: -8.299d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:115f1b6b-46b5-5a18-81e3-35956b399b4f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.096d
+			y: -0.983d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:de72a37a-d127-517a-8413-0ac8b308454e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.139d
+			y: 2.29d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4f18b32a-16f3-5be3-a1e8-8a3bd04da741"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -13.019d
+			y: -2.586d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d687a753-e9cd-5ea6-bbd4-b8f04f2d24c3"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -11.023d
+			y: -3.003d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b1617dd0-a583-5a54-b05e-1bba9cecf366"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -12.463d
+			y: -2.334d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:97124aa9-d5d5-5889-89c4-f810d3204a6e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.911d
+			y: -2.499d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:95ca1115-1bbd-5922-b854-a0202e2db4f0"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -10.487d
+			y: -1.585d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4f8b3d82-8848-5dbb-8260-da8a1d03ccb5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.757d
+			y: -2.502d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:900df252-5f98-5c33-9c12-fce193698b87"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.931d
+			y: -1.333d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d5cfa4a1-6db5-5997-a44f-515b49cdf75f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.645d
+			y: -1.998d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0da75aa1-cbcb-5564-ac18-8be66ea549f1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -10.373d
+			y: 2.115d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5c148b11-ff9a-5e76-bc29-6e9b6527edfa"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.527d
+			y: 4.898d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:dd3013ea-1ddb-594c-a583-953dcb5bcf61"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -10.769d
+			y: -1.833d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:871723ef-1c67-5e55-bebc-c872430dfc20"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.064d
+			y: -2.248d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:90a448b6-5bce-55ee-a448-27ecb9430590"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -10.37d
+			y: -1.459d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c5d50610-2215-570d-a5f0-046a18903548"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.264d
+			y: -1.502d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e3df988b-83c9-5bd1-9e17-dcc1b5d960f1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.958d
+			y: -2.291d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1bfb5644-7f37-5e15-ad5d-6ec728a156ef"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.559d
+			y: -1.917d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3949e98e-2e3d-5801-8fe6-637a97c63a4f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.832d
+			y: 1.041d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:61f76509-0ed2-524f-81ce-f2ba4f2498a1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.995d
+			y: -0.252d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:dc430a1d-7690-51d7-9253-698e29d2b337"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.995d
+			y: -1.252d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e6e7ad78-9833-5b03-b410-36a1013aa88b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.832d
+			y: -0.959d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bb814978-7a9d-57bd-a945-1659cbe8bb42"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.561d
+			y: 1.848d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0ad452f9-f8ce-57ec-b39b-bec57971e012"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 8.353d
+			y: 2.693d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d4d244ed-0720-5fa7-9494-8f02cc3ca072"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.668d
+			y: 4.866d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e436e651-af76-5f80-9792-9a72581e79ba"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.668d
+			y: 5.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e913cf12-0130-54db-91a1-1e851ba82fa1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.668d
+			y: 6.333d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:601bfdc4-60f6-5e4c-9b14-18c9e7109da5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.668d
+			y: 6.333d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:652c7b86-9895-5b93-b667-0255e1c91ed4"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.05d
+			y: 3.334d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ce85ebbb-49dc-5711-befb-88c1eb9042a5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.567d
+			y: 2.135d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e7b4aae5-ea31-5977-892c-c085f027c91b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.668d
+			y: 6.333d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:9afe50ab-9ec1-5718-8876-f3bbceb695ce"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.668d
+			y: 6.333d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ecdf9392-3669-5bb4-b493-2f13e21ea60f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.332d
+			y: 6.333d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:cd19e8c9-6ec0-5fdc-8286-80a243d99e43"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.332d
+			y: 6.333d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e249d7db-7870-5491-bc75-cb0799530713"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.87d
+			y: 6.473d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:59ba8288-8563-52a9-bd8b-51967aaf8331"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.407d
+			y: 6.614d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3744774d-e12a-580f-b6b0-f0f9d494005e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.14d
+			y: 7.371d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8e221721-01d9-554e-8f1c-cfb75e99c079"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.403d
+			y: 7.063d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b9c5b435-5c33-5da7-bbf7-bbb4f83f28c7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.356d
+			y: 5.389d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6477f51c-f965-5f1e-8730-e19afd183827"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.77d
+			y: 3.162d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d48a8006-62fa-5479-8747-ddbf9adde563"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.111d
+			y: 6.283d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1da0cc2c-ebd8-5705-a7f9-9741f70210ec"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 7.591d
+			y: 7.534d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0f68eeb8-8852-527b-9cc5-5de7000486d3"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 8.32d
+			y: 7.431d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b59023ee-1095-5ec0-bb77-f0e44edc831a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 8.696d
+			y: 8.108d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:48cc726e-ecf2-5d8d-9ba5-9683814d8add"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.907d
+			y: -4.502d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:01b878a9-19d6-58d7-9914-a9a11bbd013f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.787d
+			y: -5.585d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fece8e74-d383-5323-9416-e98d46937774"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:7a9a5415202b690c" "q:6b5539e9cd52bd58"]
+		}
+		{
+			nodes: ["l:7a9a5415202b690c" "a:7d94ab3f-a12d-5bcf-81ec-c19a4c8b7bad"]
+		}
+		{
+			nodes: ["a:7d94ab3f-a12d-5bcf-81ec-c19a4c8b7bad" "a:89e7b05d-2a80-5179-8f62-72b76d665e55"]
+		}
+		{
+			nodes: ["a:89e7b05d-2a80-5179-8f62-72b76d665e55" "q:45b38b05c932a18d"]
+		}
+		{
+			nodes: ["l:7a9a5415202b690c" "a:769a07d3-9d62-5089-b2af-0e7f098ee7ce"]
+		}
+		{
+			nodes: ["a:769a07d3-9d62-5089-b2af-0e7f098ee7ce" "a:ed80bf52-5ccb-5e5b-b8a5-1f7931e8df2c"]
+		}
+		{
+			nodes: ["a:ed80bf52-5ccb-5e5b-b8a5-1f7931e8df2c" "q:f94176032ee047b"]
+		}
+		{
+			nodes: ["l:67a5f642e008cad9" "a:55d0e67e-edcb-5c84-9a07-5a37eb6b2a11"]
+		}
+		{
+			nodes: ["a:55d0e67e-edcb-5c84-9a07-5a37eb6b2a11" "a:eeacd257-86e5-56cf-9071-69322960b910"]
+		}
+		{
+			nodes: ["a:eeacd257-86e5-56cf-9071-69322960b910" "q:6b5539e9cd52bd58"]
+		}
+		{
+			nodes: ["l:28b16a70d8672e29" "a:5c253142-e717-5b1a-9f22-434c9e269254"]
+		}
+		{
+			nodes: ["a:5c253142-e717-5b1a-9f22-434c9e269254" "a:3d8e6ecc-b36d-5308-8c2b-8f4227128e37"]
+		}
+		{
+			nodes: ["a:3d8e6ecc-b36d-5308-8c2b-8f4227128e37" "q:6b5539e9cd52bd58"]
+		}
+		{
+			nodes: ["l:28b16a70d8672e29" "a:6b843fda-49c0-53a7-bf79-19a57f218d67"]
+		}
+		{
+			nodes: ["a:6b843fda-49c0-53a7-bf79-19a57f218d67" "a:34a5c11d-c8b6-5937-a99e-95c7ba412f60"]
+		}
+		{
+			nodes: ["a:34a5c11d-c8b6-5937-a99e-95c7ba412f60" "l:433f953bb441e423"]
+		}
+		{
+			nodes: ["l:28b16a70d8672e29" "a:765b463b-e750-50ff-abad-fef9aa695c16"]
+		}
+		{
+			nodes: ["a:765b463b-e750-50ff-abad-fef9aa695c16" "a:ce67b8ef-faba-5a5d-a4de-1f9198cc2057"]
+		}
+		{
+			nodes: ["a:ce67b8ef-faba-5a5d-a4de-1f9198cc2057" "q:45b38b05c932a18d"]
+		}
+		{
+			nodes: ["l:28b16a70d8672e29" "a:5db59b95-9864-583f-b2ec-8d18d4568849"]
+		}
+		{
+			nodes: ["a:5db59b95-9864-583f-b2ec-8d18d4568849" "a:530f2e10-88c5-5fda-9dab-64a4b1332143"]
+		}
+		{
+			nodes: ["a:530f2e10-88c5-5fda-9dab-64a4b1332143" "q:f94176032ee047b"]
+		}
+		{
+			nodes: ["q:52834384f7746eaf" "l:433f953bb441e423"]
+		}
+		{
+			nodes: ["q:52834384f7746eaf" "a:af4bdd46-4109-5c3e-9d0a-0b241c436c26"]
+		}
+		{
+			nodes: ["a:af4bdd46-4109-5c3e-9d0a-0b241c436c26" "a:e75f7a30-82d7-5295-844e-f0b0913dea85"]
+		}
+		{
+			nodes: ["a:e75f7a30-82d7-5295-844e-f0b0913dea85" "q:45b38b05c932a18d"]
+		}
+		{
+			nodes: ["l:189ce292baa1a5be" "l:6fda527f41a77c8d"]
+		}
+		{
+			nodes: ["l:189ce292baa1a5be" "a:bd7fe9f6-63c7-5c16-9952-af457a80fdee"]
+		}
+		{
+			nodes: ["a:bd7fe9f6-63c7-5c16-9952-af457a80fdee" "a:9c9636d6-5346-5d60-aae8-88aa1c8a6230"]
+		}
+		{
+			nodes: ["a:9c9636d6-5346-5d60-aae8-88aa1c8a6230" "q:12db131ffa083a5e"]
+		}
+		{
+			nodes: ["l:2e7d74d2aade6399" "a:5376f012-a375-5f56-b913-34e85caa175d"]
+		}
+		{
+			nodes: ["a:5376f012-a375-5f56-b913-34e85caa175d" "a:20793c63-d0b8-5fca-a2e7-e3b8b40506ce"]
+		}
+		{
+			nodes: ["a:20793c63-d0b8-5fca-a2e7-e3b8b40506ce" "q:4009bf92d3eb065a"]
+		}
+		{
+			nodes: ["l:2e7d74d2aade6399" "a:17b02d65-581b-5b29-aa6d-53db9d27f8f3"]
+		}
+		{
+			nodes: ["a:17b02d65-581b-5b29-aa6d-53db9d27f8f3" "a:115f1b6b-46b5-5a18-81e3-35956b399b4f"]
+		}
+		{
+			nodes: ["a:115f1b6b-46b5-5a18-81e3-35956b399b4f" "q:f94176032ee047b"]
+		}
+		{
+			nodes: ["l:449b9aa7cd8809ec" "q:4009bf92d3eb065a"]
+		}
+		{
+			nodes: ["l:2efd11f67befd70c" "q:3e4776ff125ceb0c"]
+		}
+		{
+			nodes: ["l:2efd11f67befd70c" "a:de72a37a-d127-517a-8413-0ac8b308454e"]
+		}
+		{
+			nodes: ["a:de72a37a-d127-517a-8413-0ac8b308454e" "a:4f18b32a-16f3-5be3-a1e8-8a3bd04da741"]
+		}
+		{
+			nodes: ["a:4f18b32a-16f3-5be3-a1e8-8a3bd04da741" "q:69fc19b48e45ca8b"]
+		}
+		{
+			nodes: ["q:3e4776ff125ceb0c" "a:d687a753-e9cd-5ea6-bbd4-b8f04f2d24c3"]
+		}
+		{
+			nodes: ["a:d687a753-e9cd-5ea6-bbd4-b8f04f2d24c3" "a:b1617dd0-a583-5a54-b05e-1bba9cecf366"]
+		}
+		{
+			nodes: ["a:b1617dd0-a583-5a54-b05e-1bba9cecf366" "q:59b3214db37f9b99"]
+		}
+		{
+			nodes: ["q:3e4776ff125ceb0c" "a:97124aa9-d5d5-5889-89c4-f810d3204a6e"]
+		}
+		{
+			nodes: ["a:97124aa9-d5d5-5889-89c4-f810d3204a6e" "a:95ca1115-1bbd-5922-b854-a0202e2db4f0"]
+		}
+		{
+			nodes: ["a:95ca1115-1bbd-5922-b854-a0202e2db4f0" "q:18f4c4ccea5263a3"]
+		}
+		{
+			nodes: ["q:7cfec113b9c0356" "a:4f8b3d82-8848-5dbb-8260-da8a1d03ccb5"]
+		}
+		{
+			nodes: ["a:4f8b3d82-8848-5dbb-8260-da8a1d03ccb5" "a:900df252-5f98-5c33-9c12-fce193698b87"]
+		}
+		{
+			nodes: ["a:900df252-5f98-5c33-9c12-fce193698b87" "q:59b3214db37f9b99"]
+		}
+		{
+			nodes: ["q:7cfec113b9c0356" "a:d5cfa4a1-6db5-5997-a44f-515b49cdf75f"]
+		}
+		{
+			nodes: ["a:d5cfa4a1-6db5-5997-a44f-515b49cdf75f" "a:0da75aa1-cbcb-5564-ac18-8be66ea549f1"]
+		}
+		{
+			nodes: ["a:0da75aa1-cbcb-5564-ac18-8be66ea549f1" "q:18f4c4ccea5263a3"]
+		}
+		{
+			nodes: ["q:7cfec113b9c0356" "a:5c148b11-ff9a-5e76-bc29-6e9b6527edfa"]
+		}
+		{
+			nodes: ["a:5c148b11-ff9a-5e76-bc29-6e9b6527edfa" "a:dd3013ea-1ddb-594c-a583-953dcb5bcf61"]
+		}
+		{
+			nodes: ["a:dd3013ea-1ddb-594c-a583-953dcb5bcf61" "q:13574690d86fe794"]
+		}
+		{
+			nodes: ["l:61a34cbe40ca3c29" "q:59b3214db37f9b99"]
+		}
+		{
+			nodes: ["l:61a34cbe40ca3c29" "a:871723ef-1c67-5e55-bebc-c872430dfc20"]
+		}
+		{
+			nodes: ["a:871723ef-1c67-5e55-bebc-c872430dfc20" "a:90a448b6-5bce-55ee-a448-27ecb9430590"]
+		}
+		{
+			nodes: ["a:90a448b6-5bce-55ee-a448-27ecb9430590" "q:18f4c4ccea5263a3"]
+		}
+		{
+			nodes: ["l:61a34cbe40ca3c29" "a:c5d50610-2215-570d-a5f0-046a18903548"]
+		}
+		{
+			nodes: ["a:c5d50610-2215-570d-a5f0-046a18903548" "a:e3df988b-83c9-5bd1-9e17-dcc1b5d960f1"]
+		}
+		{
+			nodes: ["a:e3df988b-83c9-5bd1-9e17-dcc1b5d960f1" "q:2d4526ee56fa009d"]
+		}
+		{
+			nodes: ["q:18f4c4ccea5263a3" "a:1bfb5644-7f37-5e15-ad5d-6ec728a156ef"]
+		}
+		{
+			nodes: ["a:1bfb5644-7f37-5e15-ad5d-6ec728a156ef" "a:3949e98e-2e3d-5801-8fe6-637a97c63a4f"]
+		}
+		{
+			nodes: ["a:3949e98e-2e3d-5801-8fe6-637a97c63a4f" "q:2d4526ee56fa009d"]
+		}
+		{
+			nodes: ["q:1e34e078de5aac81" "a:61f76509-0ed2-524f-81ce-f2ba4f2498a1"]
+		}
+		{
+			nodes: ["a:61f76509-0ed2-524f-81ce-f2ba4f2498a1" "a:dc430a1d-7690-51d7-9253-698e29d2b337"]
+		}
+		{
+			nodes: ["a:dc430a1d-7690-51d7-9253-698e29d2b337" "q:2d4526ee56fa009d"]
+		}
+		{
+			nodes: ["q:2d4526ee56fa009d" "a:e6e7ad78-9833-5b03-b410-36a1013aa88b"]
+		}
+		{
+			nodes: ["a:e6e7ad78-9833-5b03-b410-36a1013aa88b" "a:bb814978-7a9d-57bd-a945-1659cbe8bb42"]
+		}
+		{
+			nodes: ["a:bb814978-7a9d-57bd-a945-1659cbe8bb42" "q:19a5192f8806216e"]
+		}
+		{
+			nodes: ["l:85a22ab9329430b" "q:19a5192f8806216e"]
+		}
+		{
+			nodes: ["l:85a22ab9329430b" "a:0ad452f9-f8ce-57ec-b39b-bec57971e012"]
+		}
+		{
+			nodes: ["a:0ad452f9-f8ce-57ec-b39b-bec57971e012" "a:d4d244ed-0720-5fa7-9494-8f02cc3ca072"]
+		}
+		{
+			nodes: ["a:d4d244ed-0720-5fa7-9494-8f02cc3ca072" "q:43748bc1528455b9"]
+		}
+		{
+			nodes: ["l:61e3a22a266cf88a" "q:13574690d86fe794"]
+		}
+		{
+			nodes: ["l:61e3a22a266cf88a" "a:e436e651-af76-5f80-9792-9a72581e79ba"]
+		}
+		{
+			nodes: ["a:e436e651-af76-5f80-9792-9a72581e79ba" "a:e913cf12-0130-54db-91a1-1e851ba82fa1"]
+		}
+		{
+			nodes: ["a:e913cf12-0130-54db-91a1-1e851ba82fa1" "q:1f27adfd263bf5be"]
+		}
+		{
+			nodes: ["q:1f27adfd263bf5be" "a:601bfdc4-60f6-5e4c-9b14-18c9e7109da5"]
+		}
+		{
+			nodes: ["a:601bfdc4-60f6-5e4c-9b14-18c9e7109da5" "a:652c7b86-9895-5b93-b667-0255e1c91ed4"]
+		}
+		{
+			nodes: ["a:652c7b86-9895-5b93-b667-0255e1c91ed4" "q:2955d7be858af8f3"]
+		}
+		{
+			nodes: ["l:2028e03646ee4505" "q:2955d7be858af8f3"]
+		}
+		{
+			nodes: ["l:2028e03646ee4505" "a:ce85ebbb-49dc-5711-befb-88c1eb9042a5"]
+		}
+		{
+			nodes: ["a:ce85ebbb-49dc-5711-befb-88c1eb9042a5" "a:e7b4aae5-ea31-5977-892c-c085f027c91b"]
+		}
+		{
+			nodes: ["a:e7b4aae5-ea31-5977-892c-c085f027c91b" "q:130e529dc066c5b2"]
+		}
+		{
+			nodes: ["q:2955d7be858af8f3" "a:9afe50ab-9ec1-5718-8876-f3bbceb695ce"]
+		}
+		{
+			nodes: ["a:9afe50ab-9ec1-5718-8876-f3bbceb695ce" "a:ecdf9392-3669-5bb4-b493-2f13e21ea60f"]
+		}
+		{
+			nodes: ["a:ecdf9392-3669-5bb4-b493-2f13e21ea60f" "q:2137cc793967f2c3"]
+		}
+		{
+			nodes: ["l:2d8a8938ef021f74" "q:2137cc793967f2c3"]
+		}
+		{
+			nodes: ["q:2137cc793967f2c3" "a:cd19e8c9-6ec0-5fdc-8286-80a243d99e43"]
+		}
+		{
+			nodes: ["a:cd19e8c9-6ec0-5fdc-8286-80a243d99e43" "a:e249d7db-7870-5491-bc75-cb0799530713"]
+		}
+		{
+			nodes: ["a:e249d7db-7870-5491-bc75-cb0799530713" "q:1a280e0cf500929f"]
+		}
+		{
+			nodes: ["l:459f0e63ae1a8190" "q:1a280e0cf500929f"]
+		}
+		{
+			nodes: ["q:1a280e0cf500929f" "a:59ba8288-8563-52a9-bd8b-51967aaf8331"]
+		}
+		{
+			nodes: ["a:59ba8288-8563-52a9-bd8b-51967aaf8331" "a:3744774d-e12a-580f-b6b0-f0f9d494005e"]
+		}
+		{
+			nodes: ["a:3744774d-e12a-580f-b6b0-f0f9d494005e" "q:415fdc31d9711378"]
+		}
+		{
+			nodes: ["q:13574690d86fe794" "a:8e221721-01d9-554e-8f1c-cfb75e99c079"]
+		}
+		{
+			nodes: ["a:8e221721-01d9-554e-8f1c-cfb75e99c079" "a:b9c5b435-5c33-5da7-bbf7-bbb4f83f28c7"]
+		}
+		{
+			nodes: ["a:b9c5b435-5c33-5da7-bbf7-bbb4f83f28c7" "q:415fdc31d9711378"]
+		}
+		{
+			nodes: ["l:260f579fb87ca4a2" "q:415fdc31d9711378"]
+		}
+		{
+			nodes: ["l:260f579fb87ca4a2" "a:6477f51c-f965-5f1e-8730-e19afd183827"]
+		}
+		{
+			nodes: ["a:6477f51c-f965-5f1e-8730-e19afd183827" "a:d48a8006-62fa-5479-8747-ddbf9adde563"]
+		}
+		{
+			nodes: ["a:d48a8006-62fa-5479-8747-ddbf9adde563" "q:130e529dc066c5b2"]
+		}
+		{
+			nodes: ["l:750fc5b7245aa0dc" "q:130e529dc066c5b2"]
+		}
+		{
+			nodes: ["l:750fc5b7245aa0dc" "a:1da0cc2c-ebd8-5705-a7f9-9741f70210ec"]
+		}
+		{
+			nodes: ["a:1da0cc2c-ebd8-5705-a7f9-9741f70210ec" "a:0f68eeb8-8852-527b-9cc5-5de7000486d3"]
+		}
+		{
+			nodes: ["a:0f68eeb8-8852-527b-9cc5-5de7000486d3" "q:745974f98e3047a3"]
+		}
+		{
+			nodes: ["q:415fdc31d9711378" "a:b59023ee-1095-5ec0-bb77-f0e44edc831a"]
+		}
+		{
+			nodes: ["a:b59023ee-1095-5ec0-bb77-f0e44edc831a" "a:48cc726e-ecf2-5d8d-9ba5-9683814d8add"]
+		}
+		{
+			nodes: ["a:48cc726e-ecf2-5d8d-9ba5-9683814d8add" "q:745974f98e3047a3"]
+		}
+		{
+			nodes: ["q:130e529dc066c5b2" "q:745974f98e3047a3"]
+		}
+		{
+			nodes: ["q:745974f98e3047a3" "q:69fc19b48e45ca8b"]
+		}
+		{
+			nodes: ["q:69fc19b48e45ca8b" "q:43748bc1528455b9"]
+		}
+		{
+			nodes: ["q:43748bc1528455b9" "q:52834384f7746eaf"]
+		}
+		{
+			nodes: ["q:59b3214db37f9b99" "a:01b878a9-19d6-58d7-9914-a9a11bbd013f"]
+		}
+		{
+			nodes: ["a:01b878a9-19d6-58d7-9914-a9a11bbd013f" "a:fece8e74-d383-5323-9416-e98d46937774"]
+		}
+		{
+			nodes: ["a:fece8e74-d383-5323-9416-e98d46937774" "q:46f1e200d82f6767"]
+		}
+		{
+			nodes: ["q:f94176032ee047b" "q:46f1e200d82f6767"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

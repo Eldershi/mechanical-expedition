@@ -1,0 +1,68 @@
+
+[STATS]
+	"Experience Reward (default: 45)" = 45
+	"Max Health (default: 250)" = 250.0
+	"Movement Speed (default: 0.28)" = 0.28
+	"Knockback Resistance (default: 1)" = 1.0
+	"Armour Value (default: 12)" = 12.0
+	"Armour Toughness (default: 0)" = 0.0
+	"Target Players Range (in blocks, default: 64)" = 64.0
+	"Target Mobs Range (in blocks, default: 20)" = 15.0
+	"Melee Attack Knockback (default: 1.75)" = 1.75
+	"Melee Attack Damage (default: 8)" = 8.0
+	"Stomp Attack Damage (default: 4)" = 4.0
+	"Stomp Attack Range (in blocks, default: 25)" = 25.0
+	"Stomp Attack Falling Block Damage (default: 10)" = 10.0
+	"Charge Attack Damage (default: 14)" = 14.0
+	"Charge Attack Disable Shields Duration (in ticks, default: 200)" = 200
+	"Kick Attack Damage (default: 18)" = 18.0
+	"Kick Attack Disable Shields Duration (in ticks, default: 300)" = 300
+	"Kick Attack Slowness Effect Duration (in ticks, default: 100)" = 100
+	"Kick Attack Slowness Effect Level (default: 2)" = 2
+	"Death Damage (default: 16)" = 16.0
+	"Death Range (in blocks, default: 30)" = 30.0
+	"Death Falling Block Damage (default: 14)" = 14.0
+	"Attacks Ignore Hurt Invulnerability (default: true)" = true
+
+[AI]
+	"Uses Charge Attack (default: true)" = true
+	"Charge Attack Minimum Cooldown (in ticks, default: 200)" = 200
+	"Charge Attack Maximum Cooldown (in ticks, default: 400)" = 400
+	"Charge Attack Bonus Charge Lost Health Requirement (in percent, default: 20)" = 20
+	"Uses Basic Attack (default: true)" = true
+	"Basic Attack Maximum Use Distance (in blocks, default: 4)" = 4.0
+	"Basic Attack Maximum Damage Distance (in blocks, default: 5)" = 5.0
+	"Basic Attack Cooldown (in ticks, default: 15)" = 15
+	"Uses Stomp Attack (default: true)" = true
+	"Stomp Attack Minimum Cooldown (in ticks, default: 100)" = 100
+	"Stomp Attack Maximum Cooldown (in ticks, default: 300)" = 300
+	"Uses Kick Attack (default: true)" = true
+	"Kick Attack Maximum Use Distance (in blocks, default: 4)" = 4.0
+	"Kick Attack Cooldown (in ticks, default: 40)" = 40
+	"Attacks Players (default: true)" = true
+	"Following Target Movement Speed Multiplier (default: 1.3)" = 1.3
+	"Following Target Close Enough Distance (in blocks, default: 0)" = 0.0
+
+[GRIEFING]
+	"Walk Griefing (default: true)" = true
+	"Walk Griefing Drops Blocks (default: false)" = false
+	"Hurt Griefing (default: true)" = true
+	"Hurt Griefing Drops Blocks (default: false)" = false
+	"Charge Griefing (default: true)" = true
+	"Charge Griefing Drops Blocks (default: false)" = false
+	"Stomp Griefing (default: true)" = true
+	"Stomp Griefing Drops Blocks (default: false)" = false
+	"Death Griefing (default: true)" = true
+
+[ENRAGING]
+	"Hurt Enrage Amount (stacks, Mutant Hoglin is fully enraged when enragedAmount reaches 1, default: 0.15)" = 0.15
+	"Hurt Enrage Duration (in ticks, stacks, default: 40)" = 40
+	"Maximum Enrage Duration (in ticks, default: 200)" = 200
+	"Enrage Lower Speed (per tick, default: 0.05)" = 0.05
+	"Enraged Speed Multiplier (end result is 1 + enragedAmount * this, default: 0.25)" = 0.25
+	"Enraged Damage Multiplier (end result is 1 + enragedAmount * this, default: 0.5)" = 0.5
+	"Enraged Knockback Multiplier (end result is 1 + enragedAmount * this, default: 0.5)" = 0.5
+
+[SPAWNING]
+	"Despawns (default: false)" = false
+

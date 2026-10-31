@@ -1,0 +1,37 @@
+
+["WITHERED SCIMITAR"]
+	"Shoot Wither Slash Cooldown (in ticks, default: 30)" = 30
+	"Shoot Wither Slash Durability Consumption (default: 5)" = 5
+	"Wither Slash Damage (default: 4)" = 4.0
+	"Wither Slash Wither Effect Duration (in ticks, default: 300)" = 300
+	"Wither Slash Wither Effect Level (default: 0)" = 0
+	"Attack Wither Effect Duration (in ticks, default: 200)" = 200
+	"Attack Wither Effect Level (default: 0)" = 0
+	"Durability (default: 350)" = 350
+	"Attack Speed (default: -2.6)" = -2.6
+	"Attack Damage (default: 6)" = 6.0
+	"Enchantment Value (default: 15)" = 15
+
+["MUTANT WITHER SKELETON ARMOUR"]
+	"Durability Multiplier (end result is D * this, (D is 11 for helmet, 16 for chestplate, 15 for leggings, or 13 for boots), default: 17)" = 17
+	"Helmet Armour Value (default: 3)" = 3
+	"Helmet Attack Speed Increase (default: 0.25)" = 0.25
+	"Chestplate Armour Value (default: 7)" = 7
+	"Chestplate Attack Damage Increase (default: 2)" = 2.0
+	"Leggings Armour Value (default: 6)" = 6
+	"Boots Armour Value (default: 3)" = 3
+	"Enchantment Value (default: 15)" = 15
+	"Armour Toughness Value (default: 0)" = 0.0
+	"Knockback Resistance (default: 0.1)" = 0.1
+
+["WITHER BOMB"]
+	"Target Detection Range (in blocks, default: 7.5)" = 7.5
+	"Damage Range (in blocks, default: 7.5)" = 7.5
+	"Wither Effect Duration (in ticks, default: 220)" = 220
+	"Wither Effect Level (default: 3)" = 3
+	"Slowness Effect Duration (in ticks, default: 260)" = 260
+	"Slowness Effect Level (default: 1)" = 1
+	"Blindness Effect Duration (in ticks, default: 180)" = 180
+	"Damage Interval (in ticks, default: 10)" = 10
+	"Damage (default: 1)" = 1.0
+

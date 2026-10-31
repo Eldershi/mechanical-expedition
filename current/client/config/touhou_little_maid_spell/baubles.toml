@@ -1,0 +1,184 @@
+
+#饰品系统相关配置
+#Bauble system configurations
+[baubles]
+
+	#伤害相关饰品配置
+	#Damage-related bauble configurations
+	[baubles.damage]
+		#紫荆银冠攒够次数后反出去的真伤，按这一击伤害的多少倍算 (默认: 0.8)
+		#Silver Cercis deals the recorded hit back as true damage, scaled by this.
+		#Range: 0.1 ~ 2.0
+		silverCercisTrueDamageMultiplier = 0.8
+		#烬血之戒看女仆自己掉了多少血来决定加成，越残血打得越痛，最多额外加这么多 (默认: 0.5，即残血时 +50%)
+		#Spring Ring adds a bonus based on how hurt the maid is, capped at this ratio.
+		#Range: 0.1 ~ 1.0
+		springRingMaxDamageBonus = 0.5
+
+	#治疗相关饰品配置
+	#Healing-related bauble configurations
+	[baubles.healing]
+		#流转核心每级好感、每次触发回复的最大生命比例
+		#Flow Core healing per favour level and trigger, as a fraction of max health.
+		#Range: 0.001 ~ 0.3
+		flowCoreHealthRegenRate = 0.025
+		#女仆打出的伤害会按这个比例同时回给她自己和主人，是吸血不是反伤 (默认: 0.1)
+		#Bleeding Heart heals the maid and her owner for this fraction of the damage she deals.
+		#Range: 0.01 ~ 1.0
+		bleedingHeartHealRatio = 0.1
+
+	#防御相关饰品配置
+	#Defense-related bauble configurations
+	[baubles.defense]
+		#流转核心按好感等级减伤，每级减掉这么多受击伤害，好感越高越硬 (默认: 0.15)
+		#Flow Core reduces incoming damage by this fraction per favour level.
+		#Range: 0.05 ~ 0.5
+		flowCoreDamageReduction = 0.15
+		#双心链：女仆和主人各承受原伤害乘此比例
+		#Double Heart Chain: maid and owner each take this fraction of the original hit.
+		#Range: 0.1 ~ 0.9
+		doubleHeartChainShareRatio = 0.5
+		#主人离女仆超过这个距离就不再分摊，那一击由女仆自己吃全额 (默认: 32.0 格)
+		#Above this distance the chain stops sharing and the maid takes the hit alone.
+		#Range: 4.0 ~ 128.0
+		doubleHeartChainMaxDistance = 32.0
+
+	#功能相关饰品配置
+	#Utility-related bauble configurations
+	[baubles.utility]
+		#时痕之戒按好感等级缩短法术冷却，每级少这么多 (默认: 0.25，即每级 -25%)
+		#Quick Chant Ring cuts spell cooldowns by this fraction per favour level.
+		#Range: 0.1 ~ 0.8
+		quickChantRingCooldownReduction = 0.25
+		#磐石魔晶提供的击退抗性；原版属性上限为 1.0
+		#Knockback resistance from Rock Crystal; the vanilla attribute caps at 1.0.
+		#Range: 1 ~ 20
+		rockCrystalKnockbackResistance = 8
+		#流转核心每隔这么多 tick 回一次血，调小回得更碎更勤 (默认: 10 tick，即 0.5 秒)
+		#How often Flow Core heals, in ticks (default 10 ticks = 0.5 seconds).
+		#Range: 1 ~ 100
+		flowCoreTickInterval = 10
+		#发簪有益效果时长倍率；与最小延长量取较大值
+		#Hairpin beneficial-effect duration multiplier; uses the larger of this and the minimum extension.
+		#Range: 1.0 ~ 10.0
+		hairpinBeneficialEffectExtension = 1.15
+		#发簪有益效果的最小延长量，单位 tick
+		#Minimum ticks added to a beneficial effect by Hairpin.
+		#Range: 0 ~ 10000
+		hairpinMinExtensionTicks = 300
+		#女仆喂主人吃点东西时，女仆自己涨多少好感 (默认: 2)
+		#Fragrant Ingenuity favour the maid gains when she feeds her owner.
+		#Range: 1 ~ 10
+		fragrantIngenuityFavorabilityGain = 2
+		#春花-返最多能存几层，层数就是她替主人挨刀的次数 (默认: 3)
+		#Spring Bloom Return: maximum number of stored stacks.
+		#Range: 1 ~ 8
+		springBloomReturnMaxStacks = 3
+		#每层能存多久，存太久会自己过期掉 (默认: 400 tick，即 20 秒)
+		#How long one Spring Bloom Return stack lives before expiring (default 400 ticks = 20s).
+		#Range: 20 ~ 72000
+		springBloomReturnStackDurationTicks = 400
+		#两层之间至少要隔这么久，免得一秒钟叠满 (默认: 20 tick，即 1 秒)
+		#Minimum delay between gaining two stacks (default 20 ticks = 1 second).
+		#Range: 0 ~ 1200
+		springBloomReturnGainCooldownTicks = 20
+		#替主人挡一次之后要等这么久才能再挡 (默认: 200 tick，即 10 秒)
+		#Cooldown after one Spring Bloom Return trigger (default 200 ticks = 10 seconds).
+		#Range: 0 ~ 72000
+		springBloomReturnTriggerCooldownTicks = 200
+		#单次伤害到这个固定值就算「够重」，值得替主人挡一下 (默认: 4.0)
+		#A single hit at or above this flat amount counts as heavy enough to trigger it.
+		#Range: 0.0 ~ 100.0
+		springBloomReturnDamageThreshold = 4.0
+		#按受击者最大生命计算的重击阈值；与固定伤害阈值满足其一即可
+		#Heavy-hit threshold as a fraction of max health; either threshold can trigger.
+		#Range: 0.0 ~ 1.0
+		springBloomReturnDamageThresholdRatio = 0.1
+		#触发时直接把这一击削掉「保护对象最大生命 × 本值」那么多血，等于替他回了一口 (默认: 0.05，即 5%)
+		#On trigger the hit is reduced by this fraction of the protected target's max health.
+		#Range: 0.0 ~ 1.0
+		springBloomReturnHealRatio = 0.05
+		#春花-返触发时返还的剩余法术冷却比例；好感 2 级起生效
+		#Spring Bloom Return refunds this fraction of remaining spell cooldowns from favour level 2.
+		#Range: 0.0 ~ 1.0
+		springBloomReturnCooldownRefundRatio = 0.2
+		#馥郁巧思喂食时给主人施加的随机增益时长，单位 tick
+		#Duration in ticks of the random beneficial effect granted when the maid feeds her owner.
+		#Range: 200 ~ 120000
+		fragrantIngenuityBuffDuration = 2400
+		#馥郁巧思随机效果黑名单；支持完整 id 和 regex: 正则，默认与梦云水晶相同
+		#Fragrant Ingenuity effect blacklist; supports ids and regex: patterns, defaults to Dream Crystal's list.
+		fragrantIngenuityEffectBlacklist = ["irons_spellbooks:ascension", "irons_spellbooks:burning_dash", "irons_spellbooks:antigravity", "irons_spellbooks:volt_strike", "traveloptics:aqua_missiles_hover", "traveloptics:meteor_storm", "traveloptics:aerial_collapse", "traveloptics:aerial_collapse_helper", "soulsweapons:chungus_tonic_effect", "goety:fire_trail", "goety:charged", "goety:rampage", "goety:shadow_walk", "goety:fiery_aura", "goety:frosty_aura", "minecraft:invisibility", "irons_spellbooks:true_invisibility", "goety:explosive"]
+
+	#触发机制相关饰品配置
+	#Trigger mechanism bauble configurations
+	[baubles.triggers]
+		#攒够几次命中才反一次真伤，反完清零重新数 (默认: 3)
+		#Hits the maid must land before Silver Cercis fires once.
+		#Range: 1 ~ 10
+		silverCercisTriggerCount = 3
+		#两次命中间隔超过此 tick 数时，紫荆银冠立即触发，无需累计命中
+		#If hits are farther apart than this many ticks, Silver Cercis triggers immediately.
+		#Range: 1 ~ 100
+		silverCercisCooldownTicks = 5
+		#破愈咒锋每次命中施加的禁疗层数；每次回血消耗一层并被取消
+		#Heal-block charges per Wound Rime Blade hit; each heal consumes one charge and is cancelled.
+		#Range: 5 ~ 100
+		woundRimeBladeRecordDuration = 15
+
+	#特殊饰品配置
+	#Special bauble configurations
+	[baubles.special]
+		#混沌之书真伤下限；与目标最大生命百分比取较大值
+		#Chaos Book true damage floor; uses the larger of this and the max-health percentage.
+		#Range: 1.0 ~ 50.0
+		chaosBookTrueDamageMin = 5.0
+		#真伤按目标最大生命算的比例，只有高血量目标才用得着这一条 (默认: 0.01，即 1%)
+		#Max-health percentage used for the true damage above.
+		#Range: 0.001 ~ 0.1
+		chaosBookTrueDamagePercent = 0.01
+		#混沌之书伤害分段数；单段下限可能使总伤害随段数增加
+		#Chaos Book hit segments; the per-segment floor may increase total damage as this grows.
+		#Range: 1 ~ 20
+		chaosBookDamageSplitCount = 5
+		#每一段的下限，均分结果比它还小的时候就按它算 (默认: 3.0)
+		#Damage floor for a single chunk.
+		#Range: 0.1 ~ 100.0
+		chaosBookMinSplitDamage = 3.0
+		#魂之书把单次受到的伤害拦在「最大生命 × 本值」以内，超出的部分直接不算 (默认: 0.2，即 20%)
+		#Soul Book clamps a single incoming hit to this fraction of the maid's max health.
+		#Range: 0.05 ~ 1.0
+		soulBookDamageThresholdPercent = 0.2
+		#距上一次受伤不到这么多 tick 的话，这一击整个不生效；魂之书真正值钱的是这条 (默认: 10 tick，即 0.5 秒)
+		#A hit arriving sooner than this after the previous one is cancelled outright.
+		#Range: 1 ~ 100
+		soulBookDamageIntervalThreshold = 10
+		#梦云水晶随机效果黑名单；支持完整 id 和 regex: 正则
+		#Dream Crystal effect blacklist; supports full ids and regex: patterns.
+		dreamCrystalEffectBlacklist = ["irons_spellbooks:ascension", "irons_spellbooks:burning_dash", "irons_spellbooks:antigravity", "irons_spellbooks:volt_strike", "traveloptics:aqua_missiles_hover", "traveloptics:meteor_storm", "traveloptics:aerial_collapse", "traveloptics:aerial_collapse_helper", "soulsweapons:chungus_tonic_effect", "goety:fire_trail", "goety:charged", "goety:rampage", "goety:shadow_walk", "goety:fiery_aura", "goety:frosty_aura", "minecraft:invisibility", "irons_spellbooks:true_invisibility", "goety:explosive"]
+		#梦云水晶黑名单默认值迁移版本；请勿手动修改
+		#Dream Crystal blacklist default migration version; do not edit manually.
+		#Range: 0 ~ 1
+		dreamCrystalEffectBlacklistMigrationVersion = 1
+		#true: 只抽白名单效果；false: 按黑名单排除
+		#true: roll only whitelisted effects; false: exclude blacklisted effects.
+		dreamCrystalUseEffectWhitelist = true
+		#梦云水晶效果白名单；启用白名单模式时生效，支持完整 id 和 regex: 正则
+		#Dream Crystal effect whitelist; active in whitelist mode, supports ids and regex: patterns.
+		dreamCrystalEffectWhitelist = ["regex:minecraft:.*", "regex:goety:.*", "regex:irons_spellbooks:.*", "regex:ars_nouveau:.*", "regex:youkaishomecoming:.*", "regex:farmersdelight:.*", "regex:kaleidoscope_cookery:.*", "regex:alexsmobs:.*", "regex:alexscaves:.*", "regex:cataclysm:.*"]
+		#梦云水晶是否在女仆命中时追加等量真伤
+		#Whether Dream Crystal adds true damage equal to a maid's hit.
+		dreamCrystalExtraTrueDamageEnabled = true
+
+	#移动相关饰品配置
+	#Movement-related bauble configurations
+	[baubles.movement]
+		#浮波狐叶赋予主人水面行走的最大距离，单位格
+		#Maximum maid-owner distance in blocks for Floating Fox Leaf water walking.
+		#Range: 4.0 ~ 64.0
+		floatingFoxLeafOwnerRange = 16.0
+		#熔岩狐叶同理：主人在这个距离内才能踩着岩浆走 (默认: 16.0 格)
+		#Same for Molten Fox Leaf, with lava instead of water.
+		#Range: 4.0 ~ 64.0
+		moltenFoxLeafOwnerRange = 16.0
+

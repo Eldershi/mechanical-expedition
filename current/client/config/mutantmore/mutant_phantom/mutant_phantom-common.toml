@@ -1,0 +1,30 @@
+
+[STATS]
+	"Experience Reward (default: 40)" = 40
+	"Max Health (default: 150)" = 150.0
+	"Flying Movement Speed (default: 0.24)" = 0.24
+	"Ground Movement Speed (default: 0.24)" = 0.24
+	"Knockback Resistance (default: 1)" = 1.0
+	"Armour Value (default: 0)" = 0.0
+	"Armour Toughness Value (default: 0)" = 0.0
+	"Target Players Range (default: 64)" = 64.0
+	"Target Mobs Range (default: 20)" = 20.0
+	"Attacks Ignore Hurt Invulnerability (default: true)" = true
+
+[AI]
+	"Attacks Players (default: true)" = true
+	"Following Target Movement Speed Multiplier (default: 1.2)" = 1.2
+	"Following Target Close Enough Distance (in blocks, default: 10)" = 10.0
+
+[DEATH]
+	"Revive Health (default: 75)" = 75.0
+
+[GRIEFING]
+	"Walk Griefing (default: true)" = true
+	"Walk Griefing Drops Blocks (default: false)" = false
+	"Hurt Griefing (default: true)" = true
+	"Hurt Griefing Drops Blocks (default: false)" = false
+
+[SPAWNING]
+	"Despawns (default: false)" = false
+

@@ -1,0 +1,15 @@
+
+["MUTANT BLAZE SHIELDS"]
+	"Use Cooldown (in ticks, default: 2400)" = 2400
+
+["RODLING CHECKER"]
+	"List Rodlings Range (in blocks, default: 20)" = 20
+
+["HEATSTORM GENERATOR"]
+	"Heat Zone Horizontal Radius (in blocks, default: 10)" = 10.0
+	"Heat Zone Vertical Radius (in blocks, default: 5)" = 5.0
+	"Heat Speed (per tick: default: 0.005)" = 0.005
+	"Affects Fire Immune Mobs (default: false)" = false
+	"Heat Griefing (default: false)" = false
+	"Heat Griefing Chance (per tick, the action is performed if a random number between 0 and this is 0, default: 20)" = 20
+

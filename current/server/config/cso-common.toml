@@ -1,0 +1,14 @@
+
+#Create: Structures Overhaul Configuration
+[common]
+	#Overworld Structures Settings (Windmills, Houses, Towers, etc.)
+	#Average distance between structures (chunks). Default: 30
+	overworld_spacing = 45
+	#Minimum distance between structures (chunks). Default: 6
+	overworld_separation = 9
+	#Nether Structures Settings
+	#Average distance between nether structures (chunks). Default: 30
+	nether_spacing = 45
+	#Minimum distance (chunks). Default: 6
+	nether_separation = 9
+

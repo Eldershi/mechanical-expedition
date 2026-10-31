@@ -1,0 +1,10 @@
+
+["BATTLE MUSIC"]
+	"Battle Music Volume (default: 0.5)" = 0.5
+
+["CAMERA SHAKE"]
+	"Screen Shake Intensity (default: 1)" = 1.0
+
+["TITLE SCREEN"]
+	"Custom Panorama (default: true)" = true
+

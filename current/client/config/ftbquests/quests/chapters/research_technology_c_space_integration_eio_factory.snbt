@@ -1,0 +1,791 @@
+{
+	id: "64C7F239A80A6EBD"
+	filename: "research_technology_c_space_integration_eio_factory"
+	title: "末影接口·灵魂与工业物流"
+	group: "5B22564DA513617D"
+	order_index: 42
+	icon: "enderio:ender_fluid_conduit"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "1D67966126372B96"
+			title: "可选：末影流体导管分路"
+			icon: "enderio:ender_fluid_conduit"
+			x: -1.5d
+			y: 4.0d
+			optional: true
+			tasks: [
+				{
+					id: "53492F748578872A"
+					type: "item"
+					item: "enderio:ender_fluid_conduit"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9d3d6d75728762c2ccfa8bfe.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/361a64e89990fc91379409b5.png width:240 height:120 align:center}"
+				"已能制作振动合金和熔融石英。"
+				"选择直接制作或高压导管升级两种配方之一。分路配置流体过滤后试送两种流体。"
+				"按选定路线扩展流体物流。"
+				"对照各目标罐变化检查是否串液。"
+			]
+		}
+		{
+			id: "331959D40C47EB17"
+			title: "制作附魂机壳"
+			icon: "enderio:ensouled_chassis"
+			x: -7.5d
+			y: -2.85d
+			optional: false
+			tasks: [
+				{
+					id: "1DA65DD734836561"
+					type: "item"
+					item: "enderio:ensouled_chassis"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/00893a6f531ab17309e3b532.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/a932b62256e71445de8a9001.png width:240 height:120 align:center}"
+				"按合成配方制作。石英材料按配方任选一种。"
+				"打开头颅装配与灵魂绑定机器制造。"
+				"制作头颅装配机。"
+			]
+		}
+		{
+			id: "5D84FF01D28030DA"
+			title: "运行头颅装配机"
+			icon: "enderio:slice_and_splice"
+			x: -4.5d
+			y: -4.0d
+			optional: false
+			tasks: [
+				{
+					id: "2A5B5FA83589C711"
+					type: "item"
+					item: "enderio:slice_and_splice"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "13856C43F0BEA332"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/bcf52bac7f739bdf03035371.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b6c5b11e68e0cdd41a7af7af.png width:240 height:120 align:center}"
+				"附魂机壳、配件、电容、电力及工具齐备。"
+				"在工具槽装可用斧和剪刀类工具，原料槽按配方投料。检查工具耐久与输出。"
+				"提供头颅装配工序。"
+				"先做Z逻辑控制器，再做灵魂绑定器。"
+			]
+		}
+		{
+			id: "679917F75807AC6A"
+			title: "装配Z逻辑控制器"
+			icon: "enderio:z_logic_controller"
+			x: -1.5d
+			y: -4.0d
+			optional: false
+			tasks: [
+				{
+					id: "44CB7F2978B34578"
+					type: "item"
+					item: "enderio:z_logic_controller"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/5e9d4278ac523e586fa7a457.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b2d374d62774d4aeebbf466b.png width:232 height:136 align:center}"
+				"头颅装配机有电、可用工具。准备魂金、僵尸头、硅和红石。"
+				"按六个原料槽加工：魂金2、僵尸头1、硅2、红石1。配方energy=20000。"
+				"得到灵魂绑定器与刷怪设备配件。"
+				"保留机器工具，控制器进入下一步合成。"
+			]
+		}
+		{
+			id: "4167DBB31BB8B6E1"
+			title: "制作并使用灵魂瓶"
+			icon: "enderio:empty_soul_vial"
+			x: -4.5d
+			y: 1.45d
+			optional: false
+			tasks: [
+				{
+					id: "4B8D8D1D92FF11C6"
+					type: "item"
+					item: "enderio:empty_soul_vial"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "25310790966929E6"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4fbad41132ae392d9dd809cc.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/4be46f8d64d1ae9b5b0102a8.png width:240 height:120 align:center}"
+				"准备魂金和熔融石英。目标生物须被捕获规则允许。"
+				"制作空瓶，对普通目标测试捕获。确认装满灵魂的瓶子中的实际实体类型。"
+				"有可使用容器和指定实体的捕获样本。"
+				"把对应灵魂与实体专属绑定配方对上。"
+			]
+		}
+		{
+			id: "7F928A467A7C4DDF"
+			title: "搭建灵魂绑定工序"
+			icon: "enderio:soul_binder"
+			x: 1.95d
+			y: -2.0d
+			optional: false
+			tasks: [
+				{
+					id: "625BF9590FF7A0F4"
+					type: "item"
+					item: "enderio:soul_binder"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "2E9355E7BF3B05AB"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/bcf52bac7f739bdf03035371.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/a45fef8e7ee6f08f10147fd9.png width:240 height:120 align:center}"
+				"Z逻辑控制器和附魂机壳已备好。安排电力与经验输入。"
+				"放置机器，装电容，按GUI补入所需经验。选择指定实体灵魂与物料。"
+				"获得实际灵魂绑定能力。"
+				"先测试末影水晶或僵尸材料，再扩展刷怪器。"
+			]
+		}
+		{
+			id: "5F2A46F7095E67C4"
+			title: "绑定一枚末影水晶"
+			icon: "enderio:ender_crystal"
+			x: 4.5d
+			y: -2.0d
+			optional: true
+			tasks: [
+				{
+					id: "325F64E68CB24A18"
+					type: "item"
+					item: "enderio:ender_crystal"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "2D92EF646C79BB37"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4f5a85e545580dda9b19f8d7.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/379f6fa86e19cf38c6c4eeff.png width:240 height:99 align:center}"
+				"有末影人灵魂瓶、振动水晶、机器电力和6级配方经验。"
+				"在灵魂绑定器完成配方，消耗 76800 FE。确认输出末影水晶并返还空瓶。"
+				"得到后续用途材料，同时释放了瓶内灵魂。"
+				"选择要制作的设备，准备对应灵魂与容器。"
+			]
+		}
+		{
+			id: "0FBCB08C0058D8D6"
+			title: "可选：制造并配置电动刷怪器"
+			icon: "enderio:powered_spawner"
+			x: 7.5d
+			y: -4.0d
+			optional: true
+			tasks: [
+				{
+					id: "200E37D6A3B03F81"
+					type: "item"
+					item: "enderio:powered_spawner"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "07736EF408FA25D6"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/07df581005319786affb7165.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/23b1670fa42f35261d4d44ba.png width:240 height:120 align:center}"
+				"已获得破损刷怪笼、魂金、振动水晶与Z逻辑控制器。"
+				"按工作台配方制造。需要改变实体时再使用灵魂绑定器配方，不照搬旧铁砧操作。"
+				"形成可配置的刷怪设备支线。"
+				"在安全隔离区域供电、校对实体和数量上限，观察真正生成。"
+			]
+		}
+		{
+			id: "007886A570B63016"
+			title: "可选：基地内旅行锚"
+			icon: "enderio:travel_anchor"
+			x: 7.5d
+			y: 0.0d
+			optional: true
+			tasks: [
+				{
+					id: "1F8F948C6D6A50EE"
+					type: "item"
+					item: "enderio:travel_anchor"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/16d9d689b80e8074727055c3.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/71db8579ee7e56bd45d3f3ad.png width:240 height:120 align:center}"
+				"准备两处安全站位和可制作旅行锚的材料。"
+				"配置两个锚，在键位下测试站锚跳转和返程。记录目标名称与距离。"
+				"改善基地内通行。"
+				"不与火箭等级或异界首通资格连接。"
+			]
+		}
+		{
+			id: "56E216D7713F5709"
+			title: "完成分类供料与灵魂工序"
+			icon: "minecraft:book"
+			x: 10.5d
+			y: -2.0d
+			optional: false
+			tasks: [
+				{
+					id: "171F86A9752F242E"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["至少一条物品线路、一条能量线路和一条已选灵魂配方。" "记录一批投入/产出、空瓶返还、经验与电量变化。检查过滤后不误抽工具与配件。" "检查的是产线运行，观察持续输入与输出。" "需要时扩到多机，HNN可作独立的掉落物生产替代。"]
+		}
+		{
+			id: "1E95EB52B70E9B1E"
+			title: "可选：定向制作附魔书"
+			icon: "enderio:enchanter"
+			x: 1.5d
+			y: 4.0d
+			optional: true
+			tasks: [
+				{
+					id: "4B20958ECBC58456"
+					type: "item"
+					item: "enderio:enchanter"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/2d739ab216c99165162a32ef.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/5247aaacdd6ea5f3d1a6306e.png width:240 height:120 align:center}"
+				"附魔器配方材料齐备。"
+				"在配方查询附魔类别选具体配方，准备书、所需材料与青金石，按GUI显示的经验等级提交。"
+				"取得所选等级附魔书。"
+				"配置lapisCostFactor3、levelCostFactor0.75、baseLevelCost2。以具体配方为准，不捏造固定总价。"
+			]
+		}
+		{
+			id: "0EB9C39BE200BF3A"
+			title: "可选：接入AE2的ME导管"
+			icon: "enderio:me_conduit"
+			x: 4.5d
+			y: 4.0d
+			optional: true
+			tasks: [
+				{
+					id: "2D951F610143CD64"
+					type: "item"
+					item: "enderio:me_conduit"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "7A239EA51B534BE3"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/b9007ada340194152bfd02fb.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/52d068e1b85caa149d9a1395.png width:240 height:120 align:center}"
+				"已有AE2线路与ME导管配方材料。"
+				"接入既有ME网络，观察相邻设备上线和实际频道状态。"
+				"获得末影接口到AE2的真实线路接口。"
+				"需求更高时查致密ME导管。属于可选网络布线，非航天门槛。"
+			]
+		}
+		{
+			id: "6F6E8C0FABC99119"
+			title: "可选：Mekanism化学品物流"
+			icon: "enderio:chemical_conduit"
+			x: 7.5d
+			y: 4.0d
+			optional: true
+			tasks: [
+				{
+					id: "24A212FC28F52BA2"
+					type: "item"
+					item: "enderio:chemical_conduit"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/44386b3725d8a61c882d3c42.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/cef3c5fdfc2a11764de3dfa0.png width:240 height:120 align:center}"
+				"生产端和接收端都有对应化学品能力。不要拿流体罐接气体。"
+				"制作化学品导管，分别配置两端抽取/插入并用一种已知气体试送，观察两端化学罐变化。"
+				"在同格线路中提供独立化学品物流。"
+				"高吞吐再查加压/末影化学品导管。"
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "73B0B96CF576B4E7"
+			linked_quest: "07EF583483D57FFB"
+			x: -3.65d
+			y: 2.65d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "4ACD16BD91D00118"
+			linked_quest: "30841D01A76B2B6E"
+			x: -4.5d
+			y: 4.0d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "36E792568EC48983"
+			linked_quest: "23C664D72C682B79"
+			x: -10.5d
+			y: 0.2d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "20A49D6253311371"
+			linked_quest: "3BA36C9B0A8BF2CB"
+			x: -1.5d
+			y: 1.8d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "4C49B830C7494A2D"
+			linked_quest: "6CAC077412BD216B"
+			x: -3.35d
+			y: 0.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [
+		{
+			x: -3.5d
+			y: 4.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:75ba47d7-fe9d-5055-8a47-c89e9892820e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b8fc9dcc-2572-5edc-864b-1f548a1db7aa"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.5d
+			y: 3.15d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1af49f9b-0ff5-5927-8221-4fd1a1460755"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.5d
+			y: 2.3d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1844ea25-708d-538e-aaba-8025ec62d3c1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.5d
+			y: -1.2d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ff324a02-2ea8-5d38-9142-97afd5c1a53c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.5d
+			y: -2.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e69ebc19-218a-5f3c-bb4b-ba60b46edc7f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.5d
+			y: -1.2d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:63e9fcd0-8be7-5a70-b519-6c885e2b934f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.5d
+			y: -2.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5b2fe9fa-a5f6-5eb4-a113-66339a7e9e7a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.5d
+			y: 0.617d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7a647ed5-a637-50f3-ac86-d4776e12f25c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.5d
+			y: 1.033d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a9103e01-c52f-55f6-9d67-4ee5eed6163b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.35d
+			y: -0.533d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:46f18467-04ea-5baa-b1ab-3d0aee3511b2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.2d
+			y: -1.267d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:45661f61-d52a-5de4-aad1-ea2e1b0d010e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.5d
+			y: -1.2d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:35815916-1fb8-5330-91fa-af31c7d35ec6"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.5d
+			y: -2.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7eb0b7ed-5683-5c2c-b5d3-17d487fb1f32"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.35d
+			y: -2.567d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5fcadcbc-2731-5fbd-8a91-8d41f08f0b96"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.2d
+			y: -2.283d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2d865fef-b201-53aa-89e5-0a2165c255ed"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.5d
+			y: -3.233d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:57e50a16-53a8-51df-be91-22ea9f490106"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.5d
+			y: -3.617d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b061daa5-0765-59b5-9c81-583bfc74138f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.35d
+			y: -3.333d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:56ae936e-29b2-584b-9d1e-576fe52fade7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.8d
+			y: -2.667d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:cefe8ca5-569f-5c50-a2ad-3919ce645a51"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.5d
+			y: -4.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fae898fd-1b28-50ef-81c3-e5030474305a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.5d
+			y: -4.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:504cb6ea-17c5-52f8-9fa3-3eb90e85684e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:4c49b830c7494a2d" "q:1d67966126372b96"]
+		}
+		{
+			nodes: ["l:4c49b830c7494a2d" "q:7886a570b63016"]
+		}
+		{
+			nodes: ["l:4c49b830c7494a2d" "q:eb9c39be200bf3a"]
+		}
+		{
+			nodes: ["l:4c49b830c7494a2d" "q:6f6e8c0fabc99119"]
+		}
+		{
+			nodes: ["l:73b0b96cf576b4e7" "q:1d67966126372b96"]
+		}
+		{
+			nodes: ["l:4acd16bd91d00118" "a:75ba47d7-fe9d-5055-8a47-c89e9892820e"]
+		}
+		{
+			nodes: ["a:75ba47d7-fe9d-5055-8a47-c89e9892820e" "a:b8fc9dcc-2572-5edc-864b-1f548a1db7aa"]
+		}
+		{
+			nodes: ["a:b8fc9dcc-2572-5edc-864b-1f548a1db7aa" "q:1d67966126372b96"]
+		}
+		{
+			nodes: ["l:4acd16bd91d00118" "a:1af49f9b-0ff5-5927-8221-4fd1a1460755"]
+		}
+		{
+			nodes: ["a:1af49f9b-0ff5-5927-8221-4fd1a1460755" "a:1844ea25-708d-538e-aaba-8025ec62d3c1"]
+		}
+		{
+			nodes: ["a:1844ea25-708d-538e-aaba-8025ec62d3c1" "q:4167dbb31bb8b6e1"]
+		}
+		{
+			nodes: ["l:36e792568ec48983" "q:331959d40c47eb17"]
+		}
+		{
+			nodes: ["l:36e792568ec48983" "a:ff324a02-2ea8-5d38-9142-97afd5c1a53c"]
+		}
+		{
+			nodes: ["a:ff324a02-2ea8-5d38-9142-97afd5c1a53c" "a:e69ebc19-218a-5f3c-bb4b-ba60b46edc7f"]
+		}
+		{
+			nodes: ["a:e69ebc19-218a-5f3c-bb4b-ba60b46edc7f" "q:5d84ff01d28030da"]
+		}
+		{
+			nodes: ["l:36e792568ec48983" "a:63e9fcd0-8be7-5a70-b519-6c885e2b934f"]
+		}
+		{
+			nodes: ["a:63e9fcd0-8be7-5a70-b519-6c885e2b934f" "a:5b2fe9fa-a5f6-5eb4-a113-66339a7e9e7a"]
+		}
+		{
+			nodes: ["a:5b2fe9fa-a5f6-5eb4-a113-66339a7e9e7a" "q:679917f75807ac6a"]
+		}
+		{
+			nodes: ["l:36e792568ec48983" "a:7a647ed5-a637-50f3-ac86-d4776e12f25c"]
+		}
+		{
+			nodes: ["a:7a647ed5-a637-50f3-ac86-d4776e12f25c" "a:a9103e01-c52f-55f6-9d67-4ee5eed6163b"]
+		}
+		{
+			nodes: ["a:a9103e01-c52f-55f6-9d67-4ee5eed6163b" "q:4167dbb31bb8b6e1"]
+		}
+		{
+			nodes: ["l:36e792568ec48983" "a:46f18467-04ea-5baa-b1ab-3d0aee3511b2"]
+		}
+		{
+			nodes: ["a:46f18467-04ea-5baa-b1ab-3d0aee3511b2" "a:45661f61-d52a-5de4-aad1-ea2e1b0d010e"]
+		}
+		{
+			nodes: ["a:45661f61-d52a-5de4-aad1-ea2e1b0d010e" "q:7f928a467a7c4ddf"]
+		}
+		{
+			nodes: ["l:36e792568ec48983" "a:35815916-1fb8-5330-91fa-af31c7d35ec6"]
+		}
+		{
+			nodes: ["a:35815916-1fb8-5330-91fa-af31c7d35ec6" "a:7eb0b7ed-5683-5c2c-b5d3-17d487fb1f32"]
+		}
+		{
+			nodes: ["a:7eb0b7ed-5683-5c2c-b5d3-17d487fb1f32" "q:fbcb08c0058d8d6"]
+		}
+		{
+			nodes: ["q:331959d40c47eb17" "q:5d84ff01d28030da"]
+		}
+		{
+			nodes: ["q:331959d40c47eb17" "a:5fcadcbc-2731-5fbd-8a91-8d41f08f0b96"]
+		}
+		{
+			nodes: ["a:5fcadcbc-2731-5fbd-8a91-8d41f08f0b96" "a:2d865fef-b201-53aa-89e5-0a2165c255ed"]
+		}
+		{
+			nodes: ["a:2d865fef-b201-53aa-89e5-0a2165c255ed" "q:7f928a467a7c4ddf"]
+		}
+		{
+			nodes: ["q:331959d40c47eb17" "a:57e50a16-53a8-51df-be91-22ea9f490106"]
+		}
+		{
+			nodes: ["a:57e50a16-53a8-51df-be91-22ea9f490106" "a:b061daa5-0765-59b5-9c81-583bfc74138f"]
+		}
+		{
+			nodes: ["a:b061daa5-0765-59b5-9c81-583bfc74138f" "q:fbcb08c0058d8d6"]
+		}
+		{
+			nodes: ["q:5d84ff01d28030da" "q:679917f75807ac6a"]
+		}
+		{
+			nodes: ["q:4167dbb31bb8b6e1" "q:7f928a467a7c4ddf"]
+		}
+		{
+			nodes: ["q:679917f75807ac6a" "a:56ae936e-29b2-584b-9d1e-576fe52fade7"]
+		}
+		{
+			nodes: ["a:56ae936e-29b2-584b-9d1e-576fe52fade7" "a:cefe8ca5-569f-5c50-a2ad-3919ce645a51"]
+		}
+		{
+			nodes: ["a:cefe8ca5-569f-5c50-a2ad-3919ce645a51" "q:7f928a467a7c4ddf"]
+		}
+		{
+			nodes: ["q:679917f75807ac6a" "a:fae898fd-1b28-50ef-81c3-e5030474305a"]
+		}
+		{
+			nodes: ["a:fae898fd-1b28-50ef-81c3-e5030474305a" "a:504cb6ea-17c5-52f8-9fa3-3eb90e85684e"]
+		}
+		{
+			nodes: ["a:504cb6ea-17c5-52f8-9fa3-3eb90e85684e" "q:fbcb08c0058d8d6"]
+		}
+		{
+			nodes: ["q:7f928a467a7c4ddf" "q:5f2a46f7095e67c4"]
+		}
+		{
+			nodes: ["l:20a49d6253311371" "q:1e95eb52b70e9b1e"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

@@ -1,0 +1,212 @@
+
+[steam]
+	#Global steam consumption multiplier for machines running on superheated steam.
+	#0.25 means such a machine only needs a quarter of the normal steam.
+	#Range: 0.0 ~ 1.0
+	superheated_steam_consumption_multiplier = 0.25
+	#Fluid id produced by steam boilers and solar boilers.
+	#Existing tank contents are never converted when this changes.
+	output_steam_fluid = "mekanism:steam"
+	#Fluid id produced by steam boilers while their burner is in the superheated state.
+	#Must differ from output_steam_fluid, otherwise the config fails to load.
+	#Existing tank contents are never converted when this changes.
+	output_superheated_steam_fluid = "steam_letters:superheated_steam"
+	#How a boiler clears the normal steam already sitting in its output tank
+	#before it starts producing superheated steam.
+	#false: destroy that steam. true: convert it in place to the same amount of superheated steam.
+	do_overheated_steam_replace = false
+
+[bronze_basin]
+	#Fluid capacity of each tank of a bronze basin (mB).
+	#Basins have several tanks, so the total capacity is a multiple of this.
+	#Range: 1000 ~ 1000000
+	slot_capacity = 16000
+
+[advanced_spout]
+	#Fluid capacity of an advanced spout (mB).
+	#Range: 2000 ~ 1000000
+	capacity = 5000
+	#Default parallel of newly placed advanced spouts.
+	#Can still be changed per block with a wrench.
+	#Range: 1 ~ 20
+	parallel = 8
+
+[steam_hammer]
+	#Maximum number of recipes a single steam hammer processes at once.
+	#Range: 1 ~ 64
+	steam_hammer_parallel = 64
+	#Steam consumed per finished recipe (mB).
+	#Range: 0 ~ 1000000
+	steam_consumption = 1000
+	#Steam buffer capacity of a steam hammer (mB).
+	#Range: 1000 ~ 1000000
+	steam_capacity = 10000
+
+[steam_mixer]
+	#Maximum number of recipes a single steam mixer processes at once.
+	#Range: 1 ~ 64
+	steam_mixer_parallel = 16
+	#Steam consumed per finished recipe (mB).
+	#Range: 0 ~ 1000000
+	steam_consumption = 1000
+	#Steam buffer capacity of a steam mixer (mB).
+	#Range: 1000 ~ 1000000
+	steam_capacity = 10000
+
+[steam_saw]
+	#Maximum number of recipes a single steam saw processes at once.
+	#Range: 1 ~ 64
+	steam_saw_parallel = 16
+	#Steam consumed per finished recipe (mB).
+	#Range: 0 ~ 1000000
+	steam_consumption = 500
+	#Steam buffer capacity of a steam saw (mB).
+	#Range: 1000 ~ 1000000
+	steam_capacity = 10000
+	#Working time multiplier of the steam saw (0.25 = 4 times faster than a mechanical saw).
+	#Range: 0.01 ~ 100.0
+	processing_time_multiplier = 0.25
+
+[steam_boiler]
+	#Lowest heat percentage at which the boiler starts producing steam.
+	#Range: 0 ~ 100
+	efficiency_threshold_1 = 25
+	#Heat percentage at which the boiler reaches efficiency tier 2.
+	#Range: 0 ~ 100
+	efficiency_threshold_2 = 50
+	#Heat percentage at which the boiler reaches efficiency tier 3.
+	#Range: 0 ~ 100
+	efficiency_threshold_3 = 75
+	#Heat percentage required for the boiler to run at full efficiency.
+	#Range: 0 ~ 100
+	efficiency_threshold_4 = 100
+	#Steam output multiplier of efficiency tier 1.
+	#Range: 0.0 ~ 1.0
+	efficiency_1 = 0.25
+	#Steam output multiplier of efficiency tier 2.
+	#Range: 0.0 ~ 1.0
+	efficiency_2 = 0.5
+	#Steam output multiplier of efficiency tier 3.
+	#Range: 0.0 ~ 1.0
+	efficiency_3 = 0.75
+	#Steam output multiplier of efficiency tier 4, i.e. the maximum boiler output.
+	#Range: 0.0 ~ 1.0
+	efficiency_4 = 1.0
+	#Heat percentage at which superheated production reaches tier 2.
+	#Range: 100 ~ 1000
+	superheated_threshold_1 = 125
+	#Heat percentage at which superheated production reaches tier 3.
+	#Range: 100 ~ 1000
+	superheated_threshold_2 = 150
+	#Heat percentage at which superheated production reaches tier 4, i.e. its full rate.
+	#Range: 100 ~ 1000
+	superheated_threshold_3 = 175
+	#Superheated steam output multiplier while heat stays right above the maximum heat.
+	#Range: 0.0 ~ 4.0
+	superheated_production_1 = 0.75
+	#Superheated steam output multiplier of tier 2.
+	#Range: 0.0 ~ 4.0
+	superheated_production_2 = 0.85
+	#Superheated steam output multiplier of tier 3.
+	#Range: 0.0 ~ 4.0
+	superheated_production_3 = 0.95
+	#Superheated steam output multiplier of tier 4, i.e. the maximum superheated output.
+	#Range: 0.0 ~ 4.0
+	superheated_production_4 = 1.0
+
+[solar_boiler]
+	#Whether or not fluids inside the solar boiler will be rendered.
+	render_fluid = false
+	#Efficiency multiplier when the boiler has direct sky light (and no weather penalty).
+	#Range: 0.0 ~ 1.0
+	sunlight_efficiency = 1.0
+	#Efficiency multiplier when the boiler is lit by block light instead of sky light.
+	#Range: 0.0 ~ 1.0
+	artificial_light_efficiency = 0.5
+	#Minimum block light level for the artificial light path to be usable.
+	#Range: 0 ~ 15
+	artificial_light_threshold = 8
+	#Whether the sky light path additionally requires daytime.
+	#Vanilla sky light level stays at 15 at night, so without this the boiler would produce at full speed in complete darkness.
+	require_daylight = true
+	#Weather multiplier while it is raining at the boiler.
+	#Range: 0.0 ~ 1.0
+	rain_efficiency = 0.5
+	#Weather multiplier while a thunder storm is raging at the boiler (includes snow during thunder).
+	#Range: 0.0 ~ 1.0
+	thunder_efficiency = 0.25
+
+[steam_burner]
+	#Total time required to heat up while burning fuel, as time required for the burner to reach max heat.
+	#Range: 0.0 ~ 10000.0
+	heatup_seconds = 60.0
+	#Total time to lose all heat while no fuel is burning, as time required for the burner to lose all heat.
+	#Range: 0.0 ~ 10000.0
+	cooldown_seconds = 30.0
+	#Heat gain multiplier applied while the burning fuel is marked as superheated.
+	#It only applies below max heat; above max heat the normal speed is used.
+	#Range: 1.0 ~ 100.0
+	superheated_heatup_multiplier = 4.0
+
+[steam_engine]
+	#Efficiency (0~1) of steam drawn directly from an adjacent boiler.
+	#4n mB is drawn out of the boiler per tick while only 3n mB reaches the engine, so a directly fed engine caps out at 75% of its stress output.
+	#Range: 0.0 ~ 1.0
+	suck_efficiency = 0.75
+	#Steam consumption multiplier applied while the flywheel engine runs on superheated steam. 0.5 means it only needs half the steam of a normal-steam run.
+	#Range: 0.0 ~ 1.0
+	superheated_consumption_multiplier = 0.5
+	#Seconds required for the flywheel engine to heat up before it outputs its full stress.
+	#The demand climbs through 25%, 50% and 75% of the full load during the heat-up.
+	#0 means no heat-up at all.
+	#Range: 0.0 ~ 10000.0
+	heatup_seconds = 2.0
+	#Heat-up acceleration multiplier applied while running on superheated steam.
+	#Range: 1.0 ~ 100.0
+	superheated_acceleration_multiplier = 2.0
+	#Stress output multiplier applied while running on superheated steam.
+	#Range: 1.0 ~ 100.0
+	superheated_output_multiplier = 1.5
+
+[boiler_steam]
+	#Steam produced per unit of continuous boiler level, in mB per tick.
+	#One level is meant to feed exactly one fully loaded steam engine,
+	#so this should stay equal to the engine's own consumption.
+	#Range: 0.0 ~ 1000.0
+	base_consumption = 12.0
+	#Steam produced per mB of water drawn out of the boiler's water buffer.
+	#Create consumes the water that flows through it without storing it, so the
+	#buffer keeps the water and this ratio is the only link between that water
+	#and the steam output.
+	#1.2 keeps the water requirement of a given level exactly equal to the
+	#10 mB per tick the level itself demands.
+	#Range: 0.0 ~ 100.0
+	steam_per_water = 1.2
+	#Water the boiler holds per block of its structure, in mB.
+	#Water is no longer consumed the moment it flows in, so a full steam buffer
+	#does not force the boiler to swallow water for nothing.
+	#0 disables the water buffer, and the boiler falls back to counting only
+	#the water that flows through it.
+	#Range: 0 ~ 100000
+	water_per_block = 1000
+	#Steam buffer capacity, as a multiplier of 1000 mB per boiler block.
+	#0 makes the boiler unable to store any steam.
+	#Range: 0.0 ~ 100.0
+	buffer_multiplier = 1.0
+	#true: steam engines and bronze pumps share one quota, so a boiler of
+	#level L feeds min(1, L / (engines + pumps)) to every attached engine. Adding
+	#a pump to a full quota therefore lowers the stress of every engine.
+	#Also covers Create's own steam engines, which never consume fluid and
+	#derive their stress from this efficiency alone.
+	#false: the boiler only limits the total steam flow and leaves the quota to scarcity.
+	strict_quota = true
+	#Continuous level required before the boiler produces superheated steam.
+	#18 needs 18 heat, at least 72 blocks of boiler and 180 mB/t of water.
+	#Range: 0.0 ~ 18.0
+	superheated_at_level = 18.0
+	#Water cost multiplier of superheated steam.
+	#Matches the engine's superheated output multiplier, so switching to
+	#superheated steam does not create free capacity.
+	#Range: 1.0 ~ 100.0
+	superheated_water_multiplier = 1.5
+

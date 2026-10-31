@@ -1,0 +1,405 @@
+{
+	id: "0D59609DCE9E2790"
+	filename: "research_technology_b_power"
+	title: "早期供电与工厂物流"
+	group: "050255AE19A93344"
+	order_index: 19
+	icon: "immersiveengineering:dynamo"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "055C6ACB0E70C652"
+			title: "准备动能发电机"
+			icon: "immersiveengineering:dynamo"
+			x: -6.0d
+			y: -1.0d
+			optional: false
+			tasks: [
+				{
+					id: "77D93741839D4E0C"
+					type: "item"
+					item: "immersiveengineering:dynamo"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/55289432ef33190824a8be52.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/7e8efedd802eb14d220cc646.png width:240 height:120 align:center}"
+				"按配方制作发电机，为后续设备准备能源。"
+				"制作动能发电机并识别机械连接面。选风车或水车配对。"
+				"取得动能发电机。发电还需要正确动力装置与能量出口。"
+				"风力、水力并行选择，或直接采用其他FE供电。"
+			]
+		}
+		{
+			id: "2DCA813422330B94"
+			title: "让流水驱动水车"
+			icon: "immersiveengineering:watermill"
+			x: -3.0d
+			y: -3.8d
+			optional: false
+			tasks: [
+				{
+					id: "25134DA24E0F3DE8"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6c03210f17ea05e5e31469cf.png width:32 height:32 align:center}"
+				"动能发电机的机械面连接水车。空间容纳轮体。"
+				"引流水沿半轮从上向下流过底部。同侧最多3轮。用储能负载查看发电。"
+				"在已连接负载中观察储能上升。仅轮子旋转不代替能量输出检查。"
+				"按实际负载设置接线器与蓄电池。水车不是所有FE机器唯一来源。"
+			]
+		}
+		{
+			id: "2ED57AFB5C171CD9"
+			title: "建立风力供电支路"
+			icon: "immersiveengineering:windmill"
+			x: -3.0d
+			y: -1.0d
+			optional: true
+			tasks: [
+				{
+					id: "1EF6D43DDACF37E0"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ac57a29d64a9eef5fef5e3db.png width:32 height:32 align:center}"
+				"有动能发电机与风车。前方有足够空间。"
+				"在较高、无遮挡位置装风车，可加布帆。接入实际储能负载。"
+				"天气与环境变化时仍可观察实际能量输出。"
+				"按需求并联更多供能或换柴油/热力。"
+			]
+		}
+		{
+			id: "361630D1CA0B0C5C"
+			title: "用温差发电并实测输出"
+			icon: "immersiveengineering:thermoelectric_generator"
+			x: -3.0d
+			y: 2.2d
+			optional: true
+			tasks: [
+				{
+					id: "200494E79F9E98AC"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/22bad975aef10f0580967491.png width:32 height:32 align:center}"
+				"准备热传导发电机及一冷一热两侧方块或流体。"
+				"把冷热源放在相对侧，接入有需求负载，观察储能。"
+				"负载储能随时间增加。具体功率以实际接口/配置为准。"
+				"低负载用此支路，高吞吐需要另算供能。"
+			]
+		}
+		{
+			id: "46BBF4CC189EF899"
+			title: "接线器、继电器与变压器"
+			icon: "immersiveengineering:connector_lv"
+			x: 0.0d
+			y: -0.7d
+			optional: false
+			tasks: [
+				{
+					id: "21EC706448CC304F"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/30c15fa043920318cc9d2f08.png width:32 height:32 align:center}"
+				"供能端和受电端已加载。线型匹配。"
+				"接线器贴能量接口，继电器只做中继。用线圈连接。跨线型用变压器，避免遮挡和总吞吐超限。"
+				"受电端有实际FE变化，多用表能读存量与损耗。绝缘仅中低压。"
+				"接入蓄电池并分别设置蓝入橙出。不要要求同时制造所有电压等级。"
+			]
+		}
+		{
+			id: "74BB84320E0DCCE3"
+			title: "蓄电池蓝入橙出与负载检查"
+			icon: "immersiveengineering:capacitor_lv"
+			x: 3.0d
+			y: -1.3d
+			optional: false
+			tasks: [
+				{
+					id: "053A2582C3953EBF"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/b605a3d8d0f994be7ca58dc3.png width:32 height:32 align:center}"
+				"有能量来源及实际耗能设备。"
+				"锤配置蓄电池蓝输入、橙输出、无色禁用。潜行锤可配对侧。开工观察供能与耗能同时发生。"
+				"断开能源后储能下降。恢复能源后能维持所选加工。"
+				"给热力或沉浸机器供FE。"
+			]
+		}
+		{
+			id: "05CA60E77665FD6A"
+			title: "区分世界抽液与容器抽液"
+			icon: "immersiveengineering:fluid_pump"
+			x: 0.0d
+			y: 3.0d
+			optional: false
+			tasks: [
+				{
+					id: "6070645495126351"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/14723c5eaad677e662734735.png width:32 height:32 align:center}"
+				"有泵、输液管、明确输入容器和空输出罐。"
+				"锤设泵底座进出：世界采集需顶部供电和红石。容器抽液需红石但不耗电。用管道锤断开不需要的支线。"
+				"指定流体只进入目标罐，存量前后变化一致。无限水需连接超过3水方块。"
+				"建立独立乙醇、油、蒸汽管线，避免误混。"
+			]
+		}
+		{
+			id: "2D25FB2AA56BBF8A"
+			title: "物品分流与红石停线"
+			icon: "immersiveengineering:conveyor_basic"
+			x: 3.0d
+			y: 3.8d
+			optional: false
+			tasks: [
+				{
+					id: "161D6EB2A01035BC"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/426ef38ecb1e76f5608b69f9.png width:32 height:32 align:center}"
+				"准备传送带、输出容器和两类测试物品。"
+				"锤调方向和坡道，末端对容器。抽取带从箱抽取，路由器按方向设过滤。螺丝刀配置红石频道。"
+				"两类物品分别抵达预期箱子，停线信号实际暂停。垂直带运输物品不运流体。"
+				"给冲压和自动装配喂料。遮蔽带防止上方拾取。"
+			]
+		}
+		{
+			id: "40969F98C7D63B3C"
+			title: "缓冲、溢出和满仓停机"
+			icon: "immersiveengineering:sheetmetal_iron"
+			x: 6.0d
+			y: 1.4d
+			optional: true
+			tasks: [
+				{
+					id: "270C0947A9E370F9"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6d140a52e35fc86d8a525768.png width:32 height:32 align:center}"
+				"需要大量单一物品或流体时选筒仓/储罐，普通箱罐也可。"
+				"按手册形成结构：筒仓顶入底出。储罐顶底输入、底中抽取。比较器读取存量并测试满仓停机。"
+				"上游可因满仓停止且不会丢物。解除堵塞后恢复。多方块自动输出受红石设置影响。"
+				"把油类副产与矿渣单独缓存，不让副产堵主线。"
+			]
+		}
+		{
+			id: "46A9C19390DDBD44"
+			title: "按燃料选择能源炉"
+			icon: "thermal:dynamo_stirling"
+			x: 6.0
+			y: -1.3
+			optional: true
+			tasks: [
+				{
+					id: "784FD1D797F804F9"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f029c4f22038292cd8f3636f.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b55323c3a4d2d1fbd44b6e8c.png width:240 height:98 align:center}"
+				"不要求全部建。"
+				"输入对应真实燃料，核能量输出面并接有需求负载。热力熔岩燃料已由数据覆写。"
+				"燃料减少与负载FE增加均可观察。食物钓鱼循环也受实际捕获和消耗限制。"
+				"按稳定供料与效率扩产。冷燃料冰碎片可与Ad Astra材料接口衔接。"
+			]
+		}
+		{
+			id: "51E7D77A5DD6FE31"
+			title: "避雷与照明是可选工程"
+			icon: "immersiveengineering:lightning_rod"
+			x: 6.0
+			y: -4.3
+			optional: true
+			tasks: [
+				{
+					id: "351EEE72D0092A4D"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9800643016c053856cb4bbce.png width:32 height:32 align:center}"
+				"有已形成避雷针或照明设备。雷击存在随机性。"
+				"避雷针架钢栅栏网并留储能输出。灯具按手册供电和红石控制，锤调泛光灯朝向。"
+				"灯亮/光锥可观察。避雷针仅在实际雷击后检查能量，不承诺稳定保底。"
+				"作为工厂外观、防刷怪和储能补充，不替代稳定供能完成。"
+			]
+		}
+		{
+			id: "783EEB172196D43B"
+			title: "沉浸工业蒸汽涡轮：供汽与负载"
+			icon: "immersiveindustry:steam_turbine"
+			x: 3.0
+			y: -4.3
+			optional: true
+			tasks: [
+				{
+					id: "04C2036C1C7AAB03"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e4359597d79985374f7c9dc1.png width:32 height:32 align:center}"
+				"稳定蒸汽流量、涡轮结构和至少一个有需求的能量出口。"
+				"按手册形成，蒸汽接管口，最多两个能量出口。用多用表读效率，观察转速升降。"
+				"供汽充足且负载接收时产能。停汽或无输出需求会降速。只按配置核上下限，不猜旧数值。"
+				"可替换供电方案，不与柴油或风水发电构成全部必做。"
+			]
+		}
+	]
+	quest_links: [ ]
+	images: [
+		{
+			x: -5.0d
+			y: -1.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4327ba71-0378-531e-8153-b82bc671bd4c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.0d
+			y: -1.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:56acf8d8-1902-5377-a8ca-d3761e093dfd"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.0d
+			y: -2.767d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:9bba4fb6-3581-567e-bdda-79a8aa49b7bd"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.0d
+			y: -1.733d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7b4b5cfc-2746-5027-a2b6-6dc428ee6e8e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.0d
+			y: -0.9d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7094c095-3252-5919-bd45-4381507c2204"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.0d
+			y: -0.8d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f1e1a6fc-03df-5c5c-8a62-20c91c326684"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:55c6acb0e70c652" "q:2dca813422330b94"]
+		}
+		{
+			nodes: ["q:55c6acb0e70c652" "a:4327ba71-0378-531e-8153-b82bc671bd4c"]
+		}
+		{
+			nodes: ["a:4327ba71-0378-531e-8153-b82bc671bd4c" "a:56acf8d8-1902-5377-a8ca-d3761e093dfd"]
+		}
+		{
+			nodes: ["a:56acf8d8-1902-5377-a8ca-d3761e093dfd" "q:2ed57afb5c171cd9"]
+		}
+		{
+			nodes: ["q:2dca813422330b94" "a:9bba4fb6-3581-567e-bdda-79a8aa49b7bd"]
+		}
+		{
+			nodes: ["a:9bba4fb6-3581-567e-bdda-79a8aa49b7bd" "a:7b4b5cfc-2746-5027-a2b6-6dc428ee6e8e"]
+		}
+		{
+			nodes: ["a:7b4b5cfc-2746-5027-a2b6-6dc428ee6e8e" "q:46bbf4cc189ef899"]
+		}
+		{
+			nodes: ["q:2ed57afb5c171cd9" "a:7094c095-3252-5919-bd45-4381507c2204"]
+		}
+		{
+			nodes: ["a:7094c095-3252-5919-bd45-4381507c2204" "a:f1e1a6fc-03df-5c5c-8a62-20c91c326684"]
+		}
+		{
+			nodes: ["a:f1e1a6fc-03df-5c5c-8a62-20c91c326684" "q:46bbf4cc189ef899"]
+		}
+		{
+			nodes: ["q:361630d1ca0b0c5c" "q:46bbf4cc189ef899"]
+		}
+		{
+			nodes: ["q:46bbf4cc189ef899" "q:74bb84320e0dcce3"]
+		}
+		{
+			nodes: ["q:74bb84320e0dcce3" "q:5ca60e77665fd6a"]
+		}
+		{
+			nodes: ["q:46a9c19390ddbd44" "q:74bb84320e0dcce3"]
+		}
+		{
+			nodes: ["q:51e7d77a5dd6fe31" "q:74bb84320e0dcce3"]
+		}
+		{
+			nodes: ["q:783eeb172196d43b" "q:74bb84320e0dcce3"]
+		}
+		{
+			nodes: ["q:2d25fb2aa56bbf8a" "q:40969f98c7d63b3c"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

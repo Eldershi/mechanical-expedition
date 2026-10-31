@@ -1,0 +1,389 @@
+{
+	id: "6DA994CA58CA24B6"
+	filename: "research_technology_b_chem"
+	title: "农产、乙醇与生物柴油"
+	group: "050255AE19A93344"
+	order_index: 22
+	icon: "createdieselgenerators:plant_oil_bucket"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "4B531EB57A1DDA7E"
+			title: "种子压油：选定Create路线"
+			icon: "createdieselgenerators:plant_oil_bucket"
+			x: -6.0d
+			y: -2.3d
+			optional: false
+			tasks: [
+				{
+					id: "307361C38B269A94"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/8097ca0339aa9ea19c95b974.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/97b253f0d28d190fb3ea5875.png width:240 height:196 align:center}"
+				"准备种子tag中任一种及Create压块加工能力。保留普通种植来源。"
+				"按1份种子→100mB植物油压块配方加工，管线单独导出。"
+				"取得100mB植物油。"
+				"与乙醇进入搅拌制生物柴油。"
+			]
+		}
+		{
+			id: "005B8FA1F319CACC"
+			title: "搅拌制生物柴油并保留备选"
+			icon: "createdieselgenerators:biodiesel_bucket"
+			x: 3.0d
+			y: 0.7d
+			optional: false
+			tasks: [
+				{
+					id: "63DD4A4F6D9102C7"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/807ea2315ad71e521494e84e.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f412378315d518a00710b8e5.png width:240 height:196 align:center}"
+				"选定Create搅拌：100mB植物油＋100mB乙醇。"
+				"接两股流体并按搅拌配方运行，收集200mB生物柴油。IErefinery/biodiesel已被移除。"
+				"正确流体进入独立罐。机器与管路可使用。原料实际消耗。"
+				"供柴油发电机，或选其他已注册燃料。糖＋杂酚油发酵为另一路线。"
+			]
+		}
+		{
+			id: "0AA308545F06C1C8"
+			title: "柴油发电机带负载运行"
+			icon: "immersiveengineering:diesel_generator"
+			x: 6.0d
+			y: 0.1d
+			optional: false
+			tasks: [
+				{
+					id: "0366F884E6598178"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/12b3f633482754edd1ce1454.png width:32 height:32 align:center}"
+				"完整结构、允许燃料、流体输入和至少一个有需求能量出口。"
+				"锤敲中央发电机/散热模块形成。底部输入燃料，上方最多三个输出分担总功率，检查默认红石停机。"
+				"燃料减少且负载储能增加。无需求不工作。"
+			]
+		}
+		{
+			id: "5986E2E649E383CB"
+			title: "玻璃罩跑通种植循环"
+			icon: "immersiveengineering:cloche"
+			x: -6.0d
+			y: 3.7d
+			optional: false
+			tasks: [
+				{
+					id: "084F31A730AC0EB2"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4abceca430cbd036c58e5f78.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/114166ddcf754fcf21da8e3f.png width:240 height:111 align:center}"
+				"有水、FE、所选种子与正确土壤。肥料加速可选。"
+				"按作物配方放土壤/种子，给水和能量，前方出口接箱。首次用小规模检查。"
+				"连续收两批作物，种子/土壤仍在。"
+				"可供乙醇或植物油原料。普通农场和其他种植法同样保留。"
+			]
+		}
+		{
+			id: "318A623AA4201313"
+			title: "工业发酵机加工可发酵原料"
+			icon: "immersiveengineering:fermenter"
+			x: -3.0d
+			y: 3.2d
+			optional: false
+			tasks: [
+				{
+					id: "3DDA190A6B161A80"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/936d810b8604cd359b2c4c51.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/1088d35d56d2439962702fd6.png width:240 height:120 align:center}"
+				"有轻型工程构件、多方块材料、FE及可发酵原料原料。"
+				"锤敲有工程块侧的中央炼药锅。背蓝口入物、橙口出副产、下方出流体。红石默认暂停。"
+				"一份可发酵原料得到100mB乙醇。生物质是概率副产，不能把配方查询展示1当100%概率。"
+				"另可用CDG糖浆发酵。按所需产物选择发酵设备。"
+			]
+		}
+		{
+			id: "42F4F4E01A30FD2E"
+			title: "储存乙醇并核流体类型"
+			icon: "immersiveengineering:ethanol_bucket"
+			x: 0.0d
+			y: 2.7d
+			optional: false
+			tasks: [
+				{
+					id: "1E01DD9A3164782E"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/fefe7a7dc517d1e89712c445.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/1088d35d56d2439962702fd6.png width:240 height:120 align:center}"
+				"工业发酵或CDG糖浆配方任选。容器与液体分清。"
+				"用独立管线把乙醇导入罐，记下输入输出mB。"
+				"让乙醇稳定流入储罐，检查原料供应与输出管路。"
+				"可制生物柴油、乙醛。不同乙醇tag备选不要求同时提供。"
+			]
+		}
+		{
+			id: "425F3F780114BFE2"
+			title: "有机灌注器：种树与作物备选"
+			icon: "thermal:machine_insolator"
+			x: -6.0
+			y: 6.7
+			optional: true
+			tasks: [
+				{
+					id: "4E286D76F8CA8FC5"
+					type: "item"
+					item: "thermal:machine_insolator"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "1251E4C514B653DC"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/5f8d8b59a1c8b4ff4f6a000d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d73197b1f606b664bc85ac23.png width:240 height:95 align:center}"
+				"按组件装配配方备料。安装机器后还需FE与目标原料。"
+				"核对种子/树苗、水和催化剂配方，供FE并试跑两批。"
+				"正确植物产出。"
+				"为化工或生活支路供料。普通种植与玻璃罩并行。"
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "38608059C8FAB519"
+			linked_quest: "42F4F4E01A30FD2E"
+			x: 0.0d
+			y: -1.5d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "167B242E0223A884"
+			linked_quest: "2B95E0E6947D013C"
+			x: -6.0d
+			y: 1.9d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "3D8D43985E7DAAFC"
+			linked_quest: "0D3272D24BE1D820"
+			x: 3.2d
+			y: -3.7d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "09BAA71A8FC15CBF"
+			linked_quest: "3488FFB237CC3F8F"
+			x: -2.8d
+			y: 1.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "56874925A713C48F"
+			linked_quest: "304F1C5501224675"
+			x: -9.0d
+			y: 6.7d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [
+		{
+			x: -3.0d
+			y: -1.3d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7b6f2bd3-0969-53ee-9788-49448f73ef1d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.0d
+			y: -0.3d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:07ca374a-dbbd-52cd-bcde-0545e584923a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.067d
+			y: -2.233d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6615a2fb-baab-5b4d-b49b-078aedcc2288"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.133d
+			y: -2.967d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ed9dedb1-afe7-5915-a889-ba9e04d8c435"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.0d
+			y: 2.333d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8bb0d15d-274e-5d48-8535-131a7a607576"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.0d
+			y: 2.767d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ab34307a-c7ec-5c36-8a41-eab0e802e875"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:4b531eb57a1dda7e"
+				"a:7b6f2bd3-0969-53ee-9788-49448f73ef1d"
+			]
+		}
+		{
+			nodes: [
+				"a:7b6f2bd3-0969-53ee-9788-49448f73ef1d"
+				"a:07ca374a-dbbd-52cd-bcde-0545e584923a"
+			]
+		}
+		{
+			nodes: [
+				"a:07ca374a-dbbd-52cd-bcde-0545e584923a"
+				"q:5b8fa1f319cacc"
+			]
+		}
+		{
+			nodes: [
+				"l:38608059c8fab519"
+				"q:5b8fa1f319cacc"
+			]
+		}
+		{
+			nodes: [
+				"l:38608059c8fab519"
+				"a:6615a2fb-baab-5b4d-b49b-078aedcc2288"
+			]
+		}
+		{
+			nodes: [
+				"a:6615a2fb-baab-5b4d-b49b-078aedcc2288"
+				"a:ed9dedb1-afe7-5915-a889-ba9e04d8c435"
+			]
+		}
+		{
+			nodes: [
+				"a:ed9dedb1-afe7-5915-a889-ba9e04d8c435"
+				"l:3d8d43985e7daafc"
+			]
+		}
+		{
+			nodes: [
+				"q:5b8fa1f319cacc"
+				"q:aa308545f06c1c8"
+			]
+		}
+		{
+			nodes: [
+				"q:5986e2e649e383cb"
+				"q:318a623aa4201313"
+			]
+		}
+		{
+			nodes: [
+				"q:318a623aa4201313"
+				"q:42f4f4e01a30fd2e"
+			]
+		}
+		{
+			nodes: [
+				"l:167b242e0223a884"
+				"l:9baa71a8fc15cbf"
+			]
+		}
+		{
+			nodes: [
+				"l:167b242e0223a884"
+				"a:8bb0d15d-274e-5d48-8535-131a7a607576"
+			]
+		}
+		{
+			nodes: [
+				"a:8bb0d15d-274e-5d48-8535-131a7a607576"
+				"a:ab34307a-c7ec-5c36-8a41-eab0e802e875"
+			]
+		}
+		{
+			nodes: [
+				"a:ab34307a-c7ec-5c36-8a41-eab0e802e875"
+				"q:318a623aa4201313"
+			]
+		}
+		{
+			nodes: [
+				"q:5986e2e649e383cb"
+				"q:425f3f780114bfe2"
+			]
+		}
+		{
+			nodes: [
+				"l:56874925a713c48f"
+				"q:425f3f780114bfe2"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

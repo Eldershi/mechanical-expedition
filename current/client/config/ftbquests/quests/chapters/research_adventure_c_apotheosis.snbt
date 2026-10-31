@@ -1,0 +1,390 @@
+{
+	id: "3BEA3A0458FDD0A6"
+	filename: "research_adventure_c_apotheosis"
+	title: "神化"
+	group: "25C542C40E64ED41"
+	order_index: 215
+	icon: "apotheosis:salvaging_table"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "282E52103FFA0294"
+			title: "从词缀装备开始"
+			icon: "apotheosis:salvaging_table"
+			x: -2.88d
+			y: -1.67d
+			optional: true
+			tasks: [
+				{
+					id: "5D788171A3BD3B31"
+					type: "item"
+					item: "apotheosis:salvaging_table"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e8f5eaec618f5b36b14e9ffa.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/8f3298a1af048d8acd1e399a.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"从入侵者、探索宝箱或其他有效来源取得词缀装备，先阅读词缀再决定留用或回收。宝石可用落下的铁砧碾为宝石粉，随后制作回收台。回收会消耗投入的装备。先确认镶嵌宝石与重要附魔。"
+				"回收台或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "1AD8CB7B991D2044"
+			title: "宝石切割与镶孔"
+			icon: "apotheosis:gem_cutting_table"
+			x: 0.0d
+			y: -4.68d
+			optional: true
+			tasks: [
+				{
+					id: "2FF4FB1685C255CC"
+					type: "item"
+					item: "apotheosis:gem_cutting_table"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/0d15f2906c94d7461ca59758.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f7f852d3599665950f1b27ad.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"准备宝石、宝石粉和对应珍宝材料，在切割台选择配方查询给出的升级，不能假设所有纯度用同样数量。镶嵌前核对装备部位与宝石适用类型，在锻造台使用镶孔。"
+				"宝石切割台或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "049E89F260D7BC11"
+			title: "先用简易重铸台"
+			icon: "apotheosis:simple_reforging_table"
+			x: 2.88d
+			y: -2.52d
+			optional: true
+			tasks: [
+				{
+					id: "445C9AC8AF450017"
+					type: "item"
+					item: "apotheosis:simple_reforging_table"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/30e18fbcbb020cfca0a39e12.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/53621b5fea1b2bf970509372.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"把适用装备、新生符石、对应稀有度珍宝材料放入，付经验选择重铸结果。简易台与完整重铸台有品质上限差异。材料稀有度、词缀和镶孔数据都应在界面确认。"
+				"简易重铸台或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "66E609AF1FCA0D7D"
+			title: "重铸与单词缀强化"
+			icon: "apotheosis:augmenting_table"
+			x: 5.76d
+			y: -2.52d
+			optional: true
+			tasks: [
+				{
+					id: "6C877697F16DB611"
+					type: "item"
+					item: "apotheosis:augmenting_table"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/55452db9025461a719ddac94.png width:32 height:32 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"完整重铸台支持更高稀有度。强化台使用强化符石修改单个词缀。先比较改变前后的词缀，再投入材料，避免为了追求颜色破坏配装。神话重铸的基础费用为2珍宝材料、5新生符石、50级。重铸手册说明第二、第三选项分别收取2倍、3倍基础费用。按实际选项读界面费用。它不是台子合成成本，也不保证某条词缀。"
+				"强化台或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "59AAD5C2521A05E7"
+			title: "建立可调附魔场地"
+			icon: "apotheosis:infused_hellshelf"
+			x: -5.76d
+			y: 2.52d
+			optional: true
+			tasks: [
+				{
+					id: "0F13BD185720476A"
+					type: "item"
+					item: "apotheosis:infused_hellshelf"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9194f8b0492d896f361b03b9.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d8e1a707ae35568cd6e71a19.png width:240 height:86 align:center}"
+				"{image:expedition_research:textures/quests/9c3cdd8565706185da991259.png width:240 height:96 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"查看位阶、量子化和阿卡那，放置书架后以附魔台读数检查距离、遮挡和上限。灌注下界书架的配方要求位阶≥22.5、量子化≥30。不同灌注物的上下界不同，不用一套书架数泛化所有配方。"
+				"灌注下界书架或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "74D7EF3FA45FF66C"
+			title: "把附魔保存为能力库"
+			icon: "apotheosis:library"
+			x: -2.16d
+			y: 2.52d
+			optional: true
+			tasks: [
+				{
+					id: "69F775CFB8FC0BB3"
+					type: "item"
+					item: "apotheosis:library"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/641abe3e2d5231da395a296b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/422805c4d5b24e9a317ddb22.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"使用魔咒图书馆存入附魔书，按点数重新组合取出。挖下时保留数据。亚历山大图书馆是后续容量升级，不能把制作图书馆当作已经获得所有附魔。拆解宝典、海晶蜘蛛网是可选回收工具。"
+				"魔咒图书馆或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "2503875935BF6951"
+			title: "灌注示例：三叉戟"
+			icon: "apotheosis:inert_trident"
+			x: -2.16d
+			y: 4.68d
+			optional: true
+			tasks: [
+				{
+					id: "7F38BC48E03BF826"
+					type: "item"
+					item: "apotheosis:inert_trident"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "04374CEED160A69E"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/5336835dee4f817de7b9726f.png width:32 height:32 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"先做惰性三叉戟，在附魔台把位阶控制在20—30、量子化20—50、阿卡那至少35，再按界面灌注。成品是正常三叉戟。也可从溺尸等其他来源获得三叉戟。"
+				"惰性三叉戟或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "2EEB9E3820876037"
+			title: "刷怪笼与护符按需研究"
+			icon: "apotheosis:ender_lead"
+			x: 4.32d
+			y: 4.68d
+			optional: true
+			tasks: [
+				{
+					id: "3B32452977904A59"
+					type: "item"
+					item: "apotheosis:ender_lead"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "6A6FE1A20F64D5D2"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/78610d039c0d26807754fe30.png width:32 height:32 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"刷怪笼先用配方查询修饰表核对物品与效果，避免把Boss或不能捕捉实体直接纳入工厂。药水护符的NBT决定药效，合成取得不等于无限耐久，灌注条件需逐瓶确认。"
+				"末影拴绳或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "46EEE2F27B6A1CE2"
+			title: "宝石粉：碾碎或回收"
+			icon: "apotheosis:gem_dust"
+			x: -5.76d
+			y: -2.52d
+			optional: true
+			tasks: [
+				{
+					id: "5A80C45782138704"
+					type: "item"
+					item: "apotheosis:gem_dust"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/8947b49ac848548f19fba767.png width:32 height:32 align:center}" "宝石粉：碾碎或回收。"]
+		}
+		{
+			id: "68343FB6B0B1D17B"
+			title: "新生符石是重铸耗材"
+			icon: "apotheosis:sigil_of_rebirth"
+			x: 0.0d
+			y: -0.36d
+			optional: true
+			tasks: [
+				{
+					id: "3B0445F46F0A65D6"
+					type: "item"
+					item: "apotheosis:sigil_of_rebirth"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/9f241c5d66bbd6840c235a2f.png width:32 height:32 align:center}" "新生符石是重铸耗材。"]
+		}
+		{
+			id: "2997BD06A2880B0F"
+			title: "亚历山大图书馆"
+			icon: "apotheosis:ender_library"
+			x: 1.44d
+			y: 2.52d
+			optional: true
+			tasks: [
+				{
+					id: "7A0B0D931832E87B"
+					type: "item"
+					item: "apotheosis:ender_library"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/069ceb9a78befa380ba95e34.png width:32 height:32 align:center}" "{image:expedition_research:textures/quests/009f423341bf82d9b9cfcbdd.png width:240 height:86 align:center}" "{image:expedition_research:textures/quests/db81f520d4cf73691c9d480b.png width:240 height:96 align:center}" "亚历山大图书馆。"]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:46eee2f27b6a1ce2" "q:282e52103ffa0294"]
+		}
+		{
+			nodes: ["q:46eee2f27b6a1ce2" "a:dada212e-3bcc-5711-93e1-c5fab2dc0854"]
+		}
+		{
+			nodes: ["a:dada212e-3bcc-5711-93e1-c5fab2dc0854" "a:41d0ec29-56f8-5f5d-bbea-375f36b42186"]
+		}
+		{
+			nodes: ["a:41d0ec29-56f8-5f5d-bbea-375f36b42186" "q:1ad8cb7b991d2044"]
+		}
+		{
+			nodes: ["q:46eee2f27b6a1ce2" "a:ca096e43-a4f0-5d83-b763-45d44a2f96fe"]
+		}
+		{
+			nodes: ["a:ca096e43-a4f0-5d83-b763-45d44a2f96fe" "a:ae64c069-d53f-5303-bd49-8f30c29e4ea9"]
+		}
+		{
+			nodes: ["a:ae64c069-d53f-5303-bd49-8f30c29e4ea9" "q:49e89f260d7bc11"]
+		}
+		{
+			nodes: ["q:59aad5c2521a05e7" "q:74d7ef3fa45ff66c"]
+		}
+		{
+			nodes: ["q:74d7ef3fa45ff66c" "a:ce74327c-1b11-5825-ad19-d69895f816d1"]
+		}
+		{
+			nodes: ["a:ce74327c-1b11-5825-ad19-d69895f816d1" "a:0012c056-9d4a-55c7-bc31-952e7c1a0320"]
+		}
+		{
+			nodes: ["a:0012c056-9d4a-55c7-bc31-952e7c1a0320" "q:2997bd06a2880b0f"]
+		}
+	]
+	images: [
+		{
+			x: -0.96d
+			y: 2.52d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ce74327c-1b11-5825-ad19-d69895f816d1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.24d
+			y: 2.52d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0012c056-9d4a-55c7-bc31-952e7c1a0320"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.84d
+			y: -3.24d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:dada212e-3bcc-5711-93e1-c5fab2dc0854"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.92d
+			y: -3.96d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:41d0ec29-56f8-5f5d-bbea-375f36b42186"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.88d
+			y: -2.52d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ca096e43-a4f0-5d83-b763-45d44a2f96fe"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.0d
+			y: -2.52d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ae64c069-d53f-5303-bd49-8f30c29e4ea9"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

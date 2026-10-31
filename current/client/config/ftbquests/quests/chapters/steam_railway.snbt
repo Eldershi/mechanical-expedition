@@ -1,0 +1,1708 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steam_railway"
+	group: "050255AE19A93344"
+	icon: "create:track"
+	id: "677DD93464AC2B4A"
+	order_index: 11
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:aeff215c5117388"
+				"q:378abb98a55ba2e3"
+			]
+		}
+		{
+			nodes: [
+				"q:aeff215c5117388"
+				"q:7d26c75b37e9ae3"
+			]
+		}
+		{
+			nodes: [
+				"q:aeff215c5117388"
+				"q:692b244d4ff0ee25"
+			]
+		}
+		{
+			nodes: [
+				"q:aeff215c5117388"
+				"q:441c10c5e2ba7780"
+			]
+		}
+		{
+			nodes: [
+				"q:208fc6b5bdd873d1"
+				"q:6b44f5ae41dd6b11"
+			]
+		}
+		{
+			nodes: [
+				"q:208fc6b5bdd873d1"
+				"q:22bb90f2fcb162ec"
+			]
+		}
+		{
+			nodes: [
+				"q:208fc6b5bdd873d1"
+				"q:665d8d79fbc91652"
+			]
+		}
+		{
+			nodes: [
+				"q:208fc6b5bdd873d1"
+				"q:2f05f5d977dc68d8"
+			]
+		}
+		{
+			nodes: [
+				"q:5f7504c3edec39cf"
+				"q:2d859b6c17e7cad2"
+			]
+		}
+		{
+			nodes: [
+				"q:5f7504c3edec39cf"
+				"q:1a9b2360d38263ef"
+			]
+		}
+		{
+			nodes: [
+				"q:5f7504c3edec39cf"
+				"q:207f65a4593333d4"
+			]
+		}
+		{
+			nodes: [
+				"q:5f7504c3edec39cf"
+				"q:433a22d2dc60c1f2"
+			]
+		}
+		{
+			nodes: [
+				"q:5f7504c3edec39cf"
+				"q:5124d1a592099a19"
+			]
+		}
+		{
+			nodes: [
+				"q:5f7504c3edec39cf"
+				"q:204269b6dabec6df"
+			]
+		}
+		{
+			nodes: [
+				"q:2d859b6c17e7cad2"
+				"q:227a76a9a4a11830"
+			]
+		}
+		{
+			nodes: [
+				"q:1a9b2360d38263ef"
+				"q:7ac3d9cc2b6124dc"
+			]
+		}
+		{
+			nodes: [
+				"q:51cd6dc2e4fdb99d"
+				"q:403cded4f8522412"
+			]
+		}
+		{
+			nodes: [
+				"q:51cd6dc2e4fdb99d"
+				"q:7b30e00963a99fef"
+			]
+		}
+		{
+			nodes: [
+				"l:1aafc230060d7597"
+				"q:5f7504c3edec39cf"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [
+		{
+			source: "q:5f7504c3edec39cf"
+			dependency: "q:6ba8d6727d497f84"
+			reveal_on_hover: 0
+		}
+	]
+	quest_links: [
+		{
+			id: "1AAFC230060D7597"
+			linked_quest: "6BA8D6727D497F84"
+			x: -6.5d
+			y: 11.0d
+			shape: "rsquare"
+			size: 0.85d
+		}
+		{
+			id: "5A8759B76A5FD19E"
+			linked_quest: "34EDF40537E8BAAA"
+			x: -6.5d
+			y: 9.0d
+			shape: "rsquare"
+			size: 0.85d
+		}
+	]
+	quests: [
+		{
+			icon: "thermal:bronze_ingot"
+			dependencies: [
+				"52AE29C9BB2B6F00"
+			]
+			id: "2F00DD29F68238BA"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "使用冶炼炉制作合金"
+			tasks: [
+				{
+					count: 8L
+					id: "0401B1B216CBE1B4"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/bronze"
+						}
+					}
+					title: "青铜锭"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3DEAF74096E11288"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:ingots/brass"
+						}
+					}
+					title: "黄铜锭"
+					type: "item"
+				}
+			]
+			title: "非常重要的合金!"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2E72074B83610585"
+			]
+			description: [
+				"一个完整的单层冶炼炉结构:"
+				"{image:cmi:textures/images/tconstruct/smeltery.png width:143 height:125 align:center}"
+			]
+			icon: "tconstruct:smeltery_controller"
+			id: "52AE29C9BB2B6F00"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 32
+					id: "24C0DB749E0A69D4"
+					item: "tconstruct:seared_bricks"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "现在不要以后也得要"
+			tasks: [
+				{
+					id: "16D1FB7A773FC1D3"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "6E127B51EF4A27C2"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					id: "15A01D75567DD5E3"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+			]
+			title: "冶炼炉"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			title: "铁路构件"
+			dependencies: [
+				"2F00DD29F68238BA"
+				"25B06B6489D3FB78"
+			]
+			id: "6BA8D6727D497F84"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 2.0d
+			subtitle: "逛, 吃, 逛, 吃"
+			tasks: [
+				{
+					id: "1CDC107B76CE8F87"
+					item: "cmi:railway_mechanism"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			icon: "cmi:dense_sturdy_sheet"
+			title: "致密坚固板"
+			dependencies: [
+				"2FE21275DACCE692"
+			]
+			id: "25B06B6489D3FB78"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 16
+					id: "0464910DBDAA4482"
+					item: "cmi:dense_sturdy_sheet"
+					type: "item"
+				}
+			]
+			subtitle: "中间就像磁铁一样"
+			tasks: [
+				{
+					id: "64F12B529477C62C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/dense_obsidian"
+						}
+					}
+					title: "致密坚固板"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			icon: "create:sturdy_sheet"
+			title: "坚固板"
+			dependencies: [
+				"2E72074B83610585"
+			]
+			id: "2FE21275DACCE692"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 32
+					id: "507F84919276B4FE"
+					item: "create:sturdy_sheet"
+					type: "item"
+				}
+			]
+			subtitle: "本质上就是黑曜石板"
+			tasks: [
+				{
+					id: "2F61B9E8D79DAE69"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates/obsidian"
+						}
+					}
+					title: "坚固板"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			title: "汽鸣铁道"
+			icon: "create:track_station"
+			id: "2E72074B83610585"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "4AD5422AE72805BE"
+					title: "汽鸣铁道"
+					type: "checkmark"
+				}
+			]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6BA8D6727D497F84"
+			]
+			icon: "create:controls"
+			id: "58F03784745D9151"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 4
+					id: "711479A47664BDAF"
+					item: "create:railway_casing"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					id: "3537A7A71306AEB3"
+					item: "railways:track_coupler"
+					type: "item"
+				}
+				{
+					id: "03738EBAE6036F28"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "156174D14A490237"
+					item: "create:controls"
+					type: "item"
+				}
+				{
+					id: "6E111E41FCDEFEB3"
+					item: "create:track_observer"
+					type: "item"
+				}
+				{
+					id: "723C1D283B51E406"
+					item: "create:track_signal"
+					type: "item"
+				}
+			]
+			title: "列车套件"
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			title: "列车时刻表"
+			dependencies: [
+				"2FE21275DACCE692"
+			]
+			id: "7C2BCD18D1BCEEC9"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "你需要一只生物, 烈焰人燃烧室也可以"
+			tasks: [
+				{
+					id: "66467CCD076737AE"
+					item: "create:schedule"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"58F03784745D9151"
+				"7C2BCD18D1BCEEC9"
+			]
+			description: [
+				"&e镍矿&r, &b银矿&r与&c钒矿&r将&l&6不再自然生成&r&r. 你需要在野外寻找它们对应的矿点来获取资源"
+				""
+				"而可用于开采的矿藏则位于矿点下方, 将顶层挖开就可以看到矿点"
+				""
+				"由于矿点与你的基地之间距离较远, 你需要搭建&d列车网络&r来运输这些矿产资源"
+				""
+				"如果运气不错, 你还能在&a主世界&r发现&6油页岩&r矿点; 该矿点会产出&5沥青&r, 而&5沥青&r可以作为列车的燃料使用"
+				""
+				"&b矿藏扫描仪&r用于寻找矿藏"
+				""
+				"&l&b向后翻页可以查看这些矿点的图片&r&r"
+				""
+				"{@pagebreak}"
+				"在&6森林&r中的&e镍矿矿点&r"
+				"{image:cmi:textures/images/ore_node/nickel.png width:200 height:200 align:center}"
+				"{@pagebreak}"
+				"在&b丛林边上&r的&b银矿矿点&r"
+				"{image:cmi:textures/images/ore_node/silver.png width:200 height:200 align:center}"
+				"{@pagebreak}"
+				"在&c下界&r随机生成的&c钒矿矿点&r"
+				"{image:cmi:textures/images/ore_node/vanadium.png width:200 height:200 align:center}"
+				"{@pagebreak}"
+				"&e白桦树林&r中的&6油页岩矿点&r"
+				"{image:cmi:textures/images/ore_node/oil_shale.png width:200 height:200 align:center}"
+			]
+			id: "211642A0702308A1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "723FC72D7D13485C"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			size: 1.5d
+			subtitle: "列车是不得不品的一环"
+			tasks: [
+				{
+					id: "74FBEEDABA81E015"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials/nickel"
+						}
+					}
+					title: "粗镍"
+					type: "item"
+				}
+				{
+					id: "6E8EBF2A961EB705"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials/silver"
+						}
+					}
+					title: "粗银"
+					type: "item"
+				}
+				{
+					id: "5115E1CC1FF5B62F"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:raw_materials/vanadium"
+						}
+					}
+					title: "粗钒"
+					type: "item"
+				}
+				{
+					id: "13BBFA00ADB7401E"
+					item: "create_rns:deposit_scanner"
+					type: "item"
+				}
+			]
+			title: "来自远方的矿石"
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			title: "青铜构件"
+			dependencies: [
+				"2F00DD29F68238BA"
+			]
+			id: "5BB078BA5116FE68"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 2.0d
+			subtitle: "有点烫手, 拿在手上有一点火热🥵"
+			tasks: [
+				{
+					id: "76B962C480950865"
+					item: "cmi:bronze_mechanism"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"5BB078BA5116FE68"
+			]
+			description: [
+				"在&c燃烧室&r内放入燃料, 并在上方的&b锅炉&r内注入水。等待片刻后&b锅炉&r便会开始产生&6蒸汽&r"
+				"你可以使用管道将&6蒸汽&r导出并输送到其他设备中使用"
+			]
+			id: "12CEF39F02D4EB3A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 4
+					id: "7A618DFA911C57B7"
+					item: "steam_letters:bronze_steam_pump"
+					type: "item"
+				}
+			]
+			subtitle: "&m只是方式越来越复杂&r"
+			tasks: [
+				{
+					id: "4188D3211B77A4ED"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steam_letters:steam_burners"
+						}
+					}
+					title: "燃烧室"
+					type: "item"
+				}
+				{
+					id: "73460A5ACF421A19"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steam_letters:steam_boiler"
+						}
+					}
+					title: "锅炉"
+					type: "item"
+				}
+			]
+			title: "人类的科技就是烧开水..."
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			icon: "steam_letters:bronze_steam_engine"
+			dependencies: [
+				"12CEF39F02D4EB3A"
+			]
+			description: [
+				"向&6蒸汽引擎&r中泵入蒸汽, 可以带动其前方两格内的&b蒸汽飞轮&r旋转并&d产生应力&r"
+				"这种方式能够提供&d非常可观&r的应力量, 在解锁&e大型蒸汽锅炉&r和&c燃油引擎&r之前尤为实用"
+				"{image:cmi:textures/images/create/burner_and_flywheel.png width:196 height:104 align:center}"
+			]
+			id: "5227B74E4F8FF3F5"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "&m不然这水不是白烧了&r"
+			tasks: [
+				{
+					id: "28B90C13460DB00E"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steam_letters:steam_engine"
+						}
+					}
+					title: "蒸汽飞轮引擎"
+					type: "item"
+				}
+				{
+					id: "09E2ACD94822D674"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "steam_letters:steam_flywheel"
+						}
+					}
+					title: "蒸汽飞轮"
+					type: "item"
+				}
+			]
+			title: "...当然烧了开水也得用"
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			icon: "create:copper_diving_helmet"
+			dependencies: [
+				"5BB078BA5116FE68"
+			]
+			description: [
+				"&l&4下界仍然有熔岩与火焰等危险&r&r。本整合包已关闭下界缺氧设定, 正常进入下界不再需要呼吸装备"
+				""
+				"探索水域时, 可以装备&b&l潜水头盔&r与&c&l背罐&r延长水下活动时间"
+				""
+				"&e背罐顶部传入应力&r可以持续压缩并补充内部气体, 从而为佩戴者提供可呼吸的空气"
+				"借助这套装置, 你能够在&b水中&r长时间活动；下界的正常呼吸不会消耗背罐空气"
+				""
+				"由于一个背罐只能够支撑&c&l20分钟&r&r, 因此如果有条件还是&l&b非常建议&r&r携带两个&e背罐&r在身上用于处理&c紧急情况&r"
+			]
+			id: "08A35C2D450B20F3"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "185850C08239F46F"
+					item: {
+						Count: 1
+						id: "create:copper_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			subtitle: "亿万人, 必须呼吸"
+			tasks: [
+				{
+					id: "07C1B9885D628609"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:diving_helmets"
+						}
+					}
+					title: "潜水头盔"
+					type: "item"
+				}
+				{
+					id: "53DC99CD242CB111"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "create:backtanks"
+						}
+					}
+					title: "背罐"
+					type: "item"
+				}
+			]
+			title: "潜水套装"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			icon: "minecraft:netherrack"
+			title: "前往下界维度"
+			dependencies: [
+				"08A35C2D450B20F3"
+			]
+			id: "667B8EFCF3ACD51D"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "07D706292973EFF7"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "square"
+			size: 2.0d
+			tasks: [
+				{
+					dimension: "minecraft:the_nether"
+					icon: {
+						Count: 1
+						id: "ftbquests:custom_icon"
+						tag: {
+							Icon: "cmi:textures/images/cmi/nether.png"
+						}
+					}
+					id: "6421E2122AF59746"
+					title: "前往下界维度"
+					type: "dimension"
+				}
+			]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"667B8EFCF3ACD51D"
+			]
+			id: "2802F9503EB14965"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "48CBA68351FB5DCC"
+					item: "minecraft:magma_block"
+					type: "item"
+				}
+				{
+					id: "5BBBEB9AF7A2FF30"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "minecraft:soul_sand"
+								}
+								{
+									Count: 1b
+									id: "minecraft:soul_soil"
+								}
+							]
+						}
+					}
+					title: "灵魂沙土"
+					type: "item"
+				}
+				{
+					id: "1679D021A6195D70"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:netherrack"
+						}
+					}
+					title: "下界岩"
+					type: "item"
+				}
+			]
+			title: "下界的一些材料"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2802F9503EB14965"
+			]
+			id: "470156018DA261F4"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "收集114514个碎片即可解锁"
+			tasks: [
+				{
+					id: "48E5C9079BDE5D65"
+					item: "tconstruct:nether_grout"
+					type: "item"
+				}
+				{
+					id: "45779C24F77CF39B"
+					item: "tconstruct:scorched_brick"
+					type: "item"
+				}
+			]
+			title: "熔铸炉碎片"
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			title: "下界构件"
+			dependencies: [
+				"470156018DA261F4"
+			]
+			id: "4A19D6FEC975D2B9"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 2.0d
+			subtitle: "或许可以当暖宝宝"
+			tasks: [
+				{
+					id: "1860BC767D34F109"
+					item: "cmi:nether_mechanism"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"4A19D6FEC975D2B9"
+				"470156018DA261F4"
+			]
+			description: [
+				"一个完整的单层熔铸炉结构:"
+				"{image:cmi:textures/images/tconstruct/foundry.png width:147 height:120 align:center}"
+			]
+			icon: "tconstruct:foundry_controller"
+			id: "5095EB55709B5982"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "0ACE9A42022D1627"
+					item: "tconstruct:scorched_table"
+					type: "item"
+				}
+				{
+					id: "764E9AC4268F7A5F"
+					item: "tconstruct:scorched_basin"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "冶炼炉分支"
+			tasks: [
+				{
+					id: "7FCFDEC97D4EA032"
+					item: "tconstruct:foundry_controller"
+					type: "item"
+				}
+				{
+					id: "0990F9AD4BA20AE7"
+					item: "tconstruct:scorched_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "1E7CFF434B0E7ED2"
+					item: "tconstruct:scorched_drain"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "292C1DEECD13C109"
+					item: "tconstruct:scorched_faucet"
+					type: "item"
+				}
+			]
+			title: "熔铸炉"
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			title: "烈焰人燃烧室"
+			dependencies: [
+				"4A19D6FEC975D2B9"
+			]
+			id: "04004B46385E2AF2"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [
+				{
+					id: "01452F41DB130491"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"12CEF39F02D4EB3A"
+			]
+			id: "3D5497B8DC0ED5B6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "4DA038AAA531C439"
+					item: "mekanism:steam_bucket"
+					type: "item"
+				}
+			]
+			title: "蒸汽"
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			icon: "thermal:sulfur_dust"
+			title: "硫粉"
+			id: "354FD58AE7B802BC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "680C74AB729DB665"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts/sulfur"
+						}
+					}
+					title: "硫粉"
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			title: "压缩机"
+			dependencies: [
+				"5BB078BA5116FE68"
+			]
+			id: "78250BAEED3506BA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "67F40EB3F00CDCA9"
+					item: "vintageimprovements:vacuum_chamber"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			title: "熔融硫化橡胶桶"
+			dependencies: [
+				"354FD58AE7B802BC"
+				"3D5497B8DC0ED5B6"
+				"78250BAEED3506BA"
+			]
+			id: "4C2F1D5F0FAA50F3"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "更高效的方式"
+			tasks: [
+				{
+					id: "3B1D5348B5A8BD6B"
+					item: "cmi:cured_rubber_bucket"
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			title: "硫化橡胶"
+			dependencies: [
+				"4C2F1D5F0FAA50F3"
+			]
+			id: "74A6E21C20513CEE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "00AC5371336EC8A7"
+					item: "thermal:cured_rubber"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"12CEF39F02D4EB3A"
+			]
+			id: "3426EEB10B251CA4"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "♻️环保模式♻️"
+			tasks: [
+				{
+					id: "3642624664D89610"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "cmi:bronze_solar_boiler"
+								}
+								{
+									Count: 1b
+									id: "cmi:cast_iron_solar_boiler"
+								}
+								{
+									Count: 1b
+									id: "cmi:steel_solar_boiler"
+								}
+							]
+						}
+					}
+					title: "太阳能锅炉"
+					type: "item"
+				}
+			]
+			title: "整点太阳能的"
+			x: -4.5d
+			y: -4.0d
+		}
+		{
+			title: "高级焦炉"
+			dependencies: [
+				"470156018DA261F4"
+			]
+			description: [
+				"高级焦炉的工作时间比普通焦炉快一倍, 并且自带4个并行. 因此在相同的工作时间下, 一个高级焦炉可以顶8台普通焦炉"
+				""
+				"因此无需堆叠大量普通焦炉, 即可获得相当于8台普通焦炉的持续产能, 使工业产线更加紧凑与高效"
+				""
+				"一台高级焦炉至少需要一个输入总线和输出总线, 并且IO只能在接口的正面进行, 具体可以在JEI内查看结构"
+				"{image:cmi:textures/images/cmi/reinforced_coke_oven.png width:113 height:117 align:center}"
+			]
+			icon: "cmi:reinforced_coke_oven"
+			id: "7FDB7DDAD23BB4C1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "2FBEBC159FA56453"
+					item: "cmi:seared_input_bus"
+					type: "item"
+				}
+				{
+					id: "17AF5E16E2872B4C"
+					item: "cmi:seared_output_bus"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			subtitle: "高级的炉子"
+			tasks: [
+				{
+					id: "7A5EDFB0C09B56D0"
+					item: "cmi:reinforced_coke_oven"
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "61965F521A26CFDB"
+					item: "tconstruct:scorched_bricks_slab"
+					type: "item"
+				}
+				{
+					count: 37L
+					id: "32B585DBF2A2E6CF"
+					item: "tconstruct:scorched_bricks"
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "29AE0BA3AF66FA68"
+					item: "tconstruct:seared_bricks"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "2E51BA5C723A8179"
+					item: "ad_astra:vent"
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			title: "黄铜流体管道"
+			dependencies: [
+				"2F00DD29F68238BA"
+			]
+			id: "6859E72B22446793"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 16
+					id: "44A5B6E611CDC265"
+					item: "ad_astra:desh_fluid_pipe"
+					type: "item"
+				}
+			]
+			subtitle: "这个阶段比较方便的东西"
+			tasks: [
+				{
+					id: "46F43A21A7B02A32"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "ad_astra:fluid_pipes"
+						}
+					}
+					title: "流体管道"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			icon: "cmi:steam_cast_iron_upgrade"
+			dependencies: [
+				"5227B74E4F8FF3F5"
+			]
+			description: [
+				"锅炉升级组件是一种用于对锅炉材质进行升级的工具"
+				"手持锅炉升级组件右键锅炉部件即可消耗一个组件将其升级"
+				"对锅炉进行升级会保留当前锅炉的状态, 从而最大程度避免影响生产"
+			]
+			id: "23EED5BF56818EA1"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "一键安装, 直接升级"
+			tasks: [
+				{
+					id: "3658B798B9DFED5C"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "cmi:steam_upgrades"
+						}
+					}
+					title: "蒸汽升级组件"
+					type: "item"
+				}
+			]
+			title: "升级太麻烦?"
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"2F00DD29F68238BA"
+			]
+			id: "371E3D200A96A15A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 2
+					id: "6036AA3DAC58D169"
+					item: "steam_letters:bronze_steam_pump"
+					type: "item"
+				}
+			]
+			subtitle: "只能输送蒸汽的泵?"
+			tasks: [
+				{
+					id: "70B628DA3C3EA151"
+					item: "steam_letters:bronze_steam_pump"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			id: "5F7504C3EDEC39CF"
+			title: "01 两站连通"
+			icon: "create:track_station"
+			shape: "rsquare"
+			size: 1.3d
+			x: -3.0d
+			y: 11.0d
+			description: [
+				"让产线实际运行，完成下列目标后勾选完成。"
+				"目标：从既有汽鸣铁道的铁路构件任务接出，完成所需材料，再连接两座有效车站并组装一列能手动驾驶的列车。"
+				"验收：轨道连续，转向架与车厢装配正确，控制器可驾驶；先在短线路上测试，再铺到矿点。"
+				"铁路构件不是Create蒸汽引擎的下游，也不直接吃精密构件；按本包当前致密坚固板、熔融工业铁、半成品齿轮、黄铜板与机械零件路线备料。"
+			]
+			tasks: [
+				{
+					id: "05C9015694188E93"
+					type: "checkmark"
+					title: "已实建并通过验收"
+				}
+			]
+			dependencies: [
+				"6BA8D6727D497F84"
+			]
+		}
+		{
+			id: "0AEFF215C5117388"
+			title: "02 往返并装卸"
+			icon: "create:portable_storage_interface"
+			shape: "rsquare"
+			size: 1.3d
+			x: 4.5d
+			y: 11.0d
+			description: [
+				"让产线实际运行，完成下列目标后勾选完成。"
+				"目标：手动驾驶列车往返两站，并用移动存储接口完成一次货物装卸；需要液体运输时再选移动流体接口。"
+				"验收：停靠位置能让接口对接，出发前装卸完成，返程后物品进入正确仓库。门、座位和车厢外壳按需要添加，不是每种都必须制作。"
+			]
+			tasks: [
+				{
+					id: "4FB081837549270C"
+					type: "checkmark"
+					title: "已实建并通过验收"
+				}
+			]
+			dependencies: [
+				"5F7504C3EDEC39CF"
+			]
+		}
+		{
+			id: "51CD6DC2E4FDB99D"
+			title: "03 自动班次"
+			icon: "create:schedule"
+			shape: "rsquare"
+			size: 1.3d
+			x: 12.0d
+			y: 11.0d
+			description: [
+				"让产线实际运行，完成下列目标后勾选完成。"
+				"目标：为已测试的列车设置时刻表和驾驶员，自动完成一轮到站、等待、装卸与返程。"
+				"验收：至少完整运行一个班次；等待条件不会让列车立刻空跑，也不会永远等不到发车。先调通小线路再增加班次。"
+			]
+			tasks: [
+				{
+					id: "49C2259F21B00F48"
+					type: "checkmark"
+					title: "已实建并通过验收"
+				}
+			]
+			dependencies: [
+				"0AEFF215C5117388"
+			]
+		}
+		{
+			id: "208FC6B5BDD873D1"
+			title: "04 矿点回厂"
+			icon: "create:track_signal"
+			shape: "rsquare"
+			size: 1.3d
+			x: 19.5d
+			y: 11.0d
+			description: [
+				"让产线实际运行，完成下列目标后勾选完成。"
+				"目标：按现有矿脉与运输任务，把至少一种远方原料稳定送回工厂。用信号机、侦测器和区间设计确保交会或共线处不会相撞。"
+				"验收：资源从产地装车、按班次运输、卸入工厂原料仓；停运、缺货或区间占用时能判断原因。"
+				"本包镍、银、钒等资源与矿脉探索有关，具体资源阶段继续看既有蒸汽/精智任务。包裹邮筒可以接入铁路运输，但不是所有铁路都必须承担邮政业务。"
+			]
+			tasks: [
+				{
+					id: "06635D499CDFED45"
+					type: "checkmark"
+					title: "已实建并通过验收"
+				}
+			]
+			dependencies: [
+				"51CD6DC2E4FDB99D"
+			]
+		}
+		{
+			id: "378ABB98A55BA2E3"
+			title: "移动式流体接口：给动态结构装卸液体"
+			icon: "create:portable_fluid_interface"
+			x: 2.6d
+			y: 8.75d
+			description: [
+				""
+				"普通管道不能直接连接正在运动的动态结构储罐，移动式流体接口提供临时交换通道；一端随结构移动，另一端固定在装卸位置。"
+				"让两个接口面对面，预留一到两格间距。结构经过时两端接合，固定端作为结构内储罐的访问口，再用管道和动力泵输入或抽出流体。"
+				"普通动力结构接合时可为装卸临时停留，无交换一段时间后会断开并继续运动；列车不会被接口自动刹停，须自行在车站停车，并用时刻表设置装卸等待。对不准时查朝向、间距和移动路径。"
+				"本包有铜机壳、铜组件及工业铁板路线，并行保留原生制作；接口只负责交换，移动结构内仍需要真正的流体存储空间。"
+			]
+			tasks: [
+				{
+					id: "4F13A11F9D2D2278"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 往返并装卸"
+		}
+		{
+			id: "07D26C75B37E9AE3"
+			title: "列车门：车厢入口与滑动开闭"
+			icon: "create:train_door"
+			x: 2.6d
+			y: 13.25d
+			description: [
+				""
+				"列车门是适合车厢入口的滑动门，组装前像普通门一样放在完整门洞中，预留上下两格空间；把门及相连车体正确纳入同一车厢后再确认列车组装。"
+				"静止方块状态可右击或用红石开闭。列车停靠时按车站的开门设置控制滑动门；在站点配置允许打开的一侧或全部关闭，站台要对齐门口并留出落脚面。"
+				"门无法使用时先确认门上下半部完整、车体连接正确、门洞未被其他方块占用。车站拆解后再调整布局，不用破坏移动列车来修门。"
+				"制作配方由木门加列车机壳无序合成。列车机壳属于本包铁路路线，不能只看门的原生配方就判断铁路已解锁；先把车站与驾驶台的构件成本一并算入。"
+			]
+			tasks: [
+				{
+					id: "3734BD6314437C43"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 往返并装卸"
+		}
+		{
+			id: "692B244D4FF0EE25"
+			title: "列车活板门：检修口和踏板"
+			icon: "create:train_trapdoor"
+			x: 4.5d
+			y: 8.75d
+			description: [
+				""
+				"列车活板门适合车厢检修口、地板开口与折叠踏板。组装前对准目标方块侧面放置，通过放置位置决定上半或下半安装，扳手可帮助调整方向。"
+				"它可像活板门一样手动右击和接受红石开闭。搭乘区域要确认开门后不会形成坠落孔；如果作为踏板，应在停靠站台处核对高度与间隙。"
+				"把它纳入强力胶连接的车体后再组装。不要把它和带专门滑动行为的列车门视作同一种开闭机构；需要维修时，先在车站把列车拆回方块。"
+				"制作配方使用木活板门与列车机壳。它是列车外观与通行设施，不负责轨道连接、货物装卸或信号控制；这些功能仍需各自设备和本包要求的构件。"
+			]
+			tasks: [
+				{
+					id: "683E8356E9BAF340"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 往返并装卸"
+		}
+		{
+			id: "441C10C5E2BA7780"
+			title: "座椅：固定乘员和列车长"
+			icon: "create:white_seat"
+			x: 4.5d
+			y: 13.25d
+			description: [
+				""
+				"座椅可让玩家或适合的生物坐在固定位置；连到动态结构后，也可随结构一起移动。不同颜色主要改变外观。"
+				"先把座椅连接到平台或车厢，确保乘员位置和周围空间合适。大型列车用生物列车长时，座椅需与驾驶位置配合。"
+				"座椅不提供动力，也不自动控制时刻表。列车自动驾驶还要按“列车与铁路”章节设置驾驶台、车站和时刻表。"
+			]
+			tasks: [
+				{
+					id: "20628E5CA917A095"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 往返并装卸"
+		}
+		{
+			id: "6B44F5AE41DD6B11"
+			title: "邮箱：借列车跨站运包裹"
+			icon: "create:white_postbox"
+			x: 17.6d
+			y: 8.75d
+			description: [
+				""
+				"邮箱借列车在车站间运送包裹。手持邮箱先右击要关联的列车站点，再在附近放下；打开库存界面设置地址。白色与其他颜色是同一功能的外观变体。"
+				"列车停靠时，会收走目的地不属于本邮箱的待发包裹，并卸下地址与本邮箱匹配的包裹。发送、收货端都要绑定正确车站，且列车行程能到达两端。"
+				"包裹滞留先查地址、车站绑定、车次和接收空间。时刻表还可用检索包裹、传递包裹指令运行邮路；邮箱能配合列车处理卸载区块中的包裹。"
+				"本包邮箱配方需要对应染料、木桶与铁路构件。解锁成本应按当前 JEI 核对；邮箱不替代普通散装货物的接口装卸站。"
+			]
+			tasks: [
+				{
+					id: "168055937C40EEE7"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 04 矿点回厂"
+		}
+		{
+			id: "22BB90F2FCB162EC"
+			title: "列车信号机：区间占用与路口防堵"
+			icon: "create:track_signal"
+			x: 17.6d
+			y: 13.25d
+			description: [
+				""
+				"信号机把轨道切成区间，自动调度列车会等候前方区间空闲，从而避免多车同时进入。先手持信号机右击轨道选择位置与方向，再把信号机放在附近。"
+				"单侧信号限制自动列车通行方向，双向线路需要相反朝向的另一侧信号。用扳手可切换交汇区间模式，让列车只有能离开路口时才进入，减少占住道岔。"
+				"一直红灯应查区间里是否已有列车、路口出口是否被堵、是否有外部红石强制红灯。红灯状态可由比较器读取，辉光管可延伸显示信号。"
+				"本包信号机需要发信器、列车机壳和铁路构件。先画好会车区与站台区间，再布信号，不把灯色当成由玩家任意切换的装饰。"
+			]
+			tasks: [
+				{
+					id: "4E85948EFB6353B7"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 04 矿点回厂"
+		}
+		{
+			id: "665D8D79FBC91652"
+			title: "列车侦测器：把经过事件送给红石"
+			icon: "create:track_observer"
+			x: 19.5d
+			y: 8.75d
+			description: [
+				""
+				"列车侦测器在指定轨道位置检测列车经过，适合控制道口、站台提示或计数。手持它先右击轨道标记检测位置，再把侦测器放在附近并接入红石电路。"
+				"没有过滤时检测经过的列车；设置过滤后，可只对携带匹配货物的列车激活。用一列载货车与一列空车分别验证，确认检测条件确实符合需求。"
+				"它是事件检测设备，不能代替信号机管理区间安全。没有输出时先查轨道标记位置、列车是否实际通过该处、货物过滤和红石读取位置。"
+				"本包配方使用比较器、列车机壳与铁路构件。若货物是魔改构件或半成品，应按实际物品设置过滤，避免把名字相近的阶段混为一谈。"
+			]
+			tasks: [
+				{
+					id: "093E7384E36DAF54"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 04 矿点回厂"
+		}
+		{
+			id: "2F05F5D977DC68D8"
+			title: "动力压路机：清理与铺路"
+			icon: "create:mechanical_roller"
+			x: 19.5d
+			y: 13.25d
+			description: [
+				""
+				"压路机安装在列车或兼容动态结构上。固定状态设置清理、铺路或填充模式，再给结构附上装有道路材料的容器。"
+				"清理并铺路可处理前方地形并替换路面；竖直或坡度填充用于补齐下方空缺。先确认选定材料和工作范围。"
+				"被压路机清掉的方块可能不掉落物品，它不适合作为保留全部产物的采矿机。正式施工前先用短路段检查高度和供料。"
+			]
+			tasks: [
+				{
+					id: "4714B6C718F9BD90"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 04 矿点回厂"
+		}
+		{
+			id: "2D859B6C17E7CAD2"
+			title: "列车轨道：直线、弯道、坡道与跨维度"
+			icon: "create:track"
+			x: -4.9d
+			y: 8.75d
+			description: [
+				""
+				"列车轨道供 Create 列车行驶，和原版矿车铁轨不同。先放一段轨道，再手持轨道右击现有端点，选择另一端连接；系统可生成直线、弯道与坡道。"
+				"连接时按疾跑可选择更长的合适弯道，副手材料可随铺轨自动垫在下方。对下界传送门铺轨可尝试建立成对轨道，用于列车跨维度运行。"
+				"铺不出连接先查高差、曲率、方向与材料数量。列车能穿过未加载区块并遵守站点和信号，但机载钻头等机器不会在未加载区块继续加工。"
+				"基础轨道采用枕木依次部署两次铁粒或锌粒后辊压的一轮装配。建线前查当前 JEI 的有效枕木与配方，不把矿车连挂器当成轨道部件。"
+			]
+			tasks: [
+				{
+					id: "6B9D38A1F1146889"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 两站连通"
+		}
+		{
+			id: "1A9B2360D38263EF"
+			title: "列车站点：绑定轨道和组装列车"
+			icon: "create:track_station"
+			x: -4.9d
+			y: 13.25d
+			description: [
+				""
+				"车站是列车导航的目的地，也是组装与拆解位置。先手持车站右击轨道选定位置和进站方向，再放到轨道附近；打开界面命名，保证时刻表能找到对应站名。"
+				"切换组装模式后，在指定轨道上用列车机壳放转向架，以强力胶连接车体并安装驾驶台，最后回车站确认组装。列车只能在车站拆回方块。"
+				"列车不能按反方向驶入站点；无法到站先查站点朝向、轨道连通与信号。比较器可读取到站状态，车站也可给停靠列车自动分配放在站点上的时刻表。"
+				"本包车站仍需旗帜、列车机壳与铁路构件的魔改配方。应先完成铁路构件，不照原版指南仅准备指南针。"
+			]
+			tasks: [
+				{
+					id: "7A60FB94ABD1EB8F"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 两站连通"
+		}
+		{
+			id: "207F65A4593333D4"
+			title: "列车驾驶台：手动驾驶与双向行车"
+			icon: "create:controls"
+			x: -3.0d
+			y: 8.75d
+			description: [
+				""
+				"每列车都需要驾驶台。组装前把它放在车体上并朝向行驶方向；组装后右击开始驾驶，用移动键加速和选择岔路，滚轮可以微调最高速度。"
+				"接近目标站时按住空格辅助停站，潜行或再次点击结束控制。另装一个反向驾驶台可让列车从另一方向出发，适合没有回车环线的两端往返。"
+				"自动运行需要驾驶台前的司机座位与司机，座椅设置见动态结构教程。列车能装燃料加速，但保险库里的燃料不作为列车加速燃料使用。"
+				"本包驾驶台需要控制芯片、列车机壳与铁路构件。无法组装或驾驶时先按车站界面报错查连接和朝向，再检查当前制作门槛。"
+			]
+			tasks: [
+				{
+					id: "287BEDBFF9AFA94B"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 两站连通"
+		}
+		{
+			id: "433A22D2DC60C1F2"
+			title: "转向架与车厢连接：在组装区生成"
+			icon: "create:track_station"
+			x: -3.0d
+			y: 13.25d
+			description: [
+				""
+				"转向架是列车车轮与轨道之间的连接，不需要寻找独立可合成的转向架物品。先在车站进入组装模式，再手持列车机壳点击组装区轨道生成转向架；重复点击可切换大小。"
+				"围绕转向架搭建车体，用强力胶把要随该节车厢运动的方块连接起来，再为后续车厢放置转向架和车体。组装确认时按车站提示处理间距与连接问题。"
+				"不要把多节车体随意胶成一大块，先从一节带驾驶台的小车试跑，再增加车厢。转向架可直接切换大小。"
+				"Create 的车厢连接随列车组装建立；原版矿车连挂器另有用途，附属模组轨道连挂器也不是制造车轮的材料。列车机壳的当前成本仍须按本包 JEI 核对。"
+			]
+			tasks: [
+				{
+					id: "12071C42053EFEE4"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 两站连通"
+		}
+		{
+			id: "5124D1A592099A19"
+			title: "列车机壳：铁路设备与转向架基础"
+			icon: "create:railway_casing"
+			x: -1.1d
+			y: 8.75d
+			description: [
+				""
+				"列车机壳是铁路建造材料，可用于车体外观，并在车站组装模式下生成转向架。先建立轨道和车站，再把机壳用在组装区轨道上；普通摆成一排机壳不会自己变成列车。"
+				"生成轮组后，用普通方块搭车架并用强力胶连接，补上驾驶台再回站点确认组装。重复点击轨道上的轮组可以切换大小，避免为两种转向架重复准备物品。"
+				"机壳也是车站、驾驶台、信号机等魔改配方的材料之一。规划铁路时应同时核对机壳、铁路构件与控制芯片等需求，不能把有机壳等同于所有铁路设备都可制作。"
+				"列车机壳的制作材料与加工方式，请查看配方和主线的机壳工艺。先小规模组装试跑，再批量扩建多节列车。"
+			]
+			tasks: [
+				{
+					id: "7F2C0A5A5070148A"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 两站连通"
+		}
+		{
+			id: "204269B6DABEC6DF"
+			title: "矿车装配站：矿车携带结构"
+			icon: "create:cart_assembler"
+			x: -1.1d
+			y: 13.25d
+			description: [
+				""
+				"在普通、动力或控制铁轨上放装配站，把待移动结构搭在装配站正上方并黏连完整。矿车进入后，给装配站红石信号以装到矿车上。"
+				"普通、动力、控制铁轨的无信号停靠行为不同，先用小结构测试装卸。激活铁轨是特殊情况，通电会触发拆解，不能套用前述装配流程。"
+				"对已装配矿车结构使用扳手可回收为物品。矿车装配与大型列车的车站组装是两套操作，不能直接互换。"
+			]
+			tasks: [
+				{
+					id: "182DA72846AC518B"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 两站连通"
+		}
+		{
+			id: "227A76A9A4A11830"
+			title: "矿车连轴器：连接矿车"
+			icon: "create:minecart_coupling"
+			x: -4.9d
+			y: 7.5d
+			description: [
+				""
+				"矿车连轴器用于把单独的矿车连接为一组，让它们一起移动。它连接的是矿车，不是Create大型列车的转向架。"
+				"对准备连接的矿车依次使用，确认连接关系后再驱动。转弯、坡道和过窄通道都应先用少量车厢试跑。"
+				"若需要一整片结构由两辆矿车承载，可查看双装配站操作；不要用强力胶把轨道、装配站和车辆全部黏成一体。"
+			]
+			tasks: [
+				{
+					id: "0213AFA82A6DEB8E"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 两站连通"
+		}
+		{
+			id: "7AC3D9CC2B6124DC"
+			title: "控制铁轨：停靠和定向"
+			icon: "create:controller_rail"
+			x: -4.9d
+			y: 14.5d
+			description: [
+				""
+				"控制铁轨是单向动力铁轨，服务原版矿车及矿车结构。朝向决定允许的驱动方向，输入红石信号强度可调节经过矿车的速度。"
+				"它放在矿车装配站下方时，能配合装配站的通断电行为处理矿车结构停靠。用小车确认“无信号停靠、给信号继续”的实际状态。"
+				"它不是大型列车轨道。Create列车需要专用轨道、车站、驾驶台和时刻表。"
+			]
+			tasks: [
+				{
+					id: "2545BDECFB22A5DE"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 两站连通"
+		}
+		{
+			id: "403CDED4F8522412"
+			title: "列车时刻表：站序、发车条件与循环"
+			icon: "create:schedule"
+			x: 10.1d
+			y: 8.75d
+			description: [
+				""
+				"手持时刻表右击打开编辑器，依次添加前往车站动作，填入准确站名，再设置到站后何时继续；需要往返时补上返回站，并启用循环。"
+				"可以按等待时间、物品或流体货量、装卸停止、红石等条件发车。把同组条件视为同时满足，备选条件用于另一种放行方案；先用简单定时往返验证路线。"
+				"将完成的表交给驾驶台前座位上的生物司机或烈焰人燃烧室。列车不走先查司机位置、站名、行车方向、红灯和未满足的等待条件；空手可取回时刻表。"
+				"本包时刻表已改为铸造台：以黑曜石板为一次性铸型，浇注 45 mB 熔融金并冷却 1 秒。Create 6 的检索与传递包裹动作可用于邮箱邮路，货量条件需用实际成品。"
+			]
+			tasks: [
+				{
+					id: "0A119E33C91B3DD4"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 自动班次"
+		}
+		{
+			id: "7B30E00963A99FEF"
+			title: "呼唤铃：红石按钮与到站提示"
+			icon: "create:desk_bell"
+			x: 10.1d
+			y: 13.25d
+			description: [
+				""
+				"拍击呼唤铃会发出短暂红石脉冲，适合柜台、工位和站台的按钮与提醒。它不用蒸汽，可以直接连接需要脉冲触发的兼容电路。"
+				"安装在升降机轿厢中时，到达目标楼层会播放声音。先把铃与轿厢连接为同一动态结构，再检查楼层和到站行为。"
+				"手动触发的声音和信号不代表物品已经送达；库存与包裹状态仍需通过相应物流设备检测。"
+			]
+			tasks: [
+				{
+					id: "66BAED87ADAEFDF2"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 自动班次"
+		}
+	]
+	title: "汽鸣铁道"
+	images: [
+		{
+			click: "quest_enhance:text:铁路与运输"
+			image: ""
+			x: 4.5d
+			y: 6.0d
+			width: 5.0d
+			height: 0.65d
+			order: -1
+			rotation: 0.0d
+		}
+	]
+}

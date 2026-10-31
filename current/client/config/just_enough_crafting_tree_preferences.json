@@ -1,0 +1,12 @@
+{
+  "recipePreference": {},
+  "ingredientPreference": {},
+  "expandedPreference": {
+    "minecraft:item_stack|createdeco:industrial_iron_ingot": true
+  },
+  "naturalAllow": [],
+  "naturalDeny": [],
+  "disabledRecipeMethods": [],
+  "disabledRecipeMethodsByComponent": {},
+  "treeLoadingTargetFps": 50
+}

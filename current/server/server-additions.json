@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "mods": [
+    {
+      "file": "expedition-teleport-fix-1.0.0.jar",
+      "patchId": "async-destination-and-exact-railway-20261020",
+      "sha256": "2046ddda601556299f14e1c8e3100b169b1108b145c40f1f2b9415303335e155",
+      "modIds": [
+        "expedition_teleport_fix"
+      ]
+    }
+  ]
+}

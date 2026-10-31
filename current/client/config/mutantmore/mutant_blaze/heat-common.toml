@@ -1,0 +1,5 @@
+"Cool Down Speed (per tick, default: 0.025)" = 0.025
+"Cool Down Delay (in ticks, default: 40)" = 40
+"Damage Interval (in ticks, default: 20)" = 20
+"Damage (default: 2)" = 2.0
+

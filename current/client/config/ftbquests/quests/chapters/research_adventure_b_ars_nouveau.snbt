@@ -1,0 +1,1065 @@
+{
+	id: "07AD41EA043D8CDA"
+	filename: "research_adventure_b_ars_nouveau"
+	title: "新生魔艺"
+	group: "25C542C40E64ED41"
+	order_index: 207
+	icon: "ars_nouveau:archwood_planks"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "21A0C3C8C8E2915B"
+			title: "至高木与灌注室入口"
+			icon: "ars_nouveau:archwood_planks"
+			x: -10.057d
+			y: 0.0d
+			optional: false
+			tasks: [
+				{
+					id: "16088979C284807E"
+					type: "item"
+					item: "ars_nouveau:archwood_planks"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "5B3D058C8889D7E2"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/b52e783a5cb59113a35966a6.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/3bdd4970348165356cf30f8f.png width:240 height:120 align:center}"
+				"配方输入：烈焰至高木原木×1 或 奔流至高木原木×1（共20个任选一种备选）。"
+				"主世界寻找至高木，砍木后保留树苗复种，准备金与石质基础材料。树种和果实按资源查看，不要求四种树齐全。优先建立灌注室，再选择施法或自动化方向。"
+				"取得至高木木板。"
+				"灌注室：无需先有魔源罐。"
+				"魔力工作台：额外四个材料槽。"
+				"木祭坛：塑像与祈祷位置。"
+			]
+		}
+		{
+			id: "3BF9CE0405D4FE1D"
+			title: "灌注室：无需先有魔源罐"
+			icon: "ars_nouveau:imbuement_chamber"
+			x: -7.897d
+			y: 0.0d
+			optional: false
+			tasks: [
+				{
+					id: "4E6598D0D80A839B"
+					type: "item"
+					item: "ars_nouveau:imbuement_chamber"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "024EFAC2E575157A"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/354b4d888d198ba2297463ce.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/bdaf79017d99661a304fcf30.png width:240 height:120 align:center}"
+				"配方输入：至高木木板×1，重复6槽。金锭×1，重复2槽。"
+				"把紫水晶或青金石放入灌注室，等待转为魔源宝石。基础灌注可被动工作，附近的魔源罐可加速灌注；没有魔源供应时也可等待基础灌注完成。"
+				"取得灌注室。"
+				"魔源宝石：两种并行原料。"
+				"灌注精华：基座材料不消耗。"
+			]
+		}
+		{
+			id: "5A4C6A3FF38CB945"
+			title: "魔源宝石：两种并行原料"
+			icon: "ars_nouveau:source_gem"
+			x: -5.737d
+			y: 0.0d
+			optional: false
+			tasks: [
+				{
+					id: "1DDFEDA4F9149220"
+					type: "item"
+					item: "ars_nouveau:source_gem"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/96109e3c313ce2fe0c1a55c6.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/dbf7bb3059b93c9358e8bcb9.png width:240 height:228 align:center}"
+				"{image:expedition_research:textures/quests/4781f1a3785388cef75dd4f8.png width:240 height:228 align:center}"
+				"配方输入：青金石×1。工作能力：灌注室。只消耗中央原料。周围基座助剂可重复使用，依据灌注室手册。"
+				"紫水晶和青金石是任选一种输入。选更容易补充的一种。灌注室加工结束后取出宝石，先满足法术书、抄写台或魔源罐的配方。"
+				"取得魔源宝石。"
+				"农艺产魔：作物生长供能。"
+				"灌注精华：基座材料不消耗。"
+				"法师之花：从种子到纤维。"
+				"德格米：生物资源工坊。"
+			]
+		}
+		{
+			id: "2F877291E254FD10"
+			title: "初学者法术书：第一次施法"
+			icon: "ars_nouveau:novice_spell_book"
+			x: -5.737d
+			y: -4.32d
+			optional: false
+			tasks: [
+				{
+					id: "7CE0BE09F1745CC9"
+					type: "item"
+					item: "ars_nouveau:novice_spell_book"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "69C308EBA512372E"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/28f075245da699620fca8632.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/2dd1830290b59c796ca2a724.png width:240 height:120 align:center}"
+				"配方输入：书×1。铁锹×1。铁镐×1。铁斧×1。铁剑×1。"
+				"用配方制作法术书，打开编辑界面：第一个位置必须是形态魔符，再加效果，强化紧接被强化的构件。用触摸/弹射物搭一个简单法术，实际施放检查法力与目标。按键以设置为准。"
+				"取得初学者法术书。"
+				"抄写台：材料和经验换知识。"
+			]
+		}
+		{
+			id: "67D849BDFE03C8B5"
+			title: "抄写台：材料和经验换知识"
+			icon: "ars_nouveau:scribes_table"
+			x: -1.418d
+			y: -4.32d
+			optional: false
+			tasks: [
+				{
+					id: "20589BB7ADD96120"
+					type: "item"
+					item: "ars_nouveau:scribes_table"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c1dbec07fdd026afcdb8b07e.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/dc02a48026b91f6a3979b487.png width:240 height:120 align:center}"
+				"配方输入：至高木台阶×1，重复3槽。金粒×1，重复2槽。烈焰至高木原木×1 或 奔流至高木原木×1（共20个任选一种备选），重复2槽。"
+				"持法术书右击抄写台选魔符，备齐界面列出的物品和经验。把材料投到台上或放附近容器，拿到魔符后右击学习。取得魔符与学会魔符不同，物品任务不能替代学习检测。"
+				"取得抄写台。"
+				"魔源罐：装置能源与个人法力分开。"
+			]
+		}
+		{
+			id: "2528B8C1E040367F"
+			title: "魔源罐：装置能源与个人法力分开"
+			icon: "ars_nouveau:source_jar"
+			x: -3.578d
+			y: 2.16d
+			optional: false
+			tasks: [
+				{
+					id: "3EFE9A159C89FCBA"
+					type: "item"
+					item: "ars_nouveau:source_jar"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/5acf5232a82cbde5430310ac.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/51abaf58d97c1456dce70238.png width:240 height:120 align:center}"
+				"配方输入：至高木台阶×1，重复6槽。玻璃×1 或 通透玻璃×1（共67个任选一种备选），重复2槽。"
+				"在产魔通道附近放罐，等待罐中魔源增加，再移到灌注室/附魔装置附近。个人施法法力不是罐装魔源，不能互相当作同一种能源。比较器能读罐容量。"
+				"取得魔源罐。"
+				"农艺产魔：作物生长供能。"
+			]
+		}
+		{
+			id: "4DF747C86D052F52"
+			title: "农艺产魔：作物生长供能"
+			icon: "ars_nouveau:agronomic_sourcelink"
+			x: -0.568d
+			y: 3.01d
+			optional: false
+			tasks: [
+				{
+					id: "0EA87564C609B035"
+					type: "item"
+					item: "ars_nouveau:agronomic_sourcelink"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6ea6e3eff342fae038907c14.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/05e2877c9eae3bff1a4ddce3.png width:240 height:120 align:center}"
+				"配方输入：魔源宝石×1，重复2槽。金锭×1，重复2槽。小麦×1。"
+				"在作物/树生长15格内放农艺通道，魔源罐在5格内收集。骨粉催普通作物不产魔源。至高木/魔法植物额外加成需按规则。另可选生死、火山、菌丝、炼金通道，不要求全部建成。"
+				"取得农艺魔源通道。"
+				"灌注精华：基座材料不消耗。"
+			]
+		}
+		{
+			id: "6986F23B18A05503"
+			title: "灌注精华：基座材料不消耗"
+			icon: "ars_nouveau:fire_essence"
+			x: -3.578d
+			y: -1.8d
+			optional: false
+			tasks: [
+				{
+					id: "42CE28D2399CB676"
+					type: "item"
+					item: "ars_nouveau:fire_essence"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "75F258E70103F931"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/750e65b2ca5e4df53b04e243.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/365ad48c2043cf5c914573a2.png width:240 height:228 align:center}"
+				"配方输入：魔源宝石×1。打火石×1。火把×1。火药×1。工作能力：灌注室。只消耗中央原料。周围基座助剂可重复使用，依据灌注室手册。"
+				"在灌注室一格内基座上放配方助剂，例如火之精华的火药、火把、打火石。中央放魔源宝石。基座材料是可重复使用催化剂，不加入每次原料成本。"
+				"取得火之精华。"
+				"附魔装置：核心必须在下方。"
+			]
+		}
+		{
+			id: "60E134286C7F1AB6"
+			title: "附魔装置：核心必须在下方"
+			icon: "ars_nouveau:enchanting_apparatus"
+			x: -0.827d
+			y: 0.909d
+			optional: false
+			tasks: [
+				{
+					id: "782A86A97F3BBEE2"
+					type: "item"
+					item: "ars_nouveau:enchanting_apparatus"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f785adf719eb3214645f2e92.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/17adec021b497a4e866f9fc1.png width:240 height:120 align:center}"
+				"配方输入：金粒×1，重复4槽。魔源石×1，重复2槽。金锭×1，重复2槽。钻石×1。"
+				"奥术核心在下，附魔装置在上，三格内放最多八个奥术基座。把配方材料放周围基座，再以中央物品右击装置。需要魔源的配方在旁放充能罐。“做出装置”与“成功加工”分开完成。"
+				"取得附魔装置。"
+				"法师之花：从种子到纤维。"
+				"法袍与纤维：按施法风格选。"
+				"星宝石兽：物流过滤。"
+				"德格米：生物资源工坊。"
+			]
+		}
+		{
+			id: "2CEB6E3FA86A053D"
+			title: "法师之花：从种子到纤维"
+			icon: "ars_nouveau:magebloom_crop"
+			x: -0.558d
+			y: -1.3d
+			optional: false
+			tasks: [
+				{
+					id: "6FA207482CB07EBE"
+					type: "item"
+					item: "ars_nouveau:magebloom_crop"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3d8fcf766bbd564963ab0113.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/8fe4f71f60d390e4e5bbaf05.png width:240 height:228 align:center}"
+				"配方输入：工业大麻种子×1 或 甜菜种子×1（共20个任选一种备选）。魔源宝石×1，重复4槽。工作能力：附魔装置。"
+				"附魔装置制作法师之花种子，种植成熟后收获法师之花，分解成法术纤维供法袍使用。骨粉或普通农业可帮助补充。不要求工业自动农场。"
+				"取得法师之花种子。"
+				"德格米：生物资源工坊。"
+				"风转草：多样环境才生产。"
+				"法袍与纤维：按施法风格选。"
+			]
+		}
+		{
+			id: "7E57EF6CCCED7819"
+			title: "法袍与纤维：按施法风格选"
+			icon: "ars_nouveau:battlemage_robes"
+			x: 2.902d
+			y: -2.16d
+			optional: true
+			tasks: [
+				{
+					id: "6B81909E8AC7457E"
+					type: "item"
+					item: "ars_nouveau:battlemage_robes"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "34B7904C49F7231D"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e72d0820d6d94dd86f5d7994.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/77abaf9a6231ebe0f9ef8f0c.png width:240 height:228 align:center}"
+				"配方输入：钻石胸甲×1。法师之花纤维×1，重复4槽。工作能力：附魔装置。"
+				"先选一套法袍，再在改衣台按界面安装合适纤维。装备后实际检查法力变化。"
+				"取得Battlemage's Gambeson。"
+				"仪式火盆：石板与增幅。"
+			]
+		}
+		{
+			id: "5188BEE07A3A0FC9"
+			title: "仪式火盆：石板与增幅"
+			icon: "ars_nouveau:ritual_brazier"
+			x: 0.742d
+			y: -4.32d
+			optional: false
+			tasks: [
+				{
+					id: "11D66F8A6DD99DB2"
+					type: "item"
+					item: "ars_nouveau:ritual_brazier"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9e577922c71d4a5a1119791d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d032691cd052610ef046f1ce.png width:240 height:120 align:center}"
+				"配方输入：奥术基座×1。魔源宝石块×1。金锭×1，重复3槽。"
+				"放下火盆，装所选仪式石板，按手册投入允许的增幅物，再空手启动。红石信号可禁用运行仪式。装饰用召唤魔光点亮并不等于启动仪式，别混为同一次操作。"
+				"取得仪式火盆。"
+				"荒野召唤：三件战利品增幅。"
+			]
+		}
+		{
+			id: "4E32FAD7A2E2CE65"
+			title: "荒野召唤：三件战利品增幅"
+			icon: "ars_nouveau:ritual_wilden_summon"
+			x: 2.902d
+			y: -4.32d
+			optional: true
+			tasks: [
+				{
+					id: "753EE1AC5B6970F1"
+					type: "item"
+					item: "ars_nouveau:ritual_wilden_summon"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/2f6ed17bb8e26686704a0993.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/bad2b3650ea2d4fdf50df238.png width:240 height:120 align:center}"
+				"配方输入：恼人至高木原木×1。荒野之角×1 或 荒野尖刺×1（共3个任选一种备选），重复3槽。青金石块×1。"
+				"在火盆装荒野召唤石板，激活前加入荒野之角、荒野尖刺、荒野膜翼三种增幅物。召唤奇美拉会破坏火盆周围方块，先远离基地设施。未加齐时只召普通荒野生物。先探索猎手/守卫者/伏击者取得对应材料。准备后再召奇美拉。"
+				"取得荒野召唤之板。"
+				"荒野奇美拉：书升级材料。"
+			]
+		}
+		{
+			id: "3D1F54479A9C5983"
+			title: "荒野奇美拉：书升级材料"
+			icon: "ars_nouveau:wilden_tribute"
+			x: 5.062d
+			y: -4.32d
+			optional: true
+			tasks: [
+				{
+					id: "1FB37FF941E21318"
+					type: "item"
+					item: "ars_nouveau:wilden_tribute"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e929f67e54c2927472fcd2d6.png width:32 height:32 align:center}"
+				"击败奇美拉取得荒野贡物。"
+				"击败奇美拉取得荒野贡物。大法师书配方确实需要贡物。普通低阶施法无需先挑战奇美拉。"
+				"取得荒野供物。"
+				"大法师书：升级配方。"
+			]
+		}
+		{
+			id: "03D4C1371AFBDB38"
+			title: "大法师书：升级配方"
+			icon: "ars_nouveau:archmage_spell_book"
+			x: 9.349d
+			y: -4.216d
+			optional: true
+			tasks: [
+				{
+					id: "52D20C05F3B34323"
+					type: "item"
+					item: "ars_nouveau:archmage_spell_book"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/937cbc8f14bdf2b7426404d8.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/dcbbffb0247e9f3f81c5ea46.png width:240 height:120 align:center}"
+				"配方输入：法师的法术书×1。下界之星×1。荒野供物×1。绿宝石×1，重复2槽。末影珍珠×1，重复3槽。不死图腾×1。"
+				"升级配方使用法师书、下界之星、荒野贡物、两颗绿宝石、三颗末影珍珠和不死图腾。材料会消耗，原书知识迁移由模组处理。它解锁三阶魔符的使用。不是所有魔符都要先打Boss。"
+				"取得大法师法术书。"
+				"星宝石兽：物流过滤。"
+			]
+		}
+		{
+			id: "154218EC9951B38D"
+			title: "星宝石兽：物流过滤"
+			icon: "ars_nouveau:starbuncle_charm"
+			x: 2.027d
+			y: 4.043d
+			optional: true
+			tasks: [
+				{
+					id: "4F9C15E09E2EDEE7"
+					type: "item"
+					item: "ars_nouveau:starbuncle_charm"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c3ed5e6d2228608f98e3487c.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/e96f4621852fe7c29663ddda.png width:240 height:228 align:center}"
+				"配方输入：星宝石兽碎片×1。金锭×1，重复4槽。工作能力：附魔装置。"
+				"在林地用金粒换碎片，再按附魔装置配方做护符。地面使用护符召出，支配之杖先点兽再点箱为输出，反向为取料。物品展示框/物品卷轴过滤，先用一组物品检查，不混收灌注室助剂。"
+				"取得星宝石兽护符。"
+				"德格米：生物资源工坊。"
+			]
+		}
+		{
+			id: "5EF745C638EFABDA"
+			title: "德格米：生物资源工坊"
+			icon: "ars_nouveau:drygmy_charm"
+			x: 3.175d
+			y: -0.234d
+			optional: true
+			tasks: [
+				{
+					id: "67313899A5DCA943"
+					type: "item"
+					item: "ars_nouveau:drygmy_charm"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/8cf4f1e49f489345cca19003.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/566bf3b2c178d36b68b67139.png width:240 height:228 align:center}"
+				"配方输入：德格米碎片×1。生鳕鱼×1 或 熟鳕鱼×1（共17个任选一种备选）。小麦×1。苹果×1。胡萝卜×1。工业大麻种子×1 或 甜菜种子×1（共20个任选一种备选）。魔源宝石×1，重复3槽。工作能力：附魔装置。"
+				"向野生德格米投荒野之角取得碎片，再制作护符，对苔石使用形成石阵。旁放箱子与魔源罐，10格内增加生物种类提高幸福度。产出受掉落规则约束，不能凭收容Boss假定无限下界之星或龙蛋。"
+				"取得德格米护符。"
+				"薇克精：给目标，再给原料。"
+			]
+		}
+		{
+			id: "37C92F2E134B049F"
+			title: "薇克精：给目标，再给原料"
+			icon: "ars_nouveau:wixie_charm"
+			x: 7.222d
+			y: 1.71d
+			optional: true
+			tasks: [
+				{
+					id: "64F6C1AEC63C40D5"
+					type: "item"
+					item: "ars_nouveau:wixie_charm"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/bacf148ca47a6ec5e93b8c15.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/81ac4d625704df738a880cbb.png width:240 height:228 align:center}"
+				"配方输入：薇克精碎片×1。橡树树苗×1 或 云杉树苗×1（共149个任选一种备选）。绿宝石×1。橡木工作台×1。酿造台×1。工作能力：附魔装置。"
+				"女巫半血及以下时施放解除魔法得碎片，做护符后对炼药锅使用。用目标成品右击锅，附近给材料与魔源。输出收集可交星宝石兽。红石信号会停止合成。手册中英页有错位，优先英文与实际界面。"
+				"取得薇克精护符。"
+				"风转草：多样环境才生产。"
+			]
+		}
+		{
+			id: "4DACFC1AC65961BD"
+			title: "风转草：多样环境才生产"
+			icon: "ars_nouveau:whirlisprig_charm"
+			x: 5.062d
+			y: 4.32d
+			optional: true
+			tasks: [
+				{
+					id: "7E760C04EF376854"
+					type: "item"
+					item: "ars_nouveau:whirlisprig_charm"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3b0b15be67e8ec031761dc2c.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/8aee6a0366283e2998711479.png width:240 height:228 align:center}"
+				"配方输入：风转草碎片×1。魔源宝石×1。法师之花种子×1。法师之花×1。钻石×1。橡树树苗×1。云杉树苗×1。白桦树苗×1。小麦种子×1。工作能力：附魔装置。"
+				"在森林的野生风转草附近长出树，取得碎片并制护符，对花使用。旁边放箱子及魔源，在10格内布置多种自然方块，空手查询幸福度并等待更新。不是放一棵树就保证持续产量。"
+				"取得风转草护符。"
+				"法术工具、药水与使魔选修。"
+			]
+		}
+		{
+			id: "59C81C0F733EBD4A"
+			title: "法术工具、药水与使魔选修"
+			icon: "ars_nouveau:enchanters_mirror"
+			x: 10.057d
+			y: 4.317d
+			optional: true
+			tasks: [
+				{
+					id: "5136FD084675CB52"
+					type: "item"
+					item: "ars_nouveau:enchanters_mirror"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7eca84e70073297f923bff3b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/af8e6405681ec1b4dc29fbd4.png width:240 height:228 align:center}"
+				"配方输入：魔源宝石块×1。玻璃×1 或 通透玻璃×1（共67个任选一种备选），重复2槽。操纵之精华×1，重复2槽。烈焰至高木原木×1 或 奔流至高木原木×1（共20个任选一种备选），重复2槽。金锭×1，重复2槽。工作能力：附魔装置。"
+				"羊皮纸先放抄写台，再潜行以选定法术的书写入。各工具自带形态，按手册选杖/剑/镜等。药水混合比例、远程水晶、使魔绑定与炮塔均为独立工具路线。"
+				"取得巫师之镜。"
+				"按所选分支继续，或返回魔法总览选择另一体系。"
+			]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:21a0c3c8c8e2915b" "q:3bf9ce0405d4fe1d"]
+		}
+		{
+			nodes: ["q:3bf9ce0405d4fe1d" "q:5a4c6a3ff38cb945"]
+		}
+		{
+			nodes: ["q:3bf9ce0405d4fe1d" "a:4604f7f9-8a3f-59ce-a0e9-8a8008c33afc"]
+		}
+		{
+			nodes: ["a:4604f7f9-8a3f-59ce-a0e9-8a8008c33afc" "a:aa98db8d-c5e1-51dd-82bc-93ee064f21d1"]
+		}
+		{
+			nodes: ["a:aa98db8d-c5e1-51dd-82bc-93ee064f21d1" "q:6986f23b18a05503"]
+		}
+		{
+			nodes: ["q:5a4c6a3ff38cb945" "a:8a0dfc9e-7248-595d-958f-3380619c8a9a"]
+		}
+		{
+			nodes: ["a:8a0dfc9e-7248-595d-958f-3380619c8a9a" "a:bd6c0818-f2cc-557c-8663-6787529c7175"]
+		}
+		{
+			nodes: ["a:bd6c0818-f2cc-557c-8663-6787529c7175" "q:4df747c86d052f52"]
+		}
+		{
+			nodes: ["q:5a4c6a3ff38cb945" "a:dd142cf4-fe13-55a0-88dd-e91bf5e91f0c"]
+		}
+		{
+			nodes: ["a:dd142cf4-fe13-55a0-88dd-e91bf5e91f0c" "a:460fba0d-6b36-5558-a3f0-8bbeedd5f8ab"]
+		}
+		{
+			nodes: ["a:460fba0d-6b36-5558-a3f0-8bbeedd5f8ab" "q:6986f23b18a05503"]
+		}
+		{
+			nodes: ["q:5a4c6a3ff38cb945" "a:467b57aa-217b-5d2e-9fe7-0a7c0c8ecca8"]
+		}
+		{
+			nodes: ["a:467b57aa-217b-5d2e-9fe7-0a7c0c8ecca8" "a:aa8b3136-8cbe-53d2-a003-1ba5f71a0bbd"]
+		}
+		{
+			nodes: ["a:aa8b3136-8cbe-53d2-a003-1ba5f71a0bbd" "q:2ceb6e3fa86a053d"]
+		}
+		{
+			nodes: ["q:5a4c6a3ff38cb945" "a:db1b014b-a69d-5ae8-b52c-c3ee6a746f89"]
+		}
+		{
+			nodes: ["a:db1b014b-a69d-5ae8-b52c-c3ee6a746f89" "a:36280ee3-0273-5945-8512-5657a46c0d69"]
+		}
+		{
+			nodes: ["a:36280ee3-0273-5945-8512-5657a46c0d69" "q:5ef745c638efabda"]
+		}
+		{
+			nodes: ["q:5a4c6a3ff38cb945" "a:b9089c57-4f8d-53f6-a3fc-3a6039336f3d"]
+		}
+		{
+			nodes: ["a:b9089c57-4f8d-53f6-a3fc-3a6039336f3d" "a:71091ec6-45a3-5a6b-bf1a-0d1d8a7d48af"]
+		}
+		{
+			nodes: ["a:71091ec6-45a3-5a6b-bf1a-0d1d8a7d48af" "q:4dacfc1ac65961bd"]
+		}
+		{
+			nodes: ["q:5a4c6a3ff38cb945" "q:2f877291e254fd10"]
+		}
+		{
+			nodes: ["q:60e134286c7f1ab6" "q:2ceb6e3fa86a053d"]
+		}
+		{
+			nodes: ["q:60e134286c7f1ab6" "a:27e72792-7889-59cc-9e58-213b68190431"]
+		}
+		{
+			nodes: ["a:27e72792-7889-59cc-9e58-213b68190431" "a:90beefea-044e-523e-a61d-ccf80102efe4"]
+		}
+		{
+			nodes: ["a:90beefea-044e-523e-a61d-ccf80102efe4" "q:7e57ef6ccced7819"]
+		}
+		{
+			nodes: ["q:60e134286c7f1ab6" "a:b88c7ff3-5b26-5a2c-85db-d0e5f4a0583c"]
+		}
+		{
+			nodes: ["a:b88c7ff3-5b26-5a2c-85db-d0e5f4a0583c" "a:c1eef234-7830-5900-881d-498f8a6ec02a"]
+		}
+		{
+			nodes: ["a:c1eef234-7830-5900-881d-498f8a6ec02a" "q:154218ec9951b38d"]
+		}
+		{
+			nodes: ["q:60e134286c7f1ab6" "a:99022845-7568-5cd0-a02a-61fae126c420"]
+		}
+		{
+			nodes: ["a:99022845-7568-5cd0-a02a-61fae126c420" "a:f0702a05-c9e7-506c-b3b3-56c1b15774f2"]
+		}
+		{
+			nodes: ["a:f0702a05-c9e7-506c-b3b3-56c1b15774f2" "q:5ef745c638efabda"]
+		}
+		{
+			nodes: ["q:60e134286c7f1ab6" "a:e6344f23-9903-51d1-b127-33766a1c4ab1"]
+		}
+		{
+			nodes: ["a:e6344f23-9903-51d1-b127-33766a1c4ab1" "a:ad7f2ea0-2a33-5fe4-a627-3f984a492dd2"]
+		}
+		{
+			nodes: ["a:ad7f2ea0-2a33-5fe4-a627-3f984a492dd2" "q:37c92f2e134b049f"]
+		}
+		{
+			nodes: ["q:60e134286c7f1ab6" "a:5e2169fa-05a4-5c56-814b-94b0b2fc511c"]
+		}
+		{
+			nodes: ["a:5e2169fa-05a4-5c56-814b-94b0b2fc511c" "a:45878eb5-2650-575f-90ed-ce65d369f4b5"]
+		}
+		{
+			nodes: ["a:45878eb5-2650-575f-90ed-ce65d369f4b5" "q:4dacfc1ac65961bd"]
+		}
+		{
+			nodes: ["q:60e134286c7f1ab6" "a:686e9faf-66e9-5635-b4ad-b9a1137a134c"]
+		}
+		{
+			nodes: ["a:686e9faf-66e9-5635-b4ad-b9a1137a134c" "a:de05daf9-f034-5e3c-8e9a-ae01c5ea6ef8"]
+		}
+		{
+			nodes: ["a:de05daf9-f034-5e3c-8e9a-ae01c5ea6ef8" "q:59c81c0f733ebd4a"]
+		}
+		{
+			nodes: ["q:3d1f54479a9c5983" "q:3d4c1371afbdb38"]
+		}
+		{
+			nodes: ["q:2ceb6e3fa86a053d" "a:f5d6c45d-a82e-50a4-b353-ccf536247809"]
+		}
+		{
+			nodes: ["a:f5d6c45d-a82e-50a4-b353-ccf536247809" "a:5db2961d-438f-5c4a-841c-730c0f596182"]
+		}
+		{
+			nodes: ["a:5db2961d-438f-5c4a-841c-730c0f596182" "q:5ef745c638efabda"]
+		}
+		{
+			nodes: ["q:2ceb6e3fa86a053d" "a:79a31fda-54de-55fb-95dc-e8672dcd7948"]
+		}
+		{
+			nodes: ["a:79a31fda-54de-55fb-95dc-e8672dcd7948" "a:55ca4954-949a-5909-b3dc-602095bb9f45"]
+		}
+		{
+			nodes: ["a:55ca4954-949a-5909-b3dc-602095bb9f45" "q:4dacfc1ac65961bd"]
+		}
+		{
+			nodes: ["q:2ceb6e3fa86a053d" "q:7e57ef6ccced7819"]
+		}
+		{
+			nodes: ["q:2f877291e254fd10" "q:67d849bdfe03c8b5"]
+		}
+		{
+			nodes: ["q:67d849bdfe03c8b5" "q:2528b8c1e040367f"]
+		}
+		{
+			nodes: ["q:2528b8c1e040367f" "q:4df747c86d052f52"]
+		}
+		{
+			nodes: ["q:4df747c86d052f52" "q:6986f23b18a05503"]
+		}
+		{
+			nodes: ["q:6986f23b18a05503" "q:60e134286c7f1ab6"]
+		}
+		{
+			nodes: ["q:7e57ef6ccced7819" "q:5188bee07a3a0fc9"]
+		}
+		{
+			nodes: ["q:5188bee07a3a0fc9" "q:4e32fad7a2e2ce65"]
+		}
+		{
+			nodes: ["q:4e32fad7a2e2ce65" "q:3d1f54479a9c5983"]
+		}
+		{
+			nodes: ["q:3d4c1371afbdb38" "q:154218ec9951b38d"]
+		}
+		{
+			nodes: ["q:154218ec9951b38d" "q:5ef745c638efabda"]
+		}
+		{
+			nodes: ["q:5ef745c638efabda" "q:37c92f2e134b049f"]
+		}
+		{
+			nodes: ["q:37c92f2e134b049f" "q:4dacfc1ac65961bd"]
+		}
+		{
+			nodes: ["q:4dacfc1ac65961bd" "q:59c81c0f733ebd4a"]
+		}
+	]
+	images: [
+		{
+			x: -6.457d
+			y: -0.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4604f7f9-8a3f-59ce-a0e9-8a8008c33afc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.018d
+			y: -1.2d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:aa98db8d-c5e1-51dd-82bc-93ee064f21d1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.014d
+			y: 1.003d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8a0dfc9e-7248-595d-958f-3380619c8a9a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.291d
+			y: 2.007d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bd6c0818-f2cc-557c-8663-6787529c7175"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.017d
+			y: -0.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:dd142cf4-fe13-55a0-88dd-e91bf5e91f0c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.298d
+			y: -1.2d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:460fba0d-6b36-5558-a3f0-8bbeedd5f8ab"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.011d
+			y: -0.433d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:467b57aa-217b-5d2e-9fe7-0a7c0c8ecca8"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.284d
+			y: -0.867d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:aa8b3136-8cbe-53d2-a003-1ba5f71a0bbd"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.766d
+			y: -0.078d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:db1b014b-a69d-5ae8-b52c-c3ee6a746f89"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.204d
+			y: -0.156d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:36280ee3-0273-5945-8512-5657a46c0d69"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.137d
+			y: 1.44d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b9089c57-4f8d-53f6-a3fc-3a6039336f3d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.462d
+			y: 2.88d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:71091ec6-45a3-5a6b-bf1a-0d1d8a7d48af"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.416d
+			y: -0.114d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:27e72792-7889-59cc-9e58-213b68190431"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.659d
+			y: -1.137d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:90beefea-044e-523e-a61d-ccf80102efe4"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.124d
+			y: 1.954d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b88c7ff3-5b26-5a2c-85db-d0e5f4a0583c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.076d
+			y: 2.998d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c1eef234-7830-5900-881d-498f8a6ec02a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.507d
+			y: 0.528d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:99022845-7568-5cd0-a02a-61fae126c420"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.841d
+			y: 0.147d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f0702a05-c9e7-506c-b3b3-56c1b15774f2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.856d
+			y: 1.176d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e6344f23-9903-51d1-b127-33766a1c4ab1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.539d
+			y: 1.443d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ad7f2ea0-2a33-5fe4-a627-3f984a492dd2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.136d
+			y: 2.046d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5e2169fa-05a4-5c56-814b-94b0b2fc511c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.099d
+			y: 3.183d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:45878eb5-2650-575f-90ed-ce65d369f4b5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.801d
+			y: 2.045d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:686e9faf-66e9-5635-b4ad-b9a1137a134c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.429d
+			y: 3.181d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:de05daf9-f034-5e3c-8e9a-ae01c5ea6ef8"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.686d
+			y: -0.945d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f5d6c45d-a82e-50a4-b353-ccf536247809"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.931d
+			y: -0.589d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5db2961d-438f-5c4a-841c-730c0f596182"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.315d
+			y: 0.573d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:79a31fda-54de-55fb-95dc-e8672dcd7948"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.189d
+			y: 2.447d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:55ca4954-949a-5909-b3dc-602095bb9f45"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

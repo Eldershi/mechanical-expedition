@@ -1,0 +1,876 @@
+{
+	id: "214F157C4D666207"
+	filename: "research_adventure_c_l2hostility"
+	title: "莱特兰恶意"
+	group: "25C542C40E64ED41"
+	order_index: 216
+	icon: "l2hostility:detector_glasses"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "5471C7305380256E"
+			title: "先认识难度与词条"
+			icon: "l2hostility:detector_glasses"
+			x: -10.08d
+			y: 0.0d
+			optional: true
+			tasks: [
+				{
+					id: "0E28D85C7096FD47"
+					type: "item"
+					item: "l2hostility:detector_glasses"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/53135f202b7a0f43ec3ca071.png width:32 height:32 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"在库存难度面板查看玩家、区块与实体等级，用教程书／配方查询查看词条最低等级和反制。避免直接饮用大量瓶装恶意而超出应对能力。"
+				"侦测眼镜或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "4151F6441AC3EB74"
+			title: "两种早期宝珠并行"
+			icon: "l2hostility:charm_of_looting_1"
+			x: -7.2d
+			y: -2.16d
+			optional: true
+			tasks: [
+				{
+					id: "0716AE9DE3589E00"
+					type: "item"
+					item: "l2hostility:charm_of_looting_1"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6b9229856c9cd66292468996.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/947ec60cc03ee3b353a1ea57.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"粗糙抢夺宝珠用金、铜、绿宝石制作。魔能抢夺宝珠用烈焰粉、龙息、钻石单独制作，不要求先做粗糙宝珠。佩戴后击杀含相应词条的怪才会按条件掉材料。取得宝珠不等于刷到材料。"
+				"粗糙抢夺宝珠或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "43D05657ED25A5E4"
+			title: "混沌与奇迹分开准备"
+			icon: "l2hostility:charm_of_looting_3"
+			x: 1.44d
+			y: -0.86d
+			optional: true
+			tasks: [
+				{
+					id: "3AEDFEBDF40AC44C"
+					type: "item"
+					item: "l2hostility:charm_of_looting_3"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/397591500390aace14060925.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/5a662346ed8a3a67f159b381.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"混沌宝珠吃混沌锭、生命精华和女巫凝露。奇迹宝珠吃奇迹锭、黑石核心与力场，二者不构成逐级合成链。千风、爆炸、力场等特殊材料按L2Complements条件取得，不强塞机械动力或航天前置。"
+				"混沌抢夺宝珠或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "554A959E2A944D94"
+			title: "嫉妒诅咒开启词条材料"
+			icon: "l2hostility:curse_of_envy"
+			x: 1.44d
+			y: -4.32d
+			optional: true
+			tasks: [
+				{
+					id: "6E277BBC95242D09"
+					type: "item"
+					item: "l2hostility:curse_of_envy"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/01c73f7b8bb1c0d2930ebcd1.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/890b4ad8b1a3c570919ce651.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"在配方准备混沌锭、海晶碎片、末影之眼和含抢夺／精准采集的合适附魔材料。这里是自定义附魔Ingredient，不能把任意普通附魔书当替代。佩戴后再击杀词条生物，实际概率与词条条件在检查。"
+				"嫉妒诅咒或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "540D183092150231"
+			title: "恶意精华是概率焚烧"
+			icon: "l2hostility:hostility_essence"
+			x: -7.2d
+			y: 5.76d
+			optional: true
+			tasks: [
+				{
+					id: "4F1DCBA44594A279"
+					type: "item"
+					item: "l2hostility:hostility_essence"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c4cf3761301bd4d9535b5cb2.png width:32 height:32 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"瓶装恶意投入火焰的burnt配方记录chance=512，即每份独立约1/512转化。它不是512份必出一份，任务建议检测实际取得精华，不自动扣512瓶交差。可先扩大可承受的补给规模。"
+				"恶意精华或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "2096DE03E65C56ED"
+			title: "扭曲与生存饰品选修"
+			icon: "l2hostility:abrahadabra"
+			x: 7.2d
+			y: 4.91d
+			optional: true
+			tasks: [
+				{
+					id: "080914E2FA6AF1E2"
+					type: "item"
+					item: "l2hostility:abrahadabra"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d820cd8b4ad64298710c363d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/116a11e9f9bbdfb9ecbe8de8.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"按需求选择扭曲之魂、屹立不倒之戒或圣光守护之戒。前者处理可转移的词条，生命戒有穿透标签例外，神性戒的Cleanse可能清理自身药水。需要逐效果测试。"
+				"扭曲之魂或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "03C6D099FFCC555B"
+			title: "破咒遗骨与解咒口袋"
+			icon: "l2hostility:imagine_breaker"
+			x: 10.08d
+			y: 2.88d
+			optional: true
+			tasks: [
+				{
+					id: "27CBCD3D6BF21303"
+					type: "item"
+					item: "l2hostility:imagine_breaker"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a3498eb4dcc797c7fb15d3b2.png width:32 height:32 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"破咒遗骨是条件掉落路线：佩戴奇迹抢夺宝珠击杀相应等级Dispell词条目标。不是普通合成。封印后的装备需要解封操作，解咒口袋只在满足实际机制时发挥作用。保留专门挑战，别把封印自己的装备设为所有玩家必做。"
+				"破咒遗骨或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "75E57E57EF0BF415"
+			title: "控制增长而不是强制毕业"
+			icon: "l2hostility:divinity_light"
+			x: 10.08d
+			y: 5.76d
+			optional: true
+			tasks: [
+				{
+					id: "1FECEA0D3CA8DDDD"
+					type: "item"
+					item: "l2hostility:divinity_light"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/190fa32ed66b878f457a8d22.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/0cd22d8d8392fc8cac962f7e.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"恶意净化、怠惰诅咒、净化区块与神圣之光影响不同难度组成。神圣之光压制自适应等级，可能阻碍后续词条材料。仅列可选。空间碎片自然来源被组合禁用，Invincible从普通生存推荐排除，不推荐为了毕业刷16384伤害。"
+				"神圣之光或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "193723C5373868B6"
+			title: "混沌锭：制造与词条掉落并列"
+			icon: "l2hostility:chaos_ingot"
+			x: -1.44d
+			y: -4.32d
+			optional: true
+			tasks: [
+				{
+					id: "75DC36FB2B72A8E3"
+					type: "item"
+					item: "l2hostility:chaos_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/b8ca45ee00110773c3bf5a17.png width:32 height:32 align:center}" "{image:expedition_research:textures/quests/dc7e8a250144d18502c9f01d.png width:240 height:120 align:center}" "混沌锭：制造与词条掉落并列。"]
+		}
+		{
+			id: "1F7029CBAC837957"
+			title: "奇迹锭：先核特殊材料"
+			icon: "l2hostility:miracle_ingot"
+			x: 4.32d
+			y: 5.76d
+			optional: true
+			tasks: [
+				{
+					id: "0760825CB69016EB"
+					type: "item"
+					item: "l2hostility:miracle_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/afe080eaae2b46004e4c8e34.png width:32 height:32 align:center}" "{image:expedition_research:textures/quests/4f110897261dd0196175eba6.png width:240 height:120 align:center}" "奇迹锭：先核特殊材料。"]
+		}
+		{
+			id: "3DE71F6B056C58A3"
+			title: "女巫凝露：对应吸取词条"
+			icon: "l2hostility:witch_droplet"
+			x: -4.32d
+			y: -2.16d
+			optional: true
+			tasks: [
+				{
+					id: "4D137CD61496F314"
+					type: "item"
+					item: "l2hostility:witch_droplet"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/86d80277781c750e55dd06d3.png width:32 height:32 align:center}" "女巫凝露：对应吸取词条。"]
+		}
+		{
+			id: "59E34836B9DDFE6F"
+			title: "生命精华：再生词条路线"
+			icon: "l2complements:life_essence"
+			x: -4.32d
+			y: 0.72d
+			optional: true
+			tasks: [
+				{
+					id: "1DCCFADDE034F6ED"
+					type: "item"
+					item: "l2complements:life_essence"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/efcb4ad3e84c37535d8fda4e.png width:32 height:32 align:center}" "生命精华：再生词条路线。"]
+		}
+		{
+			id: "0D2355E17517F8CA"
+			title: "千风精华：挑战或词条掉落"
+			icon: "l2complements:captured_wind"
+			x: -7.2d
+			y: -5.76d
+			optional: true
+			tasks: [
+				{
+					id: "3CF4C00088BD477E"
+					type: "item"
+					item: "l2complements:captured_wind"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/5066b0aa29037744c7b1d018.png width:32 height:32 align:center}" "千风精华：挑战或词条掉落。"]
+		}
+		{
+			id: "55600C036BEDA02F"
+			title: "捕风瓶是取材载体"
+			icon: "l2complements:wind_capture_bottle"
+			x: -10.08d
+			y: -5.76d
+			optional: true
+			tasks: [
+				{
+					id: "5D1FF30FBE1AD5CB"
+					type: "item"
+					item: "l2complements:wind_capture_bottle"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/c653cfee1f3807a8aebd7967.png width:32 height:32 align:center}" "{image:expedition_research:textures/quests/4370a05eb1f410795ba6653f.png width:240 height:120 align:center}" "捕风瓶是取材载体。"]
+		}
+		{
+			id: "29ED3383173FEA25"
+			title: "黑石核心：两种取材思路"
+			icon: "l2complements:blackstone_core"
+			x: -1.44d
+			y: 2.88d
+			optional: true
+			tasks: [
+				{
+					id: "5A06ACE392A20A7F"
+					type: "item"
+					item: "l2complements:blackstone_core"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/eb8b67132a2784ecb30aa4ee.png width:32 height:32 align:center}" "黑石核心：两种取材思路。"]
+		}
+		{
+			id: "4059265DF1B11032"
+			title: "守护力场：弓杀凋灵或词条"
+			icon: "l2complements:force_field"
+			x: 1.44d
+			y: 3.73d
+			optional: true
+			tasks: [
+				{
+					id: "5F917323EEE4FED3"
+					type: "item"
+					item: "l2complements:force_field"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/8f2a7dcde6c203d9622ba57f.png width:32 height:32 align:center}" "守护力场：弓杀凋灵或词条。"]
+		}
+		{
+			id: "0BD18E786BC99772"
+			title: "破灭残片：承伤并存活"
+			icon: "l2complements:explosion_shard"
+			x: -4.32d
+			y: -5.76d
+			optional: true
+			tasks: [
+				{
+					id: "641312F8225EF27D"
+					type: "item"
+					item: "l2complements:explosion_shard"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/ca1891d532000ac9f389bea4.png width:32 height:32 align:center}" "破灭残片：承伤并存活。"]
+		}
+		{
+			id: "2770F603CEA6EC56"
+			title: "魔能抢夺宝珠"
+			icon: "l2hostility:charm_of_looting_2"
+			x: -7.2d
+			y: 0.72d
+			optional: true
+			tasks: [
+				{
+					id: "58A8A79A89E79C43"
+					type: "item"
+					item: "l2hostility:charm_of_looting_2"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/2154518d9346816dbc885e53.png width:32 height:32 align:center}" "{image:expedition_research:textures/quests/a0b7436509e07bdaaf808cb1.png width:240 height:120 align:center}" "魔能抢夺宝珠。"]
+		}
+		{
+			id: "6DEC2956F24FF85E"
+			title: "奇迹抢夺宝珠"
+			icon: "l2hostility:charm_of_looting_4"
+			x: 7.2d
+			y: 2.88d
+			optional: true
+			tasks: [
+				{
+					id: "701207BEC1161F47"
+					type: "item"
+					item: "l2hostility:charm_of_looting_4"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/3ff797a175f110f9b01c6394.png width:32 height:32 align:center}" "{image:expedition_research:textures/quests/7cdee49f297f5dab7831119a.png width:240 height:120 align:center}" "奇迹抢夺宝珠。"]
+		}
+		{
+			id: "0BC491BC65315A26"
+			title: "屹立不倒之戒"
+			icon: "l2hostility:ring_of_life"
+			x: 4.32d
+			y: -0.45d
+			optional: true
+			tasks: [
+				{
+					id: "4CE48EBBFFE6EB7E"
+					type: "item"
+					item: "l2hostility:ring_of_life"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/a0ec3b5bcd8245a034841816.png width:32 height:32 align:center}" "{image:expedition_research:textures/quests/dbc062f10a0b058fcc3f170e.png width:240 height:120 align:center}" "屹立不倒之戒。"]
+		}
+		{
+			id: "619FD87DBE9993D9"
+			title: "圣光守护之戒"
+			icon: "l2hostility:ring_of_divinity"
+			x: 7.2d
+			y: 0.0d
+			optional: true
+			tasks: [
+				{
+					id: "010C0395C8A8A81B"
+					type: "item"
+					item: "l2hostility:ring_of_divinity"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/820aed679352b1bd3846782d.png width:32 height:32 align:center}" "{image:expedition_research:textures/quests/eb003424da28a274e2d8076c.png width:240 height:120 align:center}" "圣光守护之戒。"]
+		}
+		{
+			id: "12A26E684E53A7D2"
+			title: "瓶装恶意"
+			icon: "l2hostility:bottle_of_curse"
+			x: -10.08d
+			y: 5.76d
+			optional: true
+			tasks: [
+				{
+					id: "0ED0EED5B980BDD6"
+					type: "item"
+					item: "l2hostility:bottle_of_curse"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/4d2daf9e785418d56cce6595.png width:32 height:32 align:center}" "瓶装恶意。"]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:59e34836b9ddfe6f" "a:9db2b5e8-4683-5c0c-9130-2821d14a52cc"]
+		}
+		{
+			nodes: ["a:9db2b5e8-4683-5c0c-9130-2821d14a52cc" "a:8d96215d-9bf6-52a0-8bfd-8ab0ef06f506"]
+		}
+		{
+			nodes: ["a:8d96215d-9bf6-52a0-8bfd-8ab0ef06f506" "q:43d05657ed25a5e4"]
+		}
+		{
+			nodes: ["q:59e34836b9ddfe6f" "a:ec43a94e-bc5a-5903-9366-028807e24bfa"]
+		}
+		{
+			nodes: ["a:ec43a94e-bc5a-5903-9366-028807e24bfa" "a:65d7c30d-9204-55b9-8ba2-7fb7b5c7373b"]
+		}
+		{
+			nodes: ["a:65d7c30d-9204-55b9-8ba2-7fb7b5c7373b" "q:619fd87dbe9993d9"]
+		}
+		{
+			nodes: ["q:3de71f6b056c58a3" "a:e0dcc2fb-74f3-529d-8824-29507f1cc64a"]
+		}
+		{
+			nodes: ["a:e0dcc2fb-74f3-529d-8824-29507f1cc64a" "a:ff869112-b4bf-5a5d-a563-6345d0b0ab20"]
+		}
+		{
+			nodes: ["a:ff869112-b4bf-5a5d-a563-6345d0b0ab20" "q:43d05657ed25a5e4"]
+		}
+		{
+			nodes: ["q:193723c5373868b6" "q:43d05657ed25a5e4"]
+		}
+		{
+			nodes: ["q:193723c5373868b6" "a:2ee2ad0a-c1c8-54f2-916c-b42bae1dc3ee"]
+		}
+		{
+			nodes: ["a:2ee2ad0a-c1c8-54f2-916c-b42bae1dc3ee" "a:4220799b-7c4c-550d-b4eb-c78352623331"]
+		}
+		{
+			nodes: ["a:4220799b-7c4c-550d-b4eb-c78352623331" "q:554a959e2a944d94"]
+		}
+		{
+			nodes: ["q:193723c5373868b6" "a:61833fba-930d-59f9-bd72-e3058c620f56"]
+		}
+		{
+			nodes: ["a:61833fba-930d-59f9-bd72-e3058c620f56" "a:bf7c20a9-52aa-5715-863f-28f1b974563f"]
+		}
+		{
+			nodes: ["a:bf7c20a9-52aa-5715-863f-28f1b974563f" "q:bc491bc65315a26"]
+		}
+		{
+			nodes: ["q:193723c5373868b6" "a:dca44dff-b36e-500d-a95e-2d6fad8b6d0d"]
+		}
+		{
+			nodes: ["a:dca44dff-b36e-500d-a95e-2d6fad8b6d0d" "a:49b1f10b-1311-5d75-9205-2febb47d9de5"]
+		}
+		{
+			nodes: ["a:49b1f10b-1311-5d75-9205-2febb47d9de5" "q:619fd87dbe9993d9"]
+		}
+		{
+			nodes: ["q:193723c5373868b6" "a:0f4f0184-83d4-59f6-a12f-a0bdd20b209d"]
+		}
+		{
+			nodes: ["a:0f4f0184-83d4-59f6-a12f-a0bdd20b209d" "a:ca6c1f41-4a73-5454-b144-ffe40e618caa"]
+		}
+		{
+			nodes: ["a:ca6c1f41-4a73-5454-b144-ffe40e618caa" "q:1f7029cbac837957"]
+		}
+		{
+			nodes: ["q:29ed3383173fea25" "a:65847fa7-3159-5cc9-bf42-9269d2611d5f"]
+		}
+		{
+			nodes: ["a:65847fa7-3159-5cc9-bf42-9269d2611d5f" "a:d79b7cb2-32bd-53ec-af57-d4d0065d631d"]
+		}
+		{
+			nodes: ["a:d79b7cb2-32bd-53ec-af57-d4d0065d631d" "q:6dec2956f24ff85e"]
+		}
+		{
+			nodes: ["q:4059265df1b11032" "a:88f69e45-ee5c-51cc-9d84-c604bb1ba234"]
+		}
+		{
+			nodes: ["a:88f69e45-ee5c-51cc-9d84-c604bb1ba234" "a:e78c06bc-2f52-57dc-b9be-051f8f209879"]
+		}
+		{
+			nodes: ["a:e78c06bc-2f52-57dc-b9be-051f8f209879" "q:6dec2956f24ff85e"]
+		}
+		{
+			nodes: ["q:1f7029cbac837957" "a:ddb466ad-a8fd-5824-b0b4-da74b1076f94"]
+		}
+		{
+			nodes: ["a:ddb466ad-a8fd-5824-b0b4-da74b1076f94" "a:f680e501-c9e9-57e7-8204-076face686da"]
+		}
+		{
+			nodes: ["a:f680e501-c9e9-57e7-8204-076face686da" "q:6dec2956f24ff85e"]
+		}
+		{
+			nodes: ["q:1f7029cbac837957" "q:2096de03e65c56ed"]
+		}
+		{
+			nodes: ["q:1f7029cbac837957" "a:25aa9511-dd5f-5695-94c1-eeab82bb52fd"]
+		}
+		{
+			nodes: ["a:25aa9511-dd5f-5695-94c1-eeab82bb52fd" "a:d4e61e35-8ed6-5d4d-9bbf-34391a52d48d"]
+		}
+		{
+			nodes: ["a:d4e61e35-8ed6-5d4d-9bbf-34391a52d48d" "q:75e57e57ef0bf415"]
+		}
+		{
+			nodes: ["q:d2355e17517f8ca" "a:6638297c-cede-51eb-add4-b4dab82868b3"]
+		}
+		{
+			nodes: ["a:6638297c-cede-51eb-add4-b4dab82868b3" "a:a043da3a-d9c5-51eb-bcf1-1ff104d0997e"]
+		}
+		{
+			nodes: ["a:a043da3a-d9c5-51eb-bcf1-1ff104d0997e" "q:193723c5373868b6"]
+		}
+		{
+			nodes: ["q:bd18e786bc99772" "q:193723c5373868b6"]
+		}
+		{
+			nodes: ["q:540d183092150231" "q:1f7029cbac837957"]
+		}
+		{
+			nodes: ["q:12a26e684e53a7d2" "q:540d183092150231"]
+		}
+	]
+	images: [
+		{
+			x: -2.4d
+			y: -1.727d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e0dcc2fb-74f3-529d-8824-29507f1cc64a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.48d
+			y: -1.293d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ff869112-b4bf-5a5d-a563-6345d0b0ab20"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.4d
+			y: 0.193d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:9db2b5e8-4683-5c0c-9130-2821d14a52cc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.48d
+			y: -0.333d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8d96215d-9bf6-52a0-8bfd-8ab0ef06f506"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.48d
+			y: 0.48d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ec43a94e-bc5a-5903-9366-028807e24bfa"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.36d
+			y: 0.24d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:65d7c30d-9204-55b9-8ba2-7fb7b5c7373b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.28d
+			y: -5.28d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6638297c-cede-51eb-add4-b4dab82868b3"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.36d
+			y: -4.8d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a043da3a-d9c5-51eb-bcf1-1ff104d0997e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.44d
+			y: 2.88d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:65847fa7-3159-5cc9-bf42-9269d2611d5f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.32d
+			y: 2.88d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d79b7cb2-32bd-53ec-af57-d4d0065d631d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.36d
+			y: 3.447d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:88f69e45-ee5c-51cc-9d84-c604bb1ba234"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.28d
+			y: 3.163d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e78c06bc-2f52-57dc-b9be-051f8f209879"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.48d
+			y: -4.32d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2ee2ad0a-c1c8-54f2-916c-b42bae1dc3ee"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.48d
+			y: -4.32d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4220799b-7c4c-550d-b4eb-c78352623331"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.48d
+			y: -3.03d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:61833fba-930d-59f9-bd72-e3058c620f56"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.4d
+			y: -1.74d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bf7c20a9-52aa-5715-863f-28f1b974563f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.44d
+			y: -2.88d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:dca44dff-b36e-500d-a95e-2d6fad8b6d0d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.32d
+			y: -1.44d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:49b1f10b-1311-5d75-9205-2febb47d9de5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.48d
+			y: -0.96d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0f4f0184-83d4-59f6-a12f-a0bdd20b209d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.4d
+			y: 2.4d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ca6c1f41-4a73-5454-b144-ffe40e618caa"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.24d
+			y: 5.76d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:25aa9511-dd5f-5695-94c1-eeab82bb52fd"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 8.16d
+			y: 5.76d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d4e61e35-8ed6-5d4d-9bbf-34391a52d48d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.28d
+			y: 4.8d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ddb466ad-a8fd-5824-b0b4-da74b1076f94"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.24d
+			y: 3.84d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f680e501-c9e9-57e7-8204-076face686da"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "scope": "dedicated-server",
+  "mods": [
+    {
+      "file": "Corgilib-Forge-1.20.1-4.0.3.6.jar",
+      "patchId": "disable-deferred-random-ticks-20261017",
+      "upstreamSha256": "6f337ceae789bd31f39c0c4e1bfa1bc094dbfcc2d8e4eee3c8b6f50750891298",
+      "patchedSha256": "3dd5e3fde779f41d82531f7dba1c62fbc4f6dc282008d46c6b5317bf77b7f04f",
+      "changedZipMembers": [
+        "corgilib-common.mixins.json",
+        "corgitaco/corgilib/mixin/chunk/MixinChunkAccess.class"
+      ]
+    },
+    {
+      "file": "Oh-The-Trees-Youll-Grow-forge-1.20.1-1.7.3.jar",
+      "patchId": "disable-deferred-random-ticks-20261017",
+      "upstreamSha256": "5817a5ff8439515b6413ab655cc7d64ecd3d24d4ac5a8605ae34fd73ec8be4cf",
+      "patchedSha256": "91709031d559037fe66798202c1a2b05259ea28d5b639b8dcd734846616a5f66",
+      "changedZipMembers": [
+        "dev/corgitaco/ohthetreesyoullgrow/mixin/chunk/MixinChunkAccess.class",
+        "ohthetreesyoullgrow.mixins.json"
+      ]
+    }
+  ],
+  "behaviorChange": "Disable CorgiLib/TYG deferred post-generation random-tick enqueue and scheduler NBT persistence. Ordinary block/fluid ticks and natural random ticks remain unchanged; some generated blocks may wait for a later natural tick or neighbour update.",
+  "deferredRandomTickMitigationRemainsEnabled": true
+}

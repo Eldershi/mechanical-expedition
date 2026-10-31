@@ -1,0 +1,116 @@
+[
+  {
+    "id": "ftbquests:book"
+  },
+  {
+    "id": "ae2:guide"
+  },
+  {
+    "id": "immersiveengineering:manual"
+  },
+  {
+    "id": "tconstruct:materials_and_you"
+  },
+  {
+    "id": "tconstruct:puny_smelting"
+  },
+  {
+    "id": "tconstruct:mighty_smelting"
+  },
+  {
+    "id": "tconstruct:tinkers_gadgetry"
+  },
+  {
+    "id": "tconstruct:fantastic_foundry"
+  },
+  {
+    "id": "tconstruct:encyclopedia"
+  },
+  {
+    "id": "alexscaves:cave_book"
+  },
+  {
+    "id": "edenring:guide_book"
+  },
+  {
+    "id": "aether:book_of_lore"
+  },
+  {
+    "id": "botania:lexicon"
+  },
+  {
+    "id": "ars_nouveau:worn_notebook"
+  },
+  {
+    "id": "eidolon:codex"
+  },
+  {
+    "id": "enigmaticlegacy:the_acknowledgment"
+  },
+  {
+    "id": "malum:encyclopedia_arcana"
+  },
+  {
+    "id": "legendary_monsters:guide_book"
+  },
+  {
+    "id": "eternal_starlight:book"
+  },
+  {
+    "id": "solcarrot:food_book"
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "apotheosis:apoth_chronicle"
+    }
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "enderio:guide"
+    }
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "ad_astra:astrodux"
+    }
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "allthemodium:allthemodium_book"
+    }
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "irons_spellbooks:iss_guide_book"
+    }
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "l2hostility:hostility_guide"
+    }
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "terramity:terramity_guidebook"
+    }
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "touhou_little_maid:memorizable_gensokyo"
+    }
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "thermal:guidebook"
+    }
+  }
+]

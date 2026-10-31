@@ -1,0 +1,106 @@
+{
+	filename: "expedition_aerospace"
+	group: "3346A01E0EAFD002"
+	icon: "cmi:astronautic_mechanism"
+	id: "7406E4576FD88E81"
+	order_index: 0
+	title: "航空与宇航总览"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	quests: [
+		{
+			id: "167D4DC0804DA7FF"
+			title: "航空工程"
+			icon: "cmi:aeronautic_mechanism"
+			x: -4.0d
+			y: -2.0d
+			description: ["以铝合金、石墨烯、埃忒姆电容和光纤制造航空基座，再加入供氧设备、福鲁伊克斯线、结构塑料与太空零件。" "航空构件用于前两级火箭部件。出发前分别跑通供氧、燃油、总装与补给。"]
+			tasks: [
+				{
+					id: "5A896FEC3E07CFC0"
+					type: "item"
+					item: "cmi:aeronautic_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "2D798437EF7625A7"
+			title: "宇航工程"
+			icon: "cmi:astronautic_mechanism"
+			x: 5.0d
+			y: 2.0d
+			description: ["用钛、碳纳米管、埃忒姆电容和光纤制造宇航基座，再准备冷却器、福鲁伊克斯线、结构塑料与太空零件。" "宇航构件用于后两级火箭部件与空间站。按行星环境准备供氧、温控、燃料与返航物资。"]
+			tasks: [
+				{
+					id: "275F32B97B7C121A"
+					type: "item"
+					item: "cmi:astronautic_mechanism"
+					consume_items: false
+				}
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "6ECF24DFE49736FA"
+			linked_quest: "18607CD35178CF9C"
+			x: -9.0d
+			y: -2.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "44D53D6B206D65E3"
+			linked_quest: "7155210392641F4C"
+			x: -4.0d
+			y: 3.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "13E7FFAAFC0E22AE"
+			linked_quest: "01B84EE03D8FFD49"
+			x: 1.0d
+			y: -4.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "40AE2F7CCEC8F9F5"
+			linked_quest: "25D68FEDC946D6DF"
+			x: 9.0d
+			y: 2.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "66D3B053EC9470E5"
+			linked_quest: "39F85C7A6533E3B5"
+			x: 9.0d
+			y: 6.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:6ecf24dfe49736fa" "q:167d4dc0804da7ff"]
+		}
+		{
+			nodes: ["q:167d4dc0804da7ff" "l:44d53d6b206d65e3"]
+		}
+		{
+			nodes: ["l:44d53d6b206d65e3" "l:13e7ffaafc0e22ae"]
+		}
+		{
+			nodes: ["q:167d4dc0804da7ff" "q:2d798437ef7625a7"]
+		}
+		{
+			nodes: ["q:2d798437ef7625a7" "l:40ae2f7ccec8f9f5"]
+		}
+		{
+			nodes: ["q:2d798437ef7625a7" "l:66d3b053ec9470e5"]
+		}
+	]
+}

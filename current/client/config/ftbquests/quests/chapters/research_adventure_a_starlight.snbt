@@ -1,0 +1,901 @@
+{
+	id: "7B3DA60D331159CE"
+	filename: "research_adventure_a_starlight"
+	title: "永恒星光"
+	group: "54D4CAA40ADB5408"
+	order_index: 202
+	icon: "minecraft:diamond_sword"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "333E491B1BA2288D"
+			title: "守门人的两条获准路线"
+			icon: "minecraft:diamond_sword"
+			x: -10.08d
+			y: -2.16d
+			optional: false
+			tasks: [
+				{
+					id: "52D0812C0005BB1B"
+					type: "advancement"
+					advancement: "eternal_starlight:challenge_gatekeeper"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1f67c5447153cbb7da5dbad8.png width:32 height:32 align:center}"
+				"在主世界寻找传送门结构与守门人。"
+				"选挑战获胜，或已经完成击败末影龙后与未激活守门人交谈。"
+				"许可/袋子有任选一种来源。不能把屠龙和战斗都强制要求。"
+				"打开首次袋取得先知球体与漠光石板。"
+			]
+		}
+		{
+			id: "193F4BEBBBDEE4E0"
+			title: "先知球体与传送门"
+			icon: "eternal_starlight:orb_of_prophecy"
+			x: -7.92d
+			y: -2.16d
+			optional: false
+			tasks: [
+				{
+					id: "3ACDE24087985269"
+					type: "item"
+					item: "eternal_starlight:orb_of_prophecy"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1f59be959931131cf42dff56.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b8e7ccccdfa35a3565c687b9.png width:240 height:120 align:center}"
+				"首次守门人袋，或已有5蓝色星辉水晶碎片＋4玻璃的现包合成。点门不消耗球体。"
+				"对chiseled_voidstone门框使用球体激活。留下返程门坐标。"
+				"进入永恒星光。"
+				"石板与纹章/生态资源可并行了解。"
+			]
+		}
+		{
+			id: "3F7DD4F6A8A105C8"
+			title: "榧树去皮得到绯夜脂路线"
+			icon: "eternal_starlight:amaramber_ingot"
+			x: -5.04d
+			y: -7.33d
+			optional: true
+			tasks: [
+				{
+					id: "21908624E5BD400F"
+					type: "item"
+					item: "eternal_starlight:amaramber_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/449f673e60fcffbf3dd13715.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/63639200116d931605a18671.png width:240 height:120 align:center}"
+				"榧树原木与斧。粗绯夜脂和深板岩。"
+				"去皮获取粗绯夜脂，按配方合绯夜脂锭。"
+				"本地装备基底与营火材料。"
+				"与地下深银/星钻路线并行，无Boss前置。"
+			]
+		}
+		{
+			id: "5E506570C5DE8010"
+			title: "矿物与群系装备按用途选择"
+			icon: "eternal_starlight:starlit_diamond"
+			x: -5.04d
+			y: -4.32d
+			optional: true
+			tasks: [
+				{
+					id: "1D0EDF0716294438"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/6be3ff3f25bb8ac15b9006cf.png width:32 height:32 align:center}" "带合适镐、补给与回家路线。" "在阴沉石/虚空石层找深银、星钻、星核。永冻区与沼泽/热泉各有特殊材料。" "可选永冻、瘴紫、热泉或星钻装备。"]
+		}
+		{
+			id: "2F748161B0073D5D"
+			title: "以太河与炼金师防护"
+			icon: "eternal_starlight:alchemist_mask"
+			x: -4.59d
+			y: 0.0d
+			optional: true
+			tasks: [
+				{
+					id: "0E3FF14F11AB63E0"
+					type: "advancement"
+					advancement: "eternal_starlight:obtain_alchemist_mask"
+					criterion: ""
+				}
+				{
+					id: "52343E88AF8F94A6"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a0416c7eca466e68018e6bfb.png width:32 height:32 align:center}"
+				"避开以太，采石英硫簇得碎片。"
+				"用碎片做炼金师面具/长袍，了解护甲腐蚀与恢复期，另留安全过河路线。"
+				"特定环境护具。进入维度不需要这件护具。"
+				"河下晶洞是材料路线，水下与沙漠生态另选。"
+			]
+		}
+		{
+			id: "7E7063A69E668AE7"
+			title: "给星火鸟巢投入种子"
+			icon: "eternal_starlight:starfire_bird_nest"
+			x: -2.16d
+			y: -9.36d
+			optional: true
+			tasks: [
+				{
+					id: "6CAB82847E542D19"
+					type: "advancement"
+					advancement: "eternal_starlight:put_seeds_into_starfire_bird_nest"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c0139a84a1f50e2d976da675.png width:32 height:32 align:center}"
+				"找到星火鸟巢。先空手取蛋，勿直接拆巢。"
+				"放入可接受的种子等鸟交换，取星火。可以做鸟舍继续安置。"
+				"星火材料与鸟蛋。交换不是普通杀怪掉落。"
+				"星火将沙变粗流璃，再烧炼。"
+			]
+		}
+		{
+			id: "63DBA0A92017777A"
+			title: "烧炼粗流璃得到流璃"
+			icon: "eternal_starlight:flowglaze"
+			x: 0.72d
+			y: -9.36d
+			optional: true
+			tasks: [
+				{
+					id: "55A90FFA63EFC58B"
+					type: "item"
+					item: "eternal_starlight:flowglaze"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e2bc92d7e248094f15cd4f5c.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/4935e6c9ff5f16c26ababc00.png width:180 height:124 align:center}"
+				"星火作用沙得到粗流璃。熔炉/高炉并行。"
+				"按任一烧炼配方加工。"
+				"流璃用于永冻装备升级，模板另从遗迹获得。"
+				"与星火升级路线并列，不要求先打月藤。"
+			]
+		}
+		{
+			id: "76CAC87679320AA9"
+			title: "饥渴行者与饥渴之牙"
+			icon: "eternal_starlight:tooth_of_hunger"
+			x: -5.04d
+			y: 6.48d
+			optional: true
+			tasks: [
+				{
+					id: "16F5493BAACFC67D"
+					type: "item"
+					item: "eternal_starlight:tooth_of_hunger"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ebeed1789842a2d8d0e74ecb.png width:32 height:32 align:center}"
+				"晶化沙漠遭遇。该实体配方查询图标导出失败，改用牙物品图与原帧。"
+				"击败获取牙。留意匕首的饥饿状态，不同来源的状态可能不同。"
+				"牙用于匕首/箭与晶生催化器。"
+				"自动采矿可选，需额外水晶燃料与红石。"
+			]
+		}
+		{
+			id: "50FF3F5365FEBE04"
+			title: "晶生催化器的采矿能力"
+			icon: "eternal_starlight:crystalborn_catalyst"
+			x: -2.16d
+			y: 6.48d
+			optional: true
+			tasks: [
+				{
+					id: "79919AE745AABEC1"
+					type: "item"
+					item: "eternal_starlight:crystalborn_catalyst"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/18c984bbedfa326521f05cc6.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/5f8ad0215f61af222acebf93.png width:240 height:120 align:center}"
+				"饥渴之牙、灰烬砖与红石。"
+				"按配方做机器，投入星辉水晶碎片并给红石。检查实际掉落/范围。"
+				"一个本模组内的自动采矿分支。"
+				"可接入收集设备，将产物送入仓库。"
+			]
+		}
+		{
+			id: "2188C1227AB86A41"
+			title: "食尸鬼交易与晾干架"
+			icon: "eternal_starlight:drying_rack"
+			x: -2.16d
+			y: 3.6d
+			optional: true
+			tasks: [
+				{
+					id: "0EC7C466C25F6CFA"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/8d0d29c535de58e12b25ac3b.png width:32 height:32 align:center}"
+				"黑暗沼泽地穴与瘴紫石。"
+				"用瘴紫石交易辛果/种子、模板、发射器或晾干架。普通放置与营火上方晾晒输出不同。"
+				"食物、升级与处理腐肉的独立路线。"
+				"麻木延后返还伤害，不能当永久75%减伤。"
+			]
+		}
+		{
+			id: "09AF5C74E792B31B"
+			title: "流星雨材料与防空"
+			icon: "eternal_starlight:aethersent_ingot"
+			x: -5.04d
+			y: 9.36d
+			optional: true
+			tasks: [
+				{
+					id: "2EA8466B8672AE83"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/dfa10b0b200349c551146ac2.png width:32 height:32 align:center}"
+				"观察天气，留出建筑防护。并不依赖击败某Boss。"
+				"天气中采粗天赐矿或处理苦彗怕。星引火箭可改变天气，天赐傀儡可拦截。"
+				"特殊材料用于星河装备与箭袋等。"
+				"小苦彗怕实体图标用原帧。"
+			]
+		}
+		{
+			id: "66D434FC59C8C604"
+			title: "从寻觅者取得寻觅之眼"
+			icon: "eternal_starlight:seeking_eye"
+			x: -1.44d
+			y: -2.16d
+			optional: true
+			tasks: [
+				{
+					id: "718F09BEF4486606"
+					type: "item"
+					item: "eternal_starlight:seeking_eye"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/0b654f81fe92e59743ab75a1.png width:32 height:32 align:center}" "在永恒星光寻找自然出现的寻觅者。" "击败寻觅者取得寻觅之眼。也可以直接探索遗迹。配合石板寻找诅咒花园或傀儡锻造厂，两处遗迹分别探索。" "取得可用于定位遗迹的寻觅之眼。"]
+		}
+		{
+			id: "44A49E93D33659B9"
+			title: "诅咒花园与升级模板"
+			icon: "eternal_starlight:starfire_upgrade_smithing_template"
+			x: 1.44d
+			y: -4.32d
+			optional: false
+			tasks: [
+				{
+					id: "6B55FF74B297DC8D"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/588e45a39560a5461b2c6bc7.png width:32 height:32 align:center}"
+				"石板与自然导航/眼/纹章任选，不以失效合成锁住。"
+				"探索花园迷宫，处理藤骸/怨颅，查箱中配件与星火/流璃模板。"
+				"模板与配件，Boss房在中央。"
+				"月藤挑战和去锻造厂为并行选择。"
+			]
+		}
+		{
+			id: "19D834E4277FFE84"
+			title: "热泉石剑升级星火剑"
+			icon: "eternal_starlight:starfire_sword"
+			x: 3.6d
+			y: -7.2d
+			optional: true
+			tasks: [
+				{
+					id: "2B22E5FFF2B71144"
+					type: "item"
+					item: "eternal_starlight:starfire_sword"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3628fa8ee93af25607efe3ee.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/aae876faf4cee1e5e28b42b0.png width:232 height:72 align:center}"
+				"热泉石剑＋星火模板＋星火。锻造台。"
+				"进行smithing_transform，模板与材料会消耗，基础剑被升级。"
+				"得到星火装备路线。"
+				"这类工具可作为月藤点燃解法之一，不是唯一合法武器。"
+			]
+		}
+		{
+			id: "75DFF5D4EF5D6271"
+			title: "月藤巨物：利用点燃机制"
+			icon: "eternal_starlight:parasol_grass"
+			x: 4.32d
+			y: -4.32d
+			optional: false
+			tasks: [
+				{
+					id: "35F625C0DB6EFC29"
+					type: "advancement"
+					advancement: "eternal_starlight:kill_lunar_monstrosity"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4b1ce4cc63e805d8d26f736b.png width:32 height:32 align:center}"
+				"花园中央遭遇。准备能点燃的手段与机动。"
+				"先处理未点燃时的减伤，再应对第二阶段毒雾/怨颅与位移。"
+				"Boss袋：花瓣、月藤、露珠与月珥弓等用途明确。"
+				"材料制作花瓣战镰/钩锁等选修，不锁星光傀儡。"
+			]
+		}
+		{
+			id: "04CAA81A78A0B5C5"
+			title: "制作花瓣战镰"
+			icon: "eternal_starlight:petal_scythe"
+			x: 7.2d
+			y: -4.32d
+			optional: true
+			tasks: [
+				{
+					id: "38CB41B9E12C76BC"
+					type: "item"
+					item: "eternal_starlight:petal_scythe"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e133ded320e010522674adad.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/dd3a561b5d1a5efd8d52cdc6.png width:240 height:120 align:center}"
+				"坚韧花瓣与坚韧月藤。"
+				"按配方合成并查看毒云攻击说明。"
+				"明确月藤材料的实际去向。"
+				"其他袋中武器/配件为随机或替代收益，不必全收。"
+			]
+		}
+		{
+			id: "2E6195592A32B365"
+			title: "傀儡锻造厂：寻找能量房"
+			icon: "eternal_starlight:golem_steel_pillar"
+			x: 1.44d
+			y: 0.72d
+			optional: false
+			tasks: [
+				{
+					id: "54105A1830226564"
+					type: "advancement"
+					advancement: "eternal_starlight:enter_golem_forge"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/fb832db852f850208ee76232.png width:32 height:32 align:center}"
+				"与花园同级的结构探索分支。"
+				"找烟囱/厂房，收负温试管和箱中模板。到能量方块所在Boss房。"
+				"挑战准备与可选冷却物。"
+				"关闭四能量方块，而非只堆高面板伤害。"
+			]
+		}
+		{
+			id: "255200B8E9C5A8A1"
+			title: "星光傀儡：关闭四方能量"
+			icon: "eternal_starlight:chiseled_golem_steel_block"
+			x: 4.32d
+			y: 0.72d
+			optional: false
+			tasks: [
+				{
+					id: "2E463AC7B763FACD"
+					type: "advancement"
+					advancement: "eternal_starlight:kill_golem"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7a7a6056476bfc2ec13b95ea.png width:32 height:32 align:center}"
+				"锻造厂遭遇与可操作的四能量方块。"
+				"充能时右击/射击关闭方块，破防窗口输出。负温试管可影响能量。"
+				"战利品袋产氧化傀儡钢与氧化合金炉。"
+				"斧头去氧化获得炉。氧化钢烧炼，分别完成。"
+			]
+		}
+		{
+			id: "25DACB06F7A23D4A"
+			title: "从傀儡袋取得氧化材料"
+			icon: "eternal_starlight:oxidized_golem_steel_ingot"
+			x: 7.2d
+			y: 0.72d
+			optional: true
+			tasks: [
+				{
+					id: "116939FDD6C5BD40"
+					type: "item"
+					item: "eternal_starlight:oxidized_golem_steel_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/75b39f447ab95287e95a8107.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/c44742978326ca226e6dd324.png width:240 height:120 align:center}"
+				"击败星光傀儡袋为已证来源。其他来源不声明穷尽。"
+				"打开袋取钢。"
+				"氧化钢可用熔炉/高炉精炼。"
+				"普通钢的配方与高级合金炉的能力分开。"
+			]
+		}
+		{
+			id: "0711C86CB014E3CC"
+			title: "用普通烧炼精炼傀儡钢"
+			icon: "eternal_starlight:golem_steel_ingot"
+			x: 10.08d
+			y: 0.72d
+			optional: true
+			tasks: [
+				{
+					id: "542E67D556F9E897"
+					type: "item"
+					item: "eternal_starlight:golem_steel_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/acaeb4e4805786f32bc9b8f4.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/bf1777532a8c822e3dc26f95.png width:240 height:120 align:center}"
+				"氧化傀儡钢与已有熔炉/高炉。"
+				"不需要先有合金炉。"
+				"傀儡钢用于机械弩、潜掘镐等。"
+				"装备分支选用。合金炉另有增产工艺。"
+			]
+		}
+		{
+			id: "06019AF946CC6329"
+			title: "合金炉：去氧化并处理过热"
+			icon: "eternal_starlight:alloy_furnace"
+			x: 7.2d
+			y: 3.6d
+			optional: true
+			tasks: [
+				{
+					id: "58E6BD8CC68EF15D"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/83a7080b67147cd44e85b3dd.png width:32 height:32 align:center}"
+				"从Boss袋取得氧化合金炉，用斧头去氧化。可涂粗绯夜脂。"
+				"按alloy类别配方生产，监视GUI温度并加入负温试管/永冻材料降温。"
+				"一个独立加工能力。不能用拥有炉子代替运转。"
+				"只让实际alloy配方依赖此能力。不倒锁普通钢的烧炼。"
+			]
+		}
+		{
+			id: "44EA3EBA3967039E"
+			title: "纹章与战斗技能"
+			icon: "eternal_starlight:lunar_crystal"
+			x: -5.04d
+			y: -9.36d
+			optional: true
+			tasks: [
+				{
+					id: "6A99C72D8BD51CFB"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/28e1f3f9c6152d1c71859c1f.png width:32 height:32 align:center}" "先知球体。" "在GUI查看已拥有纹章，选一种对应元素水晶支持施法，不要求所有水晶。"]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:76cac87679320aa9" "q:50ff3f5365febe04"]
+		}
+		{
+			nodes: ["q:25dacb06f7a23d4a" "q:711c86cb014e3cc"]
+		}
+		{
+			nodes: ["q:333e491b1ba2288d" "q:193f4bebbbdee4e0"]
+		}
+		{
+			nodes: ["q:193f4bebbbdee4e0" "q:3f7dd4f6a8a105c8"]
+		}
+		{
+			nodes: ["q:193f4bebbbdee4e0" "a:214b270c-e227-5f9a-8f34-01c4f7bc419b"]
+		}
+		{
+			nodes: ["a:214b270c-e227-5f9a-8f34-01c4f7bc419b" "a:0c48ac46-4fff-5e55-ad11-bc4835e2e917"]
+		}
+		{
+			nodes: ["a:0c48ac46-4fff-5e55-ad11-bc4835e2e917" "q:5e506570c5de8010"]
+		}
+		{
+			nodes: ["q:193f4bebbbdee4e0" "a:88288bbb-6ca1-5ad4-b359-31c614ec6ce6"]
+		}
+		{
+			nodes: ["a:88288bbb-6ca1-5ad4-b359-31c614ec6ce6" "a:16d5898e-6b12-532a-a63b-523bfd6dc81c"]
+		}
+		{
+			nodes: ["a:16d5898e-6b12-532a-a63b-523bfd6dc81c" "q:2f748161b0073d5d"]
+		}
+		{
+			nodes: ["q:193f4bebbbdee4e0" "a:8199c5ba-68f6-5469-9798-06df1c8b4000"]
+		}
+		{
+			nodes: ["a:8199c5ba-68f6-5469-9798-06df1c8b4000" "a:6a2475bc-7422-5aff-b547-dd06f8d9274c"]
+		}
+		{
+			nodes: ["a:6a2475bc-7422-5aff-b547-dd06f8d9274c" "q:7e7063a69e668ae7"]
+		}
+		{
+			nodes: ["q:193f4bebbbdee4e0" "a:d9f3fce7-08c9-5635-ab5d-fbd959e6448d"]
+		}
+		{
+			nodes: ["a:d9f3fce7-08c9-5635-ab5d-fbd959e6448d" "a:e5abcb7b-859a-51b0-a1e6-65f94421fe95"]
+		}
+		{
+			nodes: ["a:e5abcb7b-859a-51b0-a1e6-65f94421fe95" "q:76cac87679320aa9"]
+		}
+		{
+			nodes: ["q:193f4bebbbdee4e0" "a:4870958d-3781-5fc3-a2ae-8fe7fb7f0c6f"]
+		}
+		{
+			nodes: ["a:4870958d-3781-5fc3-a2ae-8fe7fb7f0c6f" "a:8ea709ee-7d5a-5a68-a351-0965b08085e5"]
+		}
+		{
+			nodes: ["a:8ea709ee-7d5a-5a68-a351-0965b08085e5" "q:2188c1227ab86a41"]
+		}
+		{
+			nodes: ["q:193f4bebbbdee4e0" "a:1f857e8f-0984-59b5-8778-a71f64def2ac"]
+		}
+		{
+			nodes: ["a:1f857e8f-0984-59b5-8778-a71f64def2ac" "a:f413222d-09a2-5dcc-9872-c00106d12f0f"]
+		}
+		{
+			nodes: ["a:f413222d-09a2-5dcc-9872-c00106d12f0f" "q:9af5c74e792b31b"]
+		}
+		{
+			nodes: ["q:193f4bebbbdee4e0" "a:98bf00e6-ed2b-59b5-bdb3-4f073bf2ac15"]
+		}
+		{
+			nodes: ["a:98bf00e6-ed2b-59b5-bdb3-4f073bf2ac15" "a:c9c5a154-374c-5786-b764-c0f223336e20"]
+		}
+		{
+			nodes: ["a:c9c5a154-374c-5786-b764-c0f223336e20" "q:66d434fc59c8c604"]
+		}
+		{
+			nodes: ["q:193f4bebbbdee4e0" "a:3421d664-b58d-51ed-9111-2832840304ca"]
+		}
+		{
+			nodes: ["a:3421d664-b58d-51ed-9111-2832840304ca" "a:9a024a31-ba7a-564f-8e50-ba639699467f"]
+		}
+		{
+			nodes: ["a:9a024a31-ba7a-564f-8e50-ba639699467f" "q:44ea3eba3967039e"]
+		}
+		{
+			nodes: ["q:7e7063a69e668ae7" "q:63dba0a92017777a"]
+		}
+		{
+			nodes: ["q:66d434fc59c8c604" "q:44a49e93d33659b9"]
+		}
+		{
+			nodes: ["q:66d434fc59c8c604" "a:27bb96e2-30e6-5bf8-87e3-1689ab587228"]
+		}
+		{
+			nodes: ["a:27bb96e2-30e6-5bf8-87e3-1689ab587228" "a:82b12c97-6b4a-52e1-805c-257dc3714c3d"]
+		}
+		{
+			nodes: ["a:82b12c97-6b4a-52e1-805c-257dc3714c3d" "q:2e6195592a32b365"]
+		}
+		{
+			nodes: ["q:44a49e93d33659b9" "a:cf680eaf-73b1-53d1-912b-c1eb20e9f874"]
+		}
+		{
+			nodes: ["a:cf680eaf-73b1-53d1-912b-c1eb20e9f874" "a:942343f3-eb01-5e87-ab2a-07615e69ae18"]
+		}
+		{
+			nodes: ["a:942343f3-eb01-5e87-ab2a-07615e69ae18" "q:75dff5d4ef5d6271"]
+		}
+		{
+			nodes: ["q:75dff5d4ef5d6271" "q:4caa81a78a0b5c5"]
+		}
+		{
+			nodes: ["q:2e6195592a32b365" "q:255200b8e9c5a8a1"]
+		}
+		{
+			nodes: ["q:255200b8e9c5a8a1" "q:25dacb06f7a23d4a"]
+		}
+		{
+			nodes: ["q:255200b8e9c5a8a1" "a:c24577f5-2cef-5ac5-9530-74de18133d5c"]
+		}
+		{
+			nodes: ["a:c24577f5-2cef-5ac5-9530-74de18133d5c" "a:365df2c1-a779-5e22-b93b-ecd639a1567b"]
+		}
+		{
+			nodes: ["a:365df2c1-a779-5e22-b93b-ecd639a1567b" "q:6019af946cc6329"]
+		}
+	]
+	images: [
+		{
+			x: -6.96d
+			y: -2.88d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:214b270c-e227-5f9a-8f34-01c4f7bc419b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.0d
+			y: -3.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0c48ac46-4fff-5e55-ad11-bc4835e2e917"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.81d
+			y: -1.44d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:88288bbb-6ca1-5ad4-b359-31c614ec6ce6"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.7d
+			y: -0.72d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:16d5898e-6b12-532a-a63b-523bfd6dc81c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.0d
+			y: -4.56d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8199c5ba-68f6-5469-9798-06df1c8b4000"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.08d
+			y: -6.96d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6a2475bc-7422-5aff-b547-dd06f8d9274c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.96d
+			y: 0.72d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d9f3fce7-08c9-5635-ab5d-fbd959e6448d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.0d
+			y: 3.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e5abcb7b-859a-51b0-a1e6-65f94421fe95"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.0d
+			y: -0.24d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4870958d-3781-5fc3-a2ae-8fe7fb7f0c6f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.08d
+			y: 1.68d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8ea709ee-7d5a-5a68-a351-0965b08085e5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.96d
+			y: 1.68d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1f857e8f-0984-59b5-8778-a71f64def2ac"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.0d
+			y: 5.52d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f413222d-09a2-5dcc-9872-c00106d12f0f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.76d
+			y: -2.16d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:98bf00e6-ed2b-59b5-bdb3-4f073bf2ac15"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.6d
+			y: -2.16d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c9c5a154-374c-5786-b764-c0f223336e20"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.96d
+			y: -4.56d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3421d664-b58d-51ed-9111-2832840304ca"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.0d
+			y: -6.96d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:9a024a31-ba7a-564f-8e50-ba639699467f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.48d
+			y: -1.2d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:27bb96e2-30e6-5bf8-87e3-1689ab587228"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.48d
+			y: -0.24d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:82b12c97-6b4a-52e1-805c-257dc3714c3d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.4d
+			y: -4.32d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:cf680eaf-73b1-53d1-912b-c1eb20e9f874"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.36d
+			y: -4.32d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:942343f3-eb01-5e87-ab2a-07615e69ae18"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.28d
+			y: 1.68d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c24577f5-2cef-5ac5-9530-74de18133d5c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.24d
+			y: 2.64d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:365df2c1-a779-5e22-b93b-ecd639a1567b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

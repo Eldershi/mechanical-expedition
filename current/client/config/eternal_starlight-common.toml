@@ -1,0 +1,366 @@
+
+[general]
+	enableDataFixer = false
+	enablePortalShader = true
+	enableScreenShake = true
+	enableLootChest = true
+	enableBossRespawn = true
+	#Range: > 0
+	bossRespawnCooldown = 36000
+	spawnInEternalStarlight = false
+	respawnInEternalStarlight = false
+	startWithGuidebook = false
+	#Range: 0.0 ~ 1.0
+	aethersentMeteorDropRate = 1.0E-4
+	aethersentMeteorReplaceBlocks = false
+	#Range: 0 ~ 100000
+	mobMaxTearyTicks = 200
+	blockUnknownAttachmentWarning = true
+
+[items]
+	#Range: 0.0 ~ 10000.0
+	playerAethersentMeteorDamageScale = 1.0
+
+	[items.chainOfSouls]
+		#Range: 0.0 ~ 10000.0
+		maxRange = 64.0
+		#Range: 0.0 ~ 10000.0
+		soulAbsorbDamage = 2.0
+		#Range: 0.0 ~ 100.0
+		healPercentage = 0.5
+
+	[items.crystalbornCatalyst]
+		#Range: 0 ~ 100000
+		maxRange = 128
+		#Range: 0 ~ 100000
+		energyPerShard = 50
+
+	[items.alloyFurnace]
+		#Range: 0 ~ 1000000
+		totalOverheatTicks = 12000
+		#Range: 0 ~ 1000
+		explosionRadius = 3
+
+[mobs]
+
+	[mobs.boarwarf]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 30.0
+		#Range: 0.0 ~ 10000.0
+		armor = 10.0
+		canSpawn = true
+
+	[mobs.astralGolem]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 100.0
+		#Range: 0.0 ~ 10000.0
+		armor = 10.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 10.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 100.0
+		canSpawn = true
+
+	[mobs.gleech]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 8.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 1.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 16.0
+		canSpawn = true
+
+	[mobs.lonestarSkeleton]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 20.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 3.2
+		#Range: 0.0 ~ 10000.0
+		followRange = 16.0
+		canSpawn = true
+
+	[mobs.nightfallSpider]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 10.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 2.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 16.0
+		canSpawn = true
+
+	[mobs.seeker]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 15.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 3.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 16.0
+		canSpawn = true
+
+	[mobs.thirstWalker]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 40.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 4.5
+		#Range: 0.0 ~ 10000.0
+		followRange = 32.0
+		canSpawn = true
+
+	[mobs.creteor]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 15.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 5.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 48.0
+		canSpawn = true
+		#Range: 0.0 ~ 1.0
+		spawnChance = 0.7
+
+	[mobs.tinyCreteor]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 5.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 2.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 48.0
+		canSpawn = true
+
+	[mobs.stranghoul]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 30.0
+		#Range: 0.0 ~ 10000.0
+		armor = 2.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 2.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 32.0
+		canSpawn = true
+		#Range: > 0
+		hiringCooldown = 8000
+
+	[mobs.ent]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 10.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		canSpawn = true
+
+	[mobs.ratlin]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 15.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		canSpawn = true
+
+	[mobs.zombifiedRatlin]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 20.0
+		#Range: 0.0 ~ 10000.0
+		armor = 2.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 3.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 35.0
+		canSpawn = true
+
+	[mobs.shadowSnail]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 8.0
+		#Range: 0.0 ~ 10000.0
+		armor = 6.0
+		canSpawn = true
+
+	[mobs.yeti]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 20.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		canSpawn = true
+
+	[mobs.auroraDeer]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 20.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 3.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 16.0
+		canSpawn = true
+
+	[mobs.crystallizedMoth]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 20.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 1.5
+		#Range: 0.0 ~ 10000.0
+		followRange = 64.0
+		canSpawn = true
+
+	[mobs.shimmerLacewing]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 5.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		canSpawn = true
+
+	[mobs.starfireBird]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 15.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		canSpawn = true
+
+	[mobs.grimstoneGolem]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 20.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		canSpawn = true
+
+	[mobs.aethersentGolem]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 40.0
+		#Range: 0.0 ~ 10000.0
+		armor = 10.0
+		canSpawn = true
+
+	[mobs.luminofish]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 3.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 3.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 16.0
+		canSpawn = true
+
+	[mobs.luminaris]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 3.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 3.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 64.0
+		canSpawn = true
+
+	[mobs.twilightGaze]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 10.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 3.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 16.0
+		canSpawn = true
+
+	[mobs.theGatekeeper]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 175.0
+		#Range: 0.0 ~ 10000.0
+		armor = 15.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 1.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 200.0
+		canSpawn = true
+		canAlwaysHurtWhenFighting = false
+
+	[mobs.starlightGolem]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 200.0
+		#Range: 0.0 ~ 10000.0
+		armor = 10.0
+		#Range: 0.0 ~ 10000.0
+		attackDamageScale = 1.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 200.0
+		canSpawn = true
+
+	[mobs.freeze]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 15.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 3.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 32.0
+		canSpawn = true
+
+	[mobs.permafrost]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 120.0
+		#Range: 0.0 ~ 10000.0
+		armor = 10.0
+		#Range: 0.0 ~ 10000.0
+		attackDamageScale = 1.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 100.0
+		canSpawn = true
+
+	[mobs.lunarMonstrosity]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 200.0
+		#Range: 0.0 ~ 10000.0
+		armor = 12.0
+		#Range: 0.0 ~ 10000.0
+		attackDamageScale = 1.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 200.0
+		canSpawn = true
+
+	[mobs.tangled]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 20.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 5.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 64.0
+		canSpawn = true
+
+	[mobs.tangledSkull]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 1.0
+		#Range: 0.0 ~ 10000.0
+		armor = 0.0
+		#Range: 0.0 ~ 10000.0
+		attackDamage = 3.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 64.0
+		canSpawn = true
+
+	[mobs.solarCreeper]
+		#Range: 0.0 ~ 10000.0
+		maxHealth = 250.0
+		#Range: 0.0 ~ 10000.0
+		armor = 10.0
+		#Range: 0.0 ~ 10000.0
+		attackDamageScale = 1.0
+		#Range: 0.0 ~ 10000.0
+		followRange = 200.0
+		canSpawn = true
+

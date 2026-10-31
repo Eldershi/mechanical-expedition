@@ -1,0 +1,74 @@
+
+[STATS]
+	"Experience Reward (default: 40)" = 40
+	"Max Health (default: 180)" = 180.0
+	"Movement Speed (default: 0.24)" = 0.24
+	"Knockback Resistance (default: 1)" = 1.0
+	"Armour Value (default: 4)" = 4.0
+	"Armour Toughness Value (default: 0)" = 0.0
+	"Target Players Range (in blocks, default: 64)" = 64.0
+	"Target Mobs Range (in blocks default: 20)" = 20.0
+	"Sand Boulder Damage (default: 10)" = 10.0
+	"Sand Boulders Despawn After (in ticks, default: 100)" = 100
+	"Basic Attack Damage (default: 14)" = 14.0
+	"Basic Attack Knockback (default: 1)" = 1.0
+	"Basic Attack Shockwave Length (default: 7)" = 7
+	"Punch Attack Damage (default: 16)" = 16.0
+	"Punch Attack Disable Shields Duration (in ticks, default: 120)" = 120
+	"Punch Attack Hunger Effect Duration (in ticks, default: 200)" = 200
+	"Punch Attack Hunger Effect Level (default: 1)" = 1
+	"Roar Attack Damage (default: 4)" = 4.0
+	"Roar Attack Damage Range (in blocks, default: 16)" = 16.0
+	"Roar Attack Quicksand Range (in blocks, default: 12)" = 12.0
+	"Roar Attack Minimum Summoned Zombies (default: 2)" = 2
+	"Roar Attack Maximum Summoned Zombies (default: 5)" = 5
+	"Roar Attack Summon Zombies Range (in blocks, default: 15)" = 15
+	"Roar Attack Summoned Zombie Type (default: \"minecraft:husk\")" = "minecraft:husk"
+	"Geyser Attack Damage (default: 8)" = 8.0
+	"Geyser Attack Shockwave Length (default: 12)" = 12
+	"Geyser Attack Slam Damage (default: 16)" = 16.0
+	"Geyser Attack Slam Disable Shields Duration (in ticks, default: 150)" = 150
+	"Geyser Attack Slam Hunger Effect Duration (in ticks, default: 200)" = 200
+	"Geyser Attack Slam Hunger Effect Level (default: 1)" = 1
+	"Attacks Ignore Hurt Invulnerability (default: true)" = true
+
+[AI]
+	"Uses Sand Throw Attack (default: true)" = true
+	"Sand Throw Attack Minimum Cooldown (in ticks, default: 100)" = 100
+	"Sand Throw Attack Maximum Cooldown (in ticks, default: 200)" = 200
+	"Sand Throw Attack Minimum Use Distance (in blocks, default: 5)" = 5.0
+	"Sand Throw Attack Maximum Use Distance (in blocks, default: 30)" = 30.0
+	"Uses Basic Attack (default: true)" = true
+	"Basic Attack Maximum Use Distance (in blocks, default: 14)" = 14.0
+	"Basic Attack Cooldown (in ticks, default: 10)" = 10
+	"Uses Punch Attack (default: true)" = true
+	"Punch Attack Maximum Use Distance (in blocks, default: 4)" = 4.0
+	"Punch Attack Cooldown (in ticks, default: 60)" = 60
+	"Uses Roar Attack (default: true)" = true
+	"Roar Attack Minimum Cooldown (in ticks, default: 400)" = 400
+	"Roar Attack Maximum Cooldown (in ticks, default: 600)" = 600
+	"Uses Geyser Attack (default: true)" = true
+	"Geyser Attack Maximum Use Distance (in blocks, default: 18)" = 18.0
+	"Geyser Attack Minimum Cooldown (in ticks, default: 300)" = 300
+	"Geyser Attack Maximum Cooldown (in ticks, default: 400)" = 400
+	"Attacks Players (default: true)" = true
+	"Attacks Baby Turtles (default: true)" = true
+	"Following Target Movement Speed Multiplier (default: 1.2)" = 1.2
+	"Following Target Close Enough Distance (in blocks, default: 10)" = 10.0
+
+[DEATH]
+	"Revive Times (default: 1)" = 1
+
+[GRIEFING]
+	"Walk Griefing (default: true)" = true
+	"Walk Griefing Drops Blocks (default: false)" = false
+	"Hurt Griefing (default: true)" = true
+	"Hurt Griefing Drops Blocks (default: false)" = false
+	"Sand Boulder Griefing (default: true)" = true
+	"Punch Attack Griefing (default: true)" = true
+	"Roar Attack Griefing (default: true)" = true
+	"Geyser Attack Griefing (default: true)" = true
+
+[SPAWNING]
+	"Despawns (default: false)" = false
+

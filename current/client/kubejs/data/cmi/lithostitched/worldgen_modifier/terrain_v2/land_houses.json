@@ -1,0 +1,49 @@
+{
+  "type": "lithostitched:set_structure_spawn_condition",
+  "structures": [
+    "dungeons_arise:small_prairie_house",
+    "structory:abandoned_chapel",
+    "structory:old_manor",
+    "structory:outcast_villager_desert",
+    "structory:outcast_villager_grassy"
+  ],
+  "append": true,
+  "spawn_condition": [
+    {
+      "type": "lithostitched:grid",
+      "radius": 48,
+      "distance_between_points": 48,
+      "condition": {
+        "type": "lithostitched:height_filter",
+        "range_type": "heightmap_relative",
+        "heightmap": "OCEAN_FLOOR_WG",
+        "permitted_range": {
+          "min_inclusive": -22,
+          "max_inclusive": 22
+        }
+      },
+      "allowed_count": {
+        "min_inclusive": 9,
+        "max_inclusive": 9
+      }
+    },
+    {
+      "type": "lithostitched:grid",
+      "radius": 24,
+      "distance_between_points": 12,
+      "condition": {
+        "type": "lithostitched:height_filter",
+        "range_type": "heightmap_relative",
+        "heightmap": "OCEAN_FLOOR_WG",
+        "permitted_range": {
+          "min_inclusive": -8,
+          "max_inclusive": 8
+        }
+      },
+      "allowed_count": {
+        "min_inclusive": 25,
+        "max_inclusive": 25
+      }
+    }
+  ]
+}

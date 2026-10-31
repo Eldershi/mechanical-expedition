@@ -1,0 +1,272 @@
+{
+	id: "61728A288914BE2E"
+	filename: "research_technology_c_space_integration_hnn"
+	title: "数据模型·模拟与再生资源"
+	group: "5B22564DA513617D"
+	order_index: 43
+	icon: "hostilenetworks:prediction_matrix"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "3C3AE1C138A609E0"
+			title: "批量合成预测矩阵"
+			icon: "hostilenetworks:prediction_matrix"
+			x: -5.9d
+			y: -2.25d
+			optional: false
+			tasks: [
+				{
+					id: "278B5E35425215F8"
+					type: "item"
+					item: "hostilenetworks:prediction_matrix"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ae4b68ca02f458fe873b57eb.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/07dbf420fecb226e29d50fc6.png width:240 height:120 align:center}"
+				"铁锭、金锭、黏土球与玻璃板齐备。"
+				"按配方一次合成16矩阵。按运行速度持续补料。"
+				"每次模拟启动消耗1矩阵。"
+				"矩阵与模型分开传输，防止模型被当消耗品抽走。"
+			]
+		}
+		{
+			id: "2CF576297E656B4C"
+			title: "供电运行模拟室"
+			icon: "hostilenetworks:sim_chamber"
+			x: -2.9d
+			y: -0.25d
+			optional: false
+			tasks: [
+				{
+					id: "0455063E469E1AB6"
+					type: "item"
+					item: "hostilenetworks:sim_chamber"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "1CE29C2DC939E958"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7e7058b991d3dd195d9da276.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/38b9137ef21974b65d03f4c8.png width:240 height:120 align:center}"
+				"基础以上模型、矩阵、可持续供电和输出空位齐备。"
+				"模型放模型槽，矩阵入消耗槽。供电并等待完整周期，观察通用产物与概率专属产物。"
+				"僵尸模型每 tick 消耗 128 FE。周期300tick，模型不会整件消耗。"
+				"抽取两类产物，保留模型。配置会在模拟后继续升级。"
+			]
+		}
+		{
+			id: "38F029B541635B97"
+			title: "取得僵尸预测产物"
+			icon: "hostilenetworks:prediction"
+			x: 0.1d
+			y: -0.25d
+			optional: false
+			tasks: [
+				{
+					id: "2C9BBA8700112AB1"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/b30461443b9c621e0d246bb9.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d5bc02136ffe3fdbdbe3d5b3.png width:240 height:99 align:center}"
+				"模拟室中必须是有效僵尸模型。"
+				"持续补电与矩阵，清空输出。等待专属预测出现，记录通用产物同时产出。"
+				"得到模型专属预测绑定为僵尸模型。"
+				"送到战利品制造器，选择铁锭或其他支持掉落。"
+			]
+		}
+		{
+			id: "3108BE439C7E51C6"
+			title: "制作战利品制造器"
+			icon: "hostilenetworks:loot_fabricator"
+			x: 0.1d
+			y: 3.75d
+			optional: false
+			tasks: [
+				{
+					id: "217513CB183AE942"
+					type: "item"
+					item: "hostilenetworks:loot_fabricator"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6a5982c19cbecfab2c41a6ad.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/fb7f9ff1494544d1d20499d8.png width:240 height:120 align:center}"
+				"下界合金、钻石、金、黑曜石与比较器齐备。"
+				"放置并供电，插入模型专属预测，选择一个已注册掉落物。检查256FE/t配置与输出空位。"
+				"把预测转成选定掉落物。"
+				"先以僵尸铁锭配方完成，再扩展其他模型。"
+			]
+		}
+		{
+			id: "3F01FE007E2951AD"
+			title: "制造一批可再生铁锭"
+			icon: "minecraft:iron_ingot"
+			x: 3.1d
+			y: 0.75d
+			optional: false
+			tasks: [
+				{
+					id: "46948823DB93CF75"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/b1f6f48d3d3347c70513d42d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/bf4d556e64dfbd8b9b1ce932.png width:222 height:76 align:center}"
+				"有1僵尸预测产物与可用战利品制造器。"
+				"选择铁锭输出并运行。核对1专属预测消耗、8铁锭产出。"
+				"形成可持续铁供给的一条支路。"
+				"按需求并行其他模型。原版采矿和其他铁路线继续可用。"
+			]
+		}
+		{
+			id: "75FD59C6DB5BE251"
+			title: "利用通用预测产物"
+			icon: "hostilenetworks:overworld_prediction"
+			x: -2.9
+			y: -3.25
+			optional: true
+			tasks: [
+				{
+					id: "2C81628C70BC7010"
+					type: "item"
+					item: "hostilenetworks:overworld_prediction"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/22ba30629b2f33305a3605cd.png width:32 height:32 align:center}"
+				"模拟室完成周期会有通用产物。"
+				"从配方选择火药、铁等用途。示例4通用预测+腐肉→8铁，不能当专属预测配方。"
+				"把模拟副产物送到不同用途。"
+				"用用途查询规划材料库存。"
+			]
+		}
+		{
+			id: "770C3222E2D27486"
+			title: "完成模型到掉落物产线"
+			icon: "minecraft:book"
+			x: 6.1d
+			y: -0.25d
+			optional: false
+			tasks: [
+				{
+					id: "58B7CADEA3DC0E77"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["已具备basic模型、矩阵、两个机器与供电。" "记录10周期矩阵消耗、通用产物、概率预测数量及一次制造输出。输出满时观察暂停。" "检查供电、概率、模型保留和物流隔离。" "按需求升级模型。Boss模型都是可选独立分支。"]
+		}
+	]
+	quest_links: [
+		{
+			id: "47FC68D434FB42BD"
+			linked_quest: "332FD5434730715A"
+			x: -6.1d
+			y: -3.75d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [
+		{
+			x: -3.9d
+			y: -1.583d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:451d43ae-e04c-52a9-b2b1-d7e3eb38ef3a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.9d
+			y: -0.917d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b25eaedc-48fe-50bd-b60d-99a06a5befdd"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.1d
+			y: 0.083d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1a03626a-54ef-5cbf-b359-73cd8c78126d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.1d
+			y: 0.417d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:14a2f1ed-ad2f-55fa-a227-9cdfe63dc380"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:3c3ae1c138a609e0" "a:451d43ae-e04c-52a9-b2b1-d7e3eb38ef3a"]
+		}
+		{
+			nodes: ["a:451d43ae-e04c-52a9-b2b1-d7e3eb38ef3a" "a:b25eaedc-48fe-50bd-b60d-99a06a5befdd"]
+		}
+		{
+			nodes: ["a:b25eaedc-48fe-50bd-b60d-99a06a5befdd" "q:38f029b541635b97"]
+		}
+		{
+			nodes: ["q:2cf576297e656b4c" "q:38f029b541635b97"]
+		}
+		{
+			nodes: ["q:38f029b541635b97" "a:1a03626a-54ef-5cbf-b359-73cd8c78126d"]
+		}
+		{
+			nodes: ["a:1a03626a-54ef-5cbf-b359-73cd8c78126d" "a:14a2f1ed-ad2f-55fa-a227-9cdfe63dc380"]
+		}
+		{
+			nodes: ["a:14a2f1ed-ad2f-55fa-a227-9cdfe63dc380" "q:3f01fe007e2951ad"]
+		}
+		{
+			nodes: ["q:3108be439c7e51c6" "q:3f01fe007e2951ad"]
+		}
+		{
+			nodes: ["l:47fc68d434fb42bd" "q:2cf576297e656b4c"]
+		}
+		{
+			nodes: ["q:2cf576297e656b4c" "q:75fd59c6db5be251"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

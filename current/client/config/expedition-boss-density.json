@@ -1,0 +1,13 @@
+{
+  "twilightLandmarkFrequencies": {
+    "twilightforest:aurora_palace": 0.0015625,
+    "twilightforest:hydra_lair": 0.000625,
+    "twilightforest:knight_stronghold": 0.00025,
+    "twilightforest:labyrinth": 0.00025,
+    "twilightforest:lich_tower": 0.00015833333333333332,
+    "twilightforest:naga_courtyard": 0.00010555555555555555,
+    "twilightforest:troll_cave": 0.00025,
+    "twilightforest:yeti_cave": 0.00015833333333333332,
+    "twilightforest:dark_tower": 0.002917272687448777
+  }
+}

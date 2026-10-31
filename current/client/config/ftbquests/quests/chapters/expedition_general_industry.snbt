@@ -1,0 +1,122 @@
+{
+	filename: "expedition_general_industry"
+	group: "5B22564DA513617D"
+	icon: "cmi:ultimate_mekanism_mechanism"
+	id: "6CD5E08EE5E785E0"
+	order_index: 0
+	title: "通用工业总览"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	quests: [
+		{
+			id: "781F7DBDB354CCCA"
+			title: "基础通用工业"
+			icon: "cmi:basic_mekanism_mechanism"
+			x: -6.0d
+			y: -1.0d
+			description: ["先建立集成工作站与通用零件供应，再制作基础通用构件基座、基础控制电路和成品。" "基座与成品分开备料，接好硅橡胶、红石酸和光纤供应，持续生产基础工业设备所需部件。"]
+			tasks: [
+				{
+					id: "0390EECE92C50821"
+					type: "item"
+					item: "cmi:basic_mekanism_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "34CA8BCB18DF335C"
+			title: "高级通用工业"
+			icon: "cmi:advanced_mekanism_mechanism"
+			x: -1.0d
+			y: -1.0d
+			description: ["准备高级基座与高级控制电路，再加入镀铬钢齿轮、硅橡胶板、通用零件和红石酸。" "扩展灌注与化工供料，为更高吞吐的工业设备和核材料处理留出空间。"]
+			tasks: [
+				{
+					id: "5C5B64C7DC640DC1"
+					type: "item"
+					item: "cmi:advanced_mekanism_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "4F6B5D4FCE22096B"
+			title: "精英通用工业"
+			icon: "cmi:elite_mekanism_mechanism"
+			x: 4.0d
+			y: 1.0d
+			description: ["准备强化合金、精英电子元件与精英控制电路，建立本级基座和构件的稳定供料。" "按要建设的设备安排化工输入、回收与储存，各等级材料分开缓存。"]
+			tasks: [
+				{
+					id: "69787823685AC190"
+					type: "item"
+					item: "cmi:elite_mekanism_mechanism"
+					consume_items: false
+				}
+			]
+		}
+		{
+			id: "2F98A75C5ED1E23E"
+			title: "终极通用工业"
+			icon: "cmi:ultimate_mekanism_mechanism"
+			x: 9.0d
+			y: 1.0d
+			description: ["用原子合金与终极电子元件制作本级基座，配合终极控制电路和共用材料生产终极通用构件。" "为高阶设备储备部件，保持上游电路、合金与流体供应。"]
+			tasks: [
+				{
+					id: "392337CE3C9A0BAA"
+					type: "item"
+					item: "cmi:ultimate_mekanism_mechanism"
+					consume_items: false
+				}
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "1EB2BDE2E96E02CC"
+			linked_quest: "2BF7E103DDD10828"
+			x: -10.0d
+			y: -1.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "7AB9A48EE5B127A2"
+			linked_quest: "1476D0335CB01F3B"
+			x: -6.0d
+			y: 3.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "1D46FB576689FF85"
+			linked_quest: "3F80C3350B084874"
+			x: 0.0d
+			y: -5.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:1eb2bde2e96e02cc" "q:781f7dbdb354ccca"]
+		}
+		{
+			nodes: ["q:781f7dbdb354ccca" "q:34ca8bcb18df335c"]
+		}
+		{
+			nodes: ["q:34ca8bcb18df335c" "q:4f6b5d4fce22096b"]
+		}
+		{
+			nodes: ["q:4f6b5d4fce22096b" "q:2f98a75c5ed1e23e"]
+		}
+		{
+			nodes: ["q:781f7dbdb354ccca" "l:7ab9a48ee5b127a2"]
+		}
+		{
+			nodes: ["l:1d46fb576689ff85" "q:34ca8bcb18df335c"]
+		}
+	]
+}

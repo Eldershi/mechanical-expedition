@@ -1,0 +1,303 @@
+{
+	id: "07C1A0BCC828E598"
+	filename: "research_technology_b_heavy"
+	title: "工程蓝图与常规机器"
+	group: "050255AE19A93344"
+	order_index: 21
+	icon: "immersiveengineering:workbench"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "53BA140C34CDCB15"
+			title: "选择正确NBT蓝图与装配台"
+			icon: "immersiveengineering:workbench"
+			x: -4.4d
+			y: 0.2d
+			optional: false
+			tasks: [
+				{
+					id: "6EB3A04B659E1AC3"
+					type: "item"
+					item: "immersiveengineering:workbench"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e63d00cf755501f5058e3571.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/2a6b0a8fce3c14041a867c7b.png width:240 height:120 align:center}"
+				"有蓝图配方材料。同一blueprint注册ID具有不同NBT用途。"
+				"在装配台左槽放对应蓝图，中间供料，右边取成品。模具、电极和元件蓝图分别核对。"
+				"实际目标在输出列表中出现。同一个普通蓝图图标不证明蓝图类型匹配。"
+				"模具路线再看槽位工具消耗，工具升级走装配台另一模式。"
+			]
+		}
+		{
+			id: "3488FFB237CC3F8F"
+			title: "形成金属冲压机并安装模具"
+			icon: "immersiveengineering:metal_press"
+			x: -1.4d
+			y: -1.5d
+			optional: false
+			tasks: [
+				{
+					id: "6DF4C1C2AB4C12DD"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/578a16e67ff1929fe6637995.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/8fc58efe5d8c9c7fb6a3aced.png width:216 height:116 align:center}"
+				"按结构备料。有能源、合适模具与输入锭。"
+				"活塞朝向正确，锤敲活塞成形。右击装模具，潜行取回。顶部供能，按传送带箭头喂料收集。"
+				"一份输入产生对应板材。模具仍留机内。红石控制可暂停。"
+				"优先使用已存在铁/金/铜板任务。补充沉浸机器操作。"
+			]
+		}
+		{
+			id: "00652BEC71B19A83"
+			title: "装配机保留三个配方与液体供给"
+			icon: "immersiveengineering:assembler"
+			x: 1.1d
+			y: 0.7d
+			optional: true
+			tasks: [
+				{
+					id: "60657E4CA59F40AD"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c901b7cd115a2eaef178dd74.png width:32 height:32 align:center}"
+				"有可用普通合成配方、材料、FE。无需先完成蓝图自动台。"
+				"锤敲一条传送带形成并确定输入侧。设置三个配方以内，输入材料，桶类配方可接对应流体罐。"
+				"完成选定普通合成且下游能收物。能追溯实际配方。"
+				"可选自动普通合成支路。不以它替代热力组件装配机。"
+			]
+		}
+		{
+			id: "1DBC15EC02F88275"
+			title: "沉浸锯木机：装锯片与排木屑"
+			icon: "immersiveengineering:sawmill"
+			x: -1.4d
+			y: 2.2d
+			optional: true
+			tasks: [
+				{
+					id: "710E9488455BA115"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/91ffccba276030e02e36b84f.png width:32 height:32 align:center}"
+				"有原木、锯片、FE和输出空间。"
+				"锤敲中央金属板成形。后槽装锯片，按物流输入原木，单独收木屑。"
+				"木板和木屑进入输出。无锯片时仅去皮。锯片会磨损。"
+				"木屑可用焦炉配方。热力锯木机为另一条并行路线。"
+			]
+		}
+		{
+			id: "26FE7F96579AD070"
+			title: "探矿后用岩芯核饱和度"
+			icon: "immersiveengineering:sample_drill"
+			x: 1.6d
+			y: 3.7d
+			optional: false
+			tasks: [
+				{
+					id: "46538EEF6D56DFAC"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/20c6a2b61eed90986a7634d3.png width:32 height:32 align:center}"
+				"准备矿物探测器、岩芯钻井与FE。"
+				"先在自然土壤取样定位，再供电并用红石激活岩芯钻井。取得带位置与饱和度的样本。"
+				"样本明确该位置矿脉、饱和度/相对分布。配方查询示例岩芯不代表世界真实矿脉。"
+				"把挖掘机放在已勘定有效位置，低效率时重新取样。"
+			]
+		}
+		{
+			id: "7270243136C8A000"
+			title: "斗轮挖掘机持续采出矿物"
+			icon: "immersiveengineering:excavator"
+			x: 4.6d
+			y: 3.2d
+			optional: true
+			tasks: [
+				{
+					id: "3216690A845521F0"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1cfb6fed4ac077cfe10998e8.png width:32 height:32 align:center}"
+				"有效矿脉、主体与斗轮两部分、足够FE及物品出口空间。"
+				"按手册组合主体/斗轮，检查输出和红石控制。按样本位置运行，记录矿物与废物。"
+				"连续两轮真实输出，能量实际消耗。"
+				"形成可维护采矿终点，扩产前重新评估矿脉与能源。"
+			]
+		}
+		{
+			id: "1A83E8E9C4279F00"
+			title: "沉浸工具：燃料、能量与磨损分开"
+			icon: "immersiveengineering:drill"
+			x: -4.4
+			y: 3.2
+			optional: true
+			tasks: [
+				{
+					id: "08ECDDC0CAED3BCD"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9ca795a1b3cdb7de2d1edf4b.png width:32 height:32 align:center}"
+				"采矿钻需钻头和液体燃料。磁轨炮需充电和弹药。左轮需弹药。"
+				"在工程师装配台安装适用插件，机械钻补燃料并检查钻头耐久。充电工具使用充电站/背包。"
+				"选定工具实际完成一次用途。升级可使用，燃料/弹药消耗与钻头磨损分别记录。"
+			]
+		}
+		{
+			id: "0EE4E05A8A4330D6"
+			title: "序列装配台：普通配方自动合成"
+			icon: "thermal:machine_crafter"
+			x: 4.6
+			y: -0.2
+			optional: true
+			tasks: [
+				{
+					id: "480B40A95C829304"
+					type: "item"
+					item: "thermal:machine_crafter"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "6BA57C5D4604EA90"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/fd71b6c2d08efe2d0fda2728.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/327f8b544149934ce7c0ede6.png width:240 height:95 align:center}"
+				"按组件装配配方备料。安装机器后还需FE与目标原料。"
+				"配置普通合成模板，输入材料并收产物。与组件装配机用途区别清楚。"
+				"可自动完成普通合成；组件装配配方需使用对应的部件装配机。"
+				"可选自动化支线。"
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "7581633A71D6F302"
+			linked_quest: "6ED98C2148C69BD7"
+			x: -1.4d
+			y: -3.3d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "19C1DD7619C14586"
+			linked_quest: "2B95E0E6947D013C"
+			x: -4.6d
+			y: -3.7d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "3338F53684E6B570"
+			linked_quest: "304F1C5501224675"
+			x: 4.6d
+			y: -3.2d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [
+		{
+			x: -3.4d
+			y: -0.967d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:de20b5de-c4aa-567c-b984-f6c2e60cbb48"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.4d
+			y: -2.133d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bf0fd1aa-8878-56c5-939b-567d96cdcafc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"l:19c1dd7619c14586"
+				"q:3488ffb237cc3f8f"
+			]
+		}
+		{
+			nodes: [
+				"q:53ba140c34cdcb15"
+				"a:de20b5de-c4aa-567c-b984-f6c2e60cbb48"
+			]
+		}
+		{
+			nodes: [
+				"a:de20b5de-c4aa-567c-b984-f6c2e60cbb48"
+				"a:bf0fd1aa-8878-56c5-939b-567d96cdcafc"
+			]
+		}
+		{
+			nodes: [
+				"a:bf0fd1aa-8878-56c5-939b-567d96cdcafc"
+				"l:7581633a71d6f302"
+			]
+		}
+		{
+			nodes: [
+				"q:26fe7f96579ad070"
+				"q:7270243136c8a000"
+			]
+		}
+		{
+			nodes: [
+				"q:53ba140c34cdcb15"
+				"q:1a83e8e9c4279f00"
+			]
+		}
+		{
+			nodes: [
+				"q:652bec71b19a83"
+				"q:ee4e05a8a4330d6"
+			]
+		}
+		{
+			nodes: [
+				"l:3338f53684e6b570"
+				"q:ee4e05a8a4330d6"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

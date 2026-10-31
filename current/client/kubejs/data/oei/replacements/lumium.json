@@ -1,0 +1,14 @@
+[
+	{
+		"matchItems": [
+			"#forge:plates/lumium"
+		],
+		"resultItems": "vintageimprovements:lumium_sheet"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/lumium"
+		],
+		"resultItems": "vintageimprovements:lumium_rod"
+	}
+]

@@ -1,0 +1,552 @@
+{
+	id: "7288A7F3097B1776"
+	filename: "research_adventure_b_forbidden_arcanus"
+	title: "禁忌与奥秘"
+	group: "25C542C40E64ED41"
+	order_index: 210
+	icon: "forbidden_arcanus:arcane_crystal"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "6C30A19D9A5C2644"
+			title: "在地下寻找矿石"
+			icon: "forbidden_arcanus:arcane_crystal"
+			x: -9.0d
+			y: -1.8d
+			optional: false
+			tasks: [
+				{
+					id: "6B22E2D6B33FA5A4"
+					type: "item"
+					item: "forbidden_arcanus:arcane_crystal"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/8d742b4181df8484d8228fd2.png width:32 height:32 align:center}"
+				"神秘水晶生成区间为Y=-40至14。符文矿Y=-64至2。石化经验矿Y=-6至35。奥术陨石Y=-44至42。"
+				"神秘水晶生成区间为Y=-40至14。符文矿Y=-64至2。石化经验矿Y=-6至35。奥术陨石Y=-44至42。暗黑石集中世界底部0至13格之上。生成概率不是每个坐标保证有矿。"
+				"取得神秘水晶。"
+				"埃德木：暗物质和木棍入口。"
+			]
+		}
+		{
+			id: "40E39C03C859E8B5"
+			title: "埃德木：暗物质和木棍入口"
+			icon: "forbidden_arcanus:edelwood_log"
+			x: -9.0d
+			y: 1.08d
+			optional: false
+			tasks: [
+				{
+					id: "248811F14C0AD24F"
+					type: "item"
+					item: "forbidden_arcanus:edelwood_log"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6e77a610bc93e9a75d922872.png width:32 height:32 align:center}"
+				"在黑森林埃德木，黄金木在繁花森林。"
+				"在黑森林埃德木，黄金木在繁花森林。埃德木烧炼暗物质，枝条给埃德木棍，出油处用瓶收集。木桶可选，不拿装岩浆当稳定运输方案。"
+				"取得埃德木原木。"
+				"洁净粉末：转化锻炉的关键工具。"
+			]
+		}
+		{
+			id: "76D246BFEEBBB827"
+			title: "洁净粉末：转化锻炉的关键工具"
+			icon: "forbidden_arcanus:mundabitur_dust"
+			x: -6.84d
+			y: -0.36d
+			optional: false
+			tasks: [
+				{
+					id: "7C6A9F05870CF14C"
+					type: "item"
+					item: "forbidden_arcanus:mundabitur_dust"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/43c5007429a91cddd4795bf4.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/81c45c9fe676fc76ceb0e297.png width:240 height:120 align:center}"
+				"配方输入：神秘水晶粉末×1。红石粉×1。烈焰粉×1。骨粉×1。幻翼膜×1。火药×1。"
+				"按配方准备神秘水晶粉、红石、烈焰粉、骨粉等材料制作洁净粉末。先按下方图案铺基底，中央放锻造台。使用洁净粉末触发多方块转化，成功才算建成锻炉。它不是普通工作台配方直接合出锻炉。"
+				"取得洁净粉末。"
+				"赫菲斯托斯锻炉：搭建后完成。"
+			]
+		}
+		{
+			id: "2CE8DEC4EBB9BB47"
+			title: "赫菲斯托斯锻炉：搭建后完成"
+			icon: "forbidden_arcanus:hephaestus_forge"
+			x: -4.68d
+			y: -0.36d
+			optional: false
+			tasks: [
+				{
+					id: "04747DC2FCBD2C6E"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c6ae01e2897b86d1ccc8523b.png width:32 height:32 align:center}"
+				"按ModBlockPatterns的9×9地面图搭建，中央上方锻造台，洁净粉末转化后再布置周围基座。"
+				"按ModBlockPatterns的9×9地面图搭建，中央上方锻造台，洁净粉末转化后再布置周围基座。开启界面检查等级和四种精华。"
+				"在现场完成赫菲斯托斯锻炉的转化，并打开锻炉界面。"
+				"永恒之石：钻石主料的仪式。"
+				"锻炉升至二阶。"
+				"锻工锤：启动仪式的耐久工具。"
+			]
+		}
+		{
+			id: "312811765FF52106"
+			title: "锻工锤：启动仪式的耐久工具"
+			icon: "forbidden_arcanus:iron_blacksmith_gavel"
+			x: -4.68d
+			y: -2.52d
+			optional: false
+			tasks: [
+				{
+					id: "603FF0426BB37BB4"
+					type: "item"
+					item: "forbidden_arcanus:iron_blacksmith_gavel"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/aa7bd54da7a2d9d6d3ad9d48.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/5a2ebd6c7dc2f8792151c54b.png width:240 height:120 align:center}"
+				"配方输入：铁锭×1，重复4槽。锻工锤头×1。防腐木棍×1 或 木棍×1（共3个任选一种备选），重复2槽。"
+				"黏土做锤头，按配方做铁锻工锤或其他合格等级锤。主物品放炉中央，辅料分放有效基座，四种精华和等级满足后，用锤右击炉开始。锤损耗按实现处理，不是整把锤每轮消耗。"
+				"取得铁锻工锤。"
+				"灵魂来源：提取器与灵魂沙。"
+			]
+		}
+		{
+			id: "6009774F024A683E"
+			title: "灵魂来源：提取器与灵魂沙"
+			icon: "forbidden_arcanus:soul_extractor"
+			x: -1.8d
+			y: -4.68d
+			optional: false
+			tasks: [
+				{
+					id: "2868E46F066B0091"
+					type: "item"
+					item: "forbidden_arcanus:soul_extractor"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6532ba819284a65161a130bd.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/80f124a7b3e7e01028192fe9.png width:240 height:120 align:center}"
+				"配方输入：瓶罐×1。下界砖块×1，重复2槽。石英块×1。下界石英×1。"
+				"用下界砖、石英、瓶罐制作灵魂提取器，对灵魂沙使用，得到灵魂并留下失魂沙。游荡灵魂是另一来源。普通/腐败灵魂各供1，附魔灵魂供10。不要把三者同时强制收集。"
+				"取得灵魂提取器。"
+				"血液：试管与匕首路线。"
+			]
+		}
+		{
+			id: "7C3B568C4B726BEE"
+			title: "血液：试管与匕首路线"
+			icon: "forbidden_arcanus:blood_test_tube"
+			x: 0.36d
+			y: -2.52d
+			optional: false
+			tasks: [
+				{
+					id: "33C0C9BAB0520A95"
+					type: "item"
+					item: "forbidden_arcanus:blood_test_tube"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d939f613b9f52a605b2c460a.png width:32 height:32 align:center}"
+				"玻璃瓶加符文做试管，带试管以神秘匕首攻击生物收集血液，再送入炉。"
+				"玻璃瓶加符文做试管，带试管以神秘匕首攻击生物收集血液，再送入炉。不得把“必须击杀Boss”当血液条件。"
+				"取得试管。"
+				"辉光：方尖碑或瓶装输入。"
+			]
+		}
+		{
+			id: "1D3A36AE1E1097B1"
+			title: "辉光：方尖碑或瓶装输入"
+			icon: "forbidden_arcanus:arcane_crystal_obelisk"
+			x: 0.36d
+			y: 1.8d
+			optional: false
+			tasks: [
+				{
+					id: "75DA20B0458491DD"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7074f016cab299c9e457f25e.png width:32 height:32 align:center}"
+				"在正确神秘雕纹磨制暗黑石底座上放神秘磨制暗黑石及两神秘水晶块，以洁净粉末转化方尖碑。"
+				"在正确神秘雕纹磨制暗黑石底座上放神秘磨制暗黑石及两神秘水晶块，以洁净粉末转化方尖碑。布在锻炉有效范围持续供辉光。辉光瓶每瓶35、喷溅型30为并行补充。"
+				"完成神秘水晶方尖碑的转化，使锻炉持续获得辉光。"
+				"经验输入与四种精华检查。"
+			]
+		}
+		{
+			id: "1ED5429A88909CCD"
+			title: "经验输入与四种精华检查"
+			icon: "forbidden_arcanus:xpetrified_orb"
+			x: 0.36d
+			y: 4.68d
+			optional: false
+			tasks: [
+				{
+					id: "3A57556157FAE2D4"
+					type: "item"
+					item: "forbidden_arcanus:xpetrified_orb"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/19219897e89a62c8fa6c96fd.png width:32 height:32 align:center}"
+				"石化经验球每个91点炉经验，附魔之瓶每瓶15。灵魂、血、辉光各是独立槽。"
+				"取得石化经验球。"
+				"永恒之石：钻石主料的仪式。"
+				"锻炉升至二阶。"
+			]
+		}
+		{
+			id: "296DD1123B8A2C52"
+			title: "锻炉升至二阶"
+			icon: "forbidden_arcanus:hephaestus_forge"
+			x: 2.52d
+			y: 0.49d
+			optional: false
+			tasks: [
+				{
+					id: "5DDDEF14AB817217"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c6ae01e2897b86d1ccc8523b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/a22135835ad255d57a4d3e01.png width:240 height:178 align:center}"
+				"升级材料：埃德木木板×1、神秘水晶×4、刷怪笼碎片×4。在现有锻炉上进行升阶仪式。"
+				"中央埃德木板，周围4神秘水晶+4刷怪笼碎片。需要500辉光、6000血、10灵魂、0经验。升级仪式从一阶变二阶。刷怪笼碎片来源需破坏刷怪笼规则，取材地点独立选择。"
+				"在锻炉界面确认等级由一阶升至二阶。"
+				"锻炉升至三阶。"
+			]
+		}
+		{
+			id: "6CEFF113ABF6D2B5"
+			title: "锻炉升至三阶"
+			icon: "forbidden_arcanus:hephaestus_forge"
+			x: 4.68d
+			y: -1.21d
+			optional: false
+			tasks: [
+				{
+					id: "62DD407419772E3B"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c6ae01e2897b86d1ccc8523b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/568b3c48d652146093f2c982.png width:240 height:178 align:center}"
+				"升级材料：雕纹磨制暗黑石×1、神秘水晶×4、圣金锭×4。在现有二阶锻炉上进行升阶仪式。"
+				"二阶炉中央雕纹磨制暗黑石，周围4神秘水晶+4圣金锭。需要1000辉光、9000血、50灵魂、0经验。永恒之石要求至少三阶。"
+				"在锻炉界面确认等级由二阶升至三阶。"
+				"永恒之石：钻石主料的仪式。"
+			]
+		}
+		{
+			id: "34259CED62F7ED33"
+			title: "永恒之石：钻石主料的仪式"
+			icon: "forbidden_arcanus:eternal_stella"
+			x: 6.84d
+			y: -0.36d
+			optional: false
+			tasks: [
+				{
+					id: "0994B02711D07644"
+					type: "item"
+					item: "forbidden_arcanus:eternal_stella"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d16e421379366300ebdee711.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/9038d9c91f4d246783db0726.png width:240 height:178 align:center}"
+				"配方输入：钻石×1。石化经验球×1，重复3槽。陨星碎片×1。工作能力：赫菲斯托斯锻造。"
+				"至少三阶的炉中央钻石，基座放3石化经验球+1陨星碎片，准备82辉光、1000血、1灵魂、0经验，以锻工锤启动。陨石可能爆炸，留安全距离。"
+				"取得永恒陨星。"
+				"永恒用途：耐久与防火分开检查。"
+			]
+		}
+		{
+			id: "7F26EE4CDFCEA301"
+			title: "永恒用途：耐久与防火分开验证"
+			icon: "forbidden_arcanus:eternal_obsidian_skull"
+			x: 9.0d
+			y: -0.36d
+			optional: true
+			tasks: [
+				{
+					id: "031DE322F79531E4"
+					type: "item"
+					item: "forbidden_arcanus:eternal_obsidian_skull"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/563b519007ba34aeb379908a.png width:32 height:32 align:center}"
+				"永恒之石可用于允许的永恒修饰/合成路线，例如永恒黑曜石头骨。"
+				"永恒之石可用于允许的永恒修饰/合成路线，例如永恒黑曜石头骨。普通黑曜石头骨仅有时限防火，永恒型效果不同。"
+				"取得永恒黑曜石头骨。"
+				"龙鳞与战神装备：并行选修。"
+			]
+		}
+		{
+			id: "64D74BB3E9F68E89"
+			title: "龙鳞与战神装备：并行选修"
+			icon: "forbidden_arcanus:dragon_scale"
+			x: 4.68d
+			y: 3.96d
+			optional: true
+			tasks: [
+				{
+					id: "748855058B955F89"
+					type: "item"
+					item: "forbidden_arcanus:dragon_scale"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1aa65d12c7eab1aff7aa1860.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/41073b514672564e8e334254.png width:240 height:120 align:center}"
+				"配方输入：龙首×1。神秘匕首×1。"
+				"按龙首+神秘匕首等配方取得龙鳞，进一步做金/水龙鳞与战神装备。龙鳞不作为永恒之石的默认前置。暗黑下界之星和龙鳞只在实际五阶升级等配方中使用。"
+				"取得龙之鳞片。"
+			]
+		}
+		{
+			id: "4539B67316060BCB"
+			title: "量子捕捉器与旧片杂项"
+			icon: "forbidden_arcanus:quantum_catcher"
+			x: 6.84d
+			y: 3.96d
+			optional: true
+			tasks: [
+				{
+					id: "03AFB9356B700787"
+					type: "item"
+					item: "forbidden_arcanus:quantum_catcher"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f41ee5af2924d213b328aab9.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/dc4d1107b55207cd493ea081.png width:240 height:120 align:center}"
+				"配方输入：刷怪笼碎片×1，重复4槽。神秘水晶块×1。"
+				"刷怪笼碎片可用于捕捉器。蝙蝠翼、触手、奇怪的根、腐烂皮革是独立生活/材料分支。1.18片称“无用途”的内容不当事实。"
+				"取得量子捕捉器。"
+				"四/五阶与增强物：留给具体配方。"
+			]
+		}
+		{
+			id: "5B6EDCF8E316A729"
+			title: "按需要继续升级锻炉"
+			icon: "forbidden_arcanus:hephaestus_forge"
+			x: 9.0d
+			y: 3.96d
+			optional: true
+			tasks: [
+				{
+					id: "348C5E10BE9FE54F"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c6ae01e2897b86d1ccc8523b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/0e669a413f4a2c3f11415eec.png width:240 height:178 align:center}"
+				"{image:expedition_research:textures/quests/b8d3173fc99600a9235b0379.png width:240 height:178 align:center}"
+				"先选择要进行的锻炉仪式，再查看它所需的锻炉等级。"
+				"若所选仪式需要四阶，将锻炉升级至四阶。需要五阶时再继续升级。四阶升级使用陨星碎片与符文，五阶涉及幽匿催发体、暗黑下界之星和龙鳞。按配方准备精华并启动升级。"
+				"锻炉界面达到所选仪式需要的等级。"
+				"进行自己选定的仪式。"
+			]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:1ed5429a88909ccd" "a:fe4e2820-9b6f-52ea-b472-451e70ae5bb7"]
+		}
+		{
+			nodes: ["a:fe4e2820-9b6f-52ea-b472-451e70ae5bb7" "a:0046c832-aaba-5cf4-8146-27249c785440"]
+		}
+		{
+			nodes: ["a:0046c832-aaba-5cf4-8146-27249c785440" "q:34259ced62f7ed33"]
+		}
+		{
+			nodes: ["q:1ed5429a88909ccd" "q:296dd1123b8a2c52"]
+		}
+		{
+			nodes: ["q:2ce8dec4ebb9bb47" "a:5bacad9a-1383-5d80-b4e1-5e6225f7b491"]
+		}
+		{
+			nodes: ["a:5bacad9a-1383-5d80-b4e1-5e6225f7b491" "a:8a054c63-6cd5-5481-99d4-38e81e20da85"]
+		}
+		{
+			nodes: ["a:8a054c63-6cd5-5481-99d4-38e81e20da85" "q:34259ced62f7ed33"]
+		}
+		{
+			nodes: ["q:2ce8dec4ebb9bb47" "a:77f6936a-72cc-5228-80b8-323e33acba38"]
+		}
+		{
+			nodes: ["a:77f6936a-72cc-5228-80b8-323e33acba38" "a:6ce05d2d-d507-5ae5-820f-61f5e7476026"]
+		}
+		{
+			nodes: ["a:6ce05d2d-d507-5ae5-820f-61f5e7476026" "q:296dd1123b8a2c52"]
+		}
+		{
+			nodes: ["q:2ce8dec4ebb9bb47" "q:312811765ff52106"]
+		}
+		{
+			nodes: ["q:296dd1123b8a2c52" "q:6ceff113abf6d2b5"]
+		}
+		{
+			nodes: ["q:6ceff113abf6d2b5" "q:34259ced62f7ed33"]
+		}
+		{
+			nodes: ["q:6c30a19d9a5c2644" "q:40e39c03c859e8b5"]
+		}
+		{
+			nodes: ["q:40e39c03c859e8b5" "q:76d246bfeebbb827"]
+		}
+		{
+			nodes: ["q:76d246bfeebbb827" "q:2ce8dec4ebb9bb47"]
+		}
+		{
+			nodes: ["q:312811765ff52106" "q:6009774f024a683e"]
+		}
+		{
+			nodes: ["q:6009774f024a683e" "q:7c3b568c4b726bee"]
+		}
+		{
+			nodes: ["q:7c3b568c4b726bee" "q:1d3a36ae1e1097b1"]
+		}
+		{
+			nodes: ["q:1d3a36ae1e1097b1" "q:1ed5429a88909ccd"]
+		}
+		{
+			nodes: ["q:34259ced62f7ed33" "q:7f26ee4cdfcea301"]
+		}
+		{
+			nodes: ["q:7f26ee4cdfcea301" "q:64d74bb3e9f68e89"]
+		}
+		{
+			nodes: ["q:64d74bb3e9f68e89" "q:4539b67316060bcb"]
+		}
+		{
+			nodes: ["q:4539b67316060bcb" "q:5b6edcf8e316a729"]
+		}
+	]
+	images: [
+		{
+			x: -2.28d
+			y: -0.077d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:77f6936a-72cc-5228-80b8-323e33acba38"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.12d
+			y: 0.207d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6ce05d2d-d507-5ae5-820f-61f5e7476026"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.84d
+			y: -0.36d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5bacad9a-1383-5d80-b4e1-5e6225f7b491"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.0d
+			y: -0.36d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8a054c63-6cd5-5481-99d4-38e81e20da85"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.52d
+			y: 3.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fe4e2820-9b6f-52ea-b472-451e70ae5bb7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.68d
+			y: 1.32d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0046c832-aaba-5cf4-8146-27249c785440"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

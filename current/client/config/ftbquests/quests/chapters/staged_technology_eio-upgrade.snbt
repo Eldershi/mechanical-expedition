@@ -1,0 +1,155 @@
+{
+	id: "6D5422AD93E435A1"
+	filename: "staged_technology_eio-upgrade"
+	title: "末影接口·电容与高级合金"
+	group: "5B22564DA513617D"
+	order_index: 41
+	icon: "enderio:double_layer_capacitor"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [{
+			id: "2079BDC520338C3C"
+			title: "准备双层电容"
+			icon: "enderio:double_layer_capacitor"
+			x: 0.1d
+			y: -0.9d
+			optional: true
+			tasks: [
+				{
+					id: "071D87B6723DC41E"
+					type: "item"
+					item: "enderio:double_layer_capacitor"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/0be1d63dca22e0289c2d4ac5.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/465a511e6236085418f0dd7f.png width:240 height:120 align:center}"
+				"根据机器电容槽需求选等级。"
+				"合成后装入机器，查看能量容量和运行速率变化。升级电容安装在机器中持续生效，无需每批投入。"
+				"机器有合适电容可运行/升级。"
+				"先保证输入输出和电力持续，再考虑更高级电容。"
+			]
+		} {
+			id: "484837AE407C28FA"
+			title: "准备八倍电容"
+			icon: "enderio:octadic_capacitor"
+			x: 3.1d
+			y: -0.9d
+			optional: true
+			tasks: [
+				{
+					id: "62624471AAA2A167"
+					type: "item"
+					item: "enderio:octadic_capacitor"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4537cfa8069b3c0c5c1fe9eb.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/70e86b935cc91bd9420ac41f.png width:240 height:120 align:center}"
+				"根据机器电容槽需求选等级。"
+				"合成后装入机器，查看能量容量和运行速率变化。升级电容安装在机器中持续生效，无需每批投入。"
+				"机器有合适电容可运行/升级。"
+				"先保证输入输出和电力持续，再考虑更高级电容。"
+			]
+		} {
+			id: "213EC933DFEF3B92"
+			title: "可选：加工末地钢"
+			icon: "enderio:end_steel_ingot"
+			x: 3.1d
+			y: 3.1d
+			optional: true
+			tasks: [
+				{
+					id: "3BD33C102C186D2C"
+					type: "item"
+					item: "enderio:end_steel_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/e8f9a5979c28944a95a7a20f.png width:32 height:32 align:center}" "{image:expedition_research:textures/quests/7b287ec1da7b07393f27f963.png width:240 height:118 align:center}" "在所选原始合金配方中各投入1份，取出1末地钢。原料输入槽独立全部满足。" "为配方用途准备末地钢。"]
+		}]
+	quest_links: [
+		{
+			id: "7B5247D53F0E6200"
+			linked_quest: "182F442443FAC0F1"
+			x: -0.1d
+			y: 0.9d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "6459B63DA96AAEB8"
+			linked_quest: "6AB0D684D7502A14"
+			x: -3.1d
+			y: -3.1d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "72C6998A0A5D0E03"
+			linked_quest: "137A062E03ED7A3E"
+			x: -3.1d
+			y: -0.9d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "398C01198005E71A"
+			linked_quest: "632B57296ADEBE8E"
+			x: -3.1d
+			y: 1.3d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "21098883456F6F27"
+			linked_quest: "07EF583483D57FFB"
+			x: -0.1d
+			y: -3.1d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "546149879D3519BA"
+			linked_quest: "3BA36C9B0A8BF2CB"
+			x: -0.1d
+			y: 3.1d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:7b5247d53f0e6200" "q:213ec933dfef3b92"]
+		}
+		{
+			nodes: ["l:6459b63da96aaeb8" "q:2079bdc520338c3c"]
+		}
+		{
+			nodes: ["l:72c6998a0a5d0e03" "q:2079bdc520338c3c"]
+		}
+		{
+			nodes: ["l:398c01198005e71a" "q:2079bdc520338c3c"]
+		}
+		{
+			nodes: ["l:21098883456f6f27" "q:484837ae407c28fa"]
+		}
+		{
+			nodes: ["q:2079bdc520338c3c" "q:484837ae407c28fa"]
+		}
+		{
+			nodes: ["l:546149879d3519ba" "q:213ec933dfef3b92"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

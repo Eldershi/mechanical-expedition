@@ -1,0 +1,13 @@
+{
+  "basicSettings": {
+    "screenWhitelist": [],
+    "enableScreenRecovering": false,
+    "recoveredScreens": [],
+    "englishStateImpl": "DISABLE_IM",
+    "primaryEnglishState": "CJK"
+  },
+  "advanceSettings": {
+    "charSimulationScreens": [],
+    "commandPrefixRegex": "^/"
+  }
+}

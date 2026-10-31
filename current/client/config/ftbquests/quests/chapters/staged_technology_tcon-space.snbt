@@ -1,0 +1,59 @@
+{
+	id: "5AB6403DFB3D93DC"
+	filename: "staged_technology_tcon-space"
+	title: "匠魂·行星材料与太空强化"
+	group: "3346A01E0EAFD002"
+	order_index: 49
+	icon: "minecraft:book"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [{
+			id: "510B82E962411821"
+			title: "用行星金属流体铸造工具材料"
+			icon: "minecraft:book"
+			x: -2.0d
+			y: -1.0d
+			optional: true
+			tasks: [
+				{
+					id: "7E936398B94DDBA2"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["具备对应材质的材料数据与合法部件模具。" "戴斯/紫金/耐热金属的材料流体配方均按90mB、temperature810映射到cmi材质ID。具体部件耗量随部件材质值。" "可以把行星资源用于匠魂部件。"]
+		} {
+			id: "6FF3EDD26BE18273"
+			title: "可选：查看Giselle匠魂太空强化"
+			icon: "minecraft:book"
+			x: 2.0d
+			y: 1.0d
+			optional: true
+			tasks: [
+				{
+					id: "78C2B498D2E701A1"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["已安装Giselle6.27与匠魂3.12.1.231。" "从强化类别查space_breathing、space_fire_proof等配方及适用工具，实际装上并测试氧气/温度状态。" "用实装附属的明确配方拓展装备选择。" "远征时备齐完整的航天防护与补给。"]
+		}]
+	quest_links: [
+		{
+			id: "0BCF61A1BD171B84"
+			linked_quest: "565F6DA622BFBC30"
+			x: -5.0d
+			y: -1.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:bcf61a1bd171b84" "q:510b82e962411821"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

@@ -1,0 +1,50 @@
+
+["MUTANT SHULKER SHIELD"]
+	"Shield Durability" = 672
+	"Shield Bullet Damage" = 8.0
+	"Shield Bullet Explosion Size" = 2.0
+	"Shield Bullet Levitation Length" = 100
+	"Shield Bullet Levitation Level" = 3
+	"Shield Shoot Cooldown" = 200
+	"Shield Bullet Griefing" = false
+	"Shield Bullet Griefing Drops Blocks" = true
+
+["MUTANT SHULKER TURRET"]
+	"Turret Mutant Shulker Bullet Damage" = 8.0
+	"Turret Mutant Shulker Bullet Explosion Size" = 2.0
+	"Turret Mutant Shulker Bullet Levitation Length" = 100
+	"Turret Mutant Shulker Bullet Levitation Level" = 3
+	"Turret Mutant Shulker Bullet Griefing" = false
+	"Turret Mutant Shulker Bullet Griefing Drops Blocks" = true
+	"Turret Shulker Bullet Damage" = 4.0
+	"Turret Shulker Bullet Levitation Length" = 200
+	"Turret Shulker Bullet Levitation Level" = 0
+	"Turret Ignores Levitating Mobs" = true
+	"Turret Shoot Cooldown" = 60
+	"Turret Locked Horizontal Movement" = true
+	"Turret Max Health" = 200.0
+	"Turret Repair Heal Percent" = 50
+	"Turret Knockback Resistance" = 1.0
+	"Turret Armour" = 10.0
+	"Turret Armour Toughness" = 0.0
+	"Turret Target Mobs Range" = 30.0
+	"Turret Friendly Fire" = false
+
+["MUTANT SHULKER TRAP"]
+	"Trap Mutant Shulker Damage" = 10.0
+	"Trap Player Damage" = 10.0
+	"Trap Mutant Shulker Multi-Use" = false
+	"Trap Player Multi-Use" = true
+	"Trap Turns to Bullet" = true
+	"Trap Turn to Bullet Time" = 300
+	"Trap Slowness Length" = 80
+	"Trap Slowness Level" = 1
+	"Trap Thorns Damage" = 4.0
+	"Trap Max Health" = 5.0
+	"Trap Armour" = 5.0
+	"Trap Armour Toughness" = 0.0
+	"Trap Knockback Resistance" = 1.0
+	"Trap Shulker Bullet Damage" = 8.0
+	"Trap Shulker Bullet Levitation Length" = 100
+	"Trap Shulker Bullet Levitation Level" = 0
+

@@ -1,0 +1,93 @@
+
+#星之魔女酒狐 Boss 战配置
+#Magical Winefox boss fight configuration
+[winefox]
+	#是否允许使用星芒短剑的下一场挑战配置界面；关闭后不会打开界面
+	#Whether the Starglint Dagger challenge configuration screen is available.
+	winefoxChallengeConfigEnabled = true
+	#女仆造成的伤害占比超过此值时，不掉落星云核心或解锁特殊交易
+	#Maid damage share above this fraction disables the Nebula Core drop and special trades.
+	#Range: 0.0 ~ 1.0
+	winefoxMaidDamageShareLimit = 0.6
+	#本场使用真伤后是否限制星云核心掉落和特殊交易
+	#Whether true damage in this fight also restricts the Nebula Core drop and special trades.
+	winefoxTrueDamageRestrictsReward = true
+	#酒狐最大生命；修改后对新生成或重新加载的实体生效
+	#Winefox max health; changes apply when a boss spawns or reloads.
+	#Range: 1.0 ~ 100000.0
+	winefoxMaxHealth = 600.0
+	#酒狐基础护甲；生成、读档或挑战结束时应用
+	#Winefox base armor, applied on spawn, reload or challenge reset.
+	#Range: 0.0 ~ 30.0
+	winefoxArmor = 12.0
+	#酒狐承伤倍率，先于女仆和二阶段倍率；0 表示免疫伤害
+	#Winefox damage taken, before maid and phase-two multipliers; 0 prevents damage.
+	#Range: 0.0 ~ 100.0
+	winefoxDamageMultiplier = 1.0
+	#酒狐通用及各学派法强倍率；实体进入世界时按当前配置重算
+	#Winefox general and school spell power multiplier, reapplied when the boss enters the world.
+	#Range: 0.0 ~ 1000.0
+	winefoxSpellPowerMultiplier = 1.0
+	#单次最终伤害上限，占最大生命的比例；包含真伤，0 表示不限伤
+	#Per-hit final damage cap as a fraction of max health, including true damage; 0 disables it.
+	#Range: 0.0 ~ 1.0
+	winefoxHitDamageCapRatio = 0.08
+	#两次有效受击的最短间隔，单位 tick；包含法术和真伤，0 表示不限制
+	#Minimum ticks between effective hits, including spells and true damage; 0 disables it.
+	#Range: 0 ~ 200
+	winefoxHitIntervalTicks = 6
+	#女仆及其召唤物对酒狐造成的伤害倍率，叠加在全局承伤倍率上
+	#Damage dealt by maids and their summons to Winefox, on top of her global damage multiplier.
+	#Range: 0.0 ~ 1.0
+	winefoxMaidDamageMultiplier = 0.5
+	#酒狐对女仆及其召唤物的伤害倍率；正式挑战中仍受最低生命限制
+	#Damage dealt by Winefox to maids and their summons; the duel health floor still applies.
+	#Range: 0.0 ~ 100.0
+	winefoxDamageToMaidMultiplier = 5.0
+	#酒狐二阶段承伤倍率，与其它承伤倍率叠乘
+	#Winefox damage taken in phase two, multiplied with other damage modifiers.
+	#Range: 0.0 ~ 1.0
+	winefoxPhaseTwoDamageMultiplier = 0.8
+	#开启后逐次记录酒狐受伤、减伤与拦截结果到日志；排查结束后建议关闭
+	#Log Winefox incoming damage, reductions and blocked hits at INFO level for diagnostics.
+	winefoxDamageDebugLogging = false
+	#是否启用星之魔女二阶段自适应减伤
+	#Whether adaptive damage reduction is enabled in phase two.
+	winefoxAdaptiveDamageEnabled = true
+	#自适应减伤目标 DPS，占酒狐最大生命的比例（每秒）
+	#Target DPS as a fraction of Winefox max health per second.
+	#Range: 1.0E-4 ~ 10.0
+	winefoxAdaptiveTargetDpsRatio = 0.045
+	#自适应减伤统计窗口，单位 tick
+	#Sliding window used by adaptive damage reduction, in ticks.
+	#Range: 20 ~ 1200
+	winefoxAdaptiveWindowTicks = 100
+	#尝试伤害达到目标 DPS 的此倍数后开始减伤
+	#Pre-cap reduction starts at this multiple of the target DPS.
+	#Range: 1.0 ~ 100.0
+	winefoxAdaptiveActivationRatio = 1.2
+	#自适应减伤刚触发时的承伤倍率
+	#Damage multiplier when adaptive reduction first activates.
+	#Range: 0.0 ~ 1.0
+	winefoxAdaptiveStartMultiplier = 0.9
+	#自适应减伤的最低承伤倍率；极端输出保护
+	#Minimum multiplier for pre-cap adaptive reduction.
+	#Range: 0.0 ~ 1.0
+	winefoxAdaptiveMinMultiplier = 0.05
+	#尝试伤害达到目标 DPS 的此倍数时降至最低倍率
+	#Pressure ratio at which pre-cap reduction reaches its minimum.
+	#Range: 1.2 ~ 1000.0
+	winefoxAdaptiveSaturationRatio = 4.0
+	#限伤后的最终 DPS 预算相对目标 DPS 的倍数
+	#Post-cap effective DPS budget as a multiple of the target DPS.
+	#Range: 1.0 ~ 100.0
+	winefoxAdaptiveFinalBudgetMultiplier = 2.0
+	#正式挑战中玩家及女仆的最低生命；玩家判负，女仆退场
+	#Minimum player and maid health in a formal duel; players lose and maids retire at this value.
+	#Range: 0.0 ~ 1024.0
+	winefoxDuelSurvivalFloor = 1.0
+	#酒狐专注搜索隐身玩家的时长，单位 tick；玩家持续隐身时刷新
+	#Ticks spent searching only for the hidden player, refreshed while invisible.
+	#Range: 1 ~ 1200
+	winefoxInvisibilitySearchTicks = 200
+

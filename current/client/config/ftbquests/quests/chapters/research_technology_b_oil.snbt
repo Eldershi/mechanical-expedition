@@ -1,0 +1,260 @@
+{
+	id: "4F5A4B0A35B27EB2"
+	filename: "research_technology_b_oil"
+	title: "初步石化与红石酸"
+	group: "050255AE19A93344"
+	order_index: 25
+	icon: "immersiveengineering:redstone_acid_bucket"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "3B327E8B7CC4A27E"
+			title: "混合制红石酸"
+			icon: "immersiveengineering:redstone_acid_bucket"
+			x: -0.1d
+			y: 3.35d
+			optional: false
+			tasks: [
+				{
+					id: "3944814628805F13"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ee700be3a8e3cc4f8c812f30.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/cbd50e61d1fd8a959287235b.png width:240 height:100 align:center}"
+				"选定IE搅拌：90mB熔融铅＋1红石粉。另有Create搅拌/发酵路线。"
+				"按手册搭搅拌机，供液、物品与FE，收200mB红石酸。"
+				"输出流体ID正确。"
+				"简易电解铝、伺服器、活化石墨或线圈构件使用。"
+			]
+		}
+		{
+			id: "611127197D19F6C0"
+			title: "油页岩粉热解成油页岩蒸汽"
+			icon: "cmi:oil_shale"
+			x: -3.1d
+			y: -1.15d
+			optional: false
+			tasks: [
+				{
+					id: "5EF7D92C5E6E8BFB"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/78213ea542348ee3bbc15aee.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d36c9d1e1c3a36b63f957bba.png width:240 height:98 align:center}"
+				"油页岩可用磨石1粉或粉碎2粉＋20%额外。选择热解路线。"
+				"将1油页岩粉送热解炉，供4000能量并给液体出口留空间。"
+				"200mB油页岩蒸汽输出，矿渣26%与沥青5%为概率副产。"
+				"高级精炼回收原油。世界油田等其他来源不被本选定路线排除。"
+			]
+		}
+		{
+			id: "3BF52DF39332956F"
+			title: "高级精炼油页岩蒸汽"
+			icon: "thermal_extra:advanced_refinery"
+			x: -0.1d
+			y: -1.75d
+			optional: false
+			tasks: [
+				{
+					id: "22E9AD23A9A52655"
+					type: "item"
+					item: "thermal_extra:advanced_refinery"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e7cf3672742f41358a67335b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/ac2f3e158fcfba985f873490.png width:240 height:98 align:center}"
+				"高级机由流体精炼机、强化构件、烈焰单元、铁构件装配。还需FE。"
+				"用1000mB油页岩蒸汽选定配方，给原油、蒸汽和浑浊废液分别接储罐。"
+				"100mB原油、500mB蒸汽、400mB废液实际输出。副产未排净会堵线。"
+				"原油走普通精炼或六馏分蒸馏。废液另查实际用途。"
+			]
+		}
+		{
+			id: "474F3BFA9CB14470"
+			title: "热力原油精炼：三出口都要接"
+			icon: "thermal:machine_refinery"
+			x: 2.9d
+			y: -0.65d
+			optional: false
+			tasks: [
+				{
+					id: "38CDAFF10F5061B3"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/8cb6bf0e9bc3ca12e0dd32ac.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/2811817e83476c372eb30b19.png width:240 height:98 align:center}"
+				"100mB统一原油、FE和三个出口位置。"
+				"输入100mB 原油，收沥青、40mB重油、60mB轻油。液体名不靠桶外观猜。"
+				"三类输出均能排空。这条配方与CDG六馏分并行。"
+				"重油制润滑油。轻油可制精炼燃料。不要求同时完成所有分馏路线。"
+			]
+		}
+		{
+			id: "1D93DDBC96C96E3F"
+			title: "CDG原油六馏分支路"
+			icon: "createdieselgenerators:crude_oil_bucket"
+			x: 2.9d
+			y: 2.85d
+			optional: false
+			tasks: [
+				{
+					id: "1722C3C7480A8807"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/759251eac94d94e39c3626af.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/70ea047575b8e998bf0cb1b6.png width:240 height:270 align:center}"
+				"2000mB统一原油及CDG蒸馏加工能力，热量要求HEATED。"
+				"按蒸馏配方供热，分别接沥青、重油、润滑油、含硫柴油、煤油、石脑油。"
+				"每种500mB，共六种流体出口。体积变化是配方，不自行守恒重算。"
+				"已有原油分馏初步产物任务使用。接通供料、供电与输出，持续处理原油。"
+			]
+		}
+		{
+			id: "28D5286E3EDCCA0A"
+			title: "重油精炼润滑油：两机产率对比"
+			icon: "thermal_extra:lubricant_bucket"
+			x: 5.9d
+			y: 0.65d
+			optional: false
+			tasks: [
+				{
+					id: "379DB200A41A1FD9"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c37dadcc02ae9b60a261482d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/5659338917741fe364b2e635.png width:240 height:98 align:center}"
+				"{image:expedition_research:textures/quests/e5d5442a1d2da88519e3269e.png width:240 height:98 align:center}"
+				"重油100mB。普通精炼任选一种高级精炼各有独立配方。"
+				"任选机器：普通出50mB汽油＋50mB润滑油。高级出50mB汽油＋100mB润滑油。"
+				"按所选机器的配方准备原料与储罐容量。"
+				"润滑油可供裂化聚烯烃支路或实际机械用途。"
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "45E3837B28739224"
+			linked_quest: "0BAB052634EDF208"
+			x: -6.1d
+			y: -3.35d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "3B15789E88176FDC"
+			linked_quest: "7C07B827BDFA9BBF"
+			x: 3.1d
+			y: 1.15d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "5A70C6B462DFC62A"
+			linked_quest: "095339324F7AABEE"
+			x: 6.1d
+			y: 2.45d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [
+		{
+			x: 3.9d
+			y: -0.217d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:105b69e2-7aa7-534d-9691-eede97b90ee4"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.9d
+			y: 0.217d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fa815697-f7ef-50c6-9b52-52dd9587ff3f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.967d
+			y: 2.717d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:29f37ae7-9fb0-5e2b-becb-8f136f7cd20e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.033d
+			y: 2.583d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:afa8e89e-1a6c-5045-8568-9a9f68282e67"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:3b327e8b7cc4a27e" "l:3b15789e88176fdc"]
+		}
+		{
+			nodes: ["q:611127197d19f6c0" "q:3bf52df39332956f"]
+		}
+		{
+			nodes: ["l:45e3837b28739224" "q:611127197d19f6c0"]
+		}
+		{
+			nodes: ["q:474f3bfa9cb14470" "a:105b69e2-7aa7-534d-9691-eede97b90ee4"]
+		}
+		{
+			nodes: ["a:105b69e2-7aa7-534d-9691-eede97b90ee4" "a:fa815697-f7ef-50c6-9b52-52dd9587ff3f"]
+		}
+		{
+			nodes: ["a:fa815697-f7ef-50c6-9b52-52dd9587ff3f" "q:28d5286e3edcca0a"]
+		}
+		{
+			nodes: ["q:1d93ddbc96c96e3f" "q:28d5286e3edcca0a"]
+		}
+		{
+			nodes: ["q:1d93ddbc96c96e3f" "a:29f37ae7-9fb0-5e2b-becb-8f136f7cd20e"]
+		}
+		{
+			nodes: ["a:29f37ae7-9fb0-5e2b-becb-8f136f7cd20e" "a:afa8e89e-1a6c-5045-8568-9a9f68282e67"]
+		}
+		{
+			nodes: ["a:afa8e89e-1a6c-5045-8568-9a9f68282e67" "l:5a70c6b462dfc62a"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

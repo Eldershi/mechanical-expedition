@@ -1,0 +1,25 @@
+{
+  "items": {
+    "guide_book [default: true]": true,
+    "limphium_leaf [default: true]": true,
+    "limphium_leaf_dryed [default: true]": true,
+    "limphium_painting [default: true]": true,
+    "raw_astrallium [default: true]": true,
+    "astrallium [default: true]": true,
+    "astrallium_sword [default: true]": true,
+    "astrallium_pickaxe [default: true]": true,
+    "astrallium_axe [default: true]": true,
+    "astrallium_shovel [default: true]": true,
+    "astrallium_hoe [default: true]": true,
+    "astrallium_helmet [default: true]": true,
+    "astrallium_chestplate [default: true]": true,
+    "astrallium_leggings [default: true]": true,
+    "astrallium_boots [default: true]": true,
+    "spawn_egg_diskwing [default: true]": true,
+    "spawn_egg_lil_worm [default: true]": true
+  },
+  "spawnEggs": {
+    "spawn_egg_diskwing [default: true]": true,
+    "spawn_egg_lil_worm [default: true]": true
+  }
+}

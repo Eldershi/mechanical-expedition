@@ -1,0 +1,5 @@
+{
+  "spreadFactor": 2.0,
+  "idBasedSalt": false,
+  "customSpreadFactors": []
+}

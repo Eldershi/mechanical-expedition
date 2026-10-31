@@ -1,0 +1,2096 @@
+{
+	id: "5BAAB2F63337EF1E"
+	filename: "bumblezone_01_exploration"
+	title: "蜜蜂领域"
+	group: "54D4CAA40ADB5408"
+	icon: "the_bumblezone:honey_compass"
+	order_index: 3
+	progression_mode: "flexible"
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	images: [
+		{
+			image: "the_bumblezone:the_bumblezone_logo_large.png"
+			x: -11.0d
+			y: -1.0d
+			width: 4.0d
+			height: 1.48d
+			rotation: 0.0d
+			alpha: 255
+			order: -1
+			hover: [ ]
+		}
+		{
+			image: "the_bumblezone:textures/entity_icon/bee_queen.png"
+			x: 4.0d
+			y: 6.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			alpha: 255
+			order: -1
+			hover: [ ]
+		}
+		{
+			image: "the_bumblezone:textures/item/essence/essence_of_the_bees.png"
+			x: 8.1d
+			y: 5.2d
+			width: 0.8d
+			height: 0.8d
+			rotation: 0.0d
+			alpha: 255
+			order: -1
+			hover: [ ]
+		}
+	]
+	quests: [
+		{
+			description: ["制作或获得一顶花朵头饰，戴上它，把自己装扮成一朵会走路的大花，吸引蜜蜂靠近！" "这是一种声明！像皮革护甲一样，花朵头饰也能用染料染色；挑一种喜欢的颜色，不必把所有颜色都收集一遍。" "好奇的蜜蜂：戴着花朵头饰进入巢室迷宫，可以避免因进入这座结构而招来蜂巢之怒。它也能帮助已有的蜂巢之怒更快消退。"]
+			icon: {
+				Count: 1
+				id: "the_bumblezone:flower_headwear"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "70AB9E00ED2D0BEB"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "03387FBAFF689313"
+					type: "item"
+					title: "花朵头饰"
+					item: "the_bumblezone:flower_headwear"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "成为一朵花！"
+			x: -1.5d
+			y: -7.593d
+			rewards: [ ]
+		}
+		{
+			description: [
+				"蜜蜂战士崛起！：装备蜜蜂所能提供的武器和盔甲！收集无刺蜜蜂头盔、大黄蜂胸甲、蜜蜂护腿、木匠蜂靴子、螫针矛和蜂蜜结晶盾牌各一件。每类护甲选择喜欢的款式即可。"
+				"复眼：戴上无刺蜜蜂头盔后潜行，周围的蜜蜂和巨蜂会显出轮廓，找蜂不必再靠听声辨位。"
+				"那是一只鸟！那是一架飞机！不，那是……穿着大黄蜂胸甲的你！跳起后按住跳跃键，可以短暂飞行。搭配更多蜜蜂装备或饰品，飞行时间也会延长。"
+				"这是蜜蜂的膝盖！穿着蜜蜂护腿走过花朵或花粉堆，可以收集花粉；积满后潜行会释放花粉球。洗澡时间！进入水中或走过湿海绵可以洗去花粉。"
+				"地板烫脚！木匠蜂靴子能让你在原木、木板、树叶和蜜脾墙面上攀附、蹬跳。强大的大腿！站在这些方块中央，向下看并潜行，还能自动挖掘脚下的方块。"
+				"超越武器……螫针矛可以近战，也能投掷：成为蜜蜂！用它让敌人中毒；停滞不前！继续尝试麻痹敌人。面对高血量目标时，麻痹能帮你赢得有利的胜算；一次漂亮的远投，就是值得称赞的标枪投掷。"
+				"无敌的防御！蜂蜜结晶盾牌能短暂减缓近身攻击者，但新盾还很脆弱。无法阻挡的攻击获胜！爆炸和火焰会对盾牌造成大量损耗，别把每一种攻击都交给它硬接。想成为大蜂巢的守护者，就继续在铁砧上强化它。"
+				"无尽的刺痛：使用弓/弩射击蜂刺，不停地向生物发射，使其瘫痪。"
+			]
+			icon: {
+				Count: 1
+				id: "the_bumblezone:stingless_bee_helmet_1"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "74B9E37643840B33"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					id: "7FD0952C32E56330"
+					type: "item"
+					title: "无刺蜜蜂头盔"
+					item: {
+						id: "itemfilters:or"
+						Count: 1
+						tag: {
+							items: [
+								{
+									id: "the_bumblezone:stingless_bee_helmet_1"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:stingless_bee_helmet_2"
+									Count: 1
+								}
+							]
+						}
+					}
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "42AEA1CCC22B5D43"
+					type: "item"
+					title: "大黄蜂胸甲"
+					item: {
+						id: "itemfilters:or"
+						Count: 1
+						tag: {
+							items: [
+								{
+									id: "the_bumblezone:bumble_bee_chestplate_1"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:bumble_bee_chestplate_2"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:bumble_bee_chestplate_trans_1"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:bumble_bee_chestplate_trans_2"
+									Count: 1
+								}
+							]
+						}
+					}
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "56CD7FCED51383C2"
+					type: "item"
+					title: "蜜蜂护腿"
+					item: {
+						id: "itemfilters:or"
+						Count: 1
+						tag: {
+							items: [
+								{
+									id: "the_bumblezone:honey_bee_leggings_1"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:honey_bee_leggings_2"
+									Count: 1
+								}
+							]
+						}
+					}
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "7665C9C844D40CE4"
+					type: "item"
+					title: "木匠蜂靴子"
+					item: {
+						id: "itemfilters:or"
+						Count: 1
+						tag: {
+							items: [
+								{
+									id: "the_bumblezone:carpenter_bee_boots_1"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:carpenter_bee_boots_2"
+									Count: 1
+								}
+							]
+						}
+					}
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "6EA443C28B4A450E"
+					type: "item"
+					title: "螫针矛"
+					item: "the_bumblezone:stinger_spear"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "2AFCAEEDA5AB56C1"
+					type: "item"
+					title: "蜂蜜结晶盾牌"
+					item: "the_bumblezone:honey_crystal_shield"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "蜜蜂战士崛起！"
+			x: -1.5d
+			y: -4.437d
+			rewards: [ ]
+		}
+		{
+			description: ["在蜜蜂领域中的床上睡觉。会设置你的重生点且不会爆炸！"]
+			icon: "minecraft:orange_bed"
+			id: "2B01097F812DEEFF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:beds/sleep_in_bed"
+					criterion: ""
+					id: "1A9A37C68832D7E0"
+					type: "advancement"
+				}
+			]
+			title: "更甜蜜的梦！"
+			x: -6.75d
+			y: 1.424d
+			rewards: [ ]
+		}
+		{
+			description: ["与巨蜂成为最好的朋友！"]
+			icon: "the_bumblezone:beehemoth_spawn_egg"
+			id: "4727C4D5A70F42FE"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:beehemoth/queen_beehemoth"
+					criterion: ""
+					id: "4003D948A45EEF3D"
+					type: "advancement"
+				}
+			]
+			title: "皇家朋友直到最后！"
+			x: -3.25d
+			y: 5.562d
+			rewards: [ ]
+		}
+		{
+			description: ["用蜂蜜桶驯服一只巨蜂！然后给它鞍，让它成为你的飞行坐骑！"]
+			icon: "the_bumblezone:beehemoth_spawn_egg"
+			id: "4D7C3E330EEDDD7F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:beehemoth/tamed_beehemoth"
+					criterion: ""
+					id: "105472AD0F26CD62"
+					type: "advancement"
+				}
+			]
+			title: "蜜蜂电影但是它变大了300%！"
+			x: -5.0d
+			y: 5.633d
+			rewards: [ ]
+		}
+		{
+			description: [
+				"准备大蜡烛和药水蜡烛各一份。染色、灵魂火焰和药水效果是同一套蜡烛玩法的不同用法。"
+				"魔法烛光：使用2种或更多药水制作药水蜡烛！（蜡烛的属性将是药水属性的混合）"
+				"设置氛围：使大蜡烛或药水蜡烛燃起蓝色火焰！可能与灵魂有关..."
+				"彩虹之上！：收集所有颜色的大蜡烛！"
+				"启动我的陷阱蜡烛！：用点燃的弹射物点燃负面瞬间效果的药水蜡烛"
+			]
+			icon: "the_bumblezone:potion_candle"
+			id: "65AF3E867DB1EA9A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "451968523DF2AA47"
+					type: "item"
+					title: "大蜡烛"
+					item: "the_bumblezone:super_candle"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "4FE6739E7F098242"
+					type: "item"
+					title: "药水蜡烛"
+					item: "the_bumblezone:potion_candle"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "魔法烛光"
+			x: -1.5d
+			y: -1.637d
+			rewards: [ ]
+		}
+		{
+			description: ["大胆而鲁莽！：雕刻可雕刻蜡块上的所有艺术品！使用剪刀或剑进行雕刻！" "完美的设计：雕刻任何古代蜡块！使用剪刀或剑进行雕刻！" "正确的方向：雕刻任何发光蜡块！使用剪刀或剑进行雕刻！"]
+			icon: "the_bumblezone:carvable_wax"
+			id: "5C1317C9E645CF3F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "6F116300D33CE642"
+					type: "item"
+					title: "可雕刻蜡"
+					item: "the_bumblezone:carvable_wax"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "4444B6B374892225"
+					type: "item"
+					title: "古蜡砖"
+					item: "the_bumblezone:ancient_wax_bricks"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "05AA7F9AB7C4A69A"
+					type: "item"
+					title: "发光蜡通道"
+					item: "the_bumblezone:luminescent_wax_channel_red"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "大胆而鲁莽！"
+			x: -1.5d
+			y: -0.237d
+			rewards: [ ]
+		}
+		{
+			description: ["免费的房产！（给蜜蜂）：使用蜂巢蜜蜡制作蜂巢" "蜂蜡忍者：获得一个带有蜂巢切割附魔的工具，快速切割蜂蜡！" "从蜜蜂那里收集更多租金：使用蜂巢切割工具收集蜂巢/蜂房额外的掉落物"]
+			icon: "the_bumblezone:beehive_beeswax"
+			id: "708014BE59D1BBF1"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "67E8272104D43D67"
+					type: "item"
+					title: "蜂巢蜜蜡"
+					item: "the_bumblezone:beehive_beeswax"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "免费的房产！（给蜜蜂）"
+			x: -6.75d
+			y: 0.072d
+			rewards: [ ]
+		}
+		{
+			description: ["找到一种轻柔地采矿蜜蜂茧的方法，而不会把物品撒得到处都是！"]
+			icon: "the_bumblezone:honey_cocoon"
+			id: "36CAB81F3136A07F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:combs_and_wax/honey_cocoon_silk_touch"
+					criterion: ""
+					id: "492F37BF7A73AFD0"
+					type: "advancement"
+				}
+			]
+			title: "轻柔的触摸"
+			x: -5.0d
+			y: 0.89d
+			rewards: [ ]
+		}
+		{
+			description: ["明智的选择：用一个花费5层或更多的附魔来附魔一本书或附魔书。（右键晶化花打开UI）" "吃、吃、吃！：给一个晶化花提供物品和经验，直到它完全成长！（右键晶化花打开UI）"]
+			icon: "the_bumblezone:crystalline_flower"
+			id: "59A1B468DF308920"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:crystalline_flower/enchant_crystalline_flower"
+					criterion: ""
+					id: "75E7CA83E89F116D"
+					type: "advancement"
+				}
+			]
+			title: "明智的选择"
+			x: -3.25d
+			y: 4.162d
+			rewards: [ ]
+		}
+		{
+			description: ["选择任意一种颜色的绳帘即可。布置、延长与阻挡蜜蜂的用法放在一起，不必为了换色重复完成任务。" "60年代的回归！：制作任何一种绳帘！" "蜜蜂阻挡墙：通过右键点击线向下延伸绳帘！也可以阻挡蜜蜂！" "彩虹绳帘！！！：通过在制作过程中使用染料收集所有颜色的绳帘"]
+			icon: "the_bumblezone:string_curtain_white"
+			id: "71D55DFA6AB2D166"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "21AD66EA70C0AEE0"
+					type: "item"
+					title: "任意颜色的绳帘"
+					item: {
+						id: "itemfilters:or"
+						Count: 1
+						tag: {
+							items: [
+								{
+									id: "the_bumblezone:string_curtain_white"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_orange"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_magenta"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_light_blue"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_yellow"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_lime"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_pink"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_gray"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_light_gray"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_cyan"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_purple"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_blue"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_brown"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_green"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_red"
+									Count: 1
+								}
+								{
+									id: "the_bumblezone:string_curtain_black"
+									Count: 1
+								}
+							]
+						}
+					}
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "60年代的回归！"
+			x: -1.5d
+			y: 1.163d
+			rewards: [ ]
+		}
+		{
+			description: ["哇！你收集了所有Bumblezone的旗帜图案物品！"]
+			icon: "the_bumblezone:banner_pattern_bee"
+			id: "2E806895FC39F8CD"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:decor/obtain_all_banner_patterns"
+					criterion: ""
+					id: "41E24F29F12A4EC4"
+					type: "advancement"
+				}
+			]
+			title: "时尚潮流！"
+			x: -5.0d
+			y: 4.233d
+			rewards: [ ]
+		}
+		{
+			description: ["肮脏的回报：用泥球打回根蟲手中" "天空决斗：用扔出的泥球杀死一只幻翼"]
+			icon: "the_bumblezone:dirt_pellet"
+			id: "299BBD5EE259DC5C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "2F93867E6BEAA06E"
+					type: "item"
+					title: "泥球"
+					item: "the_bumblezone:dirt_pellet"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "肮脏的回报"
+			x: -1.5d
+			y: 6.781d
+			rewards: [ ]
+		}
+		{
+			description: ["用蜜蜂面包喂养蜜蜂，直到它们达到最大速度！嗡嗡！也许可以用蜜和花粉制作..."]
+			icon: "the_bumblezone:bee_bread"
+			id: "09A465C933841630"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:effects/beenergized_maxed"
+					criterion: ""
+					id: "2C96C205DE8E2C12"
+					type: "advancement"
+				}
+			]
+			title: "快速的嗡嗡蜜蜂！"
+			x: -3.25d
+			y: -2.337d
+			rewards: [ ]
+		}
+		{
+			description: ["危险的酿造：酿造神经毒素药水！也许蜜蜂汤可以在酿造台中提炼..." "浓缩毒素：酿造长时间中毒的药水！也许蜂刺可以在酿造台中提炼..." "欺骗机会！：酿造幸运药水！也许闪耀蜂蜜结晶会起作用..."]
+			icon: {
+				Count: 1
+				id: "minecraft:potion"
+				tag: {
+					Potion: "the_bumblezone:neurotoxin"
+				}
+			}
+			id: "17603E7A5E306A3C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:effects/brew_bee_soup"
+					criterion: ""
+					id: "2FD4BFC55907F92B"
+					type: "advancement"
+				}
+				{
+					advancement: "the_bumblezone:effects/brew_bee_stinger"
+					criterion: ""
+					id: "2273772764A10202"
+					type: "advancement"
+				}
+				{
+					advancement: "the_bumblezone:effects/brew_glistering_honey_crystal_block"
+					criterion: ""
+					id: "7A760BAD48C56B58"
+					type: "advancement"
+				}
+			]
+			title: "危险的酿造"
+			x: 0.25d
+			y: -1.563d
+			rewards: [ ]
+		}
+		{
+			description: ["喝下一些蜜蜂汤，获得狂野的状态效果！"]
+			icon: "the_bumblezone:bee_soup"
+			id: "0876EE9A191A9145"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:effects/consume_bee_soup"
+					criterion: ""
+					id: "1748E4CD847B53B8"
+					type: "advancement"
+				}
+			]
+			title: "刺激的美食"
+			x: -5.0d
+			y: -2.086d
+			rewards: [ ]
+		}
+		{
+			description: ["赢得青睐：喂食蜜蜂或蜂巢幼虫块，直到获得蜂巢保护效果！" "看哪！我的蜜蜂！：在你拥有蜂群之护效果时，释放蜜蜂攻击那些不幸攻击你的人"]
+			icon: "the_bumblezone:honeycomb_brood_block"
+			id: "392FFDA4BC12C648"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:effects/getting_protection"
+					criterion: ""
+					id: "65213E5E51D6E1A9"
+					type: "advancement"
+				}
+			]
+			title: "赢得青睐"
+			x: -6.75d
+			y: -1.328d
+			rewards: [ ]
+		}
+		{
+			description: ["不再愤怒！只有友谊！：当蜂群之护效果开启时，从满多孔蜜脾块中收集蜂蜜或挖掘蜂蜜块。" "不要蜜蜂！！！：在蜂群之怒效果下攻击蜜蜂是一个错误" "和平的蜜糖祭品：用食物安抚愤怒的蜜蜂群...如果你能活下来的话..."]
+			icon: "minecraft:honey_bottle"
+			id: "7FA6DBD38CA2490E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:effects/honey_permission"
+					criterion: ""
+					id: "6C9668FCB00738AA"
+					type: "advancement"
+				}
+			]
+			title: "不再愤怒！只有友谊！"
+			x: -5.0d
+			y: -0.686d
+			rewards: [ ]
+		}
+		{
+			description: ["{image:the_bumblezone:textures/item/essence/essence_of_the_bees.png width:48 height:48 align:center}" "旅程的终点：完成女王的全部十六项愿望后，右键女王领取最终奖励——蜜蜂精华。" "希望、爱、梦想和蜜蜂！亲自食用蜜蜂精华，获得挑战永恒圣所的资格。每位冒险者都需要亲自食用。"]
+			icon: "the_bumblezone:essence_of_the_bees"
+			id: "10AC04CB57F6817F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/journeys_end"
+					criterion: ""
+					id: "372BB8D42105B6A6"
+					type: "advancement"
+				}
+				{
+					advancement: "the_bumblezone:essence/bee_essence_infusion"
+					criterion: ""
+					id: "623AD4714E37EE18"
+					type: "advancement"
+				}
+			]
+			title: "希望、爱、梦想和蜜蜂！！！"
+			x: 8.1d
+			y: 2.563d
+			rewards: [ ]
+		}
+		{
+			description: ["击败蓝色永恒圣所的特殊事件！" "六种颜色的挑战可以自由选择先后。亲自进入挑战，赢得属于你的精华。"]
+			icon: "the_bumblezone:essence_calming"
+			id: "1D6497A7CE358290"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:essence/essence_calming"
+					criterion: ""
+					id: "1CA368767DE8DFD7"
+					type: "advancement"
+				}
+			]
+			title: "和平与爱"
+			x: 11.6d
+			y: 2.563d
+			rewards: [ ]
+		}
+		{
+			description: ["击败白色永恒圣所的特殊事件！" "六种颜色的挑战可以自由选择先后。亲自进入挑战，赢得属于你的精华。"]
+			icon: "the_bumblezone:essence_continuity"
+			id: "1343331FAF0B3EA9"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:essence/essence_continuity"
+					criterion: ""
+					id: "3A31DCEE1EAC4F94"
+					type: "advancement"
+				}
+			]
+			title: "现实故障"
+			x: 13.05d
+			y: 4.013d
+			rewards: [ ]
+		}
+		{
+			description: ["击败紫色永恒圣所的特殊事件！" "六种颜色的挑战可以自由选择先后。亲自进入挑战，赢得属于你的精华。"]
+			icon: "the_bumblezone:essence_knowing"
+			id: "075018F7F84681CC"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:essence/essence_knowing"
+					criterion: ""
+					id: "193441D479F8E913"
+					type: "advancement"
+				}
+			]
+			title: "全知者"
+			x: 13.05d
+			y: 1.113d
+			rewards: [ ]
+		}
+		{
+			description: ["击败绿色永恒圣所的特殊事件！" "六种颜色的挑战可以自由选择先后。亲自进入挑战，赢得属于你的精华。"]
+			icon: "the_bumblezone:essence_life"
+			id: "035EA5BE41FC3680"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:essence/essence_life"
+					criterion: ""
+					id: "1613794C52AA99A7"
+					type: "advancement"
+				}
+			]
+			title: "生命的祝福"
+			x: 13.05d
+			y: 2.563d
+			rewards: [ ]
+		}
+		{
+			description: ["击败黄色永恒圣所的特殊事件！" "六种颜色的挑战可以自由选择先后。亲自进入挑战，赢得属于你的精华。"]
+			icon: "the_bumblezone:essence_radiance"
+			id: "36550A2B516B73BF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:essence/essence_radiance"
+					criterion: ""
+					id: "645C1657C93C178B"
+					type: "advancement"
+				}
+			]
+			title: "太阳能驱动"
+			x: 11.6d
+			y: 4.013d
+			rewards: [ ]
+		}
+		{
+			description: ["击败红色永恒圣所的特殊事件！" "六种颜色的挑战可以自由选择先后。亲自进入挑战，赢得属于你的精华。"]
+			icon: "the_bumblezone:essence_raging"
+			id: "4C1E297551E1D15B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:essence/essence_raging"
+					criterion: ""
+					id: "7947E3B422BDA0AD"
+					type: "advancement"
+				}
+			]
+			title: "无尽的愤怒"
+			x: 11.6d
+			y: 1.113d
+			rewards: [ ]
+		}
+		{
+			description: ["获得皇家力量：喝下一瓶蜂王浆！获得力量！（从蜜蜂女王的进度任务获得）" "高超的收集者：获得一桶蜂王浆。看起来蜜蜂女王会喜欢..." "拉！不要推！：在粘性活塞旁边放置一块蜂王浆方块"]
+			icon: "the_bumblezone:royal_jelly_bottle"
+			id: "29E4B4EFAFF18C6A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "5144673046CDFE50"
+					type: "item"
+					title: "蜂王浆瓶"
+					item: "the_bumblezone:royal_jelly_bottle"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "41A9D85F9A60C157"
+					type: "item"
+					title: "蜂王浆桶"
+					item: "the_bumblezone:royal_jelly_bucket"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "458CD5BDFB0A0CFE"
+					type: "item"
+					title: "蜂王浆块"
+					item: "the_bumblezone:royal_jelly_block"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "获得皇家力量"
+			x: 0.25d
+			y: 5.963d
+			rewards: [ ]
+		}
+		{
+			description: ["更多蜜蜜！！！：获得一桶蜂蜜！" "快速成长！：喂食后立即让幼崽蜜蜂成长" "爱正在蔓延！：使用蜜桶让一群成年蜜蜂相爱！" "蜜蜂农夫：使用蜂蜜桶在特定的幼虫块中培育蜜蜂幼虫"]
+			icon: "the_bumblezone:honey_bucket"
+			id: "609A02136BE7AEF1"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "7EDC041CF8AC24A0"
+					type: "item"
+					title: "蜂蜜桶"
+					item: "the_bumblezone:honey_bucket"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "更多蜜蜜！！！"
+			x: -6.75d
+			y: 6.333d
+			rewards: [ ]
+		}
+		{
+			description: ["美丽的晶体！：找出如何将易碎的蜂蜜结晶作为物品获得。也许需要轻轻触摸..." "咬碎牙齿的零食：咬一口坚硬的蜂蜜结晶碎片" "让光芒闪耀！：获得闪耀蜂蜜结晶作为物品，而不破坏它。可能需要轻柔的触摸..."]
+			icon: "the_bumblezone:honey_crystal"
+			id: "1474F777650358DC"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "020EA74CA45FCCA3"
+					type: "item"
+					title: "蜂蜜结晶碎片"
+					item: "the_bumblezone:honey_crystal_shards"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "726A9C2F5B4471AD"
+					type: "item"
+					title: "蜂蜜结晶"
+					item: "the_bumblezone:honey_crystal"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "612FC4B1C65DDAF5"
+					type: "item"
+					title: "闪耀蜂蜜结晶"
+					item: "the_bumblezone:glistering_honey_crystal"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "美丽的晶体！"
+			x: -1.5d
+			y: -3.037d
+			rewards: [ ]
+		}
+		{
+			description: [
+				"把黏糊糊的东西收进一套工具箱：残留物、红石残留物和两种蜂蜜蜘蛛网各准备一份，清理、回收和机关用途一起掌握。"
+				"蜜糖回收者：通过熔炼重新利用蜜制品"
+				"更加黏稠的局面！：使用湿海绵、水桶或水瓶清理黏糊糊的残留物或蜘蛛网"
+				"清洁狂人！：用海绵清洗掉一张蜂蜜蜘蛛网！"
+				"用蜜思考！：将粘性蜂蜜残留物与红石结合"
+				"粘性的力量！：从特殊的蜂蜜网中产生红石能量"
+			]
+			icon: "the_bumblezone:sticky_honey_residue"
+			id: "5B168E4A2C103E76"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "40D8D61D2B70A04C"
+					type: "item"
+					title: "粘性蜂蜜残留物"
+					item: "the_bumblezone:sticky_honey_residue"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "20151FE9E6D002FA"
+					type: "item"
+					title: "红石粘性蜂蜜残留物"
+					item: "the_bumblezone:sticky_honey_redstone"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "2F9DD2551CAE77B3"
+					type: "item"
+					title: "蜂蜜蜘蛛网"
+					item: "the_bumblezone:honey_web"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "65ACEB83F846BB96"
+					type: "item"
+					title: "红石蜂蜜蜘蛛网"
+					item: "the_bumblezone:redstone_honey_web"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "蜜糖回收者"
+			x: 0.25d
+			y: -2.963d
+			rewards: [ ]
+		}
+		{
+			description: ["新做的蜂蜜结晶盾牌只是起点。带上蜂蜜结晶碎片，在铁砧上反复修复盾牌，逐步提升盾牌等级，直到九级，成为大蜂巢的守护者！" "最高等级的盾牌拥有约为原版盾牌两倍的耐久，但依然惧怕火焰与爆炸。升级提高的是盾牌的底子，并不会抹去这些弱点。"]
+			icon: {
+				Count: 1
+				id: "the_bumblezone:honey_crystal_shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "54BBD39DA4808D33"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:honey_crystal_shield/obtain_maxed_honey_crystal_shield"
+					criterion: ""
+					id: "58A67607EAA60A6A"
+					type: "advancement"
+				}
+			]
+			title: "大蜂巢的守护者"
+			x: 0.25d
+			y: -4.363d
+			rewards: [ ]
+		}
+		{
+			description: ["蜜蜂之力！：用蜂蜜注入史莱姆，创造出蜂蜜史莱姆！" "谁需要蜜蜂？？？：收获蜂蜜史莱姆的蜜"]
+			icon: "the_bumblezone:honey_slime_spawn_egg"
+			id: "67E0F54E174E5281"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:honey_slime/honey_slime_harvest"
+					criterion: ""
+					id: "40DC3E3177431C91"
+					type: "advancement"
+				}
+			]
+			title: "蜜蜂之力！"
+			x: -5.0d
+			y: 7.033d
+			rewards: [ ]
+		}
+		{
+			description: ["获得所有以蜜蜂为主题的音乐唱片！"]
+			icon: "the_bumblezone:music_disc_honey_bee_rat_faced_boy"
+			id: "6D8A39A347FE7E96"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:music_discs/obtain_all_music_discs"
+					criterion: ""
+					id: "3158F8A7D0CD6230"
+					type: "advancement"
+				}
+			]
+			title: "蜜蜂之舞！"
+			x: -6.75d
+			y: 3.624d
+			rewards: [ ]
+		}
+		{
+			description: ["战术花粉：藏身于深厚的花粉堆中" "没有鼻塞也没有摔断膝盖！：从高处跳入厚厚的花粉堆中！" "奇怪的文物...：用刷子清理可疑的花粉堆"]
+			icon: "the_bumblezone:pile_of_pollen"
+			id: "2245F865DAB8D2F7"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "546E4733EEB3DE3E"
+					type: "item"
+					title: "花粉堆"
+					item: "the_bumblezone:pile_of_pollen"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "2163A9551AB7A1D9"
+					type: "item"
+					title: "可疑的花粉堆"
+					item: "the_bumblezone:pile_of_pollen_suspicious"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "战术花粉"
+			x: 3.25d
+			y: -2.25d
+			rewards: [ ]
+		}
+		{
+			description: [
+				"蜜蜂授粉专家：用花粉球授粉，让更多的高花开放！"
+				"蜜蜂清洁！：用湿海绵、水桶或水瓶清洗蜜蜂身上的花粉。"
+				"无效的攻击！：用花粉球抵御恶魂的火球攻击！"
+				"蘑菇、花朵，同样的事情：用花粉球授粉，孵化出哞菇！"
+				"祝福你，熊猫！：让熊猫感受季节性过敏！"
+				"蜜蜂全垒打！：用花粉球玩接力赛，将未受粉的蜜蜂变成受粉的蜜蜂！"
+			]
+			icon: "the_bumblezone:pollen_puff"
+			id: "3ACF6610025A26DA"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "23F7D92E67C04E0B"
+					type: "item"
+					title: "花粉球"
+					item: "the_bumblezone:pollen_puff"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "蜜蜂授粉专家"
+			x: 1.5d
+			y: -2.25d
+			rewards: [ ]
+		}
+		{
+			description: [
+				"蜜蜂领域：从蜂巢启程，探索蜂蜜海洋、遗迹与女王的王座。留好返程的位置，小心激怒蜂群。"
+				"向蜂巢投掷末影珍珠，或借助活塞进入蜜蜂领域，任选一种方式即可。"
+				"与女王完成首次交易后，可同时实现她的16项愿望。全部完成后，再去见女王领取奖励。"
+				"亲自食用蜜蜂精华，获得进入圣所挑战的资格。六种颜色的挑战可以自由选择先后。"
+				"蜜蜂领域手册：想了解蜂群、女王与圣所的更多秘密，可以查阅蜜蜂领域手册。"
+				"https://github.com/TelepathicGrunt/Bumblezone/wiki"
+				"https://www.mcmod.cn/class/2489.html"
+			]
+			icon: {
+				Count: 1
+				id: "the_bumblezone:honeycomb_brood_block"
+				tag: {
+					isCreativeTabIcon: 1
+				}
+			}
+			id: "411EF06E5380FEBB"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [
+				{
+					id: "46062864AA6E662B"
+					title: "已阅读"
+					type: "checkmark"
+				}
+			]
+			title: "蜜蜂领域"
+			x: -12.0d
+			y: 2.563d
+			rewards: [ ]
+		}
+		{
+			description: ["花卉分享：穿着蜜蜂盔甲，手持小型或大型花朵，右键点击根蟲" "这是什么意思？！：用名牌给根蟲命名为“jeb_“"]
+			icon: "the_bumblezone:rootmin_spawn_egg"
+			id: "7DDAF6E68C90191A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:rootmin/rootmin_flower_swap"
+					criterion: ""
+					id: "54D481ED4A946273"
+					type: "advancement"
+				}
+			]
+			title: "花卉分享"
+			x: -3.25d
+			y: 6.962d
+			rewards: [ ]
+		}
+		{
+			description: ["制作并使用一个哨兵守卫刷怪蛋！它不会攻击孵化它的人。"]
+			icon: "the_bumblezone:sentry_watcher_spawn_egg"
+			id: "73506675B62EAC5C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:sentry_watcher/sentry_watcher_use_egg"
+					criterion: ""
+					id: "56DCC300A90939BF"
+					type: "advancement"
+				}
+			]
+			title: "个人守卫"
+			x: 0.25d
+			y: 0.097d
+			rewards: [ ]
+		}
+		{
+			description: ["在食用蜜蜂精华后发现并进入任何永恒圣所" "六种颜色的挑战可以自由选择先后。亲自进入挑战，赢得属于你的精华。"]
+			icon: "the_bumblezone:luminescent_wax_corner_white"
+			id: "0859F157598CFD16"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:structures/enter_sempiternal_sanctum"
+					criterion: ""
+					id: "279910629D229684"
+					type: "advancement"
+				}
+			]
+			title: "古老的起源"
+			x: 9.85d
+			y: 2.563d
+			rewards: [ ]
+		}
+		{
+			description: ["找到并进入一个王座尖柱结构！（使用其他结构的王座定位指南针）"]
+			icon: "the_bumblezone:bee_queen_spawn_egg"
+			id: "179C704E07A94364"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:structures/enter_throne_pillar"
+					criterion: ""
+					id: "2E9BB78C8A7A9946"
+					type: "advancement"
+				}
+			]
+			title: "皇家存在"
+			x: -1.5d
+			y: 2.563d
+			rewards: [ ]
+		}
+		{
+			description: ["糖分学：获得注入糖的奇怪石块。也许用甜液体冷却熔岩可以奏效...尝试使用源液体和流动液体..." "糖分爆棚！！！：喝下一些甜美的糖水" "很快...所有的都将是甘蔗！：将糖水放在现有的甘蔗块旁边"]
+			icon: "the_bumblezone:sugar_infused_cobblestone"
+			id: "1FAAB6C7B8605B80"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "45F95C10891CCA71"
+					type: "item"
+					title: "糖水桶"
+					item: "the_bumblezone:sugar_water_bucket"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "430660CB2C32B8A9"
+					type: "item"
+					title: "糖水瓶"
+					item: "the_bumblezone:sugar_water_bottle"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "0D7F669C848DF446"
+					type: "item"
+					title: "糖渍圆石"
+					item: "the_bumblezone:sugar_infused_cobblestone"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "糖分学"
+			x: -1.5d
+			y: -6.193d
+			rewards: [ ]
+		}
+		{
+			description: ["蜜蜂的维度等待着你！用末影珍珠击中蜂巢或蜂箱，或尝试用活塞把自己推入蜂巢，从熟悉的方块里打开一场不熟悉的远征。" "蜜蜂传送门入侵！与蜜汁液压机是两种进入方法，选择一种即可。出发前带好食物、照明和返程装备。"]
+			icon: "minecraft:bee_nest"
+			id: "76CC63AAD57C54ED"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "4601E6A043B4E25C"
+					type: "dimension"
+					dimension: "the_bumblezone:the_bumblezone"
+				}
+			]
+			title: "蜜蜂的维度等待着你！"
+			x: -10.25d
+			y: 2.563d
+			rewards: [ ]
+		}
+		{
+			description: ["通过抵达蜜蜂领域的顶部或底部离开蜜蜂领域！（你不会死亡，而是会被传送出去）"]
+			icon: "the_bumblezone:beehive_beeswax"
+			id: "79525FA6BB443977"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:teleportation/teleport_out_of_bumblezone"
+					criterion: ""
+					id: "34D9E09F8BBD4A76"
+					type: "advancement"
+				}
+			]
+			title: "俯冲出口"
+			x: -8.5d
+			y: 1.163d
+			rewards: [ ]
+		}
+		{
+			description: ["通过重新安装它们的刺救出12只蜜蜂，使它们免于死亡" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "the_bumblezone:bee_stinger"
+			id: "5035F521C50AF236"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/back_in_action"
+					criterion: ""
+					id: "735E1DA8BEBA0202"
+					type: "advancement"
+				}
+			]
+			title: "重返战斗"
+			x: 2.0d
+			y: 3.288d
+			rewards: [ ]
+		}
+		{
+			description: ["与蜜蜂女王进行128次交易。不需要是额外交易，任何交易都可以！" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "the_bumblezone:bee_queen_spawn_egg"
+			id: "0D6FCEF40A7C8BEB"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/crazy_trader"
+					criterion: ""
+					id: "4C3525CFEC49C4F4"
+					type: "advancement"
+				}
+			]
+			title: "疯狂的交易商"
+			x: 6.35d
+			y: 4.738d
+			rewards: [ ]
+		}
+		{
+			description: ["杀死8只蠕动的蠹虫，它们到处爬行和挖掘" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "the_bumblezone:bee_queen_spawn_egg"
+			id: "79C9C2F36A8C32AA"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/fighting_the_swarm"
+					criterion: ""
+					id: "33A164D20CC42C8C"
+					type: "advancement"
+				}
+			]
+			title: "与虫群作战"
+			x: 2.0d
+			y: 1.838d
+			rewards: [ ]
+		}
+		{
+			description: ["制作6个蜂巢或蜂箱" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "minecraft:beehive"
+			id: "08A120E7A6D5769E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/flooding_the_housing_market"
+					criterion: ""
+					id: "5477D36F0E4AE59B"
+					type: "advancement"
+				}
+			]
+			title: "淹没住房市场"
+			x: 2.0d
+			y: 0.388d
+			rewards: [ ]
+		}
+		{
+			description: ["喝下8瓶蜂蜜！" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "minecraft:honey_bottle"
+			id: "3562D1BCCD6C2562"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/honey_drunk"
+					criterion: ""
+					id: "7493279540C45499"
+					type: "advancement"
+				}
+			]
+			title: "醉蜜"
+			x: 4.9d
+			y: 0.388d
+			rewards: [ ]
+		}
+		{
+			description: ["通过喂养糖水或类似蜂蜜的东西满足蜜蜂的饥饿感24次！（可以是同一只蜜蜂或不同的蜜蜂）" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "the_bumblezone:sugar_water_bottle"
+			id: "67A56E5739D356C6"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/hungry_hungry_bees"
+					criterion: ""
+					id: "4856D65F3152FCF2"
+					type: "advancement"
+				}
+			]
+			title: "饥饿的蜜蜂"
+			x: 6.35d
+			y: 3.288d
+			rewards: [ ]
+		}
+		{
+			description: ["繁殖蜜蜂，直到总共出生8只幼蜜蜂" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "the_bumblezone:honey_bucket"
+			id: "52580A6B355FC6E7"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/love_bees"
+					criterion: ""
+					id: "25FDE1F489BA93E0"
+					type: "advancement"
+				}
+			]
+			title: "爱蜜蜂"
+			x: 2.0d
+			y: 4.738d
+			rewards: [ ]
+		}
+		{
+			description: ["杀死4只末影螨，为它们存在的罪行付出代价" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "the_bumblezone:bee_queen_spawn_egg"
+			id: "3CE82D959DBC1D4B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/otherworldly_mites"
+					criterion: ""
+					id: "0E6F49CDA90D26DA"
+					type: "advancement"
+				}
+			]
+			title: "异界螨虫"
+			x: 3.45d
+			y: 4.738d
+			rewards: [ ]
+		}
+		{
+			description: ["用螫针矛不知怎么地杀死了凋灵" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: {
+				Count: 1
+				id: "the_bumblezone:stinger_spear"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7193A2DF972CB583"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/peak_inefficiency"
+					criterion: ""
+					id: "66A222E33D3B226F"
+					type: "advancement"
+				}
+			]
+			title: "极限低效"
+			x: 4.9d
+			y: 3.288d
+			rewards: [ ]
+		}
+		{
+			description: ["从弓/弩中发射32个蜂刺" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "the_bumblezone:bee_stinger"
+			id: "5D129EA41CE992C4"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/poison_warfare"
+					criterion: ""
+					id: "7D6CF5C1E8C5E90E"
+					type: "advancement"
+				}
+			]
+			title: "毒液战争"
+			x: 3.45d
+			y: 1.838d
+			rewards: [ ]
+		}
+		{
+			description: ["用花粉球投掷并击中24个实体。其他玩家也算在内！" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "the_bumblezone:pollen_puff"
+			id: "605EFDAEF7F12497"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/pollen_fight"
+					criterion: ""
+					id: "3297378D27DF6803"
+					type: "advancement"
+				}
+			]
+			title: "花粉战斗"
+			x: 6.35d
+			y: 0.388d
+			rewards: [ ]
+		}
+		{
+			description: ["繁殖6只蜂蜜史莱姆（它们真的很喜欢糖！）" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "the_bumblezone:bee_queen_spawn_egg"
+			id: "597A4E97ED7E6241"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/slimy_mitosis"
+					criterion: ""
+					id: "7209301A2353D85A"
+					type: "advancement"
+				}
+			]
+			title: "黏液有丝分裂"
+			x: 4.9d
+			y: 1.838d
+			rewards: [ ]
+		}
+		{
+			description: ["屠杀16只洞穴蜘蛛" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "the_bumblezone:bee_queen_spawn_egg"
+			id: "302A9E90279F003B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/terror_fangs"
+					criterion: ""
+					id: "1E2F9715398416D8"
+					type: "advancement"
+				}
+			]
+			title: "恐怖之牙"
+			x: 6.35d
+			y: 1.838d
+			rewards: [ ]
+		}
+		{
+			description: ["{image:the_bumblezone:textures/entity_icon/bee_queen.png width:64 height:64 align:center}" "从与蜜蜂女王会面开始的任务线。完成进度以获得奖励！" "先与女王完成首次交易，之后可以同时实现她的16项愿望。" "与女王完成首次交易，听听她的愿望。全部16项愿望完成后，回来领取蜜蜂精华。"]
+			icon: "the_bumblezone:bee_queen_spawn_egg"
+			id: "350758FF218CDF9C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/the_beginning"
+					criterion: ""
+					id: "1C1DBA6AB60CEAD1"
+					type: "advancement"
+				}
+			]
+			title: "女王的愿望"
+			x: 0.25d
+			y: 2.563d
+			rewards: [ ]
+		}
+		{
+			description: ["用花粉球授粉，让花朵累计盛开8次。" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "the_bumblezone:pollen_puff"
+			id: "014DF53593495B81"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/the_crazy_florist"
+					criterion: ""
+					id: "19576140150E12EC"
+					type: "advancement"
+				}
+			]
+			title: "疯狂的花商"
+			x: 3.45d
+			y: 3.288d
+			rewards: [ ]
+		}
+		{
+			description: ["穿着蜜蜂盔甲，击败末影龙，成为传奇人物" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "the_bumblezone:bee_queen_spawn_egg"
+			id: "27473729B4D39137"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/the_great_dragon_slayer"
+					criterion: ""
+					id: "3AC952C68FFC7D4D"
+					type: "advancement"
+				}
+			]
+			title: "伟大的屠龙勇士"
+			x: 4.9d
+			y: 4.738d
+			rewards: [ ]
+		}
+		{
+			description: ["消灭32只蜘蛛，获取它们的恶心之物（洞穴蜘蛛不计入）" "先与女王完成首次交易，之后可以同时实现她的16项愿望。"]
+			icon: "the_bumblezone:bee_queen_spawn_egg"
+			id: "2994A5208619AF38"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/too_many_legs"
+					criterion: ""
+					id: "03786AEC0E1232BE"
+					type: "advancement"
+				}
+			]
+			title: "蜘蛛太多"
+			x: 3.45d
+			y: 0.388d
+			rewards: [ ]
+		}
+		{
+			description: [
+				"一只公文包，装下一支蜂群。收集一只嗡嗡公文包，捕捉、照料和释放蜜蜂的诀窍都记在这里。"
+				"这是什么？...：用嗡嗡公文包右键点击蜜蜂，直到它装满"
+				"医生在此！：在嗡嗡公文包中治愈一只蜜蜂！（通过Shift+右键打开UI）"
+				"蜂巢大英雄！：通过左键点击方块或实体释放嗡嗡公文包中的蜜蜂。（Shift+左键点击释放所有）"
+				"蜜蜂收藏家：将14个变种蜜蜂收集到嗡嗡声的公文包中！不需要不同的变种。"
+				"发现闪亮的！：使用命名牌为Bumblezone的变种蜜蜂命名！看起来像蜜蜂但外观不同！"
+			]
+			icon: "the_bumblezone:buzzing_briefcase"
+			id: "2FD3BBB55EEB80B5"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "027B643BA322757C"
+					type: "item"
+					title: "嗡嗡公文包"
+					item: "the_bumblezone:buzzing_briefcase"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "这是什么？..."
+			x: -3.25d
+			y: -0.51d
+			rewards: [ ]
+		}
+		{
+			description: ["极限人群控制：装载并发射一整炮的蜂蜜结晶！" "你最好表现好！：装载并发射一整炮的蜜蜂！"]
+			icon: {
+				Count: 1
+				id: "the_bumblezone:crystal_cannon"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6A7925149A7F0B46"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "254DE19F35385D94"
+					type: "item"
+					title: "结晶炮"
+					item: "the_bumblezone:crystal_cannon"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "4156DE4EF54055B1"
+					type: "item"
+					title: "蜜蜂炮"
+					item: "the_bumblezone:bee_cannon"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "极限人群控制"
+			x: 0.25d
+			y: -5.763d
+			rewards: [ ]
+		}
+		{
+			description: ["在蜜蜂领域维度中钓出稀有战利品！"]
+			icon: {
+				Count: 1
+				id: "minecraft:fishing_rod"
+				tag: {
+					Damage: 0
+					Enchantments: [
+						{
+							id: "luck_of_the_sea"
+							lvl: 3
+						}
+					]
+				}
+			}
+			id: "074EE3358EF8C1A2"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:tools/fish_rare_loot"
+					criterion: ""
+					id: "56A8A2B4E54B9906"
+					type: "advancement"
+				}
+			]
+			title: "蜜蜂钓鱼"
+			x: -3.25d
+			y: 0.89d
+			rewards: [ ]
+		}
+		{
+			description: [
+				"带上一只蜂蜜指南针，探索不同生物群系、巢室迷宫和花园。遇见新结构时，记下位置，再决定下一处目的地。"
+				"蜜蜂探险家：启用蜜蜂指南针的跟踪/定位功能！"
+				"这还算指南针吗..?：制作或找到一只诱人的蜜蜂指南针！"
+				"蜜蜂地理：哇！你找到了Bumblezone所有的生物群系！"
+				"观察蜜蜂：不可思议！你发现了Bumblezone所有的结构！"
+				"迷失在巢室中：找到并进入一个巢室迷宫结构！（如果你没有蜂群之护效果，请小心！）"
+				"园丁和蜜蜂：抬头看！你可能会发现一个悬挂的大花园结构！"
+			]
+			icon: "the_bumblezone:honey_compass"
+			id: "1E44B31FF0B6BA86"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					id: "615729E6E2D64896"
+					type: "item"
+					title: "蜂蜜指南针"
+					item: "the_bumblezone:honey_compass"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			title: "蜜蜂探险家"
+			x: -5.0d
+			y: 2.563d
+			rewards: [ ]
+		}
+		{
+			description: ["从建筑物的蜜蜂茧中获得一只指向王座尖柱结构的稀有蜜蜂指南针！"]
+			icon: {
+				Count: 1
+				id: "the_bumblezone:honey_compass"
+				tag: {
+					Locked: 1
+				}
+			}
+			id: "1954DDFE9A92C97C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:tools/obtain_throne_honey_compass"
+					criterion: ""
+					id: "6E985891CC8F9578"
+					type: "advancement"
+				}
+			]
+			title: "去见女王！"
+			x: -3.25d
+			y: 2.563d
+			rewards: [ ]
+		}
+		{
+			description: ["从蜜蜂女王那里获得可放置为方块的气流物品！"]
+			icon: "the_bumblezone:windy_air"
+			id: "0F183261D6297A01"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:windy_air/obtain_windy_air"
+					criterion: ""
+					id: "797B97FBCA4B8ED0"
+					type: "advancement"
+				}
+			]
+			title: "可放置的气流！"
+			x: 2.0d
+			y: 5.963d
+			rewards: [ ]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:9a465c933841630" "q:70ab9e00ed2d0beb"]
+		}
+		{
+			nodes: ["q:9a465c933841630" "q:74b9e37643840b33"]
+		}
+		{
+			nodes: ["q:79525fa6bb443977" "q:2b01097f812deeff"]
+		}
+		{
+			nodes: ["q:4d7c3e330eeddd7f" "q:4727c4d5a70f42fe"]
+		}
+		{
+			nodes: ["q:609a02136be7aef1" "q:4d7c3e330eeddd7f"]
+		}
+		{
+			nodes: ["q:7fa6dbd38ca2490e" "q:2fd3bbb55eeb80b5"]
+		}
+		{
+			nodes: ["q:6d8a39a347fe7e96" "q:1e44b31ff0b6ba86"]
+		}
+		{
+			nodes: ["q:9a465c933841630" "q:65af3e867db1ea9a"]
+		}
+		{
+			nodes: ["q:9a465c933841630" "q:5c1317c9e645cf3f"]
+		}
+		{
+			nodes: ["q:79525fa6bb443977" "q:708014be59d1bbf1"]
+		}
+		{
+			nodes: ["q:708014be59d1bbf1" "q:36cab81f3136a07f"]
+		}
+		{
+			nodes: ["q:1e44b31ff0b6ba86" "q:59a1b468df308920"]
+		}
+		{
+			nodes: ["q:9a465c933841630" "q:71d55dfa6ab2d166"]
+		}
+		{
+			nodes: ["q:6d8a39a347fe7e96" "q:2e806895fc39f8cd"]
+		}
+		{
+			nodes: ["q:7ddaf6e68c90191a" "q:299bbd5ee259dc5c"]
+		}
+		{
+			nodes: ["q:392ffda4bc12c648" "q:7fa6dbd38ca2490e"]
+		}
+		{
+			nodes: ["q:7fa6dbd38ca2490e" "q:9a465c933841630"]
+		}
+		{
+			nodes: ["q:876ee9a191a9145" "q:17603e7a5e306a3c"]
+		}
+		{
+			nodes: ["q:74b9e37643840b33" "q:17603e7a5e306a3c"]
+		}
+		{
+			nodes: ["q:1474f777650358dc" "q:17603e7a5e306a3c"]
+		}
+		{
+			nodes: ["q:708014be59d1bbf1" "q:876ee9a191a9145"]
+		}
+		{
+			nodes: ["q:79525fa6bb443977" "q:392ffda4bc12c648"]
+		}
+		{
+			nodes: ["q:7fa6dbd38ca2490e" "q:392ffda4bc12c648"]
+		}
+		{
+			nodes: ["q:179c704e07a94364" "q:29e4b4efaff18c6a"]
+		}
+		{
+			nodes: ["q:79525fa6bb443977" "q:609a02136be7aef1"]
+		}
+		{
+			nodes: ["q:9a465c933841630" "q:1474f777650358dc"]
+		}
+		{
+			nodes: ["q:1474f777650358dc" "q:5b168e4a2c103e76"]
+		}
+		{
+			nodes: ["q:74b9e37643840b33" "q:54bbd39da4808d33"]
+		}
+		{
+			nodes: ["q:609a02136be7aef1" "q:67e0f54e174e5281"]
+		}
+		{
+			nodes: ["q:79525fa6bb443977" "q:6d8a39a347fe7e96"]
+		}
+		{
+			nodes: ["q:3acf6610025a26da" "q:2245f865dab8d2f7"]
+		}
+		{
+			nodes: ["q:9a465c933841630" "q:3acf6610025a26da"]
+		}
+		{
+			nodes: ["q:67e0f54e174e5281" "q:7ddaf6e68c90191a"]
+		}
+		{
+			nodes: ["q:5c1317c9e645cf3f" "q:73506675b62eac5c"]
+		}
+		{
+			nodes: ["q:1954ddfe9a92c97c" "q:179c704e07a94364"]
+		}
+		{
+			nodes: ["q:9a465c933841630" "q:1faab6c7b8605b80"]
+		}
+		{
+			nodes: ["q:411ef06e5380febb" "q:76cc63aad57c54ed"]
+		}
+		{
+			nodes: ["q:76cc63aad57c54ed" "q:79525fa6bb443977"]
+		}
+		{
+			nodes: ["q:1faab6c7b8605b80" "q:6a7925149a7f0b46"]
+		}
+		{
+			nodes: ["q:708014be59d1bbf1" "q:2fd3bbb55eeb80b5"]
+		}
+		{
+			nodes: ["q:79525fa6bb443977" "q:1e44b31ff0b6ba86"]
+		}
+		{
+			nodes: ["q:36cab81f3136a07f" "q:74ee3358ef8c1a2"]
+		}
+		{
+			nodes: ["q:1e44b31ff0b6ba86" "q:1954ddfe9a92c97c"]
+		}
+		{
+			nodes: ["q:29e4b4efaff18c6a" "q:f183261d6297a01"]
+		}
+		{
+			nodes: ["q:76cc63aad57c54ed" "q:1e44b31ff0b6ba86"]
+		}
+		{
+			nodes: ["q:179c704e07a94364" "q:350758ff218cdf9c"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:8a120e7a6d5769e"]
+		}
+		{
+			nodes: ["q:8a120e7a6d5769e" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:2994a5208619af38"]
+		}
+		{
+			nodes: ["q:2994a5208619af38" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:3562d1bccd6c2562"]
+		}
+		{
+			nodes: ["q:3562d1bccd6c2562" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:605efdaef7f12497"]
+		}
+		{
+			nodes: ["q:605efdaef7f12497" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:79c9c2f36a8c32aa"]
+		}
+		{
+			nodes: ["q:79c9c2f36a8c32aa" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:5d129ea41ce992c4"]
+		}
+		{
+			nodes: ["q:5d129ea41ce992c4" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:597a4e97ed7e6241"]
+		}
+		{
+			nodes: ["q:597a4e97ed7e6241" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:302a9e90279f003b"]
+		}
+		{
+			nodes: ["q:302a9e90279f003b" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:5035f521c50af236"]
+		}
+		{
+			nodes: ["q:5035f521c50af236" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:14df53593495b81"]
+		}
+		{
+			nodes: ["q:14df53593495b81" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:7193a2df972cb583"]
+		}
+		{
+			nodes: ["q:7193a2df972cb583" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:67a56e5739d356c6"]
+		}
+		{
+			nodes: ["q:67a56e5739d356c6" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:52580a6b355fc6e7"]
+		}
+		{
+			nodes: ["q:52580a6b355fc6e7" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:3ce82d959dbc1d4b"]
+		}
+		{
+			nodes: ["q:3ce82d959dbc1d4b" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:27473729b4d39137"]
+		}
+		{
+			nodes: ["q:27473729b4d39137" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:350758ff218cdf9c" "q:d6fcef40a7c8beb"]
+		}
+		{
+			nodes: ["q:d6fcef40a7c8beb" "q:10ac04cb57f6817f"]
+		}
+		{
+			nodes: ["q:10ac04cb57f6817f" "q:859f157598cfd16"]
+		}
+		{
+			nodes: ["q:859f157598cfd16" "q:4c1e297551e1d15b"]
+		}
+		{
+			nodes: ["q:859f157598cfd16" "q:75018f7f84681cc"]
+		}
+		{
+			nodes: ["q:859f157598cfd16" "q:1d6497a7ce358290"]
+		}
+		{
+			nodes: ["q:859f157598cfd16" "q:35ea5be41fc3680"]
+		}
+		{
+			nodes: ["q:859f157598cfd16" "q:36550a2b516b73bf"]
+		}
+		{
+			nodes: ["q:859f157598cfd16" "q:1343331faf0b3ea9"]
+		}
+	]
+}

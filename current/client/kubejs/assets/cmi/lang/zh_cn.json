@@ -1,0 +1,87 @@
+{
+	"message.cmi.food.andesite_alloy_noodle": "不咸不淡, 味道好极了",
+	"message.cmi.food.creosote_wood_chip_briquette": "带派不老铁",
+	"message.cmi.food.radon_bottle": "……怎么有股金属味?",
+	"message.cmi.reloaded": "已重载全部脚本!",
+	"message.cmi.jei.reloaded": "已重载JEI!",
+	"message.cmi.41msg": "你好, 欢迎来到CIM, 点击§b这里§h获取更多信息",
+	"message.cmi.stage.init": "不对...我似乎忘了些什么...去看看任务书吧",
+	"message.cmi.chinese_national_day": "同志们, 国庆节快乐！",
+	"message.cmi.debug.getHardness": "这个方块的硬度是: %s",
+	"message.cmi.checkCheating": "§b你似乎添加了%s§b这个Mod?\n§b或许好好体验整合包内容才是更好的选择呢?",
+	"message.cmi.checkMultipleCheating": "§b你似乎添加了以下Mod?\n%s§b\n§b或许好好体验整合包内容才是更好的选择呢?",
+	"message.cmi.disabled_multiblock": "该多方块结构已被禁用",
+	"message.cmi.togni_leets": "很遗憾的告诉你, 你确诊了笨笨",
+	"message.cmi.initial_item_kit": "欢迎游玩整合包! 物品已发放!",
+	"message.cmi.welcome": "欢迎%s来到CMI!",
+	"message.cmi.welcomeback": "欢迎回来, 长官",
+
+	"tooltip.cmi.meltingPoint": "§e熔点: %s°C / %s°F",
+	"tooltip.cmi.fuelTemperature": "§e燃烧温度: %s°C / %s°F",
+	"tooltip.cmi.41dirt": "按下Alt + F4可以获得创造模式能量立方!",
+	"tooltip.cmi.initial_item_kit.tip": "按住Shift查看详情",
+	"tooltip.cmi.initial_item_kit.shift": "潜行 + 右键打开, 将会获得以下物品:\n§b扳手\n§b工程师护目镜\n§b强力胶\n§b时间之瓶\n§b应力表",
+	"tooltip.cmi.stored_location": "维度: %s, X:%s, Y:%s, Z:%s",
+
+	"tooltip.cmi.mtd.mode.item": "可执行物品输出配方",
+	"tooltip.cmi.mtd.mode.fluid": "可执行流体输出配方",
+	"tooltip.cmi.mtd.mode.gas": "可执行气体输出配方",
+
+	"jade.theme.cmi.stardew_valley": "星露谷物语",
+	"jade.theme.cmi.war_thunder": "战争雷霆",
+	"jade.theme.cmi.windows_aero_lite": "Windows Aero Lite",
+	"jade.theme.cmi.windows_aero": "Windows Aero",
+	"jade.theme.cmi.windows_basic": "Windows Basic",
+	"jade.theme.cmi.windows_classic": "Windows Classic",
+	"jade.theme.cmi.windows_plex": "Windows Plex",
+	"jade.theme.cmi.windows_xp_luna": "Windows XP Luna",
+	"jade.theme.cmi.windows10": "Windows 10",
+
+	"curios.identifier.mechanisms": "构件",
+
+	"promp.cmi.ender_mechanism.location_stored": "当前坐标已存入末影构件",
+	"promp.cmi.ender_mechanism.teleport_failed": "不支持跨维度传送！",
+
+	"text.cmi.dev": "§0● 开发中画面, 实际内容请以正式版为准",
+	"text.cmi.player": "§0● 测试中版本, 不代表最终品质",
+
+	"structure.ad_astra.lunar_tower": "莫托斯高塔",
+	"structure.ad_astra.lunarian_village": "莫托斯村庄",
+	"structure.ad_astra.mars_temple": "阿瑞斯神庙",
+	"structure.ad_astra.moon_dungeon": "莫托斯要塞",
+	"structure.ad_astra.pygro_tower": "外星猪灵塔",
+	"structure.ad_astra.pygro_village": "外星猪灵村庄",
+	"structure.ad_astra.venus_bullet": "阿弗洛狄忒的子弹",
+
+	"sea.cmi.search": "§b正在使用对海搜索!",
+
+	"display.cmi.nether_crops": "§c下界作物只能种植在位于下界的下界农田方块上!",
+	"display.cmi.disabled_multiblock": " (已禁用)",
+
+	"create.recipe.heat_requirement.grilled": "炙烤",
+	"create.cmi.recipe.tip.fire": "燃烧介质块上方的火焰可以无限燃烧",
+
+	"item.cmi.paxel.description": "镐尖斧是一种多功能采掘工具, 适用于挖掘各种方块, 但对岩石和木头效果最好\n村民肯定不喜欢这个",
+	"item.cmi.togni_leets.desc": "§8cmi:steel_ingot",
+
+	"gui.cmi.electrolyzer.need_graphite_electrode": "需要石墨电极!",
+
+	"tooltip.electronic_blast_furnace.-1": "一个集大成的多方块机器",
+	"tooltip.electronic_blast_furnace.0": "同时_代理_着以下的_配方类型_:",
+	"tooltip.electronic_blast_furnace.1": "拥有_16_个并行, 可以同时处理_16_个配方",
+	"tooltip.electronic_blast_furnace.2": "允许使用_铜_, _琥珀金_, _高压线_三级线圈",
+	"tooltip.electronic_blast_furnace.3": "- 使用_铜线圈_的配方处理速度为原速的_0.25_倍",
+	"tooltip.electronic_blast_furnace.4": "- 使用_琥珀金线圈_的配方处理速度为原速的_1.5_倍",
+	"tooltip.electronic_blast_furnace.5": "- 使用_高压电线圈_的配方处理速度为原速的_4_倍",
+	"tooltip.electronic_blast_furnace.type.0": "- _电弧炉_",
+	"tooltip.electronic_blast_furnace.type.1": "- _电力高炉_",
+	"tooltip.electronic_blast_furnace.type.2": "- _匠魂合金_",
+
+	"tooltip.reinforced_coke_oven.1": "首次运行时配方处理时间为原速的_4_倍, 且只有_1_并行",
+	"tooltip.reinforced_coke_oven.2": "每完成一次配方, 配方所需时间_-20%_, 并行数_+1_, 最高_16_并行",
+	"tooltip.reinforced_coke_oven.3": "- 每完成一次配方炉温_+250_, 炉温上限_2500_度",
+	"tooltip.reinforced_coke_oven.4": "- 炉温每提升_250_度, 配方所需时间_-25%_",
+	"tooltip.reinforced_coke_oven.5": "- 以上加成只在持续运行时有效, 中断_3_秒就全部清零",
+
+	"thermal.hive_hopper": "蜂箱漏斗"
+}

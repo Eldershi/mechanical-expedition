@@ -1,0 +1,15 @@
+
+[ClientConfig]
+	#Should Lava render in transparent? This will affect on the render of Golden Boats.
+	LavaTransparent = true
+	#Should enable flying sword particle? (From Devour Sword)
+	FlyingSwordParticle = true
+	#Should enable sword aura particle?
+	SwordAuraParticle = true
+	#Should enable magic bullet particle?
+	MagicBulletParticle = true
+	#Should enable magic arrow particle?
+	MagicArrowParticle = true
+	#Should enable frost arrow particle?
+	FrostArrowParticle = true
+

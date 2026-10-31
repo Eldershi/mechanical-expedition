@@ -1,0 +1,724 @@
+{
+	id: "663B8D20DAD10933"
+	filename: "research_technology_b_start"
+	title: "沉浸工程：炉窑与钢材"
+	group: "050255AE19A93344"
+	order_index: 17
+	icon: "neoecoae:aluminum_dust"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "7C07B827BDFA9BBF"
+			title: "简易电解槽从赤泥制铝粉"
+			icon: "neoecoae:aluminum_dust"
+			x: 7.4d
+			y: 5.65d
+			optional: false
+			tasks: [
+				{
+					id: "71D2B61F6DE67EA4"
+					type: "item"
+					item: "neoecoae:aluminum_dust"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ee2ccc475d108a1fb6d91d7c.png width:32 height:32 align:center}"
+				"1赤泥、100mB红石酸、持续FE。简易与工业电解槽均显示该配方。"
+				"简易槽按手册配置流体/物品端口与右侧能量，运行1000ticks。中途停电会失败。"
+				"实际得到1铝粉。备用电源/缓冲能量可支撑完整加工。"
+				"铝板回到聚烯烃催化。"
+			]
+		}
+		{
+			id: "4ED5EF22A57C74DA"
+			title: "旋转窑处理焦煤或硝酸支路"
+			icon: "immersiveindustry:rotary_kiln"
+			x: 4.4d
+			y: 5.65d
+			optional: false
+			tasks: [
+				{
+					id: "6C330B23393D3936"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/da42d440411b7bc796d82dc4.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f1ea8bc9c9749f4161e39386.png width:240 height:106 align:center}"
+				"按所选配方备料与电力，流体出口留空间。"
+				"前顶入物、顶部出液、背后出物。可用木炭制焦煤，或硝石粉制硝酸。"
+				"所选配方的固液双输出均完成。多槽并行仍要持续供料。"
+				"焦煤回基础加工。"
+			]
+		}
+		{
+			id: "310C49B56D2FDF1B"
+			title: "取得HOP石墨粉"
+			icon: "immersiveengineering:dust_hop_graphite"
+			x: -1.6d
+			y: -4.25d
+			optional: false
+			tasks: [
+				{
+					id: "7220AE88E77ACE23"
+					type: "item"
+					item: "immersiveengineering:dust_hop_graphite"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e19fe5e98ef5e1df788df174.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b016a3b394b196850f5134c1.png width:240 height:196 align:center}"
+				"选用超热Create压块8焦煤粉。"
+				"超热压制8焦煤粉获得HOP粉，或核对其他来源。"
+				"取得HOP粉且加热源实际满足超热。不是仅有压机。"
+				"烧成HOP锭并制电极。也可进入耐火砖泥或活化石墨。"
+			]
+		}
+		{
+			id: "75E660966517BB89"
+			title: "选择电极蓝图或冲压路线"
+			icon: "immersiveengineering:graphite_electrode"
+			x: 4.4d
+			y: -4.25d
+			optional: false
+			tasks: [
+				{
+					id: "2986AB9A13C0858B"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/391cb1446611c4c21f635565.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/c3b939ede2b363b4b05252eb.png width:240 height:81 align:center}"
+				"有HOP石墨锭。电极蓝图在有直接合成，不强迫村民交易。"
+				"查询蓝图与冲压两种配方，任选一条制作。比较成品NBT与耐久，保留电极作为磨损部件。"
+				"获得可用石墨电极，完整度明确。任务不要求把两条路线都做。"
+				"电弧炉装3根。工业电解槽装2根，运行后检查损耗。"
+			]
+		}
+		{
+			id: "101D899A5AB27BBA"
+			title: "电弧炉实跑一炉并排渣"
+			icon: "immersiveengineering:arc_furnace"
+			x: 7.4d
+			y: -3.45d
+			optional: false
+			tasks: [
+				{
+					id: "441B16892D8B46C0"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/0d479d2f20f363ceb0c2cf58.png width:32 height:32 align:center}"
+				"有完整炉体、3电极、能源和所选实际配方原料/添加剂。"
+				"锤敲炼药锅成形。背面供能，顶口分原料/添加剂，前出成品、背出渣。不要被默认红石暂停。"
+				"原料减少、成品及矿渣进入对应输出，电极可磨损。断电/满渣能观察到暂停。"
+				"运行钢、不锈钢、硅或铝合金选定支路，不默认所有合金都要做。"
+			]
+		}
+		{
+			id: "079E063C2BE0D4B6"
+			title: "HOP粉烧成石墨锭"
+			icon: "immersiveengineering:ingot_hop_graphite"
+			x: 1.4d
+			y: -4.65d
+			optional: false
+			tasks: [
+				{
+					id: "55C94EFA24A8D73A"
+					type: "item"
+					item: "immersiveengineering:ingot_hop_graphite"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7214de61317d12ce89e50113.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/6d56f29d2bd38b334499818d.png width:240 height:120 align:center}"
+				"HOP石墨粉及烧炼设备。"
+				"按烧炼表处理石墨粉。电极使用石墨锭，不能把粉末节点直接当锭输入。"
+				"取得HOP石墨锭。"
+				"制作电极或灌装活化石墨。仍可查询其他可用来源。"
+			]
+		}
+		{
+			id: "1894ADF7903ED1FB"
+			title: "准备工程师锤与手册"
+			icon: "immersiveengineering:hammer"
+			x: -10.6d
+			y: -1.45d
+			optional: false
+			tasks: [
+				{
+					id: "049A57CFD822FB4D"
+					type: "item"
+					item: "immersiveengineering:hammer"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/bb698a5f2bb83942a769a34a.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d0880d4f769250ba46f347e7.png width:240 height:120 align:center}"
+				"已取得铁、木材和线绳。使用1.20.1手册。"
+				"制作工程师锤，打开工程师手册。搭机器前先暂停投影逐层检查朝向。"
+				"手册能显示目标结构。锤已取得。按手册完成搭建，再用工程师锤形成多方块。"
+				"先种工业大麻并选定焦炉或其他杂酚油来源。"
+			]
+		}
+		{
+			id: "4CAA98B2005CB552"
+			title: "种植工业大麻并留种"
+			icon: "immersiveengineering:hemp_fiber"
+			x: -10.6d
+			y: 1.75d
+			optional: false
+			tasks: [
+				{
+					id: "5609DB6A474A162F"
+					type: "item"
+					item: "immersiveengineering:hemp_fiber"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/bcdb176686147802a3d25128.png width:32 height:32 align:center}"
+				"有种子与耕地，或选择配方查询中的其他取得方式。"
+				"清理草丛收种，种植。收割上层并保留底部继续生长。"
+				"取得纤维。另外保存种子作为种植或压油原料。"
+				"纤维可制布和风帆，种子可走Create压油。"
+			]
+		}
+		{
+			id: "7194CA3C08DD7327"
+			title: "形成焦炉并留出排油管"
+			icon: "immersiveengineering:cokebrick"
+			x: -7.6d
+			y: -1.45d
+			optional: false
+			tasks: [
+				{
+					id: "133CD9DECA5DD5B0"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a27f85943734b9210a479325.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/4bd4434ce71aefa64a8acf55.png width:240 height:115 align:center}"
+				"准备焦炉砖配方的材料。为杂酚油留空储罐。"
+				"27焦炉砖搭3×3×3实心结构，工程师锤敲侧面中央。按界面加入煤或可用原木。"
+				"结构形成并可打开GUI。一次加工后固体和杂酚油均能导出。"
+				"煤制焦煤用于燃料与石墨。原木制木炭为并行路线。"
+			]
+		}
+		{
+			id: "4FE475B7EB41E659"
+			title: "得到焦煤与500mB杂酚油"
+			icon: "thermal:coal_coke"
+			x: -4.6d
+			y: -1.45d
+			optional: false
+			tasks: [
+				{
+					id: "58D34B08E004C519"
+					type: "item"
+					item: "thermal:coal_coke"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/5c4f8f77640b86515b46cdf9.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/4bd4434ce71aefa64a8acf55.png width:240 height:115 align:center}"
+				"使用焦炉的煤炭配方，也可按需要选择其他焦化路线。"
+				"向焦炉输入1煤炭，等一次加工。抽出500mB杂酚油并取焦煤。"
+				"1焦煤与500mB杂酚油实际进入各自出口。满油罐会堵线。"
+				"油送防腐木或化工，焦煤粉走HOP石墨。"
+			]
+		}
+		{
+			id: "2C2E35968F2069BD"
+			title: "把杂酚油用于防腐木"
+			icon: "immersiveengineering:treated_wood_horizontal"
+			x: -1.6d
+			y: 1.35d
+			optional: false
+			tasks: [
+				{
+					id: "0E7450499E178CF8"
+					type: "item"
+					item: "immersiveengineering:treated_wood_horizontal"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7b7ad61ca9ac92dee296c511.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/95f9133eb2a277a025fc6950.png width:240 height:196 align:center}"
+				"有木板和杂酚油。配方槽内木种任选。"
+				"选Create搅拌：1木板＋125mB杂酚油制1防腐木，另有8木板＋1000mB批量配方。松香合成也保留。"
+				"取得防腐木。材质变种和其他制法不作为额外门槛。"
+				"制作接线支架、工程方块和蓝图材料。"
+			]
+		}
+		{
+			id: "3E18E454790F91B2"
+			title: "制备耐火砖泥与耐火砖"
+			icon: "immersiveindustry:refractory_kiln_brick"
+			x: 1.4d
+			y: -1.45d
+			optional: false
+			tasks: [
+				{
+					id: "1DAA5D9E3849490B"
+					type: "item"
+					item: "immersiveindustry:refractory_kiln_brick"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e3a421ae4963619c6849968c.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d8be77be2ce6c6941146c2d8.png width:240 height:98 align:center}"
+				"有HOP石墨粉、砂砾和高岭石。"
+				"在感应炉中用4HOP粉、4砂砾、1高岭石制8耐火砖泥，再按烧制配方处理。"
+				"获得耐火窑砖。留存HOP粉与炉窑建材的真实连接。"
+				"耐火砖用于高炉砖、车窑及旋转窑。"
+			]
+		}
+		{
+			id: "4D2408402152A2F7"
+			title: "高炉先查可加工项"
+			icon: "immersiveengineering:blastbrick"
+			x: 4.4d
+			y: -1.05d
+			optional: false
+			tasks: [
+				{
+					id: "44C74D7CEFE40824"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/25c857c2390f38fded80d627.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/2ea32ded138b7be1b812b977.png width:216 height:144 align:center}"
+				"有27高炉砖。构件版炼钢已调整。"
+				"按手册搭3×3×3并锤侧中。高炉选择石灰石煅烧或硅混合物，"
+				"结构形成且选定配方有实际输出。粗高炉手动进出。"
+				"要炼钢转坩埚/电弧路线。强化高炉适合自动IO与可选鼓风加速。"
+			]
+		}
+		{
+			id: "344BA50D96A8E392"
+			title: "搭建带预热器的炼钢坩埚"
+			icon: "immersiveindustry:burning_chamber"
+			x: 1.4d
+			y: 1.95d
+			optional: false
+			tasks: [
+				{
+					id: "20E1503C25F747F4"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1078ca63ce671f91161b632a.png width:32 height:32 align:center}"
+				"按任务材料及结构备料。需要焦煤燃料与预热器电力。"
+				"按手册形成炼钢坩埚，装对侧底突出风口的高炉预热器，供电并加焦煤。观察界面指示灯。"
+				"预热正确、燃料充足时灯亮。温度满足所选1370配方并持续完成一次。"
+				"铸铁锭或粉任选其一，再加石灰粉制精炼铁方坯。"
+			]
+		}
+		{
+			id: "38613AD3E6A2C308"
+			title: "铸铁加石灰得到精炼铁方坯"
+			icon: "cmi:refined_iron_bloom"
+			x: 4.4d
+			y: 2.35d
+			optional: false
+			tasks: [
+				{
+					id: "5799B81020E535AC"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e45da9a759314324a1433f68.png width:32 height:32 align:center}"
+				"选定坩埚配方：铸铁锭任选一种铸铁粉，另需石灰粉。焦煤燃料及预热独立于物料槽。"
+				"在1370温度条件下加工一份铸铁与石灰粉。确认产物从侧上部输出。"
+				"取得1精炼铁方坯。不要把锭和粉备选同时索取。"
+				"在超热加压工序制熔融钢，或查看电弧炉直接钢路线。"
+			]
+		}
+		{
+			id: "5CAD48CC9C2504C6"
+			title: "选择炼钢路线"
+			icon: "cmi:steel_ingot"
+			x: 7.4d
+			y: -0.25d
+			optional: false
+			tasks: [
+				{
+					id: "3365CE83547DB7C4"
+					type: "item"
+					item: "cmi:steel_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d43d4ee7835c02bfa9be3497.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/a4bb0e8af3d489914b34c0e1.png width:240 height:95 align:center}"
+				"电弧炉选择铸铁粉＋石灰粉。另有方坯超热加压路线。"
+				"按现包配方运行选定机器。"
+				"钢进入输出槽且矿渣可排出。钢不是只能从某一台机器得到。"
+				"钢材用于机架、电极系统和后续材料。"
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "7D3712D6DD50E916"
+			linked_quest: "0AA308545F06C1C8"
+			x: 4.4d
+			y: -5.65d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "02D50665DCAFD95E"
+			linked_quest: "101D899A5AB27BBA"
+			x: 4.4d
+			y: 0.6d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "5987967E8E5A04A3"
+			linked_quest: "2B95E0E6947D013C"
+			x: 1.4d
+			y: 3.55d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "2470D27391A3B0CC"
+			linked_quest: "3B327E8B7CC4A27E"
+			x: 3.75d
+			y: 3.9d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "547452AC90523A2F"
+			linked_quest: "594186D5FEE7CDF6"
+			x: 10.6d
+			y: 5.65d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "18B618760BE31AE7"
+			linked_quest: "3BD13AC3FE993063"
+			x: 10.6d
+			y: -5.65d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [
+		{
+			x: -0.6d
+			y: -4.383d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f840010b-ada1-596a-89ec-3bb44e5eeff3"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.4d
+			y: -4.517d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:97b47bf9-dde1-5a23-87cb-1745eca92611"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.4d
+			y: -4.917d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:9bce01cd-548f-55cd-b523-6dbcd9f2ce8f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.4d
+			y: -4.183d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:afc7f8c2-a045-5519-aa10-709a2be37304"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.6d
+			y: -1.45d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b476f9d5-3353-5038-9adb-0de294c9b87d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.6d
+			y: -1.45d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:96237ab0-44e0-53bc-90f5-99f922085975"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.6d
+			y: 2.083d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d939020c-4a79-505e-b46e-26026271dd75"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.4d
+			y: 2.817d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7949186a-5913-529c-bf9e-5efd49017c98"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.4d
+			y: 1.483d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fa89a980-bec0-5ca6-8e1d-0235e63c0d61"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.4d
+			y: 0.617d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ead36d5e-0cc4-5e6c-880d-5995f8be21da"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"l:2470d27391a3b0cc"
+				"q:7c07b827bdfa9bbf"
+			]
+		}
+		{
+			nodes: [
+				"q:7c07b827bdfa9bbf"
+				"l:547452ac90523a2f"
+			]
+		}
+		{
+			nodes: [
+				"q:310c49b56d2fdf1b"
+				"a:f840010b-ada1-596a-89ec-3bb44e5eeff3"
+			]
+		}
+		{
+			nodes: [
+				"a:f840010b-ada1-596a-89ec-3bb44e5eeff3"
+				"a:97b47bf9-dde1-5a23-87cb-1745eca92611"
+			]
+		}
+		{
+			nodes: [
+				"a:97b47bf9-dde1-5a23-87cb-1745eca92611"
+				"q:79e063c2be0d4b6"
+			]
+		}
+		{
+			nodes: [
+				"q:79e063c2be0d4b6"
+				"q:75e660966517bb89"
+			]
+		}
+		{
+			nodes: [
+				"q:101d899a5ab27bba"
+				"l:18b618760be31ae7"
+			]
+		}
+		{
+			nodes: [
+				"q:75e660966517bb89"
+				"q:101d899a5ab27bba"
+			]
+		}
+		{
+			nodes: [
+				"l:7d3712d6dd50e916"
+				"a:9bce01cd-548f-55cd-b523-6dbcd9f2ce8f"
+			]
+		}
+		{
+			nodes: [
+				"a:9bce01cd-548f-55cd-b523-6dbcd9f2ce8f"
+				"a:afc7f8c2-a045-5519-aa10-709a2be37304"
+			]
+		}
+		{
+			nodes: [
+				"a:afc7f8c2-a045-5519-aa10-709a2be37304"
+				"q:101d899a5ab27bba"
+			]
+		}
+		{
+			nodes: [
+				"q:7194ca3c08dd7327"
+				"q:4fe475b7eb41e659"
+			]
+		}
+		{
+			nodes: [
+				"q:344ba50d96a8e392"
+				"q:38613ad3e6a2c308"
+			]
+		}
+		{
+			nodes: [
+				"l:2d50665dcafd95e"
+				"q:5cad48cc9c2504c6"
+			]
+		}
+		{
+			nodes: [
+				"q:1894adf7903ed1fb"
+				"q:4caa98b2005cb552"
+			]
+		}
+		{
+			nodes: [
+				"q:1894adf7903ed1fb"
+				"a:b476f9d5-3353-5038-9adb-0de294c9b87d"
+			]
+		}
+		{
+			nodes: [
+				"a:b476f9d5-3353-5038-9adb-0de294c9b87d"
+				"a:96237ab0-44e0-53bc-90f5-99f922085975"
+			]
+		}
+		{
+			nodes: [
+				"a:96237ab0-44e0-53bc-90f5-99f922085975"
+				"q:7194ca3c08dd7327"
+			]
+		}
+		{
+			nodes: [
+				"q:4fe475b7eb41e659"
+				"q:2c2e35968f2069bd"
+			]
+		}
+		{
+			nodes: [
+				"q:2c2e35968f2069bd"
+				"a:d939020c-4a79-505e-b46e-26026271dd75"
+			]
+		}
+		{
+			nodes: [
+				"a:d939020c-4a79-505e-b46e-26026271dd75"
+				"a:7949186a-5913-529c-bf9e-5efd49017c98"
+			]
+		}
+		{
+			nodes: [
+				"a:7949186a-5913-529c-bf9e-5efd49017c98"
+				"l:5987967e8e5a04a3"
+			]
+		}
+		{
+			nodes: [
+				"q:3e18e454790f91b2"
+				"q:4d2408402152a2f7"
+			]
+		}
+		{
+			nodes: [
+				"q:38613ad3e6a2c308"
+				"a:fa89a980-bec0-5ca6-8e1d-0235e63c0d61"
+			]
+		}
+		{
+			nodes: [
+				"a:fa89a980-bec0-5ca6-8e1d-0235e63c0d61"
+				"a:ead36d5e-0cc4-5e6c-880d-5995f8be21da"
+			]
+		}
+		{
+			nodes: [
+				"a:ead36d5e-0cc4-5e6c-880d-5995f8be21da"
+				"q:5cad48cc9c2504c6"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

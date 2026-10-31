@@ -1,0 +1,83 @@
+
+#All settings below will only take effect after restarting the server or client.
+[general]
+
+	#Accelerator Motor Settings
+	[general.accelerator_motor]
+		#Default speed when placing the Accelerator Motor (RPM)
+		#type: int
+		#default: 16
+		#Range: 1 ~ 256
+		default_speed = 16
+		#Maximum RPM the accelerator motor
+		#type: int
+		#default: 128
+		#Range: 1 ~ 256
+		max_speed = 128
+
+	#Void Dust Collector Settings
+	[general.void_dust_collector]
+		#Work time
+		#20 ticks = 1 second
+		#type: int
+		#default: 20
+		#Range: 1 ~ 100000
+		work_time = 20
+		#Energy consumed per tick of void dust collector (FE)
+		#type: int
+		#default: 100
+		#Range: > 0
+		energy_consumption = 100
+		#Energy capacity of void dust collector (FE)
+		#type: int
+		#default: 50000
+		#Range: > 0
+		energy_capacity = 50000
+		#Max receive of void dust collector (FE)
+		#type: int
+		#default: 1000
+		#Range: > 0
+		max_receive = 1000
+		#Maximum work height of void dust collector
+		#type: int
+		#default: -60
+		#Range: -63 ~ 319
+		max_work_height = -60
+		#Minimum work height of void dust collector
+		#Collector doesnt work if greater than max height
+		#type: int
+		#default: -63
+		#Range: -63 ~ 319
+		min_work_height = -63
+
+	#Space Elevator Settings
+	[general.space_elevator]
+		#Enable the multi-slot cargo grid in the space elevator storage UI
+		#type: boolean
+		#default: false
+		"Enable cargo grid" = false
+
+	#Geothermal Generator Settings
+	[general.geothermal_generator]
+		#Per tick production FE
+		#20 ticks = 1 second
+		#type: int
+		#Range: 1 ~ 500000
+		production_efficiency = 5000
+
+	#Metal Detector Settings
+	[general.metal_detector]
+		#Play sound with Metal Detector when turned on
+		play_sound = true
+
+	#Reinforced Coke Oven Settings
+	[general.reinforced_coke_oven]
+		#Reinforced coke oven will smoke at work
+		#If you think Caton can choose to close
+		#type: boolean
+		smoking_at_working = true
+		#Reinforced coke oven frequency of smoke at work (Tick)
+		#type: int
+		#Range: 1 ~ 20
+		smoking_frequency = 5
+

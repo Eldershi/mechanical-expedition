@@ -1,0 +1,495 @@
+{
+	id: "1B845BB91FBFEE08"
+	filename: "research_adventure_a_deeper"
+	title: "Deeper and Darker"
+	group: "54D4CAA40ADB5408"
+	order_index: 205
+	icon: "minecraft:deepslate_tiles"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "128CA1573D988D2A"
+			title: "古城搜寻与静音准备"
+			icon: "minecraft:deepslate_tiles"
+			x: -7.2d
+			y: -1.08d
+			optional: false
+			tasks: [
+				{
+					id: "4C98E1DF0A0590B1"
+					type: "advancement"
+					advancement: "deeperdarker:main/find_ancient_city"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/22d7df07dcc96c5b5824e476.png width:32 height:32 align:center}"
+				"寻找远古城市。照明与撤退准备。"
+				"小心花瓶可能生成生物。灵魂粉尘/水晶对应药水与装备。"
+				"古城的实物与进度线索。"
+				"甲壳可来自古城箱或监守者，升级装备不必统一锁成击杀。"
+			]
+		}
+		{
+			id: "64FCB0158E732ACC"
+			title: "监守者甲壳的多种来源"
+			icon: "deeperdarker:warden_carapace"
+			x: -4.32d
+			y: -3.96d
+			optional: true
+			tasks: [
+				{
+					id: "3C091AE3D8F7E7D1"
+					type: "item"
+					item: "deeperdarker:warden_carapace"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1ecd973d573f3d8285365639.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/8b10a4d00240c193275c13a7.png width:222 height:76 align:center}"
+				"古城箱20%附加甲壳，或监守者实体表附加1–3。"
+				"任选来源取甲壳。与深渊之心不是同一物。"
+				"可做强化回响碎片。"
+			]
+		}
+		{
+			id: "1BFE6EC55D7DBC89"
+			title: "制作强化回响碎片"
+			icon: "deeperdarker:reinforced_echo_shard"
+			x: -1.44d
+			y: -3.96d
+			optional: true
+			tasks: [
+				{
+					id: "0C5C5A27C779C8EA"
+					type: "item"
+					item: "deeperdarker:reinforced_echo_shard"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7fcc0f3b9a0d4b1941b1d023.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/ecb9e7f7b3e00803e6e4a9ec.png width:240 height:120 align:center}"
+				"4甲壳＋4幻翼膜＋1回响碎片。"
+				"按工作台合成。"
+				"监守者装备的升级材料。"
+				"模板从古城来源取得，下界合金基础装备另行准备。"
+			]
+		}
+		{
+			id: "34FB355E9043A77F"
+			title: "锻造监守者头盔"
+			icon: "deeperdarker:warden_helmet"
+			x: 1.44d
+			y: -3.96d
+			optional: true
+			tasks: [
+				{
+					id: "54A8FDE5D1E1C80B"
+					type: "item"
+					item: "deeperdarker:warden_helmet"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/854ebbf9263ca36f05258673.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d46103f61a667197527c485f.png width:232 height:72 align:center}"
+				"监守者模板＋下界合金头盔＋强化回响碎片。锻造台。"
+				"执行升级。其他部件同族配方逐件查询。"
+				"装备路线与维度入口材料独立。"
+			]
+		}
+		{
+			id: "5B73199E5BE015C9"
+			title: "为门户取得深渊之心"
+			icon: "deeperdarker:heart_of_the_deep"
+			x: -4.32d
+			y: -0.36d
+			optional: false
+			tasks: [
+				{
+					id: "65889CC233F04215"
+					type: "item"
+					item: "deeperdarker:heart_of_the_deep"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/0a0fd7790f1cccc5f21adde0.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/7a16c811676371b01aa1d251.png width:222 height:76 align:center}"
+				"监守者实体战利品附加规则，或HN监守者预测的战利品制造路线。"
+				"可挑战监守者收心。若已有监守者模型预测，也能由战利品制造机产心。两来源任选一种，。"
+				"心是入门消耗物，也参与法杖。"
+				"先决定开门或做杖。同一颗不能被当作两次使用。"
+			]
+		}
+		{
+			id: "7C2109A64DCB4434"
+			title: "在远古城框架打开幽冥入口"
+			icon: "minecraft:reinforced_deepslate"
+			x: -1.44d
+			y: 0.09d
+			optional: false
+			tasks: [
+				{
+					id: "1349DAA9BE2F869B"
+					type: "advancement"
+					advancement: "deeperdarker:main/enter_otherside"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e622e62e54d3e0d3c1a177fc.png width:32 height:32 align:center}"
+				"深渊之心＋有效OthersidePortalShape。在主世界/幽冥使用。"
+				"清理框架内遮挡并右击内侧。WardenHeartItem成功后清空该手物品，不是可使用工具。"
+				"进入幽冥。"
+				"另取第二颗心才做法杖。返回门/返程路线先记。"
+			]
+		}
+		{
+			id: "4201ACDEBB816D41"
+			title: "在幽冥取得幽匿骨头"
+			icon: "deeperdarker:sculk_bone"
+			x: 1.44d
+			y: -0.36d
+			optional: true
+			tasks: [
+				{
+					id: "74A257BA315A5929"
+					type: "item"
+					item: "deeperdarker:sculk_bone"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/b01f5f0d40b6d913c68bf16c.png width:32 height:32 align:center}"
+				"幽冥维度的碎裂者等战利品表。"
+				"击败有效来源收骨。注意多种群系和怪物并不等于Boss。"
+				"法杖与灵魂鞘翅共同材料。"
+				"可选装备分叉，毋需全套监守者甲再探索。"
+			]
+		}
+		{
+			id: "5729558E548F92DE"
+			title: "法杖配方需要额外一颗心"
+			icon: "deeperdarker:sonorous_staff"
+			x: 4.32d
+			y: -1.8d
+			optional: true
+			tasks: [
+				{
+					id: "36C5B74EB52BE633"
+					type: "item"
+					item: "deeperdarker:sonorous_staff"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/21e6e84765d2473d9ff31df2.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/30536b1c07fd2d89e12bc871.png width:240 height:120 align:center}"
+				"2骨头＋2灵魂水晶＋1深渊之心。"
+				"Sonorous Staff已注册，英文显示名不是不存在。"
+				"远程武器。不要把已消耗的开门心重复计算。"
+			]
+		}
+		{
+			id: "5BB6DBB951E2CFBE"
+			title: "升级灵魂鞘翅"
+			icon: "deeperdarker:soul_elytra"
+			x: 4.32d
+			y: 1.08d
+			optional: true
+			tasks: [
+				{
+					id: "00B0BE2F82828F19"
+					type: "item"
+					item: "deeperdarker:soul_elytra"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/5c34d44eb0f8a28162e9cf3a.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/e4cd69d0ae13ecfe49978668.png width:240 height:120 align:center}"
+				"原版鞘翅＋灵魂水晶＋灵魂粉尘＋幽匿骨头。"
+				"按合成制作。这条路线真实涉及原版末地鞘翅来源，但不新造屠龙完成锁。"
+				"具特色机动的鞘翅。"
+				"可选装备不锁古城/门户初次探索。"
+			]
+		}
+		{
+			id: "081E19C65EED0173"
+			title: "Resonarium板材与铁装升级"
+			icon: "deeperdarker:resonarium_plate"
+			x: 1.44d
+			y: 3.96d
+			optional: true
+			tasks: [
+				{
+					id: "3C5079F2AE7910BE"
+					type: "item"
+					item: "deeperdarker:resonarium_plate"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/47f18331aa47528b39a1482a.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/e700bf17c9b86173e94c246e.png width:240 height:120 align:center}"
+				"4Resonarium＋4鳞甲。"
+				"合板后查铁装的smithing升级配方。英文资源确实存在。"
+				"并行过渡装备路线。"
+				"这条材料路线与监守者装备可分别发展。"
+			]
+		}
+		{
+			id: "211DA1DAFA317540"
+			title: "探索远古神庙"
+			icon: "deeperdarker:cut_sculk_stone"
+			x: 4.32d
+			y: 3.96d
+			optional: true
+			tasks: [
+				{
+					id: "6C84C7FFBA3AF43E"
+					type: "advancement"
+					advancement: "deeperdarker:main/find_ancient_temple"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/526e8c0decf8645615107525.png width:32 height:32 align:center}"
+				"在幽冥探索神庙。"
+				"先处理尖啸体与潜在怪物，再逐层搜箱，找幽匿传讯器。"
+				"结构进度与远程交互工具来源。"
+				"传讯器用途是容器/功能方块访问，非召唤或跨维度传送。"
+			]
+		}
+		{
+			id: "3C8F937707CE590A"
+			title: "在同维度已加载区块使用传讯器"
+			icon: "deeperdarker:sculk_transmitter"
+			x: 7.2d
+			y: 3.96d
+			optional: true
+			tasks: [
+				{
+					id: "22DF26533E935569"
+					type: "advancement"
+					advancement: "deeperdarker:main/obtain_sculk_transmitter"
+					criterion: ""
+				}
+				{
+					id: "6BCBA7AF52DE3747"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f0ba716009aadab8e49028c7.png width:32 height:32 align:center}"
+				"取得传讯器，选择原版允许功能方块。"
+				"潜行右击绑定，再使用访问。箱子被挡、区块卸载、跨维度等限制必须保留。"
+				"本地远程交互工具，不许诺无限距离或不吞物保证。"
+				"以非贵重物先测试。后续可选收集而非全包硬终点。"
+			]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:64fcb0158e732acc" "q:1bfe6ec55d7dbc89"]
+		}
+		{
+			nodes: ["q:1bfe6ec55d7dbc89" "q:34fb355e9043a77f"]
+		}
+		{
+			nodes: ["q:5b73199e5be015c9" "a:95428cb8-0e6a-51fe-8e8e-a6f812bc0e0e"]
+		}
+		{
+			nodes: ["a:95428cb8-0e6a-51fe-8e8e-a6f812bc0e0e" "a:5f83089e-fde8-5b73-b31d-039c6cbfb121"]
+		}
+		{
+			nodes: ["a:5f83089e-fde8-5b73-b31d-039c6cbfb121" "q:5729558e548f92de"]
+		}
+		{
+			nodes: ["q:5b73199e5be015c9" "q:7c2109a64dcb4434"]
+		}
+		{
+			nodes: ["q:4201acdebb816d41" "q:5729558e548f92de"]
+		}
+		{
+			nodes: ["q:4201acdebb816d41" "a:f69a97ae-ee45-55c3-8aa0-98f08ec64a99"]
+		}
+		{
+			nodes: ["a:f69a97ae-ee45-55c3-8aa0-98f08ec64a99" "a:15cd2afd-0fb6-5f49-a1d2-564caac0e2a7"]
+		}
+		{
+			nodes: ["a:15cd2afd-0fb6-5f49-a1d2-564caac0e2a7" "q:5bb6dbb951e2cfbe"]
+		}
+		{
+			nodes: ["q:128ca1573d988d2a" "q:64fcb0158e732acc"]
+		}
+		{
+			nodes: ["q:128ca1573d988d2a" "a:d4c2bd70-5f0d-52aa-81ab-c4fbb67a11cd"]
+		}
+		{
+			nodes: ["a:d4c2bd70-5f0d-52aa-81ab-c4fbb67a11cd" "a:00a516d8-2f1f-53a4-ba32-f33aa986b173"]
+		}
+		{
+			nodes: ["a:00a516d8-2f1f-53a4-ba32-f33aa986b173" "q:5b73199e5be015c9"]
+		}
+		{
+			nodes: ["q:7c2109a64dcb4434" "q:4201acdebb816d41"]
+		}
+		{
+			nodes: ["q:7c2109a64dcb4434" "a:b9c7be76-162f-507a-9923-3217a5e04e32"]
+		}
+		{
+			nodes: ["a:b9c7be76-162f-507a-9923-3217a5e04e32" "a:b3dee93c-a51b-5db7-8cac-599b9282ef98"]
+		}
+		{
+			nodes: ["a:b3dee93c-a51b-5db7-8cac-599b9282ef98" "q:81e19c65eed0173"]
+		}
+		{
+			nodes: ["q:7c2109a64dcb4434" "a:34a4aebb-7b98-5eb8-8a92-bda648b3be3f"]
+		}
+		{
+			nodes: ["a:34a4aebb-7b98-5eb8-8a92-bda648b3be3f" "a:1390c76e-f712-5d68-b1a3-737c68279b74"]
+		}
+		{
+			nodes: ["a:1390c76e-f712-5d68-b1a3-737c68279b74" "q:211da1dafa317540"]
+		}
+		{
+			nodes: ["q:211da1dafa317540" "q:3c8f937707ce590a"]
+		}
+	]
+	images: [
+		{
+			x: -6.24d
+			y: -0.84d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d4c2bd70-5f0d-52aa-81ab-c4fbb67a11cd"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.28d
+			y: -0.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:00a516d8-2f1f-53a4-ba32-f33aa986b173"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.44d
+			y: -0.84d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:95428cb8-0e6a-51fe-8e8e-a6f812bc0e0e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.44d
+			y: -1.32d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5f83089e-fde8-5b73-b31d-039c6cbfb121"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.48d
+			y: 1.38d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b9c7be76-162f-507a-9923-3217a5e04e32"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.48d
+			y: 2.67d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b3dee93c-a51b-5db7-8cac-599b9282ef98"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.48d
+			y: 1.38d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:34a4aebb-7b98-5eb8-8a92-bda648b3be3f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.4d
+			y: 2.67d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1390c76e-f712-5d68-b1a3-737c68279b74"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.4d
+			y: 0.12d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f69a97ae-ee45-55c3-8aa0-98f08ec64a99"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.36d
+			y: 0.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:15cd2afd-0fb6-5f49-a1d2-564caac0e2a7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

@@ -1,0 +1,91 @@
+#Charge time in ticks for Soul Mirror (20 ticks = 1 second)
+#Range: 1 ~ 200
+chargeTime = 40
+#Cooldown time in ticks for Soul Mirror (20 ticks = 1 second)
+#Range: 1 ~ 36000
+cooldownTime = 4800
+#Trigger chance for Echo Earring sonic wave (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+echoEarringTriggerChance = 0.3
+#Extra damage multiplier for Echo Earring sonic wave (e.g., 0.40 = 40% of base damage)
+#Range: 0.0 ~ 10.0
+echoEarringExtraDamageMultiplier = 0.4
+#Range in blocks for Echo Earring sonic wave
+#Range: 1.0 ~ 64.0
+echoEarringRange = 8.0
+#Width in blocks for Echo Earring sonic wave hitbox
+#Range: 0.1 ~ 5.0
+echoEarringWidth = 0.4
+#Maximum damage per hit as percentage of max health for Heart Voice Pendant (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+heartVoicePendantMaxDamagePercent = 0.25
+#Trigger chance for Endless Dream sleep effect on attack (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+endlessDreamTriggerChance = 0.1
+#Sleep duration in ticks for Endless Dream (20 ticks = 1 second)
+#Range: 1 ~ 1200
+endlessDreamSleepDuration = 60
+#Maximum damage multiplier for Tassel Ring (at 100% enemy health)
+#Range: 0.0 ~ 5.0
+tasselRingDamageMultiplierMax = 0.5
+#Damage reduction multiplier for pets when Royal Crown is equipped (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+royalCrownPetDamageReduction = 0.6
+#Damage boost multiplier for pet attacks when Royal Crown is equipped
+#Range: 0.0 ~ 10.0
+royalCrownPetDamageBoost = 1.2
+#Chance to double ore drops for Rare Gold Bracelet (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+rareGoldBraceletDoubleDropChance = 0.3
+#Effect range in blocks for Dream Totem sleep aura
+#Range: 1 ~ 64
+dreamTotemEffectRange = 16
+#Sleep duration in ticks for Dream Totem aura (20 ticks = 1 second)
+#Range: 1 ~ 1200
+dreamTotemSleepDuration = 200
+#Cooldown in ticks for Dream Totem (20 ticks = 1 second)
+#Range: 1 ~ 36000
+dreamTotemCooldown = 1200
+#Experience multiplier for Pure Holy Grail
+#Range: 0.0 ~ 10.0
+pureHolyGrailXpMultiplier = 1.5
+#Critical hit damage multiplier for Royal Lens (default 2.0 = 2x damage)
+#Range: 1.0 ~ 10.0
+royalLensCritDamageMultiplier = 2.0
+#Maximum stored damage for Memory Necklace
+#Range: 1.0 ~ 10000.0
+memoryNecklaceMaxStoredDamage = 100.0
+#Repair interval in ticks for Past Ring (20 ticks = 1 second)
+#Range: 1 ~ 1200
+pastRingRepairInterval = 100
+#Experience cost per durability point repaired by Past Ring
+#Range: 1 ~ 100
+pastRingXpCostPerDurability = 1
+#Radius in blocks for Time Hourglass acceleration effect
+#Range: 1 ~ 32
+timeHourglassRadius = 8
+#Maximum acceleration factor for Time Hourglass (at center)
+#Range: 1.0 ~ 10.0
+timeHourglassAccelerationFactor = 2.0
+#Cooldown in ticks for Moment Stone (20 ticks = 1 second)
+#Range: 1 ~ 36000
+momentStoneCooldown = 400
+#Flow duration in ticks for Moment Stone (20 ticks = 1 second)
+#Range: 1 ~ 36000
+momentStoneFlowDuration = 180
+#Cooldown in ticks for Sleeping Star Seed (20 ticks = 1 second)
+#Range: 1 ~ 36000
+sleepingStarSeedCooldown = 1200
+#Sleep duration in ticks for Sleeping Star Seed (20 ticks = 1 second)
+#Range: 1 ~ 1200
+sleepingStarSeedSleepDuration = 200
+#Mute duration in ticks for Dark Whisper Dagger (20 ticks = 1 second)
+#Range: 1 ~ 1200
+darkWhisperDaggerMuteDuration = 100
+#Damage multiplier for muted targets (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+darkWhisperDaggerDamageMultiplier = 0.5
+#Range in blocks for Observe Self Eye glow effect
+#Range: 1 ~ 64
+observeSelfEyeRange = 16
+

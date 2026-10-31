@@ -1,0 +1,64 @@
+
+[STATS]
+	"Experience Reward (default: 40)" = 40
+	"Max Health (default: 60)" = 60.0
+	"Movement Speed (default: 0.24)" = 0.24
+	"Knockback Resistance (default: 1)" = 1.0
+	"Armour Value (default: 2)" = 2.0
+	"Armour Toughness Value (default: 0)" = 0.0
+	"Target Players Range (in blocks, default: 64)" = 64.0
+	"Target Mobs Range (in blocks, default: 20)" = 20.0
+	"Punch Attack Damage (default: 10)" = 10.0
+	"Punch Attack Disable Shields Duration (in ticks, default: 100)" = 100
+	"Punch Attack Poison Effect Duration (in ticks, default: 60)" = 60
+	"Punch Attack Poison Effect Level (default: 0)" = 0
+	"Strangle Attack Damage (default: 6)" = 6.0
+	"Strangle Attack Poison Effect Duration (in ticks, default: 120)" = 120
+	"Strangle Attack Poison Effect Level (in ticks, default: 1)" = 1
+	"Vine Attack Damage (default: 8)" = 8.0
+	"Vine Attack Poison Effect Duration (in ticks, default: 80)" = 80
+	"Vine Attack Poison Level (default: 0)" = 0
+	"Slam Attack Damage (default: 12)" = 12.0
+	"Jump Ability Poison Cloud Damage (default: 2)" = 2.0
+	"Attacks Ignore Hurt Invulnerability (default: true)" = true
+
+[AI]
+	"Uses Punch Attack (default: true)" = true
+	"Punch Attack Maximum Use Distance (in blocks, default: 4)" = 4.0
+	"Punch Attack Maximum Damage Distance (in blocks, default: 6)" = 6.0
+	"Punch Attack Cooldown (in ticks, default: 60)" = 60
+	"Uses Strangle Attack (default: true)" = true
+	"Strangle Attack Maximum Use Distance (in blocks, default: 13)" = 13.0
+	"Strangle Attack Maximum Grab Distance (in blocks, default: 15)" = 15.0
+	"Strangle Attack Minimum Cooldown (in ticks, default: 200)" = 200
+	"Strangle Attack Maximum Cooldown (in ticks, default: 400)" = 400
+	"Uses Vine Attack (default: true)" = true
+	"Vine Attack Maximum Use Distance (in blocks, default: 9)" = 9.0
+	"Vine Attack Cooldown (in ticks, default: 20)" = 20
+	"Slam Attack Maximum Use Distance (in blocks, default: 13)" = 13.0
+	"Slam Attack Maximum Grab Distance (in blocks, default: 13)" = 13.0
+	"Slam Attack Minimum Cooldown (in ticks, default: 300)" = 300
+	"Slam Attack Maximum Cooldown (in ticks, default: 500)" = 500
+	"Uses Jump Ability (default: true)" = true
+	"Jump Ability Minimum Use Distance (in blocks, default: 20)" = 20.0
+	"Jump Ability Vertical Use Distance (in blocks, default: 5)" = 5.0
+	"Attacks Players (default: true)" = true
+	"Attacks Baby Turtles (default: true)" = true
+	"Following Target Movement Speed Multiplier (default: 1.5)" = 1.5
+	"Following Target Close Enough Distance (in blocks, default: 0)" = 0.0
+
+[DEATH]
+	"Revive Times (default: 4)" = 4
+	"Death Poison Cloud Damage (default: 2)" = 2.0
+
+[GRIEFING]
+	"Walk Griefing (default: true)" = true
+	"Walk Griefing Drops Blocks (default: true)" = false
+	"Jump Griefing (default: true)" = true
+	"Jump Griefing Drops Blocks (default: false)" = false
+	"Hurt Griefing (default: true)" = true
+	"Hurt Griefing Drops Blocks (default: false)" = false
+
+[SPAWNING]
+	"Despawns (default: false)" = false
+

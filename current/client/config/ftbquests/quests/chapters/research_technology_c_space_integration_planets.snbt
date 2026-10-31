@@ -1,0 +1,651 @@
+{
+	id: "6CDDEF1C860302D0"
+	filename: "research_technology_c_space_integration_planets"
+	title: "航天·行星资源与基地"
+	group: "3346A01E0EAFD002"
+	order_index: 48
+	icon: "ad_astra:raw_desh"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "205566BC2048D2EF"
+			title: "采集粗戴斯"
+			icon: "ad_astra:raw_desh"
+			x: -4.5d
+			y: -2.6d
+			optional: false
+			tasks: [
+				{
+					id: "023A7968DE3AEED5"
+					type: "item"
+					item: "ad_astra:raw_desh"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/3b853d967f95d1d24ca8f7d9.png width:32 height:32 align:center}" "携带可采掘工具寻找矿脉、取得粗矿，并保留足够的返航物资。" "粗戴斯进入地面加工。" "选电力高炉复合冶炼，或查询其他处理配方。"]
+		}
+		{
+			id: "12DFA8976AD05660"
+			title: "复合冶炼戴斯"
+			icon: "ad_astra:desh_ingot"
+			x: -1.5d
+			y: -2.6d
+			optional: true
+			tasks: [
+				{
+					id: "7918C10536225E22"
+					type: "item"
+					item: "ad_astra:desh_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9e36b8eaa44afbf77fb3c49b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/3f90120effba5ac049ef0c21.png width:240 height:151 align:center}"
+				"电力高炉有电并处于合金模式。备好粗矿与配对金属。"
+				"按高炉配方加工：戴斯配铝、紫金配钛、耐热金属配锇，各1粗矿+1配对金属产4锭。"
+				"得到可用于高阶火箭的戴斯锭。"
+				"查板材、齿轮和下一阶专用零件用途。"
+			]
+		}
+		{
+			id: "5BE45A4E53D87FC8"
+			title: "采集粗紫金"
+			icon: "ad_astra:raw_ostrum"
+			x: 1.5d
+			y: -2.6d
+			optional: false
+			tasks: [
+				{
+					id: "128F6BED763E24B6"
+					type: "item"
+					item: "ad_astra:raw_ostrum"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/38039ef63b0931beae43b0c6.png width:32 height:32 align:center}" "携带可采掘工具寻找矿脉、取得粗矿，并保留足够的返航物资。" "粗紫金进入地面加工。" "选电力高炉复合冶炼，或查询其他处理配方。"]
+		}
+		{
+			id: "6BBE73A4F030A096"
+			title: "复合冶炼紫金"
+			icon: "ad_astra:ostrum_ingot"
+			x: 4.5d
+			y: -2.6d
+			optional: true
+			tasks: [
+				{
+					id: "1DB112A5DCCEC519"
+					type: "item"
+					item: "ad_astra:ostrum_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/38a200fec3aa2f8187aeff1d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/07f696944072dde54f895e2b.png width:240 height:151 align:center}"
+				"电力高炉有电并处于合金模式。备好粗矿与配对金属。"
+				"按高炉配方加工：戴斯配铝、紫金配钛、耐热金属配锇，各1粗矿+1配对金属产4锭。"
+				"得到可用于高阶火箭的紫金锭。"
+				"查板材、齿轮和下一阶专用零件用途。"
+			]
+		}
+		{
+			id: "521B2E9163F7754E"
+			title: "采集粗耐热金属"
+			icon: "ad_astra:raw_calorite"
+			x: 7.5d
+			y: -2.6d
+			optional: false
+			tasks: [
+				{
+					id: "2F8C19F486EFC2A2"
+					type: "item"
+					item: "ad_astra:raw_calorite"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/e27031bca412d8c11a3a799b.png width:32 height:32 align:center}" "携带可采掘工具寻找矿脉、取得粗矿，并保留足够的返航物资。" "粗耐热金属进入地面加工。" "选电力高炉复合冶炼，或查询其他处理配方。"]
+		}
+		{
+			id: "4AE4BE02D972F61F"
+			title: "复合冶炼耐热金属"
+			icon: "ad_astra:calorite_ingot"
+			x: 10.5d
+			y: -2.6d
+			optional: true
+			tasks: [
+				{
+					id: "13103DD0BAD75370"
+					type: "item"
+					item: "ad_astra:calorite_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/772c4ce656132317afb22a6f.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b64637c4090ffe3818829628.png width:240 height:151 align:center}"
+				"电力高炉有电并处于合金模式。备好粗矿与配对金属。"
+				"按高炉配方加工：戴斯配铝、紫金配钛、耐热金属配锇，各1粗矿+1配对金属产4锭。"
+				"得到可用于高阶火箭的耐热金属锭。"
+				"查板材、齿轮和下一阶专用零件用途。"
+			]
+		}
+		{
+			id: "3D4CC7FAD01D1E5B"
+			title: "接入电力高炉"
+			icon: "ad_astra:etrionic_blast_furnace"
+			x: 7.5d
+			y: -6.6d
+			optional: false
+			tasks: [
+				{
+					id: "044AA85E2B19DF47"
+					type: "item"
+					item: "ad_astra:etrionic_blast_furnace"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "00946BF7E71B3900"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/7038fcb41d322c10ec66c94c.png width:32 height:32 align:center}" "{image:expedition_research:textures/quests/aeb5cfbf62a9e3ee86b9347e.png width:240 height:95 align:center}" "装配后供电，切合金模式。用粗戴斯+铝做一次试产，再为紫金和耐热金属留独立输入。" "也可按材料选择电子高炉等其他加工路线。"]
+		}
+		{
+			id: "01B84EE03D8FFD49"
+			title: "在月面建立第一处补给点"
+			icon: "minecraft:book"
+			x: -7.5d
+			y: 0.4d
+			optional: false
+			tasks: [
+				{
+					id: "5155D5D18C3B712E"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["月球tier1、无氧、温度-173。" "安全着陆后标记坐标。采集戴斯、寒冰碎片等所需资源，检查返回火箭和燃料。" "取得第一批异星物资且可返回。" "处理戴斯，或建设密闭供氧房间。"]
+		}
+		{
+			id: "19AF998BBFD37BCC"
+			title: "二级火箭前往火星"
+			icon: "minecraft:book"
+			x: -1.5d
+			y: 0.4d
+			optional: true
+			tasks: [
+				{
+					id: "73F24BDD213EA5D3"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["火星tier2、无氧、温度-65。燃料标签需重新核对。" "带二级可用燃料完成着陆，采集紫金及需要的火星沙。" "火星资源回流地面产线。" "升级三级零件或将火星沙送入CMI电解。"]
+		}
+		{
+			id: "12E71F6B09497284"
+			title: "准备高温行星远征"
+			icon: "minecraft:book"
+			x: 4.5d
+			y: 0.4d
+			optional: true
+			tasks: [
+				{
+					id: "24BFC4A31028E8F6"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["水星/金星tier3且高温。装备与氧气必须按实际生存效果准备。" "能在高温环境停留并回收材料。" "耐热金属用于四级工程。不会因此新增Boss或异界锁。"]
+		}
+		{
+			id: "3465B1A7027D81A3"
+			title: "四级火箭抵达霜原星"
+			icon: "minecraft:book"
+			x: 10.5d
+			y: 0.4d
+			optional: true
+			tasks: [
+				{
+					id: "124A7E9812E40F27"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["霜原星tier4、有氧、温度-20。准备联氨燃油。" "按四级加注要求起航，落地记录环境状态、坐标与返航条件。" "完成本体航天路线的可审阅终点。" "可继续发展基地与喷气装备。自定义星球与异界方案另列。"]
+		}
+		{
+			id: "409E3E518B58A1D3"
+			title: "建设密闭供氧房间"
+			icon: "ad_astra:oxygen_distributor"
+			x: -4.5d
+			y: 4.4d
+			optional: false
+			tasks: [
+				{
+					id: "196528B4132A8BFD"
+					type: "item"
+					item: "ad_astra:oxygen_distributor"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4f594ad0675fc9775555f14b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/0893cec21f245721e5b980dc.png width:240 height:120 align:center}"
+				"准备供氧设备、能量、合格氧气流体和可密封房间。"
+				"启用分配器显示范围，检查警告与高亮。用氧传感器观察开门、封闭、断供的变化。"
+				"在实际房间内检查氧气分配。"
+				"穿墙改用完整电缆/流体管道块，封上泄漏点。"
+			]
+		}
+		{
+			id: "616D1E3DC4DCDCCF"
+			title: "观察氧气、温度与重力"
+			icon: "ad_astra:oxygen_sensor"
+			x: -1.5d
+			y: 4.4d
+			optional: true
+			tasks: [
+				{
+					id: "2F33EB3B4DF61EFE"
+					type: "item"
+					item: "ad_astra:oxygen_sensor"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3b927500f5b680fa05cacbd8.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/7a4fd767a53539f6aa7d95d9.png width:240 height:120 align:center}"
+				"有待测试的供氧房间。"
+				"用扳手切换传感类型，潜行右击反转信号。依次记录有氧/断供、开口/密封的信号变化。"
+				"具备可外部观察的环境检测信号。"
+			]
+		}
+		{
+			id: "67CB384926ED05D3"
+			title: "可选：建立行星太阳能支路"
+			icon: "ad_astra:solar_panel"
+			x: 1.5d
+			y: 4.4d
+			optional: true
+			tasks: [
+				{
+					id: "2A8B1023EF4EBB36"
+					type: "item"
+					item: "ad_astra:solar_panel"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/58ffacd3d0bc37c130cb83e5.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d304bad89a23d61f4835861a.png width:240 height:95 align:center}"
+				"已具备组件装配所需电池、机壳、钒板和钢板。"
+				"装配并放置太阳能板，观察该维度天气与日照下GUI实际发电量。"
+				"获得补给基地可用的电源支路。"
+				"搭配储能，检查夜间与连续耗能运行。"
+			]
+		}
+		{
+			id: "39F85C7A6533E3B5"
+			title: "可选：建造空间站"
+			icon: "minecraft:book"
+			x: 4.5d
+			y: 4.4d
+			optional: true
+			tasks: [
+				{
+					id: "09D2F213BDEF3A46"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["空间站配方要求四个独立材料槽。" "在星图核对并提交32不锈钢板、32铝杆、32聚烯烃板、32宇航构件。建设安全密闭房间。" "获得轨道空间站入口。" "实测氧气、重力与进出条件。"]
+		}
+		{
+			id: "61CE35665CE316A7"
+			title: "火星沙回流：电离红色沙尘"
+			icon: "cmi:ionized_red_dust"
+			x: 1.5d
+			y: -6.6d
+			optional: true
+			tasks: [
+				{
+					id: "6DF163447669117C"
+					type: "item"
+					item: "cmi:ionized_red_dust"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/54c48637b447aecaf61d2388.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/ef69677545975b67e897db47.png width:240 height:140 align:center}"
+				"已有火星沙与已成型CMI电解装置。"
+				"输入1火星沙，按20tick工艺取出1电离红色沙尘。"
+				"把远征资源接到真实CMI化工支路。"
+				"与磁性源质进入反应釜，产磁性沉淀和锗溶液。"
+			]
+		}
+		{
+			id: "60DBFAFE0A1A818C"
+			title: "可选：附属氧气罐"
+			icon: "ad_astra_giselle_addon:oxygen_can"
+			x: 7.5d
+			y: 4.4d
+			optional: true
+			tasks: [
+				{
+					id: "7F98616CA7BC0B33"
+					type: "item"
+					item: "ad_astra_giselle_addon:oxygen_can"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e3bc9ff0dc0d771b0a113a73.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/8b78ed66b41d3e33b4413fa6.png width:240 height:120 align:center}"
+				"已经建立Ad Astra氧气供给。"
+				"按配方制作附属氧气罐，在装备充氧界面检查可装载与使用范围。保留备用储罐。"
+				"扩展远征补氧手段。"
+			]
+		}
+		{
+			id: "7A148EAE8B51DCB4"
+			title: "可选：Mek太空呼吸模块"
+			icon: "ad_astra_giselle_addon:module_space_breathing_unit"
+			x: 10.5d
+			y: 4.4d
+			optional: true
+			tasks: [
+				{
+					id: "4D07A0743AE71A32"
+					type: "item"
+					item: "ad_astra_giselle_addon:module_space_breathing_unit"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/bd17818fcd5409c31c8d921a.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/108dc395e190c703d0254e66.png width:240 height:120 align:center}"
+				"已进入Mek装备与模块装配路线。Giselle有对应条件配方。"
+				"按配方制作，在合适Mek装备上安装并测试实际氧气供给与保护状态。"
+				"把实装附属的模块能力作为可选装备接口。"
+				"不能仅凭模块物品持有免除整套装备、氧气和温度检查。"
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "5281F3286545F656"
+			linked_quest: "1728AD7C502EDA85"
+			x: -7.5d
+			y: 2.2d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "571A2FD7224F007E"
+			linked_quest: "4BFC30473684A5A5"
+			x: 4.5d
+			y: 6.2d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "26E4D05BAFBD183D"
+			linked_quest: "0F3E1BF11F8A20D2"
+			x: 7.5d
+			y: 6.6d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "19A521A564058977"
+			linked_quest: "02C8C66AF47F7757"
+			x: -10.5d
+			y: -1.8d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "033E64EB5C4CC3C7"
+			linked_quest: "75843FCDC1966205"
+			x: -4.5d
+			y: 0.4d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "6E5756981EDAF983"
+			linked_quest: "25D68FEDC946D6DF"
+			x: 1.5d
+			y: 2.6d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "2B2F5F6FBB445008"
+			linked_quest: "57D23A719AB4365B"
+			x: 7.5d
+			y: -0.95d
+			size: 0.75d
+			shape: "rsquare"
+		}
+	]
+	images: [
+		{
+			x: -3.5d
+			y: -2.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2efd8e52-8521-53a4-bfac-84f013a19494"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.5d
+			y: -2.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d1774f1b-ab70-5f40-8783-1eb89d7139ba"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.5d
+			y: -5.267d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8a3cf0eb-e9c2-5204-b2c4-84753b269349"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.5d
+			y: -3.933d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f4801998-b94d-59ca-a7d8-e1abbf5c8542"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 8.5d
+			y: -5.267d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e058b500-e3c9-5601-b159-724b06dbfa03"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 9.5d
+			y: -3.933d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:16825a97-b845-5449-8f44-1ac36a585d9c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.5d
+			y: -2.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:974d0582-5c93-55b3-86b6-13cdc83378ab"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.5d
+			y: -2.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fd6be62a-b786-5135-86cb-60afe0c405bf"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 8.5d
+			y: -2.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7ef97585-f2ed-5dbc-aa38-73c287b3a813"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 9.5d
+			y: -2.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:679cd0de-0aa9-5519-987b-e100b2340b3a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:205566bc2048d2ef" "a:2efd8e52-8521-53a4-bfac-84f013a19494"]
+		}
+		{
+			nodes: ["a:2efd8e52-8521-53a4-bfac-84f013a19494" "a:d1774f1b-ab70-5f40-8783-1eb89d7139ba"]
+		}
+		{
+			nodes: ["a:d1774f1b-ab70-5f40-8783-1eb89d7139ba" "q:12dfa8976ad05660"]
+		}
+		{
+			nodes: ["q:3d4cc7fad01d1e5b" "q:12dfa8976ad05660"]
+		}
+		{
+			nodes: ["q:3d4cc7fad01d1e5b" "a:8a3cf0eb-e9c2-5204-b2c4-84753b269349"]
+		}
+		{
+			nodes: ["a:8a3cf0eb-e9c2-5204-b2c4-84753b269349" "a:f4801998-b94d-59ca-a7d8-e1abbf5c8542"]
+		}
+		{
+			nodes: ["a:f4801998-b94d-59ca-a7d8-e1abbf5c8542" "q:6bbe73a4f030a096"]
+		}
+		{
+			nodes: ["q:3d4cc7fad01d1e5b" "a:e058b500-e3c9-5601-b159-724b06dbfa03"]
+		}
+		{
+			nodes: ["a:e058b500-e3c9-5601-b159-724b06dbfa03" "a:16825a97-b845-5449-8f44-1ac36a585d9c"]
+		}
+		{
+			nodes: ["a:16825a97-b845-5449-8f44-1ac36a585d9c" "q:4ae4be02d972f61f"]
+		}
+		{
+			nodes: ["q:5be45a4e53d87fc8" "a:974d0582-5c93-55b3-86b6-13cdc83378ab"]
+		}
+		{
+			nodes: ["a:974d0582-5c93-55b3-86b6-13cdc83378ab" "a:fd6be62a-b786-5135-86cb-60afe0c405bf"]
+		}
+		{
+			nodes: ["a:fd6be62a-b786-5135-86cb-60afe0c405bf" "q:6bbe73a4f030a096"]
+		}
+		{
+			nodes: ["q:521b2e9163f7754e" "a:7ef97585-f2ed-5dbc-aa38-73c287b3a813"]
+		}
+		{
+			nodes: ["a:7ef97585-f2ed-5dbc-aa38-73c287b3a813" "a:679cd0de-0aa9-5519-987b-e100b2340b3a"]
+		}
+		{
+			nodes: ["a:679cd0de-0aa9-5519-987b-e100b2340b3a" "q:4ae4be02d972f61f"]
+		}
+		{
+			nodes: ["l:5281f3286545f656" "q:409e3e518b58a1d3"]
+		}
+		{
+			nodes: ["l:571a2fd7224f007e" "q:60dbfafe0a1a818c"]
+		}
+		{
+			nodes: ["l:26e4d05bafbd183d" "q:7a148eae8b51dcb4"]
+		}
+		{
+			nodes: ["l:19a521a564058977" "q:1b84ee03d8ffd49"]
+		}
+		{
+			nodes: ["l:33e64eb5c4cc3c7" "q:19af998bbfd37bcc"]
+		}
+		{
+			nodes: ["l:6e5756981edaf983" "q:12e71f6b09497284"]
+		}
+		{
+			nodes: ["l:2b2f5f6fbb445008" "q:3465b1a7027d81a3"]
+		}
+		{
+			nodes: ["q:409e3e518b58a1d3" "q:616d1e3dc4dcdccf"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

@@ -1,0 +1,609 @@
+{
+	id: "45D8AE3D08CA0334"
+	filename: "staged_technology_eio-logistics"
+	title: "末影接口·基础导管"
+	group: "050255AE19A93344"
+	order_index: 31
+	icon: "enderio:conduit_binder_composite"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "4E32CD6A95D89A53"
+			title: "混合导管黏合剂"
+			icon: "enderio:conduit_binder_composite"
+			x: -4.5d
+			y: 1.1d
+			optional: false
+			tasks: [
+				{
+					id: "40D8B353AA3631FE"
+					type: "item"
+					item: "enderio:conduit_binder_composite"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f50247a64991b0f03aa17cbb.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/6d446cd342a42959f4305b99.png width:240 height:120 align:center}"
+				"按工作台配方制混合物，再通过烧炼得到导管黏合剂。"
+				"获得导管共同的外壳材料。"
+				"按物流对象选择物品、能量、流体或红石导管。"
+			]
+		}
+		{
+			id: "6CAC077412BD216B"
+			title: "烧成导管黏合剂"
+			icon: "enderio:conduit_binder"
+			x: -1.5d
+			y: 1.1d
+			optional: false
+			tasks: [
+				{
+					id: "6587286DFCDB5D93"
+					type: "item"
+					item: "enderio:conduit_binder"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1444a364dd9d946c79532f24.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/74df0d1053abc4601e097167.png width:240 height:120 align:center}"
+				"已取得导管黏合剂混合物。"
+				"用熔炉配方烧制，取出成品。不要求先造末影接口电炉。"
+				"得到可消耗的导管材料。"
+				"与各类合金配合制导管。"
+			]
+		}
+		{
+			id: "1820C70ACDFB8EC7"
+			title: "接通能量导管"
+			icon: "enderio:energy_conduit"
+			x: 1.5d
+			y: -2.9d
+			optional: false
+			tasks: [
+				{
+					id: "20B67D07FEAD6211"
+					type: "item"
+					item: "enderio:energy_conduit"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "0F932D0C19FF0F58"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/44fe82d881a6ccf89d8e1a9e.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/ce9b445ba4cfc1b893c3a01d.png width:240 height:120 align:center}"
+				"对应材料已具备，输入源与目标允许所需能力。"
+				"在两端分别设置抽取/插入与启用条件。物品和红石校对频道颜色，先单独确认一次传输。"
+				"能量导管完成其对应物流职能。"
+				"可在同格组合多类导管，逐类测试避免误认方向。"
+			]
+		}
+		{
+			id: "085B7ADF31129BC6"
+			title: "接通物品导管"
+			icon: "enderio:item_conduit"
+			x: 1.5d
+			y: -0.2d
+			optional: false
+			tasks: [
+				{
+					id: "548D1BC5E1E0D5DF"
+					type: "item"
+					item: "enderio:item_conduit"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "4E08B0081A455E37"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e69ea94a8d52a07a6b278eab.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/cf648dbb9e07be755465ad62.png width:240 height:120 align:center}"
+				"对应材料已具备，输入源与目标允许所需能力。"
+				"在两端分别设置抽取/插入与启用条件。物品和红石校对频道颜色，先单独确认一次传输。"
+				"物品导管完成其对应物流职能。"
+				"可在同格组合多类导管，逐类测试避免误认方向。"
+			]
+		}
+		{
+			id: "43D807EFB4995E0F"
+			title: "接通流体导管"
+			icon: "enderio:fluid_conduit"
+			x: -0.3d
+			y: 4.2d
+			optional: false
+			tasks: [
+				{
+					id: "2356D7EB594B97E5"
+					type: "item"
+					item: "enderio:fluid_conduit"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "1703FC258169C433"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4f100344d25389cbdd84887e.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/28442c6e33e814b3722efc02.png width:240 height:120 align:center}"
+				"对应材料已具备，输入源与目标允许所需能力。"
+				"在两端分别设置抽取/插入与启用条件。物品和红石校对频道颜色，先单独确认一次传输。"
+				"流体导管完成其对应物流职能。"
+				"可在同格组合多类导管，逐类测试避免误认方向。"
+			]
+		}
+		{
+			id: "6E93D6029D63D3F9"
+			title: "接通红石导管"
+			icon: "enderio:redstone_conduit"
+			x: 1.5d
+			y: 5.1d
+			optional: false
+			tasks: [
+				{
+					id: "37F709EAB0CDBDCA"
+					type: "item"
+					item: "enderio:redstone_conduit"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "50065D4D586DA822"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c3cb11a9e85564288b7ca056.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/8bfcfffed83a01313e5041f6.png width:240 height:120 align:center}"
+				"对应材料已具备，输入源与目标允许所需能力。"
+				"在两端分别设置抽取/插入与启用条件。物品和红石校对频道颜色，先单独确认一次传输。"
+				"红石导管完成其对应物流职能。"
+				"可在同格组合多类导管，逐类测试避免误认方向。"
+			]
+		}
+		{
+			id: "1CB355BD89972160"
+			title: "配置物品白名单分流"
+			icon: "enderio:basic_item_filter"
+			x: 4.5d
+			y: -0.2d
+			optional: true
+			tasks: [
+				{
+					id: "7EED9B54297D3A68"
+					type: "item"
+					item: "enderio:basic_item_filter"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "21330083B8CB21E0"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/b70ecf4ddb790c6cb49d518d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/7b996ac96f034a822e19229a.png width:240 height:120 align:center}"
+				"有物品导管与两个输出容器。"
+				"安装过滤器，设置允许的实际物品。用一份允许物和一份不允许物检查分流与保留。"
+				"避免材料误投到别的工序。"
+				"有需要再查高级过滤器及NBT行为。"
+			]
+		}
+		{
+			id: "3DE786DF7A59D46E"
+			title: "可选：有线充电"
+			icon: "enderio:wired_charger"
+			x: 4.5d
+			y: -2.9d
+			optional: true
+			tasks: [
+				{
+					id: "7CA87F622E72E708"
+					type: "item"
+					item: "enderio:wired_charger"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d993950a58c0b9d1feb7494d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f2235dca19c4d2e7d025f329.png width:240 height:120 align:center}"
+				"准备可接收能量的工具和充电器材料。"
+				"接电后放入工具，观察工具能量增加和机器能量减少。检查电容需求。"
+				"形成便携设备的充能接口。"
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "48CF8715B1A2FC65"
+			linked_quest: "79FCD81B386AA433"
+			x: -1.5d
+			y: -5.1d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "7B84F139265DA881"
+			linked_quest: "69F3D8A78308531D"
+			x: -1.5d
+			y: 5.1d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "05B24788D418DBE8"
+			linked_quest: "56D073BB3E76055E"
+			x: 3.3d
+			y: 1.1d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "5DB09239ADCF8586"
+			linked_quest: "0FCB5E1822B7AA4E"
+			x: 1.5d
+			y: -5.1d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "027A9980CBDD8E41"
+			linked_quest: "1D67966126372B96"
+			x: 3.0d
+			y: -2.4d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "18D0F3F998A922D3"
+			linked_quest: "007886A570B63016"
+			x: 1.7d
+			y: 1.1d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "19400CEC3D8F7B7E"
+			linked_quest: "0EB9C39BE200BF3A"
+			x: 1.7d
+			y: 3.3d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "1FBE4497D1CE77B5"
+			linked_quest: "6F6E8C0FABC99119"
+			x: -0.1d
+			y: -2.9d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [
+		{
+			x: -0.5d
+			y: -0.233d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:feaeeb3f-5f9d-5c60-a611-f20081429b2d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.5d
+			y: -1.567d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5bb5b602-1988-5ca6-ae6d-1def63b9c3a2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.5d
+			y: 0.667d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:710717e3-fd3f-5946-bea8-0cb763d144b1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.5d
+			y: 0.233d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:09f12c57-6eb8-58c5-bc90-2cb89923f713"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.1d
+			y: 2.133d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:791f97a3-cff5-5683-8600-bab318a9c57c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.7d
+			y: 3.167d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1a532f81-5145-5786-8255-5e2f547565bf"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.5d
+			y: 2.433d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5eb647a9-c3f1-5060-ab27-c35bd076f777"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.5d
+			y: 3.767d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:217bed22-da18-5f30-8624-31ebaddb2bea"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.0d
+			y: -0.067d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bd4916b3-7ac9-595b-95cc-319dfd861524"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.5d
+			y: -1.233d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1ebb65cb-adb0-53c8-bee5-d4be47aee865"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.433d
+			y: 1.1d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:570946b5-2322-5f4b-b40a-60e2758add91"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.633d
+			y: 1.1d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e4550239-5557-5ccd-8af3-880bf14c2f92"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.433d
+			y: 1.833d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:22637221-43dd-5444-afb9-7ddb81f94105"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.633d
+			y: 2.567d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3758f681-7426-5fab-b305-d44f36f886f8"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.033d
+			y: -0.233d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f229159d-3949-53a4-83f9-1027a0c244ac"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.567d
+			y: -1.567d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:cbb64f5a-3ab7-5f4e-9086-68bf324767c0"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.7d
+			y: -0.233d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:9dafea3f-7e87-5e97-848f-95c28958d0ec"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.1d
+			y: -1.567d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:087944e0-3568-58d3-a794-f307d4b78c8a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:4e32cd6a95d89a53" "q:6cac077412bd216b"]
+		}
+		{
+			nodes: ["q:6cac077412bd216b" "a:feaeeb3f-5f9d-5c60-a611-f20081429b2d"]
+		}
+		{
+			nodes: ["a:feaeeb3f-5f9d-5c60-a611-f20081429b2d" "a:5bb5b602-1988-5ca6-ae6d-1def63b9c3a2"]
+		}
+		{
+			nodes: ["a:5bb5b602-1988-5ca6-ae6d-1def63b9c3a2" "q:1820c70acdfb8ec7"]
+		}
+		{
+			nodes: ["q:6cac077412bd216b" "a:710717e3-fd3f-5946-bea8-0cb763d144b1"]
+		}
+		{
+			nodes: ["a:710717e3-fd3f-5946-bea8-0cb763d144b1" "a:09f12c57-6eb8-58c5-bc90-2cb89923f713"]
+		}
+		{
+			nodes: ["a:09f12c57-6eb8-58c5-bc90-2cb89923f713" "q:85b7adf31129bc6"]
+		}
+		{
+			nodes: ["q:6cac077412bd216b" "a:791f97a3-cff5-5683-8600-bab318a9c57c"]
+		}
+		{
+			nodes: ["a:791f97a3-cff5-5683-8600-bab318a9c57c" "a:1a532f81-5145-5786-8255-5e2f547565bf"]
+		}
+		{
+			nodes: ["a:1a532f81-5145-5786-8255-5e2f547565bf" "q:43d807efb4995e0f"]
+		}
+		{
+			nodes: ["q:6cac077412bd216b" "a:5eb647a9-c3f1-5060-ab27-c35bd076f777"]
+		}
+		{
+			nodes: ["a:5eb647a9-c3f1-5060-ab27-c35bd076f777" "a:217bed22-da18-5f30-8624-31ebaddb2bea"]
+		}
+		{
+			nodes: ["a:217bed22-da18-5f30-8624-31ebaddb2bea" "q:6e93d6029d63d3f9"]
+		}
+		{
+			nodes: ["q:6cac077412bd216b" "a:bd4916b3-7ac9-595b-95cc-319dfd861524"]
+		}
+		{
+			nodes: ["a:bd4916b3-7ac9-595b-95cc-319dfd861524" "a:1ebb65cb-adb0-53c8-bee5-d4be47aee865"]
+		}
+		{
+			nodes: ["a:1ebb65cb-adb0-53c8-bee5-d4be47aee865" "l:27a9980cbdd8e41"]
+		}
+		{
+			nodes: ["q:6cac077412bd216b" "a:570946b5-2322-5f4b-b40a-60e2758add91"]
+		}
+		{
+			nodes: ["a:570946b5-2322-5f4b-b40a-60e2758add91" "a:e4550239-5557-5ccd-8af3-880bf14c2f92"]
+		}
+		{
+			nodes: ["a:e4550239-5557-5ccd-8af3-880bf14c2f92" "l:18d0f3f998a922d3"]
+		}
+		{
+			nodes: ["q:6cac077412bd216b" "a:22637221-43dd-5444-afb9-7ddb81f94105"]
+		}
+		{
+			nodes: ["a:22637221-43dd-5444-afb9-7ddb81f94105" "a:3758f681-7426-5fab-b305-d44f36f886f8"]
+		}
+		{
+			nodes: ["a:3758f681-7426-5fab-b305-d44f36f886f8" "l:19400cec3d8f7b7e"]
+		}
+		{
+			nodes: ["q:6cac077412bd216b" "a:f229159d-3949-53a4-83f9-1027a0c244ac"]
+		}
+		{
+			nodes: ["a:f229159d-3949-53a4-83f9-1027a0c244ac" "a:cbb64f5a-3ab7-5f4e-9086-68bf324767c0"]
+		}
+		{
+			nodes: ["a:cbb64f5a-3ab7-5f4e-9086-68bf324767c0" "l:1fbe4497d1ce77b5"]
+		}
+		{
+			nodes: ["l:48cf8715b1a2fc65" "q:1820c70acdfb8ec7"]
+		}
+		{
+			nodes: ["l:7b84f139265da881" "q:6e93d6029d63d3f9"]
+		}
+		{
+			nodes: ["l:5b24788d418dbe8" "a:9dafea3f-7e87-5e97-848f-95c28958d0ec"]
+		}
+		{
+			nodes: ["a:9dafea3f-7e87-5e97-848f-95c28958d0ec" "a:087944e0-3568-58d3-a794-f307d4b78c8a"]
+		}
+		{
+			nodes: ["a:087944e0-3568-58d3-a794-f307d4b78c8a" "q:3de786df7a59d46e"]
+		}
+		{
+			nodes: ["l:5db09239adcf8586" "q:3de786df7a59d46e"]
+		}
+		{
+			nodes: ["q:85b7adf31129bc6" "q:1cb355bd89972160"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

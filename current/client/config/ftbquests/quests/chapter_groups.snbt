@@ -1,0 +1,32 @@
+{
+	chapter_groups: [
+		{
+			id: "6A6C7C5BAEF247E2"
+			title: "启程指南"
+		}
+		{
+			id: "050255AE19A93344"
+			title: "动力与工业基础"
+		}
+		{
+			id: "5B22564DA513617D"
+			title: "通用工业"
+		}
+		{
+			id: "03D71190792A021E"
+			title: "计算与高能工程"
+		}
+		{
+			id: "3346A01E0EAFD002"
+			title: "航空与宇航"
+		}
+		{
+			id: "54D4CAA40ADB5408"
+			title: "秘境冒险"
+		}
+		{
+			id: "25C542C40E64ED41"
+			title: "魔法"
+		}
+	]
+}

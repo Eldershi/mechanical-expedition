@@ -1,0 +1,1201 @@
+{
+	id: "1732BCAB8703FB42"
+	filename: "research_adventure_b_botania"
+	title: "植物魔法"
+	group: "25C542C40E64ED41"
+	order_index: 206
+	icon: "botania:white_petal"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "259CC223F3CA5569"
+			title: "建立可再生花瓣来源"
+			icon: "botania:white_petal"
+			x: -11.121d
+			y: -0.407d
+			optional: false
+			tasks: [
+				{
+					id: "1DB8948D2E2689BF"
+					type: "item"
+					item: "botania:white_petal"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ddb0b4d5f82e223c54ea6119.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/428739d31d1de9f22173f461.png width:240 height:120 align:center}"
+				"配方输入：白色神秘花×1。"
+				"在主世界采集神秘花，拆成花瓣。缺指定颜色时，把同色花瓣埋在草地上，用骨粉催成高花后收割。也可用花肥随机补充。白花瓣留给白雏菊，其余颜色按配方取用，不要求收齐16色。"
+				"取得白色神秘花瓣。"
+				"花药台：水、花瓣、种子。"
+				"白雏菊：先做活材料。"
+				"森林法杖：检查与绑定。"
+				"发射器：让魔力真正到池里。"
+			]
+		}
+		{
+			id: "0B06CE38F565AB35"
+			title: "花药台：水、花瓣、种子"
+			icon: "botania:apothecary_default"
+			x: -11.633d
+			y: 1.811d
+			optional: false
+			tasks: [
+				{
+					id: "7B7689711CEB05EB"
+					type: "item"
+					item: "botania:apothecary_default"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7e662b7a3817b0a4726e8e86.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/fc9b9e603c6976754b96d631.png width:240 height:120 align:center}"
+				"配方输入：圆石×1，重复6槽。白色神秘花瓣×1 或 白色微光蘑菇×1（共32个任选一种备选）。"
+				"放在地上，用水桶注水，再逐个投配方花瓣，最后投种子完成合成。每次合成后检查水。空手潜行右击可撤回上次材料。花药台外观变体是任选一种。"
+				"取得花药台。"
+				"白雏菊：先做活材料。"
+				"火红莲：控制燃料投放。"
+			]
+		}
+		{
+			id: "39015CD6BF5AC7F0"
+			title: "白雏菊：先做活材料"
+			icon: "botania:pure_daisy"
+			x: -8.278d
+			y: -3.326d
+			optional: false
+			tasks: [
+				{
+					id: "716BEEB94959DBC0"
+					type: "item"
+					item: "botania:pure_daisy"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/0c26a3881e5cfc49f8bdf327.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/39c3e3df2bdb0ab33442efee.png width:240 height:207 align:center}"
+				"配方输入：水桶×1。小麦种子×1 或 甜菜种子×1（共20个任选一种备选）。白色神秘花瓣×1 或 白色微光蘑菇×1，重复4槽。工作能力：花瓣炼制。"
+				"在有水的花药台投四片白花瓣，再投种子取得白雏菊。种在地上，同层周围八格可摆原木或石头，等转换后再挖。不要把圆石当作石头。白雏菊本身不会被这次转换消耗。"
+				"取得白雏菊。"
+				"活木：原木在花边转换。"
+				"活石：建储能与加工设施。"
+			]
+		}
+		{
+			id: "788205C5CBC093F2"
+			title: "活木：原木在花边转换"
+			icon: "botania:livingwood_log"
+			x: -5.457d
+			y: -3.172d
+			optional: false
+			tasks: [
+				{
+					id: "41A06D638F44D67F"
+					type: "item"
+					item: "botania:livingwood_log"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "5A2515A7F57E4DCB"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d818786291003bbdb8b5697b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/86493544f897a2aad4f14013.png width:208 height:104 align:center}"
+				"配方输入：深色橡木原木×1 或 深色橡木×1（共512个任选一种备选）。工作能力：白雏菊。"
+				"将可接受的原木摆在白雏菊周围，等待净化后挖取活木原木。活木枝用于森林法杖，活木参与魔力发射器。这是工作能力带来的材料，不是去野外找另一种树。"
+				"取得活木原木。"
+				"发射器：让魔力真正到池里。"
+				"精灵门：先交易，不是旅行。"
+				"活石：建储能与加工设施。"
+			]
+		}
+		{
+			id: "1949E8CEBA20CB83"
+			title: "活石：建储能与加工设施"
+			icon: "botania:livingrock"
+			x: -4.904d
+			y: 1.63d
+			optional: false
+			tasks: [
+				{
+					id: "1AA735E81CC6C132"
+					type: "item"
+					item: "botania:livingrock"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a99b8431103a08df8035a688.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/6f00755766ec1530140994a5.png width:208 height:104 align:center}"
+				"配方输入：石头×1。工作能力：白雏菊。"
+				"把石头放在白雏菊周围，等净化后挖活石。先准备魔力池和符文祭坛的用量，另外留符文收尾所需活石。不要提前让物品收集器把收尾材料捡走。"
+				"取得活石。"
+				"魔力池：把铁变成魔力钢。"
+				"符文祭坛：供能和收尾。"
+				"做第一枚水之符文。"
+				"森林法杖：检查与绑定。"
+			]
+		}
+		{
+			id: "720611946F742597"
+			title: "森林法杖：检查与绑定"
+			icon: "botania:twig_wand"
+			x: -4.327d
+			y: -4.849d
+			optional: false
+			tasks: [
+				{
+					id: "5BA90E1473494E75"
+					type: "item"
+					item: "botania:twig_wand"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "240DA65642DCDC5A"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/5e4ff94480cc9392fbe573be.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/10743beb5ca287ffe852a8de.png width:240 height:120 align:center}"
+				"配方输入：白色神秘花瓣×1 或 白色微光蘑菇×1（共32个任选一种备选），重复2槽。活木枝×1，重复3槽。"
+				"用活木枝和任选两片合格花瓣制作。潜行右击空气切换工作/绑定模式。绑定模式先点花再点发射器、先点发射器再点池。持杖对准方块查看绑定线和缓存，法杖是重复使用工具。"
+				"取得森林法杖 (绑定模式)。"
+				"火红莲：控制燃料投放。"
+			]
+		}
+		{
+			id: "4DC19A8E593208C4"
+			title: "火红莲：控制燃料投放"
+			icon: "botania:endoflame"
+			x: -1.65d
+			y: -4.77d
+			optional: false
+			tasks: [
+				{
+					id: "740ABC347681FE92"
+					type: "item"
+					item: "botania:endoflame"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c6191622a423de0adfc0256c.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f4c445193ab6f1063c630376.png width:240 height:207 align:center}"
+				"配方输入：水桶×1。小麦种子×1 或 甜菜种子×1（共20个任选一种备选）。棕色神秘花瓣×1 或 棕色微光蘑菇×1，重复2槽。红色神秘花瓣×1 或 红色微光蘑菇×1。淡灰色神秘花瓣×1 或 淡灰色微光蘑菇×1。工作能力：花瓣炼制。"
+				"按花药台配方做火红莲，附近投可燃燃料。用压力板锁住漏斗，或用沙漏定时投放，先做少量检查，避免物品五分钟消失。水绣球是另一条产能路线，两种产能花任选一种。"
+				"取得火红莲。"
+				"发射器：让魔力真正到池里。"
+			]
+		}
+		{
+			id: "3E7C73F56433C59E"
+			title: "发射器：让魔力真正到池里"
+			icon: "botania:mana_spreader"
+			x: -2.508d
+			y: -3.179d
+			optional: false
+			tasks: [
+				{
+					id: "5C6CD98030D2EB42"
+					type: "item"
+					item: "botania:mana_spreader"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a5999c98967efbfdc9705ed3.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b6278ee50cda883b3715796f.png width:240 height:120 align:center}"
+				"配方输入：活木原木×1 或 活木×1（共8个任选一种备选），重复6槽。铜锭×1。白色神秘花瓣×1 或 白色微光蘑菇×1（共32个任选一种备选）。"
+				"将火红莲绑定至附近发射器，再把发射器对准魔力池。留出脉冲通路，确认发射器不是被红石信号停住。花、发射器和池三者库存变化才说明已运转，背包拿到发射器不等于完成通过。"
+				"取得魔力发射器。"
+				"魔力池：把铁变成魔力钢。"
+			]
+		}
+		{
+			id: "74F90D0F16ED4EEE"
+			title: "魔力池：把铁变成魔力钢"
+			icon: "botania:mana_pool"
+			x: -0.901d
+			y: 0.792d
+			optional: false
+			tasks: [
+				{
+					id: "54FFA086BBD85454"
+					type: "item"
+					item: "botania:mana_pool"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d6ebdea9c76faec32eec14a8.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/2b725aed98ac697b65f7eec2.png width:240 height:120 align:center}"
+				"配方输入：活石×1，重复5槽。"
+				"活石做池并接收发射器的魔力。向有足够魔力的池投铁锭、钻石或末影珍珠，分别取魔力钢、魔力钻石、魔力珍珠。三种输入并行，不给铁、钻石人为排顺序。"
+				"取得魔力池。"
+				"魔力钢：第一次池内加工。"
+			]
+		}
+		{
+			id: "696D7711441C9EBC"
+			title: "魔力钢：第一次池内加工"
+			icon: "botania:manasteel_ingot"
+			x: 0.988d
+			y: -0.495d
+			optional: false
+			tasks: [
+				{
+					id: "7576D199802B6FB3"
+					type: "item"
+					item: "botania:manasteel_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f80468873bcacbd95d2c3d8b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/490be8eda0722b899bdb0886.png width:240 height:101 align:center}"
+				"配方输入：铁锭×1。工作能力：魔力灌注。"
+				"准备铁锭，投到有足够魔力的池中，收取魔力钢。若无变化，检查池容量、可用魔力量与配方是否选对。投料前用一件材料试做。后续符文和泰拉钢会用到。"
+				"取得魔力钢锭。"
+				"做第一枚水之符文。"
+				"泰拉钢：一次只做一份。"
+				"精灵交易：源质钢支路。"
+				"符文祭坛：供能和收尾。"
+			]
+		}
+		{
+			id: "588AE122951A8588"
+			title: "符文祭坛：供能和收尾"
+			icon: "botania:runic_altar"
+			x: -1.172d
+			y: 2.515d
+			optional: false
+			tasks: [
+				{
+					id: "76853FC995E2C9BC"
+					type: "item"
+					item: "botania:runic_altar"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6c396c00ce75a2a0a9aea033.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b696bf6d08874e477d607a33.png width:240 height:120 align:center}"
+				"配方输入：活石×1，重复5槽。魔力珍珠×1。"
+				"制作祭坛，单独把发射器绑定到它。依配方右击放入材料，等魔力足够后投一块活石，用森林法杖右击完成。比较器充能中强度1、可完成强度2。读出信号再收尾，法杖可以重复使用。"
+				"取得符文祭坛。"
+				"做第一枚水之符文。"
+			]
+		}
+		{
+			id: "5DC658EA7438AD8E"
+			title: "做第一枚水之符文"
+			icon: "botania:rune_water"
+			x: 0.988d
+			y: 1.665d
+			optional: false
+			tasks: [
+				{
+					id: "7BF16CEA9730CD46"
+					type: "item"
+					item: "botania:rune_water"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/5b2648481d21776aae5bb6fe.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/33d3a10cdcd3a93d2d54e9ad.png width:240 height:220 align:center}"
+				"配方输入：活石×1。魔力尘×1。魔力钢锭×1。骨粉×1。甘蔗×1。钓鱼竿×1。工作能力：符文祭坛。生存中符文类输入在完成后返还。其他原料消耗，森林法杖重复使用。"
+				"从配方页准备水相关材料和魔力材料。先手工做水符文，再按实际下游需要做地火风和魔力符文，不要求收齐全部符文才继续。"
+				"取得水之符文。"
+				"泰拉凝聚板：多方块加工。"
+			]
+		}
+		{
+			id: "218557D6B2183AA3"
+			title: "泰拉凝聚板：多方块加工"
+			icon: "botania:terra_plate"
+			x: 3.148d
+			y: 1.665d
+			optional: false
+			tasks: [
+				{
+					id: "24372BF13E376FCE"
+					type: "item"
+					item: "botania:terra_plate"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/271dfa9d258b004d04ddb5ad.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/fab34585150820a57b7977cd.png width:240 height:120 align:center}"
+				"配方输入：青金石块×1，重复3槽。水之符文×1。魔力钢块×1。火之符文×1。地之符文×1。魔力符文×1。风之符文×1。"
+				"用五种基础符文等配方材料做凝聚板。地基是3×3棋盘：四角及中心活石，其余四格青金石块，板放中心活石上。合成图只说明板的制作。"
+				"取得泰拉凝聚板。"
+				"泰拉钢：一次只做一份。"
+				"火花网：集中供应泰拉钢。"
+			]
+		}
+		{
+			id: "239E7D29791D1508"
+			title: "火花网：集中供应泰拉钢"
+			icon: "botania:spark"
+			x: 2.405d
+			y: 0.379d
+			optional: false
+			tasks: [
+				{
+					id: "053B7DE04467A263"
+					type: "item"
+					item: "botania:spark"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c494228d4d9cbd9ca6c48b0e.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/eaa1ee2e221004562d2cb575.png width:240 height:120 align:center}"
+				"配方输入：白色神秘花瓣×1 或 白色微光蘑菇×1（共32个任选一种备选），重复2槽。烈焰粉×1，重复2槽。金粒×1。"
+				"在凝聚板和附近魔力池上各放火花，使用相同颜色，留出有效距离。多个池可增加供能，但不是额外合成原料。"
+				"取得火花。"
+				"泰拉钢：一次只做一份。"
+			]
+		}
+		{
+			id: "0CF6D3F99192816B"
+			title: "泰拉钢：一次只做一份"
+			icon: "botania:terrasteel_ingot"
+			x: 5.308d
+			y: -1.795d
+			optional: false
+			tasks: [
+				{
+					id: "705C464F217B0897"
+					type: "item"
+					item: "botania:terrasteel_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/04f547fd2486b16419f9113e.png width:32 height:32 align:center}"
+				"配方输入：魔力钢锭×1。魔力珍珠×1。魔力钻石×1。工作能力：泰拉凝聚板。"
+				"向已搭好且有足够魔力的板顶投一枚魔力钢、一枚魔力钻石、一枚魔力珍珠。准备500000魔力。等成品后只收泰拉钢，禁止收集器提前吸走原料。"
+				"取得泰拉钢锭。"
+				"盖亚Ⅱ与遗物：独立挑战。"
+				"精灵门：先交易，不是旅行。"
+			]
+		}
+		{
+			id: "06083F1FE42219B9"
+			title: "精灵门：先交易，不是旅行"
+			icon: "botania:alfheim_portal"
+			x: 8.312d
+			y: 0.732d
+			optional: false
+			tasks: [
+				{
+					id: "53607E2E9A4521F5"
+					type: "item"
+					item: "botania:alfheim_portal"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/eb17adb32fa12f4afcc58bad.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d550ba1125745078661401aa.png width:240 height:120 align:center}"
+				"配方输入：活木原木×1 或 活木×1（共8个任选一种备选），重复6槽。泰拉钢粒×1，重复3槽。"
+				"准备8活木、3微光活木、核心，以及两组魔力池+自然水晶，按辞典结构可视化搭门。两组供能设施在核心11×11范围内，水晶对应池。持森林法杖右击核心。把辞典投进去取得精灵知识。本体门不能让玩家进入精灵世界。"
+				"取得精灵门核心。"
+				"精灵交易：源质钢支路。"
+			]
+		}
+		{
+			id: "7A7529F884511A0F"
+			title: "精灵交易：源质钢支路"
+			icon: "botania:elementium_ingot"
+			x: 9.628d
+			y: -0.495d
+			optional: false
+			tasks: [
+				{
+					id: "71A9D6776CF2C131"
+					type: "item"
+					item: "botania:elementium_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/2b13e0c8e43961b4bb31b0e5.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/08ea3fcdb360511319827eab.png width:240 height:162 align:center}"
+				"配方输入：魔力钢锭×1，重复2槽。工作能力：精灵交易。"
+				"向已开启精灵门投入配方要求的魔力钢，接收源质钢。梦之木、精灵尘、龙石也各自走交易，无需把所有交易做完。"
+				"取得源质钢锭。"
+				"盖亚场地：先检查召唤资格。"
+			]
+		}
+		{
+			id: "1364CD54EDC7C33D"
+			title: "盖亚场地：先检查召唤资格"
+			icon: "botania:gaia_pylon"
+			x: 7.468d
+			y: -4.815d
+			optional: true
+			tasks: [
+				{
+					id: "32DE371501AD64BF"
+					type: "item"
+					item: "botania:gaia_pylon"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/fa54db042e5c1ed64a33feb0.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/238d834446cf6bcfe2704c2d.png width:240 height:120 align:center}"
+				"配方输入：精灵尘×1，重复2槽。源质钢锭×1，重复2槽。魔法水晶×1。"
+				"准备激活的信标与四个盖亚水晶，水晶比信标高一格，按辞典结构搭建，清空周围战斗区域。开启粒子以查看失败位置提示。水晶属于加工/召唤设施，不是每场消耗材料。先做好防护与撤离安排。"
+				"取得盖亚水晶。"
+				"盖亚Ⅰ：盖亚之魂来源。"
+			]
+		}
+		{
+			id: "464A6D4976792CC1"
+			title: "盖亚Ⅰ：盖亚之魂来源"
+			icon: "botania:life_essence"
+			x: 9.628d
+			y: -5.265d
+			optional: true
+			tasks: [
+				{
+					id: "4C3CA25487FBE816"
+					type: "item"
+					item: "botania:life_essence"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4b77b0d6b0fabb26cb6b1842.png width:32 height:32 align:center}"
+				"用泰拉钢锭潜行右击有效信标召唤。"
+				"用泰拉钢锭潜行右击有效信标召唤。召唤失败先查水晶、净空、难度，不重复乱点。击败盖亚守护者得到盖亚之魂。准备趁手的武器、护甲和恢复手段。"
+				"取得盖亚之魂。"
+				"盖亚Ⅱ与遗物：独立挑战。"
+			]
+		}
+		{
+			id: "327F0404329C1FEE"
+			title: "盖亚Ⅱ与遗物：独立挑战"
+			icon: "botania:gaia_ingot"
+			x: 11.633d
+			y: -4.433d
+			optional: true
+			tasks: [
+				{
+					id: "1E24E8F63A1FCDBE"
+					type: "item"
+					item: "botania:gaia_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/91b453914a5c9c0db5a0efcb.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/dc372d3ab195db8cc64309ef.png width:240 height:120 align:center}"
+				"配方输入：盖亚之魂×1，重复4槽。泰拉钢锭×1。"
+				"用盖亚之魂与泰拉钢制作盖亚魂锭，再对同一合格场地信标潜行右击，挑战强化盖亚。遗物随机性不能锁定本章毕业。盖亚Ⅱ不作为新生魔艺、灵灾或铁魔法的前置。"
+				"取得盖亚魂锭。"
+				"可选工程：自动补水。"
+			]
+		}
+		{
+			id: "192CAEFED9513016"
+			title: "可选工程：自动补水"
+			icon: "botania:apothecary_default"
+			x: -9.124d
+			y: 1.749d
+			optional: true
+			tasks: [
+				{
+					id: "6B341B7C13D56B39"
+					type: "item"
+					item: "botania:apothecary_default"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7e662b7a3817b0a4726e8e86.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/fc9b9e603c6976754b96d631.png width:240 height:120 align:center}"
+				"配方输入：圆石×1，重复6槽。白色神秘花瓣×1 或 白色微光蘑菇×1（共32个任选一种备选）。"
+				"比较器读取花药台有无水，经非门让装水桶的投掷系统补水。空桶回收到发射器再装水。完成连续制作三轮白雏菊、无空桶或花瓣误回收。"
+				"取得花药台。"
+				"可选工程：祭坛批次控制。"
+			]
+		}
+		{
+			id: "181C867D543CC2D3"
+			title: "可选工程：祭坛批次控制"
+			icon: "botania:runic_altar"
+			x: 1.858d
+			y: 3.785d
+			optional: true
+			tasks: [
+				{
+					id: "1ECBB9D8A21DE931"
+					type: "item"
+					item: "botania:runic_altar"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6c396c00ce75a2a0a9aea033.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b696bf6d08874e477d607a33.png width:240 height:120 align:center}"
+				"配方输入：活石×1，重复5槽。魔力珍珠×1。"
+				"先完成手工符文再自动化。一次只投一批，比较器就绪信号触发活石和法杖，成品过滤收集后才开放下一批。新版AE“等待主产物返回”必须在界面确认后使用。模块路由器不是祭坛本身的必需条件。"
+				"取得符文祭坛。"
+				"可选工程：凝聚板与交易回收。"
+			]
+		}
+		{
+			id: "583B0E8D2CB98086"
+			title: "可选工程：凝聚板与交易回收"
+			icon: "botania:terra_plate"
+			x: 5.308d
+			y: 5.265d
+			optional: true
+			tasks: [
+				{
+					id: "417259474986B25A"
+					type: "item"
+					item: "botania:terra_plate"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/271dfa9d258b004d04ddb5ad.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/fab34585150820a57b7977cd.png width:240 height:120 align:center}"
+				"配方输入：青金石块×1，重复3槽。水之符文×1。魔力钢块×1。火之符文×1。地之符文×1。魔力符文×1。风之符文×1。"
+				"凝聚板只允许一份原料在场，过滤器只取泰拉钢。制作过程信号互锁下一轮。精灵门则分开投料与成品收集。完成连续三轮产物无混批。"
+				"取得泰拉凝聚板。"
+				"按所选分支继续，或返回魔法总览选择另一体系。"
+			]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:259cc223f3ca5569" "q:b06ce38f565ab35"]
+		}
+		{
+			nodes: ["q:259cc223f3ca5569" "a:0068e187-8a6e-5a18-8944-eae8c0c5d35d"]
+		}
+		{
+			nodes: ["a:0068e187-8a6e-5a18-8944-eae8c0c5d35d" "a:e2a01924-cc52-54d1-ab7e-640dc70a7c9e"]
+		}
+		{
+			nodes: ["a:e2a01924-cc52-54d1-ab7e-640dc70a7c9e" "q:39015cd6bf5ac7f0"]
+		}
+		{
+			nodes: ["q:259cc223f3ca5569" "a:e57eb9e5-1cfd-5502-a306-cdf946466ce7"]
+		}
+		{
+			nodes: ["a:e57eb9e5-1cfd-5502-a306-cdf946466ce7" "a:5921e959-1abc-5add-b620-9b13c86d6ddc"]
+		}
+		{
+			nodes: ["a:5921e959-1abc-5add-b620-9b13c86d6ddc" "q:720611946f742597"]
+		}
+		{
+			nodes: ["q:259cc223f3ca5569" "a:4bba9ffd-2092-5ab3-8b12-37c4b46389c3"]
+		}
+		{
+			nodes: ["a:4bba9ffd-2092-5ab3-8b12-37c4b46389c3" "a:1af1e55f-bfb8-5744-99c2-7962785ac25e"]
+		}
+		{
+			nodes: ["a:1af1e55f-bfb8-5744-99c2-7962785ac25e" "q:3e7c73f56433c59e"]
+		}
+		{
+			nodes: ["q:259cc223f3ca5569" "a:160b8ea5-c6f7-5f15-9ab0-38868a89df77"]
+		}
+		{
+			nodes: ["a:160b8ea5-c6f7-5f15-9ab0-38868a89df77" "a:ba50880f-e24c-5df4-9b7e-d67a56c0aa98"]
+		}
+		{
+			nodes: ["a:ba50880f-e24c-5df4-9b7e-d67a56c0aa98" "q:239e7d29791d1508"]
+		}
+		{
+			nodes: ["q:b06ce38f565ab35" "q:39015cd6bf5ac7f0"]
+		}
+		{
+			nodes: ["q:b06ce38f565ab35" "a:f87f29bb-5255-5a9b-9a51-c59be575d9ab"]
+		}
+		{
+			nodes: ["a:f87f29bb-5255-5a9b-9a51-c59be575d9ab" "a:1d407934-6f3a-5016-a114-809059410198"]
+		}
+		{
+			nodes: ["a:1d407934-6f3a-5016-a114-809059410198" "q:4dc19a8e593208c4"]
+		}
+		{
+			nodes: ["q:39015cd6bf5ac7f0" "q:788205c5cbc093f2"]
+		}
+		{
+			nodes: ["q:39015cd6bf5ac7f0" "a:fe3f6c39-070c-50c6-b540-24397d1239ce"]
+		}
+		{
+			nodes: ["a:fe3f6c39-070c-50c6-b540-24397d1239ce" "a:592bd8d8-10c0-5f58-bf0e-793ad6e93d81"]
+		}
+		{
+			nodes: ["a:592bd8d8-10c0-5f58-bf0e-793ad6e93d81" "q:1949e8ceba20cb83"]
+		}
+		{
+			nodes: ["q:788205c5cbc093f2" "a:b36a2595-72ab-55db-9777-3b4956a999c1"]
+		}
+		{
+			nodes: ["a:b36a2595-72ab-55db-9777-3b4956a999c1" "a:a98b8e8b-46cd-526b-afd9-240897475d08"]
+		}
+		{
+			nodes: ["a:a98b8e8b-46cd-526b-afd9-240897475d08" "q:3e7c73f56433c59e"]
+		}
+		{
+			nodes: ["q:788205c5cbc093f2" "a:a13c11f7-f98a-595f-bb9e-4f2f1f4b062a"]
+		}
+		{
+			nodes: ["a:a13c11f7-f98a-595f-bb9e-4f2f1f4b062a" "a:ea05c400-3460-5a18-a56e-1ac5c8aa4284"]
+		}
+		{
+			nodes: ["a:ea05c400-3460-5a18-a56e-1ac5c8aa4284" "q:6083f1fe42219b9"]
+		}
+		{
+			nodes: ["q:788205c5cbc093f2" "q:1949e8ceba20cb83"]
+		}
+		{
+			nodes: ["q:1949e8ceba20cb83" "a:8fd0f8c7-c08c-5f24-a252-2ab4b1487722"]
+		}
+		{
+			nodes: ["a:8fd0f8c7-c08c-5f24-a252-2ab4b1487722" "a:2407152b-8411-5c84-a3a7-92b28e2e74a2"]
+		}
+		{
+			nodes: ["a:2407152b-8411-5c84-a3a7-92b28e2e74a2" "q:74f90d0f16ed4eee"]
+		}
+		{
+			nodes: ["q:1949e8ceba20cb83" "a:2f2f28dc-dd23-5787-b405-2c6890e687bb"]
+		}
+		{
+			nodes: ["a:2f2f28dc-dd23-5787-b405-2c6890e687bb" "a:9d4a0e7f-a65a-50b9-a1d4-d69544ca92bc"]
+		}
+		{
+			nodes: ["a:9d4a0e7f-a65a-50b9-a1d4-d69544ca92bc" "q:588ae122951a8588"]
+		}
+		{
+			nodes: ["q:1949e8ceba20cb83" "a:c0a915b7-4728-51e8-a017-cf5ba0110fc8"]
+		}
+		{
+			nodes: ["a:c0a915b7-4728-51e8-a017-cf5ba0110fc8" "a:1a2f2b31-f24a-5a0e-b544-9272d535463a"]
+		}
+		{
+			nodes: ["a:1a2f2b31-f24a-5a0e-b544-9272d535463a" "q:5dc658ea7438ad8e"]
+		}
+		{
+			nodes: ["q:1949e8ceba20cb83" "q:720611946f742597"]
+		}
+		{
+			nodes: ["q:74f90d0f16ed4eee" "q:696d7711441c9ebc"]
+		}
+		{
+			nodes: ["q:696d7711441c9ebc" "a:27560702-f491-5286-9f0f-5938ee2fa43a"]
+		}
+		{
+			nodes: ["a:27560702-f491-5286-9f0f-5938ee2fa43a" "a:796ff423-4d53-553e-87f8-c9ac5f87d33b"]
+		}
+		{
+			nodes: ["a:796ff423-4d53-553e-87f8-c9ac5f87d33b" "q:5dc658ea7438ad8e"]
+		}
+		{
+			nodes: ["q:696d7711441c9ebc" "a:02280da3-766d-5084-898a-7c9e114c6100"]
+		}
+		{
+			nodes: ["a:02280da3-766d-5084-898a-7c9e114c6100" "a:d421857f-74aa-508a-a7dc-293203a94c9f"]
+		}
+		{
+			nodes: ["a:d421857f-74aa-508a-a7dc-293203a94c9f" "q:cf6d3f99192816b"]
+		}
+		{
+			nodes: ["q:696d7711441c9ebc" "a:fb636e99-8504-5f93-84bf-12c4679a9b22"]
+		}
+		{
+			nodes: ["a:fb636e99-8504-5f93-84bf-12c4679a9b22" "a:cbd938fc-1b71-5ad2-8a38-3ac61c1e62ca"]
+		}
+		{
+			nodes: ["a:cbd938fc-1b71-5ad2-8a38-3ac61c1e62ca" "q:7a7529f884511a0f"]
+		}
+		{
+			nodes: ["q:696d7711441c9ebc" "q:588ae122951a8588"]
+		}
+		{
+			nodes: ["q:588ae122951a8588" "q:5dc658ea7438ad8e"]
+		}
+		{
+			nodes: ["q:5dc658ea7438ad8e" "q:218557d6b2183aa3"]
+		}
+		{
+			nodes: ["q:218557d6b2183aa3" "a:6453fe0d-27cd-5093-b16c-df4bbf96916f"]
+		}
+		{
+			nodes: ["a:6453fe0d-27cd-5093-b16c-df4bbf96916f" "a:798b118b-0004-58b2-8a5b-654155b4ab6b"]
+		}
+		{
+			nodes: ["a:798b118b-0004-58b2-8a5b-654155b4ab6b" "q:cf6d3f99192816b"]
+		}
+		{
+			nodes: ["q:218557d6b2183aa3" "q:239e7d29791d1508"]
+		}
+		{
+			nodes: ["q:6083f1fe42219b9" "q:7a7529f884511a0f"]
+		}
+		{
+			nodes: ["q:7a7529f884511a0f" "q:1364cd54edc7c33d"]
+		}
+		{
+			nodes: ["q:464a6d4976792cc1" "q:327f0404329c1fee"]
+		}
+		{
+			nodes: ["q:cf6d3f99192816b" "a:1d2ceae3-dec9-580a-bd20-39400e1c857a"]
+		}
+		{
+			nodes: ["a:1d2ceae3-dec9-580a-bd20-39400e1c857a" "a:ce8fced5-25d9-5f51-bdf4-0b753bc92c1f"]
+		}
+		{
+			nodes: ["a:ce8fced5-25d9-5f51-bdf4-0b753bc92c1f" "q:327f0404329c1fee"]
+		}
+		{
+			nodes: ["q:cf6d3f99192816b" "q:6083f1fe42219b9"]
+		}
+		{
+			nodes: ["q:720611946f742597" "q:4dc19a8e593208c4"]
+		}
+		{
+			nodes: ["q:4dc19a8e593208c4" "q:3e7c73f56433c59e"]
+		}
+		{
+			nodes: ["q:3e7c73f56433c59e" "q:74f90d0f16ed4eee"]
+		}
+		{
+			nodes: ["q:239e7d29791d1508" "q:cf6d3f99192816b"]
+		}
+		{
+			nodes: ["q:1364cd54edc7c33d" "q:464a6d4976792cc1"]
+		}
+		{
+			nodes: ["q:327f0404329c1fee" "q:192caefed9513016"]
+		}
+		{
+			nodes: ["q:192caefed9513016" "q:181c867d543cc2d3"]
+		}
+		{
+			nodes: ["q:181c867d543cc2d3" "q:583b0e8d2cb98086"]
+		}
+	]
+	images: [
+		{
+			x: -10.173d
+			y: -1.38d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0068e187-8a6e-5a18-8944-eae8c0c5d35d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.226d
+			y: -2.353d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e2a01924-cc52-54d1-ab7e-640dc70a7c9e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.856d
+			y: -1.888d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e57eb9e5-1cfd-5502-a306-cdf946466ce7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.592d
+			y: -3.368d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5921e959-1abc-5add-b620-9b13c86d6ddc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.25d
+			y: -1.331d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4bba9ffd-2092-5ab3-8b12-37c4b46389c3"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.379d
+			y: -2.255d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1af1e55f-bfb8-5744-99c2-7962785ac25e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.612d
+			y: -0.145d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:160b8ea5-c6f7-5f15-9ab0-38868a89df77"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.104d
+			y: 0.117d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ba50880f-e24c-5df4-9b7e-d67a56c0aa98"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.305d
+			y: -0.383d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f87f29bb-5255-5a9b-9a51-c59be575d9ab"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.978d
+			y: -2.576d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1d407934-6f3a-5016-a114-809059410198"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.153d
+			y: -1.674d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fe3f6c39-070c-50c6-b540-24397d1239ce"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.029d
+			y: -0.022d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:592bd8d8-10c0-5f58-bf0e-793ad6e93d81"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.474d
+			y: -3.174d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b36a2595-72ab-55db-9777-3b4956a999c1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.491d
+			y: -3.177d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a98b8e8b-46cd-526b-afd9-240897475d08"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.867d
+			y: -1.871d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a13c11f7-f98a-595f-bb9e-4f2f1f4b062a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.722d
+			y: -0.569d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ea05c400-3460-5a18-a56e-1ac5c8aa4284"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.57d
+			y: 1.351d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8fd0f8c7-c08c-5f24-a252-2ab4b1487722"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.235d
+			y: 1.071d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2407152b-8411-5c84-a3a7-92b28e2e74a2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.66d
+			y: 1.925d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2f2f28dc-dd23-5787-b405-2c6890e687bb"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.416d
+			y: 2.22d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:9d4a0e7f-a65a-50b9-a1d4-d69544ca92bc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.94d
+			y: 1.642d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c0a915b7-4728-51e8-a017-cf5ba0110fc8"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.976d
+			y: 1.653d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1a2f2b31-f24a-5a0e-b544-9272d535463a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.988d
+			y: 0.225d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:27560702-f491-5286-9f0f-5938ee2fa43a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.988d
+			y: 0.945d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:796ff423-4d53-553e-87f8-c9ac5f87d33b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.428d
+			y: -0.928d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:02280da3-766d-5084-898a-7c9e114c6100"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.868d
+			y: -1.362d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d421857f-74aa-508a-a7dc-293203a94c9f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.868d
+			y: -0.495d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fb636e99-8504-5f93-84bf-12c4679a9b22"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.748d
+			y: -0.495d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:cbd938fc-1b71-5ad2-8a38-3ac61c1e62ca"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.868d
+			y: 0.512d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6453fe0d-27cd-5093-b16c-df4bbf96916f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.588d
+			y: -0.642d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:798b118b-0004-58b2-8a5b-654155b4ab6b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 7.416d
+			y: -2.674d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1d2ceae3-dec9-580a-bd20-39400e1c857a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 9.525d
+			y: -3.554d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ce8fced5-25d9-5f51-bdf4-0b753bc92c1f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

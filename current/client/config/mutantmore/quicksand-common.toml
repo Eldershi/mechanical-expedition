@@ -1,0 +1,6 @@
+"Minimum Lifespan (in ticks, default: 200)" = 200
+"Maximum Lifespan (in ticks, default: 400)" = 400
+"Mob Horizontal Movement Multiplier (default: 0.75)" = 0.75
+"Mob Vertical Movement Multiplier (default: 0.5)" = 0.5
+"Player-Placed Quicksand Doesn't Despawn (default: true)" = true
+

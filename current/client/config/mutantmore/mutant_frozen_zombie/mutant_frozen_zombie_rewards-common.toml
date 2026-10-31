@@ -1,0 +1,28 @@
+
+["SNOWSTORM GENERATOR"]
+	"Snowstorm Horizontal Radius (in blocks, default: 14)" = 14.0
+	"Snowstorm Vertical Radius (in blocks, default: 7)" = 7.0
+	"Freeze Speed (per tick, default: 1)" = 1
+	"Maximum Freeze Amount (mobs get damaged at 140, default: 100)" = 100
+	"Snowstorm Griefing (default: false)" = false
+	"Snowstorm Griefing Amount (default: 10)" = 10
+	"Slowness Effect Duration (in ticks, default: 200)" = 200
+	"Slowness Effect Level (default: 1)" = 1
+	"Weakness Effect Duration (in ticks, default: 200)" = 200
+	"Weakness Effect Level (default: 0)" = 0
+
+["FREEZING FAN"]
+	"Freeze Speed (per tick, default: 1)" = 1
+	"Maximum Freeze Amount (mobs get damaged at 140, default: 200)" = 200
+	"Resist Ice Cube Max Health (default: 50)" = 50.0
+
+["ICICLE AMMO CHARGE"]
+	"Icicle Damage (default: 10)" = 10.0
+	"Icicle Disable Shields Duration (in ticks, default: 20)" = 20
+	"Icicle Freezing Effect Duration (in ticks, default: 40)" = 40
+	"Icicle Freezing Effect Level (default: 0)" = 0
+	"Max Ammo (default: 20)" = 20
+	"Create Ammo Interval (in ticks, default: 10)" = 10
+	"Load Crossbow Duration (in ticks, default: 40)" = 40
+	"Crossbow Durability Consumption (default: 1)" = 1
+

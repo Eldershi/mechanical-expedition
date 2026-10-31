@@ -1,0 +1,553 @@
+{
+	id: "05CCF453EC0F9A00"
+	filename: "research_adventure_a_aether"
+	title: "天境"
+	group: "54D4CAA40ADB5408"
+	order_index: 203
+	icon: "minecraft:glowstone"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "15179AF70DD72671"
+			title: "萤石门与返程准备"
+			icon: "minecraft:glowstone"
+			x: -7.56d
+			y: -1.44d
+			optional: false
+			tasks: [
+				{
+					id: "499CBFC8066BFE34"
+					type: "advancement"
+					advancement: "aether:enter_aether"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9bc89d80bbd573c239e8cb21.png width:32 height:32 align:center}"
+				"萤石框架与水。天境主世界工具限制仅按标签生效。"
+				"激活门并入内，确认降落点安全。准备防坠与返程坐标，阅读天境传说。"
+				"进入空岛维度。不能把所有其他模组装备一概判无效。"
+				"本地天根木、圣石与神能晶先并行采集。"
+			]
+		}
+		{
+			id: "52D0B5EB5EA69499"
+			title: "工具与神能晶"
+			icon: "aether:skyroot_pickaxe"
+			x: -5.4d
+			y: 0.36d
+			optional: false
+			tasks: [
+				{
+					id: "66C542A8BEE69923"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/5a00143dbacd06758c9229a4.png width:32 height:32 align:center}"
+				"入场后取得天根木与圣石。"
+				"用本地工具采神能晶与紫晶。蓝莓/药剂苹果等做补给。"
+				"有可靠的本地工艺材料。"
+				"神能炉带来加工能力。不需先打青铜地牢。"
+			]
+		}
+		{
+			id: "42064C7F80D25ED0"
+			title: "用紫晶与圣石制作神能炉"
+			icon: "aether:altar"
+			x: -2.52d
+			y: -4.05d
+			optional: false
+			tasks: [
+				{
+					id: "61DF83A2AB48886E"
+					type: "item"
+					item: "aether:altar"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/86db863ba9d01802e794d994.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/1b3e856cc954c7f58496dcef.png width:240 height:120 align:center}"
+				"8圣石＋1紫晶宝石。"
+				"工作台合成后放置，按GUI加入神能晶燃料及待处理物。"
+				"祭坛加工加工能力。"
+				"重力晶矿、治愈之石和食物强化为平行加工。"
+			]
+		}
+		{
+			id: "51D0A1E1F9F0C44A"
+			title: "精炼重力晶矿"
+			icon: "aether:enchanted_gravitite"
+			x: 0.36d
+			y: -5.04d
+			optional: true
+			tasks: [
+				{
+					id: "404C11F6A8A377DC"
+					type: "item"
+					item: "aether:enchanted_gravitite"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1472beafb9195243d72f2f76.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f5166a043a610dafa657f1cb.png width:180 height:124 align:center}"
+				"所选神能炉路线：重力晶矿、神能炉与神能晶燃料。风扇路线也是任选一种。"
+				"在神能炉加工，或使用已导出的Create Dragons Plus黄金境云介质风扇替代[268,95]（对应功能须开启）。这不是普通熔炉配方。"
+				"神炼重力晶用于工具/套装。"
+				"滑行魔石只要求有效镐类伤害，不指定重力镐。"
+			]
+		}
+		{
+			id: "5605B910287CB9C8"
+			title: "用神能炉准备治愈之石"
+			icon: "aether:healing_stone"
+			x: 0.36d
+			y: -2.16d
+			optional: true
+			tasks: [
+				{
+					id: "2E3CFF7D85F74059"
+					type: "item"
+					item: "aether:healing_stone"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/feb9a95adfdd3e43785e65da.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/32605e32cdcaac1e052e2a8e.png width:180 height:124 align:center}"
+				"所选神能炉路线：圣石与燃料。风扇路线亦为任选一种。"
+				"按enchanting加工，或Create Dragons Plus黄金境云介质风扇替代[268,3]（对应功能须开启），作为战斗回复补给。不新写机械动力教程。"
+				"治愈之石是食物。勿与佩戴的再生之石混淆。"
+				"三种地牢可按准备度任选。不新增先后锁。"
+			]
+		}
+		{
+			id: "2F09C0AF3BF154C9"
+			title: "孵化器与恐鸟蛋"
+			icon: "aether:incubator"
+			x: -2.52d
+			y: 1.57d
+			optional: true
+			tasks: [
+				{
+					id: "4CB101827C31098E"
+					type: "item"
+					item: "aether:incubator"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4667c5f95bb726e5db502166.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d8db2fcba67e2737ae156221.png width:240 height:120 align:center}"
+				"8圣石＋1神能火把。取得自然恐鸟蛋。"
+				"用神能火把作孵化燃料，等待孵出后按饥饿状态喂箭毒花瓣成长。"
+				"恐鸟载具培养能力。"
+				"放鞍骑乘，黑色只是可选品质。不用先击败Boss。"
+			]
+		}
+		{
+			id: "45015216A2DEB72B"
+			title: "完成孵化器的孵化进度"
+			icon: "aether:incubator"
+			x: 0.36d
+			y: 0.72d
+			optional: true
+			tasks: [
+				{
+					id: "51121BD65334FE14"
+					type: "advancement"
+					advancement: "aether:incubate_moa"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4667c5f95bb726e5db502166.png width:32 height:32 align:center}"
+				"本卡选孵化器完成进度。风扇[269]是产实体的另一条路线。"
+				"用孵化器完成incubation_trigger。风扇孵化实体未证明会发同一进度。"
+				"孵化进度。"
+				"可选交通，防坠仍须独立考虑。"
+			]
+		}
+		{
+			id: "0CBF4C0A76D77CED"
+			title: "冷冻器是独立能力"
+			icon: "aether:freezer"
+			x: -2.52d
+			y: 3.6d
+			optional: true
+			tasks: [
+				{
+					id: "6BE06181A058C5E7"
+					type: "item"
+					item: "aether:freezer"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9e331c477a314b2d088d57d4.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/26a084ef7c860acbb0162d15.png width:240 height:120 align:center}"
+				"圣石、冰石和天根木板。不需要神能炉成品。"
+				"制作后用冰石作燃料，按冻结配方处理饰品/食物。"
+				"冰冻器加工能力。"
+				"寒冰饰品与重力工艺可分别发展。"
+			]
+		}
+		{
+			id: "77AB412C687BDE32"
+			title: "青铜地牢：用镐攻击滑行魔石"
+			icon: "aether:bronze_dungeon_key"
+			x: 2.52d
+			y: -5.04d
+			optional: false
+			tasks: [
+				{
+					id: "00BDD88C6B7211D7"
+					type: "advancement"
+					advancement: "aether:bronze_dungeon"
+					criterion: ""
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/eee2198c0148cd2dbb064e84.png width:32 height:32 align:center}" "带合适镐与机动补给。这是工具类型条件。" "避开移动撞击，用镐造成有效伤害。击败取青铜钥匙开本地宝箱。" "青铜遭遇进度和本地奖励。"]
+		}
+		{
+			id: "7569293D6C442094"
+			title: "十枚胜利勋章是白银资格"
+			icon: "aether:victory_medal"
+			x: 2.52d
+			y: -1.44d
+			optional: false
+			tasks: [
+				{
+					id: "3F44FBD42D4F0043"
+					type: "item"
+					item: "aether:victory_medal"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/d25610dc5cd29535bd4948e3.png width:32 height:32 align:center}" "找到武神圣殿与普通女武神。" "逐个交战取勋章，集10枚后向武神女王对话提交。" "选择挑战女王。不要求先青铜。"]
+		}
+		{
+			id: "7FF237EB327732F1"
+			title: "白银地牢：武神女王"
+			icon: "aether:silver_dungeon_key"
+			x: 5.4d
+			y: -1.44d
+			optional: false
+			tasks: [
+				{
+					id: "7F2F3E7E667E723C"
+					type: "advancement"
+					advancement: "aether:silver_dungeon"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/08e298788ba5ff6362513ef0.png width:32 height:32 align:center}"
+				"女王对话资格需要10枚勋章。防护、回复与机动为准备建议。"
+				"提交勋章挑战，利用攻击窗口。"
+				"白银钥匙用于该地牢奖励。"
+				"可选刷取武神装。不要求凑齐才能打太阳。"
+			]
+		}
+		{
+			id: "3677C0C04731FEA7"
+			title: "黄金地牢：反弹冰球破防"
+			icon: "aether:gold_dungeon_key"
+			x: 2.52d
+			y: 2.88d
+			optional: false
+			tasks: [
+				{
+					id: "057069BF48B10665"
+					type: "advancement"
+					advancement: "aether:gold_dungeon"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/09ed1a1842c743e94b049eb7.png width:32 height:32 align:center}"
+				"找到金琥珀岛对应地牢。与烈阳巨灵对话。"
+				"反弹冰球使其进入可伤状态，再攻击本体并处理仆从。"
+				"黄金钥匙与日轮祭坛。天境时间控制用途明确。"
+				"黄金奖励随机，凤凰装/生命补片是可选收益。"
+			]
+		}
+		{
+			id: "620B817C5FE829B6"
+			title: "日轮祭坛改变天境时间"
+			icon: "aether:sun_altar"
+			x: 5.4d
+			y: 2.88d
+			optional: true
+			tasks: [
+				{
+					id: "06F9FD53ABDD4CCA"
+					type: "item"
+					item: "aether:sun_altar"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/30e102a91c200294ae970f43.png width:32 height:32 align:center}"
+				"烈阳巨灵掉落来源，非必须合成。"
+				"放置使用并观察昼夜变化。"
+				"结束永昼的工具。"
+				"睡眠或收集进度选修。"
+			]
+		}
+		{
+			id: "249B757CF0A10397"
+			title: "凤凰到黑曜石的套装支线"
+			icon: "aether:obsidian_chestplate"
+			x: 7.56d
+			y: 5.04d
+			optional: true
+			tasks: [
+				{
+					id: "18DACC959B38286D"
+					type: "advancement"
+					advancement: "aether:obsidian_armor"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c294c51aa4a6cf7dad224eb2.png width:32 height:32 align:center}"
+				"先由黄金宝箱取得对应凤凰部件。"
+				"让凤凰装备接触水/雨转化。不要以一件部件证明整套完成。"
+				"黑曜石套装进度。"
+				"全进度由JAR逐项列出。"
+			]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:7569293d6c442094" "q:7ff237eb327732f1"]
+		}
+		{
+			nodes: ["q:42064c7f80d25ed0" "q:51d0a1e1f9f0c44a"]
+		}
+		{
+			nodes: ["q:42064c7f80d25ed0" "a:3f10ef11-357e-58af-b0d5-50a0a27fd6ac"]
+		}
+		{
+			nodes: ["a:3f10ef11-357e-58af-b0d5-50a0a27fd6ac" "a:7ef9bd0c-6060-529e-97b3-54cdacd6a56c"]
+		}
+		{
+			nodes: ["a:7ef9bd0c-6060-529e-97b3-54cdacd6a56c" "q:5605b910287cb9c8"]
+		}
+		{
+			nodes: ["q:2f09c0af3bf154c9" "q:45015216a2deb72b"]
+		}
+		{
+			nodes: ["q:15179af70dd72671" "q:52d0b5eb5ea69499"]
+		}
+		{
+			nodes: ["q:15179af70dd72671" "a:6bf9e845-69b6-57cc-b389-cf5ed6e892a7"]
+		}
+		{
+			nodes: ["a:6bf9e845-69b6-57cc-b389-cf5ed6e892a7" "a:009a5e21-71e0-5389-b650-952f0e193311"]
+		}
+		{
+			nodes: ["a:009a5e21-71e0-5389-b650-952f0e193311" "q:77ab412c687bde32"]
+		}
+		{
+			nodes: ["q:15179af70dd72671" "a:4729d141-317f-5000-826c-b079a4777219"]
+		}
+		{
+			nodes: ["a:4729d141-317f-5000-826c-b079a4777219" "a:e83c044f-9a62-5fda-aff6-2e86856cb124"]
+		}
+		{
+			nodes: ["a:e83c044f-9a62-5fda-aff6-2e86856cb124" "q:7569293d6c442094"]
+		}
+		{
+			nodes: ["q:15179af70dd72671" "a:f634fd5c-3bfc-5b47-ad54-79ea54c8f0d5"]
+		}
+		{
+			nodes: ["a:f634fd5c-3bfc-5b47-ad54-79ea54c8f0d5" "a:25baa78d-ca56-50cf-8fcb-bbc10199e485"]
+		}
+		{
+			nodes: ["a:25baa78d-ca56-50cf-8fcb-bbc10199e485" "q:3677c0c04731fea7"]
+		}
+		{
+			nodes: ["q:52d0b5eb5ea69499" "q:42064c7f80d25ed0"]
+		}
+		{
+			nodes: ["q:52d0b5eb5ea69499" "a:d091e3f0-70e0-5051-aa1f-4c2793f34ec7"]
+		}
+		{
+			nodes: ["a:d091e3f0-70e0-5051-aa1f-4c2793f34ec7" "a:f2d80bd8-19d2-55c4-b194-6a5de7382a16"]
+		}
+		{
+			nodes: ["a:f2d80bd8-19d2-55c4-b194-6a5de7382a16" "q:2f09c0af3bf154c9"]
+		}
+		{
+			nodes: ["q:52d0b5eb5ea69499" "a:d48e6a44-ae57-5c3e-ac73-1fa4b1697705"]
+		}
+		{
+			nodes: ["a:d48e6a44-ae57-5c3e-ac73-1fa4b1697705" "a:94f3bacb-5681-5c80-89b8-1469f3be2a97"]
+		}
+		{
+			nodes: ["a:94f3bacb-5681-5c80-89b8-1469f3be2a97" "q:cbf4c0a76d77ced"]
+		}
+		{
+			nodes: ["q:3677c0c04731fea7" "q:620b817c5fe829b6"]
+		}
+		{
+			nodes: ["q:620b817c5fe829b6" "q:249b757cf0a10397"]
+		}
+	]
+	images: [
+		{
+			x: -4.2d
+			y: -2.64d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6bf9e845-69b6-57cc-b389-cf5ed6e892a7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.84d
+			y: -3.84d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:009a5e21-71e0-5389-b650-952f0e193311"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.2d
+			y: -1.44d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4729d141-317f-5000-826c-b079a4777219"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.84d
+			y: -1.44d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e83c044f-9a62-5fda-aff6-2e86856cb124"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.2d
+			y: 0.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f634fd5c-3bfc-5b47-ad54-79ea54c8f0d5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.84d
+			y: 1.44d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:25baa78d-ca56-50cf-8fcb-bbc10199e485"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.44d
+			y: 0.763d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d091e3f0-70e0-5051-aa1f-4c2793f34ec7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.48d
+			y: 1.167d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f2d80bd8-19d2-55c4-b194-6a5de7382a16"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.44d
+			y: 1.44d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d48e6a44-ae57-5c3e-ac73-1fa4b1697705"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.48d
+			y: 2.52d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:94f3bacb-5681-5c80-89b8-1469f3be2a97"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.56d
+			y: -3.42d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3f10ef11-357e-58af-b0d5-50a0a27fd6ac"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.6d
+			y: -2.79d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7ef9bd0c-6060-529e-97b3-54cdacd6a56c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

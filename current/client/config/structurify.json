@@ -1,0 +1,245 @@
+{
+  "config_version": "2.0.43",
+  "config_datetime": "2026-10-16_11-50-31",
+  "general": {},
+  "structure_namespaces": [],
+  "structures": [
+    {
+      "name": "nova_structures:illager_camp",
+      "blacklisted_biomes": [
+        "minecraft:river"
+      ]
+    }
+  ],
+  "structure_sets": [
+    {
+      "name": "aether:bronze_dungeon",
+      "frequency": 0.00021729381
+    },
+    {
+      "name": "aether:silver_and_gold_dungeons",
+      "frequency": 0.0007043907
+    },
+    {
+      "name": "allthemodium:ancient_pyramid",
+      "frequency": 0.011952664
+    },
+    {
+      "name": "aquamirae:ship",
+      "frequency": 0.006535948
+    },
+    {
+      "name": "block_factorys_bosses:dragon_tower",
+      "frequency": 0.114285715
+    },
+    {
+      "name": "block_factorys_bosses:kraken_ship",
+      "frequency": 0.0038210156
+    },
+    {
+      "name": "block_factorys_bosses:sandworm_nest",
+      "frequency": 0.23529412
+    },
+    {
+      "name": "block_factorys_bosses:underworld_arena",
+      "frequency": 0.04405286
+    },
+    {
+      "name": "block_factorys_bosses:yeti_hideout",
+      "frequency": 0.062040817
+    },
+    {
+      "name": "born_in_chaos_v1:infernal_pumpkin",
+      "frequency": 0.013793103
+    },
+    {
+      "name": "born_in_chaos_v1:mound_of_hounds",
+      "frequency": 0.1904762
+    },
+    {
+      "name": "cataclysm:acropolis",
+      "frequency": 0.21111111
+    },
+    {
+      "name": "cataclysm:amethyst_nest",
+      "frequency": 0.0021788005
+    },
+    {
+      "name": "cataclysm:ancient_factory",
+      "frequency": 0.013881278
+    },
+    {
+      "name": "cataclysm:burning_arena",
+      "frequency": 0.1904762
+    },
+    {
+      "name": "cataclysm:cursed_pyramid",
+      "frequency": 0.8
+    },
+    {
+      "name": "cataclysm:ruined_citadel",
+      "frequency": 0.0021563342
+    },
+    {
+      "name": "cataclysm:soul_black_smith",
+      "frequency": 0.013114754
+    },
+    {
+      "name": "cataclysm:sunken_city",
+      "frequency": 0.022822823
+    },
+    {
+      "name": "deeperdarker:ancient_temple",
+      "frequency": 0.0009035464
+    },
+    {
+      "name": "eeeabsmobs:bloody_altar",
+      "frequency": 0.0043956046
+    },
+    {
+      "name": "eeeabsmobs:coreforge_ruins",
+      "frequency": 0.011893583
+    },
+    {
+      "name": "eternal_starlight:cursed_garden",
+      "frequency": 0.00125
+    },
+    {
+      "name": "eternal_starlight:golem_forge",
+      "frequency": 0.00125
+    },
+    {
+      "name": "eternal_starlight:stranghoul_den",
+      "frequency": 0.00125
+    },
+    {
+      "name": "goety:blighted_shack",
+      "frequency": 0.018955782
+    },
+    {
+      "name": "goety:crypt",
+      "frequency": 0.046511628
+    },
+    {
+      "name": "goety:dark_manor",
+      "frequency": 0.009195402
+    },
+    {
+      "name": "goety:final_terminal",
+      "frequency": 0.1444
+    },
+    {
+      "name": "goety:ruined_monastery",
+      "frequency": 0.0015081074
+    },
+    {
+      "name": "goety:spider_den",
+      "frequency": 0.011547344
+    },
+    {
+      "name": "goety_revelation:frostyard",
+      "frequency": 0.36363637
+    },
+    {
+      "name": "iceandfire:gorgon_temple",
+      "frequency": 0.00891358
+    },
+    {
+      "name": "iceandfire:mausoleum",
+      "frequency": 0.01563786
+    },
+    {
+      "name": "irons_spellbooks:catacombs",
+      "frequency": 0.0035447762
+    },
+    {
+      "name": "legendary_monsters:ancient_stronghold",
+      "frequency": 0.027210884
+    },
+    {
+      "name": "legendary_monsters:ancient_tower_remains",
+      "frequency": 0.0034692108
+    },
+    {
+      "name": "legendary_monsters:cloudy_temple",
+      "frequency": 0.0063492064
+    },
+    {
+      "name": "legendary_monsters:collapsed_kingdom",
+      "frequency": 0.10526316
+    },
+    {
+      "name": "legendary_monsters:frostbitten_temple",
+      "frequency": 0.046511628
+    },
+    {
+      "name": "legendary_monsters:lava_eater_spawn",
+      "frequency": 0.0016778524
+    },
+    {
+      "name": "legendary_monsters:mossy_temple",
+      "frequency": 0.010734463
+    },
+    {
+      "name": "legendary_monsters:ruined_pyramid",
+      "frequency": 0.06333333
+    },
+    {
+      "name": "legendary_monsters:shulker_tower",
+      "frequency": 0.0018881988
+    },
+    {
+      "name": "legendary_monsters:skeletosaurus_nest",
+      "frequency": 0.0021598272
+    },
+    {
+      "name": "legendary_monsters:soul_fortress_remains",
+      "frequency": 0.0013797862
+    },
+    {
+      "name": "legendary_monsters:space_station",
+      "frequency": 0.0036809817
+    },
+    {
+      "name": "legendary_monsters:warped_fungussus_nest",
+      "frequency": 0.00024094935
+    },
+    {
+      "name": "mowziesmobs:frostmaw_spawns",
+      "frequency": 0.013240418
+    },
+    {
+      "name": "mowziesmobs:monasteries",
+      "frequency": 0.013333334
+    },
+    {
+      "name": "mowziesmobs:umvuthana_groves",
+      "frequency": 0.012063492
+    },
+    {
+      "name": "mowziesmobs:wrought_chambers",
+      "frequency": 0.00040816327
+    },
+    {
+      "name": "terramity:chthonic_cathedral",
+      "frequency": 0.00076775433
+    },
+    {
+      "name": "terramity:court_of_gnomes",
+      "frequency": 0.06896552
+    },
+    {
+      "name": "terramity:trial_spire",
+      "frequency": 0.0038572806
+    },
+    {
+      "name": "undergarden:catacombs",
+      "frequency": 0.00028344672
+    },
+    {
+      "name": "undergarden:forgotten_vestige",
+      "frequency": 1.4976852e-05
+    }
+  ],
+  "structure_template_pools": []
+}

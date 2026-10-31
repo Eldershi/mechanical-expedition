@@ -1,0 +1,13 @@
+#Can the track spawner work
+enableTrackSpawner = true
+#Can the track spawner be generated
+generateTrackSpawner = true
+#Use the track spawner,(true) or place rails during world generation.(false)
+placeTracksUsingTrackSpawner = true
+#Size of a railway planning region in chunks
+#Range: 16 ~ 512
+chunkGroupSize = 128
+#Maximum height increment for railway elevation changes
+#Range: 10 ~ 500
+heightMaxIncrement = 100
+

@@ -1,0 +1,7 @@
+{
+  "block.waystones.blackstone_waystone": "传送石碑（黑石）",
+  "block.waystones.deepslate_waystone": "传送石碑（深板岩）",
+  "block.waystones.end_stone_waystone": "传送石碑（末地石）",
+  "item.waystones.crumbling_attuned_shard": "易碎的共鸣碎片",
+  "tooltip.waystones.attuned_shard.attunement_crumbling": "它会在下次传送时被消耗。"
+}

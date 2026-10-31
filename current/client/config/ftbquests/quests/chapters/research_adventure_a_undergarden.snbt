@@ -1,0 +1,461 @@
+{
+	id: "2F11ADFF254F3B36"
+	filename: "research_adventure_a_undergarden"
+	title: "深暗之园"
+	group: "54D4CAA40ADB5408"
+	order_index: 204
+	icon: "undergarden:catalyst"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "7B510A34A8C583A2"
+			title: "制作深园催化石"
+			icon: "undergarden:catalyst"
+			x: -6.84d
+			y: 0.0d
+			optional: false
+			tasks: [
+				{
+					id: "6B7BCF2A309BAE72"
+					type: "item"
+					item: "undergarden:catalyst"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/8d056608a6144216b906d440.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/4a32572c3472a4e641e87bb6.png width:240 height:120 align:center}"
+				"4金锭＋4铁锭＋1钻石，工作台即可。"
+				"按现包配方合成。不需要火箭、其他维度Boss或工厂。"
+				"可使用激活工具。"
+				"搭合格石砖门框，用催化石激活。"
+			]
+		}
+		{
+			id: "663E187AF9378E3E"
+			title: "石砖门框进入幽邃之地"
+			icon: "undergarden:deepturf_block"
+			x: -4.68d
+			y: 0.0d
+			optional: false
+			tasks: [
+				{
+					id: "3EF7C8D1F5712859"
+					type: "advancement"
+					advancement: "undergarden:undergarden/enter_undergarden"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f803e24a5fc7675846aef3e2.png width:32 height:32 align:center}"
+				"下界门形框架。portal_frame_blocks标签内石砖、深板岩或本地砖任选。"
+				"对框架内使用催化石。"
+				"进入维度。开启传送门后保留工具，后续仍可使用。"
+				"带照明探索本地食物和矿物。"
+			]
+		}
+		{
+			id: "2ADE3F2FDC13253D"
+			title: "致毒混合物与食物"
+			icon: "undergarden:gloomgourd_pie"
+			x: -1.8d
+			y: -4.32d
+			optional: true
+			tasks: [
+				{
+					id: "1A7C0380F0D88EFE"
+					type: "item"
+					item: "undergarden:gloomgourd_pie"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d8d7ea25fcf6db06c79841a9.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f3f4f507c65e840b3d71dda2.png width:240 height:120 align:center}"
+				"遇混合物先绕行。黯瓜与水生材料可做致毒免疫食物。"
+				"收深暗豆、黯瓜等补给。注意靛蓝炖菜夜视伴缓慢、墨黑炖菜抗性伴失明。"
+				"按效果选补给，不强迫吃所有食物。"
+				"矿物与石生灵贸易并行。"
+			]
+		}
+		{
+			id: "5DF8EDF19D9CF5C6"
+			title: "融并金属与装备"
+			icon: "undergarden:cloggrum_pickaxe"
+			x: -1.8d
+			y: 0.0d
+			optional: true
+			tasks: [
+				{
+					id: "1AD0D92572781482"
+					type: "item"
+					item: "undergarden:cloggrum_pickaxe"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e14648e0692182d78beb1936.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/e62436da256156fcebee375e.png width:240 height:120 align:center}"
+				"寻找融并矿。霜钢主要寒冷群系，贵豪水晶用于交易。"
+				"采矿冶炼做融并装备，鞋的黏浆免疫和霜钢减速效果分别评估。"
+				"遗忆升级的基础工具。"
+			]
+		}
+		{
+			id: "5636484D8E227AE3"
+			title: "御腐水晶路线独立推进"
+			icon: "undergarden:utherium_crystal"
+			x: -1.8d
+			y: -2.16d
+			optional: true
+			tasks: [
+				{
+					id: "67CBBC4F983C7D2C"
+					type: "item"
+					item: "undergarden:utherium_crystal"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/dc2beb2ed701536b54443ab6.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/cb3b9a063877a4d07b8e3c79.png width:240 height:120 align:center}"
+				"腐生敌人掉御腐破片，矿物也是来源。"
+				"用破片加工水晶，选择对腐生生物有用的装备。"
+				"并行装备路线。"
+				"地下墓穴探索不要求先全套。"
+			]
+		}
+		{
+			id: "409A7223C28B75D5"
+			title: "用贵豪水晶与石生灵交易"
+			icon: "undergarden:regalium_crystal"
+			x: -2.25d
+			y: 2.16d
+			optional: true
+			tasks: [
+				{
+					id: "3F3EC051C9ACDC12"
+					type: "advancement"
+					advancement: "undergarden:undergarden/stoneborn_trade"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/80fea82d5d9a002a8105d6a0.png width:32 height:32 align:center}"
+				"贵豪水晶与石生灵。"
+				"完成交易。"
+				"交易产物与融并战斧等路线。"
+				"与地下墓穴和材料升级并行。"
+			]
+		}
+		{
+			id: "01B82025C25C6156"
+			title: "地下墓穴的遗忆守卫"
+			icon: "undergarden:forgotten_block"
+			x: 1.08d
+			y: 2.88d
+			optional: false
+			tasks: [
+				{
+					id: "1618163F37BAED18"
+					type: "advancement"
+					advancement: "undergarden:undergarden/kill_forgotten_guardian"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4bf1f5dfa54857ade9078c33.png width:32 height:32 align:center}"
+				"找到地下墓穴，准备能安全处理高伤近战的装备。"
+				"击败守卫并由玩家完成掉落条件，收遗忆粒。"
+				"表产4–16遗忆粒。不是无条件自动奖励。"
+				"9粒合锭，再寻找升级模板。"
+			]
+		}
+		{
+			id: "544B7D0C7EE32271"
+			title: "九粒合一遗忆锭"
+			icon: "undergarden:forgotten_ingot"
+			x: 3.96d
+			y: 2.88d
+			optional: false
+			tasks: [
+				{
+					id: "58807E4B815CEB9C"
+					type: "item"
+					item: "undergarden:forgotten_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f87e0a91a9b312040ac0dba4.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/5123177c77cdf6113669846d.png width:240 height:120 align:center}"
+				"9遗忆粒。块分解也是已有替代。"
+				"合成锭，按锻造配方补齐模板与融并工具。"
+				"明确升级材料。"
+			]
+		}
+		{
+			id: "426A129224E7E319"
+			title: "用模板升级遗忆镐"
+			icon: "undergarden:forgotten_pickaxe"
+			x: 6.84d
+			y: 0.0d
+			optional: true
+			tasks: [
+				{
+					id: "6156D6C8E701A077"
+					type: "item"
+					item: "undergarden:forgotten_pickaxe"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f801cfe51c1eaed5ec9655e8.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/675398359b4573db7caa269c.png width:232 height:72 align:center}"
+				"遗忆升级模板＋融并镐＋遗忆锭＋锻造台。"
+				"完成smithing_transform。模板也会消耗，工具被转换。"
+				"遗忆镐。"
+			]
+		}
+		{
+			id: "279F9F3C1DF9A196"
+			title: "选修工具：弹弓与不同弹种"
+			icon: "undergarden:depthrock_pebble"
+			x: -1.8d
+			y: 4.32d
+			optional: true
+			tasks: [
+				{
+					id: "58292F4316885F0C"
+					type: "advancement"
+					advancement: "undergarden:undergarden/shoot_slingshot"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/12de238f4379daa9a8e5bd46.png width:32 height:32 align:center}"
+				"渊邃弹弓及可用弹药。"
+				"用卵石作基础投射。"
+				"一次真实射击检测。爆炸弹种只在隔离环境试验。"
+				"非强制墓穴武器，无新的Boss/科技资格。"
+			]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:5df8edf19d9cf5c6" "a:63adc29e-2850-54bb-85b5-d1103efb65f9"]
+		}
+		{
+			nodes: ["a:63adc29e-2850-54bb-85b5-d1103efb65f9" "a:6ba59ed5-e708-5d32-9caa-21bf27f387c6"]
+		}
+		{
+			nodes: ["a:6ba59ed5-e708-5d32-9caa-21bf27f387c6" "q:426a129224e7e319"]
+		}
+		{
+			nodes: ["q:544b7d0c7ee32271" "q:426a129224e7e319"]
+		}
+		{
+			nodes: ["q:7b510a34a8c583a2" "q:663e187af9378e3e"]
+		}
+		{
+			nodes: ["q:663e187af9378e3e" "a:dd012224-cbfb-52f2-b0ae-1a9fa9c3c73c"]
+		}
+		{
+			nodes: ["a:dd012224-cbfb-52f2-b0ae-1a9fa9c3c73c" "a:0215d5cc-56a2-56f7-b32d-54a0c06f8328"]
+		}
+		{
+			nodes: ["a:0215d5cc-56a2-56f7-b32d-54a0c06f8328" "q:279f9f3c1df9a196"]
+		}
+		{
+			nodes: ["q:663e187af9378e3e" "q:2ade3f2fdc13253d"]
+		}
+		{
+			nodes: ["q:663e187af9378e3e" "a:891026f0-93a0-5b90-8fb9-12e4d1d412b5"]
+		}
+		{
+			nodes: ["a:891026f0-93a0-5b90-8fb9-12e4d1d412b5" "a:0ef7bc2f-0422-5f67-ae49-051f14612af5"]
+		}
+		{
+			nodes: ["a:0ef7bc2f-0422-5f67-ae49-051f14612af5" "q:5df8edf19d9cf5c6"]
+		}
+		{
+			nodes: ["q:663e187af9378e3e" "a:308a8efc-e312-531d-9a55-8d223cb7de4e"]
+		}
+		{
+			nodes: ["a:308a8efc-e312-531d-9a55-8d223cb7de4e" "a:f6f76185-2f10-5ebb-a7ad-cc48969e45b2"]
+		}
+		{
+			nodes: ["a:f6f76185-2f10-5ebb-a7ad-cc48969e45b2" "q:5636484d8e227ae3"]
+		}
+		{
+			nodes: ["q:663e187af9378e3e" "a:ff54fad8-de61-5122-871d-117a9dc66f0e"]
+		}
+		{
+			nodes: ["a:ff54fad8-de61-5122-871d-117a9dc66f0e" "a:1c68d7a4-3ad9-50ee-9c11-2921f9e802d8"]
+		}
+		{
+			nodes: ["a:1c68d7a4-3ad9-50ee-9c11-2921f9e802d8" "q:409a7223c28b75d5"]
+		}
+		{
+			nodes: ["q:663e187af9378e3e" "a:f1542e5c-744b-50d0-aa76-c489d601cb97"]
+		}
+		{
+			nodes: ["a:f1542e5c-744b-50d0-aa76-c489d601cb97" "a:03d2514c-c371-5fdc-969b-04c92485dcdd"]
+		}
+		{
+			nodes: ["a:03d2514c-c371-5fdc-969b-04c92485dcdd" "q:1b82025c25c6156"]
+		}
+		{
+			nodes: ["q:1b82025c25c6156" "q:544b7d0c7ee32271"]
+		}
+	]
+	images: [
+		{
+			x: -3.72d
+			y: 0.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:891026f0-93a0-5b90-8fb9-12e4d1d412b5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.76d
+			y: 0.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0ef7bc2f-0422-5f67-ae49-051f14612af5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.72d
+			y: -0.72d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:308a8efc-e312-531d-9a55-8d223cb7de4e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.76d
+			y: -1.44d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f6f76185-2f10-5ebb-a7ad-cc48969e45b2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.87d
+			y: 0.72d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ff54fad8-de61-5122-871d-117a9dc66f0e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.06d
+			y: 1.44d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1c68d7a4-3ad9-50ee-9c11-2921f9e802d8"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.76d
+			y: 0.96d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f1542e5c-744b-50d0-aa76-c489d601cb97"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.84d
+			y: 1.92d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:03d2514c-c371-5fdc-969b-04c92485dcdd"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.72d
+			y: 1.44d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:dd012224-cbfb-52f2-b0ae-1a9fa9c3c73c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.76d
+			y: 2.88d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0215d5cc-56a2-56f7-b32d-54a0c06f8328"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.08d
+			y: 0.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:63adc29e-2850-54bb-85b5-d1103efb65f9"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.96d
+			y: 0.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6ba59ed5-e708-5d32-9caa-21bf27f387c6"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

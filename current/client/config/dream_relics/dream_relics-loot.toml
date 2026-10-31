@@ -1,0 +1,235 @@
+#Spawn chance for Astral Necklace in bastion treasure chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+AstralNecklaceChance = 0.015
+#Spawn count for Astral Necklace
+#Range: 1 ~ 64
+AstralNecklaceMinCount = 1
+#Spawn count for Astral Necklace
+#Range: 1 ~ 64
+AstralNecklaceMaxCount = 1
+#Spawn chance for Dream Totem in woodland mansion chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+DreamTotemChance = 0.015
+#Spawn count for Dream Totem
+#Range: 1 ~ 64
+DreamTotemMinCount = 1
+#Spawn count for Dream Totem
+#Range: 1 ~ 64
+DreamTotemMaxCount = 1
+#Spawn chance for Ocean Current Blessing in buried treasure chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+OceanCurrentBlessingChance = 0.015
+#Spawn count for Ocean Current Blessing
+#Range: 1 ~ 64
+OceanCurrentBlessingMinCount = 1
+#Spawn count for Ocean Current Blessing
+#Range: 1 ~ 64
+OceanCurrentBlessingMaxCount = 1
+#Spawn chance for Dark Whisper Ring in ancient city chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+darkWhisperRingChance = 0.09
+#Spawn count for Dark Whisper Ring
+#Range: 1 ~ 64
+darkWhisperRingMinCount = 1
+#Spawn count for Dark Whisper Ring
+#Range: 1 ~ 64
+darkWhisperRingMaxCount = 1
+#Spawn chance for Void Necklace in ancient city chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+voidNecklaceChance = 0.09
+#Spawn count for Void Necklace
+#Range: 1 ~ 64
+voidNecklaceMinCount = 1
+#Spawn count for Void Necklace
+#Range: 1 ~ 64
+voidNecklaceMaxCount = 1
+#Spawn chance for Mist Veil Ring in ancient city chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+mistVeilRingChance = 0.09
+#Spawn count for Mist Veil Ring
+#Range: 1 ~ 64
+mistVeilRingMinCount = 1
+#Spawn count for Mist Veil Ring
+#Range: 1 ~ 64
+mistVeilRingMaxCount = 1
+#Spawn chance for Echo Earring in ancient city chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+echoEarringChance = 0.09
+#Spawn count for Echo Earring
+#Range: 1 ~ 64
+echoEarringMinCount = 1
+#Spawn count for Echo Earring
+#Range: 1 ~ 64
+echoEarringMaxCount = 1
+#Spawn chance for Past Ring in ancient city chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+pastRingChance = 0.09
+#Spawn count for Past Ring
+#Range: 1 ~ 64
+pastRingMinCount = 1
+#Spawn count for Past Ring
+#Range: 1 ~ 64
+pastRingMaxCount = 1
+#Spawn chance for Memory Necklace in ancient city chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+memoryNecklaceChance = 0.09
+#Spawn count for Memory Necklace
+#Range: 1 ~ 64
+memoryNecklaceMinCount = 1
+#Spawn count for Memory Necklace
+#Range: 1 ~ 64
+memoryNecklaceMaxCount = 1
+#Spawn chance for Moment Stone in end city treasure chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+momentStoneChance = 0.075
+#Spawn count for Moment Stone
+#Range: 1 ~ 64
+momentStoneMinCount = 1
+#Spawn count for Moment Stone
+#Range: 1 ~ 64
+momentStoneMaxCount = 1
+#Spawn chance for Heart Voice Pendant in end city treasure chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+heartVoicePendantChance = 0.075
+#Spawn count for Heart Voice Pendant
+#Range: 1 ~ 64
+heartVoicePendantMinCount = 1
+#Spawn count for Heart Voice Pendant
+#Range: 1 ~ 64
+heartVoicePendantMaxCount = 1
+#Spawn chance for Memory Stardust in end city treasure chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+memoryStardustChance = 0.075
+#Spawn count for Memory Stardust
+#Range: 1 ~ 64
+memoryStardustMinCount = 1
+#Spawn count for Memory Stardust
+#Range: 1 ~ 64
+memoryStardustMaxCount = 1
+#Spawn chance for Time Hourglass in end city treasure chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+timeHourglassChance = 0.075
+#Spawn count for Time Hourglass
+#Range: 1 ~ 64
+timeHourglassMinCount = 1
+#Spawn count for Time Hourglass
+#Range: 1 ~ 64
+timeHourglassMaxCount = 1
+#Spawn chance for Tassel Ring in end city treasure chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+tasselRingChance = 0.075
+#Spawn count for Tassel Ring
+#Range: 1 ~ 64
+tasselRingMinCount = 1
+#Spawn count for Tassel Ring
+#Range: 1 ~ 64
+tasselRingMaxCount = 1
+#Spawn chance for Observe Self Eye in abandoned mineshaft chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+observeSelfEyeChance = 0.03
+#Spawn count for Observe Self Eye
+#Range: 1 ~ 64
+observeSelfEyeMinCount = 1
+#Spawn count for Observe Self Eye
+#Range: 1 ~ 64
+observeSelfEyeMaxCount = 1
+#Spawn chance for Royal Crown in abandoned mineshaft chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+royalCrownChance = 0.03
+#Spawn count for Royal Crown
+#Range: 1 ~ 64
+royalCrownMinCount = 1
+#Spawn count for Royal Crown
+#Range: 1 ~ 64
+royalCrownMaxCount = 1
+#Spawn chance for Pure Holy Grail in desert pyramid chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+pureHolyGrailChance = 0.03
+#Spawn count for Pure Holy Grail
+#Range: 1 ~ 64
+pureHolyGrailMinCount = 1
+#Spawn count for Pure Holy Grail
+#Range: 1 ~ 64
+pureHolyGrailMaxCount = 1
+#Spawn chance for Elven Boots in desert pyramid chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+elvenBootsChance = 0.03
+#Spawn count for Elven Boots
+#Range: 1 ~ 64
+elvenBootsMinCount = 1
+#Spawn count for Elven Boots
+#Range: 1 ~ 64
+elvenBootsMaxCount = 1
+#Spawn chance for Dream Balance in bastion hoglin stable chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+dreamBalanceChance = 0.045
+#Spawn count for Dream Balance
+#Range: 1 ~ 64
+dreamBalanceMinCount = 1
+#Spawn count for Dream Balance
+#Range: 1 ~ 64
+dreamBalanceMaxCount = 1
+#Spawn chance for Years Amber in bastion hoglin stable chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+yearsAmberChance = 0.045
+#Spawn count for Years Amber
+#Range: 1 ~ 64
+yearsAmberMinCount = 1
+#Spawn count for Years Amber
+#Range: 1 ~ 64
+yearsAmberMaxCount = 1
+#Spawn chance for Icarus Wings in bastion hoglin stable chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+icarusWingsChance = 0.045
+#Spawn count for Icarus Wings
+#Range: 1 ~ 64
+icarusWingsMinCount = 1
+#Spawn count for Icarus Wings
+#Range: 1 ~ 64
+icarusWingsMaxCount = 1
+#Spawn chance for Endless Dream in pillager outpost chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+endlessDreamChance = 0.03
+#Spawn count for Endless Dream
+#Range: 1 ~ 64
+endlessDreamMinCount = 1
+#Spawn count for Endless Dream
+#Range: 1 ~ 64
+endlessDreamMaxCount = 1
+#Spawn chance for Awaken Dream Bracelet in pillager outpost chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+awakenDreamBraceletChance = 0.03
+#Spawn count for Awaken Dream Bracelet
+#Range: 1 ~ 64
+awakenDreamBraceletMinCount = 1
+#Spawn count for Awaken Dream Bracelet
+#Range: 1 ~ 64
+awakenDreamBraceletMaxCount = 1
+#Spawn chance for Royal Lens in ruined portal chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+royalLensChance = 0.01
+#Spawn count for Royal Lens
+#Range: 1 ~ 64
+royalLensMinCount = 1
+#Spawn count for Royal Lens
+#Range: 1 ~ 64
+royalLensMaxCount = 1
+#Spawn chance for Rare Gold Bracelet in villager toolsmith chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+rareGoldBraceletChance = 0.01
+#Spawn count for Rare Gold Bracelet
+#Range: 1 ~ 64
+rareGoldBraceletMinCount = 1
+#Spawn count for Rare Gold Bracelet
+#Range: 1 ~ 64
+rareGoldBraceletMaxCount = 1
+#Spawn chance for Nightmare Book in stronghold library chests (0.0 - 1.0)
+#Range: 0.0 ~ 1.0
+NightmareBookChance = 0.05
+#Spawn count for Nightmare Book
+#Range: 1 ~ 64
+NightmareBookMinCount = 1
+#Spawn count for Nightmare Book
+#Range: 1 ~ 64
+NightmareBookMaxCount = 1
+

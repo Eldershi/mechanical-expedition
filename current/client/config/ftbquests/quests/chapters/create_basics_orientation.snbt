@@ -1,0 +1,2105 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "create_basics_orientation"
+	group: "050255AE19A93344"
+	icon: "create:andesite_alloy"
+	id: "447F1A0F479DB44E"
+	order_index: 10
+	progression_mode: "flexible"
+	title: "巧械奇工"
+	quests: [
+		{
+			id: "7B0B079E71A7815D"
+			icon: "create:andesite_alloy"
+			tasks: [
+				{
+					consume_items: false
+					id: "1E1D0C0D48CED9FA"
+					item: "create:andesite_alloy"
+					only_from_crafting: false
+					title: "获得安山合金"
+					type: "item"
+				}
+			]
+			title: "安山合金"
+			x: 0.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["准备一批安山合金，用它制作第一套传动件和机壳。安山岩配铁粒或锌粒，放进合成格即可。" "先为几台小机器留出一块工作区；后面从一根主轴分出支线，比把所有设备挤在一起更容易扩建。"]
+			quest_enhance_disable_scroll_paging: false
+		}
+		{
+			id: "5DB94B0E88971059"
+			icon: "create:shaft"
+			tasks: [
+				{
+					consume_items: false
+					id: "1851027EB9A92AC9"
+					item: "create:shaft"
+					only_from_crafting: false
+					title: "获得传动杆"
+					type: "item"
+				}
+			]
+			title: "传动杆"
+			x: 3.0d
+			y: -2.4d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["传动杆沿轴向把旋转送到机器。先用一小段直轴接出动力，再根据工位的位置转弯或分支。" "传动杆只传递动力，不增加应力容量。两路不同转速或转向的动力不能直接硬接。"]
+			quest_enhance_disable_scroll_paging: false
+			dependencies: ["7B0B079E71A7815D"]
+		}
+		{
+			id: "65FB9682D33AB2C3"
+			icon: "create:andesite_casing"
+			tasks: [
+				{
+					consume_items: false
+					id: "7E484EB91C1BC47C"
+					item: "create:andesite_casing"
+					only_from_crafting: false
+					title: "获得安山机壳"
+					type: "item"
+				}
+			]
+			title: "安山机壳"
+			x: 3.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["把安山合金用在放置好的去皮原木上，制成安山机壳。它是这批基础加工设备的共同底座。" "先按需要制作冲压机、石磨或搅拌器；暂时用不到的设备可以留到产线扩建时再做。"]
+			quest_enhance_disable_scroll_paging: false
+			dependencies: ["7B0B079E71A7815D"]
+		}
+		{
+			id: "30BB193710125708"
+			icon: "create:copper_casing"
+			tasks: [
+				{
+					consume_items: false
+					id: "6EC83281CABE8F61"
+					item: "create:copper_casing"
+					only_from_crafting: false
+					title: "获得铜机壳"
+					type: "item"
+				}
+			]
+			title: "铜机壳"
+			x: 3.0d
+			y: 3.6d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["把铜锭用在放置好的去皮原木上，准备铜机壳。它用于注液器、分液池等流体设备。" "先把基础加工工位运转起来，再分出空间搭储罐和管路。"]
+			quest_enhance_disable_scroll_paging: false
+		}
+		{
+			id: "29B5173A5031DFE1"
+			icon: "create:hand_crank"
+			tasks: [
+				{
+					consume_items: false
+					id: "369AB0F0EB76557B"
+					item: "create:hand_crank"
+					only_from_crafting: false
+					title: "获得手摇曲柄"
+					type: "item"
+				}
+			]
+			title: "手摇起步"
+			x: 6.0d
+			y: -2.4d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["把手摇曲柄接在轴端，手动给小工位供能。它适合试机和少量加工；连续生产可以改用水车或风车。" "转不动时先减少负载，确认轴向和机器的动力接口。"]
+			quest_enhance_disable_scroll_paging: false
+			optional: true
+		}
+		{
+			id: "3C0472E8E366E8A1"
+			icon: "create:water_wheel"
+			tasks: [
+				{
+					id: "299A5493CB250872"
+					type: "item"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "普通水车或大型水车"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "create:water_wheel"
+									Count: 1b
+								}
+								{
+									id: "create:large_water_wheel"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			title: "水力动力"
+			x: 6.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["在流水中架好水车，从中心轴端取出动力。普通水车和大型水车按场地选择，不必两种都造。" "先带动一台机器确认转向，再逐步接入其他工位。大型水车需要更大的空间，输出转速也不同；需要提速时使用齿轮。"]
+			quest_enhance_disable_scroll_paging: false
+			optional: true
+		}
+		{
+			id: "6FFBF0F935B8462D"
+			icon: "create:windmill_bearing"
+			tasks: [
+				{
+					id: "2F3B6DE27A37F591"
+					type: "item"
+					item: "create:windmill_bearing"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "获得风车轴承"
+				}
+				{
+					id: "668CFF4A21BE8AB8"
+					type: "item"
+					item: "create:white_sail"
+					count: 8
+					consume_items: false
+					only_from_crafting: false
+					title: "准备至少八片风帆"
+				}
+			]
+			title: "风力动力"
+			x: 6.0d
+			y: 2.4d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["在风车轴承正面搭好骨架，用强力胶连接至少八片有效风帆，再右击轴承组装。从轴承背后接轴取力。" "空风帆框架不提供风力。水车与风车可以按地形选用；增加有效风帆能提高风车的转速与应力容量。"]
+			quest_enhance_disable_scroll_paging: false
+			optional: true
+		}
+		{
+			id: "4139BB56489572FB"
+			icon: "create:cogwheel"
+			tasks: [
+				{
+					id: "31BDB49CF4A1B0A9"
+					type: "item"
+					item: "create:cogwheel"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "获得小齿轮"
+				}
+				{
+					id: "5188151CDCE72298"
+					type: "item"
+					item: "create:large_cogwheel"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "获得大齿轮"
+				}
+			]
+			title: "齿轮与变速"
+			x: 9.0d
+			y: -2.4d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["把大小齿轮啮合，让动力转向或按2∶1变速。从大齿轮带小齿轮可以增速，反过来则减速。" "增速会提高机器的应力消耗。先留一条低速主轴，再给搅拌器等设备单独增速。"]
+			quest_enhance_disable_scroll_paging: false
+		}
+		{
+			id: "517A0335DF1B2EC9"
+			icon: "create:gearbox"
+			tasks: [
+				{
+					id: "7F852F5CED924054"
+					type: "item"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "选择一种换向或启停部件"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "create:gearbox"
+									Count: 1b
+								}
+								{
+									id: "create:clutch"
+									Count: 1b
+								}
+								{
+									id: "create:gearshift"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			title: "换向与启停"
+			x: 9.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["按线路需要选择传动件：十字齿轮箱用来转向、分流；离合器接收红石信号后断开动力；反转齿轮箱用信号切换转向。" "把需要单独停机的工位接在离合器后方，方便检修和扩建。"]
+			quest_enhance_disable_scroll_paging: false
+			optional: true
+		}
+		{
+			id: "26A8FB41B526ED2C"
+			icon: "create:speedometer"
+			tasks: [
+				{
+					id: "4CDCC843E9E83151"
+					type: "item"
+					item: "create:speedometer"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "获得转速表"
+				}
+				{
+					id: "375B9377C9D07099"
+					type: "item"
+					item: "create:stressometer"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "获得应力表"
+				}
+			]
+			title: "转速与应力"
+			x: 9.0d
+			y: 2.4d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["转速表看RPM，应力表看负载与容量。把它们接进机器所在的同一动力网络，先空载读数，再接入负载比较。" "超载时增加动力源、减少机器或降低转速。传动件不会凭空增加容量；戴上工程师护目镜还能查看具体数值。"]
+			quest_enhance_disable_scroll_paging: false
+			optional: true
+		}
+		{
+			id: "781426E7D2E4BF24"
+			icon: "create:wrench"
+			tasks: [
+				{
+					id: "72056D02A06D2D16"
+					type: "item"
+					item: "create:wrench"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "获得扳手"
+				}
+				{
+					id: "36015A7B38A89A37"
+					type: "item"
+					item: "create:goggles"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "获得工程师护目镜"
+				}
+			]
+			title: "调试工具"
+			x: 9.0d
+			y: 4.8d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["扳手用来调整朝向、拆卸和回收设备；工程师护目镜用来检查转速、应力和机器状态。把它们放在随手能拿到的位置。" "制作时准备金板。板材可用矿锤或冲压机加工，按手头条件选择。"]
+			quest_enhance_disable_scroll_paging: false
+			optional: true
+		}
+		{
+			id: "1127ABEB0B41641F"
+			icon: "create:depot"
+			tasks: [
+				{
+					consume_items: false
+					id: "33A394DEC1FF514B"
+					item: "create:depot"
+					only_from_crafting: false
+					title: "获得置物台"
+					type: "item"
+				}
+			]
+			title: "承接与投料"
+			x: 12.0d
+			y: -3.6d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["置物台用来承接物品，搭配冲压机、鼓风机或注液器形成小工位。先手动投入一份原料，确认成品能取出，再接自动供料。"]
+			quest_enhance_disable_scroll_paging: false
+		}
+		{
+			id: "34EDF40537E8BAAA"
+			icon: "create:mechanical_press"
+			tasks: [
+				{
+					consume_items: false
+					id: "0D3F3A605729EE33"
+					item: "create:mechanical_press"
+					only_from_crafting: false
+					title: "获得动力冲压机"
+					type: "item"
+				}
+			]
+			title: "冲压工位"
+			x: 12.0d
+			y: -1.8d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["接入动力，在冲压机下方隔一格放置置物台，投入金属锭，完成一次压板。后面再补漏斗或传送带收料。" "铁板、金板和铜板按设备需求加工即可。把冲压机换到工作盆上方，还能处理相应压块配方。"]
+			quest_enhance_disable_scroll_paging: false
+		}
+		{
+			id: "36F26DB3CB4221E7"
+			icon: "create:millstone"
+			tasks: [
+				{
+					consume_items: false
+					id: "5313B8F2E746E24A"
+					item: "create:millstone"
+					only_from_crafting: false
+					title: "获得石磨"
+					type: "item"
+				}
+			]
+			title: "研磨工位"
+			x: 12.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["给石磨接上动力，从上方投入一份可研磨的原料，取出产物，先跑通一次完整加工。" "石磨可以从侧面或底部取料。扩建时把原料供给和产物收集分开，避免产物堵住机器。"]
+			quest_enhance_disable_scroll_paging: false
+		}
+		{
+			id: "19E13C72CA1A201C"
+			icon: "create:mechanical_mixer"
+			tasks: [
+				{
+					id: "190E3B8A9F473327"
+					type: "item"
+					item: "create:mechanical_mixer"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "获得动力搅拌器"
+				}
+				{
+					id: "4879A181DE1A0176"
+					type: "item"
+					item: "create:basin"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "获得工作盆"
+				}
+			]
+			title: "搅拌工位"
+			x: 12.0d
+			y: 1.8d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["把工作盆放在搅拌器正下方隔一格处，从搅拌器侧面齿轮输入动力。投入一份配方材料，观察搅拌头下降并完成加工。" "转速至少达到30 RPM。普通水车可通过两次2∶1增速得到32 RPM；同时检查应力是否足够。" "需要加热的配方，在工作盆下方再放热源。常温配方可以先做，不必等待烈焰人燃烧室。"]
+			quest_enhance_disable_scroll_paging: false
+		}
+		{
+			id: "253FB5B5597C019A"
+			icon: "create:encased_fan"
+			tasks: [
+				{
+					consume_items: false
+					id: "616775F1FF4CB9F3"
+					item: "create:encased_fan"
+					only_from_crafting: false
+					title: "获得鼓风机"
+					type: "item"
+				}
+			]
+			title: "鼓风加工"
+			x: 12.0d
+			y: 3.6d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["让鼓风机的气流穿过水、熔岩或火，再吹向置物台上的材料，分别尝试洗涤、熔炼或烟熏。" "气流方向由转向决定。先手动放一份原料，检查处理介质、距离和加工结果，再接连续供料。"]
+			quest_enhance_disable_scroll_paging: false
+		}
+		{
+			id: "2BE74BD57BDA6F42"
+			icon: "create:fluid_pipe"
+			tasks: [
+				{
+					consume_items: false
+					id: "1EC5D28AA278C33D"
+					item: "create:fluid_pipe"
+					only_from_crafting: false
+					title: "获得流体管道"
+					type: "item"
+				}
+			]
+			title: "流体管道"
+			x: 15.0d
+			y: -3.6d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["用铜板和铜锭制作管道，把水源、泵和储罐连成一条清楚的线路。先输送一种流体，留出观察和检修空间。" "管道负责连接，抽送需要动力泵。板材可以在刚搭好的冲压工位制作，也可使用其他压板方式。"]
+			quest_enhance_disable_scroll_paging: false
+		}
+		{
+			id: "644FCBA0DA493930"
+			icon: "create:mechanical_pump"
+			tasks: [
+				{
+					consume_items: false
+					id: "6D017415C8A5223C"
+					item: "create:mechanical_pump"
+					only_from_crafting: false
+					title: "获得动力泵"
+					type: "item"
+				}
+			]
+			title: "动力泵"
+			x: 15.0d
+			y: -1.8d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["把动力泵接入管路并从侧面齿轮供能。观察箭头，确认流体从水源流向储罐；需要反向时调整转向。" "先让水车或风车带泵，再给锅炉供水。启动锅炉时保留这路独立动力，避免水泵等锅炉、锅炉又等水泵。"]
+			quest_enhance_disable_scroll_paging: false
+			dependencies: ["2BE74BD57BDA6F42"]
+		}
+		{
+			id: "54A1972FED2740CE"
+			icon: "create:fluid_tank"
+			tasks: [
+				{
+					consume_items: false
+					id: "5AF04381F2E0B539"
+					item: "create:fluid_tank"
+					only_from_crafting: false
+					title: "获得流体储罐"
+					type: "item"
+				}
+			]
+			title: "流体储罐"
+			x: 15.0d
+			y: 0.0d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["把储罐接在管路末端，实际泵入并保存一批水。普通储罐一次容纳一种流体，相邻罐体可以组成更大的多方块储罐。" "为之后的锅炉留出至少四格储罐的位置，以及底部热源和侧面引擎的安装空间。"]
+			quest_enhance_disable_scroll_paging: false
+		}
+		{
+			id: "5FCDDB9C076DC15B"
+			icon: "create:spout"
+			tasks: [
+				{
+					id: "556B055036BC3B18"
+					type: "item"
+					item: "create:spout"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "获得注液器"
+				}
+				{
+					id: "6484DA2E954CEF92"
+					type: "item"
+					item: "create:item_drain"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "获得分液池"
+				}
+			]
+			title: "装液与倒液"
+			x: 15.0d
+			y: 1.8d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["注液器给下方物品灌液，分液池把容器里的流体倒进管路。把注液器接上储罐，在下方放置物台，试着完成一次装瓶或装桶。" "这条支线用于包装和回收流体，不是锅炉供水的必经步骤。"]
+			quest_enhance_disable_scroll_paging: false
+			optional: true
+		}
+		{
+			id: "597D501DEA7C7AD8"
+			icon: "create:blaze_burner"
+			tasks: [
+				{
+					id: "0114BC26F8F00710"
+					type: "item"
+					item: "create:blaze_burner"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+					title: "获得烈焰人燃烧室"
+				}
+			]
+			title: "持续供热"
+			x: 15.0d
+			y: 3.6d
+			size: 1.0d
+			shape: "rsquare"
+			description: ["把有烈焰人的燃烧室放在工作盆或锅炉底部，投入燃料，观察加热状态。普通燃料提供常规加热，超级加热需要烈焰蛋糕。" "可以用空燃烧室捕捉烈焰人，也可以用铁组件与下界组件直接制作装有烈焰人的燃烧室。锅炉也能使用其他有效热源；扩建时再提高供热能力。"]
+			quest_enhance_disable_scroll_paging: false
+			optional: true
+		}
+		{
+			id: "318D51AB35C97620"
+			icon: "create:steam_engine"
+			tasks: [
+				{
+					id: "1590EC98F8AEE298"
+					type: "checkmark"
+					title: "锅炉已稳定带动一台加工机器"
+				}
+			]
+			title: "蒸汽锅炉"
+			x: 18.0d
+			y: 0.0d
+			size: 1.35d
+			shape: "gear"
+			description: ["把供水、热源和动力输出汇到一起：用至少四格流体储罐组成锅炉，在底部供热，把蒸汽引擎装到罐体表面。手持传动杆点击引擎，接出输出轴。" "先用独立水车或风车带动水泵，等供水与热量稳定，再让引擎持续驱动一台加工机器。戴护目镜检查水、尺寸与热量，找出限制输出的那一项。" "蒸汽引擎需要蒸汽构件、引擎活塞、钢板和精密构件。到「汽鸣铁道」和「精智元件」准备这些部件，再完成铜机壳上的一轮序列组装。" "这座储罐锅炉从引擎直接输出旋转动力，不需要用蒸汽管道给引擎供汽。"]
+			quest_enhance_disable_scroll_paging: false
+			optional: true
+		}
+		{
+			id: "606FA53C3BDF1E0D"
+			title: "01 箱到箱输送"
+			icon: "create:belt_connector"
+			shape: "rsquare"
+			size: 1.3d
+			x: 0.0d
+			y: -14.0d
+			description: ["让产线实际运行，完成下列目标后勾选完成。" "目标：从置物台与动力冲压工位接出，用传送带、溜槽或漏斗完成输入箱→加工工位→成品箱的一次自动输送。" "验收：原料不会掉落，输出塞满时能安全停止或缓冲，清空后可恢复。先用简单路线，不要求动力臂或包裹网络。"]
+			tasks: [
+				{
+					id: "0EA69806F72D69EF"
+					type: "checkmark"
+					title: "已实建并通过验收"
+				}
+			]
+			dependencies: ["1127ABEB0B41641F" "34EDF40537E8BAAA"]
+		}
+		{
+			id: "7964DB7AABA449B8"
+			title: "02 筛选与缓冲"
+			icon: "create:brass_funnel"
+			shape: "rsquare"
+			size: 1.3d
+			x: 7.5d
+			y: -14.0d
+			description: ["让产线实际运行，完成下列目标后勾选完成。" "目标：给实际工位增加筛选与缓冲，区分原料、成品和余料；用数量控制、隧道分流或库存检测避免持续堆料。" "验收：投入混合物料时仍能送到正确出口；至少验证一次缺料和满仓。黄铜设备按当前材料路线制作，不能把所有物流都误判为必须先有精密构件。"]
+			tasks: [
+				{
+					id: "09587DAC42DFB408"
+					type: "checkmark"
+					title: "已实建并通过验收"
+				}
+			]
+			dependencies: ["606FA53C3BDF1E0D"]
+		}
+		{
+			id: "06BEF676271D1BEA"
+			title: "03 完成一份订单"
+			icon: "create:packager"
+			shape: "rsquare"
+			size: 1.3d
+			x: 15.0d
+			y: -14.0d
+			description: [
+				"让产线实际运行，完成下列目标后勾选完成。"
+				"目标：将仓库和一个需求工位接成小型包裹网络：配置库存链接、打包机和请求端，让一份真实订单从库存送到使用处并正确拆包。"
+				"验收：地址匹配，缺货能识别，物品没有在错误仓库循环；可再接蛙港/链式传输和工厂仪表。"
+				"打包机、库存链接、库存清单及工厂仪表在本包都有不消耗精密构件的路线。先查可用路线，不把动力臂当包裹网络的必要前提。"
+			]
+			tasks: [
+				{
+					id: "6CB54EF0E2A51792"
+					type: "checkmark"
+					title: "已实建并通过验收"
+				}
+			]
+			dependencies: ["7964DB7AABA449B8"]
+		}
+		{
+			id: "2389DC4A80BAFF36"
+			title: "04 精密工位供料"
+			icon: "create:mechanical_arm"
+			shape: "rsquare"
+			size: 1.3d
+			x: 22.5d
+			y: -14.0d
+			description: [
+				"让产线实际运行，完成下列目标后勾选完成。"
+				"目标：已有精密构件后，用动力臂给一个真实工位补料，配置输入与输出目标，并与现有筛选和缓冲衔接。"
+				"验收：连续运行几个周期，动力臂不会从错误容器取料或把产物送回输入；停机与缺料后可以恢复。"
+				"这一项明确需要精密构件；前面的基础运输和包裹订单可以先做，不必等动力臂。这是从精智元件的精密构件任务接入的高级供料分支，无需先做包裹订单。"
+			]
+			tasks: [
+				{
+					id: "3D8A6AD169A1EE97"
+					type: "checkmark"
+					title: "已实建并通过验收"
+				}
+			]
+			dependencies: ["1570B04A1D692BCC"]
+		}
+		{
+			id: "0738F717F3C0A84A"
+			title: "创造板条箱：仅用于创造测试"
+			icon: "create:creative_crate"
+			x: 13.1d
+			y: -16.25d
+			description: [
+				""
+				"创造板条箱是创造模式测试工具，能无限提供指定物品，适合离线规划后在测试世界验证产线吞吐；它不属于生存主线的仓储升级，也不要求玩家制作。"
+				"在创造模式放下板条箱，用目标物品设置其过滤槽，再接出料漏斗或其他物流元件。任意提取操作都会得到所标记的物品；需要换料时重新设置过滤。"
+				"向它输入的物品会被清除，因此验证产线输出时必须接普通容器。放在蓝图加农炮旁可提供蓝图所需材料，切勿把测试供应当成生存资源链的一部分。"
+				"本包魔改配方的消耗和产出应仍按 JEI 检查；无限供料只能测试设备连接，无法证明实际资源生产与构件前置已经完成。"
+			]
+			tasks: [
+				{
+					id: "58647F88B6203A50"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "7FEC7EEF79B9B476"
+			title: "包裹过滤器：按收货地址路由"
+			icon: "create:package_filter"
+			x: 13.1d
+			y: -11.75d
+			description: [
+				""
+				"包裹过滤器按地址筛选整个包裹，适合在传送带分岔处把订单送到不同车间。手持右击打开设置，填写要匹配的收货地址，再装进黄铜漏斗或隧道等设备的过滤槽。"
+				"出货打包机上的告示牌或订单目标决定包裹地址；过滤器只是决定包裹从哪条实体路线经过，不会直接把内容物传送到目的地。"
+				"分错线或完全不通时，先查看包裹实际写着的地址，再对照拼写、空格和过滤槽位置。需要筛选包裹内材料时应先拆包，再用列表或属性过滤器处理物品。"
+				"制作配方使用锌粒与羊毛。本包还有流体物流附属，规划路由时应把适用的包裹、拆包设备和最终机器配套核对，不能只看地址相同。"
+			]
+			tasks: [
+				{
+					id: "37B18CD732392E43"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "43CB36046D2287A4"
+			title: "打包机：装箱与拆包是同一台机器"
+			icon: "create:packager"
+			x: 15.0d
+			y: -16.25d
+			description: [
+				""
+				"打包机朝库存一面安装，用来把散装物品封成包裹，也把送来的包裹拆进所接库存。先靠箱子放好，用一次红石触发测试出箱；成品包裹仍需传送带、蛙港或列车运输。"
+				"将包裹送回另一台打包机，它会尝试完整拆入后方库存；空间不足以容纳整包时不会接收。给出货打包机放告示牌可写入收货地址，网络订单也能指定地址。"
+				"联网时再加仓储链接站，让订单按所需数量取货。卡包先检查朝向、库存空位、取走包裹的出口和目的地地址，不能把仓储链接当作物品传送。"
+				"CMI 配方需要安山构件、工业铁板、纸板块等；当前原生配方并行。魔改生产线要按实际配方配好一包的原料，再交给拆包工位。"
+			]
+			tasks: [
+				{
+					id: "0A363E8BE754E352"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "7CE507019D81CED5"
+			title: "理包机：把同一订单的分包合并"
+			icon: "create:repackager"
+			x: 15.0d
+			y: -11.75d
+			description: [
+				""
+				"一个订单从多个仓库发货时，可能拆成数个包裹。理包机把同一物流请求的分包重新合并，让需要整套原料的工位按可预测顺序收货，尤其适合共享动力合成工位。"
+				"先将各来源包裹汇入同一容器，把理包机对接该容器并用红石激活。等这一订单的分包全部抵达后，理包机会合并并输出，再把新包裹送到拆包机。"
+				"一直等候时，应沿原路检查欠缺的分包、源仓缺货、路由地址与目标库存；混入无关手工包裹不代表能凑成订单。只需普通拆包时仍用打包机。"
+				"制作配方可用打包机无序转换为理包机，反向也有转换。先确认 JEI 中选择的机器和工作用途，避免把唯一的出货打包机误换掉。"
+			]
+			tasks: [
+				{
+					id: "15C250C7868835C3"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "2BFA01A395355BE4"
+			title: "货物蛙港：接入锁链包裹路线"
+			icon: "create:package_frogport"
+			x: 16.9d
+			y: -16.25d
+			description: [
+				""
+				"货物蛙港把包裹挂上锁链，或从锁链取下寄给自己的包裹。放置前先右击已有锁链，随后在附近放下蛙港，使它绑定该段路线；打开界面给它分配地址。"
+				"下方可接容器，也可与打包机直接协作。寄往别处的包裹被挂上链路，地址匹配的包裹在目标蛙港取下；要先把锁链网络连通并提供旋转力。"
+				"包裹原地绕圈通常意味着没有可达目的地。依次核对收货地址、目标蛙港绑定和链路连接，用剪贴板收集地址可减少手工拼写差错。"
+				"CMI 路线需要安山构件、弹簧等材料，当前也有原生并行配方。蛙港负责包裹运输，不会自动替工厂计算魔改配方的需求数量。"
+			]
+			tasks: [
+				{
+					id: "74E717EBE3E64284"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "1E7CD67E358188AD"
+			title: "锁链传动轮：传动力与搬运包裹"
+			icon: "create:chain_conveyor"
+			x: 16.9d
+			y: -11.75d
+			description: [
+				""
+				"锁链传动轮建立空中链路，既能传递旋转力，也为蛙港运输包裹提供路径。先放多个传动轮，再用锁链依次右击两个轮把它们连接起来，最后从轮的上方或下方传动杆接入动力。"
+				"让链路穿过装卸点附近，并分别绑定货物蛙港。轮与链条提供运动，蛙港提供地址与取放；仅把箱子摆在链条旁并不会完成装卸。"
+				"链条不动先查接入的轴和应力，包裹绕圈则查目的地与路由。手持扳手右击还能沿锁链移动，分岔处朝向要进入的链条选择路线。"
+				"制作配方使用大齿轮与安山机壳，连接还需锁链材料。先估算场地和长度，再扩展网络，不要把链路当成无成本的无线仓储。"
+			]
+			tasks: [
+				{
+					id: "0C708AEC4ED1788A"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "4248FA019C8608AE"
+			title: "仓储链接站：建网、绑定和供货优先级"
+			icon: "create:stock_link"
+			x: 13.1d
+			y: -17.5d
+			description: [
+				""
+				"仓储链接站把打包机所接库存登记到一个订单网络。直接放置会建立新网络；想加入已有网络，必须在放置前手持链接站右击已有链接站完成绑定。"
+				"在各供货库存的打包机上安装已绑定的链接站，之后发报机、请求器和工厂仪表才可看到并请求这些库存。请求时由相应打包机把货物封成包裹。"
+				"网络信号范围无限，但物品仍要实体运输。红石越强，该供货端优先级越低；满强度信号会阻止链接站工作。看不到库存先查是否误建了独立网络。"
+				"本包木构件加发信器等的 CMI 配方仍在，另有原生并行配方。网络只管理库存与订单，不会替代魔改配方本身，也不负责处理机器中的半成品。"
+			]
+			tasks: [
+				{
+					id: "6B5C8DCF054F6643"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "6C07329BD48801E1"
+			title: "仓储发报机：从库存下订单"
+			icon: "create:stock_ticker"
+			x: 13.1d
+			y: -10.5d
+			description: [
+				""
+				"仓储发报机是人工订货入口。放置前手持它右击一个仓储链接站绑定网络，再放到工作区；让坐下的生物或烈焰人燃烧室担任仓库管理员，与管理员交互开始订货。"
+				"在订单里选择物品、数量和送达地址，提交后对应库存会按可用货物打包；包裹还要经既有物流送到该地址。右击发报机可编辑分类，过滤器可整理商品清单。"
+				"能看到库存却收不到货时，查出货打包机、目标地址和实体路线；库存看不到则查网络绑定及供货链接站。它不直接把散装物品取到玩家背包。"
+				"CMI 配方需要安山构件、金板、发信器与机壳，当前也有原生配方。魔改装配的订货数量应按每轮消耗计算，缺一项会使后续工位等待。"
+			]
+			tasks: [
+				{
+					id: "70277C9EE911127D"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "26F30514C79A5497"
+			title: "红石请求器：一个脉冲下一张订单"
+			icon: "create:redstone_requester"
+			x: 15.0d
+			y: -17.5d
+			description: [
+				""
+				"红石请求器将固定订单交给红石自动触发。放置前先手持它右击仓储链接站绑定网络，放下后右击打开配置，填写物品、数量和目标收货地址。"
+				"每次收到红石脉冲就请求界面里配置的一份订单，适合按按钮补料或按生产节拍叫料。它也可先与仓库管理员交互配置订单，再放到自动化位置。"
+				"反复触发会反复下单，控制电路应避免多余脉冲。没货时查网络绑定、库存、出货打包机及地址；请求成功仍需传送带、蛙港或列车把包裹送到。"
+				"CMI 路线需要安山构件、工业铁板等，已有原生并行配方。一个订单中的原料比例必须按当前魔改配方填写，机器不会自动识别你希望制作的构件。"
+			]
+			tasks: [
+				{
+					id: "5624D44A11326851"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "529FFA3815DC727B"
+			title: "工厂仪表：库存目标和生产补货"
+			icon: "create:factory_gauge"
+			x: 15.0d
+			y: -10.5d
+			description: [
+				""
+				"工厂仪表用库存目标驱动补货。放置前右击仓储链接站绑定网络，手持要监控的物品右击仪表，按住右键设置目标数量；它会显示该物品当前存量。"
+				"放在打包机上时，可监控相连库存并向指定地址请求补货；单独用于生产时，在界面连接原料仪表，填写每批投入、产出数量和加工地址。"
+				"产线输出必须送回已连接仓库，仪表才能看到补货结果并结束循环。缺货先查分包是否齐全、产物是否回仓；共享合成工位可用理包机避免混单。"
+				"CMI 配方与原生配方并行。仪表不读取本包所有魔改配方，投入和每批产出需按 JEI 实数配置；动力合成自动调配还限定有效 3×3 配方与连接正确的合成器。"
+			]
+			tasks: [
+				{
+					id: "2A6C38CA73AFCE81"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "1048D4E4553B7AB0"
+			title: "桌布：从物品展示到物流商店"
+			icon: "create:white_table_cloth"
+			x: 16.9d
+			y: -17.5d
+			description: [
+				""
+				"桌布可展示物品，也能把仓储网络包装成玩家商店。先准备商店库存、打包机和仓储链接站，绑定并放置仓储发报机，再让坐下的生物或烈焰人燃烧室担任店长。"
+				"把待售商品放入库存，手持桌布与店长交互建立交易，随后放下桌布，在侧面的物品槽设置价格。其他玩家结账后，商品会被打包并沿物流送到店面。"
+				"交付货物存入仓储发报机，因此商店还要有可用包裹路线和接收空间。只放桌布并不会自动开店；检查店长、网络绑定、库存与价格设置是否完整。"
+				"白色桌布由白羊毛与安山合金制作；各色桌布和金属桌面具有相同功能，可按商店外观选用。"
+			]
+			tasks: [
+				{
+					id: "05BD048C80B6F827"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "59E2812A3D26300A"
+			title: "显示链接器：把机器信息送到显示器"
+			icon: "create:display_link"
+			x: 16.9d
+			y: -10.5d
+			description: [
+				""
+				"先手持显示链接器右击目标显示器，再把链接器放到兼容的信息源方块上。打开设置选择要发送的数据和目标行。"
+				"不是所有方块都能当信息源。检查源方块类型、选定的数据以及目标空间；显示器本身若需旋转动力，也要单独供能。"
+				"外部红石信号可暂停发送，断开后会重新更新。它只传显示数据，不代替物流、能源线或红石远程控制。"
+			]
+			tasks: [
+				{
+					id: "4DD23A95A14B14C6"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "72B66EA2BD678527"
+			title: "翻牌显示器：显示动态文字"
+			icon: "create:display_board"
+			x: 13.1d
+			y: -18.75d
+			description: [
+				""
+				"把显示器拼成需要的尺寸，并接入旋转动力。它可通过写好的剪贴板设置静态文字，也能接收显示链接器的数据。"
+				"先用一行静态文字检查显示和动力，再接机器数据。可以给单行染色，空手交互可清除对应行。"
+				"没有内容时分别检查动力、数据源、目标行与显示范围。仅放一块显示链接器不会让无动力的翻牌板开始工作。"
+			]
+			tasks: [
+				{
+					id: "7400E57408FA7356"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "1B306E49C638B60E"
+			title: "辉光管：显示信号数值和文字"
+			icon: "create:nixie_tube"
+			x: 13.1d
+			y: -9.25d
+			description: [
+				""
+				"辉光管接入红石信号时可显示信号强度，也能通过剪贴板显示自定义文字。将它放在易读位置，作为仪表或控制台标记。"
+				"用染料改变显示颜色；成组布置时检查字符方向和排列。它不负责给动力系统增速，也不是储存红石状态的锁存器。"
+				"需要机器库存或楼层信息时，配合兼容的数据源和显示链接器。先测试单管显示，再扩展整排面板。"
+			]
+			tasks: [
+				{
+					id: "5FA92664B68E41F7"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 完成一份订单"
+		}
+		{
+			id: "3788741914EF7BE1"
+			title: "传送带：铺设、转向与运输"
+			icon: "create:belt_connector"
+			x: -1.9d
+			y: -16.25d
+			description: [
+				""
+				"传送带既输送物品，也把旋转力传到另一根轴。先放两根同向且位置合法的传动杆，手持传送带依次右击连接；选错时潜行右击取消。水平、斜向和竖向连接均可，单段范围为 2～20 格。"
+				"给其中一端接动力，用传动方向决定输送方向；竖直带适合传动，通常不用来承载物品。容器旁装漏斗，才会自动装卸；空手右击带上物品可取回。"
+				"不出货先查轴是否旋转、方向是否朝目标、漏斗是否装反，以及终点是否堵塞。传送带能被安山或黄铜机壳包覆。"
+				"本包保留硫化橡胶的 CMI 配方，也增加了当前版本原生干海带配方；查看 JEI 两条路线后选料，不必把基础传送带锁在构件后。"
+			]
+			tasks: [
+				{
+					id: "49C6562A18D7F158"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 箱到箱输送"
+		}
+		{
+			id: "78670F25606536D5"
+			title: "安山漏斗：把容器接入产线"
+			icon: "create:andesite_funnel"
+			x: -1.9d
+			y: -11.75d
+			description: [
+				""
+				"安山漏斗负责容器与传送带或开放空间之间的存取，是早期出料口。将它装在箱子、机器或置物台的合适一面；普通放置通常向外取出，潜行放置向内存入。"
+				"用扳手切换存取方向，再让传送带经过开口。带末端的漏斗会结合传送带方向决定存取；安山版本一次提取一个物品，不能用它设定筛选清单或批量数量。"
+				"通入红石会暂停。两个封闭箱子间直接挤入漏斗并不能代替管道，应加入传送带或溜槽；堵塞先查容器空位、带向和漏斗方向。"
+				"本包的安山合金板加硫化橡胶配方仍在，同时已补回原生配方。先用基础物流跑通，再按需求升级黄铜漏斗。"
+			]
+			tasks: [
+				{
+					id: "36CEDAE54ACEEC3D"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 箱到箱输送"
+		}
+		{
+			id: "6B3F3620C3A234F1"
+			title: "安山隧道：传送带遮罩与单件分流"
+			icon: "create:andesite_tunnel"
+			x: 0.0d
+			y: -16.25d
+			description: [
+				""
+				"安山隧道盖在传送带上，既能整理外观，也能将经过的物品堆从侧面分出一个物品。先铺好直行主带，再让侧带接到隧道开口，确认侧带把物品带离主线。"
+				"一堆物品通过时，侧面每次分走一个，其余继续前进；这适合简单补料，不等同于按任意比例均分。没有连出的侧面时，它只是遮住带面。"
+				"侧线不出料先查侧带方向与开口连接；主线被堵时也要检查支线是否有接收空间。需要按物品筛选或多路轮询时改用黄铜隧道。"
+				"本包合金板加硫化橡胶的 CMI 配方与已恢复的原生配方并行。安山隧道本身不用单独接动力，实际运输由下面的传送带完成。"
+			]
+			tasks: [
+				{
+					id: "065A0E16002A1FA6"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 箱到箱输送"
+		}
+		{
+			id: "53F588436978DB4D"
+			title: "溜槽：重力输送与鼓风提升"
+			icon: "create:chute"
+			x: 0.0d
+			y: -11.75d
+			description: [
+				""
+				"溜槽适合在上下容器之间传输物品，常见用法是箱子在上、机器在下，中间用溜槽贯通；默认靠重力向下走，不需要额外接轴。"
+				"对着另一个溜槽侧面放置可接出斜向段。用扳手切换观察窗，便于查看卡料；在竖直溜槽上方或下方配置鼓风机，可随风向改变物品运动方向。"
+				"向上输送失败时，戴护目镜确认风向与溜槽连通；末端被方块封死时，只能从侧面存取。普通溜槽不负责精细过滤，应由智能溜槽接管筛选。"
+				"CMI 配方使用工业铁板与木构件；已补回原生铁板路线。两套配方并行，基础垂直物流可以按现有材料选择较顺手的一套。"
+			]
+			tasks: [
+				{
+					id: "64B230568F2B36CD"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 箱到箱输送"
+		}
+		{
+			id: "059C895E78C68187"
+			title: "物品舱口：快速整理背包"
+			icon: "create:item_hatch"
+			x: 1.9d
+			y: -16.25d
+			description: [
+				""
+				"物品舱口装在容器表面，提供便捷的人工投料口，尤其适合保险库这类不能直接打开的仓储。先把舱口贴在目标库存上，确认它实际连到容器。"
+				"手持物品右击可存入该物品；潜行右击可以把背包中快捷栏以外的物品一起存入。整理前先把要保留的工具和材料放进快捷栏。"
+				"舱口用于手动存入，不会主动把库存送到下一台机器。投不进去先查目标空间、容器连接及物品限制；自动出料另接漏斗、溜槽或打包机。"
+				"本包保留安山合金板与工业铁板的 CMI 配方，同时恢复原生配方。流体舱口是附属模组的另一个方块，物品舱口不会代替它处理流体。"
+			]
+			tasks: [
+				{
+					id: "68EEC6574C30985C"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 箱到箱输送"
+		}
+		{
+			id: "0D6368C089A71571"
+			title: "黄铜漏斗：筛选与定量出料"
+			icon: "create:brass_funnel"
+			x: 5.6d
+			y: -16.25d
+			description: [
+				""
+				"黄铜漏斗沿用安山漏斗的存取规则，但能按过滤条件与数量控制出料，适合构件装配线和成品分拣。先把开口接到传送带或处理位置，再用扳手确认朝向。"
+				"手持参考物品点过滤槽，或者放入列表、属性过滤器；在数量面板按住右键并滚轮调整数量，分清“等于”和“最多”的含义。等量出料会等待库存凑齐。"
+				"漏斗不动时依次查红石锁定、过滤条件、要求数量与目标空位。用它做加工出口时过滤最终成品，避免把尚未完成的构件提前抽走。"
+				"CMI 路线需要安山漏斗、安山构件与黄铜板；当前另有原生并行配方。两条配方只影响制作成本，过滤和红石行为相同。"
+			]
+			tasks: [
+				{
+					id: "499628F2862716EC"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 筛选与缓冲"
+		}
+		{
+			id: "6F3DA42E3CAEC5BD"
+			title: "黄铜隧道：过滤分线与分配模式"
+			icon: "create:brass_tunnel"
+			x: 5.6d
+			y: -11.75d
+			description: [
+				""
+				"黄铜隧道用于把一条或多条传送带的物品分配到多个出口。将相邻平行带上的隧道连成组，再对各开口设置参考物品或过滤器；输入过滤负责拦截，输出过滤负责分拣。"
+				"用模式面板选择分流、轮询或最近优先。分流均分物品堆，轮询按整堆轮换出口；普通模式会跳过堵塞出口，强制模式会等候它恢复。"
+				"同步输入要求组内各带都有等待物品才一起放行。若整组停住，应查强制模式、同步输入和某个过滤出口堵塞，不能只盯着主带。"
+				"本包保留安山隧道加安山构件、黄铜板的升级配方，也有原生并行配方。先为各工序设成品过滤，再决定是否需要严格等比例供料。"
+			]
+			tasks: [
+				{
+					id: "688CE8BBFA991114"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 筛选与缓冲"
+		}
+		{
+			id: "7A6FC9EEEE0602B2"
+			title: "智能溜槽：垂直筛选和限量供料"
+			icon: "create:smart_chute"
+			x: 7.5d
+			y: -16.25d
+			description: [
+				""
+				"智能溜槽在垂直存取时增加过滤与数量控制，适合从混合库存向机器投放指定原料。把它放在上下容器之间，先确认普通溜槽布局能正确输送。"
+				"用参考物品或过滤器设置过滤槽，在数量面板指定所需数量；需要等待整批时使用等量条件，允许少量补料时使用最多数量。通入红石可暂停。"
+				"迟迟不下料时，检查过滤器是否为空白名单、库存是否凑齐、下方容器是否能接收。它是垂直控制元件，水平长距离输送仍应搭配传送带。"
+				"本包保留溜槽加安山构件、黄铜板的 CMI 升级配方，同时补回原生配方。数量限制用于分批投料，实际配方所需数量仍须查当前 JEI。"
+			]
+			tasks: [
+				{
+					id: "7B097B3D7DC63BF6"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 筛选与缓冲"
+		}
+		{
+			id: "3C9FBE78D9AC4799"
+			title: "弹射置物台：定量越障投送"
+			icon: "create:weighted_ejector"
+			x: 7.5d
+			y: -11.75d
+			description: [
+				""
+				"弹射置物台把一批物品投向指定位置，适合跨越通道或把主带原料分给侧线。放置前手持它潜行右击目标，随后在合法位置放下并接入旋转力蓄力。"
+				"目标与台面连线需要符合朝向；未设有效目标会默认投向前方一格。用数量面板设置每次弹射量；目标是容器时，它会等待有足够空间再发射。"
+				"不弹射先查是否蓄力、数量凑齐、目标有效及红石锁定。抛射路径应留空；玩家或生物站上去也会被弹出，建线时给通行区域留余地。"
+				"本包的置物台加安山构件配方与原生并行配方都可制作。用批量弹射给构件线供料前，先核对当前配方每循环的真实消耗。"
+			]
+			tasks: [
+				{
+					id: "6921F0F1C8E875CA"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 筛选与缓冲"
+		}
+		{
+			id: "11E1C581F4E3FD76"
+			title: "物品保险库：多方块集中仓储"
+			icon: "create:item_vault"
+			x: 9.4d
+			y: -16.25d
+			description: [
+				""
+				"物品保险库用于集中存放大量物品，沿同一轴连续摆放即可合并。截面最大为 3×3，长度至多是截面边长的三倍；建造时先保证方向一致，再逐层扩展。"
+				"它没有普通箱子的手动取放界面，要靠漏斗、溜槽、动力臂交接点等物流元件存取。想查看或调试，先做一个固定输入口和一个带过滤的输出口。"
+				"有空间却无法进料时，检查是否实际组成同一结构、输入方向及物品传输组件。列车里的保险库可运货，但其中的燃料不会被列车当作加速燃料消耗。"
+				"CMI 配方使用工业铁板和木构件；当前另有原生并行配方。仓储网络接入时，仍需打包机与仓储链接站，不会因为保险库较大就自动联网。"
+			]
+			tasks: [
+				{
+					id: "5AE1D16E05F364B1"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 筛选与缓冲"
+		}
+		{
+			id: "7C5FBB1B2747675C"
+			title: "列表过滤器：多物品白名单与黑名单"
+			icon: "create:filter"
+			x: 9.4d
+			y: -11.75d
+			description: [
+				""
+				"列表过滤器把多个物品条件合在一张清单里，放入黄铜漏斗、智能溜槽等设备的过滤槽后，设备才会执行这些规则。先手持过滤器右击打开界面，放入参考物品。"
+				"白名单只通过列出的物品，空白白名单会全部拦住；黑名单拒绝列出的物品，空白黑名单会允许全部。按需要选择是否比较耐久、附魔等物品数据。"
+				"设置完成后关闭界面，再将过滤器装到目标设备的过滤槽。分拣异常先确认名单模式与物品数据选项；过滤器本身不会搬运或消耗清单中的示例物品。"
+				"制作配方是铁粒与羊毛。魔改构件常有名字相近的半成品和成品，清单要用 JEI 中真正的目标物品，不能只凭显示名称判断。"
+			]
+			tasks: [
+				{
+					id: "3A751F782AAEF699"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 筛选与缓冲"
+		}
+		{
+			id: "22862FE2456EF52A"
+			title: "属性过滤器：按标签和性质分拣"
+			icon: "create:attribute_filter"
+			x: 5.6d
+			y: -17.5d
+			description: [
+				""
+				"属性过滤器按物品的标签、类别等性质匹配，适合把一类矿物或一组兼容材料交给同一条产线。手持右击打开配置，用参考物品查看可用属性，再把需要的条件加入列表。"
+				"全匹配白名单要求所有条件同时成立；任意匹配白名单满足一项即可；黑名单排除命中的属性。也可加入某项属性的相反条件，组合出更精确的范围。"
+				"将它放入设备过滤槽后，用一个应通过和一个应拒绝的样品检查结果。范围太宽会把不适配的材料混进机器，范围太窄则会让生产线一直等料。"
+				"制作配方是黄铜粒与羊毛。魔改配方是否接受某标签要以当前 JEI 为准；属性相近不代表都能替代同一种构件材料。"
+			]
+			tasks: [
+				{
+					id: "5A2D086CEEDED2AE"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 筛选与缓冲"
+		}
+		{
+			id: "1E6A666A976CCC83"
+			title: "标牌：物品标记与交互信号"
+			icon: "create:placard"
+			x: 5.6d
+			y: -10.5d
+			description: [
+				""
+				"标牌可以展示物品，适合给产线、箱子和控制台做直观标签。手持物品交互以放入展示，击打可取下当前展示物。"
+				"当已有同样物品时再次使用，可触发短红石信号，用作带物品提示的按钮。它可以安装到动态结构上。"
+				"展示物品不是过滤器配置；若要限制漏斗或机器收什么，仍需设置相应过滤槽。"
+			]
+			tasks: [
+				{
+					id: "4518537F30D3DAC1"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 筛选与缓冲"
+		}
+		{
+			id: "09455002B25D03D0"
+			title: "存量转信器：上下阈值控制补货"
+			icon: "create:stockpile_switch"
+			x: 7.5d
+			y: -17.5d
+			description: [
+				""
+				"存量转信器监测物品或流体：达到上限改变输出，降到下限才切回，避免满仓附近反复启停。"
+				"把检测面朝向箱子、储物库或流体储罐，右击设置上下阈值，必要时放过滤器只统计某种内容物，再从输出端接线到供应产线的离合器。"
+				"先用较小数量手动放入和取出物品，确认达到上限会停机、降到下限会重新供货。两个阈值要留出间隔，并核对是否需要反转输出。"
+				"本包用电子管、黄铜机壳和比较器合成。它管理库存区间；检测物品经过传送带应选智能侦测器。"
+			]
+			tasks: [
+				{
+					id: "59D42FCA0BE88E39"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 筛选与缓冲"
+		}
+		{
+			id: "6912C4D2AC0E972E"
+			title: "智能侦测器：检测内容物和经过事件"
+			icon: "create:content_observer"
+			x: 7.5d
+			y: -10.5d
+			description: [
+				""
+				"智能侦测器检查容器内容物，或监测传送带、溜槽、管道与漏斗事件，适合计数和触发，不自动搬运物品。"
+				"让侦测面朝向需要观察的容器或运输部件，在过滤槽设置目标物品或过滤器，再从红石输出端接灯，先观察一次目标经过时的反应。"
+				"容器内存在目标与物品经过物流部件的信号含义不同；需要保持状态时接锁存器，需库存上下限时选存量转信器，不要直接把脉冲当持续供货许可。"
+				"本包用电子管、黄铜机壳和侦测器合成。无输出先查朝向、过滤与目标；检测方块本身时过滤条件也需匹配。"
+			]
+			tasks: [
+				{
+					id: "3F78F0006499B8F1"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 筛选与缓冲"
+		}
+		{
+			id: "0F34591E1DF37BF8"
+			title: "动力臂：先选输入输出，再放置"
+			icon: "create:mechanical_arm"
+			x: 20.6d
+			y: -16.25d
+			description: [
+				""
+				"动力臂把物品从多个指定输入点送往多个输出点，适合燃烧室补燃料和集中分发原料。必须在放置前配置：手持动力臂右击目标，重复右击切换蓝色输入与黄色输出，左击取消。"
+				"放下后接入旋转力，在模式面板选择轮询、强制轮询或第一目标优先。不能直接交互的箱子可先装漏斗，或改用置物台作为交接点。"
+				"动力臂自身不筛选，输出黄铜漏斗上的过滤条件会约束投料。强制轮询会等待堵塞出口，红石会让它在完成当前周期后暂停。"
+				"本包动力臂仍走黄铜板、小型青铜弹簧、安山构件、精密构件与黄铜机壳的魔改配方。"
+			]
+			tasks: [
+				{
+					id: "2B3D1C4F774F6555"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 04 精密工位供料"
+		}
+		{
+			id: "18C5269C14EB95DE"
+			title: "01 装配小农场"
+			icon: "create:mechanical_bearing"
+			shape: "rsquare"
+			size: 1.3d
+			x: -2.0d
+			y: 8.0d
+			description: ["让产线实际运行，完成下列目标后勾选完成。" "目标：从传动杆与结构部件接出；动力可选择手摇、水力或风力，做一块小田和一个能正确旋转的收割结构。使用动力轴承、底盘或强力胶固定必要部件，并给可动范围留出空间。" "验收：装配后没有误粘车间，停机可安全复位，收割机朝向正确。先用小规模验证结构，不追求一次覆盖最大面积。"]
+			tasks: [
+				{
+					id: "63EDDAEACE469B07"
+					type: "checkmark"
+					title: "已实建并通过验收"
+				}
+			]
+			dependencies: ["5DB94B0E88971059"]
+		}
+		{
+			id: "1521918B4C662B07"
+			title: "02 收获后回仓"
+			icon: "create:portable_storage_interface"
+			shape: "rsquare"
+			size: 1.3d
+			x: 5.5d
+			y: 8.0d
+			description: ["让产线实际运行，完成下列目标后勾选完成。" "目标：让收割结构实际收获一轮，并用移动存储接口在合适位置与固定端对接，把收获送入仓库。" "验收：接口到位能停靠并卸货，错位时能发现；收获物不会堆在结构内或掉在田里。接口不是隔空、跨维度的无限仓储。"]
+			tasks: [
+				{
+					id: "48EB6B505E4B0245"
+					type: "checkmark"
+					title: "已实建并通过验收"
+				}
+			]
+			dependencies: ["18C5269C14EB95DE"]
+		}
+		{
+			id: "7A814727D36B8F46"
+			title: "03 连续播收循环"
+			icon: "create:mechanical_plough"
+			shape: "rsquare"
+			size: 1.3d
+			x: 13.0d
+			y: 8.0d
+			description: ["让产线实际运行，完成下列目标后勾选完成。" "目标：按当前作物与结构能力安排耕地、种子和收割，连续运行几个周期；用结构控制器或红石触点完成需要的启停。" "验收：不会越种越少，不会反复破坏田地；缺种、满仓或断动力后知道如何恢复。不同作物能否由收割机处理，以实际操作和当前配方为准。"]
+			tasks: [
+				{
+					id: "38CEB2CEA4D47C32"
+					type: "checkmark"
+					title: "已实建并通过验收"
+				}
+			]
+			dependencies: ["1521918B4C662B07"]
+		}
+		{
+			id: "5704C8AD53B9F94E"
+			title: "04 生产接入工厂"
+			icon: "create:mechanical_saw"
+			shape: "rsquare"
+			size: 1.3d
+			x: 20.5d
+			y: 8.0d
+			description: [
+				"让产线实际运行，完成下列目标后勾选完成。"
+				"目标：为工厂增加一条稳定的农业原料供应。可以选用现有农场作物进入石磨/加工线，或用动力锯建立小型木材供应。"
+				"验收：实际获得并储存一批可供其他工位使用的原料，原料、种苗和副产物有各自出口；不会耗尽播种或补植库存。"
+				"树木肥料和动力锯是按需求选用的扩建参考，不要求所有作物与树种都做一遍。"
+			]
+			tasks: [
+				{
+					id: "2228F447FC0D1CD2"
+					type: "checkmark"
+					title: "已实建并通过验收"
+				}
+			]
+			dependencies: ["7A814727D36B8F46"]
+		}
+		{
+			id: "3120C002AD48A38C"
+			title: "移动式存储接口：动态结构物品装卸"
+			icon: "create:portable_storage_interface"
+			x: 3.6d
+			y: 5.75d
+			description: [
+				""
+				"固定箱子不能直接访问运动中的动态结构库存，需要一对移动式存储接口。将一端并入动态结构，另一端留在世界中，两端正对，并让它们经过时相隔 1～2 格。"
+				"对接后固定端可访问结构的物品库存，在固定端接漏斗或溜槽装卸。普通动力结构可临时停留，传输结束后断开；列车不会由接口自动刹停，需先在车站停车并用时刻表设置装卸等待条件。"
+				"无法对接先查面对面朝向、间距、运动路径与固定端红石；红石会阻止固定侧连接。接口只传物品，流体需要成对的流体接口。"
+				"CMI 路线需安山机壳、木构件和工业铁板；已有原生并行配方。建农场或列车装卸站时，先用少量货物验证对接，再配置批量过滤。"
+			]
+			tasks: [
+				{
+					id: "69010CE6FADE061F"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 收获后回仓"
+		}
+		{
+			id: "740C7090525231A8"
+			title: "动力收割机：移动采收作物"
+			icon: "create:mechanical_harvester"
+			x: 3.6d
+			y: 10.25d
+			description: [
+				""
+				"收割机作为动态结构的一部分移动，经过成熟作物时会采收并重置生长。把工作面朝向作物，让移动路径覆盖种植区。"
+				"将收割机、骨架和箱子连接在同一结构中；落地卸货可配合物品接口。农田、水源和作物间距仍需在地面规划。"
+				"若不工作，检查它是否真的在移动结构上、工作面方向、作物成熟度，以及控制器是否关闭了收割功能。"
+			]
+			tasks: [
+				{
+					id: "48D044035FFBB34B"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 02 收获后回仓"
+		}
+		{
+			id: "13D21F952B44674F"
+			title: "动力锯：锯切加工与伐木"
+			icon: "create:mechanical_saw"
+			x: 18.6d
+			y: 5.75d
+			description: [
+				""
+				"动力锯既能锯切物品，也能破坏树木。朝上的锯面用于加工木料等物品，朝向树干的锯可伐木；装到动态结构上还能随移动连续砍树。"
+				"固定加工时接入轴向动力，从锯面送入有切割配方的原料，并在弹出一侧接传送带或容器；输出侧与旋转方向有关，先试料再定产线。"
+				"原料有多种可能成品时，用锯上的过滤槽锁定目标，否则会在可用产物间轮换。整树砍伐还要切断树与地面连接的最后一段。"
+				"本包构件路线使用安山组件、机壳和锯片，同时保留原生路线；木材、去皮和板材产量以当前切割配方为准。"
+			]
+			tasks: [
+				{
+					id: "6C8B155A6EC6B67F"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 04 生产接入工厂"
+		}
+		{
+			id: "3FF783E83BB7EDF2"
+			title: "树木肥料：紧凑空间种树"
+			icon: "create:tree_fertilizer"
+			x: 18.6d
+			y: 10.25d
+			description: [
+				""
+				"树木肥料用于树苗，可在较紧凑的空间里帮助生成树木。先留出树木实际会占据的位置，保护旁边机器和建筑。"
+				"它用于长树，不负责自动伐木或收集掉落。要建设树场，仍需规划树苗补种、锯切路径和木材输出。"
+				"先用少量树苗观察树形，再把它纳入农场，避免枝叶和树干占用传动轴或工作头的运动空间。"
+			]
+			tasks: [
+				{
+					id: "56D7BAE6EAFA67AC"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 04 生产接入工厂"
+		}
+		{
+			id: "3A24BF70CFEFF64A"
+			title: "接触式红石：检测移动结构到站"
+			icon: "create:redstone_contact"
+			x: 11.1d
+			y: 5.75d
+			description: [
+				""
+				"接触式红石信号发生器在两个接触面正对相邻时输出信号，其中一端装在移动结构上也能生效，适合检测活塞平台、门和滑轮机构的端点。"
+				"把一块装在活动结构上，让接触面朝外；在固定到站位置放另一块，面朝移动端。先手动慢速移动，确认到位后两块正好面对面相邻。"
+				"从固定端引出红石，接锁存器、离合器或反转齿轮箱完成停车与返程。离开接触点后信号会消失，需保留状态时让锁存器记住这次到站。"
+				"它检测相对位置，不用无线频率；到站无信号，先核对面向与间隔。"
+			]
+			tasks: [
+				{
+					id: "5719A9526949E88D"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 连续播收循环"
+		}
+		{
+			id: "29721F126343A967"
+			title: "动态结构控制器：启停工作头"
+			icon: "create:contraption_controls"
+			x: 11.1d
+			y: 10.25d
+			description: [
+				""
+				"把控制器接入移动结构，可在结构运动时控制兼容工作头，例如钻头、犁和收割机。工作头默认通常处于启用状态。"
+				"先在方块状态设置需要控制的目标，再组装结构。组装前收到红石信号的控制器，可让对应元件初始关闭。"
+				"升降机结构中的控制器还用于选楼层。它不是一块万能动力源，不会自动给固定机器供能。"
+			]
+			tasks: [
+				{
+					id: "335941356B98A218"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 连续播收循环"
+		}
+		{
+			id: "4F7AB961672C04A5"
+			title: "动力犁：清障和耕地"
+			icon: "create:mechanical_plough"
+			x: 13.0d
+			y: 5.75d
+			description: [
+				""
+				"动力犁随动态结构移动时，会清除路径中部分没有实体碰撞的方块，也能把合适地面耕为农田。"
+				"将工作头朝向行进方向，先检查它实际扫过的高度。它可以推动实体，但不能据此当成能清除任何坚硬障碍的钻头。"
+				"农场里把犁、收割机和播种设备分清职责；先小范围测试，避免把需要保留的植物当作路径杂物清掉。"
+			]
+			tasks: [
+				{
+					id: "488F34E746CBA5DE"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 03 连续播收循环"
+		}
+		{
+			id: "3A7F3D8AEA75998C"
+			title: "强力胶：定义哪些方块一起移动"
+			icon: "create:super_glue"
+			x: -3.9d
+			y: 5.75d
+			description: [
+				""
+				"强力胶用来连接动态结构中的方块。手持强力胶右击两个端点建立胶合选区，把轴承、活塞或滑轮所带动的部分连接成整体；手持左击可移除选区。"
+				"先做小范围试装配，检查预览和连接是否包含箱子、工作头与乘员座椅。没有连上的方块会留在原地；连得太大则可能把地板和外墙一并带走。"
+				"底盘和部分工作头自带附着规则，强力胶可补足不规则形状。静止时修好连接，再组装运动。"
+			]
+			tasks: [
+				{
+					id: "6DD49157F5A512C4"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 装配小农场"
+		}
+		{
+			id: "3C75BF67A1046A83"
+			title: "径向底盘：围绕转轴连接"
+			icon: "create:radial_chassis"
+			x: -3.9d
+			y: 10.25d
+			description: [
+				""
+				"径向底盘适合围绕轴线展开的结构。同类底盘可沿轴连成一排，侧面黏性用于连接同一层、指定半径内的可达方块。"
+				"手持黏液球或强力胶右击可黏侧面，再次点击黏面可扩到其余可黏侧面；用扳手调半径。检查连接能否从黏面实际到达，空缺可能让远处方块留在原地。"
+				"它常用于旋转平台和农场骨架。先设置较小范围确认结构，再扩大，避免把旁边固定的墙壁也包含进去。"
+			]
+			tasks: [
+				{
+					id: "7F5DCF046DF2D283"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 装配小农场"
+		}
+		{
+			id: "21097234A15AE3CD"
+			title: "动力轴承：让结构旋转"
+			icon: "create:mechanical_bearing"
+			x: -2.0d
+			y: 5.75d
+			description: [
+				""
+				"把要移动的结构连接在轴承正面，在转轴端输入旋转动力，然后与轴承交互组装。正面附着的整体会围绕轴线旋转。"
+				"转向由输入动力方向决定。停机时能否重新变回方块，由轴承的运动模式控制；空间被其他方块占用时也要检查。"
+				"先用小平台确认旋转范围，再装收割机、锯或其他工作头。不要让旋转路径穿过基地固定设备。"
+			]
+			tasks: [
+				{
+					id: "2EDA7540B21DBB57"
+					type: "checkmark"
+					title: "已了解用途与操作"
+				}
+			]
+			shape: "rsquare"
+			size: 0.8d
+			optional: true
+			subtitle: "参考 · 01 装配小农场"
+		}
+	]
+	quest_links: [
+		{
+			id: "6FB1CB58983F9E9F"
+			linked_quest: "5BB078BA5116FE68"
+			x: 18.0d
+			y: -2.4d
+			size: 0.8d
+			shape: "rsquare"
+		}
+		{
+			id: "758B017AB4980641"
+			linked_quest: "1570B04A1D692BCC"
+			x: 18.0d
+			y: 2.4d
+			size: 0.8d
+			shape: "rsquare"
+		}
+		{
+			id: "7B01812BA94297DE"
+			linked_quest: "1127ABEB0B41641F"
+			x: -3.5d
+			y: -14.0d
+			shape: "rsquare"
+			size: 0.85d
+		}
+		{
+			id: "5F8C29C1A0AA0697"
+			linked_quest: "34EDF40537E8BAAA"
+			x: -3.5d
+			y: -16.0d
+			shape: "rsquare"
+			size: 0.85d
+		}
+		{
+			id: "230692509F41BF49"
+			linked_quest: "1570B04A1D692BCC"
+			x: 22.5d
+			y: -16.0d
+			shape: "rsquare"
+			size: 0.85d
+		}
+		{
+			id: "5C1A18A27B95CDE2"
+			linked_quest: "2F00DD29F68238BA"
+			x: 7.5d
+			y: -8.0d
+			shape: "rsquare"
+			size: 0.85d
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:7b0b079e71a7815d" "q:65fb9682d33ab2c3"]
+		}
+		{
+			nodes: ["q:7b0b079e71a7815d" "q:5db94b0e88971059"]
+		}
+		{
+			nodes: ["q:5db94b0e88971059" "q:29b5173a5031dfe1"]
+		}
+		{
+			nodes: ["q:5db94b0e88971059" "q:3c0472e8e366e8a1"]
+		}
+		{
+			nodes: ["q:5db94b0e88971059" "q:6ffbf0f935b8462d"]
+		}
+		{
+			nodes: ["q:29b5173a5031dfe1" "q:4139bb56489572fb"]
+		}
+		{
+			nodes: ["q:3c0472e8e366e8a1" "q:4139bb56489572fb"]
+		}
+		{
+			nodes: ["q:6ffbf0f935b8462d" "q:4139bb56489572fb"]
+		}
+		{
+			nodes: ["q:4139bb56489572fb" "q:517a0335df1b2ec9"]
+		}
+		{
+			nodes: ["q:517a0335df1b2ec9" "q:26a8fb41b526ed2c"]
+		}
+		{
+			nodes: ["q:26a8fb41b526ed2c" "q:781426e7d2e4bf24"]
+		}
+		{
+			nodes: ["q:4139bb56489572fb" "q:34edf40537e8baaa"]
+		}
+		{
+			nodes: ["q:4139bb56489572fb" "q:36f26db3cb4221e7"]
+		}
+		{
+			nodes: ["q:4139bb56489572fb" "q:19e13c72ca1a201c"]
+		}
+		{
+			nodes: ["q:4139bb56489572fb" "q:253fb5b5597c019a"]
+		}
+		{
+			nodes: ["q:1127abeb0b41641f" "q:34edf40537e8baaa"]
+		}
+		{
+			nodes: ["q:34edf40537e8baaa" "q:2be74bd57bda6f42"]
+		}
+		{
+			nodes: ["q:30bb193710125708" "q:5fcddb9c076dc15b"]
+		}
+		{
+			nodes: ["q:2be74bd57bda6f42" "q:644fcba0da493930"]
+		}
+		{
+			nodes: ["q:644fcba0da493930" "q:54a1972fed2740ce"]
+		}
+		{
+			nodes: ["q:54a1972fed2740ce" "q:5fcddb9c076dc15b"]
+		}
+		{
+			nodes: ["q:54a1972fed2740ce" "q:318d51ab35c97620"]
+		}
+		{
+			nodes: ["q:644fcba0da493930" "q:318d51ab35c97620"]
+		}
+		{
+			nodes: ["q:597d501dea7c7ad8" "q:318d51ab35c97620"]
+		}
+		{
+			nodes: ["l:6fb1cb58983f9e9f" "q:318d51ab35c97620"]
+		}
+		{
+			nodes: ["l:758b017ab4980641" "q:318d51ab35c97620"]
+		}
+		{
+			nodes: ["q:6bef676271d1bea" "q:738f717f3c0a84a"]
+		}
+		{
+			nodes: ["q:6bef676271d1bea" "q:7fec7eef79b9b476"]
+		}
+		{
+			nodes: ["q:6bef676271d1bea" "q:43cb36046d2287a4"]
+		}
+		{
+			nodes: ["q:6bef676271d1bea" "q:7ce507019d81ced5"]
+		}
+		{
+			nodes: ["q:6bef676271d1bea" "q:2bfa01a395355be4"]
+		}
+		{
+			nodes: ["q:6bef676271d1bea" "q:1e7cd67e358188ad"]
+		}
+		{
+			nodes: ["q:738f717f3c0a84a" "q:4248fa019c8608ae"]
+		}
+		{
+			nodes: ["q:7fec7eef79b9b476" "q:6c07329bd48801e1"]
+		}
+		{
+			nodes: ["q:43cb36046d2287a4" "q:26f30514c79a5497"]
+		}
+		{
+			nodes: ["q:7ce507019d81ced5" "q:529ffa3815dc727b"]
+		}
+		{
+			nodes: ["q:2bfa01a395355be4" "q:1048d4e4553b7ab0"]
+		}
+		{
+			nodes: ["q:1e7cd67e358188ad" "q:59e2812a3d26300a"]
+		}
+		{
+			nodes: ["q:4248fa019c8608ae" "q:72b66ea2bd678527"]
+		}
+		{
+			nodes: ["q:6c07329bd48801e1" "q:1b306e49c638b60e"]
+		}
+		{
+			nodes: ["q:606fa53c3bdf1e0d" "q:3788741914ef7be1"]
+		}
+		{
+			nodes: ["q:606fa53c3bdf1e0d" "q:78670f25606536d5"]
+		}
+		{
+			nodes: ["q:606fa53c3bdf1e0d" "q:6b3f3620c3a234f1"]
+		}
+		{
+			nodes: ["q:606fa53c3bdf1e0d" "q:53f588436978db4d"]
+		}
+		{
+			nodes: ["q:606fa53c3bdf1e0d" "q:59c895e78c68187"]
+		}
+		{
+			nodes: ["q:7964db7aaba449b8" "q:d6368c089a71571"]
+		}
+		{
+			nodes: ["q:7964db7aaba449b8" "q:6f3da42e3caec5bd"]
+		}
+		{
+			nodes: ["q:7964db7aaba449b8" "q:7a6fc9eeee0602b2"]
+		}
+		{
+			nodes: ["q:7964db7aaba449b8" "q:3c9fbe78d9ac4799"]
+		}
+		{
+			nodes: ["q:7964db7aaba449b8" "q:11e1c581f4e3fd76"]
+		}
+		{
+			nodes: ["q:7964db7aaba449b8" "q:7c5fbb1b2747675c"]
+		}
+		{
+			nodes: ["q:d6368c089a71571" "q:22862fe2456ef52a"]
+		}
+		{
+			nodes: ["q:6f3da42e3caec5bd" "q:1e6a666a976ccc83"]
+		}
+		{
+			nodes: ["q:7a6fc9eeee0602b2" "q:9455002b25d03d0"]
+		}
+		{
+			nodes: ["q:3c9fbe78d9ac4799" "q:6912c4d2ac0e972e"]
+		}
+		{
+			nodes: ["q:2389dc4a80baff36" "q:f34591e1df37bf8"]
+		}
+		{
+			nodes: ["q:1521918b4c662b07" "q:3120c002ad48a38c"]
+		}
+		{
+			nodes: ["q:1521918b4c662b07" "q:740c7090525231a8"]
+		}
+		{
+			nodes: ["q:5704c8ad53b9f94e" "q:13d21f952b44674f"]
+		}
+		{
+			nodes: ["q:5704c8ad53b9f94e" "q:3ff783e83bb7edf2"]
+		}
+		{
+			nodes: ["q:7a814727d36b8f46" "q:3a24bf70cfeff64a"]
+		}
+		{
+			nodes: ["q:7a814727d36b8f46" "q:29721f126343a967"]
+		}
+		{
+			nodes: ["q:7a814727d36b8f46" "q:4f7ab961672c04a5"]
+		}
+		{
+			nodes: ["q:18c5269c14eb95de" "q:3a7f3d8aea75998c"]
+		}
+		{
+			nodes: ["q:18c5269c14eb95de" "q:3c75bf67a1046a83"]
+		}
+		{
+			nodes: ["q:18c5269c14eb95de" "q:21097234a15ae3cd"]
+		}
+		{
+			nodes: ["l:7b01812ba94297de" "q:606fa53c3bdf1e0d"]
+		}
+		{
+			nodes: ["l:5f8c29c1a0aa0697" "q:606fa53c3bdf1e0d"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [
+		{
+			source: "q:644fcba0da493930"
+			dependency: "q:2be74bd57bda6f42"
+			reveal_on_hover: 0
+		}
+		{
+			source: "q:65fb9682d33ab2c3"
+			dependency: "q:7b0b079e71a7815d"
+			reveal_on_hover: 0
+		}
+		{
+			source: "q:5db94b0e88971059"
+			dependency: "q:7b0b079e71a7815d"
+			reveal_on_hover: 0
+		}
+		{
+			source: "q:606fa53c3bdf1e0d"
+			dependency: "q:1127abeb0b41641f"
+			reveal_on_hover: 0
+		}
+		{
+			source: "q:606fa53c3bdf1e0d"
+			dependency: "q:34edf40537e8baaa"
+			reveal_on_hover: 0
+		}
+	]
+	images: [
+		{
+			click: "quest_enhance:text:安山起步"
+			image: ""
+			x: 0.0d
+			y: -5.5d
+			width: 2.9d
+			height: 0.65d
+			order: -1
+			rotation: 0.0d
+		}
+		{
+			click: "quest_enhance:text:基础构件"
+			image: ""
+			x: 3.0d
+			y: -5.5d
+			width: 2.9d
+			height: 0.65d
+			order: -1
+			rotation: 0.0d
+		}
+		{
+			click: "quest_enhance:text:动力来源"
+			image: ""
+			x: 6.0d
+			y: -5.5d
+			width: 2.9d
+			height: 0.65d
+			order: -1
+			rotation: 0.0d
+		}
+		{
+			click: "quest_enhance:text:传动调控"
+			image: ""
+			x: 9.0d
+			y: -5.5d
+			width: 2.9d
+			height: 0.65d
+			order: -1
+			rotation: 0.0d
+		}
+		{
+			click: "quest_enhance:text:加工工位"
+			image: ""
+			x: 12.0d
+			y: -5.5d
+			width: 2.9d
+			height: 0.65d
+			order: -1
+			rotation: 0.0d
+		}
+		{
+			click: "quest_enhance:text:流体与供热"
+			image: ""
+			x: 15.0d
+			y: -5.5d
+			width: 2.9d
+			height: 0.65d
+			order: -1
+			rotation: 0.0d
+		}
+		{
+			click: "quest_enhance:text:蒸汽动力"
+			image: ""
+			x: 18.0d
+			y: -5.5d
+			width: 2.9d
+			height: 0.65d
+			order: -1
+			rotation: 0.0d
+		}
+		{
+			click: "quest_enhance:text:物流与仓储"
+			image: ""
+			x: 7.5d
+			y: -20.5d
+			width: 5.0d
+			height: 0.65d
+			order: -1
+			rotation: 0.0d
+		}
+		{
+			click: "quest_enhance:text:农业与生产"
+			image: ""
+			x: -2.0d
+			y: 4.0d
+			width: 5.0d
+			height: 0.65d
+			order: -1
+			rotation: 0.0d
+		}
+	]
+}

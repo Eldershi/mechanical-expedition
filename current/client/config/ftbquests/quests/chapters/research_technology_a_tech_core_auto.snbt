@@ -1,0 +1,693 @@
+{
+	id: "25B25CA5B4ECC125"
+	filename: "research_technology_a_tech_core_auto"
+	title: "样板、订单与产线运行"
+	group: "5B22564DA513617D"
+	order_index: 36
+	icon: "ae2:blank_pattern"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "21D65CD5C9A4C03E"
+			title: "批量制造空白样板"
+			icon: "ae2:blank_pattern"
+			x: -7.5d
+			y: -3.625d
+			optional: false
+			tasks: [
+				{
+					id: "47A9F3802414DBF0"
+					type: "item"
+					item: "ae2:blank_pattern"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/559632447193bcad58bc059b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/edf3a4352d146b01d3f233ad.png width:240 height:95 align:center}"
+				"选定工艺：部件装配机。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 银板 ×1。"
+				"材料槽1： 逻辑处理器 ×1。"
+				"材料槽2： 赛特斯石英水晶 ×1 / 充能赛特斯石英水晶 ×1。"
+				"材料槽3： 液态红石酸水冷剂 ×100mB。"
+				"组件装配每批产4，含红石酸流体。模板消耗与机器非消耗角色分开。"
+				"空白样板 ×4。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "4DB9DDD18742BBDD"
+			title: "编码第一张样板"
+			icon: "ae2:pattern_encoding_terminal"
+			x: -4.5d
+			y: -3.625d
+			optional: false
+			tasks: [
+				{
+					id: "69C2886E803C13C5"
+					type: "item"
+					item: "ae2:pattern_encoding_terminal"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ee0bb5abbcac1030dcf9726b.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d1d3ecf34b1d32c3fc0aa0aa.png width:240 height:95 align:center}"
+				"选定工艺：部件装配机。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 亮色照明面板 ×1 / 照明面板 ×1 / 暗色照明面板 ×1。"
+				"材料槽1： 超载合金锭 ×1。"
+				"材料槽2： 智能构件 ×1。"
+				"先选工作台合成模式编码一个确有配方的物品。"
+				"ME样板编码终端 ×1。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "74B0BE276927C31D"
+			title: "建立合成CPU"
+			icon: "ae2:1k_crafting_storage"
+			x: -4.05d
+			y: 2.825d
+			optional: false
+			tasks: [
+				{
+					id: "555FB7D59E2E986B"
+					type: "item"
+					item: "ae2:1k_crafting_storage"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1bb3f7cfa72b67ba7556b3e6.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/295f3eed328ce0a671c6f9f9.png width:240 height:120 align:center}"
+				"选定工艺：合成。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 合成单元 ×1。"
+				"材料槽1： 1k ME存储组件 ×1。"
+				"至少含一块合成存储并组成完整长方体。容量不等于盘容量，一个普通CPU同时负责一个请求。"
+				"1k合成存储器 ×1。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "4035C54443C89350"
+			title: "部署样板供应器"
+			icon: "ae2:pattern_provider"
+			x: -1.5d
+			y: -0.625d
+			optional: false
+			tasks: [
+				{
+					id: "75ECF18050D03F8E"
+					type: "item"
+					item: "ae2:pattern_provider"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f4472b92ca1e1d78e65e91a9.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/8409b6429b526ee7d4099211.png width:240 height:120 align:center}"
+				"选定工艺：合成。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： ME接口 ×1 / ME接口 ×1。"
+				"材料槽1： 橡木工作台 ×1。"
+				"1.20的供应器负责发配，接口负责缓存。供应器不保存可供管道抽取的原料，先推到机器或中转容器。"
+				"ME样板供应器 ×1。"
+			]
+		}
+		{
+			id: "19FA15EBC9E62FE5"
+			title: "接入分子装配室"
+			icon: "ae2:molecular_assembler"
+			x: 1.5d
+			y: -3.625d
+			optional: false
+			tasks: [
+				{
+					id: "0F5F1A82963013EC"
+					type: "item"
+					item: "ae2:molecular_assembler"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "6343730E946985CC"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1caa3dc0f6cd1d81947e1238.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/6782cd88e0f9b7550796b1ad.png width:240 height:95 align:center}"
+				"选定工艺：部件装配机。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 智能机壳 ×1。"
+				"材料槽1： 成型核心 ×1。"
+				"材料槽2： 石英玻璃 ×1。"
+				"材料槽3： 破坏核心 ×1。"
+				"材料槽4： 橡木工作台 ×1。"
+				"贴供应器，放工作台样板。其结果自动回供应器。锻造/切石模式按指南支持，同组设备可共享。"
+				"分子装配室 ×1。"
+			]
+		}
+		{
+			id: "46BA9BA6A4CD96BA"
+			title: "完成一次自动合成"
+			icon: "minecraft:book"
+			x: 4.5d
+			y: -3.625d
+			optional: false
+			tasks: [
+				{
+					id: "4AA34328AB95C381"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["相应设备已成型、辅助供给及输出余量均就绪。" "从终端请求一批现有配方，观察CPU材料、供应器、装配室，全部产物回网且CPU结束。手动塞成品不能当真实自动化完成。" "逐条观察动作所述状态，保存投料、结果与失败条件。背包拥有设备不算完成。" "返回章节选择其他并行目标。"]
+		}
+		{
+			id: "1A5ED82400F334B3"
+			title: "完成一次机器处理订单"
+			icon: "minecraft:book"
+			x: 1.5d
+			y: 2.375d
+			optional: false
+			tasks: [
+				{
+					id: "16E719D7737AC6A2"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["相应设备已成型、辅助供给及输出余量均就绪。" "产物必须发生进入网络事件。只放进存储总线后箱子可能不会结算。" "逐条观察动作所述状态，保存投料、结果与失败条件。背包拥有设备不算完成。" "返回章节选择其他并行目标。"]
+		}
+		{
+			id: "0B750D8A5C1FFB2D"
+			title: "让灌注订单连续完成"
+			icon: "minecraft:book"
+			x: 4.5d
+			y: 2.375d
+			optional: false
+			tasks: [
+				{
+					id: "68445B0E7E834B24"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["相应设备已成型、辅助供给及输出余量均就绪。" "用铬/钛等配方，主物料与灌注输入分流到正确角色面。开启阻挡或回产锁并测试两种不同灌注订单。回产锁必须回原供应器。" "逐条观察动作所述状态，保存投料、结果与失败条件。背包拥有设备不算完成。" "返回章节选择其他并行目标。"]
+		}
+		{
+			id: "4E2C6A2E3015E76C"
+			title: "做库存反馈"
+			icon: "ae2:level_emitter"
+			x: 7.5d
+			y: 5.375d
+			optional: true
+			tasks: [
+				{
+					id: "40323A773586BE0A"
+					type: "item"
+					item: "ae2:level_emitter"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f1b9142f95772478570c4537.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b9317680b0ac2d73c77dea40.png width:240 height:120 align:center}"
+				"选定工艺：合成。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 红石火把 ×1。"
+				"材料槽1： 运算处理器 ×1。"
+				"选择一种目标产品与阈值，低库存启动产线、高库存停投。"
+				"ME标准发信器 ×1。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "4E5AE71D49C0EB41"
+			title: "验证库存保持"
+			icon: "minecraft:book"
+			x: 10.5d
+			y: 2.375d
+			optional: true
+			tasks: [
+				{
+					id: "4A3403658DD65260"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["相应设备已成型、辅助供给及输出余量均就绪。" "选专用机和有容量上限的抽屉，或发信器反馈，或合成卡发订单。是并行方案，后者会占CPU及共享设备。取走后能补货且到量停止。" "逐条观察动作所述状态，保存投料、结果与失败条件。背包拥有设备不算完成。" "返回章节选择其他并行目标。"]
+		}
+		{
+			id: "63107A7F0BA4E6CA"
+			title: "验证多机完整批次"
+			icon: "minecraft:book"
+			x: 10.5d
+			y: -3.625d
+			optional: true
+			tasks: [
+				{
+					id: "354358EB9BBA7E31"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["相应设备已成型、辅助供给及输出余量均就绪。" "优先同样板多供应器或供应器多面机器。每台收到完整一批。" "逐条观察动作所述状态，保存投料、结果与失败条件。背包拥有设备不算完成。" "返回章节选择其他并行目标。"]
+		}
+	]
+	quest_links: [
+		{
+			id: "5CB99C7945F2E720"
+			linked_quest: "6A3204F0275C1DEA"
+			x: -10.5d
+			y: -5.825d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "62FB484EC188CEA7"
+			linked_quest: "242122C7962BE630"
+			x: -10.5d
+			y: -3.625d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "132A00F93D886B17"
+			linked_quest: "202029D42C4C5F6C"
+			x: -10.5d
+			y: -1.425d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "6B5F7792ED5439D7"
+			linked_quest: "304F1C5501224675"
+			x: -8.7d
+			y: -5.825d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "3381DC9E4D9BFB40"
+			linked_quest: "1B2CA78D8A95A034"
+			x: -7.5d
+			y: 2.375d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "63042818BCC5DA5A"
+			linked_quest: "449F767EA8BC229D"
+			x: -7.5d
+			y: 4.575d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "4E2D47D57431A576"
+			linked_quest: "532403C34C70BA45"
+			x: -1.5d
+			y: -5.825d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "1CC0B3AC3E0411E8"
+			linked_quest: "6A4F9489BEC49073"
+			x: 4.5d
+			y: 5.825d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "4FF2CDD9930CF398"
+			linked_quest: "0D54CCAFFA345070"
+			x: -1.5d
+			y: 4.125d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "7416FFFF8905F863"
+			linked_quest: "1476D0335CB01F3B"
+			x: 1.5d
+			y: 0.175d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "476A05C35F2968AF"
+			linked_quest: "4FA8887B5009C07C"
+			x: 1.5d
+			y: 4.175d
+			size: 0.75d
+			shape: "rsquare"
+		}
+	]
+	images: [
+		{
+			x: -9.5d
+			y: -5.092d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:86e39612-8ef7-509f-bae4-49a4576a6d02"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.5d
+			y: -4.358d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1f02b040-1877-5647-9112-7b3df0568f0e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.5d
+			y: -3.625d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2d3a7703-d32b-573a-87b8-4bcfc6bd1ae1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.5d
+			y: -3.625d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e3d631f3-035e-52cd-9d0b-654072b82f1f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.5d
+			y: -2.158d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d4127175-07c2-5aa5-b3c5-e86c56dbde35"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.5d
+			y: -2.892d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:639b412a-ac69-593c-bd6a-16fd44b2f724"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.3d
+			y: -5.092d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:02dc905a-cecf-5c51-b81a-172fcf051503"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.9d
+			y: -4.358d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c8218435-2cfa-5b46-ae7b-c50b761d724a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.3d
+			y: -5.092d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:afd96767-6a20-5234-a55d-54b5ca9cfd3f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.9d
+			y: -4.358d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0384990c-da4f-536e-8d66-0ccdfeb708cc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.35d
+			y: 2.525d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:02fbcdf4-c7d1-57c0-ac15-25ca423cac86"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.2d
+			y: 2.675d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1b5555ea-f9fd-5dc9-80d1-c9ddd80784b2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -5.5d
+			y: 2.842d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e839522a-f903-5d35-89cb-b3854a6048da"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.5d
+			y: 1.108d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ebdfc176-ff31-566f-9876-ce72454f72a3"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.5d
+			y: 4.842d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f342af73-9ea5-52bf-8e98-137a48bb8b12"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.5d
+			y: 5.108d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4432dcbb-aacb-5756-90ec-1129e931625f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.5d
+			y: 0.375d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:adb05c37-a2d4-562c-b84a-b56b4c788390"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.5d
+			y: 1.375d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4ae7a2ad-f310-5b6e-b321-9f0a771e5909"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.5d
+			y: 3.575d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a4fffb10-4ad7-5ee4-b862-5777f46779fd"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.5d
+			y: 2.975d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3ae1438f-bfb4-5d7b-b093-7559096a0ddc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:5cb99c7945f2e720" "a:86e39612-8ef7-509f-bae4-49a4576a6d02"]
+		}
+		{
+			nodes: ["a:86e39612-8ef7-509f-bae4-49a4576a6d02" "a:1f02b040-1877-5647-9112-7b3df0568f0e"]
+		}
+		{
+			nodes: ["a:1f02b040-1877-5647-9112-7b3df0568f0e" "q:21d65cd5c9a4c03e"]
+		}
+		{
+			nodes: ["l:62fb484ec188cea7" "a:2d3a7703-d32b-573a-87b8-4bcfc6bd1ae1"]
+		}
+		{
+			nodes: ["a:2d3a7703-d32b-573a-87b8-4bcfc6bd1ae1" "a:e3d631f3-035e-52cd-9d0b-654072b82f1f"]
+		}
+		{
+			nodes: ["a:e3d631f3-035e-52cd-9d0b-654072b82f1f" "q:21d65cd5c9a4c03e"]
+		}
+		{
+			nodes: ["l:132a00f93d886b17" "a:d4127175-07c2-5aa5-b3c5-e86c56dbde35"]
+		}
+		{
+			nodes: ["a:d4127175-07c2-5aa5-b3c5-e86c56dbde35" "a:639b412a-ac69-593c-bd6a-16fd44b2f724"]
+		}
+		{
+			nodes: ["a:639b412a-ac69-593c-bd6a-16fd44b2f724" "q:21d65cd5c9a4c03e"]
+		}
+		{
+			nodes: ["l:6b5f7792ed5439d7" "q:21d65cd5c9a4c03e"]
+		}
+		{
+			nodes: ["l:6b5f7792ed5439d7" "a:02dc905a-cecf-5c51-b81a-172fcf051503"]
+		}
+		{
+			nodes: ["a:02dc905a-cecf-5c51-b81a-172fcf051503" "a:c8218435-2cfa-5b46-ae7b-c50b761d724a"]
+		}
+		{
+			nodes: ["a:c8218435-2cfa-5b46-ae7b-c50b761d724a" "q:4db9ddd18742bbdd"]
+		}
+		{
+			nodes: ["l:6b5f7792ed5439d7" "a:afd96767-6a20-5234-a55d-54b5ca9cfd3f"]
+		}
+		{
+			nodes: ["a:afd96767-6a20-5234-a55d-54b5ca9cfd3f" "a:0384990c-da4f-536e-8d66-0ccdfeb708cc"]
+		}
+		{
+			nodes: ["a:0384990c-da4f-536e-8d66-0ccdfeb708cc" "q:19fa15ebc9e62fe5"]
+		}
+		{
+			nodes: ["l:3381dc9e4d9bfb40" "a:02fbcdf4-c7d1-57c0-ac15-25ca423cac86"]
+		}
+		{
+			nodes: ["a:02fbcdf4-c7d1-57c0-ac15-25ca423cac86" "a:1b5555ea-f9fd-5dc9-80d1-c9ddd80784b2"]
+		}
+		{
+			nodes: ["a:1b5555ea-f9fd-5dc9-80d1-c9ddd80784b2" "q:74b0be276927c31d"]
+		}
+		{
+			nodes: ["l:63042818bcc5da5a" "q:74b0be276927c31d"]
+		}
+		{
+			nodes: ["l:63042818bcc5da5a" "a:e839522a-f903-5d35-89cb-b3854a6048da"]
+		}
+		{
+			nodes: ["a:e839522a-f903-5d35-89cb-b3854a6048da" "a:ebdfc176-ff31-566f-9876-ce72454f72a3"]
+		}
+		{
+			nodes: ["a:ebdfc176-ff31-566f-9876-ce72454f72a3" "q:4035c54443c89350"]
+		}
+		{
+			nodes: ["l:63042818bcc5da5a" "a:f342af73-9ea5-52bf-8e98-137a48bb8b12"]
+		}
+		{
+			nodes: ["a:f342af73-9ea5-52bf-8e98-137a48bb8b12" "a:4432dcbb-aacb-5756-90ec-1129e931625f"]
+		}
+		{
+			nodes: ["a:4432dcbb-aacb-5756-90ec-1129e931625f" "q:4e2c6a2e3015e76c"]
+		}
+		{
+			nodes: ["l:4e2d47d57431a576" "q:19fa15ebc9e62fe5"]
+		}
+		{
+			nodes: ["l:1cc0b3ac3e0411e8" "q:4e2c6a2e3015e76c"]
+		}
+		{
+			nodes: ["q:4035c54443c89350" "a:adb05c37-a2d4-562c-b84a-b56b4c788390"]
+		}
+		{
+			nodes: ["a:adb05c37-a2d4-562c-b84a-b56b4c788390" "a:4ae7a2ad-f310-5b6e-b321-9f0a771e5909"]
+		}
+		{
+			nodes: ["a:4ae7a2ad-f310-5b6e-b321-9f0a771e5909" "q:1a5ed82400f334b3"]
+		}
+		{
+			nodes: ["l:4ff2cdd9930cf398" "q:1a5ed82400f334b3"]
+		}
+		{
+			nodes: ["l:7416ffff8905f863" "q:b750d8a5c1ffb2d"]
+		}
+		{
+			nodes: ["l:476a05c35f2968af" "a:a4fffb10-4ad7-5ee4-b862-5777f46779fd"]
+		}
+		{
+			nodes: ["a:a4fffb10-4ad7-5ee4-b862-5777f46779fd" "a:3ae1438f-bfb4-5d7b-b093-7559096a0ddc"]
+		}
+		{
+			nodes: ["a:3ae1438f-bfb4-5d7b-b093-7559096a0ddc" "q:b750d8a5c1ffb2d"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

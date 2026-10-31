@@ -1,0 +1,609 @@
+{
+	id: "04B0275EE4161060"
+	filename: "research_adventure_c_enigmaticlegacy"
+	title: "神秘遗物"
+	group: "25C542C40E64ED41"
+	order_index: 217
+	icon: "enigmaticlegacy:cursed_ring"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "53DD3EF9A31ECA58"
+			title: "了解七咒与灵魂回收"
+			icon: "enigmaticlegacy:cursed_ring"
+			x: -10.08d
+			y: -0.72d
+			optional: true
+			tasks: [
+				{
+					id: "55506CA7D5385289"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/e35f6403937f4ecc908e26a8.png width:32 height:32 align:center}" "检查饰品栏中佩戴的七咒之戒、生命与护甲状态，准备灵魂水晶和死亡后的回收路线。七咒之戒会自动佩戴且无法取下。仍可正常睡眠。无需主动死亡或尝试卸戒。" "查看自己的诅咒状态，并准备可靠的回收路线。" "按配装需要选择神秘遗物分支。"]
+		}
+		{
+			id: "5FCF2E633B70D1B0"
+			title: "怪奇宝典中的启示之证"
+			icon: "enigmaticlegacy:the_acknowledgment"
+			x: -7.2d
+			y: -0.72d
+			optional: true
+			tasks: [
+				{
+					id: "2B2437DDD14BCD61"
+					type: "item"
+					item: "enigmaticlegacy:the_acknowledgment"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/8a0059811157fa37f13bdf28.png width:32 height:32 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"从开局怪奇宝典切换启示之证，左键空气回到宝典。页会随知识与进度解锁，阅读所有物品描述和条件。全书合并不代表页面已全部解锁。书＋书架补领宝典已在既有教程覆盖，不再重复发书奖励。"
+				"启示之证或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "292BCED589D417F7"
+			title: "材料有多种探索来源"
+			icon: "enigmaticlegacy:earth_heart"
+			x: -1.44d
+			y: -4.32d
+			optional: true
+			tasks: [
+				{
+					id: "2CC8AB53B8BC0C92"
+					type: "item"
+					item: "enigmaticlegacy:earth_heart"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a9c581f4e9665f63bf803ae8.png width:32 height:32 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"探索箱取得大地之心。邪恶精髓对应佩戒击败凋灵。星尘可在末地箱取得或满足条件的潜影贝掉落。深渊之心另有佩戒比例和末影龙条件。按各件饰品的获取条件分别探索。"
+				"大地之心或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "285B80EE14CAD987"
+			title: "深渊之心的资格单列"
+			icon: "enigmaticlegacy:abyssal_heart"
+			x: 4.32d
+			y: -1.08d
+			optional: true
+			tasks: [
+				{
+					id: "7E5D9010E84F90CE"
+					type: "item"
+					item: "enigmaticlegacy:abyssal_heart"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4c83c3e83186081315f6e27e.png width:32 height:32 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"不得将有限个人掉落当可无限量产。"
+				"深渊之心或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "00722DC5820B2474"
+			title: "先做拾取和经验管理"
+			icon: "enigmaticlegacy:magnet_ring"
+			x: -3.87d
+			y: -0.72d
+			optional: true
+			tasks: [
+				{
+					id: "0687BB1347F857E1"
+					type: "item"
+					item: "enigmaticlegacy:magnet_ring"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/923bbd909f80299c685d8336.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/6aaff4da25b9d76feee28c39.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"磁力之戒／错位之戒解决拾取，永恒智慧卷轴保存经验。佩戴到对应槽位并实际启用，观察按钮和范围。不同配装可能吸走自动化输出，应按需关闭。它们是实用分支，不要求先拿深渊之心。"
+				"磁力之戒或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "3CDDD55623AE15F5"
+			title: "探索术石按场景选择"
+			icon: "enigmaticlegacy:ocean_stone"
+			x: -4.32d
+			y: 2.16d
+			optional: true
+			tasks: [
+				{
+					id: "48BC59555BBE4BFC"
+					type: "item"
+					item: "enigmaticlegacy:ocean_stone"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ba2c4eae39596937b76ededb.png width:32 height:32 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"魔像之心、天使之祝、海洋意志、烈焰之核、星云之眼、虚空珍珠主要由探索得到，均有代价。水下任务可考虑海洋意志，但火焰承伤变化要一并看。星云之眼在水中有风险，不能一律称上位升级。"
+				"海洋意志或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "31C827CBC48D8AAF"
+			title: "飞行卷轴是独立选择"
+			icon: "enigmaticlegacy:fabulous_scroll"
+			x: 4.32d
+			y: 2.88d
+			optional: true
+			tasks: [
+				{
+					id: "166A753FFFC081F9"
+					type: "item"
+					item: "enigmaticlegacy:fabulous_scroll"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e6a9f539f9e125ff5d763e89.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/2ca09fc8a36dbefc6001a952.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"天堂之礼受信标范围限制，造物主恩赐允许范围外以经验换飞行。先准备经验和落地补救，再测试切换。"
+				"造物主的恩赐或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "5D2DF38F6261CFFE"
+			title: "千咒路线可以不选"
+			icon: "enigmaticlegacy:cursed_scroll"
+			x: 3.6d
+			y: 5.76d
+			optional: true
+			tasks: [
+				{
+					id: "4CE228AC61CE0DCA"
+					type: "item"
+					item: "enigmaticlegacy:cursed_scroll"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ac95d7731efe4944c82ef78f.png width:32 height:32 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"先核对至暗卷轴的探索来源，再按配方制作千咒卷轴，使用条件包括七咒佩戴。用求知／噬咒之书提取和转移诅咒是工具分支。不让所有玩家为了推进Boss故意叠诅咒。其他包的夸张数值不当作保证。"
+				"千咒卷轴或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "60FD4C1E0F41D6B2"
+			title: "可复用的扭曲魔镜"
+			icon: "enigmaticlegacy:twisted_mirror"
+			x: -5.04d
+			y: -3.96d
+			optional: true
+			tasks: [
+				{
+					id: "11A3C27C56E1C3DE"
+					type: "item"
+					item: "enigmaticlegacy:twisted_mirror"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/46aefbb1d7c25357ce02c0b3.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/ecbaa1582a1ea6f1112482e5.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"在满足七咒条件时使用扭曲魔镜回到重生点。先检查绑定地点与维度是否安全。它与召回药水是不同成本的可选路线，不要求为学魔镜先消耗药水。"
+				"扭曲魔镜或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "401EFAD0707D4F2C"
+			title: "诅咒提取有明确操作"
+			icon: "enigmaticlegacy:curse_transposer"
+			x: 6.48d
+			y: 4.32d
+			optional: true
+			tasks: [
+				{
+					id: "5F04C4CE27471F0D"
+					type: "item"
+					item: "enigmaticlegacy:curse_transposer"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/2a649af3b9d6f148d475c5e3.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/95b085ecd015b74dd0b45c15.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"先制作求知之书，再升级噬咒之书。把书和相应装备放入合成格，检查结果与保留数据。提取过程按配方处理，不自动把所有附魔复制。"
+				"噬咒之书或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "62C719E0D3A88A49"
+			title: "以太矿石不是野外矿脉"
+			icon: "enigmaticlegacy:etherium_ingot"
+			x: 1.44d
+			y: 1.44d
+			optional: true
+			tasks: [
+				{
+					id: "5E8D97907970A481"
+					type: "item"
+					item: "enigmaticlegacy:etherium_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/cac3af478a666be67bd530fe.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/5b7adcdf3fd1a6090dd919f4.png width:240 height:120 align:center}"
+				"{image:expedition_research:textures/quests/373e20a81c5ecb543386a4ef.png width:240 height:120 align:center}"
+				"{image:expedition_research:textures/quests/11d699aaf772ad3c3aa1ff76.png width:240 height:120 align:center}"
+				"{image:expedition_research:textures/quests/83821dca2e55639466a0020b.png width:240 height:98 align:center}"
+				"{image:expedition_research:textures/quests/348e37d67747204a4fd410cd.png width:240 height:101 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"取得后烧炼成锭，再选择工具或盔甲。还有其他配方查询转换／拆分来源，以查询为准。不要让玩家在末地挖一个未证明存在的矿脉。"
+				"以太锭或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "54DA375AA454C2A0"
+			title: "书武器与饕餮之锅选修"
+			icon: "enigmaticlegacy:the_infinitum"
+			x: 10.08d
+			y: -1.08d
+			optional: true
+			tasks: [
+				{
+					id: "7D22484C05E78303"
+					type: "item"
+					item: "enigmaticlegacy:the_infinitum"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/160a3994c933eba90fdd41df.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/1b3b38ac9437798f77de9e19.png width:240 height:120 align:center}"
+				"按下列真实材料与个人资格准备。"
+				"倒转之启、无止之言与饕餮之锅的全额伤害例外不能泛化为所有武器。高阶物品有佩戒比例要求，饕餮之锅还消耗饥饿，禁忌之果会改变消耗方式。先确认资格、食物／回复与配置，避免在主线强制食用不可逆果实。"
+				"无止之言或其对应工艺能力。"
+				"按自己配装缺口选择分支，不要求全部收集。"
+			]
+		}
+		{
+			id: "555A40537536D1FD"
+			title: "星尘：箱子或条件掉落"
+			icon: "enigmaticlegacy:astral_dust"
+			x: 1.44d
+			y: -5.76d
+			optional: true
+			tasks: [
+				{
+					id: "771BC60D9484228F"
+					type: "item"
+					item: "enigmaticlegacy:astral_dust"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/f645cf646d24d76192b54539.png width:32 height:32 align:center}" "星尘：箱子或条件掉落。"]
+		}
+		{
+			id: "2E322BA4E1FDA03D"
+			title: "邪恶精髓：七咒凋灵条件"
+			icon: "enigmaticlegacy:evil_essence"
+			x: 1.44d
+			y: -3.33d
+			optional: true
+			tasks: [
+				{
+					id: "034637F60645F52D"
+					type: "item"
+					item: "enigmaticlegacy:evil_essence"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/58e27c95c886d7ebf07bd796.png width:32 height:32 align:center}" "邪恶精髓：七咒凋灵条件。"]
+		}
+		{
+			id: "31C2B194ACDFBD55"
+			title: "至暗卷轴：探索材料"
+			icon: "enigmaticlegacy:darkest_scroll"
+			x: 0.72d
+			y: 5.76d
+			optional: true
+			tasks: [
+				{
+					id: "04BC71A1DDCF1BE2"
+					type: "item"
+					item: "enigmaticlegacy:darkest_scroll"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/d81a6bfddf88464e4ce15c83.png width:32 height:32 align:center}" "至暗卷轴：探索材料。"]
+		}
+		{
+			id: "5EEB8ABBC14AB56E"
+			title: "错位之戒"
+			icon: "enigmaticlegacy:super_magnet_ring"
+			x: -1.44d
+			y: -0.72d
+			optional: true
+			tasks: [
+				{
+					id: "5F78FF7F1AAA9C50"
+					type: "item"
+					item: "enigmaticlegacy:super_magnet_ring"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/c41fe73bc85784a7a5a90999.png width:32 height:32 align:center}" "{image:expedition_research:textures/quests/425847052d844a99b922344c.png width:240 height:120 align:center}" "错位之戒。"]
+		}
+		{
+			id: "68AB61098DDB68E2"
+			title: "倒转之启"
+			icon: "enigmaticlegacy:the_twist"
+			x: 7.2d
+			y: -3.6d
+			optional: true
+			tasks: [
+				{
+					id: "32F288AB7EBDB99C"
+					type: "item"
+					item: "enigmaticlegacy:the_twist"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/978194447d0fb1d393b26e08.png width:32 height:32 align:center}" "{image:expedition_research:textures/quests/bc3b3c9a7cbe6cdf799a248b.png width:240 height:120 align:center}" "倒转之启。"]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:722dc5820b2474" "a:fe006aac-9146-57c9-bd98-87b1fa80ca74"]
+		}
+		{
+			nodes: ["a:fe006aac-9146-57c9-bd98-87b1fa80ca74" "a:f235ec40-e084-5346-8fe0-3ca63b4acad2"]
+		}
+		{
+			nodes: ["a:f235ec40-e084-5346-8fe0-3ca63b4acad2" "q:5eeb8abbc14ab56e"]
+		}
+		{
+			nodes: ["q:2e322ba4e1fda03d" "q:401efad0707d4f2c"]
+		}
+		{
+			nodes: ["q:2e322ba4e1fda03d" "a:ba45f308-75ce-5ce2-838c-e23a2becbcf4"]
+		}
+		{
+			nodes: ["a:ba45f308-75ce-5ce2-838c-e23a2becbcf4" "a:f8e97b99-2022-5aac-a011-05d31f0881bf"]
+		}
+		{
+			nodes: ["a:f8e97b99-2022-5aac-a011-05d31f0881bf" "q:68ab61098ddb68e2"]
+		}
+		{
+			nodes: ["q:2e322ba4e1fda03d" "a:d22d1c9a-2f4e-54b4-b2ce-7d8ed1100b38"]
+		}
+		{
+			nodes: ["a:d22d1c9a-2f4e-54b4-b2ce-7d8ed1100b38" "a:e696d449-9d74-5980-9e05-16871a5b2a31"]
+		}
+		{
+			nodes: ["a:e696d449-9d74-5980-9e05-16871a5b2a31" "q:54da375aa454c2a0"]
+		}
+		{
+			nodes: ["q:62c719e0d3a88a49" "a:6df5f852-5c1d-5b99-b3d0-1ffbd4fcf4b4"]
+		}
+		{
+			nodes: ["a:6df5f852-5c1d-5b99-b3d0-1ffbd4fcf4b4" "a:8a6ddff3-fef4-556a-a5db-83e81b9fe2b6"]
+		}
+		{
+			nodes: ["a:8a6ddff3-fef4-556a-a5db-83e81b9fe2b6" "q:31c827cbc48d8aaf"]
+		}
+		{
+			nodes: ["q:555a40537536d1fd" "q:31c827cbc48d8aaf"]
+		}
+		{
+			nodes: ["q:5fcf2e633b70d1b0" "a:62d0b720-80ba-5581-9a55-ac09bc2341d5"]
+		}
+		{
+			nodes: ["a:62d0b720-80ba-5581-9a55-ac09bc2341d5" "a:1c9d51c1-36ee-55dd-9ef9-3a7f955917f1"]
+		}
+		{
+			nodes: ["a:1c9d51c1-36ee-55dd-9ef9-3a7f955917f1" "q:68ab61098ddb68e2"]
+		}
+		{
+			nodes: ["q:68ab61098ddb68e2" "q:54da375aa454c2a0"]
+		}
+		{
+			nodes: ["q:285b80ee14cad987" "a:20726377-5096-5fa1-81a9-5e9b6bcbc71e"]
+		}
+		{
+			nodes: ["a:20726377-5096-5fa1-81a9-5e9b6bcbc71e" "a:50523452-e78d-5d5d-a11b-403561ff84df"]
+		}
+		{
+			nodes: ["a:50523452-e78d-5d5d-a11b-403561ff84df" "q:54da375aa454c2a0"]
+		}
+	]
+	images: [
+		{
+			x: -2.4d
+			y: -1.68d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:62d0b720-80ba-5581-9a55-ac09bc2341d5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.4d
+			y: -2.64d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:1c9d51c1-36ee-55dd-9ef9-3a7f955917f1"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.24d
+			y: -1.08d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:20726377-5096-5fa1-81a9-5e9b6bcbc71e"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 8.16d
+			y: -1.08d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:50523452-e78d-5d5d-a11b-403561ff84df"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.06d
+			y: -0.72d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:fe006aac-9146-57c9-bd98-87b1fa80ca74"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.25d
+			y: -0.72d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f235ec40-e084-5346-8fe0-3ca63b4acad2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.4d
+			y: 1.92d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6df5f852-5c1d-5b99-b3d0-1ffbd4fcf4b4"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.36d
+			y: 2.4d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8a6ddff3-fef4-556a-a5db-83e81b9fe2b6"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.36d
+			y: -3.42d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ba45f308-75ce-5ce2-838c-e23a2becbcf4"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.28d
+			y: -3.51d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f8e97b99-2022-5aac-a011-05d31f0881bf"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.32d
+			y: -2.58d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d22d1c9a-2f4e-54b4-b2ce-7d8ed1100b38"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 7.2d
+			y: -1.83d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e696d449-9d74-5980-9e05-16871a5b2a31"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

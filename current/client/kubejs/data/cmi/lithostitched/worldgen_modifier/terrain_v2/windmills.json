@@ -1,0 +1,29 @@
+{
+  "type": "lithostitched:set_structure_spawn_condition",
+  "structures": [
+    "cso:acaciawindmill",
+    "cso:birchwindmill",
+    "cso:cherrywindmill",
+    "cso:oakwindmill",
+    "cso:sprucewindmill"
+  ],
+  "append": true,
+  "spawn_condition": {
+    "type": "lithostitched:grid",
+    "radius": 16,
+    "distance_between_points": 8,
+    "condition": {
+      "type": "lithostitched:height_filter",
+      "range_type": "heightmap_relative",
+      "heightmap": "OCEAN_FLOOR_WG",
+      "permitted_range": {
+        "min_inclusive": -6,
+        "max_inclusive": 6
+      }
+    },
+    "allowed_count": {
+      "min_inclusive": 25,
+      "max_inclusive": 25
+    }
+  }
+}

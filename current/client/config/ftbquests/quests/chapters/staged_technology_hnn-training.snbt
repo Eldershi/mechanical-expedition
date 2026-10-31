@@ -1,0 +1,132 @@
+{
+	id: "05C5131E4E1C5465"
+	filename: "staged_technology_hnn-training"
+	title: "数据模型·收集与训练"
+	group: "050255AE19A93344"
+	order_index: 32
+	icon: "hostilenetworks:blank_data_model"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [{
+			id: "0DA5597E5A56C217"
+			title: "制作空白数据模型"
+			icon: "hostilenetworks:blank_data_model"
+			x: -4.6d
+			y: -0.9d
+			optional: false
+			tasks: [
+				{
+					id: "1984B92D8591C461"
+					type: "item"
+					item: "hostilenetworks:blank_data_model"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/791919a7cfd08d8b3380a887.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/7455370d8c2445530927f862.png width:240 height:120 align:center}"
+				"基础黏土、红石、中继器、平滑石与金已有来源。"
+				"按5.3.3配方合成，用空白模型右击支持的普通生物。"
+				"得到带模型ID的已绑定模型。"
+				"把它放进深度学习器再训练。"
+			]
+		} {
+			id: "39994C771AE2A786"
+			title: "装入深度学习器"
+			icon: "hostilenetworks:deep_learner"
+			x: -1.6d
+			y: -0.9d
+			optional: false
+			tasks: [
+				{
+					id: "1187E0831C18EE21"
+					type: "item"
+					item: "hostilenetworks:deep_learner"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a59cec17d881c45f5e80dfaf.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d5c7deae891fd8852673610c.png width:240 height:120 align:center}"
+				"已有绑定的数据模型。"
+				"装入模型并随身携带，在有效击杀后检查模型数据是否增加。学习器最多四个模型。"
+				"把击杀数据写入对应模型。"
+				"普通僵尸模型先达到basic门槛。"
+			]
+		} {
+			id: "332FD5434730715A"
+			title: "训练基础僵尸模型"
+			icon: "hostilenetworks:data_model"
+			x: 1.4d
+			y: 1.1d
+			optional: false
+			tasks: [
+				{
+					id: "36B43D638B4703D9"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9f7cb28f6e86a949defde603.png width:32 height:32 align:center}"
+				"模型绑定为僵尸模型。允许击杀升级的配置已开启。"
+				"将僵尸模型放在学习器中，击杀对应僵尸/受支持变种并观察数据达到6。不拿空白模型直接模拟。"
+				"模型脱离faulty，具有模拟资格。"
+				"放入模拟室，配置预测矩阵与电源。"
+			]
+		}]
+	quest_links: [
+		{
+			id: "10764758C8A61865"
+			linked_quest: "2CF576297E656B4C"
+			x: 4.6d
+			y: -1.1d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [
+		{
+			x: 2.467d
+			y: 0.367d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2384fe9e-b9df-5e9b-bf61-67419a8bfedb"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.533d
+			y: -0.367d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:659b1a26-420e-5f0f-af84-4595ab0127ff"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:39994c771ae2a786" "q:332fd5434730715a"]
+		}
+		{
+			nodes: ["q:332fd5434730715a" "a:2384fe9e-b9df-5e9b-bf61-67419a8bfedb"]
+		}
+		{
+			nodes: ["a:2384fe9e-b9df-5e9b-bf61-67419a8bfedb" "a:659b1a26-420e-5f0f-af84-4595ab0127ff"]
+		}
+		{
+			nodes: ["a:659b1a26-420e-5f0f-af84-4595ab0127ff" "l:10764758c8a61865"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

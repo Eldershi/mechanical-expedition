@@ -1,0 +1,40 @@
+
+[HOSTILE]
+	"Experience Reward (default: 5)" = 5
+	"Fireball Damage (default: 6)" = 6.0
+	"Fireball Fire Duration (in seconds, default: 5)" = 5
+	"Fireball Attack Maximum Use Distance (in blocks, default: 10)" = 10.0
+	"Max Health (default: 10)" = 10.0
+	"Armour Value (default: 0)" = 0.0
+	"Armour Toughness Value (default: 0)" = 0.0
+	"Movement Speed (default: 0.125)" = 0.125
+	"Target Players Range (in blocks, default: 30)" = 30.0
+	"Knockback Resistance (default: 0)" = 0.0
+	"Attacks Ignore Hurt Invulnerability (default: true)" = true
+	"Fireball Griefing (default: true)" = true
+	"Shield Broken Duration (in ticks, default: 150)" = 150
+	"Attacks Players (default: true)" = true
+	"Following Target Movement Speed Multiplier (default: 1.5)" = 1.5
+	"Following Target Close Enough Distance (in blocks, default: 7.5)" = 7.5
+
+[TAMED]
+	"Fireball Damage (default: 3)" = 3.0
+	"Fireball Fire Duration (in seconds, default: 5)" = 5
+	"Fireball Attack Maximum Use Distance (in blocks, default: 10)" = 10.0
+	"Max Health (default: 15)" = 15.0
+	"Armour Value (default: 0)" = 0.0
+	"Armour Toughness Value (default: 0)" = 0.0
+	"Movement Speed (default: 0.125)" = 0.125
+	"Target Mobs Range (in blocks, default: 20)" = 20.0
+	"Knockback Resistance (default: 0)" = 0.0
+	"Attacks Ignore Hurt Invulnerability (default: true)" = true
+	"Shield Broken Duration (in ticks, default: 150)" = 150
+	"Fed Heal Amount (in percent, default: 20)" = 20
+	"Fed Heal Duration (in ticks, default: 100)" = 100
+	"Friendly Fire (default: false)" = false
+	"Following Target Movement Speed Multiplier (default: 1.5)" = 1.5
+	"Following Target Close Enough Distance (in blocks, default: 7.5)" = 7.5
+	"Following Owner Movement Speed Multiplier (default: 1.5)" = 1.5
+	"Start Following Owner Minimum Distance (in blocks, default: 7.5)" = 7.5
+	"Stop Following Owner Maximum Distance (in blocks, default: 5)" = 5.0
+

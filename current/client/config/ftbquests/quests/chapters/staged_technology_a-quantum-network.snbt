@@ -1,0 +1,346 @@
+{
+	id: "7737990C201925CF"
+	filename: "staged_technology_a-quantum-network"
+	title: "量子计算与跨域网络"
+	group: "03D71190792A021E"
+	order_index: 44
+	icon: "mekanism:teleportation_core"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "38C86D732E0F7DFC"
+			title: "准备传送核心"
+			icon: "mekanism:teleportation_core"
+			x: -6.0d
+			y: 4.1d
+			optional: true
+			tasks: [
+				{
+					id: "12021D6AE8FB5E03"
+					type: "item"
+					item: "mekanism:teleportation_core"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/fad3efdab3b455f83561e456.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/a2cdf2280b226cdadb367d1e.png width:240 height:92 align:center}"
+				"选定工艺：加压反应室。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 福鲁伊克斯珍珠 ×1。"
+				"材料槽1： 谐振末影 ×1000mB。"
+				"材料槽2： 汞 ×1000化学单位。"
+				"量子缠绕态奇点实际消耗此核心。"
+				"传送核心 ×1。"
+			]
+		}
+		{
+			id: "1F998066C5E510F8"
+			title: "成对生成量子缠绕态奇点"
+			icon: "ae2:quantum_entangled_singularity"
+			x: -3.0d
+			y: 4.1d
+			optional: true
+			tasks: [
+				{
+					id: "2D3CEA9E04D5445C"
+					type: "item"
+					item: "ae2:quantum_entangled_singularity"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e08aefc8ac86ee4f3653b4f4.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/713a2c0d86bf2d20c64cc6e6.png width:240 height:122 align:center}"
+				"选定工艺：世界交互。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 奇点 ×1。"
+				"材料槽1： 传送核心 ×1。"
+				"奇点加传送核心在爆炸环境转化为一对。两个产物属于同一对，避免与别次产物混配。"
+				"量子缠绕态奇点 ×2。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "195471930091650D"
+			title: "制作量子环组件"
+			icon: "ae2:quantum_ring"
+			x: -3.0d
+			y: -1.9d
+			optional: true
+			tasks: [
+				{
+					id: "6D4C1D70DC38250F"
+					type: "item"
+					item: "ae2:quantum_ring"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/fc3246576a6f0a5b4e884ef1.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d112975e617137a2b30ee6ae.png width:240 height:108 align:center}"
+				"选定工艺：集成工作站。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 高级计算机壳 ×1。"
+				"材料槽1： 计算构件 ×1。"
+				"材料槽2： 碳化硅板 ×4。"
+				"材料槽3： 超导汞板 ×2。"
+				"材料槽4： 盈能福鲁伊克斯水晶 ×2。"
+				"在集成工作站用计算机壳、计算构件等加工。这条制造路线不代表异界T3火箭锁。"
+				"ME量子环 ×1。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "67E9DC40A202D30E"
+			title: "连通远端量子桥"
+			icon: "minecraft:book"
+			x: 0.0
+			y: 1.1
+			optional: true
+			tasks: [
+				{
+					id: "0D08E94DFDBF07D6"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6926a80c41df6bb9b3060ff0.png width:240 height:132 align:center}"
+				"相应设备已成型、辅助供给及输出余量均就绪。"
+				"两端各8环围1连接仓，放同一对缠绕态奇点，接非角落环。两端供电并保持区块加载。测试远端存取。"
+				"逐条观察动作所述状态，保存投料、结果与失败条件。背包拥有设备不算完成。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "31CD770C6162C6E3"
+			title: "选择量子计算机"
+			icon: "advanced_ae:quantum_core"
+			x: 6.45d
+			y: 0.65d
+			optional: true
+			tasks: [
+				{
+					id: "747C1CB889152D0A"
+					type: "item"
+					item: "advanced_ae:quantum_core"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a03a498e09002d6d98d73a5d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d6dcb70c8cc995a17536fe07.png width:240 height:120 align:center}"
+				"选定工艺：合成。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 奇点 ×1。"
+				"材料槽1： 破碎奇点 ×1。"
+				"材料槽2： 奇点 ×1。"
+				"材料槽3： 量子计算机加速器 ×1。"
+				"材料槽4： 量子合成单元 ×1。"
+				"材料槽5： 256M量子计算机合成存储器 ×1。"
+				"材料槽6： 奇点 ×1。"
+				"材料槽7： 破碎奇点 ×1。"
+				"材料槽8： 奇点 ×1。"
+				"JAR已含这套设备。单核心可用，扩多方块遵守外壳、内部填满和唯一核心规则，配置及提示为最终容量依据。"
+				"量子计算机核心 ×1。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "78765308E2323275"
+			title: "用量子合成器保持库存"
+			icon: "advanced_ae:quantum_crafter"
+			x: 9.0d
+			y: -1.9d
+			optional: true
+			tasks: [
+				{
+					id: "084CF85864BBD9F8"
+					type: "item"
+					item: "advanced_ae:quantum_crafter"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/6ad89393e5823508247b4eb8.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/951b6bd52c2b04e69a19b7c6.png width:240 height:120 align:center}"
+				"选定工艺：合成。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 破碎奇点 ×1。"
+				"材料槽1： 量子计算机加速器 ×1。"
+				"材料槽2： 破碎奇点 ×1。"
+				"材料槽3： 64k ME存储组件 ×1。"
+				"材料槽4： 量子合成单元 ×1。"
+				"材料槽5： 64k ME存储组件 ×1。"
+				"材料槽6： 破碎奇点 ×1。"
+				"材料槽7： 量子计算机加速器 ×1。"
+				"材料槽8： 破碎奇点 ×1。"
+				"只放支持的合成样板，设置原料保留量和成品上限。输出上限0表示不限制，输入不足不会自动补做处理链。"
+				"量子合成器 ×1。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+		{
+			id: "0233EB1AA893F914"
+			title: "可选AE随身补货"
+			icon: "advanced_ae:quantum_chestplate"
+			x: 9.0d
+			y: 4.1d
+			optional: true
+			tasks: [
+				{
+					id: "13E5F3D90FC6C827"
+					type: "item"
+					item: "advanced_ae:quantum_chestplate"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/09346ad29a11afe5caa5d01f.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/7e67647aa34b51178cc2fe6b.png width:240 height:120 align:center}"
+				"选定工艺：合成。所有输入槽同时满足，每个槽的备选任选一种。"
+				"材料槽0： 量子处理器 ×1。"
+				"材料槽1： ME无线访问点 ×1。"
+				"材料槽2： 量子处理器 ×1。"
+				"材料槽3： 量子处理器 ×1。"
+				"材料槽4： 下界合金胸甲 ×1。"
+				"材料槽5： 量子处理器 ×1。"
+				"材料槽6： 量子合金板 ×1。"
+				"材料槽7： 量子存储组件 ×1。"
+				"材料槽8： 量子合金板 ×1。"
+				"装甲在无线访问点绑定，按需装自动补货卡，测试信号范围内补货与离开范围后行为。"
+				"量子胸甲 ×1。"
+				"返回章节选择其他并行目标。"
+			]
+		}
+	]
+	quest_links: [
+		{
+			id: "176CD45387CC64EE"
+			linked_quest: "46232E7FAFB2584C"
+			x: 6.0d
+			y: 2.75d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "149690550EA47F23"
+			linked_quest: "0D54CCAFFA345070"
+			x: -9.0d
+			y: 4.1d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "226A03061898EBE6"
+			linked_quest: "37FB5D1A0B6D4E53"
+			x: -6.0d
+			y: 0.3d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "525BECB3FD20ECB2"
+			linked_quest: "2BF7E103DDD10828"
+			x: -6.0d
+			y: -4.1d
+			size: 0.75d
+			shape: "rsquare"
+		}
+		{
+			id: "31019248D3837CDF"
+			linked_quest: "449F767EA8BC229D"
+			x: 2.8d
+			y: -1.1d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "223CA11B75582711"
+			linked_quest: "52CA348F51B691A6"
+			x: 2.8d
+			y: 1.1d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [
+		{
+			x: -5.0d
+			y: -0.433d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:893ac5a2-eb3b-5c83-a29f-dbc41ce3bdf9"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.0d
+			y: -1.167d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6eae9a2e-b914-5fac-9b84-54aba8b545de"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:31019248d3837cdf" "q:31cd770c6162c6e3"]
+		}
+		{
+			nodes: ["l:31019248d3837cdf" "q:78765308e2323275"]
+		}
+		{
+			nodes: ["l:31019248d3837cdf" "q:233eb1aa893f914"]
+		}
+		{
+			nodes: ["l:223ca11b75582711" "q:31cd770c6162c6e3"]
+		}
+		{
+			nodes: ["l:176cd45387cc64ee" "q:233eb1aa893f914"]
+		}
+		{
+			nodes: ["l:149690550ea47f23" "q:38c86d732e0f7dfc"]
+		}
+		{
+			nodes: ["l:223ca11b75582711" "q:1f998066c5e510f8"]
+		}
+		{
+			nodes: ["q:38c86d732e0f7dfc" "q:1f998066c5e510f8"]
+		}
+		{
+			nodes: ["l:226a03061898ebe6" "a:893ac5a2-eb3b-5c83-a29f-dbc41ce3bdf9"]
+		}
+		{
+			nodes: ["a:893ac5a2-eb3b-5c83-a29f-dbc41ce3bdf9" "a:6eae9a2e-b914-5fac-9b84-54aba8b545de"]
+		}
+		{
+			nodes: ["a:6eae9a2e-b914-5fac-9b84-54aba8b545de" "q:195471930091650d"]
+		}
+		{
+			nodes: ["l:525becb3fd20ecb2" "q:195471930091650d"]
+		}
+		{
+			nodes: ["q:195471930091650d" "q:67e9dc40a202d30e"]
+		}
+		{
+			nodes: ["q:1f998066c5e510f8" "q:67e9dc40a202d30e"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

@@ -1,0 +1,838 @@
+{
+  "schemaVersion": 1,
+  "groups": [
+    {
+      "name": "zinc_ingot",
+      "tag": "forge:ingots/zinc",
+      "canonical": "create:zinc_ingot",
+      "items": [
+        "alltheores:zinc_ingot",
+        "create:zinc_ingot"
+      ],
+      "duplicates": [
+        "alltheores:zinc_ingot"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:zinc_ingot",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/ingots/zinc.json"
+            }
+          ]
+        },
+        {
+          "item": "create:zinc_ingot",
+          "modelJar": "create-1.20.1-6.0.8.jar",
+          "tagSources": [
+            {
+              "jar": "create-1.20.1-6.0.8.jar",
+              "entry": "data/forge/tags/items/ingots/zinc.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:ingots/zinc",
+        "alltheores:zinc_ingot"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "zinc_nugget",
+      "tag": "forge:nuggets/zinc",
+      "canonical": "create:zinc_nugget",
+      "items": [
+        "alltheores:zinc_nugget",
+        "create:zinc_nugget"
+      ],
+      "duplicates": [
+        "alltheores:zinc_nugget"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:zinc_nugget",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/nuggets/zinc.json"
+            }
+          ]
+        },
+        {
+          "item": "create:zinc_nugget",
+          "modelJar": "create-1.20.1-6.0.8.jar",
+          "tagSources": [
+            {
+              "jar": "create-1.20.1-6.0.8.jar",
+              "entry": "data/forge/tags/items/nuggets/zinc.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:nuggets/zinc",
+        "alltheores:zinc_nugget"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "raw_zinc",
+      "tag": "forge:raw_materials/zinc",
+      "canonical": "create:raw_zinc",
+      "items": [
+        "alltheores:raw_zinc",
+        "create:raw_zinc"
+      ],
+      "duplicates": [
+        "alltheores:raw_zinc"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:raw_zinc",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/raw_materials/zinc.json"
+            }
+          ]
+        },
+        {
+          "item": "create:raw_zinc",
+          "modelJar": "create-1.20.1-6.0.8.jar",
+          "tagSources": [
+            {
+              "jar": "create-1.20.1-6.0.8.jar",
+              "entry": "data/forge/tags/items/raw_materials/zinc.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:raw_materials/zinc",
+        "alltheores:raw_zinc"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "raw_zinc_block",
+      "tag": "forge:storage_blocks/raw_zinc",
+      "canonical": "create:raw_zinc_block",
+      "items": [
+        "alltheores:raw_zinc_block",
+        "create:raw_zinc_block"
+      ],
+      "duplicates": [
+        "alltheores:raw_zinc_block"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:raw_zinc_block",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/storage_blocks/raw_zinc.json"
+            }
+          ]
+        },
+        {
+          "item": "create:raw_zinc_block",
+          "modelJar": "create-1.20.1-6.0.8.jar",
+          "tagSources": [
+            {
+              "jar": "create-1.20.1-6.0.8.jar",
+              "entry": "data/forge/tags/items/storage_blocks/raw_zinc.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:storage_blocks/raw_zinc",
+        "alltheores:raw_zinc_block"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "zinc_block",
+      "tag": "forge:storage_blocks/zinc",
+      "canonical": "create:zinc_block",
+      "items": [
+        "alltheores:zinc_block",
+        "create:zinc_block"
+      ],
+      "duplicates": [
+        "alltheores:zinc_block"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:zinc_block",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/storage_blocks/zinc.json"
+            }
+          ]
+        },
+        {
+          "item": "create:zinc_block",
+          "modelJar": "create-1.20.1-6.0.8.jar",
+          "tagSources": [
+            {
+              "jar": "create-1.20.1-6.0.8.jar",
+              "entry": "data/forge/tags/items/storage_blocks/zinc.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:storage_blocks/zinc",
+        "alltheores:zinc_block"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "zinc_plate",
+      "tag": "forge:plates/zinc",
+      "canonical": "vintageimprovements:zinc_sheet",
+      "items": [
+        "alltheores:zinc_plate",
+        "createaddition:zinc_sheet",
+        "vintageimprovements:zinc_sheet"
+      ],
+      "duplicates": [
+        "alltheores:zinc_plate",
+        "createaddition:zinc_sheet"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:zinc_plate",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/plates/zinc.json"
+            }
+          ]
+        },
+        {
+          "item": "createaddition:zinc_sheet",
+          "modelJar": "createaddition-1.20.1-1.3.3.jar",
+          "tagSources": [
+            {
+              "jar": "createaddition-1.20.1-1.3.3.jar",
+              "entry": "data/forge/tags/items/plates/zinc.json"
+            }
+          ]
+        },
+        {
+          "item": "vintageimprovements:zinc_sheet",
+          "modelJar": "vintageimprovements-1.20.1-0.3.7.9.jar",
+          "tagSources": [
+            {
+              "jar": "vintageimprovements-1.20.1-0.3.7.9.jar",
+              "entry": "data/forge/tags/items/plates/zinc.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:plates/zinc",
+        "alltheores:zinc_plate",
+        "createaddition:zinc_sheet"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "zinc_dust",
+      "tag": "forge:dusts/zinc",
+      "canonical": "thermal_extra:zinc_dust",
+      "items": [
+        "alltheores:zinc_dust",
+        "thermal_extra:zinc_dust"
+      ],
+      "duplicates": [
+        "alltheores:zinc_dust"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:zinc_dust",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/dusts/zinc.json"
+            }
+          ]
+        },
+        {
+          "item": "thermal_extra:zinc_dust",
+          "modelJar": "ThermalExtra-3.3.3-1.20.1.jar",
+          "tagSources": [
+            {
+              "jar": "ThermalExtra-3.3.3-1.20.1.jar",
+              "entry": "data/forge/tags/items/dusts/zinc.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:dusts/zinc",
+        "alltheores:zinc_dust"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "zinc_rod",
+      "tag": "forge:rods/zinc",
+      "canonical": "vintageimprovements:zinc_rod",
+      "items": [
+        "alltheores:zinc_rod",
+        "vintageimprovements:zinc_rod"
+      ],
+      "duplicates": [
+        "alltheores:zinc_rod"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:zinc_rod",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/rods/zinc.json"
+            }
+          ]
+        },
+        {
+          "item": "vintageimprovements:zinc_rod",
+          "modelJar": "vintageimprovements-1.20.1-0.3.7.9.jar",
+          "tagSources": [
+            {
+              "jar": "vintageimprovements-1.20.1-0.3.7.9.jar",
+              "entry": "data/forge/tags/items/rods/zinc.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:rods/zinc",
+        "alltheores:zinc_rod"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "zinc_ore",
+      "tag": "forge:ores/zinc",
+      "canonical": "create:zinc_ore",
+      "items": [
+        "alltheores:zinc_ore",
+        "create:zinc_ore"
+      ],
+      "duplicates": [
+        "alltheores:zinc_ore"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:zinc_ore",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/ores/zinc.json"
+            }
+          ]
+        },
+        {
+          "item": "create:zinc_ore",
+          "modelJar": "create-1.20.1-6.0.8.jar",
+          "tagSources": [
+            {
+              "jar": "create-1.20.1-6.0.8.jar",
+              "entry": "data/forge/tags/items/ores/zinc.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "alltheores:zinc_ore"
+      ],
+      "matchingStrategy": "explicit_verified_aliases"
+    },
+    {
+      "name": "deepslate_zinc_ore",
+      "tag": "forge:ores/zinc",
+      "canonical": "create:deepslate_zinc_ore",
+      "items": [
+        "alltheores:deepslate_zinc_ore",
+        "create:deepslate_zinc_ore"
+      ],
+      "duplicates": [
+        "alltheores:deepslate_zinc_ore"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:deepslate_zinc_ore",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/ores/zinc.json"
+            }
+          ]
+        },
+        {
+          "item": "create:deepslate_zinc_ore",
+          "modelJar": "create-1.20.1-6.0.8.jar",
+          "tagSources": [
+            {
+              "jar": "create-1.20.1-6.0.8.jar",
+              "entry": "data/forge/tags/items/ores/zinc.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "alltheores:deepslate_zinc_ore"
+      ],
+      "matchingStrategy": "explicit_verified_aliases"
+    },
+    {
+      "name": "osmium_ingot",
+      "tag": "forge:ingots/osmium",
+      "canonical": "mekanism:ingot_osmium",
+      "items": [
+        "alltheores:osmium_ingot",
+        "mekanism:ingot_osmium"
+      ],
+      "duplicates": [
+        "alltheores:osmium_ingot"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:osmium_ingot",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/ingots/osmium.json"
+            }
+          ]
+        },
+        {
+          "item": "mekanism:ingot_osmium",
+          "modelJar": "Mekanism-1.20.1-10.4.16.80.jar",
+          "tagSources": [
+            {
+              "jar": "Mekanism-1.20.1-10.4.16.80.jar",
+              "entry": "data/forge/tags/items/ingots/osmium.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:ingots/osmium",
+        "alltheores:osmium_ingot"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "osmium_nugget",
+      "tag": "forge:nuggets/osmium",
+      "canonical": "mekanism:nugget_osmium",
+      "items": [
+        "alltheores:osmium_nugget",
+        "mekanism:nugget_osmium"
+      ],
+      "duplicates": [
+        "alltheores:osmium_nugget"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:osmium_nugget",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/nuggets/osmium.json"
+            }
+          ]
+        },
+        {
+          "item": "mekanism:nugget_osmium",
+          "modelJar": "Mekanism-1.20.1-10.4.16.80.jar",
+          "tagSources": [
+            {
+              "jar": "Mekanism-1.20.1-10.4.16.80.jar",
+              "entry": "data/forge/tags/items/nuggets/osmium.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:nuggets/osmium",
+        "alltheores:osmium_nugget"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "raw_osmium",
+      "tag": "forge:raw_materials/osmium",
+      "canonical": "mekanism:raw_osmium",
+      "items": [
+        "alltheores:raw_osmium",
+        "mekanism:raw_osmium"
+      ],
+      "duplicates": [
+        "alltheores:raw_osmium"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:raw_osmium",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/raw_materials/osmium.json"
+            }
+          ]
+        },
+        {
+          "item": "mekanism:raw_osmium",
+          "modelJar": "Mekanism-1.20.1-10.4.16.80.jar",
+          "tagSources": [
+            {
+              "jar": "Mekanism-1.20.1-10.4.16.80.jar",
+              "entry": "data/forge/tags/items/raw_materials/osmium.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:raw_materials/osmium",
+        "alltheores:raw_osmium"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "raw_osmium_block",
+      "tag": "forge:storage_blocks/raw_osmium",
+      "canonical": "mekanism:block_raw_osmium",
+      "items": [
+        "alltheores:raw_osmium_block",
+        "mekanism:block_raw_osmium"
+      ],
+      "duplicates": [
+        "alltheores:raw_osmium_block"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:raw_osmium_block",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/storage_blocks/raw_osmium.json"
+            }
+          ]
+        },
+        {
+          "item": "mekanism:block_raw_osmium",
+          "modelJar": "Mekanism-1.20.1-10.4.16.80.jar",
+          "tagSources": [
+            {
+              "jar": "Mekanism-1.20.1-10.4.16.80.jar",
+              "entry": "data/forge/tags/items/storage_blocks/raw_osmium.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:storage_blocks/raw_osmium",
+        "alltheores:raw_osmium_block"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "osmium_block",
+      "tag": "forge:storage_blocks/osmium",
+      "canonical": "mekanism:block_osmium",
+      "items": [
+        "alltheores:osmium_block",
+        "mekanism:block_osmium"
+      ],
+      "duplicates": [
+        "alltheores:osmium_block"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:osmium_block",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/storage_blocks/osmium.json"
+            }
+          ]
+        },
+        {
+          "item": "mekanism:block_osmium",
+          "modelJar": "Mekanism-1.20.1-10.4.16.80.jar",
+          "tagSources": [
+            {
+              "jar": "Mekanism-1.20.1-10.4.16.80.jar",
+              "entry": "data/forge/tags/items/storage_blocks/osmium.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:storage_blocks/osmium",
+        "alltheores:osmium_block"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "osmium_dust",
+      "tag": "forge:dusts/osmium",
+      "canonical": "mekanism:dust_osmium",
+      "items": [
+        "alltheores:osmium_dust",
+        "mekanism:dust_osmium"
+      ],
+      "duplicates": [
+        "alltheores:osmium_dust"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:osmium_dust",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/dusts/osmium.json"
+            }
+          ]
+        },
+        {
+          "item": "mekanism:dust_osmium",
+          "modelJar": "Mekanism-1.20.1-10.4.16.80.jar",
+          "tagSources": [
+            {
+              "jar": "Mekanism-1.20.1-10.4.16.80.jar",
+              "entry": "data/forge/tags/items/dusts/osmium.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:dusts/osmium",
+        "alltheores:osmium_dust"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "osmium_plate",
+      "tag": "forge:plates/osmium",
+      "canonical": "vintageimprovements:osmium_sheet",
+      "items": [
+        "alltheores:osmium_plate",
+        "vintageimprovements:osmium_sheet"
+      ],
+      "duplicates": [
+        "alltheores:osmium_plate"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:osmium_plate",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/plates/osmium.json"
+            }
+          ]
+        },
+        {
+          "item": "vintageimprovements:osmium_sheet",
+          "modelJar": "vintageimprovements-1.20.1-0.3.7.9.jar",
+          "tagSources": [
+            {
+              "jar": "vintageimprovements-1.20.1-0.3.7.9.jar",
+              "entry": "data/forge/tags/items/plates/osmium.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:plates/osmium",
+        "alltheores:osmium_plate"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "osmium_rod",
+      "tag": "forge:rods/osmium",
+      "canonical": "vintageimprovements:osmium_rod",
+      "items": [
+        "alltheores:osmium_rod",
+        "vintageimprovements:osmium_rod"
+      ],
+      "duplicates": [
+        "alltheores:osmium_rod"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "alltheores:osmium_rod",
+          "modelJar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+          "tagSources": [
+            {
+              "jar": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+              "entry": "data/forge/tags/items/rods/osmium.json"
+            }
+          ]
+        },
+        {
+          "item": "vintageimprovements:osmium_rod",
+          "modelJar": "vintageimprovements-1.20.1-0.3.7.9.jar",
+          "tagSources": [
+            {
+              "jar": "vintageimprovements-1.20.1-0.3.7.9.jar",
+              "entry": "data/forge/tags/items/rods/osmium.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "#forge:rods/osmium",
+        "alltheores:osmium_rod"
+      ],
+      "matchingStrategy": "material_tag_plus_explicit_verified_aliases"
+    },
+    {
+      "name": "obsidian_dust",
+      "tag": "forge:dusts/obsidian",
+      "canonical": "create:powdered_obsidian",
+      "items": [
+        "create:powdered_obsidian",
+        "mekanism:dust_obsidian",
+        "enderio:powdered_obsidian",
+        "thermal_extra:obsidian_dust"
+      ],
+      "duplicates": [
+        "mekanism:dust_obsidian",
+        "enderio:powdered_obsidian",
+        "thermal_extra:obsidian_dust"
+      ],
+      "sourceEvidence": [
+        {
+          "item": "create:powdered_obsidian",
+          "modelJar": "create-1.20.1-6.0.8.jar",
+          "tagSources": [
+            {
+              "jar": "createaddition-1.20.1-1.3.3.jar",
+              "entry": "data/forge/tags/items/dusts/obsidian.json"
+            },
+            {
+              "jar": "create-1.20.1-6.0.8.jar",
+              "entry": "data/forge/tags/items/dusts/obsidian.json"
+            }
+          ]
+        },
+        {
+          "item": "mekanism:dust_obsidian",
+          "modelJar": "Mekanism-1.20.1-10.4.16.80.jar",
+          "tagSources": [
+            {
+              "jar": "Mekanism-1.20.1-10.4.16.80.jar",
+              "entry": "data/forge/tags/items/dusts/obsidian.json"
+            }
+          ]
+        },
+        {
+          "item": "enderio:powdered_obsidian",
+          "modelJar": "EnderIO-1.20.1-6.2.18-beta-all.jar",
+          "tagSources": [
+            {
+              "jar": "EnderIO-1.20.1-6.2.18-beta-all.jar",
+              "entry": "data/forge/tags/items/dusts/obsidian.json"
+            }
+          ]
+        },
+        {
+          "item": "thermal_extra:obsidian_dust",
+          "modelJar": "ThermalExtra-3.3.3-1.20.1.jar",
+          "tagSources": [
+            {
+              "jar": "ThermalExtra-3.3.3-1.20.1.jar",
+              "entry": "data/forge/tags/items/dusts/obsidian.json"
+            }
+          ]
+        }
+      ],
+      "oeiMatchItems": [
+        "mekanism:dust_obsidian",
+        "enderio:powdered_obsidian",
+        "thermal_extra:obsidian_dust"
+      ],
+      "matchingStrategy": "explicit_verified_aliases"
+    }
+  ],
+  "protectedItems": [
+    "mekanism:dust_refined_obsidian",
+    "create:crushed_raw_zinc",
+    "thermal_extra:zinc_ore_chunk",
+    "malum:zinc_node",
+    "create_rns:zinc_deposit_block",
+    "smc:zinc_ingot",
+    "smc:zinc_nugget",
+    "smc:raw_zinc",
+    "smc:zinc_ore",
+    "smc:tuff_zinc_ore",
+    "smc:end_zinc_ore",
+    "alltheores:nether_zinc_ore",
+    "alltheores:end_zinc_ore",
+    "alltheores:other_zinc_ore",
+    "smc:zinc_block"
+  ],
+  "excluded": {
+    "smcZinc": "SMC 的靛锌用于特殊工具与饰品变体，缺少 zinc 细标签；未证明与普通锌相同，保留独立。",
+    "oreStrata": "仅普通石头与深板岩的同地层锌矿归一，不合并下界、末地、凝灰岩或异界矿。",
+    "processingStages": "粗矿、碎矿、粗矿粒、Malum节点和矿床保持独立。"
+  },
+  "obsidianRepresentativeRecipes": [
+    {
+      "kind": "ingredients",
+      "ids": [
+        "expedition:selected_native/create/sequenced_assembly/sturdy_sheet"
+      ],
+      "amount": 1
+    },
+    {
+      "kind": "mekItemInput",
+      "ids": [
+        "mekanism:processing/refined_obsidian/dust/from_obsidian_dust"
+      ],
+      "amount": 1
+    },
+    {
+      "kind": "mekMainInput",
+      "ids": [
+        "mekanism:combining/obsidian"
+      ],
+      "amount": 4
+    }
+  ],
+  "runtimeAuditDelayTicks": 80,
+  "tagResetGuard": {
+    "explicitVerifiedDuplicatesAlsoMatched": true,
+    "checkedCurrentTagScript": "kubejs/server_scripts/tags/Item.js",
+    "targetTagsDirectlyResetInCurrentScript": false,
+    "reason": "显式源 ID 可在其它脚本将其移出材料标签时仍保证归一；矿石分层始终只用显式 ID。"
+  }
+}

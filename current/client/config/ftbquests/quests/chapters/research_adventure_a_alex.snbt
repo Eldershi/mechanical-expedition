@@ -1,0 +1,2569 @@
+{
+	id: "4E1F56386D0215B2"
+	filename: "research_adventure_a_alex"
+	title: "Alex的洞穴"
+	group: "54D4CAA40ADB5408"
+	order_index: 200
+	icon: "alexscaves:cave_tablet"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "0BFB9B335F29EC47"
+			title: "启程探索Alex洞穴"
+			icon: "alexscaves:cave_tablet"
+			x: -15.4d
+			y: 0.35d
+			optional: false
+			tasks: [
+				{
+					id: "1156A7664E11A2FC"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a631192de4ebfa028e25268a.png width:32 height:32 align:center}"
+				"准备照明、补给和返程标记。"
+				"在主世界地下寻找目标洞穴群系，找到后记录入口和返程坐标，再展开对应支线。若另外取得带群系信息的洞穴石板，可选走勘探台解码与地图导航。"
+				"找到任意一个目标洞穴群系并留下返程标记。"
+				"选择磁场洞穴、原始洞穴、渊海陷窟、毒化洞穴或异寂空谷继续探索。"
+			]
+		}
+		{
+			id: "794AA8CD23A76582"
+			title: "在勘探台实际破解石板"
+			icon: "alexscaves:spelunkery_table"
+			x: -13.3d
+			y: -1.05d
+			optional: true
+			tasks: [
+				{
+					id: "49006BDCC6D40634"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/cave_codex"
+					criterion: ""
+				}
+				{
+					id: "1EDCEAF19E365764"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/2756f6520ad5c03a1f1ebe5e.png width:32 height:32 align:center}"
+				"石板＋纸。找到勘探台即可，不要求先制作。"
+				"放入两种输入，拖动单片镜认字，连续完成三轮。机会耗尽会碎板。"
+				"获得对应洞穴手稿。这是一项GUI操作，背包材料不等于已破解。"
+				"可将手稿用于地图，或右键解锁书中知识。两用途分别消耗。"
+			]
+		}
+		{
+			id: "25CE4584B80DC389"
+			title: "用对应手稿制作洞穴地图"
+			icon: "alexscaves:cave_map"
+			x: -11.2d
+			y: -1.05d
+			optional: true
+			tasks: [
+				{
+					id: "06B66950FF8E556A"
+					type: "item"
+					item: "alexscaves:cave_map"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a23e1d3e24d5f20625aa34b0.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/56b2b8b2f1eb8bd8cb719756.png width:240 height:120 align:center}"
+				"一份对应群系手稿与8张纸。"
+				"在工作台围一圈纸。持成品右键初始化，然后根据地图方位出发。"
+				"地图导航目标群系。"
+				"五条群系并行选择。"
+			]
+		}
+		{
+			id: "76CC1CF86D693EA3"
+			title: "把手稿用于洞穴概论知识"
+			icon: "alexscaves:cave_book"
+			x: -13.3d
+			y: 1.75d
+			optional: true
+			tasks: [
+				{
+					id: "539AB7BF5ECFEEA5"
+					type: "item"
+					item: "alexscaves:cave_book"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/adf0ec54f09eeb2de4221403.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/0efe18ee2cb6e3e0753d08af.png width:240 height:120 align:center}"
+				"可在小屋桶找到书，也可用书、石板与金粒合成。"
+				"打开书查未解锁条目，再持手稿右键解锁相关知识。"
+				"地图与知识用途并列。不用把整本知识解锁设为任何Boss门槛。"
+			]
+		}
+		{
+			id: "3032FD930DFA67C6"
+			title: "抵达磁场洞穴"
+			icon: "alexscaves:scarlet_magnet"
+			x: -9.1d
+			y: -8.75d
+			optional: false
+			tasks: [
+				{
+					id: "695AE25AE718AA67"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/discover_magnetic_caves"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/eb407ea8d450ac84233b49d4.png width:32 height:32 align:center}"
+				"按地图或实际探索抵达。铁/下界合金装备会受磁力影响。"
+				"先观察红色吸引、蓝色排斥，避开裸露特斯拉球。需要取球时移除支撑。"
+				"认识环境风险与矿物来源。"
+				"采集两色节点，走各自冶炼路线。"
+			]
+		}
+		{
+			id: "0138DC3E1EDCD1C9"
+			title: "从节点取得粗赤钕"
+			icon: "alexscaves:raw_scarlet_neodymium"
+			x: -7.0d
+			y: -10.15d
+			optional: true
+			tasks: [
+				{
+					id: "7447F9DA3F54B332"
+					type: "item"
+					item: "alexscaves:raw_scarlet_neodymium"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/333c001ee7b012d555b842bd.png width:32 height:32 align:center}"
+				"磁场洞穴柱体上可见赤钕节点。"
+				"用合适镐采节点。避开雷电球。"
+				"得到粗赤钕。"
+				"熔炉或高炉等现有工艺均可处理。"
+			]
+		}
+		{
+			id: "3029612CB5B64316"
+			title: "把粗赤钕加工为合金锭"
+			icon: "alexscaves:scarlet_neodymium_ingot"
+			x: -4.9d
+			y: -10.15d
+			optional: true
+			tasks: [
+				{
+					id: "1FB6ED8482FB33C2"
+					type: "item"
+					item: "alexscaves:scarlet_neodymium_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/65512c9524f8c652680ed887.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b524f87657759a079468e701.png width:240 height:120 align:center}"
+				"粗赤钕与可用冶炼设备。"
+				"查看并行烧炼/高炉及其他加工配方，任选已具备的一条。"
+				"得到赤钕合金锭。"
+				"按需制造磁铁、追踪箭或采石场零件。"
+			]
+		}
+		{
+			id: "556F68E000E0686B"
+			title: "青钕是并行材料路线"
+			icon: "alexscaves:azure_neodymium_ingot"
+			x: -4.9d
+			y: -6.5d
+			optional: true
+			tasks: [
+				{
+					id: "322809E296958F9B"
+					type: "item"
+					item: "alexscaves:azure_neodymium_ingot"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/30125b0cad83b030cb7a9f38.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/92ce52dca2638ad156743fbe.png width:240 height:120 align:center}"
+				"青钕节点产粗青钕，与赤钕同层获得。"
+				"单独加工粗青钕。不能用取得赤钕作前置。"
+				"得到青钕合金锭。"
+				"红石磁铁和磁悬浮铁轨是可选用途。"
+			]
+		}
+		{
+			id: "5942BFE533089A29"
+			title: "让红石磁铁工作"
+			icon: "alexscaves:scarlet_magnet"
+			x: -2.8d
+			y: -11.55d
+			optional: true
+			tasks: [
+				{
+					id: "3D9CE8B4C067806C"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/magnet"
+					criterion: ""
+				}
+				{
+					id: "52FFA62958C4EAAB"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/605a39775d488b1e204104e2.png width:32 height:32 align:center}"
+				"取得两色合金并制作至少一种磁铁。"
+				"用红石激活，观察端头范围。同色锭扩展、异色缩小。先小规模测试。"
+				"得到可调磁场。磁化固体先断电再拆除。"
+				"可选搭双控电梯。"
+			]
+		}
+		{
+			id: "595A2CD355D1AB9B"
+			title: "取得磁力采石场本体"
+			icon: "alexscaves:quarry"
+			x: 0.0d
+			y: -8.05d
+			optional: true
+			tasks: [
+				{
+					id: "073B261573D3F0AE"
+					type: "item"
+					item: "alexscaves:quarry"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3d7baa05f50b74f05c003671.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/ed11910a702c3f867c7a121c.png width:240 height:120 align:center}"
+				"机铁之心来自磁控机兵散架后的方块。另备合金、钻石与金属板。"
+				"攻击机兵本体而非组合外壳。取得心脏后按真实配方合成本体。"
+				"得到采石场本体，尚未完成建造。"
+			]
+		}
+		{
+			id: "3A8B7E9A4B7E5E51"
+			title: "制作采石场粉碎器"
+			icon: "alexscaves:quarry_smasher"
+			x: 0.0d
+			y: -5.95d
+			optional: true
+			tasks: [
+				{
+					id: "4A7DA116BAD7A8FA"
+					type: "item"
+					item: "alexscaves:quarry_smasher"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f65d1000e468494597139414.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/910ca525bd161b715efd0fb9.png width:240 height:120 align:center}"
+				"弹跳机兵掉配重块，锁链可走多个来源。"
+				"按配方合成。配重块与机铁之心是两种不同材料。"
+				"得到粉碎器。"
+				"与采石场、4磁力灯组合，彼此不是先打某只怪才能合成另一件。"
+			]
+		}
+		{
+			id: "143A0E42CAC3EAFD"
+			title: "建造并观察实际采掘"
+			icon: "alexscaves:quarry_smasher"
+			x: 2.8d
+			y: -7.0d
+			optional: true
+			tasks: [
+				{
+					id: "387D012C977EBAB0"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/finished_quarry"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f65d1000e468494597139414.png width:32 height:32 align:center}"
+				"本体、4灯、1粉碎器，留出矩形挖掘区与收集空间。"
+				"让灯围成矩形并出现连通特效，在内部放粉碎器。接取掉落并观察挖至基岩的进度。"
+				"观察机器真正运行并完成采掘。"
+				"可接入漏斗、传送带等收集设备，将产物送入仓库。"
+			]
+		}
+		{
+			id: "334AA579E52AD517"
+			title: "用方铅护手延长工具触及"
+			icon: "alexscaves:galena_gauntlet"
+			x: -2.1d
+			y: -9.45d
+			optional: true
+			tasks: [
+				{
+					id: "7C21AC93A921141C"
+					type: "item"
+					item: "alexscaves:galena_gauntlet"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f1d503573a6ae233fd7cbc01.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/25e958377f465742c933920f.png width:240 height:120 align:center}"
+				"磁流灵掉磁流核。合金、富铁黏液球、压缩方铅岩见配方。"
+				"副手护手、主手磁性工具，长按使用。与晶体化附魔的兼容范围另查。"
+				"远程操控工具。不是任意物品自动兼容。"
+			]
+		}
+		{
+			id: "60DF11B641E372CA"
+			title: "原始洞穴的补给与恐龙"
+			icon: "alexscaves:tree_star"
+			x: 3.5d
+			y: -3.85d
+			optional: false
+			tasks: [
+				{
+					id: "11C14F58ECACCF17"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/discover_primordial_caves"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/eb407ea8d450ac84233b49d4.png width:32 height:32 align:center}"
+				"抵达原始洞穴。关闭导致环境过暗的光影作为显示排错。"
+				"取星树果、南洋杉松子、蕨菜等，准备幽静沙拉与原始汤。蛋不要踩踏。"
+				"具备驯服/繁殖与恢复效果的本地补给。"
+				"翼龙、迅猛龙与撼地龙各有独立互动。"
+			]
+		}
+		{
+			id: "38EF3083404A654E"
+			title: "制作并正确使用幽静沙拉"
+			icon: "alexscaves:serene_salad"
+			x: 6.05d
+			y: -2.9d
+			optional: true
+			tasks: [
+				{
+					id: "4415EB85C6297085"
+					type: "item"
+					item: "alexscaves:serene_salad"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "3F24F7D527E1A23A"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/e25a69abdf0b6a6f20c3c7cb.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/749cb478f818d4b1c8de95d9.png width:240 height:120 align:center}"
+				"星树果、松子与蕨菜等配方材料。蕨菜来自角龙啃食卷叶蕨。"
+				"按配方查询配料。可供玩家解除眩晕，也用于喂食特定恐龙。"
+				"取得用途明确的补给。"
+				"撼地龙需先眩晕后喂食。翼龙需要的是三叶虾尾。"
+			]
+		}
+		{
+			id: "4EB61117878C03D4"
+			title: "驯服地底翼龙并试飞"
+			icon: "alexscaves:subterranodon_egg"
+			x: 5.6d
+			y: 0.35d
+			optional: true
+			tasks: [
+				{
+					id: "47E26F9795DF0A50"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/tame_subterranodon"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/7c085c1c372933e9f5dba5b4.png width:32 height:32 align:center}"
+				"取得三叶虾尾。选择可站稳的试飞区域。"
+				"喂食翼龙驯服，抓住脚后按跳跃升高，注意体力。潜行脱离。"
+				"驯服进度。不是得到虾尾就算驯服。"
+				"鳕鱼用于繁殖。孵化蛋是另一种来源。"
+			]
+		}
+		{
+			id: "712124AA3E4505BF"
+			title: "眩晕后驯服撼地龙"
+			icon: "alexscaves:cave_painting_footprint"
+			x: 8.4d
+			y: -2.45d
+			optional: true
+			tasks: [
+				{
+					id: "50B1F9593D3A954B"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/tame_tremorsaurus"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ec64cc6feef4948635c2a924.png width:32 height:32 align:center}"
+				"原始大棒、幽静沙拉与备用治疗。"
+				"用大棒眩晕后喂沙拉，失败可重试。成功后再练骑乘/特殊能力。"
+				"得到战斗坐骑。按键以设置为准。"
+				"繁殖可取得撼地龙蛋，作为撼地斯拉蛋的一项真实输入。"
+			]
+		}
+		{
+			id: "27EAA66DECBCC89B"
+			title: "为火山准备灾厄触媒"
+			icon: "alexscaves:ominous_catalyst"
+			x: 5.6d
+			y: -6.65d
+			optional: false
+			tasks: [
+				{
+					id: "0976CCBDD26FCD88"
+					type: "item"
+					item: "alexscaves:ominous_catalyst"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/313bf7013211ddf40a751f4d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/9c5917fa1cda24eb2bdd5f46.png width:240 height:120 align:center}"
+				"琥珀珍品＋8沉重骨头。琥珀可反复采掘获取珍品。"
+				"先找火山核心所在结构，再按配方制触媒。"
+				"得到召唤用消耗品。"
+				"投进火山口触发核心。火山核心不是可随身搬走的召唤台。"
+			]
+		}
+		{
+			id: "296491F75EA95C20"
+			title: "唤醒并挑战暝煌龙"
+			icon: "alexscaves:tectonic_shard"
+			x: 8.4d
+			y: -6.65d
+			optional: false
+			tasks: [
+				{
+					id: "50A3F9CF119486D7"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/defeat_luxtructosaurus"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/1b2b2ed3e1288666adaf0d10.png width:32 height:32 align:center}"
+				"火山核心与触媒。准备火焰防护、机动与可靠输出。"
+				"将触媒投向火山核心范围。"
+				"板块碎片是灭绝长矛和撼地斯拉蛋的材料。"
+				"采集掉落，再选择装备或恐龙繁育支线。"
+			]
+		}
+		{
+			id: "23690708301DB4C4"
+			title: "升级灭绝长矛"
+			icon: "alexscaves:extinction_spear"
+			x: 14.0d
+			y: -6.65d
+			optional: true
+			tasks: [
+				{
+					id: "30273C5AFC76564A"
+					type: "item"
+					item: "alexscaves:extinction_spear"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/de2a0ab16d5084c83e8245a5.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/dc1bf18e7ebe658e88cf6026.png width:240 height:120 align:center}"
+				"石灰岩长矛、板块碎片、琥珀珍品与沉重骨头。"
+				"按配方升级，分别体验投掷、近战与蓄力的恐龙灵魂效果。"
+				"得到机制型武器。"
+				"可选投入其他战斗。"
+			]
+		}
+		{
+			id: "7E3BCF9644F684BB"
+			title: "渊海陷窟先解决可见度"
+			icon: "alexscaves:lanternfish"
+			x: -9.1d
+			y: 1.05d
+			optional: false
+			tasks: [
+				{
+					id: "478C576310F4D7F5"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/discover_abyssal_chasm"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/eb407ea8d450ac84233b49d4.png width:32 height:32 align:center}"
+				"水下呼吸/逃生补给和照明。群系本身能见度很低。"
+				"取灯笼鱼酿渊视药水。潜水装备可由溺尸或遗迹桶取得。"
+				"建立水下探索基础。"
+				"找贻贝/海猪建立珍珠来源，再接触深潜者。"
+			]
+		}
+		{
+			id: "06BD3B4A3EAA650B"
+			title: "建立珍珠的多种来源"
+			icon: "alexscaves:pearl"
+			x: -7.0d
+			y: -0.35d
+			optional: true
+			tasks: [
+				{
+					id: "56C518F3470BA296"
+					type: "item"
+					item: "alexscaves:pearl"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d884c7f128d46192f7cf7ee5.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/88262e84204cefb364968128.png width:240 height:120 align:center}"
+				"可采贻贝，或给海猪喂粘土、泥巴、淤泥。"
+				"采挖贻贝有概率出珍珠。海雪可增加贻贝。海猪交易也是独立来源。"
+				"取得可重复获取的交易货币。"
+				"渊海祭坛交易，避免伤害深潜者降低好感。"
+			]
+		}
+		{
+			id: "6E3F219C479725F7"
+			title: "用渊海祭坛交易"
+			icon: "alexscaves:abyssal_altar"
+			x: -4.2d
+			y: -0.35d
+			optional: true
+			tasks: [
+				{
+					id: "3941F1E97C1214EB"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/trade_with_deep_one"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3489568d49177a3f7bf70bc4.png width:32 height:32 align:center}"
+				"祭坛与珍珠。自然深渊石碑顶部也有祭坛。"
+				"放珍珠等深潜者靠近换物，再取回结果。三种深潜者交易池不同。"
+				"好感与物品收益。武器和神奇海螺不保证每次掉落。"
+				"采潜艇、挑战碎船兽或继续交易，互为可选。"
+			]
+		}
+		{
+			id: "233E3B2E24E3CB8A"
+			title: "先利用天然潜水艇"
+			icon: "alexscaves:submarine"
+			x: -7.0d
+			y: 2.45d
+			optional: true
+			tasks: [
+				{
+					id: "73DA62F79B3A6FF8"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/ride_submarine"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/73ad4a54bbb603520b473969.png width:32 height:32 align:center}"
+				"找锈蚀研究所或维修室，携带铜锭。"
+				"进入完好艇或用铜锭修坏艇。检查移动、灯与氧气。灯光会吸引碎船兽。"
+				"无需先击败碎船兽就能取得潜艇使用能力。"
+				"铜锭修理、斧头去锈、蜜脾定色。不要拆毁实体。"
+			]
+		}
+		{
+			id: "4D1C1CBEDC1B6D42"
+			title: "碎船兽与深海战利品"
+			icon: "alexscaves:enigmatic_engine"
+			x: -4.65d
+			y: 2.9d
+			optional: true
+			tasks: [
+				{
+					id: "02806D6E827ABC6E"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a05c262aa9768eed823a48f1.png width:32 height:32 align:center}"
+				"可见度、水下机动与输出准备。天然潜艇可用但不是免伤罩。"
+				"避免让灯光长期吸引它。针对本体有效碰撞区输出，关注潜艇损伤。"
+				"奥秘引擎用于人工造艇，永恒胚胎用于蛋。"
+				"造艇是重复建造路线，蛋是与原始洞穴材料的真实交汇。"
+			]
+		}
+		{
+			id: "2F6F96C631897B11"
+			title: "按结构人工造艇"
+			icon: "alexscaves:enigmatic_engine"
+			x: -1.4d
+			y: 4.55d
+			optional: true
+			tasks: [
+				{
+					id: "38D9D1A75B752326"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a05c262aa9768eed823a48f1.png width:32 height:32 align:center}"
+				"1奥秘引擎、6深海玻璃、20铜块。玻璃来自海洋玻璃碎片。"
+				"按手册分层搭建并检查转成实体，从3×3底层向上按手册分三层布置引擎与玻璃。"
+				"成品是可驾驶实体，不能按收集材料检测完成。"
+				"将艇建在可入水的位置。天生艇和人工艇为任选一种。"
+			]
+		}
+		{
+			id: "39A2D988464E53F3"
+			title: "毒化洞穴的辐照防护"
+			icon: "alexscaves:uranium_rod"
+			x: 3.5d
+			y: 5.95d
+			optional: false
+			tasks: [
+				{
+					id: "7E7FA486AACAD05F"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/discover_toxic_caves"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/eb407ea8d450ac84233b49d4.png width:32 height:32 align:center}"
+				"准备糖、补给和撤退路线。辐照会阻止常规治疗。"
+				"先收硫粉做特效食物。不要假设牛奶能清辐照或防化服能挡全部来源。"
+				"认识拾取辐射、接触酸液、怪物直接施加的区别。"
+				"聚合物护具与射线猫为并行对策。"
+			]
+		}
+		{
+			id: "31FFCC912A0C81CB"
+			title: "准备能在辐照下回血的食物"
+			icon: "alexscaves:spelunkie"
+			x: 5.6d
+			y: 3.85d
+			optional: true
+			tasks: [
+				{
+					id: "66C5C952BCF711DF"
+					type: "item"
+					item: "alexscaves:spelunkie"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3e4bedc864b66d8667a3bcc0.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/781bb48543e31f7136a3d12f.png width:240 height:120 align:center}"
+				"统一配方使用硫粉与2糖。不是要求先建热力机器。"
+				"由本地硫磺资源及统一材料路线取硫粉，再用工作台制作。"
+				"2份硫心蛋糕卷。另有猛汉午餐肉与绿色食品。"
+				"为防化探索补给。三种食物的进度留作可选。"
+			]
+		}
+		{
+			id: "4C30BC8BFCAC8F84"
+			title: "做防化装备并认识保护边界"
+			icon: "alexscaves:hazmat_mask"
+			x: 11.2d
+			y: 7.35d
+			optional: true
+			tasks: [
+				{
+					id: "32428F6A390B4F7A"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/hazmat_armor"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/d87b1be814fc5e00c98a2c12.png width:32 height:32 align:center}"
+				"毒化烂泥合板配方已删。"
+				"按配方完成四件。先在安全地面确认穿戴效果。"
+				"部分微弱辐射与酸液保护，不能包办怪物辐照。"
+				"射线猫可吸收辐照，作为另一种实用支线。"
+			]
+		}
+		{
+			id: "2D21E496509D7313"
+			title: "用生辐鳃鱼驯服射线猫"
+			icon: "alexscaves:radgill"
+			x: 4.3d
+			y: 7.25d
+			optional: true
+			tasks: [
+				{
+					id: "0DD6966B4BAE7C5E"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/tame_raycat"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/158f86de01381a4cddefbb9e.png width:32 height:32 align:center}"
+				"用酸液桶收辐鳃鱼，或在酸液外击杀避免毁掉落。"
+				"喂生鱼驯猫并带着走，观察吸收辐照与吓退核能苦力怕。"
+				"得到辅助生物。小猫仍需再次驯服。"
+				"可继续采矿/取裂变核心。不是所有辐照伤害均已有实测。"
+			]
+		}
+		{
+			id: "16F3CF43837DABCE"
+			title: "核能熔炉是一项独立建设"
+			icon: "alexscaves:nuclear_furnace_component"
+			x: 8.4d
+			y: 4.8d
+			optional: true
+			tasks: [
+				{
+					id: "771DFE9A2389D286"
+					type: "item"
+					item: "alexscaves:nuclear_furnace_component"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4261e7e91dd8ab712e6a9888.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/dd69a30ba4badfb80c3cfc2e.png width:240 height:120 align:center}"
+				"焦化残骸、高炉与粗铀矿。"
+				"合成每次2部件，2×2×2共8件才成炉。备铀棒和金属桶，检查废料排出。"
+				"多方块熔炉能力。"
+			]
+		}
+		{
+			id: "117403183F494606"
+			title: "核弹只作明确选择的实验"
+			icon: "alexscaves:nuclear_bomb"
+			x: 11.2d
+			y: 5.25d
+			optional: true
+			tasks: [
+				{
+					id: "35D962412C3C9B81"
+					type: "item"
+					item: "alexscaves:nuclear_bomb"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/358015ecc91418894fc98b87.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f8e7ac4a72d957b908b2b0f4.png width:240 height:120 align:center}"
+				"先阅读配方和引爆/拆除说明。"
+				"得到可选核爆源。"
+				"蛋还可接受核能苦力怕或熔炉核爆，不强迫制作核弹。"
+			]
+		}
+		{
+			id: "7B52858FDA473370"
+			title: "三条洞穴材料汇成撼地斯拉蛋"
+			icon: "alexscaves:tremorzilla_egg"
+			x: 12.6d
+			y: 0.35d
+			optional: true
+			tasks: [
+				{
+					id: "382C2F79075FD02B"
+					type: "item"
+					item: "alexscaves:tremorzilla_egg"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/dc1c897e417138a0992460ac.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/99729dbb14af8a20a7d9d3eb.png width:240 height:120 align:center}"
+				"5板块碎片＋1永恒胚胎＋1撼地龙蛋，均是现配方。"
+				"按工作台配方合蛋。材料在原始与渊海分支实际交汇。"
+				"撼地斯拉蛋。不随时间普通孵化。"
+				"核爆孵化、喂废料桶驯服是后续实际操作。"
+			]
+		}
+		{
+			id: "07EA931E41B2027A"
+			title: "核爆孵化与驯服分别完成"
+			icon: "alexscaves:tremorzilla_egg"
+			x: 15.4d
+			y: 0.35d
+			optional: true
+			tasks: [
+				{
+					id: "2E4B9BCA72457353"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/hatch_tremorzilla_egg"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/eb407ea8d450ac84233b49d4.png width:32 height:32 align:center}"
+				"已放置蛋，选择核爆来源并把其他建筑/生物移开。"
+				"利用核爆触发孵化。喂废料桶驯服后等待成年再骑乘。"
+				"孵化进度。喂食驯服、成年与吐息不是同一检测。"
+				"本分支选修终点。不锁其他维度、科技或五心。"
+			]
+		}
+		{
+			id: "5D15617A4F004921"
+			title: "异寂空谷先建立照明与补给"
+			icon: "alexscaves:dark_tatters"
+			x: -9.1d
+			y: 9.45d
+			optional: false
+			tasks: [
+				{
+					id: "14BFFDE7D637A31F"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/discover_forlorn_hollows"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/eb407ea8d450ac84233b49d4.png width:32 height:32 align:center}"
+				"夜视/照明、盾与返程标记。"
+				"用剪刀取荆棘枝条。夜行蝠翼做煲可作夜视。光能暴露蚀牙兽但异教徒会拆火把。"
+				"获得环境应对方法。"
+				"神秘宝石可来自结构桶或窥心者，并不必须先造仪式。"
+			]
+		}
+		{
+			id: "21C0E79509F3746B"
+			title: "观察异教徒的两种献祭"
+			icon: "alexscaves:occult_gem"
+			x: -7.0d
+			y: 9.45d
+			optional: true
+			tasks: [
+				{
+					id: "6F23D8459226BA00"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/underzealot_sacrifice"
+					criterion: ""
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/eb407ea8d450ac84233b49d4.png width:32 height:32 align:center}" "找到异教徒与可献祭生物。避免把战斗/仪式区照亮过度。" "献祭触发。黑暗生物挑战为可选。" "想取得纯粹黑暗可挑战遗弃者。神秘宝石还有结构来源。"]
+		}
+		{
+			id: "5F3A9B487FAADB11"
+			title: "挑战遗弃者取得纯粹黑暗"
+			icon: "alexscaves:pure_darkness"
+			x: -4.9d
+			y: 9.45d
+			optional: true
+			tasks: [
+				{
+					id: "312BFF1CDAD9C08E"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/defeat_forsaken"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/eb407ea8d450ac84233b49d4.png width:32 height:32 align:center}"
+				"由夜行蝠相关献祭分支产生遭遇。盾、光源和后撤空间。"
+				"用盾处理攻击，留意低血黑暗恢复，尝试光照中断。"
+				"纯粹黑暗作为装备/附魔箭雨等材料。"
+				"配方不同：黑暗兜帽和斗篷实际用影丝＋神秘宝石，不能误说直接吃纯粹黑暗。"
+			]
+		}
+		{
+			id: "38150C847D85D9E6"
+			title: "黑暗兜帽的配方"
+			icon: "alexscaves:hood_of_darkness"
+			x: 0.7d
+			y: 8.05d
+			optional: true
+			tasks: [
+				{
+					id: "11F190039FE7EB4D"
+					type: "item"
+					item: "alexscaves:hood_of_darkness"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/fb675a01f327f567931496fb.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/56d281c191b7598f75e39ba7.png width:240 height:120 align:center}"
+				"影丝与神秘宝石。不是纯粹黑暗直接合盔甲。"
+				"依配方制作兜帽。与斗篷配套才试特殊飞行。"
+				"得到头部组件。"
+				"影丝来自纯粹黑暗、4黑暗布条与4蛾鳞粉的合成，保留这道中间工序。"
+			]
+		}
+		{
+			id: "6EA7B83889AC0D78"
+			title: "黑暗斗篷与飞行条件"
+			icon: "alexscaves:cloak_of_darkness"
+			x: 2.8d
+			y: 9.45d
+			optional: true
+			tasks: [
+				{
+					id: "2E2EE787491D28F7"
+					type: "item"
+					item: "alexscaves:cloak_of_darkness"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/c1da1490bdc926246487ae82.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/0dc928709c4f0e5711b83bc6.png width:240 height:120 align:center}"
+				"影丝、神秘宝石及兜帽。"
+				"完成两件后，在低光环境蓄满技能条再按实际绑定。遇光会中止。"
+				"有条件的短时飞行。"
+				"暗染苹果延长飞行可选。"
+			]
+		}
+		{
+			id: "74C7988B88905FF7"
+			title: "选修建造：双控磁力电梯"
+			icon: "alexscaves:azure_magnet"
+			x: 0.0d
+			y: -11.55d
+			optional: true
+			tasks: [
+				{
+					id: "655D5F55D1049F63"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/db07644ac6f820a29ea66a15.png width:32 height:32 align:center}"
+				"两台青钕磁铁、铁块平台、活板门限位和两端红石控制。"
+				"底磁铁持续上推，顶磁铁朝下抵消。调两端强度确定上下楼高度，再将两层开关接成双控。"
+				"一次真实上下行建造目标。不是收集两磁铁即完成。"
+				"在安全高度完成。"
+			]
+		}
+		{
+			id: "43586E8BE803F63F"
+			title: "选修装饰：编码并显示全息生物"
+			icon: "alexscaves:hologram_projector"
+			x: -7.0d
+			y: -12.25d
+			optional: true
+			tasks: [
+				{
+					id: "1B181E9BBB2C662F"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4e793c8ff97b68657e26dd81.png width:32 height:32 align:center}"
+				"扫描机兵零件、磁流核和合金等。依编码器/投影仪配方。"
+				"编码器对生物绑定，再在已放投影仪使用。未绑定时默认玩家影像。"
+				"显示一次目标投影。不是要求把生物带进工厂。"
+				"此装饰卡无奖励，不连接科技或Boss资格。"
+			]
+		}
+		{
+			id: "331E4005B6DABB6E"
+			title: "选修驯服：先让迅猛龙偷肉"
+			icon: "minecraft:chest"
+			x: 8.4d
+			y: 0.35d
+			optional: true
+			tasks: [
+				{
+					id: "5C53D60ABD710C39"
+					type: "advancement"
+					advancement: "alexscaves:alexscaves/tame_vallumraptor"
+					criterion: ""
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/fe844ad2950684ab30189958.png width:32 height:32 align:center}"
+				"箱中恐龙肉块、幽静沙拉与可隔离空间。"
+				"让野生阔鼻迅猛龙从箱偷肉并昏迷，再喂沙拉。留意其开门与群体行为。"
+				"驯服后的跟随/战斗伙伴。繁育用恐龙肉块。"
+				"与撼地龙/翼龙并行，不作火山资格。"
+			]
+		}
+		{
+			id: "0553CAA8385AAE34"
+			title: "选修使用：三类深潜者交易装备"
+			icon: "alexscaves:ortholance"
+			x: -1.4d
+			y: -0.35d
+			optional: true
+			tasks: [
+				{
+					id: "5EBFE4BF3735B4C3"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/8dae2415277f385f698ddf1c.png width:32 height:32 align:center}" "普通/骑士/法师分别拥有交易池。珍珠多来源。" "窥愿珍珠查好感。螺纹枪蓄力水浪突进。神奇海螺短时召援。海洋法杖追踪射击。" "按需求择一工具，附魔互斥须分别看。不新建四件强收集门槛。"]
+		}
+		{
+			id: "26E3D473BCD35220"
+			title: "选修武器：射线枪与铀棒维护"
+			icon: "alexscaves:raygun"
+			x: 13.3d
+			y: 9.45d
+			optional: true
+			tasks: [
+				{
+					id: "1B3D331924F06940"
+					type: "item"
+					item: "alexscaves:raygun"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "43CE3744D6562851"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f383fc0a5f20f4476fd3cbaa.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/184e62559642c3ecb4b9a49a.png width:240 height:120 align:center}"
+				"裂变核心及配方。铀棒用于耐久维护。"
+				"长按发射，注意近身无击退。X射线/伽马射线等附魔有互斥。"
+				"持续辐照武器。可研究抑制回复但不保证对每个Boss有效。"
+				"莱特兰词条反制仅推荐关系，绝不成为所有挑战前置。"
+			]
+		}
+		{
+			id: "0F1DBCB3DAC5C174"
+			title: "选修武器：恐惧之弓的弹种与光照"
+			icon: "alexscaves:dreadbow"
+			x: 0.7d
+			y: 12.25d
+			optional: true
+			tasks: [
+				{
+					id: "4C90E2070CFB0FC7"
+					type: "item"
+					item: "alexscaves:dreadbow"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ed5446e20e18c8cc225291bf.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/0329f32aef1b307f663b3109.png width:240 height:120 align:center}"
+				"纯粹黑暗与配方材料。准备实际使用的箭。"
+				"蓄力落箭雨。普通箭与特殊箭回收/消耗规则不同，阴影缓冲只适用于指定低光条件。"
+				"按玩法选择箭种/附魔，保留与力量/无限不兼容边界。"
+			]
+		}
+		{
+			id: "57CECCC02A322C49"
+			title: "选修工具：窥探与控心"
+			icon: "alexscaves:totem_of_possession"
+			x: -7.0d
+			y: 6.65d
+			optional: true
+			tasks: [
+				{
+					id: "43CA34DA7AA15795"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/4f1041a51ed1488fc773174d.png width:32 height:32 align:center}" "神秘宝石可从结构桶或窥心者取得。按工具配方。" "宝石先绑定窥探器再切视角，区块加载/同维度限制保留。控心图腾攻击绑定、持续使用操控，排除标签另核。" "侦察与操控各自使用能力。"]
+		}
+		{
+			id: "4F4317CE6B040771"
+			title: "电力高炉加工能力"
+			icon: "cmi:electronic_blast_furnace"
+			x: 5.6d
+			y: 8.75d
+			optional: true
+			tasks: [
+				{
+					id: "5DAA0D6BE8B56CAB"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ea6aa0b8488bc4e8bd727110.png width:32 height:32 align:center}"
+				"电力高炉类别。"
+				"从已建工业系统提供电力高炉与供能、流体接口。"
+				"聚合物板的实际加工能力。"
+				"查具体HDPE板＋两种流体配方。没有机器时先走食物/射线猫对策。"
+			]
+		}
+		{
+			id: "537CAA221BDE8866"
+			title: "聚合物板：需要工业工艺"
+			icon: "alexscaves:polymer_plate"
+			x: 8.4d
+			y: 8.75d
+			optional: true
+			tasks: [
+				{
+					id: "14157FB04A027FAF"
+					type: "item"
+					item: "alexscaves:polymer_plate"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/26f02998fe0a53d337519894.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/b107fc036141a8037f0e6af2.png width:240 height:101 align:center}"
+				"1 高密度聚乙烯片、100mB 氡气、100mB 抗辐射精炼液，电力高炉。"
+				"按配方查询[28,103]制作。"
+				"1聚合物板。"
+				"继续制作防化四件。此工业接口只约束选定护具路线，不锁毒化洞穴入场。"
+			]
+		}
+		{
+			id: "453647AD64D0383A"
+			title: "板块碎片：装备与蛋的共同材料"
+			icon: "alexscaves:tectonic_shard"
+			x: 11.2d
+			y: -6.65d
+			optional: true
+			tasks: [
+				{
+					id: "5079A05DC06B049F"
+					type: "item"
+					item: "alexscaves:tectonic_shard"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: ["{image:expedition_research:textures/quests/1b2b2ed3e1288666adaf0d10.png width:32 height:32 align:center}" "预留长矛3片与蛋5片各自消耗，不用一份材料重复记账。" "两种成品的真实输入。" "长矛与蛋互为可选用途。"]
+		}
+		{
+			id: "736C6D967EBC1E69"
+			title: "永恒胚胎：渊海带回的关键输入"
+			icon: "alexscaves:immortal_embryo"
+			x: 0.7d
+			y: 2.45d
+			optional: true
+			tasks: [
+				{
+					id: "2625FEF493CAFDD0"
+					type: "item"
+					item: "alexscaves:immortal_embryo"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/a49e53042850543567b4fe66.png width:32 height:32 align:center}"
+				"碎船兽实体战利品表。"
+				"实际拾取胚胎并带回，保留艇与武器等其他收益。"
+				"蛋配方中的一份输入。"
+				"与板块碎片、撼地龙蛋合流。"
+			]
+		}
+		{
+			id: "6BFCACCECF0024B2"
+			title: "撼地龙蛋：繁育而非击杀替代"
+			icon: "alexscaves:tremorsaurus_egg"
+			x: 11.2d
+			y: -2.45d
+			optional: true
+			tasks: [
+				{
+					id: "7D67B571B36E9A19"
+					type: "item"
+					item: "alexscaves:tremorsaurus_egg"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "40A9089FBDFE19B2"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/4dfb6bb37ee130c504fa5429.png width:32 height:32 align:center}"
+				"两只驯服撼地龙与恐龙肉骨。"
+				"完成繁殖取蛋。不要把杀恐龙得到肉骨当作已取得蛋。"
+				"撼地斯拉蛋的另一输入。"
+				"三种输入齐备才合蛋，普通驯龙不锁其他洞穴。"
+			]
+		}
+		{
+			id: "7116B8F59677758A"
+			title: "先合影丝再做黑暗装备"
+			icon: "alexscaves:shadow_silk"
+			x: -2.1d
+			y: 9.45d
+			optional: true
+			tasks: [
+				{
+					id: "51D7A25E087DA7B9"
+					type: "item"
+					item: "alexscaves:shadow_silk"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/f4520df5f0441e31ffd01ec5.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/f7ad2bd707d2af96143b7855.png width:240 height:120 align:center}"
+				"1纯粹黑暗、4黑暗布条与4蛾鳞粉，按现配方合影丝。"
+				"按工作台配方合影丝。"
+				"黑暗兜帽/斗篷的真实中间材料。"
+				"神秘宝石还有结构桶来源，别强制先杀窥心者。"
+			]
+		}
+	]
+	quest_links: [ ]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:138dc3e1edcd1c9" "q:3029612cb5b64316"]
+		}
+		{
+			nodes: ["q:556f68e000e0686b" "a:0d8b6746-0eeb-55ab-9211-239421201897"]
+		}
+		{
+			nodes: ["a:0d8b6746-0eeb-55ab-9211-239421201897" "a:13133be3-098f-543f-a6e2-1b7d2dfa1282"]
+		}
+		{
+			nodes: ["a:13133be3-098f-543f-a6e2-1b7d2dfa1282" "q:595a2cd355d1ab9b"]
+		}
+		{
+			nodes: ["q:556f68e000e0686b" "a:c34b8ae9-f181-566f-8612-24277f936403"]
+		}
+		{
+			nodes: ["a:c34b8ae9-f181-566f-8612-24277f936403" "a:0bb27d47-0f59-51d1-8483-afa1a5c9cbf4"]
+		}
+		{
+			nodes: ["a:0bb27d47-0f59-51d1-8483-afa1a5c9cbf4" "q:3a8b7e9a4b7e5e51"]
+		}
+		{
+			nodes: ["q:3029612cb5b64316" "a:f2b5cec2-7c87-51e6-95db-b9fbaea02724"]
+		}
+		{
+			nodes: ["a:f2b5cec2-7c87-51e6-95db-b9fbaea02724" "a:580b9ce0-e380-5a83-bf01-dfb81cd2001b"]
+		}
+		{
+			nodes: ["a:580b9ce0-e380-5a83-bf01-dfb81cd2001b" "q:3a8b7e9a4b7e5e51"]
+		}
+		{
+			nodes: ["q:3029612cb5b64316" "a:5a41f78e-5e52-5ea4-9d91-3039d9ab3d67"]
+		}
+		{
+			nodes: ["a:5a41f78e-5e52-5ea4-9d91-3039d9ab3d67" "a:2d73cec9-2fc8-5141-aee7-7c10ffa8236d"]
+		}
+		{
+			nodes: ["a:2d73cec9-2fc8-5141-aee7-7c10ffa8236d" "q:334aa579e52ad517"]
+		}
+		{
+			nodes: ["q:3029612cb5b64316" "a:767c7ea7-23d0-551d-8f90-9ae94e02586d"]
+		}
+		{
+			nodes: ["a:767c7ea7-23d0-551d-8f90-9ae94e02586d" "a:f3566601-2db9-5c19-bf28-ae614a7b9484"]
+		}
+		{
+			nodes: ["a:f3566601-2db9-5c19-bf28-ae614a7b9484" "q:5942bfe533089a29"]
+		}
+		{
+			nodes: ["q:453647ad64d0383a" "q:23690708301db4c4"]
+		}
+		{
+			nodes: ["q:453647ad64d0383a" "a:6475afa6-3789-5f07-b74c-493316542b95"]
+		}
+		{
+			nodes: ["a:6475afa6-3789-5f07-b74c-493316542b95" "a:a4f4f654-9f9e-5455-8285-44ff5fa7fd3b"]
+		}
+		{
+			nodes: ["a:a4f4f654-9f9e-5455-8285-44ff5fa7fd3b" "q:7b52858fda473370"]
+		}
+		{
+			nodes: ["q:736c6d967ebc1e69" "a:8898959c-0927-5a3d-bb43-7262623e0262"]
+		}
+		{
+			nodes: ["a:8898959c-0927-5a3d-bb43-7262623e0262" "a:0e4895aa-89cb-5d39-8c61-0873650845ef"]
+		}
+		{
+			nodes: ["a:0e4895aa-89cb-5d39-8c61-0873650845ef" "q:7b52858fda473370"]
+		}
+		{
+			nodes: ["q:6bfcaccecf0024b2" "q:7b52858fda473370"]
+		}
+		{
+			nodes: ["q:7116b8f59677758a" "q:38150c847d85d9e6"]
+		}
+		{
+			nodes: ["q:7116b8f59677758a" "a:760fff05-d264-5b2d-a11d-3142003faf8f"]
+		}
+		{
+			nodes: ["a:760fff05-d264-5b2d-a11d-3142003faf8f" "a:cab7c19f-8925-5dbb-b6e8-6a8d79f48ea7"]
+		}
+		{
+			nodes: ["a:cab7c19f-8925-5dbb-b6e8-6a8d79f48ea7" "q:6ea7b83889ac0d78"]
+		}
+		{
+			nodes: ["q:7116b8f59677758a" "a:89c1fdf7-2f64-595f-8beb-e5a825ff992c"]
+		}
+		{
+			nodes: ["a:89c1fdf7-2f64-595f-8beb-e5a825ff992c" "a:5f59ed5a-0c03-5638-af99-d5ae54556e41"]
+		}
+		{
+			nodes: ["a:5f59ed5a-0c03-5638-af99-d5ae54556e41" "q:f1dbcb3dac5c174"]
+		}
+		{
+			nodes: ["q:537caa221bde8866" "a:6fd0de71-5fe9-5aed-95ad-f66f7a36aa5a"]
+		}
+		{
+			nodes: ["a:6fd0de71-5fe9-5aed-95ad-f66f7a36aa5a" "a:4b11d12f-c519-5da9-bfcc-9bcaf903ed63"]
+		}
+		{
+			nodes: ["a:4b11d12f-c519-5da9-bfcc-9bcaf903ed63" "q:26e3d473bcd35220"]
+		}
+		{
+			nodes: ["q:537caa221bde8866" "q:4c30bc8bfcac8f84"]
+		}
+		{
+			nodes: ["q:794aa8cd23a76582" "q:25ce4584b80dc389"]
+		}
+		{
+			nodes: ["q:27eaa66decbcc89b" "q:296491f75ea95c20"]
+		}
+		{
+			nodes: ["q:595a2cd355d1ab9b" "a:4098bb8a-f0d2-57db-9741-5eae9ac490bf"]
+		}
+		{
+			nodes: ["a:4098bb8a-f0d2-57db-9741-5eae9ac490bf" "a:10ab443b-26b9-522b-98f3-473c461c7baf"]
+		}
+		{
+			nodes: ["a:10ab443b-26b9-522b-98f3-473c461c7baf" "q:143a0e42cac3eafd"]
+		}
+		{
+			nodes: ["q:3a8b7e9a4b7e5e51" "q:143a0e42cac3eafd"]
+		}
+		{
+			nodes: ["q:7b52858fda473370" "q:7ea931e41b2027a"]
+		}
+		{
+			nodes: ["q:4f4317ce6b040771" "q:537caa221bde8866"]
+		}
+		{
+			nodes: ["q:5942bfe533089a29" "a:a565656d-9284-58bc-936e-558768eebceb"]
+		}
+		{
+			nodes: ["a:a565656d-9284-58bc-936e-558768eebceb" "a:e26acc4e-0ebb-5a27-afbb-37abe85936e7"]
+		}
+		{
+			nodes: ["a:e26acc4e-0ebb-5a27-afbb-37abe85936e7" "q:74c7988b88905ff7"]
+		}
+		{
+			nodes: ["q:3032fd930dfa67c6" "a:2bfe6e06-4f3a-515b-b15b-6bc91613243f"]
+		}
+		{
+			nodes: ["a:2bfe6e06-4f3a-515b-b15b-6bc91613243f" "a:514f88fc-063a-56d7-8c32-bf51a18be0a6"]
+		}
+		{
+			nodes: ["a:514f88fc-063a-56d7-8c32-bf51a18be0a6" "q:43586e8be803f63f"]
+		}
+		{
+			nodes: ["q:3032fd930dfa67c6" "q:138dc3e1edcd1c9"]
+		}
+		{
+			nodes: ["q:3032fd930dfa67c6" "a:9ccc6562-597d-5c66-b551-5798a3ba76fc"]
+		}
+		{
+			nodes: ["a:9ccc6562-597d-5c66-b551-5798a3ba76fc" "a:2dcadaf5-185f-5eff-8bef-a088776762fc"]
+		}
+		{
+			nodes: ["a:2dcadaf5-185f-5eff-8bef-a088776762fc" "q:556f68e000e0686b"]
+		}
+		{
+			nodes: ["q:3032fd930dfa67c6" "a:6fb7d9f0-1d2e-5cd7-966a-bef92570a066"]
+		}
+		{
+			nodes: ["a:6fb7d9f0-1d2e-5cd7-966a-bef92570a066" "a:647fb82e-6d7f-53c5-a5c7-113ae2588148"]
+		}
+		{
+			nodes: ["a:647fb82e-6d7f-53c5-a5c7-113ae2588148" "q:595a2cd355d1ab9b"]
+		}
+		{
+			nodes: ["q:3032fd930dfa67c6" "a:d5432856-9f26-59b0-9a51-45bb1bf59912"]
+		}
+		{
+			nodes: ["a:d5432856-9f26-59b0-9a51-45bb1bf59912" "a:4541ee2f-5469-5bf0-8108-dec8ead7e464"]
+		}
+		{
+			nodes: ["a:4541ee2f-5469-5bf0-8108-dec8ead7e464" "q:3a8b7e9a4b7e5e51"]
+		}
+		{
+			nodes: ["q:3032fd930dfa67c6" "a:b7078e1f-e670-55c3-b3dd-88285ef9bb15"]
+		}
+		{
+			nodes: ["a:b7078e1f-e670-55c3-b3dd-88285ef9bb15" "a:b1b55cff-24fd-5682-a908-8e5f634b9224"]
+		}
+		{
+			nodes: ["a:b1b55cff-24fd-5682-a908-8e5f634b9224" "q:334aa579e52ad517"]
+		}
+		{
+			nodes: ["q:60df11b641e372ca" "a:5f905cbc-a39e-5561-977d-deb9a64315f0"]
+		}
+		{
+			nodes: ["a:5f905cbc-a39e-5561-977d-deb9a64315f0" "a:bf111de8-40c0-5cfc-ab42-d9c372b38ffc"]
+		}
+		{
+			nodes: ["a:bf111de8-40c0-5cfc-ab42-d9c372b38ffc" "q:331e4005b6dabb6e"]
+		}
+		{
+			nodes: ["q:60df11b641e372ca" "q:38ef3083404a654e"]
+		}
+		{
+			nodes: ["q:60df11b641e372ca" "a:74e5f54d-985f-5503-97a7-dbd5292d1358"]
+		}
+		{
+			nodes: ["a:74e5f54d-985f-5503-97a7-dbd5292d1358" "a:5ed3cf8c-b8ff-5699-b8bf-a0ae2fe77f54"]
+		}
+		{
+			nodes: ["a:5ed3cf8c-b8ff-5699-b8bf-a0ae2fe77f54" "q:4eb61117878c03d4"]
+		}
+		{
+			nodes: ["q:60df11b641e372ca" "a:0a520e1c-84e6-54af-ac6b-3feaebae96d2"]
+		}
+		{
+			nodes: ["a:0a520e1c-84e6-54af-ac6b-3feaebae96d2" "a:3b114b17-0778-5d58-92f0-f93a675ae966"]
+		}
+		{
+			nodes: ["a:3b114b17-0778-5d58-92f0-f93a675ae966" "q:27eaa66decbcc89b"]
+		}
+		{
+			nodes: ["q:6e3f219c479725f7" "a:3f7bba26-4be5-5082-9840-4aa9300dcde7"]
+		}
+		{
+			nodes: ["a:3f7bba26-4be5-5082-9840-4aa9300dcde7" "a:819a3838-1625-5145-b7af-6a11a05c64c9"]
+		}
+		{
+			nodes: ["a:819a3838-1625-5145-b7af-6a11a05c64c9" "q:553caa8385aae34"]
+		}
+		{
+			nodes: ["q:39a2d988464e53f3" "a:3aec20b0-9953-5483-b78a-c30b2a9e0142"]
+		}
+		{
+			nodes: ["a:3aec20b0-9953-5483-b78a-c30b2a9e0142" "a:808b46b6-693c-553b-9916-aae17d9b4a7f"]
+		}
+		{
+			nodes: ["a:808b46b6-693c-553b-9916-aae17d9b4a7f" "q:26e3d473bcd35220"]
+		}
+		{
+			nodes: ["q:39a2d988464e53f3" "q:31ffcc912a0c81cb"]
+		}
+		{
+			nodes: ["q:39a2d988464e53f3" "a:431dcca1-345e-5bb0-9d48-6e5a8e4ffe92"]
+		}
+		{
+			nodes: ["a:431dcca1-345e-5bb0-9d48-6e5a8e4ffe92" "a:8931fcdb-3531-5277-8762-eed07f0a1c65"]
+		}
+		{
+			nodes: ["a:8931fcdb-3531-5277-8762-eed07f0a1c65" "q:4c30bc8bfcac8f84"]
+		}
+		{
+			nodes: ["q:39a2d988464e53f3" "a:24338ff3-005e-50ee-a241-0702c30895bd"]
+		}
+		{
+			nodes: ["a:24338ff3-005e-50ee-a241-0702c30895bd" "a:63c00969-501a-5141-be95-36fcfb6ec650"]
+		}
+		{
+			nodes: ["a:63c00969-501a-5141-be95-36fcfb6ec650" "q:2d21e496509d7313"]
+		}
+		{
+			nodes: ["q:39a2d988464e53f3" "a:a0872621-e15f-595d-96e3-a2e8563a9181"]
+		}
+		{
+			nodes: ["a:a0872621-e15f-595d-96e3-a2e8563a9181" "a:07592223-31b6-5769-aec4-2e259439e126"]
+		}
+		{
+			nodes: ["a:07592223-31b6-5769-aec4-2e259439e126" "q:16f3cf43837dabce"]
+		}
+		{
+			nodes: ["q:39a2d988464e53f3" "a:da77b6a4-35ff-59c6-86c9-e4987afd0f65"]
+		}
+		{
+			nodes: ["a:da77b6a4-35ff-59c6-86c9-e4987afd0f65" "a:ef8e3d66-11cf-5987-b9a9-f50840eee2c4"]
+		}
+		{
+			nodes: ["a:ef8e3d66-11cf-5987-b9a9-f50840eee2c4" "q:117403183f494606"]
+		}
+		{
+			nodes: ["q:5f3a9b487faadb11" "a:096a085c-25cd-5cdb-a553-e440fb01c8c7"]
+		}
+		{
+			nodes: ["a:096a085c-25cd-5cdb-a553-e440fb01c8c7" "a:51e554bb-672c-56eb-84a5-fb029ef48cca"]
+		}
+		{
+			nodes: ["a:51e554bb-672c-56eb-84a5-fb029ef48cca" "q:f1dbcb3dac5c174"]
+		}
+		{
+			nodes: ["q:5f3a9b487faadb11" "a:0afb5c5d-9579-5b35-abf4-be6c708bc22d"]
+		}
+		{
+			nodes: ["a:0afb5c5d-9579-5b35-abf4-be6c708bc22d" "a:264874fc-fe94-5dcc-baef-77250f4e1c9d"]
+		}
+		{
+			nodes: ["a:264874fc-fe94-5dcc-baef-77250f4e1c9d" "q:7116b8f59677758a"]
+		}
+		{
+			nodes: ["q:5d15617a4f004921" "a:ccdaa368-e650-5936-b0a9-a4ab4c217536"]
+		}
+		{
+			nodes: ["a:ccdaa368-e650-5936-b0a9-a4ab4c217536" "a:a1610837-584e-5c22-9894-56b5a9a95507"]
+		}
+		{
+			nodes: ["a:a1610837-584e-5c22-9894-56b5a9a95507" "q:57ceccc02a322c49"]
+		}
+		{
+			nodes: ["q:5d15617a4f004921" "q:21c0e79509f3746b"]
+		}
+		{
+			nodes: ["q:bfb9b335f29ec47" "a:456c54b5-07ba-54c7-a1ca-3669250f5073"]
+		}
+		{
+			nodes: ["a:456c54b5-07ba-54c7-a1ca-3669250f5073" "a:cf85b33e-a817-5236-8a74-c31862cc6497"]
+		}
+		{
+			nodes: ["a:cf85b33e-a817-5236-8a74-c31862cc6497" "q:76cc1cf86d693ea3"]
+		}
+		{
+			nodes: ["q:38ef3083404a654e" "a:86392510-46a7-510e-a678-ce1e050699a5"]
+		}
+		{
+			nodes: ["a:86392510-46a7-510e-a678-ce1e050699a5" "a:8587f18b-212e-5039-9d0f-f564b08c7b5d"]
+		}
+		{
+			nodes: ["a:8587f18b-212e-5039-9d0f-f564b08c7b5d" "q:712124aa3e4505bf"]
+		}
+		{
+			nodes: ["q:712124aa3e4505bf" "a:2e9973b9-6200-57c2-9f84-1db28c2b1704"]
+		}
+		{
+			nodes: ["a:2e9973b9-6200-57c2-9f84-1db28c2b1704" "a:a17cb620-2807-53c2-bb73-9a824417bc05"]
+		}
+		{
+			nodes: ["a:a17cb620-2807-53c2-bb73-9a824417bc05" "q:6bfcaccecf0024b2"]
+		}
+		{
+			nodes: ["q:296491f75ea95c20" "a:86c8f5c3-c95f-5c04-9bee-30dfdcb8c3ea"]
+		}
+		{
+			nodes: ["a:86c8f5c3-c95f-5c04-9bee-30dfdcb8c3ea" "a:16556f7c-2007-5b29-8b08-84db439ee976"]
+		}
+		{
+			nodes: ["a:16556f7c-2007-5b29-8b08-84db439ee976" "q:453647ad64d0383a"]
+		}
+		{
+			nodes: ["q:7e3bcf9644f684bb" "q:6bd3b4a3eaa650b"]
+		}
+		{
+			nodes: ["q:7e3bcf9644f684bb" "a:7c0a05e3-8987-54d3-a879-6f147e7299ef"]
+		}
+		{
+			nodes: ["a:7c0a05e3-8987-54d3-a879-6f147e7299ef" "a:b8afa94d-4da9-5205-b6c8-3615c2e9822b"]
+		}
+		{
+			nodes: ["a:b8afa94d-4da9-5205-b6c8-3615c2e9822b" "q:233e3b2e24e3cb8a"]
+		}
+		{
+			nodes: ["q:6bd3b4a3eaa650b" "q:6e3f219c479725f7"]
+		}
+		{
+			nodes: ["q:233e3b2e24e3cb8a" "q:4d1c1cbedc1b6d42"]
+		}
+		{
+			nodes: ["q:4d1c1cbedc1b6d42" "a:83589b50-30c5-508a-a1e6-5d1831593538"]
+		}
+		{
+			nodes: ["a:83589b50-30c5-508a-a1e6-5d1831593538" "a:f4e1b51c-9a7d-5189-9596-535b63db0c20"]
+		}
+		{
+			nodes: ["a:f4e1b51c-9a7d-5189-9596-535b63db0c20" "q:736c6d967ebc1e69"]
+		}
+		{
+			nodes: ["q:4d1c1cbedc1b6d42" "q:2f6f96c631897b11"]
+		}
+		{
+			nodes: ["q:21c0e79509f3746b" "q:5f3a9b487faadb11"]
+		}
+		{
+			nodes: ["q:25ce4584b80dc389" "a:dc9cdfb1-cfdc-5af5-8a6a-3806f5c75ac0"]
+		}
+		{
+			nodes: ["a:dc9cdfb1-cfdc-5af5-8a6a-3806f5c75ac0" "a:f0607ca8-3fe9-5b60-851d-3b08225827be"]
+		}
+		{
+			nodes: ["a:f0607ca8-3fe9-5b60-851d-3b08225827be" "q:3032fd930dfa67c6"]
+		}
+		{
+			nodes: ["q:25ce4584b80dc389" "a:f14ace24-276d-5c31-a524-60bddc7eb0f5"]
+		}
+		{
+			nodes: ["a:f14ace24-276d-5c31-a524-60bddc7eb0f5" "a:a052e324-de5b-5f71-873d-3b1fd8b184fc"]
+		}
+		{
+			nodes: ["a:a052e324-de5b-5f71-873d-3b1fd8b184fc" "q:60df11b641e372ca"]
+		}
+		{
+			nodes: ["q:25ce4584b80dc389" "a:d970676d-0f8c-5894-af1b-054c564a9839"]
+		}
+		{
+			nodes: ["a:d970676d-0f8c-5894-af1b-054c564a9839" "a:e96881ae-4670-5ac8-aacd-8358d9d582c2"]
+		}
+		{
+			nodes: ["a:e96881ae-4670-5ac8-aacd-8358d9d582c2" "q:7e3bcf9644f684bb"]
+		}
+		{
+			nodes: ["q:25ce4584b80dc389" "a:ad4a365a-1bd0-5797-946e-aa887ee4a473"]
+		}
+		{
+			nodes: ["a:ad4a365a-1bd0-5797-946e-aa887ee4a473" "a:62240286-7ab6-5311-a2d5-560d723d7e94"]
+		}
+		{
+			nodes: ["a:62240286-7ab6-5311-a2d5-560d723d7e94" "q:39a2d988464e53f3"]
+		}
+		{
+			nodes: ["q:25ce4584b80dc389" "a:68541085-67d3-5c0d-b837-957aa62077c4"]
+		}
+		{
+			nodes: ["a:68541085-67d3-5c0d-b837-957aa62077c4" "a:4885ae4f-8287-53b6-8e3f-43b21f63800b"]
+		}
+		{
+			nodes: ["a:4885ae4f-8287-53b6-8e3f-43b21f63800b" "q:5d15617a4f004921"]
+		}
+	]
+	images: [
+		{
+			x: -14.7d
+			y: 0.817d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:456c54b5-07ba-54c7-a1ca-3669250f5073"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -14.0d
+			y: 1.283d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:cf85b33e-a817-5236-8a74-c31862cc6497"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -10.5d
+			y: -3.617d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:dc9cdfb1-cfdc-5af5-8a6a-3806f5c75ac0"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.8d
+			y: -6.183d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f0607ca8-3fe9-5b60-851d-3b08225827be"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.3d
+			y: -1.983d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f14ace24-276d-5c31-a524-60bddc7eb0f5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.4d
+			y: -2.917d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a052e324-de5b-5f71-873d-3b1fd8b184fc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -10.5d
+			y: -0.35d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d970676d-0f8c-5894-af1b-054c564a9839"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.8d
+			y: 0.35d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e96881ae-4670-5ac8-aacd-8358d9d582c2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.3d
+			y: 1.283d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ad4a365a-1bd0-5797-946e-aa887ee4a473"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.4d
+			y: 3.617d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:62240286-7ab6-5311-a2d5-560d723d7e94"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -10.5d
+			y: 2.45d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:68541085-67d3-5c0d-b837-957aa62077c4"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -9.8d
+			y: 5.95d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4885ae4f-8287-53b6-8e3f-43b21f63800b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.7d
+			y: -8.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:9ccc6562-597d-5c66-b551-5798a3ba76fc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.3d
+			y: -7.25d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2dcadaf5-185f-5eff-8bef-a088776762fc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.067d
+			y: -8.517d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6fb7d9f0-1d2e-5cd7-966a-bef92570a066"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.033d
+			y: -8.283d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:647fb82e-6d7f-53c5-a5c7-113ae2588148"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.067d
+			y: -7.817d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d5432856-9f26-59b0-9a51-45bb1bf59912"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.033d
+			y: -6.883d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4541ee2f-5469-5bf0-8108-dec8ead7e464"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -6.767d
+			y: -8.983d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b7078e1f-e670-55c3-b3dd-88285ef9bb15"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.433d
+			y: -9.217d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b1b55cff-24fd-5682-a908-8e5f634b9224"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.4d
+			y: -9.917d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2bfe6e06-4f3a-515b-b15b-6bc91613243f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.7d
+			y: -11.083d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:514f88fc-063a-56d7-8c32-bf51a18be0a6"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -4.2d
+			y: -10.617d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:767c7ea7-23d0-551d-8f90-9ae94e02586d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.5d
+			y: -11.083d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f3566601-2db9-5c19-bf28-ae614a7b9484"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.267d
+			y: -8.75d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f2b5cec2-7c87-51e6-95db-b9fbaea02724"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.633d
+			y: -7.35d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:580b9ce0-e380-5a83-bf01-dfb81cd2001b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.967d
+			y: -9.917d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5a41f78e-5e52-5ea4-9d91-3039d9ab3d67"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.033d
+			y: -9.683d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2d73cec9-2fc8-5141-aee7-7c10ffa8236d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.267d
+			y: -7.017d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0d8b6746-0eeb-55ab-9211-239421201897"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.633d
+			y: -7.533d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:13133be3-098f-543f-a6e2-1b7d2dfa1282"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.267d
+			y: -6.317d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:c34b8ae9-f181-566f-8612-24277f936403"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.633d
+			y: -6.133d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0bb27d47-0f59-51d1-8483-afa1a5c9cbf4"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.867d
+			y: -11.55d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a565656d-9284-58bc-936e-558768eebceb"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.933d
+			y: -11.55d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:e26acc4e-0ebb-5a27-afbb-37abe85936e7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 0.933d
+			y: -7.7d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4098bb8a-f0d2-57db-9741-5eae9ac490bf"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.867d
+			y: -7.35d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:10ab443b-26b9-522b-98f3-473c461c7baf"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.2d
+			y: -2.45d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:74e5f54d-985f-5503-97a7-dbd5292d1358"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.9d
+			y: -1.05d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5ed3cf8c-b8ff-5699-b8bf-a0ae2fe77f54"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.2d
+			y: -4.783d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0a520e1c-84e6-54af-ac6b-3feaebae96d2"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.9d
+			y: -5.717d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3b114b17-0778-5d58-92f0-f93a675ae966"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.133d
+			y: -2.45d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5f905cbc-a39e-5561-977d-deb9a64315f0"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.767d
+			y: -1.05d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:bf111de8-40c0-5cfc-ab42-d9c372b38ffc"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.833d
+			y: -2.75d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:86392510-46a7-510e-a678-ce1e050699a5"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 7.617d
+			y: -2.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8587f18b-212e-5039-9d0f-f564b08c7b5d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 9.333d
+			y: -2.45d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:2e9973b9-6200-57c2-9f84-1db28c2b1704"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 10.267d
+			y: -2.45d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a17cb620-2807-53c2-bb73-9a824417bc05"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 9.333d
+			y: -6.65d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:86c8f5c3-c95f-5c04-9bee-30dfdcb8c3ea"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 10.267d
+			y: -6.65d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:16556f7c-2007-5b29-8b08-84db439ee976"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.4d
+			y: 1.517d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:7c0a05e3-8987-54d3-a879-6f147e7299ef"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.7d
+			y: 1.983d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:b8afa94d-4da9-5205-b6c8-3615c2e9822b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.267d
+			y: -0.35d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3f7bba26-4be5-5082-9840-4aa9300dcde7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.333d
+			y: -0.35d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:819a3838-1625-5145-b7af-6a11a05c64c9"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -2.867d
+			y: 2.75d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:83589b50-30c5-508a-a1e6-5d1831593538"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.083d
+			y: 2.6d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:f4e1b51c-9a7d-5189-9596-535b63db0c20"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.767d
+			y: 6.383d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:24338ff3-005e-50ee-a241-0702c30895bd"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.033d
+			y: 6.817d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:63c00969-501a-5141-be95-36fcfb6ec650"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 5.133d
+			y: 5.567d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a0872621-e15f-595d-96e3-a2e8563a9181"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.767d
+			y: 5.183d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:07592223-31b6-5769-aec4-2e259439e126"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.067d
+			y: 5.717d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:da77b6a4-35ff-59c6-86c9-e4987afd0f65"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 8.633d
+			y: 5.483d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ef8e3d66-11cf-5987-b9a9-f50840eee2c4"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.067d
+			y: 6.417d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:431dcca1-345e-5bb0-9d48-6e5a8e4ffe92"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 8.633d
+			y: 6.883d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8931fcdb-3531-5277-8762-eed07f0a1c65"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 6.767d
+			y: 7.117d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:3aec20b0-9953-5483-b78a-c30b2a9e0142"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 10.033d
+			y: 8.283d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:808b46b6-693c-553b-9916-aae17d9b4a7f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -8.4d
+			y: 8.517d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:ccdaa368-e650-5936-b0a9-a4ab4c217536"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -7.7d
+			y: 7.583d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a1610837-584e-5c22-9894-56b5a9a95507"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.967d
+			y: 9.45d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0afb5c5d-9579-5b35-abf4-be6c708bc22d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.033d
+			y: 9.45d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:264874fc-fe94-5dcc-baef-77250f4e1c9d"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -3.033d
+			y: 10.383d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:096a085c-25cd-5cdb-a553-e440fb01c8c7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.167d
+			y: 11.317d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:51e554bb-672c-56eb-84a5-fb029ef48cca"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 10.033d
+			y: 8.983d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6fd0de71-5fe9-5aed-95ad-f66f7a36aa5a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 11.667d
+			y: 9.217d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:4b11d12f-c519-5da9-bfcc-9bcaf903ed63"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 11.667d
+			y: -4.317d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:6475afa6-3789-5f07-b74c-493316542b95"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 12.133d
+			y: -1.983d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:a4f4f654-9f9e-5455-8285-44ff5fa7fd3b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 4.667d
+			y: 1.75d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:8898959c-0927-5a3d-bb43-7262623e0262"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 8.633d
+			y: 1.05d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:0e4895aa-89cb-5d39-8c61-0873650845ef"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.467d
+			y: 9.45d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:760fff05-d264-5b2d-a11d-3142003faf8f"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 1.167d
+			y: 9.45d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:cab7c19f-8925-5dbb-b6e8-6a8d79f48ea7"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -1.167d
+			y: 10.383d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:89c1fdf7-2f64-595f-8beb-e5a825ff992c"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: -0.233d
+			y: 11.317d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:5f59ed5a-0c03-5638-af99-d5ae54556e41"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+}

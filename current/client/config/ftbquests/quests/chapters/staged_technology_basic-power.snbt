@@ -1,0 +1,225 @@
+{
+	id: "5CDF868C7D35B733"
+	filename: "staged_technology_basic-power"
+	title: "基础电源与压缩"
+	group: "050255AE19A93344"
+	order_index: 29
+	icon: "ad_astra:coal_generator"
+	consume_items: false
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "66B2D46487C15AF2"
+			title: "复用已有燃煤发电机"
+			icon: "ad_astra:coal_generator"
+			x: -4.6d
+			y: 0.0d
+			optional: false
+			tasks: [
+				{
+					id: "79514EF804934D33"
+					type: "item"
+					item: "ad_astra:coal_generator"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/9a800f5ddfe20a83165d9a57.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/57e8be877ef60adc7c86c9ed.png width:240 height:120 align:center}"
+				"取得后接到机器供电面。放入可燃燃料，查看电量上涨。"
+				"提供一条可观察的本地电源支路。"
+				"用已有电网或电缆给压缩机供电。"
+			]
+		}
+		{
+			id: "4C0820CC65B5C9ED"
+			title: "连接供电线路"
+			icon: "ad_astra:steel_cable"
+			x: -1.6d
+			y: -2.0d
+			optional: false
+			tasks: [
+				{
+					id: "147C1AEF3F1A1D36"
+					type: "item"
+					item: "ad_astra:steel_cable"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+				{
+					id: "2B005EC21AEE0301"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/ab7f97ba4d6a6a1abab76187.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/7e84061fd04ef28062db75d6.png width:240 height:120 align:center}"
+				"机器有可接收能量的一面。已准备电源。"
+				"用钢电缆连接并核对断连面。机器GUI实际出现能量才算接通。"
+				"能量抵达工作机器。"
+				"检查机器完成一次加工。"
+			]
+		}
+		{
+			id: "3E79213F845F70A0"
+			title: "建立压缩工序"
+			icon: "ad_astra:compressor"
+			x: -1.6d
+			y: 2.0d
+			optional: false
+			tasks: [
+				{
+					id: "0B7C9D8E2F5B1A0B"
+					type: "item"
+					item: "ad_astra:compressor"
+					count: 1
+					consume_items: false
+					only_from_crafting: false
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/49c0236b0577e042a62f6cfb.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/d3f2c48ce5c2db1906df7ec2.png width:240 height:120 align:center}"
+				"准备压缩机、电源与一份金属锭。"
+				"通电后投入铁锭，等到产物出现。再观察能量是否足以持续供应。"
+				"压缩能力可以把锭或块加工成板。"
+				"按用途选择钢板或行星金属板。其他压板配方继续可用。"
+			]
+		}
+		{
+			id: "4BFC30473684A5A5"
+			title: "压出一张铁板"
+			icon: "thermal:iron_plate"
+			x: 1.4d
+			y: 2.0d
+			optional: false
+			tasks: [
+				{
+					id: "54F622E86294776A"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: [
+				"{image:expedition_research:textures/quests/3c5268082b1cb79939bd408d.png width:32 height:32 align:center}"
+				"{image:expedition_research:textures/quests/c76bbd2f9c2bbd447c87ebc6.png width:240 height:151 align:center}"
+				"选择压缩机加工路线。铁锭已有来源。"
+				"投入1铁锭，取出1铁板。"
+				"得到后续设备可使用的铁板。"
+				"查该板的用途。现有Create压板教程继续使用。"
+			]
+		}
+		{
+			id: "0FEFB8ADCB3D9F3C"
+			title: "完成一条持续供电支路"
+			icon: "minecraft:book"
+			x: 1.4d
+			y: -2.0d
+			optional: false
+			tasks: [
+				{
+					id: "6A0DEE75B7D0FD9B"
+					type: "checkmark"
+					title: "完成操作"
+				}
+			]
+			description: ["至少一台耗能机已经接入电网。" "连续完成3次同一配方。记开始/结束能量、输入和输出变化，断开电源复查停机。" "检查的是实际供电和运行，库存里有发电机不算完成。" "把同样检查用于装载机和精炼厂。"]
+		}
+	]
+	quest_links: [
+		{
+			id: "157D8F8813D1C504"
+			linked_quest: "28589AF4FB0BDA5B"
+			x: 4.6d
+			y: -0.2d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "7B3B622D83C3F3EC"
+			linked_quest: "6C4CF69064BA2C10"
+			x: 4.6d
+			y: 2.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	images: [
+		{
+			x: 2.467d
+			y: 1.267d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:33559c4b-74b9-582c-ba69-164db727772b"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.533d
+			y: 0.533d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:d878db93-8d32-5808-b9a2-6b03de821c53"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 2.467d
+			y: 2.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:28e06690-55c3-54e9-8503-70d5a30ab956"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+		{
+			x: 3.533d
+			y: 2.0d
+			width: 0.0d
+			height: 0.0d
+			rotation: 0.0d
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			click: "quest_enhance:decorative_anchor:603f910c-2432-5fa0-8285-beefcd94c01a"
+			dev: false
+			quest_enhance_exclude_from_box_selection: true
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:4bfc30473684a5a5" "q:66b2d46487c15af2"]
+		}
+		{
+			nodes: ["q:4bfc30473684a5a5" "a:33559c4b-74b9-582c-ba69-164db727772b"]
+		}
+		{
+			nodes: ["a:33559c4b-74b9-582c-ba69-164db727772b" "a:d878db93-8d32-5808-b9a2-6b03de821c53"]
+		}
+		{
+			nodes: ["a:d878db93-8d32-5808-b9a2-6b03de821c53" "l:157d8f8813d1c504"]
+		}
+		{
+			nodes: ["q:4bfc30473684a5a5" "a:28e06690-55c3-54e9-8503-70d5a30ab956"]
+		}
+		{
+			nodes: ["a:28e06690-55c3-54e9-8503-70d5a30ab956" "a:603f910c-2432-5fa0-8285-beefcd94c01a"]
+		}
+		{
+			nodes: ["a:603f910c-2432-5fa0-8285-beefcd94c01a" "l:7b3b622d83c3f3ec"]
+		}
+		{
+			nodes: ["q:3e79213f845f70a0" "q:4bfc30473684a5a5"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+}

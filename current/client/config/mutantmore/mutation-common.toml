@@ -1,0 +1,13 @@
+"Formula Y Mutate Chance (in percent, default: 10)" = 10
+"Compound Z Mutate Chance (in percent, default: 100)" = 100
+"Formula Y Cloud Movement Speed (default: 0.2)" = 0.2
+"Compound Z Cloud Movement Speed (default: 0.4)" = 0.4
+"Mutation Cloud Horizontal Targeting Range (in blocks, default: 12)" = 12.0
+"Mutation Cloud Vertical Targeting Range (in blocks, default: 6)" = 6.0
+"Disable AI Of Mutating Mobs (default: true)" = true
+"Mutant Creatures-Style Mutations (default: false)" = false
+"Mutant Creatures-Style Mutation Minimum Duration (in ticks, default: 100)" = 100
+"Mutant Creatures-Style Mutation Maximum Duration (in ticks, default: 300)" = 300
+"Formula Y Recipe (default: \"minecraft:nether_wart\", \"minecraft:gunpowder\", \"minecraft:golden_carrot\", \"minecraft:fermented_spider_eye\", \"minecraft:crying_obsidian\"" = ["minecraft:nether_wart", "minecraft:gunpowder", "minecraft:golden_carrot", "minecraft:fermented_spider_eye", "minecraft:crying_obsidian"]
+"Compound Z Recipe (default: \"mutantmore:formula_y\", \"minecraft:glowstone_dust\", \"minecraft:golden_apple\", \"minecraft:experience_bottle\", \"minecraft:prismarine_crystals\", \"minecraft:redstone\", \"minecraft:sculk_catalyst\", \"minecraft:end_crystal\")" = ["mutantmore:formula_y", "minecraft:glowstone_dust", "minecraft:golden_apple", "minecraft:experience_bottle", "minecraft:prismarine_crystals", "minecraft:redstone", "minecraft:sculk_catalyst", "minecraft:end_crystal"]
+

@@ -1,0 +1,63 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "irons_spellbooks"
+    }
+  ],
+  "entity": "irons_spellbooks:fire_boss",
+  "variants": [],
+  "name": "entity.irons_spellbooks.fire_boss",
+  "name_color": "#FF7138",
+  "gui_scale": 0.4,
+  "gui_x_offset": 0,
+  "gui_y_offset": 0,
+  "gui_z_offset": 0,
+  "sim_cost": 8192,
+  "input": {
+    "item": "hostilenetworks:prediction_matrix",
+    "count": 1
+  },
+  "base_drop": {
+    "item": "hostilenetworks:nether_prediction",
+    "count": 1
+  },
+  "fabricator_drops": [
+    {
+      "item": "irons_spellbooks:arcane_essence",
+      "count": 32
+    },
+    {
+      "item": "irons_spellbooks:cinder_essence",
+      "count": 8
+    },
+    {
+      "item": "irons_spellbooks:divine_soulshard",
+      "count": 1
+    },
+    {
+      "item": "irons_spellbooks:decrepit_scythe",
+      "count": 1
+    },
+    {
+      "item": "irons_spellbooks:betrayer_signet",
+      "count": 1
+    },
+    {
+      "item": "irons_spellbooks:decrepit_key",
+      "count": 1
+    }
+  ],
+  "tier_data": [
+    6,
+    54,
+    354,
+    1254
+  ],
+  "data_per_kill": [
+    3,
+    12,
+    30,
+    45
+  ]
+}
