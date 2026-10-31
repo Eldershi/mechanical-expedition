@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "create-style-hnn",
+  "repository": "https://github.com/Eldershi/create-style-hnn",
+  "ref": "04610bed44ee3906cc9f866640d94a63b72fcb4a",
+  "release": "v1.0.0",
+  "minecraft": "1.20.1",
+  "artifacts": [
+    {
+      "name": "create-style-hnn-1.0.0.zip",
+      "url": "https://github.com/Eldershi/create-style-hnn/releases/download/v1.0.0/create-style-hnn-1.0.0.zip",
+      "sha256": "3dba6c23980cb1ca562286e72fa901a199f73340baec3732fee9992c29816357",
+      "bytes": 23609
+    }
+  ]
+}

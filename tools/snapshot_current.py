@@ -160,7 +160,8 @@ def main():
     args = parser.parse_args()
     project = args.project.resolve()
     output = args.output.resolve()
-    rules = (project / "AGENTS.md").read_text()
+    rules_file = project / "AGENTS.md"
+    rules = rules_file.read_text() if rules_file.is_file() else ""
     match = re.search(r"当前活动客户端实例为 `([^`]+)`", rules)
     if not match and not args.instance:
         raise RuntimeError("Active client path is absent from AGENTS.md")
@@ -174,8 +175,14 @@ def main():
     spec.loader.exec_module(publication)
     original_skip = publication.skip_reason
     external = external_resource_files(project, active)
+    policy_file = project / "local-only/publication-policy.json"
+    policy = json.loads(policy_file.read_text()) if policy_file.is_file() else {}
+    excluded_paths = set(policy.get("excludePaths", []))
+    list_transforms = {row["path"]: row for row in policy.get("jsonListTransforms", [])}
 
     def skip(relative):
+        if relative in excluded_paths:
+            return "local export exclusion"
         return original_skip(relative) or production_exclusion(relative)
 
     publication.skip_reason = skip
@@ -207,6 +214,13 @@ def main():
                              "reason": finding["reason"]})
         if clean is None:
             return
+        if relative in list_transforms:
+            transform = list_transforms[relative]
+            value = json.loads(clean.decode("utf-8-sig"))
+            field = transform["field"]
+            removed = set(transform.get("removeValues", []))
+            value[field] = [item for item in value[field] if item not in removed]
+            clean = encoded(value)
         if clean != blob:
             sanitized.append({"scope": scope, "path": relative,
                               "reason": "local font paths omitted by publication privacy filter"})

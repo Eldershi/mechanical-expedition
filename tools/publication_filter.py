@@ -28,6 +28,9 @@ CREDENTIAL=re.compile(r'''(?i)["']?\b(api[_-]?key|access[_-]?token|refresh[_-]?t
 
 def skip_reason(relative):
     path=PurePosixPath(relative);lower=relative.lower();parts={p.lower() for p in path.parts}
+    if path.name.casefold().startswith('agents') and path.suffix.casefold()=='.md':return 'local instructions'
+    if parts&{'local-only','.agents','.codex'}:return 'local project state'
+    if path.name.casefold().startswith('install_for_codex') or '安装提示词' in path.name:return 'local installation instructions'
     if parts&FORBIDDEN:return 'generated/private/cache directory'
     if path.name.startswith('.') or lower in {'servers.dat','servers.dat_old','usercache.json','usernamecache.json','options.txt'}:return 'hidden or personal runtime file'
     if any(lower==s.lower() or lower.startswith(s.lower()+'/') for s in SKIP):return 'explicit private/generated exclusion'
@@ -43,6 +46,22 @@ def privacy(relative,blob):
     if PurePosixPath(relative).suffix.lower() not in TEXT:return blob,[]
     try:text=blob.decode('utf-8-sig')
     except UnicodeError:return blob,[]
+    if PurePosixPath(relative).suffix.lower()=='.json':
+        import json
+        def scrub(value):
+            if isinstance(value,dict):
+                return {key:scrub(item) for key,item in value.items()
+                        if not (isinstance(item,str) and
+                                (re.search(r'https?://chatgpt\.com/(?:c/|g/|space/|share/)',item) or
+                                 key in {'pageId','threadId','turnId','conversationId'} and
+                                 (item.startswith('page_') or re.fullmatch(r'[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}',item))))}
+            if isinstance(value,list):return [scrub(item) for item in value]
+            return value
+        try:
+            original=json.loads(text);cleaned=scrub(original)
+            if cleaned!=original:
+                text=json.dumps(cleaned,ensure_ascii=False,indent=2)+'\n';blob=text.encode('utf-8')
+        except json.JSONDecodeError:pass
     findings=[];lines=text.splitlines(keepends=True);changed=False;last_key=''
     for index,line in enumerate(lines):
         number=index+1
