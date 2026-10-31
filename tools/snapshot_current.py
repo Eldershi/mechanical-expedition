@@ -245,7 +245,8 @@ def main():
         if algorithm in {"sha1", "sha256", "sha512"} and value and url:
             verified_urls.setdefault((algorithm, value), (url, "mods/.index/" + path.name))
 
-    existing_lock = Path(__file__).resolve().parents[1] / "current/mods.lock.json"
+    existing_lock = (published_server.parent / "mods.lock.json" if published_server else
+                     Path(__file__).resolve().parents[1] / "current/mods.lock.json")
     if existing_lock.is_file():
         for row in json.loads(existing_lock.read_text()).get("mods", []):
             url = public_url(row.get("downloadUrl"))
