@@ -64,7 +64,7 @@ def main():
 这三项保留现状，其他所选内容恢复有原生对应的可用路线。
 验证：独立测试服冷启动、重载、原配方与当前配方保留、15 个后期里程碑、6 类前期构件。
 JEI 标记通过逻辑分支测试；完整生存通关与标记实际画面未验证。
-线上服同步状态见 Space 清单处理回执；本包不含世界、账号或玩家数据。
+本包不含世界、账号或玩家数据。
 回退：移除本补丁新增的四个文件；若此前存在同名文件，使用对应备份恢复。
 '''
     patch=out/'机械动力-远征-原配方并行与简短标记-20261022.zip'
@@ -74,7 +74,7 @@ JEI 标记通过逻辑分支测试；完整生存通关与标记实际画面未�
     with zipfile.ZipFile(patch) as z:
         assert z.testzip() is None and all(z.read(name)==blob for name,blob in files.items())
     (out/'SHA256SUMS.txt').write_text(sha(patch.read_bytes())+'  '+patch.name+'\n')
-    application={'recordedAt':datetime.now(ZoneInfo('Asia/Shanghai')).isoformat(),'selectionPage':json.loads((EVIDENCE/'selection.json').read_text())['url'],
+    application={'recordedAt':datetime.now(ZoneInfo('Asia/Shanghai')).isoformat(),
         'selectedItems':239,'status':'applied_locally_and_packaged','remoteStatus':'pending_chrome_deployment',
         'files':hashes,'destinations':DESTINATIONS,'prior':prior,'patch':str(patch.relative_to(ROOT)),
         'patchSha256':sha(patch.read_bytes()),'coldAudit':audit,'milestones':milestones,'existingNativeAudit':previous,

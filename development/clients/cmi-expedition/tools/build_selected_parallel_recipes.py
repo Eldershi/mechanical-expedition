@@ -366,7 +366,7 @@ def main():
         coverage.append({'label':label,'rule':rule,'nativeIds':sorted(set(matched)),
             'status':'native_catalog_found' if matched else 'no_native_counterpart_or_needs_review',
             'missingOutputs':sorted(set(rule['items'])-known)})
-    catalog={'schemaVersion':1,'mode':'parallel_native_and_cmi','selectionPage':SELECTION['url'],
+    catalog={'schemaVersion':1,'mode':'parallel_native_and_cmi',
         'selectionCount':len(SELECTION['selected']),'recipes':sorted(selected.values(),key=lambda r:r['id'])}
     baseline=EVIDENCE/'baseline-summary.json'
     if baseline.exists(): catalog['baselineUnavailable']=json.loads(baseline.read_text())['baselineUnavailable']
