@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "create-style-dyson",
+  "repository": "https://github.com/Eldershi/create-style-dyson",
+  "sourceCommit": "aeb0241a82b8f706770290bd07ae1ad80c6e695a",
+  "minecraft": "1.20.1",
+  "forge": "47.4.10",
+  "clientFiles": [
+    {
+      "path": "config/paxi/resourcepacks/Dyson-Create-Approved-Models-Forge-1.20.1.zip",
+      "sha256": "3189f7622f0f01d0d7ef5730b109487d66814278756f2941030cd56024091b74",
+      "bytes": 904973,
+      "delivery": "Included in the public release client bundle at config/paxi/resourcepacks/; unpack before installation"
+    },
+    {
+      "path": "kubejs/startup_scripts/90_dcp_approved_visuals.js",
+      "sha256": "75f09196f161e4331e6b470c0d759a8b653340c9b74e229e62cb3be71aba3939",
+      "bytes": 32509,
+      "sourcePath": "client/kubejs/startup_scripts/90_dcp_approved_visuals.js"
+    }
+  ],
+  "paxi": {
+    "loadOrderEntry": "Dyson-Create-Approved-Models-Forge-1.20.1.zip",
+    "priority": "Last entry; highest priority",
+    "copies": 1
+  },
+  "dependencies": [
+    "dysoncubeproject-1.20.1+1.0.5.1",
+    "Titanium3.8.35",
+    "KubeJS2001.6.5-build26",
+    "Rhino2001.2.3-build10",
+    "Architectury9.2.14"
+  ],
+  "validation": {
+    "modCount": 395,
+    "poseImages": 21,
+    "nativeWorkConditions": 6,
+    "nativeRailCycles": 2,
+    "rawNativePNGCount": 70,
+    "renderErrors": 0,
+    "shaderPacksEnabled": false
+  },
+  "assetPublication": "Complete source art, model meshes, textures and build inputs published in the separate resource repository; this integration repository keeps references and Paxi configuration only",
+  "activation": "Restart client after installing the matching pair",
+  "release": {
+    "version": "1.0.0",
+    "tag": "v1.0.0-mc1.20.1",
+    "url": "https://github.com/Eldershi/create-style-dyson/releases/tag/v1.0.0-mc1.20.1",
+    "clientBundleURL": "https://github.com/Eldershi/create-style-dyson/releases/download/v1.0.0-mc1.20.1/Create-Style-Dyson-1.0.0-MC1.20.1-Client.zip",
+    "clientBundleSHA256": "6aa826165b9661bef1be74e97e55d57a0090598c6cfca0cdc2c328cf225e99fd",
+    "sourceArchiveURL": "https://github.com/Eldershi/create-style-dyson/archive/refs/tags/v1.0.0-mc1.20.1.zip",
+    "sourceArtFiles": 49,
+    "compiledResourceFiles": 246
+  }
+}

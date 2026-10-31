@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "patchId": "expedition-session-20261028",
+  "minecraftVersion": "1.20.1",
+  "loader": "Forge",
+  "requiredMods": [
+    {
+      "filename": "create-1.20.1-6.0.8.jar",
+      "sha256": "6fbb910c367dbce8e4fc7e5bf64b6edd4de980906ed00af8e47e4af843c0d9b0",
+      "roles": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "filename": "kubejs-forge-2001.6.5-build.26.jar",
+      "sha256": "1769312192fbf9d72f45054ba61130523bfb471b5f480a4bff8c210ec09400bb",
+      "roles": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "filename": "OneEnoughItem-1.0.8.jar",
+      "sha256": "87d585829b878d2f6af002f3a63a267051f7b3af8836333f7d4e48ce5798a360",
+      "roles": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "filename": "create_ultimate_factory-2.2.4-forge-1.20.1.jar",
+      "sha256": "11ba77c4739666c0f3d71ad0bdd5e77f7d460abf1c93de300fb6d8de35478a89",
+      "roles": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "filename": "Mekanism-1.20.1-10.4.16.80.jar",
+      "sha256": "3b0d191fa4a45e662f9725991d76a30192f30186abb2ba694b873b5f7b9358d2",
+      "roles": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "filename": "alltheores-1.20.1-47.1.3-2.2.4.jar",
+      "sha256": "b3aee8294e1a285f875192745194b910d945a09beeb050f25a2eb37ddc497408",
+      "roles": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "filename": "vintageimprovements-1.20.1-0.3.7.9.jar",
+      "sha256": "f94c75ac1c09146c78c2273c4c91809f60520a81bd03043465a6bde6cd953da2",
+      "roles": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "filename": "ThermalExtra-3.3.3-1.20.1.jar",
+      "sha256": "d2563a89f15847637bad72bc219c9c9329c3a66b7151fd1bef46bf3313bd05ff",
+      "roles": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "filename": "Quark-4.0-462.jar",
+      "sha256": "c90b96f049d92825c4a103721988c80d72e5ad380d17be46a0f53e114874c478",
+      "roles": [
+        "client"
+      ]
+    },
+    {
+      "filename": "fancymenu_forge_3.9.14_MC_1.20.1.jar",
+      "sha256": "2d14bc9b0cb32e5e3f2f9661add8a78762f2b29df3fbb6db7412675786e76f16",
+      "roles": [
+        "client"
+      ]
+    },
+    {
+      "filename": "EnderIO-1.20.1-6.2.18-beta-all.jar",
+      "sha256": "9d1471e6d4562d0a50f0564bc46573b87fd738bd440fe19397d31847da20f172",
+      "roles": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "filename": "createaddition-1.20.1-1.3.3.jar",
+      "sha256": "9bf3ae15d86ec95d128542caf10e4b5498e49ca02f725b9302d6daecd5eae1db",
+      "roles": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "filename": "malum-1.20.1-1.6.7.jar",
+      "sha256": "ceda6ce4cc19de21ff6c21a732d8f9270ecc83cdae69027b13aaa24b536307f8",
+      "roles": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "filename": "create_rns-1.3.1-1.20.1-6.jar",
+      "sha256": "bc995a3c7bb7dad5458b7081abe134b66b8d26401d99a66f5a7c4291ce67d803",
+      "roles": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "filename": "smc-1.1.9.jar",
+      "sha256": "8b9dcbaf3d95080644dba636e3b61d0347f728db28a21d5cdf89f724bff280b5",
+      "roles": [
+        "client",
+        "server"
+      ]
+    },
+    {
+      "filename": "jei-1.20.1-forge-15.59.0.212.jar",
+      "sha256": "0f39187f57cadd7b27a4511038628e212b53a1b184edf53121614418ed6a7442",
+      "roles": [
+        "client"
+      ]
+    }
+  ],
+  "requiredBaseFiles": [
+    "kubejs/server_scripts/recipes/process/StoneProcess.js",
+    "kubejs/server_scripts/recipes/process/PlatinumProcess.js",
+    "kubejs/server_scripts/recipes/mod/create/Crushing.js"
+  ],
+  "payload": [
+    {
+      "path": "kubejs/assets/alltheores/models/block/deepslate_zinc_ore.json",
+      "roles": [
+        "client"
+      ],
+      "sha256": "3766ce80d0897ed944493f96bef723d0f4a54918aea3f40ab1696091242b7db7",
+      "acceptedBeforeSha256": [
+        null
+      ]
+    },
+    {
+      "path": "kubejs/assets/alltheores/models/block/zinc_ore.json",
+      "roles": [
+        "client"
+      ],
+      "sha256": "6555269c5a4215b70e8128705552d2b9e33d5c659dd3d0225e0d2b113f0f99ca",
+      "acceptedBeforeSha256": [
+        null
+      ]
+    },
+    {
+      "path": "kubejs/client_scripts/expedition/UnifiedMaterialJei.js",
+      "roles": [
+        "client"
+      ],
+      "sha256": "d9bc0160c37ecd655a03c0418b953180f8baf8401599719b28943f71fba8f216",
+      "acceptedBeforeSha256": [
+        null
+      ]
+    },
+    {
+      "path": "kubejs/config/expedition-material-unification.json",
+      "roles": [
+        "client",
+        "server"
+      ],
+      "sha256": "d30cf70f77966d47b5a97fbce8e58059585c744e16382500a47dbab49f65d8f0",
+      "acceptedBeforeSha256": [
+        null
+      ]
+    },
+    {
+      "path": "kubejs/data/oei/replacements/expedition_obsidian.json",
+      "roles": [
+        "client",
+        "server"
+      ],
+      "sha256": "c085d5d4664cf983145e9e9fc8bcfccd6866eee561d40c9f6a6bde88e6aac5ab",
+      "acceptedBeforeSha256": [
+        null
+      ]
+    },
+    {
+      "path": "kubejs/data/oei/replacements/osmium.json",
+      "roles": [
+        "client",
+        "server"
+      ],
+      "sha256": "3c49663ff1abd478df09212f57fc17ef36bc178c3c77ef5073c62917d5711e72",
+      "acceptedBeforeSha256": [
+        null
+      ]
+    },
+    {
+      "path": "kubejs/data/oei/replacements/zinc.json",
+      "roles": [
+        "client",
+        "server"
+      ],
+      "sha256": "a0bac790da052ee974cdc2a0b51cee68e3c7e4507b3273995d6cfef8cab3ffad",
+      "acceptedBeforeSha256": [
+        null,
+        "c2a94582d50878ccea3ae4b9b86763ff3ff7afe04250234a22b9cbaf5ae2e2d8"
+      ]
+    },
+    {
+      "path": "kubejs/server_scripts/expedition/MaterialUnificationAudit.js",
+      "roles": [
+        "client",
+        "server"
+      ],
+      "sha256": "cf4071ff150d8090c24c6856fb4ec175943d6a3a60c7266eb46b4edfe3cc636a",
+      "acceptedBeforeSha256": [
+        null,
+        "2c8e0992b80a2a7cd177a19cab0d0ea7f4c765f6d3eb813cc52731e4936d6a37"
+      ]
+    },
+    {
+      "path": "kubejs/server_scripts/expedition/NativeStoneProcessing.js",
+      "roles": [
+        "client",
+        "server"
+      ],
+      "sha256": "2c2551c9a60834c5755a32ae14cf35024c41ce3d4900054cda1aafbe19d13821",
+      "acceptedBeforeSha256": [
+        null
+      ]
+    },
+    {
+      "path": "kubejs/server_scripts/expedition/SelectedParallelRecipes.js",
+      "roles": [
+        "client",
+        "server"
+      ],
+      "sha256": "38b41e780dd837632eedf572c0df373eb1f3826247843274efa28ee601d42810",
+      "acceptedBeforeSha256": [
+        "c9256ee9e077870d75acead5de7b49da9701518bf95f5e98ab9a323304cfc7bf"
+      ]
+    }
+  ],
+  "catalogDelta": {
+    "newRecipes": 25,
+    "dependencyRecipes": 3,
+    "selectionGroupsAdded": 2,
+    "targetBaseRecipeCount": 2472,
+    "validatedResultRecipeCount": 2497,
+    "validatedResultSelectionCount": 241
+  },
+  "packageFiles": {
+    "install.py": "4937d7da2c029eca0946019a57dd6889b16e5416118b68b03aa7428c2126506f",
+    "test_installer.py": "ab1612b74b1a2e767467b40e9345778e020fbf3ae0064392338fe2c3db1462ec",
+    "catalog-delta.json": "06e69ab8a76ab6cabeafa9923a3eb673b92f22847109578bd06b1b0cd5bd9de6",
+    "CHANGELOG.txt": "426107bd75815fcce11e56e7e381903bff2299ab00efccf931ebc9e2da681c20",
+    "menu/patch_menu.py": "5765da706d578bca0f20c3fc1b2e642ab2347f55eb4a7308bd99ac34d65831d3",
+    "payload/kubejs/assets/alltheores/models/block/deepslate_zinc_ore.json": "3766ce80d0897ed944493f96bef723d0f4a54918aea3f40ab1696091242b7db7",
+    "payload/kubejs/assets/alltheores/models/block/zinc_ore.json": "6555269c5a4215b70e8128705552d2b9e33d5c659dd3d0225e0d2b113f0f99ca",
+    "payload/kubejs/client_scripts/expedition/UnifiedMaterialJei.js": "d9bc0160c37ecd655a03c0418b953180f8baf8401599719b28943f71fba8f216",
+    "payload/kubejs/config/expedition-material-unification.json": "d30cf70f77966d47b5a97fbce8e58059585c744e16382500a47dbab49f65d8f0",
+    "payload/kubejs/data/oei/replacements/expedition_obsidian.json": "c085d5d4664cf983145e9e9fc8bcfccd6866eee561d40c9f6a6bde88e6aac5ab",
+    "payload/kubejs/data/oei/replacements/osmium.json": "3c49663ff1abd478df09212f57fc17ef36bc178c3c77ef5073c62917d5711e72",
+    "payload/kubejs/data/oei/replacements/zinc.json": "a0bac790da052ee974cdc2a0b51cee68e3c7e4507b3273995d6cfef8cab3ffad",
+    "payload/kubejs/server_scripts/expedition/MaterialUnificationAudit.js": "cf4071ff150d8090c24c6856fb4ec175943d6a3a60c7266eb46b4edfe3cc636a",
+    "payload/kubejs/server_scripts/expedition/NativeStoneProcessing.js": "2c2551c9a60834c5755a32ae14cf35024c41ce3d4900054cda1aafbe19d13821",
+    "payload/kubejs/server_scripts/expedition/SelectedParallelRecipes.js": "38b41e780dd837632eedf572c0df373eb1f3826247843274efa28ee601d42810",
+    "evidence/validated-online-expedition-material-unification-audit.json": "8acd1459ffd971aeda1a985ad1a5f04285b4e3917d24d1722cc0c259c638e2bd",
+    "evidence/validated-online-expedition-native-processing-audit.json": "667c533f165c977ea1d5821b6733199131527f214d688910ef9ae437ab0edd47",
+    "evidence/validated-online-expedition-selected-parallel-audit.json": "457c39d6bca315012ef817db4ad36a0ebafdffe6744338f6e2248ce8d47aec5e",
+    "evidence/installer-validation.json": "109af71b09ef34740ef63742db72fe50f8948bac35f816849cabf66e7dfb9684"
+  }
+}
