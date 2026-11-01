@@ -3,7 +3,7 @@
   "enabled": false,
   "id": "create-style-dyson",
   "repository": "https://github.com/Eldershi/create-style-dyson",
-  "sourceCommit": "4b83507d5c3a545887a49a2852efaa13675db615",
+  "sourceCommit": "42a2c3d7145098a2d0af6bbef3730081a1572789",
   "minecraft": "1.20.1",
   "forge": "47.4.10",
   "clientFiles": [
@@ -15,9 +15,15 @@
     },
     {
       "path": "kubejs/startup_scripts/90_dcp_approved_visuals.js",
-      "sha256": "75f09196f161e4331e6b470c0d759a8b653340c9b74e229e62cb3be71aba3939",
-      "bytes": 32509,
+      "sha256": "4dc1efde366d9770f6c44d78e0360e5654794696825a38b5927244bf7944ef71",
+      "bytes": 18966,
       "sourcePath": "client/kubejs/startup_scripts/90_dcp_approved_visuals.js"
+    },
+    {
+      "path": "mods/create-style-dyson-compat-1.1.0.jar",
+      "sha256": "9a93401c4e0c6bdb34042cac3955617e5456f8491b4c154a2508e086bf406e34",
+      "bytes": 18224,
+      "delivery": "Included in the public release client bundle at mods/; client only"
     }
   ],
   "paxi": {
@@ -30,26 +36,30 @@
     "Titanium3.8.35",
     "KubeJS2001.6.5-build26",
     "Rhino2001.2.3-build10",
-    "Architectury9.2.14"
+    "Architectury9.2.14",
+    "create-style-dyson-compat1.1.0 (client only)"
   ],
   "validation": {
-    "modCount": 395,
-    "poseImages": 21,
-    "nativeWorkConditions": 6,
-    "nativeRailCycles": 2,
-    "rawNativePNGCount": 70,
+    "modCount": 397,
+    "matchingExistingModJars": 396,
+    "scenarioCount": 13,
+    "finalFrameScreenshots": 3,
     "renderErrors": 0,
+    "duplicateFrames": 0,
+    "maximumRootDrawsPerFrame": 1,
+    "bakedQuadAndTextureAudit": "PASS",
+    "resourceReloadAndWorldLifecycle": "PASS",
     "shaderPacksEnabled": false
   },
   "assetPublication": "Complete source art, model meshes, textures and build inputs published in the separate resource repository; this integration repository keeps references and Paxi configuration only",
-  "activation": "Disabled in this modpack; the resource pack and rendering script must be absent from active client paths. Restart the client after changing activation.",
+  "activation": "Disabled in this modpack; the resource ZIP, rendering script and native compatibility JAR must be absent from active client paths. Restart the client after changing activation.",
   "release": {
-    "version": "1.0.0",
-    "tag": "v1.0.0-mc1.20.1",
-    "url": "https://github.com/Eldershi/create-style-dyson/releases/tag/v1.0.0-mc1.20.1",
-    "clientBundleURL": "https://github.com/Eldershi/create-style-dyson/releases/download/v1.0.0-mc1.20.1/Create-Style-Dyson-1.0.0-MC1.20.1-Client.zip",
-    "clientBundleSHA256": "9e4dc4869f738aa694491f9d83c55ca1e70db4f75057b3c8f481d31a769af717",
-    "sourceArchiveURL": "https://github.com/Eldershi/create-style-dyson/archive/refs/tags/v1.0.0-mc1.20.1.zip",
+    "version": "1.1.0",
+    "tag": "v1.1.0-mc1.20.1",
+    "url": "https://github.com/Eldershi/create-style-dyson/releases/tag/v1.1.0-mc1.20.1",
+    "clientBundleURL": "https://github.com/Eldershi/create-style-dyson/releases/download/v1.1.0-mc1.20.1/Create-Style-Dyson-1.1.0-MC1.20.1-Client.zip",
+    "clientBundleSHA256": "e74e155fd4799a3caf525a5ef855bdd51b497e422eeb951057723c1b4217a52d",
+    "sourceArchiveURL": "https://github.com/Eldershi/create-style-dyson/archive/refs/tags/v1.1.0-mc1.20.1.zip",
     "sourceArtFiles": 49,
     "compiledResourceFiles": 246
   }
