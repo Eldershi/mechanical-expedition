@@ -1,0 +1,6 @@
+{
+  "_header": "spark configuration file - https://spark.lucko.me/docs/Configuration",
+  "backgroundProfiler": true,
+  "backgroundProfilerEngine": "java",
+  "backgroundProfilerInterval": 20
+}

@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "mods": [
     {
-      "file": "expedition-player-motion-guard-1.0.0.jar",
+      "file": "expedition-player-motion-guard-1.1.0.jar",
       "patchId": "player-motion-collision-query-guard",
-      "sha256": "ac79f8f0c5514abfccfb71b3f5922c547610e736278735287a89234ebd4a4758",
+      "sha256": "7bce9ac31be99cf831f50617211780e0225db32fd742dd375fdedda879e163f6",
       "modIds": [
         "expedition_player_motion_guard"
       ]

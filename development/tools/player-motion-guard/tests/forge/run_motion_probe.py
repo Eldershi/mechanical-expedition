@@ -16,7 +16,7 @@ BASE = Path(__file__).resolve().parent
 TOOL = BASE.parents[1]
 PROJECT = TOOL.parents[1]
 DEFAULT_LIBRARIES = PROJECT / 'servers/cmi-expedition/instance/libraries'
-DEFAULT_GUARD = TOOL / 'dist/expedition-player-motion-guard-1.0.0.jar'
+DEFAULT_GUARD = TOOL / 'dist/expedition-player-motion-guard-1.1.0.jar'
 
 
 def digest(path):

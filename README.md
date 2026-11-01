@@ -27,7 +27,7 @@
 
 专用服务端使用原版运动碰撞解析，以兼容模组的碰撞钩子；Radium 的其他优化保持启用。
 
-专服覆盖层登记了玩家运动查询保护补丁：在异常速度写入、移动和碰撞查询入口阻止非有限值、无效碰撞箱及超出安全扫描预算的查询，并限频记录调用来源。普通移动、飞行、传送和非玩家实体行为保持原有逻辑；客户端无需额外安装。源码与可复现验证见 [Player Motion Guard](development/tools/player-motion-guard/README.md)。
+专服覆盖层包含 Player Motion Guard 1.1.0：保留异常运动查询保护，并在本地保存有容量上限的逐 tick 玩家状态、行为事件、独立卡顿现场、JFR 快照与 Spark 采样。部署配置每秒请求强制刷盘；只有回执已确认的数据作为跨进程强制终止的保留边界，待写数据仍可能丢失。该补丁不代表已定位异常速度的上游来源；客户端无需额外安装。配置、状态命令、查询与验证工具见 [Player Motion Guard](development/tools/player-motion-guard/README.md)。
 
 现有更新器与 Release 仍使用 `pack/` 中的发行清单。`current/` 尚未生成新的安装包或 Release；不能用现有版本号向玩家宣称已分发这些源码。重建现有发行包可运行 `python3 tools/package_repository.py`，更新器验证为 `python3 tools/test_updater.py`。
 

@@ -40,9 +40,11 @@ def main():
         'net/minecraftforge/forge/1.20.1-47.4.10',
         'net/minecraftforge/fmlcore/1.20.1-47.4.10',
         'net/minecraftforge/fmlloader/1.20.1-47.4.10',
+        'net/minecraftforge/javafmllanguage/1.20.1-47.4.10',
         'net/minecraftforge/eventbus/6.0.5',
         'org/spongepowered/mixin/0.8.5', 'org/slf4j/slf4j-api/2.0.1',
         'com/mojang/brigadier/1.1.8', 'com/mojang/datafixerupper/6.0.8',
+        'com/mojang/authlib/4.0.43',
         'com/google/guava/guava/31.1-jre', 'com/google/code/gson/gson/2.10',
         'it/unimi/dsi/fastutil/8.5.9', 'org/jetbrains/annotations',
     ]
@@ -56,19 +58,19 @@ def main():
     classpath = os.pathsep.join(map(str, dependencies))
     run(['javac', '--release', '17', '-proc:none', '-encoding', 'UTF-8', '-cp', classpath,
          '-d', CLASSES, *sorted((TOOL / 'src').rglob('*.java'))], 'compile.log')
-    artifact = OUT / 'expedition-player-motion-guard-1.0.0.jar'
+    artifact = OUT / 'expedition-player-motion-guard-1.1.0.jar'
     mixins = {'required': True, 'minVersion': '0.8', 'package': 'expedition.motionguard.mixin',
-              'compatibilityLevel': 'JAVA_17', 'mixins': ['PlayerMotionMixin'],
+              'compatibilityLevel': 'JAVA_17', 'mixins': ['PlayerMotionMixin', 'TeleportObservationMixin'],
               'injectors': {'defaultRequire': 1}}
     with zipfile.ZipFile(artifact, 'w', zipfile.ZIP_DEFLATED) as archive:
         member(archive, 'META-INF/MANIFEST.MF',
                'Manifest-Version: 1.0\r\nMixinConfigs: expedition-player-motion-guard.mixins.json\r\n\r\n')
-        member(archive, 'META-INF/mods.toml', '''modLoader="lowcodefml"
+        member(archive, 'META-INF/mods.toml', '''modLoader="javafml"
 loaderVersion="[47,)"
 license="All Rights Reserved"
 [[mods]]
 modId="expedition_player_motion_guard"
-version="1.0.0"
+version="1.1.0"
 displayName="Expedition Player Motion Guard"
 displayTest="IGNORE_ALL_VERSION"
 description="Reject non-finite, unrepresentable or excessive player collision queries and record their caller."

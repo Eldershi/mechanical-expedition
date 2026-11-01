@@ -1,6 +1,7 @@
 package expedition.motionguard.mixin;
 
 import expedition.motionguard.MotionPolicy;
+import expedition.motionguard.diagnostics.DiagnosticsService;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.MoverType;
@@ -34,6 +35,7 @@ public abstract class PlayerMotionMixin {
         if (!((Object) this instanceof ServerPlayer player)) return;
         MotionPolicy.Rejection rejection = expedition$inspect(player, motion);
         if (rejection == null) return;
+        DiagnosticsService.unsafe(player,"setDeltaMovement",motion,rejection);
         expedition$report(player, "setDeltaMovement", motion, rejection);
         f_19827_ = Vec3.f_82478_;
         ci.cancel();
@@ -45,6 +47,7 @@ public abstract class PlayerMotionMixin {
         if (!((Object) this instanceof ServerPlayer player)) return;
         MotionPolicy.Rejection rejection = expedition$inspect(player, motion);
         if (rejection == null) return;
+        DiagnosticsService.unsafe(player,"move/"+type,motion,rejection);
         expedition$report(player, "move/" + type, motion, rejection);
         f_19827_ = Vec3.f_82478_;
         ci.cancel();
@@ -57,6 +60,7 @@ public abstract class PlayerMotionMixin {
         if (!((Object) this instanceof ServerPlayer player)) return;
         MotionPolicy.Rejection rejection = expedition$inspect(player, motion);
         if (rejection == null) return;
+        DiagnosticsService.unsafe(player,"collide",motion,rejection);
         expedition$report(player, "collide", motion, rejection);
         f_19827_ = Vec3.f_82478_;
         cir.setReturnValue(Vec3.f_82478_);

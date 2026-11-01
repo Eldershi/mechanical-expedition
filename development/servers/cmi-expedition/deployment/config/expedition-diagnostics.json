@@ -1,0 +1,21 @@
+{
+  "enabled": true,
+  "jfrEnabled": true,
+  "watchdogEnabled": true,
+  "sparkExportEnabled": true,
+  "stateSampleEveryTicks": 1,
+  "equipmentCheckEveryTicks": 20,
+  "statePersistEveryTicks": 20,
+  "ringSamplesPerPlayer": 1200,
+  "maxTrackedPlayers": 32,
+  "queueCapacity": 2048,
+  "flushIntervalMillis": 1000,
+  "forceIntervalMillis": 1000,
+  "eventFileBytes": 8388608,
+  "totalLogBytes": 134217728,
+  "maxLogFiles": 16,
+  "watchdogStallMillis": 10000,
+  "watchdogRepeatMillis": 30000,
+  "maxIncidentFiles": 8,
+  "maxIncidentBytes": 33554432
+}
