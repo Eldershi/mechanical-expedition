@@ -91,7 +91,7 @@ def hashes(path):
 
 
 def external_resource_files(project, active):
-    """Verify exact client files maintained by separately published projects."""
+    """Verify enabled external files and reject active files for disabled integrations."""
     roots = [Path(__file__).resolve().parents[1] / "integrations/resourcepacks",
              project / "integrations/resourcepacks",
              project / "clients/cmi-expedition/distribution/repository/integrations/resourcepacks"]
@@ -105,7 +105,13 @@ def external_resource_files(project, active):
         for manifest in sorted(root.glob("*.json")):
             if manifest.is_symlink():
                 raise RuntimeError("External integration manifest must not be a symlink")
-            entries = json.loads(read_stable(manifest)).get("clientFiles", [])
+            metadata = json.loads(read_stable(manifest))
+            if not isinstance(metadata, dict):
+                raise RuntimeError("External integration manifest must be an object")
+            enabled = metadata.get("enabled", True)
+            if not isinstance(enabled, bool):
+                raise RuntimeError("External integration enabled must be a boolean")
+            entries = metadata.get("clientFiles", [])
             if not isinstance(entries, list):
                 raise RuntimeError("External integration clientFiles must be a list")
             for entry in entries:
@@ -123,15 +129,25 @@ def external_resource_files(project, active):
                 source = active.joinpath(*path.parts)
                 if any(active.joinpath(*path.parts[:i]).is_symlink() for i in range(1, len(path.parts) + 1)):
                     raise RuntimeError(f"External integration source must not be symlinked: {relative}")
-                if not source.is_file() or not source.resolve().is_relative_to(active.resolve()):
+                if not source.resolve().is_relative_to(active.resolve()):
                     raise RuntimeError(f"External integration source is missing or outside client: {relative}")
-                blob = read_stable(source)
-                if digest(blob) != expected:
-                    raise RuntimeError(f"External integration source hash mismatch: {relative}")
                 if relative in result and result[relative]["sha256"] != expected:
                     raise RuntimeError(f"Conflicting external integration hashes: {relative}")
-                item = result.setdefault(relative, {"path": relative, "sha256": expected,
-                                                     "bytes": len(blob), "manifests": []})
+                if relative in result and result[relative].get("enabled", True) != enabled:
+                    raise RuntimeError(f"Conflicting external integration activation: {relative}")
+                if not enabled:
+                    if source.exists():
+                        raise RuntimeError(f"Disabled external integration source is still present: {relative}")
+                    item = result.setdefault(relative, {"path": relative, "sha256": expected,
+                                                        "enabled": False, "manifests": []})
+                else:
+                    if not source.is_file():
+                        raise RuntimeError(f"External integration source is missing or outside client: {relative}")
+                    blob = read_stable(source)
+                    if digest(blob) != expected:
+                        raise RuntimeError(f"External integration source hash mismatch: {relative}")
+                    item = result.setdefault(relative, {"path": relative, "sha256": expected,
+                                                        "bytes": len(blob), "manifests": []})
                 reference = "integrations/resourcepacks/" + manifest.name
                 if reference not in item["manifests"]:
                     item["manifests"].append(reference)
@@ -141,6 +157,8 @@ def external_resource_files(project, active):
 def configured_pack_preserved(current_client, active, name, external):
     for folder in ("config/paxi/resourcepacks", "resourcepacks"):
         relative = folder + "/" + name
+        if relative in external and external[relative].get("enabled", True) is False:
+            raise RuntimeError(f"Disabled external resource pack remains in load order: {name}")
         if (current_client / relative).exists():
             return True
         if relative in external:
@@ -195,6 +213,8 @@ def main():
 
     def write_file(scope, relative, blob, source=None):
         if scope == "client" and relative in external:
+            if external[relative].get("enabled", True) is False:
+                raise RuntimeError(f"Disabled external integration source is still present: {relative}")
             if digest(blob) != external[relative]["sha256"]:
                 raise RuntimeError(f"External integration source changed: {relative}")
             excluded.append({"scope": scope, "path": relative,
