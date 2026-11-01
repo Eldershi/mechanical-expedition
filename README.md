@@ -25,6 +25,8 @@
 
 `current/client/` 是受管游戏文件的源码快照，第三方模组通过锁文件定位。它不包含账号、存档、玩家数据、服务器列表、地图、备份、运行缓存或一次性测试探针。`current/server/` 是专用服务端覆盖层，需要与公共游戏内容和对应服务端依赖一起使用。
 
+专用服务端使用原版运动碰撞解析，以兼容模组的碰撞钩子；Radium 的其他优化保持启用。
+
 现有更新器与 Release 仍使用 `pack/` 中的发行清单。`current/` 尚未生成新的安装包或 Release；不能用现有版本号向玩家宣称已分发这些源码。重建现有发行包可运行 `python3 tools/package_repository.py`，更新器验证为 `python3 tools/test_updater.py`。
 
 生成新的当前文件快照：
