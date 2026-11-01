@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "modId": "dysoncubeproject",
+  "name": "Dyson Cube Project",
+  "version": "1.20.1+1.0.5.1",
+  "minecraft": "1.20.1",
+  "loader": "forge",
+  "java": 17,
+  "requiredOn": [
+    "client",
+    "server"
+  ],
+  "dependencies": [
+    {
+      "modId": "forge",
+      "versionRange": "[47,)",
+      "side": "BOTH"
+    },
+    {
+      "modId": "minecraft",
+      "versionRange": "[1.20.1,1.21)",
+      "side": "BOTH"
+    }
+  ],
+  "runtimeDependencies": [
+    {
+      "modId": "titanium",
+      "testedVersion": "3.8.35",
+      "requiredOn": ["client", "server"],
+      "source": "https://www.curseforge.com/minecraft/mc-mods/dyson-cube-project-forge/relations/dependencies"
+    }
+  ],
+  "artifact": {
+    "filename": "dysoncubeproject-1.20.1+1.0.5.1.jar",
+    "bytes": 556293,
+    "sha256": "21d1c16010e408a36814af294bf5d4853fce3350fc5e1398a6ac8a5d033a45a6",
+    "sha1": "327c5936d4824e14efb590cec8af9f84def3bc31",
+    "sha512": "446d090e4e231fb8dc4289b5e00b5b0b7f77e6175f638c13687f85c96cc0dafd7f57189ed12c8ddd235d6b07861086e07239555282351c70f45c8527dffb45be",
+    "downloadUrl": "https://edge.forgecdn.net/files/9025/750/dysoncubeproject-1.20.1%2B1.0.5.1.jar"
+  },
+  "officialVersionPage": "https://www.curseforge.com/minecraft/mc-mods/dyson-cube-project-forge/files/9025750",
+  "license": "All Rights Reserved"
+}

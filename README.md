@@ -17,6 +17,8 @@
 
 敌对神经网络外观资源由独立项目 [create-style-hnn](https://github.com/Eldershi/create-style-hnn) 维护；下载与版本信息见[资源引用](integrations/resourcepacks/create-style-hnn.json)。
 
+戴森球 [Dyson Cube Project](integrations/mods/dysoncubeproject.json) 使用 `1.20.1+1.0.5.1` Forge 版，客户端与服务端必须安装同一版本的模组；外观资源包和渲染脚本只安装在客户端，不能代替服务端模组。
+
 戴森球客户端外观由独立仓库 [create-style-dyson](https://github.com/Eldershi/create-style-dyson) 维护；精确提交、包与脚本校验值见 [集成引用](integrations/resourcepacks/create-style-dyson.json)。完整模型、贴图与构建输入已在该独立项目公开，[客户端安装包](https://github.com/Eldershi/create-style-dyson/releases/tag/v1.0.0-mc1.20.1)包含配套资源ZIP与渲染脚本；整合包仓库只保存Paxi配置与集成引用。快照工具会验证已声明外部文件的SHA并省略其内容，缺少原文件或哈希不符时会拒绝生成快照。
 
 模组锁文件共有 396 项：377 项有哈希匹配的下载来源，14 项保存了本地补丁包，5 项仅有精确哈希，尚缺可核实的下载定位。
