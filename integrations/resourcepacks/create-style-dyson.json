@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "enabled": false,
+  "enabled": true,
   "id": "create-style-dyson",
   "repository": "https://github.com/Eldershi/create-style-dyson",
   "sourceCommit": "42a2c3d7145098a2d0af6bbef3730081a1572789",
@@ -28,8 +28,8 @@
   ],
   "paxi": {
     "loadOrderEntry": "Dyson-Create-Approved-Models-Forge-1.20.1.zip",
-    "priority": "Disabled; absent from the active Paxi load order",
-    "copies": 0
+    "priority": "Last in Paxi load order; overrides other packs affecting the two machines",
+    "copies": 1
   },
   "dependencies": [
     "dysoncubeproject-1.20.1+1.0.5.1",
@@ -52,7 +52,7 @@
     "shaderPacksEnabled": false
   },
   "assetPublication": "Complete source art, model meshes, textures and build inputs published in the separate resource repository; this integration repository keeps references and Paxi configuration only",
-  "activation": "Disabled in this modpack; the resource ZIP, rendering script and native compatibility JAR must be absent from active client paths. Restart the client after changing activation.",
+  "activation": "Enabled on clients through one Paxi resource ZIP, the matching rendering startup script and client-only native compatibility JAR. Restart the client after installation or updates.",
   "release": {
     "version": "1.1.0",
     "tag": "v1.1.0-mc1.20.1",

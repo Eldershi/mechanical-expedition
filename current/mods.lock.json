@@ -1887,6 +1887,16 @@
       "downloadHash": "e065c4c006fdb5b0ea115d5957f2489d163658add246bac152732212975221a6"
     },
     {
+      "filename": "create-style-dyson-compat-1.1.0.jar",
+      "sha256": "9a93401c4e0c6bdb34042cac3955617e5456f8491b4c154a2508e086bf406e34",
+      "sha1": "10ffd73bbc78dfbd062a5a99a1ffce9a7d928433",
+      "bytes": 18224,
+      "downloadUrl": "https://github.com/Eldershi/create-style-dyson/releases/download/v1.1.0-mc1.20.1/create-style-dyson-compat-1.1.0.jar",
+      "downloadUrlSource": "GitHub release asset",
+      "downloadHashFormat": "sha256",
+      "downloadHash": "9a93401c4e0c6bdb34042cac3955617e5456f8491b4c154a2508e086bf406e34"
+    },
+    {
       "filename": "create_central_kitchen-1.20.1-for-create-6.0.8-1.5.1.jar",
       "sha256": "133492121aaf465c3ac965ecbf22586f6f6056a7ff066a54f74b68bff9b5bff4",
       "sha1": "0b086193c1df819730ca6c06d5de3c7a8ed3b4f3",
