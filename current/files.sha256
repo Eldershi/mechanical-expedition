@@ -6653,6 +6653,7 @@ ec3eeb00082c6937e531919e0a4ef2be632a6cd050b587871e56e11def719de3  current/server
 2f051255efe7954bd5038a61f27419132963d0a44e901d6b746a70ae291091ab  current/server/kubejs/server_scripts/expedition/SevenCursesNeutralPeace.js
 3dd5e3fde779f41d82531f7dba1c62fbc4f6dc282008d46c6b5317bf77b7f04f  current/server/mods/Corgilib-Forge-1.20.1-4.0.3.6.jar
 91709031d559037fe66798202c1a2b05259ea28d5b639b8dcd734846616a5f66  current/server/mods/Oh-The-Trees-Youll-Grow-forge-1.20.1-1.7.3.jar
-014f3ef28749cc7abb84692b4aef9258eb10fe25242557b933367af673fdbc0e  current/server/server-additions.json
+9d9c9b6837eb5c9eb52d3598299c0bdb647874ed9b74920831df859018e43585  current/server/server-additions.json
+ac79f8f0c5514abfccfb71b3f5922c547610e736278735287a89234ebd4a4758  current/server/server-additions/expedition-player-motion-guard-1.0.0.jar
 2046ddda601556299f14e1c8e3100b169b1108b145c40f1f2b9415303335e155  current/server/server-additions/expedition-teleport-fix-1.0.0.jar
 8b2dc15fc0fcec2d56c56f95c313d90178013859ca65e03898c0074d2ebbe7ee  current/server/server-patches.json

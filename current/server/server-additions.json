@@ -2,6 +2,14 @@
   "schemaVersion": 1,
   "mods": [
     {
+      "file": "expedition-player-motion-guard-1.0.0.jar",
+      "patchId": "player-motion-collision-query-guard",
+      "sha256": "ac79f8f0c5514abfccfb71b3f5922c547610e736278735287a89234ebd4a4758",
+      "modIds": [
+        "expedition_player_motion_guard"
+      ]
+    },
+    {
       "file": "expedition-teleport-fix-1.0.0.jar",
       "patchId": "async-destination-and-exact-railway-20261020",
       "sha256": "2046ddda601556299f14e1c8e3100b169b1108b145c40f1f2b9415303335e155",
