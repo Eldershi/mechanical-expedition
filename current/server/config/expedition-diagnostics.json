@@ -1,6 +1,6 @@
 {
   "enabled": true,
-  "jfrEnabled": true,
+  "jfrEnabled": false,
   "watchdogEnabled": true,
   "sparkExportEnabled": true,
   "stateSampleEveryTicks": 1,
