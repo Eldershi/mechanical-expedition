@@ -17,8 +17,7 @@ ServerEvents.recipes((event) => {
 	// 洗涤
 	create.splashing([
 		Item.of("cmi:machalite").withChance(0.6),
-		Item.of("cmi:machalite_dust").withChance(0.3),
-		Item.of("mekanism:dirty_dust_uranium").withChance(0.1)
+		Item.of("cmi:machalite_dust").withChance(0.3)
 	], "cmi:pyrolyzed_moon_rock_residue")
 
 	// 磨粉
