@@ -1,46 +1,36 @@
 // priority: -1290
-// Compact iron nuggets in a basin while keeping the remaining coin recipes.
+// Remove the iron-nugget coin pressing recipe; the existing square crafting
+// recipe can be packed by Create's mechanical press and basin.
+const IronPackingPress = Java.loadClass('com.simibubi.create.content.kinetics.press.MechanicalPressBlockEntity')
+const IronPackingTypes = Java.loadClass('com.simibubi.create.AllRecipeTypes')
+
 ServerEvents.recipes(event => {
   event.remove({ id: 'createdeco:pressing/coins/iron_coin' })
-  event.custom({
-    type: 'create:compacting',
-    ingredients: [
-      { item: 'minecraft:iron_nugget' }, { item: 'minecraft:iron_nugget' },
-      { item: 'minecraft:iron_nugget' }, { item: 'minecraft:iron_nugget' },
-      { item: 'minecraft:iron_nugget' }, { item: 'minecraft:iron_nugget' },
-      { item: 'minecraft:iron_nugget' }, { item: 'minecraft:iron_nugget' },
-      { item: 'minecraft:iron_nugget' }
-    ],
-    results: [{ item: 'minecraft:iron_ingot' }]
-  }).id('expedition:compacting/iron_ingot_from_nuggets')
 })
 
 ServerEvents.afterRecipes(event => {
-  const report = {
-    recipe: event.countRecipes({ id: 'expedition:compacting/iron_ingot_from_nuggets' }),
-    coinPressing: event.countRecipes({ id: 'createdeco:pressing/coins/iron_coin' }),
-    ingredients: 0, ironNuggets: 0, output: '', outputCount: 0, outputChance: 0, heat: ''
+  let report = {coinPressing: event.countRecipes({id: 'createdeco:pressing/coins/iron_coin'}), candidates: []}
+  try {
+    event.forEachRecipe({type: 'minecraft:crafting_shaped', output: 'minecraft:iron_ingot'}, recipe => {
+      const inputs = recipe.getIngredients()
+      if (inputs.size() !== 9) return
+      let ironNuggets = 0
+      for (let i = 0; i < inputs.size(); i++) {
+        if (inputs.get(i).test(Item.of('minecraft:iron_nugget'))) ironNuggets++
+      }
+      if (ironNuggets !== 9) return
+      report.candidates.push({
+        id: String(recipe.getId()),
+        ingredients: inputs.size(),
+        ironNuggets: ironNuggets,
+        canCompress: IronPackingPress.canCompress(recipe),
+        ignoredByAutomation: IronPackingTypes.shouldIgnoreInAutomation(recipe)
+      })
+    })
+    report.passed = report.coinPressing === 0 && report.candidates.some(row => row.canCompress && !row.ignoredByAutomation)
+  } catch (error) {
+    report.passed = false
+    report.error = String(error)
   }
-  event.forEachRecipe({ id: 'expedition:compacting/iron_ingot_from_nuggets' }, recipe => {
-    const inputs = recipe.getIngredients()
-    report.ingredients = inputs.size()
-    for (let i = 0; i < inputs.size(); i++) {
-      if (inputs.get(i).test(Item.of('minecraft:iron_nugget'))) report.ironNuggets++
-    }
-    const results = recipe.getRollableResults()
-    if (results.size() === 1) {
-      const result = results.get(0)
-      const stack = result.getStack()
-      report.output = String(stack.id)
-      report.outputCount = stack.getCount()
-      report.outputChance = result.getChance()
-    }
-    report.heat = String(recipe.getRequiredHeat())
-  })
-  report.passed = report.recipe === 1 && report.coinPressing === 0 &&
-    report.ingredients === 9 && report.ironNuggets === 9 &&
-    report.output === 'minecraft:iron_ingot' && report.outputCount === 1 &&
-    report.outputChance === 1 && report.heat === 'NONE'
-  console.info('[Iron Nugget Compacting] ' + JSON.stringify(report))
-  if (!report.passed) throw new Error('Iron nugget compacting recipe audit failed')
+  console.info('[Iron Nugget Packing] ' + JSON.stringify(report))
 })
