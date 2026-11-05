@@ -26,5 +26,7 @@
   "fluidlogistics:bulk_cooling": 0.5,
   "fluidlogistics:inactive_bulk_cooling": 0.5,
   "create_dragons_plus:aether_enchanting": 0.5,
-  "create_enchantment_industry:salvaging": 0.5
+  "create_enchantment_industry:salvaging": 0.5,
+  "powergrid:heater_smoking": 0.5,
+  "powergrid:heater_blasting": 0.5
 }

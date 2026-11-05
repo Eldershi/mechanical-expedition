@@ -1,8 +1,8 @@
-name: Build client release
+name: Build legacy client release
 
 on:
   push:
-    tags: ["v*"]
+    tags: ["v0.1.0-dev.*"]
   workflow_dispatch:
 
 permissions:

@@ -363,7 +363,8 @@ def main():
             raise RuntimeError(f"Active mod is symlinked: {path.name}")
         actual, size = hashes(path)
         row = {"filename": path.name, "sha256": actual["sha256"],
-               "sha1": actual["sha1"], "bytes": size, "downloadUrl": None}
+               "sha1": actual["sha1"], "sha512": actual["sha512"],
+               "bytes": size, "downloadUrl": None}
         for algorithm in ("sha256", "sha1", "sha512"):
             verified = verified_urls.get((algorithm, actual[algorithm]))
             if verified:

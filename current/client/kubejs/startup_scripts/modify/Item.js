@@ -104,7 +104,7 @@ ItemEvents.modification((event) => {
 
 	// 扳手
 	event.modify("create:wrench", (modify) => {
-		modify.setRarity(Java.loadClass("com.github.alexmodguy.alexscaves.server.item.ACItemRegistry").RARITY_RAINBOW)
+		modify.setRarity("alexscaves:rainbow")
 	})
 
 	if (FestivalUtils.isAprilFoolsDay()) {

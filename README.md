@@ -1,6 +1,15 @@
 # 机械动力：远征
 
-私有开发源码仓库。游戏环境为 Minecraft 1.20.1、Forge 47.4.10、Java 17。
+机械动力：远征客户端源码与安装包。游戏环境为 Minecraft 1.20.1、Forge 47.4.10、Java 17。
+
+## 安装当前客户端
+
+1. 从 [发行页面](https://github.com/Eldershi/mechanical-expedition/releases) 下载 `mechanical-expedition-0.2.0-dev.1.mrpack`。
+2. 使用支持 Modrinth 整合包的启动器导入该文件，并新建独立实例；导入时启动器会下载清单中的模组。
+3. 为实例选择 Java 17，确认游戏版本是 Minecraft 1.20.1、加载器是 Forge 47.4.10，然后启动游戏。
+4. 使用自己的 Minecraft 账号登录，并自行添加服务器。安装包不含账号信息、存档和服务器列表。
+
+如果导入或启动失败，保留启动器报错和最新游戏日志供排查；分享前请先移除账号令牌及其他个人信息。旧版 `0.1.0-dev.1` 不包含当前游戏内容。此安装包用于全新安装，不应通过旧版更新器覆盖现有实例。
 
 | 内容 | 位置 |
 | --- | --- |
@@ -21,7 +30,7 @@
 
 戴森球客户端外观通过 Paxi 单份加载，资源包、启动脚本与原生渲染兼容 JAR 使用匹配版本；安装或更新后需完整重启客户端。模型、贴图与构建输入由独立仓库 [create-style-dyson](https://github.com/Eldershi/create-style-dyson) 维护，三个客户端文件的版本、校验值与下载定位见 [集成引用](integrations/resourcepacks/create-style-dyson.json)。快照工具验证启用集成的文件校验值并省略其内容；停用集成的声明文件必须不在活动客户端路径中，残留文件或 Paxi 引用会阻止生成快照。
 
-模组锁文件共有 397 项：378 项有哈希匹配的下载来源，14 项保存了本地补丁包，5 项仅有精确哈希，尚缺可核实的下载定位。
+模组锁文件共有 397 项：383 项有哈希匹配的下载来源，14 项为随源码保存的补丁包。
 
 `current/client/` 是受管游戏文件的源码快照，第三方模组通过锁文件定位。它不包含账号、存档、玩家数据、服务器列表、地图、备份、运行缓存或一次性测试探针。`current/server/` 是专用服务端覆盖层，需要与公共游戏内容和对应服务端依赖一起使用。
 
@@ -31,7 +40,7 @@
 
 专服覆盖层包含 Player Motion Guard 1.1.0：保留异常运动查询保护，并在本地保存有容量上限的逐 tick 玩家状态、行为事件、独立卡顿现场与 Spark 采样。JFR 暂时关闭，导出期间发生的进程中断原因仍待核实。部署配置每秒请求强制刷盘；只有回执已确认的数据作为跨进程强制终止的保留边界，待写数据仍可能丢失。该补丁不代表已定位异常速度的上游来源；客户端无需额外安装。配置、状态命令、查询与验证工具见 [Player Motion Guard](development/tools/player-motion-guard/README.md)。
 
-现有更新器与 Release 仍使用 `pack/` 中的发行清单。`current/` 尚未生成新的安装包或 Release；不能用现有版本号向玩家宣称已分发这些源码。重建现有发行包可运行 `python3 tools/package_repository.py`，更新器验证为 `python3 tools/test_updater.py`。
+当前安装包由 `python3 tools/package_current.py` 构建；构建时会校验客户端文件、模组锁和独立戴森球资源包。旧版更新器仍使用 `pack/` 中的旧发行清单。旧版包可用 `python3 tools/package_repository.py` 重建，更新器验证为 `python3 tools/test_updater.py`。
 
 生成新的当前文件快照：
 
