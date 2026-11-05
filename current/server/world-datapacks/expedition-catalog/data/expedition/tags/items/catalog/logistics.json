@@ -1,0 +1,6317 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "ad_astra:cryo_fuel_bucket",
+      "required": false
+    },
+    {
+      "id": "ad_astra:fuel_bucket",
+      "required": false
+    },
+    {
+      "id": "ad_astra:gas_tank",
+      "required": false
+    },
+    {
+      "id": "ad_astra:hydrogen_bucket",
+      "required": false
+    },
+    {
+      "id": "ad_astra:large_gas_tank",
+      "required": false
+    },
+    {
+      "id": "ad_astra:oil_bucket",
+      "required": false
+    },
+    {
+      "id": "ad_astra:oxygen_bucket",
+      "required": false
+    },
+    {
+      "id": "ad_astra:tier_1_rocket",
+      "required": false
+    },
+    {
+      "id": "ad_astra:tier_1_rover",
+      "required": false
+    },
+    {
+      "id": "ad_astra:tier_2_rocket",
+      "required": false
+    },
+    {
+      "id": "ad_astra:tier_3_rocket",
+      "required": false
+    },
+    {
+      "id": "ad_astra:tier_4_rocket",
+      "required": false
+    },
+    {
+      "id": "ad_astra:zip_gun",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:adv_pattern_provider",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:adv_pattern_provider_part",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:adv_processing_pattern",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:advanced_io_bus_part",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:attack_speed_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:auto_feeding_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:auto_stock_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:data_entangler",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:evasion_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:flight_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:flight_drift_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:hp_buffer_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:import_export_bus_part",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:jump_height_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:lava_immunity_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:luck_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:magnet_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:night_vision_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:pick_craft_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:portable_workbench_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_accelerator",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_alloy_wall",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_core",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_crafter",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_crafter_terminal",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_infusion_bucket",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_multi_threader",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_processor_press",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_storage_128",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_storage_256",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_structure",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_unit",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_upgrade_base",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:reach_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:reaction_chamber",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:recharging_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:regeneration_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:shattered_singularity",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:small_adv_pattern_provider",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:small_adv_pattern_provider_part",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:sprint_speed_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:step_assist_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:stock_export_bus_part",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:strength_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:swim_speed_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:throughput_monitor",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:walk_speed_card",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:water_breathing_card",
+      "required": false
+    },
+    {
+      "id": "ae2:16k_crafting_storage",
+      "required": false
+    },
+    {
+      "id": "ae2:1k_crafting_storage",
+      "required": false
+    },
+    {
+      "id": "ae2:256k_crafting_storage",
+      "required": false
+    },
+    {
+      "id": "ae2:4k_crafting_storage",
+      "required": false
+    },
+    {
+      "id": "ae2:64k_crafting_storage",
+      "required": false
+    },
+    {
+      "id": "ae2:advanced_card",
+      "required": false
+    },
+    {
+      "id": "ae2:annihilation_core",
+      "required": false
+    },
+    {
+      "id": "ae2:annihilation_plane",
+      "required": false
+    },
+    {
+      "id": "ae2:basic_card",
+      "required": false
+    },
+    {
+      "id": "ae2:black_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:black_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:black_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:black_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:black_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:black_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:black_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:blank_pattern",
+      "required": false
+    },
+    {
+      "id": "ae2:blue_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:blue_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:blue_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:blue_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:blue_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:blue_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:blue_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:brown_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:brown_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:brown_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:brown_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:brown_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:brown_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:brown_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:cable_anchor",
+      "required": false
+    },
+    {
+      "id": "ae2:cable_bus",
+      "required": false
+    },
+    {
+      "id": "ae2:cable_energy_acceptor",
+      "required": false
+    },
+    {
+      "id": "ae2:cable_interface",
+      "required": false
+    },
+    {
+      "id": "ae2:cable_pattern_provider",
+      "required": false
+    },
+    {
+      "id": "ae2:calculation_processor_press",
+      "required": false
+    },
+    {
+      "id": "ae2:capacity_card",
+      "required": false
+    },
+    {
+      "id": "ae2:cell_component_16k",
+      "required": false
+    },
+    {
+      "id": "ae2:cell_component_1k",
+      "required": false
+    },
+    {
+      "id": "ae2:cell_component_256k",
+      "required": false
+    },
+    {
+      "id": "ae2:cell_component_4k",
+      "required": false
+    },
+    {
+      "id": "ae2:cell_component_64k",
+      "required": false
+    },
+    {
+      "id": "ae2:cell_workbench",
+      "required": false
+    },
+    {
+      "id": "ae2:charger",
+      "required": false
+    },
+    {
+      "id": "ae2:chest",
+      "required": false
+    },
+    {
+      "id": "ae2:chipped_budding_quartz",
+      "required": false
+    },
+    {
+      "id": "ae2:chiseled_quartz_block",
+      "required": false
+    },
+    {
+      "id": "ae2:chiseled_quartz_slab",
+      "required": false
+    },
+    {
+      "id": "ae2:chiseled_quartz_stairs",
+      "required": false
+    },
+    {
+      "id": "ae2:chiseled_quartz_wall",
+      "required": false
+    },
+    {
+      "id": "ae2:color_applicator",
+      "required": false
+    },
+    {
+      "id": "ae2:condenser",
+      "required": false
+    },
+    {
+      "id": "ae2:controller",
+      "required": false
+    },
+    {
+      "id": "ae2:conversion_monitor",
+      "required": false
+    },
+    {
+      "id": "ae2:crafting_accelerator",
+      "required": false
+    },
+    {
+      "id": "ae2:crafting_card",
+      "required": false
+    },
+    {
+      "id": "ae2:crafting_monitor",
+      "required": false
+    },
+    {
+      "id": "ae2:crafting_pattern",
+      "required": false
+    },
+    {
+      "id": "ae2:crafting_terminal",
+      "required": false
+    },
+    {
+      "id": "ae2:crafting_unit",
+      "required": false
+    },
+    {
+      "id": "ae2:crank",
+      "required": false
+    },
+    {
+      "id": "ae2:creative_energy_cell",
+      "required": false
+    },
+    {
+      "id": "ae2:creative_fluid_cell",
+      "required": false
+    },
+    {
+      "id": "ae2:creative_item_cell",
+      "required": false
+    },
+    {
+      "id": "ae2:crystal_resonance_generator",
+      "required": false
+    },
+    {
+      "id": "ae2:cut_quartz_block",
+      "required": false
+    },
+    {
+      "id": "ae2:cut_quartz_slab",
+      "required": false
+    },
+    {
+      "id": "ae2:cut_quartz_stairs",
+      "required": false
+    },
+    {
+      "id": "ae2:cut_quartz_wall",
+      "required": false
+    },
+    {
+      "id": "ae2:cyan_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:cyan_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:cyan_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:cyan_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:cyan_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:cyan_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:cyan_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:damaged_budding_quartz",
+      "required": false
+    },
+    {
+      "id": "ae2:dark_monitor",
+      "required": false
+    },
+    {
+      "id": "ae2:debug_card",
+      "required": false
+    },
+    {
+      "id": "ae2:debug_chunk_loader",
+      "required": false
+    },
+    {
+      "id": "ae2:debug_cube_gen",
+      "required": false
+    },
+    {
+      "id": "ae2:debug_energy_gen",
+      "required": false
+    },
+    {
+      "id": "ae2:debug_eraser",
+      "required": false
+    },
+    {
+      "id": "ae2:debug_item_gen",
+      "required": false
+    },
+    {
+      "id": "ae2:debug_meteorite_placer",
+      "required": false
+    },
+    {
+      "id": "ae2:debug_phantom_node",
+      "required": false
+    },
+    {
+      "id": "ae2:debug_replicator_card",
+      "required": false
+    },
+    {
+      "id": "ae2:dense_energy_cell",
+      "required": false
+    },
+    {
+      "id": "ae2:drive",
+      "required": false
+    },
+    {
+      "id": "ae2:energy_acceptor",
+      "required": false
+    },
+    {
+      "id": "ae2:energy_card",
+      "required": false
+    },
+    {
+      "id": "ae2:energy_cell",
+      "required": false
+    },
+    {
+      "id": "ae2:energy_level_emitter",
+      "required": false
+    },
+    {
+      "id": "ae2:engineering_processor_press",
+      "required": false
+    },
+    {
+      "id": "ae2:entropy_manipulator",
+      "required": false
+    },
+    {
+      "id": "ae2:equal_distribution_card",
+      "required": false
+    },
+    {
+      "id": "ae2:export_bus",
+      "required": false
+    },
+    {
+      "id": "ae2:facade",
+      "required": false
+    },
+    {
+      "id": "ae2:fe_p2p_tunnel",
+      "required": false
+    },
+    {
+      "id": "ae2:flawed_budding_quartz",
+      "required": false
+    },
+    {
+      "id": "ae2:flawless_budding_quartz",
+      "required": false
+    },
+    {
+      "id": "ae2:fluid_cell_housing",
+      "required": false
+    },
+    {
+      "id": "ae2:fluid_p2p_tunnel",
+      "required": false
+    },
+    {
+      "id": "ae2:fluid_storage_cell_16k",
+      "required": false
+    },
+    {
+      "id": "ae2:fluid_storage_cell_1k",
+      "required": false
+    },
+    {
+      "id": "ae2:fluid_storage_cell_256k",
+      "required": false
+    },
+    {
+      "id": "ae2:fluid_storage_cell_4k",
+      "required": false
+    },
+    {
+      "id": "ae2:fluid_storage_cell_64k",
+      "required": false
+    },
+    {
+      "id": "ae2:fluix_block",
+      "required": false
+    },
+    {
+      "id": "ae2:fluix_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:fluix_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:fluix_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:fluix_pearl",
+      "required": false
+    },
+    {
+      "id": "ae2:fluix_slab",
+      "required": false
+    },
+    {
+      "id": "ae2:fluix_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:fluix_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:fluix_stairs",
+      "required": false
+    },
+    {
+      "id": "ae2:fluix_wall",
+      "required": false
+    },
+    {
+      "id": "ae2:formation_core",
+      "required": false
+    },
+    {
+      "id": "ae2:formation_plane",
+      "required": false
+    },
+    {
+      "id": "ae2:fuzzy_card",
+      "required": false
+    },
+    {
+      "id": "ae2:gray_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:gray_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:gray_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:gray_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:gray_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:gray_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:gray_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:green_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:green_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:green_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:green_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:green_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:green_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:green_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:growth_accelerator",
+      "required": false
+    },
+    {
+      "id": "ae2:guide",
+      "required": false
+    },
+    {
+      "id": "ae2:import_bus",
+      "required": false
+    },
+    {
+      "id": "ae2:inscriber",
+      "required": false
+    },
+    {
+      "id": "ae2:interface",
+      "required": false
+    },
+    {
+      "id": "ae2:inverted_toggle_bus",
+      "required": false
+    },
+    {
+      "id": "ae2:inverter_card",
+      "required": false
+    },
+    {
+      "id": "ae2:io_port",
+      "required": false
+    },
+    {
+      "id": "ae2:item_cell_housing",
+      "required": false
+    },
+    {
+      "id": "ae2:item_p2p_tunnel",
+      "required": false
+    },
+    {
+      "id": "ae2:item_storage_cell_16k",
+      "required": false
+    },
+    {
+      "id": "ae2:item_storage_cell_1k",
+      "required": false
+    },
+    {
+      "id": "ae2:item_storage_cell_256k",
+      "required": false
+    },
+    {
+      "id": "ae2:item_storage_cell_4k",
+      "required": false
+    },
+    {
+      "id": "ae2:item_storage_cell_64k",
+      "required": false
+    },
+    {
+      "id": "ae2:large_quartz_bud",
+      "required": false
+    },
+    {
+      "id": "ae2:level_emitter",
+      "required": false
+    },
+    {
+      "id": "ae2:light_blue_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:light_blue_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:light_blue_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:light_blue_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:light_blue_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:light_blue_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:light_blue_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:light_detector",
+      "required": false
+    },
+    {
+      "id": "ae2:light_gray_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:light_gray_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:light_gray_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:light_gray_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:light_gray_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:light_gray_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:light_gray_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:light_p2p_tunnel",
+      "required": false
+    },
+    {
+      "id": "ae2:lime_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:lime_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:lime_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:lime_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:lime_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:lime_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:lime_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:logic_processor_press",
+      "required": false
+    },
+    {
+      "id": "ae2:magenta_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:magenta_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:magenta_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:magenta_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:magenta_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:magenta_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:magenta_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:matrix_frame",
+      "required": false
+    },
+    {
+      "id": "ae2:matter_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:matter_cannon",
+      "required": false
+    },
+    {
+      "id": "ae2:me_p2p_tunnel",
+      "required": false
+    },
+    {
+      "id": "ae2:medium_quartz_bud",
+      "required": false
+    },
+    {
+      "id": "ae2:memory_card",
+      "required": false
+    },
+    {
+      "id": "ae2:meteorite_compass",
+      "required": false
+    },
+    {
+      "id": "ae2:molecular_assembler",
+      "required": false
+    },
+    {
+      "id": "ae2:monitor",
+      "required": false
+    },
+    {
+      "id": "ae2:mysterious_cube",
+      "required": false
+    },
+    {
+      "id": "ae2:name_press",
+      "required": false
+    },
+    {
+      "id": "ae2:not_so_mysterious_cube",
+      "required": false
+    },
+    {
+      "id": "ae2:orange_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:orange_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:orange_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:orange_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:orange_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:orange_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:orange_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:paint",
+      "required": false
+    },
+    {
+      "id": "ae2:pattern_access_terminal",
+      "required": false
+    },
+    {
+      "id": "ae2:pattern_encoding_terminal",
+      "required": false
+    },
+    {
+      "id": "ae2:pattern_provider",
+      "required": false
+    },
+    {
+      "id": "ae2:pink_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:pink_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:pink_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:pink_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:pink_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:pink_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:pink_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:portable_fluid_cell_16k",
+      "required": false
+    },
+    {
+      "id": "ae2:portable_fluid_cell_1k",
+      "required": false
+    },
+    {
+      "id": "ae2:portable_fluid_cell_256k",
+      "required": false
+    },
+    {
+      "id": "ae2:portable_fluid_cell_4k",
+      "required": false
+    },
+    {
+      "id": "ae2:portable_fluid_cell_64k",
+      "required": false
+    },
+    {
+      "id": "ae2:portable_item_cell_16k",
+      "required": false
+    },
+    {
+      "id": "ae2:portable_item_cell_1k",
+      "required": false
+    },
+    {
+      "id": "ae2:portable_item_cell_256k",
+      "required": false
+    },
+    {
+      "id": "ae2:portable_item_cell_4k",
+      "required": false
+    },
+    {
+      "id": "ae2:portable_item_cell_64k",
+      "required": false
+    },
+    {
+      "id": "ae2:processing_pattern",
+      "required": false
+    },
+    {
+      "id": "ae2:purple_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:purple_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:purple_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:purple_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:purple_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:purple_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:purple_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:quantum_entangled_singularity",
+      "required": false
+    },
+    {
+      "id": "ae2:quantum_link",
+      "required": false
+    },
+    {
+      "id": "ae2:quantum_ring",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_brick_slab",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_brick_wall",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_bricks",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_cluster",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_fiber",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_fixture",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_glass",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_pillar",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_pillar_slab",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_pillar_stairs",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_pillar_wall",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_slab",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_stairs",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_vibrant_glass",
+      "required": false
+    },
+    {
+      "id": "ae2:quartz_wall",
+      "required": false
+    },
+    {
+      "id": "ae2:red_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:red_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:red_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:red_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:red_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:red_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:red_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:redstone_card",
+      "required": false
+    },
+    {
+      "id": "ae2:redstone_p2p_tunnel",
+      "required": false
+    },
+    {
+      "id": "ae2:semi_dark_monitor",
+      "required": false
+    },
+    {
+      "id": "ae2:silicon",
+      "required": false
+    },
+    {
+      "id": "ae2:silicon_press",
+      "required": false
+    },
+    {
+      "id": "ae2:singularity",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_block",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_brick",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_brick_slab",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_brick_wall",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_chest",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_slab",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_small_brick",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_small_brick_slab",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_small_brick_stairs",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_small_brick_wall",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_stairs",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_tank",
+      "required": false
+    },
+    {
+      "id": "ae2:sky_stone_wall",
+      "required": false
+    },
+    {
+      "id": "ae2:small_quartz_bud",
+      "required": false
+    },
+    {
+      "id": "ae2:smithing_table_pattern",
+      "required": false
+    },
+    {
+      "id": "ae2:smooth_quartz_block",
+      "required": false
+    },
+    {
+      "id": "ae2:smooth_quartz_slab",
+      "required": false
+    },
+    {
+      "id": "ae2:smooth_quartz_stairs",
+      "required": false
+    },
+    {
+      "id": "ae2:smooth_quartz_wall",
+      "required": false
+    },
+    {
+      "id": "ae2:smooth_sky_stone_block",
+      "required": false
+    },
+    {
+      "id": "ae2:smooth_sky_stone_chest",
+      "required": false
+    },
+    {
+      "id": "ae2:smooth_sky_stone_slab",
+      "required": false
+    },
+    {
+      "id": "ae2:smooth_sky_stone_stairs",
+      "required": false
+    },
+    {
+      "id": "ae2:smooth_sky_stone_wall",
+      "required": false
+    },
+    {
+      "id": "ae2:spatial_anchor",
+      "required": false
+    },
+    {
+      "id": "ae2:spatial_cell_component_128",
+      "required": false
+    },
+    {
+      "id": "ae2:spatial_cell_component_16",
+      "required": false
+    },
+    {
+      "id": "ae2:spatial_cell_component_2",
+      "required": false
+    },
+    {
+      "id": "ae2:spatial_io_port",
+      "required": false
+    },
+    {
+      "id": "ae2:spatial_pylon",
+      "required": false
+    },
+    {
+      "id": "ae2:spatial_storage_cell_128",
+      "required": false
+    },
+    {
+      "id": "ae2:spatial_storage_cell_16",
+      "required": false
+    },
+    {
+      "id": "ae2:spatial_storage_cell_2",
+      "required": false
+    },
+    {
+      "id": "ae2:speed_card",
+      "required": false
+    },
+    {
+      "id": "ae2:stonecutting_pattern",
+      "required": false
+    },
+    {
+      "id": "ae2:storage_bus",
+      "required": false
+    },
+    {
+      "id": "ae2:storage_monitor",
+      "required": false
+    },
+    {
+      "id": "ae2:terminal",
+      "required": false
+    },
+    {
+      "id": "ae2:tiny_tnt",
+      "required": false
+    },
+    {
+      "id": "ae2:toggle_bus",
+      "required": false
+    },
+    {
+      "id": "ae2:vibration_chamber",
+      "required": false
+    },
+    {
+      "id": "ae2:view_cell",
+      "required": false
+    },
+    {
+      "id": "ae2:void_card",
+      "required": false
+    },
+    {
+      "id": "ae2:white_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:white_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:white_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:white_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:white_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:white_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:white_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:wireless_access_point",
+      "required": false
+    },
+    {
+      "id": "ae2:wireless_booster",
+      "required": false
+    },
+    {
+      "id": "ae2:wireless_receiver",
+      "required": false
+    },
+    {
+      "id": "ae2:wireless_terminal",
+      "required": false
+    },
+    {
+      "id": "ae2:wrapped_generic_stack",
+      "required": false
+    },
+    {
+      "id": "ae2:yellow_covered_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:yellow_covered_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:yellow_glass_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:yellow_lumen_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:yellow_paint_ball",
+      "required": false
+    },
+    {
+      "id": "ae2:yellow_smart_cable",
+      "required": false
+    },
+    {
+      "id": "ae2:yellow_smart_dense_cable",
+      "required": false
+    },
+    {
+      "id": "ae2wtlib:magnet_card",
+      "required": false
+    },
+    {
+      "id": "ae2wtlib:quantum_bridge_card",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_axolotl_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_boat",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_chest_boat",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_cod_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_milk_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_poison_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_powder_snow_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_pufferfish_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_remedy_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_salmon_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_tadpole_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_tropical_fish_bucket",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_water_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:acid_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:gossamer_worm_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:lanternfish_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:pewen_boat",
+      "required": false
+    },
+    {
+      "id": "alexscaves:pewen_chest_boat",
+      "required": false
+    },
+    {
+      "id": "alexscaves:purple_soda_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:radgill_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sea_pig_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sweetish_fish_blue_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sweetish_fish_green_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sweetish_fish_pink_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sweetish_fish_red_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sweetish_fish_yellow_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:thornwood_boat",
+      "required": false
+    },
+    {
+      "id": "alexscaves:thornwood_chest_boat",
+      "required": false
+    },
+    {
+      "id": "alexscaves:trilocaris_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:tripodfish_bucket",
+      "required": false
+    },
+    {
+      "id": "allthemodium:molten_allthemodium_bucket",
+      "required": false
+    },
+    {
+      "id": "allthemodium:molten_unobtainium_bucket",
+      "required": false
+    },
+    {
+      "id": "allthemodium:molten_vibranium_bucket",
+      "required": false
+    },
+    {
+      "id": "allthemodium:soul_lava_bucket",
+      "required": false
+    },
+    {
+      "id": "appmek:chemical_cell_housing",
+      "required": false
+    },
+    {
+      "id": "appmek:chemical_p2p_tunnel",
+      "required": false
+    },
+    {
+      "id": "appmek:chemical_storage_cell_16k",
+      "required": false
+    },
+    {
+      "id": "appmek:chemical_storage_cell_1k",
+      "required": false
+    },
+    {
+      "id": "appmek:chemical_storage_cell_256k",
+      "required": false
+    },
+    {
+      "id": "appmek:chemical_storage_cell_4k",
+      "required": false
+    },
+    {
+      "id": "appmek:chemical_storage_cell_64k",
+      "required": false
+    },
+    {
+      "id": "appmek:creative_chemical_cell",
+      "required": false
+    },
+    {
+      "id": "appmek:portable_chemical_storage_cell_16k",
+      "required": false
+    },
+    {
+      "id": "appmek:portable_chemical_storage_cell_1k",
+      "required": false
+    },
+    {
+      "id": "appmek:portable_chemical_storage_cell_256k",
+      "required": false
+    },
+    {
+      "id": "appmek:portable_chemical_storage_cell_4k",
+      "required": false
+    },
+    {
+      "id": "appmek:portable_chemical_storage_cell_64k",
+      "required": false
+    },
+    {
+      "id": "aquamirae:spinefish_bucket",
+      "required": false
+    },
+    {
+      "id": "ars_nouveau:archwood_chest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:blood_bucket",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:dead_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:dead_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:fir_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:fir_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:hellbark_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:jacaranda_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:jacaranda_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:magic_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:magic_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:mahogany_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:mahogany_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:palm_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:palm_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:redwood_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:redwood_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:umbran_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:umbran_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:willow_boat",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:willow_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:aspen_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:aspen_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:baobab_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:baobab_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:blue_enchanted_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:blue_enchanted_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cika_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cika_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cypress_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:cypress_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:ebony_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:ebony_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:fir_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:fir_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:florus_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:florus_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:green_enchanted_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:green_enchanted_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:holly_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:holly_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:ironwood_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:ironwood_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:jacaranda_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:jacaranda_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:mahogany_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:mahogany_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:man_o_war_bucket",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:maple_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:maple_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:palm_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:palm_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:pine_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:pine_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:rainbow_eucalyptus_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:rainbow_eucalyptus_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:redwood_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:redwood_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:sakura_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:sakura_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:skyris_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:skyris_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:white_mangrove_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:white_mangrove_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:willow_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:willow_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:witch_hazel_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:witch_hazel_chest_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:zelkova_boat",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:zelkova_chest_boat",
+      "required": false
+    },
+    {
+      "id": "botania:open_bucket",
+      "required": false
+    },
+    {
+      "id": "botania:pool_minecart",
+      "required": false
+    },
+    {
+      "id": "botania:water_bowl",
+      "required": false
+    },
+    {
+      "id": "cataclysm:modern_remnant_bucket",
+      "required": false
+    },
+    {
+      "id": "cataclysm:netherite_ministrosity_bucket",
+      "required": false
+    },
+    {
+      "id": "cataclysm:the_baby_leviathan_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:acetylene_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:acidity_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:activated_graphite_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:alkaline_brine_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:benzene_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:bitumen_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:blood_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:brine_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:bromine_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:chromium_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:cobalt_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:composite_magnetic_fluid_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:concentrated_sea_water_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:copy_enzyme_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:cracked_diesel_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:cracked_gasoline_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:cracked_lubricating_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:crystal_catalyt_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:crystal_entro_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:crystal_etching_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:cured_rubber_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:delta_unstable_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:dreamcore_solidified_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:entro_peroxide_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:ferrouslime_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:fluid_nitroglycerine_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:germanium_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:glacious_cryotheum_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:hdpe_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:helium_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:hydrazines_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:hydrazines_fuel_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:hydrochloric_acid_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:hydrogen_oxygen_fuel_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:hyper_experience_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:ink_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:ionized_entro_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:kerosene_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:light_aldehyde_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:light_amine_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:light_aromatics_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:light_olefin_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:light_silicone_ether_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:liquid_crystal_entro_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:liquid_crystal_etrium_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:lithium_containing_electrolyte_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:mercury_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:methane_fuel_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:molten_dreamcore_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:molten_ionized_entro_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:molten_mechanium_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:molten_neodymium_mixture_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:molten_pure_silicon_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:molten_silicon_containing_compound_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:neodymium_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:nitric_acid_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:nitrogen_oxide_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:oil_shale_steam_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:phenol_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:photosyn_fluid_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:plating_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:platinum_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:plutonium_containing_electrolyte_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:plutonium_containing_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:plutonium_extract_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:polonium_containing_electrolyte_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:polonium_containing_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:polonium_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:polymeric_carbon_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:polysilicone_ether_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:polyvinyl_alcohol_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:pure_crystal_source_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:pure_sand_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:radiation_resistant_creosote_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:radioactive_acid_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:radon_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:reinforced_titanium_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:sapphire_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:sea_water_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:semi_molten_osmium_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:silicon_rubber_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:sludge_suspension_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:structural_plastic_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:sulfric_diesel_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:titanium_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:trinitrotoluene_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:tungsten_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:turbid_waste_liquid_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:vinegar_acid_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:vinegar_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:vinyl_alcohol_bucket",
+      "required": false
+    },
+    {
+      "id": "cmi:waste_brine_bucket",
+      "required": false
+    },
+    {
+      "id": "create:chocolate_bucket",
+      "required": false
+    },
+    {
+      "id": "create:honey_bucket",
+      "required": false
+    },
+    {
+      "id": "create_central_kitchen:tomato_sauce_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:black_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:blue_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:brown_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:cyan_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:dragon_breath_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:gray_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:green_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:light_blue_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:light_gray_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:lime_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:magenta_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:orange_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:pink_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:purple_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:red_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:white_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:yellow_dye_bucket",
+      "required": false
+    },
+    {
+      "id": "create_enchantment_industry:apotheotic_essence_bucket",
+      "required": false
+    },
+    {
+      "id": "create_enchantment_industry:crystal_essence_bucket",
+      "required": false
+    },
+    {
+      "id": "create_enchantment_industry:experience_bucket",
+      "required": false
+    },
+    {
+      "id": "create_enchantment_industry:infused_dragon_breath_bucket",
+      "required": false
+    },
+    {
+      "id": "create_mobile_packages:bee_port",
+      "required": false
+    },
+    {
+      "id": "create_mobile_packages:mobile_packager",
+      "required": false
+    },
+    {
+      "id": "create_mobile_packages:robo_bee",
+      "required": false
+    },
+    {
+      "id": "create_steam_ages:high_temperature_steam_bucket",
+      "required": false
+    },
+    {
+      "id": "create_steam_ages:steam_bucket",
+      "required": false
+    },
+    {
+      "id": "createaddition:bioethanol_bucket",
+      "required": false
+    },
+    {
+      "id": "createaddition:seed_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_black_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_blue_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_brown_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_cyan_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_gray_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_green_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_lazy_cogwheel",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_lazy_large_cogwheel",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_lazy_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_light_blue_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_light_gray_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_lime_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_magenta_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_orange_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_pink_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_purple_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_red_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_white_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:andesite_encased_yellow_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:black_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:black_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:black_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:blue_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:blue_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:blue_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_black_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_blue_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_brown_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_cyan_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_gray_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_green_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_lazy_cogwheel",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_lazy_large_cogwheel",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_lazy_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_light_blue_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_light_gray_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_lime_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_magenta_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_orange_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_pink_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_purple_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_red_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_white_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brass_encased_yellow_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brown_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brown_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:brown_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:cash_register",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_black_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_blue_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_brown_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_cyan_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_gray_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_green_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_lazy_cogwheel",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_lazy_large_cogwheel",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_lazy_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_light_blue_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_light_gray_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_lime_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_magenta_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_orange_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_pink_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_purple_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_red_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_white_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:copper_encased_yellow_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:cyan_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:cyan_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:cyan_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:gray_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:gray_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:gray_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:green_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:green_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:green_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_black_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_blue_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_brown_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_cyan_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_gray_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_green_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_lazy_cogwheel",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_lazy_large_cogwheel",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_lazy_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_light_blue_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_light_gray_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_lime_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_magenta_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_orange_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_pink_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_purple_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_red_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_white_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:industrial_iron_encased_yellow_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:lazy_cogwheel",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:lazy_large_cogwheel",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:lazy_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:light_blue_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:light_blue_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:light_blue_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:light_gray_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:light_gray_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:light_gray_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:lime_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:lime_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:lime_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:magenta_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:magenta_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:magenta_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:network_monitor",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:orange_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:orange_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:orange_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:package_accelerator",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:package_editor",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:pink_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:pink_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:pink_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:purple_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:purple_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:purple_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:red_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:red_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:red_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:sales_ledger",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_black_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_blue_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_brown_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_cyan_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_gray_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_green_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_lazy_cogwheel",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_lazy_large_cogwheel",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_lazy_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_light_blue_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_light_gray_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_lime_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_magenta_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_orange_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_pink_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_purple_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_red_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_white_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:weathered_iron_encased_yellow_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:white_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:white_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:white_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:yellow_flexible_shaft",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:yellow_short_seat",
+      "required": false
+    },
+    {
+      "id": "createadditionallogistics:yellow_tall_seat",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:biodiesel_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:black_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:blue_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:brown_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:canister",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:chemical_sprayer",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:chemical_sprayer_lighter",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:crude_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:cyan_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:diesel_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:ethanol_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:gasoline_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:gray_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:green_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:light_blue_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:light_gray_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:lighter",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:lime_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:magenta_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:orange_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:pink_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:plant_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:purple_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:red_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:white_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "createdieselgenerators:yellow_cement_bucket",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:bloom_boat",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:bloom_chest_boat",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:echo_boat",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:echo_chest_boat",
+      "required": false
+    },
+    {
+      "id": "enderio:cloud_seed_bucket",
+      "required": false
+    },
+    {
+      "id": "enderio:cloud_seed_concentrated_bucket",
+      "required": false
+    },
+    {
+      "id": "enderio:dew_of_the_void_bucket",
+      "required": false
+    },
+    {
+      "id": "enderio:fire_water_bucket",
+      "required": false
+    },
+    {
+      "id": "enderio:fluid_tank",
+      "required": false
+    },
+    {
+      "id": "enderio:hootch_bucket",
+      "required": false
+    },
+    {
+      "id": "enderio:liquid_sunshine_bucket",
+      "required": false
+    },
+    {
+      "id": "enderio:nutrient_distillation_bucket",
+      "required": false
+    },
+    {
+      "id": "enderio:pressurized_fluid_tank",
+      "required": false
+    },
+    {
+      "id": "enderio:rocket_fuel_bucket",
+      "required": false
+    },
+    {
+      "id": "enderio:vapor_of_levity_bucket",
+      "required": false
+    },
+    {
+      "id": "enderio:xp_juice_bucket",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:banyin_boat",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:banyin_chest_boat",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:cradlewood_boat",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:cradlewood_chest_boat",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:ether_bucket",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:jinglestem_chest_raft",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:jinglestem_raft",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:luminaris_bucket",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:luminofish_bucket",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:lunar_boat",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:lunar_chest_boat",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:northland_boat",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:northland_chest_boat",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:rookfish_bucket",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:scarlet_boat",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:scarlet_chest_boat",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:tear_bomb_minecart",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:torreya_boat",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:torreya_chest_boat",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:active_formation_plane",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:assembler_matrix_crafter",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:assembler_matrix_frame",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:assembler_matrix_glass",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:assembler_matrix_pattern",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:assembler_matrix_speed",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:assembler_matrix_wall",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:caner",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:circuit_cutter",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:crystal_fixer",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ex_charger",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ex_crafting_terminal",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ex_drive",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ex_export_bus_part",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ex_import_bus_part",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ex_inscriber",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ex_interface",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ex_interface_part",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ex_io_port",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ex_molecular_assembler",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ex_pattern_access_part",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ex_pattern_provider",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ex_pattern_provider_part",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:fishbig",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:infinity_cell",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:ingredient_buffer",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:me_packing_tape",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:mod_export_bus",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:mod_storage_bus",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:oversize_interface",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:oversize_interface_part",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:package",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:pattern_modifier",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:precise_export_bus",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:precise_storage_bus",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:tag_export_bus",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:tag_storage_bus",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:threshold_export_bus",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:threshold_level_emitter",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:wireless_advanced_tool",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:wireless_connect",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:wireless_hub",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:wireless_tool",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:1024x_crafting_accelerator",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:16x_crafting_accelerator",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:256x_crafting_accelerator",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:4x_crafting_accelerator",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:64x_crafting_accelerator",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:_leng",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:assembler_matrix_crafter_plus",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:assembler_matrix_hybrid_plus",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:assembler_matrix_pattern_plus",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:assembler_matrix_speed_plus",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:assembler_matrix_upload_core",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:c-h716",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:circuit_cutter_plus",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:fish_dan_",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:infinity_biginteger_cell",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:labeled_wireless_transceiver",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:mirror_pattern_provider",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:network_pattern_controller",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:oblivion_singularity",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:super_assembler_matrix_frame",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:super_assembler_matrix_wall",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:tag_inventory_me_interface",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:wireless_transceiver",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:xbai",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:blaze_cooler",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:compressed_storage_tank",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:copper_basin",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:copper_bucket",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:copper_frogport",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:copper_schematicannon",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:empty_fluid_schematic",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:faucet",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:flow_meter",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:fluid_factory_gauge",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:fluid_hatch",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:fluid_inventory_access_port",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:fluid_package",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:fluid_package_exposed",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:fluid_package_oxidized",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:fluid_package_weathered",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:fluid_packager",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:fluid_pump",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:fluid_repackager",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:fluid_schematic",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:fluid_transporter",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:frost_cake",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:horizontal_multi_fluid_tank",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:infinite_fluid_tank",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:mechanical_fluid_gun",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:multi_fluid_access_port",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:multi_fluid_tank",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:phantom_chain",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:potato_server",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:rare_fox_package",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:rare_pig_package",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:redstone_fluid_valve",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:smart_faucet",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:smart_hopper",
+      "required": false
+    },
+    {
+      "id": "fluidlogistics:water_containing_copper_casing",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:aurum_boat",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:aurum_chest_boat",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_allay_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_axolotl_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_bat_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_bee_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_boat",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_chest_boat",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_chicken_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_cod_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_glow_squid_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_lava_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_magma_cube_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_milk_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_powder_snow_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_pufferfish_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_salmon_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_slime_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_squid_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_strider_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_tropical_fish_bucket",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:edelwood_water_bucket",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:acacia_1",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:acacia_2",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:acacia_4",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:armory_cabinet",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:birch_1",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:birch_2",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:birch_4",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:cherry_1",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:cherry_2",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:cherry_4",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:compacting_drawer",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:compacting_framed_drawer",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:configuration_tool",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:controller_extension",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:crimson_1",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:crimson_2",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:crimson_4",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:dark_oak_1",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:dark_oak_2",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:dark_oak_4",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:ender_drawer",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:fluid_1",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:fluid_2",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:fluid_4",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:framed_1",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:framed_2",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:framed_4",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:framed_controller_extension",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:framed_simple_compacting_drawer",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:framed_storage_controller",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:iron_downgrade",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:jungle_1",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:jungle_2",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:jungle_4",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:linking_tool",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:mangrove_1",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:mangrove_2",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:mangrove_4",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:oak_1",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:oak_2",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:oak_4",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:simple_compacting_drawer",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:spruce_1",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:spruce_2",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:spruce_4",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:storage_controller",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:warped_1",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:warped_2",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:warped_4",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:acetaldehyde_bucket",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:biodiesel_bucket",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:buzzsaw",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:chemthrower",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:concrete_bucket",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:creosote_bucket",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:drill",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:ethanol_bucket",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:herbicide_bucket",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:jerrycan",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:minecart_metalbarrel",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:minecart_reinforcedcrate",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:minecart_woodenbarrel",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:minecart_woodencrate",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:phenolic_resin_bucket",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plantoil_bucket",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:potion_bucket",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:redstone_acid_bucket",
+      "required": false
+    },
+    {
+      "id": "itemfilters:always_false",
+      "required": false
+    },
+    {
+      "id": "itemfilters:always_true",
+      "required": false
+    },
+    {
+      "id": "itemfilters:and",
+      "required": false
+    },
+    {
+      "id": "itemfilters:block",
+      "required": false
+    },
+    {
+      "id": "itemfilters:custom",
+      "required": false
+    },
+    {
+      "id": "itemfilters:damage",
+      "required": false
+    },
+    {
+      "id": "itemfilters:id_regex",
+      "required": false
+    },
+    {
+      "id": "itemfilters:max_count",
+      "required": false
+    },
+    {
+      "id": "itemfilters:mod",
+      "required": false
+    },
+    {
+      "id": "itemfilters:not",
+      "required": false
+    },
+    {
+      "id": "itemfilters:or",
+      "required": false
+    },
+    {
+      "id": "itemfilters:strong_nbt",
+      "required": false
+    },
+    {
+      "id": "itemfilters:tag",
+      "required": false
+    },
+    {
+      "id": "itemfilters:weak_nbt",
+      "required": false
+    },
+    {
+      "id": "itemfilters:xor",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_cookery:transmutation_lunch_bag",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_end:dragon_breath_bucket",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_tavern:glow_berries_bucket",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_tavern:gold_grape_bucket",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_tavern:grape_bucket",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_tavern:green_grape_bucket",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_tavern:ice_grape_bucket",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_tavern:sweet_berries_bucket",
+      "required": false
+    },
+    {
+      "id": "malum:runewood_boat",
+      "required": false
+    },
+    {
+      "id": "malum:soulwood_boat",
+      "required": false
+    },
+    {
+      "id": "me_beam_former:beam_former_block",
+      "required": false
+    },
+    {
+      "id": "me_beam_former:beam_former_part",
+      "required": false
+    },
+    {
+      "id": "me_beam_former:energy_network_monitor",
+      "required": false
+    },
+    {
+      "id": "me_beam_former:laser_binding_tool",
+      "required": false
+    },
+    {
+      "id": "me_beam_former:omni_beam_former_block",
+      "required": false
+    },
+    {
+      "id": "me_beam_former:wireless_energy_tower",
+      "required": false
+    },
+    {
+      "id": "mekanism:advanced_fluid_tank",
+      "required": false
+    },
+    {
+      "id": "mekanism:basic_fluid_tank",
+      "required": false
+    },
+    {
+      "id": "mekanism:brine_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:canteen",
+      "required": false
+    },
+    {
+      "id": "mekanism:chlorine_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:creative_fluid_tank",
+      "required": false
+    },
+    {
+      "id": "mekanism:elite_fluid_tank",
+      "required": false
+    },
+    {
+      "id": "mekanism:ethene_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:gauge_dropper",
+      "required": false
+    },
+    {
+      "id": "mekanism:heavy_water_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:hydrofluoric_acid_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:hydrogen_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:hydrogen_chloride_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:lithium_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:nutritional_paste_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:oxygen_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:sodium_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:steam_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:sulfur_dioxide_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:sulfur_trioxide_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:sulfuric_acid_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:superheated_sodium_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:ultimate_fluid_tank",
+      "required": false
+    },
+    {
+      "id": "mekanism:uranium_hexafluoride_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanism:uranium_oxide_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanismgenerators:bioethanol_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanismgenerators:deuterium_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanismgenerators:fusion_fuel_bucket",
+      "required": false
+    },
+    {
+      "id": "mekanismgenerators:tritium_bucket",
+      "required": false
+    },
+    {
+      "id": "minecraft:acacia_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:acacia_chest_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:axolotl_bucket",
+      "required": false
+    },
+    {
+      "id": "minecraft:bamboo_chest_raft",
+      "required": false
+    },
+    {
+      "id": "minecraft:bamboo_raft",
+      "required": false
+    },
+    {
+      "id": "minecraft:barrel",
+      "required": false
+    },
+    {
+      "id": "minecraft:birch_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:birch_chest_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:black_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:blue_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:brown_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:bucket",
+      "required": false
+    },
+    {
+      "id": "minecraft:cherry_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:cherry_chest_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:chest",
+      "required": false
+    },
+    {
+      "id": "minecraft:chest_minecart",
+      "required": false
+    },
+    {
+      "id": "minecraft:cod_bucket",
+      "required": false
+    },
+    {
+      "id": "minecraft:command_block_minecart",
+      "required": false
+    },
+    {
+      "id": "minecraft:cyan_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:dark_oak_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:dark_oak_chest_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:ender_chest",
+      "required": false
+    },
+    {
+      "id": "minecraft:furnace_minecart",
+      "required": false
+    },
+    {
+      "id": "minecraft:gray_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:green_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:hopper_minecart",
+      "required": false
+    },
+    {
+      "id": "minecraft:jungle_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:jungle_chest_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:lava_bucket",
+      "required": false
+    },
+    {
+      "id": "minecraft:light_blue_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:light_gray_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:lime_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:magenta_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:mangrove_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:mangrove_chest_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:minecart",
+      "required": false
+    },
+    {
+      "id": "minecraft:oak_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:oak_chest_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:orange_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:pink_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:powder_snow_bucket",
+      "required": false
+    },
+    {
+      "id": "minecraft:pufferfish_bucket",
+      "required": false
+    },
+    {
+      "id": "minecraft:purple_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:red_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:salmon_bucket",
+      "required": false
+    },
+    {
+      "id": "minecraft:shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:spruce_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:spruce_chest_boat",
+      "required": false
+    },
+    {
+      "id": "minecraft:tadpole_bucket",
+      "required": false
+    },
+    {
+      "id": "minecraft:tnt_minecart",
+      "required": false
+    },
+    {
+      "id": "minecraft:trapped_chest",
+      "required": false
+    },
+    {
+      "id": "minecraft:tropical_fish_bucket",
+      "required": false
+    },
+    {
+      "id": "minecraft:water_bucket",
+      "required": false
+    },
+    {
+      "id": "minecraft:white_shulker_box",
+      "required": false
+    },
+    {
+      "id": "minecraft:yellow_shulker_box",
+      "required": false
+    },
+    {
+      "id": "neoecoae:aluminum_alloy_casing",
+      "required": false
+    },
+    {
+      "id": "neoecoae:black_tungsten_alloy_casing",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_casing",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_cooling_controller_l4",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_cooling_controller_l6",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_cooling_controller_l9",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_drive",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_high_energy_network_switch",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_interface",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_network_switch",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_parallel_core_l4",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_parallel_core_l6",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_parallel_core_l9",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_system_l4",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_system_l6",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_system_l9",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_threading_core_l4",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_threading_core_l6",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_threading_core_l9",
+      "required": false
+    },
+    {
+      "id": "neoecoae:computation_transmitter",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crafting_casing",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crafting_high_energy_network_switch",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crafting_interface",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crafting_network_switch",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crafting_parallel_core_l4",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crafting_parallel_core_l6",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crafting_parallel_core_l9",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crafting_pattern_bus",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crafting_system_l4",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crafting_system_l6",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crafting_system_l9",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crafting_vent",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crafting_worker",
+      "required": false
+    },
+    {
+      "id": "neoecoae:cryotheum",
+      "required": false
+    },
+    {
+      "id": "neoecoae:cryotheum_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "neoecoae:crystal_matrix",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_bulk_item_cell_16m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_bulk_item_cell_256m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_bulk_item_cell_64m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_bulk_item_cell_housing",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_cell_component_16m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_cell_component_256m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_cell_component_64m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_chemical_cell_housing",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_chemical_storage_cell_16m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_chemical_storage_cell_256m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_chemical_storage_cell_64m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_computation_cell_l4",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_computation_cell_l6",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_computation_cell_l9",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_drive",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_fluid_cell_housing",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_fluid_storage_cell_16m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_fluid_storage_cell_256m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_fluid_storage_cell_64m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_infinite_item_cell",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_item_cell_housing",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_item_storage_cell_16m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_item_storage_cell_256m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_item_storage_cell_64m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_source_cell_housing",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_source_storage_cell_16m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_source_storage_cell_256m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_source_storage_cell_64m",
+      "required": false
+    },
+    {
+      "id": "neoecoae:energized_crystal_cluster",
+      "required": false
+    },
+    {
+      "id": "neoecoae:energy_cell_l4",
+      "required": false
+    },
+    {
+      "id": "neoecoae:energy_cell_l6",
+      "required": false
+    },
+    {
+      "id": "neoecoae:energy_cell_l9",
+      "required": false
+    },
+    {
+      "id": "neoecoae:fx_monitor_core",
+      "required": false
+    },
+    {
+      "id": "neoecoae:input_hatch",
+      "required": false
+    },
+    {
+      "id": "neoecoae:integrated_working_station",
+      "required": false
+    },
+    {
+      "id": "neoecoae:integrated_working_station_module_advanced_ae",
+      "required": false
+    },
+    {
+      "id": "neoecoae:integrated_working_station_module_empty",
+      "required": false
+    },
+    {
+      "id": "neoecoae:integrated_working_station_module_extendedae",
+      "required": false
+    },
+    {
+      "id": "neoecoae:large_energized_crystal_bud",
+      "required": false
+    },
+    {
+      "id": "neoecoae:large_integrated_working_station_casing",
+      "required": false
+    },
+    {
+      "id": "neoecoae:large_integrated_working_station_input_hatch",
+      "required": false
+    },
+    {
+      "id": "neoecoae:large_integrated_working_station_interface",
+      "required": false
+    },
+    {
+      "id": "neoecoae:large_integrated_working_station_output_hatch",
+      "required": false
+    },
+    {
+      "id": "neoecoae:medium_energized_crystal_bud",
+      "required": false
+    },
+    {
+      "id": "neoecoae:output_hatch",
+      "required": false
+    },
+    {
+      "id": "neoecoae:small_energized_crystal_bud",
+      "required": false
+    },
+    {
+      "id": "neoecoae:storage_casing",
+      "required": false
+    },
+    {
+      "id": "neoecoae:storage_interface",
+      "required": false
+    },
+    {
+      "id": "neoecoae:storage_system_l4",
+      "required": false
+    },
+    {
+      "id": "neoecoae:storage_system_l6",
+      "required": false
+    },
+    {
+      "id": "neoecoae:storage_system_l9",
+      "required": false
+    },
+    {
+      "id": "neoecoae:storage_vent",
+      "required": false
+    },
+    {
+      "id": "neoecoae:structure_terminal",
+      "required": false
+    },
+    {
+      "id": "neoecoae:superconducting_processor_press",
+      "required": false
+    },
+    {
+      "id": "neoecoae:superconducting_processor_print",
+      "required": false
+    },
+    {
+      "id": "quark:acacia_chest",
+      "required": false
+    },
+    {
+      "id": "quark:acacia_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_boat",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_chest",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_chest_boat",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_boat",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_chest",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_chest_boat",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:bamboo_chest",
+      "required": false
+    },
+    {
+      "id": "quark:bamboo_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:birch_chest",
+      "required": false
+    },
+    {
+      "id": "quark:birch_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_boat",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_chest",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_chest_boat",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:cherry_chest",
+      "required": false
+    },
+    {
+      "id": "quark:cherry_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:crab_bucket",
+      "required": false
+    },
+    {
+      "id": "quark:crimson_chest",
+      "required": false
+    },
+    {
+      "id": "quark:crimson_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:dark_oak_chest",
+      "required": false
+    },
+    {
+      "id": "quark:dark_oak_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:jungle_chest",
+      "required": false
+    },
+    {
+      "id": "quark:jungle_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:mangrove_chest",
+      "required": false
+    },
+    {
+      "id": "quark:mangrove_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:nether_brick_chest",
+      "required": false
+    },
+    {
+      "id": "quark:nether_brick_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:oak_chest",
+      "required": false
+    },
+    {
+      "id": "quark:oak_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:prismarine_chest",
+      "required": false
+    },
+    {
+      "id": "quark:prismarine_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:purpur_chest",
+      "required": false
+    },
+    {
+      "id": "quark:purpur_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:slime_in_a_bucket",
+      "required": false
+    },
+    {
+      "id": "quark:spruce_chest",
+      "required": false
+    },
+    {
+      "id": "quark:spruce_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:warped_chest",
+      "required": false
+    },
+    {
+      "id": "quark:warped_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "railways:benchcart",
+      "required": false
+    },
+    {
+      "id": "railways:black_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:blue_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:brown_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:chartreuse_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:cyan_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:diorite_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:dripstone_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:empty_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:granite_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:gray_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:green_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:jukeboxcart",
+      "required": false
+    },
+    {
+      "id": "railways:light_blue_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:light_gray_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:lime_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:limestone_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:magenta_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:maroon_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:ochrum_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:olive_green_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:orange_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:pine_green_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:pink_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:purple_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:red_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:royal_blue_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:sandy_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:scorchia_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:sea_green_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:tuff_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:turquoise_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:vermilion_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:white_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "railways:yellow_paint_pitcher",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:baobab_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:baobab_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:blackwood_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:blackwood_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cypress_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:cypress_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:dead_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:eucalyptus_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:eucalyptus_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:joshua_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:joshua_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:kapok_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:kapok_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:larch_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:larch_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:magnolia_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:magnolia_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:maple_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:maple_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:mauve_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:mauve_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:palm_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:palm_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:pine_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:pine_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:redwood_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:redwood_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:socotra_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:socotra_chest_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:willow_boat",
+      "required": false
+    },
+    {
+      "id": "regions_unexplored:willow_chest_boat",
+      "required": false
+    },
+    {
+      "id": "smc:end_boat",
+      "required": false
+    },
+    {
+      "id": "smc:end_chest_boat",
+      "required": false
+    },
+    {
+      "id": "smc:golden_boat",
+      "required": false
+    },
+    {
+      "id": "smc:golden_chest_boat",
+      "required": false
+    },
+    {
+      "id": "smc:golden_transparent_boat",
+      "required": false
+    },
+    {
+      "id": "smc:salt_fish_bucket",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_downgrade_tier_1",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_downgrade_tier_2",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_downgrade_tier_3",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_omega_tier",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_starter_tier",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_1_conversion",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_2_conversion",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_3_conversion",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_starter_tier_to_tier_4_conversion",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_tier_1",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_2_conversion",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_3_conversion",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_tier_1_to_tier_4_conversion",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_tier_2",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_tier_2_to_tier_3_conversion",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_tier_2_to_tier_4_conversion",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_tier_3",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_tier_3_to_tier_4_conversion",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stack_upgrade_tier_4",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:upgrade_base",
+      "required": false
+    },
+    {
+      "id": "sophisticatedcore:ender_linker",
+      "required": false
+    },
+    {
+      "id": "sophisticatedcore:xp_bucket",
+      "required": false
+    },
+    {
+      "id": "spawn:angler_fish_bucket",
+      "required": false
+    },
+    {
+      "id": "spawn:baby_flukeshroom_bucket",
+      "required": false
+    },
+    {
+      "id": "spawn:baby_sea_cow_bucket",
+      "required": false
+    },
+    {
+      "id": "spawn:baby_seal_bucket",
+      "required": false
+    },
+    {
+      "id": "spawn:baby_sunfish_bucket",
+      "required": false
+    },
+    {
+      "id": "spawn:blenny_bucket",
+      "required": false
+    },
+    {
+      "id": "spawn:bluefish_bucket",
+      "required": false
+    },
+    {
+      "id": "spawn:coastal_crab_bucket",
+      "required": false
+    },
+    {
+      "id": "spawn:date_chest_raft",
+      "required": false
+    },
+    {
+      "id": "spawn:date_raft",
+      "required": false
+    },
+    {
+      "id": "spawn:herring_bucket",
+      "required": false
+    },
+    {
+      "id": "spawn:pilot_fish_bucket",
+      "required": false
+    },
+    {
+      "id": "spawn:rotten_boat",
+      "required": false
+    },
+    {
+      "id": "spawn:rotten_chest_boat",
+      "required": false
+    },
+    {
+      "id": "spawn:seahorse_bucket",
+      "required": false
+    },
+    {
+      "id": "spawn:tuna_egg_bucket",
+      "required": false
+    },
+    {
+      "id": "steam_letters:empty_steam_container",
+      "required": false
+    },
+    {
+      "id": "steam_letters:sealed_steam_container",
+      "required": false
+    },
+    {
+      "id": "steam_letters:steam_bucket",
+      "required": false
+    },
+    {
+      "id": "steam_letters:superheated_steam_bucket",
+      "required": false
+    },
+    {
+      "id": "steampowered:steam_bucket",
+      "required": false
+    },
+    {
+      "id": "supplementaries:dispenser_minecart",
+      "required": false
+    },
+    {
+      "id": "supplementaries:lumisene_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:beetroot_soup_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:blazing_blood_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:copper_can",
+      "required": false
+    },
+    {
+      "id": "tconstruct:earth_slime_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:ender_slime_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:fiery_liquid_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:honey_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:ichor_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:lingering_bottle",
+      "required": false
+    },
+    {
+      "id": "tconstruct:liquid_soul_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:magma_bottle",
+      "required": false
+    },
+    {
+      "id": "tconstruct:magma_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:meat_soup_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_aluminum_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_amethyst_bronze_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_amethyst_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_bendalloy_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_brass_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_bronze_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_cadmium_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_chromium_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_cinderslime_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_clay_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_cobalt_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_constantan_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_copper_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_debris_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_diamond_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_duralumin_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_electrum_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_emerald_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_ender_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_enderium_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_glass_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_gold_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_hepatizon_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_invar_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_iron_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_knightmetal_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_knightslime_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_lead_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_lumium_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_manyullyn_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_netherite_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_nickel_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_nicrosil_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_obsidian_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_osmium_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_pewter_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_pig_iron_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_platinum_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_porcelain_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_quartz_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_queens_slime_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_refined_glowstone_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_refined_obsidian_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_rose_gold_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_signalum_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_silver_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_slimesteel_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_soulsteel_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_steel_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_steeleaf_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_tin_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_tungsten_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_uranium_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:molten_zinc_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:mushroom_stew_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:rabbit_stew_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:scorched_fuel_gauge",
+      "required": false
+    },
+    {
+      "id": "tconstruct:scorched_fuel_tank",
+      "required": false
+    },
+    {
+      "id": "tconstruct:scorched_ingot_gauge",
+      "required": false
+    },
+    {
+      "id": "tconstruct:scorched_ingot_tank",
+      "required": false
+    },
+    {
+      "id": "tconstruct:scorched_lantern",
+      "required": false
+    },
+    {
+      "id": "tconstruct:scorched_stone_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:seared_casting_tank",
+      "required": false
+    },
+    {
+      "id": "tconstruct:seared_fuel_gauge",
+      "required": false
+    },
+    {
+      "id": "tconstruct:seared_fuel_tank",
+      "required": false
+    },
+    {
+      "id": "tconstruct:seared_ingot_gauge",
+      "required": false
+    },
+    {
+      "id": "tconstruct:seared_ingot_tank",
+      "required": false
+    },
+    {
+      "id": "tconstruct:seared_lantern",
+      "required": false
+    },
+    {
+      "id": "tconstruct:seared_stone_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:sky_slime_bucket",
+      "required": false
+    },
+    {
+      "id": "tconstruct:splash_bottle",
+      "required": false
+    },
+    {
+      "id": "tconstruct:venom_bucket",
+      "required": false
+    },
+    {
+      "id": "terramity:prism_solution_bucket",
+      "required": false
+    },
+    {
+      "id": "terramity:stygian_blood_bucket",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:honey_bucket",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:royal_jelly_bucket",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:sugar_water_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:creosote_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:crude_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:ender_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:florb",
+      "required": false
+    },
+    {
+      "id": "thermal:glowstone_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:heavy_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:latex_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:light_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:redstone_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:refined_fuel_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:resin_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:rubberwood_boat",
+      "required": false
+    },
+    {
+      "id": "thermal:rubberwood_chest_boat",
+      "required": false
+    },
+    {
+      "id": "thermal:sap_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:syrup_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:tree_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal:watering_can",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:abyssal_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:crystallized_sunflower_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:diesel_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:dragonsteel_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:flux_infused_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:gasoline_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:lubricant_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:naphtha_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:paraffin_wax_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:polyolefin_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:refined_sunflower_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:shellite_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:soul_infused_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:sunflower_oil_bucket",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:twinite_bucket",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:basalz_blood_bucket",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:blitz_blood_bucket",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:blizz_blood_bucket",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:molten_abyssal_bucket",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:molten_dragonsteel_bucket",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:molten_shellite_bucket",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:molten_soul_infused_bucket",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:molten_twinite_bucket",
+      "required": false
+    },
+    {
+      "id": "twilightforest:canopy_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:canopy_chest",
+      "required": false
+    },
+    {
+      "id": "twilightforest:canopy_chest_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:dark_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:dark_chest",
+      "required": false
+    },
+    {
+      "id": "twilightforest:dark_chest_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:mangrove_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:mangrove_chest",
+      "required": false
+    },
+    {
+      "id": "twilightforest:mangrove_chest_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:mining_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:mining_chest",
+      "required": false
+    },
+    {
+      "id": "twilightforest:mining_chest_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:sorting_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:sorting_chest",
+      "required": false
+    },
+    {
+      "id": "twilightforest:sorting_chest_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:time_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:time_chest",
+      "required": false
+    },
+    {
+      "id": "twilightforest:time_chest_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:transformation_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:transformation_chest",
+      "required": false
+    },
+    {
+      "id": "twilightforest:transformation_chest_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:twilight_oak_boat",
+      "required": false
+    },
+    {
+      "id": "twilightforest:twilight_oak_chest",
+      "required": false
+    },
+    {
+      "id": "twilightforest:twilight_oak_chest_boat",
+      "required": false
+    },
+    {
+      "id": "undergarden:grongle_boat",
+      "required": false
+    },
+    {
+      "id": "undergarden:grongle_chest_boat",
+      "required": false
+    },
+    {
+      "id": "undergarden:gwibling_bucket",
+      "required": false
+    },
+    {
+      "id": "undergarden:smogstem_boat",
+      "required": false
+    },
+    {
+      "id": "undergarden:smogstem_chest_boat",
+      "required": false
+    },
+    {
+      "id": "undergarden:virulent_mix_bucket",
+      "required": false
+    },
+    {
+      "id": "undergarden:wigglewood_boat",
+      "required": false
+    },
+    {
+      "id": "undergarden:wigglewood_chest_boat",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:sulfuric_acid_bucket",
+      "required": false
+    }
+  ]
+}

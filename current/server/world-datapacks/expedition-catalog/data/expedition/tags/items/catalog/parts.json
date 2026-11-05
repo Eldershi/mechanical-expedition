@@ -1,0 +1,4385 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "ad_astra:calorite_plate",
+      "required": false
+    },
+    {
+      "id": "ad_astra:desh_plate",
+      "required": false
+    },
+    {
+      "id": "ad_astra:etrium_plate",
+      "required": false
+    },
+    {
+      "id": "ad_astra:etrium_rod",
+      "required": false
+    },
+    {
+      "id": "ad_astra:iron_plate",
+      "required": false
+    },
+    {
+      "id": "ad_astra:iron_rod",
+      "required": false
+    },
+    {
+      "id": "ad_astra:ostrum_plate",
+      "required": false
+    },
+    {
+      "id": "ad_astra:oxygen_gear",
+      "required": false
+    },
+    {
+      "id": "ad_astra:steel_plate",
+      "required": false
+    },
+    {
+      "id": "ad_astra:steel_rod",
+      "required": false
+    },
+    {
+      "id": "ad_astra_giselle_addon:module_acid_rain_proof_unit",
+      "required": false
+    },
+    {
+      "id": "ad_astra_giselle_addon:module_gravity_normalizing_unit",
+      "required": false
+    },
+    {
+      "id": "ad_astra_giselle_addon:module_space_breathing_unit",
+      "required": false
+    },
+    {
+      "id": "ad_astra_giselle_addon:module_space_fire_proof_unit",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:adv_pattern_provider_capacity_upgrade",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:adv_pattern_provider_upgrade",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:printed_quantum_processor",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_alloy_plate",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_processor",
+      "required": false
+    },
+    {
+      "id": "advanced_ae:quantum_storage_component",
+      "required": false
+    },
+    {
+      "id": "ae2:calculation_processor",
+      "required": false
+    },
+    {
+      "id": "ae2:engineering_processor",
+      "required": false
+    },
+    {
+      "id": "ae2:fluix_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "ae2:logic_processor",
+      "required": false
+    },
+    {
+      "id": "ae2:printed_calculation_processor",
+      "required": false
+    },
+    {
+      "id": "ae2:printed_engineering_processor",
+      "required": false
+    },
+    {
+      "id": "ae2:printed_logic_processor",
+      "required": false
+    },
+    {
+      "id": "ae2:printed_silicon",
+      "required": false
+    },
+    {
+      "id": "aeinfinitybooster:dimension_card",
+      "required": false
+    },
+    {
+      "id": "aeinfinitybooster:infinity_card",
+      "required": false
+    },
+    {
+      "id": "aether:skyroot_stick",
+      "required": false
+    },
+    {
+      "id": "alexscaves:polarity_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "alexscaves:polymer_plate",
+      "required": false
+    },
+    {
+      "id": "allthemodium:allthemodium_gear",
+      "required": false
+    },
+    {
+      "id": "allthemodium:allthemodium_plate",
+      "required": false
+    },
+    {
+      "id": "allthemodium:allthemodium_rod",
+      "required": false
+    },
+    {
+      "id": "allthemodium:allthemodium_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "allthemodium:unobtainium_gear",
+      "required": false
+    },
+    {
+      "id": "allthemodium:unobtainium_plate",
+      "required": false
+    },
+    {
+      "id": "allthemodium:unobtainium_rod",
+      "required": false
+    },
+    {
+      "id": "allthemodium:unobtainium_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "allthemodium:vibranium_gear",
+      "required": false
+    },
+    {
+      "id": "allthemodium:vibranium_plate",
+      "required": false
+    },
+    {
+      "id": "allthemodium:vibranium_rod",
+      "required": false
+    },
+    {
+      "id": "allthemodium:vibranium_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "alltheores:aluminum_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:aluminum_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:aluminum_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:brass_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:brass_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:brass_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:bronze_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:bronze_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:bronze_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:constantan_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:constantan_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:constantan_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:copper_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:copper_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:copper_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:diamond_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:diamond_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:diamond_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:electrum_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:electrum_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:electrum_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:enderium_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:enderium_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:enderium_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:gold_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:gold_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:gold_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:invar_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:invar_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:invar_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:iridium_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:iridium_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:iridium_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:iron_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:iron_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:iron_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:lead_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:lead_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:lead_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:lumium_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:lumium_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:lumium_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:nickel_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:nickel_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:nickel_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:osmium_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:osmium_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:osmium_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:platinum_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:platinum_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:platinum_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:signalum_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:signalum_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:signalum_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:silver_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:silver_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:silver_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:steel_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:steel_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:steel_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:tin_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:tin_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:tin_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:uranium_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:uranium_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:uranium_rod",
+      "required": false
+    },
+    {
+      "id": "alltheores:zinc_gear",
+      "required": false
+    },
+    {
+      "id": "alltheores:zinc_plate",
+      "required": false
+    },
+    {
+      "id": "alltheores:zinc_rod",
+      "required": false
+    },
+    {
+      "id": "ars_nouveau:dowsing_rod",
+      "required": false
+    },
+    {
+      "id": "ars_technica:calibrated_precision_mechanism",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:chaos_component",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:dark_rod",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:dark_upgrade",
+      "required": false
+    },
+    {
+      "id": "cataclysm:cursium_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignitium_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "cmi:128_parallel_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:16_parallel_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:256_parallel_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:2_parallel_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:2x2_packing_clay_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:2x2_packing_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:32_parallel_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:3x3_packing_clay_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:3x3_packing_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:4_parallel_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:64_parallel_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:8_parallel_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:advanced_electronic_components",
+      "required": false
+    },
+    {
+      "id": "cmi:advanced_mekanism_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:advanced_mekanism_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:aeronautic_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:aeronautic_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:air_tight_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:air_tight_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:aluminum_alloy_gear",
+      "required": false
+    },
+    {
+      "id": "cmi:aluminum_alloy_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:aluminum_alloy_rod",
+      "required": false
+    },
+    {
+      "id": "cmi:aluminum_upgrade_augment",
+      "required": false
+    },
+    {
+      "id": "cmi:amethyst_bronze_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:andesite_casing_framework",
+      "required": false
+    },
+    {
+      "id": "cmi:andesite_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:andesite_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:antimatter_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:antimatter_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:astral_core",
+      "required": false
+    },
+    {
+      "id": "cmi:astronautic_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:astronautic_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:basalt_general_component",
+      "required": false
+    },
+    {
+      "id": "cmi:basalz_general_component",
+      "required": false
+    },
+    {
+      "id": "cmi:basalz_unit",
+      "required": false
+    },
+    {
+      "id": "cmi:basic_electronic_components",
+      "required": false
+    },
+    {
+      "id": "cmi:basic_mechanism_part",
+      "required": false
+    },
+    {
+      "id": "cmi:basic_mekanism_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:basic_mekanism_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:basic_random_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:blank_clay_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:blaze_general_component",
+      "required": false
+    },
+    {
+      "id": "cmi:blaze_unit",
+      "required": false
+    },
+    {
+      "id": "cmi:blitz_general_component",
+      "required": false
+    },
+    {
+      "id": "cmi:blitz_unit",
+      "required": false
+    },
+    {
+      "id": "cmi:blizz_general_component",
+      "required": false
+    },
+    {
+      "id": "cmi:blizz_unit",
+      "required": false
+    },
+    {
+      "id": "cmi:brass_casing_framework",
+      "required": false
+    },
+    {
+      "id": "cmi:bronze_casing_framework",
+      "required": false
+    },
+    {
+      "id": "cmi:bronze_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:bronze_mechanism_cast",
+      "required": false
+    },
+    {
+      "id": "cmi:bronze_nugget_cast",
+      "required": false
+    },
+    {
+      "id": "cmi:bullet_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:calorite_gear",
+      "required": false
+    },
+    {
+      "id": "cmi:carbon_deposition_catalytic_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:carbon_polymerization_catalytic_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:cast_iron_gear",
+      "required": false
+    },
+    {
+      "id": "cmi:chromeplated_steel_gear",
+      "required": false
+    },
+    {
+      "id": "cmi:chromium_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:cobalt_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:coil_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:coin_clay_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:coin_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:colorful_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:composite_carbon_fiber_gear",
+      "required": false
+    },
+    {
+      "id": "cmi:composite_carbon_fiber_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:composite_magnetic_conduction_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:composite_tungsten_steel_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:computing_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:computing_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:concurrent_processor",
+      "required": false
+    },
+    {
+      "id": "cmi:concurrent_processor_press",
+      "required": false
+    },
+    {
+      "id": "cmi:copper_casing_framework",
+      "required": false
+    },
+    {
+      "id": "cmi:copper_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:copper_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:creative_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:dense_sturdy_sheet",
+      "required": false
+    },
+    {
+      "id": "cmi:desh_gear",
+      "required": false
+    },
+    {
+      "id": "cmi:drawer_upgrade_template",
+      "required": false
+    },
+    {
+      "id": "cmi:elite_electronic_components",
+      "required": false
+    },
+    {
+      "id": "cmi:elite_mekanism_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:elite_mekanism_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:empty_cell",
+      "required": false
+    },
+    {
+      "id": "cmi:empty_fuel_rod",
+      "required": false
+    },
+    {
+      "id": "cmi:enchanted_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:ender_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:ender_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:engineering_mechanism_part",
+      "required": false
+    },
+    {
+      "id": "cmi:engineering_random_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:entro_alloy_wafer",
+      "required": false
+    },
+    {
+      "id": "cmi:ethylene_polymerization_catalytic_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:ferrit_core",
+      "required": false
+    },
+    {
+      "id": "cmi:filled_fuel_rod",
+      "required": false
+    },
+    {
+      "id": "cmi:final_mechanism_part",
+      "required": false
+    },
+    {
+      "id": "cmi:fluix_wire",
+      "required": false
+    },
+    {
+      "id": "cmi:flux_mechanism_part",
+      "required": false
+    },
+    {
+      "id": "cmi:flux_random_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:gear_clay_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:gear_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:germanium_wafer",
+      "required": false
+    },
+    {
+      "id": "cmi:glass_rod",
+      "required": false
+    },
+    {
+      "id": "cmi:glass_wire",
+      "required": false
+    },
+    {
+      "id": "cmi:glowstone_lumen_tube",
+      "required": false
+    },
+    {
+      "id": "cmi:gold_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:hammer_head",
+      "required": false
+    },
+    {
+      "id": "cmi:heavy_engineering_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:heavy_engineering_mechanism_augment",
+      "required": false
+    },
+    {
+      "id": "cmi:hepatizon_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_advanced_control_circuit",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_advanced_mekanism_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_aeronautic_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_air_tight_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_andesite_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_antimatter_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_astronautic_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_aviation_cell",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_basic_mekanism_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_bronze_cogwheel",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_bronze_large_cogwheel",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_bronze_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_calculation_processor",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_cast_iron_cogwheel",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_cast_iron_large_cogwheel",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_cobalt_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_cogwheel",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_coil_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_colorful_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_composite_carbon_fiber_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_computing_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_concurrent_processor",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_copper_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_creative_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_electron_tube",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_elite_control_circuit",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_elite_mekanism_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_enchanted_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_ender_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_engineering_processor",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_flywheel",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_gas_container",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_gold_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_heavy_engineering_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_iron_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_large_cogwheel",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_light_engineering_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_logic_processor",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_motor_rotor",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_nature_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_nether_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_notor_gizmo",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_nuclear_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_nuke_cooler",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_photosensitive_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_pig_iron_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_potion_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_railway_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_reinforced_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_resonant_tube",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_sculk_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_smart_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_steam_engine",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_steel_cogwheel",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_steel_large_cogwheel",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_stone_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_superconducting_processor",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_thermal_devices",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_thermal_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_thermal_mechanism_augment",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_tier_1_rocket_frame",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_tier_2_rocket_frame",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_tier_3_rocket_frame",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_tier_4_rocket_frame",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_tungsten_steel_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_ultimate_control_circuit",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_ultimate_mekanism_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_upgrade_augment_1",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_upgrade_augment_2",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_upgrade_augment_3",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_upgrade_augment_4",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_upgrade_augment_5",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_upgrade_augment_6",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_upgrade_augment_7",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_upgrade_augment_8",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_upgrade_augment_9",
+      "required": false
+    },
+    {
+      "id": "cmi:incomplete_wooden_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:inscribed_silicon",
+      "required": false
+    },
+    {
+      "id": "cmi:iron_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:iron_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:light_engineering_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:light_engineering_mechanism_augment",
+      "required": false
+    },
+    {
+      "id": "cmi:magical_mechanism_part",
+      "required": false
+    },
+    {
+      "id": "cmi:magical_random_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:magnetic_contact",
+      "required": false
+    },
+    {
+      "id": "cmi:mechanical_mechanism_part",
+      "required": false
+    },
+    {
+      "id": "cmi:mechanical_random_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:mechanism_cast",
+      "required": false
+    },
+    {
+      "id": "cmi:mechanism_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:mechanism_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "cmi:mechanism_sand_cast",
+      "required": false
+    },
+    {
+      "id": "cmi:mekanism_mechanism_part",
+      "required": false
+    },
+    {
+      "id": "cmi:mekanism_random_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:modem_repair_kit",
+      "required": false
+    },
+    {
+      "id": "cmi:motor_rotor",
+      "required": false
+    },
+    {
+      "id": "cmi:nano_composite_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:nature_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:nether_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:nuclear_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:nuclear_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:nuke_cooler",
+      "required": false
+    },
+    {
+      "id": "cmi:obsidian_cell",
+      "required": false
+    },
+    {
+      "id": "cmi:osmium_wafer",
+      "required": false
+    },
+    {
+      "id": "cmi:ostrum_gear",
+      "required": false
+    },
+    {
+      "id": "cmi:photosensitive_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:pig_iron_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:plate_clay_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:plate_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:potion_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:power_supply_repair_kit",
+      "required": false
+    },
+    {
+      "id": "cmi:printed_concurrent_processor",
+      "required": false
+    },
+    {
+      "id": "cmi:quantum_mechanism_part",
+      "required": false
+    },
+    {
+      "id": "cmi:quantum_random_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:radar_repair_kit",
+      "required": false
+    },
+    {
+      "id": "cmi:railway_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:random_random_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:reinforced_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:reinforced_mechanism_augment",
+      "required": false
+    },
+    {
+      "id": "cmi:resonant_tube",
+      "required": false
+    },
+    {
+      "id": "cmi:rod_clay_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:rod_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:rose_gold_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:rubber_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:sculk_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:silicon_carbide_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:silicon_rubber_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:silicon_wafer",
+      "required": false
+    },
+    {
+      "id": "cmi:siltsteel_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:simple_battery",
+      "required": false
+    },
+    {
+      "id": "cmi:smart_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:smart_mechanism_augment",
+      "required": false
+    },
+    {
+      "id": "cmi:space_mechanism_part",
+      "required": false
+    },
+    {
+      "id": "cmi:space_random_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:stainless_steel_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:stainless_steel_upgrade_augment",
+      "required": false
+    },
+    {
+      "id": "cmi:steam_cast_iron_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:steam_steel_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:steel_gear",
+      "required": false
+    },
+    {
+      "id": "cmi:steel_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:steel_upgrade",
+      "required": false
+    },
+    {
+      "id": "cmi:stone_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:stone_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:superconducting_mercury_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:thermal_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:thermal_mechanism_augment",
+      "required": false
+    },
+    {
+      "id": "cmi:thermal_unit",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_1_aviation_cell",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_1_rocket_body",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_1_rocket_fin",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_1_rocket_nose_cone",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_2_aviation_cell",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_2_rocket_body",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_2_rocket_fin",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_2_rocket_nose_cone",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_3_aviation_cell",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_3_rocket_body",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_3_rocket_fin",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_3_rocket_nose_cone",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_4_aviation_cell",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_4_rocket_body",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_4_rocket_fin",
+      "required": false
+    },
+    {
+      "id": "cmi:tier_4_rocket_nose_cone",
+      "required": false
+    },
+    {
+      "id": "cmi:titanium_alloy_coil",
+      "required": false
+    },
+    {
+      "id": "cmi:titanium_alloy_gear",
+      "required": false
+    },
+    {
+      "id": "cmi:titanium_alloy_mesh",
+      "required": false
+    },
+    {
+      "id": "cmi:titanium_alloy_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:titanium_alloy_rod",
+      "required": false
+    },
+    {
+      "id": "cmi:titanium_alloy_upgrade_augment",
+      "required": false
+    },
+    {
+      "id": "cmi:titanium_gear",
+      "required": false
+    },
+    {
+      "id": "cmi:titanium_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:titanium_rod",
+      "required": false
+    },
+    {
+      "id": "cmi:tracker_repair_kit",
+      "required": false
+    },
+    {
+      "id": "cmi:transformer_repair_kit",
+      "required": false
+    },
+    {
+      "id": "cmi:tungsten_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:tungsten_rod",
+      "required": false
+    },
+    {
+      "id": "cmi:tungsten_steel_gear",
+      "required": false
+    },
+    {
+      "id": "cmi:tungsten_steel_plate",
+      "required": false
+    },
+    {
+      "id": "cmi:tungsten_steel_rod",
+      "required": false
+    },
+    {
+      "id": "cmi:tungsten_steel_upgrade_augment",
+      "required": false
+    },
+    {
+      "id": "cmi:ultimate_electronic_components",
+      "required": false
+    },
+    {
+      "id": "cmi:ultimate_mekanism_mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:ultimate_mekanism_mechanism_basement",
+      "required": false
+    },
+    {
+      "id": "cmi:unpack_clay_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:unpack_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:wire_clay_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:wire_mold",
+      "required": false
+    },
+    {
+      "id": "cmi:wooden_gear",
+      "required": false
+    },
+    {
+      "id": "cmi:wooden_mechanism",
+      "required": false
+    },
+    {
+      "id": "create:brass_sheet",
+      "required": false
+    },
+    {
+      "id": "create:cardboard",
+      "required": false
+    },
+    {
+      "id": "create:copper_sheet",
+      "required": false
+    },
+    {
+      "id": "create:golden_sheet",
+      "required": false
+    },
+    {
+      "id": "create:incomplete_precision_mechanism",
+      "required": false
+    },
+    {
+      "id": "create:incomplete_track",
+      "required": false
+    },
+    {
+      "id": "create:iron_sheet",
+      "required": false
+    },
+    {
+      "id": "create:precision_mechanism",
+      "required": false
+    },
+    {
+      "id": "create:sturdy_sheet",
+      "required": false
+    },
+    {
+      "id": "create_connected:incomplete_control_chip",
+      "required": false
+    },
+    {
+      "id": "create_dragons_plus:blaze_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "create_enchantment_industry:apotheotic_affix_template",
+      "required": false
+    },
+    {
+      "id": "create_enchantment_industry:brass_affix_template",
+      "required": false
+    },
+    {
+      "id": "create_enchantment_industry:crystal_affix_template",
+      "required": false
+    },
+    {
+      "id": "create_enchantment_industry:enchanting_template",
+      "required": false
+    },
+    {
+      "id": "create_enchantment_industry:incomplete_apotheotic_affix_template",
+      "required": false
+    },
+    {
+      "id": "create_enchantment_industry:incomplete_brass_affix_template",
+      "required": false
+    },
+    {
+      "id": "create_enchantment_industry:incomplete_brass_bookshelf",
+      "required": false
+    },
+    {
+      "id": "create_enchantment_industry:incomplete_crystal_affix_template",
+      "required": false
+    },
+    {
+      "id": "create_enchantment_industry:super_enchanting_template",
+      "required": false
+    },
+    {
+      "id": "createaddition:brass_rod",
+      "required": false
+    },
+    {
+      "id": "createaddition:copper_rod",
+      "required": false
+    },
+    {
+      "id": "createaddition:copper_wire",
+      "required": false
+    },
+    {
+      "id": "createaddition:electrum_rod",
+      "required": false
+    },
+    {
+      "id": "createaddition:electrum_sheet",
+      "required": false
+    },
+    {
+      "id": "createaddition:electrum_wire",
+      "required": false
+    },
+    {
+      "id": "createaddition:gold_rod",
+      "required": false
+    },
+    {
+      "id": "createaddition:gold_wire",
+      "required": false
+    },
+    {
+      "id": "createaddition:iron_rod",
+      "required": false
+    },
+    {
+      "id": "createaddition:iron_wire",
+      "required": false
+    },
+    {
+      "id": "createaddition:zinc_sheet",
+      "required": false
+    },
+    {
+      "id": "createdeco:andesite_sheet",
+      "required": false
+    },
+    {
+      "id": "createdeco:industrial_iron_sheet",
+      "required": false
+    },
+    {
+      "id": "createdeco:netherite_sheet",
+      "required": false
+    },
+    {
+      "id": "createdeco:zinc_sheet",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:resonarium_plate",
+      "required": false
+    },
+    {
+      "id": "deeperdarker:warden_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "eeeabsmobs:chain_gear",
+      "required": false
+    },
+    {
+      "id": "eeeabsmobs:ghost_warrior_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "eeeabsmobs:relicron_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "eidolon:mind_shielding_plate",
+      "required": false
+    },
+    {
+      "id": "enderio:dark_bimetal_gear",
+      "required": false
+    },
+    {
+      "id": "enderio:energized_gear",
+      "required": false
+    },
+    {
+      "id": "enderio:infinity_rod",
+      "required": false
+    },
+    {
+      "id": "enderio:iron_gear",
+      "required": false
+    },
+    {
+      "id": "enderio:photovoltaic_plate",
+      "required": false
+    },
+    {
+      "id": "enderio:stone_gear",
+      "required": false
+    },
+    {
+      "id": "enderio:vibrant_gear",
+      "required": false
+    },
+    {
+      "id": "enderio:wood_gear",
+      "required": false
+    },
+    {
+      "id": "enigmaticlegacy:ender_rod",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:blooming_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:flowglaze_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:forge_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:keeper_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:pungency_fruit_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:starfire_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:twining_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:drive_upgrade",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:interface_upgrade",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:io_bus_upgrade",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:pattern_provider_upgrade",
+      "required": false
+    },
+    {
+      "id": "expatternprovider:pattern_terminal_upgrade",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:basic_core",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:channel_card",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:entity_speed_card",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:extended_pattern_provider_expansion_card_plus",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:infinity_core",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:quantum_storage_core",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:spatial_core",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:storage_core",
+      "required": false
+    },
+    {
+      "id": "extendedae_plus:virtual_crafting_card",
+      "required": false
+    },
+    {
+      "id": "forbidden_arcanus:darkstone_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:collector_upgrade",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:copper_upgrade",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:creative_vending_upgrade",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:diamond_upgrade",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:gold_upgrade",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:max_storage_upgrade",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:netherite_upgrade",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:puller_upgrade",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:pusher_upgrade",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:redstone_upgrade",
+      "required": false
+    },
+    {
+      "id": "functionalstorage:void_upgrade",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:boiler",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:bomb_bay",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:eco_engine",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:engine",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:enhanced_propeller",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:gyroscope",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:gyroscope_dials",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:gyroscope_hud",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:hull",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:hull_reinforcement",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:improved_landing_gear",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:industrial_gears",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:nether_engine",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:propeller",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:rotary_cannon",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:sail",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:steel_boiler",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:sturdy_pipes",
+      "required": false
+    },
+    {
+      "id": "immersive_aircraft:telescope",
+      "required": false
+    },
+    {
+      "id": "immersive_machinery:diamond_drill",
+      "required": false
+    },
+    {
+      "id": "immersive_machinery:iron_drill",
+      "required": false
+    },
+    {
+      "id": "immersive_machinery:netherite_drill",
+      "required": false
+    },
+    {
+      "id": "immersive_machinery:redstone_mechanism",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:logic_circuit",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:mold_gear",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:mold_plate",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:mold_rod",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:mold_wire",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plate_aluminum",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plate_constantan",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plate_copper",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plate_duroplast",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plate_electrum",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plate_gold",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plate_iron",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plate_lead",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plate_nickel",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plate_silver",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plate_steel",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:plate_uranium",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_aluminum",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_black",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_blue",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_brown",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_cyan",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_gray",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_green",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_light_blue",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_light_gray",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_lime",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_magenta",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_orange",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_pink",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_purple",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_red",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_white",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_colored_yellow",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_constantan",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_copper",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_electrum",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_gold",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_iron",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_lead",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_nickel",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_silver",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_steel",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:sheetmetal_uranium",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:stick_aluminum",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:stick_iron",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:stick_steel",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:stick_treated",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:wire_aluminum",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:wire_copper",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:wire_electrum",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:wire_lead",
+      "required": false
+    },
+    {
+      "id": "immersiveengineering:wire_steel",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:lesser_spell_slot_upgrade",
+      "required": false
+    },
+    {
+      "id": "kaleidoscope_end:ender_dragon_smithing_template",
+      "required": false
+    },
+    {
+      "id": "l2complements:eternal_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "l2complements:flame_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "l2complements:frost_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "l2complements:material_swap_smithing_template",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:annihilator_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:cloud_rod",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:enderitium_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "malum:stellar_mechanism",
+      "required": false
+    },
+    {
+      "id": "mekanism:advanced_control_circuit",
+      "required": false
+    },
+    {
+      "id": "mekanism:basic_control_circuit",
+      "required": false
+    },
+    {
+      "id": "mekanism:elite_control_circuit",
+      "required": false
+    },
+    {
+      "id": "mekanism:hdpe_rod",
+      "required": false
+    },
+    {
+      "id": "mekanism:hdpe_sheet",
+      "required": false
+    },
+    {
+      "id": "mekanism:hdpe_stick",
+      "required": false
+    },
+    {
+      "id": "mekanism:ultimate_control_circuit",
+      "required": false
+    },
+    {
+      "id": "meplacementtool:prism_core",
+      "required": false
+    },
+    {
+      "id": "minecraft:blaze_rod",
+      "required": false
+    },
+    {
+      "id": "minecraft:coast_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:dune_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:eye_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:host_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:netherite_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:raiser_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:rib_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:sentry_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:shaper_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:silence_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:snout_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:spire_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:stick",
+      "required": false
+    },
+    {
+      "id": "minecraft:tide_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:vex_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:ward_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:wayfinder_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minecraft:wild_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "moreburners:copper_coil",
+      "required": false
+    },
+    {
+      "id": "moreburners:heat_upgrade",
+      "required": false
+    },
+    {
+      "id": "moreburners:incomplete_heat_upgrade",
+      "required": false
+    },
+    {
+      "id": "moreburners:nickel_coil",
+      "required": false
+    },
+    {
+      "id": "mutantmore:incomplete_compound_z",
+      "required": false
+    },
+    {
+      "id": "mutantmore:incomplete_formula_y",
+      "required": false
+    },
+    {
+      "id": "nebula_tinker:demonization_stone",
+      "required": false
+    },
+    {
+      "id": "nebula_tinker:divinization_stone",
+      "required": false
+    },
+    {
+      "id": "neoecoae:aluminum_alloy_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "neoecoae:black_tungsten_alloy_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "neoecoae:eco_infinite_cell_component",
+      "required": false
+    },
+    {
+      "id": "neoecoae:superconducting_processor",
+      "required": false
+    },
+    {
+      "id": "smc:broccoli_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "smc:chainmail_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "smc:chop_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "smc:icon_gear",
+      "required": false
+    },
+    {
+      "id": "smc:iron_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "smc:netherite_armor_trim_smithing_template",
+      "required": false
+    },
+    {
+      "id": "smc:rainbow_fishing_rod",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_alchemy_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_compacting_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_deposit_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_feeding_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_filter_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_jukebox_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_magnet_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_mob_catcher_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_pickup_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_pump_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_refill_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_restock_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_tool_swapper_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:advanced_void_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:alchemy_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:anvil_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:auto_blasting_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:auto_smelting_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:auto_smoking_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:battery_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:blasting_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:compacting_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:crafting_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:deposit_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:everlasting_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:feeding_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:filter_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:inception_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:infinity_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:jukebox_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:magnet_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:mob_catcher_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:pickup_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:pump_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:refill_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:restock_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:smelting_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:smithing_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:smoking_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:stonecutter_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:survival_infinity_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:tank_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:tool_swapper_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:void_upgrade",
+      "required": false
+    },
+    {
+      "id": "sophisticatedbackpacks:xp_pump_upgrade",
+      "required": false
+    },
+    {
+      "id": "spawn:suspicious_stick",
+      "required": false
+    },
+    {
+      "id": "steam_letters:bronze_plate",
+      "required": false
+    },
+    {
+      "id": "steam_letters:bronze_whisk",
+      "required": false
+    },
+    {
+      "id": "steam_letters:incomplete_steam_mechanism",
+      "required": false
+    },
+    {
+      "id": "steam_letters:steam_mechanism",
+      "required": false
+    },
+    {
+      "id": "steam_letters:tin_plate",
+      "required": false
+    },
+    {
+      "id": "steampowered:bronze_sheet",
+      "required": false
+    },
+    {
+      "id": "steampowered:pressurized_gas_container",
+      "required": false
+    },
+    {
+      "id": "steampowered:pressurized_steam_container",
+      "required": false
+    },
+    {
+      "id": "tconstruct:adze_head",
+      "required": false
+    },
+    {
+      "id": "tconstruct:adze_head_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:adze_head_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:adze_head_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:arrow_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:arrow_head",
+      "required": false
+    },
+    {
+      "id": "tconstruct:arrow_shaft",
+      "required": false
+    },
+    {
+      "id": "tconstruct:blank_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:blank_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:boots_plating",
+      "required": false
+    },
+    {
+      "id": "tconstruct:boots_plating_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:boots_plating_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:boots_plating_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:bow_grip",
+      "required": false
+    },
+    {
+      "id": "tconstruct:bow_grip_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:bow_grip_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:bow_grip_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:bow_limb",
+      "required": false
+    },
+    {
+      "id": "tconstruct:bow_limb_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:bow_limb_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:bow_limb_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:bowstring",
+      "required": false
+    },
+    {
+      "id": "tconstruct:broad_axe_head",
+      "required": false
+    },
+    {
+      "id": "tconstruct:broad_axe_head_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:broad_axe_head_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:broad_axe_head_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:broad_blade",
+      "required": false
+    },
+    {
+      "id": "tconstruct:broad_blade_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:broad_blade_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:broad_blade_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:chestplate_plating",
+      "required": false
+    },
+    {
+      "id": "tconstruct:chestplate_plating_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:chestplate_plating_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:chestplate_plating_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:cobalt_reinforcement",
+      "required": false
+    },
+    {
+      "id": "tconstruct:coin_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:coin_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:coin_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:emerald_reinforcement",
+      "required": false
+    },
+    {
+      "id": "tconstruct:fletching",
+      "required": false
+    },
+    {
+      "id": "tconstruct:gear_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:gear_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:gear_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:gem_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:gem_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:gem_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:gold_bars",
+      "required": false
+    },
+    {
+      "id": "tconstruct:gold_platform",
+      "required": false
+    },
+    {
+      "id": "tconstruct:gold_reinforcement",
+      "required": false
+    },
+    {
+      "id": "tconstruct:hammer_head",
+      "required": false
+    },
+    {
+      "id": "tconstruct:hammer_head_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:hammer_head_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:hammer_head_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:helmet_plating",
+      "required": false
+    },
+    {
+      "id": "tconstruct:helmet_plating_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:helmet_plating_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:helmet_plating_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:ingot_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:ingot_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:ingot_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:iron_reinforcement",
+      "required": false
+    },
+    {
+      "id": "tconstruct:laces",
+      "required": false
+    },
+    {
+      "id": "tconstruct:large_plate",
+      "required": false
+    },
+    {
+      "id": "tconstruct:large_plate_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:large_plate_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:large_plate_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:leggings_plating",
+      "required": false
+    },
+    {
+      "id": "tconstruct:leggings_plating_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:leggings_plating_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:leggings_plating_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:maille",
+      "required": false
+    },
+    {
+      "id": "tconstruct:maille_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:maille_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:maille_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:nugget_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:nugget_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:nugget_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:obsidian_reinforcement",
+      "required": false
+    },
+    {
+      "id": "tconstruct:pattern",
+      "required": false
+    },
+    {
+      "id": "tconstruct:pick_head",
+      "required": false
+    },
+    {
+      "id": "tconstruct:pick_head_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:pick_head_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:pick_head_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:plate_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:plate_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:plate_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:repair_kit",
+      "required": false
+    },
+    {
+      "id": "tconstruct:repair_kit_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:repair_kit_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:repair_kit_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:ribcage",
+      "required": false
+    },
+    {
+      "id": "tconstruct:rod_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:rod_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:rod_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:seared_reinforcement",
+      "required": false
+    },
+    {
+      "id": "tconstruct:shell",
+      "required": false
+    },
+    {
+      "id": "tconstruct:shield_core",
+      "required": false
+    },
+    {
+      "id": "tconstruct:slimesteel_reinforcement",
+      "required": false
+    },
+    {
+      "id": "tconstruct:small_axe_head",
+      "required": false
+    },
+    {
+      "id": "tconstruct:small_axe_head_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:small_axe_head_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:small_axe_head_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:small_blade",
+      "required": false
+    },
+    {
+      "id": "tconstruct:small_blade_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:small_blade_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:small_blade_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tool_binding",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tool_binding_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tool_binding_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tool_binding_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tool_handle",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tool_handle_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tool_handle_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tool_handle_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tough_binding",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tough_binding_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tough_binding_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tough_binding_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tough_handle",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tough_handle_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tough_handle_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tough_handle_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:wire_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:wire_red_sand_cast",
+      "required": false
+    },
+    {
+      "id": "tconstruct:wire_sand_cast",
+      "required": false
+    },
+    {
+      "id": "terramity:conductite_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "terramity:cosmilite_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "terramity:dimlite_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "terramity:hellspec_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "terramity:scuba_gear",
+      "required": false
+    },
+    {
+      "id": "terramity:virentium_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "terramity:void_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "thermal:basalz_rod",
+      "required": false
+    },
+    {
+      "id": "thermal:blitz_rod",
+      "required": false
+    },
+    {
+      "id": "thermal:blizz_rod",
+      "required": false
+    },
+    {
+      "id": "thermal:bronze_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:bronze_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:bronze_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:chiller_ball_cast",
+      "required": false
+    },
+    {
+      "id": "thermal:chiller_ingot_cast",
+      "required": false
+    },
+    {
+      "id": "thermal:chiller_rod_cast",
+      "required": false
+    },
+    {
+      "id": "thermal:constantan_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:constantan_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:constantan_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:copper_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:copper_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:copper_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:diamond_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:electrum_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:electrum_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:electrum_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:emerald_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:enderium_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:enderium_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:enderium_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:gold_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:gold_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:gold_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:invar_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:invar_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:invar_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:iron_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:iron_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:iron_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:lapis_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:lead_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:lead_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:lead_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:lumium_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:lumium_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:lumium_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:netherite_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:netherite_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:netherite_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:nickel_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:nickel_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:nickel_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:quartz_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:rose_gold_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:rose_gold_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:rose_gold_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:ruby_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:sapphire_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:signalum_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:signalum_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:signalum_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:silver_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:silver_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:silver_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:steel_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:steel_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:steel_plate",
+      "required": false
+    },
+    {
+      "id": "thermal:tin_coin",
+      "required": false
+    },
+    {
+      "id": "thermal:tin_gear",
+      "required": false
+    },
+    {
+      "id": "thermal:tin_plate",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:abyssal_coin",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:abyssal_gear",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:abyssal_plate",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:abyssal_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:augment_smithing_upgrade",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:bronze_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:chiller_plate_cast",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:constantan_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:copper_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:diamond_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:dragonsteel_coin",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:dragonsteel_gear",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:dragonsteel_plate",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:dragonsteel_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:electrum_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:emerald_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:enderium_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:gold_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:invar_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:iron_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:lead_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:lumium_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:netherite_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:nickel_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:polyolefin_plate",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:shellite_coin",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:shellite_gear",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:shellite_plate",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:shellite_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:signalum_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:silver_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:soul_infused_coin",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:soul_infused_gear",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:soul_infused_plate",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:soul_infused_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:tin_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:twinite_coin",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:twinite_gear",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:twinite_plate",
+      "required": false
+    },
+    {
+      "id": "thermal_extra:twinite_rod",
+      "required": false
+    },
+    {
+      "id": "thermal_parallel:argument_parallel",
+      "required": false
+    },
+    {
+      "id": "thermal_parallel:argument_parallel_2",
+      "required": false
+    },
+    {
+      "id": "thermal_parallel:argument_parallel_3",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:amethyst_bronze_coin",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:amethyst_bronze_gear",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:amethyst_bronze_plate",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_adze_head",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_boots_plating",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_bow_grip",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_bow_limb",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_broad_axe_head",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_broad_blade",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_chestplate_plating",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_coin",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_gear",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_gem",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_hammer_head",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_helmet_plating",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_large_plate",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_leggings_plating",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_maille",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_pick_head",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_small_axe_head",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_small_blade",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_tool_binding",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_tool_handle",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_tough_binding",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_tough_handle",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:bronze_cast_wire",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:cinderslime_coin",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:cinderslime_gear",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:cinderslime_plate",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:cobalt_coin",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:cobalt_gear",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:cobalt_plate",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:hepatizon_coin",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:hepatizon_gear",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:hepatizon_plate",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:manyullyn_coin",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:manyullyn_gear",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:manyullyn_plate",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:queens_slime_coin",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:queens_slime_gear",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:queens_slime_plate",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:slimesteel_coin",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:slimesteel_gear",
+      "required": false
+    },
+    {
+      "id": "thermalconstruct:slimesteel_plate",
+      "required": false
+    },
+    {
+      "id": "tinkersmossymodifier:ball_of_moss",
+      "required": false
+    },
+    {
+      "id": "undergarden:forgotten_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:aluminum_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:aluminum_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:aluminum_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:amethyst_bronze_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:amethyst_bronze_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:amethyst_bronze_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:andesite_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:andesite_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:andesite_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:brass_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:bronze_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:bronze_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:bronze_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:calorite_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:calorite_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:cast_iron_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:cast_iron_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:cast_iron_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:cobalt_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:cobalt_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:cobalt_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:constantan_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:constantan_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:constantan_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:desh_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:desh_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:enderium_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:enderium_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:enderium_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:fiery_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:fiery_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:hepatizon_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:hepatizon_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:hepatizon_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:incomplete_recipe_card",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:incomplete_redstone_module",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:invar_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:invar_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:invar_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:ironwood_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:ironwood_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:ironwood_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:knightmetal_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:knightmetal_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:knightmetal_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:lead_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:lead_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:lead_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:lumium_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:lumium_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:lumium_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:manyullyn_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:manyullyn_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:manyullyn_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:netherite_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:netherite_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:netherite_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:nethersteel_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:nethersteel_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:nethersteel_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:nickel_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:nickel_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:nickel_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:osmium_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:osmium_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:osmium_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:ostrum_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:ostrum_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:palladium_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:palladium_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:palladium_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:pig_iron_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:pig_iron_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:pig_iron_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:platinum_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:platinum_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:platinum_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:pure_gold_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:pure_gold_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:pure_gold_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:queens_slime_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:queens_slime_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:queens_slime_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:redstone_module",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:refined_glowstone_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:refined_glowstone_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:refined_glowstone_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:refined_obsidian_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:refined_obsidian_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:refined_obsidian_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:refined_radiance_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:refined_radiance_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:refined_radiance_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:rhodium_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:rhodium_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:rhodium_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:rose_gold_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:rose_gold_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:rose_gold_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:shadow_steel_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:shadow_steel_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:shadow_steel_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:signalum_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:signalum_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:signalum_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:silver_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:silver_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:silver_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:slimesteel_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:slimesteel_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:slimesteel_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:steel_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:steel_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:tin_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:tin_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:tin_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:uranium_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:uranium_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:uranium_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:vanadium_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:vanadium_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:vanadium_wire",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:zinc_rod",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:zinc_sheet",
+      "required": false
+    },
+    {
+      "id": "vintageimprovements:zinc_wire",
+      "required": false
+    }
+  ]
+}

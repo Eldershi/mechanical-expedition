@@ -1,0 +1,741 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "aether:music_disc_aether_tune",
+      "required": false
+    },
+    {
+      "id": "aether:music_disc_ascending_dawn",
+      "required": false
+    },
+    {
+      "id": "aether:music_disc_chinchilla",
+      "required": false
+    },
+    {
+      "id": "aether:music_disc_high",
+      "required": false
+    },
+    {
+      "id": "aether:music_disc_klepto",
+      "required": false
+    },
+    {
+      "id": "aether:music_disc_sliders_wrath",
+      "required": false
+    },
+    {
+      "id": "alexscaves:music_disc_fusion",
+      "required": false
+    },
+    {
+      "id": "alexscaves:music_disc_tasty",
+      "required": false
+    },
+    {
+      "id": "allthetweaks:atm_star",
+      "required": false
+    },
+    {
+      "id": "allthetweaks:greg_star",
+      "required": false
+    },
+    {
+      "id": "allthetweaks:patrick_star",
+      "required": false
+    },
+    {
+      "id": "aquamirae:music_disc_forsaken_drownage",
+      "required": false
+    },
+    {
+      "id": "aquamirae:music_disc_horizon",
+      "required": false
+    },
+    {
+      "id": "ars_nouveau:music_disc_aria_biblio",
+      "required": false
+    },
+    {
+      "id": "ars_nouveau:music_disc_firel_the_wild_hunt",
+      "required": false
+    },
+    {
+      "id": "ars_nouveau:music_disc_thistle_the_sound_of_glass",
+      "required": false
+    },
+    {
+      "id": "ars_technica:pocket_factory_disc",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:music_disc_wanderer",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:music_disc_better_days",
+      "required": false
+    },
+    {
+      "id": "biomeswevegone:music_disc_pixie_club",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:anluka_doors",
+      "required": false
+    },
+    {
+      "id": "born_in_chaos_v1:serpumpkinhead_m",
+      "required": false
+    },
+    {
+      "id": "botania:record_gaia_1",
+      "required": false
+    },
+    {
+      "id": "botania:record_gaia_2",
+      "required": false
+    },
+    {
+      "id": "cataclysm:music_disc_ancient_remnant",
+      "required": false
+    },
+    {
+      "id": "cataclysm:music_disc_ender_guardian",
+      "required": false
+    },
+    {
+      "id": "cataclysm:music_disc_ignis",
+      "required": false
+    },
+    {
+      "id": "cataclysm:music_disc_maledictus",
+      "required": false
+    },
+    {
+      "id": "cataclysm:music_disc_netherite_monstrosity",
+      "required": false
+    },
+    {
+      "id": "cataclysm:music_disc_scylla",
+      "required": false
+    },
+    {
+      "id": "cataclysm:music_disc_the_cataclysmfarer",
+      "required": false
+    },
+    {
+      "id": "cataclysm:music_disc_the_harbinger",
+      "required": false
+    },
+    {
+      "id": "cataclysm:music_disc_the_leviathan",
+      "required": false
+    },
+    {
+      "id": "cmi:cmi_icon",
+      "required": false
+    },
+    {
+      "id": "cmi:initial_item_kit",
+      "required": false
+    },
+    {
+      "id": "cmi:mechanism",
+      "required": false
+    },
+    {
+      "id": "cmi:mystic_pomelo",
+      "required": false
+    },
+    {
+      "id": "cmi:parchment",
+      "required": false
+    },
+    {
+      "id": "cmi:test_brush",
+      "required": false
+    },
+    {
+      "id": "cmi:togni_leets",
+      "required": false
+    },
+    {
+      "id": "cmi:torn_parchment_a",
+      "required": false
+    },
+    {
+      "id": "cmi:torn_parchment_b",
+      "required": false
+    },
+    {
+      "id": "create_central_kitchen:cooking_guide",
+      "required": false
+    },
+    {
+      "id": "create_connected:music_disc_elevator",
+      "required": false
+    },
+    {
+      "id": "create_connected:music_disc_interlude",
+      "required": false
+    },
+    {
+      "id": "createdeco:brass_coin",
+      "required": false
+    },
+    {
+      "id": "createdeco:brass_coinstack",
+      "required": false
+    },
+    {
+      "id": "createdeco:copper_coin",
+      "required": false
+    },
+    {
+      "id": "createdeco:copper_coinstack",
+      "required": false
+    },
+    {
+      "id": "createdeco:gold_coin",
+      "required": false
+    },
+    {
+      "id": "createdeco:gold_coinstack",
+      "required": false
+    },
+    {
+      "id": "createdeco:industrial_iron_coin",
+      "required": false
+    },
+    {
+      "id": "createdeco:industrial_iron_coinstack",
+      "required": false
+    },
+    {
+      "id": "createdeco:iron_coin",
+      "required": false
+    },
+    {
+      "id": "createdeco:iron_coinstack",
+      "required": false
+    },
+    {
+      "id": "createdeco:netherite_coin",
+      "required": false
+    },
+    {
+      "id": "createdeco:netherite_coinstack",
+      "required": false
+    },
+    {
+      "id": "createdeco:zinc_coin",
+      "required": false
+    },
+    {
+      "id": "createdeco:zinc_coinstack",
+      "required": false
+    },
+    {
+      "id": "edenring:guide_book",
+      "required": false
+    },
+    {
+      "id": "eeeabsmobs:nameless_guardian_theme_music_disc",
+      "required": false
+    },
+    {
+      "id": "eeeabsmobs:realm_warden_theme_music_disc",
+      "required": false
+    },
+    {
+      "id": "eeeabsmobs:the_immortal_theme_music_disc",
+      "required": false
+    },
+    {
+      "id": "eidolon:music_disc_parousia",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_atlantis",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_brisk",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_dusk_o_ereyesterday",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_ether_rain",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_fake_light",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_mechanical_fossil",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_moonlight",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_nest",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_optimized_option",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_posterity",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_profundity",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_sacred_desert",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_spirit",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_stars_shining_upon_the_sea",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_the_thorny_reign",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_tranquility",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_tranquility_ii",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_wailing_well",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:music_disc_whisper_of_the_stars",
+      "required": false
+    },
+    {
+      "id": "ftbquests:book",
+      "required": false
+    },
+    {
+      "id": "ftbquests:lootcrate",
+      "required": false
+    },
+    {
+      "id": "guideme:guide",
+      "required": false
+    },
+    {
+      "id": "idas:disc_fragment_slither",
+      "required": false
+    },
+    {
+      "id": "idas:music_disc_calidum",
+      "required": false
+    },
+    {
+      "id": "idas:music_disc_slither",
+      "required": false
+    },
+    {
+      "id": "illageandspillage:freaky_disc",
+      "required": false
+    },
+    {
+      "id": "illageandspillage:magi_disc",
+      "required": false
+    },
+    {
+      "id": "illageandspillage:spiri_disc",
+      "required": false
+    },
+    {
+      "id": "integrated_stronghold:disc_fragment_sight",
+      "required": false
+    },
+    {
+      "id": "integrated_stronghold:music_disc_forlorn",
+      "required": false
+    },
+    {
+      "id": "integrated_stronghold:music_disc_sight",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:music_disc_dead_king_lullaby",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:music_disc_flame_still_burns",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:music_disc_whispers_of_ice",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:music_disc_advance",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:music_disc_obliterator",
+      "required": false
+    },
+    {
+      "id": "legendary_monsters:music_disc_possessed_paladin",
+      "required": false
+    },
+    {
+      "id": "malum:music_disc_aesthetica",
+      "required": false
+    },
+    {
+      "id": "malum:music_disc_arcane_elegy",
+      "required": false
+    },
+    {
+      "id": "meetyourfight:music_disc_bellringer",
+      "required": false
+    },
+    {
+      "id": "meetyourfight:music_disc_fortuna",
+      "required": false
+    },
+    {
+      "id": "meetyourfight:music_disc_rosalyne",
+      "required": false
+    },
+    {
+      "id": "meetyourfight:music_disc_swampjaw",
+      "required": false
+    },
+    {
+      "id": "minecraft:goat_horn",
+      "required": false
+    },
+    {
+      "id": "minecraft:knowledge_book",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_11",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_13",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_5",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_blocks",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_cat",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_chirp",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_far",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_mall",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_mellohi",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_otherside",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_pigstep",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_relic",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_stal",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_strad",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_wait",
+      "required": false
+    },
+    {
+      "id": "minecraft:music_disc_ward",
+      "required": false
+    },
+    {
+      "id": "minecraft:written_book",
+      "required": false
+    },
+    {
+      "id": "mutantmore:music_disc_adrenaline_rush",
+      "required": false
+    },
+    {
+      "id": "mutantmore:music_disc_aegis",
+      "required": false
+    },
+    {
+      "id": "mutantmore:music_disc_forces_unknown",
+      "required": false
+    },
+    {
+      "id": "patchouli:guide_book",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_chatter",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_clock",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_crickets",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_drips",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_endermosh",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_fire",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_ocean",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_rain",
+      "required": false
+    },
+    {
+      "id": "quark:music_disc_wind",
+      "required": false
+    },
+    {
+      "id": "smc:music_disc_bad_apple",
+      "required": false
+    },
+    {
+      "id": "smc:music_disc_god_pickaxe",
+      "required": false
+    },
+    {
+      "id": "smc:music_disc_laoda",
+      "required": false
+    },
+    {
+      "id": "smc:music_disc_nyan_cat",
+      "required": false
+    },
+    {
+      "id": "spawn:music_disc_barbaric",
+      "required": false
+    },
+    {
+      "id": "spawn:music_disc_dally",
+      "required": false
+    },
+    {
+      "id": "spawn:music_disc_jammed",
+      "required": false
+    },
+    {
+      "id": "spawn:music_disc_rain",
+      "required": false
+    },
+    {
+      "id": "spawn:music_disc_rot",
+      "required": false
+    },
+    {
+      "id": "spawn:music_disc_water_horse",
+      "required": false
+    },
+    {
+      "id": "supplementaries:music_disc_heave_ho",
+      "required": false
+    },
+    {
+      "id": "supplementaries:pancake",
+      "required": false
+    },
+    {
+      "id": "tconstruct:creative_slot",
+      "required": false
+    },
+    {
+      "id": "tconstruct:encyclopedia",
+      "required": false
+    },
+    {
+      "id": "tconstruct:fantastic_foundry",
+      "required": false
+    },
+    {
+      "id": "tconstruct:materials_and_you",
+      "required": false
+    },
+    {
+      "id": "tconstruct:mighty_smelting",
+      "required": false
+    },
+    {
+      "id": "tconstruct:puny_smelting",
+      "required": false
+    },
+    {
+      "id": "tconstruct:tinkers_gadgetry",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:music_disc_a_last_first_last",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:music_disc_bee_laxing_with_the_hom_bees",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:music_disc_bee_ware_of_the_temple",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:music_disc_beenna_box",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:music_disc_drowning_in_despair",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:music_disc_flight_of_the_bumblebee_rimsky_korsakov",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:music_disc_honey_bee_rat_faced_boy",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:music_disc_knowing_renren",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:music_disc_la_bee_da_loca",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:music_disc_life_renren",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:music_disc_radiance_renren",
+      "required": false
+    },
+    {
+      "id": "the_bumblezone:music_disc_rivers_of_honey_moserao",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_findings",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_home",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_maker",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_motion",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_radiance",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_steps",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_superstitious",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_thread",
+      "required": false
+    },
+    {
+      "id": "twilightforest:music_disc_wayfarer",
+      "required": false
+    },
+    {
+      "id": "undergarden:music_disc_gloomper_anthem",
+      "required": false
+    },
+    {
+      "id": "undergarden:music_disc_gloomper_secret",
+      "required": false
+    },
+    {
+      "id": "undergarden:music_disc_limax_maximus",
+      "required": false
+    },
+    {
+      "id": "undergarden:music_disc_mammoth",
+      "required": false
+    },
+    {
+      "id": "undergarden:music_disc_relict",
+      "required": false
+    }
+  ]
+}
