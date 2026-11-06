@@ -21,8 +21,17 @@
         "dev/corgitaco/ohthetreesyoullgrow/mixin/chunk/MixinChunkAccess.class",
         "ohthetreesyoullgrow.mixins.json"
       ]
+    },
+    {
+      "file": "Create-Steam-Ages-1.0-expedition-steamletters-compat.jar",
+      "patchId": "steam-letters-shared-boiler-server-fluid-registration",
+      "upstreamSha256": "a6e55c15bc3de4e8ccef7c8d25c7dcfb81a561786f67c97894670bc338796e4c",
+      "patchedSha256": "2ca7d43485c2c9f97fed9ffcfd9c581ba774a732b8473b5868170b5b303360c8",
+      "changedZipMembers": [
+        "dev/celestiacraft/create_steam_ages/commom/register/CSAFluids.class"
+      ]
     }
   ],
-  "behaviorChange": "Disable CorgiLib/TYG deferred post-generation random-tick enqueue and scheduler NBT persistence. Ordinary block/fluid ticks and natural random ticks remain unchanged; some generated blocks may wait for a later natural tick or neighbour update.",
+  "behaviorChange": "Disable CorgiLib/TYG deferred post-generation random-tick enqueue and scheduler NBT persistence. Ordinary block/fluid ticks and natural random ticks remain unchanged. The Steam Ages server variant omits client render suppliers while preserving fluid, bucket and tag registrations.",
   "deferredRandomTickMitigationRemainsEnabled": true
 }

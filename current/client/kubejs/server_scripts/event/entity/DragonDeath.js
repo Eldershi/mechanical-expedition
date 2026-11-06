@@ -1,9 +1,5 @@
 let $EntityLeaveLevelEvent =
 	Java.loadClass("net.minecraftforge.event.entity.EntityLeaveLevelEvent")
-let $CmiTips =
-	Java.loadClass("dev.celestiacraft.cmi.client.tip.CmiTips")
-let $ServerPlayer =
-	Java.loadClass("net.minecraft.server.level.ServerPlayer")
 
 NativeEvent.of($EntityLeaveLevelEvent, (event) => {
 	let entity = event.getEntity()
@@ -48,9 +44,7 @@ NativeEvent.of($EntityLeaveLevelEvent, (event) => {
 				1
 			)
 
-			if (player instanceof $ServerPlayer) {
-				$CmiTips.triggerLoginTip(player)
-			}
+			player.tell(Text.translate("entity.minecraft.ender_dragon").append("：狩猎完成"))
 		}
 	})
 })

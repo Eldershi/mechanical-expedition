@@ -33,7 +33,7 @@
   },
   "dependencies": [
     "dysoncubeproject-1.20.1+1.0.5.1",
-    "Titanium3.8.35",
+    "Titanium3.8.37",
     "KubeJS2001.6.5-build26",
     "Rhino2001.2.3-build10",
     "Architectury9.2.14",
@@ -41,15 +41,11 @@
   ],
   "validation": {
     "modCount": 397,
-    "matchingExistingModJars": 396,
-    "scenarioCount": 13,
-    "finalFrameScreenshots": 3,
-    "renderErrors": 0,
-    "duplicateFrames": 0,
-    "maximumRootDrawsPerFrame": 1,
-    "bakedQuadAndTextureAudit": "PASS",
-    "resourceReloadAndWorldLifecycle": "PASS",
-    "shaderPacksEnabled": false
+    "clientStartup": "PASS",
+    "worldLoad": "PASS",
+    "resourceReload": "PASS",
+    "shaderPacksEnabled": false,
+    "machineRenderScenarioCoverage": "Requires verification with the current dependency versions"
   },
   "assetPublication": "Complete source art, model meshes, textures and build inputs published in the separate resource repository; this integration repository keeps references and Paxi configuration only",
   "activation": "Enabled on clients through one Paxi resource ZIP, the matching rendering startup script and client-only native compatibility JAR. Restart the client after installation or updates.",

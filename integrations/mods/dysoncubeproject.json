@@ -25,8 +25,11 @@
   "runtimeDependencies": [
     {
       "modId": "titanium",
-      "testedVersion": "3.8.35",
-      "requiredOn": ["client", "server"],
+      "testedVersion": "3.8.37",
+      "requiredOn": [
+        "client",
+        "server"
+      ],
       "source": "https://www.curseforge.com/minecraft/mc-mods/dyson-cube-project-forge/relations/dependencies"
     }
   ],

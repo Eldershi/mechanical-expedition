@@ -22,6 +22,10 @@
 
 当前游戏源码包含原配方并行、材料统一与原生加工、松烟墨、任务书、铁魔法 HNN 模型与资源包、装备兼容、女仆与仓储兼容，以及服务端生成、传送和随机刻补丁。实际模组依赖以 `current/mods.lock.json` 为准。
 
+当前兼容组合保留 JEI 15.59.0.212、JEI++ 1.0.7 和 ExtendedAE Plus 1.6.3，以兼容已安装的配方查看器扩展；Fluid Logistics 保留 1.3.1，以维持烈焰冷却器、霜冻蛋糕及配套冷加工配方。其他模组的精确版本与文件哈希以锁文件为准。
+
+AuraTip 与 OElib 的事件接口适配、Steam Ages 与 Steam Letters 的机器注册兼容，以及 BCLib 和女仆世界生成保护的构建源码均保存在 `development/`。
+
 交错电网 [Create: Power Grid](integrations/mods/powergrid.json) 使用 0.6.2 Forge 1.20.1 版，客户端与服务端均需安装；要求 Create `[6.0.7,6.1.0)`、Architectury `[9.2.14,)`。
 
 敌对神经网络外观资源由独立项目 [create-style-hnn](https://github.com/Eldershi/create-style-hnn) 维护；下载与版本信息见[资源引用](integrations/resourcepacks/create-style-hnn.json)。
@@ -30,7 +34,7 @@
 
 戴森球客户端外观通过 Paxi 单份加载，资源包、启动脚本与原生渲染兼容 JAR 使用匹配版本；安装或更新后需完整重启客户端。模型、贴图与构建输入由独立仓库 [create-style-dyson](https://github.com/Eldershi/create-style-dyson) 维护，三个客户端文件的版本、校验值与下载定位见 [集成引用](integrations/resourcepacks/create-style-dyson.json)。快照工具验证启用集成的文件校验值并省略其内容；停用集成的声明文件必须不在活动客户端路径中，残留文件或 Paxi 引用会阻止生成快照。
 
-模组锁文件共有 397 项：383 项有哈希匹配的下载来源，14 项为随源码保存的补丁包。
+模组锁文件共有 397 项：382 项有哈希匹配的下载来源，15 项为随源码保存的补丁包。
 
 `current/client/` 是受管游戏文件的源码快照，第三方模组通过锁文件定位。它不包含账号、存档、玩家数据、服务器列表、地图、备份、运行缓存或一次性测试探针。`current/server/` 是专用服务端覆盖层，需要与公共游戏内容和对应服务端依赖一起使用。
 

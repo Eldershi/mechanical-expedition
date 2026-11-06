@@ -30,3 +30,16 @@ JEIEvents.hideItems(event => {
   })
   console.info('[Material Unification JEI] explicitDuplicates=' + duplicates.size + ', matched=' + matched.length)
 })
+
+// OEI may omit canonical replacement targets from creative-tab ingredients.
+// Register actual target stacks after duplicate hiding so recipes remain searchable.
+JEIEvents.addItems(event => {
+  const config = JSON.parse(String(JsonIO.readJson('kubejs/config/expedition-material-unification.json')))
+  const ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+  const ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
+  config.groups.forEach(group => {
+    const item = ForgeRegistries.ITEMS.getValue(new ResourceLocation(group.canonical))
+    if (item == null) throw new Error('Missing canonical material: ' + group.canonical)
+    event.add(new ItemStack(item))
+  })
+})

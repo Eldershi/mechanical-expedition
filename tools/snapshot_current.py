@@ -18,6 +18,7 @@ PATCHED_DEPENDENCIES = (
     "1.20.1-maid_storage_manager-1.15.6.jar",
     "MultiBuilderTool-1.20.1-1.0.28.jar",
     "Create-Steam-Ages-1.0-expedition-steamletters-compat.jar",
+    "auratip-forge-1.20.1-1.1.1-beta.jar",
 )
 
 
@@ -287,7 +288,7 @@ def main():
                   published_server if published_server else
                   project / "servers/cmi-expedition/deployment")
     publication.SOURCE = deployment
-    publication.FOLDERS = ["config", "defaultconfigs", "hotai", "ldlib"]
+    publication.FOLDERS = ["config", "defaultconfigs", "hotai", "ldlib", "world-datapacks"]
     candidates, omissions = publication.discover()
     excluded.extend({"scope": "server", **row} for row in omissions)
     for relative, path in sorted(candidates.items()):
