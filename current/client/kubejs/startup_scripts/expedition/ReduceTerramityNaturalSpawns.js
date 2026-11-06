@@ -1,10 +1,10 @@
 // Requires a full game/server restart: Forge native listeners are startup-only.
-// Terramity Gnome (cave_gnome) and green/blue/pink fairies: keep 5% of
-// otherwise valid NATURAL / CHUNK_GENERATION spawn attempts (95% rejected).
+// Terramity Gnome (cave_gnome) and green/blue/pink fairies: keep 0.05% of
+// otherwise valid NATURAL / CHUNK_GENERATION spawn attempts (99.95% rejected).
 // Existing mobs, bosses, Royal Gnomes, spawners, eggs, commands, breeding,
 // fairy bottles and all other summon methods retain their original behavior.
 const ExpeditionTerramitySpawnRegistries = Java.loadClass('net.minecraftforge.registries.ForgeRegistries')
-const ExpeditionTerramityNaturalSpawnKeepChance = 0.05
+const ExpeditionTerramityNaturalSpawnKeepChance = 0.0005
 const ExpeditionTerramityRareNaturalMobs = [
   'terramity:cave_gnome',
   'terramity:green_fairy',
