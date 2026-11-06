@@ -2508,6 +2508,15 @@
       "localArtifact": "client/mods/expedition-stock-keeper-tooltip-fix-1.0.0.jar"
     },
     {
+      "filename": "expedition-terramity-curse-compat-1.0.0.jar",
+      "sha256": "598fe6b594ca5d8c0cfd6440fe93c8236213720abe3f969f5b2cd0103378c023",
+      "sha1": "2bbc270063043dd36caceb021fcff3c4ca5e2f9f",
+      "sha512": "d2e2174378ae81133e98331f0d0b3bca0fc3dd30dcc98b9e7444c34bc4d2b6881fb35e1eb99ae7e925a1187ea711bfa69b89376e31dd9dab8be6539f77b12e8f",
+      "bytes": 6407,
+      "downloadUrl": null,
+      "localArtifact": "client/mods/expedition-terramity-curse-compat-1.0.0.jar"
+    },
+    {
       "filename": "expedition-upstream-compat-1.0.0.jar",
       "sha256": "9d04bf9f26ba36aa4fb321603bdc359c227efcb10db8231a27ca6fb8faafe867",
       "sha1": "18a13f66e5890a83d5e7eae464ec2549c0884405",
@@ -2744,6 +2753,17 @@
       "downloadUrlSource": "mods.tsv",
       "downloadHashFormat": "sha256",
       "downloadHash": "c04abba4fd354dd8c0e8a732f1f05f4dca893d2e1d962b2ab128bbd411478747"
+    },
+    {
+      "filename": "goddamnrepackager-0.5.1-forge-alpha.jar",
+      "sha256": "99cbb24d261d709804c275720fd92fa2becf986ba15f630856c68296bc723b2f",
+      "sha1": "ba9b40e072c48fd16843acb0f19556d220afe0ce",
+      "sha512": "ec58c3726a77ca410ea7a647c32474859c394a90f2130a83d321ddada7f7fb45839372b5e884b98f064651f09794ee9085027d97ffb991327ebab0a1ba83e5d0",
+      "bytes": 37372,
+      "downloadUrl": "https://mediafilez.forgecdn.net/files/8637/551/goddamnrepackager-0.5.1-forge-alpha.jar",
+      "downloadUrlSource": "CurseForge file 8637551",
+      "downloadHashFormat": "sha256",
+      "downloadHash": "99cbb24d261d709804c275720fd92fa2becf986ba15f630856c68296bc723b2f"
     },
     {
       "filename": "guideme-20.1.15.jar",

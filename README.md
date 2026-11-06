@@ -34,9 +34,13 @@ AuraTip 与 OElib 的事件接口适配、Steam Ages 与 Steam Letters 的机器
 
 戴森球客户端外观通过 Paxi 单份加载，资源包、启动脚本与原生渲染兼容 JAR 使用匹配版本；安装或更新后需完整重启客户端。模型、贴图与构建输入由独立仓库 [create-style-dyson](https://github.com/Eldershi/create-style-dyson) 维护，三个客户端文件的版本、校验值与下载定位见 [集成引用](integrations/resourcepacks/create-style-dyson.json)。快照工具验证启用集成的文件校验值并省略其内容；停用集成的声明文件必须不在活动客户端路径中，残留文件或 Paxi 引用会阻止生成快照。
 
-模组锁文件共有 397 项：382 项有哈希匹配的下载来源，15 项为随源码保存的补丁包。
+模组锁文件共有 399 项：383 项有哈希匹配的下载来源，16 项为随源码保存的补丁包。
 
 `current/client/` 是受管游戏文件的源码快照，第三方模组通过锁文件定位。它不包含账号、存档、玩家数据、服务器列表、地图、备份、运行缓存或一次性测试探针。`current/server/` 是专用服务端覆盖层，需要与公共游戏内容和对应服务端依赖一起使用。
+
+仙灵与地精的自然生成已关闭。破灭魔王剑、崇高誓约之剑、誓约与禁忌之刃及其投射物施加的影焰继承施加者的七咒之戒伤害规则。
+
+理包机使用 [God Damn Repackager 0.5.1 Forge Alpha](https://www.curseforge.com/minecraft/mc-mods/god-damn-repackager)，同一机械动力保险库上的多台理包机可以并行处理订单；理包机需要红石供能。该模组仍为 Alpha，安装前应备份存档。
 
 专用服务端使用原版运动碰撞解析，以兼容模组的碰撞钩子；Radium 的其他优化保持启用。
 

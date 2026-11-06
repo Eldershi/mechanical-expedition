@@ -1,0 +1,11 @@
+# Terramity curse compatibility
+
+Shadowflame (`terramity:nyxium_fire`) remembers its player applier, including effects applied by Lethality swords and their scythes and pitchforks. Its periodic damage retains the original damage type and passes through normal Forge combat events with that applier. Enigmatic Legacy therefore applies its configured curse damage reduction and victim damage penalties. It is periodic damage and has no direct melee entity, so holding The Twist afterward does not grant a melee exemption. If the applier is offline, the last confirmed monster damage reduction remains in effect. Anonymous applications clear prior ownership. Ownership is saved with the victim and removed when the effect ends.
+
+Eternal Shadowflame cannot refresh itself from its own burning ticks. Full nyxium armor immunity and the original tick damage and visuals remain governed by Terramity.
+
+Natural and chunk generation spawning of Terramity blue, green and pink fairies, cave gnomes and royal gnomes is denied. Spawn eggs, commands and structure placement remain available. Existing entities are retained. The deployment also disables the four original biome spawn additions.
+
+Build with Java 17 using `python3 build.py --libraries <Forge libraries> --mods <instance mods>`. The jar supports dedicated and integrated servers on Minecraft 1.20.1, Forge 47, Terramity 0.9.8 and Enigmatic Legacy 2.30.1. Clients connecting to a dedicated server do not need the jar.
+
+The isolated server verification probe is built with `python3 tests/build_probe.py --mods <test server mods> --output <probe.jar>` after building the add-on. Install the probe together with Lethality and God Damn Repackager only in a disposable server. It checks three sword applications, projectile attribution, logout fallback, weapon switching, effect cleanup, passive targets, incoming curse damage, spawn reasons and shared-pool conservation. A successful run prints `TERRAMITY_RUNTIME_VERIFICATION_OK`. The probe is excluded from the gameplay package.

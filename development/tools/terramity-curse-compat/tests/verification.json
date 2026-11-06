@@ -1,0 +1,35 @@
+{
+  "minecraft": "1.20.1",
+  "forge": "47.4.10",
+  "terramity": "0.9.8",
+  "enigmaticLegacy": "2.30.1",
+  "lethality": "0.4.1",
+  "create": "6.0.8",
+  "godDamnRepackager": "0.5.1-forge",
+  "completeModpackColdStart": true,
+  "swords": {
+    "forbidden_oathblade": 1.5,
+    "exalted_oathblade": 1.5,
+    "devils_devastation": 1.5
+  },
+  "originalShadowflameDamage": 3,
+  "projectileOwner": true,
+  "offlinePenalty": true,
+  "weaponSwitchDoesNotBypassCurse": true,
+  "effectRemovalCleanup": true,
+  "anonymousFireClearsOwnership": true,
+  "passiveTargetNativeBehavior": true,
+  "uncursedPlayerNativeBehavior": true,
+  "naturalSpawnReasonChecks": 25,
+  "repackagerMixinsLoaded": true,
+  "sharedPoolConservation": {
+    "deposited": 3,
+    "consumers": 3,
+    "remaining": 0
+  },
+  "nativeCursedVictimHandlerDamage": 6,
+  "limitations": [
+    "Incoming player damage is checked directly through the native Enigmatic Legacy handler because the modpack cancels damage to test FakePlayers.",
+    "Shared-pool conservation is verified in the real runtime; no conveyor throughput benchmark was performed."
+  ]
+}
