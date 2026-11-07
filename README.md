@@ -26,6 +26,8 @@
 
 AuraTip 与 OElib 的事件接口适配、Steam Ages 与 Steam Letters 的机器注册兼容，以及 BCLib 和女仆世界生成保护的构建源码均保存在 `development/`。
 
+地牢进行时 [Dungeon Now Loading](integrations/mods/dungeonnowloading.json) 使用 2.2 Forge 1.20.1 版，客户端与服务端安装同一版本。模组提供迷宫、二元神庙与可重复挑战的 Boss；现有存档需要在尚未生成的区块中寻找新增地牢。
+
 交错电网 [Create: Power Grid](integrations/mods/powergrid.json) 使用 0.6.2 Forge 1.20.1 版，客户端与服务端均需安装；要求 Create `[6.0.7,6.1.0)`、Architectury `[9.2.14,)`。
 
 敌对神经网络外观资源由独立项目 [create-style-hnn](https://github.com/Eldershi/create-style-hnn) 维护；下载与版本信息见[资源引用](integrations/resourcepacks/create-style-hnn.json)。
@@ -34,7 +36,7 @@ AuraTip 与 OElib 的事件接口适配、Steam Ages 与 Steam Letters 的机器
 
 戴森球客户端外观通过 Paxi 单份加载，资源包、启动脚本与原生渲染兼容 JAR 使用匹配版本；安装或更新后需完整重启客户端。模型、贴图与构建输入由独立仓库 [create-style-dyson](https://github.com/Eldershi/create-style-dyson) 维护，三个客户端文件的版本、校验值与下载定位见 [集成引用](integrations/resourcepacks/create-style-dyson.json)。快照工具验证启用集成的文件校验值并省略其内容；停用集成的声明文件必须不在活动客户端路径中，残留文件或 Paxi 引用会阻止生成快照。
 
-模组锁文件共有 399 项：383 项有哈希匹配的下载来源，16 项为随源码保存的补丁包。
+模组锁文件共有 400 项：384 项有哈希匹配的下载来源，16 项为随源码保存的补丁包。
 
 `current/client/` 是受管游戏文件的源码快照，第三方模组通过锁文件定位。它不包含账号、存档、玩家数据、服务器列表、地图、备份、运行缓存或一次性测试探针。`current/server/` 是专用服务端覆盖层，需要与公共游戏内容和对应服务端依赖一起使用。
 

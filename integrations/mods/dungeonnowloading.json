@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "modId": "dungeonnowloading",
+  "name": "Dungeon Now Loading",
+  "version": "2.2",
+  "minecraft": "1.20.1",
+  "loader": "forge",
+  "java": 17,
+  "requiredOn": [
+    "client",
+    "server"
+  ],
+  "dependencies": [
+    {
+      "modId": "forge",
+      "versionRange": "[46.0.0,)",
+      "side": "BOTH"
+    },
+    {
+      "modId": "minecraft",
+      "versionRange": "[1.20,1.21)",
+      "side": "BOTH"
+    }
+  ],
+  "artifact": {
+    "filename": "Dungeon Now Loading-forge-1.20.1-2.2.jar",
+    "bytes": 85065508,
+    "sha256": "287b6ddbf4eceac67607114ee03b4bc08f7c355dfe7d1c2193f6ae884ec0c2f3",
+    "sha1": "6cb812d282be790ebb9314a5b6e6c610ce19d44a",
+    "sha512": "ea46ccef1705594a1b0a401803891e0ca8a498f48d24e4e774f7a9fee08c425face5f34ddb54096a919c24e9c12c4601e642f91a07bae1461bf5cd9f47815a5f",
+    "downloadUrl": "https://cdn.modrinth.com/data/vZoqTqwv/versions/ejP7ljqP/Dungeon%20Now%20Loading-forge-1.20.1-2.2.jar"
+  },
+  "officialMetadataUrl": "https://api.modrinth.com/v2/version/ejP7ljqP",
+  "officialVersionPage": "https://modrinth.com/mod/dungeon-now-loading/version/ejP7ljqP",
+  "officialCurseForgeFile": "https://www.curseforge.com/minecraft/mc-mods/dungeon-now-loading/files/8023973"
+}
