@@ -1,0 +1,6 @@
+{
+  "parent": "cofh_core:block/crop",
+  "textures": {
+    "crop": "farmersdelight:block/onions_stage1"
+  }
+}

@@ -22,6 +22,8 @@
 
 当前游戏源码包含原配方并行、材料统一与原生加工、松烟墨、任务书、铁魔法 HNN 模型与资源包、装备兼容、女仆与仓储兼容，以及服务端生成、传送和随机刻补丁。实际模组依赖以 `current/mods.lock.json` 为准。
 
+重复的番茄、稻米、洋葱及有对应素材的种子、稻穗优先使用农夫乐事外观，包含种植后的各生长阶段。物品与配方保持各自现有规则；外观覆盖的范围和构建方法见 [Crop appearance](development/tools/crop-appearance/README.md)。
+
 当前兼容组合保留 JEI 15.59.0.212、JEI++ 1.0.7 和 ExtendedAE Plus 1.6.3，以兼容已安装的配方查看器扩展；Fluid Logistics 保留 1.3.1，以维持烈焰冷却器、霜冻蛋糕及配套冷加工配方。其他模组的精确版本与文件哈希以锁文件为准。
 
 AuraTip 与 OElib 的事件接口适配、Steam Ages 与 Steam Letters 的机器注册兼容，以及 BCLib 和女仆世界生成保护的构建源码均保存在 `development/`。
