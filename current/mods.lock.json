@@ -2483,6 +2483,15 @@
       "localArtifact": "client/mods/expedition-creeper-firework-compat-1.0.0.jar"
     },
     {
+      "filename": "expedition-ftb-teams-client-compat-1.0.0.jar",
+      "sha256": "96086a5be45ee8a9153729e93c4d1924013a4df6fa8c10f2e10b032b372defb5",
+      "sha1": "525c3d931d1cb2b90bf1c7674944ffcfc27c8b34",
+      "sha512": "977816524b21a5eb5f9683552ed340ab04fe8eea73861034f1bba762faa116581c2016d1660a8c5bbaa1c12d7f0dfca7596a1e86b6ae86eabccf3b8a3d43efd7",
+      "bytes": 3240,
+      "downloadUrl": null,
+      "localArtifact": "client/mods/expedition-ftb-teams-client-compat-1.0.0.jar"
+    },
+    {
       "filename": "expedition-maid-worldgen-guard-1.0.1.jar",
       "sha256": "929f896dd4003a621f82b56cc373212b55733e7bcd5debf3703b26595fff5267",
       "sha1": "ab165a889065d89f4d34d376f70ed2671a45d44e",
