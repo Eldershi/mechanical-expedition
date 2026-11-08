@@ -1,0 +1,11 @@
+{
+  "block": "create:stockpile_switch",
+  "minecraft": "1.20.1",
+  "create": "6.0.8",
+  "settings": {
+    "OnAboveAmount": 1,
+    "OffBelowAmount": 0,
+    "Inverted": true,
+    "InStacks": false
+  }
+}
