@@ -1,0 +1,4 @@
+{
+	max_force_loaded_chunks: 100
+	hard_team_force_limit: 100
+}
