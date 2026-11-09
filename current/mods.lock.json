@@ -319,6 +319,17 @@
       "downloadHash": "4d8b2ee057d08cf13be96d05a08fc933e835d6c36395c692662871d4a1319be2"
     },
     {
+      "filename": "Ecliptic-Seasons-1.20.1-forge-0.15.5-all.jar",
+      "sha256": "7eded9d964f2450087e6f92ff4f8cff7092ec4eed7e47b1870ef115a46aee93a",
+      "sha1": "969652bc7c7d5bc3b67d1a35100efe2cc5f2975f",
+      "sha512": "f07200438758f3dfacb4db81e0b748bcc8d70b41c2601e38b596cca4bde7ba9d626b8fa895e38fcdae09e96c04747ac9291c0421e870a7ecbdf5c3cadf23233c",
+      "bytes": 10302082,
+      "downloadUrl": "https://cdn.modrinth.com/data/ofdM7yJE/versions/K7LHGe7X/Ecliptic-Seasons-1.20.1-forge-0.15.5-all.jar",
+      "downloadUrlSource": "https://api.modrinth.com/v2/version/K7LHGe7X",
+      "downloadHashFormat": "sha512",
+      "downloadHash": "f07200438758f3dfacb4db81e0b748bcc8d70b41c2601e38b596cca4bde7ba9d626b8fa895e38fcdae09e96c04747ac9291c0421e870a7ecbdf5c3cadf23233c"
+    },
+    {
       "filename": "EdenRing-20.0.2.jar",
       "sha256": "7b85282892286472d17b31868c826ac489a5a028fcdd8f3d490a9352a454dd85",
       "sha1": "db51d129cef4ad8da10f02b325db3b48666fd854",

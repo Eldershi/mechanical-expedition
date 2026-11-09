@@ -1,0 +1,16 @@
+[Core]
+SeasonalSimulationLevel = "ENVIRONMENT"
+
+[Crop]
+EnableSeasonalCrop = false
+EnableCropHumidityControl = false
+RestrictBoneMeal = false
+
+[Animal]
+EnableSeasonalBreed = false
+EnableTimeBreed = false
+EnableSeasonalBee = false
+EnableSeasonalFishing = false
+
+[Temperature]
+HeatStroke = false

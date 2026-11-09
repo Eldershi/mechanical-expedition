@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "modId": "eclipticseasons",
+  "name": "Ecliptic Seasons",
+  "version": "0.15.5",
+  "releaseType": "beta",
+  "minecraft": "1.20.1",
+  "loader": "forge",
+  "java": 17,
+  "requiredOn": [
+    "client",
+    "server"
+  ],
+  "dependencies": [
+    {
+      "modId": "forge",
+      "mandatory": true,
+      "versionRange": "[47,)",
+      "ordering": "NONE",
+      "side": "BOTH"
+    },
+    {
+      "modId": "minecraft",
+      "mandatory": true,
+      "versionRange": "[1.20.1,1.21)",
+      "ordering": "NONE",
+      "side": "BOTH"
+    }
+  ],
+  "artifact": {
+    "filename": "Ecliptic-Seasons-1.20.1-forge-0.15.5-all.jar",
+    "bytes": 10302082,
+    "sha256": "7eded9d964f2450087e6f92ff4f8cff7092ec4eed7e47b1870ef115a46aee93a",
+    "sha1": "969652bc7c7d5bc3b67d1a35100efe2cc5f2975f",
+    "sha512": "f07200438758f3dfacb4db81e0b748bcc8d70b41c2601e38b596cca4bde7ba9d626b8fa895e38fcdae09e96c04747ac9291c0421e870a7ecbdf5c3cadf23233c",
+    "downloadUrl": "https://cdn.modrinth.com/data/ofdM7yJE/versions/K7LHGe7X/Ecliptic-Seasons-1.20.1-forge-0.15.5-all.jar"
+  },
+  "officialMetadataUrl": "https://api.modrinth.com/v2/version/K7LHGe7X",
+  "officialVersionPage": "https://modrinth.com/mod/ecliptic-seasons/version/K7LHGe7X",
+  "sourceRepository": "https://github.com/TeamTeaMC/Ecliptic-Seasons",
+  "license": "Code licensed under BSD-3-Clause, resources under CC BY-NC-SA 4.0, disc Snowless Homeland used under special authorization from Beishanwei & Orangesoda.",
+  "configuration": {
+    "path": "config/eclipticseasons-common.toml",
+    "seasonalSimulationLevel": "ENVIRONMENT",
+    "seasonalCropGrowth": false,
+    "cropHumidityControl": false,
+    "boneMealRestrictions": false,
+    "seasonalBreeding": false,
+    "timeBreeding": false,
+    "seasonalBees": false,
+    "seasonalFishing": false,
+    "heatStroke": false
+  }
+}
