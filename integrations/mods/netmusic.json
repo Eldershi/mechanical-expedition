@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "modId": "netmusic",
+  "name": "Net Music",
+  "version": "1.5.2-forge+mc1.20.1",
+  "minecraft": "1.20.1",
+  "loader": "forge",
+  "java": 17,
+  "requiredOn": [
+    "client",
+    "server"
+  ],
+  "dependencies": [
+    {
+      "modId": "forge",
+      "mandatory": true,
+      "versionRange": "[46,)",
+      "ordering": "NONE",
+      "side": "BOTH"
+    },
+    {
+      "modId": "minecraft",
+      "mandatory": true,
+      "versionRange": "[1.20,1.20.2)",
+      "ordering": "NONE",
+      "side": "BOTH"
+    },
+    {
+      "modId": "touhou_little_maid",
+      "mandatory": false,
+      "versionRange": "[1.5.2,)",
+      "ordering": "AFTER",
+      "side": "BOTH"
+    }
+  ],
+  "artifact": {
+    "filename": "netmusic-1.5.2-forge+mc1.20.1.jar",
+    "bytes": 1473048,
+    "sha256": "4f999bf6524f7da0dc37bc7cc4ba7eff48ed810a0f88b0ddf677c44c07ff878a",
+    "sha1": "82c9677d1c63660c5f93d24f55c22db3df76bbf3",
+    "sha512": "685aa8b89aa256d35c98f6731baadf6b80fb69a67018d41467008f89e65f2dae2381698ef82a85f2bb96fc45fbdfcfa3448220afa61107d209d68bf3c258c6a0",
+    "downloadUrl": "https://cdn.modrinth.com/data/gKNuqaQq/versions/QbkPicTz/netmusic-1.5.2-forge%2Bmc1.20.1.jar"
+  },
+  "officialMetadataUrl": "https://api.modrinth.com/v2/version/QbkPicTz",
+  "officialVersionPage": "https://modrinth.com/mod/net-music/version/QbkPicTz",
+  "sourceRepository": "https://github.com/TartaricAcid/NetMusic",
+  "license": "MIT"
+}

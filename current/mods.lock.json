@@ -3501,6 +3501,17 @@
       "downloadHash": "06f1354664aee53d4c32c83f76ed94bb72426a75b7e0eb8e415abfba3634cf4e"
     },
     {
+      "filename": "netmusic-1.5.2-forge+mc1.20.1.jar",
+      "sha256": "4f999bf6524f7da0dc37bc7cc4ba7eff48ed810a0f88b0ddf677c44c07ff878a",
+      "sha1": "82c9677d1c63660c5f93d24f55c22db3df76bbf3",
+      "sha512": "685aa8b89aa256d35c98f6731baadf6b80fb69a67018d41467008f89e65f2dae2381698ef82a85f2bb96fc45fbdfcfa3448220afa61107d209d68bf3c258c6a0",
+      "bytes": 1473048,
+      "downloadUrl": "https://cdn.modrinth.com/data/gKNuqaQq/versions/QbkPicTz/netmusic-1.5.2-forge%2Bmc1.20.1.jar",
+      "downloadUrlSource": "https://api.modrinth.com/v2/version/QbkPicTz",
+      "downloadHashFormat": "sha512",
+      "downloadHash": "685aa8b89aa256d35c98f6731baadf6b80fb69a67018d41467008f89e65f2dae2381698ef82a85f2bb96fc45fbdfcfa3448220afa61107d209d68bf3c258c6a0"
+    },
+    {
       "filename": "nolijium-0.5.6.jar",
       "sha256": "ccb2a49a592af42afffb25d7fca6cf4ff9b872694cce24875bef1c45fbdb3086",
       "sha1": "7074fda15f70440eb1e30f74a7dc70feadd49592",
