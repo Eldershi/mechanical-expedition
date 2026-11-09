@@ -1,6 +1,10 @@
 BlockEvents.rightClicked((event) => {
 	let { item, block, player } = event
 
+	if (item.getId() === "minecraft:nether_wart") {
+		return
+	}
+
 	if (!CmiGlobal.isDebug) {
 		return
 	}
@@ -23,5 +27,6 @@ BlockEvents.rightClicked((event) => {
 
 	let tranKey = `display.${Cmi.MODID}.nether_crops`
 	player.displayClientMessage(Component.translatable(tranKey), true)
+
 	event.cancel()
 })
