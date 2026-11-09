@@ -5,9 +5,9 @@
 	let FOOD_EATEN = []
 
 	/**
-	 * 
-	 * @param {Internal.ItemStack_} id 
-	 * @param {Internal.Consumer_<Internal.FoodEatenEventJS>} handler 
+	 *
+	 * @param {Internal.ItemStack_} id
+	 * @param {Internal.Consumer_<Internal.FoodEatenEventJS>} handler
 	 */
 	function addFoodEaten(id, handler) {
 		FOOD_EATEN.push([id, handler])
@@ -25,14 +25,6 @@
 
 	addFoodEaten("minecraft:sugar_cane", (event) => {
 		event.player.give("cmi:sugarcane_fiber")
-	})
-	addFoodEaten("create:blaze_cake", (event) => {
-		let { player } = event
-		let hasEffect = player.hasEffect("minecraft:fire_resistance")
-
-		if (!hasEffect) {
-			player.attack(player.damageSources().lava(), player.getHealth())
-		}
 	})
 
 	addFoodEaten("alexscaves:radon_bottle", (event) => {

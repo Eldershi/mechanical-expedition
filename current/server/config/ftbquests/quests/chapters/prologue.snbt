@@ -1,0 +1,492 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "prologue"
+	group: ""
+	icon: "minecraft:oak_sapling"
+	id: "29A4A4AB5A6C2147"
+	order_index: 0
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"思索(Ponder)是伟大的工程师&bSimibubi&r发明出来用于传递知识的仪式——直观的演示胜于千言万语"
+				"我把我所知道的经验都编织为了思索, 当你&e对着某些物品按住[W]&r时, 你就能和仪式建立连接"
+				""
+				"JEI则是上个时代流传下来的一种仪式, 它用于传递那些有关繁杂配方的知识. 你可以&e对着物品使用[R]和[U]&r来与仪式建立连接. &c当然, 并非所有配方都能在JEI中看到&r"
+				""
+				"而任务, 也就是你现在看到的东西, 则可以让我为你提供帮助"
+				""
+				"我基于任务, 思索和JEI编写了这一套仪式, 我将其命名为&e构件与革新&r. 我相信它可以帮助每一个像你这样流浪到这里的旅人"
+				""
+				"&a当然, 它的内容并不完全, 我也不可能事无巨细地把所有的细节都教给你, 你总是需要自己去探索那些大量且不在仪式说明中的内容&r"
+				""
+				"{@pagebreak}"
+				"{image:cmi:textures/images/authorization/slime_authorization.png width:144 height:45 align:center}"
+				"&b文案来自黄铜协奏曲, 已经过原作者授权"
+				"{@pagebreak}"
+				"基础机器不会用时，可查阅“巧械奇工”“物流与仓储”“农业与生产”“铁路与运输”，了解安装、操作与排错。"
+			]
+			disable_toast: true
+			icon: "create:empty_schematic"
+			id: "1EA33F05E5B01612"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "这些是辅助你通关的工具"
+			tasks: [
+				{
+					id: "6D6250EF55DF25ED"
+					type: "checkmark"
+				}
+			]
+			title: "关于思索, 任务和JEI"
+			x: 2.0d
+			y: -5.5d
+		}
+		{
+			description: [
+				"整合包内添加了些许彩蛋, 这些彩蛋里有开发组的恶趣味, 也有让玩家更舒服的内容. 但是希望大家发现一个彩蛋后还请&l&c不要声张&r&r! 当彩蛋不再是彩蛋那它便失去了它作为彩蛋的意义了!"
+			]
+			disable_toast: true
+			icon: "create:wrench"
+			id: "16E08617F49E62A9"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "还请大家保密!"
+			tasks: [
+				{
+					id: "2F9F7E1BE7866A66"
+					title: "彩蛋是对的"
+					type: "checkmark"
+				}
+			]
+			title: "关于彩蛋"
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			disable_toast: true
+			icon: "create:steam_engine"
+			id: "1970EFE7924032F0"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "当前版本:Beta-2.5.0"
+			tasks: [
+				{
+					id: "79D5B1959C780861"
+					type: "checkmark"
+				}
+			]
+			title: "预发行版"
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			description: [
+				"[主创] Unknown_Entity_"
+				"[程序] 逐日炎雪_中微子"
+				"[程序] 榛名柒月"
+				"[程序] 随机构件"
+				"[程序] 燕栖"
+				"[程序] FiberOptics"
+				"[程序] 117458866249"
+				"[美工] 一只键盘虾"
+				"[美工] Dropper_QWQ"
+				"[技术] MF."
+				"[技术] 芒果凍布丁"
+				"[任务] 闪电羿"
+				"[任务] Decahydroflowey"
+			]
+			disable_toast: true
+			icon: "cmi:re_construction"
+			id: "04615C350964977A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "整合包开发团队"
+			tasks: [
+				{
+					id: "4AC9E70B5E11919B"
+					type: "checkmark"
+				}
+			]
+			title: "CMI开发团队"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"从基础机械起步，逐步建立材料加工、物流与能源供应。"
+				""
+				""
+				""
+				""
+			]
+			icon: "ftbquests:book"
+			id: "79AA74F5F585BC6B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "未完成, 请注意"
+			tasks: [
+				{
+					id: "3BA7D8532D8DD772"
+					title: "关于任务线"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"按照我们的设计, 整合包内哪怕是和平模式也可以正常游玩, 生存难度不会直接影响流程"
+				"不过整合包内同时配备匠魂, 你如果是个匠魂高手也可以去打造一把超高伤害的武器去战斗爽"
+				"并且我们添加了很多我们认为不错的匠魂材料, 有适合挖矿的、有适合伐木的、也有适合战斗的！全看你自己的搭配！"
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:sword"
+				tag: {
+					Damage: 0
+					tic_broken: 0b
+					tic_materials: [
+						"cmi:refined_radiance"
+						"cmi:shadow_steel"
+						"cmi:calorite"
+					]
+					tic_modifiers: [
+						{
+							level: 1
+							name: "tconstruct:unbreakable"
+						}
+						{
+							level: 1
+							name: "tconstruct:diamond"
+						}
+						{
+							level: 1
+							name: "tconstruct:emerald"
+						}
+						{
+							level: 1
+							name: "tconstruct:netherite"
+						}
+						{
+							level: 1
+							name: "tconstruct:creative_slot"
+						}
+						{
+							level: 5
+							name: "tconstruct:sharpness"
+						}
+						{
+							level: 5
+							name: "tconstruct:smite"
+						}
+						{
+							level: 5
+							name: "tconstruct:bane_of_sssss"
+						}
+						{
+							level: 5
+							name: "tconstruct:killager"
+						}
+						{
+							level: 5
+							name: "tconstruct:antiaquatic"
+						}
+						{
+							level: 5
+							name: "tconstruct:cooling"
+						}
+						{
+							level: 3
+							name: "tconstruct:pierce"
+						}
+						{
+							level: 5
+							name: "tconstruct:swiftstrike"
+						}
+						{
+							level: 5
+							name: "tconstruct:haste"
+						}
+						{
+							level: 5
+							name: "tconstruct:hydraulic"
+						}
+						{
+							level: 3
+							name: "tconstruct:luck"
+						}
+						{
+							level: 5
+							name: "tconstruct:reinforced"
+						}
+						{
+							level: 5
+							name: "tconstruct:overforced"
+						}
+						{
+							level: 1
+							name: "tconstruct:soulbound"
+						}
+						{
+							level: 5
+							name: "tconstruct:experienced"
+						}
+						{
+							level: 3
+							name: "tconstruct:freezing"
+						}
+						{
+							level: 3
+							name: "tconstruct:sweeping_edge"
+						}
+						{
+							level: 5
+							name: "tconstruct:fiery"
+						}
+						{
+							level: 1
+							name: "tconstruct:lightspeed"
+						}
+						{
+							level: 1
+							name: "nebula_tinker:shadow"
+						}
+						{
+							level: 1
+							name: "tconstruct:silky_shears"
+						}
+					]
+					tic_multipliers: {
+						"tconstruct:attack_damage": 1.25f
+						"tconstruct:durability": 1.1f
+						"tconstruct:mining_speed": 0.625f
+					}
+					tic_persistent: {
+						abilities: -2
+						"tconstruct:creative": {
+							abilities: 1
+							upgrades: 129
+						}
+						"tinkerleveling:level": 1
+						"tinkerleveling:uuid": [
+							148698228
+							-721206332
+							-1885687601
+							-1780182765
+						]
+						upgrades: -78
+					}
+					tic_stats: {
+						"tconstruct:attack_damage": 14.85f
+						"tconstruct:attack_speed": 2.05f
+						"tconstruct:block_amount": 10.0f
+						"tconstruct:durability": 1988.9102f
+						"tconstruct:harvest_tier": "minecraft:netherite"
+						"tconstruct:mining_speed": 15.374999f
+						"tconstruct:overslime": 412.5f
+					}
+					tic_upgrades: [
+						{
+							level: 1
+							name: "tinkerleveling:leveling"
+						}
+						{
+							level: 1
+							name: "tconstruct:diamond"
+						}
+						{
+							level: 1
+							name: "tconstruct:emerald"
+						}
+						{
+							level: 1
+							name: "tconstruct:netherite"
+						}
+						{
+							level: 1
+							name: "tconstruct:creative_slot"
+						}
+						{
+							level: 5
+							name: "tconstruct:sharpness"
+						}
+						{
+							level: 5
+							name: "tconstruct:smite"
+						}
+						{
+							level: 5
+							name: "tconstruct:bane_of_sssss"
+						}
+						{
+							level: 5
+							name: "tconstruct:killager"
+						}
+						{
+							level: 5
+							name: "tconstruct:antiaquatic"
+						}
+						{
+							level: 5
+							name: "tconstruct:cooling"
+						}
+						{
+							level: 3
+							name: "tconstruct:pierce"
+						}
+						{
+							level: 5
+							name: "tconstruct:swiftstrike"
+						}
+						{
+							level: 5
+							name: "tconstruct:haste"
+						}
+						{
+							level: 5
+							name: "tconstruct:hydraulic"
+						}
+						{
+							level: 3
+							name: "tconstruct:luck"
+						}
+						{
+							level: 5
+							name: "tconstruct:reinforced"
+						}
+						{
+							level: 5
+							name: "tconstruct:overforced"
+						}
+						{
+							level: 1
+							name: "tconstruct:soulbound"
+						}
+						{
+							level: 5
+							name: "tconstruct:experienced"
+						}
+						{
+							level: 3
+							name: "tconstruct:freezing"
+						}
+						{
+							level: 3
+							name: "tconstruct:sweeping_edge"
+						}
+						{
+							level: 1
+							name: "tconstruct:unbreakable"
+						}
+						{
+							level: 5
+							name: "tconstruct:fiery"
+						}
+					]
+					tic_volatile_data: {
+						abilities: 2
+						"tconstruct:experience": 2.5f
+						"tconstruct:indestructible": 1b
+						"tconstruct:netherite": 1b
+						"tconstruct:rarity": 2
+						"tconstruct:soulbound": 1b
+						"tconstruct:sweep_percent": 0.75f
+						upgrades: 132
+					}
+				}
+			}
+			id: "5A4FC2CACB726A2B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "和平发育还是战斗爽?"
+			tasks: [
+				{
+					id: "58616AF4A4680231"
+					title: "关于刷怪"
+					type: "checkmark"
+				}
+			]
+			title: "关于难度"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			description: [
+				"[程序] 史莱姆li(黄铜协奏曲作者)"
+				"[程序] Jason(齿轮盛宴作者)"
+				"[音乐] DontkillBelalus"
+				"[结构] 咸到老时变成鱼(知名建筑up主)"
+			]
+			icon: "minecraft:apple"
+			id: "30ED8BD20D50F96D"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "他们是制作整合包时提供了帮助的人"
+			tasks: [
+				{
+					id: "47BA93F1301917CD"
+					title: "致谢名单"
+					type: "checkmark"
+				}
+			]
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			icon: "create:goggles"
+			id: "405D0556F11BCE2C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			subtitle: "感谢游玩&6机械动力:构件与革新&f！"
+			tasks: [
+				{
+					id: "45029E8883011656"
+					title: "欢迎"
+					type: "checkmark"
+				}
+			]
+			title: "欢迎, 工程师！"
+			x: 3.5d
+			y: -7.0d
+		}
+		{
+			icon: "minecraft:book"
+			id: "09E1B57B8D35ED4E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "09039616DF8D6DEA"
+					title: "Test"
+					type: "checkmark"
+				}
+			]
+			title: "测试任务完成音频"
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			description: [
+				"整合包默认开启了&4无限熔岩&r(像无限水一样)，不需要做一万格的超大熔岩泳池了"
+			]
+			id: "0A91D4F9A4266A20"
+			quest_enhance_disable_scroll_paging: false
+			subtitle: "无限的熔岩"
+			tasks: [
+				{
+					id: "5048AF13395022E0"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+			]
+			title: "无限燃料"
+			x: 0.0d
+			y: -2.5d
+		}
+	]
+	title: "开始"
+}
