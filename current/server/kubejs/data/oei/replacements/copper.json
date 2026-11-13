@@ -1,0 +1,32 @@
+[
+	{
+		"matchItems": [
+			"#forge:plates/copper"
+		],
+		"resultItems": "thermal:copper_plate"
+	},
+	{
+		"matchItems": [
+			"#forge:nuggets/copper"
+		],
+		"resultItems": "thermal:copper_nugget"
+	},
+	{
+		"matchItems": [
+			"#forge:dusts/copper"
+		],
+		"resultItems": "thermal:copper_dust"
+	},
+	{
+		"matchItems": [
+			"#forge:rods/copper"
+		],
+		"resultItems": "thermal_extra:copper_rod"
+	},
+	{
+		"matchItems": [
+			"immersiveengineering:wire_copper"
+		],
+		"resultItems": "createaddition:copper_wire"
+	}
+]

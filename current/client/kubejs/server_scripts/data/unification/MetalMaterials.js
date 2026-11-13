@@ -1,11 +1,11 @@
 /**
  * 金属统一被修改为手动生成静态缓存
- * 更新方式: 
+ * 更新方式:
  * 删除kubejs/data/oei/replacements下面的所有json文件
  * 然后进入游戏输入`-unify`
  * 再次进入世界就已经完成统一了
- * 
- * @param {Player_} player 
+ *
+ * @param {Player_} player
  */
 function generateOEIReplacements(player) {
 	let materialTypes = [
@@ -40,6 +40,24 @@ function generateOEIReplacements(player) {
 			materialTypes.forEach((type) => {
 				let tag = `#forge:${type}s/${material}`
 				let result = getHighPriorityItem(tag)
+
+				if (type === "wire") {
+					let ordinaryWires = []
+					Ingredient.of(tag).getItemIds().forEach((itemId) => {
+						let id = String(itemId)
+						if (!id.startsWith("powergrid:")) {
+							ordinaryWires.push(id)
+						}
+					})
+					if (ordinaryWires.length > 1 && result != null && result !== "cmi:cmi_icon"
+						&& !String(result).startsWith("powergrid:")) {
+						unification.push({
+							matchItems: ordinaryWires,
+							resultItems: result
+						})
+					}
+					return
+				}
 
 				if (Ingredient.of(tag).getItemIds().length > 1) {
 					unification.push({
@@ -106,10 +124,10 @@ PlayerEvents.chat((event) => {
 })
 
 /**
- * 
- * @param {string} name 
- * @param {InputItem_} tag 
- * @param {inputItem_} result 
+ *
+ * @param {string} name
+ * @param {InputItem_} tag
+ * @param {inputItem_} result
  * @returns {Internal.JsonObject_}
  */
 function addMetalUnification(tag, result) {
