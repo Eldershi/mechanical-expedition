@@ -1,0 +1,15 @@
+{
+  "name": "循环处理升级",
+  "icon": "thermal:machine_cycle_augment",
+  "category": "thermal:augments",
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/machine_cycle_augment",
+      "title": "循环处理升级",
+      "text": "循环处理升级可将机器中适合作为原料的产物重新送回输入槽，适合用于自动化。"
+    }
+  ]
+}

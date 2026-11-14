@@ -1,0 +1,14 @@
+{
+  "quark.gui.config.social.twitter": "@VazkiiMods 的 Twitter",
+  "_quark.config.automation.feeding_trough.name": "Test 100",
+  "_quark.config.automation.feeding_trough.desc": "Yeah I'm testing\nWith multiple lines too!",
+  "_quark.config.automation.feeding_trough.max_animals.name": "Testeroni",
+  "_quark.config.automation.feeding_trough.max_animals.desc": "Testerino with one line",
+  "_quark.config.automation.feeding_trough.love_chance.name": "This do be a test doe",
+  "quark.subtitles.kingbdogz": "Kingbdogz",
+  "item.quark.music_disc_endermosh.desc": "Kain Vinosec - 末影狂舞",
+  "_biome_map_comment": "The following translation keys are only relevant to maps generated before Quark 354.",
+  "advancements.quark.get_diamond_heart.title": "我心之形",
+  "advancements.quark.retreive_flamerang.title": "飞向天空，火鸟",
+  "advancements.quark.redirect_beacon.title": "看见光芒"
+}

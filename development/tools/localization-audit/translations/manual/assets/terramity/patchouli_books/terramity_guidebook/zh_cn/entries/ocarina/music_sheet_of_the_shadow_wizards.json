@@ -1,0 +1,24 @@
+{
+  "name": "暗影巫师乐谱",
+  "icon": "terramity:music_sheet_of_the_shadow_wizards",
+  "category": "terramity:ocarina",
+  "sortnum": 33,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "暗影巫师乐谱",
+      "text": "暗影巫师乐谱会对附近生物施加中咒，持续 5 秒。$(br2)此乐谱由暗影巫师掉落。",
+      "item": {
+        "item": "terramity:music_sheet_of_the_shadow_wizards"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

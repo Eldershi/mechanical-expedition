@@ -1,0 +1,34 @@
+{
+  "name": "施法器具",
+  "icon": "irons_spellbooks:graybeard_staff",
+  "category": "irons_spellbooks:root",
+  "sortnum": 3,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "施法器具",
+      "text": "施法器具是可以通过右键使用来施放当前选中法术的物品。它们通常也会提供被动增益，帮助玩家专注于法师玩法。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "irons_spellbooks:graybeard_staff",
+      "text": "一根简单的木棍，就足以让你的施法之旅启程。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "irons_spellbooks:artificer_cane",
+      "text": "有时，只需多添几分风格，就能让你的施法更上一层楼。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "irons_spellbooks:ice_staff",
+      "text": "传闻主世界散落着一根神秘冰霜法杖的碎片。冰霜术士的高塔中或许藏有相关研究，能揭示更多线索。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "irons_spellbooks:blood_staff",
+      "text": "这柄古老权杖拥有无与伦比的召唤能力，只有从其亡灵主人手中夺取，才能将它收入囊中。"
+    }
+  ]
+}

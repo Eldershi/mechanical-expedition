@@ -1,0 +1,15 @@
+{
+  "name": "炼金放大器",
+  "icon": "thermal:potion_amplifier_augment",
+  "category": "thermal:augments",
+  "read_by_default": true,
+  "flag": "mod:thermal_innovation",
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/potion_amplifier_augment",
+      "title": "炼金放大器",
+      "text": "炼金放大器使储存药水的效果提高 1 级，但持续时间缩短 25%。叠加 4 个后，药水将没有持续时间，导致许多药水失效。"
+    }
+  ]
+}

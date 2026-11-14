@@ -1,0 +1,6 @@
+{
+  "name": "相关链接",
+  "description": "需要帮助时可访问以下平台。$(li)GitHub 适合报告整合包问题。$(li)Discord 适合与其他人交流整合包。$(li)Reddit 适合展示建筑和提问。",
+  "icon": "allthetweaks:atm_star",
+  "sortnum": 1
+}

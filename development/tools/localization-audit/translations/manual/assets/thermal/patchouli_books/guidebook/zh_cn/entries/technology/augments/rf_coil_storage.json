@@ -1,0 +1,14 @@
+{
+  "name": "稳态通量线圈",
+  "icon": "thermal:rf_coil_storage_augment",
+  "category": "thermal:augments",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/rf_coil_storage_augment",
+      "title": "稳态通量线圈",
+      "text": "稳态通量线圈使 RF 存储能力变为 6 倍，RF 传输能力变为 2 倍。"
+    }
+  ]
+}

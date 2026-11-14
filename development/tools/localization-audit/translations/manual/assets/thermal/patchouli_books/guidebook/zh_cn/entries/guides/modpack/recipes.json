@@ -1,0 +1,38 @@
+{
+  "name": "自定义配方",
+  "icon": "minecraft:crafting_table",
+  "category": "thermal:modpack",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:link",
+      "url": "https://minecraft.fandom.com/wiki/Data_pack",
+      "link_text": "Minecraft 维基",
+      "text": "所有机器、装置、能源炉等都使用 JSON 定义配方与催化剂，因此可以通过数据包创建和修改配方。如果你更习惯 CraftTweaker，热力系列也提供相应支持。下方提供了 Minecraft Wiki 的链接，帮助你入门数据包。"
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://github.com/CoFH/ThermalExpansion/blob/main/src/main/resources/data/thermal/recipes/machine/smelter/smelter_gold_ore.json",
+      "link_text": "机器配方",
+      "text": "下方链接提供一个机器配方示例。第一个产物始终是主要产物，其余均为次要产物。count 是整数，不受催化剂影响；chance 是浮点数，默认受催化剂影响，设为 locked: true 可改变这一点。"
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://github.com/CoFH/ThermalExpansion/blob/main/src/main/resources/data/thermal/recipes/machine/pulverizer/pulverizer_catalyst_basalz_powder.json",
+      "link_text": "催化剂",
+      "text": "下方链接提供一个为机器添加催化剂的 JSON 示例，其中定义了机器、物品以及四个催化剂倍率。有关催化剂的更多信息，请阅读$(l:thermal:world/materials/catalysts)这里$(/l)。"
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://github.com/CoFH/ThermalFoundation/blob/main/src/main/resources/data/thermal/recipes/devices/tree_extractor/tree_extractor_boost_phytogro.json",
+      "link_text": "提取器增益",
+      "text": "下方链接提供一个使用植育一号提高树汁提取器产量的 JSON 示例。内容相当简单，无需多作说明。"
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://github.com/CoFH/ThermalFoundation/blob/main/src/main/resources/data/thermal/recipes/fuels/compression/compression_refined_fuel.json",
+      "link_text": "能源炉配方",
+      "text": "下方链接提供一个在能源炉中燃烧精炼燃油的 JSON 示例。请注意一项重要限制：能量值必须至少为 10,000 RF！"
+    }
+  ]
+}

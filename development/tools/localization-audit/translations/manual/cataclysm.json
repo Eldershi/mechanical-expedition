@@ -1,0 +1,21 @@
+{
+  "notice.qna": "你对灾变的焰魔毛绒玩偶感兴趣吗？",
+  "notice.link.check": "检查链接",
+  "notice.click": "前往 MakeShip 网站",
+  "notice.no.more": "不再显示通知",
+  "notice.open.browser": "前往 MakeShip 网站",
+  "notice.no.more.text": "已禁用通知。可以在配置中重新启用。",
+  "item.cataclysm.music_disc_netherite_monstrosity.desc": "Yuri_O - 地狱之子",
+  "item.cataclysm.music_disc_ender_guardian.desc": "Yuri_O - 外域守护者",
+  "item.cataclysm.music_disc_ignis.desc": "Yuri_O - 点燃我的火",
+  "item.cataclysm.music_disc_the_harbinger.desc": "Yuri_O - 自毁序列",
+  "item.cataclysm.music_disc_the_leviathan.desc": "Yuri_O - 深渊掠食者",
+  "item.cataclysm.music_disc_ancient_remnant.desc": "Yuri_O - 最干枯的野兽",
+  "item.cataclysm.music_disc_maledictus.desc": "Rotch Gwylt - 咒翼灵骸",
+  "item.cataclysm.music_disc_scylla.desc": "Rotch Gwylt - 斯库拉",
+  "item.cataclysm.music_disc_the_cataclysmfarer.desc": "Yuri_O - 灾变行者",
+  "effect.cataclysm.lightning_hex": "雷电诅咒",
+  "effect.cataclysm.over_gravity": "超重力",
+  "effect.cataclysm.dragon_wound": "龙之创伤",
+  "notice.yes": "是"
+}

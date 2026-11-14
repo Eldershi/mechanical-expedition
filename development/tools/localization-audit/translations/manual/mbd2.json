@@ -1,0 +1,6 @@
+{
+  "item.mbd2.mbd_gadgets.multiblock_debugger.failure.error.not_controller": "这不是§c多方块控制器§r",
+  "mbd2.gui.content.tips.per_tick_short": "§a/刻§r",
+  "graph_processor.node.mbd2.machine.geckolib": "Geckolib",
+  "graph_processor.node.mbd2.machine.photon": "Photon"
+}

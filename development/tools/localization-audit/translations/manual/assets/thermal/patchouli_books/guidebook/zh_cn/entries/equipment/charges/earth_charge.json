@@ -1,0 +1,18 @@
+{
+  "name": "裂岩弹",
+  "icon": "thermal:earth_charge",
+  "category": "thermal:charges",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "裂岩弹可以立即挖掘泥土、草方块、石头等土石类方块。它还能用于合成，将一些材料制成粉末，或拆分某些储存方块，例如把一个石英块拆成四个石英。从发射器射出时，它会直线飞行，对命中的生物施加$(l:thermal:world/mobs/basalz)破甲$(/l)效果，并造成强力击退。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:earth_charge_3",
+      "title": "裂岩弹",
+      "text": "$(o)传说它们曾强大到可以破坏基岩。$()"
+    }
+  ]
+}

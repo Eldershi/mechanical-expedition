@@ -1,0 +1,15 @@
+{
+  "name": "辅助处理筛",
+  "icon": "thermal:machine_output_augment",
+  "category": "thermal:augments",
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/machine_output_augment",
+      "title": "辅助处理筛",
+      "text": "辅助处理筛使次要产物的产出概率提高 15%，但每次加工耗能乘以 1.25。"
+    }
+  ]
+}

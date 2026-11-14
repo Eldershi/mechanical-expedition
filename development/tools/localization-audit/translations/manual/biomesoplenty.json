@@ -1,0 +1,10 @@
+{
+  "death.attack.bramble": "%1$s 被扎死了",
+  "death.attack.bramble.player": "%1$s 在试图逃离 %2$s 时被荆棘缠住了",
+  "death.attack.fumarole": "%1$s 被活活蒸熟了",
+  "death.attack.fumarole.player": "%1$s 因为 %2$s 而享受了一场致命的蒸汽浴",
+  "subtitles.block.flesh_tendon.drip": "血液：滴落",
+  "subtitles.block.pus_bubble.pop": "脓泡：破裂",
+  "subtitles.block.spider_egg.break": "蜘蛛卵：破裂",
+  "item.biomesoplenty.music_disc_wanderer.desc": "Tim Rurkowski - 漫游者"
+}

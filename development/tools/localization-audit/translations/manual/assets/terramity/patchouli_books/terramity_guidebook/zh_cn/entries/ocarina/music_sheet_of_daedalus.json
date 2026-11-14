@@ -1,0 +1,24 @@
+{
+  "name": "代达罗斯乐谱",
+  "icon": "terramity:music_sheet_of_daedalus",
+  "category": "terramity:ocarina",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "代达罗斯乐谱",
+      "text": "代达罗斯乐谱提供凡人飞行效果，持续 120 秒。$(br2)在末地城中找到此乐谱的概率较高。",
+      "item": {
+        "item": "terramity:music_sheet_of_daedalus"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

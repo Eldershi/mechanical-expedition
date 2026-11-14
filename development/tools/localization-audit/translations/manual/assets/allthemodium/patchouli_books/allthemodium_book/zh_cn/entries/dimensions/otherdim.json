@@ -1,0 +1,12 @@
+{
+  "name": "异界",
+  "icon": "allthemodium:other_vibranium_ore",
+  "category": "allthemodium:dimensions",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "text",
+      "text": "异界是一个非常危险的维度。在下界使用$(l:dimensions/teleport_pad)传送垫$(/c)即可前往。人们对这里知之甚少，但它似乎是猪灵的故乡。地表有树木覆盖的生物群系下方存在巨大的地下城市，还有充满怪物与战利品的地牢和古老金字塔。"
+    }
+  ]
+}

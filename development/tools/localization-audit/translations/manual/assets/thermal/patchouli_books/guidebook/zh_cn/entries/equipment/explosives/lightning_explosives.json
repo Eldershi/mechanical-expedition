@@ -1,0 +1,24 @@
+{
+  "name": "鸣雷爆炸物",
+  "icon": "thermal:lightning_tnt",
+  "read_by_default": true,
+  "flag": "mod:thermal_innovation",
+  "category": "thermal:explosives",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "鸣雷爆炸物会在一片区域内召来闪电，并对范围内的生物施加$(l:thermal:world/mobs/blitz)触电 II$(/l)。炸药方块与手榴弹的作用半径分别为 9 格和 5 格。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:lightning_tnt",
+      "B.recipe": "thermal:lightning_grenade_4"
+    },
+    {
+      "flag": "&mod:thermal_innovation,mod:thermal_locomotion",
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:lightning_tnt_minecart",
+      "title": "鸣雷炸药矿车"
+    }
+  ]
+}

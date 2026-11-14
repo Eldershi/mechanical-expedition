@@ -1,0 +1,24 @@
+{
+  "name": "炽炎爆炸物",
+  "icon": "thermal:fire_tnt",
+  "read_by_default": true,
+  "flag": "mod:thermal_innovation",
+  "category": "thermal:explosives",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "炽炎爆炸物会点燃一片区域，并使范围内的生物着火。炸药方块与手榴弹的作用半径分别为 9 格和 5 格。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:fire_tnt",
+      "B.recipe": "thermal:fire_grenade_4"
+    },
+    {
+      "flag": "&mod:thermal_innovation,mod:thermal_locomotion",
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:fire_tnt_minecart",
+      "title": "炽炎炸药矿车"
+    }
+  ]
+}

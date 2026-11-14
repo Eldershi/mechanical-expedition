@@ -1,0 +1,7 @@
+{
+  "name": "整合包作者",
+  "description": "你正在制作整合包，或只是想调整热力系列的各项内容吗？本节将介绍热力系列支持的各种有趣的调整与配置方式。",
+  "icon": "thermal:wrench",
+  "parent": "thermal:guides",
+  "sortnum": 4
+}

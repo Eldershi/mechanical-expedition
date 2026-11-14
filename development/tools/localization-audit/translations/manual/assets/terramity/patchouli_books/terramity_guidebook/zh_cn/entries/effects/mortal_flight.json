@@ -1,0 +1,11 @@
+{
+  "name": "凡人飞行",
+  "icon": "minecraft:potion",
+  "category": "terramity:effects",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "凡人飞行是 Terramity 新增的一种药水／状态效果。$(br2)此效果让你无需装备鞘翅，也能进行鞘翅式飞行。"
+    }
+  ]
+}

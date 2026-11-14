@@ -1,0 +1,24 @@
+{
+  "name": "庇护乐谱",
+  "icon": "terramity:music_sheet_of_the_aegis",
+  "category": "terramity:ocarina",
+  "sortnum": 17,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "庇护乐谱",
+      "text": "庇护乐谱提供伤害吸收 III，持续 30 秒。$(br2)挖掘金矿石时掉落此乐谱的概率极低。",
+      "item": {
+        "item": "terramity:music_sheet_of_the_aegis"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

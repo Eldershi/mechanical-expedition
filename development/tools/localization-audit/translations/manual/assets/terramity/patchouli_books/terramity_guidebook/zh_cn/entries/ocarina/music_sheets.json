@@ -1,0 +1,25 @@
+{
+  "name": "乐谱",
+  "icon": "terramity:music_sheet_of_power",
+  "category": "terramity:ocarina",
+  "sortnum": 1,
+  "priority": true,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "乐谱",
+      "text": "力量陶笛可以使用乐谱。乐谱会为曲子添加效果，只有完整演奏完曲子后，这些效果才会生效。$(br2)乐谱可在世界各处找到，无法合成。",
+      "item": {
+        "item": "terramity:music_sheet_of_power"
+      }
+    },
+    {
+      "type": "patchouli:spotlight",
+      "title": "时间乐谱",
+      "text": "大多数乐谱会为演奏者提供增益，但有些乐谱会影响周围的生物，甚至改变世界本身。$(br2)将喜欢的乐谱搭配使用，发挥最适合自己的效果。",
+      "item": {
+        "item": "terramity:music_sheet_of_time"
+      }
+    }
+  ]
+}

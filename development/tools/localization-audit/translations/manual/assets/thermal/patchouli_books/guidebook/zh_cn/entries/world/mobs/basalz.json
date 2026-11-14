@@ -1,0 +1,32 @@
+{
+  "name": "岩石人",
+  "icon": "thermal:basalz_rod",
+  "category": "thermal:mobs",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "thermal:3_item_page",
+      "title": "岩石人",
+      "item1": "thermal:basalz_rod",
+      "item2": "thermal:basalz_powder",
+      "item3": "thermal:basalz_spawn_egg",
+      "text": "岩石人生成于荒芜或山地生物群系，拥有 10 颗心的生命值，近距离攻击造成 4 颗心伤害。其弹射物造成 3 颗心伤害，并施加破甲效果。有机会掉落岩石碎片，可通过合成或磨粉制成岩石粉。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "thermal:basalz",
+      "title": "岩石人",
+      "text": "破甲：每级使护甲值和盔甲韧性降低 25%。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "行为",
+      "text": "岩石人是勇猛的近战元素生物，会生成 8 个环绕自身的弹射物，攻击进入 4 格范围内的不幸目标。每次命中消耗一个弹射物。弹射物全部耗尽后，岩石人会撤退，花 5 秒钟重新补充 8 个。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "应对策略",
+      "text": "对付岩石人最简单的方法是使用远程武器。近战时，即使穿戴盔甲，也可能难以承受附带破甲效果的全部 8 次弹射物攻击。最好先用盾牌挡住所有弹射物，再趁其虚弱时攻击。也可以将岩石人引向其他生物，让它们分担伤害。"
+    }
+  ]
+}

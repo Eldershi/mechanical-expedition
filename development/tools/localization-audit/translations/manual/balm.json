@@ -1,0 +1,15 @@
+{
+  "tag.item.balm.cooking_oil": "食用油",
+  "tag.item.balm.diamonds": "钻石",
+  "tag.item.balm.eggs": "鸡蛋",
+  "tag.item.balm.emeralds": "绿宝石",
+  "tag.item.balm.gems": "宝石",
+  "tag.item.balm.ingots": "锭",
+  "tag.item.balm.nuggets": "粒",
+  "tag.item.balm.stones": "石料",
+  "tag.item.balm.wooden_chests": "木箱",
+  "tag.item.balm.wooden_rods": "木棍",
+  "disconnect.balm.mod_missing_on_server": "服务器未安装 %s。请从客户端移除此模组，或在服务器也安装它。",
+  "disconnect.balm.mod_missing_on_client": "你尚未安装 %s。请安装 %s 的 %s 版本后再加入此服务器。",
+  "disconnect.balm.mod_version_mismatch": "%s 版本不匹配。服务器要求 %s，但你当前安装的是 %s。请安装正确版本。"
+}

@@ -1,0 +1,15 @@
+{
+  "rarity.mythic.name": "神话",
+  "item.obscure_api.astral_dust": "星尘",
+  "enchantment.obscure_api.distance": "距离",
+  "attribute.obscure_api.accuracy": "精准度",
+  "attribute.obscure_api.criticalDamage": "暴击伤害",
+  "attribute.obscure_api.magicDamage": "魔法伤害",
+  "attribute.obscure_api.magicResistance": "魔法抗性",
+  "attribute.obscure_api.resilience": "稳定",
+  "obscure_api.accuracy": "精准度",
+  "obscure_api.criticalDamage": "暴击伤害",
+  "obscure_api.magicDamage": "魔法伤害",
+  "obscure_api.magicResistance": "魔法抗性",
+  "obscure_api.resilience": "稳定"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "究极嗅探兽",
+  "icon": "minecraft:ultra_sniffer_fur",
+  "category": "terramity:bosses",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Terramity 中最难对付的首领，不属于常规推进流程。$(br2)当超级嗅探兽进入第二阶段且生命值低于最大值的 10% 时，用闪电击中它，即可召唤。$(br2)推荐装备：$(br) -终局装备（请阅读最后一页）"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "terramity:ultra_sniffer",
+      "scale": 0.8,
+      "offset": 0.65,
+      "rotate": true
+    },
+    {
+      "type": "patchouli:spotlight",
+      "text": "这场战斗必须准备坚实、平坦的场地，建议使用黑曜石等高强度方块建造。$(br2)用坚固方块搭建障碍物或柱子，阻挡它的激光。",
+      "item": {
+        "item": "terramity:lucky_dice"
+      }
+    },
+    {
+      "type": "patchouli:crafting",
+      "text": "Terramity 中最强大的首领，几乎无法杀死，不建议挑战。如果仍决意一战，你将有机会获得游戏中最顶尖的一些装备。请准备提高机动性的饰品，以及强大的武器或盔甲。",
+      "recipe": "terramity:lightning_staff_recipe"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "蜂箱漏斗",
+  "icon": "thermal:device_hive_extractor",
+  "category": "thermal:devices",
+  "read_by_default": true,
+  "flag": "mod:thermal_cultivation",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "蜂箱漏斗放在蜂巢或蜂箱下方时，可以提取蜜脾和液态蜂蜜。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:device_hive_extractor",
+      "title": "蜂箱漏斗"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可用的增强组件",
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)整合组件$(/l)$(li)$(l:thermal:technology/augments/item_filter)物品过滤$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)扩容储罐构造$(/l)"
+    }
+  ]
+}

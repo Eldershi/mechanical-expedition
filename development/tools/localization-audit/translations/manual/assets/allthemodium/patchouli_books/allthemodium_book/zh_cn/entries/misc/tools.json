@@ -1,0 +1,12 @@
+{
+  "name": "ATM工具",
+  "icon": "allthemodium:allthemodium_pickaxe",
+  "category": "allthemodium:misc",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "Allthemodium 模组提供多种自带工具，它们都不会损坏。"
+    }
+  ]
+}

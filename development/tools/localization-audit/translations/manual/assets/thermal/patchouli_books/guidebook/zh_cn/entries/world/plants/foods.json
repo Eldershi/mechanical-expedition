@@ -1,0 +1,74 @@
+{
+  "name": "食物",
+  "icon": "thermal:pbj_sandwich",
+  "read_by_default": true,
+  "flag": "mod:thermal_cultivation",
+  "category": "thermal:plants",
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:carrot_cake",
+      "text": "精心用胡萝卜制作的蛋糕，富含胡萝卜素，食用后提供夜视。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:chocolate_cake",
+      "text": "可口甜点，值得细细品尝，比普通蛋糕更令人满足。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:potion_cake",
+      "text": "炼金美味！让食用者获得烘焙时所用药水的效果。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:spice_cake",
+      "text": "以萨迪根香料制成的香甜饱腹点心，食用后清除负面状态效果。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:stuffed_pumpkin",
+      "text": "饱满的南瓜中塞满了丰盛食材，份量十足，极其管饱。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:cheese_wheel",
+      "text": "用凝乳酶使酪蛋白凝结，制成的浓郁奶酪。谁不爱奶酪呢？可以切成小块。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:green_bean_pie",
+      "text": "种类繁多的蔬菜汇聚一堂，以派的形式呈现经典的丰收美味。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:pbj_sandwich_2",
+      "text": "软糯香浓的美味与面食相结合，世上恐怕还找不到更合拍的搭配。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:stuffed_pepper",
+      "text": "甜椒里塞满帕尔马干酪和上等肉类，既美味又管饱！"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:sushi_maki_8",
+      "text": "盐渍海鲜包裹在海苔和短粒米中，常搭配酱油享用。营养丰富，吃起来也很快。可别告诉 Direwolf20。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:spring_salad",
+      "text": "用春季收获的食材调制，让你的步伐也充满春天的活力。食用后提高跳跃高度。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:hearty_stew",
+      "text": "以球茎类食材熬成的强身浓汤，食用后提高最大生命值。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:xp_stew",
+      "text": "令人精神振奋的茄子灵药，蕴含充沛的经验增益。食用后提高经验获取量。"
+    }
+  ]
+}

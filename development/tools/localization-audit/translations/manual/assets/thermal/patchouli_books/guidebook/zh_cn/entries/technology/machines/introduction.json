@@ -1,0 +1,36 @@
+{
+  "name": "机器入门",
+  "icon": "thermal:iron_gear",
+  "category": "thermal:machines",
+  "sortnum": -2,
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "机器消耗红石通量（RF），加工物品或流体。本章其他条目会详细解释各机器的功能；各方块界面中的可折叠面板也提供简要说明。未升级的机器最多消耗 20 RF/t。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "为了改善或改变各种功能，机器可在“增强组件”面板中安装$(l:thermal:technology/augments/introduction)增强组件$(/l)。“红石控制”和“配置”面板分别设置机器的红石响应及各面的输入输出。默认情况下，机器不受红石信号限制；首次放置时，各面均为空白配置，即不会接收物品或流体。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "在“配置”面板中，每个方格代表方块的一面，点击可循环切换配置。蓝色代表输入，橙色代表输出。箭头按钮用于配置是否与相邻容器自动传输。黑色表示该面允许输入／输出，但不自动传输。拆下方块时会保留各面的配置。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "“能量”面板提供当前 RF 消耗等信息。每台机器都有最大 RF 消耗速率，每个配方也有对应的 RF 能耗；这两个数值都可能受$(l:thermal:technology/augments/introduction)增强组件$(/l)影响，将速率除以能耗即可算出该配方的加工速度。要加快机器，可以用特定$(l:thermal:technology/augments/machine_speed)增强组件$(/l)提高最大 RF 消耗速率，或用$(l:thermal:world/materials/catalysts)催化剂$(/l)降低配方能耗。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:machine_frame",
+      "text": "这些页面列出了机器和装置中常用组件的配方。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:redstone_servo",
+      "B.recipe": "thermal:rf_coil"
+    }
+  ]
+}

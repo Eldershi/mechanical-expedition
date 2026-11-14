@@ -1,0 +1,24 @@
+{
+  "name": "通量电容",
+  "icon": "thermal:flux_capacitor",
+  "category": "thermal:tools",
+  "read_by_default": true,
+  "flag": "mod:thermal_innovation",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "储存 RF，并为物品栏中的物品充能。共有三种模式，可通过切换模式按键，选择只为快捷栏和盔甲充能、只为物品栏充能，或为所有物品充能。手持电容潜行右击，可启用或禁用物品充能。它也可用于向机器输入能量，并可在工匠工作台中充能和安装增强组件。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:flux_capacitor",
+      "title": "通量电容",
+      "text": "按“$(k:cofh.mode_change_increment)”切换模式。可以附上$(l:thermal:world/holding)扩容$(/l)附魔，提高 RF 容量。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可用的增强组件",
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)整合组件$(/l)$(li)$(l:thermal:technology/augments/rf_coil)扩展通量线圈$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)稳态通量线圈$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)强导通量线圈$(/l)"
+    }
+  ]
+}

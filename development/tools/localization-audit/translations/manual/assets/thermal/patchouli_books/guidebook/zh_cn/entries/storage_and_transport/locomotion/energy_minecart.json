@@ -1,0 +1,27 @@
+{
+  "name": "红石通量矿车",
+  "icon": "thermal:energy_minecart",
+  "read_by_default": true,
+  "flag": "mod:thermal_locomotion",
+  "category": "thermal:locomotion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "红石通量矿车可用于储存红石通量（RF）。初始容量为 1,000,000 RF，最大传输速率为 1,000 RF/t，可通过增强组件提高。可以在界面中为能量物品充能或放电。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:energy_cell_frame",
+      "B.recipe": "thermal:energy_minecart"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "敬请期待运输铁轨，它将带来一些有趣的物流玩法！"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可用的增强组件",
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)整合组件$(/l)$(li)$(l:thermal:technology/augments/rf_coil)扩展通量线圈$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)稳态通量线圈$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)强导通量线圈$(/l)"
+    }
+  ]
+}

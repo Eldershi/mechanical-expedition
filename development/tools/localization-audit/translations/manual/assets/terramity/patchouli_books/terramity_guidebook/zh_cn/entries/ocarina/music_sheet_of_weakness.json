@@ -1,0 +1,24 @@
+{
+  "name": "虚弱乐谱",
+  "icon": "terramity:music_sheet_of_weakness",
+  "category": "terramity:ocarina",
+  "sortnum": 19,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "虚弱乐谱",
+      "text": "虚弱乐谱会对附近生物施加虚弱 II，持续 30 秒。$(br2)击杀僵尸或骷髅时掉落此乐谱的概率极低。",
+      "item": {
+        "item": "terramity:music_sheet_of_weakness"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

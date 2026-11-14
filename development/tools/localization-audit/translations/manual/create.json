@@ -1,0 +1,11 @@
+{
+  "create.track_signal.mode_controlled_by_computer": "信号模式由计算机控制",
+  "advancement.create.extendo_grip": "弹——簧！",
+  "create.command.killTPSCommand": "killtps",
+  "create.command.killTPSCommand.argument.tickTime": "tickTime",
+  "create.generic.unit.ticks": "刻",
+  "create.tooltip.keyCtrl": "Ctrl",
+  "create.tooltip.keyShift": "Shift",
+  "create.generic.daytime.am": "上午",
+  "create.generic.daytime.pm": "下午"
+}

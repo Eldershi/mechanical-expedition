@@ -1,0 +1,8 @@
+{
+  "name": "管道",
+  "description": "该怎样搬运这些东西？",
+  "icon": "thermal:energy_duct",
+  "parent": "thermal:storage_and_transport",
+  "flag": "mod:thermal_dynamics",
+  "sortnum": 2
+}

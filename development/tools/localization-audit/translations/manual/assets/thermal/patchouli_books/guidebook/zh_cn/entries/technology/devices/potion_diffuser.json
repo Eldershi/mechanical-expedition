@@ -1,0 +1,28 @@
+{
+  "name": "药水雾化器",
+  "icon": "thermal:device_potion_diffuser",
+  "category": "thermal:devices",
+  "read_by_default": true,
+  "flag": "|mod:thermal_expansion,mod:thermal_innovation",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "药水雾化器会定期消耗$(l:thermal:technology/potion_fluid)药水流体$(/l)，向附近生物施加药水效果。以这种方式施加的效果，持续时间为普通药水的 1/4。作用范围内没有生物时，会自动停止工作。基础范围为以装置为中心的 9×9×9 区域，可用$(l:thermal:technology/augments/area_radius)径向范围拓展组件$(/l)扩大至 15×15×15。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:device_potion_diffuser",
+      "title": "药水雾化器",
+      "text": "可以加入红石、荧石作为试剂：红石延长持续时间，荧石提高效果等级（最高 IV），但会缩短持续时间。每个试剂物品可供雾化器工作 16 次。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "通过红石控制时，只要范围内存在生物，雾化器就会在开启的一瞬间立即施加药水效果，因此也能可靠地响应脉冲。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可用的增强组件",
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)整合组件$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)扩容储罐构造$(/l)$(li)$(l:thermal:technology/augments/area_radius)径向范围拓展$(/l)$(li)$(l:thermal:technology/augments/potion_amplifier)炼金放大器$(/l)$(li)$(l:thermal:technology/augments/potion_duration)炼金延长器$(/l)"
+    }
+  ]
+}

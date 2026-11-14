@@ -1,0 +1,32 @@
+{
+  "name": "狂风人",
+  "icon": "thermal:blitz_rod",
+  "category": "thermal:mobs",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "thermal:3_item_page",
+      "title": "狂风人",
+      "item1": "thermal:blitz_rod",
+      "item2": "thermal:blitz_powder",
+      "item3": "thermal:blitz_spawn_egg",
+      "text": "狂风人生成于温暖、干燥的生物群系，拥有 10 颗心的生命值，近距离攻击造成 1.5 颗心伤害。其弹射物造成 2.5 颗心伤害，并施加触电效果。有机会掉落狂风微粒，可通过合成或磨粉制成狂风粉。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "thermal:blitz",
+      "title": "狂风人",
+      "text": "触电：每级使攻击伤害降低 3 点，相当于 1.5 颗心。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "行为",
+      "text": "狂风人是胆怯的元素生物，会从远处发射弧线弹射物。与目标距离不超过 24 格时，每秒发射一枚；距离更远时则会靠近。目标进入约 20 格以内后，它会后退以保持距离。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "应对策略",
+      "text": "对付狂风人最简单的方法是使用远程武器。此外，它的弹射物需要飞行时间，因而更难击中移动或横向走位的目标。"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "options.particles.minecraft.dust_pillar": "尘柱",
+  "options.particles.minecraft.dust_pillar.tooltip": "由重锤下落猛击产生。",
+  "options.particles.minecraft.gust_emitter_large": "大型阵风发射器",
+  "options.particles.minecraft.gust_emitter_large.tooltip": "风弹撞击方块时产生，并生成多个阵风粒子。",
+  "options.particles.minecraft.gust_emitter_small": "小型阵风发射器",
+  "options.particles.minecraft.gust_emitter_small.tooltip": "风弹撞击方块时产生，并生成多个阵风粒子。",
+  "options.particles.minecraft.infested": "虫蚀",
+  "options.particles.minecraft.infested.tooltip": "由具有虫蚀效果的实体产生。",
+  "options.particles.minecraft.item_cobweb.": "物品蛛网",
+  "options.particles.minecraft.item_cobweb.tooltip": "由具有盘丝效果的实体产生。",
+  "options.particles.minecraft.ominous_spawning": "不祥生成",
+  "options.particles.minecraft.raid_omen": "袭击之兆",
+  "options.particles.minecraft.raid_omen.tooltip": "由具有袭击之兆效果的玩家和生物产生。",
+  "options.particles.minecraft.small_gust": "小型阵风",
+  "options.particles.minecraft.small_gust.tooltip": "由具有蓄风效果的生物产生。",
+  "options.particles.minecraft.trial_omen": "试炼之兆",
+  "options.particles.minecraft.trial_omen.tooltip": "由具有试炼之兆效果的玩家和生物产生。",
+  "options.particles.minecraft.trial_spawner_detection_ominous": "不祥试炼刷怪笼检测",
+  "options.particles.minecraft.trial_spawner_detection_ominous.tooltip": "激活不祥试炼刷怪笼时产生。",
+  "options.particles.minecraft.vault_connection": "宝库连接",
+  "options.particles.minecraft.vault_connection.tooltip": "玩家靠近宝库时产生。"
+}

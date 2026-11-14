@@ -1,0 +1,9 @@
+{
+  "item.terramity.music_sheet_of_null.description_1": {
+    "value": "§7 -获得§d程§8式§d错§8乱§7，持续 15 秒",
+    "kinds": [
+      "formatting"
+    ],
+    "reason": "The English effect name alternates color per letter. The four Chinese characters retain the same alternating visual effect; redundant empty color codes are omitted."
+  }
+}

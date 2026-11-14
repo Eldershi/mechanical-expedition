@@ -1,0 +1,28 @@
+{
+  "name": "ATM护甲",
+  "icon": "allthemodium:allthemodium_chestplate",
+  "category": "allthemodium:armour",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "ATM护甲除了护甲值、护甲韧性和击退抗性外，还具有以下优势：$(li)水下呼吸$(li)鞘翅飞行时不会受到撞击伤害$(li)免疫火焰伤害$(li)免疫摔落伤害$(li)由下界合金护甲升级时保留附魔"
+    },
+    {
+      "type": "smithing",
+      "recipe": "allthemodium:smithing/allthemodium_helmet_smithing"
+    },
+    {
+      "type": "smithing",
+      "recipe": "allthemodium:smithing/allthemodium_chestplate_smithing"
+    },
+    {
+      "type": "smithing",
+      "recipe": "allthemodium:smithing/allthemodium_leggings_smithing"
+    },
+    {
+      "type": "smithing",
+      "recipe": "allthemodium:smithing/allthemodium_boots_smithing"
+    }
+  ]
+}

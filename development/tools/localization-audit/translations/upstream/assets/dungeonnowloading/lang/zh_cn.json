@@ -1,0 +1,11 @@
+{
+  "item.dungeonnowloading.repulsor.tooltip.right_click": "右击方块：",
+  "block.dungeonnowloading.stone_tile_wall": "石瓦墙",
+  "entity.dungeonnowloading.copper_creep.state_follow": "跟随",
+  "entity.dungeonnowloading.copper_creep.state_sit": "座位",
+  "enchantment.dungeonnowloading.amplification": "增幅",
+  "item.dungeonnowloading.mimicling.mode.pickaxe": "镐",
+  "item.dungeonnowloading.mimicling.mode.axe": "斧",
+  "enchantment.dungeonnowloading.durable": "耐用",
+  "enchantment.dungeonnowloading.overworked": "黏液增效"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "造石机",
+  "icon": "thermal:device_rock_gen",
+  "category": "thermal:devices",
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "造石机在周围放有适当方块和流体时，可以无限生成石材。它需要侧面相邻的熔岩源方块和冷却用方块；下方也可以按配方要求放置方块。所有可用配方请查看 JEI。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:device_rock_gen",
+      "title": "造石机",
+      "text": "基础产量为每秒 1 个方块，可通过$(l:thermal:technology/augments/integral_components)整合组件$(/l)提高至每秒 4 个。配方改变时，输出槽中已有方块会被销毁，为新配方的方块腾出空间。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可用的增强组件",
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)整合组件$(/l)"
+    }
+  ]
+}

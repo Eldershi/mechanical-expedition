@@ -1,0 +1,24 @@
+{
+  "name": "漂浮乐谱",
+  "icon": "terramity:music_sheet_of_levitation",
+  "category": "terramity:ocarina",
+  "sortnum": 21,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "漂浮乐谱",
+      "text": "漂浮乐谱会对附近生物施加漂浮，持续 5 秒。$(br2)潜影贝有较低概率掉落此乐谱。",
+      "item": {
+        "item": "terramity:music_sheet_of_levitation"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

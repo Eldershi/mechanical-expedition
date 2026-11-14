@@ -1,0 +1,14 @@
+{
+  "item.allthemodium.smithing_template.allthemodium_upgrade.base_slot_description": "下界合金盔甲、武器或工具",
+  "item.allthemodium.smithing_template.allthemodium_upgrade.additions_slot_description": "ATM锭",
+  "item.allthemodium.smithing_template.vibranium_upgrade.base_slot_description": "ATM合金盔甲、武器或工具",
+  "item.allthemodium.smithing_template.vibranium_upgrade.additions_slot_description": "振金锭",
+  "item.allthemodium.smithing_template.unobtainium_upgrade.base_slot_description": "振金合金盔甲、武器或工具",
+  "item.allthemodium.smithing_template.unobtainium_upgrade.additions_slot_description": "难得素锭",
+  "biome.allthemodium.the_beyond": "彼岸",
+  "block.allthemodium.molten_allthemodium": "熔融ATM",
+  "block.allthemodium.molten_vibranium": "熔融振金",
+  "block.allthemodium.molten_unobtainium": "熔融难得素",
+  "block.allthemodium.soul_lava": "灵魂熔岩",
+  "block.allthemodium.piglich_heart_block": "猪巫妖之心块"
+}

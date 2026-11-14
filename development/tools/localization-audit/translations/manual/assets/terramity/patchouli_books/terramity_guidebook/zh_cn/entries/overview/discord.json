@@ -1,0 +1,20 @@
+{
+  "name": "加入 Discord！",
+  "icon": "terramity:prismatic_jewel",
+  "category": "terramity:overview",
+  "pages": [
+    {
+      "type": "patchouli:link",
+      "text": "这里是 Terramity 的 Discord 链接。$(br)服务器仍处于起步阶段，欢迎更多玩家加入！你可以在这里分享精彩建筑、提出问题或反馈错误，也能看到未来更新的部分预览。",
+      "url": "https://discord.gg/nvF9BsFep5",
+      "link_text": "Discord 链接"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "terramity:textures/screens/discord.png"
+      ],
+      "border": true
+    }
+  ]
+}

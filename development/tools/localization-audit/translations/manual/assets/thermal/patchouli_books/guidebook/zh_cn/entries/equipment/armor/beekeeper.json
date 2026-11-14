@@ -1,0 +1,28 @@
+{
+  "name": "养蜂套装",
+  "icon": "thermal:beekeeper_chestplate",
+  "category": "thermal:armor",
+  "read_by_default": true,
+  "flag": "mod:thermal_cultivation",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "养蜂套装会消耗耐久度，保护你免受各种扎刺伤害，例如仙人掌、浆果丛，当然还有蜜蜂的蛰刺。注意：必须穿齐整套装备，才能受到$(o)完整$()保护！即使穿戴全套，保护时仍会消耗耐久度，务必$(o)蜂$()常小心。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:beekeeper_fabric",
+      "text": "制作所有养蜂装备所需的布料。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:armor/beekeeper_helmet",
+      "B.recipe": "thermal:armor/beekeeper_chestplate"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:armor/beekeeper_leggings",
+      "B.recipe": "thermal:armor/beekeeper_boots"
+    }
+  ]
+}

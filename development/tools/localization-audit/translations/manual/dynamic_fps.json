@@ -1,0 +1,15 @@
+{
+  "config.dynamic_fps.feature.misc": "杂项",
+  "config.dynamic_fps.feature.volume_transition": "音量过渡",
+  "config.dynamic_fps.feature.idle": "空闲状态",
+  "config.dynamic_fps.feature.battery": "电池集成",
+  "config.dynamic_fps.ignore_initial_click": "忽略首次点击",
+  "config.dynamic_fps.ignore_initial_click_tooltip": "点击未聚焦的游戏窗口时，忽略可能误触的输入。",
+  "config.dynamic_fps.ignore_initial_click_disabled": "禁用",
+  "config.dynamic_fps.ignore_initial_click_in_world": "世界内",
+  "config.dynamic_fps.battery_critical_level": "低电量阈值",
+  "config.dynamic_fps.battery_critical_level_tooltip": "设置将多少电量视为严重不足。",
+  "config.dynamic_fps.battery_indicator_debug": "调试界面（F3）中显示",
+  "config.dynamic_fps.battery_indicator_debug_tooltip": "打开调试界面时是否显示电量指示器。",
+  "toast.dynamic_fps.http_error": "依赖库下载失败"
+}

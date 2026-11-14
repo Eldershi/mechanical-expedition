@@ -1,0 +1,17 @@
+{
+  "name": "新月锤",
+  "icon": "thermal:wrench",
+  "category": "thermal:tools",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "一把普通的扳手。潜行右击可拆下机器，右击可旋转机器。你甚至可以用它教训那些总是恶作剧的烦人朋友！"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:tools/wrench",
+      "title": "新月锤"
+    }
+  ]
+}

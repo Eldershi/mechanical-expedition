@@ -1,0 +1,27 @@
+{
+  "name": "流明铁轨",
+  "icon": "thermal:lumium_rail",
+  "read_by_default": true,
+  "flag": "mod:thermal_locomotion",
+  "category": "thermal:locomotion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "流明铁轨的工作方式与对应的普通铁轨完全相同，但会发出 15 级亮度。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:lumium_rail",
+      "B.recipe": "thermal:lumium_crossover_rail"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:lumium_powered_rail",
+      "B.recipe": "thermal:lumium_activator_rail"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:lumium_detector_rail"
+    }
+  ]
+}

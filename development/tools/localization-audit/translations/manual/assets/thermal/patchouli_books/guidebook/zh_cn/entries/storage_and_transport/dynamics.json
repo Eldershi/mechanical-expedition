@@ -1,0 +1,39 @@
+{
+  "name": "物品管道去哪了？",
+  "icon": "thermal:iron_gear",
+  "read_by_default": true,
+  "category": "thermal:storage_and_transport",
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "热力运输仍在开发中。目前它提供能量管道和流体管道，足以满足能量与流体的运输需求。接下来的页面将推荐其他可运输物品的管道模组。"
+    },
+    {
+      "type": "patchouli:link",
+      "title": "XNet",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/xnet",
+      "link_text": "CurseForge 链接",
+      "text": "XNet 是一个强大的模组，一根线缆就能运输物品、流体、RF 等内容。每个网络都需要控制器，可通过控制器配置多个通道的输入、输出、过滤、堆叠数量等。虽然需要一点学习过程，但它提供的控制精度几乎无可匹敌。"
+    },
+    {
+      "type": "patchouli:link",
+      "title": "精致管道（Refined Pipes）",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/refined-pipes",
+      "link_text": "CurseForge 链接",
+      "text": "如果想找回更接近 1.12 版热力运输的体验，可以试试精致管道。管道和提取器分为不同等级，速度各异。熟悉 1.12 版热力运输的玩家，会对这个模组倍感亲切。"
+    },
+    {
+      "type": "patchouli:link",
+      "title": "集成管道（Integrated Tunnels）",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/integrated-tunnels",
+      "link_text": "CurseForge 链接",
+      "text": "集成动力是一个极其强大的模组，可以检测生物、容器等对象的各种属性。集成管道是它的附属模组，让网络也能从容器输入和输出物品。两者结合后，可以实现极其精确的过滤与控制。注意：这个模组的上手难度高于大多数模组。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "带有管道的综合模组",
+      "text": "以下模组既提供多种运输方式，也添加了许多其他值得一试的内容。如果你想要$(o)只$()添加物品、流体或能量运输方式的模组，请参考前面的页面。$(li)$(l:https://www.curseforge.com/minecraft/mc-mods/create)机械动力$()$(li)$(l:https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)沉浸工程$()$(li)$(l:https://www.curseforge.com/minecraft/mc-mods/rats)那个有趣的老鼠模组$()"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "毁灭乐谱",
+  "icon": "terramity:music_sheet_of_destruction",
+  "category": "terramity:ocarina",
+  "sortnum": 23,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "毁灭乐谱",
+      "text": "毁灭乐谱会对附近生物施加瞬间伤害 II。$(br2)将生命乐谱投入冥河之血，即可获得此乐谱。",
+      "item": {
+        "item": "terramity:music_sheet_of_destruction"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

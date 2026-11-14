@@ -1,0 +1,22 @@
+{
+  "item.aeinfinitybooster.dimension_card.tooltip.chunk_loading": "使接入点所在区块保持加载。",
+  "aeinfinitybooster.configuration.title": "AE 无限增幅器配置",
+  "aeinfinitybooster.configuration.section.aeinfinitybooster.local.toml": "AE 无限增幅器设置",
+  "aeinfinitybooster.configuration.section.aeinfinitybooster.local.toml.title": "AE 无限增幅器设置",
+  "aeinfinitybooster.configuration.section.aeinfinitybooster.common.toml": "AE 无限增幅器设置",
+  "aeinfinitybooster.configuration.section.aeinfinitybooster.common.toml.title": "AE 无限增幅器设置",
+  "aeinfinitybooster.configuration.general": "通用",
+  "aeinfinitybooster.configuration.general.tooltip": "AE 无限增幅器的通用设置",
+  "aeinfinitybooster.configuration.dimensionCardDrain": "维度卡耗能",
+  "aeinfinitybooster.configuration.dimensionCardDrain.tooltip": "维度卡每刻消耗的能量",
+  "aeinfinitybooster.configuration.infinityCardDrain": "无限卡耗能",
+  "aeinfinitybooster.configuration.infinityCardDrain.tooltip": "无限卡每刻消耗的能量",
+  "aeinfinitybooster.configuration.chunkLoadingEnabled": "区块加载",
+  "aeinfinitybooster.configuration.chunkLoadingEnabled.tooltip": "无线接入点装有维度卡或无限卡时，使其所在区块保持加载",
+  "text.autoconfig.aeinfinitybooster.option.dimensionCardDrain": "维度卡耗能",
+  "text.autoconfig.aeinfinitybooster.option.dimensionCardDrain.@Tooltip": "维度卡每刻消耗的能量",
+  "text.autoconfig.aeinfinitybooster.option.infinityCardDrain": "无限卡耗能",
+  "text.autoconfig.aeinfinitybooster.option.infinityCardDrain.@Tooltip": "无限卡每刻消耗的能量",
+  "text.autoconfig.aeinfinitybooster.option.chunkLoadingEnabled": "区块加载",
+  "text.autoconfig.aeinfinitybooster.option.chunkLoadingEnabled.@Tooltip": "无线接入点装有维度卡或无限卡时，使其所在区块保持加载"
+}

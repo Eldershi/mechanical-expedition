@@ -1,0 +1,23 @@
+{
+  "name": "流体管道",
+  "icon": "thermal:fluid_duct",
+  "read_by_default": true,
+  "flag": "mod:thermal_dynamics",
+  "category": "thermal:ducts",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "流体管道可以运输流体。同一管道网络一次只能容纳和运输一种流体。透明流体管道能让你看到内部的流体。若要从$(l:thermal:technology/devices/introduction)装置$(/l)及其他不会自动输出流体的方块中抽取流体，需要安装伺服器附加组件。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:fluid_duct_4",
+      "B.recipe": "thermal:fluid_duct_windowed_4"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可用的附加组件",
+      "text": "$(li)过滤器$(li)伺服器$(li)涡轮伺服器"
+    }
+  ]
+}

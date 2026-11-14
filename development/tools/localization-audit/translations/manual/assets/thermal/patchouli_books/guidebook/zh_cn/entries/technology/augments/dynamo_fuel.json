@@ -1,0 +1,15 @@
+{
+  "name": "多循环喷射装置",
+  "icon": "thermal:dynamo_fuel_augment",
+  "category": "thermal:augments",
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/dynamo_fuel_augment",
+      "title": "多循环喷射装置",
+      "text": "多循环喷射装置将能源炉的燃料效率乘以 1.1。"
+    }
+  ]
+}

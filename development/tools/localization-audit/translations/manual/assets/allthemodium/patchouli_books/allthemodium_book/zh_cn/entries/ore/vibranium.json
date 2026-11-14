@@ -1,0 +1,15 @@
+{
+  "name": "振金矿石",
+  "icon": "allthemodium:vibranium_ore",
+  "category": "allthemodium:ore",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "allthemodium:vibranium_ore",
+      "title": "振金矿石",
+      "link_recipe": false,
+      "text": "振金矿石可在下界 Y 64 以上找到，也分布于异界深处的地下洞穴中。"
+    }
+  ]
+}

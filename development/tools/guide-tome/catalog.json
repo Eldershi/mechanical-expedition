@@ -102,12 +102,6 @@
     "include": "automatic"
   },
   {
-    "id": "legendary_monsters:guide_book",
-    "category": "世界与探索",
-    "name": "传奇怪物指南",
-    "include": "automatic"
-  },
-  {
     "id": "eternal_starlight:book",
     "category": "世界与探索",
     "name": "闪光石板",
@@ -213,7 +207,7 @@
     "id": "minecraft:written_book",
     "factory": "scguns:mob_guide",
     "category": "工业与科技",
-    "name": "补给械灵指南",
+    "name": "补给械灵助手指南",
     "include": "automatic",
     "entity": "scguns:supply_scamp"
   },
@@ -221,7 +215,7 @@
     "id": "minecraft:written_book",
     "factory": "scguns:mob_guide",
     "category": "工业与科技",
-    "name": "维文特鲁姆指南",
+    "name": "维文特鲁姆伙伴指南",
     "include": "automatic",
     "entity": "scguns:viventrum"
   },

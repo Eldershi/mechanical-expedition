@@ -1,0 +1,14 @@
+{
+  "name": "GitHub",
+  "icon": "allthemodium:unobtainium_block",
+  "category": "allthemodium:links",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "link",
+      "url": "https://github.com/AllTheMods",
+      "link_text": "GitHub 链接",
+      "text": "可在 GitHub 查看当前问题和整合包更新。"
+    }
+  ]
+}

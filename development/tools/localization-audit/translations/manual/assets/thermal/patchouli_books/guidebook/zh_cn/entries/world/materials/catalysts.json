@@ -1,0 +1,16 @@
+{
+  "name": "催化剂",
+  "icon": "thermal:rich_slag",
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "category": "thermal:materials",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "催化剂是可选择使用的消耗品，能够提高某些配方的产量。下一页列出了各机器、可用催化剂及其倍率。Primary 调整主要产物，Secondary 调整次要产物，Energy 调整每次加工能耗，Usage 则表示每次加工消耗催化剂的概率。"
+    },
+    {
+      "type": "thermal:catalyst_page"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "item.citadel.debug": "Citadel 调试器",
+  "item.citadel.citadel_book": "Citadel 书籍",
+  "item.citadel.effect_item": "药水效果",
+  "item.citadel.fancy_item": "花式物品",
+  "item.citadel.icon_item": "图标物品",
+  "book.citadel_book.root": "Citadel 书籍！！！",
+  "book.citadel_book.link_example": "链接示例",
+  "book.citadel_book.hover_text_pillager_example": "实体链接是小巧可爱的按钮！",
+  "citadel.gui.patreon_rewards_option": "Citadel Patreon 个性化……",
+  "citadel.gui.patreon_customization": "Citadel Patreon 个性化",
+  "citadel.gui.capes_option": "披风自定义……",
+  "citadel.gui.capes": "披风自定义",
+  "citadel.gui.no_cape": "不使用模组披风",
+  "citadel.gui.orbit_dist": "环绕距离",
+  "citadel.gui.orbit_speed": "环绕速度",
+  "citadel.gui.orbit_height": "环绕高度",
+  "citadel.gui.follower_type": "类型：",
+  "citadel.follower.none": "无",
+  "citadel.follower.citadel": "空间站",
+  "citadel.follower.citadel_red": "空间站（红色）",
+  "citadel.follower.citadel_gray": "空间站（灰色）"
+}

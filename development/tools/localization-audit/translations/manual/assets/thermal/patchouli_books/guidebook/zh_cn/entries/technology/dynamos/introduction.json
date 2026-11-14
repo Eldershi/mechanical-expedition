@@ -1,0 +1,18 @@
+{
+  "name": "能源炉入门",
+  "icon": "thermal:iron_gear",
+  "category": "thermal:dynamos",
+  "sortnum": -2,
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "能源炉使用各类燃料产生 RF。线圈面带有明显的红色突起，发电时会发光。RF 只能从线圈面输出，燃料则可从其他任意一面输入。未安装升级时，能源炉最多产生 40 RF/t。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "能源炉具有内部缓冲区，可以用$(l:thermal:technology/augments/integral_components)整合组件$(/l)扩容，但不能使用 RF 线圈增强组件。能源炉会根据缓冲区装满的程度，自动降低 RF 输出与燃料消耗。缓冲区空时，以最大功率发电；缓冲区满时，以 10% 功率工作，即使生成的 RF 被浪费，仍会消耗燃料。缓冲区只在发电时自动输出，空闲时其中的能量会逐渐衰减。"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "item.ad_astra_giselle_addon.lander_icon": "着陆器",
+  "can_use.ad_astra_giselle_addon.available": "可用",
+  "can_use.ad_astra_giselle_addon.unavailable": "不可用",
+  "description.ad_astra_giselle_addon.creative_oxygen": "氧气",
+  "modifier.ad_astra_giselle_addon.space_breathing": "太空呼吸",
+  "modifier.ad_astra_giselle_addon.space_breathing.flavor": "太空呼吸",
+  "modifier.ad_astra_giselle_addon.space_breathing.description": "可以在 Ad Astra 维度中呼吸\n需要且仅能有 1 个“氧气罐”在背包中",
+  "modifier.ad_astra_giselle_addon.space_fire_proof.description": "在 Ad Astra 维度中不会燃烧",
+  "modifier.ad_astra_giselle_addon.acid_rain_proof": "酸雨防护",
+  "modifier.ad_astra_giselle_addon.acid_rain_proof.flavor": "酸雨防护",
+  "modifier.ad_astra_giselle_addon.acid_rain_proof.description": "在 Ad Astra 维度中不会被酸雨伤害",
+  "modifier.ad_astra_giselle_addon.gravity_normalizing.description": "在 Ad Astra 维度中标准化重力，像在主世界一样",
+  "config.ad_astra_giselle_addon.machines.rocket_sensor_working_range": "工作范围",
+  "config.ad_astra_giselle_addon.compats.mekanism": "通用机械"
+}

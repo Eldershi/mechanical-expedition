@@ -1,0 +1,24 @@
+{
+  "name": "幽灵乐谱",
+  "icon": "terramity:music_sheet_of_ghosts",
+  "category": "terramity:ocarina",
+  "sortnum": 18,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "幽灵乐谱",
+      "text": "幽灵乐谱提供隐身效果，持续 120 秒。$(br2)在陵墓中找到此乐谱的概率较高。",
+      "item": {
+        "item": "terramity:music_sheet_of_ghosts"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

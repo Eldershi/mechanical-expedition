@@ -1,0 +1,24 @@
+{
+  "name": "树木",
+  "icon": "thermal:rubberwood_sapling",
+  "read_by_default": true,
+  "flag": "mod:thermal_foundation",
+  "category": "thermal:plants",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "热力基本添加了一种新树木及其木制品——橡胶木！随着内容不断完善，未来还会有更多树木加入。"
+    },
+    {
+      "type": "2-2_item_page",
+      "A.title": "Rubberwood Tree",
+      "A.item1": "thermal:rubberwood_sapling",
+      "A.item2": "thermal:rubberwood_leaves",
+      "A.text": "To acquire a sapling, find a Wandering Trader.",
+      "B.title": "Rubberwood",
+      "B.item1": "thermal:rubberwood_log",
+      "B.item2": "thermal:stripped_rubberwood_log",
+      "B.text": "A wood containing lots of latex and fire resistant properties."
+    }
+  ]
+}

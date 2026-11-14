@@ -1,0 +1,168 @@
+{
+  "exact": {
+    "Blacklisted Entity Types:": "黑名单实体类型：",
+    "Logged Entities:": "已记录的实体：",
+    "Whitelisted Entities:": "白名单实体：",
+    "Whitelisted Entity Types:": "白名单实体类型：",
+    "Calamitous": "灾厄",
+    "Exalted": "崇高",
+    "Strange": "奇异",
+    "Side-Sensitive": "区分方向",
+    "Somehow this sample is dated in the future...are you a time traveller?!": "这份样本的日期居然来自未来……你是时间旅行者吗？！",
+    "Total: ": "总计：",
+    "Types: ": "类型数：",
+    "UUID: ": "UUID 标识：",
+    "§6SPECIAL ABILITY: §6§l[HEAD PROTECTION] §6 25% chance of ignoring damage from arrows or": "§6特殊能力：§6§l[头部防护] §6有 25% 概率免受箭矢或",
+    "§6mob projectiles": "§6生物弹射物的伤害",
+    "§6Special Ability:§7 Deals more damage to undead mobs": "§6特殊能力：§7对亡灵生物造成更多伤害",
+    "Auto Input: true": "自动输入：启用",
+    "Auto Input: false": "自动输入：禁用",
+    "Auto Output: true": "自动输出：启用",
+    "Auto Output: false": "自动输出：禁用",
+    "Is No Gravity: true": "无重力：是",
+    "Is No Gravity: false": "无重力：否",
+    "Tameable Can Ride: true": "允许可驯服生物乘坐：是",
+    "Tameable Can Ride: false": "允许可驯服生物乘坐：否",
+    "W.I.P": "未完成",
+    "Heavy Power Core": "重型动力核心",
+    "Heavy Armor Plating": "重型装甲镀层",
+    "Heavy Pouches": "重型收纳袋",
+    "Heavy Life Support": "重型生命维持系统",
+    "Heavy Pauldron": "重型肩甲",
+    "Heavy HUD System": "重型抬头显示系统",
+    "Heavy Mobility System": "重型机动系统",
+    "Heavy Utility Module": "重型功能模块",
+    "Heavy Knee Guard": "重型护膝",
+    "Heavy Night Vision": "重型夜视",
+    "Heavy Target Tracker": "重型目标追踪器",
+    "Heavy Gas Mask": "重型防毒面具",
+    "Heavy Rebreather": "重型循环呼吸器",
+    "Iron": "铁",
+    "Diamond": "钻石",
+    "NO_PERIL": "无险则无荣",
+    "END_DOORSTEP": "终末之门",
+    "ONLY_BECAUSE": "跌倒并非退缩",
+    "DEMISE_IS": "死亡不过暂时不便",
+    "WE_FALL": "跌倒是为了站起",
+    "YOU_WILL_ENDURE": "承担失败，吸取教训",
+    "OBLIVION_REJECTS": "湮灭拒绝了你",
+    "SETBACK": "挫折绝非失败",
+    "DEATH_MAY": "意志尚存，征途不止",
+    "ETERNITY_TO_KEEP": "以永恒之身继续尝试",
+    "VIOLENCE_CALLS": "以复仇回应暴力",
+    "IMMORTAL": "你即为不朽",
+    "APPALING_PRESENCE": "挥之不去的恐怖",
+    "ITS_DESTRUCTION": "毁灭带来的慰藉",
+    "I_WANDERED": "我曾游历此地",
+    "ANOTHER_DEMIGOD": "又一位半神",
+    "ANOTHER_EON": "又一个时代",
+    "PERHAPS_YOU": "或许，你将揭开秘密",
+    "SULFUR_AIR": "硫磺弥漫的空气",
+    "TORTURED_ROCKS": "扭曲苍白的岩石",
+    "BREATHES_RELIEVED": "世界松了一口气",
+    "WHETHER_IT_IS": "追寻力量或救赎",
+    "POOR_CREATURE": "可怜的生物",
+    "HORRIBLE_EXISTENCE": "可悲的存在",
+    "COUNTLESS_DEAD": "无数逝去的灵魂",
+    "WITH_DRAGONS": "巨龙逝去之后",
+    "TERRIFYING_FORM": "可怖的躯壳",
+    "TOLL_PAID": "代价已付，诅咒得解"
+  },
+  "patterns": [
+    {
+      "pattern": "^Auto\\ Input:\\ (.*)$",
+      "flags": "",
+      "replacement": "自动输入：$1"
+    },
+    {
+      "pattern": "^Auto\\ Output:\\ (.*)$",
+      "flags": "",
+      "replacement": "自动输出：$1"
+    },
+    {
+      "pattern": "^Book\\ ID:\\ (.*)$",
+      "flags": "",
+      "replacement": "书籍 ID：$1"
+    },
+    {
+      "pattern": "^Down:\\ (.*)$",
+      "flags": "",
+      "replacement": "下方：$1"
+    },
+    {
+      "pattern": "^East:\\ (.*)$",
+      "flags": "",
+      "replacement": "东面：$1"
+    },
+    {
+      "pattern": "^North:\\ (.*)$",
+      "flags": "",
+      "replacement": "北面：$1"
+    },
+    {
+      "pattern": "^South:\\ (.*)$",
+      "flags": "",
+      "replacement": "南面：$1"
+    },
+    {
+      "pattern": "^West:\\ (.*)$",
+      "flags": "",
+      "replacement": "西面：$1"
+    },
+    {
+      "pattern": "^Redstone\\ Mode:\\ (.*)$",
+      "flags": "",
+      "replacement": "红石模式：$1"
+    },
+    {
+      "pattern": "^Redstone\\ Value:\\ (.*)$",
+      "flags": "",
+      "replacement": "红石信号值：$1"
+    },
+    {
+      "pattern": "^Is\\ No\\ Gravity:\\ (.*)$",
+      "flags": "",
+      "replacement": "无重力：$1"
+    },
+    {
+      "pattern": "^Model\\ Id:\\ (.*)$",
+      "flags": "",
+      "replacement": "模型 ID：$1"
+    },
+    {
+      "pattern": "^Mounted\\ Height:\\ (.*)$",
+      "flags": "",
+      "replacement": "乘坐高度：$1"
+    },
+    {
+      "pattern": "^Tameable\\ Can\\ Ride:\\ (.*)$",
+      "flags": "",
+      "replacement": "允许可驯服生物乘坐：$1"
+    },
+    {
+      "pattern": "^Hold (.*) for more information$",
+      "flags": "",
+      "replacement": "按住 $1 查看更多信息"
+    },
+    {
+      "pattern": "^Heavy (.+)$",
+      "flags": "",
+      "replacement": "重型$1"
+    },
+    {
+      "pattern": "^Up: (.*)$",
+      "flags": "",
+      "replacement": "上方：$1"
+    }
+  ],
+  "allowlist": {
+    "Broke_AF": "Intentionally obfuscated malformed-data marker; its characters are not meaningful prose.",
+    "tampico": "Custom-font glyph sequence rendered with lethality:mkart; replacing characters would break the artwork.",
+    "silly": "Custom-font glyph sequence rendered with a Lethality custom font; preserve the glyph encoding.",
+    "[Shift]": "Physical keyboard key label."
+  },
+  "languageKeys": {
+    "§9 +15% Damage reduction": "§9 +15% 伤害减免",
+    "Error: %s": "错误：%s"
+  }
+}

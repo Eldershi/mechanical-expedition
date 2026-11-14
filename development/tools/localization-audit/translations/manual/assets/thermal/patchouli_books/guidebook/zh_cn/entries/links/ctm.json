@@ -1,0 +1,20 @@
+{
+  "name": "连接纹理模组（CTM）",
+  "icon": "thermal:enderium_gear",
+  "category": "thermal:links",
+  "read_by_default": true,
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:link",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ctm",
+      "link_text": "CTM 下载页",
+      "text": "你知道吗？安装 CTM 后，末影玻璃等一些纹理会连接起来，看上去更美观。你早就知道？真不错。你还不知道？那还在等什么？！"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "thermal:enderium_ingot",
+      "text": "小知识：末影合金因其扭曲时空的末影特性而得名！"
+    }
+  ]
+}

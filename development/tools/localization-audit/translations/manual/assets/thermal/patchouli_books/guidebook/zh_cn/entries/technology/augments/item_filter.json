@@ -1,0 +1,18 @@
+{
+  "name": "物品过滤",
+  "icon": "thermal:item_filter_augment",
+  "category": "thermal:augments",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/item_filter_augment",
+      "title": "物品过滤",
+      "text": "物品过滤增强组件让机器、装置或装备有选择地接收物品。可以在独立界面中配置过滤器：潜行右击安装它的方块或物品，或使用方块界面中的对应选项卡打开。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "过滤器最多可添加 15 种物品，并可选择允许／禁止列表，以及匹配／忽略 NBT。"
+    }
+  ]
+}

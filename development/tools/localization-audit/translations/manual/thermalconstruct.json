@@ -1,0 +1,13 @@
+{
+  "fluid.thermalconstruct.basalz_blood.fluid_effect": "我的盔甲为什么在熔化？",
+  "fluid.thermalconstruct.blitz_blood.fluid_effect": "你的剑现在可差多了，哈！",
+  "fluid.thermalconstruct.blizz_blood.fluid_effect": "你会发现它黏得很。",
+  "fluid.thermalconstruct.molten_abyssal.fluid_effect": "黑暗将吞没 Minecraft 世界。",
+  "fluid.thermalconstruct.molten_dragonsteel.fluid_effect": "像巨龙般充能。",
+  "fluid.thermalconstruct.molten_shellite.fluid_effect": "不，末影人，你哪儿也别想去。",
+  "fluid.thermalconstruct.molten_soul_infused.fluid_effect": "像蓝色太阳一样燃烧。",
+  "fluid.thermalconstruct.molten_twinite.fluid_effect": "酷炫版下界要塞。",
+  "modifier.thermalconstruct.shell_surge": "破壳激涌",
+  "modifier.thermalconstruct.shell_surge.description": "对潜影贝造成更多伤害。",
+  "modifier.thermalconstruct.shell_surge.flavor": "我的身体一阵刺麻。"
+}

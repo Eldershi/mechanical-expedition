@@ -1,0 +1,24 @@
+{
+  "name": "瀑冰爆炸物",
+  "icon": "thermal:ice_tnt",
+  "read_by_default": true,
+  "flag": "mod:thermal_innovation",
+  "category": "thermal:explosives",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "瀑冰爆炸物会冻结一片区域内的方块，并对范围内的生物施加$(l:thermal:world/mobs/blizz)寒冷 II$(/l)。炸药方块与手榴弹的作用半径分别为 9 格和 5 格。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:ice_tnt",
+      "B.recipe": "thermal:ice_grenade_4"
+    },
+    {
+      "flag": "&mod:thermal_innovation,mod:thermal_locomotion",
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:ice_tnt_minecart",
+      "title": "瀑冰炸药矿车"
+    }
+  ]
+}

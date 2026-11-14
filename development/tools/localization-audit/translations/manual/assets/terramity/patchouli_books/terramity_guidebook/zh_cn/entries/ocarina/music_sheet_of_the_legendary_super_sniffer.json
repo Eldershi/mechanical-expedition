@@ -1,0 +1,24 @@
+{
+  "name": "传说超级嗅探兽乐谱",
+  "icon": "terramity:music_sheet_of_the_legendary_super_sniffer",
+  "category": "terramity:ocarina",
+  "sortnum": 31,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "传说超级嗅探兽乐谱",
+      "text": "传说超级嗅探兽乐谱提供兴奋效果，持续 30 秒。$(br2)此乐谱由超级嗅探兽掉落。",
+      "item": {
+        "item": "terramity:music_sheet_of_the_legendary_super_sniffer"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

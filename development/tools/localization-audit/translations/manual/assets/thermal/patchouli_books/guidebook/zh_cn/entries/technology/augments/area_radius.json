@@ -1,0 +1,14 @@
+{
+  "name": "径向范围拓展",
+  "icon": "thermal:area_radius_augment",
+  "category": "thermal:augments",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/area_radius_augment",
+      "title": "径向范围拓展",
+      "text": "径向范围拓展组件可以扩大工具或机器的作用范围。每个组件都会使最大作用区域向各个方向扩大 1 格。"
+    }
+  ]
+}

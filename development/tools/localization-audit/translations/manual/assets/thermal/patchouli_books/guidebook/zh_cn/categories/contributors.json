@@ -1,0 +1,7 @@
+{
+  "name": "贡献者",
+  "description": "这本书由以下可爱的人们倾力奉献！感谢每一位参与者，以及在 Discord 提供建议和反馈的朋友。最要感谢的是 King：感谢他包容我们、允许我们开启这项计划，也感谢他多年来持续为大家带来这个模组，从未索求回报。",
+  "icon": "minecraft:poppy",
+  "parent": "thermal:links",
+  "sortnum": 20
+}

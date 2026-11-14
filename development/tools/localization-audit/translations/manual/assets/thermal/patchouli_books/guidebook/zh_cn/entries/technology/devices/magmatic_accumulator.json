@@ -1,0 +1,22 @@
+{
+  "name": "积熔器",
+  "icon": "thermal_extra:device_lava_gen",
+  "category": "thermal:devices",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "积熔器是 Thermal Extra 新增的装置，与两个熔岩源方块接触时会生成熔岩。$(br2)积熔器的产量为 10 mB/t，在下界中则为 40 mB/t。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal_extra:crafting/device_lava_gen",
+      "title": "积熔器"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可用的增强组件",
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)整合组件$(/l)"
+    }
+  ]
+}

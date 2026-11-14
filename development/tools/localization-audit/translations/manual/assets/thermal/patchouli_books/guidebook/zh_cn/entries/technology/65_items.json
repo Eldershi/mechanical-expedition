@@ -1,0 +1,19 @@
+{
+  "name": "一组物品竟有 65 个？！",
+  "icon": "thermal:gold_gear",
+  "category": "thermal:technology",
+  "flag": "mod:thermal_expansion",
+  "sortnum": -2,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "某些机器的产物会按概率产出，使用催化剂时尤其如此。例如，一个配方每消耗一份原料，平均生成 2.5 个产物：前两个必定产生，第三个则有 50% 概率产生。当机器输出槽装满时，这就可能造成问题。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "这不是错误！",
+      "text": "热力膨胀处理这种情况的方法，是允许堆叠数量临时超出上限，以容纳这些额外产物。"
+    }
+  ]
+}

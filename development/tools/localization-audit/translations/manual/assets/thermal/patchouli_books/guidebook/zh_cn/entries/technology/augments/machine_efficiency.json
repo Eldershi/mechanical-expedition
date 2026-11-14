@@ -1,0 +1,15 @@
+{
+  "name": "通量效率升级",
+  "icon": "thermal:machine_efficiency_augment",
+  "category": "thermal:augments",
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/machine_efficiency_augment",
+      "title": "通量效率升级",
+      "text": "通量效率升级将每次加工所需 RF 乘以 0.9，但也使机器的最大 RF 消耗速率降低 10%。"
+    }
+  ]
+}

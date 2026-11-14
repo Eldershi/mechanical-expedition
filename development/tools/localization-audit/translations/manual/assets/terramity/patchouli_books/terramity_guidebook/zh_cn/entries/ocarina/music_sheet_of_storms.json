@@ -1,0 +1,24 @@
+{
+  "name": "风暴乐谱",
+  "icon": "terramity:music_sheet_of_storms",
+  "category": "terramity:ocarina",
+  "sortnum": 28,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "风暴乐谱",
+      "text": "风暴乐谱会在演奏时循环切换天气。$(br2)在沉船中找到此乐谱的概率较低。",
+      "item": {
+        "item": "terramity:music_sheet_of_storms"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

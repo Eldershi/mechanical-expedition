@@ -1,0 +1,28 @@
+{
+  "name": "防化服",
+  "icon": "thermal:hazmat_chestplate",
+  "category": "thermal:armor",
+  "read_by_default": true,
+  "flag": "mod:thermal_innovation",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "防化服能保护你免受着火、摔落伤害和异常状态等环境危害。必须穿齐全套才能获得完整保护！阻止状态效果和火焰伤害时会消耗耐久度。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:hazmat_fabric",
+      "text": "$(o)橙色的家伙很可疑$()"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:armor/hazmat_helmet",
+      "B.recipe": "thermal:armor/hazmat_chestplate"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:armor/hazmat_leggings",
+      "B.recipe": "thermal:armor/hazmat_boots"
+    }
+  ]
+}

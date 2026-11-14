@@ -1,0 +1,16 @@
+{
+  "name": "传送垫",
+  "icon": "allthemodium:teleport_pad",
+  "category": "allthemodium:dimensions",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "crafting",
+      "recipe": "allthemodium:teleport_pad"
+    },
+    {
+      "type": "text",
+      "text": "传送垫用于前往$(l:dimensions/miningdim)采矿维度$(/c)和$(l:dimensions/otherdim)异界$(/c)。主手和副手都必须为空，潜行右键点击传送垫即可使用。$(br2)注意：ATM6: To The Sky 整合包禁用了$(l:dimensions/miningdim)采矿维度$(/c)。"
+    }
+  ]
+}

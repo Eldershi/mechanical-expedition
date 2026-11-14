@@ -1,0 +1,17 @@
+{
+  "name": "信素安全锁",
+  "icon": "thermal:lock",
+  "category": "thermal:technology",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "用于开启各种机器、能源炉及物品的安全面板。让你的东西真正属于你！"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:tools/lock",
+      "title": "信素安全锁"
+    }
+  ]
+}

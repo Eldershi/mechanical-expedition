@@ -1,0 +1,14 @@
+{
+  "block.railways.track_biomesoplenty_maple": "枫木列车轨道",
+  "block.railways.track_biomesoplenty_maple_narrow": "枫木列车窄轨",
+  "block.railways.track_biomesoplenty_maple_wide": "枫木列车宽轨",
+  "block.railways.track_biomesoplenty_pine": "松木列车轨道",
+  "block.railways.track_biomesoplenty_pine_narrow": "松木列车窄轨",
+  "block.railways.track_biomesoplenty_pine_wide": "松木列车宽轨",
+  "item.railways.track_incomplete_biomesoplenty_maple": "枫木列车轨道（半成品）",
+  "item.railways.track_incomplete_biomesoplenty_maple_narrow": "枫木列车窄轨（半成品）",
+  "item.railways.track_incomplete_biomesoplenty_maple_wide": "枫木列车宽轨（半成品）",
+  "item.railways.track_incomplete_biomesoplenty_pine": "松木列车轨道（半成品）",
+  "item.railways.track_incomplete_biomesoplenty_pine_narrow": "松木列车窄轨（半成品）",
+  "item.railways.track_incomplete_biomesoplenty_pine_wide": "松木列车宽轨（半成品）"
+}

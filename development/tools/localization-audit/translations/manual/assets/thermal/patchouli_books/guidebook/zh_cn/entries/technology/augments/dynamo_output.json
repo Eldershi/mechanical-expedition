@@ -1,0 +1,15 @@
+{
+  "name": "辅助反应室",
+  "icon": "thermal:dynamo_output_augment",
+  "category": "thermal:augments",
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/dynamo_output_augment",
+      "title": "辅助反应室",
+      "text": "辅助反应室使能源炉的最大产能提高 100%，但效率乘以 0.9。"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "ai.touhou_little_maid.chat.settings.hub.app_key": "应用密钥",
+  "ai.touhou_little_maid.chat.site.openai.name": "OpenAI",
+  "ai.touhou_little_maid.chat.site.deepseek.name": "DeepSeek",
+  "ai.touhou_little_maid.chat.site.player2.name": "Player2",
+  "ai.touhou_little_maid.chat.site.minimax.name": "MiniMax",
+  "ai.touhou_little_maid.chat.site.kimi.name": "Kimi",
+  "ai.touhou_little_maid.chat.site.fish-audio.name": "Fish Audio",
+  "ai.touhou_little_maid.chat.site.gpt-sovits.name": "GPT-SoVITS",
+  "ai.touhou_little_maid.chat.site.grok.name": "Grok",
+  "ai.touhou_little_maid.chat.site.openrouter.name": "Open Router",
+  "advancements.touhou_little_maid.base.build_altar.title": "建造完成",
+  "advancements.touhou_little_maid.base.change_maid_model.title": "角色扮演！",
+  "advancements.touhou_little_maid.challenge.eat_enchanted_golden_apple.title": "好苹果",
+  "advancements.touhou_little_maid.maid_base.use_red_fox_scroll.title": "永不说再见",
+  "advancements.touhou_little_maid.maid_base.use_servant_bell.title": "永不放弃你",
+  "advancements.touhou_little_maid.maid_base.use_white_fox_scroll.title": "永不背弃你",
+  "painting.touhou_little_maid.wine_fox.author": "HanakazeT8"
+}

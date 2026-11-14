@@ -1,0 +1,23 @@
+{
+  "name": "Minecraft Mod Language Package",
+  "authors": "CFPA team and contributors",
+  "project": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package",
+  "contributors": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/graphs/contributors",
+  "assets": [
+    {
+      "asset": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/download/autobuild/Minecraft-Mod-Language-Modpack-1-20.zip",
+      "sha256": "40ec60c32abd365e935bc8327b1bf26a88ded2c48a18caa359331a12515c6cdd"
+    },
+    {
+      "asset": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/download/autobuild/Minecraft-Mod-Language-Modpack-1-20-Fabric.zip",
+      "sha256": "0cc8906998daddd838b6e40b8a68fcd8ec5c891ad61671faa6e4311bb3ee1ee7"
+    },
+    {
+      "asset": "https://github.com/CFPAOrg/Minecraft-Mod-Language-Package/releases/download/autobuild/Minecraft-Mod-Language-Modpack-1-21.zip",
+      "sha256": "f324017a70a5b330e1d521fa63dd8016911c9030b444f8a0574c43217271ff8b"
+    }
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "modifications": "Selected only missing or Latin-only translations for installed mods; retained existing Chinese translations."
+}

@@ -1,0 +1,14 @@
+{
+  "name": "辅助仙人掌",
+  "icon": "thermal:machine_null_augment",
+  "category": "thermal:augments",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/machine_null_augment",
+      "title": "辅助仙人掌",
+      "text": "辅助仙人掌增强组件会自动销毁过量的次要产物。这里的过量指超出机器正常允许的额外堆叠范围。"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "鱼饵",
+  "icon": "thermal:aquachow",
+  "read_by_default": true,
+  "category": "thermal:materials",
+  "flag": "mod:thermal_cultivation",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "可以在$(l:thermal:technology/devices/fisher)水产捕捞器$(/l)中使用各种鱼饵，提高或改变捕鱼能力。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:aquachow_4",
+      "text": "水产饲料由独特的原料混合制成，令鱼儿难以抗拒，可以提高捕捞器的自然捕获能力。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:deep_aquachow_4",
+      "text": "深水水产饲料帮助捕捞器获得更深水域的产物，提高河豚、海带、海晶石、墨囊、海绵等物品的概率，偶尔甚至能捕到三叉戟。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:junk_net",
+      "text": "杂物网让捕捞器能够收集线、睡莲、骨头、水瓶、皮革等杂物。俗话说：“一个宝藏的垃圾，是另一个垃圾人的……”反正大概就是那个意思。"
+    }
+  ]
+}

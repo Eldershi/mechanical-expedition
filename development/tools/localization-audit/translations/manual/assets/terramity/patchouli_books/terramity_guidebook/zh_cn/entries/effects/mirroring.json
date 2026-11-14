@@ -1,0 +1,11 @@
+{
+  "name": "镜像",
+  "icon": "minecraft:potion",
+  "category": "terramity:effects",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "镜像是 Terramity 新增的一种药水／状态效果。$(br2)此效果会将你造成伤害的一半反弹给自身。"
+    }
+  ]
+}

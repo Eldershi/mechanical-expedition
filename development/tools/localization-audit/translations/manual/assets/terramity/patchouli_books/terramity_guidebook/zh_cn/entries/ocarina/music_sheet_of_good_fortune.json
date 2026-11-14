@@ -1,0 +1,24 @@
+{
+  "name": "好运乐谱",
+  "icon": "terramity:music_sheet_of_good_fortune",
+  "category": "terramity:ocarina",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "好运乐谱",
+      "text": "好运乐谱提供幸运 II，持续 60 秒。$(br2)兔子掉落此乐谱的概率极低。",
+      "item": {
+        "item": "terramity:music_sheet_of_good_fortune"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

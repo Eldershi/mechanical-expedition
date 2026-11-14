@@ -1,0 +1,24 @@
+{
+  "name": "试炼守卫乐谱",
+  "icon": "terramity:music_sheet_of_the_trial_guardian",
+  "category": "terramity:ocarina",
+  "sortnum": 32,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "试炼守卫乐谱",
+      "text": "试炼守卫乐谱提供抗性提升 I 和虚弱 I，持续 30 秒。$(br2)此乐谱由试炼守卫掉落。",
+      "item": {
+        "item": "terramity:music_sheet_of_the_trial_guardian"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

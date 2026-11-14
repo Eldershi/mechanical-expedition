@@ -1,0 +1,17 @@
+{
+  "name": "洞见水晶",
+  "icon": "thermal:xp_crystal",
+  "category": "thermal:tools",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "便携式经验存储！洞见水晶可以储存 10,000 点经验，约相当于 63 级。可以通过$(l:thermal:world/holding)扩容$(/l)附魔提高容量。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:tools/xp_crystal",
+      "title": "洞见水晶"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "gui.advanced_ae.ApplyToAll": "应用至全部",
+  "gui.tooltips.advanced_ae.DirectionalOutputHint": "配置允许自动输出的方向",
+  "gui.tooltips.advanced_ae.Disabled": "禁用",
+  "gui.tooltips.advanced_ae.Enabled": "启用",
+  "gui.tooltips.advanced_ae.RegulateCategory": "调控",
+  "gui.tooltips.advanced_ae.RegulateOff": "超出设定量时仍保留已输出的事物",
+  "gui.tooltips.advanced_ae.RegulateOn": "尝试输入超出设定量的事物",
+  "gui.upgrades.advanced_ae.Pick-CraftUpgrade": "点选合成"
+}

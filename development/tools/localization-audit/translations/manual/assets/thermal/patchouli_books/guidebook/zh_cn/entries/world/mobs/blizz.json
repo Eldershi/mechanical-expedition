@@ -1,0 +1,32 @@
+{
+  "name": "暴雪人",
+  "icon": "thermal:blizz_rod",
+  "category": "thermal:mobs",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "thermal:3_item_page",
+      "title": "暴雪人",
+      "item1": "thermal:blizz_rod",
+      "item2": "thermal:blizz_powder",
+      "item3": "thermal:blizz_spawn_egg",
+      "text": "暴雪人生成于寒冷生物群系，拥有 10 颗心的生命值，近距离攻击造成 3.5 颗心伤害。其弹射物造成 2.5 颗心伤害，并施加寒冷效果。有机会掉落暴雪立方体，可通过合成或磨粉制成暴雪粉。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "thermal:blizz",
+      "title": "暴雪人",
+      "text": "寒冷：每级使移动速度降低 10%、攻击速度降低 20%；两种降低幅度各自最高为 90%。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "行为",
+      "text": "暴雪人是疏离的元素生物，会向敌人降下弹雨。它会飞到目标上方，在周围区域生成下落的弹射物。距离足够近时，会在目标头顶盘旋。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "应对策略",
+      "text": "对付暴雪人最简单的方法是使用远程武器。近战时，最好正面对着暴雪人，承受伤害并接近至近战距离。"
+    }
+  ]
+}

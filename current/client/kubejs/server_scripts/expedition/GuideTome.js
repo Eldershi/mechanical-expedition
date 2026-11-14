@@ -200,9 +200,11 @@ PlayerEvents.loggedIn(event => {
 
 let expeditionGuideOnlineMigrationDone = false
 let expeditionGuideRefreshTicks = 0
+let expeditionGuideAuditDone = false
 ServerEvents.tick(event => {
   if (!expeditionGuideOnlineMigrationDone) {
     expeditionGuideOnlineMigrationDone = true
+    expeditionAuditGuideTome(event)
     event.server.getPlayerList().getPlayers().forEach(player => {
       expeditionRefreshPlayerGuideTomes(player, true)
       expeditionQueueStarterGuideCleanup(player, event.server)
@@ -239,7 +241,9 @@ function expeditionGuideOuterState(stack) {
   return expeditionGuideCanonicalJson(state)
 }
 
-ServerEvents.loaded(event => {
+function expeditionAuditGuideTome(event) {
+  if (expeditionGuideAuditDone) return
+  expeditionGuideAuditDone = true
   let expected = expeditionGuideStacks()
   let tome = expeditionFullGuideTome()
   let failures = []
@@ -262,9 +266,18 @@ ServerEvents.loaded(event => {
     }
   })
 
-  let oldCount = Math.min(29, expected.length)
+  let legacy = []
+  expeditionGuideCatalog.forEach((entry, index) => {
+    if (!entry.factory && (!entry.nbt || entry.nbt['patchouli:book'] !== 'eclipticseasons:seasons_chronicle')) legacy.push(expected[index])
+  })
+  check(legacy.length === 28, 'legacy-real-guide-count')
+  let blank = Item.of('legendary_monsters:guide_book')
+  let blankState = expeditionGuideStackState(blank)
+  let oldCount = legacy.length + 1
+  check(oldCount === 29, 'legacy-book-count')
   let old = Item.of('eccentrictome:tome', { expeditionGuideAuditMarker: 'outer-preserved' })
-  for (let index = 0; index < oldCount; index++) ExpeditionTome.attach(old, expected[index])
+  legacy.forEach(book => ExpeditionTome.attach(old, book))
+  ExpeditionTome.attach(old, blank)
   let custom = Item.of('minecraft:book', {
     display: { Name: '{"text":"自定义教程笔记"}', Lore: ['{"text":"保留玩家内容"}'] },
     expeditionGuideAuditMarker: 'custom-preserved'
@@ -273,41 +286,47 @@ ServerEvents.loaded(event => {
   let customState = expeditionGuideStackState(custom)
   let beforeOuter = expeditionGuideOuterState(old)
   let added = expeditionRefreshGuideTome(old, expected)
-  check(added === expected.length - oldCount, 'refresh-old-added')
+  check(added === 14, 'refresh-old-added')
   check(expeditionGuideOuterState(old) === beforeOuter, 'refresh-old-outer-preserved')
   check(expeditionHasCompleteGuideTome(old, expected), 'refresh-old-complete')
-  let containsCustom = stack => {
+  let containsState = (stack, state) => {
     let entries = ExpeditionTome.getItems(stack)
     for (let index = 0; index < entries.size(); index++) {
-      if (expeditionGuideStackState(entries.get(index)) === customState) return true
+      if (expeditionGuideStackState(entries.get(index)) === state) return true
     }
     return false
   }
-  check(containsCustom(old), 'refresh-old-custom-preserved')
+  check(containsState(old, blankState), 'refresh-old-blank-preserved')
+  check(containsState(old, customState), 'refresh-old-custom-preserved')
+  check(ExpeditionTome.getItemCount(old) === expected.length + 2, 'refresh-old-count')
   let once = expeditionGuideStackState(old)
   check(expeditionRefreshGuideTome(old, expected) === 0, 'refresh-old-idempotent-count')
   check(expeditionGuideStackState(old) === once, 'refresh-old-idempotent-nbt')
 
-  if (oldCount > 0) {
+  if (legacy.length > 0) {
     let partial = Item.of('eccentrictome:tome')
-    for (let index = 0; index < oldCount; index++) ExpeditionTome.attach(partial, expected[index])
+    legacy.forEach(book => ExpeditionTome.attach(partial, book))
+    ExpeditionTome.attach(partial, blank)
     ExpeditionTome.attach(partial, custom)
     let selected = ExpeditionTome.convert(partial, 0)
     selected.nbt.expeditionGuideAuditMarker = 'selected-preserved'
     let selectedOuter = expeditionGuideOuterState(selected)
     let selectedAdded = expeditionRefreshGuideTome(selected, expected)
-    check(selectedAdded === expected.length - oldCount, 'refresh-selected-added')
+    check(selectedAdded === 14, 'refresh-selected-added')
     check(expeditionGuideOuterState(selected) === selectedOuter, 'refresh-selected-outer-preserved')
     check(expeditionHasCompleteGuideTome(selected, expected), 'refresh-selected-complete')
-    check(containsCustom(selected), 'refresh-selected-custom-preserved')
-    check(ExpeditionTome.getItemCount(selected) === expected.length, 'refresh-selected-no-active-duplicate')
+    check(containsState(selected, blankState), 'refresh-selected-blank-preserved')
+    check(containsState(selected, customState), 'refresh-selected-custom-preserved')
+    check(ExpeditionTome.getItemCount(selected) === expected.length + 1, 'refresh-selected-no-active-duplicate')
     let selectedOnce = expeditionGuideStackState(selected)
     check(expeditionRefreshGuideTome(selected, expected) === 0, 'refresh-selected-idempotent-count')
     check(expeditionGuideStackState(selected) === selectedOnce, 'refresh-selected-idempotent-nbt')
     let restored = ExpeditionTome.revert(selected)
     ExpeditionTome.attach(restored, selected)
     check(expeditionHasCompleteGuideTome(restored, expected), 'refresh-selected-revert-complete')
-    check(ExpeditionTome.getItemCount(restored) === expected.length + 1, 'refresh-selected-revert-count')
+    check(containsState(restored, blankState), 'refresh-selected-revert-blank-preserved')
+    check(containsState(restored, customState), 'refresh-selected-revert-custom-preserved')
+    check(ExpeditionTome.getItemCount(restored) === expected.length + 2, 'refresh-selected-revert-count')
   }
 
   let ordinary = custom.copy()
@@ -334,4 +353,5 @@ ServerEvents.loaded(event => {
     scope: 'Registered guide variants, native conversion/reversion, crafting output, and non-destructive upgrades of ordinary and selected Tomes; page unlock conditions remain native.'
   })
   console.info('[Guide Tome] books=' + expected.length + ', failures=' + failures.length)
-})
+}
+ServerEvents.loaded(expeditionAuditGuideTome)

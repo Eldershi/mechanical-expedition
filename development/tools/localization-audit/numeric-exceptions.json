@@ -1,0 +1,274 @@
+{
+  "language": {
+    "incendium.admin.menu.inferno.spawn2": {
+      "value": "生成：第二阶段",
+      "reason": "The numeral 2 is written as 第二 in Chinese; boss phase unchanged."
+    },
+    "effect.kaleidoscope_nether.star_blessing_buff.description": {
+      "value": "清除所有负面效果，获得相当于生命值 50% 的伤害吸收，所受伤害减半，并快速恢复生命值",
+      "reason": "Damage reduction of 50% is expressed as 减半; the absorption percentage is retained separately."
+    },
+    "powergrid.ponder.energy_meter.text_4": {
+      "value": "根据所选模式，电能表每累计 1 Wh 或 1 kWh，就会通过比较器输出一次红石脉冲。",
+      "reason": "The shared numeral 1 is repeated for both Wh and kWh to make the two selectable units explicit."
+    },
+    "powergrid.ponder.factory_light.header": {
+      "value": "仓库照明入门",
+      "reason": "101 is an English idiom meaning introductory instruction, translated as 入门 rather than a gameplay quantity."
+    },
+    "rpo.rojak.globalSettings.threeDimensionalMushrooms": {
+      "value": "立体蘑菇",
+      "reason": "3D is translated as 立体; the three-dimensional model option is unchanged."
+    },
+    "rpo.rojak.globalSettings.threeDimensionalMushrooms.tooltip": {
+      "value": "为蘑菇启用立体模型",
+      "reason": "3D is translated as 立体; the three-dimensional model option is unchanged."
+    },
+    "scguns.desc.spirulida": {
+      "value": "四管速射轻机枪，专为压制登船部队、击退敌方潜水员设计。",
+      "reason": "Four barrels are written as 四管; the barrel count is unchanged."
+    },
+    "scguns.advancement.defender_pistol.desc": {
+      "value": "它打赢过两次世界大战",
+      "reason": "Two world wars are written as 两次世界大战; the number is unchanged."
+    },
+    "item.terramity.music_sheet_of_bolstering.description_1": {
+      "value": "§7 -使其他所有可升级的乐谱效果提高 1 级（该效果不可重复叠加）",
+      "reason": "The English word one is written as the numeral 1; effect level unchanged."
+    },
+    "subtitles.celestial_sixty_fire": {
+      "value": "天界 60 开火",
+      "reason": "The weapon name Celestial Sixty uses the numeral 60 in Chinese."
+    },
+    "gui.xaero_showing_third_party_deleted_waypoints": {
+      "value": "显示已删除的第三方路径点",
+      "reason": "3rd-party is the conventional Chinese term 第三方, not a gameplay quantity."
+    },
+    "gui.xaero_box_map_distances": {
+      "value": "显示右键所选位置或元素到你的距离。普通位置显示二维距离；路径点和追踪玩家等元素在适用时显示三维距离。",
+      "reason": "2-dimensional and 3-dimensional are translated as 二维 and 三维; distance geometry unchanged."
+    }
+  },
+  "pages": [
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/technology/devices/magmatic_accumulator.json",
+      "path": [
+        "pages",
+        0,
+        "text"
+      ],
+      "value": "积熔器是 Thermal Extra 新增的装置，与两个熔岩源方块接触时会生成熔岩。$(br2)积熔器的产量为 10 mB/t，在下界中则为 40 mB/t。",
+      "reason": "The two lava source blocks are written as 两个; rates remain 10 and 40 mB/t."
+    },
+    {
+      "resource": "assets/terramity/patchouli_books/terramity_guidebook/zh_cn/entries/bosses/ultra_sniffer.json",
+      "path": [
+        "pages",
+        0,
+        "text"
+      ],
+      "value": "Terramity 中最难对付的首领，不属于常规推进流程。$(br2)当超级嗅探兽进入第二阶段且生命值低于最大值的 10% 时，用闪电击中它，即可召唤。$(br2)推荐装备：$(br) -终局装备（请阅读最后一页）",
+      "reason": "Phase 2 is written as 第二阶段; the below-10% health condition is retained."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/equipment/explosives/detonator.json",
+      "path": [
+        "pages",
+        0,
+        "text"
+      ],
+      "value": "起爆器可以先标记、再同时引爆最多 16 个炸药方块！先摆好所有炸药，再手持起爆器逐一右击。只要至少标记了一个炸药，指示灯就会变黄。随后切换至引爆模式，指示灯会变绿；再次右击，即可引爆所有已标记的炸药。",
+      "reason": "At least one primed explosive is written as 一个; the simultaneous limit remains 16."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/equipment/tools/flux_capacitor.json",
+      "path": [
+        "pages",
+        0,
+        "text"
+      ],
+      "value": "储存 RF，并为物品栏中的物品充能。共有三种模式，可通过切换模式按键，选择只为快捷栏和盔甲充能、只为物品栏充能，或为所有物品充能。手持电容潜行右击，可启用或禁用物品充能。它也可用于向机器输入能量，并可在工匠工作台中充能和安装增强组件。",
+      "reason": "Three modes are written as 三种; all described charging targets are unchanged."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/equipment/tools/xp_crystal.json",
+      "path": [
+        "pages",
+        0,
+        "text"
+      ],
+      "value": "便携式经验存储！洞见水晶可以储存 10,000 点经验，约相当于 63 级。可以通过$(l:thermal:world/holding)扩容$(/l)附魔提高容量。",
+      "reason": "10K XP is expanded to 10,000 XP; the approximately-63-level equivalent is retained."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/guides/modpack/recipes.json",
+      "path": [
+        "pages",
+        2,
+        "text"
+      ],
+      "value": "下方链接提供一个为机器添加催化剂的 JSON 示例，其中定义了机器、物品以及四个催化剂倍率。有关催化剂的更多信息，请阅读$(l:thermal:world/materials/catalysts)这里$(/l)。",
+      "reason": "Four catalyst multipliers are written as 四个; recipe structure unchanged."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/guides/modpack/recipes.json",
+      "path": [
+        "pages",
+        4,
+        "text"
+      ],
+      "value": "下方链接提供一个在能源炉中燃烧精炼燃油的 JSON 示例。请注意一项重要限制：能量值必须至少为 10,000 RF！",
+      "reason": "10k RF is expanded to 10,000 RF; minimum energy unchanged."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/hekera.json",
+      "path": [
+        "pages",
+        2,
+        "text"
+      ],
+      "value": "再给我五分钟，拜托……",
+      "reason": "Five minutes are written as 五分钟 in the contributor quotation."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/storage_and_transport/storage/energy_cell.json",
+      "path": [
+        "pages",
+        2,
+        "text"
+      ],
+      "value": "可以精确配置红石通量单元的传输速率。在界面中，RF 表两侧分别显示输入和输出速率，可以用“＋”“－”按钮手动调节。左击／右击每次改变 50／10 RF/t；按住 Ctrl 点击，每次改变 5／1 RF/t；按住 Shift 点击，每次改变 1,000／100 RF/t；同时按住 Ctrl＋Shift 点击，每次改变 10,000／1,000 RF/t。",
+      "reason": "Thousands separators are added and k abbreviations expanded. All left/right-click transfer increments retain their original values."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/storage_and_transport/storage/fluid_cell.json",
+      "path": [
+        "pages",
+        2,
+        "text"
+      ],
+      "value": "可以精确配置流体单元的传输速率。在界面中，流体槽两侧分别显示输入和输出速率，可以用“＋”“－”按钮手动调节。左击／右击每次改变 50／10 mB/t；按住 Ctrl 点击，每次改变 5／1 mB/t；按住 Shift 点击，每次改变 1,000／100 mB/t；同时按住 Ctrl＋Shift 点击，每次改变 10,000／1,000 mB/t。",
+      "reason": "Thousands separators are added and k abbreviations expanded. All left/right-click transfer increments retain their original values."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/technology/augments/xp_storage.json",
+      "path": [
+        "pages",
+        0,
+        "text"
+      ],
+      "value": "知识浓缩器增强组件使机器或装置能够从配方或世界中收集经验。初始最大容量为 2,500 点经验，并会乘以$(l:thermal:technology/augments/integral_components)整合组件$(/l)提供的倍率。",
+      "reason": "2.5k XP is expanded to 2,500 XP; initial capacity unchanged."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/technology/devices/fisher.json",
+      "path": [
+        "pages",
+        0,
+        "text"
+      ],
+      "value": "水产捕捞器放在水体中时，可以被动捕捞鱼类。捕获速率取决于生物群系、天气及增强组件配置，基础速率为每几分钟一次。$(l:thermal:technology/augments/integral_components)整合组件$(/l)和$(l:thermal:technology/augments/area_radius)径向范围拓展组件$(/l)可以加快捕捞。也可以放入$(l:thermal:world/materials/bait)鱼饵$(/l)，提高速率或改变捕获的物品。",
+      "reason": "One catch is written as 一次; the baseline remains once every few minutes."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/technology/devices/tree_extractor.json",
+      "path": [
+        "pages",
+        0,
+        "text"
+      ],
+      "value": "树汁提取器从相邻树木中提取流体。可以放入肥料提高产量：骨粉使产量变为 1.5 倍，持续 8 次工作；$(l:thermal:world/plants/phytogro)植育一号$(/l)使产量变为 2 倍，持续 16 次。不同树木产生不同流体，可在 JEI 中查看配方。",
+      "reason": "2.0 is written as 2; fertilizer output multipliers and 8/16-cycle durations are unchanged."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/technology/machines/brewer.json",
+      "path": [
+        "pages",
+        0,
+        "text"
+      ],
+      "value": "药水酿造机用于酿造药水，产出$(l:thermal:technology/potion_fluid)药水流体$(/l)，而不是直接装在瓶中。一份原料足以酿造一桶药水，可灌满四个瓶子。",
+      "reason": "Four bottles are written as 四个; one ingredient still creates one bucket."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/world/materials/metal_forms.json",
+      "path": [
+        "pages",
+        1,
+        "text"
+      ],
+      "value": "可以将锭与$(l:thermal:equipment/charges/earth_charge)裂岩弹$(/l)合成，制得粉末。粉末可用于配方，通常是合金配方；金属粉也可以烧炼。在一颗铁粒周围放置四个同种材料的锭或宝石，可以合成齿轮。",
+      "reason": "Four ingots/gems are written as 四个; both crafting and press costs are retained."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/world/materials/metal_forms.json",
+      "path": [
+        "pages",
+        2,
+        "text"
+      ],
+      "value": "粉末通常由$(l:thermal:technology/machines/pulverizer)磨粉机$(/l)产出，可用于配方，通常是合金配方；金属粉也可以烧炼。板和硬币只能在$(l:thermal:technology/machines/press)多驱冲压机$(/l)中制作，并用于多种配方。在一颗铁粒周围放置四个同种材料的锭或宝石，也可以合成齿轮；金属齿轮还可以用四个锭在冲压机中制成。",
+      "reason": "Four ingots/gems are written as 四个; both crafting and press costs are retained."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/world/materials/storage.json",
+      "path": [
+        "pages",
+        0,
+        "text"
+      ],
+      "value": "热力系列为其所有$(l:thermal:world/ores)矿石$(/l)和$(l:thermal:materials/alloys)合金$(/l)提供储存方块，也为火药、炉渣、富矿炉渣和木炭提供压缩块。与其他模组的储存方块互转时，热力系列遵循一项约定：合成配方中央的物品决定产物属于哪个模组。例如，在一块热力系列铅锭周围放八块沉浸工程铅锭，会得到热力系列铅块。",
+      "reason": "Eight surrounding ingots are written as 八块; the center-item selection rule is retained."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/world/materials/storage.json",
+      "path": [
+        "pages",
+        2,
+        "text"
+      ],
+      "value": "与其他模组的储存方块互转时，热力系列遵循一项约定：合成配方中央的物品决定产物属于哪个模组。例如，在一块热力系列铅锭周围放八块沉浸工程铅锭，会得到热力系列铅块。",
+      "reason": "Eight surrounding ingots are written as 八块; the center-item selection rule is retained."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/world/mobs/basalz.json",
+      "path": [
+        "pages",
+        0,
+        "text"
+      ],
+      "value": "岩石人生成于荒芜或山地生物群系，拥有 10 颗心的生命值，近距离攻击造成 4 颗心伤害。其弹射物造成 3 颗心伤害，并施加破甲效果。有机会掉落岩石碎片，可通过合成或磨粉制成岩石粉。",
+      "reason": "4.0 and 3.0 hearts are written as 4 and 3 hearts; values unchanged."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/world/mobs/basalz.json",
+      "path": [
+        "pages",
+        3,
+        "text"
+      ],
+      "value": "对付岩石人最简单的方法是使用远程武器。近战时，即使穿戴盔甲，也可能难以承受附带破甲效果的全部 8 次弹射物攻击。最好先用盾牌挡住所有弹射物，再趁其虚弱时攻击。也可以将岩石人引向其他生物，让它们分担伤害。",
+      "reason": "The eight-projectile count appears once; the repeated reference is expressed as 所有弹射物."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/world/mobs/blitz.json",
+      "path": [
+        "pages",
+        1,
+        "text"
+      ],
+      "value": "触电：每级使攻击伤害降低 3 点，相当于 1.5 颗心。",
+      "reason": "Matches installed CoFH Core CoreMobEffects: Shocked applies ATTACK_DAMAGE ADDITION -3.0 per effect level, which is 3 damage points or 1.5 hearts."
+    },
+    {
+      "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/world/mobs/blizz.json",
+      "path": [
+        "pages",
+        1,
+        "text"
+      ],
+      "value": "寒冷：每级使移动速度降低 10%、攻击速度降低 20%；两种降低幅度各自最高为 90%。",
+      "reason": "Matches installed CoFH Core CoreMobEffects and ChilledMobEffect: per level MOVEMENT_SPEED MULTIPLY_TOTAL -0.1 and ATTACK_SPEED MULTIPLY_TOTAL -0.2, each clamped to -0.9."
+    }
+  ]
+}

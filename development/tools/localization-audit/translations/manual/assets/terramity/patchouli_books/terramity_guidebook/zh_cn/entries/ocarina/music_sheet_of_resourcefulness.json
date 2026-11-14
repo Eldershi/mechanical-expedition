@@ -1,0 +1,24 @@
+{
+  "name": "节用乐谱",
+  "icon": "terramity:music_sheet_of_resourcefulness",
+  "category": "terramity:ocarina",
+  "sortnum": 16,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "节用乐谱",
+      "text": "节用乐谱提供节弹射击 I，持续 60 秒。$(br2)在长满植物的设施中找到此乐谱的概率较低。",
+      "item": {
+        "item": "terramity:music_sheet_of_resourcefulness"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

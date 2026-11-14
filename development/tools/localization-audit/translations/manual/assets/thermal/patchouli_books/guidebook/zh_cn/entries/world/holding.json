@@ -1,0 +1,12 @@
+{
+  "name": "扩容",
+  "icon": "minecraft:enchanted_book",
+  "read_by_default": true,
+  "category": "thermal:world",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "扩容附魔可用于能储存红石通量、流体等内容的方块和物品。每级增加 50% 容量，扩容 IV 时最高增加 200%（变为 3 倍）。它可以与其他存储容量修正项叠加，例如$(l:thermal:technology/augments/introduction)增强组件$(/l)。例如，一台机器同时装有$(l:thermal:technology/augments/integral_components)谐振整合组件$(/l)和扩容 IV 时，RF 容量将变为基础值的 12 倍。"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "attack.death.createaddition.barbed_wire": "%1$s 试图穿过带刺铁丝网",
+  "attack.death.createaddition.barbed_wire.player": "%1$s 在与 %2$s 战斗时试图穿过带刺铁丝网",
+  "attack.death.createaddition.tesla_coil": "%1$s 遭受了致命电击",
+  "attack.death.createaddition.tesla_coil.player": "%1$s 在与 %2$s 战斗时遭受了致命电击",
+  "item.createaddition.diamond_grit_sandpaper.tooltip.condition1": "使用时",
+  "item.createaddition.festive_spool.tooltip.summary": "用于储存电线。",
+  "item.createaddition.electrum_spool.tooltip.summary": "用于储存电线。",
+  "item.createaddition.spool.tooltip.condition1": "右击两个已连接的接线器",
+  "item.createaddition.spool.tooltip.behaviour1": "移除电线连接，并返还装有电线的_线轴_。",
+  "itemGroup.createaddition.main": "机械动力：工艺与附加",
+  "createaddition.subtitle.loud_zap": "特斯拉线圈：放电",
+  "createaddition.subtitle.little_zap": "特斯拉线圈：火花迸发"
+}

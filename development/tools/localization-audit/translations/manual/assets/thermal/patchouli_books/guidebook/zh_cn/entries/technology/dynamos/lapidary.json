@@ -1,0 +1,24 @@
+{
+  "name": "珠宝能源炉",
+  "icon": "thermal:dynamo_lapidary",
+  "category": "thermal:dynamos",
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "珠宝能源炉使用水晶和宝石产生 RF。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:dynamo_lapidary",
+      "title": "珠宝能源炉",
+      "text": "$(o)或许是一道通往某片土地的门户，那里住着痴迷宝石的月球人。$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可用的增强组件",
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)整合组件$(/l)$(li)$(l:thermal:technology/augments/dynamo_output)辅助反应室$(/l)$(li)$(l:thermal:technology/augments/dynamo_fuel)多循环喷射装置$(/l)"
+    }
+  ]
+}

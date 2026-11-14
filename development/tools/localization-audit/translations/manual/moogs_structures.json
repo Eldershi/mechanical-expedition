@@ -1,0 +1,14 @@
+{
+  "moogs_structures.config.title": "Moog 的结构",
+  "moogs_structures.config.reload_notice": "重新加载世界后生效（退出到标题界面再进入，或运行 /reload），且只影响新生成的区块。",
+  "moogs_structures.config.category.replace_vanilla": "替换原版结构",
+  "moogs_structures.config.universal_frequency": "全局生成频率",
+  "moogs_structures.config.universal_frequency.tooltip": "所有 Moog 结构的生成密度。2x 约为两倍，0.5x 约为一半。",
+  "moogs_structures.config.all_of_mod": "全部 %s",
+  "moogs_structures.config.mod_frequency.tooltip": "所有 %s 结构的生成密度。2x 约为两倍，0.5x 约为一半。",
+  "moogs_structures.config.preview.unavailable": "无法预览：此模组未设置预览链接（mod_slug）。",
+  "moogs_structures.cloth_required.title": "Moog 的结构库",
+  "moogs_structures.cloth_required.message": "Moog 结构库的配置界面需要 Cloth Config API。安装后即可在游戏内配置。",
+  "moogs_structures.config.enabled": "启用",
+  "moogs_structures.config.disabled": "禁用"
+}

@@ -1,0 +1,21 @@
+{
+  "advancement.twilightforest.uncraft_uncrafting_table": "过犹不及",
+  "advancement.twilightforest.uncraft_uncrafting_table.desc": "拆解一张拆解台",
+  "block.twilightforest.rainy_cloud": "雨云",
+  "block.twilightforest.snowy_cloud": "雪云",
+  "block.twilightforest.uncrafting_table.disabled": "此方块已被禁用。",
+  "block.twilightforest.wrought_iron_fence": "熟铁栅栏",
+  "block.twilightforest.wrought_iron_fence.cap": "手持铁锭或铁粒右键点击以添加顶饰",
+  "container.twilightforest.uncrafting_table.uncrafting_disabled": "配置已禁用拆解功能",
+  "entity.twilightforest.magic_painting": "魔法画作",
+  "item.twilightforest.boarkchop": "生野猪肉",
+  "item.twilightforest.magic_painting": "魔法画作",
+  "magic_painting.twilightforest.darkness.title": "黑暗",
+  "magic_painting.twilightforest.lucid_lands.title": "清明之地",
+  "subtitles.twilightforest.block.wrought_iron_fence.extend": "铁器：铿锵作响",
+  "subtitles.twilightforest.entity.towerwood_borer.ambient": "塔木蛀虫：嘶鸣",
+  "subtitles.twilightforest.entity.towerwood_borer.death": "塔木蛀虫：死亡",
+  "subtitles.twilightforest.entity.towerwood_borer.hurt": "塔木蛀虫：受伤",
+  "entity.twilightforest.roving_cube": "游荡方块",
+  "museumcurator.animalhusbandry.twilightforest.bugs": "昆虫"
+}

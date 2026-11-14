@@ -1,0 +1,7 @@
+{
+  "name": "生物",
+  "description": "水、土、火、雷。很久以前，四大元素还一同生活在虚无之中。直到下界诞生，一切都变了。于是，其他几位也不得不登场了。",
+  "icon": "thermal:blizz_rod",
+  "parent": "thermal:world",
+  "sortnum": 3
+}

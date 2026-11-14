@@ -1,0 +1,24 @@
+{
+  "name": "防御乐谱",
+  "icon": "terramity:music_sheet_of_defense",
+  "category": "terramity:ocarina",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "防御乐谱",
+      "text": "防御乐谱提供抗性提升 I，持续 15 秒。$(br2)在地牢中找到此乐谱的概率较高。",
+      "item": {
+        "item": "terramity:music_sheet_of_defense"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

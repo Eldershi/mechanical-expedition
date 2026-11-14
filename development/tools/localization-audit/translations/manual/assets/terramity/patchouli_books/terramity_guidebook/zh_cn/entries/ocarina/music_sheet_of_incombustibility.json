@@ -1,0 +1,24 @@
+{
+  "name": "不燃乐谱",
+  "icon": "terramity:music_sheet_of_incombustibility",
+  "category": "terramity:ocarina",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "不燃乐谱",
+      "text": "不燃乐谱提供抗火效果，持续 120 秒。$(br2)在防火瞭望塔中找到此乐谱的概率较高。",
+      "item": {
+        "item": "terramity:music_sheet_of_incombustibility"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

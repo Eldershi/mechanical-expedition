@@ -1,0 +1,14 @@
+{
+  "name": "Discord",
+  "icon": "allthemodium:vibranium_block",
+  "category": "allthemodium:links",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "link",
+      "url": "https://discord.gg/K5FBPYa",
+      "link_text": "加入 Discord",
+      "text": "我们的 Discord 为每个整合包设有专门的聊天室，可在其中求助或进行一般交流。"
+    }
+  ]
+}

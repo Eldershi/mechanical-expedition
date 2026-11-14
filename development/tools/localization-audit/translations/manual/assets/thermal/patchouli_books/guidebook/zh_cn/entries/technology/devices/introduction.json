@@ -1,0 +1,18 @@
+{
+  "name": "装置入门",
+  "icon": "thermal:iron_gear",
+  "category": "thermal:devices",
+  "flag": "|mod:thermal_expansion,mod:thermal_cultivation,mod:thermal_dynamics,mod:thermal_innovation",
+  "sortnum": -2,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "装置会对周围方块执行各种操作，其中部分操作可能消耗 RF。为了改善或改变各种功能，装置可以安装$(l:thermal:technology/augments/introduction)增强组件$(/l)。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "本章其他条目会详细解释每种方块的功能。各方块界面中的可折叠面板提供简要说明。对于使用 RF 的方块，另有面板显示当前及最大 RF 消耗等信息。此外还有增强组件面板和红石控制面板，分别用于管理组件和配置对红石信号的响应。"
+    }
+  ]
+}

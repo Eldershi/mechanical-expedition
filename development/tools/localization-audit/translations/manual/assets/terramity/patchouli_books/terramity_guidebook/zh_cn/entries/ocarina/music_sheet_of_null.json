@@ -1,0 +1,24 @@
+{
+  "name": "空无乐谱",
+  "icon": "terramity:music_sheet_of_null",
+  "category": "terramity:ocarina",
+  "sortnum": 18,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "空无乐谱",
+      "text": "空无乐谱提供程序错误效果，持续 15 秒。$(br2)在试炼尖塔中找到此乐谱的概率极低。",
+      "item": {
+        "item": "terramity:music_sheet_of_null"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

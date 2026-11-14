@@ -1,0 +1,10 @@
+{
+  "config.cumulus_menus.client.menu.active_menu": "设置当前启用的主菜单标题界面",
+  "config.cumulus_menus.client.menu.enable_menu_api": "决定是否启用菜单 API",
+  "config.cumulus_menus.client.menu.enable_menu_list_button": "在主菜单右上角添加打开菜单选择界面的按钮",
+  "cumulus_menus.menu_title.minecraft": "我的世界",
+  "gui.cumulus_menus.button.menu_launch": "启动菜单",
+  "gui.cumulus_menus.button.menu_list": "菜单列表",
+  "gui.cumulus_menus.title.menu_selection": "选择主菜单",
+  "pack.cumulus_menus.mod.description": "Cumulus 资源"
+}

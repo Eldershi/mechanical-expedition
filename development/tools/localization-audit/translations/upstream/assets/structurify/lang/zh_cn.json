@@ -1,0 +1,7 @@
+{
+  "gui.structurify.structures.structure.distance_from_world_center_mode.circle": "圆形",
+  "gui.structurify.structures.structure.flatness_check.mode.auto": "自动",
+  "gui.structurify.structures.structure.flatness_check.mode.manual": "手动",
+  "gui.structurify.structures.structure.jigsaw.start_height.height_value.title": "高度",
+  "gui.structurify.structures.structure.template_pools.template_pool.description": "权重代表了在多个结构中被选中的几率。权重越大，被选中的几率就越高。"
+}

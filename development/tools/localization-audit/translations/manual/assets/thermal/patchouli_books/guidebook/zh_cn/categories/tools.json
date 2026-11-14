@@ -1,0 +1,7 @@
+{
+  "name": "工具",
+  "description": "为工具安装增强组件的步骤：$(li)将可增强的物品放入工作台$(li)将工作台模式设为：增强$(li)将增强组件放入物品槽$(li)将工作台模式设为：充能／补充，或从工作台中取出物品$(li)大功告成",
+  "icon": "thermal:wrench",
+  "parent": "thermal:equipment",
+  "sortnum": 1
+}

@@ -1,0 +1,24 @@
+{
+  "name": "繁荣乐谱",
+  "icon": "terramity:music_sheet_of_prosperity",
+  "category": "terramity:ocarina",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "繁荣乐谱",
+      "text": "繁荣乐谱提供村庄英雄效果，持续 60 秒。$(br2)在掠夺者前哨站中找到此乐谱的概率较高。",
+      "item": {
+        "item": "terramity:music_sheet_of_prosperity"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

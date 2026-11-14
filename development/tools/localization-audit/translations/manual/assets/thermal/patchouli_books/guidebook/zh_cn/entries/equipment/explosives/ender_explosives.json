@@ -1,0 +1,24 @@
+{
+  "name": "扰动爆炸物",
+  "icon": "thermal:ender_tnt",
+  "read_by_default": true,
+  "flag": "mod:thermal_innovation",
+  "category": "thermal:explosives",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "扰动爆炸物会产生持续 10 秒的末影扰动，将其中的大多数生物和玩家随机传送到最远 128 格外的位置。初始爆炸会造成伤害，并阻止末影人和末影螨传送，持续 15 秒。炸药方块与手榴弹的爆炸半径分别为 9 格和 5 格。与末影人一样，这些爆炸物在水下也会失去效力！"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:ender_tnt",
+      "B.recipe": "thermal:ender_grenade_4"
+    },
+    {
+      "flag": "&mod:thermal_innovation,mod:thermal_locomotion",
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:ender_tnt_minecart",
+      "title": "扰动炸药矿车"
+    }
+  ]
+}

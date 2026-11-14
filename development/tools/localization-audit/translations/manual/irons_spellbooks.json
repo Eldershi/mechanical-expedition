@@ -1,0 +1,19 @@
+{
+  "effect.irons_spellbooks.trial_omen": "试炼之兆",
+  "spell.irons_spellbooks.wololo": "沃罗罗",
+  "item.irons_spellbooks.ominous_bottle": "不祥之瓶",
+  "block.irons_spellbooks.trial_spawner": "魔法刷怪笼",
+  "block.irons_spellbooks.vault": "魔法宝库",
+  "effect.irons_spellbooks.trial_omen.description": "将附近的试炼刷怪笼变为不祥试炼刷怪笼",
+  "item.irons_spellbooks.music_disc_whispers_of_ice.desc": "Caner Crebes - 冰之低语",
+  "item.irons_spellbooks.music_disc_dead_king_lullaby.desc": "Caner Crebes - 王之摇篮曲",
+  "item.irons_spellbooks.music_disc_flame_still_burns.desc": "Caner Crebes - 火焰仍在燃烧",
+  "tooltip.irons_spellbooks.shift_tooltip": "［Shift+］",
+  "tooltip.irons_spellbooks.spell_title": "%s［等级 %d］",
+  "entity.irons_spellbooks.spear": "长矛",
+  "jukebox_song.irons_spellbooks.dead_king_lullaby": "Caner Crebes - 王之摇篮曲",
+  "jukebox_song.irons_spellbooks.flame_still_burns": "Caner Crebes - 火焰仍在燃烧",
+  "jukebox_song.irons_spellbooks.whispers_of_ice": "Caner Crebes - 冰之低语",
+  "Iron's Guidebook": "铁魔法指南",
+  "Iron's Spells 'n Spellbooks is an RPG-inspired spellcasting mod. You can fight dangerous wizards, raid structures, delve through dungeons, collect resources, and find powerful magical items. $(l:https://iron431.github.io/Irons-Spellbooks-Docs)External wiki here$(/l)": "铁魔法与魔法书是一个受角色扮演游戏启发的施法模组。你可以与危险的巫师作战、突袭建筑、探索地牢、收集资源，并寻找强大的魔法物品。$(l:https://iron431.github.io/Irons-Spellbooks-Docs)点击查看外部维基$(/l)"
+}

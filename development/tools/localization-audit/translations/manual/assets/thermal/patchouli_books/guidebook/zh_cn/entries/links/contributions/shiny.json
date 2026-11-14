@@ -1,0 +1,26 @@
+{
+  "name": "ShinyPorygon",
+  "icon": "minecraft:orange_tulip",
+  "category": "thermal:contributors",
+  "read_by_default": true,
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "ShinyPorygon",
+      "item": "minecraft:player_head{SkullOwner:'ShinyPorygon'}",
+      "text": "项目负责人、共同作者。负责包括分类在内的初期书籍工作，撰写了部分 Discord 内容和许多模组支持文件，未来还会继续增加。是 King 的私人烦人精、错误信息传播者，也是 Hekera 的精神支柱。"
+    },
+    {
+      "type": "patchouli:empty"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "你听说过智者达斯·旅鼠的悲剧吗？我想你没有。CoFH Wiki 不会讲这个故事，它是 Discord 中的传说。达斯·旅鼠是一位 Java 黑暗尊主，强大而睿智，能够运用代码影响其他模组作者，让他们修复错误……他对 Java 的理解如此深刻，甚至能让自己在乎的模组免于消亡。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Java 的黑暗面通向许多有些人视为超乎常理的能力。他变得如此强大……唯一害怕的就是失去 RF 平衡，而这当然最终还是发生了。不幸的是，他把所知的一切教给了其他模组作者，随后他们把 RF 用量扩大了一千倍。真是讽刺：他能拯救其他模组免于火力不足，却救不了自己的模组。"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "block.railways.conductor_whistle.tooltip.behaviour1": "将哨子_绑定_到_列车员_及其_列车_，_两者一并绑定_。",
+  "block.railways.conductor_whistle.tooltip.behaviour2": "_指示_已_绑定的列车员_驶向选中的_铁轨_或_车站_。",
+  "block.railways.conductor_whistle.tooltip.behaviour3": "_指示_已_绑定的列车员_驶向选中的_车站_。",
+  "block.railways.conductor_whistle.tooltip.behaviour4": "_取消_已_绑定列车_的自动时刻表。",
+  "block.railways.conductor_whistle.tooltip.condition1": "右击正在乘坐列车的列车员",
+  "block.railways.conductor_whistle.tooltip.condition2": "右击铁轨或火车站",
+  "block.railways.conductor_whistle.tooltip.condition3": "让机械手对火车站使用",
+  "block.railways.conductor_whistle.tooltip.condition4": "让机械手对空气使用",
+  "block.railways.conductor_whistle.tooltip.summary": "吹响哨子，列车即将到站！_已绑定的列车员_会_忽略_原时刻表，_驾驶_列车前往所选目的地。",
+  "block.railways.track_biomesoplenty_empyreal": "天界木铁轨",
+  "block.railways.track_biomesoplenty_empyreal_narrow": "窄轨天界木铁轨",
+  "block.railways.track_biomesoplenty_empyreal_wide": "宽轨天界木铁轨",
+  "item.railways.track_incomplete_biomesoplenty_empyreal": "天界木铁轨半成品",
+  "item.railways.track_incomplete_biomesoplenty_empyreal_narrow": "窄轨天界木铁轨半成品",
+  "item.railways.track_incomplete_biomesoplenty_empyreal_wide": "宽轨天界木铁轨半成品",
+  "railways.whistle.tool.bound2": "§2已绑定§r §6列车员§r §e[%1$s]§r §6乘坐于§r §e%2$s§r §9[%3$s]§r",
+  "railways.whistle.tool.not_bound2": "§4未绑定§r",
+  "block.railways.conductor_whistle.tooltip": "列车员哨子"
+}

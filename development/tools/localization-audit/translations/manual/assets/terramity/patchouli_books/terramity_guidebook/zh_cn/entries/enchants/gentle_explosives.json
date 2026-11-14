@@ -1,0 +1,18 @@
+{
+  "name": "温和爆破",
+  "icon": "minecraft:enchanted_book",
+  "category": "terramity:enchants",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "温和爆破是 Terramity 新增的一种附魔。$(br)$(br)此附魔使火箭发射器类武器不再破坏方块。$(br)$(br)最高等级：1"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "terramity:textures/screens/guns.png"
+      ],
+      "border": true
+    }
+  ]
+}

@@ -17,7 +17,7 @@ DIRECT = [
     'alexscaves:cave_book', 'edenring:guide_book', 'aether:book_of_lore',
     'botania:lexicon', 'ars_nouveau:worn_notebook', 'eidolon:codex',
     'enigmaticlegacy:the_acknowledgment', 'malum:encyclopedia_arcana',
-    'legendary_monsters:guide_book', 'eternal_starlight:book', 'solcarrot:food_book',
+    'eternal_starlight:book', 'solcarrot:food_book',
 ]
 
 

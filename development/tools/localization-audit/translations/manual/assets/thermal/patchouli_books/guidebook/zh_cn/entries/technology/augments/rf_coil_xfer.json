@@ -1,0 +1,14 @@
+{
+  "name": "强导通量线圈",
+  "icon": "thermal:rf_coil_xfer_augment",
+  "category": "thermal:augments",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/rf_coil_xfer_augment",
+      "title": "强导通量线圈",
+      "text": "强导通量线圈使 RF 存储能力变为 2 倍，RF 传输能力变为 6 倍。"
+    }
+  ]
+}

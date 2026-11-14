@@ -1,0 +1,40 @@
+{
+  "name": "自定义增强组件",
+  "icon": "minecraft:potato",
+  "category": "thermal:modpack",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "增强组件系统的设计注重模块化、可定制性和灵活性。增强组件基于 NBT，因此修改物品的 NBT，就能指定所需的任意修正项及数值。换句话说，热力系列提供的增强组件并没有什么特殊之处：只要带有相应的 NBT 数据，任何物品都能成为增强组件，甚至一颗土豆。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "增强组件包含类型与修正项。类型决定该组件能装入哪些方块，也可能影响叠加规则。详情请阅读$(l:thermal:technology/augments/introduction)增强组件入门$(/l)。如果未指定类型，该增强组件就没有这方面的限制。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "修正项通过属性与数值配对的方式赋予物品：属性表示修正项，数值表示修正量。所有数值都使用浮点数，即使某项修正看起来应当是整数，例如药水强度。后面会进一步说明。"
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://github.com/CoFH/CoFHCore/blob/main/src/main/java/cofh/lib/util/constants/NBTTags.java#L102",
+      "link_text": "GitHub 链接",
+      "text": "NBT 的通用格式如下：$(br2){AugmentData:$(br){Type:'[augment type]',$(br)[modifier 1]:[float value]f, $(br)[modifier 2]:[float value]f, $(br)[...]}}$(br2)可用增强类型与修正项的完整列表见下方 King Lemming 的 GitHub 链接。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "例如，制作一个将所有配方能耗变为 0 的机器增强组件（本质上就是创造模式机器增强组件），可使用以下命令（点击可执行）：$(br)$(c:/summon minecraft:item ~ ~ ~ {Item:{id:'minecraft:sea_pickle',Count:1b,tag:{AugmentData:{Type:'Machine',MachineEnergy:0.0f}}}})/give $(playername) minecraft:sea_pickle{AugmentData:{Type:'Machine',MachineEnergy:0.0f}} 1$(/c)$(br2)如果同一修正项出现多个属性与数值配对，则以最后一组为准。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "关于叠加",
+      "text": "部分修正项不可叠加：如果同一工具或方块上的多个增强组件具有相同修正项，只取最高数值。这些修正项的数值下方会显示下划线。能否叠加是修正项类型本身的属性。例如，无论具体数值如何，RFMax 始终不可叠加，而 AERad 始终可以叠加。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "关于浮点数",
+      "text": "如前所述，所有数值都以浮点数输入。这会与某些看似整数的修正项产生有趣的交互。在这些情况下，增强组件会把输入的浮点数四舍五入为最接近的整数后显示。然而，工具或方块的实际行为可能不同，取决于具体修正项及数值。"
+    }
+  ]
+}

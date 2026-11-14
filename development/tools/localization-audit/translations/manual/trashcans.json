@@ -1,0 +1,5 @@
+{
+  "trashcans.gui.item_trash_can.deleted_items.show": "显示已删除物品",
+  "trashcans.gui.item_trash_can.deleted_items.hide": "隐藏已删除物品",
+  "trashcans.gui.energy_trash_can.limit.change3": "CTRL & SHIFT %s"
+}

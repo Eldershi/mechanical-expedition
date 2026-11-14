@@ -1,0 +1,8 @@
+{
+  "name": "存储",
+  "description": "它们能装很多同一种东西。理论上，把它们排成一行也能搬运物品，但管道在这方面强得多。",
+  "icon": "thermal:energy_cell",
+  "parent": "thermal:storage_and_transport",
+  "flag": "mod:thermal_expansion",
+  "sortnum": 1
+}

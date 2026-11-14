@@ -1,0 +1,6 @@
+{
+  "constants.mekanism.recipe_warning": "检测到通用机械配方中的标签损坏，请查看服务端日志。部分配方将缺失，机器可能无法接受原本应接受的输入。",
+  "advancements.mekanism.configuration_copying.title": "Ctrl+C, Ctrl+V",
+  "constants.mekanism.forge": "MinecraftForge",
+  "holiday.mekanism.signature": "-aidancbrady"
+}

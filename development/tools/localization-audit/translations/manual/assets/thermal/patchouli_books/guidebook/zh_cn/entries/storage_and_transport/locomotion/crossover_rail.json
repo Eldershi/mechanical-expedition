@@ -1,0 +1,17 @@
+{
+  "name": "渡线铁轨",
+  "icon": "thermal:crossover_rail",
+  "read_by_default": true,
+  "flag": "mod:thermal_locomotion",
+  "category": "thermal:locomotion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "交叉铁轨能让两条相互垂直的铁轨交会，而互不干扰。矿车驶过交叉铁轨时，会继续沿原方向前进。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:crossover_rail"
+    }
+  ]
+}

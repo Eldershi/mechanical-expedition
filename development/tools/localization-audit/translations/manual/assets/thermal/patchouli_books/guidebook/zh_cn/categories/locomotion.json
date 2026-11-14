@@ -1,0 +1,8 @@
+{
+  "name": "动力运输",
+  "description": "火车先哐当六声，再呜呜鸣笛，才算恰到好处。",
+  "icon": "thermal:lumium_rail",
+  "parent": "thermal:storage_and_transport",
+  "flag": "mod:thermal_locomotion",
+  "sortnum": 4
+}

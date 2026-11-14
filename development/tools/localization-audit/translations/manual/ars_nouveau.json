@@ -1,0 +1,11 @@
+{
+  "ars_nouveau.glyph_name.wololo": "沃罗罗",
+  "ars_nouveau.page1.redstone_relay": "可连接其他红石中继器，无线传送红石信号。从一面接收输入，向其余各面输出。中继器之间最多可相距 30 格，也可以连接多个中继器。",
+  "ars_nouveau.powered_from": "正在接收来自 %d 个中继器的信号",
+  "ars_nouveau.page1.spell_sensor": "附近施放法术时输出红石信号，强度由法术长度决定。使用统御魔杖可改为在附近法术结算时触发。使用法术羊皮纸可将传感器设为仅检测完全相同的法术。",
+  "ars_nouveau.patreon_text": "Patreon",
+  "entity.ars_nouveau.lily": "莉莉",
+  "item.ars_nouveau.music_disc_aria_biblio.desc": "Firel - 书之咏叹调",
+  "item.ars_nouveau.music_disc_firel_the_wild_hunt.desc": "Firel - 狂猎",
+  "item.ars_nouveau.music_disc_thistle_the_sound_of_glass.desc": "Thistle - 玻璃之声"
+}

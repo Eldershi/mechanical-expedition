@@ -1,0 +1,17 @@
+{
+  "name": "起爆器",
+  "icon": "thermal:detonator",
+  "read_by_default": true,
+  "category": "thermal:explosives",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "起爆器可以先标记、再同时引爆最多 16 个炸药方块！先摆好所有炸药，再手持起爆器逐一右击。只要至少标记了一个炸药，指示灯就会变黄。随后切换至引爆模式，指示灯会变绿；再次右击，即可引爆所有已标记的炸药。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:tools/detonator",
+      "text": "按“$(k:cofh.mode_change_increment)”切换模式。"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ATM胡萝卜",
+  "icon": "allthemodium:allthemodium_carrot",
+  "category": "allthemodium:food",
+  "pages": [
+    {
+      "type": "crafting",
+      "recipe": "allthemodium:allthemodium_carrot",
+      "title": "ATM胡萝卜"
+    },
+    {
+      "type": "text",
+      "text": "ATM胡萝卜提供 40 点饥饿值和 320 点饱和度，具有以下效果：$(li)食用速度快$(li)随时可食用$(li)伤害吸收 X，持续 30 秒$(li)生命恢复 X，持续 30 秒"
+    }
+  ]
+}

@@ -1,0 +1,2014 @@
+{
+  "item.ars_technica.pocket_factory_disc.desc": {
+    "value": "zeroregard - pocket factory",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "item.integrated_stronghold.music_disc_sight.desc": {
+    "value": "Cama - sight",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "item.integrated_stronghold.music_disc_forlorn.desc": {
+    "value": "Cama - Forlorn",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "item.smc.music_disc_bad_apple.desc": {
+    "value": "のみこ,Masayoshi Minoshima - Bad Apple!!",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "item.twilightforest.music_disc_findings.desc": {
+    "value": "MrCompost - Findings",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "item.twilightforest.music_disc_home.desc": {
+    "value": "MrCompost - Home",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "item.twilightforest.music_disc_maker.desc": {
+    "value": "MrCompost - Maker",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "item.twilightforest.music_disc_motion.desc": {
+    "value": "MrCompost - Motion",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "item.twilightforest.music_disc_radiance.desc": {
+    "value": "Rotch Gwylt - Radiance",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "item.twilightforest.music_disc_steps.desc": {
+    "value": "Rotch Gwylt - Steps",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "item.twilightforest.music_disc_superstitious.desc": {
+    "value": "Rotch Gwylt - Superstitious",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "item.twilightforest.music_disc_thread.desc": {
+    "value": "MrCompost - Thread",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "item.twilightforest.music_disc_wayfarer.desc": {
+    "value": "MrCompost - Wayfarer",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "magic_painting.twilightforest.lucid_lands.author": {
+    "value": "Androsa",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "commands.tffeature.usage": {
+    "value": "/%s <info | reactivate | conquer | center>",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "waystones.configuration.blueMap": {
+    "value": "BlueMap",
+    "reason": "Proper artist, track, author or product name, or literal command syntax."
+  },
+  "item.dungeonnowloading.music_disc_hellspawn.desc": {
+    "value": "Callister Corvus - Hellspawn",
+    "reason": "Native artist and track credit."
+  },
+  "item.dungeonnowloading.music_disc_aotsugi.desc": {
+    "value": "Callister Corvus - Aotsugi",
+    "reason": "Native artist and track credit."
+  },
+  "item.dungeonnowloading.music_disc_broken_aotsugi.desc": {
+    "value": "Callister Corvus - Broken Aotsugi",
+    "reason": "Native artist and track credit."
+  },
+  "item.dungeonnowloading.music_disc_clash_of_duality_boros.desc": {
+    "value": "Callister Corvus - Clash of Duality \"Boros\"",
+    "reason": "Native artist and track credit."
+  },
+  "item.dungeonnowloading.music_disc_clash_of_duality_ouros.desc": {
+    "value": "Callister Corvus - Clash of Duality \"Ouros\"",
+    "reason": "Native artist and track credit."
+  },
+  "item.dungeonnowloading.music_disc_clash_of_duality_pythonic_overdrive.desc": {
+    "value": "Callister Corvus - Clash of Duality \"Pythonic Overdrive\"",
+    "reason": "Native artist and track credit."
+  },
+  "item.terramity.terramity_guidebook_icon.description_2": {
+    "value": "§7/give @p patchouli:guide_book{\"patchouli:book\":\"terramity_guidebook\"}",
+    "reason": "Literal game command syntax; resource identifiers remain unchanged."
+  },
+  "painting.deeperdarker.abstraction.author": {
+    "value": "Pedro Ricardo",
+    "reason": "Proper author or character name."
+  },
+  "painting.deeperdarker.adventure.author": {
+    "value": "Pedro Ricardo",
+    "reason": "Proper author or character name."
+  },
+  "painting.deeperdarker.carrot.author": {
+    "value": "Pedro Ricardo",
+    "reason": "Proper author or character name."
+  },
+  "painting.deeperdarker.clouds.author": {
+    "value": "Pedro Ricardo",
+    "reason": "Proper author or character name."
+  },
+  "painting.deeperdarker.echoer.author": {
+    "value": "Pedro Ricardo",
+    "reason": "Proper author or character name."
+  },
+  "painting.deeperdarker.millipede.author": {
+    "value": "Pedro Ricardo",
+    "reason": "Proper author or character name."
+  },
+  "painting.deeperdarker.ooze.author": {
+    "value": "Pedro Ricardo",
+    "reason": "Proper author or character name."
+  },
+  "incendium.mob.quartz.torte.name": {
+    "value": "Torte",
+    "reason": "Proper author or character name."
+  },
+  "painting.scguns.the_collective.author": {
+    "value": "Ribs",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.guardian.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.energized.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.energized_special.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.absolute_zero.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.absolute_zero_special.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.monstrous.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.monstrous_special.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.the_catalyst.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.crystalborn.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.voidstone_apple.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.pungency_fruit_feast.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.starflowers.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.cold_anomaly.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.northland_hut.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.rat_head.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.original_creteor.author": {
+    "value": "KuLou_D",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.twilight_squid.author": {
+    "value": "KuLou_D",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.power.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.pot_of_crests.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.thirsty.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.stack.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.carved_slate.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.insect_specimen.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.sword_of_the_lake.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.skeleton_lonestar.author": {
+    "value": "TohokuAlpha",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.hymn_of_the_rats.author": {
+    "value": "KuLou_D",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.cooler.author": {
+    "value": "KuLou_D",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.riven_welkin.author": {
+    "value": "KuLou_D",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.umbrous_alchemist.author": {
+    "value": "KuLou_D",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.extinguished_sun.author": {
+    "value": "KuLou_D",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.eternal_starlight.novus_sol.author": {
+    "value": "KuLou_D",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.spawn.clown.author": {
+    "value": "Ninni",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.spawn.its_still_life.author": {
+    "value": "Ninni",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "painting.spawn.the_reptile.author": {
+    "value": "Ninni",
+    "reason": "Original creator handle in artwork attribution; retain the credited name."
+  },
+  "distanthorizons.config.enum.EDhApiRenderingEngine.OPEN_GL": {
+    "value": "OpenGL",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "distanthorizons.config.enum.EDhApiRenderingEngine.BLAZE_3D": {
+    "value": "Blaze3D",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "fancymenu.backgrounds.glsl.compile_mode.shadertoy": {
+    "value": "Shadertoy",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "fancymenu.decoration_overlays.glsl.compile_mode.shadertoy": {
+    "value": "Shadertoy",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "fancymenu.editor.shortcuts.copy": {
+    "value": "Ctrl + C",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fancymenu.editor.shortcuts.cut": {
+    "value": "Ctrl + U",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fancymenu.editor.shortcuts.grid": {
+    "value": "Ctrl + G",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fancymenu.editor.shortcuts.paste": {
+    "value": "Ctrl + V",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fancymenu.editor.shortcuts.redo": {
+    "value": "Ctrl + Y",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fancymenu.editor.shortcuts.save": {
+    "value": "Ctrl + S",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fancymenu.editor.shortcuts.select_all": {
+    "value": "Ctrl + A",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fancymenu.editor.shortcuts.undo": {
+    "value": "Ctrl + Z",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fancymenu.elements.glsl.compile_mode.shadertoy": {
+    "value": "Shadertoy",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "fancymenu.elements.text.markdown": {
+    "value": "Markdown",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "fancymenu.overlay.debug.gpu": {
+    "value": "§lGPU：§r%1$s（OpenGL：%2$s）",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "fancymenu.overlay.debug.toggle.shortcut": {
+    "value": "CTRL + ALT + D",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fancymenu.overlay.menu_bar.customization.hide_overlay.shortcut": {
+    "value": "CTRL + ALT + C",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fancymenu.overlay.menu_bar.customization.reload_fancymenu.shortcut": {
+    "value": "CTRL + ALT + R",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "text.observable.discord": {
+    "value": "Discord",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "jade.modName.jadeaddons.mcjtylib": {
+    "value": "McJtyLib",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "modifier.cloth-config.alt": {
+    "value": "Alt + %s",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "modifier.cloth-config.ctrl": {
+    "value": "Ctrl + %s",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "modifier.cloth-config.shift": {
+    "value": "Shift + %s",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fc.keybind.ctrl": {
+    "value": "Ctrl %s",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fc.keybind.ctrl.shift": {
+    "value": "Ctrl Shift %s",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fc.keybind.ctrl.shift.alt": {
+    "value": "Ctrl Shift Alt %s",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fc.keybind.ctrl.alt": {
+    "value": "Ctrl Alt %s",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fc.keybind.shift": {
+    "value": "Shift %s",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fc.keybind.shift.alt": {
+    "value": "Shift Alt %s",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fc.keybind.alt": {
+    "value": "Alt %s",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fc.search.modifier.SHIFT": {
+    "value": "Shift",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fc.search.modifier.ALT": {
+    "value": "Alt",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "fc.search.modifier.CTRL": {
+    "value": "Ctrl",
+    "reason": "Literal keyboard key names or shortcut notation"
+  },
+  "iris.keybinds": {
+    "value": "Oculus",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "iris.unsupported.iris": {
+    "value": "Oculus",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "jecharacters.chat.help": {
+    "value": "/jech [profile] / [verbose true/false]",
+    "reason": "Literal executable command syntax"
+  },
+  "config.waila.plugin_treechop": {
+    "value": "HT's TreeChop",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "config.waila.plugin_treechop.plugin": {
+    "value": "HT's TreeChop",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "config.jade.plugin_treechop.plugin": {
+    "value": "HT's TreeChop",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "jupiter.config_source.cloth_config": {
+    "value": "Cloth",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "jupiter.config_source.night_config": {
+    "value": "(Neo)Forge",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "bclib.updates.modrinth_link": {
+    "value": "[Modrinth]",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "bclib.updates.curseforge_link": {
+    "value": "[CurseForge]",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "generator.bclib.normal": {
+    "value": "BetterX",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "title.link.bclib.discord": {
+    "value": "Discord",
+    "reason": "Proper name of a service, library, rendering backend or format"
+  },
+  "command.lodestone.worldevent.list.entry": {
+    "value": "%s | %s | UUID: %s",
+    "reason": "Technical UUID label and positional placeholders"
+  },
+  "painting.ad_astra.alpha_centauri.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "painting.ad_astra.earth.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "painting.ad_astra.glacio.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "painting.ad_astra.jupiter.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "painting.ad_astra.mars.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "painting.ad_astra.mercury.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "painting.ad_astra.moon.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "painting.ad_astra.neptune.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "painting.ad_astra.pluto.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "painting.ad_astra.saturn.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "painting.ad_astra.sun.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "painting.ad_astra.the_milky_way.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "painting.ad_astra.uranus.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "painting.ad_astra.venus.author": {
+    "value": "Facu",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "config.ad_astra_giselle_addon.compats.pneumaticcraft": {
+    "value": "PneumaticCraft",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "painting.ars_additions.snoozebuncle.author": {
+    "value": "Gootastic",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "ars_nouveau.patreon_text": {
+    "value": "Patreon",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookLightShield": {
+    "value": "LightShield",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookHomeostatic": {
+    "value": "Homeostatic",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookToughAsNails": {
+    "value": "Tough As Nails",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookThirstWasTaken": {
+    "value": "Thirst Was Taken",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookDehydration": {
+    "value": "Dehydration",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookParcool": {
+    "value": "Parcool",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookIronsSpellbooks": {
+    "value": "Iron's Spellbooks",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookFeathers": {
+    "value": "Feathers",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookAppleSkin": {
+    "value": "AppleSkin",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookSuperiorShields": {
+    "value": "Superior Shields",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookVampirism": {
+    "value": "Vampirism",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookOrigins": {
+    "value": "Origins",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookTFC": {
+    "value": "TerraFirmaCraft",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookApoli": {
+    "value": "Apoli(Origins)",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookThermoo": {
+    "value": "Thermoo(Scorchful & Frostiful)",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "text.autoconfig.asteorbar.option.hook.hookMealApi": {
+    "value": "Meal API",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "_comment0": {
+    "value": "Note to translators: DO NOT COPY ENTRIES FROM ENGLISH",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "_comment1": {
+    "value": "I repeat: do NOT copy entries from English!!",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "_comment2": {
+    "value": "Copying English entries will cause them to become outdated when this file changes",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "_comment4": {
+    "value": "Once again, don't copy from English, and THANK YOU for your hard work!",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "create.command.killTPSCommand": {
+    "value": "killtps",
+    "reason": "Literal command or command-argument identifier."
+  },
+  "create.command.killTPSCommand.argument.tickTime": {
+    "value": "tickTime",
+    "reason": "Literal command or command-argument identifier."
+  },
+  "create.tooltip.keyCtrl": {
+    "value": "Ctrl",
+    "reason": "Physical keyboard key or keyboard combination; preserve the printed key labels."
+  },
+  "create.tooltip.keyShift": {
+    "value": "Shift",
+    "reason": "Physical keyboard key or keyboard combination; preserve the printed key labels."
+  },
+  "createdieselgenerators.tooltip.keyAlt": {
+    "value": "Alt",
+    "reason": "Physical keyboard key or keyboard combination; preserve the printed key labels."
+  },
+  "__comment_jei": {
+    "value": "JEI Compat",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "__support_gofish": {
+    "value": "Go Fish support https://www.curseforge.com/minecraft/mc-mods/go-fish",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "__support_shield+": {
+    "value": "Shields+ https://www.curseforge.com/minecraft/mc-mods/shieldsplus",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "__support_grapplemod": {
+    "value": "Grapple Mod https://www.curseforge.com/minecraft/mc-mods/grappling-hook-mod",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "gui.enigmaticlegacy.blazing_core__COMMENT": {
+    "value": "Two strings above allow to move heat bar title by defining offsetX and offsetY to any positive or negative integers. This might be required for certain localizations more than for others depending on amount of symbols title takes takes to be spelled. You can, alternatively, leave title empty if you can't think of a solution that would look good, so that it just won't be rendered. Four symbols or less fit perfectly without any corrections. The string you read currently is just a commentary for localizators - you need not to translate it.",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "farmers_spell.tooltip.keyShift": {
+    "value": "Shift",
+    "reason": "Physical keyboard key or keyboard combination; preserve the printed key labels."
+  },
+  "____comment": {
+    "value": "Items",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "comment.tooltips": {
+    "value": "---Tooltips---",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "comment.enchantment.descriptions": {
+    "value": "---Enchantment Descriptions---",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "guis_comment": {
+    "value": "Guis",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "tooltip.gateways.alt": {
+    "value": "［alt］",
+    "reason": "Physical keyboard key or keyboard combination; preserve the printed key labels."
+  },
+  "tooltip.irons_spellbooks.shift_tooltip": {
+    "value": "［Shift+］",
+    "reason": "Physical keyboard key or keyboard combination; preserve the printed key labels."
+  },
+  "_eof": {
+    "value": "_eof",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "malum.gui.book.entry.page.headline.a_personal_note.commendations.alphalilly": {
+    "value": "Alphalilly",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "malum.gui.book.entry.page.headline.a_personal_note.commendations.coalition_of_magic": {
+    "value": "Coalition of Magic",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "malum.gui.book.entry.page.headline.a_personal_note.commendations.kultik": {
+    "value": "Kultik",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "malum.gui.book.entry.page.headline.a_personal_note.commendations.pessi_mysterio": {
+    "value": "Pessi Mysterio",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "malum.gui.book.entry.page.headline.a_personal_note.commendations.wiresegal": {
+    "value": "Wiresegal",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "graph_processor.node.mbd2.machine.geckolib": {
+    "value": "Geckolib",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "graph_processor.node.mbd2.machine.photon": {
+    "value": "Photon",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "advancements.mekanism.configuration_copying.title": {
+    "value": "Ctrl+C, Ctrl+V",
+    "reason": "Physical keyboard key or keyboard combination; preserve the printed key labels."
+  },
+  "constants.mekanism.forge": {
+    "value": "MinecraftForge",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "holiday.mekanism.signature": {
+    "value": "-aidancbrady",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "mes.curseforge": {
+    "value": "CurseForge",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "mes.modrinth": {
+    "value": "Modrinth",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "mns.curseforge": {
+    "value": "CurseForge",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "mns.modrinth": {
+    "value": "Modrinth",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "mss.curseforge": {
+    "value": "CurseForge",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "mss.modrinth": {
+    "value": "Modrinth",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "mvs.curseforge": {
+    "value": "CurseForge",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "mvs.modrinth": {
+    "value": "Modrinth",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "ponder.ponder.shared.ctrl_and": {
+    "value": "Ctrl +",
+    "reason": "Physical keyboard key or keyboard combination; preserve the printed key labels."
+  },
+  "_quark.config.automation.feeding_trough.name": {
+    "value": "Test 100",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "_quark.config.automation.feeding_trough.desc": {
+    "value": "Yeah I'm testing\nWith multiple lines too!",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "_quark.config.automation.feeding_trough.max_animals.name": {
+    "value": "Testeroni",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "_quark.config.automation.feeding_trough.max_animals.desc": {
+    "value": "Testerino with one line",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "_quark.config.automation.feeding_trough.love_chance.name": {
+    "value": "This do be a test doe",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "quark.subtitles.kingbdogz": {
+    "value": "Kingbdogz",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "_biome_map_comment": {
+    "value": "The following translation keys are only relevant to maps generated before Quark 354.",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "painting.supplementaries.bombs.author": {
+    "value": "Plantkillable",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "_comment_on_format_": {
+    "value": "These format allows you to have more control over separators in material names. By default we separate with space. You can use %1$s and %2$s if you wish to change the order.",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "_conment": {
+    "value": "Tool Descriptions",
+    "reason": "Non-display comment, metadata or test entry retained from the original mod language file."
+  },
+  "key.tconstruct.shift": {
+    "value": "Shift",
+    "reason": "Physical keyboard key or keyboard combination; preserve the printed key labels."
+  },
+  "key.tconstruct.ctrl": {
+    "value": "Ctrl",
+    "reason": "Physical keyboard key or keyboard combination; preserve the printed key labels."
+  },
+  "block.thermal.ender_tnt.keyword": {
+    "value": "tnt",
+    "reason": "Literal technical search keyword used by the mod."
+  },
+  "block.thermal.glowstone_tnt.keyword": {
+    "value": "tnt",
+    "reason": "Literal technical search keyword used by the mod."
+  },
+  "block.thermal.nuke_tnt.keyword": {
+    "value": "tnt",
+    "reason": "Literal technical search keyword used by the mod."
+  },
+  "block.thermal.redstone_tnt.keyword": {
+    "value": "tnt",
+    "reason": "Literal technical search keyword used by the mod."
+  },
+  "block.thermal.slime_tnt.keyword": {
+    "value": "tnt",
+    "reason": "Literal technical search keyword used by the mod."
+  },
+  "item.thermal.detonator.keyword": {
+    "value": "tnt",
+    "reason": "Literal technical search keyword used by the mod."
+  },
+  "item.thermal.ender_tnt_minecart.keyword": {
+    "value": "tnt",
+    "reason": "Literal technical search keyword used by the mod."
+  },
+  "item.thermal.glowstone_tnt_minecart.keyword": {
+    "value": "tnt",
+    "reason": "Literal technical search keyword used by the mod."
+  },
+  "item.thermal.nuke_tnt_minecart.keyword": {
+    "value": "tnt",
+    "reason": "Literal technical search keyword used by the mod."
+  },
+  "item.thermal.redstone_tnt_minecart.keyword": {
+    "value": "tnt",
+    "reason": "Literal technical search keyword used by the mod."
+  },
+  "item.thermal.slime_tnt_minecart.keyword": {
+    "value": "tnt",
+    "reason": "Literal technical search keyword used by the mod."
+  },
+  "ai.touhou_little_maid.chat.site.openai.name": {
+    "value": "OpenAI",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "ai.touhou_little_maid.chat.site.deepseek.name": {
+    "value": "DeepSeek",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "ai.touhou_little_maid.chat.site.player2.name": {
+    "value": "Player2",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "ai.touhou_little_maid.chat.site.minimax.name": {
+    "value": "MiniMax",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "ai.touhou_little_maid.chat.site.kimi.name": {
+    "value": "Kimi",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "ai.touhou_little_maid.chat.site.fish-audio.name": {
+    "value": "Fish Audio",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "ai.touhou_little_maid.chat.site.gpt-sovits.name": {
+    "value": "GPT-SoVITS",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "ai.touhou_little_maid.chat.site.grok.name": {
+    "value": "Grok",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "ai.touhou_little_maid.chat.site.openrouter.name": {
+    "value": "Open Router",
+    "reason": "Proper name of a mod, service, library or rendering integration."
+  },
+  "painting.touhou_little_maid.wine_fox.author": {
+    "value": "HanakazeT8",
+    "reason": "Original credited creator handle or contributor name; preserve attribution."
+  },
+  "trashcans.gui.energy_trash_can.limit.change3": {
+    "value": "CTRL & SHIFT %s",
+    "reason": "Physical keyboard key or keyboard combination; preserve the printed key labels."
+  },
+  "zeta.jei.hint_preamble": {
+    "value": "[Zeta]\n",
+    "reason": "Registered mod-name prefix in a tooltip."
+  },
+  "item.scguns.mas_55": {
+    "value": "MAS 55",
+    "reason": "Weapon model designation; preserve the alphanumeric identifier."
+  },
+  "scguns.advancement.mas_55": {
+    "value": "MAS 55",
+    "reason": "Weapon model designation; preserve the alphanumeric identifier."
+  },
+  "item.the_bumblezone.music_disc_honey_bee_rat_faced_boy.download": {
+    "value": "https://acidburp.bandcamp.com/track/honey-bee",
+    "reason": "Literal public download or issue-tracker URL; ASCII URL punctuation must be preserved."
+  },
+  "item.the_bumblezone.music_disc_la_bee_da_loca.download": {
+    "value": "https://ludocrypt.bandcamp.com/track/la-bee-da-loca",
+    "reason": "Literal public download or issue-tracker URL; ASCII URL punctuation must be preserved."
+  },
+  "item.the_bumblezone.music_disc_bee_ware_of_the_temple.download": {
+    "value": "https://ludocrypt.bandcamp.com/track/bee-ware-of-the-temple",
+    "reason": "Literal public download or issue-tracker URL; ASCII URL punctuation must be preserved."
+  },
+  "system.the_bumblezone.missing_dimension_link": {
+    "value": "https://bugs.mojang.com/browse/MC-195468",
+    "reason": "Literal public download or issue-tracker URL; ASCII URL punctuation must be preserved."
+  },
+  "item.create_connected.music_disc_elevator.desc": {
+    "value": "Kevin MacLeod - Casa Bossa Nova",
+    "reason": "Original artist and track credit."
+  },
+  "item.create_connected.music_disc_interlude.desc": {
+    "value": "Kevin MacLeod - Local Forecast - Elevator",
+    "reason": "Original artist and track credit."
+  },
+  "keybinding.enderio.category": {
+    "value": "EnderIO",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "key.categories.placebo": {
+    "value": "Placebo",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "item.scguns.mak_mkii": {
+    "value": "MAK MKII",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "itemGroup.ars_creo.general": {
+    "value": "Ars Creo",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "config.jade.plugin_balm.jade": {
+    "value": "Balm",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "certain_questing_additions": {
+    "value": "Certain Questing Additions",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "key.categories.configured": {
+    "value": "Configured",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "category.observable.keybinds": {
+    "value": "Observable",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "renderscale.name": {
+    "value": "RenderScale",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "text.autoconfig.renderscale.option.sharpeningMode.RCAS": {
+    "value": "RCAS",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "key.category.renderscale.category": {
+    "value": "RenderScale",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "key.renderscale.category": {
+    "value": "RenderScale",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "spawn.item_group": {
+    "value": "Spawn",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "item.spawn.spawn": {
+    "value": "Spawn",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "key.categories.terramity": {
+    "value": "Terramity",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "rpo.rojak": {
+    "value": "Rojak",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "botania.roman3": {
+    "value": "III",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman7": {
+    "value": "VII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman8": {
+    "value": "VIII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman12": {
+    "value": "XII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman13": {
+    "value": "XIII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman14": {
+    "value": "XIV",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman16": {
+    "value": "XVI",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman17": {
+    "value": "XVII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman18": {
+    "value": "XVIII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman19": {
+    "value": "XIX",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman21": {
+    "value": "XXI",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman22": {
+    "value": "XXII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman23": {
+    "value": "XXIII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman24": {
+    "value": "XXIV",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman25": {
+    "value": "XXV",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman26": {
+    "value": "XXVI",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman27": {
+    "value": "XXVII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman28": {
+    "value": "XXVIII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman29": {
+    "value": "XXIX",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "botania.roman30": {
+    "value": "XXX",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "ldlib.gui.editor.configurator.nbt": {
+    "value": "NBT",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "config.jade.cmi.plugin_cmi.common": {
+    "value": "CMI",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "hostilenetworks.color_text.shift": {
+    "value": "SHIFT",
+    "reason": "Literal physical keyboard key notation."
+  },
+  "hostilenetworks.color_text.hud": {
+    "value": "HUD",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "key.categories.imblocker": {
+    "value": "IMBlocker",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "desc.immersiveengineering.info.ift": {
+    "value": "%1$sIF/t",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "desc.immersiveengineering.flavour.fluidStack": {
+    "value": "%1$s: %2$s/%3$smB",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "item.immersiveengineering.shader.name.ikelos": {
+    "value": "IKELOS",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "item.immersiveengineering.shader.name.waaagh": {
+    "value": "WAAAGH!",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "incendium": {
+    "value": "Incendium",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "incendium.advancement.root.title": {
+    "value": "Incendium",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "entity.tconstruct.efln_ball": {
+    "value": "EFLN",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "gui.mekanism.rgba": {
+    "value": "RGBA: ",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "temperature.mekanism.ambient.short": {
+    "value": "STP",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "gui.oneenoughitem.modernfix_warning.title": {
+    "value": "OneEnoughItem",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "key.categories.oneenoughitem": {
+    "value": "OneEnoughItem",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "item.tconstruct.efln_ball": {
+    "value": "EFLN",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "roman_numeral.value.3": {
+    "value": "III",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "roman_numeral.value.7": {
+    "value": "VII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "roman_numeral.value.8": {
+    "value": "VIII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "roman_numeral.value.12": {
+    "value": "XII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "roman_numeral.value.13": {
+    "value": "XIII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "roman_numeral.value.14": {
+    "value": "XIV",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "roman_numeral.value.16": {
+    "value": "XVI",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "roman_numeral.value.17": {
+    "value": "XVII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "roman_numeral.value.18": {
+    "value": "XVIII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "roman_numeral.value.19": {
+    "value": "XIX",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "advancements.ad_astra.ad_astra.title": {
+    "value": "Ad Astra",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "itemGroup.ad_astra.main": {
+    "value": "Ad Astra",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "key.categories.adastra": {
+    "value": "Ad Astra",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "itemGroup.allthemodium": {
+    "value": "AllTheModium",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "material.allthemodium.allthemodium": {
+    "value": "ATM",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "material.silentgear.allthemodium": {
+    "value": "ATM",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "tetra.material.allthemodium": {
+    "value": "ATM",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "stat.tconstruct.harvest_tier.allthemodium.allthemodium": {
+    "value": "ATM",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "itemGroup.alltheores": {
+    "value": "AllTheOres",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "itemGroup.allthetweaks": {
+    "value": "AllTheTweaks",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "itemGroup.ars_technica": {
+    "value": "Ars Technica",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "create.ponder.chain_gearshift.text_6": {
+    "value": "12 RPM",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "create.ponder.shared.rpm16": {
+    "value": "16 RPM",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "create.ponder.shared.rpm32": {
+    "value": "32 RPM",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "create.ponder.shared.rpm8": {
+    "value": "8 RPM",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "curios.identifier.tiab": {
+    "value": "TIAB",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "research.eidolon.": {
+    "value": "NYE",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "fancymenu.overlay.debug.cpu": {
+    "value": "§lCPU：§r %s",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "fancymenu.overlay.debug.fps": {
+    "value": "§lFPS：§r %s",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "fancymenu.ui.color_picker.hex": {
+    "value": "HEX",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "fancymenu.ui.color_picker.hsv": {
+    "value": "HSV",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "fancymenu.ui.color_picker.rgba": {
+    "value": "RGBA",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "ftbchunks.minimap.xyz": {
+    "value": "XYZ",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "ftblibrary.select_item.list_mode.jei": {
+    "value": "JEI",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "ftblibrary.select_item.list_mode.rei": {
+    "value": "REI",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "ftbquests.task.ftbquests.emc": {
+    "value": "EMC",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "key.guideme.category": {
+    "value": "GuideME",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "potion.potency.7": {
+    "value": "VII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "potion.potency.8": {
+    "value": "XIII",
+    "reason": "Roman numeral used as an effect or enchantment level."
+  },
+  "jei.key.combo.shift": {
+    "value": "SHIFT+%s",
+    "reason": "Literal physical keyboard key notation."
+  },
+  "jei.key.combo.control": {
+    "value": "CTRL+%s",
+    "reason": "Literal physical keyboard key notation."
+  },
+  "jei.key.combo.command": {
+    "value": "CMD+%s",
+    "reason": "Literal physical keyboard key notation."
+  },
+  "jei.key.combo.alt": {
+    "value": "ALT+%s",
+    "reason": "Literal physical keyboard key notation."
+  },
+  "jei.key.shift": {
+    "value": "SHIFT",
+    "reason": "Literal physical keyboard key notation."
+  },
+  "tooltip.jeiintegration.nbtTagData": {
+    "value": "§6NBT: ",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "jupiter.config_source.jupiter": {
+    "value": "Jupiter",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "itemGroup.lootr": {
+    "value": "Lootr",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "mbd2.gui.content.chance_0_short": {
+    "value": "§cNC§r",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "config.block_pattern.predicate.nbt": {
+    "value": "NBT",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "nolijium": {
+    "value": "Nolijium",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "itemGroup.oelib_dev.general": {
+    "value": "OELib Dev",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "key.categories.oelib_dev": {
+    "value": "OELib Dev",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "chat.powerful_dummy.dps": {
+    "value": " DPS: ",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "pack.quest_enhance.name": {
+    "value": "Quest Enhance",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "category.roadweaver": {
+    "value": "RoadWeaver",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "key.categories.roadweaver": {
+    "value": "RoadWeaver",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "config.roadweaver.opencl_device_preference.option.gpu": {
+    "value": "GPU",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "sodium-extra.overlay.fps": {
+    "value": "%s FPS",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "message.smc.devour_zenish": {
+    "value": "QAQ",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "tooltip.smc.zenish": {
+    "value": "QAQ",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "item_group.terramity.terramity_tab": {
+    "value": "Terramity",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "advancements.terramity_parent_advancement.title": {
+    "value": "Terramity",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "item.the_bumblezone.music_disc_rivers_of_honey_moserao.download": {
+    "value": "https://moserao.bandcamp.com/track/rivers-of-honey-2",
+    "reason": "Public download/resource URL must remain executable."
+  },
+  "item.the_bumblezone.music_disc_bee_laxing_with_the_hom_bees.download": {
+    "value": "https://ludocrypt.bandcamp.com/track/bee-laxing-with-the-hom-bees",
+    "reason": "Public download/resource URL must remain executable."
+  },
+  "item.the_bumblezone.music_disc_a_last_first_last.download": {
+    "value": "https://punpudle.bandcamp.com/track/a-last-first-last-white-sempiternal-sanctum",
+    "reason": "Public download/resource URL must remain executable."
+  },
+  "item.the_bumblezone.music_disc_drowning_in_despair.download": {
+    "value": "https://punpudle.bandcamp.com/track/drowning-in-despair-blue-sempiternal-sanctum",
+    "reason": "Public download/resource URL must remain executable."
+  },
+  "item.the_bumblezone.music_disc_beenna_box.download": {
+    "value": "https://punpudle.bandcamp.com/track/beenna-box-red-sempiternal-sanctum",
+    "reason": "Public download/resource URL must remain executable."
+  },
+  "advancements.the_bumblezone.wiki.description": {
+    "value": "https://github.com/TelepathicGrunt/Bumblezone/wiki ; https://www.mcmod.cn/class/2489.html",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "block.thermal.phyto_tnt": {
+    "value": "PNT",
+    "reason": "Literal mod/product name, model designation, engineering notation, key label or symbolic code."
+  },
+  "tooltips.touhou_little_maid.servant_bell.uuid": {
+    "value": "UUID：%s",
+    "reason": "Engineering unit, data format or technical identifier."
+  },
+  "key.category.touhou_little_maid": {
+    "value": "Touhou Little Maid",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "message.touhou_little_maid.missing_patchouli.url": {
+    "value": "https://www.curseforge.com/minecraft/mc-mods/patchouli",
+    "reason": "Public download/resource URL must remain executable."
+  },
+  "trashcans.gui.energy_trash_can.limit.change1": {
+    "value": "SHIFT %s",
+    "reason": "Literal physical keyboard key notation."
+  },
+  "trashcans.gui.energy_trash_can.limit.change2": {
+    "value": "CTRL %s",
+    "reason": "Literal physical keyboard key notation."
+  },
+  "vartapack.screen.title": {
+    "value": "VartaPack",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "vartapack.toast.title": {
+    "value": "VartaPack",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "key.category.vartapack.main": {
+    "value": "VartaPack",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "key.categories.vartapack.main": {
+    "value": "VartaPack",
+    "reason": "Proper mod/product name retained for identification."
+  },
+  "bonus.apotheosis:enchantment.desc": {
+    "value": "+%s%s%s",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "potion.potency.3": {
+    "value": "IV",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "enchantment.level.11": {
+    "value": "11",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "enchantment.level.15": {
+    "value": "15",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "enchantment.level.20": {
+    "value": "20",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "enchantment.level.40": {
+    "value": "40",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "enchantment.level.51": {
+    "value": "51",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "enchantment.level.55": {
+    "value": "55",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "enchantment.level.60": {
+    "value": "60",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "enchantment.level.90": {
+    "value": "90",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "enchantment.level.101": {
+    "value": "CI",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "enchantment.level.105": {
+    "value": "CV",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "enchantment.level.110": {
+    "value": "CX",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "botaniamisc.monocle.repeater.delay": {
+    "value": "%ss",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "botania.rank0": {
+    "value": "§cD",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "botania.rank1": {
+    "value": "§eC",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "botania.rank2": {
+    "value": "§bB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "botania.rank3": {
+    "value": "§aA",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "botania.rank4": {
+    "value": "§dS",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "botania.rank5": {
+    "value": "§6SS",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "botania.roman2": {
+    "value": "II",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "botania.roman4": {
+    "value": "IV",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "botania.roman6": {
+    "value": "VI",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "botania.roman9": {
+    "value": "IX",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "botania.roman11": {
+    "value": "XI",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "botania.roman15": {
+    "value": "XV",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "botania.roman20": {
+    "value": "XX",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "item.dungeonnowloading.great_experience_bottle.tooltip": {
+    "value": "%d XP",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "tooltip.enderio.fluid_tank.tank_tooltip": {
+    "value": "%d/%dmB%s",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.expatternprovider.tank_amount": {
+    "value": "%s mb / %s mb",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "hostilenetworks.gui.energy": {
+    "value": "%s/%s FE",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "hostilenetworks.info.rft": {
+    "value": "%s FE/t",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "language.code": {
+    "value": "zho-Hans_CN",
+    "reason": "Locale metadata code, not player prose."
+  },
+  "desc.immersiveengineering.info.fluidStored": {
+    "value": "%1$s %2$smB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "item.immersiveengineering.shader.name.enbypride": {
+    "value": "NB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.industrial_platform.preview.info": {
+    "value": "%s×%s  ↑%s ↓%s",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "text.jei_mekanism_multiblocks.duration.days": {
+    "value": "%sd",
+    "reason": "Compact duration-unit notation (days, hours, minutes, seconds or ticks) is retained."
+  },
+  "text.jei_mekanism_multiblocks.duration.hours": {
+    "value": "%sh",
+    "reason": "Compact duration-unit notation (days, hours, minutes, seconds or ticks) is retained."
+  },
+  "text.jei_mekanism_multiblocks.duration.minutes": {
+    "value": "%sm",
+    "reason": "Compact duration-unit notation (days, hours, minutes, seconds or ticks) is retained."
+  },
+  "text.jei_mekanism_multiblocks.duration.seconds": {
+    "value": "%ss",
+    "reason": "Compact duration-unit notation (days, hours, minutes, seconds or ticks) is retained."
+  },
+  "text.jei_mekanism_multiblocks.duration.ticks": {
+    "value": "%st",
+    "reason": "Compact duration-unit notation (days, hours, minutes, seconds or ticks) is retained."
+  },
+  "gui.mantle.fluid.format": {
+    "value": "%s/%smb%s",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.mantle.fluid.kilobucket": {
+    "value": "%skb",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.mantle.fluid.millibucket": {
+    "value": "%smb",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "energy.mekanism.eu.short": {
+    "value": "EU",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "energy.mekanism.forge.short": {
+    "value": "FE",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "filter.mekanism.modid.id": {
+    "value": "ID: %1$s",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "generic.mekanism.mb": {
+    "value": "%1$s mB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "generic.mekanism.per_mb": {
+    "value": "%1$s/mB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "generic.mekanism.stored.mb": {
+    "value": "%1$s: %2$s mB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "module.mekanism.blast_area": {
+    "value": "%1$sx%1$s",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "network.mekanism.mb_per_tick": {
+    "value": "%1$s mB/t",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "network.mekanism.mb_stored": {
+    "value": "%1$s (%2$s mB)",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "tooltip.mekanism.jei.amount.with.capacity": {
+    "value": "%1$s / %2$s mB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.modernui.text.oneOfAll": {
+    "value": "%1$d / %2$d",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "mes.kofi": {
+    "value": "Ko-fi",
+    "reason": "Proper donation platform name."
+  },
+  "mns.kofi": {
+    "value": "Ko-fi",
+    "reason": "Proper donation platform name."
+  },
+  "mss.kofi": {
+    "value": "Ko-fi",
+    "reason": "Proper donation platform name."
+  },
+  "mvs.kofi": {
+    "value": "Ko-fi",
+    "reason": "Proper donation platform name."
+  },
+  "jei.category.nebula_tinker.amount": {
+    "value": "%s mB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "steam_letters.tooltip.steam_container.fluid": {
+    "value": "%s: _%s_ / %s mB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.tconstruct.fluid.kilobucket": {
+    "value": "%skB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.tconstruct.fluid.millibucket": {
+    "value": "%smB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "roman_numeral.value.2": {
+    "value": "II",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "roman_numeral.value.4": {
+    "value": "IV",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "roman_numeral.value.6": {
+    "value": "VI",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "roman_numeral.value.9": {
+    "value": "IX",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "roman_numeral.value.11": {
+    "value": "XI",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "roman_numeral.value.15": {
+    "value": "XV",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "roman_numeral.value.20": {
+    "value": "XX",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "tool_stat.tconstruct.energy": {
+    "value": "%s FE",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "advancements.ad_astra.dj.title": {
+    "value": "DJ",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "item.ad_astra.ti_69": {
+    "value": "TI-69",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "text.ad_astra.gravity": {
+    "value": "%sm/s²",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.ae2.ETAFormat": {
+    "value": "HH:mm:ss",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.ae2.Of": {
+    "value": "/",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.ae2.units.appliedenergistics": {
+    "value": "AE",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.ae2.units.fe": {
+    "value": "FE",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.ae2.units.rf": {
+    "value": "RF",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "item.born_in_chaos_v1.ai": {
+    "value": "§4Ai",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "info.cofh.unit_mb": {
+    "value": "mB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "info.cofh.unit_mb_t": {
+    "value": "mB/t",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "info.cofh.unit_rf": {
+    "value": "RF",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "info.cofh.unit_rf_t": {
+    "value": "RF/t",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create.flap_display.cycles.fluid_units": {
+    "value": "mB;B ",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create.generic.unit.millibuckets": {
+    "value": "mB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create.generic.unit.stress": {
+    "value": "su",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create.gui.threshold_switch.pulley_y_level": {
+    "value": "%1$sy",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create.schedule.condition.threshold.x_units_of_item": {
+    "value": "%1$s%2$s%3$s",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create_connected.ponder.kinetic_bridge.text_10": {
+    "value": "72+72+144 su > 256 su",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create_connected.ponder.kinetic_bridge.text_14": {
+    "value": "256 su",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create_connected.ponder.kinetic_bridge.text_15": {
+    "value": "72 su",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create_connected.ponder.kinetic_bridge.text_16": {
+    "value": "72 su",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create_connected.ponder.kinetic_bridge.text_17": {
+    "value": "0 su",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create_connected.ponder.kinetic_bridge.text_18": {
+    "value": "72+72+0 su < 256 su",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create_connected.ponder.kinetic_bridge.text_6": {
+    "value": "256 su",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create_connected.ponder.kinetic_bridge.text_7": {
+    "value": "72 su",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create_connected.ponder.kinetic_bridge.text_8": {
+    "value": "72 su",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "create_connected.ponder.kinetic_bridge.text_9": {
+    "value": "144 su",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "createdieselgenerators.generic.unit.mbps": {
+    "value": "mB/s",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "createfactorycontroller.gui.unit_fluid_mb": {
+    "value": "mB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "fancymenu.buddy.achievement.reward": {
+    "value": "+%s XP",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "fancymenu.schedulers.manage.description.id": {
+    "value": "ID：%s",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "ftblibrary.mb": {
+    "value": "%d mB%s",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "ftbquests.task.ftbquests.forge_energy.value": {
+    "value": "FE/RF",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "ftbquests.task.ftbquests.forge_energy.text": {
+    "value": "%dFE",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "ftbquests.task.ftbquests.buildcraft_mj.value": {
+    "value": "mJ",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "ftbquests.task.ftbquests.buildcraft_mj.text": {
+    "value": "%dMJ",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "ftbquests.task.ftbquests.ic2_energy.value": {
+    "value": "EU",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "ftbquests.task.ftbquests.ic2_energy.text": {
+    "value": "%dEU",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "ftbquests.reward_table.loot_crate.id": {
+    "value": "ID",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "ui.irons_spellbooks.dimensions": {
+    "value": "%dx%dx%d",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "potion.potency.6": {
+    "value": "VI",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "potion.potency.9": {
+    "value": "X",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "jei.tooltip.liquid.amount.with.capacity": {
+    "value": "%s / %s mB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "jei.tooltip.liquid.amount": {
+    "value": "%s mB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "tooltip.kaleidoscope_tavern.cr019_painting": {
+    "value": "CR019",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "moreburners.burner.energy.unit": {
+    "value": "FE",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.neoecoae.crafting.ui.ft_short": {
+    "value": "FT %s",
+    "reason": "FT/FX are crafting subsystem/module identifiers, not natural-language labels."
+  },
+  "gui.neoecoae.crafting.ui.fx_short": {
+    "value": "FX %s / %s",
+    "reason": "FT/FX are crafting subsystem/module identifiers, not natural-language labels."
+  },
+  "energy_bar.polylib.rf": {
+    "value": "RF",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "fluid_tank.polylib.mb": {
+    "value": "mB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "component.powergrid.relay.cc.short": {
+    "value": "CC",
+    "reason": "Roman numeral level notation; existing Chinese numeral value is retained."
+  },
+  "component.powergrid.relay.nc.short": {
+    "value": "NC",
+    "reason": "Physical relay terminal label (common, normally closed, normally open), not the natural-language word No."
+  },
+  "component.powergrid.relay.no.short": {
+    "value": "NO",
+    "reason": "Physical relay terminal label (common, normally closed, normally open), not the natural-language word No."
+  },
+  "powergrid.component.property.tube_ex": {
+    "value": "Ex",
+    "reason": "Electronic pin/electrode identifier retained on the schematic."
+  },
+  "powergrid.component.property.tube_kg": {
+    "value": "Kg",
+    "reason": "Electronic pin/electrode identifier retained on the schematic."
+  },
+  "powergrid.component.property.tube_kg2": {
+    "value": "Kg2",
+    "reason": "Electronic pin/electrode identifier retained on the schematic."
+  },
+  "powergrid.component.property.tube_kp": {
+    "value": "Kp",
+    "reason": "Electronic pin/electrode identifier retained on the schematic."
+  },
+  "powergrid.component.property.vfet_kg": {
+    "value": "Kg",
+    "reason": "Electronic pin/electrode identifier retained on the schematic."
+  },
+  "powergrid.generic.unit.energy": {
+    "value": "Wh",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "powergrid.gui.device_connector.buffered.unit": {
+    "value": "FE",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "powergrid.gui.device_connector.supplying.unit": {
+    "value": "FE/t",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "powergrid.tooltip.device_connector.fe_v": {
+    "value": "FE/t/V",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "powergrid.tooltip.device_connector.fe_w": {
+    "value": "FE/W",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "powergrid.tooltip.fe_inverter.fe_v": {
+    "value": "FE/V",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "item.sophisticatedcore.storage.tooltip.energy": {
+    "value": "%s FE",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "item.sophisticatedcore.storage.tooltip.fluid": {
+    "value": "%s mB %s",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "thermal.book.subtitle": {
+    "value": "MC 1.20.1",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "tooltips.touhou_little_maid.tank_backpack.fluid": {
+    "value": "%s：%dmB",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.xaero_ui_scale_mc": {
+    "value": "Minecraft",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.xaero_unit_ms": {
+    "value": "ms",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  },
+  "gui.xaero_wm_unit_ms": {
+    "value": "ms",
+    "reason": "Symbolic unit, model/connector identifier, Roman numeral, compact notation or locale code."
+  }
+}

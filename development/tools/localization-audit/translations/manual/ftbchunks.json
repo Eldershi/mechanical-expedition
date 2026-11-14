@@ -1,0 +1,5 @@
+{
+  "ftbchunks.team_prop_defaults": "队伍属性默认值",
+  "ftbchunks.team_prop_defaults.def_fake_player_ids": "按 ID 允许假玩家",
+  "ftbchunks.team_prop_defaults.def_named_fake_players": "具名假玩家"
+}

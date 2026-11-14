@@ -1,0 +1,22 @@
+{
+  "name": "能量管道",
+  "icon": "thermal:energy_duct",
+  "read_by_default": true,
+  "flag": "mod:thermal_dynamics",
+  "category": "thermal:ducts",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "能量管道可以传输能量。能传多少？够用就行。连接持续满载时，传输能力还会提高，因此尽量保持稳定的需求。若要限制能量流速，可以使用红石通量限制器附加组件。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:energy_duct_4"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可用的附加组件",
+      "text": "$(li)红石通量限制器"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "材料",
+  "description": "热力系列使用和产出的各种资源。",
+  "icon": "thermal:invar_ingot",
+  "parent": "thermal:world",
+  "sortnum": 1
+}

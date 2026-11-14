@@ -1,0 +1,24 @@
+{
+  "name": "节奏乐谱",
+  "icon": "terramity:music_sheet_of_tempo",
+  "category": "terramity:ocarina",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "节奏乐谱",
+      "text": "节奏乐谱提供速度 I，持续 60 秒。$(br2)此乐谱在泥屋中较为常见，这些小屋主要出现在森林中。",
+      "item": {
+        "item": "terramity:music_sheet_of_tempo"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

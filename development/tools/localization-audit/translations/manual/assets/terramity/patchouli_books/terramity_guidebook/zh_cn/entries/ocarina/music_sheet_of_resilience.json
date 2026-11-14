@@ -1,0 +1,24 @@
+{
+  "name": "坚韧乐谱",
+  "icon": "terramity:music_sheet_of_resilience",
+  "category": "terramity:ocarina",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "坚韧乐谱",
+      "text": "坚韧乐谱提供生命提升 III，持续 60 秒。$(br2)此乐谱在雪屋中较为常见。",
+      "item": {
+        "item": "terramity:music_sheet_of_resilience"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "commands.endinglib.fill_entity.success": "成功填充 %s 个实体",
+  "commands.endinglib.fill_entity.failed": "未填充任何实体",
+  "commands.endinglib.fill_entity.toobig": "指定区域中的实体过多（最多 %s 个，指定了 %s 个）",
+  "commands.endinglib.message.ability.invulnerable": "§a无敌",
+  "commands.endinglib.message.ability.flying": "§a飞行中",
+  "commands.endinglib.message.ability.mayBuild": "§a允许建造",
+  "commands.endinglib.message.ability.mayfly": "§a允许飞行",
+  "commands.endinglib.message.ability.instabuild": "§a瞬间建造",
+  "tooltip.endinglib.hud.minecraft.debug_text": "演示"
+}

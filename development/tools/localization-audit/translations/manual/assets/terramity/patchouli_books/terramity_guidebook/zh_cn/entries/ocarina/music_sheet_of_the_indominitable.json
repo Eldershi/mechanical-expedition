@@ -1,0 +1,24 @@
+{
+  "name": "不屈乐谱",
+  "icon": "terramity:music_sheet_of_the_indomitable",
+  "category": "terramity:ocarina",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "不屈乐谱",
+      "text": "不屈乐谱提供免疫效果，持续 60 秒。$(br2)在地下圣祠中找到此乐谱的概率较高。",
+      "item": {
+        "item": "terramity:music_sheet_of_the_indomitable"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

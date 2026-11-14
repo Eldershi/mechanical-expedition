@@ -1,0 +1,9 @@
+{
+  "chat.ae2.TestWorldNotInSuperflat": "测试世界只能在超平坦世界中创建！",
+  "chat.ae2.CraftingCpuBusy": "这个合成处理器正忙！",
+  "chat.ae2.PlayerConnected": "%s [已连接]",
+  "chat.ae2.PlayerDisconnected": "%s [已断开连接]",
+  "item.ae2.wrapped_generic_stack": "封装的通用堆叠",
+  "exported_setting.ae2.exported_p2p_type": "P2P 类型",
+  "gui.ae2.TransformTypeThrowInFluid": "投入 %s"
+}

@@ -1,0 +1,16 @@
+{
+  "config.craftingtweaks.common": "通用",
+  "config.craftingtweaks.common.compressRequiresCraftingGrid": "压缩需要合成网格",
+  "config.craftingtweaks.common.compressRequiresCraftingGrid.tooltip": "关闭后，允许在合成界面之外压缩或解压；在玩家物品栏中使用此功能，需要服务器也安装本模组。",
+  "config.craftingtweaks.common.compressDenylist": "禁止压缩列表",
+  "config.craftingtweaks.common.compressDenylist.tooltip": "使用 \"modid:name\" 格式填写不会被压缩快捷键合成的物品。",
+  "config.craftingtweaks.client": "客户端",
+  "config.craftingtweaks.client.rightClickCraftsStack": "右键合成整组",
+  "config.craftingtweaks.client.rightClickCraftsStack.tooltip": "开启后，右键点击工作台的产物槽会合成一整组物品。",
+  "config.craftingtweaks.client.hideVanillaCraftingGuide": "隐藏原版合成指南",
+  "config.craftingtweaks.client.hideVanillaCraftingGuide.tooltip": "JEI 更好用。此选项会隐藏原版配方书按钮，而非移动它。",
+  "config.craftingtweaks.client.mode": "模式",
+  "config.craftingtweaks.client.mode.tooltip": "DEFAULT：启用按钮和快捷键；BUTTONS：仅按钮；HOTKEYS：仅快捷键；DISABLED：完全禁用。",
+  "config.craftingtweaks.client.disabledAddons": "禁用的附加兼容",
+  "config.craftingtweaks.client.disabledAddons.tooltip": "填写要禁用 Crafting Tweaks 支持的模组 ID。"
+}

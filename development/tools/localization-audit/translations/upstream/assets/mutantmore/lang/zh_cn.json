@@ -1,0 +1,18 @@
+{
+  "entity.mutantmore.mutant_blaze_shields": "突变烈焰护盾",
+  "entity.mutantmore.ice_cube": "冰块",
+  "mutantmore.mutation_potion_complete": "完成",
+  "item.mutantmore.sand_cannon": "沙地加农",
+  "item.mutantmore.disc_fragment_adrenaline_rush": "唱片残片",
+  "item.mutantmore.disc_fragment_aegis": "唱片残片",
+  "item.mutantmore.disc_fragment_forces_unknown": "唱片残片",
+  "block.mutantmore.quicksand": "流沙",
+  "block.mutantmore.red_quicksand": "红流沙",
+  "block.mutantmore.mutant_wither_skeleton_skull": "突变凋灵骷髅头颅",
+  "block.mutantmore.mutant_wither_skeleton_wall_skull": "突变凋灵骷髅头颅",
+  "block.mutantmore.mutant_jungle_zombie_vine": "突变丛林僵尸藤蔓",
+  "gui.mutantmore.rodling_checker.settings": "设置",
+  "gui.mutantmore.rodling_checker.select_all": "全选",
+  "advancements.mutantmore.kill_mutant_blaze.title": "熄灭魔焰！",
+  "advancements.mutantmore.mutant_jungle_zombie_arm_fly.title": "飞往无垠的彼方！"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "常见问题解答",
+  "icon": "minecraft:redstone",
+  "category": "thermal:guides",
+  "sortnum": -3,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "问：物品管道去哪了？$(br)答：请阅读$(l:thermal:storage_and_transport/dynamics)这里$(/l)。$(br2)问：升级套件去哪了？$(br)答：请阅读$(l:thermal:technology/augments/integral_components)这里$(/l)。$(br2)问：怎样提高机器速度？$(br)答：请阅读$(l:thermal:technology/augments/integral_components)这里$(/l)和$(l:thermal:technology/augments/machine_speed)这里$(/l)。$(br2)问：这些增强组件能叠加吗？$(br)答：请阅读$(l:thermal:technology/augments/introduction)这里$(/l)。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "问：怎样切换通量电钻／通量电锯的模式？$(br)答：需要安装$(l:thermal:technology/augments/area_radius)径向范围拓展组件$(/l)，才能调整挖掘范围。$(br2)问：怎样为工具充能或安装增强组件？$(br)答：请阅读$(l:thermal:technology/tinker_bench)这里$(/l)。$(br2)问：为什么能源炉会缓慢损失 RF？$(br)答：能源炉的 RF 缓冲区仅用于判断应当降低多少输出。详情请阅读$(l:thermal:technology/dynamos/introduction)这里$(/l)。"
+    },
+    {
+      "type": "patchouli:link",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/tools-complement",
+      "link_text": "工具互补（Tool's Complement）",
+      "text": "问：能为某个模组提供配方等兼容支持吗？$(br)答：可以在我们的$(l:thermal:links/discord)Discord 服务器$(/l)提出请求。$(br2)问：热力系列原来的基础工具、武器和盔甲去哪了，例如钻石挖掘铲和琥珀金弓？$(br)答：它们已经被移到独立模组中："
+    },
+    {
+      "type": "patchouli:text",
+      "text": "问：铂、钢、注魔金属等材料去哪了？$(br)答：出于多种原因，我们认为热力基本无需再包含这些内容。如果其中某些内容回归，也会放在独立的兼容模组中。$(br2)问：为什么有些流体无法放置？$(br)答：有些流体即使可以放置也没有多少额外用途，另一些则受 Forge 流体 API 限制而无法加入。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "问：怎样修改矿石生成？$(br)答：可以使用数据包控制矿石的生成与稀有度。$(br2)问：怎样修改配置？$(br)答：配置现在按存档分别创建，可在存档的 serverconfigs 文件夹中找到。也可以把这些文件复制到 defaultconfigs 文件夹并编辑，设置默认配置。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "问：在哪里、怎样报告错误？$(br)答：可以在我们的$(l:thermal:links/discord)Discord 服务器$(/l)询问。报告前，请确认模组已经更新，且未安装 Optifine。$(br2)问：怎样修改配方？$(br)答：热力系列完全由数据驱动，因此可以用数据包修改配方，示例见$(l:thermal:guides/modpack/recipes)这里$(/l)。此外，热力系列也支持 CraftTweaker。"
+    }
+  ]
+}

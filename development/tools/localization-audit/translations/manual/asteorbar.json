@@ -1,0 +1,19 @@
+{
+  "text.autoconfig.asteorbar.option.hook.hookLightShield": "LightShield",
+  "text.autoconfig.asteorbar.option.hook.hookHomeostatic": "Homeostatic",
+  "text.autoconfig.asteorbar.option.hook.hookToughAsNails": "Tough As Nails",
+  "text.autoconfig.asteorbar.option.hook.hookThirstWasTaken": "Thirst Was Taken",
+  "text.autoconfig.asteorbar.option.hook.hookDehydration": "Dehydration",
+  "text.autoconfig.asteorbar.option.hook.hookParcool": "Parcool",
+  "text.autoconfig.asteorbar.option.hook.hookIronsSpellbooks": "Iron's Spellbooks",
+  "text.autoconfig.asteorbar.option.hook.hookFeathers": "Feathers",
+  "text.autoconfig.asteorbar.option.hook.hookAppleSkin": "AppleSkin",
+  "text.autoconfig.asteorbar.option.hook.hookSuperiorShields": "Superior Shields",
+  "text.autoconfig.asteorbar.option.hook.hookVampirism": "Vampirism",
+  "text.autoconfig.asteorbar.option.hook.hookOrigins": "Origins",
+  "text.autoconfig.asteorbar.option.hook.hookTFC": "TerraFirmaCraft",
+  "text.autoconfig.asteorbar.option.hook.hookApoli": "Apoli(Origins)",
+  "text.autoconfig.asteorbar.option.hook.hookThermoo": "Thermoo(Scorchful & Frostiful)",
+  "text.autoconfig.asteorbar.option.hook.hookMealApi": "Meal API",
+  "asteorbar.json.lastPlaceholder": "末尾占位符"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "测试条目",
+  "icon": "minecraft:writable_book",
+  "category": "enderio:test_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "这是测试条目，但它应该正常显示！"
+    }
+  ]
+}

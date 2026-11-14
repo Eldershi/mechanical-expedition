@@ -1,0 +1,5 @@
+{
+  "key.apotheosis.world_tiers_arent_real": "世界等级错误通知",
+  "message.apotheosis.world_tiers_arent_real": "世界等级仅在 Minecraft 1.21.1 及更高版本中提供。此版本的神化使用基于维度的进度系统。",
+  "text.apotheosis.gems_returned": "合成后返还宝石"
+}

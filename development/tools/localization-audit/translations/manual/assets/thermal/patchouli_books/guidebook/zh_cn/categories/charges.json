@@ -1,0 +1,7 @@
+{
+  "name": "元素弹",
+  "description": "掌握四种元素。",
+  "icon": "thermal:lightning_charge",
+  "parent": "thermal:equipment",
+  "sortnum": 3
+}

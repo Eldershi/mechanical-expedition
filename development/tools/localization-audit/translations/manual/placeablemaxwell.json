@@ -1,0 +1,16 @@
+{
+  "category.placeablemaxwell.placeablemaxwell_tab": "可摆放的麦克斯韦猫",
+  "block.placeablemaxwell.maxwell": "麦克斯韦（Maxwell）",
+  "block.placeablemaxwell.valenok": "瓦连诺克",
+  "block.placeablemaxwell.vasilisa": "瓦西丽莎",
+  "block.placeablemaxwell.poomba": "彭彭",
+  "death.attack.placeablemaxwell.falling_maxwell_cat": "%1$s 被掉下来的猫压扁了",
+  "death.attack.placeablemaxwell.falling_maxwell_cat.player": "%1$s 在与 %2$s 战斗时被掉下来的猫压扁了",
+  "placeablemaxwell.configuration.title": "可摆放的麦克斯韦猫 | 配置",
+  "placeablemaxwell.configuration.section.placeablemaxwell.common.toml": "通用设置",
+  "placeablemaxwell.configuration.section.placeablemaxwell.common.toml.title": "通用设置",
+  "placeablemaxwell.configuration.holidayFeaturesEnabled": "节日功能",
+  "placeablemaxwell.configuration.holidayFeaturesEnabled.tooltip": "启用或禁用节日功能。",
+  "placeablemaxwell.configuration.forceHoliday": "强制节日",
+  "placeablemaxwell.configuration.forceHoliday.tooltip": "无视日期，强制启用节日功能。"
+}

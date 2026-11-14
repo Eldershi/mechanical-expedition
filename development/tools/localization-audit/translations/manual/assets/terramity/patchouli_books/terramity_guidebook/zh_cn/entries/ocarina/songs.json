@@ -1,0 +1,23 @@
+{
+  "name": "曲子",
+  "icon": "terramity:music_sheet_of_cleansing",
+  "category": "terramity:ocarina",
+  "sortnum": 2,
+  "priority": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "曲子",
+      "text": "曲子会影响乐谱所提供的效果。某首曲子可能适合一种场景，却未必适合另一种。将鼠标移到陶笛菜单中相应的按钮上，即可查看曲子的作用。"
+    },
+    {
+      "type": "patchouli:image",
+      "title": "陶笛菜单",
+      "images": [
+        "terramity:textures/screens/ocarina_screen.png"
+      ],
+      "border": true,
+      "text": "可以在陶笛菜单左侧选择曲子。"
+    }
+  ]
+}

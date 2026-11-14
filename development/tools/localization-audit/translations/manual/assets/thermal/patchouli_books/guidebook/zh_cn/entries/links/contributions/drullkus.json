@@ -1,0 +1,15 @@
+{
+  "name": "Drullkus",
+  "icon": "minecraft:orange_dye",
+  "category": "thermal:contributors",
+  "read_by_default": true,
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Drullkus",
+      "item": "minecraft:player_head{SkullOwner:'Drullkus'}",
+      "text": "在 Patchouli 的工作原理方面提供了急需的帮助。参与热力系列和许多其他模组的纹理制作，喜欢说自己的作品有多糟糕。"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "矿石",
+  "description": "这里介绍 Allthemodium 特有矿石的分布。$(br2)ATM矿石、振金矿石和难得素矿石都非常稀有，可能很难找到。",
+  "icon": "allthemodium:allthemodium_ore",
+  "sortnum": 2
+}

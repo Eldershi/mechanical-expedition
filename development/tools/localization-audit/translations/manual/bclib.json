@@ -1,0 +1,21 @@
+{
+  "bclib.updates.modrinth_link": "[Modrinth]",
+  "generator.bclib.amplified": "巨型生物群系与 BetterX",
+  "generator.bclib.large": "大型生物群系与 BetterX",
+  "title.config.bclib.client.infos.survives_on_hint": "在提示框中显示“可生长于”提示",
+  "title.config.bclib.client.ui.preferModrinthForUpdates": "更新时优先使用 Modrinth",
+  "title.config.bclib.main.infos.verbose": "详细日志",
+  "title.screen.bclib.worldgen.custom_end_biome_source": "使用自定义末地生物群系来源",
+  "title.screen.bclib.worldgen.custom_nether_biome_source": "使用自定义下界生物群系来源",
+  "title.screen.bclib.worldgen.nether_amplified": "下界高度加倍（巨型模式）",
+  "title.screen.bclib.worldgen.nether_biome_size": "生物群系大小",
+  "title.screen.bclib.worldgen.nether_vertical": "生成垂直生物群系",
+  "title.screen.bclib.worldgen.nether_vertical_biome_size": "生物群系高度",
+  "tooltip.bclib.place_underwater_on": "可在水下生长于：%s",
+  "tooltip.bclib.place_underwater": "可在水下生长",
+  "tooltip.bclib.place_underwater_depth": "最小深度：%d",
+  "tooltip.bclib.pottable_on": "可种植在花盆中：%s",
+  "bclib.updates.curseforge_link": "[CurseForge]",
+  "generator.bclib.normal": "BetterX",
+  "title.link.bclib.discord": "Discord"
+}

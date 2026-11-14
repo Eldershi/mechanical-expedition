@@ -1,0 +1,16 @@
+{
+  "name": "ATM苹果",
+  "icon": "allthemodium:allthemodium_apple",
+  "category": "allthemodium:food",
+  "pages": [
+    {
+      "type": "crafting",
+      "recipe": "allthemodium:allthemodium_apple",
+      "title": "ATM苹果"
+    },
+    {
+      "type": "text",
+      "text": "ATM苹果提供 20 点饥饿值和 80 点饱和度，具有以下效果：$(li)食用速度快$(li)随时可食用$(li)伤害吸收 X，持续 30 秒$(li)生命恢复 X，持续 30 秒"
+    }
+  ]
+}

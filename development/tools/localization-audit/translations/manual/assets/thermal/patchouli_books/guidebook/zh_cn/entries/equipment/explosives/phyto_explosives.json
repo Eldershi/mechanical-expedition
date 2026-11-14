@@ -1,0 +1,24 @@
+{
+  "name": "植育爆炸物",
+  "icon": "thermal:phyto_tnt",
+  "read_by_default": true,
+  "flag": "mod:thermal_cultivation",
+  "category": "thermal:explosives",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "植育爆炸物会立即对一片区域内的所有作物和草施加骨粉效果。炸药方块与手榴弹的作用半径分别为 9 格和 5 格。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:phyto_tnt",
+      "B.recipe": "thermal:phyto_grenade_4"
+    },
+    {
+      "flag": "&mod:thermal_cultivation,mod:thermal_locomotion",
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:phyto_tnt_minecart",
+      "title": "植育炸药矿车"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "gamerule.chaoticSpringEvent.description": "无视季节和日期，激活混沌之春事件。只要此游戏规则为 True，事件就会持续。",
+  "gamerule.seasonalEvents": "季节事件",
+  "gamerule.chillingHorrorEvent": "持续的凛冬恐惧事件",
+  "gamerule.halloweenEvent": "持续的万圣节事件",
+  "block.born_in_chaos_v1.lifestealer_skull.description_0": "§8+5 附魔台附魔能力",
+  "gamerule.chaoticSpringEvent": "持续的混沌之春事件",
+  "gamerule.halloweenEvent.description": "无视季节和日期，激活万圣节事件。只要此游戏规则为 True，事件就会持续。",
+  "gamerule.seasonalEvents.description": "允许自动激活与特定日期和季节相关的事件",
+  "gamerule.chillingHorrorEvent.description": "无视季节和日期，激活凛冬恐惧事件。只要此游戏规则为 True，事件就会持续。",
+  "item.born_in_chaos_v1.serpumpkinhead_m.desc": "Anluka - 南瓜头爵士",
+  "item.born_in_chaos_v1.anluka_doors.desc": "Anluka - 门"
+}

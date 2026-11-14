@@ -1,0 +1,12 @@
+{
+  "block.block_factorys_bosses.cannonball": "炮弹",
+  "entity.block_factorys_bosses.anchor": "锚",
+  "entity.block_factorys_bosses.cannonball": "炮弹",
+  "entity.block_factorys_bosses.thrown_crate": "板条箱",
+  "item.block_factorys_bosses.anchor": "锚",
+  "item.block_factorys_bosses.big_cage_item": "笼子",
+  "item.block_factorys_bosses.big_cage_skelly_item": "笼子",
+  "item.block_factorys_bosses.cage_item": "笼子",
+  "item.block_factorys_bosses.cage_skelly_item": "笼子",
+  "item.block_factorys_bosses.crate": "板条箱"
+}

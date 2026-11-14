@@ -1,0 +1,6 @@
+{
+  "gui.ftbxaerocompat_claimed": "已认领：%d / %d",
+  "gui.ftbxaerocompat_force_loaded": "强制加载：%d / %d",
+  "gui.ftbxaerocompat_minimap_claims": "小地图上的 FTB 领地",
+  "gui.ftbxaerocompat_box_minimap_claims": "在小地图上显示 FTB Chunks 认领的区块。"
+}

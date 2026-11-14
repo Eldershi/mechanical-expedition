@@ -1,0 +1,24 @@
+{
+  "name": "感知乐谱",
+  "icon": "terramity:music_sheet_of_perception",
+  "category": "terramity:ocarina",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "感知乐谱",
+      "text": "感知乐谱提供夜视效果，持续 180 秒。$(br2)此乐谱在废弃矿井中较为常见。",
+      "item": {
+        "item": "terramity:music_sheet_of_perception"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

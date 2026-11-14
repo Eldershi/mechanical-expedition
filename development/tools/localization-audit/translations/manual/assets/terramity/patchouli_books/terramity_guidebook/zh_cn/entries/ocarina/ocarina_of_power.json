@@ -1,0 +1,22 @@
+{
+  "name": "力量陶笛",
+  "icon": "terramity:ocarina_of_power",
+  "category": "terramity:ocarina",
+  "sortnum": 0,
+  "priority": true,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "力量陶笛",
+      "text": "力量陶笛是一件值得纳入装备库的强大工具。$(br2)乐谱会为曲子添加效果，而曲子可在陶笛菜单中选择。不同曲子会改变乐谱所提供的效果。",
+      "item": {
+        "item": "terramity:ocarina_of_power"
+      }
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "terramity:ocarina_of_power_recipe",
+      "text": "使用[右键]演奏陶笛。$(br2)使用[潜行＋右键]打开陶笛菜单。"
+    }
+  ]
+}

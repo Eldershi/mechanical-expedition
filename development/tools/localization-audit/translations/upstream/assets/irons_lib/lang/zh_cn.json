@@ -1,0 +1,17 @@
+{
+  "block.irons_lib.player_statue.pose.statue": "雕像",
+  "block.irons_lib.player_statue.pose.david": "大卫",
+  "tooltip.irons_lib.transmog_option.supported_slots.feet": "靴子",
+  "tooltip.irons_lib.transmog_option.supported_slots.legs": "护腿",
+  "tooltip.irons_lib.transmog_option.supported_slots.chest": "胸甲",
+  "tooltip.irons_lib.transmog_option.supported_slots.head": "头盔",
+  "transmog.irons_lib.standard_wizard_robes": "巫师法袍",
+  "transmog.irons_lib.standard_wizard_hat": "巫师法帽",
+  "transmog.irons_lib.traveler": "旅行者",
+  "attribute.name.irons_lib.mining_speed": "挖掘速度",
+  "attribute.name.irons_lib.experience_gained": "经验获取",
+  "attribute.name.irons_lib.arrow_damage": "弹射物伤害",
+  "attribute.name.irons_lib.crit_damage": "暴击伤害",
+  "attribute.name.irons_lib.dodge_chance": "闪避率",
+  "attribute.name.irons_lib.healing_received": "受到治疗"
+}

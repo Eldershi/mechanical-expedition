@@ -1,0 +1,24 @@
+{
+  "name": "力量乐谱",
+  "icon": "terramity:music_sheet_of_power",
+  "category": "terramity:ocarina",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "力量乐谱",
+      "text": "力量乐谱提供力量 II，持续 30 秒。$(br2)下界要塞的箱子中偶尔会出现此乐谱。",
+      "item": {
+        "item": "terramity:music_sheet_of_power"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

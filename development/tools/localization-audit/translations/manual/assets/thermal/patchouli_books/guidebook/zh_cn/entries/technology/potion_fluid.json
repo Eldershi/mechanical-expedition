@@ -1,0 +1,23 @@
+{
+  "name": "药水流体",
+  "icon": "minecraft:potion",
+  "category": "thermal:technology",
+  "flag": "|mod:thermal_expansion,mod:thermal_innovation",
+  "read_by_default": true,
+  "pages": [
+    {
+      "flag": "!mod:thermal_expansion",
+      "type": "patchouli:text",
+      "text": "药水流体是原版 Minecraft 药水的流体形式。手持药水瓶对接收药水流体的机器、装置或储存方块使用，会将药水装入方块并返还空瓶。"
+    },
+    {
+      "flag": "mod:thermal_expansion",
+      "type": "patchouli:text",
+      "text": "药水流体是原版 Minecraft 药水的流体形式，可直接在$(l:thermal:technology/machines/brewer)药水酿造机$(/l)中酿造获得。手持药水瓶对接收药水流体的机器、装置或储存方块使用，会将药水装入方块并返还空瓶。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "反过来，对装有药水流体的方块使用空瓶，即可将药水装瓶。250 mB 药水流体相当于一瓶原版药水。"
+    }
+  ]
+}

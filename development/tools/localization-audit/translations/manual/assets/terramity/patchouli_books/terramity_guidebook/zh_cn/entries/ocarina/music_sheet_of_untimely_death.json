@@ -1,0 +1,24 @@
+{
+  "name": "横死乐谱",
+  "icon": "terramity:music_sheet_of_untimely_death",
+  "category": "terramity:ocarina",
+  "sortnum": 27,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "横死乐谱",
+      "text": "横死乐谱会使使用者立即死亡。$(br2)玩家死亡时有较低概率掉落此乐谱，被闪电击中时也有较低概率获得。",
+      "item": {
+        "item": "terramity:music_sheet_of_untimely_death"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

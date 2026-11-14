@@ -1,0 +1,11 @@
+{
+  "block.enderio.aversion_obelisk": "排除方尖碑",
+  "gui.enderio.conduit.priority": "优先级",
+  "gui.enderio.conduit_probe.message.copied": "已复制数据：%s",
+  "gui.enderio.conduit_probe.message.pasted": "已粘贴数据：%s",
+  "item.enderio.conduit.chemical.multi": "可在同一条线上同时传输多种化学品",
+  "item.enderio.conduit_probe": "导管探测器",
+  "tooltip.enderio.conduit.fluid.multi": "可在同一条线上同时传输多种流体",
+  "tooltip.enderio.conduit_probe.mode": "模式：%s",
+  "tooltip.enderio.conduit_probe.mode.contains_copied": "包含已复制的导管数据："
+}

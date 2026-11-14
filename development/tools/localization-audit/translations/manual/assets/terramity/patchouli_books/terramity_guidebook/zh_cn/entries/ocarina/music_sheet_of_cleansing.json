@@ -1,0 +1,24 @@
+{
+  "name": "净化乐谱",
+  "icon": "terramity:music_sheet_of_cleansing",
+  "category": "terramity:ocarina",
+  "sortnum": 26,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "净化乐谱",
+      "text": "净化乐谱会清除使用者身上的所有药水效果，无一例外。$(br2)用渎圣长矛召唤的德天使有一定概率掉落此乐谱，概率较高。牛也会掉落，但极为罕见。",
+      "item": {
+        "item": "terramity:music_sheet_of_cleansing"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

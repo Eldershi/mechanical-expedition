@@ -1,0 +1,160 @@
+[
+  {
+    "resource": "assets/allthemodium/patchouli_books/allthemodium_book/zh_cn/entries/links/discord.json",
+    "path": [
+      "name"
+    ],
+    "value": "Discord",
+    "reason": "Proper service/platform name"
+  },
+  {
+    "resource": "assets/allthemodium/patchouli_books/allthemodium_book/zh_cn/entries/links/github.json",
+    "path": [
+      "name"
+    ],
+    "value": "GitHub",
+    "reason": "Proper service/platform name"
+  },
+  {
+    "resource": "assets/allthemodium/patchouli_books/allthemodium_book/zh_cn/entries/links/reddit.json",
+    "path": [
+      "name"
+    ],
+    "value": "Reddit",
+    "reason": "Proper service/platform name"
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/darkangel22579.json",
+    "path": [
+      "name"
+    ],
+    "value": "DarkAngel22579",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/darkangel22579.json",
+    "path": [
+      "pages",
+      0,
+      "title"
+    ],
+    "value": "DarkAngel22579",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/drullkus.json",
+    "path": [
+      "name"
+    ],
+    "value": "Drullkus",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/drullkus.json",
+    "path": [
+      "pages",
+      0,
+      "title"
+    ],
+    "value": "Drullkus",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/floofhips.json",
+    "path": [
+      "name"
+    ],
+    "value": "FloofHips",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/hekera.json",
+    "path": [
+      "name"
+    ],
+    "value": "Hekera",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/hekera.json",
+    "path": [
+      "pages",
+      0,
+      "title"
+    ],
+    "value": "Hekera",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/onelemonyboi.json",
+    "path": [
+      "name"
+    ],
+    "value": "OneLemonyBoi",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/onelemonyboi.json",
+    "path": [
+      "pages",
+      0,
+      "title"
+    ],
+    "value": "OneLemonyBoi",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/shiny.json",
+    "path": [
+      "name"
+    ],
+    "value": "ShinyPorygon",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/shiny.json",
+    "path": [
+      "pages",
+      0,
+      "title"
+    ],
+    "value": "ShinyPorygon",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/spongeblast.json",
+    "path": [
+      "name"
+    ],
+    "value": "SpongeBlast",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/contributions/spongeblast.json",
+    "path": [
+      "pages",
+      0,
+      "title"
+    ],
+    "value": "SpongeBlast",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/links/discord.json",
+    "path": [
+      "name"
+    ],
+    "value": "Discord",
+    "reason": "Proper contributor, mod or service name."
+  },
+  {
+    "resource": "assets/thermal/patchouli_books/guidebook/zh_cn/entries/storage_and_transport/dynamics.json",
+    "path": [
+      "pages",
+      1,
+      "title"
+    ],
+    "value": "XNet",
+    "reason": "Proper contributor, mod or service name."
+  }
+]

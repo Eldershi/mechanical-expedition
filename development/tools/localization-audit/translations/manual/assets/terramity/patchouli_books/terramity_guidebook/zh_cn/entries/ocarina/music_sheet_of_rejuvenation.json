@@ -1,0 +1,24 @@
+{
+  "name": "复苏乐谱",
+  "icon": "terramity:music_sheet_of_rejuvenation",
+  "category": "terramity:ocarina",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "复苏乐谱",
+      "text": "复苏乐谱提供生命恢复 I，持续 30 秒。$(br2)粉色仙灵偶尔会掉落此乐谱。",
+      "item": {
+        "item": "terramity:music_sheet_of_rejuvenation"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

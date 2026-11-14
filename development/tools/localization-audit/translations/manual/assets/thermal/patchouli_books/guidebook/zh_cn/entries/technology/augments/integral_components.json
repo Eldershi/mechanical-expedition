@@ -1,0 +1,26 @@
+{
+  "name": "整合组件",
+  "icon": "thermal:upgrade_augment_3",
+  "category": "thermal:augments",
+  "sortnum": -1,
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "升级增强组件会全面改善机器、装置、能源炉和工具的属性，按比例调整基础 RF 存储／传输、流体存储／传输及 RF/t 消耗／生成。这一整体倍率可与其他增强修正项叠加，即使后者带有下划线。不过，和其他带下划线的修正项一样，整合组件本身只取最高倍率。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "例如，一台$(l:thermal:technology/machines/furnace)红石熔炼炉$(/l)同时安装谐振整合组件、硬化整合组件及$(l:thermal:technology/augments/rf_coil_storage)稳态通量线圈$(/l)后，RF 容量将变为基础值的 24 倍，RF 传输变为 8 倍，基础 RF/t 变为 4 倍。$(br2)硬化、强化、谐振整合组件的倍率分别为 2、3、4 倍。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/upgrade_augment_1",
+      "B.recipe": "thermal:augments/upgrade_augment_2"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/upgrade_augment_3"
+    }
+  ]
+}

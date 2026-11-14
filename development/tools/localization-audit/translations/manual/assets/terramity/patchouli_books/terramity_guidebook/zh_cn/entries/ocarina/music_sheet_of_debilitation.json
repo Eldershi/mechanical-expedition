@@ -1,0 +1,24 @@
+{
+  "name": "衰弱乐谱",
+  "icon": "terramity:music_sheet_of_debilitation",
+  "category": "terramity:ocarina",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "衰弱乐谱",
+      "text": "衰弱乐谱会对附近生物施加脆弱，持续 30 秒。$(br2)此乐谱在沙漠神殿中较为常见。",
+      "item": {
+        "item": "terramity:music_sheet_of_debilitation"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

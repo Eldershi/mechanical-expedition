@@ -1,0 +1,28 @@
+{
+  "name": "急速冷冻机",
+  "icon": "thermal:machine_chiller",
+  "category": "thermal:machines",
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "急速冷冻机可以冷却并结晶流体，将水、熔融金属等转化为固态。可放入各种铸模，改变最终产物的形状。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:machine_chiller",
+      "B.recipe": "thermal:chiller_ball_cast"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:chiller_ingot_cast",
+      "B.recipe": "thermal:chiller_rod_cast"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可用的增强组件",
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)整合组件$(/l)$(li)$(l:thermal:technology/augments/item_filter)物品过滤$(/l)$(li)$(l:thermal:technology/augments/xp_storage)知识浓缩器$(/l)$(li)$(l:thermal:technology/augments/rf_coil)扩展通量线圈$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)稳态通量线圈$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)强导通量线圈$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)扩容储罐构造$(/l)$(li)$(l:thermal:technology/augments/machine_speed)通量链接放大器$(/l)$(li)$(l:thermal:technology/augments/machine_efficiency)通量效率$(/l)"
+    }
+  ]
+}

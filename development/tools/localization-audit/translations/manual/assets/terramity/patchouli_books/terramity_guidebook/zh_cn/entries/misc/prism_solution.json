@@ -1,0 +1,18 @@
+{
+  "name": "棱镜溶液",
+  "icon": "terramity:prism_solution_bucket",
+  "category": "terramity:misc",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "棱镜溶液是 Terramity 新增的一种流体。$(br2)浸入其中会获得生命恢复，投入其中的任何物品都会被移除诅咒。$(br2)地下深处偶尔会生成这种溶液的小池塘。"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "terramity:textures/screens/prismatic_pond.png"
+      ],
+      "border": true
+    }
+  ]
+}

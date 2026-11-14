@@ -1,0 +1,18 @@
+{
+  "name": "马铃薯电容",
+  "icon": "thermal:rf_potato",
+  "category": "thermal:tools",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "储存和传输 RF，不能为玩家物品栏中的物品充能。可以附上$(l:thermal:world/holding)扩容$(/l)附魔，提高 RF 容量。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:tools/rf_potato",
+      "title": "马铃薯电容",
+      "text": "$(br2)$(o)“没有花招。这颗土豆只能产生 1.1 伏的电。我根本没能量来骗你。”"
+    }
+  ]
+}

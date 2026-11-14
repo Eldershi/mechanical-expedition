@@ -1,0 +1,24 @@
+{
+  "name": "裂岩爆炸物",
+  "icon": "thermal:earth_tnt",
+  "read_by_default": true,
+  "flag": "mod:thermal_innovation",
+  "category": "thermal:explosives",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "裂岩爆炸物会破坏区域内的土石类方块并使其掉落，对爆炸范围内的生物施加$(l:thermal:world/mobs/basalz)破甲 II$(/l)。适合挖矿。炸药方块与手榴弹的作用半径分别为 9 格和 5 格。$(br2)$(o)传说它们曾强大到可以破坏基岩。$()"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:earth_tnt",
+      "B.recipe": "thermal:earth_grenade_4"
+    },
+    {
+      "flag": "&mod:thermal_innovation,mod:thermal_locomotion",
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:earth_tnt_minecart",
+      "title": "裂岩炸药矿车"
+    }
+  ]
+}

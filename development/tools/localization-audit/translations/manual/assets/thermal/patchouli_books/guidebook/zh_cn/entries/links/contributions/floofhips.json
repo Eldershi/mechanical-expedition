@@ -1,0 +1,25 @@
+{
+  "name": "FloofHips",
+  "icon": "minecraft:blue_orchid",
+  "category": "thermal:contributors",
+  "read_by_default": true,
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:link",
+      "url": "https://twitter.com/FloofHips",
+      "link_text": "FloofHips 的 Twitter 主页",
+      "text": "创作了热力系列许多赏心悦目的精美纹理。Floof 还多次为这本书增添了更多风采。"
+    },
+    {
+      "type": "patchouli:empty"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "thermal:textures/gui/guidebook/guy.png"
+      ],
+      "border": true
+    }
+  ]
+}

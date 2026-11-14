@@ -1,0 +1,9 @@
+{
+  "block.titanium.block_test": "测试方块：（基础）",
+  "block.titanium.block_twenty_four_test": "测试方块：（二十四向旋转）",
+  "block.titanium.block_asset_test": "测试方块：（资源）",
+  "block.titanium.machine_test": "测试方块：（机器）",
+  "tooltip.titanium.facing_handler.test": "测试朝向组件",
+  "tooltip.titanium.facing_handler.test2": "这是第二个测试",
+  "direction.titanium.up": "上方"
+}

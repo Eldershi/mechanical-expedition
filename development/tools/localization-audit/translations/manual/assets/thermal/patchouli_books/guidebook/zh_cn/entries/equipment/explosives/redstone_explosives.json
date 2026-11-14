@@ -1,0 +1,24 @@
+{
+  "name": "红石爆炸物",
+  "icon": "thermal:redstone_tnt",
+  "read_by_default": true,
+  "flag": "mod:thermal_innovation",
+  "category": "thermal:explosives",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "红石爆炸物爆炸后会产生红石通量激发场，激活作用范围内的所有红石元件和装置。激发场会持续 10 秒。炸药方块与手榴弹产生的激发场半径分别为 9 格和 5 格。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:redstone_tnt",
+      "B.recipe": "thermal:redstone_grenade_4"
+    },
+    {
+      "flag": "&mod:thermal_innovation,mod:thermal_locomotion",
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:redstone_tnt_minecart",
+      "title": "红石炸药矿车"
+    }
+  ]
+}

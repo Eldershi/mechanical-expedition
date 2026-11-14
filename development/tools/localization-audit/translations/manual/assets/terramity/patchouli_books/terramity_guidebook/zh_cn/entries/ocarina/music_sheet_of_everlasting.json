@@ -1,0 +1,24 @@
+{
+  "name": "恒久乐谱",
+  "icon": "terramity:music_sheet_of_everlasting",
+  "category": "terramity:ocarina",
+  "sortnum": 24,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "恒久乐谱",
+      "text": "恒久乐谱使其他乐谱效果的持续时间变为 1.5 倍。$(br2)埋藏的宝藏中几乎总能找到这张乐谱；任何积雪生物群系中生成的雪地堡垒里，也偶尔会出现。",
+      "item": {
+        "item": "terramity:music_sheet_of_everlasting"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

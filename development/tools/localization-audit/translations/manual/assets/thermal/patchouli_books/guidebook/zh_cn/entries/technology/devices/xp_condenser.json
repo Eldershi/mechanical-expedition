@@ -1,0 +1,24 @@
+{
+  "name": "知识聚集器",
+  "icon": "thermal:device_xp_condenser",
+  "category": "thermal:devices",
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "知识聚集器可以从附近装有$(l:thermal:technology/augments/xp_storage)知识浓缩器$(/l)、并在内部储存经验的方块中收集经验，再将经验转化为液态。基础收集范围为以装置为中心的 5×5×5 区域，可使用$(l:thermal:technology/augments/area_radius)径向范围拓展组件$(/l)扩大。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:device_xp_condenser",
+      "title": "知识聚集器",
+      "text": "通过红石信号控制时，知识聚集器会在开启的一瞬间立即收集，因此也能可靠地响应脉冲。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可用的增强组件",
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)整合组件$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)扩容储罐构造$(/l)$(li)$(l:thermal:technology/augments/area_radius)径向范围拓展$(/l)"
+    }
+  ]
+}

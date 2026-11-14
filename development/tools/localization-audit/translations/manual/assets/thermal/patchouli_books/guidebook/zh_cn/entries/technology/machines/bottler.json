@@ -1,0 +1,23 @@
+{
+  "name": "流体灌装机",
+  "icon": "thermal:machine_bottler",
+  "category": "thermal:machines",
+  "read_by_default": true,
+  "flag": "mod:thermal_expansion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "流体灌装机用于给桶、瓶等流体容器装入流体。它可以自动把$(l:thermal:technology/potion_fluid)药水流体$(/l)灌入瓶中，例如$(l:thermal:technology/machines/brewer)药水酿造机$(/l)的产物。"
+    },
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:machine_bottler",
+      "title": "流体灌装机"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可用的增强组件",
+      "text": "$(li)$(l:thermal:technology/augments/integral_components)整合组件$(/l)$(li)$(l:thermal:technology/augments/item_filter)物品过滤$(/l)$(li)$(l:thermal:technology/augments/xp_storage)知识浓缩器$(/l)$(li)$(l:thermal:technology/augments/rf_coil)扩展通量线圈$(/l)$(li)$(l:thermal:technology/augments/rf_coil_storage)稳态通量线圈$(/l)$(li)$(l:thermal:technology/augments/rf_coil_xfer)强导通量线圈$(/l)$(li)$(l:thermal:technology/augments/fluid_tank)扩容储罐构造$(/l)$(li)$(l:thermal:technology/augments/machine_speed)通量链接放大器$(/l)$(li)$(l:thermal:technology/augments/machine_efficiency)通量效率$(/l)"
+    }
+  ]
+}

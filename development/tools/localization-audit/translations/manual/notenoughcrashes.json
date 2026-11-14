@@ -1,0 +1,19 @@
+{
+  "notenoughcrashes.crashscreen.paragraph3.line4": "即使发生崩溃，也能继续游玩。",
+  "notenoughcrashes.initerrorscreen.paragraph3.line4": "由于此错误而加载 Minecraft。",
+  "notenoughcrashes.midnightconfig.disableReturnToMainMenuComment1": "开启后，崩溃时会禁用“返回主菜单”按钮，",
+  "notenoughcrashes.midnightconfig.disableReturnToMainMenuComment2": "因此无法从崩溃中恢复。",
+  "notenoughcrashes.midnightconfig.disableReturnToMainMenu": "禁用返回主菜单",
+  "notenoughcrashes.midnightconfig.catchInitializationCrashesComment1": "（仅 Fabric）关闭后，初始化失败时游戏会正常退出，",
+  "notenoughcrashes.midnightconfig.catchInitializationCrashesComment2": "不会显示特殊的崩溃界面。",
+  "notenoughcrashes.midnightconfig.catchInitializationCrashesComment3": "安装特定模组时，此项始终禁用，即使设置为开启。",
+  "notenoughcrashes.midnightconfig.catchInitializationCrashes": "捕获初始化崩溃",
+  "notenoughcrashes.midnightconfig.debugModIdentificationComment": "开启后，会为模组开发者记录更多信息。",
+  "notenoughcrashes.midnightconfig.debugModIdentification": "调试模组识别",
+  "notenoughcrashes.midnightconfig.crashLimitComment": "一次游戏会话中，NEC 尝试阻止游戏因崩溃关闭的次数。",
+  "notenoughcrashes.midnightconfig.crashLimit": "崩溃次数上限",
+  "notenoughcrashes.midnightconfig.catchGameloopComment1": "关闭后，NEC 不会尝试阻止游戏在崩溃时退出。",
+  "notenoughcrashes.midnightconfig.catchGameloopComment2": "安装 Iris 时，此项始终禁用，即使配置为开启。",
+  "notenoughcrashes.midnightconfig.catchGameloop": "捕获游戏运行崩溃",
+  "notenoughcrashes.midnightconfig.title": "Not Enough Crashes 配置"
+}

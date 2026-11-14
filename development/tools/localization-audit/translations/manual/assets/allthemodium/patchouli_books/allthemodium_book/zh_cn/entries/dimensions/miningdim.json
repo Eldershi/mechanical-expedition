@@ -1,0 +1,12 @@
+{
+  "name": "采矿维度",
+  "icon": "allthemodium:allthemodium_ore",
+  "category": "allthemodium:dimensions",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "text",
+      "text": "采矿维度适合架设采石场进行采矿。由于它是超平坦维度，也适合用作测试区域。在主世界使用$(l:dimensions/teleport_pad)传送垫$(/c)即可前往。"
+    }
+  ]
+}

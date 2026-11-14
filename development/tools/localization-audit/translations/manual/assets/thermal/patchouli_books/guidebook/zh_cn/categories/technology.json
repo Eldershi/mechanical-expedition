@@ -1,0 +1,6 @@
+{
+  "name": "科技",
+  "description": "实用技巧：按住 Alt＋Shift 点击机器中的任意流体槽或红石通量表，可将其中储存的流体或 RF 清空并销毁。",
+  "icon": "thermal:machine_frame",
+  "sortnum": 1
+}

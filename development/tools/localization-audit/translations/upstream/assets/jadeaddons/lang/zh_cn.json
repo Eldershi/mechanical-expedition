@@ -1,0 +1,9 @@
+{
+  "config.jade.plugin_jadeaddons.create.blaze_burner": "烈焰人燃烧室",
+  "config.jade.plugin_jadeaddons.create.crafting_blueprint": "合成蓝图",
+  "config.jade.plugin_jadeaddons.create.placard": "置物板",
+  "config.jade.plugin_jadeaddons.create.goggles.detailed": "仅在细节显示",
+  "config.jade.plugin_jadeaddons.deepresonance.crystal": "水晶",
+  "config.jade.plugin_jadeaddons.lootr.info": "信息",
+  "jade.modName.jadeaddons.tconstruct": "匠魂"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "助势乐谱",
+  "icon": "terramity:music_sheet_of_bolstering",
+  "category": "terramity:ocarina",
+  "sortnum": 25,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "助势乐谱",
+      "text": "助势乐谱使其他乐谱效果的等级提高 1 级。$(br2)埋藏的宝藏中几乎总能找到这张乐谱；地下深处罕见的寄生实验室中也偶尔会出现。",
+      "item": {
+        "item": "terramity:music_sheet_of_bolstering"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

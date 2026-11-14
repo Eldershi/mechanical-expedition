@@ -1,0 +1,24 @@
+{
+  "name": "生命乐谱",
+  "icon": "terramity:music_sheet_of_life",
+  "category": "terramity:ocarina",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "生命乐谱",
+      "text": "生命乐谱会对自身及附近生物施加瞬间治疗 II。$(br2)将仙灵装瓶时，有较低概率获得此乐谱。",
+      "item": {
+        "item": "terramity:music_sheet_of_life"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

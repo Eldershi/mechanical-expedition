@@ -1,0 +1,18 @@
+{
+  "name": "走火诅咒",
+  "icon": "minecraft:enchanted_book",
+  "category": "terramity:enchants",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "走火诅咒是 Terramity 新增的一种诅咒附魔。$(br)$(br)此附魔使所有枪械的击退／后坐力翻倍。$(br)$(br)最高等级：1"
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "terramity:textures/screens/guns.png"
+      ],
+      "border": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "扩展通量线圈",
+  "icon": "thermal:rf_coil_augment",
+  "category": "thermal:augments",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "thermal:double_crafting_page",
+      "A.recipe": "thermal:augments/rf_coil_augment",
+      "title": "扩展通量线圈",
+      "text": "扩展通量线圈使 RF 存储与传输能力变为 4 倍。"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "节弹射击",
+  "icon": "minecraft:potion",
+  "category": "terramity:effects",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "节弹射击是 Terramity 新增的一种药水／状态效果。$(br2)此效果使你在装填时有机会节省弹药。I 级时概率为 10%，之后每级额外提高 10 个百分点。"
+    }
+  ]
+}

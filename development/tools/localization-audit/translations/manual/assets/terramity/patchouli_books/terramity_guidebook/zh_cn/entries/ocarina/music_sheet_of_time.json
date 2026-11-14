@@ -1,0 +1,24 @@
+{
+  "name": "时间乐谱",
+  "icon": "terramity:music_sheet_of_time",
+  "category": "terramity:ocarina",
+  "sortnum": 29,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "时间乐谱",
+      "text": "时间乐谱使世界时间前进 12 小时（提高效果等级的加成会增加前进时数）。$(br2)携带棱镜宝石入睡时可获得此乐谱（不会消耗棱镜宝石）。",
+      "item": {
+        "item": "terramity:music_sheet_of_time"
+      }
+    },
+    {
+      "type": "patchouli:image",
+      "title": "乐谱",
+      "images": [
+        "terramity:textures/screens/music_sheets.png"
+      ],
+      "border": true
+    }
+  ]
+}

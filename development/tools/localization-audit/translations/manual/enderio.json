@@ -1,0 +1,9 @@
+{
+  "gui.enderio.conduit_probe.mode.switched": "已将导管探测器模式切换为 %s",
+  "item.enderio.entity_filter": "灵魂过滤器",
+  "keybinding.enderio.probe_mode": "切换探测器模式",
+  "tooltip.enderio.conduit.fluid.rate": "传输速率 %s mB/刻",
+  "tooltip.enderio.conduit_probe.mode.copy_paste": "复制／粘贴",
+  "tooltip.enderio.conduit_probe.mode.probe": "探测",
+  "gui.enderio.ok": "确定"
+}
