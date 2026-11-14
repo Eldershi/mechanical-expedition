@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "modId": "stockkeeperbookmarks",
+  "name": "Create: Stock Keeper Bookmarks",
+  "version": "1.0.0",
+  "releaseChannel": "release",
+  "minecraft": "1.20.1",
+  "loader": "forge",
+  "java": 17,
+  "requiredOn": [
+    "client"
+  ],
+  "dependencies": [
+    {
+      "modId": "forge",
+      "mandatory": true,
+      "versionRange": "[47,)",
+      "side": "CLIENT"
+    },
+    {
+      "modId": "minecraft",
+      "mandatory": true,
+      "versionRange": "[1.20.1]",
+      "side": "CLIENT"
+    },
+    {
+      "modId": "create",
+      "mandatory": true,
+      "versionRange": "[6.0.7,6.1.0)",
+      "side": "CLIENT"
+    }
+  ],
+  "artifact": {
+    "filename": "stock-keeper-bookmarks-forge-1.20.1-1.0.0.jar",
+    "bytes": 102227,
+    "sha256": "330b8da6ab3c7e6889fad64a925dd7e7a3b7b36a424d44411912e523442d930d",
+    "sha1": "391a53de9f320b1e6f52af213913f7569ebd05a5",
+    "sha512": "9665c052c2d4c2b6bc9c364e39ccd9f57d726589c612bf668035235c54432d796d09ab77f2ce01b0dec454caf55cf998a374731fac3afe81fd3be5b155f6ed47",
+    "downloadUrl": "https://cdn.modrinth.com/data/QqRDfnxk/versions/yGG4hw0u/stock-keeper-bookmarks-forge-1.20.1-1.0.0.jar"
+  },
+  "officialVersionPage": "https://modrinth.com/mod/create-stock-keeper-bookmarks/version/yGG4hw0u",
+  "sourceRepository": "https://github.com/Guybrrush/stock-keeper-bookmarks",
+  "sourceBranch": "1.20.1-forge",
+  "license": "LGPL-3.0-or-later",
+  "defaults": {
+    "clickToSend": true,
+    "clearAddressOnOpen": true,
+    "perTerminalBookmarks": true
+  },
+  "personalData": {
+    "bookmarkFile": "config/stockkeeperbookmarks-bookmarks.json",
+    "sharedInRepository": false
+  }
+}

@@ -3974,6 +3974,17 @@
       "downloadHash": "8f8350bae11f0f8b0f10d7a60c2681633177a3ecf40eb08958844c664ed0afad"
     },
     {
+      "filename": "stock-keeper-bookmarks-forge-1.20.1-1.0.0.jar",
+      "sha256": "330b8da6ab3c7e6889fad64a925dd7e7a3b7b36a424d44411912e523442d930d",
+      "sha1": "391a53de9f320b1e6f52af213913f7569ebd05a5",
+      "bytes": 102227,
+      "downloadUrl": "https://cdn.modrinth.com/data/QqRDfnxk/versions/yGG4hw0u/stock-keeper-bookmarks-forge-1.20.1-1.0.0.jar",
+      "downloadUrlSource": "mods/.index/stock-keeper-bookmarks.pw.toml",
+      "downloadHashFormat": "sha512",
+      "downloadHash": "9665c052c2d4c2b6bc9c364e39ccd9f57d726589c612bf668035235c54432d796d09ab77f2ce01b0dec454caf55cf998a374731fac3afe81fd3be5b155f6ed47",
+      "sha512": "9665c052c2d4c2b6bc9c364e39ccd9f57d726589c612bf668035235c54432d796d09ab77f2ce01b0dec454caf55cf998a374731fac3afe81fd3be5b155f6ed47"
+    },
+    {
       "filename": "structureessentials-1.20.1-5.1.jar",
       "sha256": "e6a027c600378f26ead8f8299ebf3c64dace6565c758300a4d0b8599ad6974af",
       "sha1": "a902167c4c3009d7271f60708b9f29f5d6a9a4ca",
