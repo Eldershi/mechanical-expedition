@@ -8,7 +8,7 @@ parser.add_argument('--output',required=True,type=Path)
 args=parser.parse_args()
 tool=Path(__file__).resolve().parents[1]
 classpath=(tool/'build/classpath.txt').read_text()+os.pathsep+os.pathsep.join(map(str,[
-    tool/'dist/expedition-terramity-curse-compat-1.0.0.jar',
+    tool/'dist/expedition-terramity-curse-compat-1.0.1.jar',
     *args.mods.glob('curios-forge-*.jar'),*args.mods.glob('terramity-*.jar')]))
 classes=tool/'build/probe-classes';classes.mkdir(exist_ok=True)
 subprocess.run(['javac','--release','17','-proc:none','-cp',classpath,'-d',str(classes),str(tool/'tests/RuntimeVerification.java')],check=True)

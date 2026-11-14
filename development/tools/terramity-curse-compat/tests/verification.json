@@ -6,7 +6,7 @@
   "lethality": "0.4.1",
   "create": "6.0.8",
   "godDamnRepackager": "0.5.1-forge",
-  "completeModpackColdStart": true,
+  "completeModpackColdStart": false,
   "swords": {
     "forbidden_oathblade": 1.5,
     "exalted_oathblade": 1.5,
@@ -29,7 +29,24 @@
   },
   "nativeCursedVictimHandlerDamage": 6,
   "limitations": [
-    "Incoming player damage is checked directly through the native Enigmatic Legacy handler because the modpack cancels damage to test FakePlayers.",
+    "Combat behavior is verified in an isolated dedicated Forge server with Terramity, Lethality, Enigmatic Legacy, Create, God Damn Repackager and their required libraries. Full-modpack world generation and gameplay scripts are not part of this runtime check.",
+    "Incoming player damage is checked directly through the native Enigmatic Legacy handler.",
     "Shared-pool conservation is verified in the real runtime; no conveyor throughput benchmark was performed."
-  ]
+  ],
+  "compatibilityAddon": "1.0.1",
+  "isolatedCombatRuntime": {
+    "minecraftServer": true,
+    "dedicatedForge": true,
+    "runtimeJarCount": 11,
+    "gameplayScriptsLoaded": false,
+    "probeCompleted": true,
+    "cleanShutdown": true
+  },
+  "shadowflameKnockback": {
+    "repeatedSwordTicks": 12,
+    "existingTargetVelocityPreserved": true,
+    "ordinaryMeleeKnockbackPreserved": true,
+    "unrelatedEntityKnockbackDuringBurnChecks": 18,
+    "damageContextCleared": true
+  }
 }

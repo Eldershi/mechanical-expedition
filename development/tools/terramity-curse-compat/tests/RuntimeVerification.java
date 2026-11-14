@@ -32,12 +32,30 @@ public final class RuntimeVerification {
     private boolean verified;
     private int ticks;
     private float last;
+    private int knockbackEvents;
+    private int canceledKnockbackEvents;
+    private int isolatedKnockbackChecks;
     private net.minecraft.world.damagesource.DamageSource source;
     public RuntimeVerification() {
         MinecraftForge.EVENT_BUS.addListener(this::tick);
         MinecraftForge.EVENT_BUS.addListener(EventPriority.LOWEST,this::hurt);
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.LOWEST,true,this::knockback);
     }
-    private void hurt(LivingHurtEvent event) {if(event.getEntity()==target){last=event.getAmount();source=event.getSource();}}
+    private void hurt(LivingHurtEvent event) {
+        if(event.getEntity()!=target) return;
+        last=event.getAmount();source=event.getSource();
+        if(TerramityCurseCompat.applyingDamage()) {
+            var unrelated=new Zombie(event.getEntity().m_9236_());
+            unrelated.m_147240_(0.4,1,0);
+            check(!unrelated.m_20184_().equals(net.minecraft.world.phys.Vec3.f_82478_),"Other entity knockback during burning");
+            isolatedKnockbackChecks++;
+        }
+    }
+    private void knockback(LivingKnockBackEvent event) {
+        if(event.getEntity()!=target) return;
+        knockbackEvents++;
+        if(event.isCanceled()) canceledKnockbackEvents++;
+    }
     private static void check(boolean value,String message) {if(!value)throw new AssertionError(message);}
     private static void near(float got,float expected,String message) {check(Math.abs(got-expected)<0.001F,message+": "+got+" != "+expected);}
     private void tick(net.minecraftforge.event.TickEvent.ServerTickEvent event) {
@@ -45,8 +63,12 @@ public final class RuntimeVerification {
     }
     private float burn(LivingEntity entity) {
         var pos=entity.m_9236_().m_220360_();entity.m_6034_(pos.m_123341_()+0.5,pos.m_123342_()+2,pos.m_123343_()+0.5);
-        target=entity;last=-1;source=null;entity.f_19802_=0;entity.m_21153_(20F);
+        target=entity;last=-1;source=null;knockbackEvents=0;canceledKnockbackEvents=0;entity.f_19802_=0;entity.m_21153_(20F);
+        var velocity=new net.minecraft.world.phys.Vec3(0.07,0.03,-0.05);entity.m_20256_(velocity);
         NyxiumFireOnEffectActiveTickProcedure.execute(entity.m_9236_(),entity);
+        check(entity.m_20184_().equals(velocity),"Periodic damage preserves target velocity: "+entity.m_20184_());
+        if(source!=null && source.m_7639_()!=null) check(knockbackEvents==1 && canceledKnockbackEvents==1,"Attributed burning cancels only its knockback");
+        check(!TerramityCurseCompat.applyingDamage(),"Burning context cleared");
         return last;
     }
     @SuppressWarnings("unchecked")
@@ -66,7 +88,7 @@ public final class RuntimeVerification {
                 Zombie zombie=new Zombie(level);ItemStack stack=new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation("lethality",sword)));
                 stack.m_41720_().m_7579_(stack,zombie,player);
                 check(zombie.m_21023_(effect),sword+" applies shadowflame");
-                near(burn(zombie),1.5F,sword+" curse damage");
+                for(int tick=0;tick<4;tick++) near(burn(zombie),1.5F,sword+" curse damage tick "+tick);
                 check(source.m_7639_()==player && source.m_7640_()==null,"Attributed periodic source");
                 System.out.println("TERRAMITY_TEST_SWORD_OK "+sword+" damage="+last);
             }
@@ -83,6 +105,13 @@ public final class RuntimeVerification {
             cow.m_147207_(new MobEffectInstance(effect,200,0),player);near(burn(cow),3F,"Passive target retains native ring semantics");
             curios.setEquippedCurio("ring",0,ItemStack.f_41583_);
             zombie.m_147207_(new MobEffectInstance(effect,200,0),player);near(burn(zombie),3F,"Uncursed applier");
+            var meleeTarget=new Zombie(level);target=meleeTarget;last=-1;knockbackEvents=0;canceledKnockbackEvents=0;
+            meleeTarget.m_6034_(player.m_20185_()+3,player.m_20186_(),player.m_20189_());
+            check(meleeTarget.m_6469_(player.m_269291_().m_269075_(player),1F),"Ordinary melee damage accepted");
+            check(knockbackEvents>0 && canceledKnockbackEvents==0,"Ordinary melee knockback not canceled");
+            check(!meleeTarget.m_20184_().equals(net.minecraft.world.phys.Vec3.f_82478_),"Ordinary melee changes target velocity");
+            check(isolatedKnockbackChecks>=12,"Unrelated knockback checked during burning ticks");
+            System.out.println("TERRAMITY_TEST_KNOCKBACK_OK repeated-sword-ticks=12 normal-melee unrelated-during-burn="+isolatedKnockbackChecks);
             for(String id:List.of("blue_fairy","green_fairy","pink_fairy","cave_gnome","royal_gnome")) {
                 var type=ForgeRegistries.ENTITY_TYPES.getValue(new ResourceLocation("terramity",id));
                 for(MobSpawnType reason:List.of(MobSpawnType.NATURAL,MobSpawnType.CHUNK_GENERATION,MobSpawnType.SPAWN_EGG,MobSpawnType.COMMAND,MobSpawnType.STRUCTURE)) {
@@ -108,7 +137,7 @@ public final class RuntimeVerification {
             }
             check(poolType.getMethod("poll",UUID.class).invoke(pool,vault)==null,"No duplicate shared package");
             Class.forName("com.simibubi.create.content.logistics.packager.repackager.RepackagerBlockEntity");
-            System.out.println("TERRAMITY_RUNTIME_VERIFICATION_OK swords=3 projectile-owner offline-fallback weapon-switch effect-cleanup anonymous-fire passive-target uncursed-owner spawn-rules=25 repackager-mixin-loaded shared-pool-conservation cursed-victim-pain");
+            System.out.println("TERRAMITY_RUNTIME_VERIFICATION_OK swords=3 repeated-sword-ticks=12 periodic-velocity-preserved normal-melee-knockback unrelated-knockback projectile-owner offline-fallback weapon-switch effect-cleanup anonymous-fire passive-target uncursed-owner spawn-rules=25 repackager-mixin-loaded shared-pool-conservation cursed-victim-pain");
         } catch(Throwable failure) {System.out.println("TERRAMITY_RUNTIME_VERIFICATION_FAILED");failure.printStackTrace();}
         finally {if(map!=null&&player!=null)map.remove(player.m_20148_());target=null;}
     }

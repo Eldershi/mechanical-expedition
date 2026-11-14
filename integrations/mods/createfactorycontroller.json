@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "modId": "createfactorycontroller",
+  "name": "Create: Factory Controller",
+  "version": "1.2.1-forge-1.20.1",
+  "releaseChannel": "beta",
+  "minecraft": "1.20.1",
+  "loader": "forge",
+  "java": 17,
+  "requiredOn": [
+    "client",
+    "server"
+  ],
+  "dependencies": [
+    {
+      "modId": "forge",
+      "mandatory": true,
+      "versionRange": "[47,)",
+      "ordering": "NONE",
+      "side": "BOTH"
+    },
+    {
+      "modId": "minecraft",
+      "mandatory": true,
+      "versionRange": "[1.20.1]",
+      "ordering": "NONE",
+      "side": "BOTH"
+    },
+    {
+      "modId": "create",
+      "mandatory": true,
+      "versionRange": "[6.0,)",
+      "ordering": "AFTER",
+      "side": "BOTH"
+    }
+  ],
+  "artifact": {
+    "filename": "createfactorycontroller-1.2.1-forge-1.20.1.jar",
+    "bytes": 2090422,
+    "sha256": "a15224165ae9aa92071a09033601305bbc9f4b12851ad02e580a883f3df49626",
+    "sha1": "25de29f6dc6c9497150b242be594561f4aa5db26",
+    "sha512": "de48b33f68a04e78f0a37baa080a6bbdbcd5668dd19e0cf61b39915c50b7a6467c33de937ef4f2edf3bd548735689217e53612abf12a187b8772db267966abe4",
+    "downloadUrl": "https://edge.forgecdn.net/files/8860/865/createfactorycontroller-1.2.1-forge-1.20.1.jar"
+  },
+  "officialVersionPage": "https://www.curseforge.com/minecraft/mc-mods/create-factory-controller/files/8860865",
+  "sourceRepository": "https://github.com/nbcss/create-factory-controller",
+  "license": "MIT",
+  "manual": "https://nbcss.github.io/create-factory-controller/manual/en/",
+  "mechanicalCrafting": {
+    "defaultMaxGridSize": 10,
+    "orderWorkflow": [
+      "Configure the ingredient gauges and output gauge in a Factory Controller.",
+      "Enable mechanical crafting and match the grid size to the connected Mechanical Crafters.",
+      "Enable production orders for the output gauge.",
+      "Order the production pattern from a Stock Keeper."
+    ],
+    "repackagerRequiredForBatchCrafting": true
+  },
+  "licenseFile": "integrations/licenses/createfactorycontroller-MIT.txt",
+  "licenseSource": "https://github.com/nbcss/create-factory-controller/blob/main/LICENSE"
+}

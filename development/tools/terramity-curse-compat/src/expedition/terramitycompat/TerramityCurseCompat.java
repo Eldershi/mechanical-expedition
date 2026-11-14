@@ -14,6 +14,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.extensions.IForgeEntity;
 import net.minecraftforge.event.entity.living.MobEffectEvent;
 import net.minecraftforge.event.entity.living.MobSpawnEvent;
+import net.minecraftforge.event.entity.living.LivingKnockBackEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,18 +27,19 @@ public final class TerramityCurseCompat {
     private static final String PENALTY="expedition_shadowflame_penalty";
     private static final ResourceLocation EFFECT=new ResourceLocation("terramity", "nyxium_fire");
     private static final Set<String> NO_NATURAL=Set.of("blue_fairy","green_fairy","pink_fairy","cave_gnome","royal_gnome");
-    private static final ThreadLocal<Boolean> DOT=ThreadLocal.withInitial(()->false);
+    private static final ThreadLocal<Entity> DOT=new ThreadLocal<>();
 
     public TerramityCurseCompat() {
         MinecraftForge.EVENT_BUS.addListener(this::added);
         MinecraftForge.EVENT_BUS.addListener(this::expired);
         MinecraftForge.EVENT_BUS.addListener(this::removed);
         MinecraftForge.EVENT_BUS.addListener(this::spawn);
+        MinecraftForge.EVENT_BUS.addListener(this::knockback);
     }
     private void added(MobEffectEvent.Added event) {
         if (event.getEntity().m_9236_().f_46443_ || !EFFECT.equals(ForgeRegistries.MOB_EFFECTS.getKey(event.getEffectInstance().m_19544_()))) return;
         // Damage reactions must not overwrite the original application with an anonymous refresh.
-        if (DOT.get()) return;
+        if (DOT.get()!=null) return;
         Entity source=event.getEffectSource();
         if(source instanceof Projectile projectile) source=projectile.m_19749_();
         CompoundTag data=((IForgeEntity)event.getEntity()).getPersistentData();
@@ -61,6 +63,10 @@ public final class TerramityCurseCompat {
         if(id!=null && id.m_135827_().equals("terramity") && NO_NATURAL.contains(id.m_135815_()) &&
            (event.getSpawnType()==MobSpawnType.NATURAL || event.getSpawnType()==MobSpawnType.CHUNK_GENERATION)) event.setResult(Event.Result.DENY);
     }
+    private void knockback(LivingKnockBackEvent event) {
+        // Attributed burning damage must not gain the knockback of a direct weapon hit.
+        if(event.getEntity()==DOT.get()) event.setCanceled(true);
+    }
     public static boolean hurt(Entity target, DamageSource original, float amount) {
         CompoundTag data=((IForgeEntity)target).getPersistentData();
         Entity owner=null;
@@ -73,9 +79,9 @@ public final class TerramityCurseCompat {
             // Keep the last confirmed curse reduction when the applier is offline or dead.
             amount*=data.m_128457_(PENALTY);
         }
-        boolean previous=DOT.get();DOT.set(true);
+        Entity previous=DOT.get();DOT.set(target);
         try { return target.m_6469_(source,amount); }
-        finally { DOT.set(previous); }
+        finally { if(previous==null) DOT.remove(); else DOT.set(previous); }
     }
-    public static boolean applyingDamage() {return DOT.get();}
+    public static boolean applyingDamage() {return DOT.get()!=null;}
 }

@@ -5435,7 +5435,7 @@ f2ced7adfa7c11bf9acb0de77a3c3b2a9f8241d764b64cbed381c8f517776208  current/client
 b9dddfcb298b58af27051d66d5282e42bea8cbb470a99a565cfa05970f1518dd  current/client/mods/expedition-ponder-ui-1.0.2.jar
 9ec8fd9fec718c3a40806f3ad8144198b1f48715393fde4e4f12646288568b1b  current/client/mods/expedition-railway-avoidance-1.0.0.jar
 6e433479de30c59987305c572b1f011e8c87f6e7913073dfee7237d66c541953  current/client/mods/expedition-stock-keeper-tooltip-fix-1.0.0.jar
-598fe6b594ca5d8c0cfd6440fe93c8236213720abe3f969f5b2cd0103378c023  current/client/mods/expedition-terramity-curse-compat-1.0.0.jar
+5c66feb088f716fd90c7ca480b7e60db2a70bce0666b3e0f9e29983f3af49d7b  current/client/mods/expedition-terramity-curse-compat-1.0.1.jar
 9d04bf9f26ba36aa4fb321603bdc359c227efcb10db8231a27ca6fb8faafe867  current/client/mods/expedition-upstream-compat-1.0.0.jar
 39c71735afad10cecfe9954e2d69f855b083dcec0b83831d54400e5182031cfd  current/client/mods/expedition-worldgen-compat-1.0.3.jar
 4c50e6ee1d836eb216a77baeaa32dbdded5454bf207add293fac80504fb3d3ed  current/client/resourcepacks/Better Create Glass Pipes.zip
@@ -6720,7 +6720,7 @@ abcc97a3a3bb08ec4c30523af871d4d1168259f91cf54ffb6e5ab9c47b4648dd  current/client
 7574819734336c027128905fd6df69be9585543ce75cb022eb4b9c82e32527a1  current/client/tlm_custom_pack/touhou_little_maid-1.0.0/assets/touhou_little_maid_seihou/textures/maid_icon.png
 595f13f09777d8ecd28aacfa8f82bb8d14d656b290f50fc0aad02489e75944e1  current/client/tlm_custom_pack/touhou_little_maid-1.0.0/pack.mcmeta
 af1714bb66a877021ede496e61f35d2358fb69b8878eda7b553f07fb4588075f  current/client/tlm_custom_pack/touhou_little_maid-1.0.0/pack.png
-45f429347e7dd31eb0f17ef9f0e567075f382856eea354246fa708d10071d748  current/mods.lock.json
+d4e27c7b55edacee238cb85588f70d15b800603dde6e8cf03b35395d9f61f702  current/mods.lock.json
 a38b42762eb20a0681b34eafb7c357ddb678ea6420ce52e606d9b8ab0113abec  current/server/config/almostunified/unify.json
 2962da4591a3068a843ec9ec0be8288b2fa2c1ef5fbc54c71c390546066acb92  current/server/config/cso-common.toml
 4a7804ee7019ebc4780df70bd05580c1f57aba14f99d9bbdb247fe9e65821c5f  current/server/config/eclipticseasons-common.toml
@@ -6755,7 +6755,8 @@ ee33ca1bd6b8a36df7c146e6d748469154703221c981210d4352a535fbed9f57  current/server
 3dd5e3fde779f41d82531f7dba1c62fbc4f6dc282008d46c6b5317bf77b7f04f  current/server/mods/Corgilib-Forge-1.20.1-4.0.3.6.jar
 2ca7d43485c2c9f97fed9ffcfd9c581ba774a732b8473b5868170b5b303360c8  current/server/mods/Create-Steam-Ages-1.0-expedition-steamletters-compat.jar
 91709031d559037fe66798202c1a2b05259ea28d5b639b8dcd734846616a5f66  current/server/mods/Oh-The-Trees-Youll-Grow-forge-1.20.1-1.7.3.jar
-598fe6b594ca5d8c0cfd6440fe93c8236213720abe3f969f5b2cd0103378c023  current/server/mods/expedition-terramity-curse-compat-1.0.0.jar
+a15224165ae9aa92071a09033601305bbc9f4b12851ad02e580a883f3df49626  current/server/mods/createfactorycontroller-1.2.1-forge-1.20.1.jar
+5c66feb088f716fd90c7ca480b7e60db2a70bce0666b3e0f9e29983f3af49d7b  current/server/mods/expedition-terramity-curse-compat-1.0.1.jar
 99cbb24d261d709804c275720fd92fa2becf986ba15f630856c68296bc723b2f  current/server/mods/goddamnrepackager-0.5.1-forge-alpha.jar
 eaeb731a56a434894e1f7645b3f39f3ace30a928309b36d340d7f67a2651f06d  current/server/server-additions.json
 7bce9ac31be99cf831f50617211780e0225db32fd742dd375fdedda879e163f6  current/server/server-additions/expedition-player-motion-guard-1.1.0.jar

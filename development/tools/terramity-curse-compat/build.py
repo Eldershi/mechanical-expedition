@@ -13,9 +13,9 @@ def build():
         deps.extend(p for p in (libs/relative).rglob('*.jar') if zipfile.is_zipfile(p) and not p.name.endswith(('-sources.jar','-extra.jar')))
     deps.extend(args.mods.glob('EnigmaticLegacy-*.jar'));cp=os.pathsep.join(map(str,deps));(tool/'build/classpath.txt').write_text(cp)
     subprocess.run(['javac','--release','17','-proc:none','-encoding','UTF-8','-cp',cp,'-d',str(classes),*map(str,(tool/'src').rglob('*.java'))],check=True)
-    artifact=out/'expedition-terramity-curse-compat-1.0.0.jar'
+    artifact=out/'expedition-terramity-curse-compat-1.0.1.jar'
     config={'required':True,'minVersion':'0.8','package':'expedition.terramitycompat.mixin','compatibilityLevel':'JAVA_17','mixins':['ShadowflameDamageMixin','ShadowflameFeedbackMixin'],'injectors':{'defaultRequire':1}}
-    toml='modLoader="javafml"\nloaderVersion="[47,)"\nlicense="All Rights Reserved"\n[[mods]]\nmodId="expedition_terramity_curse_compat"\nversion="1.0.0"\ndisplayName="Expedition Terramity Curse Compatibility"\ndisplayTest="IGNORE_ALL_VERSION"\ndescription="Shadowflame player attribution and Terramity natural spawn rules."\n'
+    toml='modLoader="javafml"\nloaderVersion="[47,)"\nlicense="All Rights Reserved"\n[[mods]]\nmodId="expedition_terramity_curse_compat"\nversion="1.0.1"\ndisplayName="Expedition Terramity Curse Compatibility"\ndisplayTest="IGNORE_ALL_VERSION"\ndescription="Shadowflame player attribution, periodic knockback suppression and Terramity natural spawn rules."\n'
     for mod,version in [('minecraft','[1.20.1,1.20.2)'),('terramity','[0.9.8]'),('enigmaticlegacy','[2.30.1]')]:
         toml+=f'[[dependencies.expedition_terramity_curse_compat]]\nmodId="{mod}"\nmandatory=true\nversionRange="{version}"\nside="BOTH"\n'
     with zipfile.ZipFile(artifact,'w',zipfile.ZIP_DEFLATED) as z:

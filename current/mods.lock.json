@@ -2238,6 +2238,17 @@
       "downloadHash": "808e87b98ea9d42a43096a113a7fa1a89c65bee95608855c6cfe2914d6f1f642"
     },
     {
+      "filename": "createfactorycontroller-1.2.1-forge-1.20.1.jar",
+      "sha256": "a15224165ae9aa92071a09033601305bbc9f4b12851ad02e580a883f3df49626",
+      "sha1": "25de29f6dc6c9497150b242be594561f4aa5db26",
+      "sha512": "de48b33f68a04e78f0a37baa080a6bbdbcd5668dd19e0cf61b39915c50b7a6467c33de937ef4f2edf3bd548735689217e53612abf12a187b8772db267966abe4",
+      "bytes": 2090422,
+      "downloadUrl": "https://edge.forgecdn.net/files/8860/865/createfactorycontroller-1.2.1-forge-1.20.1.jar",
+      "downloadUrlSource": "integrations/mods/createfactorycontroller.json",
+      "downloadHashFormat": "sha256",
+      "downloadHash": "a15224165ae9aa92071a09033601305bbc9f4b12851ad02e580a883f3df49626"
+    },
+    {
       "filename": "creeper_firework-2.1.0.b.jar",
       "sha256": "0f76846cbd2025d134b8752e8e555c6fa8ec26ae8fd323fcbd1f28c1ce7ab6ac",
       "sha1": "5084fe8e3b9127b998e6cbc155ae9a685a016119",
@@ -2539,13 +2550,13 @@
       "localArtifact": "client/mods/expedition-stock-keeper-tooltip-fix-1.0.0.jar"
     },
     {
-      "filename": "expedition-terramity-curse-compat-1.0.0.jar",
-      "sha256": "598fe6b594ca5d8c0cfd6440fe93c8236213720abe3f969f5b2cd0103378c023",
-      "sha1": "2bbc270063043dd36caceb021fcff3c4ca5e2f9f",
-      "sha512": "d2e2174378ae81133e98331f0d0b3bca0fc3dd30dcc98b9e7444c34bc4d2b6881fb35e1eb99ae7e925a1187ea711bfa69b89376e31dd9dab8be6539f77b12e8f",
-      "bytes": 6407,
+      "filename": "expedition-terramity-curse-compat-1.0.1.jar",
+      "sha256": "5c66feb088f716fd90c7ca480b7e60db2a70bce0666b3e0f9e29983f3af49d7b",
+      "sha1": "4b6884253b5475a450151c8b05bbb7afc10494d6",
+      "sha512": "b51bb6073697eda4cb8c4f267a543fd8fcd12b6adf78730068ee140588f642ac688495c673d8f941be71ff88be1e370a93138a66add13028cfa5b0b32ded0a14",
+      "bytes": 6438,
       "downloadUrl": null,
-      "localArtifact": "client/mods/expedition-terramity-curse-compat-1.0.0.jar"
+      "localArtifact": "client/mods/expedition-terramity-curse-compat-1.0.1.jar"
     },
     {
       "filename": "expedition-upstream-compat-1.0.0.jar",
