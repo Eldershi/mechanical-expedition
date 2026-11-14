@@ -27,6 +27,8 @@
 
 当前兼容组合保留 JEI 15.59.0.212、JEI++ 1.0.7 和 ExtendedAE Plus 1.6.3，以兼容已安装的配方查看器扩展；Fluid Logistics 保留 1.3.1，以维持烈焰冷却器、霜冻蛋糕及配套冷加工配方。其他模组的精确版本与文件哈希以锁文件为准。
 
+怪奇宝典收录 43 本教程与探索提示书，首次进入时发放，也可用一本书和一个书架合成。已有宝典放入玩家背包后会自动补齐缺失条目，保留自定义书籍、名称及当前选中的书；页面解锁仍由原模组控制。Malum 的秘传百科全书保留原生获取条件，取得后可手动加入宝典。
+
 5×5 动力合成使用 [Create: Factory Controller](integrations/mods/createfactorycontroller.json) `1.2.1-forge-1.20.1`（Beta），客户端与服务端安装相同版本。先在工厂控制器中放置材料与成品仪表、连接材料关系，打开成品仪表的“使用动力合成”，将网格大小设为与动力合成器方阵一致，并允许生产订单；随后在仓管中选择该产品的生产图样下单。默认最多支持 10×10 方阵，动力合成器之间需要用扳手连通；批量合成必须经过理包机。详细操作见[官方手册](https://nbcss.github.io/create-factory-controller/manual/en/factory-gauge.html#crafting)。
 
 AuraTip 与 OElib 的事件接口适配、Steam Ages 与 Steam Letters 的机器注册兼容，以及 BCLib 和女仆世界生成保护的构建源码均保存在 `development/`。

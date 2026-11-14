@@ -68,6 +68,12 @@
   {
     "id": "patchouli:guide_book",
     "nbt": {
+      "patchouli:book": "eclipticseasons:seasons_chronicle"
+    }
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
       "patchouli:book": "enderio:guide"
     }
   },
@@ -106,6 +112,135 @@
     "nbt": {
       "patchouli:book": "touhou_little_maid:memorizable_gensokyo"
     }
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "scguns:mob_guide",
+    "entity": "scguns:supply_scamp",
+    "definition": {
+      "id": "scguns:supply_scamp",
+      "title": "info.scguns.supply_scamp_guide.title",
+      "pages": [
+        {
+          "type": "text",
+          "text": "info.scguns.supply_scamp_guide.page1"
+        },
+        {
+          "type": "text",
+          "text": "info.scguns.supply_scamp_guide.page2"
+        },
+        {
+          "type": "text",
+          "text": "info.scguns.supply_scamp_guide.page3"
+        },
+        {
+          "type": "text",
+          "text": "info.scguns.supply_scamp_guide.page4"
+        },
+        {
+          "type": "text",
+          "text": "info.scguns.supply_scamp_guide.page5"
+        },
+        {
+          "type": "text",
+          "text": "info.scguns.supply_scamp_guide.page6"
+        }
+      ]
+    }
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "scguns:mob_guide",
+    "entity": "scguns:viventrum",
+    "definition": {
+      "id": "scguns:viventrum",
+      "title": "info.scguns.viventrum_guide.title",
+      "pages": [
+        {
+          "type": "text",
+          "text": "info.scguns.viventrum_guide.page1"
+        },
+        {
+          "type": "text",
+          "text": "info.scguns.viventrum_guide.page2"
+        },
+        {
+          "type": "text",
+          "text": "info.scguns.viventrum_guide.page3"
+        },
+        {
+          "type": "text",
+          "text": "info.scguns.viventrum_guide.page4"
+        },
+        {
+          "type": "text",
+          "text": "info.scguns.viventrum_guide.page5"
+        }
+      ]
+    }
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "hint": "darktower",
+    "pages": 3
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "hint": "hydralair",
+    "pages": 4
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "hint": "icetower",
+    "pages": 3
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "hint": "labyrinth",
+    "pages": 5
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "hint": "lichtower",
+    "pages": 4
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "hint": "tfstronghold",
+    "pages": 4
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "hint": "trollcave",
+    "pages": 3
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "hint": "yeticave",
+    "pages": 3
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "aquamirae:logbook",
+    "variant": "PILLAGER_SHIP"
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "aquamirae:logbook",
+    "variant": "PILLAGER_OUTPOST"
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "aquamirae:logbook",
+    "variant": "PILLAGER_SHELTER"
   },
   {
     "id": "patchouli:guide_book",

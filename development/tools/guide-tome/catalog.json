@@ -1,0 +1,330 @@
+[
+  {
+    "id": "ftbquests:book",
+    "category": "基础与任务",
+    "name": "任务书",
+    "include": "automatic"
+  },
+  {
+    "id": "ae2:guide",
+    "category": "工业与科技",
+    "name": "应用能源指南",
+    "include": "automatic"
+  },
+  {
+    "id": "immersiveengineering:manual",
+    "category": "工业与科技",
+    "name": "工程师手册",
+    "include": "automatic"
+  },
+  {
+    "id": "tconstruct:materials_and_you",
+    "category": "工业与科技",
+    "name": "匠魂基础教程",
+    "include": "automatic"
+  },
+  {
+    "id": "tconstruct:puny_smelting",
+    "category": "工业与科技",
+    "name": "袖珍熔炼",
+    "include": "automatic"
+  },
+  {
+    "id": "tconstruct:mighty_smelting",
+    "category": "工业与科技",
+    "name": "宏伟熔炼",
+    "include": "automatic"
+  },
+  {
+    "id": "tconstruct:tinkers_gadgetry",
+    "category": "工业与科技",
+    "name": "匠魂小玩意",
+    "include": "automatic"
+  },
+  {
+    "id": "tconstruct:fantastic_foundry",
+    "category": "工业与科技",
+    "name": "奇妙铸造",
+    "include": "automatic"
+  },
+  {
+    "id": "tconstruct:encyclopedia",
+    "category": "工业与科技",
+    "name": "匠魂百科",
+    "include": "automatic"
+  },
+  {
+    "id": "alexscaves:cave_book",
+    "category": "世界与探索",
+    "name": "洞穴百科",
+    "include": "automatic"
+  },
+  {
+    "id": "edenring:guide_book",
+    "category": "世界与探索",
+    "name": "伊甸百科全书",
+    "include": "automatic"
+  },
+  {
+    "id": "aether:book_of_lore",
+    "category": "世界与探索",
+    "name": "天境知识之书",
+    "include": "automatic"
+  },
+  {
+    "id": "botania:lexicon",
+    "category": "魔法",
+    "name": "植物魔法辞典",
+    "include": "automatic"
+  },
+  {
+    "id": "ars_nouveau:worn_notebook",
+    "category": "魔法",
+    "name": "陈旧的笔记本",
+    "include": "automatic"
+  },
+  {
+    "id": "eidolon:codex",
+    "category": "魔法",
+    "name": "神秘学典籍",
+    "include": "automatic"
+  },
+  {
+    "id": "enigmaticlegacy:the_acknowledgment",
+    "category": "魔法",
+    "name": "致知之书",
+    "include": "automatic"
+  },
+  {
+    "id": "malum:encyclopedia_arcana",
+    "category": "魔法",
+    "name": "奥秘百科全书",
+    "include": "automatic"
+  },
+  {
+    "id": "legendary_monsters:guide_book",
+    "category": "世界与探索",
+    "name": "传奇怪物指南",
+    "include": "automatic"
+  },
+  {
+    "id": "eternal_starlight:book",
+    "category": "世界与探索",
+    "name": "闪光石板",
+    "include": "automatic"
+  },
+  {
+    "id": "solcarrot:food_book",
+    "category": "生活与季节",
+    "name": "食物之书",
+    "include": "automatic"
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "apotheosis:apoth_chronicle"
+    },
+    "category": "魔法",
+    "name": "神化编年史",
+    "include": "automatic"
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "enderio:guide"
+    },
+    "category": "工业与科技",
+    "name": "末影接口指南",
+    "include": "automatic"
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "ad_astra:astrodux"
+    },
+    "category": "工业与科技",
+    "name": "宇宙指南",
+    "include": "automatic"
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "allthemodium:allthemodium_book"
+    },
+    "category": "工业与科技",
+    "name": "ATM矿物指南",
+    "include": "automatic"
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "irons_spellbooks:iss_guide_book"
+    },
+    "category": "魔法",
+    "name": "铁魔法指南",
+    "include": "automatic"
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "l2hostility:hostility_guide"
+    },
+    "category": "世界与探索",
+    "name": "莱特兰恶意指南",
+    "include": "automatic"
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "terramity:terramity_guidebook"
+    },
+    "category": "世界与探索",
+    "name": "灾变纪元指南",
+    "include": "automatic"
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "touhou_little_maid:memorizable_gensokyo"
+    },
+    "category": "生活与季节",
+    "name": "可记忆的幻想乡",
+    "include": "automatic"
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "thermal:guidebook"
+    },
+    "category": "工业与科技",
+    "name": "热力系列指南",
+    "include": "automatic"
+  },
+  {
+    "id": "patchouli:guide_book",
+    "nbt": {
+      "patchouli:book": "eclipticseasons:seasons_chronicle"
+    },
+    "category": "生活与季节",
+    "name": "节气纪事",
+    "include": "automatic"
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "scguns:mob_guide",
+    "category": "工业与科技",
+    "name": "补给械灵指南",
+    "include": "automatic",
+    "entity": "scguns:supply_scamp"
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "scguns:mob_guide",
+    "category": "工业与科技",
+    "name": "维文特鲁姆指南",
+    "include": "automatic",
+    "entity": "scguns:viventrum"
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "category": "世界与探索",
+    "name": "木塔札记",
+    "include": "automatic",
+    "hint": "darktower",
+    "pages": 3
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "category": "世界与探索",
+    "name": "火焰沼泽札记",
+    "include": "automatic",
+    "hint": "hydralair",
+    "pages": 4
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "category": "世界与探索",
+    "name": "极光宫殿札记",
+    "include": "automatic",
+    "hint": "icetower",
+    "pages": 3
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "category": "世界与探索",
+    "name": "沼泽迷宫札记",
+    "include": "automatic",
+    "hint": "labyrinth",
+    "pages": 5
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "category": "世界与探索",
+    "name": "尖顶塔札记",
+    "include": "automatic",
+    "hint": "lichtower",
+    "pages": 4
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "category": "世界与探索",
+    "name": "要塞札记",
+    "include": "automatic",
+    "hint": "tfstronghold",
+    "pages": 4
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "category": "世界与探索",
+    "name": "高地札记",
+    "include": "automatic",
+    "hint": "trollcave",
+    "pages": 3
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "twilightforest:structure_hint",
+    "category": "世界与探索",
+    "name": "冰洞札记",
+    "include": "automatic",
+    "hint": "yeticave",
+    "pages": 3
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "aquamirae:logbook",
+    "category": "世界与探索",
+    "name": "掠夺者船舶日志",
+    "include": "automatic",
+    "variant": "PILLAGER_SHIP"
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "aquamirae:logbook",
+    "category": "世界与探索",
+    "name": "掠夺者前哨日志",
+    "include": "automatic",
+    "variant": "PILLAGER_OUTPOST"
+  },
+  {
+    "id": "minecraft:written_book",
+    "factory": "aquamirae:logbook",
+    "category": "世界与探索",
+    "name": "掠夺者避难所日志",
+    "include": "automatic",
+    "variant": "PILLAGER_SHELTER"
+  },
+  {
+    "id": "malum:encyclopedia_esoterica",
+    "category": "魔法",
+    "name": "秘传百科全书",
+    "include": "manual_attachment_after_native_acquisition"
+  }
+]

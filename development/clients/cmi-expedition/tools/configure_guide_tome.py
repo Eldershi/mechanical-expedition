@@ -1,13 +1,15 @@
-"""Build a conservative catalogue of guidebooks from installed mod resources."""
+"""Build the guide catalogue and restore the Tome's Chinese item name."""
+
+import argparse
 import json
 from pathlib import Path
+import re
+import tomllib
 import zipfile
 
-ROOT = Path(__file__).resolve().parents[1]
-INSTANCE = ROOT / 'instance'
-# Deliberately retired content must not return if historical JARs are staged here.
+PROJECT = Path(__file__).resolve().parents[3]
 REMOVED_CONTENT_MODS = {'goety', 'goety_revelation', 'iceandfire', 'livingthings', 'mowziesmobs'}
-direct = [
+DIRECT = [
     'ftbquests:book', 'ae2:guide', 'immersiveengineering:manual',
     'tconstruct:materials_and_you', 'tconstruct:puny_smelting',
     'tconstruct:mighty_smelting', 'tconstruct:tinkers_gadgetry',
@@ -15,135 +17,109 @@ direct = [
     'alexscaves:cave_book', 'edenring:guide_book', 'aether:book_of_lore',
     'botania:lexicon', 'ars_nouveau:worn_notebook', 'eidolon:codex',
     'enigmaticlegacy:the_acknowledgment', 'malum:encyclopedia_arcana',
-    'legendary_monsters:guide_book',
-    'eternal_starlight:book', 'solcarrot:food_book',
+    'legendary_monsters:guide_book', 'eternal_starlight:book', 'solcarrot:food_book',
 ]
-books = [{'id': item} for item in direct]
-for jar in sorted((INSTANCE / 'mods').glob('*.jar')):
-    with zipfile.ZipFile(jar) as z:
-        for name in z.namelist():
-            parts = name.split('/')
-            if len(parts) != 5 or parts[0] != 'data' or parts[2] != 'patchouli_books' or parts[4] != 'book.json':
-                continue
-            if parts[1] in REMOVED_CONTENT_MODS:
-                continue
-            data = json.loads(z.read(name))
-            if data.get('dont_generate_book') or data.get('extend'):
-                continue
-            books.append({'id': 'patchouli:guide_book', 'nbt': {'patchouli:book': parts[1] + ':' + parts[3]}})
-# Thermal registers this book in code instead of shipping a book.json.
-books.append({'id': 'patchouli:guide_book', 'nbt': {'patchouli:book': 'thermal:guidebook'}})
-data_path = INSTANCE / 'kubejs/guide-tome-catalog.json'
-data_path.write_text(json.dumps(books, ensure_ascii=False, indent=2) + '\n')
-script = '''// priority: -99
-// 仅合并教程书；保留模组原有的页面解锁条件。
-const ExpeditionTome = Java.loadClass('website.eccentric.tome.Tome')
-const ExpeditionBookRegistry = Java.loadClass('vazkii.patchouli.common.book.BookRegistry')
-const ExpeditionResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
-const ExpeditionGuideItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
-const ExpeditionStartingCursedRing = Java.loadClass('com.aizistral.enigmaticlegacy.items.CursedRing')
-// Apply native options on script reload as well, so an active server need not restart.
-ExpeditionStartingCursedRing.autoEquip.setValue(true)
-ExpeditionStartingCursedRing.ultraHardcore.setValue(true)
-const expeditionGuideCatalog = __GUIDE_CATALOG__
-function expeditionGuideStacks() {
-  let books = []
-  expeditionGuideCatalog.forEach(row => {
-    if (!Item.exists(row.id)) throw new Error('Guide item missing: ' + row.id)
-    if (row.nbt && row.nbt['patchouli:book']) {
-      let bookId = new ExpeditionResourceLocation(row.nbt['patchouli:book'])
-      if (!ExpeditionBookRegistry.INSTANCE.books.containsKey(bookId)) throw new Error('Patchouli guide missing: ' + bookId)
-    }
-    books.push(row.nbt ? Item.of(row.id, row.nbt) : Item.of(row.id))
-  })
-  return books
-}
-function expeditionFullGuideTome() {
-  let tome = Item.of('eccentrictome:tome')
-  expeditionGuideStacks().forEach(book => ExpeditionTome.attach(tome, book))
-  return tome
-}
-function expeditionConsolidateStarterGuides(player) {
-  let inventory = player.getInventory()
-  let hasFullTome = false
-  for (let slot = 0; slot < inventory.getContainerSize(); slot++) {
-    let stack = inventory.getItem(slot)
-    if (String(stack.id) === 'eccentrictome:tome' && ExpeditionTome.getItemCount(stack) >= expeditionGuideCatalog.length) hasFullTome = true
-  }
-  if (!hasFullTome) return { safe: false, removed: 0 }
-  let guides = expeditionGuideStacks()
-  let removed = 0
-  for (let slot = 0; slot < inventory.getContainerSize(); slot++) {
-    let stack = inventory.getItem(slot)
-    // Exact item + NBT matching preserves renamed, annotated and other custom books.
-    if (!stack.isEmpty() && guides.some(book => ExpeditionGuideItemStack.isSameItemSameTags(stack, book))) {
-      removed += stack.getCount()
-      stack.setCount(0)
-    }
-  }
-  inventory.setChanged()
-  return { safe: true, removed: removed }
-}
-ServerEvents.recipes(event => {
-  // Keep the mod's attachment recipe; replace only its empty-tome recipe.
-  event.remove({id: 'eccentrictome:tome'})
-  event.shapeless(expeditionFullGuideTome(), ['minecraft:book', '#forge:bookshelves']).id('eccentrictome:tome')
-})
-function expeditionQueueStarterGuideCleanup(player, server) {
-  if (player.persistentData.expeditionStarterGuidesConsolidatedV1) return
-  let removed = 0
-  // Other mods grant their books at different login phases; consolidate once per player.
-  ;[20, 100, 200].forEach(delay => server.scheduleInTicks(delay, () => {
-    if (!player.isAlive() || player.isRemoved()) return
-    let result = expeditionConsolidateStarterGuides(player)
-    removed += result.removed
-    if (delay === 200 && result.safe) {
-      player.persistentData.expeditionStarterGuidesConsolidatedV1 = true
-      player.persistentData.expeditionStarterGuidesRemoved = removed
-      if (removed > 0) player.tell('已收起重复的开局教程书，内容均可从怪奇宝典打开。')
-    }
-  }))
-}
-PlayerEvents.loggedIn(event => {
-  let player = event.player
-  if (!player.persistentData.expeditionGuideTomeGiven) {
-    player.give(expeditionFullGuideTome())
-    player.persistentData.expeditionGuideTomeGiven = true
-    player.tell('教程已收进怪奇宝典：右键选书，左键点空气返回；书＋书架可补领。')
-  }
-  expeditionQueueStarterGuideCleanup(player, event.server)
-})
-let expeditionGuideOnlineMigrationDone = false
-ServerEvents.tick(event => {
-  if (expeditionGuideOnlineMigrationDone) return
-  expeditionGuideOnlineMigrationDone = true
-  event.server.getPlayerList().getPlayers().forEach(player => expeditionQueueStarterGuideCleanup(player, event.server))
-})
-ServerEvents.loaded(event => {
-  let tome = expeditionFullGuideTome()
-  let expected = expeditionGuideStacks()
-  let failures = []
-  expected.forEach((book, i) => {
-    let converted = ExpeditionTome.convert(tome.copy(), i)
-    if (String(converted.id) !== String(book.id)) failures.push('convert:' + i)
-    if (book.nbt && book.nbt['patchouli:book'] && String(converted.nbt['patchouli:book']) !== String(book.nbt['patchouli:book'])) failures.push('book-nbt:' + i)
-    let restored = ExpeditionTome.revert(converted)
-    // Match the mod's RevertMessage handler: put the active book back after reverting.
-    ExpeditionTome.attach(restored, converted)
-    if (ExpeditionTome.getItemCount(restored) !== expected.length) failures.push('revert:' + i)
-  })
-  let recipe = event.server.getRecipeManager().byKey(new ExpeditionResourceLocation('eccentrictome:tome'))
-  if (!recipe.isPresent()) failures.push('crafting recipe missing')
-  else if (ExpeditionTome.getItemCount(recipe.get().getResultItem(event.server.registryAccess())) !== expected.length) failures.push('crafting recipe book count')
-  let ExpeditionTomeExportDirectory = Java.loadClass('java.io.File')
-  new ExpeditionTomeExportDirectory('kubejs/exported').mkdirs()
-  JsonIO.write('kubejs/exported/guide-tome-audit.json', {
-    bookCount: ExpeditionTome.getItemCount(tome), books: expeditionGuideCatalog,
-    roundTripFailures: failures, passed: failures.length === 0,
-    scope: 'Registered guidebooks, native Tome conversion/reversion, and crafting recipe; page text and every GUI not exhaustively checked.'
-  })
-  console.info('[Guide Tome] books=' + expected.length + ', failures=' + failures.length)
-})
-'''.replace('__GUIDE_CATALOG__', json.dumps(books, ensure_ascii=False))
-(INSTANCE / 'kubejs/server_scripts/expedition/GuideTome.js').write_text(script)
-print(json.dumps({'catalog':str(data_path), 'books':len(books)}, ensure_ascii=False))
+
+
+def catalog(instance):
+    books = [{'id': item} for item in DIRECT]
+    native_guides = {}
+    for jar in sorted((instance / 'mods').glob('*.jar')):
+        with zipfile.ZipFile(jar) as archive:
+            for name in sorted(archive.namelist()):
+                if name in {'data/scguns/guides/supply_scamp.json', 'data/scguns/guides/viventrum.json'}:
+                    definition = json.loads(archive.read(name))
+                    native_guides[definition['id']] = definition
+                    continue
+                parts = name.split('/')
+                if (len(parts) != 5 or parts[0] not in {'data', 'assets'}
+                        or parts[2] != 'patchouli_books' or parts[4] != 'book.json'
+                        or parts[1] in REMOVED_CONTENT_MODS):
+                    continue
+                book = json.loads(archive.read(name))
+                if book.get('extend'):
+                    continue
+                if book.get('custom_book_item'):
+                    books.append({'id': book['custom_book_item']})
+                elif not book.get('dont_generate_book'):
+                    books.append({'id': 'patchouli:guide_book',
+                                  'nbt': {'patchouli:book': parts[1] + ':' + parts[3]}})
+    # Scorched Guns generates these tutorial books through its native helper.
+    for entity in ['scguns:supply_scamp', 'scguns:viventrum']:
+        books.append({'id': 'minecraft:written_book', 'factory': 'scguns:mob_guide',
+                      'entity': entity, 'definition': native_guides[entity]})
+    for hint, pages in [('darktower', 3), ('hydralair', 4), ('icetower', 3),
+                        ('labyrinth', 5), ('lichtower', 4), ('tfstronghold', 4),
+                        ('trollcave', 3), ('yeticave', 3)]:
+        books.append({'id': 'minecraft:written_book', 'factory': 'twilightforest:structure_hint',
+                      'hint': hint, 'pages': pages})
+    for variant in ['PILLAGER_SHIP', 'PILLAGER_OUTPOST', 'PILLAGER_SHELTER']:
+        books.append({'id': 'minecraft:written_book', 'factory': 'aquamirae:logbook', 'variant': variant})
+    # Thermal registers its Patchouli book in code.
+    books.append({'id': 'patchouli:guide_book', 'nbt': {'patchouli:book': 'thermal:guidebook'}})
+    unique = {}
+    for book in books:
+        unique.setdefault(json.dumps(book, sort_keys=True), book)
+    return list(unique.values())
+
+
+def restore_name(source, target):
+    """Preserve archive entries and metadata, changing only the mistranslated name."""
+    with zipfile.ZipFile(source) as archive:
+        entries = [(info, archive.read(info)) for info in archive.infolist()]
+        comment = archive.comment
+    changed = False
+    for index, (info, raw) in enumerate(entries):
+        if info.filename == 'assets/eccentrictome/lang/zh_cn.json':
+            data = json.loads(raw)
+            if data.get('item.eccentrictome.tome') != '怪奇宝典':
+                data['item.eccentrictome.tome'] = '怪奇宝典'
+                entries[index] = (info, (json.dumps(data, ensure_ascii=False, indent=2) + '\n').encode())
+                changed = True
+    target.parent.mkdir(parents=True, exist_ok=True)
+    if not changed:
+        if source.resolve() != target.resolve():
+            target.write_bytes(source.read_bytes())
+        return
+    temporary = target.with_name(target.name + '.tmp')
+    with zipfile.ZipFile(temporary, 'w') as archive:
+        archive.comment = comment
+        for info, raw in entries:
+            archive.writestr(info, raw)
+    temporary.replace(target)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--instance', required=True, type=Path)
+    parser.add_argument('--output', required=True, type=Path)
+    parser.add_argument('--template', type=Path, default=PROJECT / 'tools/guide-tome/GuideTome.js')
+    args = parser.parse_args()
+    books = catalog(args.instance)
+    output = args.output
+    (output / 'kubejs/server_scripts/expedition').mkdir(parents=True, exist_ok=True)
+    (output / 'kubejs/guide-tome-catalog.json').write_text(
+        json.dumps(books, ensure_ascii=False, indent=2) + '\n')
+    (output / 'kubejs/server_scripts/expedition/GuideTome.js').write_bytes(args.template.read_bytes())
+    config = (args.instance / 'config/eccentrictome-common.toml').read_text()
+    whitelist = tomllib.loads(config)['common']['items']
+    # The advanced Malum volume is attachable after its native acquisition.
+    whitelist = list(dict.fromkeys(whitelist + [book['id'] for book in books] + ['malum:encyclopedia_esoterica']))
+    config = re.sub(r'(?m)^(\s*items\s*=).+$',
+                    lambda match: match[1] + ' ' + json.dumps(whitelist, ensure_ascii=False), config)
+    (output / 'config').mkdir(parents=True, exist_ok=True)
+    (output / 'config/eccentrictome-common.toml').write_text(config)
+    patched = []
+    for folder in ['config/paxi/resourcepacks', 'resourcepacks']:
+        for source in sorted((args.instance / folder).glob('*Chinese-pack*.zip')):
+            with zipfile.ZipFile(source) as archive:
+                if 'assets/eccentrictome/lang/zh_cn.json' not in archive.namelist():
+                    continue
+            relative = source.relative_to(args.instance)
+            restore_name(source, output / relative)
+            patched.append(relative.as_posix())
+    print(json.dumps({'books': len(books), 'nameRestoredIn': patched}, ensure_ascii=False))
+
+
+if __name__ == '__main__':
+    main()
