@@ -6,8 +6,9 @@
 
 1. 从 [发行页面](https://github.com/Eldershi/mechanical-expedition/releases) 下载 `mechanical-expedition-0.2.0-dev.1.mrpack`。
 2. 使用支持 Modrinth 整合包的启动器导入该文件，并新建独立实例；导入时启动器会下载清单中的模组。
-3. 为实例选择 Java 17，确认游戏版本是 Minecraft 1.20.1、加载器是 Forge 47.4.10，然后启动游戏。
-4. 使用自己的 Minecraft 账号登录，并自行添加服务器。安装包不含账号信息、存档和服务器列表。
+3. 在实例的 `mods` 文件夹中安装[影焰兼容补丁 1.0.1](current/client/mods/expedition-terramity-curse-compat-1.0.1.jar) 和 [Factory Controller 1.2.1 Forge 1.20.1](https://www.curseforge.com/minecraft/mc-mods/create-factory-controller/files/8860865)。将 `expedition-terramity-curse-compat-1.0.0.jar` 移出 `mods`，只保留 1.0.1 版。
+4. 为实例选择 Java 17，确认游戏版本是 Minecraft 1.20.1、加载器是 Forge 47.4.10，然后启动游戏。
+5. 使用自己的 Minecraft 账号登录，并自行添加服务器。安装包不含账号信息、存档和服务器列表。
 
 如果导入或启动失败，保留启动器报错和最新游戏日志供排查；分享前请先移除账号令牌及其他个人信息。旧版 `0.1.0-dev.1` 不包含当前游戏内容。此安装包用于全新安装，不应通过旧版更新器覆盖现有实例。
 
