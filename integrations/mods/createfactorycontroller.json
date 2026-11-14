@@ -54,7 +54,8 @@
       "Enable production orders for the output gauge.",
       "Order the production pattern from a Stock Keeper."
     ],
-    "repackagerRequiredForBatchCrafting": true
+    "repackagerRequiredForBatchCrafting": true,
+    "maximumPackedStacksPerCraft": 9
   },
   "licenseFile": "integrations/licenses/createfactorycontroller-MIT.txt",
   "licenseSource": "https://github.com/nbcss/create-factory-controller/blob/main/LICENSE"

@@ -31,6 +31,8 @@
 
 5×5 动力合成使用 [Create: Factory Controller](integrations/mods/createfactorycontroller.json) `1.2.1-forge-1.20.1`（Beta），客户端与服务端安装相同版本。先在工厂控制器中放置材料与成品仪表、连接材料关系，打开成品仪表的“使用动力合成”，将网格大小设为与动力合成器方阵一致，并允许生产订单；随后在仓管中选择该产品的生产图样下单。默认最多支持 10×10 方阵，动力合成器之间需要用扳手连通；批量合成必须经过理包机。详细操作见[官方手册](https://nbcss.github.io/create-factory-controller/manual/en/factory-gauge.html#crafting)。
 
+工厂控制器的单次合成材料必须能装入 9 个堆叠槽位。鎏盾胸甲等需要 10 种材料的配方仍使用原有手动动力合成方式；配方与材料保持原样。
+
 AuraTip 与 OElib 的事件接口适配、Steam Ages 与 Steam Letters 的机器注册兼容，以及 BCLib 和女仆世界生成保护的构建源码均保存在 `development/`。
 
 地牢进行时 [Dungeon Now Loading](integrations/mods/dungeonnowloading.json) 使用 2.2 Forge 1.20.1 版，客户端与服务端安装同一版本。模组提供迷宫、二元神庙与可重复挑战的 Boss；现有存档需要在尚未生成的区块中寻找新增地牢。
