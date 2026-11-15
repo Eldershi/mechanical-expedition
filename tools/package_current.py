@@ -9,7 +9,7 @@ import urllib.request
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "0.2.0-dev.1"
+VERSION = "0.2.0-dev.2"
 
 
 def sha256(data):
@@ -32,6 +32,35 @@ def verify_tome_artwork(entries):
             if any(member.startswith(('assets/eccentrictome/textures/', 'assets/eccentrictome/models/'))
                    and not member.endswith('/') for member in archive.namelist()):
                 raise ValueError(f"Resource pack overrides Eccentric Tome artwork: {name}")
+
+
+def launcher_resource_entries():
+    """Reference official platform downloads without bundling resource-pack bytes."""
+    result = []
+    seen = set()
+    for path in sorted((ROOT / 'integrations/resourcepacks').glob('*.json')):
+        metadata = json.loads(path.read_text())
+        if not metadata.get('enabled', True) or metadata.get('distributionType') != 'launcher-fetch':
+            continue
+        for item in metadata['clientFiles']:
+            relative = str(safe_path(item['path']))
+            if not relative.startswith('config/paxi/resourcepacks/') or not relative.endswith('.zip'):
+                raise ValueError(f'Unsupported launcher resource path: {relative}')
+            if relative in seen:
+                raise ValueError(f'Duplicate launcher resource: {relative}')
+            if not item['downloadUrl'].startswith('https://'):
+                raise ValueError('Launcher resources require an HTTPS download')
+            for algorithm, length in [('sha1', 40), ('sha512', 128)]:
+                value = item[algorithm]
+                if len(value) != length or any(c not in '0123456789abcdef' for c in value):
+                    raise ValueError(f'Invalid {algorithm} for launcher resource')
+            if not isinstance(item['bytes'], int) or item['bytes'] <= 0:
+                raise ValueError('Launcher resource size must be positive')
+            seen.add(relative)
+            result.append({'path': relative, 'hashes': {'sha1': item['sha1'], 'sha512': item['sha512']},
+                           'downloads': [item['downloadUrl']], 'fileSize': item['bytes'],
+                           'env': {'client': 'required', 'server': 'unsupported'}})
+    return result
 
 
 def build(output, bundle_path=None):
@@ -68,7 +97,11 @@ def build(output, bundle_path=None):
 
     verify_tome_artwork(entries)
 
-    index_files = []
+    launcher_resources = launcher_resource_entries()
+    for resource in launcher_resources:
+        if resource['path'] in entries or resource['path'] in external:
+            raise ValueError(f"Launcher-fetched resource must not be bundled: {resource['path']}")
+    index_files = list(launcher_resources)
     names = set()
     for mod in lock["mods"]:
         name = str(safe_path("mods/" + mod["filename"]))
@@ -103,7 +136,8 @@ def build(output, bundle_path=None):
         for name, data in sorted(entries.items()):
             write("overrides/" + name, data)
     print(json.dumps({"path": str(output), "sha256": sha256(output.read_bytes()),
-                      "mods": len(names), "downloadedMods": len(index_files), "overrideFiles": len(entries)}))
+                      "mods": len(names), "downloadedMods": len(index_files) - len(launcher_resources),
+                      "downloadedResourcePacks": len(launcher_resources), "overrideFiles": len(entries)}))
 
 
 if __name__ == "__main__":

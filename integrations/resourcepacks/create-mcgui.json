@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "id": "create-mcgui",
+  "name": "create:mcGUI",
+  "version": "2.10.0",
+  "minecraft": "1.20.1",
+  "distributionType": "launcher-fetch",
+  "officialPage": "https://www.curseforge.com/minecraft/texture-packs/create-mcgui",
+  "officialVersionPage": "https://www.curseforge.com/minecraft/texture-packs/create-mcgui/files/9458951",
+  "licenseURL": "https://github.com/9qtzq6zstf-dev/create-mcGUI/blob/main/LICENSE",
+  "curseforge": {
+    "projectId": 1674897,
+    "fileId": 9458951
+  },
+  "clientFiles": [
+    {
+      "path": "config/paxi/resourcepacks/create_mcGUI_2.10.0.zip",
+      "bytes": 1640237,
+      "sha256": "c191d538fb984f6cde4d86d2bb92684219c30c156676e6d85bb913057b632346",
+      "sha1": "17526ba7a103468d0107b4e3d5960017b4e76bbe",
+      "sha512": "ce30856bf43bb7e9af5a3317af12dee885139b53db28cb0cfec22a63b22146153460ef6ff1fa38d921b729253d4c6e1b0b0c3dfacd708b63febdca8b844d8df5",
+      "downloadUrl": "https://mediafilez.forgecdn.net/files/9458/951/create_mcGUI_2.10.0.zip"
+    }
+  ],
+  "paxi": {
+    "loadOrderEntry": "create_mcGUI_2.10.0.zip",
+    "copies": 1
+  },
+  "distribution": {
+    "officialLauncherFetch": true,
+    "bundleOriginalArchive": false,
+    "redistributeModifiedTextures": false
+  }
+}

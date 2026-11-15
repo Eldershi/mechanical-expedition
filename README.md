@@ -4,11 +4,10 @@
 
 ## 安装当前客户端
 
-1. 从 [发行页面](https://github.com/Eldershi/mechanical-expedition/releases) 下载 `mechanical-expedition-0.2.0-dev.1.mrpack`。
-2. 使用支持 Modrinth 整合包的启动器导入该文件，并新建独立实例；导入时启动器会下载清单中的模组。
-3. 在实例的 `mods` 文件夹中安装[影焰兼容补丁 1.0.1](current/client/mods/expedition-terramity-curse-compat-1.0.1.jar)、[Factory Controller 1.2.1 Forge 1.20.1](https://www.curseforge.com/minecraft/mc-mods/create-factory-controller/files/8860865) 和 [Stock Keeper Bookmarks 1.0.0 Forge 1.20.1](https://modrinth.com/mod/create-stock-keeper-bookmarks/version/yGG4hw0u)。将 `expedition-terramity-curse-compat-1.0.0.jar` 移出 `mods`，只保留 1.0.1 版。
-4. 为实例选择 Java 17，确认游戏版本是 Minecraft 1.20.1、加载器是 Forge 47.4.10，然后启动游戏。
-5. 使用自己的 Minecraft 账号登录，并自行添加服务器。安装包不含账号信息、存档和服务器列表。
+1. 从 [发行页面](https://github.com/Eldershi/mechanical-expedition/releases) 下载 `mechanical-expedition-0.2.0-dev.2.mrpack`。
+2. 使用支持 Modrinth 整合包的启动器导入该文件，并新建独立实例；启动器会下载清单中的模组及 Create MC GUI 官方文件，Paxi 会自动启用界面材质。
+3. 为实例选择 Java 17，确认游戏版本是 Minecraft 1.20.1、加载器是 Forge 47.4.10，然后启动游戏。
+4. 使用自己的 Minecraft 账号登录，并自行添加服务器。安装包不含账号信息、存档和服务器列表。
 
 如果导入或启动失败，保留启动器报错和最新游戏日志供排查；分享前请先移除账号令牌及其他个人信息。旧版 `0.1.0-dev.1` 不包含当前游戏内容。此安装包用于全新安装，不应通过旧版更新器覆盖现有实例。
 
@@ -40,6 +39,8 @@
 [Sophisticated Building](integrations/mods/sophisticatedbuilding.json) 使用 5.1.2 Forge 1.20.1 版，客户端与服务端须安装同一版本。手持建筑方块，按住左 Alt 打开轮盘，选择墙面、地板或立方体；墙面和地板点击两次，立方体先选底面再确定高度。支持实心、空心和边框选项，生存模式按实际放置数量消耗材料；Ctrl+Z 撤销，Ctrl+Y 重做。选择 Disable 返回普通放置与挖掘。
 
 生命值使用 [Overflowing Bars 8.0.1](integrations/mods/overflowingbars.json) 的紧凑分层显示，超过一排时在旁边显示 ×2、×3 等层数；护甲与韧性也支持叠层。Mantle 的生命值绘制已关闭，AsteorBar 保持关闭，避免重复接管 HUD。该模组仅需安装在客户端，显示沿用已加载的 GUI 资源。
+
+[Create MC GUI 2.10.0](integrations/resourcepacks/create-mcgui.json) 由启动器直接从作者的 [CurseForge 文件](https://www.curseforge.com/minecraft/texture-packs/create-mcgui/files/9458951) 下载，并由 Paxi 自动启用。依照[作者许可](https://github.com/9qtzq6zstf-dev/create-mcGUI/blob/main/LICENSE)，整合包只保存下载引用，不捆绑或转存该材质包。
 
 AuraTip 与 OElib 的事件接口适配、Steam Ages 与 Steam Letters 的机器注册兼容，以及 BCLib 和女仆世界生成保护的构建源码均保存在 `development/`。
 
