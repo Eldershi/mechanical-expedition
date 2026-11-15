@@ -966,6 +966,17 @@
       "downloadHash": "e3d9c8eb5710bef99a28e7d816c3af50e7f9f1eacc8bc9b7ed77dafeaf793018"
     },
     {
+      "filename": "OverflowingBars-v8.0.1-1.20.1-Forge.jar",
+      "sha256": "43304f93366c8581b51c8d5198ebb2b1b726787c3aff5d280a4ef8971bdd0ea7",
+      "sha1": "047ac47549ae0a21b05f70d74bcf436ee0221eef",
+      "sha512": "4854cac7069e1140dd9b567e04414c0acc865f66433b7c8cb79269e4c1a20c38f30b2d393e9920ff7f9c732fdf01408a22b07f5d1532756623072470dfc24248",
+      "bytes": 73689,
+      "downloadUrl": "https://cdn.modrinth.com/data/XD7XOrAF/versions/w90XIUWB/OverflowingBars-v8.0.1-1.20.1-Forge.jar",
+      "downloadUrlSource": "integrations/mods/overflowingbars.json",
+      "downloadHashFormat": "sha512",
+      "downloadHash": "4854cac7069e1140dd9b567e04414c0acc865f66433b7c8cb79269e4c1a20c38f30b2d393e9920ff7f9c732fdf01408a22b07f5d1532756623072470dfc24248"
+    },
+    {
       "filename": "Paintings-forge-1.20.1-11.0.0.2.jar",
       "sha256": "28df2f243f95c34a335db3821bef973e40889b4c4af899b753228fec0b5c273a",
       "sha1": "7616deeb511132de1c071a47bd6811b8e7a8d7e0",
