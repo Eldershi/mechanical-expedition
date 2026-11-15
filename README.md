@@ -46,6 +46,8 @@ AuraTip 与 OElib 的事件接口适配、Steam Ages 与 Steam Letters 的机器
 
 地牢进行时 [Dungeon Now Loading](integrations/mods/dungeonnowloading.json) 使用 2.2 Forge 1.20.1 版，客户端与服务端安装同一版本。模组提供迷宫、二元神庙与可重复挑战的 Boss；现有存档需要在尚未生成的区块中寻找新增地牢。
 
+[Modern Trials Integration](integrations/mods/mti.json) 使用 1.2.0 Forge 1.20.1 版，客户端与服务端安装同一版本。包含试炼大厅、试炼刷怪笼、宝库、重锤，以及铜格栅等铜与凝灰岩方块；已有存档需在尚未生成的区块寻找大厅。使用上游默认配置，保留新版袭击触发、命名牌与鞍合成、五根线制作拴绳及对应村民交易变化。第三方模组通过官方 CurseForge 下载引用安装，仓库不保存其 JAR。
+
 交错电网 [Create: Power Grid](integrations/mods/powergrid.json) 使用 0.6.2 Forge 1.20.1 版，客户端与服务端均需安装；要求 Create `[6.0.7,6.1.0)`、Architectury `[9.2.14,)`。
 
 敌对神经网络外观资源由独立项目 [create-style-hnn](https://github.com/Eldershi/create-style-hnn) 维护；下载与版本信息见[资源引用](integrations/resourcepacks/create-style-hnn.json)。
@@ -60,7 +62,7 @@ AuraTip 与 OElib 的事件接口适配、Steam Ages 与 Steam Letters 的机器
 
 下界作物遵循各自原生土壤与放置规则，不附加维度限制。破坏方块不要求 `init` 阶段，任务书不包含对应的阶段领取任务。烈焰蛋糕进食不附加魔改伤害。
 
-模组锁文件共有 407 项：390 项有哈希匹配的下载来源，17 项为随源码保存的补丁包。
+模组锁文件共有 408 项：391 项有哈希匹配的下载来源，17 项为随源码保存的补丁包。
 
 `current/client/` 是受管游戏文件的源码快照，第三方模组通过锁文件定位。它不包含账号、存档、玩家数据、服务器列表、地图、备份、运行缓存或一次性测试探针。`current/server/` 是专用服务端覆盖层，需要与公共游戏内容和对应服务端依赖一起使用。
 

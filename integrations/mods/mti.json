@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "modId": "mti",
+  "name": "Modern Trials Integration",
+  "version": "1.2.0",
+  "releaseChannel": "release",
+  "minecraft": "1.20.1",
+  "loader": "forge",
+  "java": 17,
+  "requiredOn": [
+    "client",
+    "server"
+  ],
+  "dependencies": [
+    {
+      "modId": "forge",
+      "mandatory": true,
+      "versionRange": "[47.3.19,)",
+      "ordering": "NONE",
+      "side": "BOTH"
+    },
+    {
+      "modId": "minecraft",
+      "mandatory": true,
+      "versionRange": "[1.20.1]",
+      "ordering": "NONE",
+      "side": "BOTH"
+    },
+    {
+      "modId": "moderncontentbackport",
+      "mandatory": false,
+      "versionRange": "[2.4.3,)",
+      "ordering": "AFTER",
+      "side": "BOTH"
+    }
+  ],
+  "artifact": {
+    "filename": "mti-1.2.0.jar",
+    "bytes": 9445369,
+    "sha1": "f704ac3fd93ec174ee3dc916b896e1dd92adfea4",
+    "sha256": "34685a080e86ebe3f0b92143aeccce02e28013860bed3a938ac142b7b96c9c99",
+    "sha512": "8143058be08663540cfd3d72fad983793db2c1f80052fb6bc7e35db687a4de016988da7a9ed2a2ea949a19a4b32ba1ac1ffbd471363182fce8bdfc78657baa27",
+    "downloadUrl": "https://edge.forgecdn.net/files/9379/349/mti-1.2.0.jar"
+  },
+  "officialVersionPage": "https://www.curseforge.com/minecraft/mc-mods/modern-trials-integration/files/9379349",
+  "license": "All Rights Reserved",
+  "distributionType": "launcher-fetch",
+  "configuration": {
+    "defaults": "upstream",
+    "commonConfig": "config/mti-common.toml",
+    "modernRaidMechanics": true,
+    "legacyRaidTrigger": false,
+    "modernRecipesAndTrades": true,
+    "babySquid": true,
+    "protectTrialChambers": true,
+    "additionalRooms": false
+  }
+}

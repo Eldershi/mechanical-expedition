@@ -3490,6 +3490,17 @@
       "downloadHash": "62edd33f69a053dc9933be60a3c073128066481425c7cd2c828e02279b88b9ca"
     },
     {
+      "filename": "mti-1.2.0.jar",
+      "bytes": 9445369,
+      "sha1": "f704ac3fd93ec174ee3dc916b896e1dd92adfea4",
+      "sha256": "34685a080e86ebe3f0b92143aeccce02e28013860bed3a938ac142b7b96c9c99",
+      "sha512": "8143058be08663540cfd3d72fad983793db2c1f80052fb6bc7e35db687a4de016988da7a9ed2a2ea949a19a4b32ba1ac1ffbd471363182fce8bdfc78657baa27",
+      "downloadUrl": "https://edge.forgecdn.net/files/9379/349/mti-1.2.0.jar",
+      "downloadUrlSource": "integrations/mods/mti.json",
+      "downloadHashFormat": "sha256",
+      "downloadHash": "34685a080e86ebe3f0b92143aeccce02e28013860bed3a938ac142b7b96c9c99"
+    },
+    {
       "filename": "multiblocked2-1.20.1-1.0.40.jar",
       "sha256": "c3ac6abba0a181a7553692c20e7d6a7e3f204d24707a07f1914a5d278553e8df",
       "sha1": "ed56820563ebd25f85480ebbe9499b8b198a94ed",

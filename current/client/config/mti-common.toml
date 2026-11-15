@@ -1,0 +1,70 @@
+
+[raids]
+	#true: captains drop ominous bottles; Bad Omen becomes a 30-second Raid Omen in villages.
+	#false: captains grant legacy Bad Omen; bottle-granted Bad Omen is Trial-only.
+	#Requires a FULL process restart. /reload, reconnecting and reopening a world do not apply changes.
+	#On a dedicated server, this is the server's setting; clients cannot select a different gameplay mode.
+	modernRaidMechanics = true
+
+#Modern Content Backport's mob switches and Trial Chambers (MTI's trial spawners spawn as spawners, and MCB
+#cancels a switched-off mob's spawner spawns):
+#  enableBogged=false / enableParched=false: new chambers no longer pick that ranged family (skeleton and stray
+#    remain); chambers generated earlier keep their spawners, which can then never complete those waves.
+#  enableBreeze=false: the Breeze is not spawned. Breeze spawners are fixed parts of a chamber, so they can then
+#    never complete - no reward, no key. Keep enableBreeze=true to play Trial Chambers.
+#MTI names every such setting in the log when the server starts ("[MTI] config conflict").
+[worldgen]
+	#How much more often a hallway encounter room may be drawn while a Trial Chamber is assembled.
+	#1 (default) = exactly vanilla 1.21.11: each of the five encounters keeps its weight of 1 in the
+	#hallway pool's total of 1231. A higher value multiplies only that draw weight (and Crossroads' too, when
+	#addons.additionalRooms is on). It is not a percentage:
+	#how often a chamber ends up with an encounter also depends on how many hallways that chamber draws.
+	#Measured rates, with the sample they came from, are in the mod documentation.
+	#This multiplies the weight at generation time only - the shipped pool JSON stays byte-identical to vanilla,
+	#and chambers that already exist in a save are never changed.
+	#Range: 1 ~ 20
+	encounterRoomWeight = 1
+	#true: world generation features (geodes, fluid springs, lakes, ores, cave decoration) are not allowed to
+	#write inside a Trial Chamber's own pieces, so walls, floors, ceilings, spawners and vaults stay intact.
+	#Vines, cave vines, glow lichen and the like are still allowed where they only fill air. Structures are not
+	#affected (a stronghold can still cut in, as in vanilla), and nothing outside the chamber changes.
+	#Requires a FULL process restart; only newly generated chunks are affected.
+	protectTrialChambers = true
+
+[compat]
+	#true: raids are triggered the 1.20.1 way - killing a pillager captain grants Bad Omen directly and that
+	#Bad Omen starts the raid when you enter a village, with no Raid Omen countdown. The captain STILL drops an
+	#ominous bottle, but a bottle's Bad Omen only counts for Trial Chambers and can never start a raid.
+	#false (default): the 1.21 way - the bottle is the raid trigger and Bad Omen becomes a 30-second Raid Omen.
+	#Ignored when modernRaidMechanics is false (that mode is already the 1.20.1 one, and captains drop no bottles).
+	#Requires a FULL process restart.
+	legacyRaidTrigger = false
+	#true (default): the newer vanilla recipes and trades, as in Modern Content Backport - a Name Tag is crafted
+	#from paper and a metal nugget, a Saddle from three leather and an iron ingot, two Leads from five string
+	#(no slimeball), and master librarians sell red and yellow candles instead of the name tag.
+	#false: the 1.20.1 recipes and trades (the old slimeball lead recipe comes back).
+	#Recipes apply when a world is opened or after /reload; villager trades when a world is opened, and only
+	#for trades a villager has not rolled yet.
+	modernRecipesAndTrades = true
+	#true (default): baby Squid and baby Glow Squid spawn as in 1.21 (after the first squid of a spawning group each
+	#one has a 5% chance to be a baby; they grow up like any baby). Only new spawns are affected; babies that
+	#already exist keep growing up. With Modern Content Backport installed, MCB's own identical setting
+	#(enableBabySquid) decides instead, and this one is not read.
+	babySquid = true
+
+[addons]
+	#Additional rooms: some custom room variations for Trial Chambers that vanilla 1.21.11 does not have.
+	#They do not break the game - each is a complete Trial Chamber room with working spawners, vaults and
+	#doors - and you can switch this on or off at any time: only chambers generated afterwards change,
+	#existing chambers are never rewritten. OFF (default): exactly the vanilla 1.21.11 rooms.
+	#  Crossroads: a small hallway encounter room, drawn as often as one of vanilla's five encounter rooms
+	#    (worldgen.encounterRoomWeight multiplies it too).
+	#  Terraces: a chamber room, drawn as often as chamber_4.
+	#  Parched spawners: Parched (Modern Content Backport) join skeleton, stray and bogged as a fourth
+	#    skeleton family; a chamber that rolls it has Parched in both ranged spawners. With Modern Content
+	#    Backport's enableParched=false the Parched family is not picked.
+	#  Zombie family spawners: Frostbite (Modern Content Backport 3.0.0+) joins zombie, husk and spider as a
+	#    melee family, set up exactly like the husk; baby Husk and baby Frostbite join the small spawner
+	#    options next to baby zombie.
+	additionalRooms = false
+
