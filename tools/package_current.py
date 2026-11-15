@@ -23,6 +23,17 @@ def safe_path(value):
     return path
 
 
+def verify_tome_artwork(entries):
+    """Translation packs must not replace Eccentric Tome's upstream artwork."""
+    for name, data in entries.items():
+        if not name.startswith(('config/paxi/resourcepacks/', 'resourcepacks/')) or not name.endswith('.zip'):
+            continue
+        with zipfile.ZipFile(io.BytesIO(data)) as archive:
+            if any(member.startswith(('assets/eccentrictome/textures/', 'assets/eccentrictome/models/'))
+                   and not member.endswith('/') for member in archive.namelist()):
+                raise ValueError(f"Resource pack overrides Eccentric Tome artwork: {name}")
+
+
 def build(output, bundle_path=None):
     lock = json.loads((ROOT / "current/mods.lock.json").read_text())
     integration = json.loads((ROOT / "integrations/resourcepacks/create-style-dyson.json").read_text())
@@ -54,6 +65,8 @@ def build(output, bundle_path=None):
         if sha256(data) != expected:
             raise ValueError(f"Client file hash mismatch: {relative}")
         entries[relative] = data
+
+    verify_tome_artwork(entries)
 
     index_files = []
     names = set()

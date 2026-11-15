@@ -1,4 +1,4 @@
-"""Build the guide catalogue and restore the Tome's Chinese item name."""
+"""Build the guide catalogue and preserve the Tome's upstream item appearance."""
 
 import argparse
 import json
@@ -64,11 +64,15 @@ def catalog(instance):
 
 
 def restore_name(source, target):
-    """Preserve archive entries and metadata, changing only the mistranslated name."""
+    """Keep translations while removing resource-pack overrides of the Tome artwork."""
     with zipfile.ZipFile(source) as archive:
         entries = [(info, archive.read(info)) for info in archive.infolist()]
         comment = archive.comment
-    changed = False
+    artwork_prefixes = ('assets/eccentrictome/textures/', 'assets/eccentrictome/models/')
+    original_count = len(entries)
+    entries = [(info, raw) for info, raw in entries
+               if not info.filename.startswith(artwork_prefixes)]
+    changed = len(entries) != original_count
     for index, (info, raw) in enumerate(entries):
         if info.filename == 'assets/eccentrictome/lang/zh_cn.json':
             data = json.loads(raw)
