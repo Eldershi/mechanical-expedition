@@ -37,6 +37,8 @@
 
 仓储发报机使用 [Create: Stock Keeper Bookmarks](integrations/mods/stockkeeperbookmarks.json) 1.0.0 Forge 1.20.1 版，仅客户端安装，安装后需完整重启客户端。输入目的地地址后点击“+”保存书签；点击书签会直接向该地址发送已选物品，右键删除，拖动调整顺序。每台终端分别保存书签，打开界面时默认清空地址。个人书签保存在客户端本地，不随整合包发布。
 
+[Sophisticated Building](integrations/mods/sophisticatedbuilding.json) 使用 5.1.2 Forge 1.20.1 版，客户端与服务端须安装同一版本。手持建筑方块，按住左 Alt 打开轮盘，选择墙面、地板或立方体；墙面和地板点击两次，立方体先选底面再确定高度。支持实心、空心和边框选项，生存模式按实际放置数量消耗材料；Ctrl+Z 撤销，Ctrl+Y 重做。选择 Disable 返回普通放置与挖掘。
+
 AuraTip 与 OElib 的事件接口适配、Steam Ages 与 Steam Letters 的机器注册兼容，以及 BCLib 和女仆世界生成保护的构建源码均保存在 `development/`。
 
 地牢进行时 [Dungeon Now Loading](integrations/mods/dungeonnowloading.json) 使用 2.2 Forge 1.20.1 版，客户端与服务端安装同一版本。模组提供迷宫、二元神庙与可重复挑战的 Boss；现有存档需要在尚未生成的区块中寻找新增地牢。
@@ -55,7 +57,7 @@ AuraTip 与 OElib 的事件接口适配、Steam Ages 与 Steam Letters 的机器
 
 下界作物遵循各自原生土壤与放置规则，不附加维度限制。破坏方块不要求 `init` 阶段，任务书不包含对应的阶段领取任务。烈焰蛋糕进食不附加魔改伤害。
 
-模组锁文件共有 405 项：388 项有哈希匹配的下载来源，17 项为随源码保存的补丁包。
+模组锁文件共有 406 项：389 项有哈希匹配的下载来源，17 项为随源码保存的补丁包。
 
 `current/client/` 是受管游戏文件的源码快照，第三方模组通过锁文件定位。它不包含账号、存档、玩家数据、服务器列表、地图、备份、运行缓存或一次性测试探针。`current/server/` 是专用服务端覆盖层，需要与公共游戏内容和对应服务端依赖一起使用。
 

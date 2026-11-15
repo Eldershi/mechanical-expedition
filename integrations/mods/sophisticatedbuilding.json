@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "modId": "sophisticatedbuilding",
+  "name": "Sophisticated Building",
+  "version": "5.1.2",
+  "releaseChannel": "release",
+  "minecraft": "1.20.1",
+  "loader": "forge",
+  "java": 17,
+  "requiredOn": [
+    "client",
+    "server"
+  ],
+  "dependencies": [
+    {
+      "modId": "forge",
+      "mandatory": true,
+      "versionRange": "[47.1.3,)",
+      "ordering": "NONE",
+      "side": "BOTH"
+    },
+    {
+      "modId": "minecraft",
+      "mandatory": true,
+      "versionRange": "[1.20.1]",
+      "ordering": "NONE",
+      "side": "BOTH"
+    },
+    {
+      "modId": "sophisticatedbackpacks",
+      "mandatory": false,
+      "versionRange": "[3.26.3,)",
+      "ordering": "AFTER",
+      "side": "BOTH"
+    },
+    {
+      "modId": "sophisticatedcore",
+      "mandatory": false,
+      "versionRange": "[1.5.1,)",
+      "ordering": "AFTER",
+      "side": "BOTH"
+    }
+  ],
+  "artifact": {
+    "filename": "sophisticatedbuilding-forge-1.20.1-5.1.2.jar",
+    "bytes": 951262,
+    "sha256": "2cff06e5f41cb72774a6649b418a22eedea9087fefdaa7508995a24bb3540241",
+    "sha1": "98d3b76202c858a6cd096f87a31efb1ac8dc5a52",
+    "sha512": "553cf4a8994f5e5d28de816162964b82bb5290dc9ec7783f9060321ebf9b95d5c71ee542e77b3eb9c64291cd0fcd2e0db78ec630777d13a89723e9105db07578",
+    "downloadUrl": "https://cdn.modrinth.com/data/Nw3rEYBH/versions/30Ovz1Cb/sophisticatedbuilding-forge-1.20.1-5.1.2.jar"
+  },
+  "officialMetadataUrl": "https://api.modrinth.com/v2/version/30Ovz1Cb",
+  "officialVersionPage": "https://modrinth.com/mod/effortless-building-sophisticated/version/30Ovz1Cb",
+  "license": "LGPL-3.0-only",
+  "configuration": {
+    "defaults": "upstream",
+    "radialMenuKey": "Left Alt",
+    "survivalPlacementConsumesItems": true,
+    "serverInstallationRequired": true
+  },
+  "sourceRepository": "https://github.com/navrelis/EffortlessBuildingSophisticated"
+}

@@ -3908,6 +3908,17 @@
       "downloadHash": "570a1aac649185e29a574b57dfaa78a631a7247477667020a8ce5266f6c48746"
     },
     {
+      "filename": "sophisticatedbuilding-forge-1.20.1-5.1.2.jar",
+      "bytes": 951262,
+      "sha256": "2cff06e5f41cb72774a6649b418a22eedea9087fefdaa7508995a24bb3540241",
+      "sha1": "98d3b76202c858a6cd096f87a31efb1ac8dc5a52",
+      "sha512": "553cf4a8994f5e5d28de816162964b82bb5290dc9ec7783f9060321ebf9b95d5c71ee542e77b3eb9c64291cd0fcd2e0db78ec630777d13a89723e9105db07578",
+      "downloadUrl": "https://cdn.modrinth.com/data/Nw3rEYBH/versions/30Ovz1Cb/sophisticatedbuilding-forge-1.20.1-5.1.2.jar",
+      "downloadUrlSource": "integrations/mods/sophisticatedbuilding.json",
+      "downloadHashFormat": "sha512",
+      "downloadHash": "553cf4a8994f5e5d28de816162964b82bb5290dc9ec7783f9060321ebf9b95d5c71ee542e77b3eb9c64291cd0fcd2e0db78ec630777d13a89723e9105db07578"
+    },
+    {
       "filename": "sophisticatedcore-1.20.1-1.5.26.2457.jar",
       "sha256": "d08fa589a38b69c49e83930ccb073424249b08dd6e979b929acb963081c92ec0",
       "sha1": "e4c32b7f1d42c8692ae1c2001d743a9eea52c771",
