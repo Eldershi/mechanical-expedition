@@ -2,6 +2,8 @@
 
 Install the `kubejs` scripts and data alongside the CMI material registrations. The recipes provide the copper, railway, Nether, precision, and coil mechanism lines. They also restore the cast iron and steel processes, seawater and lithium processing, and the Hexa casting and remelting routes for CMI mechanism bases and molds.
 
+Vintage Improvements and the IE Bottling Machine provide red mud and aluminum dust production. The IE Arc Furnace produces refractory grout and pure semi-molten osmium. Smelting the grout yields refractory bricks. A superheated Create basin makes nitric acid, and an IE Coke Oven makes coal coke from charcoal.
+
 The advanced spout and steam hammer have independent CMI recipes alongside the recipes shipped by Steam Letters. The CMI spout recipe uses a Create belt connector as the seal. Steam Letters supplies the normal and superheated fluids for steam mixing. The Steam Letters KubeJS builders register the CMI cast iron and steel steam tiers.
 
 Build the Steam Letters migration adapter with Java 21 and an installed NeoForge 1.21.1 server. Install the resulting JAR on both the client and server.
@@ -17,3 +19,11 @@ The Steam Letters archive provides the bronze device sprites. Expose those sprit
 ```sh
 python3 build_steam_texture_aliases.py --steam-letters /path/to/Steam-Letters.jar --assets /path/to/kubejs/assets
 ```
+
+With `nbtlib==2.0.4`, export supported legacy Tinkers tools, parts and manuals from copies of Anvil terrain or entity regions.
+
+```sh
+python3 export_legacy_tools.py --output /path/to/new-report.json /path/to/copied-region.mca
+```
+
+The report records the source chunk and NBT path, the original item data, and the corresponding Hexa stack. Durable tools retain their damage, materials and explicitly applied upgrades. Unsupported material or fluid combinations are recorded as withheld with the original item data intact. Apply the converted stacks separately to the migration copy.

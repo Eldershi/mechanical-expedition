@@ -95,7 +95,6 @@
     "expatternprovider:tag_storage_bus": "extendedae:tag_storage_bus",
     "expatternprovider:threshold_export_bus": "extendedae:threshold_export_bus",
     "immersiveindustry:electrolyzer": "cmi:caustic_soda_solution_bucket",
-    "immersiveindustry:refractory_kiln_brick": "immersiveengineering:blastbrick",
     "malum:processed_soulstone": "malum:refined_soulstone",
     "malum:spirit_fabric": "malum:soulwoven_silk",
     "tconstruct:clear_glass": "modernfoundry:clear_glass",
@@ -255,9 +254,9 @@
     },
     "3E18E454790F91B2": {
       "description": [
-        "按沉浸工程配方制作高炉砖，搭建高炉以烧制石灰及冶炼钢。"
+        "在沉浸工程电弧炉中，用 HOP 石墨粉、砂砾和高岭石制成耐火砖泥，再烧成耐火窑砖。"
       ],
-      "title": "制备高炉砖"
+      "title": "制备耐火砖泥与耐火砖"
     },
     "3E20D5A765941B2F": {
       "title": "机械锯"
