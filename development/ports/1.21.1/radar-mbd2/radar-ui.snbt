@@ -1,0 +1,248 @@
+{
+  stylesheets: ["ldlib2:lss/mc"],
+  template: {
+    children: [
+      {
+        data: {
+          id: "ui:machine_name",
+          text: {
+            translate: "Radar Antenna"
+          }
+        },
+        index: 0,
+        type: "label"
+      },
+      {
+        data: {
+          children: [
+            {
+              data: {
+                id: "ui:item_input_0"
+              },
+              index: 0,
+              type: "item-slot"
+            },
+            {
+              data: {
+                id: "ui:item_output_0"
+              },
+              index: 1,
+              type: "item-slot"
+            },
+            {
+              data: {
+                id: "ui:item_energy_0"
+              },
+              index: 2,
+              type: "item-slot"
+            }
+          ],
+          classes: ["radar-slots"]
+        },
+        index: 1,
+        type: "element"
+      },
+      {
+        data: {
+          id: "ui:progress_bar",
+          internal: [
+            {
+              internal: [
+                {
+                  internal: [
+                    {},
+                    {
+                      text: {
+                        translate: "Label"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          maxValue: 1.0f,
+          minValue: 0.0f,
+          value: 0.0f,
+          classes: ["radar-progress"]
+        },
+        index: 2,
+        type: "progress-bar"
+      },
+      {
+        data: {
+          id: "ui:forge_energy_storage",
+          internal: [
+            {
+              inline: {
+                background: {},
+                padding-all: {
+                  type: "LENGTH"
+                }
+              },
+              internal: [
+                {
+                  internal: [
+                    {
+                      inline: {
+                        background: {}
+                      }
+                    },
+                    {
+                      text: {
+                        translate: "0/0 FE"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          maxValue: 1.0f,
+          minValue: 0.0f,
+          value: 1.0f
+        },
+        index: 3,
+        type: "progress-bar"
+      },
+      {
+        data: {
+          internal: [
+            {
+              internal: [
+                {
+                  internal: [
+                    {
+                      id: "inventory_9"
+                    },
+                    {
+                      id: "inventory_10"
+                    },
+                    {
+                      id: "inventory_11"
+                    },
+                    {
+                      id: "inventory_12"
+                    },
+                    {
+                      id: "inventory_13"
+                    },
+                    {
+                      id: "inventory_14"
+                    },
+                    {
+                      id: "inventory_15"
+                    },
+                    {
+                      id: "inventory_16"
+                    },
+                    {
+                      id: "inventory_17"
+                    }
+                  ]
+                },
+                {
+                  internal: [
+                    {
+                      id: "inventory_18"
+                    },
+                    {
+                      id: "inventory_19"
+                    },
+                    {
+                      id: "inventory_20"
+                    },
+                    {
+                      id: "inventory_21"
+                    },
+                    {
+                      id: "inventory_22"
+                    },
+                    {
+                      id: "inventory_23"
+                    },
+                    {
+                      id: "inventory_24"
+                    },
+                    {
+                      id: "inventory_25"
+                    },
+                    {
+                      id: "inventory_26"
+                    }
+                  ]
+                },
+                {
+                  internal: [
+                    {
+                      id: "inventory_27"
+                    },
+                    {
+                      id: "inventory_28"
+                    },
+                    {
+                      id: "inventory_29"
+                    },
+                    {
+                      id: "inventory_30"
+                    },
+                    {
+                      id: "inventory_31"
+                    },
+                    {
+                      id: "inventory_32"
+                    },
+                    {
+                      id: "inventory_33"
+                    },
+                    {
+                      id: "inventory_34"
+                    },
+                    {
+                      id: "inventory_35"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              internal: [
+                {
+                  id: "inventory_0"
+                },
+                {
+                  id: "inventory_1"
+                },
+                {
+                  id: "inventory_2"
+                },
+                {
+                  id: "inventory_3"
+                },
+                {
+                  id: "inventory_4"
+                },
+                {
+                  id: "inventory_5"
+                },
+                {
+                  id: "inventory_6"
+                },
+                {
+                  id: "inventory_7"
+                },
+                {
+                  id: "inventory_8"
+                }
+              ]
+            }
+          ]
+        },
+        index: 4,
+        type: "inventory-slots"
+      }
+    ],
+    classes: ["panel_bg", "radar-body"]
+  },
+  builtin_styles: ".radar-body { width: 176; } .radar-slots { flex-direction: row; gap-all: 8; justify-content: center; } .radar-progress { height: 12; }"
+}
