@@ -12,6 +12,7 @@ from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 HERE = Path(__file__).resolve().parent
 MODULES = {
+    "flight-pneumatics-compat": (),
     "storage-adjustments": ("functionalstorage-", "sophisticatedcore-", "titanium-"),
     "engineering-adjustments": ("immersiveengineering-",),
     "nebula-tinker-compat": ("tinkersconstruct-unofficial-port-", "hilt-"),

@@ -1,0 +1,102 @@
+{
+  "id": "E04FCBA354289615",
+  "filename": "expedition_flight_workshop",
+  "group": "3346A01E0EAFD002",
+  "title": "航空学 · 飞行器工坊",
+  "icon": "simulated:physics_assembler",
+  "order_index": 30,
+  "quests": [
+    {
+      "id": "16628D54D605B326",
+      "title": "物理装配器",
+      "icon": "simulated:physics_assembler",
+      "x": 0.0,
+      "y": 0.0,
+      "optional": true,
+      "description": [
+        "用机械动力的强力胶连接轻型机身，再用物理装配器组装。先在平地试装和拆装。"
+      ],
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "6E572D4EF58B3CB8",
+          "type": "item",
+          "item": "simulated:physics_assembler",
+          "consume_items": false
+        }
+      ]
+    },
+    {
+      "id": "422B5C7DC655FB46",
+      "title": "建立浮力",
+      "icon": "aeronautics:adjustable_burner",
+      "x": 2.0,
+      "y": 0.0,
+      "optional": true,
+      "description": [
+        "可调燃烧器给气囊供热。浮空石能抵消重量，让机体悬停。升高还需要额外的向上推力。测试空载和载货两种配重。"
+      ],
+      "dependencies": [
+        "16628D54D605B326"
+      ],
+      "tasks": [
+        {
+          "id": "B16C08137104F828",
+          "type": "item",
+          "item": "aeronautics:adjustable_burner",
+          "consume_items": false
+        }
+      ]
+    },
+    {
+      "id": "503527F8E2E720DD",
+      "title": "动力与推进",
+      "icon": "aeronautics:propeller_bearing",
+      "x": 4.0,
+      "y": 0.0,
+      "optional": true,
+      "description": [
+        "为螺旋桨轴承安装至少两片有效帆面。用工程师护目镜检查推力，反转转向时观察推力方向。"
+      ],
+      "dependencies": [
+        "16628D54D605B326"
+      ],
+      "tasks": [
+        {
+          "id": "AB4F6EFE51767970",
+          "type": "item",
+          "item": "aeronautics:propeller_bearing",
+          "consume_items": false
+        },
+        {
+          "id": "17F861BE81B2B2EF",
+          "type": "item",
+          "item": "simulated:white_portable_engine",
+          "consume_items": false
+        }
+      ]
+    },
+    {
+      "id": "57CC948E1D20AB0B",
+      "title": "稳定飞行姿态",
+      "icon": "aeronautics:gyroscopic_propeller_bearing",
+      "x": 6.0,
+      "y": 0.0,
+      "optional": true,
+      "description": [
+        "在立式螺旋桨上试用陀螺螺旋桨轴承。调试时分别检查升力、重心和控制方向。"
+      ],
+      "dependencies": [
+        "503527F8E2E720DD"
+      ],
+      "tasks": [
+        {
+          "id": "9F9D46FFBB299C16",
+          "type": "item",
+          "item": "aeronautics:gyroscopic_propeller_bearing",
+          "consume_items": false
+        }
+      ]
+    }
+  ]
+}

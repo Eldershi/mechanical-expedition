@@ -1,0 +1,193 @@
+{
+  "id": "7DC59300AC3CAD0D",
+  "filename": "expedition_pneumatic_engineering",
+  "group": "5B22564DA513617D",
+  "title": "机巧新生 · 气体工程",
+  "icon": "createcraftedbeginning:shaft_driven_airtight_pump",
+  "order_index": 30,
+  "quests": [
+    {
+      "id": "DBF76497FD23EF5A",
+      "title": "气密板",
+      "icon": "createcraftedbeginning:airtight_sheet",
+      "x": 0.0,
+      "y": 0.0,
+      "optional": true,
+      "description": [
+        "用机械动力的序列装配加工气密板。按 JEI 列出的顺序喂料，先把气密管和储罐做出来。"
+      ],
+      "dependencies": [],
+      "tasks": [
+        {
+          "id": "438FFD5C41311B51",
+          "type": "item",
+          "item": "createcraftedbeginning:airtight_sheet",
+          "consume_items": false
+        },
+        {
+          "id": "DD1B9B85D4E6FFF0",
+          "type": "item",
+          "item": "createcraftedbeginning:airtight_pipe",
+          "consume_items": false
+        },
+        {
+          "id": "2BEE0F17A9DDC0B5",
+          "type": "item",
+          "item": "createcraftedbeginning:airtight_tank",
+          "consume_items": false
+        }
+      ]
+    },
+    {
+      "id": "F4C7E33698CBE017",
+      "title": "建立气网",
+      "icon": "createcraftedbeginning:shaft_driven_airtight_pump",
+      "x": 2.0,
+      "y": 0.0,
+      "optional": true,
+      "description": [
+        "让进气端面向空气，从轴向接动力。连接储罐和压力计，戴工程师护目镜观察压力。用调压泵管理下游压力。"
+      ],
+      "dependencies": [
+        "DBF76497FD23EF5A"
+      ],
+      "tasks": [
+        {
+          "id": "AB021F9582306070",
+          "type": "item",
+          "item": "createcraftedbeginning:shaft_driven_airtight_pump",
+          "consume_items": false
+        },
+        {
+          "id": "9D1E45520DEE8D95",
+          "type": "item",
+          "item": "createcraftedbeginning:airtight_manometer",
+          "consume_items": false
+        }
+      ]
+    },
+    {
+      "id": "ABDEAEE868D516EE",
+      "title": "用气体加工",
+      "icon": "createcraftedbeginning:gas_injection_chamber",
+      "x": 4.0,
+      "y": 0.0,
+      "optional": true,
+      "description": [
+        "将自然空气送入注气室。在注气室下布置传送带或置物台，用黏液球制成气凝胶块。"
+      ],
+      "dependencies": [
+        "F4C7E33698CBE017"
+      ],
+      "tasks": [
+        {
+          "id": "B0855C67BB941C13",
+          "type": "item",
+          "item": "createcraftedbeginning:gas_injection_chamber",
+          "consume_items": false
+        },
+        {
+          "id": "5AC05BDDE7D1F69B",
+          "type": "item",
+          "item": "createcraftedbeginning:aerogel_block",
+          "consume_items": false
+        }
+      ]
+    },
+    {
+      "id": "6A1A6D8387F20213",
+      "title": "压力驱动的锻造",
+      "icon": "createcraftedbeginning:airtight_forging_press",
+      "x": 6.0,
+      "y": 0.0,
+      "optional": true,
+      "description": [
+        "用机械合成器制作气密锻造机，给机器供气。铁板配铁栏杆可以继续生产铁栏杆。"
+      ],
+      "dependencies": [
+        "F4C7E33698CBE017"
+      ],
+      "tasks": [
+        {
+          "id": "D1485A4AAFD80007",
+          "type": "item",
+          "item": "createcraftedbeginning:airtight_forging_press",
+          "consume_items": false
+        }
+      ]
+    },
+    {
+      "id": "77B13B6357A11DF2",
+      "title": "湿空气分馏",
+      "icon": "createcraftedbeginning:airtight_fractionation_tower_instrument_panel",
+      "x": 0.0,
+      "y": 2.0,
+      "optional": true,
+      "description": [
+        "用气密分馏塔冷凝湿空气，分别收集水和自然空气。原油仍可走现有的柴油发电机与沉浸工程路线。"
+      ],
+      "dependencies": [
+        "F4C7E33698CBE017"
+      ],
+      "tasks": [
+        {
+          "id": "8BCAD39E1E3A1F74",
+          "type": "item",
+          "item": "createcraftedbeginning:airtight_fractionation_tower_instrument_panel",
+          "consume_items": false
+        }
+      ]
+    },
+    {
+      "id": "7134EF9810B8A728",
+      "title": "气密构件",
+      "icon": "cmi:air_tight_mechanism",
+      "x": 2.0,
+      "y": 2.0,
+      "optional": true,
+      "description": [
+        "在集成工作站制造气密构件基座，再投入原料制成未封闭的气密构件。",
+        "把半成品送入注气室，每件消耗 1,000 单位自然空气。"
+      ],
+      "dependencies": [
+        "ABDEAEE868D516EE"
+      ],
+      "tasks": [
+        {
+          "id": "7EAF70A4761BB0FF",
+          "type": "item",
+          "item": "cmi:air_tight_mechanism",
+          "consume_items": false
+        }
+      ]
+    },
+    {
+      "id": "B1DEDB1D0ABD8FF4",
+      "title": "便携气动装备",
+      "icon": "createcraftedbeginning:airtight_handheld_drill",
+      "x": 4.0,
+      "y": 2.0,
+      "optional": true,
+      "description": [
+        "给工具和气密胸甲充气，观察压力消耗，再使用充气设备补给。"
+      ],
+      "dependencies": [
+        "ABDEAEE868D516EE"
+      ],
+      "tasks": [
+        {
+          "id": "626B4829633778A4",
+          "type": "item",
+          "item": "createcraftedbeginning:airtight_handheld_drill",
+          "consume_items": false
+        },
+        {
+          "id": "858678D6BD15A05B",
+          "type": "item",
+          "item": "createcraftedbeginning:airtight_chestplate",
+          "consume_items": false
+        }
+      ]
+    }
+  ]
+}

@@ -106,5 +106,11 @@
     "sha256": "954b0793dd3fc9d460b7c23f9629088b603573a4066ef6279696fbf1bef6a065",
     "side": "BOTH",
     "build": "world-server/build.py"
+  },
+  "expedition-flight-pneumatics-compat-neoforge-1.0.0.jar": {
+    "filename": "expedition-flight-pneumatics-compat-neoforge-1.0.0.jar",
+    "sha256": "65213b276f43b18fe21a1ba6d9779bc231f31ba5ec93225bd97680b2eeae566e",
+    "side": "BOTH",
+    "build": "industrial/build.py"
   }
 }

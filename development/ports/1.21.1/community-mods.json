@@ -133,5 +133,60 @@
     },
     "version": "1.6.4",
     "sha256": "aff9837f45c1c981d47a9e60b780c37a151ef881937faf5f72092895104c8bbb"
+  },
+  "aeronautics_bundled": {
+    "file": {
+      "filename": "create-aeronautics-bundled-1.21.1-1.3.2.jar",
+      "url": "https://cdn.modrinth.com/data/oWaK0Q19/versions/44pLdPGg/create-aeronautics-bundled-1.21.1-1.3.2.jar",
+      "source": "https://modrinth.com/mod/create-aeronautics/version/44pLdPGg",
+      "sha1": "ddbe9cbc25e8f663218aa1e9fdfc4b99f0e11e4b"
+    },
+    "version": "1.3.2+mc1.21.1",
+    "sha256": "a3f330d4757640f8715d991a43eedb826e4d0e51558d859c843ae6693bd35f1e",
+    "side": "BOTH"
+  },
+  "sable": {
+    "file": {
+      "filename": "sable-neoforge-1.21.1-2.0.6.jar",
+      "url": "https://cdn.modrinth.com/data/T9PomCSv/versions/fg9dTRz9/sable-neoforge-1.21.1-2.0.6.jar",
+      "source": "https://modrinth.com/mod/sable/version/fg9dTRz9",
+      "sha1": "cf46f7e8c1511f170abcdbee739944f0540549bf"
+    },
+    "version": "2.0.6+mc1.21.1",
+    "sha256": "9c199157843bf953a47dff625fc5bb41c01a90538d35ad18e6996bbcb8a617c2",
+    "side": "BOTH"
+  },
+  "aeronauticscompat": {
+    "file": {
+      "filename": "aeronauticscompat-1.1.3.jar",
+      "url": "https://cdn.modrinth.com/data/aLVC5usA/versions/j10zlI9h/aeronauticscompat-1.1.3.jar",
+      "source": "https://modrinth.com/mod/create-aeronautics-compatability/version/j10zlI9h",
+      "sha1": "4d1aea2d6e27705e284d4603aa3422d84464e406"
+    },
+    "version": "1.1.3",
+    "sha256": "5204e1f901f20749673e384d18f73c1222f97c3efce28ff75c8fe782a55b1226",
+    "side": "BOTH"
+  },
+  "sablejade": {
+    "file": {
+      "filename": "sablejade-1.3.0.jar",
+      "url": "https://cdn.modrinth.com/data/jCrJ4iGH/versions/cxUohR7A/sablejade-1.3.0.jar",
+      "source": "https://modrinth.com/mod/jade-sable-compat/version/cxUohR7A",
+      "sha1": "beb78d81a4d5768780c8566fa869ced5dbe08263"
+    },
+    "version": "1.3.0",
+    "sha256": "f26e974115226d83ec363e3d327e739c87ded760d781ca0538181094eb4bb9a2",
+    "side": "BOTH"
+  },
+  "createcraftedbeginning": {
+    "file": {
+      "filename": "createcraftedbeginning-0.1.1.jar",
+      "url": "https://edge.forgecdn.net/files/9658/463/createcraftedbeginning-0.1.1.jar",
+      "source": "https://www.curseforge.com/minecraft/mc-mods/create-crafted-beginning/files/9658463",
+      "sha1": "c51337940f36cb06be2bcecbd5077b8073ca2025"
+    },
+    "version": "0.1.1",
+    "sha256": "03a5f100d385093ff4b9e68c2ed0d94eae38ba04182f05a424ea1aa6fed2e075",
+    "side": "BOTH"
   }
 }
