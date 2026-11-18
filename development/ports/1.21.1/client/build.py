@@ -51,6 +51,13 @@ ADAPTERS = {
         "loader": "javafml",
         "deps": {},
     },
+    "recipe-routes": {
+        "id": "expedition_recipe_route_labels",
+        "filename": "expedition-recipe-route-labels",
+        "name": "Expedition Recipe Route Labels",
+        "loader": "javafml",
+        "deps": {"jei": "19.64.0.455"},
+    },
     "planner": {
         "id": "expedition_tool_planner",
         "filename": "expedition-tool-planner",
@@ -64,7 +71,11 @@ ADAPTERS = {
         "filename": "expedition-spell-catalog",
         "name": "Expedition Spell Catalog",
         "loader": "javafml",
-        "chooser": "expedition.spellcatalog",
+        "version": "1.0.1",
+        "package": "expedition.spellcatalog.mixin",
+        "mixins": ["SpellPreviewSkin", "SpellStatAccess", "PreviewProjectionAccess",
+                   "SpellPonderIndexBridge", "SpellPonderTagNavigation", "SpellPonderTagText",
+                   "PonderTagIconAccess"],
         "deps": {"iss_ponder": "1.0.3", "irons_spellbooks": "1.21.1-3.16.3",
                  "ponder": "1.0.87+mc1.21.1"},
     },
@@ -73,6 +84,7 @@ ADAPTERS = {
 
 def build(adapter, classes, output):
     mod_id = adapter["id"]
+    version = adapter.get("version", VERSION)
     config = f"{mod_id}.mixins.json"
     metadata = f'''modLoader = "{adapter.get("loader", "lowcodefml")}"
 loaderVersion = "[1,)"
@@ -80,7 +92,7 @@ license = "MIT"
 
 [[mods]]
 modId = "{mod_id}"
-version = "{VERSION}"
+version = "{version}"
 displayName = "{adapter["name"]}"
 '''
     if adapter.get("mixins"):
@@ -88,16 +100,16 @@ displayName = "{adapter["name"]}"
 [[mixins]]
 config = "{config}"
 '''
-    for dependency, version in {"minecraft": "1.21.1", **adapter["deps"]}.items():
+    for dependency, required_version in {"minecraft": "1.21.1", **adapter["deps"]}.items():
         metadata += f'''
 [[dependencies.{mod_id}]]
 modId = "{dependency}"
 type = "required"
-versionRange = "[{version}]"
+versionRange = "[{required_version}]"
 ordering = "NONE"
 side = "CLIENT"
 '''
-    jar = output / f'{adapter["filename"]}-neoforge-{VERSION}.jar'
+    jar = output / f'{adapter["filename"]}-neoforge-{version}.jar'
     resources = {"META-INF/neoforge.mods.toml": metadata}
     if adapter.get("mixins"):
         resources[config] = json.dumps({

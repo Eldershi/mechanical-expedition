@@ -60,8 +60,8 @@
     "build": "client/build.py"
   },
   "expedition-ponder-ui-1.0.2.jar": {
-    "filename": "expedition-spell-catalog-neoforge-1.0.0.jar",
-    "sha256": "584d1df4911bdfb5f0e79ad295e97aa2c7400984aef3dbcf6eb18d4b51bf7af8",
+    "filename": "expedition-spell-catalog-neoforge-1.0.1.jar",
+    "sha256": "4082612b469a9e8890abd18bb6a89f7ae1fc47650e1b85ea0e8e83e8b6ff7891",
     "side": "CLIENT",
     "build": "client/build.py"
   },

@@ -1,6 +1,7 @@
 {
-  "expedition.spells.title": "Spell Schools",
-  "expedition.spells.other": "Other spells",
-  "expedition.spells.school": "%s (%s)",
+  "gui.expedition_spell_catalog.parameters": "Spell Parameters",
+  "gui.expedition_spell_catalog.data": "Casting Data",
+  "gui.expedition_spell_catalog.index": "Ponder Index",
+  "gui.expedition_spell_catalog.school_description": "%s spells. Select a spell to begin its demonstration.",
   "expedition.spells.preview_unavailable": "This server does not provide spell previews."
 }

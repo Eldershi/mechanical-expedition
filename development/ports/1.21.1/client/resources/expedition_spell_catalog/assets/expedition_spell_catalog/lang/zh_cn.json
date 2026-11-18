@@ -1,6 +1,7 @@
 {
-  "expedition.spells.title": "法术学派",
-  "expedition.spells.other": "其他法术",
-  "expedition.spells.school": "%s（%s）",
+  "gui.expedition_spell_catalog.parameters": "法术参数",
+  "gui.expedition_spell_catalog.data": "施法数据",
+  "gui.expedition_spell_catalog.index": "思索索引",
+  "gui.expedition_spell_catalog.school_description": "包含 %s 种法术，选择法术开始演示。",
   "expedition.spells.preview_unavailable": "此服务器未提供法术预览。"
 }
