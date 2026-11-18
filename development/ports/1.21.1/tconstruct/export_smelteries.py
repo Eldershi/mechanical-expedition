@@ -184,7 +184,9 @@ def within(pos, minimum, maximum, margin):
 
 def bounds(controller):
     origin = position(controller)
-    structure = controller["multiblock"]
+    structure = controller.get("multiblock")
+    if not structure:
+        return origin, origin
     return [tuple(value + int(delta) for value, delta in zip(origin, offset(structure[key])))
             for key in ("min", "max")]
 
@@ -232,7 +234,7 @@ def save_template(output, states, entities, namespace, palette_ids, excluded):
     }
 
 
-def export(regions, namespace, target_jar, output, excluded):
+def export(regions, namespace, target_jar, output, excluded, selected_controllers=()):
     prefix = f"assets/{namespace}/blockstates/"
     with ZipFile(target_jar) as jar:
         palette_ids = {f"{namespace}:{name[len(prefix):-5]}" for name in jar.namelist()
@@ -246,6 +248,10 @@ def export(regions, namespace, target_jar, output, excluded):
     controllers = sorted(pos for pos, be in entities.items() if be["id"] == "tconstruct:smeltery")
     if not controllers:
         raise ValueError("No legacy smeltery controllers in the supplied regions")
+    selected = {tuple(pos) for pos in selected_controllers} if selected_controllers else set(controllers)
+    missing = selected.difference(controllers)
+    if missing:
+        raise ValueError(f"No legacy smeltery controllers at {sorted(missing)}")
     controller_indices = {pos: index for index, pos in enumerate(controllers)}
     boxes = [bounds(entities[pos]) for pos in controllers]
     selections = [{} for _ in controllers]
@@ -272,7 +278,9 @@ def export(regions, namespace, target_jar, output, excluded):
         payload = Path(temporary) / "export"
         payload.mkdir()
         report = []
-        for index, (controller, selection) in enumerate(zip(controllers, selections), start=1):
+        exports = ((controller, selection) for controller, selection in zip(controllers, selections)
+                   if controller in selected)
+        for index, (controller, selection) in enumerate(exports, start=1):
             if controller not in selection:
                 raise ValueError(f"Controller palette is missing at {controller}")
             row = save_template(payload / f"smeltery_{index}.nbt", selection, entities,
@@ -288,6 +296,8 @@ if __name__ == "__main__":
     parser.add_argument("--target-jar", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--hold", action="append", default=[], help="Leave an absent item or fluid in the transfer report")
+    parser.add_argument("--controller", type=int, nargs=3, action="append", default=[], metavar=("X", "Y", "Z"),
+                        help="Export the selected controller only. Repeat as needed.")
     parser.add_argument("regions", type=Path, nargs="+")
     args = parser.parse_args()
-    export(args.regions, args.namespace, args.target_jar, args.output, set(args.hold))
+    export(args.regions, args.namespace, args.target_jar, args.output, set(args.hold), args.controller)
