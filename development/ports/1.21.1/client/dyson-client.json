@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "create-style-dyson",
+  "minecraft": "1.21.1",
+  "loader": "neoforge",
+  "repository": "https://github.com/Eldershi/create-style-dyson",
+  "release": {
+    "version": "1.1.0",
+    "tag": "v1.1.0-mc1.21.1-neoforge",
+    "clientBundleURL": "https://github.com/Eldershi/create-style-dyson/releases/download/v1.1.0-mc1.21.1-neoforge/Create-Style-Dyson-1.1.0-MC1.21.1-NeoForge-Client.zip",
+    "clientBundleSHA256": "ba58e21f423c26cccf26c6be6a07faa9bba974467928ac7f1c649963c881c238"
+  },
+  "clientFiles": [
+    {
+      "member": "kubejs/startup_scripts/90_dcp_approved_visuals.js",
+      "path": "kubejs/startup_scripts/90_dcp_approved_visuals.js",
+      "sha256": "e8ababf42313bf283082ebd7ffc77d726e2310d8530f26ade3f63c54758a868f",
+      "bytes": 21179
+    },
+    {
+      "member": "resourcepacks/Dyson-Create-Approved-Models-NeoForge-1.21.1.zip",
+      "path": "config/paxi/resourcepacks/Dyson-Create-Approved-Models-NeoForge-1.21.1.zip",
+      "sha256": "b4dc06116b9ac803b39bf473d8d9b9f25fc9ced0f5c3a7829daf9949d833cfe1",
+      "bytes": 905083
+    }
+  ],
+  "paxi": {
+    "configPath": "config/paxi/resourcepack_load_order.json",
+    "loadOrderEntry": "Dyson-Create-Approved-Models-NeoForge-1.21.1.zip",
+    "position": "last"
+  }
+}

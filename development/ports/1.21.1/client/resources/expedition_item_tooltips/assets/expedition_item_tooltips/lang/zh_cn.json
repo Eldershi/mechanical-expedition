@@ -1,0 +1,10 @@
+{
+  "tooltip.expedition_item_tooltips.burn_time": "熔炉燃烧时长：%s 刻",
+  "tooltip.expedition_item_tooltips.durability": "耐久：%s / %s",
+  "tooltip.expedition_item_tooltips.enchantability": "附魔能力：%s",
+  "tooltip.expedition_item_tooltips.food": "饥饿值：%s · 饱和度：%s",
+  "tooltip.expedition_item_tooltips.stack_size": "最大堆叠：%s",
+  "tooltip.expedition_item_tooltips.translation_key": "翻译键：%s",
+  "tooltip.expedition_item_tooltips.components": "数据组件：%s",
+  "tooltip.expedition_item_tooltips.tag": "标签：%s"
+}

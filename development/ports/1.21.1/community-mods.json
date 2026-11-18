@@ -100,5 +100,28 @@
     "sha256": "ef49f8fa00f177883db6ab47e4037d059959f328b5d827532ec5edc1277b8c94",
     "side": "SERVER",
     "required_by": "ticktweaks"
+  },
+  "ftbfiltersystem": {
+    "file": {
+      "filename": "ftb-filter-system-neoforge-21.1.4.jar",
+      "url": "https://edge.forgecdn.net/files/7429/11/ftb-filter-system-neoforge-21.1.4.jar",
+      "source": "https://www.curseforge.com/minecraft/mc-mods/ftb-filter-system/files/7429011",
+      "sha1": "a48e54edeacc59aaba29a1b627799c052112ee0b"
+    },
+    "version": "21.1.4",
+    "sha256": "b8700e8bfd9c78b09bc7819cb28a6318b20d2bf68969bc6894a0bfa39581a99b",
+    "replaces": "item-filters-forge-2001.1.0-build.59.jar"
+  },
+  "fancytoasts": {
+    "file": {
+      "filename": "fancytoasts-1.5.1-neoforge-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/eUziWqPC/versions/X2GAO9kB/fancytoasts-1.5.1-neoforge-1.21.1.jar",
+      "source": "https://modrinth.com/mod/fancy-toasts/version/X2GAO9kB",
+      "sha1": "ea6d91fa5bc3398cf73fb4e2d614eff8ad40a83e"
+    },
+    "version": "1.5.1",
+    "sha256": "25c3feca75dd36c296aecb624dae85189d156cf9ffc34862c80c6892b3824dff",
+    "side": "CLIENT",
+    "replaces": "achievement_toast-1.20.1-forge-1.0.0.jar"
   }
 }

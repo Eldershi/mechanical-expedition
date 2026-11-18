@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "expedition.fireworks.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["OverhaulFireworkMixin", "SulfurFireworkMixin", "GumbeeperFireworkMixin", "BomberFireworkMixin"],
+  "injectors": {"defaultRequire": 1}
+}

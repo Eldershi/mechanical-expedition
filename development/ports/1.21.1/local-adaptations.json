@@ -1,0 +1,56 @@
+{
+  "expedition-creeper-firework-compat-1.0.0.jar": {
+    "filename": "expedition-creeper-firework-compat-neoforge-1.0.0.jar",
+    "sha256": "304cb3239b3304c64558b5d94a7f320373dafa91b576926654c68e8e1fd0dda2",
+    "side": "BOTH",
+    "build": "creeper-firework/build.py"
+  },
+  "expedition-upstream-compat-1.0.0.jar": {
+    "filename": "expedition-upstream-compat-neoforge-1.0.0.jar",
+    "sha256": "9126a5202a9722a69ff67ad5c5e309f28e49a1ff73ce3cbdcda82ea9cefa7f61",
+    "side": "BOTH",
+    "build": "industry/build.py"
+  },
+  "expedition-player-motion-guard-1.1.0.jar": {
+    "filename": "expedition-player-motion-guard-neoforge-1.1.0.jar",
+    "sha256": "d7f4cd53b61f433a45d9d43c97738b72916e008300f7b8067d11d36c9b1c7a30",
+    "side": "SERVER",
+    "build": "world-server/build.py"
+  },
+  "expedition-teleport-fix-1.0.0.jar": {
+    "filename": "expedition-teleport-fix-neoforge-1.0.0.jar",
+    "sha256": "a6d647ea53d4c239b476d0c296f0373b66823483aa771bd1c5523c535f57a23d",
+    "side": "SERVER",
+    "build": "world-server/build.py"
+  },
+  "expedition-stock-keeper-tooltip-fix-1.0.0.jar": {
+    "filename": "expedition-stock-keeper-tooltip-fix-neoforge-1.0.0.jar",
+    "sha256": "b8b506294312e2acc7977a258dc762106a1370cbb8e5c64bfcce33c87788da5d",
+    "side": "CLIENT",
+    "build": "client/build.py"
+  },
+  "expedition-ftb-teams-client-compat-1.0.0.jar": {
+    "filename": "expedition-ftb-teams-client-compat-neoforge-1.0.0.jar",
+    "sha256": "6e6a3a248129c86e72a843339b5aa0ee1dd32c6db60cb8df48225826604c44e4",
+    "side": "CLIENT",
+    "build": "client/build.py"
+  },
+  "expedition-chunky-startup-guard-1.0.0.jar": {
+    "filename": "expedition-chunky-startup-guard-neoforge-1.0.0.jar",
+    "sha256": "0040cfea68a20683d1e7f443e68b708cd8e65a4c812be602f6daf3a704808970",
+    "side": "CLIENT",
+    "build": "client/build.py"
+  },
+  "expedition-client-performance-1.0.0.jar": {
+    "filename": "expedition-client-performance-neoforge-1.0.0.jar",
+    "sha256": "a8270a4baa992b18d8921ac75f5d72154f6b61960a5f3b65d0d367ecdb4dda9a",
+    "side": "CLIENT",
+    "build": "client/build.py"
+  },
+  "jeiintegration_1.20.1-10.0.0.jar": {
+    "filename": "expedition-item-tooltips-neoforge-1.0.0.jar",
+    "sha256": "c72d66df717a67c4c0bd8f0e9da6521722c62122683ce6f65b1b0d763188e8c3",
+    "side": "CLIENT",
+    "build": "client/build.py"
+  }
+}

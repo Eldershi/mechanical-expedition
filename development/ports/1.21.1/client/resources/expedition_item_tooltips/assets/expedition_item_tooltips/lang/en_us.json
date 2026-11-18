@@ -1,0 +1,10 @@
+{
+  "tooltip.expedition_item_tooltips.burn_time": "Furnace fuel: %s ticks",
+  "tooltip.expedition_item_tooltips.durability": "Durability: %s / %s",
+  "tooltip.expedition_item_tooltips.enchantability": "Enchantability: %s",
+  "tooltip.expedition_item_tooltips.food": "Nutrition: %s · Saturation: %s",
+  "tooltip.expedition_item_tooltips.stack_size": "Max stack size: %s",
+  "tooltip.expedition_item_tooltips.translation_key": "Translation key: %s",
+  "tooltip.expedition_item_tooltips.components": "Components: %s",
+  "tooltip.expedition_item_tooltips.tag": "Tag: %s"
+}

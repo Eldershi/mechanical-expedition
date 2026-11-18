@@ -16,5 +16,18 @@
   "ending_library": { "status": "no_remaining_dependents" },
   "botarium": { "status": "replaced_by_common_storage_lib" },
   "obscure_api": { "status": "replaced_by_fragmentum" },
-  "expedition_maid_worldgen_guard": { "status": "inactive_without_maid_spell" }
+  "expedition_maid_worldgen_guard": { "status": "inactive_without_maid_spell" },
+  "functional_storage_js": { "status": "removed_by_pack_policy" },
+  "goprone": { "status": "removed_by_pack_policy" },
+  "tinkers_wood": { "status": "removed_by_pack_policy" },
+  "createcoolingfan": { "status": "removed_by_pack_policy" },
+  "easyrepair": { "status": "removed_by_pack_policy" },
+  "expedition_terramity_curse_compat": { "status": "removed_by_pack_policy" },
+  "illageandspillage": { "status": "removed_by_pack_policy" },
+  "lethality": { "status": "removed_by_pack_policy" },
+  "meetyourfight": { "status": "removed_by_pack_policy" },
+  "mutantmore": { "status": "removed_by_pack_policy" },
+  "smc": { "status": "removed_by_pack_policy" },
+  "terramity": { "status": "removed_by_pack_policy" },
+  "tinkersmossymodifier": { "status": "removed_by_pack_policy" }
 }
