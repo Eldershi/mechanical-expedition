@@ -13,12 +13,16 @@ from nbtlib import Compound, Int, List, String, load
 from export_legacy_tools import LEGACY, TOOLS, convert_stack
 from legacy_create_workpieces import WORKPIECES, convert_create_workpiece
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "world-server" / "migration"))
+WORLD_SERVER = Path(__file__).resolve().parent.parent / "world-server"
+sys.path.insert(0, str(WORLD_SERVER / "migration"))
+sys.path.insert(0, str(WORLD_SERVER / "player-inventory-migration"))
 from measure_chunk_edges import read_chunk
 from prepare_region_copy import SECTOR, replace_chunk
+from spell_components import SPELL_CONTAINER, convert_scroll
 
 
 VAULT = "create:item_vault"
+SCROLL = "irons_spellbooks:scroll"
 TARGET_VERSION = 3955
 NEBULA_MATERIALS = {"nebula_tinker:spider_fang"}
 EQUIVALENT_STACKS = {"cmi:simple_battery": "createaddition:capacitor"}
@@ -52,7 +56,7 @@ EQUIVALENT_STACKS.update({f"tconstruct:{name}": f"modernfoundry:{name}" for name
 
 
 def candidates(recovery, report, include_nebula, include_legacy_pan_materials, include_equivalent_stacks,
-               include_create_workpieces):
+               include_create_workpieces, target_spells):
     locations = set()
     for index, entry in enumerate(recovery.get("Stacks", ())):
         original = entry.get("OriginalStack", {})
@@ -61,9 +65,10 @@ def candidates(recovery, report, include_nebula, include_legacy_pan_materials, i
         nebula_material = include_nebula and item in NEBULA_MATERIALS
         equivalent_item = EQUIVALENT_STACKS.get(item) if include_equivalent_stacks else None
         workpiece = include_create_workpieces and item in WORKPIECES
+        scroll = target_spells is not None and item == SCROLL
         if (entry.get("BlockEntity") != VAULT
                 or entry.get("Reason") not in {"missing_item_id", "unverified_mod_payload"}
-                or not (tool or nebula_material or equivalent_item or workpiece)
+                or not (tool or nebula_material or equivalent_item or workpiece or scroll)
                 or "Slot" not in original):
             continue
         position = tuple(map(int, entry["BlockPos"]))
@@ -73,7 +78,15 @@ def candidates(recovery, report, include_nebula, include_legacy_pan_materials, i
             raise ValueError(f"Duplicate tool recovery entry at {position}, slot {slot}")
         locations.add((position, slot))
         try:
-            if workpiece:
+            if scroll:
+                stack = convert_scroll(original)
+                payload = stack["components"][SPELL_CONTAINER]
+                if len(payload["data"]) != 1 or payload["maxSpells"] != 1:
+                    raise ValueError("Expected one spell in the scroll")
+                spell = str(payload["data"][0]["id"])
+                if spell not in target_spells:
+                    raise ValueError(f"Spell is missing from the target registry: {spell}")
+            elif workpiece:
                 stack = convert_create_workpiece(original)
             elif equivalent_item or nebula_material:
                 count = int(original.get("Count", 0))
@@ -132,11 +145,11 @@ def restore_chunk(chunk, entries, report, completed):
 
 
 def stage_tools(target, recovery, output, include_nebula=False, include_legacy_pan_materials=False,
-                include_equivalent_stacks=False, include_create_workpieces=False):
+                include_equivalent_stacks=False, include_create_workpieces=False, target_spells=None):
     report = {"restored": [], "already_valid": [], "withheld": [], "regions": []}
     regions = defaultdict(lambda: defaultdict(list))
     for entry in candidates(recovery, report, include_nebula, include_legacy_pan_materials,
-                            include_equivalent_stacks, include_create_workpieces):
+                            include_equivalent_stacks, include_create_workpieces, target_spells):
         x, _, z = entry[1]["position"]
         regions[(x // 512, z // 512)][(x // 16, z // 16)].append(entry)
 
@@ -182,17 +195,27 @@ def main():
                         help="Recover CMI capacitors and matching Modern Foundry stock without item payloads")
     parser.add_argument("--include-create-workpieces", action="store_true",
                         help="Recover verified Create assembly stages, belt selections, and unworn tools")
+    parser.add_argument("--spell-registry", type=Path,
+                        help="Restore scrolls for IDs in a target server spell registry export")
     args = parser.parse_args()
     target, output = args.target_regions.resolve(), args.output.resolve()
     if not target.is_dir() or output.exists() or target in output.parents:
         parser.error("Use a migrated region directory and a new output directory outside it")
+    target_spells = None
+    if args.spell_registry:
+        registry = json.loads(args.spell_registry.read_text())
+        keys = registry.get("spells") if isinstance(registry, dict) else None
+        if (not isinstance(keys, list) or not all(isinstance(key, str) for key in keys)
+                or "irons_spellbooks:magic_missile" not in keys):
+            parser.error("Expected a target spell registry JSON export with a spells array")
+        target_spells = frozenset(keys)
     output.parent.mkdir(parents=True, exist_ok=True)
     with TemporaryDirectory(prefix="foundry-tools-", dir=output.parent) as temp:
         stage = Path(temp) / "regions"
         stage.mkdir()
         report = stage_tools(target, load(args.vault_recovery), stage,
                              args.include_nebula, args.include_legacy_pan_materials,
-                             args.include_equivalent_stacks, args.include_create_workpieces)
+                             args.include_equivalent_stacks, args.include_create_workpieces, target_spells)
         (stage / "foundry-tool-report.json").write_text(json.dumps(report, indent=2) + "\n")
         if output.exists():
             raise FileExistsError(output)
