@@ -1,0 +1,14 @@
+{
+  "cofh_core": { "status": "removed_thermal" },
+  "kubejs_thermal": { "status": "removed_thermal" },
+  "kubejsthermalaugments": { "status": "removed_thermal" },
+  "thermal_cultivation": { "status": "removed_thermal" },
+  "thermal_expansion": { "status": "removed_thermal" },
+  "thermal_extra": { "status": "removed_thermal" },
+  "thermal_foundation": { "status": "removed_thermal" },
+  "thermal_innovation": { "status": "removed_thermal" },
+  "thermal_integration": { "status": "removed_thermal" },
+  "thermal_parallel": { "status": "removed_thermal" },
+  "thermalconstruct": { "status": "removed_thermal" },
+  "mantle": { "status": "replaced_by_hilt" }
+}

@@ -1,0 +1,14 @@
+{
+  "tconstruct": {
+    "id": "modernfoundry",
+    "modrinthVersion": "SbT1iise",
+    "filename": "TinkersConstruct-Unofficial-Port-1.21.1-1.6.1-NeoForge.jar",
+    "sha256": "4c61c3ff8c2d025945a5a06e574bf707fad3e160315b6be5f0885b82db1eb2dd"
+  },
+  "hilt": {
+    "id": "hilt",
+    "modrinthVersion": "IiE1PFla",
+    "filename": "Hilt-1.21.1-1.13.jar",
+    "sha256": "54aebff173d29ab1af28c15c18fdc0c8814ea42c949bfdbeceaeefc5238f9b4c"
+  }
+}
