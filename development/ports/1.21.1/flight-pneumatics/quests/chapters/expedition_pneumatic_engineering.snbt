@@ -139,6 +139,34 @@
       ]
     },
     {
+      "id": "A143F0DDC7B20021",
+      "title": "调压与抽真空",
+      "icon": "createcraftedbeginning:airtight_regulator_pump",
+      "x": 6.0,
+      "y": 2.0,
+      "optional": true,
+      "description": [
+        "让调压泵的出口接到密封储罐并接通旋转动力。",
+        "先设为 1.5 atm，用压力计确认储罐高于大气压，再把目标设为 0 atm，观察调压泵主动排气。完成两次试验后勾选。"
+      ],
+      "dependencies": [
+        "F4C7E33698CBE017"
+      ],
+      "tasks": [
+        {
+          "id": "A143F0DDC7B20022",
+          "type": "item",
+          "item": "createcraftedbeginning:airtight_regulator_pump",
+          "consume_items": false
+        },
+        {
+          "id": "A143F0DDC7B20023",
+          "type": "checkmark",
+          "title": "完成加压和抽真空试验"
+        }
+      ]
+    },
+    {
       "id": "7134EF9810B8A728",
       "title": "气密构件",
       "icon": "cmi:air_tight_mechanism",
@@ -147,7 +175,7 @@
       "optional": true,
       "description": [
         "在集成工作站制造气密构件基座，再投入原料制成未封闭的气密构件。",
-        "把半成品送入注气室，每件消耗 1,000 单位自然空气。"
+        "把半成品放入注气室下方的工作盆。自然空气至少达到 1.25 atm（绝压），每件消耗 1,000 单位。调压泵可设为 1.5 atm，留下供料余量。"
       ],
       "dependencies": [
         "ABDEAEE868D516EE"

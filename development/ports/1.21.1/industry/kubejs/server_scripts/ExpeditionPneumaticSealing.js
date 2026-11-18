@@ -20,7 +20,11 @@ if (Platform.isLoaded('createcraftedbeginning')) {
     ])
     event.custom({
       type: 'createcraftedbeginning:gas_injection',
-      gas_ingredients: [{amount: 1000, ingredient: {gas: 'createcraftedbeginning:natural_air'}}],
+      gas_ingredients: [{
+        amount: 1000,
+        ingredient: {gas: 'createcraftedbeginning:natural_air'},
+        minimum_pressure: 125000
+      }],
       ingredients: [{item: 'cmi:incomplete_air_tight_mechanism'}],
       results: [{id: 'cmi:air_tight_mechanism'}]
     }).id(path + 'air_tight_mechanism')
