@@ -8,6 +8,10 @@ The Engineer's Workbench has parallel component blueprints for iron parts, steel
 
 A Create mixer uses concrete powder and water to produce the corresponding sixteen Diesel Generators cement colors. IE liquid concrete cures adjacent sources with the IE Fix Pack. The IE Assembler uses standard crafting patterns for automation.
 
+The quartz diode is assembled by Create mechanical crafters and feeds light engineering mechanism production. The andesite mechanism has both a manual recipe with a reusable wrench and a sequenced recipe. The natural and potion mechanisms use their own assembly lines. The IE Bottling Machine uses chromium plating solution to plate steel gears.
+
+The integrated workstation produces nuclear mechanism bases, fissile cores, quantum parts, and finished nuclear mechanisms. The finished mechanism also has a Create sequenced route with Vintage Improvements laser cutting. Entro alloy uses Etrium and Cryotheum in the integrated workstation. A Create spout infuses a native Farmer's Delight knife with concentrated experience, yielding the unbreakable CMI knife.
+
 A heated Create basin conditions crude oil with water. The Diesel Generators distillation tower separates the conditioned feed into bitumen, sulfurous diesel, and kerosene. Use four stacked layers for this recipe. Kerosene yields gasoline and naphtha. The IE Refinery cracks gasoline with Steam Letters steam and a reusable vanadium plate. Distilling the cracked gasoline yields naphtha, benzene and light olefins. Pure crude also retains the Diesel Generators fuel recipes.
 
 The refinery and distillation tower process diesel into acetylene and light aldehydes. The refinery converts acetylene into vinyl alcohol and polyvinyl alcohol, then combines the polymer with light aldehydes to make structural plastic. Apply structural plastic to AE2 quartz glass in the IE Bottling Machine or mix it with aluminum and osmium plates in a Create basin for Osmium Tiles.

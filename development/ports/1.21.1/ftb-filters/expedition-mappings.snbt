@@ -43,6 +43,7 @@
     "apotheosis:infused_hellshelf": "apothic_enchanting:infused_hellshelf",
     "apotheosis:library": "apothic_enchanting:library",
     "cmi:advanced_spout": "steam_letters:advanced_spout",
+    "cmi:aluminum_alloy_ingot": "neoecoae:aluminum_alloy_ingot",
     "cmi:bronze_solar_boiler": "steam_letters:bronze_solar_boiler",
     "cmi:steam_hammer": "steam_letters:steam_hammer",
     "cmi:steel_ingot": "immersiveengineering:ingot_steel",
@@ -128,32 +129,75 @@
     "thermal:heavy_oil_bucket": "cmi:conditioned_crude_oil_bucket",
     "thermal:invar_ingot": "alltheores:invar_ingot",
     "thermal:iron_dust": "immersiveengineering:dust_iron",
+    "thermal:laser_diode": "cmi:laser_diode",
     "thermal:machine_bottler": "create:spout",
     "thermal:machine_brewer": "minecraft:brewing_stand",
     "thermal:machine_centrifuge": "vintageimprovements:centrifuge",
+    "thermal:machine_chiller": "modernfoundry:seared_table",
     "thermal:machine_crafter": "minecraft:crafter",
     "thermal:machine_crucible": "modernfoundry:smeltery_controller",
+    "thermal:machine_crystallizer": "create:mechanical_press",
     "thermal:machine_furnace": "mekanism:energized_smelter",
+    "thermal:machine_insolator": "immersiveengineering:cloche",
     "thermal:machine_press": "create:mechanical_press",
     "thermal:machine_pulverizer": "create:crushing_wheel",
+    "thermal:machine_pyrolyzer": "immersiveengineering:cokebrick",
     "thermal:machine_refinery": "createdieselgenerators:distillation_controller",
     "thermal:machine_sawmill": "create:mechanical_saw",
     "thermal:machine_smelter": "enderio:alloy_smelter",
     "thermal:sapphire": "alltheores:sapphire",
     "thermal:sapphire_dust": "alltheores:sapphire_dust",
     "thermal:sulfur_dust": "mekanism:dust_sulfur",
+    "thermal_extra:component_assembly": "create:mechanical_crafter",
+    "thermal_extra:fluid_mixer": "create:mechanical_mixer",
     "thermal_extra:lubricant_bucket": "cmi:lubricating_oil_bucket",
     "thermal_extra:naphtha_bucket": "cmi:naphtha_bucket"
   },
   "objects": {
+    "3D333E50E3192974": {
+      "item": "minecraft:oak_planks"
+    },
+    "4BFC30473684A5A5": {
+      "icon": "alltheores:iron_plate"
+    },
+    "5021A923B4BF260B": {
+      "title": "常规加工、晶体与浇铸",
+      "icon": "create:crushing_wheel"
+    },
+    "00C17E01F2DA4B2A": {
+      "title": "浇铸时保留板模",
+      "description": [
+        "用 Hexa 浇铸台浇出硅橡胶板，检查可重复使用的板模仍在。"
+      ],
+      "icon": "modernfoundry:seared_table"
+    },
     "00C55399CC674B4A": {
       "description": [
         "用机械动力柴油发电机的馏分塔处理原油。"
       ],
-      "title": "馏分塔控制器"
+      "title": "馏分塔控制器",
+      "dependencies": [
+        "7CE3BF3F7F7FC1D9"
+      ]
+    },
+    "02A6761920F737B0": {
+      "title": "硅橡胶板浇铸",
+      "description": [
+        "在 Hexa 浇铸台用板模浇铸硅橡胶，取出板材后检查板模仍在。"
+      ],
+      "icon": "cmi:silicon_rubber_plate"
     },
     "03935F56FD69EF01": {
       "title": "冶炼炉控制器"
+    },
+    "042CA25C2CE9F78C": {
+      "title": "轻型工程构件组件",
+      "description": [
+        "在机械合成器中组装铜齿轮、铁机械零件和石英二极管。"
+      ]
+    },
+    "056D6D28A919A195": {
+      "item": "mekanism:chemical_oxidizer"
     },
     "05D42E0B78A3982E": {
       "dependencies": [
@@ -176,6 +220,13 @@
     },
     "09D87AA6A3F7FF38": {
       "title": "液碱"
+    },
+    "0BAB052634EDF208": {
+      "title": "焦炉制焦与杂酚油",
+      "description": [
+        "用焦炉砖搭建沉浸工程焦炉。放入煤，收集焦炭和杂酚油。"
+      ],
+      "icon": "immersiveengineering:cokebrick"
     },
     "0E3481D80180E00C": {
       "dependencies": [
@@ -239,9 +290,13 @@
     },
     "14A9BE3930DB9A7F": {
       "description": [
-        "搭建 Hexa 冶炼炉，可熔融材料并将流体引到浇铸部件。"
+        "搭建 Hexa 冶炼炉并安装机械压机，用于熔铸和压制。"
       ],
-      "title": "冶炼炉控制器"
+      "title": "冶炼炉与机械压机",
+      "omit_tasks": [
+        "574DF144B28D334B",
+        "6B2270B6E8A57CCD"
+      ]
     },
     "16FAD51B29F98F9A": {
       "dependencies": [
@@ -262,8 +317,24 @@
       ],
       "title": "建造合金炉"
     },
+    "1A1F122BC96B71A5": {
+      "item": "cmi:silicon_rubber_plate"
+    },
+    "1AEB8A6ACA26FC36": {
+      "title": "镀铬钢齿轮",
+      "description": [
+        "在成型并供电的沉浸工程装瓶机中用电镀液处理钢齿轮。"
+      ]
+    },
     "1B425C9A31C49825": {
       "title": "馏分塔控制器"
+    },
+    "1BC323FEFD8563EE": {
+      "title": "从赤泥回收铝粉",
+      "description": [
+        "用沉浸工程装瓶机处理赤泥。每份赤泥消耗 100 mB 红石酸，产出铝粉。"
+      ],
+      "icon": "immersiveengineering:dust_aluminum"
     },
     "1CFE963288EAA71A": {
       "description": [
@@ -278,6 +349,19 @@
     "1E5AE69BBC7AA5CF": {
       "description": [
         "在沉浸工程精炼机中用铜板催化轻硅醚。"
+      ]
+    },
+    "20269AD060F1C264": {
+      "title": "生产纯净石英棱镜",
+      "description": [
+        "在机械动力搅拌盆中用压机压实纯净石英粉与晶体催生剂。"
+      ],
+      "icon": "cmi:pure_quartz_prism"
+    },
+    "202DA7D1421AC3BD": {
+      "title": "铬电镀液",
+      "description": [
+        "用机械动力搅拌盆混合铬粉和硫酸，收集电镀液。"
       ]
     },
     "24A212FC28F52BA2": {
@@ -298,6 +382,13 @@
       "description": [
         "将杂酚油送入加热的馏分塔，收集苯酚和轻烯烃。"
       ]
+    },
+    "2809F6E25BE835B0": {
+      "title": "匠魂浇铸台",
+      "description": [
+        "用 Hexa 浇铸台把液态硅橡胶浇成固体或板材。"
+      ],
+      "icon": "modernfoundry:seared_table"
     },
     "2849DC36ACEA7681": {
       "description": [
@@ -339,9 +430,30 @@
     "32C9986340F70115": {
       "item": "steam_letters:steam_bucket"
     },
+    "344BA50D96A8E392": {
+      "title": "铸铁的精炼设备",
+      "description": [
+        "架设能超热的机械动力搅拌盆和搅拌器，用于生产精炼铁方坯。"
+      ],
+      "icon": "create:mechanical_mixer"
+    },
+    "38613AD3E6A2C308": {
+      "title": "铸铁加石灰得到精炼铁方坯",
+      "description": [
+        "用超热搅拌盆混合铸铁锭或粉与石灰粉。也可用沉浸工程电弧炉处理铸铁粉与石灰。"
+      ],
+      "icon": "create:mechanical_mixer"
+    },
     "3B1D5348B5A8BD6B": {
       "item": "create:belt_connector",
       "title": "传动带"
+    },
+    "3BAF24E7D930B0E8": {
+      "title": "沉浸工程焦炉",
+      "description": [
+        "用焦炉砖搭建焦炉，加工焦炭和杂酚油。"
+      ],
+      "icon": "immersiveengineering:cokebrick"
     },
     "3D52F8CD9531BC55": {
       "count": 1,
@@ -384,6 +496,13 @@
       ],
       "title": "机械压机"
     },
+    "425F3F780114BFE2": {
+      "title": "园艺盆：作物培育",
+      "description": [
+        "使用沉浸工程园艺盆栽培兼容作物，准备水和电，观察原料和产物槽。"
+      ],
+      "icon": "immersiveengineering:cloche"
+    },
     "4274680C9B3AE94B": {
       "count": 8,
       "item": "immersiveengineering:sheetmetal_steel",
@@ -414,17 +533,81 @@
       "icon": "create:belt_connector",
       "title": "制作传动带"
     },
+    "4ED5EF22A57C74DA": {
+      "title": "焦炉与硝酸工序",
+      "description": [
+        "用沉浸工程焦炉加工木炭，或用超热搅拌盆把硝石粉制成硝酸。"
+      ],
+      "icon": "immersiveengineering:cokebrick"
+    },
+    "4F2CB28E97579E74": {
+      "title": "搅拌盆处理溴与废卤水",
+      "description": [
+        "用机械动力搅拌盆处理浓海水，收集含溴产物和废卤水。"
+      ],
+      "icon": "create:mechanical_mixer"
+    },
+    "4F64A9DFD0711010": {
+      "title": "搭建沉浸工程装瓶机",
+      "description": [
+        "使用工程师锤搭建装瓶机，用电镀液处理钢齿轮。"
+      ],
+      "icon": "immersiveengineering:bottling_machine"
+    },
+    "4FB2832A045C402D": {
+      "title": "机械合成器",
+      "description": [
+        "用机械动力的机械合成器排列合成格，组装石英二极管及轻型工程构件组件。"
+      ],
+      "dependencies": [
+        "1570B04A1D692BCC"
+      ],
+      "icon": "create:mechanical_crafter"
+    },
+    "5128AEA2002411D9": {
+      "title": "二氧化硫",
+      "description": [
+        "在通用机械化学氧化机中加入硫粉，收集二氧化硫。"
+      ]
+    },
+    "5450BE78E1AB7DF5": {
+      "title": "机械压机压制石英棱镜",
+      "description": [
+        "使用压机和搅拌盆压实纯净石英粉与晶体催生剂。"
+      ],
+      "icon": "create:mechanical_press"
+    },
+    "54605A0BC5E7BAB4": {
+      "title": "化学氧化机",
+      "description": [
+        "通过通用机械化学氧化机将硫粉制成二氧化硫。"
+      ],
+      "icon": "mekanism:chemical_oxidizer"
+    },
     "56D073BB3E76055E": {
       "title": "试产导电合金",
       "description": [
         "在末影接口合金炉中，用铜和硅生产导电合金。也可使用新版自带的铁和铜配方。"
       ]
     },
+    "5968CB2295B8464D": {
+      "title": "匠魂浇铸台",
+      "description": [
+        "在 Hexa 冶炼炉熔化玻璃原料并浇铸透明玻璃。"
+      ],
+      "icon": "modernfoundry:seared_table"
+    },
     "5B02E6F0F60D4F82": {
       "description": [
         "搭建 Hexa 冶炼炉，可熔融材料并将流体引到浇铸部件。"
       ],
       "title": "冶炼炉控制器"
+    },
+    "5D4F15DF8FB903D5": {
+      "title": "硅橡胶",
+      "description": [
+        "用沉浸工程精炼机将聚硅醚与醋酸制成液态硅橡胶，再在 Hexa 浇铸台浇成固体，或使用板模浇成硅橡胶板。"
+      ]
     },
     "5E07A1EE010AE757": {
       "description": [
@@ -442,6 +625,9 @@
     },
     "625668ADD162887C": {
       "title": "粉碎轮"
+    },
+    "6268E615985B6D91": {
+      "advancement": "expedition:engineering/form_bottling_machine"
     },
     "62C926D671A9DB11": {
       "description": [
@@ -461,6 +647,16 @@
         "用沉浸工程精炼机将汽油和 Steam Letters 蒸汽裂化，钒板作为催化剂。"
       ]
     },
+    "68D40E9E67F5C986": {
+      "title": "机械压机",
+      "description": [
+        "在装有压机的搅拌盆中压实纯净石英粉和晶体催生剂，得到纯净石英棱镜。"
+      ],
+      "dependencies": [
+        "1570B04A1D692BCC"
+      ],
+      "icon": "create:mechanical_press"
+    },
     "693C6976F07FA0F5": {
       "description": [
         "在沉浸工程精炼机中用铜板催化轻硅醚。"
@@ -474,6 +670,12 @@
     },
     "6E0DADD45A07ABA5": {
       "title": "注液器"
+    },
+    "6E87F1A6C2A966BD": {
+      "title": "电子元件",
+      "description": [
+        "机械合成器可以装配石英二极管、防腐木台阶、石英和琥珀金线。沉浸工程的原生元件配方也可使用。"
+      ]
     },
     "6F6E8C0FABC99119": {
       "icon": "mekanism:basic_pressurized_tube",
@@ -490,6 +692,9 @@
     },
     "71C840F5E444303B": {
       "advancement": "immersiveengineering:multiblocks/mb_refinery"
+    },
+    "71D2B61F6DE67EA4": {
+      "item": "immersiveengineering:dust_aluminum"
     },
     "74A6E21C20513CEE": {
       "title": "传动带密封"
@@ -511,6 +716,9 @@
         "用加热的机械动力搅拌盆混合原油和水，得到预处理原油。"
       ]
     },
+    "77AAAA9241633816": {
+      "item": "immersiveengineering:dust_aluminum"
+    },
     "77B944C2713E84EF": {
       "title": "离心机"
     },
@@ -522,13 +730,49 @@
         "将杂酚油送入加热的馏分塔，得到轻烯烃和苯酚。"
       ]
     },
+    "783EEB172196D43B": {
+      "title": "可选发电路径",
+      "description": [
+        "用机械动力交流发电机、沉浸工程发电机或通用机械发电设备提供 FE。"
+      ],
+      "icon": "createaddition:alternator"
+    },
+    "79461202D5061059": {
+      "title": "轻型工程构件",
+      "description": [
+        "依次对工业铁板弯曲、装构件组件、注入杂酚油、抽真空，再装入康铜杆和工程部件。"
+      ]
+    },
+    "7986071E20EEF73C": {
+      "title": "石英二极管",
+      "description": [
+        "用机械合成器装配琥珀金线、殷钢板与纯净石英棱镜。"
+      ],
+      "icon": "cmi:laser_diode"
+    },
     "7A5EDFB0C09B56D0": {
       "item": "immersiveengineering:coal_coke",
       "title": "煤焦炭"
     },
+    "7C07B827BDFA9BBF": {
+      "title": "装瓶机从赤泥回收铝粉",
+      "description": [
+        "铝土加工所得赤泥可以送入沉浸工程装瓶机。每份赤泥消耗 100 mB 红石酸，产出铝粉。"
+      ],
+      "icon": "immersiveengineering:dust_aluminum"
+    },
     "7C3428E9D5F8696F": {
       "description": [
         "用沉浸工程精炼机和铜板混合轻醛烃与聚乙烯醇。"
+      ]
+    },
+    "7C4610039C4583C2": {
+      "title": "冶金灌注机",
+      "description": [
+        "安装通用机械冶金灌注机，准备生产富集合金。"
+      ],
+      "dependencies": [
+        "21D270C51E152805"
       ]
     },
     "7CC14049CEA95A84": {
@@ -555,5 +799,34 @@
   "tags": {
     "c:netherrack": "#c:netherracks",
     "thermal:dynamos": "mekanismgenerators:heat_generator"
-  }
+  },
+  "retired_quests": [
+    "0951D03AB81B63C9",
+    "15671F9C63EADAAD",
+    "167A05A377677F62",
+    "16854FB39C805578",
+    "1AA4F30C7CA513F4",
+    "1FEE7574214E1100",
+    "2A2D5B5398B014C5",
+    "30665E701364CEE8",
+    "3AA38388EAE99741",
+    "3AF743212C028BEE",
+    "3B112DE25E4ABD6D",
+    "3B5279119699AECC",
+    "3BF52DF39332956F",
+    "3CDC0B1303B8785C",
+    "3D84E49881C50345",
+    "3F306625D2547868",
+    "463224731EF080C5",
+    "490BA0C159C3FF63",
+    "49A04F3F89F58A31",
+    "511C400FBE6393D2",
+    "5D7F4F8A37C75BF9",
+    "5F23991A3C082479",
+    "6190E940F1BF2D16",
+    "6369A14E794D0D3E",
+    "6B48FAF3761FBBF2",
+    "6D23F6076CEF75A4",
+    "7D751BF89E8C67BD"
+  ]
 }

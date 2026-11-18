@@ -1,12 +1,12 @@
 StartupEvents.registry('item', event => {
   const assemblyOnly = [
-    'wooden', 'stone', 'nature', 'potion', 'gold', 'nuclear'
+    'wooden', 'stone', 'gold'
   ]
   const finished = [
     'copper', 'bronze', 'iron', 'pig_iron', 'colorful', 'enchanted', 'nether', 'sculk', 'ender',
-    'andesite', 'railway', 'coil', 'light_engineering', 'heavy_engineering', 'smart',
+    'andesite', 'nature', 'potion', 'railway', 'coil', 'light_engineering', 'heavy_engineering', 'smart',
     'cobalt', 'photosensitive', 'reinforced', 'basic_mekanism', 'advanced_mekanism',
-    'elite_mekanism', 'ultimate_mekanism', 'computing', 'air_tight', 'aeronautic',
+    'elite_mekanism', 'ultimate_mekanism', 'computing', 'air_tight', 'aeronautic', 'nuclear',
     'astronautic', 'antimatter', 'creative'
   ]
 

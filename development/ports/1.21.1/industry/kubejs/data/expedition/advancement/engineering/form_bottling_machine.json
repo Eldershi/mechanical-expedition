@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "form_bottling_machine": {
+      "trigger": "immersiveengineering:multiblock_formed",
+      "conditions": {
+        "hammer": {
+          "items": "immersiveengineering:hammer"
+        },
+        "multiblock": "immersiveengineering:multiblocks/bottling_machine"
+      }
+    }
+  }
+}

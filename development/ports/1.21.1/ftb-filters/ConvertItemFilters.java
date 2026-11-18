@@ -23,10 +23,12 @@ final class ConvertItemFilters {
             "dependencies", "advancement", "omit_tasks");
 
     private record ConvertedFile(Path relative, CompoundTag contents, int count) {}
-    private record Mappings(CompoundTag items, CompoundTag tags, CompoundTag stacks, CompoundTag objects) {
+    private record Mappings(CompoundTag items, CompoundTag tags, CompoundTag stacks, CompoundTag objects,
+                            Set<String> retiredQuests) {
         Mappings(CompoundTag source) {
             this(source.getCompound("items"), source.getCompound("tags"),
-                    source.getCompound("component_stacks"), source.getCompound("objects"));
+                    source.getCompound("component_stacks"), source.getCompound("objects"),
+                    questIds(source.getList("retired_quests", Tag.TAG_STRING)));
         }
     }
 
@@ -60,6 +62,7 @@ final class ConvertItemFilters {
                 }
             }
         }
+        retireQuests(converted, mappings.retiredQuests());
         Files.createDirectories(output);
         for (ConvertedFile file : converted) {
             Path target = output.resolve(file.relative());
@@ -70,6 +73,46 @@ final class ConvertItemFilters {
         System.out.printf("Converted %d legacy filter stacks across %d files%n",
                 converted.stream().mapToInt(ConvertedFile::count).sum(),
                 converted.stream().filter(file -> file.count() > 0).count());
+    }
+
+    private static Set<String> questIds(ListTag entries) {
+        var ids = new LinkedHashSet<String>();
+        for (Tag entry : entries) {
+            String id = entry.getAsString();
+            if (!id.matches("[0-9A-F]{16}") || !ids.add(id)) {
+                throw new IllegalArgumentException("Invalid or duplicate retired quest ID " + id);
+            }
+        }
+        return ids;
+    }
+
+    private static void retireQuests(List<ConvertedFile> files, Set<String> retired) {
+        if (retired.isEmpty()) return;
+        var expected = new LinkedHashSet<>(retired);
+        files.removeIf(file -> {
+            var chapter = file.contents();
+            if (!file.relative().startsWith("chapters")) return false;
+            var quests = chapter.getList("quests", Tag.TAG_COMPOUND);
+            var links = chapter.getList("quest_links", Tag.TAG_COMPOUND);
+            links.removeIf(link -> retired.contains(((CompoundTag) link).getString("linked_quest")));
+            boolean removed = quests.removeIf(entry -> {
+                var id = ((CompoundTag) entry).getString("id");
+                if (!retired.contains(id)) return false;
+                if (!expected.remove(id)) throw new IllegalArgumentException("Repeated retired quest " + id);
+                return true;
+            });
+            for (Tag entry : quests) {
+                var quest = (CompoundTag) entry;
+                for (Tag dependency : quest.getList("dependencies", Tag.TAG_STRING)) {
+                    if (retired.contains(dependency.getAsString())) {
+                        throw new IllegalArgumentException("Live quest " + quest.getString("id")
+                                + " still depends on retired quest " + dependency.getAsString());
+                    }
+                }
+            }
+            return removed && quests.isEmpty() && links.isEmpty();
+        });
+        if (!expected.isEmpty()) throw new IllegalArgumentException("Missing retired quests " + expected);
     }
 
     private static int convert(Tag node, Mappings mappings, boolean itemTask) {
