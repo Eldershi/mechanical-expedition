@@ -1,7 +1,9 @@
 StartupEvents.registry('fluid', event => {
   const colors = {
     andesite_alloy: 0xC7C8B8,
+    cast_iron: 0x454545,
     dreamcore: 0xEE8ED7,
+    industrial_iron: 0x626262,
     mechanium: 0xBCDAF8
   }
   Object.keys(colors).forEach(name => {

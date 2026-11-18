@@ -29,7 +29,7 @@ def build(java, server, output):
                         "--release", "21", "-proc:none", "-encoding", "UTF-8",
                         "-cp", classpath, "-d", str(classes), *map(str, sources)], check=True)
         output.mkdir(parents=True, exist_ok=True)
-        target = output / "expedition-upstream-compat-neoforge-1.0.0.jar"
+        target = output / "expedition-upstream-compat-neoforge-1.1.0.jar"
         with ZipFile(target, "w", compression=ZIP_DEFLATED) as jar:
             for directory in (classes, HERE / "resources"):
                 for file in sorted(path for path in directory.rglob("*") if path.is_file()):

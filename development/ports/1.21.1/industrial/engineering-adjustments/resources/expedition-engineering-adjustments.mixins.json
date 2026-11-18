@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "expedition.engineering.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["ArcFurnaceElectrodeMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

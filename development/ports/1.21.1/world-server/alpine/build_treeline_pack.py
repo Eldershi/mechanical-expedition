@@ -12,8 +12,11 @@ CLIMATE = DESIGN / "v2/climate"
 MODIFIER = {"type": "expedition_alpine_climate:alpine_treeline"}
 
 
-def selection():
-    biomes = set(json.loads((CLIMATE / "biome-policy.json").read_text())["biomes"])
+def selected_biomes():
+    return set(json.loads((CLIMATE / "biome-policy.json").read_text())["biomes"])
+
+
+def selection(biomes):
     audit = json.loads((DESIGN / "configuration/static-audit.json").read_text())
     paths = set()
     for row in audit["vegetation"]["selected"]:
@@ -25,12 +28,32 @@ def selection():
     return paths
 
 
+def regions_unexplored_features(jar, names, biomes):
+    paths = set()
+    for biome in sorted(biomes):
+        namespace, name = biome.split(":", 1)
+        path = f"data/{namespace}/worldgen/biome/{name}.json"
+        if namespace != "regions_unexplored" or path not in names:
+            continue
+        for step in json.loads(jar.read(path))["features"]:
+            for feature in step:
+                if feature.startswith(("regions_unexplored:tree/group/", "regions_unexplored:tree/fallen/")):
+                    root = feature.split(":", 1)[1]
+                    paths.add(f"data/{namespace}/worldgen/placed_feature/{root}.json")
+    return paths
+
+
 def build(vanilla, mods, output):
-    paths = selection()
+    biomes = selected_biomes()
+    paths = selection(biomes)
     features = {}
     for candidate in [vanilla, *sorted(mods.glob("*.jar"))]:
         with ZipFile(candidate) as jar:
-            for name in paths.intersection(jar.namelist()):
+            names = set(jar.namelist())
+            current = regions_unexplored_features(jar, names, biomes)
+            if current:
+                paths = {name for name in paths if not name.startswith("data/regions_unexplored/")} | current
+            for name in paths.intersection(names):
                 value = json.loads(jar.read(name))
                 if name in features and features[name] != value:
                     raise ValueError(f"Conflicting target definitions of {name}")

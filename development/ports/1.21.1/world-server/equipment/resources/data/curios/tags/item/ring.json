@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#curios:rings",
+      "required": false
+    },
+    {
+      "id": "#aether:accessories_rings",
+      "required": false
+    }
+  ]
+}

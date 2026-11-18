@@ -4,7 +4,7 @@ const expeditionStartingTools = [
 ]
 
 ItemEvents.rightClicked('cmi:initial_item_kit', event => {
-  if (!event.player.isCrouching()) return
+  if (!event.player.isShiftKeyDown()) return
   event.item.shrink(1)
   expeditionStartingTools.forEach(item => event.player.give(Item.of(item)))
   event.cancel()

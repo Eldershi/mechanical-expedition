@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="See repository license"
+
+[[mods]]
+modId="expedition_engineering_adjustments"
+version="1.0.0"
+displayName="Expedition Engineering Adjustments"
+
+[[dependencies.expedition_engineering_adjustments]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+side="BOTH"
+
+[[dependencies.expedition_engineering_adjustments]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.267,21.2)"
+side="BOTH"
+
+[[dependencies.expedition_engineering_adjustments]]
+modId="immersiveengineering"
+type="required"
+versionRange="[12.4.2-194]"
+ordering="AFTER"
+side="BOTH"
+
+[[mixins]]
+config="expedition-engineering-adjustments.mixins.json"

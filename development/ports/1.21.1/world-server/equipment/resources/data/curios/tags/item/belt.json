@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "#curios:waist",
+      "required": false
+    }
+  ]
+}

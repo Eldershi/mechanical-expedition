@@ -4,7 +4,7 @@ license="See repository license"
 
 [[mods]]
 modId="expedition_upstream_compat"
-version="1.0.0"
+version="1.1.0"
 displayName="Expedition Steam Machine Migration"
 
 [[dependencies.expedition_upstream_compat]]

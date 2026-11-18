@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="See repository license"
+
+[[mods]]
+modId="expedition_storage_adjustments"
+version="1.0.0"
+displayName="Expedition Storage Adjustments"
+
+[[dependencies.expedition_storage_adjustments]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+side="BOTH"
+
+[[dependencies.expedition_storage_adjustments]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.267,21.2)"
+side="BOTH"
+
+[[dependencies.expedition_storage_adjustments]]
+modId="functionalstorage"
+type="required"
+versionRange="[1.21.1-1.5.8]"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.expedition_storage_adjustments]]
+modId="sophisticatedcore"
+type="required"
+versionRange="[1.5.38]"
+ordering="AFTER"
+side="BOTH"
+
+[[mixins]]
+config="expedition-storage-adjustments.mixins.json"

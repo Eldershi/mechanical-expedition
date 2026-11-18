@@ -6,8 +6,8 @@
     "build": "creeper-firework/build.py"
   },
   "expedition-upstream-compat-1.0.0.jar": {
-    "filename": "expedition-upstream-compat-neoforge-1.0.0.jar",
-    "sha256": "9126a5202a9722a69ff67ad5c5e309f28e49a1ff73ce3cbdcda82ea9cefa7f61",
+    "filename": "expedition-upstream-compat-neoforge-1.1.0.jar",
+    "sha256": "5e305c1aacbc11fc73cc26b37113ae1d28e1e03298007577e6e193f2c0f245f7",
     "side": "BOTH",
     "build": "industry/build.py"
   },
@@ -64,5 +64,41 @@
     "sha256": "584d1df4911bdfb5f0e79ad295e97aa2c7400984aef3dbcf6eb18d4b51bf7af8",
     "side": "CLIENT",
     "build": "client/build.py"
+  },
+  "Storage Tweaks-1.1.jar": {
+    "filename": "expedition-storage-adjustments-neoforge-1.0.0.jar",
+    "sha256": "0e36123bfe24ec00a53e96ebc2b0f221a15be47e4d18301fb74c8a71c5dff529",
+    "side": "BOTH",
+    "build": "industrial/build.py"
+  },
+  "compressedengineering-1.4.10.jar": {
+    "filename": "expedition-engineering-adjustments-neoforge-1.0.0.jar",
+    "sha256": "5d295f8d8d7f0e4f2c31e216c9b4b65d7e56eb27b4b77832caf5723dfa7ab383",
+    "side": "BOTH",
+    "build": "industrial/build.py"
+  },
+  "EventJS-1.20.1-1.4.3.jar": {
+    "filename": "expedition-world-rules-neoforge-1.0.0.jar",
+    "sha256": "333fcafa122bd64707bb879457d670aacc8b180cd535d51e3c0af89917edf54a",
+    "side": "BOTH",
+    "build": "world-server/build.py"
+  },
+  "expedition-railway-avoidance-1.0.0.jar": {
+    "filename": "expedition-railway-avoidance-neoforge-1.0.0.jar",
+    "sha256": "72dd0042e54005a02d7e55fbb0b03e5c90f3d55ec0130a554ad8ad1aa2924c5d",
+    "side": "BOTH",
+    "build": "world-server/build.py"
+  },
+  "expedition-worldgen-compat-1.0.3.jar": {
+    "filename": "expedition-worldgen-compat-neoforge-1.1.0.jar",
+    "sha256": "7f10edfc99d79683ef54e168fbb26643ab6db32879a1fe0c5eb6f76b29699e97",
+    "side": "BOTH",
+    "build": "world-server/build.py"
+  },
+  "expedition-alpine-climate-1.0.0.jar": {
+    "filename": "expedition-alpine-climate-neoforge-1.0.0.jar",
+    "sha256": "954b0793dd3fc9d460b7c23f9629088b603573a4066ef6279696fbf1bef6a065",
+    "side": "BOTH",
+    "build": "world-server/build.py"
   }
 }
