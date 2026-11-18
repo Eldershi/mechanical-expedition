@@ -1,0 +1,10 @@
+{
+  "perStat": {
+    "modernfoundry:armor": [
+      {
+        "name": "modernfoundry:projectile_protection",
+        "level": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "level_display": "modernfoundry:default",
+  "modules": [
+    {
+      "type": "modernfoundry:armor_attack_mob_effect",
+      "effect": "minecraft:glowing",
+      "level": {
+        "flat": 1.0
+      },
+      "time": {
+        "flat": 100.0,
+        "per_level": 20.0
+      }
+    }
+  ],
+  "show_in_tooltips": "always"
+}

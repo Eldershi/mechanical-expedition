@@ -1,0 +1,16 @@
+{
+  "perStat": {
+    "modernfoundry:melee_harvest": [
+      {
+        "name": "modernfoundry:reach",
+        "level": 1
+      }
+    ],
+    "modernfoundry:armor": [
+      {
+        "name": "modernfoundry:melee_protection",
+        "level": 1
+      }
+    ]
+  }
+}

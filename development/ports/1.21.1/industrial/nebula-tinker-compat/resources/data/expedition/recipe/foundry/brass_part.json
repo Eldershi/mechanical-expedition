@@ -1,0 +1,10 @@
+{
+  "type": "modernfoundry:material",
+  "id": "expedition:foundry/brass_part",
+  "ingredient": {
+    "item": "expedition:clockwork_brass_ingot"
+  },
+  "material": "cmi:brass",
+  "needed": 1,
+  "value": 1
+}

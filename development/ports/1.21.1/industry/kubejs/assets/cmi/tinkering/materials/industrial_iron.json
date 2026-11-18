@@ -1,0 +1,40 @@
+{
+  "color": "FF85858A",
+  "fallbacks": [
+    "metal"
+  ],
+  "generator": {
+    "supported_stats": [
+      "modernfoundry:binding",
+      "modernfoundry:maille",
+      "modernfoundry:head",
+      "modernfoundry:handle",
+      "modernfoundry:limb",
+      "modernfoundry:grip",
+      "modernfoundry:plating_helmet",
+      "modernfoundry:plating_chestplate",
+      "modernfoundry:plating_leggings",
+      "modernfoundry:plating_boots",
+      "modernfoundry:plating_shield",
+      "modernfoundry:repair_kit",
+      "modernfoundry:ingot",
+      "modernfoundry:armor_plating",
+      "modernfoundry:armor_maille"
+    ],
+    "transformer": {
+      "type": "modernfoundry:recolor_sprite",
+      "color_mapping": {
+        "type": "modernfoundry:grey_to_color",
+        "palette": {
+          "000": "FF000000",
+          "063": "FF33353A",
+          "102": "FF4B4B51",
+          "140": "FF66666B",
+          "178": "FF85858A",
+          "216": "FFA8A7AF",
+          "255": "FFCBCAD3"
+        }
+      }
+    }
+  }
+}

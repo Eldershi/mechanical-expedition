@@ -1,0 +1,11 @@
+{
+  "type": "modernfoundry:material_melting",
+  "id": "expedition:foundry/cast_iron_melting",
+  "neoforge:conditions": [{ "type": "neoforge:item_exists", "item": "cmi:molten_cast_iron_bucket" }],
+  "input": "cmi:cast_iron",
+  "result": {
+    "fluid": "cmi:molten_cast_iron",
+    "amount": 90
+  },
+  "temperature": 1200
+}

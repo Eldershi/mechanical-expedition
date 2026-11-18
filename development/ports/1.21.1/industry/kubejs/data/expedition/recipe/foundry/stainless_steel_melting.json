@@ -1,0 +1,16 @@
+{
+  "type": "modernfoundry:material_melting",
+  "id": "expedition:foundry/stainless_steel_melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "cmi:molten_stainless_steel_bucket"
+    }
+  ],
+  "input": "cmi:stainless_steel",
+  "result": {
+    "fluid": "cmi:molten_stainless_steel",
+    "amount": 90
+  },
+  "temperature": 1510
+}

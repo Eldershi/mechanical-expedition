@@ -2,6 +2,7 @@
 """Build the Expedition industrial add-ons against a NeoForge 1.21.1 server."""
 
 import argparse
+import json
 import os
 from pathlib import Path
 import subprocess
@@ -15,6 +16,8 @@ MODULES = {
     "engineering-adjustments": ("immersiveengineering-",),
     "nebula-tinker-compat": ("tinkersconstruct-unofficial-port-", "hilt-"),
 }
+VERSIONS = {"nebula-tinker-compat": "1.1.0"}
+VEIN_HAMMER = "data/modernfoundry/tinkering/tool_definitions/vein_hammer.json"
 
 
 def build(module, java, server, output):
@@ -40,12 +43,21 @@ def build(module, java, server, output):
                         "--release", "21", "-proc:none", "-encoding", "UTF-8",
                         "-cp", classpath, "-d", str(classes), *map(str, sources)], check=True)
         output.mkdir(parents=True, exist_ok=True)
-        target = output / f"expedition-{module}-neoforge-1.0.0.jar"
+        target = output / f"expedition-{module}-neoforge-{VERSIONS.get(module, '1.0.0')}.jar"
         with ZipFile(target, "w", compression=ZIP_DEFLATED) as jar:
             for directory in (classes, source / "resources"):
                 for file in sorted(path for path in directory.rglob("*") if path.is_file()):
                     name = file.relative_to(directory).as_posix()
                     jar.writestr(ZipInfo(name), file.read_bytes(), compress_type=ZIP_DEFLATED)
+            if module == "nebula-tinker-compat":
+                with ZipFile(addons[0]) as upstream:
+                    hammer = json.loads(upstream.read(VEIN_HAMMER))
+                vein, = (module for module in hammer["modules"]
+                         if module["type"] == "modernfoundry:vein_aoe")
+                vein.clear()
+                vein.update(type="nebula_tinker:connected_vein", max_blocks=16)
+                jar.writestr(ZipInfo(VEIN_HAMMER), json.dumps(hammer, indent=2) + "\n",
+                             compress_type=ZIP_DEFLATED)
     print(target)
 
 

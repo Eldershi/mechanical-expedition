@@ -1,0 +1,7 @@
+{
+  "modules": [
+    {
+      "type": "nebula_tinker:shadow_damage"
+    }
+  ]
+}

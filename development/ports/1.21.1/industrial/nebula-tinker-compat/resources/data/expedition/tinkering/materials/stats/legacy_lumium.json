@@ -1,0 +1,10 @@
+{
+  "stats": {
+    "modernfoundry:limb": {
+      "accuracy": 0.1,
+      "draw_speed": 0.12,
+      "durability": 480,
+      "velocity": -0.05
+    }
+  }
+}

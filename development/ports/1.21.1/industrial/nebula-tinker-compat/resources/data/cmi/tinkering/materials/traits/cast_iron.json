@@ -1,0 +1,16 @@
+{
+  "perStat": {
+    "modernfoundry:armor": [
+      {
+        "level": 1,
+        "name": "modernfoundry:projectile_protection"
+      }
+    ],
+    "modernfoundry:ranged": [
+      {
+        "level": 1,
+        "name": "modernfoundry:maintained"
+      }
+    ]
+  }
+}

@@ -26,6 +26,10 @@ UPGRADES = {"redirected"}
 TANK_FLUIDS = {"minecraft:lava", "minecraft:water", "tconstruct:powdered_snow"}
 LEGACY = "tconstruct:"
 MODERN = "modernfoundry:"
+PAN_MATERIALS = {
+    ("tconstruct:lead", "thermalconstruct:lumium"): "expedition:legacy_lumium",
+    ("cmi:cast_iron", "thermalconstruct:soul_infused"): "expedition:legacy_soul_infused",
+}
 
 
 def renamed(resource):
@@ -60,7 +64,7 @@ def convert_persistent_data(data):
     persistent[key] = Compound({"id": renamed(resource), "amount": Int(amount)})
 
 
-def convert_stack(source):
+def convert_stack(source, include_legacy_pan_materials=False):
     old_id = str(source["id"])
     if not old_id.startswith(LEGACY):
         raise ValueError(f"Unsupported source item {old_id}")
@@ -73,7 +77,15 @@ def convert_stack(source):
     data = deepcopy(source.get("tag", Compound()))
     if (path in TOOLS) != bool(data.get("tic_materials")):
         raise ValueError("Unexpected tool material data")
-    missing_materials = set(data.get("tic_materials", [])) - {LEGACY + material for material in MATERIALS}
+    materials = data.get("tic_materials", [])
+    missing_materials = set(materials) - {LEGACY + material for material in MATERIALS}
+    pan_material = PAN_MATERIALS.get(tuple(materials)) if include_legacy_pan_materials and path == "melting_pan" else None
+    if pan_material:
+        materials[1] = String(pan_material)
+        missing_materials.clear()
+        for modifier in data.get("tic_modifiers", []):
+            if modifier.get("name") == "thermalconstruct:luminescence":
+                modifier["name"] = String("expedition:legacy_luminescence")
     if missing_materials:
         raise ValueError("Missing Hexa materials: " + ", ".join(sorted(missing_materials)))
     missing_upgrades = {entry.get("name", "") for entry in data.get("tic_upgrades", [])} - {
@@ -94,7 +106,7 @@ def convert_stack(source):
         components["minecraft:custom_name"] = String(json.dumps(name, ensure_ascii=False))
     if "Lore" in display:
         components["minecraft:lore"] = display["Lore"]
-    if "Damage" in data:
+    if data.get("Damage", 0):
         components["minecraft:damage"] = Int(data["Damage"])
     if data:
         components["minecraft:custom_data"] = remap_tinkers_data(data)
@@ -118,7 +130,7 @@ def stacks(tag, location=()):
             yield from stacks(value, (*location, index))
 
 
-def region_report(region):
+def region_report(region, include_legacy_pan_materials=False):
     for chunk in chunks(region):
         if "xPos" in chunk and "zPos" in chunk:
             coordinates = [int(chunk["xPos"]), int(chunk["zPos"])]
@@ -127,7 +139,7 @@ def region_report(region):
         for location, stack in stacks(chunk):
             row = {"chunk": coordinates, "path": location, "source": stack.snbt()}
             try:
-                row["target"] = convert_stack(stack).snbt()
+                row["target"] = convert_stack(stack, include_legacy_pan_materials).snbt()
             except ValueError as error:
                 row["withheld"] = str(error)
             yield row
@@ -137,8 +149,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("regions", nargs="+", type=Path)
     parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument("--include-legacy-pan-materials", action="store_true",
+                        help="Convert matching pan materials for Nebula Tinker adapter 1.1")
     args = parser.parse_args()
-    report = {f"{region.parent.name}/{region.name}": list(region_report(region)) for region in args.regions}
+    report = {f"{region.parent.name}/{region.name}": list(region_report(region, args.include_legacy_pan_materials))
+              for region in args.regions}
     with args.output.open("x", encoding="utf-8") as output:
         json.dump(report, output, ensure_ascii=False, indent=2)
         output.write("\n")

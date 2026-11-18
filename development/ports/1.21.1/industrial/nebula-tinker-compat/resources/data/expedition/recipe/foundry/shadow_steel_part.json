@@ -1,0 +1,10 @@
+{
+  "type": "modernfoundry:material",
+  "id": "expedition:foundry/shadow_steel_part",
+  "ingredient": {
+    "tag": "c:ingots/shadow_steel"
+  },
+  "material": "cmi:shadow_steel",
+  "needed": 1,
+  "value": 1
+}

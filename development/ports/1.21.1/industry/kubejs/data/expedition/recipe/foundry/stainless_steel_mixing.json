@@ -1,0 +1,10 @@
+{
+  "type": "create:mixing",
+  "neoforge:conditions": [
+    { "type": "neoforge:item_exists", "item": "cmi:stainless_steel_ingot" },
+    { "type": "neoforge:item_exists", "item": "cmi:molten_stainless_steel_bucket" }
+  ],
+  "heat_requirement": "superheated",
+  "ingredients": [{ "tag": "c:ingots/stainless_steel" }],
+  "results": [{ "id": "cmi:molten_stainless_steel", "amount": 90 }]
+}

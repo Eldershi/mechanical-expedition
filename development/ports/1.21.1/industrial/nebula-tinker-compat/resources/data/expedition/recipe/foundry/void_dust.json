@@ -1,0 +1,10 @@
+{
+  "type": "create:mixing",
+  "neoforge:conditions": [{ "type": "neoforge:item_exists", "item": "cmi:void_dust" }],
+  "heat_requirement": "superheated",
+  "ingredients": [
+    { "item": "minecraft:end_stone" },
+    { "item": "minecraft:ender_pearl" }
+  ],
+  "results": [{ "id": "cmi:void_dust" }]
+}

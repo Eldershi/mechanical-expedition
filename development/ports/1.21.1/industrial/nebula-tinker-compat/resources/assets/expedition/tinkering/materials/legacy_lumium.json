@@ -1,0 +1,26 @@
+{
+  "color": "FFF4D264",
+  "fallbacks": [
+    "metal"
+  ],
+  "generator": {
+    "supported_stats": [
+      "modernfoundry:limb"
+    ],
+    "transformer": {
+      "type": "modernfoundry:recolor_sprite",
+      "color_mapping": {
+        "type": "modernfoundry:grey_to_color",
+        "palette": {
+          "000": "FF000000",
+          "063": "FF573B1D",
+          "102": "FF88602D",
+          "140": "FFC6923E",
+          "178": "FFF4D264",
+          "216": "FFFFE7A0",
+          "255": "FFFFFFF3"
+        }
+      }
+    }
+  }
+}

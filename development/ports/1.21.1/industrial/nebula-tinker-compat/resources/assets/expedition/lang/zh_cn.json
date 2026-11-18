@@ -1,0 +1,7 @@
+{
+  "item.expedition.clockwork_brass_ingot": "发条黄铜锭",
+  "material.expedition.legacy_lumium": "琉明",
+  "material.expedition.legacy_soul_infused": "灵魂注入",
+  "modifier.expedition.legacy_luminescence": "发光",
+  "modifier.expedition.legacy_luminescence.description": "此材质触发受击反制时，攻击者短暂获得发光效果。"
+}

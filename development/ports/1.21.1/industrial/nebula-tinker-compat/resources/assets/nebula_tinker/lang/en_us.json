@@ -1,5 +1,9 @@
 {
   "item.nebula_tinker.spider_fang": "Spider Fang",
   "modifier.nebula_tinker.abuser": "Abuser",
-  "modifier.nebula_tinker.abuser.description": "Melee hits against poisoned, withered, or bleeding targets are critical hits."
+  "modifier.nebula_tinker.abuser.description": "Melee hits against poisoned, withered, or bleeding targets are critical hits.",
+  "modifier.nebula_tinker.clockwork": "Clockwork",
+  "modifier.nebula_tinker.clockwork.description": "With Speed, melee attacks gain 5 percentage points of critical chance and an additional 10% of base damage on critical hits per Speed level.",
+  "modifier.nebula_tinker.shadow": "Shadow",
+  "modifier.nebula_tinker.shadow.description": "Hits deal 2 points of additional void damage at level I, plus 1 per further level."
 }

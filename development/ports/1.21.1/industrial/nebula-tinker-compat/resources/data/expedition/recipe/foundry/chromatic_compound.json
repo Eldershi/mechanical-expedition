@@ -1,0 +1,14 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    { "item": "create:powdered_obsidian" },
+    { "item": "create:powdered_obsidian" },
+    { "item": "create:powdered_obsidian" },
+    { "tag": "c:dusts/glowstone" },
+    { "tag": "c:dusts/glowstone" },
+    { "tag": "c:dusts/glowstone" },
+    { "item": "create:polished_rose_quartz" }
+  ],
+  "results": [{ "id": "create:chromatic_compound" }]
+}

@@ -15,6 +15,10 @@ Review `foundry-tool-report.json` and copy only the staged `r.*.*.mca` files int
 
 Add `--include-nebula` when the Nebula Tinker adapter is installed to restore the saved spider fang in its original vault slot.
 
+Add `--include-legacy-pan-materials` with Nebula Tinker adapter 1.1 to restore the lead and Lumium pan and the cast iron and Soul-Infused pan. These two patterns use the adapter's hidden limb materials and keep the original part statistics and saved Luminescence trait.
+
+Add `--include-equivalent-stacks` with Create Crafts & Additions and Modern Foundry installed. This restores the original CMI capacitor as `createaddition:capacitor` and matching Foundry stock such as Seared Bricks and Skyslime Balls. The stock must have only an original ID, count, and slot. Stored fluids, tool station textures, and other item payloads stay in the recovery file.
+
 The source vault coordinate and slot identify each tool. Empty slots receive the converted stack, exact matches are recorded as already valid, and occupied slots retain their contents. Unsupported materials and payloads stay in the recovery file. The tool restores the authoritative vault inventory. Create's cached packager summaries are left out of item recovery.
 
 Reopen the copy and check the restored vault slots. The native Foundry item should retain its position, parts, durability, and supported tool-tank contents. Save and stop the copy before transferring its changed region files.

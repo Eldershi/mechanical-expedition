@@ -1,0 +1,16 @@
+{
+  "type": "modernfoundry:material_melting",
+  "id": "expedition:foundry/industrial_iron_melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "cmi:molten_industrial_iron_bucket"
+    }
+  ],
+  "input": "cmi:industrial_iron",
+  "result": {
+    "fluid": "cmi:molten_industrial_iron",
+    "amount": 90
+  },
+  "temperature": 1507
+}

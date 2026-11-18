@@ -1,0 +1,10 @@
+StartupEvents.registry('fluid', event => {
+  const steel = event.create('cmi:molten_stainless_steel')
+    .flowingTexture('cmi:fluid/metal/flow')
+    .stillTexture('cmi:fluid/metal/still')
+    .tint(0xB4B7C7)
+    .translucent()
+    .tag('c:molten_materials')
+    .tag('c:molten_stainless_steel')
+  steel.bucketItem.tag('cmi:buckets')
+})

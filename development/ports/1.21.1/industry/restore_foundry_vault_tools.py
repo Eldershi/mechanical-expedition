@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stage supported Hexa tools and Nebula materials from Create vault recovery."""
+"""Stage supported parts, tools, and materials from Create vault recovery."""
 
 import argparse
 from collections import defaultdict
@@ -20,18 +20,47 @@ from prepare_region_copy import SECTOR, replace_chunk
 VAULT = "create:item_vault"
 TARGET_VERSION = 3955
 NEBULA_MATERIALS = {"nebula_tinker:spider_fang"}
+EQUIVALENT_STACKS = {"cmi:simple_battery": "createaddition:capacitor"}
+EQUIVALENT_STACKS.update({f"tconstruct:{name}": f"modernfoundry:{name}" for name in (
+    "gear_cast",
+    "liquid_soul_bucket",
+    "molten_brass_bucket",
+    "molten_bronze_bucket",
+    "molten_copper_bucket",
+    "necrotic_bone",
+    "part_builder",
+    "scorched_brick",
+    "seared_basin",
+    "seared_brick",
+    "seared_bricks",
+    "seared_bricks_slab",
+    "seared_bricks_wall",
+    "seared_chute",
+    "seared_drain",
+    "seared_duct",
+    "seared_fancy_bricks",
+    "seared_faucet",
+    "seared_fuel_tank",
+    "seared_glass",
+    "seared_table",
+    "seared_triangle_bricks",
+    "sky_slime_ball",
+    "sky_slime_sapling",
+    "smeltery_controller",
+)})
 
 
-def candidates(recovery, report, include_nebula):
+def candidates(recovery, report, include_nebula, include_legacy_pan_materials, include_equivalent_stacks):
     locations = set()
     for index, entry in enumerate(recovery.get("Stacks", ())):
         original = entry.get("OriginalStack", {})
         item = str(original.get("id", ""))
         tool = item.startswith(LEGACY) and item.removeprefix(LEGACY) in TOOLS
         nebula_material = include_nebula and item in NEBULA_MATERIALS
+        equivalent_item = EQUIVALENT_STACKS.get(item) if include_equivalent_stacks else None
         if (entry.get("BlockEntity") != VAULT
                 or entry.get("Reason") not in {"missing_item_id", "unverified_mod_payload"}
-                or not (tool or nebula_material)
+                or not (tool or nebula_material or equivalent_item)
                 or "Slot" not in original):
             continue
         position = tuple(map(int, entry["BlockPos"]))
@@ -41,13 +70,13 @@ def candidates(recovery, report, include_nebula):
             raise ValueError(f"Duplicate tool recovery entry at {position}, slot {slot}")
         locations.add((position, slot))
         try:
-            if nebula_material:
+            if equivalent_item or nebula_material:
                 count = int(original.get("Count", 0))
                 if set(original) != {"id", "Count", "Slot"} or not 1 <= count <= 64:
-                    raise ValueError("Expected an unmodified Nebula material stack")
-                stack = Compound({"id": String(item), "count": Int(count)})
+                    raise ValueError("Expected a stack with only its original item, count, and slot")
+                stack = Compound({"id": String(equivalent_item or item), "count": Int(count)})
             else:
-                stack = convert_stack(original)
+                stack = convert_stack(original, include_legacy_pan_materials)
                 if int(stack["count"]) != 1:
                     raise ValueError("Expected one tool")
         except ValueError as error:
@@ -55,6 +84,17 @@ def candidates(recovery, report, include_nebula):
             continue
         stack["Slot"] = Int(slot)
         yield index, details, stack
+
+
+def normalized_stack(stack):
+    fields = dict(stack)
+    components = fields.get("components", {})
+    if components.get("minecraft:damage") == 0:
+        # Minecraft omits the default damage component when saving a zero-wear tool.
+        fields["components"] = {key: value for key, value in components.items() if key != "minecraft:damage"}
+        if not fields["components"]:
+            del fields["components"]
+    return fields
 
 
 def restore_chunk(chunk, entries, report, completed):
@@ -65,12 +105,15 @@ def restore_chunk(chunk, entries, report, completed):
         position, slot = details["position"], details["slot"]
         inventory = vaults.get(position, {}).get("Inventory", {})
         items = inventory.get("Items")
-        if items is None or not 0 <= slot < int(inventory.get("Size", 0)):
+        if not isinstance(items, List) or not 0 <= slot < int(inventory.get("Size", 0)):
             report["withheld"].append(dict(details, reason="Target vault or slot does not match"))
             continue
+        if not items and items.subtype is not Compound:
+            # Empty NBT lists can be serialized as TAG_End instead of TAG_Compound.
+            items = inventory["Items"] = List[Compound]()
         occupying = [item for item in items if int(item.get("Slot", -1)) == slot]
         if occupying:
-            if occupying == [stack]:
+            if len(occupying) == 1 and normalized_stack(occupying[0]) == normalized_stack(stack):
                 report["already_valid"].append(details)
                 completed.add(index)
             else:
@@ -83,10 +126,12 @@ def restore_chunk(chunk, entries, report, completed):
     return changed
 
 
-def stage_tools(target, recovery, output, include_nebula=False):
+def stage_tools(target, recovery, output, include_nebula=False, include_legacy_pan_materials=False,
+                include_equivalent_stacks=False):
     report = {"restored": [], "already_valid": [], "withheld": [], "regions": []}
     regions = defaultdict(lambda: defaultdict(list))
-    for entry in candidates(recovery, report, include_nebula):
+    for entry in candidates(recovery, report, include_nebula, include_legacy_pan_materials,
+                            include_equivalent_stacks):
         x, _, z = entry[1]["position"]
         regions[(x // 512, z // 512)][(x // 16, z // 16)].append(entry)
 
@@ -126,6 +171,10 @@ def main():
     parser.add_argument("--output", required=True, type=Path, help="New directory for changed region files and recovery")
     parser.add_argument("--include-nebula", action="store_true",
                         help="Recover supported materials when the Nebula Tinker adapter is installed")
+    parser.add_argument("--include-legacy-pan-materials", action="store_true",
+                        help="Recover matching old pans when Nebula Tinker adapter 1.1 is installed")
+    parser.add_argument("--include-equivalent-stacks", action="store_true",
+                        help="Recover CMI capacitors and matching Modern Foundry stock without item payloads")
     args = parser.parse_args()
     target, output = args.target_regions.resolve(), args.output.resolve()
     if not target.is_dir() or output.exists() or target in output.parents:
@@ -134,7 +183,9 @@ def main():
     with TemporaryDirectory(prefix="foundry-tools-", dir=output.parent) as temp:
         stage = Path(temp) / "regions"
         stage.mkdir()
-        report = stage_tools(target, load(args.vault_recovery), stage, args.include_nebula)
+        report = stage_tools(target, load(args.vault_recovery), stage,
+                             args.include_nebula, args.include_legacy_pan_materials,
+                             args.include_equivalent_stacks)
         (stage / "foundry-tool-report.json").write_text(json.dumps(report, indent=2) + "\n")
         if output.exists():
             raise FileExistsError(output)

@@ -1,0 +1,19 @@
+{
+  "type": "modernfoundry:melting",
+  "id": "expedition:foundry/stainless_steel_ingot_melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "cmi:molten_stainless_steel_bucket"
+    }
+  ],
+  "ingredient": {
+    "tag": "c:ingots/stainless_steel"
+  },
+  "result": {
+    "fluid": "cmi:molten_stainless_steel",
+    "amount": 90
+  },
+  "temperature": 1510,
+  "time": 60
+}

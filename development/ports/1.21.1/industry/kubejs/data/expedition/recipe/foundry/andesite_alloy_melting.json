@@ -1,0 +1,16 @@
+{
+  "type": "modernfoundry:material_melting",
+  "id": "expedition:foundry/andesite_alloy_melting",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:item_exists",
+      "item": "cmi:molten_andesite_alloy_bucket"
+    }
+  ],
+  "input": "cmi:andesite_alloy",
+  "result": {
+    "fluid": "cmi:molten_andesite_alloy",
+    "amount": 90
+  },
+  "temperature": 760
+}

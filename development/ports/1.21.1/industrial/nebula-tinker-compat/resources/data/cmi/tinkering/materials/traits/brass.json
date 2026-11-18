@@ -1,0 +1,22 @@
+{
+  "default": [
+    {
+      "level": 1,
+      "name": "modernfoundry:harmonious"
+    }
+  ],
+  "perStat": {
+    "modernfoundry:melee_harvest": [
+      {
+        "level": 2,
+        "name": "nebula_tinker:clockwork"
+      }
+    ],
+    "modernfoundry:ranged": [
+      {
+        "level": 1,
+        "name": "modernfoundry:multishot"
+      }
+    ]
+  }
+}

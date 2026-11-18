@@ -1,0 +1,26 @@
+{
+  "default": [
+    {
+      "name": "modernfoundry:ductile",
+      "level": 2
+    }
+  ],
+  "perStat": {
+    "modernfoundry:melee_harvest": [
+      {
+        "name": "modernfoundry:ductile",
+        "level": 2
+      },
+      {
+        "name": "modernfoundry:blockade",
+        "level": 1
+      }
+    ],
+    "modernfoundry:ranged": [
+      {
+        "name": "modernfoundry:ductile",
+        "level": 2
+      }
+    ]
+  }
+}

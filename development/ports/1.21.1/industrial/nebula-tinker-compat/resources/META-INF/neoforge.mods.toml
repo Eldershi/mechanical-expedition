@@ -4,9 +4,9 @@ license = "MIT"
 
 [[mods]]
 modId = "expedition_nebula_tinker_compat"
-version = "1.0.0"
+version = "1.1.0"
 displayName = "Expedition Nebula Tinker Compatibility"
-description = "Spider fangs and the Abuser upgrade for Modern Foundry."
+description = "Expedition materials, modifiers and connected vein mining for Modern Foundry."
 
 [[dependencies.expedition_nebula_tinker_compat]]
 modId = "minecraft"
@@ -19,5 +19,12 @@ side = "BOTH"
 modId = "modernfoundry"
 type = "required"
 versionRange = "[1.21.1-1.6.1-NeoForge,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.expedition_nebula_tinker_compat]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.10,)"
 ordering = "AFTER"
 side = "BOTH"
