@@ -4,6 +4,10 @@ Install the `kubejs` scripts and data alongside the CMI material registrations. 
 
 Vintage Improvements and the IE Bottling Machine provide red mud and aluminum dust production. The IE Arc Furnace produces refractory grout and pure semi-molten osmium. Smelting the grout yields refractory bricks. A superheated Create basin makes nitric acid, and an IE Coke Oven makes coal coke from charcoal.
 
+The Engineer's Workbench has parallel component blueprints for iron parts, steel parts and electron tubes. Its molds blueprint accepts industrial iron sheets for the ten CMI molds. The Coke Oven processes wood dust into charcoal dust and creosote. Refractory kiln bricks can be assembled into blast furnace bricks.
+
+A Create mixer uses concrete powder and water to produce the corresponding sixteen Diesel Generators cement colors. IE liquid concrete cures adjacent sources with the IE Fix Pack. The IE Assembler uses standard crafting patterns for automation.
+
 A heated Create basin conditions crude oil with water. The Diesel Generators distillation tower separates the conditioned feed into bitumen, sulfurous diesel, and kerosene. Use four stacked layers for this recipe. Kerosene yields gasoline and naphtha. The IE Refinery cracks gasoline with Steam Letters steam and a reusable vanadium plate. Distilling the cracked gasoline yields naphtha, benzene and light olefins. Pure crude also retains the Diesel Generators fuel recipes.
 
 The refinery and distillation tower process diesel into acetylene and light aldehydes. The refinery converts acetylene into vinyl alcohol and polyvinyl alcohol, then combines the polymer with light aldehydes to make structural plastic. Apply structural plastic to AE2 quartz glass in the IE Bottling Machine or mix it with aluminum and osmium plates in a Create basin for Osmium Tiles.
