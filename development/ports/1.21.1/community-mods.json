@@ -1,0 +1,104 @@
+{
+  "steam_letters": {
+    "file": {
+      "filename": "Steam-Letters-2.1.1-1.21.1-neoforge.jar",
+      "url": "https://edge.forgecdn.net/files/9667/741/Steam-Letters-2.1.1-1.21.1-neoforge.jar",
+      "source": "https://www.curseforge.com/minecraft/mc-mods/steam-letters/files/9667741",
+      "sha1": "66a1bafb7ecebb80e8830fb14bc89625d9a450bd"
+    },
+    "version": "2.1.1",
+    "sha256": "19db5f2846b709152a307f1119e4d887d988d89c677fa536fe4fd41f3549e1ee",
+    "replaces": "Steam-Letters-2.0.1-1.20.1.jar"
+  },
+  "neoecoae": {
+    "file": {
+      "filename": "neoecoae-21.2.18.jar",
+      "url": "https://edge.forgecdn.net/files/9651/586/neoecoae-21.2.18.jar",
+      "source": "https://www.curseforge.com/minecraft/mc-mods/neo-eco-ae-extension/files/9651586",
+      "sha1": "f57df895c76ef8dcebda3e6084eb2be914968456"
+    },
+    "version": "21.2.18",
+    "sha256": "cf79c5aef7c68ab0effa66ac3bd5608ae1bda18de0d0e4d92bb0d4442e0b030c",
+    "replaces": "neoecoae-20.5.5-beta-hotfix.1.jar"
+  },
+  "scguns": {
+    "file": {
+      "filename": "scguns-1.1.2.jar",
+      "url": "https://edge.forgecdn.net/files/9668/354/scguns-1.1.2.jar",
+      "source": "https://www.curseforge.com/minecraft/mc-mods/scorched-guns-2-0-5-5-unofficial-port/files/9668354",
+      "sha1": "80396a60063bf784f7344a419c5edeb2a376795a"
+    },
+    "version": "1.1.2",
+    "sha256": "3838933ffdfabc5349ade7e9c3b605f852de8899b7860fc16d01a07ba3b294a6",
+    "replaces": "ScorchedGuns-0.5.5-1.20.1.jar"
+  },
+  "torcherino": {
+    "file": {
+      "filename": "Torcherino-neoforge-1.21-24.0.6.jar",
+      "url": "https://edge.forgecdn.net/files/6790/677/Torcherino-neoforge-1.21-24.0.6.jar",
+      "source": "https://www.curseforge.com/minecraft/mc-mods/torcherino-unofficial/files/6790677",
+      "sha1": "aaba3d35201c133fd864b9425319ad1456966376"
+    },
+    "version": "24.0.6",
+    "sha256": "8fab8b288593fbee57e240da5e49157f6ac134bdf4e0f27c50bc1242df99436f",
+    "replaces": "Torcherino-forge-1.20.1-20.0.0.jar"
+  },
+  "constructionwand": {
+    "file": {
+      "filename": "constructionwand-kots-1.21.1-2.16.13.jar",
+      "url": "https://cdn.modrinth.com/data/76H3XX6b/versions/eXcxXIMi/constructionwand-kots-1.21.1-2.16.13.jar",
+      "source": "https://modrinth.com/mod/76H3XX6b/version/eXcxXIMi",
+      "sha1": "2f92561a985e1a81da2e4a7a685efb62739d0d4f"
+    },
+    "version": "2.16.13",
+    "sha256": "b9e131da420b3aa4cc75d7a7c39e1f25d5bd895e41d8c498c414c67713bf92f3",
+    "replaces": "constructionwand-1.20.1-2.11.jar"
+  },
+  "eeeabsmobs": {
+    "file": {
+      "filename": "eeeabsmobs-1.0.2-neoforge.jar",
+      "url": "https://edge.forgecdn.net/files/8806/759/eeeabsmobs-1.0.2-neoforge.jar",
+      "source": "https://www.curseforge.com/minecraft/mc-mods/eeeabs-mobs-unofficial/files/8806759",
+      "sha1": "2a1b33ec19916c1f749a873a04a1a549efabe14d"
+    },
+    "version": "1.0.2",
+    "sha256": "d18ff7c2de5a1658de27c1a55f9ffee4e4f1c9538dafe6fd91aa43a4076c87a0",
+    "replaces": "eeeabsmobs-1.20.1-0.98.1.jar"
+  },
+  "customwindowtitle": {
+    "file": {
+      "filename": "CustomWindowTitle-1.21.4+v1.4.1.jar",
+      "url": "https://cdn.modrinth.com/data/RGH5gtzF/versions/Pqn8PDBd/CustomWindowTitle-1.21.4%2Bv1.4.1.jar",
+      "source": "https://modrinth.com/mod/RGH5gtzF/version/Pqn8PDBd",
+      "sha1": "db89df2f80e8842b4ad0ed634d59f35b53f5061b"
+    },
+    "version": "1.4.1",
+    "sha256": "082f181eac3d4b65a50a071605ca80174fea4262e1b2c0562a00c5ed05140507",
+    "side": "CLIENT",
+    "replaces": "CustomWindowTitle-Forge-1.20+v1.2.0.jar"
+  },
+  "xbob": {
+    "file": {
+      "filename": "CrosshairBobbing-1.11.0-JellyV4.jar",
+      "url": "https://cdn.modrinth.com/data/Oi5q6Fkk/versions/pwlvCA71/CrosshairBobbing-1.11.0-JellyV4.jar",
+      "source": "https://modrinth.com/mod/Oi5q6Fkk/version/pwlvCA71",
+      "sha1": "fbbe45ddcddf4491766b67c6137b9ffbc9f9d58c"
+    },
+    "version": "1.11.0-JellyV4",
+    "sha256": "765c5a443f4a551f2808cc4893e71b4a39259cfb4e5c5241b09b7e083588f823",
+    "side": "CLIENT",
+    "replaces": "CrosshairBobbing-1.10.jar"
+  },
+  "streq": {
+    "file": {
+      "filename": "streq-1.0.10.jar",
+      "url": "https://cdn.modrinth.com/data/STXpfCzs/versions/W2zYcA2c/streq-1.0.10.jar",
+      "source": "https://modrinth.com/mod/streq/version/W2zYcA2c",
+      "sha1": "8df7e87da300deb288de26295ecd2fe05e67c07b"
+    },
+    "version": "1.0.10",
+    "sha256": "ef49f8fa00f177883db6ab47e4037d059959f328b5d827532ec5edc1277b8c94",
+    "side": "SERVER",
+    "required_by": "ticktweaks"
+  }
+}

@@ -10,5 +10,11 @@
   "thermal_integration": { "status": "removed_thermal" },
   "thermal_parallel": { "status": "removed_thermal" },
   "thermalconstruct": { "status": "removed_thermal" },
-  "mantle": { "status": "replaced_by_hilt" }
+  "mantle": { "status": "replaced_by_hilt" },
+  "dungeonnowloading": { "status": "removed_by_pack_policy" },
+  "edenring": { "status": "removed_by_pack_policy" },
+  "ending_library": { "status": "no_remaining_dependents" },
+  "botarium": { "status": "replaced_by_common_storage_lib" },
+  "obscure_api": { "status": "replaced_by_fragmentum" },
+  "expedition_maid_worldgen_guard": { "status": "inactive_without_maid_spell" }
 }
