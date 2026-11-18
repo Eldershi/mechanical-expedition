@@ -25,7 +25,7 @@ MODULES = {
                 "expedition.railway.mixin", ["StructureStageMixin", "StructureCandidateMixin", "RailwayPlannerMixin"]),
     "teleport": ("expedition_teleport_fix", "1.0.0", "Expedition Async Teleport",
                  "expedition.teleport.mixin", ["TeleportCommandMixin"]),
-    "twilight": ("expedition_worldgen_compat", "1.1.0", "Expedition Twilight Landmarks",
+    "twilight": ("expedition_worldgen_compat", "1.1.1", "Expedition Twilight Landmarks",
                  "expedition.twilight.mixin", ["MagicMapMixin", "LocateMixin"]),
     "world-rules": ("expedition_world_rules", "1.0.0", "Expedition World Rules", "", []),
 }

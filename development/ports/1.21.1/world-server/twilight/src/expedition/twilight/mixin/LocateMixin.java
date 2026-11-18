@@ -22,6 +22,6 @@ public abstract class LocateMixin {
             BlockPos origin, int radius, boolean skipExisting) {
         return placement.isStructureChunk(state, x, z)
             || (!skipExisting && placement instanceof SparseLandmarkPlacement sparse
-                && TwilightLandmarks.hasExistingStart(level, sparse.structure(), x, z));
+                && TwilightLandmarks.hasSavedStart(level, sparse, x, z));
     }
 }

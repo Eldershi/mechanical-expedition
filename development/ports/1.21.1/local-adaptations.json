@@ -90,8 +90,8 @@
     "build": "world-server/build.py"
   },
   "expedition-worldgen-compat-1.0.3.jar": {
-    "filename": "expedition-worldgen-compat-neoforge-1.1.0.jar",
-    "sha256": "7f10edfc99d79683ef54e168fbb26643ab6db32879a1fe0c5eb6f76b29699e97",
+    "filename": "expedition-worldgen-compat-neoforge-1.1.1.jar",
+    "sha256": "c3579a14363006ad8758358cbffee81cdef551a2c243973c2411e540ba8ff366",
     "side": "BOTH",
     "build": "world-server/build.py"
   },

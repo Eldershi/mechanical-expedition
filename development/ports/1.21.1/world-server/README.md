@@ -13,8 +13,10 @@ python3 build.py --java /path/to/java --server /path/to/server \
 - `world-rules` handles player damage, selective Born in Chaos spawning, Biomes O’ Plenty tall grass, and cryotheum. Install it on a dedicated server. Install it on the client for local worlds and cryotheum particles.
 - `equipment` enforces Curios slot types, retains the unlockable slot bonuses, and reconciles misplaced equipment at login. Put the JAR and `equipment/config/curios-common.toml` on both sides.
 - `railway` prevents new structure pieces from crossing planned TongDa Railway tracks and stations. Install it on the dedicated server or integrated server.
-- `twilight` controls Twilight Forest landmark density. Install it on both sides for its placement registry. Copy `development/servers/cmi-expedition/deployment/config/expedition-boss-density.json` to the server's `config` directory.
+- `twilight` controls nine Twilight Forest landmark placements. Install it on both sides for its placement registry. Copy `development/servers/cmi-expedition/deployment/config/expedition-boss-density.json` to the server's `config` directory. The native structure search still finds saved starts after the placement density changes.
 - `alpine` applies the Expedition mountain temperature and surface rules. Its placement modifier can enforce the treeline on selected tree features.
+
+Compile `twilight/tests/TwilightIntegrationProbe.java` as test-only mod `expedition_twilight_integration_probe` against the target loader, Twilight Forest, and the Twilight adapter. In a disposable copy, run `expeditionspecialboss generate`, then save and stop. Set the Naga courtyard frequency to `1e-12` in that copy's config and restart. Run `expeditionspecialboss reopen` to check that the saved courtyard still resolves through native structure search from an unloaded chunk. Each command reports `EXPEDITION_SPECIAL_BOSS_PASS` on success.
 
 Build the Alpine tree placement overlay from the candidate's installed mod JARs and the installed Minecraft server's `server-*-extra.jar` under `libraries/net/minecraft/server`.
 
