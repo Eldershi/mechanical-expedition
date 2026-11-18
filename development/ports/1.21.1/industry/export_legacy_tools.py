@@ -18,8 +18,12 @@ PARTS_AND_BOOKS = {
     "arrow_head", "encyclopedia", "fantastic_foundry", "materials_and_you",
     "mighty_smelting", "puny_smelting", "tinkers_gadgetry",
 }
-MATERIALS = {"feather", "gunpowder", "knightmetal", "prismarine", "string", "wood"}
+MATERIALS = {
+    "cobalt", "feather", "gunpowder", "knightmetal", "lead", "prismarine",
+    "rose_gold", "steel", "steeleaf", "string", "wood",
+}
 UPGRADES = {"redirected"}
+TANK_FLUIDS = {"minecraft:lava", "minecraft:water", "tconstruct:powdered_snow"}
 LEGACY = "tconstruct:"
 MODERN = "modernfoundry:"
 
@@ -34,6 +38,26 @@ def remap_tinkers_data(data):
     if isinstance(data, List):
         return type(data)(remap_tinkers_data(value) for value in data)
     return renamed(data) if isinstance(data, String) else data
+
+
+def convert_persistent_data(data):
+    persistent = data.get("tic_persistent")
+    if not persistent:
+        return
+    key = "tconstruct:tank_fluid"
+    if not isinstance(persistent, Compound) or persistent.keys() != {key}:
+        raise ValueError("Persistent tool data needs an explicit mapping")
+    fluid = persistent[key]
+    if not isinstance(fluid, Compound) or fluid.keys() != {"FluidName", "Amount"}:
+        raise ValueError("Unsupported saved tool tank format")
+    resource = fluid["FluidName"]
+    if resource not in TANK_FLUIDS:
+        raise ValueError(f"Unsupported saved tool tank fluid {resource}")
+    amount = int(fluid["Amount"])
+    capacity = data.get("tic_stats", {}).get("tconstruct:tank_capacity", 0)
+    if not 0 < amount <= capacity:
+        raise ValueError(f"Saved tool tank amount {amount} is outside capacity {capacity}")
+    persistent[key] = Compound({"id": renamed(resource), "amount": Int(amount)})
 
 
 def convert_stack(source):
@@ -57,8 +81,7 @@ def convert_stack(source):
     }
     if missing_upgrades:
         raise ValueError("Missing Hexa upgrades: " + ", ".join(sorted(missing_upgrades)))
-    if data.get("tic_persistent"):
-        raise ValueError("Persistent tool data needs an explicit mapping")
+    convert_persistent_data(data)
 
     components = Compound()
     display = data.pop("display", Compound())

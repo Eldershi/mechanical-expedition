@@ -16,6 +16,8 @@ MODULES = {
     "alpine": ("expedition_alpine_climate", "1.0.0", "Expedition Local Alpine Climate",
                "expedition.alpine.mixin", ["BiomeTemperatureMixin", "BiomeTemperatureAccess", "SurfaceSystemMixin"]),
     "equipment": ("expedition_equipment_rules", "1.0.0", "Expedition Curios Equipment", "", []),
+    "ie-machine": ("expedition_ie_machine_compat", "1.0.0", "Expedition IE Machine Compatibility",
+                   "expedition.iemachines.mixin", ["CokeOvenCapacityMixin", "FluidPipeConnectionMixin"]),
     "island-rail": ("expedition_island_rail_transfer", "1.0.0", "Expedition Island Rail Transfer", "", []),
     "motion-guard": ("expedition_player_motion_guard", "1.1.0", "Expedition Player Motion Guard",
                      "expedition.motionguard.mixin", ["PlayerMotionMixin", "TeleportObservationMixin"]),
@@ -30,6 +32,7 @@ MODULES = {
 COMMON_DIAGNOSTICS = ("BoundedRing", "DiagnosticsConfig", "DurableJsonLog", "JfrRecorder", "PlayerSnapshot")
 DEPENDENCIES = {
     "equipment": ("curios", "[9.5.1,10)", "curios-neoforge-9.5.1+1.21.1.jar"),
+    "ie-machine": ("immersiveengineering", "[12.4.2-194]", "ImmersiveEngineering-1.21.1-12.4.2-194.jar"),
     "island-rail": ("create", "[6.0.10]", "create-1.21.1-6.0.10.jar"),
     "railway": ("tongdarailway", "[1.1.6+mc21.1]", "tongdarailway-1.1.6-mc21.1.jar"),
     "twilight": ("twilightforest", "[4.8.3345]", "twilightforest-1.21.1-4.8.3345-universal.jar"),

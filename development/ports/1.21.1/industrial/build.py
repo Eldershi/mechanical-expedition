@@ -13,6 +13,7 @@ HERE = Path(__file__).resolve().parent
 MODULES = {
     "storage-adjustments": ("functionalstorage-", "sophisticatedcore-", "titanium-"),
     "engineering-adjustments": ("immersiveengineering-",),
+    "nebula-tinker-compat": ("tinkersconstruct-unofficial-port-", "hilt-"),
 }
 
 

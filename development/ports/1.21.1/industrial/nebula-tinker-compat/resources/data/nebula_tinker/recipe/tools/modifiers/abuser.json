@@ -1,0 +1,12 @@
+{
+  "type": "modernfoundry:modifier",
+  "id": "nebula_tinker:tools/modifiers/abuser",
+  "allow_crystal": true,
+  "inputs": [
+    { "item": "modernfoundry:necrotic_bone" },
+    { "item": "modernfoundry:venombone" },
+    { "item": "nebula_tinker:spider_fang" }
+  ],
+  "result": "nebula_tinker:abuser",
+  "tools": { "tag": "modernfoundry:modifiable" }
+}

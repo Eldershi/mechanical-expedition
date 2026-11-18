@@ -1,0 +1,7 @@
+# Immersive Engineering compatibility on 1.21.1
+
+Build `ie-machine` with the adjacent `world-server/build.py`. This adapter targets Immersive Engineering `12.4.2-194`. The Coke Oven leaves space for existing output when a batch completes. A fluid pipe returns its stored connections when queried before its block entity has a world.
+
+The [Immersive Engineering Fix Pack 1.1.0 file](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering-fix-pack/files/9233504) is a separate optional package for the server or integrated world. It addresses the Engineer’s Workbench, held toolboxes and liquid concrete. A client joining a dedicated server can use its normal Immersive Engineering installation. The [pinned CurseForge download](https://edge.forgecdn.net/files/9233/504/ie-fix-pack-1.1.0%2B1.21.1.jar) has SHA-256 `3c6ec4e5c3e5e5f507a0dadeafa5273afbed03e9e278020d630ef48be146fcfa`.
+
+Before opening a freshly migrated candidate world, run `migration/restore_ie_state.py` with `--source-regions`, `--target-regions` and `--output`. It restores the blueprint category in matched Engineer’s Workbench slots and the original stack count for surviving, unchanged cloche items. Pass the Create inventory converter’s `unconverted-stacks.nbt` as `--vault-recovery` to restore audited IE blueprint stacks in their vacant original vault slots. The output contains the updated region files, an audit report and the remaining recovery entries when provided. Apply the updated files together to the closed candidate and retain the original archive.

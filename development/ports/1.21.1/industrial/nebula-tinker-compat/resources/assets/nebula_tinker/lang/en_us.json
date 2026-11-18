@@ -1,0 +1,5 @@
+{
+  "item.nebula_tinker.spider_fang": "Spider Fang",
+  "modifier.nebula_tinker.abuser": "Abuser",
+  "modifier.nebula_tinker.abuser.description": "Melee hits against poisoned, withered, or bleeding targets are critical hits."
+}
