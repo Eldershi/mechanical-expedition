@@ -1,0 +1,22 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "Mechanical Expedition compatibility patch"
+
+[[mods]]
+modId = "expedition_ftb_action_announcements"
+version = "1.0.0"
+displayName = "Expedition FTB Action Announcements"
+displayTest = "IGNORE_SERVER_VERSION"
+description = "Broadcasts successful FTB sidebar actions to players."
+
+[[dependencies.expedition_ftb_action_announcements]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+side = "SERVER"
+
+[[dependencies.expedition_ftb_action_announcements]]
+modId = "ftblibrary"
+type = "required"
+versionRange = "[2101.1.36,2102)"
+side = "SERVER"
