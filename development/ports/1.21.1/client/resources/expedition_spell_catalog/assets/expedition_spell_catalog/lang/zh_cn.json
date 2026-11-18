@@ -1,0 +1,6 @@
+{
+  "expedition.spells.title": "法术学派",
+  "expedition.spells.other": "其他法术",
+  "expedition.spells.school": "%s（%s）",
+  "expedition.spells.preview_unavailable": "此服务器未提供法术预览。"
+}

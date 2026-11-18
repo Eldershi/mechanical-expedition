@@ -1,0 +1,6 @@
+{
+  "expedition.spells.title": "Spell Schools",
+  "expedition.spells.other": "Other spells",
+  "expedition.spells.school": "%s (%s)",
+  "expedition.spells.preview_unavailable": "This server does not provide spell previews."
+}

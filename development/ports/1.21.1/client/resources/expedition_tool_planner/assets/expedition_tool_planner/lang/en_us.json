@@ -1,0 +1,11 @@
+{
+  "expedition.planner.title": "Tool Planner",
+  "expedition.planner.tool": "Tool: %s",
+  "expedition.planner.choose_tool": "Choose a tool",
+  "expedition.planner.materials": "Choose part materials",
+  "expedition.planner.part": "Material slot %s",
+  "expedition.planner.no_material": "Unavailable",
+  "expedition.planner.slot": "%s. %s: %s",
+  "expedition.planner.unavailable": "This tool has no complete material selection.",
+  "expedition.planner.hover_stats": "Hover over the tool to view its stats and traits."
+}

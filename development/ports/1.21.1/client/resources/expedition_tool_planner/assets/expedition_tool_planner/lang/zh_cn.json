@@ -1,0 +1,11 @@
+{
+  "expedition.planner.title": "匠魂工具预览",
+  "expedition.planner.tool": "工具：%s",
+  "expedition.planner.choose_tool": "选择工具",
+  "expedition.planner.materials": "选择部件材料",
+  "expedition.planner.part": "材料槽 %s",
+  "expedition.planner.no_material": "无可用材料",
+  "expedition.planner.slot": "%s. %s：%s",
+  "expedition.planner.unavailable": "该工具的材料选择不完整。",
+  "expedition.planner.hover_stats": "将指针移到工具上查看属性和特性。"
+}

@@ -3,11 +3,13 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.regex.Pattern;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
+import net.minecraft.nbt.StringTag;
 import net.minecraft.nbt.Tag;
 
 final class ConvertItemFilters {
@@ -15,15 +17,28 @@ final class ConvertItemFilters {
     private static final String SMART_FILTER = "ftbfiltersystem:smart_filter";
     private static final String FILTER_COMPONENT = "ftbfiltersystem:filter";
     private static final Pattern RESOURCE_ID = Pattern.compile("[a-z0-9_.-]+:[a-z0-9_.\\-/]+");
+    private static final Set<String> STACK_FIELDS = Set.of("item", "icon");
+    private static final Set<String> OBJECT_FIELDS = Set.of(
+            "title", "subtitle", "description", "icon", "item", "count", "dependencies");
 
     private record ConvertedFile(Path relative, CompoundTag contents, int count) {}
+    private record Mappings(CompoundTag items, CompoundTag tags, CompoundTag stacks, CompoundTag objects) {
+        Mappings(CompoundTag source) {
+            this(source.getCompound("items"), source.getCompound("tags"),
+                    source.getCompound("component_stacks"), source.getCompound("objects"));
+        }
+    }
 
     public static void main(String[] args) throws IOException {
-        if (args.length != 2) {
-            throw new IllegalArgumentException("Usage: ConvertItemFilters <quest source> <new output directory>");
+        if (args.length < 2 || args.length > 3) {
+            throw new IllegalArgumentException(
+                    "Usage: ConvertItemFilters <quest source> <new output directory> [item and tag mappings]");
         }
         Path source = Path.of(args[0]).toRealPath();
         Path output = Path.of(args[1]).toAbsolutePath().normalize();
+        var mappingInput = args.length == 3 ? SNBT.read(Path.of(args[2])) : new CompoundTag();
+        if (mappingInput == null) throw new IllegalArgumentException("Could not read quest mappings");
+        var mappings = new Mappings(mappingInput);
         if (!Files.isDirectory(source) || Files.exists(output) || output.startsWith(source)) {
             throw new IllegalArgumentException("Use an existing source directory and a separate new output directory");
         }
@@ -31,12 +46,14 @@ final class ConvertItemFilters {
         var converted = new ArrayList<ConvertedFile>();
         try (var files = Files.walk(source)) {
             for (Path file : files.filter(Files::isRegularFile).filter(path -> path.toString().endsWith(".snbt")).sorted().toList()) {
-                if (!Files.readString(file).contains(LEGACY)) continue;
+                if (args.length == 2 && !Files.readString(file).contains(LEGACY)) continue;
                 try {
                     CompoundTag contents = SNBT.read(file);
                     if (contents == null) throw new IllegalArgumentException("Could not read SNBT");
-                    int count = convert(contents);
-                    if (count > 0) converted.add(new ConvertedFile(source.relativize(file), contents, count));
+                    int count = convert(contents, mappings, false);
+                    if (args.length == 3 || count > 0) {
+                        converted.add(new ConvertedFile(source.relativize(file), contents, count));
+                    }
                 } catch (IllegalArgumentException e) {
                     throw new IllegalArgumentException(file.getFileName() + ": " + e.getMessage(), e);
                 }
@@ -50,14 +67,15 @@ final class ConvertItemFilters {
             System.out.printf("%s: %d%n", file.relative(), file.count());
         }
         System.out.printf("Converted %d legacy filter stacks across %d files%n",
-                converted.stream().mapToInt(ConvertedFile::count).sum(), converted.size());
+                converted.stream().mapToInt(ConvertedFile::count).sum(),
+                converted.stream().filter(file -> file.count() > 0).count());
     }
 
-    private static int convert(Tag node) {
+    private static int convert(Tag node, Mappings mappings, boolean itemTask) {
         int converted = 0;
         if (node instanceof CompoundTag tag) {
             if (tag.getString("id").startsWith(LEGACY)) {
-                String expression = filter(tag);
+                String expression = filter(tag, mappings);
                 int count = tag.contains("Count", Tag.TAG_ANY_NUMERIC) ? tag.getInt("Count") : 1;
                 if (count != 1) throw new IllegalArgumentException("Smart Filters require a stack count of one");
                 tag.remove("Count");
@@ -69,14 +87,54 @@ final class ConvertItemFilters {
                 tag.put("components", components);
                 return 1;
             }
-            for (String key : tag.getAllKeys()) converted += convert(tag.get(key));
+            String id = tag.getString("id");
+            if (mappings.objects().contains(id)) {
+                var fields = mappings.objects().getCompound(id);
+                requireKeys(fields, OBJECT_FIELDS);
+                for (String key : fields.getAllKeys()) tag.put(key, fields.get(key).copy());
+            }
+            for (String key : List.copyOf(tag.getAllKeys())) {
+                Tag child = tag.get(key);
+                if (STACK_FIELDS.contains(key)) {
+                    Tag replacement = mapStack(child, mappings);
+                    if (replacement != child) tag.put(key, replacement);
+                    if (itemTask && key.equals("item") && replacement instanceof CompoundTag newStack
+                            && replacement != child && newStack.contains("components")) tag.putString("match_components", "strict");
+                    child = replacement;
+                }
+                converted += convert(child, mappings, key.equals("tasks"));
+            }
         } else if (node instanceof ListTag list) {
-            for (Tag entry : list) converted += convert(entry);
+            for (Tag entry : list) converted += convert(entry, mappings, itemTask);
         }
         return converted;
     }
 
-    private static String filter(CompoundTag stack) {
+    private static Tag mapStack(Tag node, Mappings mappings) {
+        CompoundTag stack = node instanceof CompoundTag compound ? compound : null;
+        String id;
+        if (stack != null) id = stack.getString("id");
+        else if (node instanceof StringTag string) id = string.getAsString();
+        else return node;
+        if (mappings.stacks().contains(id)) {
+            var replacement = mappings.stacks().getCompound(id).copy();
+            resource(replacement.getString("id"));
+            if (stack != null) {
+                requireKeys(stack, Set.of("id", "Count", "count"));
+                if (stack.contains("Count")) replacement.putInt("count", stack.getInt("Count"));
+                if (stack.contains("count")) replacement.putInt("count", stack.getInt("count"));
+            }
+            return replacement;
+        }
+        if (mappings.items().contains(id)) {
+            String target = resource(mappings.items().getString(id));
+            if (stack == null) return StringTag.valueOf(target);
+            stack.putString("id", target);
+        }
+        return node;
+    }
+
+    private static String filter(CompoundTag stack, Mappings mappings) {
         String id = stack.getString("id");
         CompoundTag settings = stack.getCompound("tag");
         return switch (id) {
@@ -85,21 +143,26 @@ final class ConvertItemFilters {
                 requireKeys(settings, Set.of("value"));
                 String value = resource(settings.getString("value"));
                 if (value.startsWith("forge:")) value = "c:" + value.substring("forge:".length());
-                yield "item_tag(" + value + ")";
+                var tags = mappings.tags();
+                String replacement = tags.contains(value) ? tags.getString(value) : "#" + value;
+                yield replacement.startsWith("#")
+                        ? "item_tag(" + resource(replacement.substring(1)) + ")"
+                        : "item(" + resource(replacement) + ")";
             }
             case "itemfilters:or" -> {
                 requireKeys(stack, Set.of("id", "Count", "tag"));
                 requireKeys(settings, Set.of("items"));
                 ListTag alternatives = settings.getList("items", Tag.TAG_COMPOUND);
                 if (alternatives.isEmpty()) throw new IllegalArgumentException("Empty Item Filters OR");
-                var expressions = new ArrayList<String>();
-                for (Tag entry : alternatives) expressions.add(filter((CompoundTag) entry));
-                yield "or(" + String.join("", expressions) + ")";
+                var expressions = new LinkedHashSet<String>();
+                for (Tag entry : alternatives) expressions.add(filter((CompoundTag) entry, mappings));
+                yield expressions.size() == 1 ? expressions.iterator().next() : "or(" + String.join("", expressions) + ")";
             }
             default -> {
                 if (id.startsWith(LEGACY)) throw new IllegalArgumentException("Unsupported legacy filter " + id);
+                if (mappings.stacks().contains(id)) throw new IllegalArgumentException("Component filter required for " + id);
                 requireKeys(stack, Set.of("id", "Count"));
-                yield "item(" + resource(id) + ")";
+                yield "item(" + resource(mappings.items().contains(id) ? mappings.items().getString(id) : id) + ")";
             }
         };
     }

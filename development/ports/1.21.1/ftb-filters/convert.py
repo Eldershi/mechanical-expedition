@@ -11,6 +11,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--java", required=True, type=Path)
     parser.add_argument("--server", required=True, type=Path)
+    parser.add_argument("--mapping", type=Path,
+                        help="write a complete quest tree using the supplied item and tag mappings")
     parser.add_argument("source", type=Path)
     parser.add_argument("output", type=Path)
     args = parser.parse_args()
@@ -26,6 +28,7 @@ def main():
     subprocess.run([
         args.java, "--class-path", os.pathsep.join(map(str, paths)),
         Path(__file__).with_name("ConvertItemFilters.java"), args.source, args.output,
+        *([args.mapping] if args.mapping else []),
     ], check=True)
 
 

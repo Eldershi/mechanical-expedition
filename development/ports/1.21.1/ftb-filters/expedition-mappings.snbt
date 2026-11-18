@@ -1,0 +1,367 @@
+{
+  "component_stacks": {
+    "enderio:ender_fluid_conduit": {
+      "components": {
+        "enderio:conduit": "enderio:ender_fluid"
+      },
+      "count": 1,
+      "id": "enderio:conduit"
+    },
+    "enderio:energy_conduit": {
+      "components": {
+        "enderio:conduit": "enderio:energy"
+      },
+      "count": 1,
+      "id": "enderio:conduit"
+    },
+    "enderio:fluid_conduit": {
+      "components": {
+        "enderio:conduit": "enderio:fluid"
+      },
+      "count": 1,
+      "id": "enderio:conduit"
+    },
+    "enderio:item_conduit": {
+      "components": {
+        "enderio:conduit": "enderio:item"
+      },
+      "count": 1,
+      "id": "enderio:conduit"
+    },
+    "enderio:redstone_conduit": {
+      "components": {
+        "enderio:conduit": "enderio:redstone"
+      },
+      "count": 1,
+      "id": "enderio:conduit"
+    }
+  },
+  "items": {
+    "apotheosis:ender_lead": "apothic_enchanting:ender_lead",
+    "apotheosis:ender_library": "apothic_enchanting:ender_library",
+    "apotheosis:inert_trident": "apothic_enchanting:inert_trident",
+    "apotheosis:infused_hellshelf": "apothic_enchanting:infused_hellshelf",
+    "apotheosis:library": "apothic_enchanting:library",
+    "cmi:advanced_spout": "steam_letters:advanced_spout",
+    "cmi:bronze_solar_boiler": "steam_letters:bronze_solar_boiler",
+    "cmi:steam_hammer": "steam_letters:steam_hammer",
+    "cmi:steel_ingot": "immersiveengineering:ingot_steel",
+    "eidolon:athame": "eidolon_repraised:athame",
+    "eidolon:brazier": "eidolon_repraised:brazier",
+    "eidolon:codex": "eidolon_repraised:codex",
+    "eidolon:crucible": "eidolon_repraised:crucible",
+    "eidolon:holy_symbol": "eidolon_repraised:holy_symbol",
+    "eidolon:lesser_soul_gem": "eidolon_repraised:lesser_soul_gem",
+    "eidolon:notetaking_tools": "eidolon_repraised:notetaking_tools",
+    "eidolon:pewter_ingot": "eidolon_repraised:pewter_ingot",
+    "eidolon:raven_cloak": "eidolon_repraised:raven_cloak",
+    "eidolon:reaper_scythe": "eidolon_repraised:reaper_scythe",
+    "eidolon:soul_shard": "eidolon_repraised:soul_shard",
+    "eidolon:summoning_staff": "eidolon_repraised:summoning_staff",
+    "eidolon:unholy_symbol": "eidolon_repraised:unholy_symbol",
+    "eidolon:wooden_altar": "eidolon_repraised:wooden_altar",
+    "eidolon:worktable": "eidolon_repraised:worktable",
+    "enderio:empty_soul_vial": "enderio:soul_vial",
+    "enderio:primitive_alloy_smelter": "enderio:alloy_smelter",
+    "enigmaticlegacy:abyssal_heart": "enigmaticlegacyplus:abyssal_heart",
+    "enigmaticlegacy:astral_dust": "enigmaticlegacyplus:astral_dust",
+    "enigmaticlegacy:curse_transposer": "enigmaticlegacyplus:curse_transposer",
+    "enigmaticlegacy:cursed_ring": "enigmaticlegacyplus:cursed_ring",
+    "enigmaticlegacy:cursed_scroll": "enigmaticlegacyplus:cursed_scroll",
+    "enigmaticlegacy:darkest_scroll": "enigmaticlegacyplus:darkest_scroll",
+    "enigmaticlegacy:earth_heart": "enigmaticlegacyplus:earth_heart",
+    "enigmaticlegacy:etherium_ingot": "enigmaticlegacyplus:etherium_ingot",
+    "enigmaticlegacy:evil_essence": "enigmaticlegacyplus:evil_essence",
+    "enigmaticlegacy:fabulous_scroll": "enigmaticlegacyplus:fabulous_scroll",
+    "enigmaticlegacy:magnet_ring": "enigmaticlegacyplus:magnet_ring",
+    "enigmaticlegacy:ocean_stone": "enigmaticlegacyplus:ocean_stone",
+    "enigmaticlegacy:super_magnet_ring": "enigmaticlegacyplus:dislocation_ring",
+    "enigmaticlegacy:the_acknowledgment": "enigmaticlegacyplus:the_acknowledgment",
+    "enigmaticlegacy:the_infinitum": "enigmaticlegacyplus:the_infinitum",
+    "enigmaticlegacy:the_twist": "enigmaticlegacyplus:the_twist",
+    "enigmaticlegacy:twisted_mirror": "enigmaticlegacyplus:twisted_mirror",
+    "expatternprovider:active_formation_plane": "extendedae:active_formation_plane",
+    "expatternprovider:assembler_matrix_frame": "extendedae:assembler_matrix_frame",
+    "expatternprovider:circuit_cutter": "extendedae:circuit_cutter",
+    "expatternprovider:ex_export_bus_part": "extendedae:ex_export_bus_part",
+    "expatternprovider:ex_inscriber": "extendedae:ex_inscriber",
+    "expatternprovider:ex_pattern_provider": "extendedae:ex_pattern_provider",
+    "expatternprovider:ex_pattern_provider_part": "extendedae:ex_pattern_provider_part",
+    "expatternprovider:mod_export_bus": "extendedae:mod_export_bus",
+    "expatternprovider:mod_storage_bus": "extendedae:mod_storage_bus",
+    "expatternprovider:precise_export_bus": "extendedae:precise_export_bus",
+    "expatternprovider:precise_storage_bus": "extendedae:precise_storage_bus",
+    "expatternprovider:tag_export_bus": "extendedae:tag_export_bus",
+    "expatternprovider:tag_storage_bus": "extendedae:tag_storage_bus",
+    "expatternprovider:threshold_export_bus": "extendedae:threshold_export_bus",
+    "immersiveindustry:electrolyzer": "cmi:caustic_soda_solution_bucket",
+    "immersiveindustry:refractory_kiln_brick": "immersiveengineering:blastbrick",
+    "malum:processed_soulstone": "malum:refined_soulstone",
+    "malum:spirit_fabric": "malum:soulwoven_silk",
+    "tconstruct:clear_glass": "modernfoundry:clear_glass",
+    "tconstruct:encyclopedia": "modernfoundry:encyclopedia",
+    "tconstruct:foundry_controller": "modernfoundry:foundry_controller",
+    "tconstruct:longbow": "modernfoundry:longbow",
+    "tconstruct:molten_lead_bucket": "modernfoundry:molten_lead_bucket",
+    "tconstruct:molten_steel_bucket": "modernfoundry:molten_steel_bucket",
+    "tconstruct:nether_grout": "modernfoundry:nether_grout",
+    "tconstruct:pig_iron_ingot": "modernfoundry:pig_iron_ingot",
+    "tconstruct:scorched_basin": "modernfoundry:scorched_basin",
+    "tconstruct:scorched_brick": "modernfoundry:scorched_brick",
+    "tconstruct:scorched_bricks": "modernfoundry:scorched_bricks",
+    "tconstruct:scorched_bricks_slab": "modernfoundry:scorched_bricks_slab",
+    "tconstruct:scorched_drain": "modernfoundry:scorched_drain",
+    "tconstruct:scorched_faucet": "modernfoundry:scorched_faucet",
+    "tconstruct:scorched_fuel_tank": "modernfoundry:scorched_fuel_tank",
+    "tconstruct:scorched_stone_bucket": "modernfoundry:scorched_stone_bucket",
+    "tconstruct:scorched_table": "modernfoundry:scorched_table",
+    "tconstruct:seared_bricks": "modernfoundry:seared_bricks",
+    "tconstruct:seared_drain": "modernfoundry:seared_drain",
+    "tconstruct:seared_fuel_tank": "modernfoundry:seared_fuel_tank",
+    "tconstruct:seared_stone_bucket": "modernfoundry:seared_stone_bucket",
+    "tconstruct:silky_cloth": "modernfoundry:silky_cloth",
+    "tconstruct:smeltery_controller": "modernfoundry:smeltery_controller",
+    "tconstruct:sword": "modernfoundry:sword",
+    "thermal:coal_coke": "immersiveengineering:coal_coke",
+    "thermal:cured_rubber": "create:belt_connector",
+    "thermal:electrum_ingot": "immersiveengineering:ingot_electrum",
+    "thermal:invar_ingot": "alltheores:invar_ingot",
+    "thermal:iron_dust": "immersiveengineering:dust_iron",
+    "thermal:machine_bottler": "create:spout",
+    "thermal:machine_brewer": "minecraft:brewing_stand",
+    "thermal:machine_centrifuge": "vintageimprovements:centrifuge",
+    "thermal:machine_crafter": "minecraft:crafter",
+    "thermal:machine_crucible": "modernfoundry:smeltery_controller",
+    "thermal:machine_furnace": "mekanism:energized_smelter",
+    "thermal:machine_press": "create:mechanical_press",
+    "thermal:machine_pulverizer": "create:crushing_wheel",
+    "thermal:machine_refinery": "createdieselgenerators:distillation_controller",
+    "thermal:machine_sawmill": "create:mechanical_saw",
+    "thermal:machine_smelter": "enderio:alloy_smelter",
+    "thermal:sapphire": "alltheores:sapphire",
+    "thermal:sapphire_dust": "alltheores:sapphire_dust"
+  },
+  "objects": {
+    "00C55399CC674B4A": {
+      "description": [
+        "用机械动力柴油发电机的馏分塔处理原油。"
+      ],
+      "title": "馏分塔控制器"
+    },
+    "03935F56FD69EF01": {
+      "title": "冶炼炉控制器"
+    },
+    "09D87AA6A3F7FF38": {
+      "title": "液碱"
+    },
+    "0EBD5EBF7494202A": {
+      "description": [
+        "用酿造台配制药水，自动化时可用漏斗接入原料。"
+      ],
+      "title": "酿造台"
+    },
+    "0EE4E05A8A4330D6": {
+      "description": [
+        "锁定多余槽位并用红石脉冲触发合成。"
+      ],
+      "title": "自动合成器"
+    },
+    "0F239BA7C812F3F0": {
+      "description": [
+        "使用通电熔炼机完成电力烧炼。"
+      ],
+      "title": "通电熔炼机"
+    },
+    "10688CFFC44AA551": {
+      "title": "末影接口合金炉"
+    },
+    "108276FAC1946E3F": {
+      "description": [
+        "由流体管供液，用注液器向传送带上的物品注液。"
+      ],
+      "title": "注液器"
+    },
+    "1115BECA890D4862": {
+      "title": "液碱"
+    },
+    "12610CFD86470A7D": {
+      "description": [
+        "烧制石灰石得到煅烧石灰，再将它粉碎为石灰粉。石灰粉会和石英粉一起用于热压提纯。"
+      ],
+      "icon": "cmi:lime_dust",
+      "title": "制备石灰粉"
+    },
+    "14A9BE3930DB9A7F": {
+      "description": [
+        "搭建 Hexa 冶炼炉，可熔融材料并将流体引到浇铸部件。"
+      ],
+      "title": "冶炼炉控制器"
+    },
+    "182F442443FAC0F1": {
+      "description": [
+        "使用 Ender IO 合金炉，接入电力后按配方加工合金。"
+      ],
+      "title": "建造合金炉"
+    },
+    "1B425C9A31C49825": {
+      "title": "馏分塔控制器"
+    },
+    "1CFE963288EAA71A": {
+      "description": [
+        "按沉浸工程工程师手册搭建并给电弧炉供电。装入三个石墨电极，投入铸铁粉和石灰粉，收集钢锭。"
+      ],
+      "icon": "immersiveengineering:ingot_steel",
+      "title": "用电弧炉炼钢"
+    },
+    "2849DC36ACEA7681": {
+      "description": [
+        "用机械搅拌器将盐溶进水制成海水，再用搅拌器处理海水。收集一桶液碱即可完成。"
+      ],
+      "title": "海水制液碱"
+    },
+    "28AF43E6C8A64B86": {
+      "description": [
+        "给 Vintage 离心机供给旋转动力，按配方分离原料。"
+      ],
+      "title": "离心机"
+    },
+    "294ADE90DEB83228": {
+      "count": 3,
+      "item": "immersiveengineering:graphite_electrode",
+      "title": "石墨电极"
+    },
+    "2EEB9E3820876037": {
+      "description": [
+        "在符合灌注参数的附魔台上，把简易缰绳灌注成末影缰绳。用它捕获并放出可移动的实体。"
+      ],
+      "title": "制作末影缰绳"
+    },
+    "2F19D15BFD9316C0": {
+      "count": 1,
+      "item": "immersiveengineering:dust_hop_graphite",
+      "title": "HOP 石墨粉"
+    },
+    "3B1D5348B5A8BD6B": {
+      "item": "create:belt_connector",
+      "title": "传动带"
+    },
+    "3D52F8CD9531BC55": {
+      "count": 1,
+      "item": "immersiveengineering:ingot_steel",
+      "title": "炼出的钢锭"
+    },
+    "3DB20DDD3ABA24EC": {
+      "title": "冶炼炉控制器"
+    },
+    "3E18E454790F91B2": {
+      "description": [
+        "按沉浸工程配方制作高炉砖，搭建高炉以烧制石灰及冶炼钢。"
+      ],
+      "title": "制备高炉砖"
+    },
+    "3E20D5A765941B2F": {
+      "title": "机械锯"
+    },
+    "3FF4ADB3B848C7B8": {
+      "item": "cmi:lime_dust",
+      "title": "石灰粉"
+    },
+    "409B5C27935118BC": {
+      "title": "通电熔炼机"
+    },
+    "421E9705D7334039": {
+      "description": [
+        "将材料放在置物台或传送带上，在机械压机下进行压制。"
+      ],
+      "title": "机械压机"
+    },
+    "4274680C9B3AE94B": {
+      "count": 8,
+      "item": "immersiveengineering:sheetmetal_steel",
+      "title": "钢制金属板"
+    },
+    "480B40A95C829304": {
+      "title": "自动合成器"
+    },
+    "4BD569E3A936DF9D": {
+      "title": "机械压机"
+    },
+    "4C03B80A782716C4": {
+      "description": [
+        "给机械锯供给旋转动力，可锯切木料。"
+      ],
+      "title": "机械锯"
+    },
+    "4C2F1D5F0FAA50F3": {
+      "dependencies": [],
+      "description": [
+        "将海带烘干，用六份烘干海带合成机械动力传动带。传动带也用于制作高级注液器的密封部件。"
+      ],
+      "icon": "create:belt_connector",
+      "title": "制作传动带"
+    },
+    "5B02E6F0F60D4F82": {
+      "description": [
+        "搭建 Hexa 冶炼炉，可熔融材料并将流体引到浇铸部件。"
+      ],
+      "title": "冶炼炉控制器"
+    },
+    "5E27D7AA09845E57": {
+      "title": "酿造台"
+    },
+    "612EDE8554525701": {
+      "description": [
+        "为合金炉接入电力并按配方放入原料。"
+      ],
+      "title": "末影接口合金炉"
+    },
+    "625668ADD162887C": {
+      "title": "粉碎轮"
+    },
+    "630DD3536DFF8D25": {
+      "item": "immersiveengineering:graphite_electrode"
+    },
+    "6C3E873376A0F04E": {
+      "description": [
+        "将成对粉碎轮相向驱动，用于矿物粉碎。"
+      ],
+      "title": "粉碎轮"
+    },
+    "6E0DADD45A07ABA5": {
+      "title": "注液器"
+    },
+    "71540ED470BA2932": {
+      "description": [
+        "由流体管供液，用注液器向传送带上的物品注液。"
+      ],
+      "title": "注液器"
+    },
+    "74A6E21C20513CEE": {
+      "title": "传动带密封"
+    },
+    "75E8DEF5FAC54F11": {
+      "title": "注液器"
+    },
+    "77B944C2713E84EF": {
+      "title": "离心机"
+    },
+    "7A5EDFB0C09B56D0": {
+      "item": "immersiveengineering:coal_coke",
+      "title": "煤焦炭"
+    },
+    "7CC14049CEA95A84": {
+      "title": "机械压机"
+    },
+    "7FDB7DDAD23BB4C1": {
+      "description": [
+        "用沉浸工程焦炉砖搭建焦炉，投入煤炭后收取煤焦炭。"
+      ],
+      "icon": "immersiveengineering:coal_coke",
+      "title": "焦炉制焦炭"
+    }
+  },
+  "tags": {
+    "c:netherrack": "#c:netherracks",
+    "thermal:dynamos": "mekanismgenerators:heat_generator"
+  }
+}

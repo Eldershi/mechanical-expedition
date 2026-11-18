@@ -52,5 +52,17 @@
     "sha256": "c72d66df717a67c4c0bd8f0e9da6521722c62122683ce6f65b1b0d763188e8c3",
     "side": "CLIENT",
     "build": "client/build.py"
+  },
+  "TconPlanner-1.20.1-forge-1.8.0.jar": {
+    "filename": "expedition-tool-planner-neoforge-1.0.0.jar",
+    "sha256": "eb3006e5ab9787f1f8f66e51e41e341332afec032202d852170a6f60842d8f49",
+    "side": "CLIENT",
+    "build": "client/build.py"
+  },
+  "expedition-ponder-ui-1.0.2.jar": {
+    "filename": "expedition-spell-catalog-neoforge-1.0.0.jar",
+    "sha256": "584d1df4911bdfb5f0e79ad295e97aa2c7400984aef3dbcf6eb18d4b51bf7af8",
+    "side": "CLIENT",
+    "build": "client/build.py"
   }
 }

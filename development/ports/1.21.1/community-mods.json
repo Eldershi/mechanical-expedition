@@ -123,5 +123,15 @@
     "sha256": "25c3feca75dd36c296aecb624dae85189d156cf9ffc34862c80c6892b3824dff",
     "side": "CLIENT",
     "replaces": "achievement_toast-1.20.1-forge-1.0.0.jar"
+  },
+  "apothic_enchanting": {
+    "file": {
+      "filename": "ApothicEnchanting-1.21.1-1.6.4.jar",
+      "url": "https://cdn.modrinth.com/data/pL8MtgqY/versions/JAQJkLJ1/ApothicEnchanting-1.21.1-1.6.4.jar",
+      "source": "https://modrinth.com/mod/apothic-enchanting/version/JAQJkLJ1",
+      "sha1": "d88e75b60e97dae8054ee10f3a92aa2bb812b8b9"
+    },
+    "version": "1.6.4",
+    "sha256": "aff9837f45c1c981d47a9e60b780c37a151ef881937faf5f72092895104c8bbb"
   }
 }
