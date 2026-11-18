@@ -44,6 +44,7 @@
     "apotheosis:library": "apothic_enchanting:library",
     "cmi:advanced_spout": "steam_letters:advanced_spout",
     "cmi:aluminum_alloy_ingot": "neoecoae:aluminum_alloy_ingot",
+    "cmi:amethyst_bronze_upgrade": "functionalstorage:copper_upgrade",
     "cmi:bronze_solar_boiler": "steam_letters:bronze_solar_boiler",
     "cmi:steam_hammer": "steam_letters:steam_hammer",
     "cmi:steel_ingot": "immersiveengineering:ingot_steel",
@@ -154,6 +155,20 @@
     "thermal_extra:naphtha_bucket": "cmi:naphtha_bucket"
   },
   "objects": {
+    "2FBEBC159FA56453": {
+      "item": "minecraft:hopper"
+    },
+    "17AF5E16E2872B4C": {
+      "item": "minecraft:bucket"
+    },
+    "61965F521A26CFDB": {
+      "count": 1L,
+      "item": "immersiveengineering:hammer"
+    },
+    "32B585DBF2A2E6CF": {
+      "count": 26L,
+      "item": "immersiveengineering:cokebrick"
+    },
     "3D333E50E3192974": {
       "item": "minecraft:oak_planks"
     },
@@ -793,6 +808,7 @@
         "用沉浸工程焦炉砖搭建焦炉，投入煤炭后收取煤焦炭。"
       ],
       "icon": "immersiveengineering:coal_coke",
+      "subtitle": "焦炭和杂酚油",
       "title": "焦炉制焦炭"
     }
   },

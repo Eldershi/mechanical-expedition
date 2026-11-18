@@ -15,12 +15,6 @@ ServerEvents.recipes(event => {
     results: [{ id: 'cmi:vinegar', amount: 200 }]
   }).id(path + 'vinegar')
   event.custom({
-    type: 'immersiveengineering:fermenter',
-    input: rice,
-    energy: 1200,
-    fluid: { id: 'cmi:vinegar', amount: 500 }
-  }).id(path + 'vinegar_fermenter')
-  event.custom({
     type: 'createdieselgenerators:distillation',
     ingredients: [{ type: 'fluid_tag', fluid_tag: 'cmi:vinegar', amount: 200 }],
     heat_requirement: 'heated',

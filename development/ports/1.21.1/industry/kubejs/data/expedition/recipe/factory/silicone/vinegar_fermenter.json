@@ -1,0 +1,11 @@
+{
+  "type": "immersiveengineering:fermenter",
+  "energy": 1200,
+  "fluid": {
+    "amount": 500,
+    "id": "cmi:vinegar"
+  },
+  "input": {
+    "tag": "cmi:vinegar_rice"
+  }
+}
