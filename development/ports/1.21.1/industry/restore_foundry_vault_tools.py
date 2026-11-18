@@ -11,6 +11,7 @@ from tempfile import TemporaryDirectory
 from nbtlib import Compound, Int, List, String, load
 
 from export_legacy_tools import LEGACY, TOOLS, convert_stack
+from legacy_create_workpieces import WORKPIECES, convert_create_workpiece
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "world-server" / "migration"))
 from measure_chunk_edges import read_chunk
@@ -50,7 +51,8 @@ EQUIVALENT_STACKS.update({f"tconstruct:{name}": f"modernfoundry:{name}" for name
 )})
 
 
-def candidates(recovery, report, include_nebula, include_legacy_pan_materials, include_equivalent_stacks):
+def candidates(recovery, report, include_nebula, include_legacy_pan_materials, include_equivalent_stacks,
+               include_create_workpieces):
     locations = set()
     for index, entry in enumerate(recovery.get("Stacks", ())):
         original = entry.get("OriginalStack", {})
@@ -58,9 +60,10 @@ def candidates(recovery, report, include_nebula, include_legacy_pan_materials, i
         tool = item.startswith(LEGACY) and item.removeprefix(LEGACY) in TOOLS
         nebula_material = include_nebula and item in NEBULA_MATERIALS
         equivalent_item = EQUIVALENT_STACKS.get(item) if include_equivalent_stacks else None
+        workpiece = include_create_workpieces and item in WORKPIECES
         if (entry.get("BlockEntity") != VAULT
                 or entry.get("Reason") not in {"missing_item_id", "unverified_mod_payload"}
-                or not (tool or nebula_material or equivalent_item)
+                or not (tool or nebula_material or equivalent_item or workpiece)
                 or "Slot" not in original):
             continue
         position = tuple(map(int, entry["BlockPos"]))
@@ -70,7 +73,9 @@ def candidates(recovery, report, include_nebula, include_legacy_pan_materials, i
             raise ValueError(f"Duplicate tool recovery entry at {position}, slot {slot}")
         locations.add((position, slot))
         try:
-            if equivalent_item or nebula_material:
+            if workpiece:
+                stack = convert_create_workpiece(original)
+            elif equivalent_item or nebula_material:
                 count = int(original.get("Count", 0))
                 if set(original) != {"id", "Count", "Slot"} or not 1 <= count <= 64:
                     raise ValueError("Expected a stack with only its original item, count, and slot")
@@ -127,11 +132,11 @@ def restore_chunk(chunk, entries, report, completed):
 
 
 def stage_tools(target, recovery, output, include_nebula=False, include_legacy_pan_materials=False,
-                include_equivalent_stacks=False):
+                include_equivalent_stacks=False, include_create_workpieces=False):
     report = {"restored": [], "already_valid": [], "withheld": [], "regions": []}
     regions = defaultdict(lambda: defaultdict(list))
     for entry in candidates(recovery, report, include_nebula, include_legacy_pan_materials,
-                            include_equivalent_stacks):
+                            include_equivalent_stacks, include_create_workpieces):
         x, _, z = entry[1]["position"]
         regions[(x // 512, z // 512)][(x // 16, z // 16)].append(entry)
 
@@ -175,6 +180,8 @@ def main():
                         help="Recover matching old pans when Nebula Tinker adapter 1.1 is installed")
     parser.add_argument("--include-equivalent-stacks", action="store_true",
                         help="Recover CMI capacitors and matching Modern Foundry stock without item payloads")
+    parser.add_argument("--include-create-workpieces", action="store_true",
+                        help="Recover verified Create assembly stages, belt selections, and unworn tools")
     args = parser.parse_args()
     target, output = args.target_regions.resolve(), args.output.resolve()
     if not target.is_dir() or output.exists() or target in output.parents:
@@ -185,7 +192,7 @@ def main():
         stage.mkdir()
         report = stage_tools(target, load(args.vault_recovery), stage,
                              args.include_nebula, args.include_legacy_pan_materials,
-                             args.include_equivalent_stacks)
+                             args.include_equivalent_stacks, args.include_create_workpieces)
         (stage / "foundry-tool-report.json").write_text(json.dumps(report, indent=2) + "\n")
         if output.exists():
             raise FileExistsError(output)
