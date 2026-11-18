@@ -1,0 +1,10 @@
+StartupEvents.registry('fluid', event => {
+  const fluid = event.create('cmi:lubricating_oil')
+    .displayName('Lubricating Oil')
+    .flowingTexture('cmi:fluid/organic/flow')
+    .stillTexture('cmi:fluid/organic/still')
+    .tint(0xD1B653)
+    .translucent()
+    .tag('cmi:lubricating_oil')
+  fluid.bucketItem.tag('cmi:buckets')
+})

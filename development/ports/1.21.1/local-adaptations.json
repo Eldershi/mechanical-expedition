@@ -24,8 +24,8 @@
     "build": "world-server/build.py"
   },
   "expedition-stock-keeper-tooltip-fix-1.0.0.jar": {
-    "filename": "expedition-stock-keeper-tooltip-fix-neoforge-1.0.0.jar",
-    "sha256": "b8b506294312e2acc7977a258dc762106a1370cbb8e5c64bfcce33c87788da5d",
+    "filename": "expedition-stock-keeper-tooltip-fix-neoforge-1.0.1.jar",
+    "sha256": "47856ce8c90b5d71b0aa215786f5772135584fbc005712c677dc9cc2adf25f8f",
     "side": "CLIENT",
     "build": "client/build.py"
   },

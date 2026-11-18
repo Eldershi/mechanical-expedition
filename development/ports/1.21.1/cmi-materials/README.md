@@ -2,6 +2,8 @@
 
 The port registers the CMI materials, molds, casts, assembly intermediates and passive mechanisms listed in the startup scripts. It also registers peat, the retained ores and molten andesite alloy, dreamcore and mechanium. Create and KubeJS Create provide the sequenced assembly item type. The cast tags use the selected Tinkers' Construct namespace.
 
+The oil and polymer registrations provide the fluids for the Diesel Generators distillation and Immersive Engineering refining recipes, plus the Osmium Tile block.
+
 Run the registration builder from the migration branch for both sides.
 
 ```sh

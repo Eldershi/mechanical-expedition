@@ -61,6 +61,7 @@
     "eidolon:unholy_symbol": "eidolon_repraised:unholy_symbol",
     "eidolon:wooden_altar": "eidolon_repraised:wooden_altar",
     "eidolon:worktable": "eidolon_repraised:worktable",
+    "enderio:copper_alloy_ingot": "enderio:conductive_alloy_ingot",
     "enderio:empty_soul_vial": "enderio:soul_vial",
     "enderio:primitive_alloy_smelter": "enderio:alloy_smelter",
     "enigmaticlegacy:abyssal_heart": "enigmaticlegacyplus:abyssal_heart",
@@ -124,6 +125,7 @@
     "thermal:coal_coke": "immersiveengineering:coal_coke",
     "thermal:cured_rubber": "create:belt_connector",
     "thermal:electrum_ingot": "immersiveengineering:ingot_electrum",
+    "thermal:heavy_oil_bucket": "cmi:conditioned_crude_oil_bucket",
     "thermal:invar_ingot": "alltheores:invar_ingot",
     "thermal:iron_dust": "immersiveengineering:dust_iron",
     "thermal:machine_bottler": "create:spout",
@@ -138,7 +140,10 @@
     "thermal:machine_sawmill": "create:mechanical_saw",
     "thermal:machine_smelter": "enderio:alloy_smelter",
     "thermal:sapphire": "alltheores:sapphire",
-    "thermal:sapphire_dust": "alltheores:sapphire_dust"
+    "thermal:sapphire_dust": "alltheores:sapphire_dust",
+    "thermal:sulfur_dust": "mekanism:dust_sulfur",
+    "thermal_extra:lubricant_bucket": "cmi:lubricating_oil_bucket",
+    "thermal_extra:naphtha_bucket": "cmi:naphtha_bucket"
   },
   "objects": {
     "00C55399CC674B4A": {
@@ -150,8 +155,42 @@
     "03935F56FD69EF01": {
       "title": "冶炼炉控制器"
     },
+    "05D42E0B78A3982E": {
+      "dependencies": [
+        "762D51AFDCA86F29",
+        "7CE3BF3F7F7FC1D9"
+      ],
+      "description": [
+        "将醋送入加热的馏分塔，得到醋酸。"
+      ]
+    },
+    "0653A33CE9A4C9DB": {
+      "description": [
+        "用加热的机械动力搅拌盆，混合硅和轻烯烃。"
+      ]
+    },
+    "0693C9D0C0185844": {
+      "description": [
+        "在沉浸工程精炼机中用银板催化乙炔。"
+      ]
+    },
     "09D87AA6A3F7FF38": {
       "title": "液碱"
+    },
+    "0E3481D80180E00C": {
+      "dependencies": [
+        "2916D3E15559DF0C"
+      ],
+      "description": [
+        "将煤油送入加热的馏分塔，得到石脑油和汽油。"
+      ]
+    },
+    "0EB9C39BE200BF3A": {
+      "icon": "ae2:fluix_glass_cable",
+      "title": "可选：接入 AE2 的 ME 玻璃线缆",
+      "description": [
+        "将福鲁伊克斯 ME 玻璃线缆接入已供电的 ME 网络，核对相邻设备是否上线和频道是否充足。需要更多频道时可使用 AE2 致密线缆。"
+      ]
     },
     "0EBD5EBF7494202A": {
       "description": [
@@ -170,6 +209,14 @@
         "使用通电熔炼机完成电力烧炼。"
       ],
       "title": "通电熔炼机"
+    },
+    "0FF8EDFBF1C6AF7A": {
+      "dependencies": [
+        "654FBA59B16DF4C6"
+      ],
+      "description": [
+        "将裂化汽油送入加热的馏分塔，收集苯、石脑油和轻烯烃。"
+      ]
     },
     "10688CFFC44AA551": {
       "title": "末影接口合金炉"
@@ -196,6 +243,19 @@
       ],
       "title": "冶炼炉控制器"
     },
+    "16FAD51B29F98F9A": {
+      "dependencies": [
+        "0E3481D80180E00C"
+      ],
+      "description": [
+        "用沉浸工程榨汁机取得植物油，与石脑油一起送入沉浸工程精炼机，用铜板催化。"
+      ]
+    },
+    "177B11EF53B286AA": {
+      "description": [
+        "在沉浸工程精炼机中用铜板催化聚硅醚与醋酸，得到液态硅橡胶。"
+      ]
+    },
     "182F442443FAC0F1": {
       "description": [
         "使用 Ender IO 合金炉，接入电力后按配方加工合金。"
@@ -211,6 +271,33 @@
       ],
       "icon": "immersiveengineering:ingot_steel",
       "title": "用电弧炉炼钢"
+    },
+    "1D3CD2978AA7BA8A": {
+      "advancement": "immersiveengineering:multiblocks/mb_refinery"
+    },
+    "1E5AE69BBC7AA5CF": {
+      "description": [
+        "在沉浸工程精炼机中用铜板催化轻硅醚。"
+      ]
+    },
+    "24A212FC28F52BA2": {
+      "item": "mekanism:basic_pressurized_tube"
+    },
+    "25726C8061FF0AB3": {
+      "dependencies": [
+        "2916D3E15559DF0C"
+      ],
+      "description": [
+        "将煤油送入加热的馏分塔，得到汽油和石脑油。原油分馏也可以直接得到汽油。"
+      ]
+    },
+    "27CAE5D991F9DC02": {
+      "dependencies": [
+        "7CE3BF3F7F7FC1D9"
+      ],
+      "description": [
+        "将杂酚油送入加热的馏分塔，收集苯酚和轻烯烃。"
+      ]
     },
     "2849DC36ACEA7681": {
       "description": [
@@ -229,6 +316,15 @@
       "item": "immersiveengineering:graphite_electrode",
       "title": "石墨电极"
     },
+    "2B95E0E6947D013C": {
+      "title": "搭建沉浸工程精炼机",
+      "description": [
+        "按工程师手册搭建精炼机并使用工程师锤成型。精炼机可以将轻硅醚聚合成聚硅醚。"
+      ]
+    },
+    "2D951F610143CD64": {
+      "item": "ae2:fluix_glass_cable"
+    },
     "2EEB9E3820876037": {
       "description": [
         "在符合灌注参数的附魔台上，把简易缰绳灌注成末影缰绳。用它捕获并放出可移动的实体。"
@@ -239,6 +335,9 @@
       "count": 1,
       "item": "immersiveengineering:dust_hop_graphite",
       "title": "HOP 石墨粉"
+    },
+    "32C9986340F70115": {
+      "item": "steam_letters:steam_bucket"
     },
     "3B1D5348B5A8BD6B": {
       "item": "create:belt_connector",
@@ -261,9 +360,20 @@
     "3E20D5A765941B2F": {
       "title": "机械锯"
     },
+    "3FACF1F2E75FE4B9": {
+      "title": "沉浸工程精炼机",
+      "description": [
+        "按工程师手册搭建并通电。装入相应催化板，进行柴油蒸汽裂化和后续聚合。"
+      ]
+    },
     "3FF4ADB3B848C7B8": {
       "item": "cmi:lime_dust",
       "title": "石灰粉"
+    },
+    "402B55C12A4ED522": {
+      "description": [
+        "在沉浸工程精炼机中用铜板催化乙烯醇。"
+      ]
     },
     "409B5C27935118BC": {
       "title": "通电熔炼机"
@@ -282,6 +392,11 @@
     "480B40A95C829304": {
       "title": "自动合成器"
     },
+    "4A878E92E1DB07B7": {
+      "description": [
+        "在机械动力搅拌盆中混合结构塑胶、铝板和锇板。"
+      ]
+    },
     "4BD569E3A936DF9D": {
       "title": "机械压机"
     },
@@ -299,11 +414,22 @@
       "icon": "create:belt_connector",
       "title": "制作传动带"
     },
+    "56D073BB3E76055E": {
+      "title": "试产导电合金",
+      "description": [
+        "在末影接口合金炉中，用铜和硅生产导电合金。也可使用新版自带的铁和铜配方。"
+      ]
+    },
     "5B02E6F0F60D4F82": {
       "description": [
         "搭建 Hexa 冶炼炉，可熔融材料并将流体引到浇铸部件。"
       ],
       "title": "冶炼炉控制器"
+    },
+    "5E07A1EE010AE757": {
+      "description": [
+        "用加热的机械动力搅拌盆，混合硅和轻烯烃。"
+      ]
     },
     "5E27D7AA09845E57": {
       "title": "酿造台"
@@ -317,8 +443,28 @@
     "625668ADD162887C": {
       "title": "粉碎轮"
     },
+    "62C926D671A9DB11": {
+      "description": [
+        "将裂化柴油送入加热的馏分塔，收集乙炔和轻醛烃。"
+      ]
+    },
     "630DD3536DFF8D25": {
       "item": "immersiveengineering:graphite_electrode"
+    },
+    "639D08D2B1E91748": {
+      "description": [
+        "在沉浸工程精炼机中用钒板将柴油和蒸汽裂化。"
+      ]
+    },
+    "654FBA59B16DF4C6": {
+      "description": [
+        "用沉浸工程精炼机将汽油和 Steam Letters 蒸汽裂化，钒板作为催化剂。"
+      ]
+    },
+    "693C6976F07FA0F5": {
+      "description": [
+        "在沉浸工程精炼机中用铜板催化轻硅醚。"
+      ]
     },
     "6C3E873376A0F04E": {
       "description": [
@@ -329,11 +475,21 @@
     "6E0DADD45A07ABA5": {
       "title": "注液器"
     },
+    "6F6E8C0FABC99119": {
+      "icon": "mekanism:basic_pressurized_tube",
+      "title": "可选：通用机械化学品物流",
+      "description": [
+        "用通用机械基础加压管连接化学品设备，配置输出和输入方向，核对两端化学品罐的变化。线路可换用更高等级的加压管。"
+      ]
+    },
     "71540ED470BA2932": {
       "description": [
         "由流体管供液，用注液器向传送带上的物品注液。"
       ],
       "title": "注液器"
+    },
+    "71C840F5E444303B": {
+      "advancement": "immersiveengineering:multiblocks/mb_refinery"
     },
     "74A6E21C20513CEE": {
       "title": "传动带密封"
@@ -341,15 +497,52 @@
     "75E8DEF5FAC54F11": {
       "title": "注液器"
     },
+    "762D51AFDCA86F29": {
+      "description": [
+        "把米和水放入装有柴油发电机发酵盖的搅拌盆，或用沉浸工程发酵机处理米。"
+      ]
+    },
+    "7686008595B8C539": {
+      "title": "预处理原油桶",
+      "dependencies": [
+        "7CE3BF3F7F7FC1D9"
+      ],
+      "description": [
+        "用加热的机械动力搅拌盆混合原油和水，得到预处理原油。"
+      ]
+    },
     "77B944C2713E84EF": {
       "title": "离心机"
+    },
+    "77C1F236B853FAAE": {
+      "dependencies": [
+        "7CE3BF3F7F7FC1D9"
+      ],
+      "description": [
+        "将杂酚油送入加热的馏分塔，得到轻烯烃和苯酚。"
+      ]
     },
     "7A5EDFB0C09B56D0": {
       "item": "immersiveengineering:coal_coke",
       "title": "煤焦炭"
     },
+    "7C3428E9D5F8696F": {
+      "description": [
+        "用沉浸工程精炼机和铜板混合轻醛烃与聚乙烯醇。"
+      ]
+    },
     "7CC14049CEA95A84": {
       "title": "机械压机"
+    },
+    "7FA0A97798CCF465": {
+      "description": [
+        "在加热的搅拌盆中混合原油和水，将预处理原油送入加热的四层馏分塔，收集沥青、含硫柴油和煤油。"
+      ],
+      "omit_tasks": [
+        "00351882645FD71B",
+        "68D29CDA999C012F",
+        "0C6E96F4E1CD26B5"
+      ]
     },
     "7FDB7DDAD23BB4C1": {
       "description": [

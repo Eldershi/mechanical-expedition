@@ -19,7 +19,8 @@ final class ConvertItemFilters {
     private static final Pattern RESOURCE_ID = Pattern.compile("[a-z0-9_.-]+:[a-z0-9_.\\-/]+");
     private static final Set<String> STACK_FIELDS = Set.of("item", "icon");
     private static final Set<String> OBJECT_FIELDS = Set.of(
-            "title", "subtitle", "description", "icon", "item", "count", "dependencies");
+            "title", "subtitle", "description", "icon", "item", "count",
+            "dependencies", "advancement", "omit_tasks");
 
     private record ConvertedFile(Path relative, CompoundTag contents, int count) {}
     private record Mappings(CompoundTag items, CompoundTag tags, CompoundTag stacks, CompoundTag objects) {
@@ -91,7 +92,25 @@ final class ConvertItemFilters {
             if (mappings.objects().contains(id)) {
                 var fields = mappings.objects().getCompound(id);
                 requireKeys(fields, OBJECT_FIELDS);
-                for (String key : fields.getAllKeys()) tag.put(key, fields.get(key).copy());
+                for (String key : fields.getAllKeys()) {
+                    switch (key) {
+                        case "omit_tasks" -> omitTasks(tag, fields.getList(key, Tag.TAG_STRING));
+                        case "advancement" -> {
+                            if (!itemTask || !tag.getString("type").equals("item")) {
+                                throw new IllegalArgumentException("Expected item task " + id);
+                            }
+                            tag.remove("item");
+                            tag.remove("count");
+                            tag.remove("consume_items");
+                            tag.remove("only_from_crafting");
+                            tag.remove("match_components");
+                            tag.putString("type", "advancement");
+                            tag.putString("advancement", resource(fields.getString(key)));
+                            tag.putString("criterion", "");
+                        }
+                        default -> tag.put(key, fields.get(key).copy());
+                    }
+                }
             }
             for (String key : List.copyOf(tag.getAllKeys())) {
                 Tag child = tag.get(key);
@@ -108,6 +127,19 @@ final class ConvertItemFilters {
             for (Tag entry : list) converted += convert(entry, mappings, itemTask);
         }
         return converted;
+    }
+
+    private static void omitTasks(CompoundTag quest, ListTag omitted) {
+        ListTag tasks = quest.getList("tasks", Tag.TAG_COMPOUND);
+        if (omitted.isEmpty() || omitted.size() >= tasks.size()) {
+            throw new IllegalArgumentException("Quest must keep at least one task: " + quest.getString("id"));
+        }
+        for (Tag item : omitted) {
+            String id = item.getAsString();
+            if (!tasks.removeIf(task -> ((CompoundTag) task).getString("id").equals(id))) {
+                throw new IllegalArgumentException("Unknown task " + id + " in " + quest.getString("id"));
+            }
+        }
     }
 
     private static Tag mapStack(Tag node, Mappings mappings) {

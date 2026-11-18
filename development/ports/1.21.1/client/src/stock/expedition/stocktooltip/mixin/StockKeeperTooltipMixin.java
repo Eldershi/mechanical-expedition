@@ -1,4 +1,4 @@
-package expedition.storage.mixin;
+package expedition.stocktooltip.mixin;
 
 import com.simibubi.create.content.logistics.BigItemStack;
 import net.minecraft.world.item.ItemStack;

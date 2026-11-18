@@ -65,9 +65,10 @@ def build(source, target, tinkers_namespace):
         destination = target / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(converted)
-    for name in ("Bindings.js", "CmiIndustrialMaterials.js", "CmiMechanisms.js",
-                 "CmiMineralsAndPeat.js", "CmiMoltenMetals.js", "CmiProcessFluids.js",
-                 "CmiSteamDevices.js"):
+    for name in ("Bindings.js", "CmiIndustrialMaterials.js", "CmiLubricant.js",
+                 "CmiMechanisms.js", "CmiMineralsAndPeat.js", "CmiMoltenMetals.js",
+                 "CmiOilFluids.js", "CmiPolymerMaterials.js", "CmiProcessFluids.js",
+                 "CmiSiliconeFluids.js", "CmiSteamDevices.js"):
         shutil.copyfile(HERE / name, target / name)
 
 
