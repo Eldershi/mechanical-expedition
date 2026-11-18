@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Stage supported Hexa tools from Create vault recovery into a migrated region copy."""
+"""Stage supported Hexa tools and Nebula materials from Create vault recovery."""
 
 import argparse
 from collections import defaultdict
@@ -8,7 +8,7 @@ from pathlib import Path
 import sys
 from tempfile import TemporaryDirectory
 
-from nbtlib import Compound, Int, List, load
+from nbtlib import Compound, Int, List, String, load
 
 from export_legacy_tools import LEGACY, TOOLS, convert_stack
 
@@ -19,16 +19,19 @@ from prepare_region_copy import SECTOR, replace_chunk
 
 VAULT = "create:item_vault"
 TARGET_VERSION = 3955
+NEBULA_MATERIALS = {"nebula_tinker:spider_fang"}
 
 
-def candidates(recovery, report):
+def candidates(recovery, report, include_nebula):
     locations = set()
     for index, entry in enumerate(recovery.get("Stacks", ())):
         original = entry.get("OriginalStack", {})
         item = str(original.get("id", ""))
+        tool = item.startswith(LEGACY) and item.removeprefix(LEGACY) in TOOLS
+        nebula_material = include_nebula and item in NEBULA_MATERIALS
         if (entry.get("BlockEntity") != VAULT
                 or entry.get("Reason") not in {"missing_item_id", "unverified_mod_payload"}
-                or not item.startswith(LEGACY) or item.removeprefix(LEGACY) not in TOOLS
+                or not (tool or nebula_material)
                 or "Slot" not in original):
             continue
         position = tuple(map(int, entry["BlockPos"]))
@@ -38,9 +41,15 @@ def candidates(recovery, report):
             raise ValueError(f"Duplicate tool recovery entry at {position}, slot {slot}")
         locations.add((position, slot))
         try:
-            stack = convert_stack(original)
-            if int(stack["count"]) != 1:
-                raise ValueError("Expected one tool")
+            if nebula_material:
+                count = int(original.get("Count", 0))
+                if set(original) != {"id", "Count", "Slot"} or not 1 <= count <= 64:
+                    raise ValueError("Expected an unmodified Nebula material stack")
+                stack = Compound({"id": String(item), "count": Int(count)})
+            else:
+                stack = convert_stack(original)
+                if int(stack["count"]) != 1:
+                    raise ValueError("Expected one tool")
         except ValueError as error:
             report["withheld"].append(dict(details, reason=str(error)))
             continue
@@ -74,10 +83,10 @@ def restore_chunk(chunk, entries, report, completed):
     return changed
 
 
-def stage_tools(target, recovery, output):
+def stage_tools(target, recovery, output, include_nebula=False):
     report = {"restored": [], "already_valid": [], "withheld": [], "regions": []}
     regions = defaultdict(lambda: defaultdict(list))
-    for entry in candidates(recovery, report):
+    for entry in candidates(recovery, report, include_nebula):
         x, _, z = entry[1]["position"]
         regions[(x // 512, z // 512)][(x // 16, z // 16)].append(entry)
 
@@ -115,6 +124,8 @@ def main():
     parser.add_argument("--target-regions", required=True, type=Path, help="Region directory of a stopped migration copy")
     parser.add_argument("--vault-recovery", required=True, type=Path, help="Remaining Create vault recovery NBT")
     parser.add_argument("--output", required=True, type=Path, help="New directory for changed region files and recovery")
+    parser.add_argument("--include-nebula", action="store_true",
+                        help="Recover supported materials when the Nebula Tinker adapter is installed")
     args = parser.parse_args()
     target, output = args.target_regions.resolve(), args.output.resolve()
     if not target.is_dir() or output.exists() or target in output.parents:
@@ -123,7 +134,7 @@ def main():
     with TemporaryDirectory(prefix="foundry-tools-", dir=output.parent) as temp:
         stage = Path(temp) / "regions"
         stage.mkdir()
-        report = stage_tools(target, load(args.vault_recovery), stage)
+        report = stage_tools(target, load(args.vault_recovery), stage, args.include_nebula)
         (stage / "foundry-tool-report.json").write_text(json.dumps(report, indent=2) + "\n")
         if output.exists():
             raise FileExistsError(output)
