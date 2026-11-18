@@ -29,10 +29,12 @@ def migrate_overworld(generator):
     generator["biome_source"]["biomes"] = without(
         generator["biome_source"]["biomes"], lambda item: item["biome"] == REMOVED_BIOME
     )
-    rules = generator["settings"]["surface_rule"]["base"]
-    rules["sequence"] = without(
-        rules["sequence"], lambda rule: list(rule.get("if_true", {}).get("biome_is", ())) == [REMOVED_BIOME]
-    )
+    for node in compounds(generator["settings"]["surface_rule"]):
+        if node.get("type") == "minecraft:sequence":
+            node["sequence"] = without(
+                node["sequence"],
+                lambda rule: list(rule.get("if_true", {}).get("biome_is", ())) == [REMOVED_BIOME],
+            )
 
 
 def without(current, drop):

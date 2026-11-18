@@ -12,17 +12,20 @@ import zlib
 
 import nbtlib
 
+from prepare_create_railway import convert_curve
+
 
 SECTOR = 4096
 OLD_SPAWNER = "tongdarailway_for_forge:track_spawner"
 NEW_SPAWNER = nbtlib.String("tongdarailway:track_spawner")
+CREATE_TRACK = "create:track"
 EIDOLON_ORES = {
     f"eidolon:{ore}": nbtlib.String(f"eidolon_repraised:{ore}")
     for ore in ("silver_ore", "lead_ore", "deep_silver_ore", "deep_lead_ore")
 }
 
 
-def converted_blocks(chunk, tracks, ores):
+def converted_blocks(chunk, tracks, ores, create_curves):
     for section in chunk.get("sections", ()):
         for state in section.get("block_states", {}).get("palette", ()):
             name = str(state["Name"])
@@ -32,11 +35,16 @@ def converted_blocks(chunk, tracks, ores):
             elif ores and name in EIDOLON_ORES:
                 state["Name"] = EIDOLON_ORES[name]
                 yield f"palette_entries/{name}"
-    if tracks:
+    if tracks or create_curves:
         for entity in chunk.get("block_entities", ()):
-            if entity.get("id") == OLD_SPAWNER:
+            kind = entity.get("id")
+            if tracks and kind == OLD_SPAWNER:
                 entity["id"] = NEW_SPAWNER
                 yield "spawner_block_entities"
+            elif create_curves and kind == CREATE_TRACK:
+                for connection in entity.get("Connections", ()):
+                    if convert_curve(connection):
+                        yield "create_bezier_connections"
 
 
 def read_payload(data, offset, coords):
@@ -66,7 +74,7 @@ def replace_chunk(data, position, offset, previous_sectors, chunk):
     data[position : position + 4] = (offset // SECTOR).to_bytes(3, "big") + bytes([sectors])
 
 
-def rewrite(path, target, fresh, tracks, ores):
+def rewrite(path, target, fresh, tracks, ores, create_curves):
     regions = path.name.split(".")[1:3]
     base_x, base_z = (int(coord) * 32 for coord in regions)
     data = bytearray(path.read_bytes())
@@ -76,6 +84,8 @@ def rewrite(path, target, fresh, tracks, ores):
         prefixes.append(OLD_SPAWNER.encode())
     if ores:
         prefixes.extend(name.encode() for name in EIDOLON_ORES)
+    if create_curves:
+        prefixes.append(CREATE_TRACK.encode())
     if len(data) < 2 * SECTOR:
         return counts
     for i in range(1024):
@@ -96,7 +106,7 @@ def rewrite(path, target, fresh, tracks, ores):
             data[SECTOR + position : SECTOR + position + 4] = bytes(4)
             counts["proto_chunks_cleared"] += 1
             continue
-        changes = list(converted_blocks(chunk, tracks, ores))
+        changes = list(converted_blocks(chunk, tracks, ores, create_curves))
         if changes:
             replace_chunk(data, position, offset, previous_sectors, chunk)
             counts.update(changes)
@@ -113,6 +123,7 @@ def main():
     parser.add_argument("--target-regions", required=True, type=Path)
     parser.add_argument("--track-spawners", action="store_true")
     parser.add_argument("--eidolon-ores", action="store_true")
+    parser.add_argument("--create-curves", action="store_true")
     parser.add_argument("--fresh-neighbor", action="append", nargs=2, type=int, metavar=("X", "Z"), default=[])
     options = parser.parse_args()
     if options.source_regions.resolve() == options.target_regions.resolve():
@@ -120,7 +131,8 @@ def main():
     selected = {tuple(point) for point in options.fresh_neighbor}
     report = Counter()
     for source in sorted(options.source_regions.glob("r.*.mca")):
-        report.update(rewrite(source, options.target_regions, selected, options.track_spawners, options.eidolon_ores))
+        report.update(rewrite(source, options.target_regions, selected, options.track_spawners,
+                              options.eidolon_ores, options.create_curves))
     print(json.dumps(report, indent=2, sort_keys=True))
 
 
