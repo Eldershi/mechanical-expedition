@@ -109,5 +109,11 @@
   },
   "lodestone": {
     "status": "no_remaining_dependents"
+  },
+  "forbidden_arcanus": {
+    "status": "removed_by_pack_policy"
+  },
+  "valhelsia_core": {
+    "status": "no_remaining_dependents"
   }
 }

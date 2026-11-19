@@ -977,7 +977,10 @@
     "c:netherrack": "#c:netherracks",
     "thermal:dynamos": "mekanismgenerators:heat_generator"
   },
-  "retired_chapters": ["research_adventure_b_malum"],
+  "retired_chapters": [
+    "research_adventure_b_malum",
+    "research_adventure_b_forbidden_arcanus"
+  ],
   "retired_quests": [
     "7022767445259A4A",
     "5AF90A54B8D29AE1",
