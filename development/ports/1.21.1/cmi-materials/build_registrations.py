@@ -11,7 +11,7 @@ from zipfile import ZipFile
 HERE = Path(__file__).resolve().parent
 MATERIALS = ("Dusts", "Gears", "Gems", "Ingots", "Plates", "RawOres", "Rods", "Wafer", "Wires")
 ITEMS = ("Basic", "Cells", "Incompletes", "Molds")
-MECHANISMS = ("Augment", "Basement", "Flashdrive", "Parts", "Random")
+MECHANISMS = ("Augment", "Basement", "Flashdrive", "Parts")
 SOURCE_FILES = (
     *(f"material/{name}.js" for name in MATERIALS),
     *(f"item/{name}.js" for name in ITEMS),
@@ -68,6 +68,7 @@ def convert(relative, source, tinkers_namespace):
 
 
 def build(source, target, tinkers_namespace):
+    (target / "item/mechanism/Random.js").unlink(missing_ok=True)
     for relative in SOURCE_FILES:
         converted = convert(relative, (source / relative).read_text(), tinkers_namespace)
         destination = target / relative
