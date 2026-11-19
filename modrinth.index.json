@@ -3395,15 +3395,15 @@
       }
     },
     {
-      "path": "mods/lithostitched-1.8.0-neoforge-21.1.jar",
+      "path": "mods/lithostitched-1.8.1-neoforge-21.1.jar",
       "hashes": {
-        "sha1": "fe7eb612a0fa0c41ce94d914162d298755bb25a3",
-        "sha512": "0ba80383039270dec739f669fe936d091b87027c350972c88085729333e73e723e0c722d734c0592c08ffd6c5a21c16099f2e54cf7cfbcbd3061f5e3cbd62cb4"
+        "sha1": "88cdded5b617e19b4d2676948b5550699de23578",
+        "sha512": "6c02b8b269269d5aa84cb03bf824a1b5d52838e806c2fec8727eb4049925592dac9bb65c996858751fbb722f22ac59c4be09860e1f01e8f7b97c95be3faf7a57"
       },
       "downloads": [
-        "https://cdn.modrinth.com/data/XaDC71GB/versions/sPmtDq1X/lithostitched-1.8.0-neoforge-21.1.jar"
+        "https://cdn.modrinth.com/data/XaDC71GB/versions/cZu4cHY3/lithostitched-1.8.1-neoforge-21.1.jar"
       ],
-      "fileSize": 979783,
+      "fileSize": 1023751,
       "env": {
         "client": "required",
         "server": "unsupported"
@@ -3905,15 +3905,15 @@
       }
     },
     {
-      "path": "mods/quest_enhance-1.21.1-neoforge-3.14.jar",
+      "path": "mods/quest_enhance-1.21.1-neoforge-3.15.jar",
       "hashes": {
-        "sha1": "e9c61538eb516b42a62dae041bc88b32a0dcf960",
-        "sha512": "5aee5f8f5fabe02018815579b7806965ea3a131b5646ffdcc1887a4856c065dfb04dbdabdd2371bcd154b79965bb07c5b91694f81e55fc2a7033c6390c801f09"
+        "sha1": "7a8225e29beceec119de402caed4f39b4ab3b40e",
+        "sha512": "67f6bb10b9cafbcfec80f1a707b358cad4b6227c515a61893a4e7ffc850131ed23281e4476deee2790aa12c7d6c3d607040409d7da8f122cce6b5433d115f713"
       },
       "downloads": [
-        "https://edge.forgecdn.net/files/9452/880/quest_enhance-1.21.1-neoforge-3.14.jar"
+        "https://edge.forgecdn.net/files/9683/092/quest_enhance-1.21.1-neoforge-3.15.jar"
       ],
-      "fileSize": 393561,
+      "fileSize": 393704,
       "env": {
         "client": "required",
         "server": "unsupported"
@@ -4214,6 +4214,21 @@
         "https://cdn.modrinth.com/data/QqRDfnxk/versions/iolnC0bu/stock-keeper-bookmarks-neoforge-1.21.1-1.0.0.jar"
       ],
       "fileSize": 100869,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/streq-1.0.10.jar",
+      "hashes": {
+        "sha1": "8df7e87da300deb288de26295ecd2fe05e67c07b",
+        "sha512": "4ba07de342435d1ba381706598cee740dae5288d307fb8c5e86ff62f521b85fb2e8d40e263bb57473cc3fdcd45443218ac5c9203440c820a97dad13a580bf47c"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/STXpfCzs/versions/W2zYcA2c/streq-1.0.10.jar"
+      ],
+      "fileSize": 15788,
       "env": {
         "client": "required",
         "server": "unsupported"
