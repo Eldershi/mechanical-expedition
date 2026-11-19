@@ -27,4 +27,4 @@ Minecraft 1.21.1、NeoForge 21.1.267、Java 21。客户端和服务端使用同�
 
 使用带 `nbtlib` 的 Python 和 Java 21 执行 `install.py --client <client> --server <server> --java <java>`，部署到停止的测试实例。结构层布局在 `structures.json`，可用 `build_structures.py <out> --fixtures <json>` 生成结构和装配坐标。配方和任务位于 `overlay`，服务端状态和事件逻辑位于 `src`。
 
-在一次性世界中，可给上级 `build.py` 加 `--space-proof`。将生成的装配坐标 JSON 放到专用服根目录并命名为 `space-fixtures.json`。执行 `expeditionspaceproof run` 检查结构与配方、自动装货、双向三批、接收端满载和交付计数。正常保存关闭并重启后执行 `expeditionspaceproof reload` 验证货物和进度持久化。正式测试包使用普通构建。
+在一次性世界中，可给上级 `build.py` 加 `--space-proof`。将生成的装配坐标 JSON 放到专用服根目录并命名为 `space-fixtures.json`。执行 `expeditionspaceproof run` 检查结构与配方、自动装货、双向三批、接收端满载和交付计数。正常保存关闭并重启后执行 `expeditionspaceproof reload` 验证货物和进度持久化。用 `expeditionspaceproof air` 验证原生气罐装气、呼吸与战斗用气隔离、气闸和温度行为。用 `expeditionspaceproof gate` 检查货运与地牢凭据门槛、异界到达记录和回程。正式测试包使用普通构建。

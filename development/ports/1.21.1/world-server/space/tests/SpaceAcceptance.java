@@ -18,6 +18,7 @@ import com.lowdragmc.mbd2.api.machine.IMultiController;
 import com.lowdragmc.mbd2.common.machine.MBDMultiblockMachine;
 import com.lowdragmc.mbd2.common.trait.forgeenergy.ForgeEnergyCapabilityTrait;
 import expedition.space.FreightData.Key;
+import io.netty.channel.embedded.EmbeddedChannel;
 import expedition.space.FreightData.Role;
 import expedition.space.FreightData.Station;
 import java.nio.file.Files;
@@ -38,6 +39,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.common.NeoForge;
@@ -52,6 +54,7 @@ public final class SpaceAcceptance {
     private long started;
     private Station earth;
     private Station moon;
+    private Station gate;
 
     public SpaceAcceptance() {
         NeoForge.EVENT_BUS.addListener(this::commands);
@@ -74,6 +77,16 @@ public final class SpaceAcceptance {
                 return 1;
             })).then(Commands.literal("air").executes(context -> {
                 proveAir(context.getSource().getServer());
+                return 1;
+            })).then(Commands.literal("gate").executes(context -> {
+                MinecraftServer server = context.getSource().getServer();
+                gate = place(server.getLevel(SpaceLogistics.MOON), Role.GATE, new BlockPos(5, 150, 6), false);
+                ServerLevel level = server.getLevel(SpaceLogistics.MOON);
+                for (BlockPos pos : BlockPos.betweenClosed(gate.pos.offset(-3,-1,-3), gate.pos.offset(3,-1,3))) {
+                    level.setBlock(pos, Blocks.SMOOTH_STONE.defaultBlockState(), Block.UPDATE_ALL);
+                }
+                started = server.overworld().getGameTime();
+                phase = 6;
                 return 1;
             })));
     }
@@ -190,6 +203,11 @@ public final class SpaceAcceptance {
                     phase = 0;
                     System.out.println("EXPEDITION_SPACE_FREIGHT_PASS");
                 }
+                case 6 -> {
+                    if (elapsed < 40) return;
+                    phase = 0;
+                    proveGate(server, data);
+                }
                 default -> throw new IllegalStateException("unknown proof phase");
             }
         } catch (Exception error) {
@@ -197,6 +215,39 @@ public final class SpaceAcceptance {
             error.printStackTrace();
             System.out.println("EXPEDITION_SPACE_PROOF_FAILED");
         }
+    }
+
+    private void proveGate(MinecraftServer server, FreightData data) {
+        require(data.stable(TEAM) && SpaceLogistics.operational(server, gate), "gate fixture or persisted freight");
+        var moon = server.getLevel(SpaceLogistics.MOON);
+        var actor = FakePlayerFactory.get(moon, new GameProfile(TEAM, "SpaceGateTest"));
+        var channel = new EmbeddedChannel(actor.connection.getConnection());
+        try {
+            exerciseGate(data, moon, actor);
+        } finally {
+            channel.finishAndReleaseAll();
+        }
+    }
+
+    private void exerciseGate(FreightData data, ServerLevel moon, net.minecraft.server.level.ServerPlayer actor) {
+        data.milestones.remove(TEAM);
+        data.returnGates.remove(TEAM);
+        data.setDirty();
+        actor.setPos(gate.pos.getX() + .5, gate.pos.getY(), gate.pos.getZ() - 1.5);
+        var energy = controller(moon, gate.pos).getTraitByName(ForgeEnergyCapabilityTrait.class, "forge_energy_storage");
+        for (int i = 0; i < 5; i++) energy.getStorage().receiveEnergy(4_000, false);
+        var hit = new BlockHitResult(gate.pos.getCenter(), Direction.NORTH, gate.pos, false);
+        require(!SpaceLogistics.mayUseOtherPad(actor), "first native pad visit should be locked");
+        NeoForge.EVENT_BUS.post(new PlayerInteractEvent.RightClickBlock(actor, InteractionHand.MAIN_HAND, gate.pos, hit));
+        require(!data.returnGates.containsKey(TEAM) && actor.level().dimension().equals(SpaceLogistics.MOON), "premature gate use");
+        data.mark(TEAM, FreightData.DUNGEON);
+        NeoForge.EVENT_BUS.post(new PlayerInteractEvent.RightClickBlock(actor, InteractionHand.MAIN_HAND, gate.pos, hit));
+        require(actor.level().dimension().equals(SpaceLogistics.OTHER), "lunar gate did not reach The Other");
+        require(SpaceLogistics.mayUseOtherPad(actor), "native pad did not unlock on arrival");
+        actor.setItemSlot(EquipmentSlot.MAINHAND, item("expedition_space:lunar_signature"));
+        NeoForge.EVENT_BUS.post(new PlayerInteractEvent.RightClickItem(actor, InteractionHand.MAIN_HAND));
+        require(actor.level().dimension().equals(SpaceLogistics.MOON), "signature did not return to the moon");
+        System.out.println("EXPEDITION_SPACE_GATE_PASS");
     }
 
     private static void proveAir(MinecraftServer server) {
