@@ -22,6 +22,8 @@ ServerEvents.recipes(event => {
   event.blasting('cmi:titanium_ingot', 'cmi:raw_titanium').xp(0.7).id(path + 'titanium_ingot')
   event.blasting('ad_astra:etrium_ingot', 'cmi:raw_etrium').xp(0.7).id(path + 'etrium_ingot')
   create.milling('cmi:etrium_dust', 'ad_astra:etrium_ingot').id(path + 'etrium_dust')
+  create.crushing('2x cmi:glacian_chunk', 'ad_astra:glacian_log').id(path + 'glacian_chunk_crushing')
+  create.milling('2x cmi:glacian_chunk', 'ad_astra:glacian_log').id(path + 'glacian_chunk_milling')
   create.mixing('cmi:titanium_alloy_ingot', [
     Ingredient.of('#c:ingots/titanium'), Ingredient.of('#c:ingots/chromium')
   ]).superheated().id(path + 'titanium_alloy')

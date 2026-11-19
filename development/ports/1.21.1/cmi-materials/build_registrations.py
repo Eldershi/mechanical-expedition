@@ -52,6 +52,10 @@ def convert(relative, source, tinkers_namespace):
             "", source,
         )
         source = re.sub(
+            r'(?m)^\taddMaterial\("platinum_ore_chunk"\)\n(?:\t\t\.(?:texture|tag)\([^\n]+\n)+\n',
+            "", source,
+        )
+        source = re.sub(
             r'(let casingFrame = \[[^\]]*?)\t\t"bronze",\n',
             r'\g<1>',
             source,
