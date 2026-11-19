@@ -1,0 +1,28 @@
+{
+  "perStat": {
+    "default": [
+      {
+        "level": 1,
+        "name": "modernfoundry:reinforced"
+      }
+    ],
+    "modernfoundry:melee_harvest": [
+      {
+        "level": 1,
+        "name": "modernfoundry:haste"
+      }
+    ],
+    "modernfoundry:armor": [
+      {
+        "level": 1,
+        "name": "modernfoundry:speedy"
+      }
+    ],
+    "modernfoundry:ranged": [
+      {
+        "level": 1,
+        "name": "modernfoundry:featherweight"
+      }
+    ]
+  }
+}

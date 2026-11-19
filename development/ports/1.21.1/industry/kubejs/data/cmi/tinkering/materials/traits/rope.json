@@ -1,0 +1,10 @@
+{
+  "perStat": {
+    "default": [
+      {
+        "level": 1,
+        "name": "modernfoundry:stringy"
+      }
+    ]
+  }
+}

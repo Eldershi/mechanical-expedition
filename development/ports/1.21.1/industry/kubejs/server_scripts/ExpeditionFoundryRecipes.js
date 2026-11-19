@@ -29,6 +29,26 @@ ServerEvents.recipes(event => {
     }).id(id)
   })
 
+  const bronzeNuggetCast = path + 'bronze_nugget_cast'
+  event.custom({
+    type: 'modernfoundry:casting_table',
+    id: bronzeNuggetCast,
+    cast: { tag: 'c:nuggets' },
+    cast_consumed: true,
+    fluid: { tag: 'c:molten_bronze', amount: 360 },
+    result: { item: 'cmi:bronze_nugget_cast' },
+    cooling_time: 57
+  }).id(bronzeNuggetCast)
+
+  const bloodSlime = path + 'blood_slime_ball'
+  event.custom({
+    type: 'modernfoundry:casting_table',
+    id: bloodSlime,
+    fluid: { fluid: 'biomesoplenty:blood', amount: 250 },
+    result: { item: 'cmi:blood_slime_ball' },
+    cooling_time: 20
+  }).id(bloodSlime)
+
   const recycled = [
     ['iron_basement', 'cmi:iron_mechanism_basement', 'modernfoundry:molten_iron', 90, 1535],
     ['copper_basement', 'cmi:copper_mechanism_basement', 'modernfoundry:molten_copper', 90, 1085],

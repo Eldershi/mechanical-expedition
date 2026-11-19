@@ -1,0 +1,10 @@
+{
+  "type": "modernfoundry:material_melting",
+  "id": "expedition:foundry/ostrum_part_melting",
+  "input": "cmi:ostrum",
+  "result": {
+    "fluid": "cmi:molten_ostrum",
+    "amount": 90
+  },
+  "temperature": 2425
+}

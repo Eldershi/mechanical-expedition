@@ -20,7 +20,8 @@ ServerEvents.recipes(event => {
   }).id('expedition:factory/hammer_head')
   const frameworks = [
     ['andesite', '#c:plates/andesite_alloy'],
-    ['brass', '#c:plates/brass']
+    ['brass', '#c:plates/brass'],
+    ['copper', '#c:plates/copper']
   ]
   frameworks.forEach(([metal, plate]) => {
     const framework = `cmi:${metal}_casing_framework`

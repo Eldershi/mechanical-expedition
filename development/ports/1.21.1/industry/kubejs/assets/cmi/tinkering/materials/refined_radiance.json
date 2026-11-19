@@ -1,0 +1,30 @@
+{
+  "color": "FFEEE8F8",
+  "fallbacks": [
+    "metal"
+  ],
+  "generator": {
+    "supported_stats": [
+      "modernfoundry:head",
+      "modernfoundry:binding",
+      "modernfoundry:handle",
+      "modernfoundry:grip",
+      "modernfoundry:repair_kit"
+    ],
+    "transformer": {
+      "type": "modernfoundry:recolor_sprite",
+      "color_mapping": {
+        "type": "modernfoundry:grey_to_color",
+        "palette": {
+          "000": "FF000000",
+          "063": "FF535157",
+          "102": "FF726F77",
+          "140": "FFAEA9B5",
+          "178": "FFEEE8F8",
+          "216": "FFFFFFFF",
+          "255": "FFFFFFFF"
+        }
+      }
+    }
+  }
+}

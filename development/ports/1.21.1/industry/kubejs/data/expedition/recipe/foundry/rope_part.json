@@ -1,0 +1,10 @@
+{
+  "type": "modernfoundry:material",
+  "id": "expedition:foundry/rope_part",
+  "ingredient": {
+    "item": "farmersdelight:rope"
+  },
+  "value": 1,
+  "needed": 1,
+  "material": "cmi:rope"
+}

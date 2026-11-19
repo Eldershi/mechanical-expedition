@@ -1,0 +1,12 @@
+{
+  "material.cmi.rope": "Rope",
+  "material.cmi.amethyst": "Amethyst",
+  "material.cmi.refined_radiance": "Refined Radiance",
+  "material.cmi.desh": "Desh",
+  "material.cmi.ostrum": "Ostrum",
+  "material.cmi.calorite": "Calorite",
+  "modifier.cmi.extendo": "Extendo",
+  "modifier.cmi.extendo.description": "Increases the plate chestplate wearer’s block and entity reach.",
+  "modifier.cmi.diving": "Diving",
+  "modifier.cmi.diving.description": "Uses air from a Create backtank to breathe underwater."
+}

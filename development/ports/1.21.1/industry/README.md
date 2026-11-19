@@ -10,7 +10,13 @@ The Engineer's Workbench has parallel component blueprints for iron parts, steel
 
 A Create mixer uses concrete powder and water to produce the corresponding sixteen Diesel Generators cement colors. IE liquid concrete cures adjacent sources with the IE Fix Pack. The IE Assembler uses standard crafting patterns for automation.
 
-Stonecutting turns one andesite alloy or brass plate into four matching casing frameworks. A Create deployer applies one framework to a plank for an andesite or brass casing. A brass framework can also be applied to iron bars for a Create: Connected empty fan catalyst. The native casing and fan catalyst recipes remain available.
+Stonecutting turns one andesite alloy, brass or copper plate into four matching casing frameworks. A Create deployer applies one framework to ordinary planks for the corresponding casing. A brass framework can also be applied to iron bars for a Create: Connected empty fan catalyst. The native casing and fan catalyst recipes remain available.
+
+Superheated Create compaction makes two refined radrock from one radrock. A spout adds 100 mB of Mekanism liquid sulfuric acid to one refined radrock. A Vintage Improvements centrifuge separates the acid-washed rock into dense oxide film and toxic paste. Superheated mixing extracts 250 mB of radiation-resistant creosote from one film. A Mekanism Chemical Oxidizer makes radon from the toxic paste, and the Rotary Condensentrator liquefies it. Superheated mixing combines an HDPE sheet with 100 mB each of liquefied radon and radiation-resistant creosote to make an Alex's Caves polymer plate.
+
+Hexa casts a reusable bronze nugget cast with 360 mB of molten bronze and a consumed metal nugget. Bronze and gold nugget casts can both be used in the native nugget casting recipes. The casting table also takes Biomes O' Plenty blood for blood slime.
+
+Rope, amethyst, refined radiance, Desh, Ostrum and Calorite are Hexa tool materials. The space-metal melting temperatures are 2250, 2425 and 2600 °C, within the range of the supplied blazing blood fuel. The foundry supplies parallel casting recipes for eligible gear, plate and ingot forms alongside the existing manufacturing processes. Extendo applies to plate chestplates, and Diving allows a modified plate helmet to use a Create backtank underwater.
 
 The hammer head is crafted from six iron or andesite alloy plates and three corresponding ingots. The Mechanical Press uses its native recipe. The reusable mechanism mold fits the Vintage Improvements Curving Press for mechanism assembly.
 

@@ -1,0 +1,22 @@
+{
+  "perStat": {
+    "modernfoundry:melee_harvest": [
+      {
+        "level": 1,
+        "name": "modernfoundry:lightspeed"
+      }
+    ],
+    "modernfoundry:ranged": [
+      {
+        "level": 1,
+        "name": "modernfoundry:lightspeed"
+      }
+    ],
+    "modernfoundry:ammo": [
+      {
+        "level": 2,
+        "name": "modernfoundry:keen"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "type": "modernfoundry:modifier",
+  "id": "expedition:foundry/diving_modifier",
+  "inputs": [{"tag": "create:diving_helmets"}],
+  "tools": {"item": "modernfoundry:plate_helmet"},
+  "result": "cmi:diving",
+  "level": {"max": 1},
+  "check_trait_level": true,
+  "allow_crystal": true
+}

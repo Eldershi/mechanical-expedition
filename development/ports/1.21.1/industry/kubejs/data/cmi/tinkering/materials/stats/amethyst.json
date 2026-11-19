@@ -1,0 +1,27 @@
+{
+  "stats": {
+    "modernfoundry:head": {
+      "durability": 100,
+      "melee_attack": 1.6,
+      "mining_speed": 6.2,
+      "mining_tier": "minecraft:stone"
+    },
+    "modernfoundry:handle": {
+      "durability": -0.1,
+      "melee_damage": 0.05,
+      "melee_speed": 0,
+      "mining_speed": 0
+    },
+    "modernfoundry:limb": {
+      "accuracy": 0.1,
+      "draw_speed": -0.12,
+      "durability": 230,
+      "velocity": -0.02
+    },
+    "modernfoundry:grip": {
+      "accuracy": 0.2,
+      "durability": -0.1,
+      "melee_damage": 3.2
+    }
+  }
+}

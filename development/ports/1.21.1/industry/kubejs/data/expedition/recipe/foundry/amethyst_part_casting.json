@@ -1,0 +1,10 @@
+{
+  "type": "modernfoundry:material_fluid",
+  "id": "expedition:foundry/amethyst_part_casting",
+  "fluid": {
+    "fluid": "modernfoundry:molten_amethyst",
+    "amount": 90
+  },
+  "output": "cmi:amethyst",
+  "temperature": 800
+}

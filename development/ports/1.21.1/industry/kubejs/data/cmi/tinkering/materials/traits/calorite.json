@@ -1,0 +1,22 @@
+{
+  "perStat": {
+    "default": [
+      {
+        "level": 1,
+        "name": "modernfoundry:enhanced"
+      }
+    ],
+    "modernfoundry:ranged": [
+      {
+        "level": 1,
+        "name": "modernfoundry:ballista"
+      }
+    ],
+    "modernfoundry:armor": [
+      {
+        "level": 2,
+        "name": "modernfoundry:fire_protection"
+      }
+    ]
+  }
+}

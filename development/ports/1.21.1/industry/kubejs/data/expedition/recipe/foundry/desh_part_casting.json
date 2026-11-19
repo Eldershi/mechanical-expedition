@@ -1,0 +1,10 @@
+{
+  "type": "modernfoundry:material_fluid",
+  "id": "expedition:foundry/desh_part_casting",
+  "fluid": {
+    "fluid": "cmi:molten_desh",
+    "amount": 90
+  },
+  "output": "cmi:desh",
+  "temperature": 2250
+}

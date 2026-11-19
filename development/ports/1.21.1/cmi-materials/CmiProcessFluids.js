@@ -9,7 +9,9 @@ StartupEvents.registry('fluid', event => {
     lithium_containing_electrolyte: 0x555100,
     caustic_soda_solution: 0xB8D1B6,
     crystal_catalyt: 0x90EE90,
-    chromium_solution: 0xEBE3E4
+    chromium_solution: 0xEBE3E4,
+    radiation_resistant_creosote: 0x8B2929,
+    radon: 0x00FF00
   }
   Object.keys(colors).forEach(name => {
     const fluid = event.create(`cmi:${name}`)

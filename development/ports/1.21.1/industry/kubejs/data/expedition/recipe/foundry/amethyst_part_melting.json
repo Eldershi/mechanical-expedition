@@ -1,0 +1,10 @@
+{
+  "type": "modernfoundry:material_melting",
+  "id": "expedition:foundry/amethyst_part_melting",
+  "input": "cmi:amethyst",
+  "result": {
+    "fluid": "modernfoundry:molten_amethyst",
+    "amount": 90
+  },
+  "temperature": 800
+}

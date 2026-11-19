@@ -1,0 +1,10 @@
+{
+  "type": "modernfoundry:modifier",
+  "id": "expedition:foundry/extendo_modifier",
+  "inputs": [{"item": "create:deployer"}, {"item": "create:deployer"}],
+  "tools": {"item": "modernfoundry:plate_chestplate"},
+  "result": "cmi:extendo",
+  "level": {"max": 1},
+  "slots": {"upgrades": 2},
+  "allow_crystal": true
+}

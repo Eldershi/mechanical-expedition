@@ -1,0 +1,12 @@
+{
+  "material.cmi.rope": "麻绳",
+  "material.cmi.amethyst": "紫水晶",
+  "material.cmi.refined_radiance": "光辉石",
+  "material.cmi.desh": "戴斯",
+  "material.cmi.ostrum": "紫金",
+  "material.cmi.calorite": "耐热金属",
+  "modifier.cmi.extendo": "长臂猿",
+  "modifier.cmi.extendo.description": "增加板甲胸甲穿戴者的方块和实体交互距离。",
+  "modifier.cmi.diving": "潜水",
+  "modifier.cmi.diving.description": "在水下使用机械动力背罐里的空气呼吸。"
+}

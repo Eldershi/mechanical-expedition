@@ -54,7 +54,8 @@ StartupEvents.registry('item', event => {
 
 StartupEvents.registry('mekanism:chemical', event => {
   for (const [id, color] of [
-    ['mercury_mixture', 0xD2A9FF], ['overheated_mercury_mixture', 0xD2A9FF], ['titanium_oxide', 0x60459E]
+    ['mercury_mixture', 0xD2A9FF], ['overheated_mercury_mixture', 0xD2A9FF],
+    ['titanium_oxide', 0x60459E], ['radon', 0x00FF00]
   ]) event.create('cmi:' + id).tint(color).gaseous()
 })
 StartupEvents.registry('fluid', event => {

@@ -1,0 +1,10 @@
+{
+  "type": "modernfoundry:material_melting",
+  "id": "expedition:foundry/refined_radiance_part_melting",
+  "input": "cmi:refined_radiance",
+  "result": {
+    "fluid": "cmi:molten_refined_radiance",
+    "amount": 90
+  },
+  "temperature": 2106
+}

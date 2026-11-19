@@ -81,7 +81,8 @@ def convert(relative, source, tinkers_namespace):
             "", source,
         )
     elif relative == "material/RawOres.js":
-        source = re.sub(r'(?m)^\s*addAloneRawMaterial\("etrium"\)\n', "\n", source)
+        source = re.sub(r'(?m)^\taddAloneRawMaterial\("(?:ardite|etrium)"\)\n', "", source)
+        source = re.sub(r'(?m)^\taddAloneCrushedRawMaterial\("ardite"\)\n', "", source)
     elif relative == "material/Ingots.js":
         source = source.replace('.rarity("extra_green")', '.rarity("uncommon")')
     if "thermal:" in source or ".modelJson(" in source:

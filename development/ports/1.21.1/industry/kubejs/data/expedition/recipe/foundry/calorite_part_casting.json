@@ -1,0 +1,10 @@
+{
+  "type": "modernfoundry:material_fluid",
+  "id": "expedition:foundry/calorite_part_casting",
+  "fluid": {
+    "fluid": "cmi:molten_calorite",
+    "amount": 90
+  },
+  "output": "cmi:calorite",
+  "temperature": 2600
+}

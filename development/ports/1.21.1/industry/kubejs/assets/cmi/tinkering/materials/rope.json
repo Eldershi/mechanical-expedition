@@ -1,0 +1,28 @@
+{
+  "color": "FFBC9B6F",
+  "fallbacks": [
+    "wood"
+  ],
+  "generator": {
+    "supported_stats": [
+      "modernfoundry:binding",
+      "modernfoundry:bowstring",
+      "modernfoundry:repair_kit"
+    ],
+    "transformer": {
+      "type": "modernfoundry:recolor_sprite",
+      "color_mapping": {
+        "type": "modernfoundry:grey_to_color",
+        "palette": {
+          "000": "FF000000",
+          "063": "FF423627",
+          "102": "FF5A4A35",
+          "140": "FF897151",
+          "178": "FFBC9B6F",
+          "216": "FFE3BC86",
+          "255": "FFFFDC9E"
+        }
+      }
+    }
+  }
+}
