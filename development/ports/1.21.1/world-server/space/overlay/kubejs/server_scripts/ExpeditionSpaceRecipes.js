@@ -26,11 +26,6 @@ ServerEvents.recipes(event => {
     G: 'minecraft:tinted_glass', R: 'cmi:optical_fiber'
   }).id(space + 'insulated_window')
   station('surface_beacon', [[desh, 2], [optics, 2], ['minecraft:redstone_lamp', 1]], 4000)
-  station('satellite_relay', [[desh, 4], [frame, 4], [optics, 4], [avionics, 1]])
-  station('freight_launchpad', [[desh, 4], [frame, 4], [steel, 4], [avionics, 1]])
-  station('space_elevator', [[desh, 4], [panel, 4], ['create:rope_pulley', 1], [avionics, 1]])
-  station('orbital_drop_cannon', [[desh, 4], [steel, 4], [glass, 4], [avionics, 1]])
-  station('other_gate', [[desh, 8], [frame, 4], [optics, 4], ['minecraft:ender_eye', 2]], 32000)
   station('freight_module', [[desh, 4], [steel, 2], ['minecraft:chest', 1], [avionics, 1]], 8000)
   event.shapeless(space + 'freight_remote', ['minecraft:compass', desh, optics]).id(space + 'freight_remote')
   station('life_support_module', [[desh, 2], ['ad_astra:oxygen_gear', 1],

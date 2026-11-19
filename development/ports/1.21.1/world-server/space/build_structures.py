@@ -15,13 +15,30 @@ RADAR = HERE.parent.parent / "radar-mbd2"
 NAMESPACE = "expedition_space"
 GLOBAL = Path("ldlib2/assets/ldlib2/resources/global")
 MACHINES = Path("ldlib2/assets/mbd2/multiblock")
-PARTS = {
-    ".": ("any", None),
-    "A": ("air", None),
-    "R": ("blocks", NAMESPACE + ":riveted_frame"),
-    "P": ("blocks", NAMESPACE + ":structural_panel"),
-    "W": ("blocks", NAMESPACE + ":insulated_window"),
-}
+CONTROLLER = "m"
+ANY = " "
+
+
+def property_pairs(value):
+    block, sep, props = value.partition("[")
+    return block, dict(pair.split("=", 1) for pair in props[:-1].split(",")) if sep else {}
+
+
+def predicate_for(value):
+    if value is None:
+        return Compound({"type": String("any")})
+    if value == "#dut_create:metal_girder":
+        return Compound({"type": String("blocks"), "blocks": List[String]([
+            String("create:metal_girder"), String("create:metal_girder_encased_shaft")
+        ])})
+    if value.startswith("#"):
+        raise ValueError(f"Unmapped pattern tag: {value}")
+    block, props = property_pairs(value)
+    if props:
+        return Compound({"type": String("partial_state"), "block": String(block),
+                         "requirements": List[Compound]([Compound({"property": String(k), "value": String(v)})
+                                                        for k, v in props.items()])})
+    return Compound({"type": String("blocks"), "blocks": List[String]([String(block)])})
 
 
 def write(output, relative, tag):
@@ -41,28 +58,32 @@ def build(output):
         convert(ROOT / "pack/ldlib/assets/mbd2", converted)
         radar = load(converted / MACHINES / "radar_antenna.mb", gzipped=False)["data"]
 
-    markers = [*PARTS, "C"]
-    holders = []
-    for index, marker in enumerate(markers):
-        predicates = []
-        if marker != "C":
-            kind, block = PARTS[marker]
-            predicate = Compound({"type": String(kind)})
-            if block is not None:
-                predicate["blocks"] = List[String]([String(block)])
-            relative = GLOBAL / f"expedition_space_{index}.predicate.nbt"
-            write(output, relative, {"type": String("predicate"), "data": predicate})
-            predicates.append(Compound({"built-in": Byte(0), "path": String(relative.as_posix())}))
-        holders.append(Compound({"facing": String("north"), "isController": Byte(marker == "C"),
-                                 "predicates": List[Compound](predicates)}))
-
     fixtures = {}
-    for name, layers in json.loads((HERE / "structures.json").read_text()).items():
+    for name, definition_data in json.loads((HERE / "structures.json").read_text()).items():
+        layers = definition_data["layout"]
+        part_names = definition_data["blocks"]
+        fixture_states = definition_data.get("fixture_states", {})
+        markers = [ANY, CONTROLLER, *part_names]
+        optional = set(definition_data.get("optional", []))
+        wildcard = GLOBAL / f"expedition_space_{name}_0.predicate.nbt"
+        holders = []
+        for index, marker in enumerate(markers):
+            predicates = []
+            if marker != CONTROLLER:
+                predicate = predicate_for(part_names.get(marker))
+                relative = GLOBAL / f"expedition_space_{name}_{index}.predicate.nbt"
+                write(output, relative, {"type": String("predicate"), "data": predicate})
+                predicates.append(Compound({"built-in": Byte(0), "path": String(relative.as_posix())}))
+                if marker in optional:
+                    predicates.append(Compound({"built-in": Byte(0), "path": String(wildcard.as_posix())}))
+            holders.append(Compound({"facing": String("north"), "isController": Byte(marker == CONTROLLER),
+                                     "predicates": List[Compound](predicates)}))
+
         x_size, y_size, z_size = len(layers[0][0]), len(layers), len(layers[0])
         if any(len(layer) != z_size or any(len(row) != x_size for row in layer) for layer in layers):
             raise ValueError(f"Invalid pattern dimensions: {name}")
         pattern = [layers[y][z][x] for x in range(x_size) for y in range(y_size) for z in range(z_size)]
-        if pattern.count("C") != 1:
+        if pattern.count(CONTROLLER) != 1:
             raise ValueError(f"Expected one controller: {name}")
         project = copy.deepcopy(radar)
         definition = project["definition"]
@@ -94,8 +115,12 @@ def build(output):
         for y, layer in enumerate(layers):
             for z, row in enumerate(layer):
                 for x, marker in enumerate(row):
-                    if marker not in ".A":
-                        cells.append([x, y, z, f"{NAMESPACE}:{name}" if marker == "C" else PARTS[marker][1]])
+                    if marker == ANY:
+                        continue
+                    selected = f"{NAMESPACE}:{name}" if marker == CONTROLLER else part_names[marker]
+                    if selected == "#dut_create:metal_girder":
+                        selected = "create:metal_girder"
+                    cells.append([x, y, z, fixture_states.get(f"{x},{y},{z}", selected)])
         fixtures[name] = cells
     return fixtures
 

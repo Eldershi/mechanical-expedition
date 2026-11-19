@@ -81,7 +81,10 @@ public final class SpaceLogistics {
     }
 
     static boolean correctSupply(int slot, ItemStack stack) {
-        return itemIs(stack, slot == FreightData.CARRIER ? id("freight_module") : FUEL_BUCKET);
+        if (slot == FreightData.CARRIER) {
+            return itemIs(stack, id("carrier_rocket")) || itemIs(stack, id("freight_module"));
+        }
+        return itemIs(stack, FUEL_BUCKET);
     }
 
     static ResourceLocation id(String path) { return ResourceLocation.fromNamespaceAndPath("expedition_space", path); }
@@ -269,8 +272,8 @@ public final class SpaceLogistics {
             if (player != null) tell(player, "active_shipment");
             return;
         }
-        if (role == Role.LAUNCH && (!itemIs(station.getItem(FreightData.CARRIER), id("freight_module"))
-                || !itemIs(station.getItem(FreightData.FUEL), FUEL_BUCKET))) {
+        if (role == Role.LAUNCH && (!correctSupply(FreightData.CARRIER, station.getItem(FreightData.CARRIER))
+                || !correctSupply(FreightData.FUEL, station.getItem(FreightData.FUEL)))) {
             if (player != null) tell(player, "fuel");
             return;
         }

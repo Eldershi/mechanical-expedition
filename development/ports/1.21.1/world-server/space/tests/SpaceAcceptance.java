@@ -27,15 +27,20 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 import net.minecraft.commands.Commands;
+import net.minecraft.commands.arguments.blocks.BlockStateParser;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.CraftingInput;
+import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -83,7 +88,9 @@ public final class SpaceAcceptance {
                 gate = place(server.getLevel(SpaceLogistics.MOON), Role.GATE, new BlockPos(5, 150, 6), false);
                 ServerLevel level = server.getLevel(SpaceLogistics.MOON);
                 for (BlockPos pos : BlockPos.betweenClosed(gate.pos.offset(-3,-1,-3), gate.pos.offset(3,-1,3))) {
-                    level.setBlock(pos, Blocks.SMOOTH_STONE.defaultBlockState(), Block.UPDATE_ALL);
+                    if (level.isEmptyBlock(pos)) {
+                        level.setBlock(pos, Blocks.SMOOTH_STONE.defaultBlockState(), Block.UPDATE_ALL);
+                    }
                 }
                 started = server.overworld().getGameTime();
                 phase = 6;
@@ -99,12 +106,12 @@ public final class SpaceAcceptance {
         for (Role role : Role.values()) {
             if (role == Role.BEACON) continue;
             place(server.overworld(), role, new BlockPos(x, 150, 8), false);
-            x += 12;
+            x += 17;
         }
         earth = place(server.getLevel(SpaceLogistics.EARTH_ORBIT), Role.LAUNCH, new BlockPos(2, 150, 5), true);
         moon = place(server.getLevel(SpaceLogistics.MOON_ORBIT), Role.LAUNCH, new BlockPos(2, 150, 5), true);
         for (ServerLevel orbit : List.of(server.getLevel(SpaceLogistics.EARTH_ORBIT), server.getLevel(SpaceLogistics.MOON_ORBIT))) {
-            place(orbit, Role.SATELLITE, new BlockPos(2, 150, 11), true);
+            place(orbit, Role.SATELLITE, new BlockPos(2, 150, 23), true);
         }
         for (ServerLevel ground : List.of(server.overworld(), server.getLevel(SpaceLogistics.MOON))) {
             place(ground, Role.BEACON, new BlockPos(2, 150, 2), true);
@@ -127,7 +134,8 @@ public final class SpaceAcceptance {
                     BlockPos pos = origin.offset(cell.get(0).getAsInt(), cell.get(1).getAsInt(), cell.get(2).getAsInt());
                     level.setChunkForced(pos.getX() >> 4, pos.getZ() >> 4, true);
                     String id = cell.get(3).getAsString();
-                    level.setBlock(pos, block(id).defaultBlockState(), Block.UPDATE_ALL);
+                    var state = BlockStateParser.parseForBlock(level.registryAccess().lookupOrThrow(Registries.BLOCK), id, false);
+                    level.setBlock(pos, state.blockState(), Block.UPDATE_ALL);
                     if (id.equals("expedition_space:" + role.path)) controller = pos;
                 }
                 var machine = controller(level, controller);
@@ -162,11 +170,10 @@ public final class SpaceAcceptance {
                 case 1 -> {
                     if (elapsed < 30) return;
                     for (Station station : stationFixtures) {
-                        require(SpaceLogistics.operational(server, station), "failed to form " + station.key + " at " + station.pos);
+                        assertFormation(server, station);
                     }
                     for (Role role : Role.values()) {
-                        require(server.getRecipeManager().byKey(SpaceLogistics.id("station/" + role.path)).isPresent(),
-                            "missing recipe " + role.path);
+                        if (role != Role.BEACON) assertRecipe(server.overworld(), role);
                     }
                     for (int slot = FreightData.OUTPUT; slot < FreightData.OUTPUT + FreightData.BATCH; slot++) {
                         moon.setItem(slot, new ItemStack(Items.COBBLESTONE, 64));
@@ -217,8 +224,39 @@ public final class SpaceAcceptance {
         }
     }
 
+    private static void assertFormation(MinecraftServer server, Station station) {
+        if (SpaceLogistics.operational(server, station)) return;
+        var level = server.getLevel(station.key.dimension());
+        var state = controller(level, station.pos).getMultiblockState();
+        BlockPos mismatch = state.getPos();
+        throw new IllegalStateException("failed to form " + station.key + " at " + station.pos
+            + ", mismatch at " + mismatch + ": " + level.getBlockState(mismatch));
+    }
+
+    private static void assertRecipe(ServerLevel level, Role role) {
+        var recipe = level.getRecipeManager().byKey(SpaceLogistics.id("station/" + role.path)).orElseThrow();
+        require(recipe.value() instanceof ShapedRecipe, "not a shaped recipe: " + role.path);
+        var shaped = (ShapedRecipe) recipe.value();
+        var output = shaped.getResultItem(level.registryAccess());
+        require(output.is(item("expedition_space:" + role.path).getItem()), "wrong controller output: " + role.path);
+        require(output.getCount() == (role == Role.DROP ? 2 : 1), "wrong controller yield: " + role.path);
+        List<ItemStack> grid = new ArrayList<>(9);
+        for (var ingredient : shaped.getIngredients()) {
+            require(ingredient.getItems().length > 0, "unavailable ingredient: " + role.path);
+            grid.add(ingredient.getItems()[0].copy());
+        }
+        require(grid.size() == 9 && shaped.matches(CraftingInput.of(3, 3, grid), level), "original grid: " + role.path);
+        if (role == Role.GATE) {
+            grid.getFirst().remove(DataComponents.CUSTOM_DATA);
+        } else {
+            grid.get(3).setDamageValue(1);
+        }
+        require(!shaped.matches(CraftingInput.of(3, 3, grid), level), "accepted invalid component: " + role.path);
+    }
+
     private void proveGate(MinecraftServer server, FreightData data) {
-        require(data.stable(TEAM) && SpaceLogistics.operational(server, gate), "gate fixture or persisted freight");
+        require(data.stable(TEAM), "gate requires persisted freight");
+        assertFormation(server, gate);
         var moon = server.getLevel(SpaceLogistics.MOON);
         var actor = FakePlayerFactory.get(moon, new GameProfile(TEAM, "SpaceGateTest"));
         var channel = new EmbeddedChannel(actor.connection.getConnection());
@@ -325,7 +363,7 @@ public final class SpaceAcceptance {
         for (int i = 0; i < 10; i++) power.getStorage().receiveEnergy(4_000, false);
         var port = level.getCapability(Capabilities.ItemHandler.BLOCK, station.pos, Direction.UP);
         require(port != null && port.insertItem(0, stack, false).isEmpty(), "automation port");
-        station.setItem(FreightData.CARRIER, new ItemStack(BuiltInRegistries.ITEM.get(SpaceLogistics.id("freight_module"))));
+        station.setItem(FreightData.CARRIER, new ItemStack(BuiltInRegistries.ITEM.get(SpaceLogistics.id("carrier_rocket"))));
         station.setItem(FreightData.FUEL, new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse("ad_astra:fuel_bucket"))));
         station.automatic = true;
     }

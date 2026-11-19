@@ -1,33 +1,605 @@
 {
-  "satellite_relay": [
-    ["..R..", ".RCR.", "..R.."],
-    [".....", ".RWR.", "....."],
-    ["PWRWP", ".....", "....."]
-  ],
-  "freight_launchpad": [
-    ["RPPPR", "PCP.P", "P...P", "P...P", "RPPPR"],
-    ["R...R", ".....", ".....", ".....", "R...R"],
-    ["W...W", ".....", ".....", ".....", "W...W"]
-  ],
-  "space_elevator": [
-    ["PRP", "RCR", "PPP"],
-    ["R.R", "WAW", "R.R"],
-    ["R.R", "WAW", "R.R"],
-    ["R.R", "WAW", "R.R"],
-    ["RPR", "PWP", "RPR"]
-  ],
-  "orbital_drop_cannon": [
-    ["PPRPP", "R.C.R", "PPRPP"],
-    ["..R..", "R.W.R", "..R.."],
-    ["..R..", "P.W.P", "..R.."],
-    [".....", ".PWP.", "....."],
-    [".....", "..W..", "....."]
-  ],
-  "other_gate": [
-    ["R.C.R", "PPPPP", "....."],
-    [".....", "WAAAW", "....."],
-    [".....", "WAAAW", "....."],
-    [".....", "WAAAW", "....."],
-    [".....", "RPPPR", "....."]
-  ]
+  "satellite_relay": {
+    "layout": [
+      [
+        " NNN ",
+        "BNONB",
+        "BNNNB",
+        "BBBBB",
+        "ABBBA",
+        "ABBBA",
+        "ABBBA",
+        "ABBBA"
+      ],
+      [
+        "  m  ",
+        " BPB ",
+        "MLLLM",
+        "CDDDC",
+        "CFFFC",
+        "CFFFC",
+        "CFFFC",
+        "CDDDC"
+      ],
+      [
+        "     ",
+        " BPB ",
+        "     ",
+        "EDDDE",
+        "G   H",
+        "G   H",
+        "G   H",
+        "EDDDE"
+      ]
+    ],
+    "blocks": {
+      "C": "ad_astra:steel_pillar",
+      "N": "design_decor:cast_iron_boiler_structure",
+      "G": "design_decor:iron_railing[east=true]",
+      "H": "design_decor:iron_railing[west=true]",
+      "M": "design_decor:cast_iron_boiler",
+      "B": "create:industrial_iron_block",
+      "L": "design_decor:industrial_iron_boiler",
+      "P": "create:metal_girder",
+      "D": "design_decor:ornate_grate",
+      "E": "design_decor:andesite_floodlight",
+      "F": "create:depot",
+      "A": "ad_astra:steel_plating_slab",
+      "O": "design_decor:cast_iron_boiler_large"
+    }
+  },
+  "freight_launchpad": {
+    "layout": [
+      [
+        "  DMMMD  ",
+        "  IMKMI  ",
+        " IIMMMII ",
+        "MMMXIXMMM",
+        "MKMIIIMKM",
+        "MMMXIXMMM",
+        " IIMMMII ",
+        "  IMKMI  ",
+        "   MMM   "
+      ],
+      [
+        "  EE EE  ",
+        "  IL LI  ",
+        " IINNNII ",
+        "  I   I  ",
+        "  X   X  ",
+        "  I   I  ",
+        " II   II ",
+        "  I   I  ",
+        "         "
+      ],
+      [
+        "         ",
+        "         ",
+        "  Q m Q  ",
+        "  V   V  ",
+        "         ",
+        "  V   V  ",
+        "  V   V  ",
+        "         ",
+        "         "
+      ],
+      [
+        "         ",
+        "         ",
+        "  Q   Q  ",
+        "  V   V  ",
+        "         ",
+        "  V   V  ",
+        "  RA AR  ",
+        "         ",
+        "         "
+      ],
+      [
+        "         ",
+        "         ",
+        "  RSHSR  ",
+        "  SZZZS  ",
+        " ]HZZZH] ",
+        "  SZZZS  ",
+        "   SHS   ",
+        "         ",
+        "         "
+      ],
+      [
+        "         ",
+        "         ",
+        "   VVV   ",
+        "  V   V  ",
+        "         ",
+        "  V   V  ",
+        "   VVV   ",
+        "         ",
+        "         "
+      ],
+      [
+        "         ",
+        "         ",
+        "         ",
+        "  [   [  ",
+        "  [   [  ",
+        "  [   [  ",
+        "         ",
+        "         ",
+        "         "
+      ],
+      [
+        "         ",
+        "         ",
+        "         ",
+        "  [   [  ",
+        "  [   [  ",
+        "  [   [  ",
+        "         ",
+        "         ",
+        "         "
+      ],
+      [
+        "         ",
+        "         ",
+        "         ",
+        "  [   [  ",
+        "  [   [  ",
+        "  [   [  ",
+        "         ",
+        "         ",
+        "         "
+      ]
+    ],
+    "blocks": {
+      "M": "design_decor:brass_boiler_structure",
+      "V": "create:metal_girder",
+      "Q": "create:gantry_shaft",
+      "H": "design_decor:industrial_iron_boiler",
+      "E": "create:fluid_pipe",
+      "X": "design_decor:brass_boiler",
+      "K": "design_decor:brass_boiler_large",
+      "Z": "create:depot",
+      "N": "create:encased_fluid_pipe",
+      "]": "design_decor:cast_iron_boiler",
+      "A": "design_decor:diagonal_metal_support",
+      "L": "create:smart_fluid_pipe",
+      "R": "design_decor:diagonal_girder",
+      "S": "create:industrial_iron_block",
+      "I": "create_things_and_misc:brass_bricks",
+      "D": "create:mechanical_pump",
+      "[": "design_decor:ornate_grate"
+    }
+  },
+  "space_elevator": {
+    "layout": [
+      [
+        "  ABBBA  ",
+        "  ABFBA  ",
+        "AAHBBBHAA",
+        "BBBQQQBBB",
+        "BFBQXQBFB",
+        "BBBQQQBBB",
+        "AAHBBBHAA",
+        "  ABFBA  ",
+        "  ABBBA  "
+      ],
+      [
+        "    D    ",
+        "    I    ",
+        "  JKKKJ  ",
+        "  KCCCK  ",
+        "DIKCECKID",
+        "  KCCCK  ",
+        "  JKKKJ  ",
+        "    I    ",
+        "    D    "
+      ],
+      [
+        "         ",
+        "    m    ",
+        "  L   L  ",
+        "   CCC   ",
+        "   CEC   ",
+        "   CCC   ",
+        "  L   L  ",
+        "         ",
+        "         "
+      ],
+      [
+        "         ",
+        "         ",
+        "  L   L  ",
+        "         ",
+        "    G    ",
+        "         ",
+        "  L   L  ",
+        "         ",
+        "         "
+      ],
+      [
+        "         ",
+        "         ",
+        "  JM MJ  ",
+        "  MSSSM  ",
+        "   SSS   ",
+        "  MSSSM  ",
+        "  JM MJ  ",
+        "         ",
+        "         "
+      ],
+      [
+        "         ",
+        "         ",
+        "  GNNNG  ",
+        "  NVVVN  ",
+        "  NVVVN  ",
+        "  NVVVN  ",
+        "  GNNNG  ",
+        "         ",
+        "         "
+      ],
+      [
+        "         ",
+        "         ",
+        "  OM MO  ",
+        "  M   M  ",
+        "         ",
+        "  M   M  ",
+        "  OM MO  ",
+        "         ",
+        "         "
+      ]
+    ],
+    "blocks": {
+      "H": "ad_astra:steel_panel",
+      "A": "design_decor:industrial_plating_block",
+      "N": "ad_astra:steel_plateblock",
+      "G": "design_decor:cast_iron_boiler",
+      "B": "design_decor:cast_iron_boiler_structure",
+      "F": "design_decor:cast_iron_boiler_large",
+      "M": "ad_astra:steel_plating_slab",
+      "L": "expedition_space:carbon_electrode",
+      "K": "create_things_and_misc:brass_bricks",
+      "S": "create_connected:item_silo",
+      "D": "design_decor:metal_support",
+      "X": "design_decor:industrial_iron_boiler_large",
+      "Q": "design_decor:industrial_iron_boiler_structure",
+      "I": "design_decor:copper_boiler",
+      "O": "design_decor:brass_boiler",
+      "C": "design_decor:brass_boiler_structure",
+      "E": "design_decor:brass_boiler_large",
+      "V": "design_decor:ornate_grate",
+      "J": "create:chute"
+    }
+  },
+  "orbital_drop_cannon": {
+    "layout": [
+      [
+        "     ",
+        "  A  ",
+        " AIA ",
+        "  A  ",
+        "     "
+      ],
+      [
+        "  A  ",
+        "     ",
+        "A J A",
+        "     ",
+        "  A  "
+      ],
+      [
+        "  B  ",
+        " DDD ",
+        "BDLDB",
+        " DDD ",
+        "  B  "
+      ],
+      [
+        "     ",
+        " B B ",
+        "  J  ",
+        " B B ",
+        "     "
+      ],
+      [
+        "     ",
+        " A A ",
+        "  m  ",
+        " A A ",
+        "     "
+      ],
+      [
+        "  B  ",
+        " DDD ",
+        "BDLDB",
+        " DDD ",
+        "  B  "
+      ],
+      [
+        "  B  ",
+        " HHH ",
+        "BHNHB",
+        " HHH ",
+        "  B  "
+      ],
+      [
+        "  C  ",
+        "     ",
+        "C O C",
+        "     ",
+        "  C  "
+      ]
+    ],
+    "blocks": {
+      "A": "create:chute",
+      "N": "design_decor:brass_boiler_large",
+      "O": "design_decor:brass_boiler",
+      "J": "design_decor:copper_boiler",
+      "D": "design_decor:cast_iron_boiler_structure",
+      "I": "design_decor:cast_iron_boiler",
+      "C": "design_decor:andesite_floodlight",
+      "B": "#dut_create:metal_girder",
+      "L": "design_decor:cast_iron_boiler_large",
+      "H": "design_decor:brass_boiler_structure"
+    }
+  },
+  "other_gate": {
+    "layout": [
+      [
+        "     U     ",
+        "     D     ",
+        "  KLLCLLM  ",
+        "  LRRRRRL  ",
+        "  LRYYYRL  ",
+        "ADCRYZYRCDl",
+        "  LRYYYRL  ",
+        "  LRRRRRL  ",
+        "  MLLCLLK  ",
+        "     D     ",
+        "     V     "
+      ],
+      [
+        "           ",
+        "     D     ",
+        "  u  C  u  ",
+        "     [     ",
+        "     E     ",
+        " DCSEDESCD ",
+        "     E     ",
+        "     [     ",
+        "  u  C  u  ",
+        "     D     ",
+        "           "
+      ],
+      [
+        "           ",
+        "     E     ",
+        "     C     ",
+        "           ",
+        "     U     ",
+        " EC A l CE ",
+        "     V     ",
+        "           ",
+        "     C     ",
+        "     E     ",
+        "           "
+      ],
+      [
+        "           ",
+        "     F     ",
+        "     C     ",
+        "           ",
+        "           ",
+        " FC     CF ",
+        "           ",
+        "           ",
+        "     C     ",
+        "     F     ",
+        "           "
+      ],
+      [
+        "     ]     ",
+        "     E     ",
+        "     C     ",
+        "           ",
+        "     ]     ",
+        "BEC B n CEn",
+        "     ^     ",
+        "           ",
+        "     C     ",
+        "     E     ",
+        "     ^     "
+      ],
+      [
+        "     C     ",
+        "     H     ",
+        "    xCz    ",
+        "    E_E    ",
+        "  vE E Ev  ",
+        "CHCTE`EpCHC",
+        "  wE E Ew  ",
+        "    EaE    ",
+        "    xCz    ",
+        "     H     ",
+        "     C     "
+      ],
+      [
+        "     C     ",
+        "     I     ",
+        "     I     ",
+        "    ANl    ",
+        "   UYYYU   ",
+        "CIINYZYNIIC",
+        "   VYYYV   ",
+        "    ANl    ",
+        "     I     ",
+        "     I     ",
+        "     C     "
+      ],
+      [
+        "           ",
+        "     J     ",
+        "     N     ",
+        "           ",
+        "    YYY    ",
+        " JN YZY NJ ",
+        "    YYY    ",
+        "           ",
+        "     N     ",
+        "     J     ",
+        "           "
+      ],
+      [
+        "           ",
+        "     U     ",
+        "     E     ",
+        "           ",
+        "     c     ",
+        " AE Sdo El ",
+        "     [     ",
+        "           ",
+        "     E     ",
+        "     V     ",
+        "           "
+      ],
+      [
+        "           ",
+        "           ",
+        "     e     ",
+        "           ",
+        "           ",
+        "  O  d  q  ",
+        "           ",
+        "           ",
+        "     f     ",
+        "           ",
+        "           "
+      ],
+      [
+        "           ",
+        "           ",
+        "     g     ",
+        "           ",
+        "           ",
+        "  P  m  r  ",
+        "           ",
+        "           ",
+        "     h     ",
+        "           ",
+        "           "
+      ],
+      [
+        "           ",
+        "           ",
+        "     i     ",
+        "           ",
+        "           ",
+        "  Q     s  ",
+        "           ",
+        "           ",
+        "     j     ",
+        "           ",
+        "           "
+      ],
+      [
+        "           ",
+        "           ",
+        "     E     ",
+        "           ",
+        "           ",
+        "  E     E  ",
+        "           ",
+        "           ",
+        "     E     ",
+        "           ",
+        "           "
+      ],
+      [
+        "           ",
+        "           ",
+        "     U     ",
+        "           ",
+        "           ",
+        "  A     l  ",
+        "           ",
+        "           ",
+        "     V     ",
+        "           ",
+        "           "
+      ]
+    ],
+    "blocks": {
+      "K": "create_connected:parallel_gearbox",
+      "`": "design_decor:industrial_iron_boiler[facing=up]",
+      "D": "design_decor:industrial_iron_boiler[facing=down]",
+      "a": "design_decor:industrial_iron_boiler[facing=north]",
+      "_": "design_decor:industrial_iron_boiler[facing=south]",
+      "p": "design_decor:industrial_iron_boiler[facing=west]",
+      "T": "design_decor:industrial_iron_boiler[facing=east]",
+      "Z": "design_decor:brass_boiler_large",
+      "Y": "design_decor:brass_boiler_structure",
+      "R": "create_things_and_misc:brass_bricks",
+      "I": "create:gantry_shaft",
+      "J": "create:gantry_carriage",
+      "L": "create:andesite_encased_shaft",
+      "E": "create:chute",
+      "F": "expedition_space:carbon_electrode",
+      "M": "create:gearbox",
+      "P": "create_connected:item_silo",
+      "r": "create_connected:item_silo",
+      "O": "create_connected:item_silo",
+      "j": "create_connected:item_silo",
+      "q": "create_connected:item_silo",
+      "g": "create_connected:item_silo",
+      "f": "create_connected:item_silo",
+      "Q": "create_connected:item_silo",
+      "e": "create_connected:item_silo",
+      "h": "create_connected:item_silo",
+      "i": "create_connected:item_silo",
+      "s": "create_connected:item_silo",
+      "l": "design_decor:diagonal_girder[facing=west,facing_up=false]",
+      "^": "design_decor:diagonal_girder[facing=north,facing_up=true]",
+      "]": "design_decor:diagonal_girder[facing=south,facing_up=true]",
+      "U": "design_decor:diagonal_girder[facing=south,facing_up=false]",
+      "n": "design_decor:diagonal_girder[facing=west,facing_up=true]",
+      "B": "design_decor:diagonal_girder[facing=east,facing_up=true]",
+      "V": "design_decor:diagonal_girder[facing=north,facing_up=false]",
+      "A": "design_decor:diagonal_girder[facing=east,facing_up=false]",
+      "N": "design_decor:industrial_plating_block",
+      "c": "create:metal_girder[axis=z]",
+      "[": "create:metal_girder[axis=z]",
+      "S": "create:metal_girder[axis=x]",
+      "o": "create:metal_girder[axis=x]",
+      "H": "create:gearshift",
+      "d": "design_decor:copper_boiler[facing=down]",
+      "C": "create:encased_chain_drive",
+      "u": "design_decor:andesite_floodlight[facing=up]",
+      "v": "design_decor:brass_lamp[facing=north]",
+      "w": "design_decor:brass_lamp[facing=south]",
+      "x": "design_decor:brass_lamp[facing=west]",
+      "z": "design_decor:brass_lamp[facing=east]"
+    },
+    "fixture_states": {
+      "1,6,5": "create:gantry_shaft[facing=west]",
+      "2,6,5": "create:gantry_shaft[facing=west]",
+      "5,6,1": "create:gantry_shaft[facing=north]",
+      "5,6,2": "create:gantry_shaft[facing=north]",
+      "5,6,8": "create:gantry_shaft[facing=south]",
+      "5,6,9": "create:gantry_shaft[facing=south]",
+      "8,6,5": "create:gantry_shaft[facing=east]",
+      "9,6,5": "create:gantry_shaft[facing=east]",
+      "1,7,5": "create:gantry_carriage[facing=up,axis_along_first=false]",
+      "5,7,1": "create:gantry_carriage[facing=up,axis_along_first=true]",
+      "5,7,9": "create:gantry_carriage[facing=up,axis_along_first=true]",
+      "9,7,5": "create:gantry_carriage[facing=up,axis_along_first=false]"
+    },
+    "optional": [
+      "u",
+      "v",
+      "w",
+      "x",
+      "z"
+    ]
+  }
 }

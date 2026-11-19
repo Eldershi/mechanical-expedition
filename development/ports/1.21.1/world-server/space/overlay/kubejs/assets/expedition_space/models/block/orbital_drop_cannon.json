@@ -1,8 +1,6 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "top": "minecraft:block/netherite_block",
-    "side": "minecraft:block/netherite_block",
-    "front": "minecraft:block/respawn_anchor_side2"
+    "all": "create:block/industrial_iron_block"
   }
 }

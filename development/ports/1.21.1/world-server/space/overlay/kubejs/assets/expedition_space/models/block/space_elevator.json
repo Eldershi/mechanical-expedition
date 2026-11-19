@@ -1,8 +1,6 @@
 {
-  "parent": "minecraft:block/orientable",
+  "parent": "minecraft:block/cube_all",
   "textures": {
-    "top": "minecraft:block/weathered_copper",
-    "side": "minecraft:block/weathered_copper",
-    "front": "minecraft:block/copper_bulb_lit"
+    "all": "create:block/copper_casing"
   }
 }
