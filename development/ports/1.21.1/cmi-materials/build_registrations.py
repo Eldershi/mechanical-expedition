@@ -69,6 +69,12 @@ def convert(relative, source, tinkers_namespace):
 
 def build(source, target, tinkers_namespace):
     (target / "item/mechanism/Random.js").unlink(missing_ok=True)
+    if target.parent.name == "startup_scripts":
+        random_textures = target.parent.parent / "assets/cmi/textures/item/mechanism/random"
+        for pattern in ("*.png", "*.png.mcmeta"):
+            for texture in random_textures.glob(pattern):
+                texture.unlink()
+
     for relative in SOURCE_FILES:
         converted = convert(relative, (source / relative).read_text(), tinkers_namespace)
         destination = target / relative
