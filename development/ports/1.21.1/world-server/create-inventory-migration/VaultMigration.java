@@ -40,6 +40,8 @@ public final class VaultMigration {
     private static final Set<String> LEGACY_STACK_FIELDS = Set.of("id", "Count", "tag", "Slot", "ForgeCaps");
     private static final Map<String, String> PLAIN_ITEM_REPLACEMENTS = Map.of(
         "thermal:copper_nugget", "create:copper_nugget",
+        "thermal:silver_ingot", "alltheores:silver_ingot",
+        "steam_letters:bronze_casing", "create:copper_casing",
         "cmi:quartz_ore", "minecraft:nether_quartz_ore",
         "cmi:deepslate_quartz_ore", "minecraft:nether_quartz_ore",
         "cmi:peat", "minecraft:charcoal",
