@@ -1,0 +1,30 @@
+{
+  "type": "treetap:tap_extract",
+  "log": {
+    "tag": "integrateddynamics:menril_logs"
+  },
+  "required_block_count": 6,
+  "processing_time": 2400,
+  "result": {
+    "id": "integrateddynamics:bucket_menril_resin"
+  },
+  "collect_bucket": true,
+  "display_fluid": {
+    "id": "integrateddynamics:menril_resin",
+    "amount": 1000
+  },
+  "particle_color": "#6ec9dc",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "integrateddynamics"
+    },
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "neoforge:mod_loaded",
+        "modid": "tfc"
+      }
+    }
+  ]
+}

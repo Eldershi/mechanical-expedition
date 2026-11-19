@@ -5,6 +5,7 @@ ServerEvents.tags('item', event => {
 
 ServerEvents.recipes(event => {
   const create = event.recipes.create
+  const vintage = event.recipes.vintageimprovements
   const path = 'expedition:factory/space/'
   const station = (id, output, energy, parts, fluid, amount) => {
     const recipe = {
@@ -138,10 +139,15 @@ ServerEvents.recipes(event => {
     ['#c:plates/titanium', 2], ['cmi:carbon_nanotube', 4], ['ad_astra:etrionic_capacitor', 1],
     ['cmi:optical_fiber', 4]
   ], 'cmi:molten_etrium', 90)
-  station('astronautic_mechanism', 'cmi:astronautic_mechanism', 16000, [
-    ['cmi:astronautic_mechanism_basement', 1], ['cmi:nuke_cooler', 1], ['#c:wires/fluix', 1],
-    ['#c:plates/titanium', 1], ['cmi:space_mechanism_part', 1]
-  ], 'cmi:structural_plastic', 200)
+  const astronautic = 'cmi:incomplete_astronautic_mechanism'
+  create.sequenced_assembly('cmi:astronautic_mechanism', 'cmi:astronautic_mechanism_basement', [
+    create.deploying(astronautic, [astronautic, 'cmi:nuke_cooler']),
+    create.deploying(astronautic, [astronautic, Ingredient.of('#c:wires/fluix')]),
+    vintage.laser_cutting(astronautic, astronautic).energy(1000).maxChargeRate(100),
+    create.filling(astronautic, [astronautic, Fluid.of('cmi:structural_plastic', 200)]),
+    create.deploying(astronautic, [astronautic, Ingredient.of('#c:plates/titanium')]),
+    create.deploying(astronautic, [astronautic, 'cmi:space_mechanism_part'])
+  ]).transitionalItem(astronautic).loops(1).id(path + 'sequenced_astronautic_mechanism')
 
   station('engine_frame', 'ad_astra:engine_frame', 4000, [
     ['#c:plates/stainless_steel', 4], ['#c:plates/titanium', 2], ['ad_astra:fan', 4]

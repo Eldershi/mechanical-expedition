@@ -109,10 +109,15 @@ ServerEvents.recipes(event => {
     ['#c:plates/aluminum_alloy', 2], ['cmi:graphene', 4], ['ad_astra:etrionic_capacitor', 1],
     ['cmi:optical_fiber', 4]
   ], 1, ['cmi:molten_etrium', 90])
-  station('aeronautic_mechanism', 16000, [
-    ['cmi:aeronautic_mechanism_basement', 1], ['ad_astra:oxygen_gear', 1], ['#c:wires/fluix', 1],
-    ['#c:plates/aluminum_alloy', 1], ['cmi:space_mechanism_part', 1]
-  ], 1, ['cmi:structural_plastic', 200])
+  const aeronautic = 'cmi:incomplete_aeronautic_mechanism'
+  create.sequenced_assembly('cmi:aeronautic_mechanism', 'cmi:aeronautic_mechanism_basement', [
+    create.deploying(aeronautic, [aeronautic, 'ad_astra:oxygen_gear']),
+    create.deploying(aeronautic, [aeronautic, Ingredient.of('#c:wires/fluix')]),
+    vintage.laser_cutting(aeronautic, aeronautic).energy(1000).maxChargeRate(100),
+    create.filling(aeronautic, [aeronautic, Fluid.of('cmi:structural_plastic', 200)]),
+    create.deploying(aeronautic, [aeronautic, Ingredient.of('#c:plates/aluminum_alloy')]),
+    create.deploying(aeronautic, [aeronautic, 'cmi:space_mechanism_part'])
+  ]).transitionalItem(aeronautic).loops(1).id(recipePath + 'sequenced_aeronautic_mechanism')
 
   for (const [component, material] of [
     ['power_supply', '#cmi:batteries'],
