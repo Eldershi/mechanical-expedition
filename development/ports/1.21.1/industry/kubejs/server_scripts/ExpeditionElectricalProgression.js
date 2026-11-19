@@ -49,4 +49,12 @@ ServerEvents.recipes(event => {
     create.deploying(coil, [coil, Ingredient.of('#c:plates/electrum')]),
     create.deploying(coil, [coil, 'cmi:engineering_mechanism_part'])
   ]).transitionalItem(coil).loops(1).id(path + 'coil_mechanism')
+
+  event.shapeless('2x createaddition:portable_energy_interface', [
+    'create:brass_casing', 'cmi:coil_mechanism', '#c:plates/industrial_iron'
+  ]).id(path + 'portable_energy_interface')
+  create.mechanical_crafting('createaddition:tesla_coil', ['PAP', ' I ', 'BMB', 'VCV'], {
+    P: '#c:plates/copper', A: 'immersiveengineering:coil_lv', I: '#c:ingots/andesite_alloy',
+    B: '#c:plates/brass', M: 'cmi:coil_mechanism', V: '#c:plates/vanadium', C: 'create:brass_casing'
+  }).id(path + 'tesla_coil')
 })

@@ -8,7 +8,7 @@ The Engineer's Workbench has parallel component blueprints for iron parts, steel
 
 A Create mixer uses concrete powder and water to produce the corresponding sixteen Diesel Generators cement colors. IE liquid concrete cures adjacent sources with the IE Fix Pack. The IE Assembler uses standard crafting patterns for automation.
 
-The quartz diode is assembled by Create mechanical crafters and feeds light engineering mechanism production. The andesite mechanism has both a manual recipe with a reusable wrench and a sequenced recipe. The natural and potion mechanisms use their own assembly lines. The IE Bottling Machine uses chromium plating solution to plate steel gears.
+The quartz diode is assembled by Create mechanical crafters and feeds light engineering mechanism production. The andesite mechanism has both a manual recipe with a reusable wrench and a sequenced recipe. Hexa casts stone plates from lava for the basic mechanism part. The iron mechanism uses that part in its sequenced assembly. The Nether mechanism has recipes for the Blaze Burner, the Diesel Generators burner, and the Hexa scorched alloyer. The coil mechanism has recipes for the portable energy interface and Tesla coil. The natural and potion mechanisms use their own assembly lines. The IE Bottling Machine uses chromium plating solution to plate steel gears.
 
 The integrated workstation produces nuclear mechanism bases, fissile cores, quantum parts, and finished nuclear mechanisms. The finished mechanism also has a Create sequenced route with Vintage Improvements laser cutting. Entro alloy uses Etrium and Cryotheum in the integrated workstation. A Create spout infuses a native Farmer's Delight knife with concentrated experience, yielding the unbreakable CMI knife.
 
