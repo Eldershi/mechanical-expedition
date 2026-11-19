@@ -171,6 +171,9 @@ def configured_pack_preserved(current_client, active, name, external):
 
 
 def main():
+    manifest = json.loads((Path(__file__).resolve().parents[1] / "source-manifest.json").read_text())
+    if manifest.get("minecraft") != "1.20.1" or not manifest.get("forge"):
+        raise SystemExit("This tool requires the Forge release source. For NeoForge, use the test packaging tool.")
     parser = argparse.ArgumentParser()
     parser.add_argument("--project", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)

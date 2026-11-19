@@ -25,6 +25,8 @@ MODULES = {
                 "expedition.railway.mixin", ["StructureStageMixin", "StructureCandidateMixin", "RailwayPlannerMixin"]),
     "teleport": ("expedition_teleport_fix", "1.0.0", "Expedition Async Teleport",
                  "expedition.teleport.mixin", ["TeleportCommandMixin"]),
+    "space": ("expedition_space", "1.0.0", "Expedition Earth–Moon Logistics",
+              "expedition.space.mixin", ["BreathingReserveMixin", "OtherPadMixin"]),
     "twilight": ("expedition_worldgen_compat", "1.1.1", "Expedition Twilight Landmarks",
                  "expedition.twilight.mixin", ["MagicMapMixin", "LocateMixin"]),
     "world-rules": ("expedition_world_rules", "1.0.0", "Expedition World Rules", "", []),
@@ -37,6 +39,14 @@ DEPENDENCIES = {
     "railway": ("tongdarailway", "[1.1.6+mc21.1]", "tongdarailway-1.1.6-mc21.1.jar"),
     "twilight": ("twilightforest", "[4.8.3345]", "twilightforest-1.21.1-4.8.3345-universal.jar"),
 }
+SPACE_DEPENDENCIES = (
+    ("ad_astra", "[1.16.26]", "adastra-1.21.1-1.16.26-neoforge.jar"),
+    ("allthemodium", "[3.2.1]", "allthemodium-3.2.1_mc_1.21.1.jar"),
+    ("createcraftedbeginning", "[0.1.1]", "createcraftedbeginning-0.1.1.jar"),
+    ("mbd2", "[21.1.1.a]", "Multiblocked2-1.21-1.21.1-21.1.1.a-all.jar"),
+    ("ldlib2", "[2.2.46.a]", "ldlib2-neoforge-1.21.1-2.2.46.a-all.jar"),
+    ("ftbteams", "[2101.1.12]", "ftb-teams-neoforge-2101.1.12.jar"),
+)
 TWILIGHT_POLICY = HERE.parents[2] / "clients/cmi-expedition/tools/compat/BossDensityPolicy.java"
 TWILIGHT_CONFIG = HERE.parents[2] / "servers/cmi-expedition/deployment/config/expedition-boss-density.json"
 
@@ -53,7 +63,7 @@ def classpath(server):
                                       *(server / p for p in legacy.split(os.pathsep)))))
 
 
-def build(module, java, cp, output, mods):
+def build(module, java, cp, output, mods, space_proof=False):
     modid, version, title, mixins_package, mixins = MODULES[module]
     side = "SERVER" if module in {"island-rail", "motion-guard", "teleport"} else "BOTH"
     filename = f"{modid.replace('_', '-')}-neoforge-{version}.jar"
@@ -61,6 +71,10 @@ def build(module, java, cp, output, mods):
     if module in DEPENDENCIES:
         dependency_id, dependency_version, dependency_jar = DEPENDENCIES[module]
         cp += os.pathsep + str(mods / dependency_jar)
+    if module == "space":
+        cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in SPACE_DEPENDENCIES)
+        if space_proof:
+            sources.extend(sorted((HERE / module / "tests").glob("*.java")))
     with tempfile.TemporaryDirectory() as temp:
         classes = Path(temp)
         if module == "island-rail":
@@ -100,9 +114,14 @@ type="required"
 versionRange="[21.1.267,21.2)"
 side="{side}"
 '''
+        if module == "space" and space_proof:
+            metadata += '[[mods]]\nmodId="expedition_space_acceptance"\nversion="1.0.0"\ndisplayName="Expedition Space Acceptance"\n'
         if mixins:
             metadata += f'[[mixins]]\nconfig="{mixin_config}"\n'
-        if module in DEPENDENCIES:
+        module_dependencies = [DEPENDENCIES[module]] if module in DEPENDENCIES else []
+        if module == "space":
+            module_dependencies = SPACE_DEPENDENCIES
+        for dependency_id, dependency_version, _ in module_dependencies:
             metadata += f'''[[dependencies.{modid}]]
 modId="{dependency_id}"
 type="required"
@@ -156,9 +175,10 @@ if __name__ == "__main__":
     p.add_argument("--server", type=Path, required=True)
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--mods", type=Path)
+    p.add_argument("--space-proof", action="store_true", help="include space acceptance commands for disposable worlds")
     p.add_argument("modules", choices=tuple(MODULES), nargs="+")
     options = p.parse_args()
     cp = classpath(options.server.resolve())
     for module in options.modules:
         build(module, options.java.resolve(), cp, options.output.resolve(),
-              (options.mods or options.server / "mods").resolve())
+              (options.mods or options.server / "mods").resolve(), options.space_proof)

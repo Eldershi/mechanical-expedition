@@ -52,6 +52,9 @@ def zip_files(destination, entries):
 
 
 def build(config_path, output):
+    manifest = json.loads((Path(__file__).resolve().parents[1] / "source-manifest.json").read_text())
+    if manifest.get("minecraft") != "1.20.1" or not manifest.get("forge"):
+        raise SystemExit("This tool requires the Forge release source. For NeoForge, use the test packaging tool.")
     config = json.loads(config_path.read_text())
     if config["packId"] != "mechanical-expedition":
         raise ValueError("Unexpected pack ID")

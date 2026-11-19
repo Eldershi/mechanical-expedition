@@ -64,6 +64,9 @@ def launcher_resource_entries():
 
 
 def build(output, bundle_path=None):
+    manifest = json.loads((ROOT / "source-manifest.json").read_text())
+    if manifest.get("minecraft") != "1.20.1" or not manifest.get("forge"):
+        raise SystemExit("This is the Forge release builder. Build 1.21.1 with development/ports/1.21.1/release/package_test.py.")
     lock = json.loads((ROOT / "current/mods.lock.json").read_text())
     integration = json.loads((ROOT / "integrations/resourcepacks/create-style-dyson.json").read_text())
     release = integration["release"]

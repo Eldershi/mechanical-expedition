@@ -1,0 +1,77 @@
+{
+  filename: "expedition_earth_moon"
+  group: "3346A01E0EAFD002"
+  id: "56A3429C88271E20"
+  icon: "expedition_space:satellite_relay"
+  title: "地月补给与月球异界门"
+  order_index: 1
+  quests: [
+    {
+      id: "430D8DF8F029549A"
+      title: "首次月面远征"
+      icon: "ad_astra:moon_stone"
+      dependencies: ["167D4DC0804DA7FF"]
+      x: -4.0d
+      y: 0.0d
+      description: ["穿着 Ad Astra 航天服乘载人火箭登月。带回戴斯与月岩，准备供氧、登月后的工业和航标。"]
+      tasks: [{id:"0D3928EF0C162AFB", type:"advancement", advancement:"ad_astra:moon", criterion:""}]
+    }
+    {
+      id: "468E2D7DCA4979A3"
+      title: "两条太空护甲路线"
+      icon: "expedition_space:life_support_module"
+      dependencies: ["430D8DF8F029549A"]
+      x: -1.5d
+      y: -2.0d
+      description: [
+        "机素防护使用 Giselle 的太空呼吸和已启动的氧气罐。氧气装载机可为罐回补。水星地表需高温防护。"
+        "气密甲四件配套使用。用生命维持模块给副手的气罐组指定第一格，再给副手的头盔安装模块。给第一格充自然空气，其余罐位用于战斗技能。"
+      ]
+      tasks: [{id:"6D1C906F9F296158", type:"item", item:"expedition_space:life_support_module", consume_items:false}]
+    }
+    {
+      id: "68714C769F85411C"
+      title: "登记地面航标"
+      icon: "expedition_space:satellite_relay"
+      dependencies: ["430D8DF8F029549A"]
+      x: -1.5d
+      y: 0.0d
+      description: ["在地球和月面各右键激活一座收货航标，到各自的轨道组装收发站，接 FE 并操作收发站登记。月球收发站另给出月球地牢坐标。"]
+      tasks: [{id:"2C42135FA6293E00", type:"advancement", advancement:"expedition_space:satellite_registered", criterion:""}]
+    }
+    {
+      id: "1ED6681A3B5B7929"
+      title: "亲自调查月球地牢"
+      icon: "expedition_space:lunar_signature"
+      dependencies: ["68714C769F85411C"]
+      x: 1.0d
+      y: -1.5d
+      description: ["按月球轨道站给出的坐标进入真实地牢。调查取得的月球异常凭据用于从异界退回月面。"]
+      tasks: [{id:"1163ADED3DD2C11C", type:"advancement", advancement:"expedition_space:lunar_survey", criterion:""}]
+    }
+    {
+      id: "7A5FB2D2F953E26A"
+      title: "地月双向稳定补给"
+      icon: "expedition_space:freight_launchpad"
+      dependencies: ["68714C769F85411C"]
+      x: 1.0d
+      y: 1.0d
+      description: [
+        "电梯连接同一颗星球的地面和轨道，发射台连接地球轨道和月球轨道，空投炮对准已登记的地面航标。"
+        "第一排前八格是待运区，第二排前八格是到货区。发射台另需要可复用载具与燃料桶。以货运控制器操作，潜行使用可切换自动发货。"
+        "使用原生载人火箭亲自抵达目的地后才可乘电梯。轨道货运累计三批，两边方向至少各一批，才算建立稳定补给。"
+      ]
+      tasks: [{id:"367EB6E03E0D2871", type:"advancement", advancement:"expedition_space:stable_freight", criterion:""}]
+    }
+    {
+      id: "5A0C44D610FA5535"
+      title: "异界首次航行"
+      icon: "expedition_space:other_gate"
+      dependencies: ["1ED6681A3B5B7929","7A5FB2D2F953E26A"]
+      x: 4.0d
+      y: 0.0d
+      description: ["在月面组装并接通异界门。首次到达异界后，下界传送台对你开放。使用月球异常凭据或异界原有传送台撤离。"]
+      tasks: [{id:"18537A51AC94B288", type:"advancement", advancement:"expedition_space:other_arrival", criterion:""}]
+    }
+  ]
+}

@@ -18,6 +18,9 @@ def write_zip(path, entries):
 
 
 def package(repository, output):
+    manifest = json.loads((repository / "source-manifest.json").read_text())
+    if manifest.get("minecraft") != "1.20.1" or not manifest.get("forge"):
+        raise SystemExit("This is the Forge release builder. Build 1.21.1 with development/ports/1.21.1/release/package_test.py.")
     metadata = json.loads((repository / "source-manifest.json").read_text())
     index_bytes = (repository / "modrinth.index.json").read_bytes()
     index = json.loads(index_bytes)

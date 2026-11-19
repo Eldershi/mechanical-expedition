@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "expedition": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
