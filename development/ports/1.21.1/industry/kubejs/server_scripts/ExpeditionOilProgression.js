@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
     catalyst: { tag: 'c:plates/vanadium' },
     energy: 120,
     input0: { fluid: diesel + 'gasoline', amount: 200 },
-    input1: { fluid: 'steam_letters:steam', amount: 100 },
+    input1: { tag: 'c:steam', amount: 100 },
     result: { id: 'cmi:cracked_gasoline', amount: 200 }
   }).id(path + 'cracked_gasoline')
   distill('cracked_gasoline_fractions', 'cmi:cracked_gasoline', 500, [

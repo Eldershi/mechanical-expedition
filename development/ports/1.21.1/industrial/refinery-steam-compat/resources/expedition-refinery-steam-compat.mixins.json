@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "expedition.refinery.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["RefineryLogicMixin", "RefineryStateMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

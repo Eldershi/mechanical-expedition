@@ -1,20 +1,19 @@
 ServerEvents.recipes(event => {
   const path = 'expedition:factory/polymer/'
-  const refine = (name, catalyst, energy, inputs, output) => {
+  const refine = (name, catalyst, energy, input0, output, input1) => {
     const recipe = {
       type: 'immersiveengineering:refinery',
       catalyst: { tag: `c:plates/${catalyst}` },
       energy: energy,
-      input0: { fluid: inputs[0][0], amount: inputs[0][1] },
+      input0: input0,
       result: { id: `cmi:${name}`, amount: output }
     }
-    if (inputs.length === 2) recipe.input1 = { fluid: inputs[1][0], amount: inputs[1][1] }
+    if (input1) recipe.input1 = input1
     event.custom(recipe).id(path + name)
   }
 
-  refine('cracked_diesel', 'vanadium', 120, [
-    ['createdieselgenerators:diesel', 100], ['steam_letters:steam', 100]
-  ], 200)
+  refine('cracked_diesel', 'vanadium', 120, { fluid: 'createdieselgenerators:diesel', amount: 100 }, 200,
+    { tag: 'c:steam', amount: 100 })
   event.custom({
     type: 'createdieselgenerators:distillation',
     ingredients: [{ type: 'fluid_tag', fluid_tag: 'cmi:cracked_diesel', amount: 1000 }],
@@ -25,11 +24,10 @@ ServerEvents.recipes(event => {
       { id: 'cmi:acetylene', amount: 250 }
     ]
   }).id(path + 'cracked_diesel_fractions')
-  refine('vinyl_alcohol', 'silver', 120, [['cmi:acetylene', 100]], 100)
-  refine('polyvinyl_alcohol', 'copper', 6400, [['cmi:vinyl_alcohol', 2000]], 2000)
-  refine('structural_plastic', 'copper', 120, [
-    ['cmi:light_aldehyde', 100], ['cmi:polyvinyl_alcohol', 100]
-  ], 200)
+  refine('vinyl_alcohol', 'silver', 120, { fluid: 'cmi:acetylene', amount: 100 }, 100)
+  refine('polyvinyl_alcohol', 'copper', 6400, { fluid: 'cmi:vinyl_alcohol', amount: 2000 }, 2000)
+  refine('structural_plastic', 'copper', 120, { fluid: 'cmi:light_aldehyde', amount: 100 }, 200,
+    { fluid: 'cmi:polyvinyl_alcohol', amount: 100 })
 
   event.custom({
     type: 'immersiveengineering:bottling_machine',

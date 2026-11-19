@@ -106,5 +106,11 @@
     "sha256": "65213b276f43b18fe21a1ba6d9779bc231f31ba5ec93225bd97680b2eeae566e",
     "side": "BOTH",
     "build": "industrial/build.py"
+  },
+  "expedition-refinery-steam-compat-neoforge-1.0.0.jar": {
+    "filename": "expedition-refinery-steam-compat-neoforge-1.0.0.jar",
+    "sha256": "95684fbecb8ad1232ef970d09af81494ccd9ed58145298a31937706c3535e270",
+    "side": "BOTH",
+    "build": "industrial/build.py"
   }
 }

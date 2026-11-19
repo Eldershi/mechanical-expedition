@@ -14,6 +14,7 @@ MODULES = {
     "flight-pneumatics-compat": (),
     "storage-adjustments": ("functionalstorage-", "sophisticatedcore-", "titanium-"),
     "engineering-adjustments": ("immersiveengineering-",),
+    "refinery-steam-compat": ("immersiveengineering-", "createcraftedbeginning-"),
 }
 
 

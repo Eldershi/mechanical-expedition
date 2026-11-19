@@ -1,12 +1,15 @@
-# Storage and engineering adjustments
+# Storage and engineering compatibility
 
-Build these add-ons with Java 21 and a NeoForge 1.21.1 server that has Functional Storage, Sophisticated Core, Titanium, and Immersive Engineering. Install the compiled JARs on the client and server.
+Build these add-ons with Java 21 against the NeoForge 1.21.1 test server. Install the compiled JARs on the client and server.
 
 ```sh
 python3 build.py storage-adjustments --java /path/to/java --server /path/to/neoforge-server --output /path/to/output
 python3 build.py engineering-adjustments --java /path/to/java --server /path/to/neoforge-server --output /path/to/output
+python3 build.py refinery-steam-compat --java /path/to/java --server /path/to/neoforge-server --output /path/to/output
 ```
 
 Storage capacity upgrades sum their multipliers in Sophisticated storage and Functional Storage drawers. Drawer storage upgrades require a single tier. Removing or replacing a Sophisticated upgrade checks the projected capacity against the items already stored.
 
 The top hatch of the Immersive Engineering Arc Furnace exposes its three graphite electrode slots for item automation.
+
+Connect a Create Crafted Beginning airtight pipe to either of the Immersive Engineering Refinery’s original fluid inlets. Pressurized steam enters the existing input tank at one millibucket per gas unit. The other tank can receive fuel through a fluid pipe. This add-on uses Mekanism steam internally and pairs with the gasoline and diesel cracking recipes in the [industry overlay](../industry).
