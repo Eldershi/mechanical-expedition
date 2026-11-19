@@ -15,6 +15,7 @@ MOTION = HERE.parents[2] / "tools/player-motion-guard"
 MODULES = {
     "alpine": ("expedition_alpine_climate", "1.0.0", "Expedition Local Alpine Climate",
                "expedition.alpine.mixin", ["BiomeTemperatureMixin", "BiomeTemperatureAccess", "SurfaceSystemMixin"]),
+    "block-catalog": ("expedition_block_catalog", "1.0.0", "Expedition Migration Block Catalog", "", []),
     "equipment": ("expedition_equipment_rules", "1.0.0", "Expedition Curios Equipment", "", []),
     "ie-machine": ("expedition_ie_machine_compat", "1.0.0", "Expedition IE Machine Compatibility",
                    "expedition.iemachines.mixin", ["CokeOvenCapacityMixin", "FluidPipeConnectionMixin"]),
@@ -72,7 +73,7 @@ def classpath(server):
 
 def build(module, java, cp, output, mods, space_proof=False):
     modid, version, title, mixins_package, mixins = MODULES[module]
-    side = "SERVER" if module in {"island-rail", "motion-guard", "teleport"} else "BOTH"
+    side = "SERVER" if module in {"block-catalog", "island-rail", "motion-guard", "teleport"} else "BOTH"
     filename = f"{modid.replace('_', '-')}-neoforge-{version}.jar"
     sources = sorted((HERE / module / "src").rglob("*.java"))
     if module in DEPENDENCIES:
