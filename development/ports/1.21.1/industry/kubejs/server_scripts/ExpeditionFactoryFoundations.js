@@ -26,6 +26,10 @@ ServerEvents.recipes(event => {
     const framework = `cmi:${metal}_casing_framework`
     event.stonecutting('4x ' + framework, plate)
       .id(`expedition:factory/${metal}_casing_framework`)
+    if (metal === 'brass' || metal === 'copper') {
+      create.cutting('4x ' + framework, Ingredient.of(plate)).processingTime(100)
+        .id(`expedition:factory/${metal}_casing_framework_sawing`)
+    }
     create.deploying(`create:${metal}_casing`, [Ingredient.of('#minecraft:planks'), framework])
       .id(`expedition:factory/${metal}_casing_from_framework`)
   })

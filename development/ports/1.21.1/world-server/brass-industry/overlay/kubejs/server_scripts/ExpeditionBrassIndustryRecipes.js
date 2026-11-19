@@ -28,6 +28,8 @@ ServerEvents.recipes(event => {
   const press = (name) => add('hydropress', name, 100, 2400)
   press('brass_plate').inputItems('create:brass_block').outputItems('9x create:brass_sheet')
   press('iron_plate').inputItems('minecraft:iron_block').outputItems('9x create:iron_sheet')
+  press('titanium_plate').inputItems('cmi:titanium_ingot').outputItems('cmi:titanium_plate')
+  press('titanium_alloy_plate').inputItems('cmi:titanium_alloy_ingot').outputItems('cmi:titanium_alloy_plate')
   press('copper_ingot').inputFluids(molten('copper', 4)).outputItems('4x minecraft:copper_ingot')
   press('iron_ingot').inputFluids(molten('iron', 4)).outputItems('4x minecraft:iron_ingot')
   press('steel_ingot').inputFluids(molten('steel', 4)).outputItems('4x ad_astra:steel_ingot')
@@ -46,6 +48,8 @@ ServerEvents.recipes(event => {
     .inputItems('16x minecraft:end_stone').outputItems('48x cmi:end_stone_dust')
   add('huge_crusher', 'galena_dust', 100, 2400)
     .inputItems('8x alexscaves:galena').outputItems('8x cmi:galena_dust')
+  add('huge_crusher', 'dragonite_dust', 100, 2400)
+    .inputItems('8x cmi:dragonite').outputItems('8x cmi:dragonite_dust')
 
   const blast = (name) => add('blasting_compressor', name, 120, 4800).inputItems('minecraft:tnt')
   blast('brass').inputItems('9x create:brass_block').outputItems('64x create:brass_sheet', '17x create:brass_sheet')

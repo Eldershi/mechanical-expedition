@@ -49,6 +49,13 @@ ServerEvents.recipes(event => {
   ]).id(path + 'enriched_osmium_crystal')
   create.cutting('cmi:osmium_wafer', 'cmi:enriched_osmium_crystal').id(path + 'osmium_wafer')
   create.cutting('cmi:silicon_wafer', 'ae2:silicon').id(path + 'silicon_wafer')
+  for (const [suffix, input] of [['silicon', 'ae2:silicon'], ['single_crystal', 'cmi:single_crystal_silicon']]) {
+    event.custom({
+      type: 'extendedae:circuit_cutter',
+      input: {ingredient: {item: input}},
+      output: {id: 'cmi:silicon_wafer', count: 1}
+    }).id(path + 'silicon_wafer_circuit_cutter_' + suffix)
+  }
   create.cutting('cmi:germanium_wafer', 'cmi:germanium_crystal').id(path + 'germanium_wafer')
   create.cutting('cmi:entro_alloy_wafer', 'cmi:entro_alloy').id(path + 'entro_alloy_wafer')
   event.recipes.vintageimprovements.laser_cutting('cmi:ionized_red_dust', 'ad_astra:mars_sand')
