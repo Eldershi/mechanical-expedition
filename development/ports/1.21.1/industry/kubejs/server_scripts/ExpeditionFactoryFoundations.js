@@ -13,6 +13,25 @@ ServerEvents.recipes(event => {
   }).id('expedition:factory/wooden_gear')
   create.pressing('cmi:andesite_alloy_plate', 'create:andesite_alloy')
     .id('expedition:factory/andesite_alloy_plate')
+
+  event.shaped('cmi:hammer_head', ['PPP', 'III', 'PPP'], {
+    P: Ingredient.of(['#c:plates/iron', '#c:plates/andesite_alloy']),
+    I: Ingredient.of(['#c:ingots/iron', '#c:ingots/andesite_alloy'])
+  }).id('expedition:factory/hammer_head')
+  event.shaped('create:mechanical_press', ['M', 'C', 'H'], {
+    M: 'cmi:andesite_mechanism',
+    C: 'create:andesite_casing',
+    H: 'cmi:hammer_head'
+  }).id('expedition:factory/mechanical_press_with_head')
+
+  const brassFramework = 'cmi:brass_casing_framework'
+  event.stonecutting('4x ' + brassFramework, '#c:plates/brass')
+    .id('expedition:factory/brass_casing_framework')
+  create.deploying('create:brass_casing', [Ingredient.of('#minecraft:planks'), brassFramework])
+    .id('expedition:factory/brass_casing_from_framework')
+  create.deploying('create_connected:empty_fan_catalyst', ['minecraft:iron_bars', brassFramework])
+    .id('expedition:factory/empty_fan_catalyst_from_framework')
+
   create.cutting('2x cmi:incomplete_large_cogwheel', [
     Ingredient.of('#c:gears/wooden')
   ]).id('expedition:factory/unfinished_large_cogwheel')

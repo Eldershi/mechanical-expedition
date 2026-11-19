@@ -22,6 +22,7 @@ MODEL_CALL = re.compile(r"\.modelJson\((\{.*?\}|[\w.]+\([^()]*\))\)", re.S)
 OLD_TAG = re.compile(r"""(\.tag\(["'`])forge:""")
 THERMAL_TAG = re.compile(r"""(?m)^[ \t]*\.tag\(["'`]thermal:[^\n]*\n""")
 RETIRED_CLAY_MOLDS = ("2x2_packing", "3x3_packing")
+RETIRED_CASING_FRAMEWORKS = ("andesite", "bronze")
 
 
 def convert(relative, source, tinkers_namespace):
@@ -43,6 +44,16 @@ def convert(relative, source, tinkers_namespace):
         source = source.replace(".hunger(20)", ".nutrition(20)")
         source = source.replace('\n\t\t"elite",\n\t\t"elite",', '\n\t\t"elite",')
         source = source.replace("expatternprovider:item/", "extendedae:item/")
+        source = re.sub(
+            r'(?m)^\t// 升级模板\n\taddMaterial\("drawer_upgrade_template"\)\n\n',
+            "", source,
+        )
+        casing_frames = "|".join(RETIRED_CASING_FRAMEWORKS)
+        source = re.sub(
+            r'(let casingFrame = \[\n)([^\]]+)(\])',
+            lambda match: match[1] + re.sub(rf'(?m)^\t\t"(?:{casing_frames})",\n', "", match[2]) + match[3],
+            source,
+        )
     elif relative == "item/Incompletes.js":
         source = re.sub(r'(?m)^\t\t"(?:upgrade_augment_\d+|thermal_mechanism_augment)",?\n', "", source)
         source = re.sub(
@@ -82,6 +93,11 @@ def build(source, target, tinkers_namespace):
         for name in RETIRED_CLAY_MOLDS:
             for extension in (".png", ".png.mcmeta"):
                 (textures / "material/mold/clay" / (name + extension)).unlink(missing_ok=True)
+        for name in RETIRED_CASING_FRAMEWORKS:
+            for extension in (".png", ".png.mcmeta"):
+                (textures / "framework" / (name + extension)).unlink(missing_ok=True)
+        for extension in (".png", ".png.mcmeta"):
+            (textures / "material" / ("drawer_upgrade_template" + extension)).unlink(missing_ok=True)
 
     for relative in SOURCE_FILES:
         converted = convert(relative, (source / relative).read_text(), tinkers_namespace)
