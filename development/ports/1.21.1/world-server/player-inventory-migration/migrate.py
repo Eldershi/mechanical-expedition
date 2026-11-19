@@ -23,6 +23,7 @@ SOURCE_VERSION = 3465
 TARGET_VERSION = 3955
 STACK_MARKER = "__expedition_stack"
 ALIASES = {
+    "cmi:grass_string": "minecraft:string",
     "tconstruct:seared_bricks": "modernfoundry:seared_bricks",
     "tconstruct:seared_faucet": "modernfoundry:seared_faucet",
     "tconstruct:molten_bronze_bucket": "modernfoundry:molten_bronze_bucket",

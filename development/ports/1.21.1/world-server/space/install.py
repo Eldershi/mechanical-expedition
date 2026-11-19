@@ -3,6 +3,7 @@
 
 import argparse
 from pathlib import Path
+import runpy
 import shutil
 import subprocess
 import sys
@@ -23,6 +24,9 @@ def install(client, server, java):
         raise ValueError("Server does not match NeoForge 21.1.267")
     if not (server / "mods/adastra-1.21.1-1.16.26-neoforge.jar").is_file():
         raise ValueError("Server does not match the 1.21.1 space baseline")
+    retire_grass_string = runpy.run_path(str(FACTORY.parent / "cmi-materials/build_registrations.py"))[
+        "retire_grass_string"
+    ]
     with tempfile.TemporaryDirectory() as directory:
         staged = Path(directory)
         overlay = staged / "overlay"
@@ -30,8 +34,16 @@ def install(client, server, java):
         shutil.copytree(HERE / "overlay", overlay, dirs_exist_ok=True)
         subprocess.run([sys.executable, str(INDUSTRY / "build.py"), str(overlay)], check=True)
         shutil.copytree(INDUSTRY / "overlay", overlay, dirs_exist_ok=True)
-        nether_recipes = Path("kubejs/server_scripts/ExpeditionNetherProgression.js")
-        shutil.copy2(FACTORY / nether_recipes, overlay / nether_recipes)
+        for path in (
+            "kubejs/server_scripts/ExpeditionNetherProgression.js",
+            "kubejs/startup_scripts/ExpeditionSugarSyrup.js",
+            "kubejs/server_scripts/ExpeditionSyrupRecipes.js",
+            "kubejs/server_scripts/ExpeditionPlantAsh.js",
+            "kubejs/client_scripts/ExpeditionSugarSyrupLanguage.js",
+        ):
+            target = overlay / path
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(FACTORY / path, target)
         subprocess.run([sys.executable, str(HERE.parent / "build.py"), "--java", str(java),
                         "--server", str(server), "--output", str(staged), "space"], check=True)
         adapter, = staged.glob("*.jar")
@@ -41,6 +53,7 @@ def install(client, server, java):
         for instance in (client, server):
             subprocess.run([sys.executable, str(FACTORY / "update_nether_quests.py"),
                             str(instance / "config/ftbquests/quests")], check=True)
+            retire_grass_string(instance)
             shutil.copytree(overlay, instance, dirs_exist_ok=True)
             shutil.copy2(adapter, instance / "mods")
 

@@ -48,6 +48,10 @@ Refine IE plant oil and naphtha with a reusable copper plate to make lubricating
 
 Ferment rice in a covered Create basin or an IE Fermenter. The distillation tower separates vinegar into acetic acid and water. A heated Create basin combines silicon and light olefins to make light silicone ether. An IE Refinery with a reusable copper plate polymerizes the ether and reacts the polymer with acetic acid to make liquid silicone rubber. A Hexa casting table yields a piece of rubber when empty or a rubber plate when fitted with a reusable plate cast.
 
+Press sugar cane in a Create basin to obtain sugar syrup and cane fiber. Press beetroot for syrup or use the sugar-fed syrup recipes. Dry fiber in a furnace or smoker to get paper, or use an item drain to recover paper and residual syrup. Heat syrup in a basin to make sugar. A covered basin and a bulk fermenter both turn syrup and crops into ethanol, which combines with plant oil to make biodiesel.
+
+Smelt plants, flowers, leaves, bark or wood dust in a furnace to make plant ash. An IE Garden Cloche can use the ash as fertilizer at the original 1.2 growth multiplier.
+
 The bronze mechanism starts as a bronze plate curved with a mechanism mold. Fill it with molten bronze, then install a bronze cogwheel, a bronze plate, and a mechanical mechanism part. Steam Powered supplies the burners, boilers, engines, and flywheels for the steam power tasks. The three steam engines each have an additional recipe using the bronze mechanism. The Create spout and mechanical press handle filling and pressing.
 
 With `nbtlib==2.0.4`, export supported legacy Tinkers tools, parts and manuals from copies of Anvil terrain or entity regions.

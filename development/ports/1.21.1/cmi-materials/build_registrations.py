@@ -21,6 +21,24 @@ SOURCE_FILES = (
 MODEL_CALL = re.compile(r"\.modelJson\((\{.*?\}|[\w.]+\([^()]*\))\)", re.S)
 OLD_TAG = re.compile(r"""(\.tag\(["'`])forge:""")
 THERMAL_TAG = re.compile(r"""(?m)^[ \t]*\.tag\(["'`]thermal:[^\n]*\n""")
+GRASS_STRING = re.compile(
+    r'(?m)^\t// 草绳\n\taddMaterial\("grass_string"\)\n(?:\t\t\.tag\([^\n]+\n)*\n'
+)
+
+
+def remove_grass_string(source):
+    updated = GRASS_STRING.sub("", source)
+    if 'addMaterial("grass_string")' in updated:
+        raise ValueError("Unexpected grass string registration")
+    return updated
+
+
+def retire_grass_string(instance):
+    basic = instance / "kubejs/startup_scripts/cmi/item/Basic.js"
+    original = basic.read_text(encoding="utf-8")
+    updated = remove_grass_string(original)
+    if updated != original:
+        basic.write_text(updated, encoding="utf-8")
 
 
 def convert(relative, source, tinkers_namespace):
@@ -28,6 +46,7 @@ def convert(relative, source, tinkers_namespace):
     source = THERMAL_TAG.sub("", source)
     source = MODEL_CALL.sub(r".modelGenerator(model => Cmi.applyModel(model, \1))", source)
     if relative == "item/Basic.js":
+        source = remove_grass_string(source)
         source = re.sub(
             r'(?m)^\t// 蒸汽升级\n(?:\taddItem\("steam_(?:cast_iron|steel)_upgrade"\)\n'
             r'\t\t\.texture\([^\n]+\n\t\t\.tag\([^\n]+\n\n){2}',
