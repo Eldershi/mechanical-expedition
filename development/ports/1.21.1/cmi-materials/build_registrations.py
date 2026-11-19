@@ -21,6 +21,7 @@ SOURCE_FILES = (
 MODEL_CALL = re.compile(r"\.modelJson\((\{.*?\}|[\w.]+\([^()]*\))\)", re.S)
 OLD_TAG = re.compile(r"""(\.tag\(["'`])forge:""")
 THERMAL_TAG = re.compile(r"""(?m)^[ \t]*\.tag\(["'`]thermal:[^\n]*\n""")
+RETIRED_CLAY_MOLDS = ("2x2_packing", "3x3_packing")
 
 
 def convert(relative, source, tinkers_namespace):
@@ -49,6 +50,9 @@ def convert(relative, source, tinkers_namespace):
             "", source,
         )
         source = source.replace("expatternprovider:item/", "extendedae:item/")
+    elif relative == "item/Molds.js":
+        names = "|".join(RETIRED_CLAY_MOLDS)
+        source = re.sub(rf'(?m)^[ \t]*addClayMold\("(?:{names})"\)\n', "", source)
     elif relative == "item/mechanism/Augment.js":
         source = re.sub(r'(?m)^ +addMechanismAugment\("(?:thermal|reinforced)"\)\n', "", source)
     elif relative == "item/mechanism/Flashdrive.js":
@@ -70,10 +74,14 @@ def convert(relative, source, tinkers_namespace):
 def build(source, target, tinkers_namespace):
     (target / "item/mechanism/Random.js").unlink(missing_ok=True)
     if target.parent.name == "startup_scripts":
-        random_textures = target.parent.parent / "assets/cmi/textures/item/mechanism/random"
+        textures = target.parent.parent / "assets/cmi/textures/item"
+        random_textures = textures / "mechanism/random"
         for pattern in ("*.png", "*.png.mcmeta"):
             for texture in random_textures.glob(pattern):
                 texture.unlink()
+        for name in RETIRED_CLAY_MOLDS:
+            for extension in (".png", ".png.mcmeta"):
+                (textures / "material/mold/clay" / (name + extension)).unlink(missing_ok=True)
 
     for relative in SOURCE_FILES:
         converted = convert(relative, (source / relative).read_text(), tinkers_namespace)

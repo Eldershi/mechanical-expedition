@@ -15,6 +15,12 @@ ServerEvents.recipes(event => {
     }).id(path + id)
   }
 
+  const redstoneAcid = 'immersiveengineering:redstone_acid'
+  create.filling('cmi:activated_graphite_chunk', [
+    Ingredient.of(['immersiveengineering:ingot_hop_graphite', 'immersiveengineering:dust_hop_graphite']),
+    Fluid.of(redstoneAcid, 100)
+  ]).id(path + 'activated_graphite_chunk')
+
   create.mixing('cmi:entro_crystal', [
     'extendedae_plus:oblivion_singularity', 'cmi:dreamcore_crystal', 'create:shadow_steel'
   ]).superheated().id(path + 'entro_crystal')

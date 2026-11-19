@@ -52,4 +52,12 @@ ServerEvents.recipes(event => {
     creosote: 1000,
     time: 900
   }).id(path + 'charcoal_coke')
+
+  const cokeDust = Ingredient.of('#c:dusts/coal_coke')
+  create.compacting('immersiveengineering:dust_hop_graphite', [
+    cokeDust, cokeDust, cokeDust, cokeDust, cokeDust, cokeDust, cokeDust, cokeDust
+  ]).heated().id(path + 'hop_graphite_dust')
+  create.compacting('immersiveengineering:ingot_hop_graphite', [
+    'immersiveengineering:dust_hop_graphite'
+  ]).heated().id(path + 'hop_graphite_ingot')
 })

@@ -4,6 +4,8 @@ Install the `kubejs` scripts and data alongside the CMI material registrations. 
 
 Vintage Improvements and the IE Bottling Machine provide red mud and aluminum dust production. The IE Arc Furnace produces refractory grout and pure semi-molten osmium. Smelting the grout yields refractory bricks. A superheated Create basin makes nitric acid, and an IE Coke Oven makes coal coke from charcoal.
 
+A normally heated Create basin under a Mechanical Press compacts eight coal coke dust into one HOP graphite dust, or one HOP graphite dust into one ingot. A Create spout adds 100 mB of IE redstone acid to either HOP graphite dust or an ingot to make one activated graphite chunk. Run `python3 update_graphite_quest.py /path/to/config/ftbquests/quests` after importing the FTB quest data.
+
 The Engineer's Workbench has parallel component blueprints for iron parts, steel parts and electron tubes. Its molds blueprint accepts industrial iron sheets for the ten CMI molds. The Coke Oven processes wood dust into charcoal dust and creosote. Refractory kiln bricks can be assembled into blast furnace bricks.
 
 A Create mixer uses concrete powder and water to produce the corresponding sixteen Diesel Generators cement colors. IE liquid concrete cures adjacent sources with the IE Fix Pack. The IE Assembler uses standard crafting patterns for automation.
@@ -16,7 +18,7 @@ The integrated workstation makes the four tiers of Mekanism mechanism bases. Fin
 
 Computing, aeronautic, astronautic, and antimatter mechanisms also finish on Create sequenced assembly lines. Assemble their bases in the workstation. A laser cuts each unfinished mechanism, and a spout supplies 200 mB of structural plastic for computing, aeronautic, and astronautic mechanisms or 250 mB of ferrouslime for antimatter mechanisms.
 
-The recipe data adds four 250 mB spout recipes for Farmer’s Spell drinks and restores white placard dyeing. Eight solid concrete blocks make sixteen cinder bricks. Supplementaries soap cleans the Alex’s Caves painting variants back into smooth limestone. The Nether culinary integrations for giant beast croissant, magma sweet and sour pork, gilded barbaric roast, and warped juice are disabled. The train network monitor recipe requires CC: Tweaked. The standard Menril tapping recipe requires Integrated Dynamics. The TerraFirmaCraft Menril variant is disabled.
+The recipe data adds four 250 mB spout recipes for Farmer’s Spell drinks and restores white placard dyeing. Eight solid concrete blocks make sixteen cinder bricks. Supplementaries soap cleans the Alex’s Caves painting variants back into smooth limestone. The Nether culinary integrations for giant beast croissant, magma sweet and sour pork, gilded barbaric roast, and warped juice are disabled. The train network monitor recipe requires CC: Tweaked. Both Tree Tap Menril recipes are disabled.
 
 The integrated workstation produces nuclear mechanism bases, fissile cores, quantum parts, and finished nuclear mechanisms. The finished mechanism also has a Create sequenced route with Vintage Improvements laser cutting. Entro alloy uses Etrium and Cryotheum in the integrated workstation. A Create spout infuses a native Farmer's Delight knife with concentrated experience, yielding the unbreakable CMI knife.
 
