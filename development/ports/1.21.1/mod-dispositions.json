@@ -94,5 +94,8 @@
   },
   "create_steam_ages": {
     "status": "replaced_by_steam_letters"
+  },
+  "nebula_tinker": {
+    "status": "removed_by_pack_policy"
   }
 }

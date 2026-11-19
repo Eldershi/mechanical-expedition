@@ -1,6 +1,6 @@
 # Industrial compatibility for NeoForge 1.21.1
 
-Install the `kubejs` scripts and data alongside the CMI material registrations. The recipes provide the copper, railway, Nether, precision, and coil mechanism lines. They also restore the cast iron and steel processes, seawater and lithium processing, and the Hexa casting and remelting routes for CMI mechanism bases and molds.
+Install the `kubejs` scripts and data alongside the CMI material registrations. The recipes provide the copper, railway, Nether, precision, and coil mechanism lines. They also restore the cast iron and steel processes, seawater and lithium processing, and the Hexa casting and remelting routes for CMI mechanism bases and molds. The industry overlay also supplies CMI brass, cast iron, and shadow steel tool materials, plus the material data for restoring the two supported legacy melting pan combinations.
 
 Vintage Improvements and the IE Bottling Machine provide red mud and aluminum dust production. The IE Arc Furnace produces refractory grout and pure semi-molten osmium. Smelting the grout yields refractory bricks. A superheated Create basin makes nitric acid, and an IE Coke Oven makes coal coke from charcoal.
 

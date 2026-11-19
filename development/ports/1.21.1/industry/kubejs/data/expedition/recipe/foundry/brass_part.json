@@ -2,7 +2,7 @@
   "type": "modernfoundry:material",
   "id": "expedition:foundry/brass_part",
   "ingredient": {
-    "item": "expedition:clockwork_brass_ingot"
+    "item": "create:brass_sheet"
   },
   "material": "cmi:brass",
   "needed": 1,

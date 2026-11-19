@@ -3,5 +3,12 @@
   "material.cmi.andesite_alloy": "安山合金",
   "material.cmi.stainless_steel": "不锈钢",
   "fluid.cmi.molten_stainless_steel": "熔融不锈钢",
-  "item.cmi.molten_stainless_steel_bucket": "熔融不锈钢桶"
+  "item.cmi.molten_stainless_steel_bucket": "熔融不锈钢桶",
+  "material.cmi.brass": "远征黄铜",
+  "material.cmi.cast_iron": "铸铁",
+  "material.cmi.shadow_steel": "暗影钢",
+  "material.expedition.legacy_lumium": "琉明",
+  "material.expedition.legacy_soul_infused": "灵魂注入",
+  "modifier.expedition.legacy_luminescence": "发光",
+  "modifier.expedition.legacy_luminescence.description": "此材质触发受击反制时，攻击者短暂获得发光效果。"
 }

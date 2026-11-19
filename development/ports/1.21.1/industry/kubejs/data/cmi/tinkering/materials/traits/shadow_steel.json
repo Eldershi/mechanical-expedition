@@ -1,0 +1,10 @@
+{
+  "perStat": {
+    "modernfoundry:ranged": [
+      {
+        "level": 2,
+        "name": "modernfoundry:multishot"
+      }
+    ]
+  }
+}

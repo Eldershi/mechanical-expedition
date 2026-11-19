@@ -77,6 +77,13 @@ def convert_stack(source, include_legacy_pan_materials=False):
     data = deepcopy(source.get("tag", Compound()))
     if (path in TOOLS) != bool(data.get("tic_materials")):
         raise ValueError("Unexpected tool material data")
+    for field in ("tic_modifiers", "tic_upgrades"):
+        if field in data:
+            entries = data[field]
+            if not isinstance(entries, List) or any(not isinstance(entry, Compound) for entry in entries):
+                raise ValueError(f"Unsupported legacy tool data in {field}")
+            data[field] = type(entries)(entry for entry in entries
+                                        if not entry.get("name", "").startswith("nebula_tinker:"))
     materials = data.get("tic_materials", [])
     missing_materials = set(materials) - {LEGACY + material for material in MATERIALS}
     pan_material = PAN_MATERIALS.get(tuple(materials)) if include_legacy_pan_materials and path == "melting_pan" else None
@@ -150,7 +157,7 @@ def main():
     parser.add_argument("regions", nargs="+", type=Path)
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--include-legacy-pan-materials", action="store_true",
-                        help="Convert matching pan materials for Nebula Tinker adapter 1.1")
+                        help="Convert matching pan materials for the industry KubeJS overlay")
     args = parser.parse_args()
     report = {f"{region.parent.name}/{region.name}": list(region_report(region, args.include_legacy_pan_materials))
               for region in args.regions}

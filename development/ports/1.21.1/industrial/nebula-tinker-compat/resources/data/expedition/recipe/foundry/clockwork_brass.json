@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    { "item": "create:brass_ingot" }
-  ],
-  "result": { "id": "expedition:clockwork_brass_ingot" }
-}

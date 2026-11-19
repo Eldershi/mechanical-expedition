@@ -13,9 +13,7 @@ python3 restore_foundry_vault_tools.py \
 
 Review `foundry-tool-report.json` and copy only the staged `r.*.*.mca` files into the same stopped copy's `region` directory. Keep the output `unconverted-stacks.nbt` with the copy for the outstanding entries.
 
-Add `--include-nebula` when the Nebula Tinker adapter is installed to restore the saved spider fang in its original vault slot.
-
-Add `--include-legacy-pan-materials` with Nebula Tinker adapter 1.1 to restore the lead and Lumium pan and the cast iron and Soul-Infused pan. These two patterns use the adapter's hidden limb materials and keep the original part statistics and saved Luminescence trait.
+Add `--include-legacy-pan-materials` with the industry KubeJS overlay installed to restore the lead and Lumium pan and the cast iron and Soul-Infused pan. These two patterns use the overlay's hidden limb materials and keep the original part statistics and saved Luminescence trait.
 
 Add `--include-equivalent-stacks` with Create Crafts & Additions and Modern Foundry installed. This restores the original CMI capacitor as `createaddition:capacitor` and matching Foundry stock such as Seared Bricks and Skyslime Balls. The stock must have only an original ID, count, and slot. Stored fluids, tool station textures, and other item payloads stay in the recovery file.
 

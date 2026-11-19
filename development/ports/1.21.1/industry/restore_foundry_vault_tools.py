@@ -24,7 +24,6 @@ from spell_components import SPELL_CONTAINER, convert_scroll
 VAULT = "create:item_vault"
 SCROLL = "irons_spellbooks:scroll"
 TARGET_VERSION = 3955
-NEBULA_MATERIALS = {"nebula_tinker:spider_fang"}
 EQUIVALENT_STACKS = {"cmi:simple_battery": "createaddition:capacitor"}
 EQUIVALENT_STACKS.update({f"tconstruct:{name}": f"modernfoundry:{name}" for name in (
     "gear_cast",
@@ -55,20 +54,19 @@ EQUIVALENT_STACKS.update({f"tconstruct:{name}": f"modernfoundry:{name}" for name
 )})
 
 
-def candidates(recovery, report, include_nebula, include_legacy_pan_materials, include_equivalent_stacks,
+def candidates(recovery, report, include_legacy_pan_materials, include_equivalent_stacks,
                include_create_workpieces, target_spells):
     locations = set()
     for index, entry in enumerate(recovery.get("Stacks", ())):
         original = entry.get("OriginalStack", {})
         item = str(original.get("id", ""))
         tool = item.startswith(LEGACY) and item.removeprefix(LEGACY) in TOOLS
-        nebula_material = include_nebula and item in NEBULA_MATERIALS
         equivalent_item = EQUIVALENT_STACKS.get(item) if include_equivalent_stacks else None
         workpiece = include_create_workpieces and item in WORKPIECES
         scroll = target_spells is not None and item == SCROLL
         if (entry.get("BlockEntity") != VAULT
                 or entry.get("Reason") not in {"missing_item_id", "unverified_mod_payload"}
-                or not (tool or nebula_material or equivalent_item or workpiece or scroll)
+                or not (tool or equivalent_item or workpiece or scroll)
                 or "Slot" not in original):
             continue
         position = tuple(map(int, entry["BlockPos"]))
@@ -88,11 +86,11 @@ def candidates(recovery, report, include_nebula, include_legacy_pan_materials, i
                     raise ValueError(f"Spell is missing from the target registry: {spell}")
             elif workpiece:
                 stack = convert_create_workpiece(original)
-            elif equivalent_item or nebula_material:
+            elif equivalent_item:
                 count = int(original.get("Count", 0))
                 if set(original) != {"id", "Count", "Slot"} or not 1 <= count <= 64:
                     raise ValueError("Expected a stack with only its original item, count, and slot")
-                stack = Compound({"id": String(equivalent_item or item), "count": Int(count)})
+                stack = Compound({"id": String(equivalent_item), "count": Int(count)})
             else:
                 stack = convert_stack(original, include_legacy_pan_materials)
                 if int(stack["count"]) != 1:
@@ -144,11 +142,11 @@ def restore_chunk(chunk, entries, report, completed):
     return changed
 
 
-def stage_tools(target, recovery, output, include_nebula=False, include_legacy_pan_materials=False,
+def stage_tools(target, recovery, output, include_legacy_pan_materials=False,
                 include_equivalent_stacks=False, include_create_workpieces=False, target_spells=None):
     report = {"restored": [], "already_valid": [], "withheld": [], "regions": []}
     regions = defaultdict(lambda: defaultdict(list))
-    for entry in candidates(recovery, report, include_nebula, include_legacy_pan_materials,
+    for entry in candidates(recovery, report, include_legacy_pan_materials,
                             include_equivalent_stacks, include_create_workpieces, target_spells):
         x, _, z = entry[1]["position"]
         regions[(x // 512, z // 512)][(x // 16, z // 16)].append(entry)
@@ -187,10 +185,8 @@ def main():
     parser.add_argument("--target-regions", required=True, type=Path, help="Region directory of a stopped migration copy")
     parser.add_argument("--vault-recovery", required=True, type=Path, help="Remaining Create vault recovery NBT")
     parser.add_argument("--output", required=True, type=Path, help="New directory for changed region files and recovery")
-    parser.add_argument("--include-nebula", action="store_true",
-                        help="Recover supported materials when the Nebula Tinker adapter is installed")
     parser.add_argument("--include-legacy-pan-materials", action="store_true",
-                        help="Recover matching old pans when Nebula Tinker adapter 1.1 is installed")
+                        help="Recover matching old pans with the industry KubeJS materials")
     parser.add_argument("--include-equivalent-stacks", action="store_true",
                         help="Recover CMI capacitors and matching Modern Foundry stock without item payloads")
     parser.add_argument("--include-create-workpieces", action="store_true",
@@ -214,7 +210,7 @@ def main():
         stage = Path(temp) / "regions"
         stage.mkdir()
         report = stage_tools(target, load(args.vault_recovery), stage,
-                             args.include_nebula, args.include_legacy_pan_materials,
+                             args.include_legacy_pan_materials,
                              args.include_equivalent_stacks, args.include_create_workpieces, target_spells)
         (stage / "foundry-tool-report.json").write_text(json.dumps(report, indent=2) + "\n")
         if output.exists():

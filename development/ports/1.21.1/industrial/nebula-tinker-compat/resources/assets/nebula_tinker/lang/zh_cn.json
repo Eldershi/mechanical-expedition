@@ -1,9 +1,0 @@
-{
-  "item.nebula_tinker.spider_fang": "蜘蛛牙",
-  "modifier.nebula_tinker.abuser": "虐待者",
-  "modifier.nebula_tinker.abuser.description": "近战攻击中毒、凋零或流血的目标时必定暴击。",
-  "modifier.nebula_tinker.clockwork": "发条",
-  "modifier.nebula_tinker.clockwork.description": "处于速度效果时，每级速度使近战暴击概率增加 5 个百分点，暴击额外造成 10% 基础伤害。",
-  "modifier.nebula_tinker.shadow": "暗影",
-  "modifier.nebula_tinker.shadow.description": "命中造成额外虚空伤害。I 级造成 2 点，此后每级增加 1 点。"
-}
