@@ -20,7 +20,7 @@ Rope, amethyst, refined radiance, Desh, Ostrum and Calorite are Hexa tool materi
 
 The hammer head is crafted from six iron or andesite alloy plates and three corresponding ingots. The Mechanical Press uses its native recipe. The reusable mechanism mold fits the Vintage Improvements Curving Press for mechanism assembly.
 
-The quartz diode is assembled by Create mechanical crafters and feeds light engineering mechanism production. Hexa casts stone plates from lava for the basic mechanism part. The iron mechanism uses that part in its sequenced assembly. The Nether mechanism has recipes for the Blaze Burner, the Diesel Generators burner, and the Hexa scorched alloyer. The coil mechanism has recipes for the portable energy interface and Tesla coil. The IE Bottling Machine uses chromium plating solution to plate steel gears.
+The quartz diode is assembled by Create mechanical crafters and feeds light engineering mechanism production. Hexa casts stone plates from lava for the basic mechanism part. The iron mechanism uses that part in its sequenced assembly. Capture a Blaze with Create's empty burner or craft the filled Blaze Burner with a blaze rod and an iron mechanism. The Nether mechanism is used in parallel recipes for the Diesel Generators burner, Hexa scorched alloyer, and Mekanism energized smelter. The Blaze Burner quest follows the Nether visit, and the foundry quest follows the foundry materials. The coil mechanism has recipes for the portable energy interface and Tesla coil. The IE Bottling Machine uses chromium plating solution to plate steel gears.
 
 Run `python3 retire_thermal_content.py /path/to/instance` after copying the FTB quest data and assets. The chapter follows the pack's installed processing, fuel and assembly routes.
 

@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
   ]).transitionalItem(transitional).loops(1).id(path + 'nether_mechanism')
 
   event.shaped('create:blaze_burner', ['ABA', 'ADA', 'CCC'], {
-    A: '#c:plates/iron', B: 'cmi:iron_mechanism', C: 'minecraft:nether_bricks', D: nether
+    A: '#c:plates/iron', B: 'cmi:iron_mechanism', C: 'minecraft:nether_bricks', D: 'minecraft:blaze_rod'
   }).id(path + 'blaze_burner')
   event.shaped('createdieselgenerators:burner', [' B ', 'AMA', ' C '], {
     A: '#c:plates/andesite_alloy', B: '#c:plates/brass', M: nether, C: 'create:empty_blaze_burner'

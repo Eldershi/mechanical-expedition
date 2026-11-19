@@ -13,6 +13,7 @@ from build_structures import build
 
 HERE = Path(__file__).resolve().parent
 INDUSTRY = HERE.parent / "brass-industry"
+FACTORY = HERE.parents[1] / "industry"
 
 
 def install(client, server, java):
@@ -29,6 +30,8 @@ def install(client, server, java):
         shutil.copytree(HERE / "overlay", overlay, dirs_exist_ok=True)
         subprocess.run([sys.executable, str(INDUSTRY / "build.py"), str(overlay)], check=True)
         shutil.copytree(INDUSTRY / "overlay", overlay, dirs_exist_ok=True)
+        nether_recipes = Path("kubejs/server_scripts/ExpeditionNetherProgression.js")
+        shutil.copy2(FACTORY / nether_recipes, overlay / nether_recipes)
         subprocess.run([sys.executable, str(HERE.parent / "build.py"), "--java", str(java),
                         "--server", str(server), "--output", str(staged), "space"], check=True)
         adapter, = staged.glob("*.jar")
@@ -36,6 +39,8 @@ def install(client, server, java):
             if b"expedition_space_acceptance" in archive.read("META-INF/neoforge.mods.toml"):
                 raise ValueError("Acceptance mod may only be installed in a disposable verification instance")
         for instance in (client, server):
+            subprocess.run([sys.executable, str(FACTORY / "update_nether_quests.py"),
+                            str(instance / "config/ftbquests/quests")], check=True)
             shutil.copytree(overlay, instance, dirs_exist_ok=True)
             shutil.copy2(adapter, instance / "mods")
 
