@@ -6,8 +6,6 @@ ServerEvents.recipes(event => {
   const mechanical = 'cmi:mechanical_mechanism_part'
   const engineering = 'cmi:engineering_mechanism_part'
   const andesite = 'cmi:incomplete_andesite_mechanism'
-  const nature = 'cmi:incomplete_nature_mechanism'
-  const potion = 'cmi:incomplete_potion_mechanism'
   const light = 'cmi:incomplete_light_engineering_mechanism'
   const mold = 'cmi:mechanism_mold'
   const augment = 'cmi:light_engineering_mechanism_augment'
@@ -27,22 +25,6 @@ ServerEvents.recipes(event => {
     create.deploying(andesite, [andesite, Ingredient.of('#create:incomplete_large_cogwheels')]),
     create.deploying(andesite, [andesite, mechanical])
   ]).transitionalItem(andesite).loops(1).id(path + 'andesite')
-
-  create.sequenced_assembly('cmi:nature_mechanism', 'minecraft:grass_block', [
-    create.deploying(nature, [nature, Ingredient.of('#minecraft:small_flowers')]),
-    create.cutting(nature, nature),
-    create.filling(nature, [nature, Fluid.of('minecraft:water', 1000)]),
-    create.deploying(nature, [nature, Ingredient.of('#c:seeds')]),
-    create.deploying(nature, [nature, magic])
-  ]).transitionalItem(nature).loops(1).id(path + 'nature')
-
-  create.sequenced_assembly('cmi:potion_mechanism', Ingredient.of('#c:glass_blocks'), [
-    vintage.curving(potion, potion).itemAsHead(mold),
-    create.deploying(potion, [potion, 'minecraft:golden_apple']),
-    create.deploying(potion, [potion, 'minecraft:golden_carrot']),
-    create.deploying(potion, [potion, 'minecraft:glistering_melon_slice']),
-    create.deploying(potion, [potion, magic])
-  ]).transitionalItem(potion).loops(1).id(path + 'potion')
 
   create.mechanical_crafting('4x cmi:laser_diode', ['WPQ'], {
     W: Ingredient.of('#c:wires/electrum'),

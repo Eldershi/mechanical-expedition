@@ -50,9 +50,12 @@ def convert(relative, source, tinkers_namespace):
         )
         source = source.replace("expatternprovider:item/", "extendedae:item/")
     elif relative == "item/mechanism/Augment.js":
-        source = re.sub(r'(?m)^ +addMechanismAugment\("thermal"\)\n', "", source)
+        source = re.sub(r'(?m)^ +addMechanismAugment\("(?:thermal|reinforced)"\)\n', "", source)
     elif relative == "item/mechanism/Flashdrive.js":
-        source = re.sub(r'(?m)^\s*"thermal",\n', "", source)
+        source = re.sub(
+            r'(?m)^[ \t]*"(?:nature|potion|colorful|enchanted|sculk|pig_iron|reinforced|cobalt|wooden|stone|gold|thermal)",?\n',
+            "", source,
+        )
     elif relative == "material/RawOres.js":
         source = re.sub(r'(?m)^\s*addAloneRawMaterial\("etrium"\)\n', "\n", source)
     elif relative == "material/Ingots.js":

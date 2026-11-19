@@ -167,6 +167,28 @@
     "thermal_extra:naphtha_bucket": "cmi:naphtha_bucket"
   },
   "objects": {
+    "0FBC53BEE0AB7A92": {
+      "icon": "cmi:smart_mechanism",
+      "description": [
+        "分开建设炼钢、原油分馏、塑料和硅材料供应。智能构件接续处理器与工程零件。",
+        "首批 AE2 处理器可走机械动力序列装配。得到智能构件后再扩建压印与装配生产，为不同油品和化工中间产物分别准备缓存。"
+      ],
+      "omit_tasks": [
+        "4F45594E2146AE63"
+      ]
+    },
+    "230DBA1D29242001": {
+      "description": [
+        "制作末影构件，可用于集成工作站制造无线接收器、空间 IO 端口、空间塔和无限范围增幅器。"
+      ]
+    },
+    "5A0D22405AE2F4AE": {
+      "title": "末影构件与空间网络"
+    },
+    "67C71691EE0FB154": {
+      "title": "末影构件与空间网络",
+      "icon": "cmi:ender_mechanism"
+    },
     "3B09C0DEB5D3ECB2": {
       "title": "气密供汽管线",
       "description": [
@@ -424,6 +446,9 @@
       "omit_tasks": [
         "574DF144B28D334B",
         "6B2270B6E8A57CCD"
+      ],
+      "dependencies": [
+        "1628C208DB18AE01"
       ]
     },
     "16FAD51B29F98F9A": {
@@ -584,7 +609,10 @@
       "description": [
         "用焦炉砖搭建焦炉，加工焦炭和杂酚油。"
       ],
-      "icon": "immersiveengineering:cokebrick"
+      "icon": "immersiveengineering:cokebrick",
+      "dependencies": [
+        "1628C208DB18AE01"
+      ]
     },
     "3D52F8CD9531BC55": {
       "count": 1,
@@ -726,7 +754,10 @@
       "description": [
         "在 Hexa 冶炼炉熔化玻璃原料并浇铸透明玻璃。"
       ],
-      "icon": "modernfoundry:seared_table"
+      "icon": "modernfoundry:seared_table",
+      "dependencies": [
+        "1628C208DB18AE01"
+      ]
     },
     "5B02E6F0F60D4F82": {
       "description": [
@@ -939,6 +970,14 @@
     "thermal:dynamos": "mekanismgenerators:heat_generator"
   },
   "retired_quests": [
+    "7022767445259A4A",
+    "5AF90A54B8D29AE1",
+    "02F1C89456918D3A",
+    "492D7D91934E1D82",
+    "50EEB0A4ECFCEBA3",
+    "677A1A18F7E0955E",
+    "3FAF92A93ACD3FEB",
+    "1311CB2F207423BB",
     "0951D03AB81B63C9",
     "15671F9C63EADAAD",
     "167A05A377677F62",
