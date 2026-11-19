@@ -110,8 +110,6 @@
     "expatternprovider:tag_storage_bus": "extendedae:tag_storage_bus",
     "expatternprovider:threshold_export_bus": "extendedae:threshold_export_bus",
     "immersiveindustry:electrolyzer": "cmi:caustic_soda_solution_bucket",
-    "malum:processed_soulstone": "malum:refined_soulstone",
-    "malum:spirit_fabric": "malum:soulwoven_silk",
     "tconstruct:clear_glass": "modernfoundry:clear_glass",
     "tconstruct:encyclopedia": "modernfoundry:encyclopedia",
     "tconstruct:foundry_controller": "modernfoundry:foundry_controller",
@@ -167,6 +165,16 @@
     "thermal_extra:naphtha_bucket": "cmi:naphtha_bucket"
   },
   "objects": {
+    "327F0404329C1FEE": {
+      "description": [
+        "{image:expedition_research:textures/quests/91b453914a5c9c0db5a0efcb.png width:32 height:32 align:center}",
+        "{image:expedition_research:textures/quests/dc372d3ab195db8cc64309ef.png width:240 height:120 align:center}",
+        "配方输入：盖亚之魂×1，重复4槽。泰拉钢锭×1。",
+        "用盖亚之魂与泰拉钢制作盖亚魂锭，再对同一合格场地信标潜行右击，挑战强化盖亚。遗物随机性不能锁定本章毕业。新生魔艺和铁魔法均可独立于盖亚Ⅱ挑战推进。",
+        "取得盖亚魂锭。",
+        "可选工程：自动补水。"
+      ]
+    },
     "0FBC53BEE0AB7A92": {
       "icon": "cmi:smart_mechanism",
       "description": [
@@ -969,6 +977,7 @@
     "c:netherrack": "#c:netherracks",
     "thermal:dynamos": "mekanismgenerators:heat_generator"
   },
+  "retired_chapters": ["research_adventure_b_malum"],
   "retired_quests": [
     "7022767445259A4A",
     "5AF90A54B8D29AE1",

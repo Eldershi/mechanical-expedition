@@ -103,5 +103,11 @@
   },
   "nebula_tinker": {
     "status": "removed_by_pack_policy"
+  },
+  "malum": {
+    "status": "removed_by_pack_policy"
+  },
+  "lodestone": {
+    "status": "no_remaining_dependents"
   }
 }

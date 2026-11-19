@@ -25,11 +25,12 @@ final class ConvertItemFilters {
 
     private record ConvertedFile(Path relative, CompoundTag contents, int count) {}
     private record Mappings(CompoundTag items, CompoundTag tags, CompoundTag stacks, CompoundTag objects,
-                            Set<String> retiredQuests) {
+                            Set<String> retiredQuests, ListTag retiredChapters) {
         Mappings(CompoundTag source) {
             this(source.getCompound("items"), source.getCompound("tags"),
                     source.getCompound("component_stacks"), source.getCompound("objects"),
-                    questIds(source.getList("retired_quests", Tag.TAG_STRING)));
+                    questIds(source.getList("retired_quests", Tag.TAG_STRING)),
+                    source.getList("retired_chapters", Tag.TAG_STRING));
         }
     }
 
@@ -63,7 +64,7 @@ final class ConvertItemFilters {
                 }
             }
         }
-        retireQuests(converted, mappings.retiredQuests());
+        retireQuests(converted, mappings.retiredQuests(), mappings.retiredChapters());
         Files.createDirectories(output);
         for (ConvertedFile file : converted) {
             Path target = output.resolve(file.relative());
@@ -87,8 +88,21 @@ final class ConvertItemFilters {
         return ids;
     }
 
-    private static void retireQuests(List<ConvertedFile> files, Set<String> retired) {
-        if (retired.isEmpty()) return;
+    private static void retireQuests(List<ConvertedFile> files, Set<String> questIds, ListTag chapterNames) {
+        var retired = new LinkedHashSet<>(questIds);
+        var retiredChapters = new LinkedHashSet<Path>();
+        for (Tag entry : chapterNames) {
+            String name = entry.getAsString();
+            if (!name.matches("[a-z0-9_-]+")) throw new IllegalArgumentException("Invalid chapter name " + name);
+            var path = Path.of("chapters", name + ".snbt");
+            if (!retiredChapters.add(path)) throw new IllegalArgumentException("Repeated retired chapter " + name);
+            var chapter = files.stream().filter(file -> file.relative().equals(path)).findFirst()
+                    .orElseThrow(() -> new IllegalArgumentException("Missing retired chapter " + name));
+            for (Tag quest : chapter.contents().getList("quests", Tag.TAG_COMPOUND)) {
+                retired.add(((CompoundTag) quest).getString("id"));
+            }
+        }
+        if (retired.isEmpty() && retiredChapters.isEmpty()) return;
         var expected = new LinkedHashSet<>(retired);
         files.removeIf(file -> {
             var chapter = file.contents();
@@ -111,7 +125,7 @@ final class ConvertItemFilters {
                     }
                 }
             }
-            return removed && quests.isEmpty() && links.isEmpty();
+            return retiredChapters.contains(file.relative()) || (removed && quests.isEmpty() && links.isEmpty());
         });
         if (!expected.isEmpty()) throw new IllegalArgumentException("Missing retired quests " + expected);
     }
