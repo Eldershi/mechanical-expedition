@@ -82,6 +82,8 @@ Blast raw vanadium into a Vintage Improvements vanadium ingot, then press it int
 
 Process unrefined waste in the airtight reactor kettle and pipe its waste gas into the chilled airtight fractionation tower. The tower separates it into polonium and plutonium electrolytes. Fluorite processing supplies radioactive sediment, raw polonium and the ionized plutonium crystal. Mill raw polonium into powder, react it with radioactive acid and reduce the resulting polonium solution with zinc dust. The native uranium and polonium production recipes remain available.
 
+When actively cooling, a Snow Golem Freezer or Breeze Cooler supplies either mod's chilled basin mixing and compacting recipes and encased fan cooling. A fan tries its selected source's native recipe first. A captured Snow Golem Freezer without fuel still provides its original passive Dragons Plus freezing. Ordinary ice likewise supplies passive freezing. Airtight kettles and fractionation towers use their native thermoregulator sources.
+
 The bronze mechanism starts as a bronze plate curved with a mechanism mold. Fill it with molten bronze, then install a bronze cogwheel, a bronze plate, and a mechanical mechanism part. Steam Powered supplies the burners, boilers, engines, and flywheels for the steam power tasks. The three steam engines each have an additional recipe using the bronze mechanism. The Create spout and mechanical press handle filling and pressing.
 
 With `nbtlib==2.0.4`, export supported legacy Tinkers tools, parts and manuals from copies of Anvil terrain or entity regions.

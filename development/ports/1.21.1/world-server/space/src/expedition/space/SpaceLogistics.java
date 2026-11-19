@@ -8,6 +8,7 @@ import expedition.space.FreightData.Key;
 import expedition.space.FreightData.Role;
 import expedition.space.FreightData.Shipment;
 import expedition.space.FreightData.Station;
+import expedition.space.cooling.CoolingFanProcessing;
 import java.util.UUID;
 import net.minecraft.commands.Commands;
 import net.minecraft.core.BlockPos;
@@ -58,6 +59,7 @@ public final class SpaceLogistics {
     private static final int FLIGHT_TICKS = 240;
 
     public SpaceLogistics(IEventBus modBus) {
+        CoolingFanProcessing.register(modBus);
         var gases = DeferredRegister.create(GasRegistries.GAS_REGISTRY_KEY, "cmi");
         gases.register("helium_3", () -> new Gas(GasBuilder.builder().tint(0xFFB0BA)));
         gases.register("nuke_waste", () -> new Gas(GasBuilder.builder().tint(0x747D24)));
