@@ -29,6 +29,11 @@ def convert(relative, source, tinkers_namespace):
     source = MODEL_CALL.sub(r".modelGenerator(model => Cmi.applyModel(model, \1))", source)
     if relative == "item/Basic.js":
         source = re.sub(
+            r'(?m)^\t// 蒸汽升级\n(?:\taddItem\("steam_(?:cast_iron|steel)_upgrade"\)\n'
+            r'\t\t\.texture\([^\n]+\n\t\t\.tag\([^\n]+\n\n){2}',
+            "", source,
+        )
+        source = re.sub(
             r'(?m)^\t// 热力单元\n\taddItem\("thermal_unit"\)\n\t\t\.texture\([^\n]+\n\n',
             "", source,
         )
@@ -68,7 +73,7 @@ def build(source, target, tinkers_namespace):
     for name in ("Bindings.js", "CmiFactoryParts.js", "CmiIndustrialMaterials.js", "CmiLubricant.js",
                  "CmiMechanisms.js", "CmiMineralsAndPeat.js", "CmiMoltenMetals.js",
                  "CmiOilFluids.js", "CmiPolymerMaterials.js", "CmiProcessFluids.js",
-                 "CmiSiliconeFluids.js", "CmiSpaceParts.js", "CmiSteamDevices.js"):
+                 "CmiSiliconeFluids.js", "CmiSpaceParts.js"):
         shutil.copyfile(HERE / name, target / name)
 
 

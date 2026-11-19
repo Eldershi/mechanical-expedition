@@ -5,12 +5,6 @@
     "side": "BOTH",
     "build": "creeper-firework/build.py"
   },
-  "expedition-upstream-compat-1.0.0.jar": {
-    "filename": "expedition-upstream-compat-neoforge-1.1.0.jar",
-    "sha256": "5e305c1aacbc11fc73cc26b37113ae1d28e1e03298007577e6e193f2c0f245f7",
-    "side": "BOTH",
-    "build": "industry/build.py"
-  },
   "expedition-player-motion-guard-1.1.0.jar": {
     "filename": "expedition-player-motion-guard-neoforge-1.1.0.jar",
     "sha256": "d7f4cd53b61f433a45d9d43c97738b72916e008300f7b8067d11d36c9b1c7a30",

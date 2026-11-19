@@ -108,8 +108,6 @@ public final class AirtightEquipmentAcceptance {
     private void prepare() {
         var between = (IntegratedWorkingStationRecipe) recipe(SEALING + "incomplete_air_tight_mechanism");
         require(between.inputItems().stream().anyMatch(input -> input.test(stack(CANISTER))), "gas canister input");
-        require(between.inputItems().stream().noneMatch(input -> input.test(stack("steam_letters:empty_steam_container"))),
-            "old canister is still required");
         require(recipe(SEALING + "air_tight_mechanism").getType() == BuiltInRegistries.RECIPE_TYPE.get(
             ResourceLocation.parse("createcraftedbeginning:gas_injection")), "final gas injection");
         checkCraft("basic_chemical_tank", "mekanism:basic_chemical_tank", 1, "mekanism:chemical_tank/basic");

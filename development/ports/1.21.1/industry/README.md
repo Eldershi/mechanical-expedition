@@ -24,21 +24,7 @@ Refine IE plant oil and naphtha with a reusable copper plate to make lubricating
 
 Ferment rice in a covered Create basin or an IE Fermenter. The distillation tower separates vinegar into acetic acid and water. A heated Create basin combines silicon and light olefins to make light silicone ether. An IE Refinery with a reusable copper plate polymerizes the ether and reacts the polymer with acetic acid to make liquid silicone rubber. A Hexa casting table yields a piece of rubber when empty or a rubber plate when fitted with a reusable plate cast.
 
-The advanced spout and steam hammer have independent CMI recipes alongside the recipes shipped by Steam Letters. The CMI spout recipe uses a Create belt connector as the seal. Steam Letters supplies the normal and superheated fluids for steam mixing. The Steam Letters KubeJS builders register the CMI cast iron and steel steam tiers.
-
-Build the Steam Letters migration adapter with Java 21 and an installed NeoForge 1.21.1 server. Install the resulting JAR on both the client and server.
-
-```sh
-python3 build.py --java /path/to/java --server /path/to/neoforge-server --output /path/to/output
-```
-
-The adapter resolves the old CMI advanced spout, steam hammer, bronze solar boiler, and bronze fluid burner to their Steam Letters equivalents. It converts saved fluid payloads for these machines, the cast iron and steel steam tiers, and Create tanks. Saved Mekanism steam in a steam tank becomes Steam Letters steam. Create Steam Ages fluids and buckets resolve to the normal and superheated equivalents. Placeable steam fluid blocks require a separate world conversion if present. Legacy fluid metadata that has no equivalent goes into `NeoForgeData.expedition:legacy_fluid_tanks` for inspection.
-
-The Steam Letters archive provides the bronze device sprites. Expose those sprites to the cast iron and steel models using the client's existing Steam Letters archive and KubeJS assets directory.
-
-```sh
-python3 build_steam_texture_aliases.py --steam-letters /path/to/Steam-Letters.jar --assets /path/to/kubejs/assets
-```
+The bronze mechanism starts as a bronze plate curved with a mechanism mold. Fill it with molten bronze, then install a bronze cogwheel, a bronze plate, and a mechanical mechanism part. Steam Powered supplies the burners, boilers, engines, and flywheels for the steam power tasks. The three steam engines each have an additional recipe using the bronze mechanism. The Create spout and mechanical press handle filling and pressing.
 
 With `nbtlib==2.0.4`, export supported legacy Tinkers tools, parts and manuals from copies of Anvil terrain or entity regions.
 

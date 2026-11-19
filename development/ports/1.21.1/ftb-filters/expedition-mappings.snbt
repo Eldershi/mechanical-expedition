@@ -37,16 +37,28 @@
     }
   },
   "items": {
+    "steam_letters:bronze_steam_pump": "createcraftedbeginning:shaft_driven_airtight_pump",
+    "steam_letters:bronze_steam_engine": "steampowered:bronze_steam_engine",
+    "steam_letters:bronze_steam_flywheel": "steampowered:bronze_flywheel",
+    "steam_letters:bronze_boiler": "steampowered:bronze_boiler",
+    "steam_letters:steam_bucket": "createcraftedbeginning:airtight_pipe",
+    "steam_letters:steam_hammer": "create:mechanical_press",
+    "steam_letters:advanced_spout": "create:spout",
+    "steam_letters:bronze_solar_boiler": "createcraftedbeginning:airtight_tank",
+    "cmi:steel_solar_boiler": "createcraftedbeginning:airtight_tank",
+    "cmi:cast_iron_solar_boiler": "createcraftedbeginning:airtight_tank",
     "apotheosis:ender_lead": "apothic_enchanting:ender_lead",
     "apotheosis:ender_library": "apothic_enchanting:ender_library",
     "apotheosis:inert_trident": "apothic_enchanting:inert_trident",
     "apotheosis:infused_hellshelf": "apothic_enchanting:infused_hellshelf",
     "apotheosis:library": "apothic_enchanting:library",
-    "cmi:advanced_spout": "steam_letters:advanced_spout",
+    "cmi:advanced_spout": "create:spout",
     "cmi:aluminum_alloy_ingot": "neoecoae:aluminum_alloy_ingot",
     "cmi:amethyst_bronze_upgrade": "functionalstorage:copper_upgrade",
-    "cmi:bronze_solar_boiler": "steam_letters:bronze_solar_boiler",
-    "cmi:steam_hammer": "steam_letters:steam_hammer",
+    "cmi:bronze_solar_boiler": "createcraftedbeginning:airtight_tank",
+    "cmi:steam_hammer": "create:mechanical_press",
+    "cmi:steam_cast_iron_upgrade": "steampowered:cast_iron_boiler",
+    "cmi:steam_steel_upgrade": "steampowered:steel_boiler",
     "cmi:steel_ingot": "immersiveengineering:ingot_steel",
     "eidolon:athame": "eidolon_repraised:athame",
     "eidolon:brazier": "eidolon_repraised:brazier",
@@ -155,6 +167,107 @@
     "thermal_extra:naphtha_bucket": "cmi:naphtha_bucket"
   },
   "objects": {
+    "3B09C0DEB5D3ECB2": {
+      "title": "气密供汽管线",
+      "description": [
+        "用机巧新生的气密管把锅炉蒸汽出口直接接到沉浸工程精炼机的一侧进料口，搭建裂化用的蒸汽管线。"
+      ]
+    },
+    "3D5497B8DC0ED5B6": {
+      "title": "锅炉蒸汽出口",
+      "description": [
+        "把机巧新生的锅炉蒸汽出口装到有水并受热的机械动力锅炉上，再接气密管导出蒸汽。"
+      ]
+    },
+    "23EED5BF56818EA1": {
+      "title": "铸铁锅炉",
+      "subtitle": "制作高阶蒸汽设备",
+      "description": [
+        "制作 Steam Powered 的铸铁锅炉，搭配铸铁燃烧器和设备建立高阶蒸汽动力。"
+      ]
+    },
+    "0E0683A73BB85ABC": {
+      "title": "气密储罐",
+      "subtitle": "储存气态蒸汽",
+      "description": [
+        "将气密储罐接入机巧新生气密管，缓存供汽。"
+      ]
+    },
+    "3426EEB10B251CA4": {
+      "title": "气密储罐",
+      "subtitle": "储存气态蒸汽",
+      "description": [
+        "将气密储罐接入机巧新生气密管，缓存供汽。"
+      ]
+    },
+    "371E3D200A96A15A": {
+      "title": "轴驱动气密泵",
+      "subtitle": "用旋转动力推动气体",
+      "description": [
+        "将轴驱动气密泵接入机巧新生气密管，给泵转轴供动力。气管可输送包括蒸汽在内的气体。"
+      ]
+    },
+    "49FAC7F5B7F68763": {
+      "description": [
+        "准备青铜构件。把青铜板弯成坯料、注入熔融青铜并装上青铜齿轮、青铜板和机械零件。",
+        "先让一套 Steam Powered 锅炉、引擎与飞轮持续驱动加工工位，再扩展供水和燃料缓存。"
+      ]
+    },
+    "38472ADBCFC92083": {
+      "description": [
+        "用 Steam Powered 的蒸汽引擎和配套飞轮输出旋转动力。把锅炉产出的蒸汽经流体管道送进引擎。"
+      ]
+    },
+    "5227B74E4F8FF3F5": {
+      "description": [
+        "用 Steam Powered 的蒸汽引擎和配套飞轮输出旋转动力。把锅炉产出的蒸汽经流体管道送进引擎。"
+      ]
+    },
+    "243EF0B9E933D85A": {
+      "description": [
+        "将 Steam Powered 的锅炉放在燃烧器上方。给锅炉供水和燃烧器供燃料，用机械动力的流体管道导出蒸汽。"
+      ]
+    },
+    "12CEF39F02D4EB3A": {
+      "description": [
+        "将 Steam Powered 的锅炉放在燃烧器上方。给锅炉供水和燃烧器供燃料，用机械动力的流体管道导出蒸汽。"
+      ]
+    },
+    "5BB078BA5116FE68": {
+      "description": [
+        "把青铜板用构件模具弯成坯料，依次注入熔融青铜、装上青铜齿轮、青铜板和机械零件。"
+      ]
+    },
+    "4DA038AAA531C439": {
+      "item": {
+        "id": "createcraftedbeginning:boiler_steam_outlet",
+        "count": 1
+      }
+    },
+    "3658B798B9DFED5C": {
+      "item": {
+        "id": "steampowered:cast_iron_boiler",
+        "count": 1
+      }
+    },
+    "56F470DC8CF20FF6": {
+      "item": {
+        "id": "createcraftedbeginning:airtight_tank",
+        "count": 1
+      }
+    },
+    "3642624664D89610": {
+      "item": {
+        "id": "createcraftedbeginning:airtight_tank",
+        "count": 1
+      }
+    },
+    "7A618DFA911C57B7": {
+      "item": {
+        "id": "create:mechanical_pump",
+        "count": 1
+      }
+    },
     "2FBEBC159FA56453": {
       "item": "minecraft:hopper"
     },
@@ -443,7 +556,10 @@
       "title": "HOP 石墨粉"
     },
     "32C9986340F70115": {
-      "item": "steam_letters:steam_bucket"
+      "item": {
+        "id": "createcraftedbeginning:airtight_pipe",
+        "count": 1
+      }
     },
     "344BA50D96A8E392": {
       "title": "铸铁的精炼设备",
@@ -654,12 +770,12 @@
     },
     "639D08D2B1E91748": {
       "description": [
-        "在沉浸工程精炼机中用钒板将柴油和蒸汽裂化。"
+        "用机巧新生气密管将蒸汽直接送进沉浸工程精炼机进料口，另一侧输入柴油，钒板作催化剂。"
       ]
     },
     "654FBA59B16DF4C6": {
       "description": [
-        "用沉浸工程精炼机将汽油和 Steam Letters 蒸汽裂化，钒板作为催化剂。"
+        "用机巧新生气密管将蒸汽直接送进沉浸工程精炼机进料口，另一侧输入汽油，钒板作催化剂。"
       ]
     },
     "68D40E9E67F5C986": {
@@ -813,6 +929,12 @@
     }
   },
   "tags": {
+    "cmi:steam_upgrades": "steampowered:cast_iron_boiler",
+    "steam_letters:steam_solar_boiler": "createcraftedbeginning:airtight_tank",
+    "steam_letters:steam_flywheel": "#expedition:steam_power/flywheels",
+    "steam_letters:steam_engine": "#expedition:steam_power/engines",
+    "steam_letters:steam_boiler": "#expedition:steam_power/boilers",
+    "steam_letters:steam_burners": "#expedition:steam_power/burners",
     "c:netherrack": "#c:netherracks",
     "thermal:dynamos": "mekanismgenerators:heat_generator"
   },

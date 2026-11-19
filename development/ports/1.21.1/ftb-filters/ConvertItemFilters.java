@@ -17,6 +17,7 @@ final class ConvertItemFilters {
     private static final String SMART_FILTER = "ftbfiltersystem:smart_filter";
     private static final String FILTER_COMPONENT = "ftbfiltersystem:filter";
     private static final Pattern RESOURCE_ID = Pattern.compile("[a-z0-9_.-]+:[a-z0-9_.\\-/]+");
+    private static final Pattern FILTER_TERM = Pattern.compile("(item|item_tag)\\((" + RESOURCE_ID.pattern() + ")\\)");
     private static final Set<String> STACK_FIELDS = Set.of("item", "icon");
     private static final Set<String> OBJECT_FIELDS = Set.of(
             "title", "subtitle", "description", "icon", "item", "count",
@@ -132,6 +133,15 @@ final class ConvertItemFilters {
                 return 1;
             }
             String id = tag.getString("id");
+            if (SMART_FILTER.equals(id)) {
+                CompoundTag components = tag.getCompound("components");
+                if (components.contains(FILTER_COMPONENT, Tag.TAG_STRING)) {
+                    String expression = components.getString(FILTER_COMPONENT);
+                    String replacement = FILTER_TERM.matcher(expression).replaceAll(term -> term.group(1).equals("item_tag")
+                            ? tagFilter(term.group(2), mappings) : itemFilter(term.group(2), mappings));
+                    components.putString(FILTER_COMPONENT, replacement);
+                }
+            }
             if (mappings.objects().contains(id)) {
                 var fields = mappings.objects().getCompound(id);
                 requireKeys(fields, OBJECT_FIELDS);
@@ -218,11 +228,7 @@ final class ConvertItemFilters {
                 requireKeys(settings, Set.of("value"));
                 String value = resource(settings.getString("value"));
                 if (value.startsWith("forge:")) value = "c:" + value.substring("forge:".length());
-                var tags = mappings.tags();
-                String replacement = tags.contains(value) ? tags.getString(value) : "#" + value;
-                yield replacement.startsWith("#")
-                        ? "item_tag(" + resource(replacement.substring(1)) + ")"
-                        : "item(" + resource(replacement) + ")";
+                yield tagFilter(value, mappings);
             }
             case "itemfilters:or" -> {
                 requireKeys(stack, Set.of("id", "Count", "tag"));
@@ -237,9 +243,19 @@ final class ConvertItemFilters {
                 if (id.startsWith(LEGACY)) throw new IllegalArgumentException("Unsupported legacy filter " + id);
                 if (mappings.stacks().contains(id)) throw new IllegalArgumentException("Component filter required for " + id);
                 requireKeys(stack, Set.of("id", "Count"));
-                yield "item(" + resource(mappings.items().contains(id) ? mappings.items().getString(id) : id) + ")";
+                yield itemFilter(id, mappings);
             }
         };
+    }
+
+    private static String tagFilter(String id, Mappings mappings) {
+        String target = mappings.tags().contains(id) ? mappings.tags().getString(id) : "#" + id;
+        return target.startsWith("#") ? "item_tag(" + resource(target.substring(1)) + ")"
+                : "item(" + resource(target) + ")";
+    }
+
+    private static String itemFilter(String id, Mappings mappings) {
+        return "item(" + resource(mappings.items().contains(id) ? mappings.items().getString(id) : id) + ")";
     }
 
     private static void requireKeys(CompoundTag tag, Set<String> allowed) {

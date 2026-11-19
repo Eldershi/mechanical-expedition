@@ -1,15 +1,4 @@
 {
-  "steam_letters": {
-    "file": {
-      "filename": "Steam-Letters-2.1.1-1.21.1-neoforge.jar",
-      "url": "https://edge.forgecdn.net/files/9667/741/Steam-Letters-2.1.1-1.21.1-neoforge.jar",
-      "source": "https://www.curseforge.com/minecraft/mc-mods/steam-letters/files/9667741",
-      "sha1": "66a1bafb7ecebb80e8830fb14bc89625d9a450bd"
-    },
-    "version": "2.1.1",
-    "sha256": "19db5f2846b709152a307f1119e4d887d988d89c677fa536fe4fd41f3549e1ee",
-    "replaces": "Steam-Letters-2.0.1-1.20.1.jar"
-  },
   "neoecoae": {
     "file": {
       "filename": "neoecoae-21.2.18.jar",

@@ -47,4 +47,6 @@ Load the bridge chunks and run `expeditionrailbridge build`, `expeditionrailbrid
 
 Run the [Create inventory converter](create-inventory-migration/README.md) on a closed source region copy before opening it with 1.21.1. Use its output for the remaining region transformations.
 
+For a closed 1.21.1 migration copy containing Steam Letters contents, run `migration/replace_steam_letters_contents.py <world-copy> <new-output-directory>` with `nbtlib`. It exports only changed region and player files. Bronze casings become Create copper casings, stored steam becomes Mekanism steam at the saved volume, and retired recipe-book entries are removed. Overlay the output on the closed copy after checking the reported totals.
+
 `migration/build_village_processors.py` uses the installed legacy CTOV 3.4.14 JAR to provide two processor lists referenced by old mountain village pieces. Put the ZIP in the migrated world's `datapacks` directory. `migration/measure_chunk_edges.py` compares boundary heights, local gradients, and surface biome changes on a migrated copy.

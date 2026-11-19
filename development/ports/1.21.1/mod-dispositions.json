@@ -93,7 +93,13 @@
     "status": "removed_by_pack_policy"
   },
   "create_steam_ages": {
-    "status": "replaced_by_steam_letters"
+    "status": "removed_by_pack_policy"
+  },
+  "steam_letters": {
+    "status": "removed_by_pack_policy"
+  },
+  "expedition_upstream_compat": {
+    "status": "removed_by_pack_policy"
   },
   "nebula_tinker": {
     "status": "removed_by_pack_policy"
