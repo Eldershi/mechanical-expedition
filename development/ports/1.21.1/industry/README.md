@@ -10,11 +10,13 @@ The Engineer's Workbench has parallel component blueprints for iron parts, steel
 
 A Create mixer uses concrete powder and water to produce the corresponding sixteen Diesel Generators cement colors. IE liquid concrete cures adjacent sources with the IE Fix Pack. The IE Assembler uses standard crafting patterns for automation.
 
-Stonecutting turns one brass plate into four brass casing frameworks. A Create deployer applies one framework to a plank for a brass casing or to iron bars for a Create: Connected empty fan catalyst. The native brass casing and fan catalyst recipes remain available.
+Stonecutting turns one andesite alloy or brass plate into four matching casing frameworks. A Create deployer applies one framework to a plank for an andesite or brass casing. A brass framework can also be applied to iron bars for a Create: Connected empty fan catalyst. The native casing and fan catalyst recipes remain available.
 
-The hammer head is crafted from six iron or andesite alloy plates and three corresponding ingots. A parallel Mechanical Press recipe uses an andesite mechanism, an andesite casing and a hammer head. The reusable mechanism mold fits the Vintage Improvements Curving Press for mechanism assembly.
+The hammer head is crafted from six iron or andesite alloy plates and three corresponding ingots. The Mechanical Press uses its native recipe. The reusable mechanism mold fits the Vintage Improvements Curving Press for mechanism assembly.
 
-The quartz diode is assembled by Create mechanical crafters and feeds light engineering mechanism production. The andesite mechanism has both a manual recipe with a reusable wrench and a sequenced recipe. Hexa casts stone plates from lava for the basic mechanism part. The iron mechanism uses that part in its sequenced assembly. The Nether mechanism has recipes for the Blaze Burner, the Diesel Generators burner, and the Hexa scorched alloyer. The coil mechanism has recipes for the portable energy interface and Tesla coil. The IE Bottling Machine uses chromium plating solution to plate steel gears.
+The quartz diode is assembled by Create mechanical crafters and feeds light engineering mechanism production. Hexa casts stone plates from lava for the basic mechanism part. The iron mechanism uses that part in its sequenced assembly. The Nether mechanism has recipes for the Blaze Burner, the Diesel Generators burner, and the Hexa scorched alloyer. The coil mechanism has recipes for the portable energy interface and Tesla coil. The IE Bottling Machine uses chromium plating solution to plate steel gears.
+
+Run `python3 retire_thermal_content.py /path/to/instance` after copying the FTB quest data and assets. The chapter follows the pack's installed processing, fuel and assembly routes.
 
 The integrated workstation uses an ender mechanism for the AE2 wireless receiver, spatial IO port, spatial pylon, and Infinity Booster card. The basic Mekanism mechanism is an input for five processing machines, the boiler and turbine valves, and the induction port. The advanced Mekanism mechanism is an input for six airtight processing machines and four fission reactor components. The fission fuel assembly uses a chemical tank and Diesel Generators cement. Each of these routes has its own recipe alongside the mod's recipe.
 

@@ -1,7 +1,7 @@
 StartupEvents.registry('item', event => {
   const finished = [
     'copper', 'bronze', 'iron', 'nether', 'ender',
-    'andesite', 'railway', 'coil', 'light_engineering', 'heavy_engineering', 'smart',
+    'railway', 'coil', 'light_engineering', 'heavy_engineering', 'smart',
     'photosensitive', 'basic_mekanism', 'advanced_mekanism',
     'elite_mekanism', 'ultimate_mekanism', 'computing', 'air_tight', 'aeronautic', 'nuclear',
     'astronautic', 'antimatter', 'creative'

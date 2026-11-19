@@ -21,8 +21,6 @@ SOURCE_FILES = (
 MODEL_CALL = re.compile(r"\.modelJson\((\{.*?\}|[\w.]+\([^()]*\))\)", re.S)
 OLD_TAG = re.compile(r"""(\.tag\(["'`])forge:""")
 THERMAL_TAG = re.compile(r"""(?m)^[ \t]*\.tag\(["'`]thermal:[^\n]*\n""")
-RETIRED_CLAY_MOLDS = ("2x2_packing", "3x3_packing")
-RETIRED_CASING_FRAMEWORKS = ("andesite", "bronze")
 
 
 def convert(relative, source, tinkers_namespace):
@@ -40,6 +38,11 @@ def convert(relative, source, tinkers_namespace):
             "", source,
         )
         source = re.sub(r'(?m)^\t\t"(basalz|blitz|blizz)",?\n', "", source)
+        source = re.sub(
+            r'(?m)^\t\taddItem\(\x60\$\{type\}_unit\x60\)\n'
+            r'\t\t\t\.texture\([^\n]+\n\n',
+            "", source,
+        )
         source = source.replace(".glow(true)", '.component("minecraft:enchantment_glint_override", true)')
         source = source.replace(".hunger(20)", ".nutrition(20)")
         source = source.replace('\n\t\t"elite",\n\t\t"elite",', '\n\t\t"elite",')
@@ -48,10 +51,9 @@ def convert(relative, source, tinkers_namespace):
             r'(?m)^\t// 升级模板\n\taddMaterial\("drawer_upgrade_template"\)\n\n',
             "", source,
         )
-        casing_frames = "|".join(RETIRED_CASING_FRAMEWORKS)
         source = re.sub(
-            r'(let casingFrame = \[\n)([^\]]+)(\])',
-            lambda match: match[1] + re.sub(rf'(?m)^\t\t"(?:{casing_frames})",\n', "", match[2]) + match[3],
+            r'(let casingFrame = \[[^\]]*?)\t\t"bronze",\n',
+            r'\g<1>',
             source,
         )
     elif relative == "item/Incompletes.js":
@@ -62,8 +64,15 @@ def convert(relative, source, tinkers_namespace):
         )
         source = source.replace("expatternprovider:item/", "extendedae:item/")
     elif relative == "item/Molds.js":
-        names = "|".join(RETIRED_CLAY_MOLDS)
-        source = re.sub(rf'(?m)^[ \t]*addClayMold\("(?:{names})"\)\n', "", source)
+        source = re.sub(
+            r'(?ms)^    /\*\*\n(?:     \*[^\n]*\n)*     \*/\n'
+            r'    function addClayMold\(name\) \{\n.*?^    \}\n\n',
+            "", source,
+        )
+        source = re.sub(r'(?m)^    addClayMold\("[^"]+"\)\n', "", source)
+        source = source.rstrip().removesuffix("})").rstrip() + "\n})\n"
+        if "addClayMold" in source:
+            raise ValueError("Unexpected clay mold registration")
     elif relative == "item/mechanism/Augment.js":
         source = re.sub(r'(?m)^ +addMechanismAugment\("(?:thermal|reinforced)"\)\n', "", source)
     elif relative == "item/mechanism/Flashdrive.js":
@@ -90,12 +99,11 @@ def build(source, target, tinkers_namespace):
         for pattern in ("*.png", "*.png.mcmeta"):
             for texture in random_textures.glob(pattern):
                 texture.unlink()
-        for name in RETIRED_CLAY_MOLDS:
-            for extension in (".png", ".png.mcmeta"):
-                (textures / "material/mold/clay" / (name + extension)).unlink(missing_ok=True)
-        for name in RETIRED_CASING_FRAMEWORKS:
-            for extension in (".png", ".png.mcmeta"):
-                (textures / "framework" / (name + extension)).unlink(missing_ok=True)
+        clay_textures = textures / "material/mold/clay"
+        for extension in (".png", ".png.mcmeta"):
+            for texture in clay_textures.glob("*" + extension):
+                texture.unlink()
+            (textures / "framework" / ("bronze" + extension)).unlink(missing_ok=True)
         for extension in (".png", ".png.mcmeta"):
             (textures / "material" / ("drawer_upgrade_template" + extension)).unlink(missing_ok=True)
 
