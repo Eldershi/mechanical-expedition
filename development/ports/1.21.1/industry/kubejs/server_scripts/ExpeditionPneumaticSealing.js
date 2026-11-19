@@ -15,7 +15,7 @@ if (Platform.isLoaded('createcraftedbeginning')) {
       ['vintageimprovements:golden_spring', 1], ['createcraftedbeginning:airtight_sheet', 1]
     ])
     station('incomplete_air_tight_mechanism', 16000, 'cmi:silicon_rubber', 100, [
-      ['cmi:air_tight_mechanism_basement', 1], ['steam_letters:empty_steam_container', 1],
+      ['cmi:air_tight_mechanism_basement', 1], ['createcraftedbeginning:gas_canister', 1],
       ['createcraftedbeginning:airtight_sheet', 1], ['ae2:quartz_glass', 1], ['cmi:engineering_mechanism_part', 1]
     ])
     event.custom({

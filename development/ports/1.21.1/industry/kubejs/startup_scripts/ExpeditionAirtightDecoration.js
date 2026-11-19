@@ -1,0 +1,17 @@
+StartupEvents.registry('block', event => {
+  event.create('cmi:air_tight_machine', 'cardinal')
+    .soundType(SoundType.METAL)
+    .waterlogged()
+    .parentModel('cmi:block/machine_block/air_tight')
+    .requiresTool()
+    .notSolid()
+    .defaultCutout()
+    .tagBlock('minecraft:mineable/pickaxe')
+    .tag('cmi:block/machine_block')
+    .tag('cmi:block/machine_block/air_tight')
+    .blockEntity(info => {
+      info.enableSync()
+      info.inventory('inventory', Direction.ALL_SET, 9, 3, '#cmi:mechanisms/air_tight')
+      info.rightClickOpensInventory('inventory')
+    })
+})
