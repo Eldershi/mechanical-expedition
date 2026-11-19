@@ -27,10 +27,16 @@ ServerEvents.recipes(event => {
   ]).superheated().id(path + 'titanium_alloy')
   for (const [plate, source] of [
     ['titanium', 'cmi:titanium_ingot'], ['titanium_alloy', 'cmi:titanium_alloy_ingot'],
-    ['tungsten', 'neoecoae:tungsten_ingot'], ['superconducting_mercury', 'cmi:superconducting_mercury_ingot']
+    ['superconducting_mercury', 'cmi:superconducting_mercury_ingot']
   ]) {
     create.pressing(`cmi:${plate}_plate`, source).id(path + plate + '_plate')
   }
+  event.custom({
+    type: 'createcraftedbeginning:forging_press',
+    ingredients: [{item: 'neoecoae:tungsten_ingot'}],
+    gas_ingredients: [{amount: 1000, ingredient: {gas: 'createcraftedbeginning:ultrawarm_air'}}],
+    results: [{id: 'cmi:tungsten_plate'}]
+  }).id(path + 'tungsten_plate')
   create.compacting('2x cmi:titanium_alloy_mesh', [
     'cmi:titanium_alloy_plate', Ingredient.of('#c:wires/aluminum')
   ]).heated().id(path + 'titanium_alloy_mesh')
