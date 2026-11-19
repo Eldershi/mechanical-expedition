@@ -1,0 +1,144 @@
+{
+	filename: "expedition_general_industry"
+	group: "5B22564DA513617D"
+	icon: "cmi:ultimate_mekanism_mechanism"
+	id: "6CD5E08EE5E785E0"
+	order_index: 0
+	title: "通用工业总览"
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	quests: [
+		{
+			id: "781F7DBDB354CCCA"
+			title: "基础通用工业"
+			icon: "cmi:basic_mekanism_mechanism"
+			x: -6.0d
+			y: -1.0d
+			description: [
+				"先用集成工作站制作基础通用构件底座和通用零件，再准备基础控制电路。"
+				"把底座放上机械动力装配线。机械手依次装入控制电路和镀铬钢齿轮，完成激光切割后注入 200 mB 红石酸，再装入硅橡胶板和通用构件零件。"
+			]
+			tasks: [{
+				id: "0390EECE92C50821"
+				type: "item"
+				item: "cmi:basic_mekanism_mechanism"
+				consume_items: false
+			}]
+		}
+		{
+			id: "34CA8BCB18DF335C"
+			title: "高级通用工业"
+			icon: "cmi:advanced_mekanism_mechanism"
+			x: -1.0d
+			y: -1.0d
+			description: [
+				"把高级底座与高级控制电路接入机械动力序列装配。后续沿用基础通用构件的六步加工。"
+				"扩展灌注与化工供料，为更高吞吐的工业设备和核材料处理留出空间。"
+			]
+			tasks: [{
+				id: "5C5B64C7DC640DC1"
+				type: "item"
+				item: "cmi:advanced_mekanism_mechanism"
+				consume_items: false
+			}]
+		}
+		{
+			id: "4F6B5D4FCE22096B"
+			title: "精英通用工业"
+			icon: "cmi:elite_mekanism_mechanism"
+			x: 4.0d
+			y: 1.0d
+			description: [
+				"用强化合金与精英电子元件制作精英底座，再用底座和精英控制电路进行机械动力序列装配。"
+				"按要建设的设备安排化工输入、回收与储存，各等级材料分开缓存。"
+			]
+			tasks: [{
+				id: "69787823685AC190"
+				type: "item"
+				item: "cmi:elite_mekanism_mechanism"
+				consume_items: false
+			}]
+		}
+		{
+			id: "2F98A75C5ED1E23E"
+			title: "终极通用工业"
+			icon: "cmi:ultimate_mekanism_mechanism"
+			x: 9.0d
+			y: 1.0d
+			description: [
+				"用原子合金与终极电子元件制作终极底座，再用底座和终极控制电路进行机械动力序列装配。"
+				"为高阶设备储备部件，保持上游电路、合金与流体供应。"
+			]
+			tasks: [{
+				id: "392337CE3C9A0BAA"
+				type: "item"
+				item: "cmi:ultimate_mekanism_mechanism"
+				consume_items: false
+			}]
+		}
+	]
+	quest_links: [
+		{
+			id: "1EB2BDE2E96E02CC"
+			linked_quest: "2BF7E103DDD10828"
+			x: -10.0d
+			y: -1.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "7AB9A48EE5B127A2"
+			linked_quest: "1476D0335CB01F3B"
+			x: -6.0d
+			y: 3.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+		{
+			id: "1D46FB576689FF85"
+			linked_quest: "3F80C3350B084874"
+			x: 0.0d
+			y: -5.0d
+			shape: "rsquare"
+			size: 1.0d
+		}
+	]
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"l:1eb2bde2e96e02cc"
+				"q:781f7dbdb354ccca"
+			]
+		}
+		{
+			nodes: [
+				"q:781f7dbdb354ccca"
+				"q:34ca8bcb18df335c"
+			]
+		}
+		{
+			nodes: [
+				"q:34ca8bcb18df335c"
+				"q:4f6b5d4fce22096b"
+			]
+		}
+		{
+			nodes: [
+				"q:4f6b5d4fce22096b"
+				"q:2f98a75c5ed1e23e"
+			]
+		}
+		{
+			nodes: [
+				"q:781f7dbdb354ccca"
+				"l:7ab9a48ee5b127a2"
+			]
+		}
+		{
+			nodes: [
+				"l:1d46fb576689ff85"
+				"q:34ca8bcb18df335c"
+			]
+		}
+	]
+}

@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
   const create = event.recipes.create
+  const vintage = event.recipes.vintageimprovements
   const path = 'expedition:factory/control/'
   const item = id => id.startsWith('#') ? {tag: id.substring(1)} : {item: id}
   const inscribe = (output, middle, top, bottom, mode) => {
@@ -60,15 +61,21 @@ ServerEvents.recipes(event => {
     const electronics = 'cmi:' + tier + '_electronic_components'
     const mechanism = tier + '_mekanism_mechanism'
     const circuit = 'mekanism:' + tier + '_control_circuit'
+    const basement = 'cmi:' + mechanism + '_basement'
+    const incomplete = 'cmi:incomplete_' + mechanism
     inscribe(electronics, wafer, alloy, '#c:plates/copper', 'press')
     inscribe(circuit, 'neoecoae:crystal_matrix', 'cmi:silicon_carbide_plate', electronics, 'press')
     station(mechanism + '_basement', 2000, 'cmi:silicon_rubber', 100, [
       ['#c:plates/stainless_steel', 2], [alloy, 1], [electronics, 1], ['cmi:optical_fiber', 4]
     ], 1)
-    station(mechanism, 16000, 'immersiveengineering:redstone_acid', 200, [
-      ['cmi:' + mechanism + '_basement', 1], [circuit, 1], ['cmi:chromeplated_steel_gear', 1],
-      ['cmi:silicon_rubber_plate', 1], ['cmi:mekanism_mechanism_part', 1]
-    ], 1)
+    create.sequenced_assembly('cmi:' + mechanism, basement, [
+      create.deploying(incomplete, [incomplete, circuit]),
+      create.deploying(incomplete, [incomplete, 'cmi:chromeplated_steel_gear']),
+      vintage.laser_cutting(incomplete, incomplete).energy(1000).maxChargeRate(100),
+      create.filling(incomplete, [incomplete, Fluid.of('immersiveengineering:redstone_acid', 200)]),
+      create.deploying(incomplete, [incomplete, 'cmi:silicon_rubber_plate']),
+      create.deploying(incomplete, [incomplete, 'cmi:mekanism_mechanism_part'])
+    ]).transitionalItem(incomplete).loops(1).id(path + 'sequenced_' + mechanism)
   })
   station('computing_mechanism_basement', 2000, 'immersiveengineering:redstone_acid', 100, [
     ['cmi:silicon_carbide_plate', 2], ['cmi:silicon_rubber_plate', 1],
