@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Install matching Earth–Moon structures, scripts, tasks and adapter in test instances."""
+"""Install matching Earth–Moon and industrial facilities in test instances."""
 
 import argparse
 from pathlib import Path
@@ -12,6 +12,7 @@ from zipfile import ZipFile
 from build_structures import build
 
 HERE = Path(__file__).resolve().parent
+INDUSTRY = HERE.parent / "brass-industry"
 
 
 def install(client, server, java):
@@ -26,6 +27,8 @@ def install(client, server, java):
         overlay = staged / "overlay"
         build(overlay)
         shutil.copytree(HERE / "overlay", overlay, dirs_exist_ok=True)
+        subprocess.run([sys.executable, str(INDUSTRY / "build.py"), str(overlay)], check=True)
+        shutil.copytree(INDUSTRY / "overlay", overlay, dirs_exist_ok=True)
         subprocess.run([sys.executable, str(HERE.parent / "build.py"), "--java", str(java),
                         "--server", str(server), "--output", str(staged), "space"], check=True)
         adapter, = staged.glob("*.jar")

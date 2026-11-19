@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "EDE",
+    "FFF"
+  ],
+  "key": {
+    "A": {
+      "item": "expedition_space:light_composite_plate"
+    },
+    "E": {
+      "item": "expedition_industry:differential"
+    },
+    "D": {
+      "item": "expedition_space:mycetozoan"
+    },
+    "F": {
+      "tag": "c:storage_blocks/steel"
+    }
+  },
+  "result": {
+    "id": "expedition_industry:large_difference_engine",
+    "count": 1
+  }
+}

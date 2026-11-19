@@ -75,6 +75,8 @@ def build(module, java, cp, output, mods, space_proof=False):
         cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in SPACE_DEPENDENCIES)
         if space_proof:
             sources.extend(sorted((HERE / module / "tests").glob("*.java")))
+            sources.extend(sorted((HERE / "brass-industry/tests").glob("*.java")))
+            cp += os.pathsep + str(mods / "create-1.21.1-6.0.10.jar")
     with tempfile.TemporaryDirectory() as temp:
         classes = Path(temp)
         if module == "island-rail":

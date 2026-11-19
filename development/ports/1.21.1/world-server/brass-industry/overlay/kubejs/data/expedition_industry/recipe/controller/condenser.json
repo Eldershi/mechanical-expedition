@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "CDC",
+    "EAE"
+  ],
+  "key": {
+    "A": {
+      "item": "create:precision_mechanism"
+    },
+    "B": {
+      "item": "vintageimprovements:vacuum_chamber"
+    },
+    "C": {
+      "tag": "c:plates/tin"
+    },
+    "D": {
+      "item": "expedition_industry:planetary_gear"
+    },
+    "E": {
+      "item": "create:fluid_tank"
+    }
+  },
+  "result": {
+    "id": "expedition_industry:condenser",
+    "count": 1
+  }
+}

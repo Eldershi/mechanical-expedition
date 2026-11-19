@@ -24,13 +24,11 @@ def property_pairs(value):
     return block, dict(pair.split("=", 1) for pair in props[:-1].split(",")) if sep else {}
 
 
-def predicate_for(value):
+def predicate_for(value, alternatives):
     if value is None:
         return Compound({"type": String("any")})
-    if value == "#dut_create:metal_girder":
-        return Compound({"type": String("blocks"), "blocks": List[String]([
-            String("create:metal_girder"), String("create:metal_girder_encased_shaft")
-        ])})
+    if value in alternatives:
+        return Compound({"type": String("blocks"), "blocks": List[String](map(String, alternatives[value]))})
     if value.startswith("#"):
         raise ValueError(f"Unmapped pattern tag: {value}")
     block, props = property_pairs(value)
@@ -47,7 +45,7 @@ def write(output, relative, tag):
     File(tag).save(path, gzipped=False)
 
 
-def build(output):
+def radar_template():
     sys.path.insert(0, str(RADAR))
     from convert_project import convert
 
@@ -56,22 +54,25 @@ def build(output):
     with TemporaryDirectory() as temp:
         converted = Path(temp) / "radar"
         convert(ROOT / "pack/ldlib/assets/mbd2", converted)
-        radar = load(converted / MACHINES / "radar_antenna.mb", gzipped=False)["data"]
+        return load(converted / MACHINES / "radar_antenna.mb", gzipped=False)["data"]
 
+
+def build_layouts(output, namespace, layouts, configure, alternatives):
+    radar = radar_template()
     fixtures = {}
-    for name, definition_data in json.loads((HERE / "structures.json").read_text()).items():
+    for name, definition_data in layouts.items():
         layers = definition_data["layout"]
         part_names = definition_data["blocks"]
         fixture_states = definition_data.get("fixture_states", {})
         markers = [ANY, CONTROLLER, *part_names]
         optional = set(definition_data.get("optional", []))
-        wildcard = GLOBAL / f"expedition_space_{name}_0.predicate.nbt"
+        wildcard = GLOBAL / f"{namespace}_{name}_0.predicate.nbt"
         holders = []
         for index, marker in enumerate(markers):
             predicates = []
             if marker != CONTROLLER:
-                predicate = predicate_for(part_names.get(marker))
-                relative = GLOBAL / f"expedition_space_{name}_{index}.predicate.nbt"
+                predicate = predicate_for(part_names.get(marker), alternatives)
+                relative = GLOBAL / f"{namespace}_{name}_{index}.predicate.nbt"
                 write(output, relative, {"type": String("predicate"), "data": predicate})
                 predicates.append(Compound({"built-in": Byte(0), "path": String(relative.as_posix())}))
                 if marker in optional:
@@ -87,22 +88,13 @@ def build(output):
             raise ValueError(f"Expected one controller: {name}")
         project = copy.deepcopy(radar)
         definition = project["definition"]
-        definition["id"] = String(f"{NAMESPACE}:{name}")
-        definition["recipeLogicSettings"]["_enable"] = Byte(0)
-        machine = definition["machineSettings"]
-        energy = next(t for t in machine["traitDefinitions"] if t["name"] == "forge_energy_storage")
-        energy["capacity"] = Int(256_000)
-        energy["maxReceive"] = Int(4_000)
-        energy["maxExtract"] = Int(256_000)
-        machine["traitDefinitions"] = List[Compound]([energy])
-        machine["hasUI"] = Byte(0)
-        machine.pop("uiTemplate", None)
-        definition["itemProperties"]["creativeTab"]["enable"] = Byte(0)
+        definition["id"] = String(f"{namespace}:{name}")
         root = definition["stateMachine"]["root"]
         root["children"] = List[Compound]()
-        root["renderer"]["value"]["data"]["modelLocation"] = String(f"{NAMESPACE}:block/{name}")
+        root["renderer"]["value"]["data"]["modelLocation"] = String(f"{namespace}:block/{name}")
         root["shape"]["_enable"] = Byte(0)
         root["renderingBox"]["_enable"] = Byte(0)
+        configure(name, definition)
         project["placeholders"] = Compound({
             "x": Int(x_size), "y": Int(y_size), "z": Int(z_size),
             "pattern": IntArray([markers.index(marker) for marker in pattern]),
@@ -117,12 +109,31 @@ def build(output):
                 for x, marker in enumerate(row):
                     if marker == ANY:
                         continue
-                    selected = f"{NAMESPACE}:{name}" if marker == CONTROLLER else part_names[marker]
-                    if selected == "#dut_create:metal_girder":
-                        selected = "create:metal_girder"
+                    selected = f"{namespace}:{name}" if marker == CONTROLLER else part_names[marker]
+                    if selected in alternatives:
+                        selected = alternatives[selected][0]
                     cells.append([x, y, z, fixture_states.get(f"{x},{y},{z}", selected)])
         fixtures[name] = cells
     return fixtures
+
+
+def configure_space(name, definition):
+    definition["recipeLogicSettings"]["_enable"] = Byte(0)
+    machine = definition["machineSettings"]
+    energy = next(t for t in machine["traitDefinitions"] if t["name"] == "forge_energy_storage")
+    energy["capacity"] = Int(256_000)
+    energy["maxReceive"] = Int(4_000)
+    energy["maxExtract"] = Int(256_000)
+    machine["traitDefinitions"] = List[Compound]([energy])
+    machine["hasUI"] = Byte(0)
+    machine.pop("uiTemplate", None)
+    definition["itemProperties"]["creativeTab"]["enable"] = Byte(0)
+
+
+def build(output):
+    layouts = json.loads((HERE / "structures.json").read_text())
+    alternatives = {"#dut_create:metal_girder": ["create:metal_girder", "create:metal_girder_encased_shaft"]}
+    return build_layouts(output, NAMESPACE, layouts, configure_space, alternatives)
 
 
 if __name__ == "__main__":

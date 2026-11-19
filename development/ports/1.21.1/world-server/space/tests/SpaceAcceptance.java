@@ -62,6 +62,7 @@ public final class SpaceAcceptance {
     private Station gate;
 
     public SpaceAcceptance() {
+        new expedition.industry.BrassIndustryAcceptance();
         NeoForge.EVENT_BUS.addListener(this::commands);
         NeoForge.EVENT_BUS.addListener(this::tick);
     }

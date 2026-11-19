@@ -1,0 +1,42 @@
+{
+  "#dut_create:funnel": [
+    "create:andesite_funnel",
+    "create:brass_funnel",
+    "create:andesite_belt_funnel",
+    "create:brass_belt_funnel"
+  ],
+  "#dut_create:brass_funnel": [
+    "create:brass_funnel",
+    "create:brass_belt_funnel"
+  ],
+  "#dut_create:shaft": [
+    "create:shaft",
+    "create:andesite_encased_shaft",
+    "create:brass_encased_shaft"
+  ],
+  "#dut_create:container": [
+    "minecraft:barrel",
+    "minecraft:chest",
+    "create:item_vault",
+    "design_decor:green_container",
+    "design_decor:red_container"
+  ],
+  "#dut_create:container_fluid": [
+    "create:fluid_tank",
+    "create_connected:fluid_vessel"
+  ],
+  "#dut_create:storage": [
+    "functionalstorage:storage_controller",
+    "functionalstorage:compacting_drawer",
+    "minecraft:barrel",
+    "minecraft:chest",
+    "create:item_vault",
+    "create_connected:inventory_access_port"
+  ],
+  "#dut_create:red_container": [
+    "design_decor:red_container"
+  ],
+  "#dut_create:green_container": [
+    "design_decor:green_container"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DFD",
+    "DAD",
+    "DED"
+  ],
+  "key": {
+    "A": {
+      "item": "expedition_industry:efficiency_module_2"
+    },
+    "E": {
+      "type": "neoforge:components",
+      "items": "expedition_space:brass_hard_disk",
+      "components": {
+        "minecraft:damage": 0
+      }
+    },
+    "D": {
+      "item": "create:refined_radiance"
+    },
+    "F": {
+      "item": "expedition_industry:electrolytic_cell"
+    }
+  },
+  "result": {
+    "id": "expedition_industry:electro_hydro_resonant_tower",
+    "count": 1
+  }
+}

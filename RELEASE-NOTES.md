@@ -1,4 +1,4 @@
-# 远征 1.21.1-test.2
+# 远征 1.21.1-test.3
 
 适用于 Minecraft 1.21.1、NeoForge 21.1.267 和 Java 21。
 
@@ -7,4 +7,7 @@
 - 机素防护沿用 Giselle 的随身氧气。机巧新生气密甲使用气罐组的专用自然空气格。
 - 航天任务书接入地月补给、月球地牢调查和首次异界航行。
 
-[安装、构建及校验](development/ports/1.21.1/release/) · [设施与护甲操作](development/ports/1.21.1/world-server/space/)
+- 加入 12 座工业多方块。控制器配方和布局参照《黄铜协奏曲》，模型使用机械动力原版纹理。运行采用远征测试工序。
+- 差速器通过三步 Create 序列组装，每轮产出两个，可制作工业高炉和大型差分机控制器。
+
+[安装、构建及校验](development/ports/1.21.1/release/) · [设施与护甲操作](development/ports/1.21.1/world-server/space/) · [工业设施操作](development/ports/1.21.1/world-server/brass-industry/)

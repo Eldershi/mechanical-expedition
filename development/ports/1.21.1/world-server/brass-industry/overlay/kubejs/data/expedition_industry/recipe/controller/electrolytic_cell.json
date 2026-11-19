@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "CDC",
+    "EFE"
+  ],
+  "key": {
+    "A": {
+      "item": "createaddition:large_connector"
+    },
+    "B": {
+      "item": "createaddition:gold_spool"
+    },
+    "C": {
+      "tag": "c:ingots/industrial_iron"
+    },
+    "D": {
+      "item": "create:fluid_tank"
+    },
+    "E": {
+      "item": "createaddition:modular_accumulator"
+    },
+    "F": {
+      "item": "createaddition:tesla_coil"
+    }
+  },
+  "result": {
+    "id": "expedition_industry:electrolytic_cell",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DDD",
+    "EAE",
+    "FFF"
+  ],
+  "key": {
+    "A": {
+      "item": "expedition_space:carrier_rocket"
+    },
+    "E": {
+      "type": "neoforge:components",
+      "items": "expedition_space:tin_hard_disk",
+      "components": {
+        "minecraft:damage": 0
+      }
+    },
+    "D": {
+      "tag": "c:storage_blocks/copper"
+    },
+    "F": {
+      "tag": "c:storage_blocks/brass"
+    }
+  },
+  "result": {
+    "id": "expedition_industry:trading_station",
+    "count": 4
+  }
+}

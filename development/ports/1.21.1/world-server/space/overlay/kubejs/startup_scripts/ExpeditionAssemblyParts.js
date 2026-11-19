@@ -32,6 +32,10 @@ StartupEvents.registry('block', event => {
       }).rotateState(state => {
         state.setValue(states.FACING, state.rotate(state.getValue(states.FACING)))
       })
+    } else if (id === 'diagonal_metal_support') {
+      block.property(states.HORIZONTAL_FACING).placementState(p => {
+        p.setValue(states.HORIZONTAL_FACING, p.getHorizontalDirection())
+      }).rotateState(s => s.setValue(states.HORIZONTAL_FACING, s.rotate(s.getValue(states.HORIZONTAL_FACING))))
     } else if (id === 'diagonal_girder') {
       block.property(states.HORIZONTAL_FACING).property(facingUp).placementState(placement => {
         placement.setValue(states.HORIZONTAL_FACING, placement.getHorizontalDirection())

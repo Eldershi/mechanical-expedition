@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "EDE",
+    "FFF"
+  ],
+  "key": {
+    "A": {
+      "item": "expedition_industry:circuit_board"
+    },
+    "E": {
+      "type": "neoforge:components",
+      "items": "expedition_space:tin_hard_disk",
+      "components": {
+        "minecraft:damage": 0
+      }
+    },
+    "D": {
+      "item": "expedition_industry:electric_gear"
+    },
+    "F": {
+      "tag": "c:storage_blocks/tin"
+    }
+  },
+  "result": {
+    "id": "expedition_industry:electron_tube_computer",
+    "count": 1
+  }
+}

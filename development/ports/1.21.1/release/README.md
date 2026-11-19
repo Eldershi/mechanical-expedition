@@ -2,7 +2,7 @@
 
 Minecraft 1.21.1、NeoForge 21.1.267、Java 21。构建进入 `migration/1.21.1-neoforge` 或对应的 `v1.21.1-test.N`。
 
-1. 使用已验证的客户端和专用服输入，安装当前源码的地月适配。运行 [地月设施安装器](../world-server/space/install.py)。
+1. 使用已验证的客户端和专用服输入，安装当前源码的地月与工业设施。运行 [测试实例安装器](../world-server/space/install.py)。
 2. 运行 `python3 development/ports/1.21.1/release/package_test.py validate` 检查分支和发布清单。
 3. 运行 `python3 development/ports/1.21.1/release/package_test.py package --client <client> --server <server> --output <dir>`，生成客户端 MRPACK、服务端覆盖层 ZIP 和 SHA256SUMS。
 

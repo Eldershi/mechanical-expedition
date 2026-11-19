@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "CDC",
+    "EBE"
+  ],
+  "key": {
+    "A": {
+      "tag": "c:plates/brass"
+    },
+    "B": {
+      "item": "create:steam_engine"
+    },
+    "C": {
+      "item": "expedition_industry:electric_gear"
+    },
+    "D": {
+      "item": "functionalstorage:compacting_drawer"
+    },
+    "E": {
+      "item": "create:fluid_pipe"
+    }
+  },
+  "result": {
+    "id": "expedition_industry:hydropress",
+    "count": 1
+  }
+}

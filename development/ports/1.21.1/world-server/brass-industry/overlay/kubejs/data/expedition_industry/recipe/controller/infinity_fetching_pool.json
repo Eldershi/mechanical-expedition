@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "BDB",
+    "EAE"
+  ],
+  "key": {
+    "C": {
+      "tag": "c:plates/brass"
+    },
+    "B": {
+      "item": "expedition_industry:polymer_ingot"
+    },
+    "A": {
+      "type": "neoforge:components",
+      "items": "expedition_space:tin_hard_disk",
+      "components": {
+        "minecraft:damage": 0
+      }
+    },
+    "D": {
+      "item": "expedition_space:magenta_circuit_board"
+    },
+    "E": {
+      "tag": "c:ingots/industrial_iron"
+    }
+  },
+  "result": {
+    "id": "expedition_industry:infinity_fetching_pool",
+    "count": 1
+  }
+}

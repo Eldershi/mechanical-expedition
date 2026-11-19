@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "EBE",
+    "ADA",
+    "CCC"
+  ],
+  "key": {
+    "A": {
+      "item": "create:precision_mechanism"
+    },
+    "B": {
+      "item": "create:item_vault"
+    },
+    "E": {
+      "item": "create:brass_funnel"
+    },
+    "D": {
+      "item": "create:fluid_tank"
+    },
+    "C": {
+      "tag": "c:ingots/industrial_iron"
+    }
+  },
+  "result": {
+    "id": "expedition_industry:huge_crusher",
+    "count": 1
+  }
+}

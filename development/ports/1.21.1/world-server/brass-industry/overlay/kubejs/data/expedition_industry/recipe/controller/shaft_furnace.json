@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "CDC",
+    "EEE"
+  ],
+  "key": {
+    "A": {
+      "item": "expedition_space:lime_circuit_board"
+    },
+    "B": {
+      "item": "expedition_industry:alloy_furnace"
+    },
+    "E": {
+      "tag": "c:storage_blocks/industrial_iron"
+    },
+    "D": {
+      "item": "functionalstorage:storage_controller"
+    },
+    "C": {
+      "item": "expedition_industry:differential"
+    }
+  },
+  "result": {
+    "id": "expedition_industry:shaft_furnace",
+    "count": 1
+  }
+}
