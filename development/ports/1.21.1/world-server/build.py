@@ -26,7 +26,8 @@ MODULES = {
     "teleport": ("expedition_teleport_fix", "1.0.0", "Expedition Async Teleport",
                  "expedition.teleport.mixin", ["TeleportCommandMixin"]),
     "space": ("expedition_space", "1.0.0", "Expedition Earth–Moon Logistics",
-              "expedition.space.mixin", ["BreathingReserveMixin", "OtherPadMixin"]),
+              "expedition.space.mixin", ["BreathingReserveMixin", "OtherPadMixin", "EndStoneCrushingMixin",
+                                         "PendingMiningProcessMixin"]),
     "twilight": ("expedition_worldgen_compat", "1.1.1", "Expedition Twilight Landmarks",
                  "expedition.twilight.mixin", ["MagicMapMixin", "LocateMixin"]),
     "world-rules": ("expedition_world_rules", "1.0.0", "Expedition World Rules", "", []),
@@ -43,6 +44,8 @@ SPACE_DEPENDENCIES = (
     ("ad_astra", "[1.16.26]", "adastra-1.21.1-1.16.26-neoforge.jar"),
     ("allthemodium", "[3.2.1]", "allthemodium-3.2.1_mc_1.21.1.jar"),
     ("createcraftedbeginning", "[0.1.1]", "createcraftedbeginning-0.1.1.jar"),
+    ("create", "[6.0.10]", "create-1.21.1-6.0.10.jar"),
+    ("create_rns", "[1.3.1-1.21.1-6]", "create_rns-1.3.1-1.21.1-6.jar"),
     ("mbd2", "[21.1.1.a]", "Multiblocked2-1.21-1.21.1-21.1.1.a-all.jar"),
     ("ldlib2", "[2.2.46.a]", "ldlib2-neoforge-1.21.1-2.2.46.a-all.jar"),
     ("ftbteams", "[2101.1.12]", "ftb-teams-neoforge-2101.1.12.jar"),
@@ -76,7 +79,6 @@ def build(module, java, cp, output, mods, space_proof=False):
         if space_proof:
             sources.extend(sorted((HERE / module / "tests").glob("*.java")))
             sources.extend(sorted((HERE / "brass-industry/tests").glob("*.java")))
-            cp += os.pathsep + str(mods / "create-1.21.1-6.0.10.jar")
     with tempfile.TemporaryDirectory() as temp:
         classes = Path(temp)
         if module == "island-rail":

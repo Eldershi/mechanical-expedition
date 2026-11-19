@@ -3,6 +3,7 @@ StartupEvents.registry('item', event => {
     cast_iron: [0x454545, 'ingot', 'dust', 'plate'],
     stainless_steel: [0x647280, 'ingot'],
     chromium: [0xEBE3E4, 'ingot', 'dust'],
+    vanadium: [0x4D4383, 'dust'],
     pure_quartz: [0xA5F1FF, 'dust', 'prism'],
     wooden: [0xAB7500, 'gear'],
     andesite_alloy: [0xC7C8B8, 'plate']

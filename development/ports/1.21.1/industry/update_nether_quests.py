@@ -12,8 +12,10 @@ BLAZE_BURNER = "04004B46385E2AF2"
 FOUNDRY = "5095EB55709B5982"
 
 
-def update_chapter(text):
+def update_chapter(text, selected=(BLAZE_BURNER, FOUNDRY)):
     for quest, prerequisite in ((BLAZE_BURNER, NETHER_VISIT), (FOUNDRY, FOUNDRY_MATERIALS)):
+        if quest not in selected:
+            continue
         block_pattern = re.compile(
             rf'^\t\t\{{\n(?:(?!^\t\t\}})[\s\S])*?^\t{{3}}id: "{quest}"\n'
             r'(?:(?!^\t\t\})[\s\S])*?^\t\t\}',
@@ -38,13 +40,18 @@ def update(quests):
     chapters = quests / "chapters"
     canonical = chapters / "steam_railway.snbt"
     updates = {}
+    found = set()
+    if not canonical.is_file():
+        raise FileNotFoundError(canonical)
     for chapter in sorted(chapters.glob("steam_railway*.snbt")):
         original = chapter.read_text(encoding="utf-8")
         if chapter == canonical or re.search(r'^\tfilename: "steam_railway"$', original, re.MULTILINE):
-            updated = update_chapter(original)
+            selected = {quest for quest in (BLAZE_BURNER, FOUNDRY) if f'\n\t\t\tid: "{quest}"\n' in original}
+            updated = update_chapter(original, selected)
+            found.update(selected)
             updates[chapter] = (original, updated)
-    if canonical not in updates:
-        raise FileNotFoundError(canonical)
+    if missing := {BLAZE_BURNER, FOUNDRY} - found:
+        raise ValueError(f"Missing Steam Railway quests: {', '.join(sorted(missing))}")
     for chapter, (original, updated) in updates.items():
         if updated != original:
             chapter.write_text(updated, encoding="utf-8")

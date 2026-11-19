@@ -1,20 +1,8 @@
 StartupEvents.registry('block', event => {
-  const mapColors = Java.loadClass('net.minecraft.world.level.material.MapColor')
-  event.create('cmi:peat_block')
-    .soundType(SoundType.MUD)
-    .mapColor(mapColors.TERRACOTTA_CYAN)
-    .hardness(1)
-    .resistance(1)
-    .tagBlock('minecraft:mineable/shovel')
-    .tagBlock('minecraft:dirt')
-    .tagBoth('minecraft:stone')
-    .item(item => item.burnTime(3200))
-
   const ores = [
     { name: 'certus_quartz', hardness: 3, tier: 'iron', deepslate: true },
     { name: 'dreamcore_crystal', hardness: 3, tier: null, deepslate: false },
-    { name: 'etrium', hardness: 5, tier: 'diamond', deepslate: true },
-    { name: 'quartz', hardness: 3, tier: 'iron', deepslate: true }
+    { name: 'etrium', hardness: 5, tier: 'diamond', deepslate: true }
   ]
   ores.forEach(ore => {
     const rockTypes = ore.deepslate ? ['stone', 'deepslate'] : ['stone']

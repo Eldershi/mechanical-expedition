@@ -1,0 +1,9 @@
+{
+  "type": "createcraftedbeginning:forging_press",
+  "ingredients": [
+    [],
+    {"item": "modernfoundry:gem_cast"},
+    {"type": "neoforge:single", "fluid": "cmi:molten_pure_silicon", "amount": 250}
+  ],
+  "results": [{"id": "cmi:single_crystal_silicon"}]
+}

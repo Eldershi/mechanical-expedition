@@ -24,6 +24,11 @@ TARGET_VERSION = 3955
 STACK_MARKER = "__expedition_stack"
 ALIASES = {
     "cmi:grass_string": "minecraft:string",
+    "cmi:quartz_ore": "minecraft:nether_quartz_ore",
+    "cmi:deepslate_quartz_ore": "minecraft:nether_quartz_ore",
+    "cmi:peat": "minecraft:charcoal",
+    "cmi:peat_block": "immersiveengineering:coal_coke",
+    "cmi:enriched_silicon": "cmi:single_crystal_silicon",
     "tconstruct:seared_bricks": "modernfoundry:seared_bricks",
     "tconstruct:seared_faucet": "modernfoundry:seared_faucet",
     "tconstruct:molten_bronze_bucket": "modernfoundry:molten_bronze_bucket",

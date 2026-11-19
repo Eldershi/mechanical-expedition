@@ -23,12 +23,6 @@ ServerEvents.recipes(event => {
     energy: 1600
   }).id(path + 'alkaline_brine')
   create.mixing([
-    fluid('waste_brine', 100), fluid('bromine', 100)
-  ], [
-    fluid('alkaline_brine', 100), Fluid.of('mekanism:chlorine', 100)
-  ]).id(path + 'bromine_waste_brine')
-
-  create.mixing([
     fluid('lithium_containing_electrolyte', 100), 'mekanism:salt'
   ], [fluid('waste_brine', 200)]).processingTime(200).id(path + 'lithium_electrolyte')
   create.mixing([

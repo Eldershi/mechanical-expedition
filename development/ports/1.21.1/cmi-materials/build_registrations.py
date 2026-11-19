@@ -24,21 +24,56 @@ THERMAL_TAG = re.compile(r"""(?m)^[ \t]*\.tag\(["'`]thermal:[^\n]*\n""")
 GRASS_STRING = re.compile(
     r'(?m)^\t// 草绳\n\taddMaterial\("grass_string"\)\n(?:\t\t\.tag\([^\n]+\n)*\n'
 )
+PEAT_ITEM = re.compile(
+    r'(?m)^\t// 泥炭\n\taddItem\("peat"\)\n'
+    r'\t\t\.texture\([^\n]+\n\t\t\.burnTime\(800\)\n\n'
+)
+OBSIDIAN_CELL = re.compile(
+    r'(?m)^\t// 黑曜石元件\n\tadd(?:Item|Material)\("obsidian_cell"\)\n'
+    r'(?:\t\t\.texture\([^\n]+\n)?\n'
+)
+ENRICHED_SILICON = re.compile(r'(?m)^\t// 富集硅\n\taddNonGemItem\("enriched_silicon"\)\n')
+RETIRED_COLLECTIBLES = re.compile(
+    r'(?m)^(?:\t// (?:寒霜蛋糕胚|羊皮纸)\n)?'
+    r'\tadd(?:Item|Material)\("(?:frost_cake_base|parchment|torn_parchment_[ab])"\)\n(?:\t\t\.[^\n]+\n)*'
+)
 
 
-def remove_grass_string(source):
-    updated = GRASS_STRING.sub("", source)
-    if 'addMaterial("grass_string")' in updated:
-        raise ValueError("Unexpected grass string registration")
+def remove_retired_items(source):
+    updated = OBSIDIAN_CELL.sub("", PEAT_ITEM.sub("", GRASS_STRING.sub("", source)))
+    updated = RETIRED_COLLECTIBLES.sub("", updated)
+    if re.search(r'add(?:Item|Material)\("(?:grass_string|peat|obsidian_cell|frost_cake_base|parchment|torn_parchment_[ab])"\)', updated):
+        raise ValueError("Unexpected retired item registration")
     return updated
 
 
-def retire_grass_string(instance):
+def retire_items(instance):
     basic = instance / "kubejs/startup_scripts/cmi/item/Basic.js"
     original = basic.read_text(encoding="utf-8")
-    updated = remove_grass_string(original)
+    updated = remove_retired_items(original)
     if updated != original:
         basic.write_text(updated, encoding="utf-8")
+    gems = basic.parents[1] / "material/Gems.js"
+    original = gems.read_text(encoding="utf-8")
+    updated = remove_enriched_silicon(original)
+    if updated != original:
+        gems.write_text(updated, encoding="utf-8")
+    shutil.copy2(HERE / "CmiMineralsAndPeat.js", basic.parents[1] / "CmiMineralsAndPeat.js")
+    clean_retired_collectible_assets(instance / "kubejs")
+
+
+def clean_retired_collectible_assets(kubejs):
+    assets = kubejs / "assets/cmi/textures/item/material"
+    for relative in ("frost_cake_base.png", "parchment/parchment.png",
+                     "parchment/torn_parchment_a.png", "parchment/torn_parchment_b.png"):
+        (assets / relative).unlink(missing_ok=True)
+
+
+def remove_enriched_silicon(source):
+    updated = ENRICHED_SILICON.sub("", source)
+    if 'addNonGemItem("enriched_silicon")' in updated:
+        raise ValueError("Unexpected enriched silicon registration")
+    return updated
 
 
 def convert(relative, source, tinkers_namespace):
@@ -46,7 +81,7 @@ def convert(relative, source, tinkers_namespace):
     source = THERMAL_TAG.sub("", source)
     source = MODEL_CALL.sub(r".modelGenerator(model => Cmi.applyModel(model, \1))", source)
     if relative == "item/Basic.js":
-        source = remove_grass_string(source)
+        source = remove_retired_items(source)
         source = re.sub(
             r'(?m)^\t// 蒸汽升级\n(?:\taddItem\("steam_(?:cast_iron|steel)_upgrade"\)\n'
             r'\t\t\.texture\([^\n]+\n\t\t\.tag\([^\n]+\n\n){2}',
@@ -108,6 +143,8 @@ def convert(relative, source, tinkers_namespace):
         source = re.sub(r'(?m)^\taddAloneCrushedRawMaterial\("ardite"\)\n', "", source)
     elif relative == "material/Ingots.js":
         source = source.replace('.rarity("extra_green")', '.rarity("uncommon")')
+    elif relative == "material/Gems.js":
+        source = remove_enriched_silicon(source)
     if "thermal:" in source or ".modelJson(" in source:
         raise ValueError(f"Unsupported dependency or model API in {relative}")
     if relative == "other/Cast.js":
@@ -118,6 +155,7 @@ def convert(relative, source, tinkers_namespace):
 def build(source, target, tinkers_namespace):
     (target / "item/mechanism/Random.js").unlink(missing_ok=True)
     if target.parent.name == "startup_scripts":
+        clean_retired_collectible_assets(target.parent.parent)
         textures = target.parent.parent / "assets/cmi/textures/item"
         random_textures = textures / "mechanism/random"
         for pattern in ("*.png", "*.png.mcmeta"):
@@ -136,7 +174,7 @@ def build(source, target, tinkers_namespace):
         destination = target / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(converted)
-    for name in ("Bindings.js", "CmiFactoryParts.js", "CmiIndustrialMaterials.js", "CmiLubricant.js",
+    for name in ("Bindings.js", "CmiDeposits.js", "CmiFactoryParts.js", "CmiIndustrialMaterials.js", "CmiLubricant.js",
                  "CmiMechanisms.js", "CmiMineralsAndPeat.js", "CmiMoltenMetals.js",
                  "CmiOilFluids.js", "CmiPolymerMaterials.js", "CmiProcessFluids.js",
                  "CmiSiliconeFluids.js", "CmiSpaceParts.js"):

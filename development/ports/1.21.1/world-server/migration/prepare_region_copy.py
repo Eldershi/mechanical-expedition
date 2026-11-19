@@ -47,10 +47,14 @@ def converted_blocks(chunk, tracks, ores, create_curves):
                         yield "create_bezier_connections"
 
 
-def read_payload(data, offset, coords):
+def read_payload(data, offset, coords, region=None):
     length = int.from_bytes(data[offset : offset + 4], "big")
     compression = data[offset + 4]
     payload = data[offset + 5 : offset + 4 + length]
+    if compression & 128 and region is not None:
+        x, z = coords
+        payload = (region.parent / f"c.{x}.{z}.mcc").read_bytes()
+        compression &= 127
     if compression == 2:
         return zlib.decompress(payload)
     if compression == 1:
@@ -66,6 +70,8 @@ def replace_chunk(data, position, offset, previous_sectors, chunk):
     payload = zlib.compress(uncompressed.getvalue())
     entry = (len(payload) + 1).to_bytes(4, "big") + bytes([2]) + payload
     sectors = (len(entry) + SECTOR - 1) // SECTOR
+    if sectors > 255:
+        raise ValueError("Rewritten chunk exceeds the inline Anvil sector limit")
     if sectors > previous_sectors:
         offset = (len(data) + SECTOR - 1) // SECTOR * SECTOR
         data.extend(bytes(offset - len(data)))

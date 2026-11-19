@@ -2,7 +2,6 @@ ServerEvents.tags('item', event => {
   event.add('create:backtanks', ['create:copper_backtank', 'create:netherite_backtank'])
   event.add('create:diving_helmets', ['create:copper_diving_helmet', 'create:netherite_diving_helmet'])
   event.add('c:plates/silicon', 'ae2:printed_silicon')
-  event.add('cmi:peat_gen', ['cmi:peat_block', 'cmi:peat'])
   event.add('constructionwand:wand', [
     'constructionwand:stone_wand', 'constructionwand:iron_wand',
     'constructionwand:diamond_wand', 'constructionwand:infinity_wand'

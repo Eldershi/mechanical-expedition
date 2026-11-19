@@ -1,7 +1,6 @@
 ServerEvents.tags('item', event => {
   event.add('c:gems/dreamcore', 'cmi:dreamcore_crystal')
   event.add('c:plates/silicon', 'ae2:printed_silicon')
-  event.add('cmi:peat_gen', ['cmi:peat_block', 'cmi:peat'])
 })
 
 ServerEvents.recipes(event => {

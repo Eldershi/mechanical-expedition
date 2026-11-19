@@ -11,7 +11,6 @@ from zipfile import ZipFile
 ORE_DROPS = {
     "certus_quartz": "ae2:certus_quartz_crystal",
     "etrium": "cmi:raw_etrium",
-    "quartz": "minecraft:quartz",
 }
 
 
@@ -20,6 +19,8 @@ def build_loot(vanilla, pack):
         template = json.loads(jar.read("data/minecraft/loot_table/blocks/deepslate_diamond_ore.json"))
     directory = pack / "data/cmi/loot_table/blocks"
     directory.mkdir(parents=True, exist_ok=True)
+    for obsolete in ("quartz_ore", "deepslate_quartz_ore", "peat_block"):
+        (directory / f"{obsolete}.json").unlink(missing_ok=True)
     for ore, item in ORE_DROPS.items():
         for prefix in ("", "deepslate_"):
             name = f"{prefix}{ore}_ore"

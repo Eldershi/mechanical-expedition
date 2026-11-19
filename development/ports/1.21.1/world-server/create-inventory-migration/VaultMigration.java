@@ -38,7 +38,14 @@ public final class VaultMigration {
     private static final Pattern REGION_NAME = Pattern.compile("r\\.(-?\\d+)\\.(-?\\d+)\\.mca");
     private static final Pattern EXTERNAL_CHUNK_NAME = Pattern.compile("c\\.-?\\d+\\.-?\\d+\\.mcc");
     private static final Set<String> LEGACY_STACK_FIELDS = Set.of("id", "Count", "tag", "Slot", "ForgeCaps");
-    private static final Map<String, String> PLAIN_ITEM_REPLACEMENTS = Map.of("thermal:copper_nugget", "create:copper_nugget");
+    private static final Map<String, String> PLAIN_ITEM_REPLACEMENTS = Map.of(
+        "thermal:copper_nugget", "create:copper_nugget",
+        "cmi:quartz_ore", "minecraft:nether_quartz_ore",
+        "cmi:deepslate_quartz_ore", "minecraft:nether_quartz_ore",
+        "cmi:peat", "minecraft:charcoal",
+        "cmi:peat_block", "immersiveengineering:coal_coke",
+        "cmi:enriched_silicon", "cmi:single_crystal_silicon"
+    );
     private static final RegionStorageInfo REGION_INFO = new RegionStorageInfo("expedition-copy", Level.OVERWORLD, "chunk");
 
     private final DataFixer fixer = DataFixers.getDataFixer();

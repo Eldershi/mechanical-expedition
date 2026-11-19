@@ -40,6 +40,10 @@ import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
+import net.ty.createcraftedbeginning.api.gas.Gas;
+import net.ty.createcraftedbeginning.api.gas.GasBuilder;
+import net.ty.createcraftedbeginning.api.gas.GasRegistries;
+import net.neoforged.neoforge.registries.DeferredRegister;
 
 @Mod("expedition_space")
 public final class SpaceLogistics {
@@ -54,6 +58,11 @@ public final class SpaceLogistics {
     private static final int FLIGHT_TICKS = 240;
 
     public SpaceLogistics(IEventBus modBus) {
+        var gases = DeferredRegister.create(GasRegistries.GAS_REGISTRY_KEY, "cmi");
+        gases.register("helium_3", () -> new Gas(GasBuilder.builder().tint(0xFFB0BA)));
+        gases.register("nuke_waste", () -> new Gas(GasBuilder.builder().tint(0x747D24)));
+        gases.register("radioactive_mixture", () -> new Gas(GasBuilder.builder().tint(0x478510)));
+        gases.register(modBus);
         modBus.addListener(this::capabilities);
         NeoForge.EVENT_BUS.addListener(this::clickBlock);
         NeoForge.EVENT_BUS.addListener(this::clickItem);
