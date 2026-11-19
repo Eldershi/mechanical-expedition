@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "expedition.liquefied.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["BaseFlowingFluidMixin", "BucketItemMixin", "FluidBucketWrapperMixin", "FluidTypeMixin", "LiquidBlockMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

@@ -1,0 +1,11 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="See repository license"
+
+[[mods]]
+modId="expedition_liquefied_gases"
+version="1.0.0"
+displayName="Expedition Liquefied Gases"
+
+[[mixins]]
+config="expedition-liquefied-gases.mixins.json"

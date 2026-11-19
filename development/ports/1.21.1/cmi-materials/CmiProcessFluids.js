@@ -22,4 +22,13 @@ StartupEvents.registry('fluid', event => {
       .tag(`cmi:${name}`)
     fluid.bucketItem.tag('cmi:buckets')
   })
+
+  event.create('cmi:liquid_nitrogen')
+    .flowingTexture('cmi:fluid/chemical/flow')
+    .stillTexture('cmi:fluid/chemical/still')
+    .tint(0xA8CCEE)
+    .translucent()
+    .noBlock()
+    .noBucket()
+    .tag('c:nitrogen')
 })

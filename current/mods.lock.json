@@ -860,8 +860,8 @@
       "kubejs/assets/cmi/guides/cmi/guide/index.md": "b0ec2c3c25752828d1c7ebddd25dba9c5caf3d868f1818f4129574860b4f33fb",
       "kubejs/assets/cmi/guides/cmi/guide/utilities/utilities-index.md": "7a82c312c9bdc00a23cac57b5e060200b1476e8ba448104442057edeac336858",
       "kubejs/assets/cmi/guides/cmi/guide/utilities/water-pipe.md": "b8b8234dc5e9b3a0cf32716084eb55c3bb7aa4fde6e6fa0c0fba1ef0e1c406c0",
-      "kubejs/assets/cmi/lang/en_us.json": "7415c69d08417cdf5517672086a25552b1c55203a83a08c6d0eae3947f3144bc",
-      "kubejs/assets/cmi/lang/zh_cn.json": "03563c750023e23337f9e7e1d221030ead76f5191cdcf58481ba62fa9d782b0c",
+      "kubejs/assets/cmi/lang/en_us.json": "7b95726f074084deb9d5277adfd53e310e3f3eb192bd8efa73baf22ef3cdaa13",
+      "kubejs/assets/cmi/lang/zh_cn.json": "92907cb189a99d03291aec57caa287ce5179c5dc9d9392b7283d85b32b8475a1",
       "kubejs/assets/cmi/models/block/accelerator.json": "2389e6e16cd02291ab773b41f2d8a008fef2b2252c3c64fe65c6f8f6beae687d",
       "kubejs/assets/cmi/models/block/casing/ae2/computing.json": "dd59b0945ac915de47767b0244fd0e623bff259d0134030d7096ec32d48a5e1d",
       "kubejs/assets/cmi/models/block/casing/ae2/smart.json": "4263afa8e5e29e94e2a7f85c111e4a17f3b87406123e286344c6275ea4e27352",
@@ -2537,6 +2537,7 @@
       "kubejs/data/expedition/advancement/engineering/form_bottling_machine.json": "7a5a14c05e1cd83aa13ad033213a8202d2ca4e418ee96cb73a19fa5442877e17",
       "kubejs/data/expedition/recipe/enderio/copper_silicon_alloy.json": "6ed559e6d8ee99de7c59cfa55bb40925faf9fbbcb0ea89c63956d86d27d18eba",
       "kubejs/data/expedition/recipe/factory/silicone/vinegar_fermenter.json": "b26e24c8327872c7ff0652a29d560168c85dd13c6b542938d6faf7a183b392a0",
+      "kubejs/data/expedition/recipe/fractionation/natural_air.json": "b5dfa26f8a7646412f14b0b51db7e4fe019e1bca3c96e86e887aee80d682f83c",
       "kubejs/data/expedition/recipe/foundry/andesite_alloy_casting.json": "ef2bf7471c321db189ee9b4196f17732ac6cf1a17f14a2cdfaf8a8e02058d48a",
       "kubejs/data/expedition/recipe/foundry/andesite_alloy_melting.json": "e1e39519a753af36535e14502011432d169db1e0100e8f2cf7c65a3736f2f04e",
       "kubejs/data/expedition/recipe/foundry/brass_part.json": "249d789dd0b815e09758df24f5af90ef15e14d5a84cabc2635676fdcaa81da11",
@@ -2552,6 +2553,7 @@
       "kubejs/data/expedition/recipe/foundry/stainless_steel_melting.json": "8b0ebf486e7934cb190a227eedc94a9e62c205e8491157ccc05384d85c5b6643",
       "kubejs/data/expedition/recipe/foundry/stainless_steel_mixing.json": "8542374ce7d89405ae6d765a1eb9fee6c333644e5d968e425d9c690ca48aef67",
       "kubejs/data/expedition/recipe/foundry/void_dust.json": "9647e7046d67feb284765d00ad6ba60400407748936f8057ee6df74b3145313a",
+      "kubejs/data/expedition/tags/fluid/piped_liquefied_gases.json": "a7fbaa640bd789c0fb5bc38de18d848fda2ace1b3041b6278923a9104b2fd4b1",
       "kubejs/data/expedition/tags/item/concrete_for_cinder_bricks.json": "ddcd29e2951334a8046c6fe91f4c98bd011ebd6f6b14adfc95183261cf0943c4",
       "kubejs/data/expedition/tags/item/steam_power/boilers.json": "222cbd5be4eb991d106fbbf66de332a7e4e4cf281924275f7a4f7f4b582690a9",
       "kubejs/data/expedition/tags/item/steam_power/burners.json": "43d9b677038350ef4c8832c639e7e31e3172186b140703977191cd3f7e6d4e1a",
@@ -2631,7 +2633,7 @@
       "kubejs/startup_scripts/cmi/CmiMoltenMetals.js": "a045fa81c8557f9ccf29628b4e0a3ecbe40b13978e52bad26a68da527fe6ae4c",
       "kubejs/startup_scripts/cmi/CmiOilFluids.js": "20942f57cf1cbdb8dbefb318ba74b25e87e205724461c216876d819542553b1f",
       "kubejs/startup_scripts/cmi/CmiPolymerMaterials.js": "81f863f959cd29acbd4c01297332694c12fa0abde33685e856e850889fdf7c7c",
-      "kubejs/startup_scripts/cmi/CmiProcessFluids.js": "01cb730ad545aa0d699a7d3666a5104e939f188d4cbd078d82e6aec9bcc60b14",
+      "kubejs/startup_scripts/cmi/CmiProcessFluids.js": "810f52b7c19c0a848e409911630b48c70cbd96f6742a908d0d9de3171dd32384",
       "kubejs/startup_scripts/cmi/CmiSiliconeFluids.js": "dbbe7b1fd7adc30f91fec1c868d84b166661fff87f40c8b2757828fdac541442",
       "kubejs/startup_scripts/cmi/CmiSpaceParts.js": "174dd0ac9f3e7f7ff4658c74a9923eb91c6952a242931e4fd34f8f44a7ce12d9",
       "kubejs/startup_scripts/cmi/item/Basic.js": "027ba7700a90d8e17734f0bd564c67cab2aa427a2df260db82e3696a10c85a56",
@@ -5507,6 +5509,13 @@
         "sha512": "e3a65c03968e731aa8e288118c050dd5818371e844d53a7f4403a5df86bee025c04bad764f6b28fb43681233fce827d576e4a7e379c86ef17d4a47fddd8bcf39"
       },
       {
+        "filename": "expedition-liquefied-gases-neoforge-1.0.0.jar",
+        "bytes": 6264,
+        "sha1": "8ddf6a2ad7bcd95a26d56f8c01e4b5826a0f9be9",
+        "sha256": "9c17e45e57ffed9fefbe359f0e61e2f01dbc6be5b60eed5aa1098102eb341f48",
+        "sha512": "b9672482b08933a2186a6bc9fd6fc85336527bdb2bbe9013753a462b6f3a399c58cd6ebdcfadb2948a5c70e021da3021a860ffa2d63768b46b0f4f2703ce03f2"
+      },
+      {
         "filename": "expedition-ftb-teams-client-compat-neoforge-1.0.0.jar",
         "bytes": 3051,
         "sha1": "a058a1feb4c5c7c2b8840cd3b6af0a438ebb762d",
@@ -7908,6 +7917,7 @@
       "kubejs/data/expedition/advancement/engineering/form_bottling_machine.json": "7a5a14c05e1cd83aa13ad033213a8202d2ca4e418ee96cb73a19fa5442877e17",
       "kubejs/data/expedition/recipe/enderio/copper_silicon_alloy.json": "6ed559e6d8ee99de7c59cfa55bb40925faf9fbbcb0ea89c63956d86d27d18eba",
       "kubejs/data/expedition/recipe/factory/silicone/vinegar_fermenter.json": "b26e24c8327872c7ff0652a29d560168c85dd13c6b542938d6faf7a183b392a0",
+      "kubejs/data/expedition/recipe/fractionation/natural_air.json": "b5dfa26f8a7646412f14b0b51db7e4fe019e1bca3c96e86e887aee80d682f83c",
       "kubejs/data/expedition/recipe/foundry/andesite_alloy_casting.json": "ef2bf7471c321db189ee9b4196f17732ac6cf1a17f14a2cdfaf8a8e02058d48a",
       "kubejs/data/expedition/recipe/foundry/andesite_alloy_melting.json": "e1e39519a753af36535e14502011432d169db1e0100e8f2cf7c65a3736f2f04e",
       "kubejs/data/expedition/recipe/foundry/brass_part.json": "249d789dd0b815e09758df24f5af90ef15e14d5a84cabc2635676fdcaa81da11",
@@ -7923,6 +7933,7 @@
       "kubejs/data/expedition/recipe/foundry/stainless_steel_melting.json": "8b0ebf486e7934cb190a227eedc94a9e62c205e8491157ccc05384d85c5b6643",
       "kubejs/data/expedition/recipe/foundry/stainless_steel_mixing.json": "8542374ce7d89405ae6d765a1eb9fee6c333644e5d968e425d9c690ca48aef67",
       "kubejs/data/expedition/recipe/foundry/void_dust.json": "9647e7046d67feb284765d00ad6ba60400407748936f8057ee6df74b3145313a",
+      "kubejs/data/expedition/tags/fluid/piped_liquefied_gases.json": "a7fbaa640bd789c0fb5bc38de18d848fda2ace1b3041b6278923a9104b2fd4b1",
       "kubejs/data/expedition/tags/item/concrete_for_cinder_bricks.json": "ddcd29e2951334a8046c6fe91f4c98bd011ebd6f6b14adfc95183261cf0943c4",
       "kubejs/data/expedition/tags/item/steam_power/boilers.json": "222cbd5be4eb991d106fbbf66de332a7e4e4cf281924275f7a4f7f4b582690a9",
       "kubejs/data/expedition/tags/item/steam_power/burners.json": "43d9b677038350ef4c8832c639e7e31e3172186b140703977191cd3f7e6d4e1a",
@@ -8002,7 +8013,7 @@
       "kubejs/startup_scripts/cmi/CmiMoltenMetals.js": "a045fa81c8557f9ccf29628b4e0a3ecbe40b13978e52bad26a68da527fe6ae4c",
       "kubejs/startup_scripts/cmi/CmiOilFluids.js": "20942f57cf1cbdb8dbefb318ba74b25e87e205724461c216876d819542553b1f",
       "kubejs/startup_scripts/cmi/CmiPolymerMaterials.js": "81f863f959cd29acbd4c01297332694c12fa0abde33685e856e850889fdf7c7c",
-      "kubejs/startup_scripts/cmi/CmiProcessFluids.js": "01cb730ad545aa0d699a7d3666a5104e939f188d4cbd078d82e6aec9bcc60b14",
+      "kubejs/startup_scripts/cmi/CmiProcessFluids.js": "810f52b7c19c0a848e409911630b48c70cbd96f6742a908d0d9de3171dd32384",
       "kubejs/startup_scripts/cmi/CmiSiliconeFluids.js": "dbbe7b1fd7adc30f91fec1c868d84b166661fff87f40c8b2757828fdac541442",
       "kubejs/startup_scripts/cmi/CmiSpaceParts.js": "174dd0ac9f3e7f7ff4658c74a9923eb91c6952a242931e4fd34f8f44a7ce12d9",
       "kubejs/startup_scripts/cmi/item/Basic.js": "027ba7700a90d8e17734f0bd564c67cab2aa427a2df260db82e3696a10c85a56",
@@ -10788,6 +10799,13 @@
         "sha1": "7d164efbcf2d58c078dc11269f302676a4021a6d",
         "sha256": "65213b276f43b18fe21a1ba6d9779bc231f31ba5ec93225bd97680b2eeae566e",
         "sha512": "e3a65c03968e731aa8e288118c050dd5818371e844d53a7f4403a5df86bee025c04bad764f6b28fb43681233fce827d576e4a7e379c86ef17d4a47fddd8bcf39"
+      },
+      {
+        "filename": "expedition-liquefied-gases-neoforge-1.0.0.jar",
+        "bytes": 6264,
+        "sha1": "8ddf6a2ad7bcd95a26d56f8c01e4b5826a0f9be9",
+        "sha256": "9c17e45e57ffed9fefbe359f0e61e2f01dbc6be5b60eed5aa1098102eb341f48",
+        "sha512": "b9672482b08933a2186a6bc9fd6fc85336527bdb2bbe9013753a462b6f3a399c58cd6ebdcfadb2948a5c70e021da3021a860ffa2d63768b46b0f4f2703ce03f2"
       },
       {
         "filename": "expedition-ftb-action-announcements-neoforge-1.0.0.jar",

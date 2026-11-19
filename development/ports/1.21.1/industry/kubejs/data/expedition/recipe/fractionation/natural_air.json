@@ -1,0 +1,31 @@
+{
+  "type": "createcraftedbeginning:fractionation_tower",
+  "gas_ingredients": [
+    {
+      "amount": 10000,
+      "ingredient": {
+        "gas": "createcraftedbeginning:natural_air"
+      }
+    }
+  ],
+  "ingredients": [],
+  "layer_outputs": [
+    {
+      "layer": 1,
+      "fluid": {
+        "id": "mekanism:oxygen",
+        "amount": 210
+      }
+    },
+    {
+      "layer": 2,
+      "fluid": {
+        "id": "cmi:liquid_nitrogen",
+        "amount": 780
+      }
+    }
+  ],
+  "processing_time": 200,
+  "results": [],
+  "temperature": "superchilled"
+}

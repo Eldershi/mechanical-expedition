@@ -1,0 +1,10 @@
+{
+  "values": [
+    "cmi:liquid_nitrogen",
+    "cmi:radon",
+    "mekanism:chlorine",
+    "mekanism:hydrogen",
+    "mekanism:oxygen",
+    "mekanism:uranium_hexafluoride"
+  ]
+}

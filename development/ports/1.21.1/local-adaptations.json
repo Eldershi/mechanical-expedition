@@ -106,5 +106,11 @@
     "sha256": "95684fbecb8ad1232ef970d09af81494ccd9ed58145298a31937706c3535e270",
     "side": "BOTH",
     "build": "industrial/build.py"
+  },
+  "expedition-liquefied-gases-neoforge-1.0.0.jar": {
+    "filename": "expedition-liquefied-gases-neoforge-1.0.0.jar",
+    "sha256": "9c17e45e57ffed9fefbe359f0e61e2f01dbc6be5b60eed5aa1098102eb341f48",
+    "side": "BOTH",
+    "build": "industrial/build.py"
   }
 }

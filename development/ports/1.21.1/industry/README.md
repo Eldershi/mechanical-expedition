@@ -42,6 +42,8 @@ The refinery cracks 100 mB of diesel with 100 units of steam and a reusable vana
 
 Both cracking recipes accept an airtight steam line from Create Crafted Beginning directly at either refinery inlet with [Refinery Steam Compatibility](../industrial). Fluid steam supplied through the existing fluid capability also matches the common steam tag.
 
+A superchilled Create Crafted Beginning Airtight Fractionation Tower processes 10,000 units of natural air per 200-tick batch. Layer 1 yields 210 mB of Mekanism liquid oxygen and layer 2 yields 780 mB of liquid nitrogen. Give each layer its own liquid outlet and ordinary fluid tank. Feed the tower with the existing airtight natural-air network.
+
 Refine IE plant oil and naphtha with a reusable copper plate to make lubricating oil. The heavy engineering mechanism uses this oil in its Create sequenced assembly and unlocks an additional recipe for the Diesel Generators huge engine.
 
 Ferment rice in a covered Create basin or an IE Fermenter. The distillation tower separates vinegar into acetic acid and water. A heated Create basin combines silicon and light olefins to make light silicone ether. An IE Refinery with a reusable copper plate polymerizes the ether and reacts the polymer with acetic acid to make liquid silicone rubber. A Hexa casting table yields a piece of rubber when empty or a rubber plate when fitted with a reusable plate cast.
