@@ -21,6 +21,26 @@ jobs:
           git -c credential.helper= -c 'credential.helper=!gh auth git-credential' clone "https://github.com/$REPOSITORY.git" release-source
           cd release-source
           git checkout "$COMMIT"
+      - name: Verify Forge release line
+        working-directory: release-source
+        env:
+          RELEASE_REF: ${{ github.ref }}
+        run: |
+          git merge-base --is-ancestor HEAD origin/main
+          case "$RELEASE_REF" in
+            refs/heads/main|refs/tags/v0.1.0-dev.*) ;;
+            *) exit 1 ;;
+          esac
+          python3 - <<'PYTHON'
+          import json
+          with open("source-manifest.json") as source:
+              manifest = json.load(source)
+          with open("modrinth.index.json") as source:
+              index = json.load(source)
+          assert manifest["ref"] == "main"
+          assert (manifest["minecraft"], manifest["forge"]) == ("1.20.1", "47.4.10")
+          assert index["dependencies"] == {"minecraft": "1.20.1", "forge": "47.4.10"}
+          PYTHON
       - name: Check updater behavior
         working-directory: release-source
         run: python3 tools/test_updater.py

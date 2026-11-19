@@ -2,6 +2,13 @@
 
 机械动力：远征客户端源码与安装包。游戏环境为 Minecraft 1.20.1、Forge 47.4.10、Java 17。
 
+## 版本与开发计划
+
+| 维护线 | 开发计划 |
+| --- | --- |
+| **1.20.1 · Forge** 正式维护 | [开发计划与 ATM 之星毕业路线](docs/roadmap.md) |
+| **1.21.1 · NeoForge** 测试开发 | [开发计划与地月远征](https://github.com/Eldershi/mechanical-expedition/blob/migration/1.21.1-neoforge/docs/roadmap.md) |
+
 ## 安装当前客户端
 
 1. 从 [发行页面](https://github.com/Eldershi/mechanical-expedition/releases) 下载 `mechanical-expedition-0.2.0-dev.2.mrpack`。
