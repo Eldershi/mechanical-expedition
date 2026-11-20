@@ -8,6 +8,10 @@ ServerEvents.tags('item', event => {
   event.add('cmi:coils', 'cmi:coil_mechanism')
 })
 
+ServerEvents.tags('fluid', event => {
+  event.add('c:molten_fluix', '#modernfoundry:molten_fluix')
+})
+
 ServerEvents.recipes(event => {
   const create = event.recipes.create
   const vintage = event.recipes.vintageimprovements
@@ -68,7 +72,7 @@ ServerEvents.recipes(event => {
     .id(recipePath + 'molten_etrium')
   vintage.pressurizing(Fluid.of('cmi:molten_fluix', 100), 'ae2:fluix_crystal').heated()
     .id(recipePath + 'molten_fluix')
-  create.filling('cmi:fluix_wire', ['cmi:optical_fiber', Fluid.of('cmi:molten_fluix', 25)])
+  create.filling('cmi:fluix_wire', ['cmi:optical_fiber', Fluid.sizedIngredientOf('#c:molten_fluix', 25)])
     .id(recipePath + 'fluix_wire')
 
   create.mixing('64x cmi:deposition_catalytic_alloy', [
@@ -87,7 +91,7 @@ ServerEvents.recipes(event => {
 
   create.compacting('4x cmi:engineering_mechanism_part', [
     Ingredient.of('#c:plates/constantan'), Ingredient.of('#immersiveengineering:circuits/logic'),
-    Ingredient.of('#c:gems/dreamcore'), Fluid.of('modernfoundry:molten_signalum', 90)
+    Ingredient.of('#c:gems/dreamcore'), Fluid.sizedIngredientOf('#c:molten_signalum', 90)
   ]).heated().id(recipePath + 'engineering_mechanism_part')
   create.compacting('4x cmi:smart_mechanism_augment', [
     Ingredient.of('#c:wires/signalum'), 'ae2:logic_processor', 'ae2:calculation_processor', 'ae2:engineering_processor'

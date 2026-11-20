@@ -1,0 +1,43 @@
+{
+  "type": "create_rns:mining",
+  "deposit_block": "cmi:cheese_deposit_block",
+  "dimension": "ad_astra:moon",
+  "durability": {
+    "core": 200000,
+    "edge": 75000,
+    "random_spread": 0.2
+  },
+  "replace_when_depleted": "create_rns:depleted_deposit_block",
+  "yields": [
+    {
+      "items": [
+        {
+          "item": "ad_astra:moon_stone"
+        }
+      ],
+      "chance": 1
+    },
+    {
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "chance": 0.0005,
+      "catalysts": [
+        "create_rns:overclock"
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "ad_astra:cheese"
+        }
+      ],
+      "chance": 0.5,
+      "catalysts": [
+        "create_rns:overclock"
+      ]
+    }
+  ]
+}

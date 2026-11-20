@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
   kettle('plutonium_ionized_crystal', [fluorite, fluorite, fluid(plutoniumElectrolyte)],
     [result(plutoniumCrystal)], {temperature: 'chilled'})
   kettle('plutonium_solution', [item(precipitate), item(plutoniumCrystal), fluid('cmi:nitric_acid')], [liquid(plutoniumFeed)])
-  kettle('plutonium_extract', [fluid(plutoniumFeed), fluid('modernfoundry:molten_uranium', 180)],
+  kettle('plutonium_extract', [fluid(plutoniumFeed), {type: 'neoforge:tag', tag: 'c:molten_uranium', amount: 180}],
     [result('immersiveengineering:raw_uranium'), liquid(plutoniumExtract, 200)])
   kettle('radioactive_acid', [fluid(plutoniumExtract), fluid('mekanism:hydrogen_chloride')], [liquid(acid)], {
     gas_results: [liquid('cmi:radioactive_mixture')]

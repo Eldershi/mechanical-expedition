@@ -1,0 +1,7 @@
+{
+  "scanner_icon_item": "immersiveengineering:raw_aluminum",
+  "map_icon_item": "immersiveengineering:raw_aluminum",
+  "structure": "cmi:ore_node/aluminum_node",
+  "dimension": "minecraft:overworld",
+  "scannable": false
+}

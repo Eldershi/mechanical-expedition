@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
 
   create.sequenced_assembly('create:precision_mechanism', Ingredient.of('#c:plates/brass'), [
     vintage.curving(precision, precision).itemAsHead('cmi:mechanism_mold'),
-    create.filling(precision, [precision, Fluid.of('modernfoundry:molten_brass', 90)]),
+    create.filling(precision, [precision, Fluid.sizedIngredientOf('#c:molten_brass', 90)]),
     create.deploying(precision, [precision, 'create:electron_tube']),
     create.deploying(precision, [precision, Ingredient.of('#create:incomplete_cogwheels')]),
     create.deploying(precision, [precision, 'cmi:mechanical_mechanism_part'])
@@ -26,17 +26,17 @@ ServerEvents.recipes(event => {
 
   const redstone = ['minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone', 'minecraft:redstone']
   create.mixing(Fluid.of('modernfoundry:molten_signalum', 360), [
-    Fluid.of('modernfoundry:molten_copper', 270), Fluid.of('modernfoundry:molten_lead', 90)
+    Fluid.sizedIngredientOf('#c:molten_copper', 270), Fluid.sizedIngredientOf('#c:molten_lead', 90)
   ].concat(redstone)).heated().id(path + 'molten_signalum')
   create.mixing('4x cmi:engineering_mechanism_part', [
     Ingredient.of('#c:plates/constantan'), 'immersiveengineering:electron_tube',
-    'cmi:dreamcore_crystal', Fluid.of('modernfoundry:molten_signalum', 90)
+    'cmi:dreamcore_crystal', Fluid.sizedIngredientOf('#c:molten_signalum', 90)
   ]).id(path + 'engineering_mechanism_part')
 
   event.custom({
     type: 'immersiveengineering:mixer',
     energy: 1600,
-    fluid: { fluid: 'modernfoundry:molten_lead', amount: 90 },
+    fluid: { tag: 'c:molten_lead', amount: 90 },
     inputs: [{ tag: 'c:dusts/redstone' }],
     result: { id: 'immersiveengineering:redstone_acid', amount: 200 }
   }).id(path + 'redstone_acid')

@@ -1,0 +1,7 @@
+{
+  "scanner_icon_item": "minecraft:coal",
+  "map_icon_item": "minecraft:coal",
+  "structure": "cmi:ore_node/coal_node",
+  "dimension": "minecraft:overworld",
+  "scannable": false
+}

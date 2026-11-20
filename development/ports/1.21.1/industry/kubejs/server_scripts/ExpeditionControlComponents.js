@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
   event.recipes.vintageimprovements.laser_cutting('cmi:ionized_red_dust', 'ad_astra:mars_sand')
     .energy(1000).maxChargeRate(1000).id(path + 'ionized_red_dust')
   create.mixing('cmi:germanium_mixture', [
-    'cmi:ionized_red_dust', Ingredient.of('#c:dusts/zinc'), Fluid.of('mekanism:sulfuric_acid', 100)
+    'cmi:ionized_red_dust', Ingredient.of('#c:dusts/zinc'), Fluid.sizedIngredientOf('#c:sulfuric_acid', 100)
   ]).heated().id(path + 'germanium_mixture')
   create.mixing('cmi:germanium_crystal', [
     'cmi:germanium_mixture', 'cmi:silicon_carbide', Fluid.of('neoecoae:cryotheum_solution', 100)

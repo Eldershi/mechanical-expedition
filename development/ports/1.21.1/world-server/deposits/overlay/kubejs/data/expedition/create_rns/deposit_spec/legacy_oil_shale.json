@@ -1,0 +1,7 @@
+{
+  "scanner_icon_item": "cmi:oil_shale",
+  "map_icon_item": "cmi:oil_shale",
+  "structure": "cmi:ore_node/oil_shale_node",
+  "dimension": "minecraft:overworld",
+  "scannable": false
+}

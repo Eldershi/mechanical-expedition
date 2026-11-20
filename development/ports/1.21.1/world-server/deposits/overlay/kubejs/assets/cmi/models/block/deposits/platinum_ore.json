@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "neoforge:composite",
+  "textures": {
+    "particle": "ad_astra:block/moon_stone"
+  },
+  "children": {
+    "base": {
+      "parent": "minecraft:block/cube_all",
+      "textures": {
+        "all": "ad_astra:block/moon_stone"
+      }
+    },
+    "ore": {
+      "parent": "minecraft:block/cube_all",
+      "render_type": "minecraft:cutout",
+      "textures": {
+        "all": "cmi:block/ore/node/platinum"
+      }
+    }
+  }
+}

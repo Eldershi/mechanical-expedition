@@ -3,6 +3,7 @@
 
 import argparse
 from copy import deepcopy
+from gzip import GzipFile
 import json
 import nbtlib
 from pathlib import Path
@@ -143,7 +144,9 @@ def copy_template(source, data, template):
         for state in structure["palette"]:
             if state["Name"] in {"cmi:platinum_ore_node", "cmi:cheese_ore_node"}:
                 state["Name"] = nbtlib.String(str(state["Name"]).replace("_ore_node", "_deposit_block"))
-        structure.save(dest, gzipped=True)
+        with dest.open("wb") as output:
+            with GzipFile(filename="", mode="wb", fileobj=output, mtime=0) as compressed:
+                structure.write(compressed)
     else:
         shutil.copy2(origin, dest)
 

@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "neoforge:composite",
+  "textures": {
+    "particle": "create_rns:block/depleted_deposit_block"
+  },
+  "children": {
+    "base": {
+      "parent": "minecraft:block/cube_all",
+      "textures": {
+        "all": "create_rns:block/depleted_deposit_block"
+      }
+    },
+    "ore": {
+      "parent": "minecraft:block/cube_all",
+      "render_type": "minecraft:cutout",
+      "textures": {
+        "all": "cmi:block/ore/node/platinum"
+      }
+    }
+  }
+}

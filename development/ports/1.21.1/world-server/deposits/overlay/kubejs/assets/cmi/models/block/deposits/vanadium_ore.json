@@ -1,0 +1,22 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "neoforge:composite",
+  "textures": {
+    "particle": "minecraft:block/netherrack"
+  },
+  "children": {
+    "base": {
+      "parent": "minecraft:block/cube_all",
+      "textures": {
+        "all": "minecraft:block/netherrack"
+      }
+    },
+    "ore": {
+      "parent": "minecraft:block/cube_all",
+      "render_type": "minecraft:cutout",
+      "textures": {
+        "all": "cmi:block/ore/node/vanadium"
+      }
+    }
+  }
+}

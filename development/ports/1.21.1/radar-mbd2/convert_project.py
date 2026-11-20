@@ -3,8 +3,12 @@
 
 import argparse
 from pathlib import Path
+import sys
 
 from nbtlib import Byte, Compound, File, List, String, load, parse_nbt
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "world-server"))
+from recipe_ui import recipe_ui
 
 RADAR_ID = "cmi:radar_antenna"
 MACHINE_FILE = Path("multiblock/radar_antenna.mb")
@@ -80,7 +84,7 @@ def convert(source, output):
         trait["slotNames"] = List[String](entry["p"] for entry in trait["slotNames"] if entry["p"])
 
     controller.pop("ui", None)
-    recipe_type.pop("ui", None)
+    recipe_type["ui"] = recipe_ui(items=1)
     recipe_type.pop("fuelUI", None)
     recipe_type.pop("resources", None)
     for path, predicate in used_predicates.items():

@@ -1,0 +1,44 @@
+{
+  "type": "create_rns:mining",
+  "deposit_block": "cmi:vanadium_deposit_block",
+  "dimension": "minecraft:the_nether",
+  "durability": {
+    "core": 200000,
+    "edge": 75000,
+    "random_spread": 0.2
+  },
+  "replace_when_depleted": "create_rns:depleted_deposit_block",
+  "yields": [
+    {
+      "items": [
+        {
+          "item": "minecraft:netherrack"
+        }
+      ],
+      "chance": 1
+    },
+    {
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "chance": 0.0005,
+      "catalysts": [
+        "expedition:vanadium_overclock"
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "cmi:nether_vanadium_ore"
+        }
+      ],
+      "chance": 0.3,
+      "catalysts": [
+        "create_rns:shattering_resonance",
+        "expedition:vanadium_overclock"
+      ]
+    }
+  ]
+}

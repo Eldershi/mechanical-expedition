@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
   const bronze = 'cmi:incomplete_bronze_mechanism'
   create.sequenced_assembly('cmi:bronze_mechanism', '#c:plates/bronze', [
     vintage.curving(bronze, bronze).itemAsHead('cmi:mechanism_mold'),
-    create.filling(bronze, [bronze, Fluid.of('modernfoundry:molten_bronze', 90)]),
+    create.filling(bronze, [bronze, Fluid.sizedIngredientOf('#c:molten_bronze', 90)]),
     create.deploying(bronze, [bronze, 'steampowered:bronze_cogwheel']),
     create.deploying(bronze, [bronze, Ingredient.of('#c:plates/bronze')]),
     create.deploying(bronze, [bronze, 'cmi:mechanical_mechanism_part'])

@@ -153,7 +153,7 @@ ServerEvents.recipes(event => {
   }).id(path + 'enriched_germanium_iron_mixture')
   crush('dragonite_dust', 'cmi:dragonite', 'cmi:dragonite_dust')
   create.mixing(Fluid.of(germanium, 100), [
-    'cmi:dragonite_dust', Fluid.of('mekanism:sulfuric_acid', 100)
+    'cmi:dragonite_dust', Fluid.sizedIngredientOf('#c:sulfuric_acid', 100)
   ]).heated().id(path + 'dissolve_dragonite')
   rotary('germanium_precursor', germanium, germaniumGas)
   event.custom({

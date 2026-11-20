@@ -7,3 +7,5 @@ Minecraft 1.21.1、NeoForge 21.1.267、Java 21。构建进入 `migration/1.21.1-
 3. 运行 `python3 development/ports/1.21.1/release/package_test.py package --client <client> --server <server> --output <dir>`，生成客户端 MRPACK、服务端覆盖层 ZIP 和 SHA256SUMS。
 
 客户端使用新建启动器实例导入，初始画面设置由 `client-options.txt` 提供。服务端覆盖层安装在已准备好的 NeoForge 专用服目录。客户端第三方模组和 Create MC GUI 由启动器从锁定的作者下载地址安装，远征自研模组随包提供。文件锁涵盖项目默认配置，世界、账号及验收副本的个人设置保存在本地。版本升级时从停止的验收副本执行 `lock` 子命令更新锁和索引。工具按文件名与 SHA-1 复用现有下载地址，`--catalog <json>` 可补充新的官方来源。
+
+客户端和专用服共用[生产覆盖层](production_overlay.py)中的工业配方、矿床数据和机器配方界面，并加载 `expedition-space-neoforge-1.0.1.jar`。更新现有实例时，将两端更新到同一构建，并在首次启动前移除旧的 `expedition-space-neoforge-1.0.0.jar`。

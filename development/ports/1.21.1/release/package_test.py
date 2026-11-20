@@ -18,6 +18,7 @@ ROOT = HERE.parents[3]
 TARGET = ("1.21.1", "21.1.267", 21)
 sys.path.insert(0, str(ROOT / "tools"))
 from publication_filter import privacy, skip_reason
+import production_overlay
 ASSET_DIRS = {"config", "defaultconfigs", "datapacks", "ldlib2", "kubejs", "hotai",
               "patchouli_books", "tlm_custom_pack", "moonlight-global-datapacks", "resourcepacks"}
 KUBEJS_DIRS = {"assets", "data", "config", "startup_scripts", "server_scripts", "client_scripts"}
@@ -94,6 +95,9 @@ def external_client_resources():
 
 def selected(instance, client=False):
     external_paths = {file["path"] for file in external_client_resources()} if client else set()
+    production_files = production_overlay.files(client)
+    for relative, source in production_files.items():
+        yield relative, source.read_bytes()
     if client:
         defaults = Path(__file__).with_name("client-options.txt")
         yield Path("options.txt"), defaults.read_bytes()
@@ -106,7 +110,7 @@ def selected(instance, client=False):
     for folder in sorted(ASSET_DIRS):
         for path in sorted((instance / folder).rglob("*")):
             relative = path.relative_to(instance)
-            if relative.as_posix() in external_paths:
+            if relative in production_files or relative.as_posix() in external_paths:
                 continue
             if relative == (MECHANISM_LANGUAGE if client else SERVER_DIAGNOSTICS):
                 continue
@@ -153,7 +157,7 @@ def mod_inputs(instance):
     choices = [f for f in choices if not f.is_symlink() and not re.search(r"(?i)expedition.*(?:-qa-|proof|probe)", f.name)]
     names = {p.name for p in choices}
     for required in ("adastra-1.21.1-1.16.26-neoforge.jar", "createcraftedbeginning-0.1.1.jar",
-                     "expedition-space-neoforge-1.0.0.jar"):
+                     production_overlay.SPACE_MOD):
         if required not in names:
             raise ValueError(f"Missing tested NeoForge input: {required}")
     return choices
@@ -262,6 +266,13 @@ def main():
         if lock["client"]["files"].get(MECHANISM_LANGUAGE.as_posix()) != language_hash:
             raise ValueError("The client lock must include the current CMI mechanism translations")
         check_mechanism_animations(lock["client"]["files"])
+        for side in ("client", "server"):
+            files = lock[side]["files"]
+            for path, source in production_overlay.files(side == "client").items():
+                if files.get(path.as_posix()) != hashlib.sha256(source.read_bytes()).hexdigest():
+                    raise ValueError(f"The {side} lock must match the production overlay: {path}")
+            if production_overlay.SPACE_MOD not in {row["filename"] for row in lock[side]["mods"]}:
+                raise ValueError(f"The {side} lock is missing {production_overlay.SPACE_MOD}")
         print(meta["version"])
         return
     if not args.client or not args.server:

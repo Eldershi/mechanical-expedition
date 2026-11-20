@@ -67,6 +67,8 @@ def install(client, server, java):
         raise ValueError("Server does not match NeoForge 21.1.267")
     if not (server / "mods/adastra-1.21.1-1.16.26-neoforge.jar").is_file():
         raise ValueError("Server does not match the 1.21.1 space baseline")
+    production = runpy.run_path(str(FACTORY.parent / "release/production_overlay.py"))
+    install_production_files = production["install_files"]
     materials = FACTORY.parent / "cmi-materials"
     retire_items = runpy.run_path(str(materials / "build_registrations.py"))["retire_items"]
     with tempfile.TemporaryDirectory() as directory:
@@ -76,33 +78,13 @@ def install(client, server, java):
         shutil.copytree(HERE / "overlay", overlay, dirs_exist_ok=True)
         subprocess.run([sys.executable, str(INDUSTRY / "build.py"), str(overlay)], check=True)
         shutil.copytree(INDUSTRY / "overlay", overlay, dirs_exist_ok=True)
-        vanilla, = server.glob("libraries/net/minecraft/server/1.21.1-*/*-extra.jar")
-        subprocess.run([sys.executable, str(HERE.parent / "deposits/build_deposits.py"),
-                        str(HERE.parents[4] / "pack/kubejs"), str(overlay / "kubejs"),
-                        str(vanilla)], check=True)
         for path in (
             "kubejs/server_scripts/ExpeditionNetherProgression.js",
-            "kubejs/startup_scripts/ExpeditionSugarSyrup.js",
-            "kubejs/server_scripts/ExpeditionSyrupRecipes.js",
-            "kubejs/server_scripts/ExpeditionPlantAsh.js",
-            "kubejs/server_scripts/ExpeditionLunarSilicon.js",
-            "kubejs/server_scripts/ExpeditionMineralChemistry.js",
-            "kubejs/server_scripts/ExpeditionVanadium.js",
             "kubejs/server_scripts/ExpeditionSeaWater.js",
-            "kubejs/server_scripts/ExpeditionWasteProcessing.js",
-            "kubejs/data/expedition/recipe/factory/space/press_single_crystal_silicon.json",
-            "kubejs/data/createcraftedbeginning/tags/item/press_head_tools.json",
-            "kubejs/client_scripts/ExpeditionSugarSyrupLanguage.js",
-            "kubejs/client_scripts/ExpeditionMineralChemistryLanguage.js",
         ):
             target = overlay / path
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(FACTORY / path, target)
-        registrations = overlay / "kubejs/startup_scripts/cmi"
-        registrations.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(materials / "CmiProcessFluids.js", registrations)
-        shutil.copy2(materials / "CmiIndustrialMaterials.js", registrations)
-        shutil.copy2(materials / "CmiDeposits.js", registrations)
         subprocess.run([sys.executable, str(HERE.parent / "build.py"), "--java", str(java),
                         "--server", str(server), "--output", str(staged), "space"], check=True)
         adapter, = staged.glob("*.jar")
@@ -115,7 +97,9 @@ def install(client, server, java):
             update_fuel_quest(instance)
             retire_items(instance)
             shutil.copytree(overlay, instance, dirs_exist_ok=True)
+            install_production_files(instance, client=instance == client)
             shutil.copy2(adapter, instance / "mods")
+            (instance / "mods/expedition-space-neoforge-1.0.0.jar").unlink(missing_ok=True)
         client_scripts = client / "kubejs/client_scripts"
         client_scripts.mkdir(parents=True, exist_ok=True)
         shutil.copy2(FACTORY / "kubejs/client_scripts/ExpeditionMechanismLanguage.js", client_scripts)

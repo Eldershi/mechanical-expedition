@@ -1,0 +1,56 @@
+{
+  "type": "create_rns:mining",
+  "deposit_block": "cmi:aluminum_deposit_block",
+  "dimension": "minecraft:overworld",
+  "durability": {
+    "core": 200000,
+    "edge": 75000,
+    "random_spread": 0.2
+  },
+  "replace_when_depleted": "create_rns:depleted_deposit_block",
+  "yields": [
+    {
+      "items": [
+        {
+          "item": "minecraft:cobblestone"
+        }
+      ],
+      "chance": 1
+    },
+    {
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "chance": 0.0005,
+      "catalysts": [
+        "create_rns:overclock"
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "immersiveengineering:raw_aluminum"
+        }
+      ],
+      "chance": 0.3,
+      "catalysts": [
+        "create_rns:shattering_resonance",
+        "create_rns:overclock"
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "immersiveengineering:raw_aluminum"
+        }
+      ],
+      "chance": 0.2,
+      "catalysts": [
+        "create_rns:resonance",
+        "create_rns:overclock"
+      ]
+    }
+  ]
+}

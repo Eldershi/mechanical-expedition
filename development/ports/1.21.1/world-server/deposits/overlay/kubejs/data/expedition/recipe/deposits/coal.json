@@ -1,0 +1,43 @@
+{
+  "type": "create_rns:mining",
+  "deposit_block": "cmi:coal_deposit_block",
+  "dimension": "minecraft:overworld",
+  "durability": {
+    "core": 200000,
+    "edge": 75000,
+    "random_spread": 0.2
+  },
+  "replace_when_depleted": "create_rns:depleted_deposit_block",
+  "yields": [
+    {
+      "items": [
+        {
+          "item": "minecraft:cobblestone"
+        }
+      ],
+      "chance": 1
+    },
+    {
+      "items": [
+        {
+          "item": "create_rns:resonant_amethyst"
+        }
+      ],
+      "chance": 0.0005,
+      "catalysts": [
+        "create_rns:overclock"
+      ]
+    },
+    {
+      "items": [
+        {
+          "item": "minecraft:coal"
+        }
+      ],
+      "chance": 0.5,
+      "catalysts": [
+        "create_rns:overclock"
+      ]
+    }
+  ]
+}

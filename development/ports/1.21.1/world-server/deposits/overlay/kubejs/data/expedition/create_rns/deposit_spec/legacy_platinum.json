@@ -1,0 +1,7 @@
+{
+  "scanner_icon_item": "alltheores:platinum_nugget",
+  "map_icon_item": "alltheores:platinum_nugget",
+  "structure": "cmi:ore_node/platinum_node",
+  "dimension": "ad_astra:moon",
+  "scannable": false
+}

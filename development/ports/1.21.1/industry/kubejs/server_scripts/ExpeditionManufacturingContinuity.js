@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
   }).id(path + 'ender_basement')
   assembly('ender', 'cmi:ender_mechanism_basement', part => [
     create.deploying(part, [part, 'minecraft:ender_pearl']),
-    create.filling(part, [part, Fluid.of('modernfoundry:molten_enderium', 90)]),
+    create.filling(part, [part, Fluid.sizedIngredientOf('#c:molten_enderium', 90)]),
     create.deploying(part, [part, 'ars_nouveau:source_gem']),
     vintage.laser_cutting(part, part).energy(1000).maxChargeRate(1000),
     create.deploying(part, [part, magic])

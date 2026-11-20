@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
       energy_required: 12000,
       item_input: {tag: item, count: 1},
       chemical_input: {chemical: 'mekanism:steam', amount: 50},
-      fluid_input: {fluid: 'mekanism:sulfuric_acid', amount: 50},
+      fluid_input: {tag: 'c:sulfuric_acid', amount: 50},
       chemical_output: {id: 'cmi:mercury_mixture', amount: 10}
     }
     if (product) recipe.item_output = {id: product, count: 1}

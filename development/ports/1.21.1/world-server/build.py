@@ -32,7 +32,7 @@ MODULES = {
                 "expedition.railway.mixin", ["StructureStageMixin", "StructureCandidateMixin", "RailwayPlannerMixin"]),
     "teleport": ("expedition_teleport_fix", "1.0.0", "Expedition Async Teleport",
                  "expedition.teleport.mixin", ["TeleportCommandMixin"]),
-    "space": ("expedition_space", "1.0.0", "Expedition Earth–Moon Logistics",
+    "space": ("expedition_space", "1.0.1", "Expedition Earth–Moon Logistics",
               "expedition.space.mixin", ["BreathingReserveMixin", "OtherPadMixin", "EndStoneCrushingMixin",
                                          "PendingMiningProcessMixin", "FluidLogisticsBasinMixin",
                                          "BreezeBasinCoolingMixin", "AirCurrentCoolingMixin",

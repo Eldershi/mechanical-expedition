@@ -12,6 +12,8 @@ from nbtlib import Byte, Compound, Int, List, String
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "space"))
 from build_structures import MACHINES, build_layouts, write
+sys.path.insert(0, str(HERE.parent))
+from recipe_ui import recipe_ui
 
 NAMESPACE = "expedition_industry"
 FLUID_INPUT = {"alloy_furnace", "electro_hydro_resonant_tower", "electrolytic_cell",
@@ -84,8 +86,10 @@ def build(output):
                 ])
             }),
         })
+        ui = recipe_ui(fluid_in=2 if name in FLUID_INPUT else 0,
+                       fluid_out=2 if name in FLUID_OUTPUT else 0)
         write(output, MACHINES.parent / "recipe_type" / f"expedition_{name}.rt",
-              {"data": Compound({"recipe_type": definition})})
+              {"data": Compound({"recipe_type": definition, "ui": ui})})
     return build_layouts(output, NAMESPACE, layouts, configure, alternatives)
 
 

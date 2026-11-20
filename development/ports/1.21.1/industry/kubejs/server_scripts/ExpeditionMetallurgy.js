@@ -3,7 +3,7 @@ ServerEvents.recipes(event => {
   const vintage = event.recipes.vintageimprovements
   const path = 'expedition:factory/metallurgy/'
   const oreCoke = 'immersiveengineering:dust_coke'
-  const moltenIron = Fluid.of('modernfoundry:molten_iron', 90)
+  const moltenIron = Fluid.sizedIngredientOf('#c:molten_iron', 90)
   const moltenCastIron = Fluid.of('cmi:molten_cast_iron', 90)
   const lime = 'cmi:lime_dust'
   const bloom = 'cmi:refined_iron_bloom'
@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
     .superheated().processingTime(200).id(path + 'molten_steel')
 
   create.mixing(Fluid.of('cmi:chromium_solution', 200), [
-    Fluid.of('mekanism:sulfuric_acid', 200), 'alltheores:ruby_dust'
+    Fluid.sizedIngredientOf('#c:sulfuric_acid', 200), 'alltheores:ruby_dust'
   ]).id(path + 'chromium_solution')
   create.compacting('cmi:chromium_dust', [Fluid.of('cmi:chromium_solution', 200)])
     .heated().id(path + 'chromium_dust')

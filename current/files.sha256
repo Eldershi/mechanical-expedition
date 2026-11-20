@@ -5451,6 +5451,7 @@ a8270a4baa992b18d8921ac75f5d72154f6b61960a5f3b65d0d367ecdb4dda9a  current/client
 006ee327a6f245c74ac7377788bacc5734586114e35de0989a009b81ef6a4162  current/client/mods/expedition-map-writing-neoforge-1.0.0.jar
 b9dddfcb298b58af27051d66d5282e42bea8cbb470a99a565cfa05970f1518dd  current/client/mods/expedition-ponder-ui-1.0.2.jar
 9ec8fd9fec718c3a40806f3ad8144198b1f48715393fde4e4f12646288568b1b  current/client/mods/expedition-railway-avoidance-1.0.0.jar
+972f7d7091bb03d20cb9f7978761579d7cf955f3d987141fa758fc0325f918cb  current/client/mods/expedition-space-neoforge-1.0.1.jar
 6e433479de30c59987305c572b1f011e8c87f6e7913073dfee7237d66c541953  current/client/mods/expedition-stock-keeper-tooltip-fix-1.0.0.jar
 5c66feb088f716fd90c7ca480b7e60db2a70bce0666b3e0f9e29983f3af49d7b  current/client/mods/expedition-terramity-curse-compat-1.0.1.jar
 9d04bf9f26ba36aa4fb321603bdc359c227efcb10db8231a27ca6fb8faafe867  current/client/mods/expedition-upstream-compat-1.0.0.jar
@@ -6787,6 +6788,7 @@ a15224165ae9aa92071a09033601305bbc9f4b12851ad02e580a883f3df49626  current/server
 0ba17242d2382cfbf0f5dc8325794870250cfd76801b17a5f28a6b29036aa9ff  current/server/mods/expedition-create-logistics-neoforge-1.0.0.jar
 2be80c024309911b4853a18e13ad4ec75b7343ebd1e9c621bc5bac7f80579e5d  current/server/mods/expedition-curse-rules-neoforge-1.0.0.jar
 4eb01334a939aad413b0cfa4a831a0d1a2b3cf60dcb0353672f55db2e8379e5e  current/server/mods/expedition-guide-tome-neoforge-1.0.0.jar
+972f7d7091bb03d20cb9f7978761579d7cf955f3d987141fa758fc0325f918cb  current/server/mods/expedition-space-neoforge-1.0.1.jar
 5c66feb088f716fd90c7ca480b7e60db2a70bce0666b3e0f9e29983f3af49d7b  current/server/mods/expedition-terramity-curse-compat-1.0.1.jar
 99cbb24d261d709804c275720fd92fa2becf986ba15f630856c68296bc723b2f  current/server/mods/goddamnrepackager-0.5.1-forge-alpha.jar
 eaeb731a56a434894e1f7645b3f39f3ace30a928309b36d340d7f67a2651f06d  current/server/server-additions.json

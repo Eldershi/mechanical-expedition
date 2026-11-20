@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 395602385,
+    "spacing": 20,
+    "separation": 15
+  },
+  "structures": [
+    {
+      "structure": "cmi:ore_node/vanadium_node",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "scanner_icon_item": "minecraft:raw_iron",
+  "map_icon_item": "minecraft:raw_iron",
+  "structure": "cmi:ore_node/iron_node",
+  "dimension": "minecraft:overworld",
+  "scannable": false
+}

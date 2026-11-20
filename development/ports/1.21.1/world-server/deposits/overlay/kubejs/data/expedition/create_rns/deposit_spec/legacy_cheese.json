@@ -1,0 +1,7 @@
+{
+  "scanner_icon_item": "ad_astra:cheese",
+  "map_icon_item": "ad_astra:cheese",
+  "structure": "cmi:ore_node/cheese_node",
+  "dimension": "ad_astra:moon",
+  "scannable": false
+}
