@@ -27,6 +27,7 @@ PRIVATE_PACK = re.compile(r"(?i)(?:create[_ -]?mcgui|expedition.*(?:hnn|hud)|ori
 SAFE_DOWNLOADS = {"cdn.modrinth.com", "edge.forgecdn.net", "mediafilez.forgecdn.net",
                   "media.forgecdn.net", "github.com", "maven.neoforged.net"}
 BSL_PRESET = Path("shaderpacks/BSL_v10.1.8.zip.txt")
+SERVER_DIAGNOSTICS = Path("config/expedition-diagnostics.json")
 
 
 def json_file(path):
@@ -96,10 +97,12 @@ def selected(instance, client=False):
         preset = instance / BSL_PRESET
         if preset.is_file() and not preset.is_symlink():
             yield BSL_PRESET, preset.read_bytes()
+    else:
+        yield SERVER_DIAGNOSTICS, (ROOT / "current/server" / SERVER_DIAGNOSTICS).read_bytes()
     for folder in sorted(ASSET_DIRS):
         for path in sorted((instance / folder).rglob("*")):
             relative = path.relative_to(instance)
-            if relative.as_posix() in external_paths:
+            if relative.as_posix() in external_paths or (not client and relative == SERVER_DIAGNOSTICS):
                 continue
             if path.is_symlink() or not path.is_file() or excluded(relative) or skip_reason(relative.as_posix()):
                 continue

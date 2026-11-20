@@ -9,7 +9,7 @@ python3 build.py --java /path/to/java --server /path/to/server \
 ```
 
 - `teleport` handles vanilla teleport commands while their destination chunks load. Install it on the server.
-- `motion-guard` bounds invalid player movement and provides `/expeditiondiagnostics`. Install it on the server. It uses `config/expedition-diagnostics.json` when present.
+- `motion-guard` bounds invalid player movement and provides `/expeditiondiagnostics`. Install it on the server. The dedicated-server overlay includes `current/server/config/expedition-diagnostics.json` as `config/expedition-diagnostics.json`. This configuration enables event logging, watchdog incidents, and Spark exports, with JFR disabled.
 - `world-rules` handles player damage, selective Born in Chaos spawning, Biomes O’ Plenty tall grass, and cryotheum. Install it on a dedicated server. Install it on the client for local worlds and cryotheum particles.
 - `equipment` enforces Curios slot types, retains the unlockable slot bonuses, and reconciles misplaced equipment at login. Put the JAR and `equipment/config/curios-common.toml` on both sides.
 - `railway` prevents new structure pieces from crossing planned TongDa Railway tracks and stations. Install it on the dedicated server or integrated server.
