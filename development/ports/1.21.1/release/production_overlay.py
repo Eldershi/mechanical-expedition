@@ -8,6 +8,7 @@ INDUSTRY = PORT / "industry"
 MATERIALS = PORT / "cmi-materials"
 BRASS = PORT / "world-server/brass-industry/overlay"
 DEPOSITS = PORT / "world-server/deposits/overlay"
+ITEM_COMPATIBILITY = PORT / "world-server/item-compatibility/overlay"
 RADAR = PORT / "radar-mbd2"
 RECIPE_TYPES = PORT / "world-server/brass-industry/recipe-types"
 
@@ -45,6 +46,11 @@ SHARED.update({
     if source.is_file()
 })
 SHARED.update({
+    Path(name): ITEM_COMPATIBILITY / name
+    for name in ("kubejs/data/expedition/item_compatibility.json",
+                 "kubejs/server_scripts/ExpeditionItemCompatibilityTags.js")
+})
+SHARED.update({
     Path("ldlib2/assets/mbd2/recipe_type") / source.name: source
     for source in sorted(RECIPE_TYPES.glob("*.rt"))
 })
@@ -58,6 +64,8 @@ CLIENT = {
 }
 
 SPACE_MOD = "expedition-space-neoforge-1.0.1.jar"
+ITEM_COMPATIBILITY_MOD = "expedition-item-compatibility-neoforge-1.0.0.jar"
+REQUIRED_MODS = (SPACE_MOD, ITEM_COMPATIBILITY_MOD)
 
 
 def files(client):

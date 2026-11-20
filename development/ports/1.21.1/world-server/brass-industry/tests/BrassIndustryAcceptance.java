@@ -23,7 +23,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CraftingInput;
-import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.block.Block;
@@ -158,9 +157,13 @@ public final class BrassIndustryAcceptance {
             if (!ingredient.test(stack(i == 2 ? "create:precision_mechanism" : "create:large_cogwheel", 1))) {
                 throw new IllegalStateException("differential sequence step " + i);
             }
-            var holder = (RecipeHolder<?>) SequencedAssemblyRecipe.getRecipe(
-                level, substrate, (RecipeType) expected.getType(), ProcessingRecipe.class).orElseThrow();
-            substrate = ((ProcessingRecipe<?, ?>) holder.value()).rollResults(level.getRandom()).getFirst();
+            var processingType = (RecipeType<ProcessingRecipe<?, ?>>) expected.getType();
+            var processingClass = (Class<ProcessingRecipe<?, ?>>) (Class<?>) ProcessingRecipe.class;
+            var holder = SequencedAssemblyRecipe.getRecipes(
+                level, substrate, processingType, processingClass,
+                candidate -> candidate.id().equals(id(NS + "differential")))
+                .stream().findFirst().orElseThrow();
+            substrate = holder.value().rollResults(level.getRandom()).getFirst();
         }
         if (!ItemStack.matches(substrate, stack(NS + "differential", 2))) {
             throw new IllegalStateException("wrong deployed differential result " + substrate);

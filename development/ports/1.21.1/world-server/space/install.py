@@ -86,8 +86,8 @@ def install(client, server, java):
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(FACTORY / path, target)
         subprocess.run([sys.executable, str(HERE.parent / "build.py"), "--java", str(java),
-                        "--server", str(server), "--output", str(staged), "space"], check=True)
-        adapter, = staged.glob("*.jar")
+                        "--server", str(server), "--output", str(staged), "space", "item-compatibility"], check=True)
+        adapter = staged / production["SPACE_MOD"]
         with ZipFile(adapter) as archive:
             if b"expedition_space_acceptance" in archive.read("META-INF/neoforge.mods.toml"):
                 raise ValueError("Acceptance mod may only be installed in a disposable verification instance")
@@ -98,7 +98,8 @@ def install(client, server, java):
             retire_items(instance)
             shutil.copytree(overlay, instance, dirs_exist_ok=True)
             install_production_files(instance, client=instance == client)
-            shutil.copy2(adapter, instance / "mods")
+            for filename in production["REQUIRED_MODS"]:
+                shutil.copy2(staged / filename, instance / "mods")
             (instance / "mods/expedition-space-neoforge-1.0.0.jar").unlink(missing_ok=True)
         client_scripts = client / "kubejs/client_scripts"
         client_scripts.mkdir(parents=True, exist_ok=True)

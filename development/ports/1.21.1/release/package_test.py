@@ -157,7 +157,7 @@ def mod_inputs(instance):
     choices = [f for f in choices if not f.is_symlink() and not re.search(r"(?i)expedition.*(?:-qa-|proof|probe)", f.name)]
     names = {p.name for p in choices}
     for required in ("adastra-1.21.1-1.16.26-neoforge.jar", "createcraftedbeginning-0.1.1.jar",
-                     production_overlay.SPACE_MOD):
+                     *production_overlay.REQUIRED_MODS):
         if required not in names:
             raise ValueError(f"Missing tested NeoForge input: {required}")
     return choices
@@ -271,8 +271,9 @@ def main():
             for path, source in production_overlay.files(side == "client").items():
                 if files.get(path.as_posix()) != hashlib.sha256(source.read_bytes()).hexdigest():
                     raise ValueError(f"The {side} lock must match the production overlay: {path}")
-            if production_overlay.SPACE_MOD not in {row["filename"] for row in lock[side]["mods"]}:
-                raise ValueError(f"The {side} lock is missing {production_overlay.SPACE_MOD}")
+            missing = set(production_overlay.REQUIRED_MODS) - {row["filename"] for row in lock[side]["mods"]}
+            if missing:
+                raise ValueError(f"The {side} lock is missing {', '.join(sorted(missing))}")
         print(meta["version"])
         return
     if not args.client or not args.server:

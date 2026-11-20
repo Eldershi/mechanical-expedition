@@ -4464,7 +4464,9 @@
       "kubejs/data/expedition/recipe/deposits/oil_shale.json": "728536008b5056bebcae6389bb9ceffab04f4719527d3978fdbbf57e47a8d814",
       "kubejs/data/expedition/recipe/deposits/platinum.json": "4ada824024d64e07a6aa924b6ac48f00989ab620adf97c189633f702f4798a60",
       "kubejs/data/expedition/recipe/deposits/vanadium.json": "21b8957f6127ea19fabb76a2fa8bb67771c74eb198f752a51614b23862a7c5a5",
-      "kubejs/client_scripts/ExpeditionSugarSyrupLanguage.js": "2599df0a73d832ba59dc459b67b4e76441effe32a319eea2f82bf5805e43c78d"
+      "kubejs/client_scripts/ExpeditionSugarSyrupLanguage.js": "2599df0a73d832ba59dc459b67b4e76441effe32a319eea2f82bf5805e43c78d",
+      "kubejs/data/expedition/item_compatibility.json": "76184d7aaab0c144313ae2b3bc1e2c2a0f8391c9b1be1f9ee89806146b6d2cdd",
+      "kubejs/server_scripts/ExpeditionItemCompatibilityTags.js": "1a0d1bf0a7a36a68d457410026a4a52eec9dc11920c7e4b6e8d51042470167de"
     },
     "mods": [
       {
@@ -5966,6 +5968,13 @@
         "sha1": "0ded5599c098d8f459c354a2241c843750a60836",
         "sha256": "f37f782918fb73c190105e14ffa52b3f7d787436e85589c379599289aaf79c77",
         "sha512": "53956eda1ae0b0089df19c91d7445dc5f7cf03cde93fbdd382c19c02af85726f6c64fb0680853cc92b299499521c8b0047dcb97122e8551f363b4678a876a9ab"
+      },
+      {
+        "filename": "expedition-item-compatibility-neoforge-1.0.0.jar",
+        "bytes": 16269,
+        "sha1": "a2edf8d84d046ca2c28539df948b3f79bffb03d8",
+        "sha256": "41f67a62af68aa134b1f5e515b272e6c4aff07c03c39f9c10797cae35a11ed2b",
+        "sha512": "742cae3c3b06ffc1ace0b1212d0639f84333915213d05e66de15c531e67750fe2dd7b52d4c740083aba90fcd640e0aa0a5ee01ea01b0e21c537acbeeb67a3220"
       },
       {
         "filename": "expedition-item-tooltips-neoforge-1.0.0.jar",
@@ -10314,7 +10323,9 @@
       "kubejs/data/expedition/recipe/deposits/coal.json": "97ab1c67824a9b2a206585e91c7f0a0ef34abb125d2563a211ac4fa99b0a5a24",
       "kubejs/data/expedition/recipe/deposits/oil_shale.json": "728536008b5056bebcae6389bb9ceffab04f4719527d3978fdbbf57e47a8d814",
       "kubejs/data/expedition/recipe/deposits/platinum.json": "4ada824024d64e07a6aa924b6ac48f00989ab620adf97c189633f702f4798a60",
-      "kubejs/data/expedition/recipe/deposits/vanadium.json": "21b8957f6127ea19fabb76a2fa8bb67771c74eb198f752a51614b23862a7c5a5"
+      "kubejs/data/expedition/recipe/deposits/vanadium.json": "21b8957f6127ea19fabb76a2fa8bb67771c74eb198f752a51614b23862a7c5a5",
+      "kubejs/data/expedition/item_compatibility.json": "76184d7aaab0c144313ae2b3bc1e2c2a0f8391c9b1be1f9ee89806146b6d2cdd",
+      "kubejs/server_scripts/ExpeditionItemCompatibilityTags.js": "1a0d1bf0a7a36a68d457410026a4a52eec9dc11920c7e4b6e8d51042470167de"
     },
     "mods": [
       {
@@ -11752,6 +11763,13 @@
         "sha1": "0ded5599c098d8f459c354a2241c843750a60836",
         "sha256": "f37f782918fb73c190105e14ffa52b3f7d787436e85589c379599289aaf79c77",
         "sha512": "53956eda1ae0b0089df19c91d7445dc5f7cf03cde93fbdd382c19c02af85726f6c64fb0680853cc92b299499521c8b0047dcb97122e8551f363b4678a876a9ab"
+      },
+      {
+        "filename": "expedition-item-compatibility-neoforge-1.0.0.jar",
+        "bytes": 16269,
+        "sha1": "a2edf8d84d046ca2c28539df948b3f79bffb03d8",
+        "sha256": "41f67a62af68aa134b1f5e515b272e6c4aff07c03c39f9c10797cae35a11ed2b",
+        "sha512": "742cae3c3b06ffc1ace0b1212d0639f84333915213d05e66de15c531e67750fe2dd7b52d4c740083aba90fcd640e0aa0a5ee01ea01b0e21c537acbeeb67a3220"
       },
       {
         "filename": "expedition-liquefied-gases-neoforge-1.0.0.jar",

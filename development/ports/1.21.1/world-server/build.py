@@ -26,6 +26,9 @@ MODULES = {
     "ie-machine": ("expedition_ie_machine_compat", "1.0.0", "Expedition IE Machine Compatibility",
                    "expedition.iemachines.mixin", ["CokeOvenCapacityMixin", "FluidPipeConnectionMixin"]),
     "island-rail": ("expedition_island_rail_transfer", "1.1.0", "Expedition Island Rail Transfer", "", []),
+    "item-compatibility": ("expedition_item_compatibility", "1.0.0", "Expedition Recipe Item Compatibility",
+                           "expedition.itemcompat.mixin", ["RecipeManagerMixin", "ReloadableServerResourcesMixin",
+                                                            "FastSuiteRecipeManagerMixin"]),
     "motion-guard": ("expedition_player_motion_guard", "1.1.0", "Expedition Player Motion Guard",
                      "expedition.motionguard.mixin", ["PlayerMotionMixin", "TeleportObservationMixin"]),
     "railway": ("expedition_railway_avoidance", "1.0.0", "Expedition Railway Avoidance",
@@ -77,6 +80,12 @@ SPACE_DEPENDENCIES = (
     ("ldlib2", "[2.2.46.a]", "ldlib2-neoforge-1.21.1-2.2.46.a-all.jar"),
     ("ftbteams", "[2101.1.12]", "ftb-teams-neoforge-2101.1.12.jar"),
 )
+ITEM_COMPATIBILITY_DEPENDENCIES = (
+    ("mbd2", "[21.1.1.a]", "Multiblocked2-1.21-1.21.1-21.1.1.a-all.jar"),
+    ("ldlib2", "[2.2.46.a]", "ldlib2-neoforge-1.21.1-2.2.46.a-all.jar"),
+    ("create_dragons_plus", "[1.11.9]", "CreateDragonsPlus-1.11.9.jar"),
+    ("fastsuite", "[6.0.7]", "FastSuite-1.21.1-6.0.7.jar"),
+)
 TWILIGHT_POLICY = HERE.parents[2] / "clients/cmi-expedition/tools/compat/BossDensityPolicy.java"
 TWILIGHT_CONFIG = HERE.parents[2] / "servers/cmi-expedition/deployment/config/expedition-boss-density.json"
 
@@ -96,7 +105,8 @@ def classpath(server):
 def build(module, java, cp, output, mods, space_proof=False):
     modid, version, title, mixins_package, mixins = MODULES[module]
     side = "SERVER" if module in {
-        "backup-retention", "block-catalog", "curse-rules", "guide-tome", "island-rail", "motion-guard", "teleport"
+        "backup-retention", "block-catalog", "curse-rules", "guide-tome", "island-rail", "item-compatibility",
+        "motion-guard", "teleport"
     } else "BOTH"
     filename = f"{modid.replace('_', '-')}-neoforge-{version}.jar"
     sources = sorted((HERE / module / "src").rglob("*.java"))
@@ -112,6 +122,8 @@ def build(module, java, cp, output, mods, space_proof=False):
             sources.extend(sorted((HERE / "brass-industry/tests").glob("*.java")))
     if module == "create-logistics":
         cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in CREATE_LOGISTICS_DEPENDENCIES)
+    if module == "item-compatibility":
+        cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in ITEM_COMPATIBILITY_DEPENDENCIES)
     if module == "curse-rules":
         cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in CURSE_DEPENDENCIES)
     if module == "guide-tome":
@@ -164,6 +176,8 @@ side="{side}"
             module_dependencies.append(DEPENDENCIES["railway"])
         if module == "space":
             module_dependencies = SPACE_DEPENDENCIES
+        if module == "item-compatibility":
+            module_dependencies = ITEM_COMPATIBILITY_DEPENDENCIES
         if module == "create-logistics":
             module_dependencies = CREATE_LOGISTICS_DEPENDENCIES
         if module == "curse-rules":
