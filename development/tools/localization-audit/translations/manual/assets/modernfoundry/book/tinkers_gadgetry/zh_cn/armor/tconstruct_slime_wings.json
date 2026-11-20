@@ -1,0 +1,18 @@
+{
+  "tool": "modernfoundry:slime_wings",
+  "text": [
+    {
+      "text": "成为终极拳击手！"
+    },
+    {
+      "text": "在鞘翅上浇注末影黏液即可制成黏液鞘翅。可用幻翼膜修复耐久。",
+      "paragraph": true
+    }
+  ],
+  "properties": [
+    "高耐久度",
+    "无护甲值和防御槽",
+    "5 升级槽",
+    "1 能力槽"
+  ]
+}
