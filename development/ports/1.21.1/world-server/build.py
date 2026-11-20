@@ -19,7 +19,10 @@ MODULES = {
                          "expedition.backup.mixin", ["BackupThreadMixin"]),
     "block-catalog": ("expedition_block_catalog", "1.0.0", "Expedition Migration Block Catalog", "", []),
     "create-logistics": ("expedition_create_logistics", "1.0.0", "Expedition Create Logistics", "", []),
+    "curse-rules": ("expedition_curse_rules", "1.0.0", "Expedition Server Gameplay Rules",
+                    "expedition.curserules.mixin", ["CurseRingMixin", "FlyAttachmentsMixin"]),
     "equipment": ("expedition_equipment_rules", "1.0.0", "Expedition Curios Equipment", "", []),
+    "guide-tome": ("expedition_guide_tome", "1.0.0", "Expedition Guide Tome", "", []),
     "ie-machine": ("expedition_ie_machine_compat", "1.0.0", "Expedition IE Machine Compatibility",
                    "expedition.iemachines.mixin", ["CokeOvenCapacityMixin", "FluidPipeConnectionMixin"]),
     "island-rail": ("expedition_island_rail_transfer", "1.1.0", "Expedition Island Rail Transfer", "", []),
@@ -39,6 +42,16 @@ MODULES = {
     "world-rules": ("expedition_world_rules", "1.0.0", "Expedition World Rules", "", []),
 }
 COMMON_DIAGNOSTICS = ("BoundedRing", "DiagnosticsConfig", "DurableJsonLog", "JfrRecorder", "PlayerSnapshot")
+CURSE_DEPENDENCIES = (
+    ("curios", "[9.5.1,10)", "curios-neoforge-9.5.1+1.21.1.jar"),
+    ("enigmaticlegacyplus", "[1.21.1-1.1.1]", "enigmaticlegacyplus-1.21.1-1.1.1.jar"),
+    ("spawn", "[4.0.8,4.0.9)", "spawn-4.0.8-1.21.1.jar"),
+)
+GUIDE_DEPENDENCIES = (
+    ("eccentrictome", "[1.21.1-1.2.0]", "eccentrictome-1.21.1-1.2.0.jar"),
+    ("patchouli", "[1.21.1-93-NEOFORGE]", "Patchouli-1.21.1-93-NEOFORGE.jar"),
+    ("guideme", "[21.1,22)", "guideme-21.1.22.jar"),
+)
 DEPENDENCIES = {
     "backup-retention": ("simplebackups", "[1.21-4.0.21]", "SimpleBackups-1.21-4.0.21.jar"),
     "equipment": ("curios", "[9.5.1,10)", "curios-neoforge-9.5.1+1.21.1.jar"),
@@ -82,7 +95,9 @@ def classpath(server):
 
 def build(module, java, cp, output, mods, space_proof=False):
     modid, version, title, mixins_package, mixins = MODULES[module]
-    side = "SERVER" if module in {"backup-retention", "block-catalog", "island-rail", "motion-guard", "teleport"} else "BOTH"
+    side = "SERVER" if module in {
+        "backup-retention", "block-catalog", "curse-rules", "guide-tome", "island-rail", "motion-guard", "teleport"
+    } else "BOTH"
     filename = f"{modid.replace('_', '-')}-neoforge-{version}.jar"
     sources = sorted((HERE / module / "src").rglob("*.java"))
     if module in DEPENDENCIES:
@@ -97,6 +112,10 @@ def build(module, java, cp, output, mods, space_proof=False):
             sources.extend(sorted((HERE / "brass-industry/tests").glob("*.java")))
     if module == "create-logistics":
         cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in CREATE_LOGISTICS_DEPENDENCIES)
+    if module == "curse-rules":
+        cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in CURSE_DEPENDENCIES)
+    if module == "guide-tome":
+        cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in GUIDE_DEPENDENCIES)
     with tempfile.TemporaryDirectory() as temp:
         classes = Path(temp)
         if module in {"island-rail", "space", "create-logistics"}:
@@ -147,6 +166,10 @@ side="{side}"
             module_dependencies = SPACE_DEPENDENCIES
         if module == "create-logistics":
             module_dependencies = CREATE_LOGISTICS_DEPENDENCIES
+        if module == "curse-rules":
+            module_dependencies = CURSE_DEPENDENCIES
+        if module == "guide-tome":
+            module_dependencies = GUIDE_DEPENDENCIES
         for dependency_id, dependency_version, _ in module_dependencies:
             metadata += f'''[[dependencies.{modid}]]
 modId="{dependency_id}"

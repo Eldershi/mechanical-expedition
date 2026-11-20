@@ -5,13 +5,15 @@ Build with Java 21 and an installed Minecraft 1.21.1 NeoForge 21.1.267 dedicated
 ```sh
 python3 build.py --java /path/to/java --server /path/to/server \
   --mods /path/to/mods --output /path/to/output \
-  teleport motion-guard world-rules equipment railway twilight alpine
+  teleport motion-guard world-rules curse-rules equipment guide-tome railway twilight alpine
 ```
 
 - `teleport` handles vanilla teleport commands while their destination chunks load. Install it on the server.
 - `motion-guard` bounds invalid player movement and provides `/expeditiondiagnostics`. Install it on the server. The dedicated-server overlay includes `current/server/config/expedition-diagnostics.json` as `config/expedition-diagnostics.json`. This configuration enables event logging, watchdog incidents, and Spark exports, with JFR disabled.
 - `world-rules` handles player damage, selective Born in Chaos spawning, Biomes O’ Plenty tall grass, and cryotheum. Install it on a dedicated server. Install it on the client for local worlds and cryotheum particles.
+- `curse-rules` fits the Ring of the Seven Curses into a free ring slot on login, permits sleeping, and disables the ring's proximity anger and Enderman attraction. It also disables evoker-summoned vexes, selected natural spawns, and Spawn's ambient fly effects. Install it on the dedicated server.
 - `equipment` enforces Curios slot types, retains the unlockable slot bonuses, and reconciles misplaced equipment at login. Put the JAR and `equipment/config/curios-common.toml` on both sides.
+- `guide-tome` gives each player an Eccentric Tome with installed Patchouli and GuideME books plus registered native manuals. The server retries on a later login if there is no room in the player's inventory.
 - `railway` prevents new structure pieces from crossing planned TongDa Railway tracks and stations. Install it on the dedicated server or integrated server.
 - `twilight` controls nine Twilight Forest landmark placements. Install it on both sides for its placement registry. Copy `development/servers/cmi-expedition/deployment/config/expedition-boss-density.json` to the server's `config` directory. The native structure search still finds saved starts after the placement density changes.
 - `alpine` applies the Expedition mountain temperature and surface rules. Its placement modifier can enforce the treeline on selected tree features.

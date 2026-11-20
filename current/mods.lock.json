@@ -11495,6 +11495,13 @@
         "sha512": "d307768eb24c37001db945702e375a09c5d566ee1288a460427daddea35784c43ffe4e07853e03e1810333f79e5dcc7f08a371aef503247cfacb05d40a0c96ab"
       },
       {
+        "filename": "expedition-curse-rules-neoforge-1.0.0.jar",
+        "bytes": 6706,
+        "sha1": "b5ab2173134bd959554011f7085d006cfb6a93b2",
+        "sha256": "2be80c024309911b4853a18e13ad4ec75b7343ebd1e9c621bc5bac7f80579e5d",
+        "sha512": "d5d723febace61e6453f68de1a4e66881fb3ba29f15cc1ee20c4cd4175a4be030258f66940ab3d9d16ee9f597381ea8d09bf3492adc706595484af37e403e2b5"
+      },
+      {
         "filename": "expedition-equipment-rules-neoforge-1.0.0.jar",
         "bytes": 8252,
         "sha1": "00b61939daedf1abaf9820e44cfb4555116538ed",
@@ -11514,6 +11521,13 @@
         "sha1": "6ea2802bfec383bbe0b6d8577c2e9080fc16ec54",
         "sha256": "058511141f027b752db1847413aff27348375f5ceba958a73c794995ffabe263",
         "sha512": "fde813a225e8c06cd897a8f7dbd832e351b3c213974263cb74e30181a158d92063d8222d379779d874faf16ce7f582537fc4157b24938adec96fcd380029db64"
+      },
+      {
+        "filename": "expedition-guide-tome-neoforge-1.0.0.jar",
+        "bytes": 3980,
+        "sha1": "e81295a1448356eb6a1fe15c758257d94783720c",
+        "sha256": "4eb01334a939aad413b0cfa4a831a0d1a2b3cf60dcb0353672f55db2e8379e5e",
+        "sha512": "5c09808bf6f8479d1f77e8fe847815b763412156b7dc86b2a3b0796fae0366c1d0e0f97e35ffe9dbed74f697c9a6483517b93ee031e72f7af236d1a241068b9b"
       },
       {
         "filename": "expedition-ie-machine-compat-neoforge-1.0.0.jar",
