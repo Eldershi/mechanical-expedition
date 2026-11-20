@@ -731,7 +731,7 @@
       "config/paxi/resourcepacks/Dyson-Create-Approved-Models-NeoForge-1.21.1.zip": "b4dc06116b9ac803b39bf473d8d9b9f25fc9ced0f5c3a7829daf9949d833cfe1",
       "config/paxi/resourcepacks/Eternal-Snowstorm-s-MC-i18n-Chinese-pack.zip": "bc2232ee0eac7205da0ad529dbd6cb1faf42362333dbd259e6a16858f2ff2476",
       "config/paxi/resourcepacks/Expedition-Chinese-Supplement.zip": "bb1f9a8eb622fd81b1c2f62eb13101e40324f6dc69221c28c5bf45efc59cfe50",
-      "config/paxi/resourcepacks/Expedition-Resource-Compat-1.21.1.zip": "d51cf280b79b229acba8d3c279e66d7c27b07a0d88c26a7c8cb287dc7654ce60",
+      "config/paxi/resourcepacks/Expedition-Resource-Compat-1.21.1.zip": "3b0f9c0a18a7fbeb5690da10971c9bdc5a09fbeb4ffd41ef89eb924194293000",
       "config/paxi-neoforge-1_21.toml": "a4187daa91d863f90dacfcb443e2f062fe3ddbaace98cfdcfa8b3cc558f1f250",
       "config/placeablemaxwell-common.toml": "cd46c7ffcef56aca7017129a61014871b8750703a96a471f21cba260114c84e8",
       "config/placebo.cfg": "6bbc71c6dc18b1ba4952e1bc54ed2b98c3a90f04cec4257ec3f7566cdf0c0e2a",
@@ -5879,6 +5879,13 @@
         "sha1": "671df778a47eace6de38c8dad2734ecb4a77f344",
         "sha256": "eb3006e5ab9787f1f8f66e51e41e341332afec032202d852170a6f60842d8f49",
         "sha512": "3d209cb3ca0094b384f220d5c0883562489a2312d22b560bdb99b30cbca3850efdd29cfcc2f776217072d560b35d058314ef1f797f7fd1948397e811fe62ea2b"
+      },
+      {
+        "filename": "expedition-vanilla-enchanting-table-neoforge-1.0.0.jar",
+        "bytes": 3940,
+        "sha1": "7af4fb42b4334de898c4bdead2e3554d2b758135",
+        "sha256": "e85d5457dce343854c50e21c56f6de00a6eb97f5bbc1b7ec18763dc28f0babc4",
+        "sha512": "e349816cd10babbf8620fa29c5fb7b9c8e17d0fec93fe833720b3f3f9bdcbb7b021239ccc8ca7fc08cfcf45ccf4813d9df9869944df073e725c04db16acfb801"
       },
       {
         "filename": "expedition-world-rules-neoforge-1.0.0.jar",

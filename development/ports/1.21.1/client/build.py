@@ -62,6 +62,14 @@ ADAPTERS = {
         "deps": {"xaeroworldmap": "1.47.0"},
         "bundled": {"xaerolib-neoforge-1.21.1-1.7.3.jar": "xaeroworldmap-neoforge-1.21.1-1.47.0.jar"},
     },
+    "vanilla-enchanting-table": {
+        "id": "expedition_vanilla_enchanting_table",
+        "filename": "expedition-vanilla-enchanting-table",
+        "name": "Expedition Vanilla Enchanting Table",
+        "package": "expedition.vanillaenchanting.mixin",
+        "mixins": ["EnchantingTableResourceMixin"],
+        "deps": {},
+    },
     "tooltips": {
         "id": "expedition_item_tooltips",
         "filename": "expedition-item-tooltips",

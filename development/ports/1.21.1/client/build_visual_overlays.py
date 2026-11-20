@@ -89,6 +89,8 @@ def main():
             # The upstream pack includes block models for Masterful Machinery, absent on NeoForge.
             {"namespace": "mm", "path": r"models/block/.*\.json"},
             {"namespace": "edenring", "path": r"textures/block/portal_block_center_[ns]\.png"},
+            {"namespace": "minecraft", "path": r"optifine/cem/enchanting_book(?:2?\.jem|\.properties)"},
+            {"namespace": "minecraft", "path": r"textures/entity/enchanting_table_book_[es]\.png"},
         ))
 
 
