@@ -133,7 +133,8 @@ def known_downloads(inputs):
             for item in value.values():
                 collect(item)
 
-    for path in inputs:
+    catalogs = (ROOT / "current/mods.lock.json", HERE.parent / "community-mods.json")
+    for path in (*[path for path in catalogs if path.is_file()], *inputs):
         collect(json_file(path))
     return records
 
@@ -233,8 +234,8 @@ def main():
         index = json_file(ROOT / "modrinth.index.json")
         if lock["version"] != meta["version"] or index["versionId"] != meta["version"]:
             raise ValueError("Test manifest, mod lock and Modrinth index must match")
-        if index["dependencies"] != {key: meta[key] for key in ("minecraft", "neoforge")}:
-            raise ValueError("Modrinth index must target the test NeoForge version")
+        if index != index_for(meta, lock["client"]):
+            raise ValueError("Modrinth index differs from the client lock and download references")
         print(meta["version"])
         return
     if not args.client or not args.server:

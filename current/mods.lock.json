@@ -4423,7 +4423,8 @@
         "bytes": 5422885,
         "sha1": "d88e75b60e97dae8054ee10f3a92aa2bb812b8b9",
         "sha256": "aff9837f45c1c981d47a9e60b780c37a151ef881937faf5f72092895104c8bbb",
-        "sha512": "b560ed61810030472c42fa39e6199b1db07c19baba8f78d98b44ab3e1d00a1bebff5f69942bd076fea9754f63940df920cfb19906073b77bcc459bb8d88575de"
+        "sha512": "b560ed61810030472c42fa39e6199b1db07c19baba8f78d98b44ab3e1d00a1bebff5f69942bd076fea9754f63940df920cfb19906073b77bcc459bb8d88575de",
+        "downloadUrl": "https://cdn.modrinth.com/data/pL8MtgqY/versions/JAQJkLJ1/ApothicEnchanting-1.21.1-1.6.4.jar"
       },
       {
         "filename": "Applied-Mekanistics-1.6.3.jar",
@@ -4526,7 +4527,8 @@
         "bytes": 127231,
         "sha1": "fbbe45ddcddf4491766b67c6137b9ffbc9f9d58c",
         "sha256": "765c5a443f4a551f2808cc4893e71b4a39259cfb4e5c5241b09b7e083588f823",
-        "sha512": "5521160f0b085169bef7396b3ed51270d476d2fdfd543be4f571927b39469997ed23438cdbc136afa03847c9aef2c0951e74d986c05defbd409042bad152b47e"
+        "sha512": "5521160f0b085169bef7396b3ed51270d476d2fdfd543be4f571927b39469997ed23438cdbc136afa03847c9aef2c0951e74d986c05defbd409042bad152b47e",
+        "downloadUrl": "https://cdn.modrinth.com/data/Oi5q6Fkk/versions/pwlvCA71/CrosshairBobbing-1.11.0-JellyV4.jar"
       },
       {
         "filename": "CustomWindowTitle-1.21.4+v1.4.1.jar",
@@ -5013,7 +5015,8 @@
         "bytes": 136151,
         "sha1": "aaba3d35201c133fd864b9425319ad1456966376",
         "sha256": "8fab8b288593fbee57e240da5e49157f6ac134bdf4e0f27c50bc1242df99436f",
-        "sha512": "b222fb4ddfc1d213217ee1742b2bcfb3ce7ad79287d5cbf0c469c5232d24bcba99806e8fd9a8c85d4422f279e53d2f2a600df39e637d6bc4a05415f7190423c5"
+        "sha512": "b222fb4ddfc1d213217ee1742b2bcfb3ce7ad79287d5cbf0c469c5232d24bcba99806e8fd9a8c85d4422f279e53d2f2a600df39e637d6bc4a05415f7190423c5",
+        "downloadUrl": "https://edge.forgecdn.net/files/6790/677/Torcherino-neoforge-1.21-24.0.6.jar"
       },
       {
         "filename": "TreeChop-1.21.1-neoforge-0.19.3.jar",
@@ -5100,7 +5103,8 @@
         "bytes": 43764,
         "sha1": "4d1aea2d6e27705e284d4603aa3422d84464e406",
         "sha256": "5204e1f901f20749673e384d18f73c1222f97c3efce28ff75c8fe782a55b1226",
-        "sha512": "405b7d581a967181c9de1289e0e6b2469b510e5a486cef5225f8b64cbdec37bd7786f9d598ef29b26587d5f7a390823708552bab6ab0163c7bae36a29d5e77fc"
+        "sha512": "405b7d581a967181c9de1289e0e6b2469b510e5a486cef5225f8b64cbdec37bd7786f9d598ef29b26587d5f7a390823708552bab6ab0163c7bae36a29d5e77fc",
+        "downloadUrl": "https://cdn.modrinth.com/data/aLVC5usA/versions/j10zlI9h/aeronauticscompat-1.1.3.jar"
       },
       {
         "filename": "aether-1.21.1-1.5.10-neoforge.jar",
@@ -5219,7 +5223,8 @@
         "bytes": 313828,
         "sha1": "795567371450debec83fe634fd0114c295f7da5a",
         "sha256": "595990b532b7e8cf23a5897c39edcdd9add52f208be9517ff7304e3b35361441",
-        "sha512": "458c5a878a1418ffce46d1dd109f4ae23bcbe10bd7153edcaff8d1ab49ab3032f37977488eee7cecdb550cd99672f560e9d851818d6775d5d7e222632285d1a6"
+        "sha512": "458c5a878a1418ffce46d1dd109f4ae23bcbe10bd7153edcaff8d1ab49ab3032f37977488eee7cecdb550cd99672f560e9d851818d6775d5d7e222632285d1a6",
+        "downloadUrl": "https://cdn.modrinth.com/data/gL8ijqNQ/versions/r7YxZN9m/ars_controle-1.21.1-1.6.16.jar"
       },
       {
         "filename": "ars_creo-1.21.1-5.4.0.jar",
@@ -5442,7 +5447,8 @@
         "bytes": 309860,
         "sha1": "e0ba85038480d50a3816d5920014bfcccdbe7329",
         "sha256": "921bd8d255a65b5e21a5c74aa661d1ea4ed034febcfbb5939da054ce08f9d109",
-        "sha512": "e4e2a7bc066c9032c0172428b1012fdd3b0dfcb75ee11bf044db61318906b61d3dbd0ff84a4f4b50403da5fdad4b349d65e02d4be48c55551f0da7ed993e27ff"
+        "sha512": "e4e2a7bc066c9032c0172428b1012fdd3b0dfcb75ee11bf044db61318906b61d3dbd0ff84a4f4b50403da5fdad4b349d65e02d4be48c55551f0da7ed993e27ff",
+        "downloadUrl": "https://cdn.modrinth.com/data/RgLrNK7l/versions/SCkdlli6/common-storage-lib-neoforge-1.21.1-0.0.10.jar"
       },
       {
         "filename": "configured-neoforge-1.21.1-2.6.3.jar",
@@ -5465,7 +5471,8 @@
         "bytes": 204494,
         "sha1": "2f92561a985e1a81da2e4a7a685efb62739d0d4f",
         "sha256": "b9e131da420b3aa4cc75d7a7c39e1f25d5bd895e41d8c498c414c67713bf92f3",
-        "sha512": "2c1fdb808a253df366f81aed50894119978d43cb8bbd33f28e1307404a73dc5bd56572c935bc6013e18aaa0f78c63bbb9817e27fbfecb99bfc2ece3bd5121a0f"
+        "sha512": "2c1fdb808a253df366f81aed50894119978d43cb8bbd33f28e1307404a73dc5bd56572c935bc6013e18aaa0f78c63bbb9817e27fbfecb99bfc2ece3bd5121a0f",
+        "downloadUrl": "https://cdn.modrinth.com/data/76H3XX6b/versions/eXcxXIMi/constructionwand-kots-1.21.1-2.16.13.jar"
       },
       {
         "filename": "copycats-3.0.11+mc.1.21.1-neoforge.jar",
@@ -5504,7 +5511,8 @@
         "bytes": 33123131,
         "sha1": "ddbe9cbc25e8f663218aa1e9fdfc4b99f0e11e4b",
         "sha256": "a3f330d4757640f8715d991a43eedb826e4d0e51558d859c843ae6693bd35f1e",
-        "sha512": "dc7e8e1148fa442243889ba29412207137e1bb86206e6c92bc0a589f1374a466e93de22bdbf14f753984d86c29308fbbdc0f14a4b9618b14c0ac1666a36b46f5"
+        "sha512": "dc7e8e1148fa442243889ba29412207137e1bb86206e6c92bc0a589f1374a466e93de22bdbf14f753984d86c29308fbbdc0f14a4b9618b14c0ac1666a36b46f5",
+        "downloadUrl": "https://cdn.modrinth.com/data/oWaK0Q19/versions/44pLdPGg/create-aeronautics-bundled-1.21.1-1.3.2.jar"
       },
       {
         "filename": "create-central-kitchen-2.6.2b.jar",
@@ -5607,7 +5615,8 @@
         "bytes": 8613993,
         "sha1": "c51337940f36cb06be2bcecbd5077b8073ca2025",
         "sha256": "03a5f100d385093ff4b9e68c2ed0d94eae38ba04182f05a424ea1aa6fed2e075",
-        "sha512": "5c0ef94533c19b9b284b5977b8049d2ddd6c69aece4595f1596906c3e4bd60c399aa46c28cf00a127e7abfb0048a517f8669b0ff176e0eb5a255e9dacbbaeac7"
+        "sha512": "5c0ef94533c19b9b284b5977b8049d2ddd6c69aece4595f1596906c3e4bd60c399aa46c28cf00a127e7abfb0048a517f8669b0ff176e0eb5a255e9dacbbaeac7",
+        "downloadUrl": "https://edge.forgecdn.net/files/9658/463/createcraftedbeginning-0.1.1.jar"
       },
       {
         "filename": "createdeco-2.1.3.jar",
@@ -5718,7 +5727,8 @@
         "bytes": 29342344,
         "sha1": "2a1b33ec19916c1f749a873a04a1a549efabe14d",
         "sha256": "d18ff7c2de5a1658de27c1a55f9ffee4e4f1c9538dafe6fd91aa43a4076c87a0",
-        "sha512": "a21b974810de9268bd788d0f4d5c6b388ee762641020b8cc2faa9db58468f6491bdc0370d24b782419c1c98012fc15ff4d105f3748ee69e91334b17824eb83a7"
+        "sha512": "a21b974810de9268bd788d0f4d5c6b388ee762641020b8cc2faa9db58468f6491bdc0370d24b782419c1c98012fc15ff4d105f3748ee69e91334b17824eb83a7",
+        "downloadUrl": "https://edge.forgecdn.net/files/8806/759/eeeabsmobs-1.0.2-neoforge.jar"
       },
       {
         "filename": "eidolon_repraised-1.21.1-0.5.0.8.jar",
@@ -5773,7 +5783,8 @@
         "bytes": 59325382,
         "sha1": "5b9235c764787242085de386aaeb02372b1ab03c",
         "sha256": "e77369ad1a779036b243ef0f7b24776640a3ff84968e6f3be1931bc953e92b09",
-        "sha512": "2bd7d2fbc478b3cc2b6426ff9cffddf8800b46aa2ca5a4570f9d9ed2f50d4aeadc83bea0c5c410bf26c2e9e0c6cc3296cb8adff233787897265aa2d7a1ad9a71"
+        "sha512": "2bd7d2fbc478b3cc2b6426ff9cffddf8800b46aa2ca5a4570f9d9ed2f50d4aeadc83bea0c5c410bf26c2e9e0c6cc3296cb8adff233787897265aa2d7a1ad9a71",
+        "downloadUrl": "https://cdn.modrinth.com/data/XvcfUGfB/versions/IyTc0Vvj/eternalstarlight-0.9.1%2B1.21.1%2Bneoforge.jar"
       },
       {
         "filename": "expedition-alpine-climate-neoforge-1.0.0.jar",
@@ -5950,7 +5961,8 @@
         "bytes": 294959,
         "sha1": "ea6d91fa5bc3398cf73fb4e2d614eff8ad40a83e",
         "sha256": "25c3feca75dd36c296aecb624dae85189d156cf9ffc34862c80c6892b3824dff",
-        "sha512": "395758051273e2bd13d9f93e2e10c0e3eaa5218e6ca0ae71f2dcb0cc929e25e1eda07997125dc8505a1cf1aac035122749583371cf217597fd5e88be0cca22c6"
+        "sha512": "395758051273e2bd13d9f93e2e10c0e3eaa5218e6ca0ae71f2dcb0cc929e25e1eda07997125dc8505a1cf1aac035122749583371cf217597fd5e88be0cca22c6",
+        "downloadUrl": "https://cdn.modrinth.com/data/eUziWqPC/versions/X2GAO9kB/fancytoasts-1.5.1-neoforge-1.21.1.jar"
       },
       {
         "filename": "farmers-spell-n-spellbook-1.0.7.1-1.21.1.jar",
@@ -6029,7 +6041,8 @@
         "bytes": 211671,
         "sha1": "a48e54edeacc59aaba29a1b627799c052112ee0b",
         "sha256": "b8700e8bfd9c78b09bc7819cb28a6318b20d2bf68969bc6894a0bfa39581a99b",
-        "sha512": "7c0228b58f7085a3af929052f6baf93a6a29f2c39c51525630745b34d1c5b12fe8364184ad2ba06b7ecd2225e8ee3b577269f6ee0e5266f8e338756f78cce076"
+        "sha512": "7c0228b58f7085a3af929052f6baf93a6a29f2c39c51525630745b34d1c5b12fe8364184ad2ba06b7ecd2225e8ee3b577269f6ee0e5266f8e338756f78cce076",
+        "downloadUrl": "https://edge.forgecdn.net/files/7429/11/ftb-filter-system-neoforge-21.1.4.jar"
       },
       {
         "filename": "ftb-library-neoforge-2101.1.40.jar",
@@ -6156,7 +6169,8 @@
         "bytes": 12690,
         "sha1": "6252783ff3f6b1887cfadfd859633ae83efed94b",
         "sha256": "3c6ec4e5c3e5e5f507a0dadeafa5273afbed03e9e278020d630ef48be146fcfa",
-        "sha512": "dc02e613d29c389e1c8f023f4ad5dce4b0fd5ed738aa03cc1e571cd6904008b0f74ec152cafdfde8b626fc6eb922f2bd3c8022b4dc72bfa43e1951d5ec5ccf87"
+        "sha512": "dc02e613d29c389e1c8f023f4ad5dce4b0fd5ed738aa03cc1e571cd6904008b0f74ec152cafdfde8b626fc6eb922f2bd3c8022b4dc72bfa43e1951d5ec5ccf87",
+        "downloadUrl": "https://edge.forgecdn.net/files/9233/504/ie-fix-pack-1.1.0%2B1.21.1.jar"
       },
       {
         "filename": "illagerwarship-1.0.1-neoforge-1.21.1.jar",
@@ -6563,7 +6577,8 @@
         "bytes": 7638257,
         "sha1": "f57df895c76ef8dcebda3e6084eb2be914968456",
         "sha256": "cf79c5aef7c68ab0effa66ac3bd5608ae1bda18de0d0e4d92bb0d4442e0b030c",
-        "sha512": "c9a5b4c5e8667888c8494c06b00168d4595836e793fc237f207bab92d8c01419e11fb3c66b68858f8053c3306fd602610ffeb637df68d2eb5d52d8bcf337326b"
+        "sha512": "c9a5b4c5e8667888c8494c06b00168d4595836e793fc237f207bab92d8c01419e11fb3c66b68858f8053c3306fd602610ffeb637df68d2eb5d52d8bcf337326b",
+        "downloadUrl": "https://edge.forgecdn.net/files/9651/586/neoecoae-21.2.18.jar"
       },
       {
         "filename": "nerb-neoforge-0.6.2-1.21.1.jar",
@@ -6714,7 +6729,8 @@
         "bytes": 84812,
         "sha1": "5174059ecf97340a0de5ef211b938de26c4eaa36",
         "sha256": "ccf46c442ed3c7fe41ad056f0940560829ec4dd88360985dfacd78f4614eb167",
-        "sha512": "154d42795ccf1f3e07714775cdb82fd5db17574319286ced13d86b0456b64e4cf5bb89ffbcbfcefce67b73ed0b83e4e2944e493d79d9a385ff9de23006ee7bf5"
+        "sha512": "154d42795ccf1f3e07714775cdb82fd5db17574319286ced13d86b0456b64e4cf5bb89ffbcbfcefce67b73ed0b83e4e2944e493d79d9a385ff9de23006ee7bf5",
+        "downloadUrl": "https://cdn.modrinth.com/data/aaRl8GiW/versions/EE1FHDyD/prickle-neoforge-1.21.1-21.1.11.jar"
       },
       {
         "filename": "protection_pixel-2.2.1-neoforge-1.21.1.jar",
@@ -6809,21 +6825,24 @@
         "bytes": 12986135,
         "sha1": "cf46f7e8c1511f170abcdbee739944f0540549bf",
         "sha256": "9c199157843bf953a47dff625fc5bb41c01a90538d35ad18e6996bbcb8a617c2",
-        "sha512": "76d293ce751a01cb9c095a3659b0a41e03e005480bc9d76dfdc73ec7c2eabf7923740c7b077921d42616673c496cd5143569f2085ddcebe174fd91d81e2a04b8"
+        "sha512": "76d293ce751a01cb9c095a3659b0a41e03e005480bc9d76dfdc73ec7c2eabf7923740c7b077921d42616673c496cd5143569f2085ddcebe174fd91d81e2a04b8",
+        "downloadUrl": "https://cdn.modrinth.com/data/T9PomCSv/versions/fg9dTRz9/sable-neoforge-1.21.1-2.0.6.jar"
       },
       {
         "filename": "sablejade-1.3.0.jar",
         "bytes": 301532,
         "sha1": "beb78d81a4d5768780c8566fa869ced5dbe08263",
         "sha256": "f26e974115226d83ec363e3d327e739c87ded760d781ca0538181094eb4bb9a2",
-        "sha512": "20a0b808b5e1ea0e7251bd9ac5161bd96cf504b054f27f85343980956980210be6b364e8d6cbadbde9a6588550afd24e66ee5f17480839998772dc9de719ad64"
+        "sha512": "20a0b808b5e1ea0e7251bd9ac5161bd96cf504b054f27f85343980956980210be6b364e8d6cbadbde9a6588550afd24e66ee5f17480839998772dc9de719ad64",
+        "downloadUrl": "https://cdn.modrinth.com/data/jCrJ4iGH/versions/cxUohR7A/sablejade-1.3.0.jar"
       },
       {
         "filename": "scguns-1.1.2.jar",
         "bytes": 19584810,
         "sha1": "80396a60063bf784f7344a419c5edeb2a376795a",
         "sha256": "3838933ffdfabc5349ade7e9c3b605f852de8899b7860fc16d01a07ba3b294a6",
-        "sha512": "8aaaeb87ff2a9ccdb8361492c1b8de03107319b4db9a359768872b8ce030b7855536006b91a6278e41634b905de9a58f66edb3f0506b929723779083acbc768c"
+        "sha512": "8aaaeb87ff2a9ccdb8361492c1b8de03107319b4db9a359768872b8ce030b7855536006b91a6278e41634b905de9a58f66edb3f0506b929723779083acbc768c",
+        "downloadUrl": "https://edge.forgecdn.net/files/9668/354/scguns-1.1.2.jar"
       },
       {
         "filename": "seleafculling-neoforge-4.3.0+1.21.1.jar",
@@ -10132,7 +10151,8 @@
         "bytes": 5422885,
         "sha1": "d88e75b60e97dae8054ee10f3a92aa2bb812b8b9",
         "sha256": "aff9837f45c1c981d47a9e60b780c37a151ef881937faf5f72092895104c8bbb",
-        "sha512": "b560ed61810030472c42fa39e6199b1db07c19baba8f78d98b44ab3e1d00a1bebff5f69942bd076fea9754f63940df920cfb19906073b77bcc459bb8d88575de"
+        "sha512": "b560ed61810030472c42fa39e6199b1db07c19baba8f78d98b44ab3e1d00a1bebff5f69942bd076fea9754f63940df920cfb19906073b77bcc459bb8d88575de",
+        "downloadUrl": "https://cdn.modrinth.com/data/pL8MtgqY/versions/JAQJkLJ1/ApothicEnchanting-1.21.1-1.6.4.jar"
       },
       {
         "filename": "Applied-Mekanistics-1.6.3.jar",
@@ -10683,7 +10703,8 @@
         "bytes": 136151,
         "sha1": "aaba3d35201c133fd864b9425319ad1456966376",
         "sha256": "8fab8b288593fbee57e240da5e49157f6ac134bdf4e0f27c50bc1242df99436f",
-        "sha512": "b222fb4ddfc1d213217ee1742b2bcfb3ce7ad79287d5cbf0c469c5232d24bcba99806e8fd9a8c85d4422f279e53d2f2a600df39e637d6bc4a05415f7190423c5"
+        "sha512": "b222fb4ddfc1d213217ee1742b2bcfb3ce7ad79287d5cbf0c469c5232d24bcba99806e8fd9a8c85d4422f279e53d2f2a600df39e637d6bc4a05415f7190423c5",
+        "downloadUrl": "https://edge.forgecdn.net/files/6790/677/Torcherino-neoforge-1.21-24.0.6.jar"
       },
       {
         "filename": "TreeChop-1.21.1-neoforge-0.19.3.jar",
@@ -10834,7 +10855,8 @@
         "bytes": 43764,
         "sha1": "4d1aea2d6e27705e284d4603aa3422d84464e406",
         "sha256": "5204e1f901f20749673e384d18f73c1222f97c3efce28ff75c8fe782a55b1226",
-        "sha512": "405b7d581a967181c9de1289e0e6b2469b510e5a486cef5225f8b64cbdec37bd7786f9d598ef29b26587d5f7a390823708552bab6ab0163c7bae36a29d5e77fc"
+        "sha512": "405b7d581a967181c9de1289e0e6b2469b510e5a486cef5225f8b64cbdec37bd7786f9d598ef29b26587d5f7a390823708552bab6ab0163c7bae36a29d5e77fc",
+        "downloadUrl": "https://cdn.modrinth.com/data/aLVC5usA/versions/j10zlI9h/aeronauticscompat-1.1.3.jar"
       },
       {
         "filename": "aether-1.21.1-1.5.10-neoforge.jar",
@@ -10961,7 +10983,8 @@
         "bytes": 313828,
         "sha1": "795567371450debec83fe634fd0114c295f7da5a",
         "sha256": "595990b532b7e8cf23a5897c39edcdd9add52f208be9517ff7304e3b35361441",
-        "sha512": "458c5a878a1418ffce46d1dd109f4ae23bcbe10bd7153edcaff8d1ab49ab3032f37977488eee7cecdb550cd99672f560e9d851818d6775d5d7e222632285d1a6"
+        "sha512": "458c5a878a1418ffce46d1dd109f4ae23bcbe10bd7153edcaff8d1ab49ab3032f37977488eee7cecdb550cd99672f560e9d851818d6775d5d7e222632285d1a6",
+        "downloadUrl": "https://cdn.modrinth.com/data/gL8ijqNQ/versions/r7YxZN9m/ars_controle-1.21.1-1.6.16.jar"
       },
       {
         "filename": "ars_creo-1.21.1-5.4.0.jar",
@@ -11136,7 +11159,8 @@
         "bytes": 309860,
         "sha1": "e0ba85038480d50a3816d5920014bfcccdbe7329",
         "sha256": "921bd8d255a65b5e21a5c74aa661d1ea4ed034febcfbb5939da054ce08f9d109",
-        "sha512": "e4e2a7bc066c9032c0172428b1012fdd3b0dfcb75ee11bf044db61318906b61d3dbd0ff84a4f4b50403da5fdad4b349d65e02d4be48c55551f0da7ed993e27ff"
+        "sha512": "e4e2a7bc066c9032c0172428b1012fdd3b0dfcb75ee11bf044db61318906b61d3dbd0ff84a4f4b50403da5fdad4b349d65e02d4be48c55551f0da7ed993e27ff",
+        "downloadUrl": "https://cdn.modrinth.com/data/RgLrNK7l/versions/SCkdlli6/common-storage-lib-neoforge-1.21.1-0.0.10.jar"
       },
       {
         "filename": "connectivity-1.21.1-7.7.jar",
@@ -11151,7 +11175,8 @@
         "bytes": 204494,
         "sha1": "2f92561a985e1a81da2e4a7a685efb62739d0d4f",
         "sha256": "b9e131da420b3aa4cc75d7a7c39e1f25d5bd895e41d8c498c414c67713bf92f3",
-        "sha512": "2c1fdb808a253df366f81aed50894119978d43cb8bbd33f28e1307404a73dc5bd56572c935bc6013e18aaa0f78c63bbb9817e27fbfecb99bfc2ece3bd5121a0f"
+        "sha512": "2c1fdb808a253df366f81aed50894119978d43cb8bbd33f28e1307404a73dc5bd56572c935bc6013e18aaa0f78c63bbb9817e27fbfecb99bfc2ece3bd5121a0f",
+        "downloadUrl": "https://cdn.modrinth.com/data/76H3XX6b/versions/eXcxXIMi/constructionwand-kots-1.21.1-2.16.13.jar"
       },
       {
         "filename": "copycats-3.0.11+mc.1.21.1-neoforge.jar",
@@ -11190,7 +11215,8 @@
         "bytes": 33123131,
         "sha1": "ddbe9cbc25e8f663218aa1e9fdfc4b99f0e11e4b",
         "sha256": "a3f330d4757640f8715d991a43eedb826e4d0e51558d859c843ae6693bd35f1e",
-        "sha512": "dc7e8e1148fa442243889ba29412207137e1bb86206e6c92bc0a589f1374a466e93de22bdbf14f753984d86c29308fbbdc0f14a4b9618b14c0ac1666a36b46f5"
+        "sha512": "dc7e8e1148fa442243889ba29412207137e1bb86206e6c92bc0a589f1374a466e93de22bdbf14f753984d86c29308fbbdc0f14a4b9618b14c0ac1666a36b46f5",
+        "downloadUrl": "https://cdn.modrinth.com/data/oWaK0Q19/versions/44pLdPGg/create-aeronautics-bundled-1.21.1-1.3.2.jar"
       },
       {
         "filename": "create-central-kitchen-2.6.2b.jar",
@@ -11285,7 +11311,8 @@
         "bytes": 8613993,
         "sha1": "c51337940f36cb06be2bcecbd5077b8073ca2025",
         "sha256": "03a5f100d385093ff4b9e68c2ed0d94eae38ba04182f05a424ea1aa6fed2e075",
-        "sha512": "5c0ef94533c19b9b284b5977b8049d2ddd6c69aece4595f1596906c3e4bd60c399aa46c28cf00a127e7abfb0048a517f8669b0ff176e0eb5a255e9dacbbaeac7"
+        "sha512": "5c0ef94533c19b9b284b5977b8049d2ddd6c69aece4595f1596906c3e4bd60c399aa46c28cf00a127e7abfb0048a517f8669b0ff176e0eb5a255e9dacbbaeac7",
+        "downloadUrl": "https://edge.forgecdn.net/files/9658/463/createcraftedbeginning-0.1.1.jar"
       },
       {
         "filename": "createdeco-2.1.3.jar",
@@ -11380,7 +11407,8 @@
         "bytes": 29342344,
         "sha1": "2a1b33ec19916c1f749a873a04a1a549efabe14d",
         "sha256": "d18ff7c2de5a1658de27c1a55f9ffee4e4f1c9538dafe6fd91aa43a4076c87a0",
-        "sha512": "a21b974810de9268bd788d0f4d5c6b388ee762641020b8cc2faa9db58468f6491bdc0370d24b782419c1c98012fc15ff4d105f3748ee69e91334b17824eb83a7"
+        "sha512": "a21b974810de9268bd788d0f4d5c6b388ee762641020b8cc2faa9db58468f6491bdc0370d24b782419c1c98012fc15ff4d105f3748ee69e91334b17824eb83a7",
+        "downloadUrl": "https://edge.forgecdn.net/files/8806/759/eeeabsmobs-1.0.2-neoforge.jar"
       },
       {
         "filename": "eidolon_repraised-1.21.1-0.5.0.8.jar",
@@ -11419,7 +11447,8 @@
         "bytes": 59325382,
         "sha1": "5b9235c764787242085de386aaeb02372b1ab03c",
         "sha256": "e77369ad1a779036b243ef0f7b24776640a3ff84968e6f3be1931bc953e92b09",
-        "sha512": "2bd7d2fbc478b3cc2b6426ff9cffddf8800b46aa2ca5a4570f9d9ed2f50d4aeadc83bea0c5c410bf26c2e9e0c6cc3296cb8adff233787897265aa2d7a1ad9a71"
+        "sha512": "2bd7d2fbc478b3cc2b6426ff9cffddf8800b46aa2ca5a4570f9d9ed2f50d4aeadc83bea0c5c410bf26c2e9e0c6cc3296cb8adff233787897265aa2d7a1ad9a71",
+        "downloadUrl": "https://cdn.modrinth.com/data/XvcfUGfB/versions/IyTc0Vvj/eternalstarlight-0.9.1%2B1.21.1%2Bneoforge.jar"
       },
       {
         "filename": "expedition-alpine-climate-neoforge-1.0.0.jar",
@@ -11618,7 +11647,8 @@
         "bytes": 211671,
         "sha1": "a48e54edeacc59aaba29a1b627799c052112ee0b",
         "sha256": "b8700e8bfd9c78b09bc7819cb28a6318b20d2bf68969bc6894a0bfa39581a99b",
-        "sha512": "7c0228b58f7085a3af929052f6baf93a6a29f2c39c51525630745b34d1c5b12fe8364184ad2ba06b7ecd2225e8ee3b577269f6ee0e5266f8e338756f78cce076"
+        "sha512": "7c0228b58f7085a3af929052f6baf93a6a29f2c39c51525630745b34d1c5b12fe8364184ad2ba06b7ecd2225e8ee3b577269f6ee0e5266f8e338756f78cce076",
+        "downloadUrl": "https://edge.forgecdn.net/files/7429/11/ftb-filter-system-neoforge-21.1.4.jar"
       },
       {
         "filename": "ftb-library-neoforge-2101.1.40.jar",
@@ -11721,7 +11751,8 @@
         "bytes": 12690,
         "sha1": "6252783ff3f6b1887cfadfd859633ae83efed94b",
         "sha256": "3c6ec4e5c3e5e5f507a0dadeafa5273afbed03e9e278020d630ef48be146fcfa",
-        "sha512": "dc02e613d29c389e1c8f023f4ad5dce4b0fd5ed738aa03cc1e571cd6904008b0f74ec152cafdfde8b626fc6eb922f2bd3c8022b4dc72bfa43e1951d5ec5ccf87"
+        "sha512": "dc02e613d29c389e1c8f023f4ad5dce4b0fd5ed738aa03cc1e571cd6904008b0f74ec152cafdfde8b626fc6eb922f2bd3c8022b4dc72bfa43e1951d5ec5ccf87",
+        "downloadUrl": "https://edge.forgecdn.net/files/9233/504/ie-fix-pack-1.1.0%2B1.21.1.jar"
       },
       {
         "filename": "illagerwarship-1.0.1-neoforge-1.21.1.jar",
@@ -12072,7 +12103,8 @@
         "bytes": 7638257,
         "sha1": "f57df895c76ef8dcebda3e6084eb2be914968456",
         "sha256": "cf79c5aef7c68ab0effa66ac3bd5608ae1bda18de0d0e4d92bb0d4442e0b030c",
-        "sha512": "c9a5b4c5e8667888c8494c06b00168d4595836e793fc237f207bab92d8c01419e11fb3c66b68858f8053c3306fd602610ffeb637df68d2eb5d52d8bcf337326b"
+        "sha512": "c9a5b4c5e8667888c8494c06b00168d4595836e793fc237f207bab92d8c01419e11fb3c66b68858f8053c3306fd602610ffeb637df68d2eb5d52d8bcf337326b",
+        "downloadUrl": "https://edge.forgecdn.net/files/9651/586/neoecoae-21.2.18.jar"
       },
       {
         "filename": "netherportalfix-neoforge-1.21.1-21.1.1.jar",
@@ -12199,7 +12231,8 @@
         "bytes": 84812,
         "sha1": "5174059ecf97340a0de5ef211b938de26c4eaa36",
         "sha256": "ccf46c442ed3c7fe41ad056f0940560829ec4dd88360985dfacd78f4614eb167",
-        "sha512": "154d42795ccf1f3e07714775cdb82fd5db17574319286ced13d86b0456b64e4cf5bb89ffbcbfcefce67b73ed0b83e4e2944e493d79d9a385ff9de23006ee7bf5"
+        "sha512": "154d42795ccf1f3e07714775cdb82fd5db17574319286ced13d86b0456b64e4cf5bb89ffbcbfcefce67b73ed0b83e4e2944e493d79d9a385ff9de23006ee7bf5",
+        "downloadUrl": "https://cdn.modrinth.com/data/aaRl8GiW/versions/EE1FHDyD/prickle-neoforge-1.21.1-21.1.11.jar"
       },
       {
         "filename": "protection_pixel-2.2.1-neoforge-1.21.1.jar",
@@ -12286,21 +12319,24 @@
         "bytes": 12986135,
         "sha1": "cf46f7e8c1511f170abcdbee739944f0540549bf",
         "sha256": "9c199157843bf953a47dff625fc5bb41c01a90538d35ad18e6996bbcb8a617c2",
-        "sha512": "76d293ce751a01cb9c095a3659b0a41e03e005480bc9d76dfdc73ec7c2eabf7923740c7b077921d42616673c496cd5143569f2085ddcebe174fd91d81e2a04b8"
+        "sha512": "76d293ce751a01cb9c095a3659b0a41e03e005480bc9d76dfdc73ec7c2eabf7923740c7b077921d42616673c496cd5143569f2085ddcebe174fd91d81e2a04b8",
+        "downloadUrl": "https://cdn.modrinth.com/data/T9PomCSv/versions/fg9dTRz9/sable-neoforge-1.21.1-2.0.6.jar"
       },
       {
         "filename": "sablejade-1.3.0.jar",
         "bytes": 301532,
         "sha1": "beb78d81a4d5768780c8566fa869ced5dbe08263",
         "sha256": "f26e974115226d83ec363e3d327e739c87ded760d781ca0538181094eb4bb9a2",
-        "sha512": "20a0b808b5e1ea0e7251bd9ac5161bd96cf504b054f27f85343980956980210be6b364e8d6cbadbde9a6588550afd24e66ee5f17480839998772dc9de719ad64"
+        "sha512": "20a0b808b5e1ea0e7251bd9ac5161bd96cf504b054f27f85343980956980210be6b364e8d6cbadbde9a6588550afd24e66ee5f17480839998772dc9de719ad64",
+        "downloadUrl": "https://cdn.modrinth.com/data/jCrJ4iGH/versions/cxUohR7A/sablejade-1.3.0.jar"
       },
       {
         "filename": "scguns-1.1.2.jar",
         "bytes": 19584810,
         "sha1": "80396a60063bf784f7344a419c5edeb2a376795a",
         "sha256": "3838933ffdfabc5349ade7e9c3b605f852de8899b7860fc16d01a07ba3b294a6",
-        "sha512": "8aaaeb87ff2a9ccdb8361492c1b8de03107319b4db9a359768872b8ce030b7855536006b91a6278e41634b905de9a58f66edb3f0506b929723779083acbc768c"
+        "sha512": "8aaaeb87ff2a9ccdb8361492c1b8de03107319b4db9a359768872b8ce030b7855536006b91a6278e41634b905de9a58f66edb3f0506b929723779083acbc768c",
+        "downloadUrl": "https://edge.forgecdn.net/files/9668/354/scguns-1.1.2.jar"
       },
       {
         "filename": "servercore-neoforge-1.5.19+1.21.1.jar",
@@ -12395,7 +12431,8 @@
         "bytes": 15788,
         "sha1": "8df7e87da300deb288de26295ecd2fe05e67c07b",
         "sha256": "ef49f8fa00f177883db6ab47e4037d059959f328b5d827532ec5edc1277b8c94",
-        "sha512": "4ba07de342435d1ba381706598cee740dae5288d307fb8c5e86ff62f521b85fb2e8d40e263bb57473cc3fdcd45443218ac5c9203440c820a97dad13a580bf47c"
+        "sha512": "4ba07de342435d1ba381706598cee740dae5288d307fb8c5e86ff62f521b85fb2e8d40e263bb57473cc3fdcd45443218ac5c9203440c820a97dad13a580bf47c",
+        "downloadUrl": "https://cdn.modrinth.com/data/STXpfCzs/versions/W2zYcA2c/streq-1.0.10.jar"
       },
       {
         "filename": "structureessentials-1.21.1-5.1.jar",

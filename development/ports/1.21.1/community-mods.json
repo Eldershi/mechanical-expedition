@@ -177,5 +177,55 @@
     "version": "0.1.1",
     "sha256": "03a5f100d385093ff4b9e68c2ed0d94eae38ba04182f05a424ea1aa6fed2e075",
     "side": "BOTH"
+  },
+  "ars_controle": {
+    "file": {
+      "filename": "ars_controle-1.21.1-1.6.16.jar",
+      "url": "https://cdn.modrinth.com/data/gL8ijqNQ/versions/r7YxZN9m/ars_controle-1.21.1-1.6.16.jar",
+      "source": "https://modrinth.com/mod/ars-controle/version/r7YxZN9m",
+      "sha1": "795567371450debec83fe634fd0114c295f7da5a"
+    },
+    "version": "1.6.16",
+    "sha256": "595990b532b7e8cf23a5897c39edcdd9add52f208be9517ff7304e3b35361441"
+  },
+  "common_storage_lib": {
+    "file": {
+      "filename": "common-storage-lib-neoforge-1.21.1-0.0.10.jar",
+      "url": "https://cdn.modrinth.com/data/RgLrNK7l/versions/SCkdlli6/common-storage-lib-neoforge-1.21.1-0.0.10.jar",
+      "source": "https://modrinth.com/mod/RgLrNK7l/version/SCkdlli6",
+      "sha1": "e0ba85038480d50a3816d5920014bfcccdbe7329"
+    },
+    "version": "0.0.10",
+    "sha256": "921bd8d255a65b5e21a5c74aa661d1ea4ed034febcfbb5939da054ce08f9d109"
+  },
+  "eternal_starlight": {
+    "file": {
+      "filename": "eternalstarlight-0.9.1+1.21.1+neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/XvcfUGfB/versions/IyTc0Vvj/eternalstarlight-0.9.1%2B1.21.1%2Bneoforge.jar",
+      "source": "https://modrinth.com/mod/eternal-starlight/version/IyTc0Vvj",
+      "sha1": "5b9235c764787242085de386aaeb02372b1ab03c"
+    },
+    "version": "0.9.1+1.21.1+neoforge",
+    "sha256": "e77369ad1a779036b243ef0f7b24776640a3ff84968e6f3be1931bc953e92b09"
+  },
+  "ie_fix_pack": {
+    "file": {
+      "filename": "ie-fix-pack-1.1.0+1.21.1.jar",
+      "url": "https://edge.forgecdn.net/files/9233/504/ie-fix-pack-1.1.0%2B1.21.1.jar",
+      "source": "https://www.curseforge.com/minecraft/mc-mods/immersive-engineering-fix-pack/files/9233504",
+      "sha1": "6252783ff3f6b1887cfadfd859633ae83efed94b"
+    },
+    "version": "1.1.0",
+    "sha256": "3c6ec4e5c3e5e5f507a0dadeafa5273afbed03e9e278020d630ef48be146fcfa"
+  },
+  "prickle": {
+    "file": {
+      "filename": "prickle-neoforge-1.21.1-21.1.11.jar",
+      "url": "https://cdn.modrinth.com/data/aaRl8GiW/versions/EE1FHDyD/prickle-neoforge-1.21.1-21.1.11.jar",
+      "source": "https://modrinth.com/mod/prickle/version/EE1FHDyD",
+      "sha1": "5174059ecf97340a0de5ef211b938de26c4eaa36"
+    },
+    "version": "21.1.11",
+    "sha256": "ccf46c442ed3c7fe41ad056f0940560829ec4dd88360985dfacd78f4614eb167"
   }
 }
