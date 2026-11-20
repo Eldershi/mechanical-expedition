@@ -5135,15 +5135,15 @@
       }
     },
     {
-      "path": "config/paxi/resourcepacks/create-style-foundry-1.1.0-neoforge-1.21.1.zip",
+      "path": "config/paxi/resourcepacks/create-style-foundry-1.1.1-neoforge-1.21.1.zip",
       "hashes": {
-        "sha1": "412f46570e67494e5ed7b34fdb230dd7a681fa03",
-        "sha512": "334bac88453ca85a83151f273f8f044e079738de8874431ea6d43d9a3f8ea53aa85fa79d46998e3b360901412efe89bf89ab2d64142ef436ed6e1917b03d2aad"
+        "sha1": "0dcf0f3c5b936d33188562e682a368b4208531ce",
+        "sha512": "043dea18994d9a818598738b3aeb096fd4f6406c5498d78b97d8c2068cd8a43473e7e880329daba16b053ce91df452f50f5cf83bea38dc1b5b9b885e54c60c2d"
       },
       "downloads": [
-        "https://github.com/Eldershi/create-style-foundry/releases/download/v1.1.0/create-style-foundry-1.1.0-neoforge-1.21.1.zip"
+        "https://github.com/Eldershi/create-style-foundry/releases/download/v1.1.1/create-style-foundry-1.1.1-neoforge-1.21.1.zip"
       ],
-      "fileSize": 140248,
+      "fileSize": 139971,
       "env": {
         "client": "required",
         "server": "unsupported"

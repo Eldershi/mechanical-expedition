@@ -2,26 +2,26 @@
   "schemaVersion": 1,
   "id": "create-style-foundry",
   "repository": "https://github.com/Eldershi/create-style-foundry",
-  "ref": "161df3a4f103f5d4fe8ee4ffaef8cdcfe54486b0",
-  "release": "v1.1.0",
+  "ref": "03beb49f31ca819652c183020ff1213b3b06181f",
+  "release": "v1.1.1",
   "minecraft": "1.21.1",
   "artifacts": [
     {
-      "name": "create-style-foundry-1.1.0-neoforge-1.21.1.zip",
-      "url": "https://github.com/Eldershi/create-style-foundry/releases/download/v1.1.0/create-style-foundry-1.1.0-neoforge-1.21.1.zip",
-      "bytes": 140248,
-      "sha256": "3a176f0bcbd25838388d78404d14eedd8ca1a084bc035539ee33bf1f89b340b4"
+      "name": "create-style-foundry-1.1.1-neoforge-1.21.1.zip",
+      "url": "https://github.com/Eldershi/create-style-foundry/releases/download/v1.1.1/create-style-foundry-1.1.1-neoforge-1.21.1.zip",
+      "bytes": 139971,
+      "sha256": "2741063520f02f5c18e06e43fba1e1929e254db034fd14ec5f0e54590c48b7ec"
     }
   ],
   "clientFiles": [
     {
-      "path": "config/paxi/resourcepacks/create-style-foundry-1.1.0-neoforge-1.21.1.zip",
-      "officialVersionPage": "https://github.com/Eldershi/create-style-foundry/releases/tag/v1.1.0",
-      "downloadUrl": "https://github.com/Eldershi/create-style-foundry/releases/download/v1.1.0/create-style-foundry-1.1.0-neoforge-1.21.1.zip",
-      "bytes": 140248,
-      "sha1": "412f46570e67494e5ed7b34fdb230dd7a681fa03",
-      "sha256": "3a176f0bcbd25838388d78404d14eedd8ca1a084bc035539ee33bf1f89b340b4",
-      "sha512": "334bac88453ca85a83151f273f8f044e079738de8874431ea6d43d9a3f8ea53aa85fa79d46998e3b360901412efe89bf89ab2d64142ef436ed6e1917b03d2aad"
+      "path": "config/paxi/resourcepacks/create-style-foundry-1.1.1-neoforge-1.21.1.zip",
+      "officialVersionPage": "https://github.com/Eldershi/create-style-foundry/releases/tag/v1.1.1",
+      "downloadUrl": "https://github.com/Eldershi/create-style-foundry/releases/download/v1.1.1/create-style-foundry-1.1.1-neoforge-1.21.1.zip",
+      "bytes": 139971,
+      "sha1": "0dcf0f3c5b936d33188562e682a368b4208531ce",
+      "sha256": "2741063520f02f5c18e06e43fba1e1929e254db034fd14ec5f0e54590c48b7ec",
+      "sha512": "043dea18994d9a818598738b3aeb096fd4f6406c5498d78b97d8c2068cd8a43473e7e880329daba16b053ce91df452f50f5cf83bea38dc1b5b9b885e54c60c2d"
     }
   ]
 }
