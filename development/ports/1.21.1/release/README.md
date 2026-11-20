@@ -2,7 +2,7 @@
 
 Minecraft 1.21.1、NeoForge 21.1.267、Java 21。构建进入 `migration/1.21.1-neoforge` 或对应的 `v1.21.1-test.N`。
 
-1. 使用已验证的客户端和专用服输入，运行 [测试实例安装器](../world-server/space/install.py)。安装器使用 Pillow 从客户端模组构建焦黑冶炼材质包，并安装两端的配方覆盖。
+1. 使用已验证的客户端和专用服输入，运行 [测试实例安装器](../world-server/space/install.py)。安装器使用 Pillow 从客户端模组构建焦黑与焦褐系列的材质包，并安装两端的配方覆盖。
 2. 运行 `python3 development/ports/1.21.1/release/package_test.py validate` 检查分支和发布清单。
 3. 运行 `python3 development/ports/1.21.1/release/package_test.py package --client <client> --server <server> --output <dir>`，生成客户端 MRPACK、服务端覆盖层 ZIP 和 SHA256SUMS。
 

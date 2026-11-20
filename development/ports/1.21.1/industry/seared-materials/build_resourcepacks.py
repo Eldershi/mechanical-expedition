@@ -1,6 +1,7 @@
 """Build the Forge and NeoForge resource packs from locally installed mod JARs."""
 
 import argparse
+from dataclasses import dataclass
 from io import BytesIO
 import json
 from pathlib import Path
@@ -10,13 +11,40 @@ from PIL import Image
 
 CREATE_BRICK = "assets/create/textures/block/palettes/stone_types/brick/scorchia_cut_brick.png"
 CREATE_SMALL_BRICK = "assets/create/textures/block/palettes/stone_types/small_brick/scorchia_cut_small_brick.png"
-SMELTERY = "textures/block/smeltery/"
+SMELTERY = "block/smeltery/"
+FOUNDRY = "block/foundry/"
 BRICKS = "seared/bricks"
 FANCY_BRICKS = "seared/fancy_bricks"
 GLASS = "seared_glass"
-PANE_FAMILIES = {"glass": GLASS, "soul_glass": "soul_glass"}
+PANE_FAMILIES = {SMELTERY: GLASS, FOUNDRY: "glass"}
 PANE_MODELS = ("pane_post", "pane_side", "pane_side_alt",
                "pane_noside", "pane_noside_alt", "pane_noside_edge")
+SCORIA = "assets/create/textures/block/palettes/stone_types/"
+SCORCHED_BRICKS = "scorched/bricks"
+FOUNDRY_STONE_TEXTURES = {
+    SCORCHED_BRICKS: "small_brick/scoria_cut_small_brick",
+    "scorched/stone_top": "scoria",
+    "scorched/stone_side": "cut/scoria_cut",
+    "scorched/polished_side": "polished/scoria_cut_polished",
+    "scorched/polished_top": "cap/scoria_cut_cap",
+    "scorched/road": "layered/scoria_cut_layered",
+    "scorched/chiseled": "alternatives/scoria_cut_indented",
+}
+FOUNDRY_BRICK_BACKGROUNDS = (
+    "controller/foundry_", "controller/alloyer_side",
+    "io/chute_", "io/drain_", "io/duct_",
+    "tank/fuel_tank", "tank/ingot_tank",
+)
+SCORCHED_STONE_COLORS = {
+    (25, 20, 17): (46, 30, 38),
+    (36, 29, 25): (58, 41, 42),
+    (45, 35, 29): (62, 44, 50),
+    (50, 39, 32): (68, 51, 48),
+    (62, 48, 41): (73, 58, 51),
+    (72, 58, 50): (78, 62, 54),
+    (83, 69, 60): (89, 71, 62),
+    (102, 85, 74): (108, 87, 76),
+}
 
 BRICK_BACKGROUNDS = (
     "controller/heater_",
@@ -57,11 +85,25 @@ BRASS_COLORS = {
     (253, 245, 95): (238, 193, 104),
     (255, 253, 224): (255, 235, 140),
 }
-GLASS_REFLECTION = {
-    (4, 2): (57, 69, 65, 255),
-    (3, 3): (83, 100, 93, 255),
-    (2, 4): (83, 100, 93, 255),
-}
+
+
+@dataclass(frozen=True)
+class GlassColors:
+    edges: tuple
+    reflection: tuple
+    pane_edge: tuple
+
+
+SMELTERY_GLASS = GlassColors(
+    ((34, 39, 37), (22, 26, 26), (70, 82, 74), (50, 59, 54)),
+    ((57, 69, 65), (83, 100, 93)),
+    ((65, 76, 69), (30, 35, 33)),
+)
+FOUNDRY_GLASS = GlassColors(
+    ((62, 44, 50), (46, 30, 38), (89, 71, 62), (73, 58, 51)),
+    ((84, 66, 58), (108, 87, 76)),
+    ((89, 71, 62), (58, 41, 42)),
+)
 
 DEVICE_TEXTURES = (
     "io/back",
@@ -116,7 +158,7 @@ CONNECTIONS = (
 
 
 def asset_name(namespace, name):
-    return f"assets/{namespace}/{SMELTERY}{name}.png"
+    return f"assets/{namespace}/textures/{name}.png"
 
 
 def read_png(jar, path):
@@ -130,10 +172,9 @@ def encode_png(image):
     return output.getvalue()
 
 
-def remap_device(name, image, original_brick, create_brick):
+def remap_surface(image, stone_colors, metal_colors=None, bricks=None):
     result = image.copy()
-    shared_bricks = name.startswith(BRICK_BACKGROUNDS) or name == "seared/cracked_bricks"
-    metal_colors = BRASS_COLORS if name.startswith("io/duct_") else ANDESITE_COLORS
+    metal_colors = metal_colors or {}
 
     for y in range(image.height):
         for x in range(image.width):
@@ -144,19 +185,19 @@ def remap_device(name, image, original_brick, create_brick):
             if rgb in metal_colors:
                 result.putpixel((x, y), (*metal_colors[rgb], alpha))
                 continue
-            if rgb not in STONE_COLORS:
+            if rgb not in stone_colors:
                 continue
 
             brick_xy = x, y % 16
-            if shared_bricks and pixel == original_brick.getpixel(brick_xy):
-                result.putpixel((x, y), create_brick.getpixel(brick_xy))
+            if bricks and pixel == bricks[0].getpixel(brick_xy):
+                result.putpixel((x, y), bricks[1].getpixel(brick_xy))
             else:
-                result.putpixel((x, y), (*STONE_COLORS[rgb], alpha))
+                result.putpixel((x, y), (*stone_colors[rgb], alpha))
 
     return result
 
 
-def glass_frame(connections, original=None, pane=False):
+def glass_frame(connections, colors, original=None, pane=False):
     image = Image.new("RGBA", (16, 16))
     fill = original.getpixel((8, 8)) if original else (0, 0, 0, 0)
     # The native pane model stops at its 2-pixel post on an unjoined side.
@@ -176,68 +217,103 @@ def glass_frame(connections, original=None, pane=False):
                 continue
 
             distance, side = min(edges, key=lambda edge: edge[0])
-            if distance == 0:
-                color = (34, 39, 37) if side in "ul" else (22, 26, 26)
-            elif distance == 1:
-                color = (70, 82, 74) if side in "ul" else (50, 59, 54)
-            else:
-                continue
-            image.putpixel((x, y), (*color, 255))
-    for point, color in GLASS_REFLECTION.items():
-        x, y = point
-        if right - left >= 6:
-            image.putpixel((x + left, y), color)
+            if distance < 2:
+                color = colors.edges[2 * distance + (side not in "ul")]
+                image.putpixel((x, y), (*color, 255))
+    if right - left >= 6:
+        tip, shine = colors.reflection
+        for x, y, color in ((4, 2, tip), (3, 3, shine), (2, 4, shine)):
+            image.putpixel((x + left, y), (*color, 255))
     return image
 
 
-def glass_pane_edge():
+def glass_pane_edge(colors):
     image = Image.new("RGBA", (16, 16))
+    light, dark = colors.pane_edge
     for y in range(16):
-        image.putpixel((7, y), (65, 76, 69, 255))
-        image.putpixel((8, y), (30, 35, 33, 255))
+        image.putpixel((7, y), (*light, 255))
+        image.putpixel((8, y), (*dark, 255))
     return image
 
 
-def build_texture_set(mod, create, namespace):
-    old_brick = read_png(mod, asset_name(namespace, BRICKS))
+def build_glass_textures(mod, namespace, area, clear_glass, colors):
+    textures = {}
+    native = set(mod.namelist())
+    for name in (clear_glass, "soul_glass", "tinted_glass"):
+        path = area + name
+        original = read_png(mod, asset_name(namespace, path)) if name != clear_glass else None
+        textures[path] = encode_png(glass_frame("", colors, original))
+        if asset_name(namespace, path + "/normal") in native:
+            textures[path + "/normal"] = textures[path]
+        for connection in CONNECTIONS[1:]:
+            textures[f"{path}/{connection}"] = encode_png(glass_frame(connection, colors, original))
+        if name != "tinted_glass":
+            pane = path + "_pane"
+            textures[pane] = encode_png(glass_frame("", colors, original, pane=True))
+            for connection in CONNECTIONS[1:]:
+                textures[f"{pane}/{connection}"] = encode_png(glass_frame(connection, colors, original, pane=True))
+    textures[f"{area}{clear_glass}_top"] = encode_png(glass_pane_edge(colors))
+    return textures
+
+
+def build_seared_textures(mod, create, namespace):
+    old_brick = read_png(mod, asset_name(namespace, SMELTERY + BRICKS))
     create_brick = read_png(create, CREATE_BRICK)
     if old_brick.size != (16, 16) or create_brick.size != (16, 16):
         raise ValueError("Expected 16×16 brick textures")
 
     textures = {
-        BRICKS: create.read(CREATE_BRICK),
-        FANCY_BRICKS: create.read(CREATE_SMALL_BRICK),
+        SMELTERY + BRICKS: create.read(CREATE_BRICK),
+        SMELTERY + FANCY_BRICKS: create.read(CREATE_SMALL_BRICK),
     }
     for name in DEVICE_TEXTURES:
-        image = read_png(mod, asset_name(namespace, name))
-        textures[name] = encode_png(remap_device(name, image, old_brick, create_brick))
-
-    textures[GLASS] = encode_png(glass_frame(""))
-    textures[f"{GLASS}_top"] = encode_png(glass_pane_edge())
-    for connection in CONNECTIONS:
-        textures[f"{GLASS}/{connection}"] = encode_png(
-            glass_frame("" if connection == "normal" else connection)
-        )
-    for glass in ("soul_glass", "tinted_glass"):
-        original = read_png(mod, asset_name(namespace, glass))
-        textures[glass] = encode_png(glass_frame("", original))
-        for connection in CONNECTIONS[1:]:
-            textures[f"{glass}/{connection}"] = encode_png(glass_frame(connection, original))
-    for glass in PANE_FAMILIES.values():
-        original = read_png(mod, asset_name(namespace, glass)) if glass != GLASS else None
-        pane = glass + "_pane"
-        textures[pane] = encode_png(glass_frame("", original, pane=True))
-        for connection in CONNECTIONS[1:]:
-            textures[f"{pane}/{connection}"] = encode_png(glass_frame(connection, original, pane=True))
-
+        path = SMELTERY + name
+        image = read_png(mod, asset_name(namespace, path))
+        bricks = (old_brick, create_brick) if name.startswith(BRICK_BACKGROUNDS) or name == "seared/cracked_bricks" else None
+        metal = BRASS_COLORS if name.startswith("io/duct_") else ANDESITE_COLORS
+        textures[path] = encode_png(remap_surface(image, STONE_COLORS, metal, bricks))
+    textures.update(build_glass_textures(mod, namespace, SMELTERY, GLASS, SMELTERY_GLASS))
     return textures
+
+
+def build_scorched_textures(mod, create, namespace):
+    textures = {
+        FOUNDRY + target: create.read(f"{SCORIA}{source}.png")
+        for target, source in FOUNDRY_STONE_TEXTURES.items()
+    }
+    textures.update(build_glass_textures(mod, namespace, FOUNDRY, "glass", FOUNDRY_GLASS))
+    brick_path = FOUNDRY + SCORCHED_BRICKS
+    old_brick = read_png(mod, asset_name(namespace, brick_path))
+    with Image.open(BytesIO(textures[brick_path])) as replacement:
+        bricks = old_brick, replacement.convert("RGBA")
+
+    prefix = f"assets/{namespace}/textures/{FOUNDRY}"
+    surfaces = [
+        FOUNDRY + asset.removeprefix(prefix).removesuffix(".png")
+        for asset in mod.namelist() if asset.startswith(prefix) and asset.endswith(".png")
+    ]
+    surfaces.extend(("block/table/scorched_anvil_base", "block/table/scorched_anvil_base_upper",
+                     "item/materials/scorched_brick"))
+    for path in surfaces:
+        if path in textures:
+            continue
+        image = read_png(mod, asset_name(namespace, path))
+        shared = bricks if path.removeprefix(FOUNDRY).startswith(FOUNDRY_BRICK_BACKGROUNDS) else None
+        result = remap_surface(image, SCORCHED_STONE_COLORS, bricks=shared)
+        if image.tobytes() != result.tobytes():
+            textures[path] = encode_png(result)
+    return textures
+
+
+def build_texture_set(mod, create, namespace):
+    return build_seared_textures(mod, create, namespace) | build_scorched_textures(mod, create, namespace)
 
 
 def write_pack(path, mod, namespace, pack_format, textures):
     resources = {"pack.mcmeta": json.dumps({
         "pack": {
             "pack_format": pack_format,
-            "description": "Create-style seared smeltery and dark framed glass",
+            "description": "Create-style seared smeltery, scorched foundry, and framed glass",
         }
     }, indent=2) + "\n"}
     mod_files = set(mod.namelist())
@@ -250,12 +326,13 @@ def write_pack(path, mod, namespace, pack_format, textures):
         if target + ".mcmeta" in mod_files:
             resources[target + ".mcmeta"] = mod.read(target + ".mcmeta")
 
-    for folder, glass in PANE_FAMILIES.items():
-        for model in PANE_MODELS:
-            target = f"assets/{namespace}/models/block/smeltery/{folder}/{model}.json"
-            original = json.loads(mod.read(target))
-            original["textures"]["pane"] = f"{namespace}:block/smeltery/{glass}_pane"
-            resources[target] = json.dumps(original, indent=2) + "\n"
+    for area, clear_glass in PANE_FAMILIES.items():
+        for folder, glass in (("glass", clear_glass), ("soul_glass", "soul_glass")):
+            for model in PANE_MODELS:
+                target = f"assets/{namespace}/models/{area}{folder}/{model}.json"
+                original = json.loads(mod.read(target))
+                original["textures"]["pane"] = f"{namespace}:{area}{glass}_pane"
+                resources[target] = json.dumps(original, indent=2) + "\n"
 
     with ZipFile(path, "w", compression=ZIP_DEFLATED) as pack:
         for name, data in sorted(resources.items()):

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Install the seared smeltery assets and NeoForge recipes into prepared instances."""
+"""Install the smeltery and foundry resource pack and NeoForge recipes."""
 
 import argparse
 import json
