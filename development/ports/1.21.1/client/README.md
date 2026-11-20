@@ -10,4 +10,6 @@ Build the resource compatibility packs with `build_visual_overlays.py compatibil
 
 Distant Horizons 3.3.3 uses a 64-chunk LOD radius and four worker threads on the client. Build its Chunky compatibility adapter with `build.py --adapter chunky` and its client queue adapter with `build.py --adapter performance`. The dedicated server uses the Chunky adapter and a separate Distant Horizons configuration with two worker threads and LOD generation from existing chunks.
 
+The client performance adapter uses Sodium 0.8.13's horizontal terrain radius for all elevations. Client builds exclude Better FPS Render Distance, which would apply a second distance check to terrain and entities.
+
 Build the inventory accessory entry with `build.py --adapter accessory-entry` and install the JAR on the client. The inventory button opens Curios, the Aether accessory screen, and the Accessories screen through their native menu handlers.

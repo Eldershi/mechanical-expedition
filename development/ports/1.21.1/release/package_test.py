@@ -32,6 +32,8 @@ SERVER_DIAGNOSTICS = Path("config/expedition-diagnostics.json")
 MECHANISM_LANGUAGE = Path("kubejs/client_scripts/ExpeditionMechanismLanguage.js")
 MECHANISM_LANGUAGE_SOURCE = HERE.parent / "industry" / MECHANISM_LANGUAGE
 MECHANISM_TEXTURES = Path("kubejs/assets/cmi/textures/item/mechanism")
+BETTER_FPS_CONFIG = Path("config/betterfpsdist.json")
+CLIENT_PERFORMANCE_MOD = "expedition-client-performance-neoforge-1.0.1.jar"
 
 
 def json_file(path):
@@ -80,6 +82,7 @@ def excluded(relative):
         or name.lower().endswith((".log", ".bak", ".old", ".db", ".tmp", ".sqlite"))
         or re.search(r"(?i)(?:last_world|activity\.json|fingerprint|bookmark|servers\.dat|resourceful-config-web)", name)
         or (name.endswith(".zip") and PRIVATE_PACK.search(name))
+        or relative == BETTER_FPS_CONFIG
         or (parts[0] == "kubejs" and len(parts) > 1 and parts[1] not in KUBEJS_DIRS)
         or (parts[:2] == ("config", "spark") and name != "config.json")
     )
@@ -152,12 +155,19 @@ def known_downloads(inputs):
     return records
 
 
-def mod_inputs(instance):
+def retired_distance_mod(name):
+    return name.startswith("betterfpsdist-") or (
+        name.startswith("expedition-client-performance-neoforge-") and name != CLIENT_PERFORMANCE_MOD
+    )
+
+
+def mod_inputs(instance, client):
     choices = sorted((instance / "mods").glob("*.jar"))
-    choices = [f for f in choices if not f.is_symlink() and not re.search(r"(?i)expedition.*(?:-qa-|proof|probe)", f.name)]
+    choices = [f for f in choices if not f.is_symlink() and not retired_distance_mod(f.name)
+               and not re.search(r"(?i)expedition.*(?:-qa-|proof|probe)", f.name)]
     names = {p.name for p in choices}
     for required in ("adastra-1.21.1-1.16.26-neoforge.jar", "createcraftedbeginning-0.1.1.jar",
-                     *production_overlay.REQUIRED_MODS):
+                     *production_overlay.REQUIRED_MODS, *((CLIENT_PERFORMANCE_MOD,) if client else ())):
         if required not in names:
             raise ValueError(f"Missing tested NeoForge input: {required}")
     return choices
@@ -176,7 +186,7 @@ def check_mechanism_animations(files):
 
 def snapshot(instance, downloads, client=False):
     mods = []
-    for file in mod_inputs(instance):
+    for file in mod_inputs(instance, client):
         hashes = fingerprints(file)
         row = {"filename": file.name, "bytes": file.stat().st_size, **hashes}
         url = downloads.get((file.name, hashes["sha1"]))
@@ -222,7 +232,7 @@ def build_archive(output, instance, lock, meta, client):
     overlay = dict(selected(instance, client=client))
     if {name.as_posix(): hashlib.sha256(data).hexdigest() for name, data in overlay.items()} != lock["files"]:
         raise ValueError(f"{'Client' if client else 'Server'} configuration snapshot differs from its lock")
-    mods = {p.name: p for p in mod_inputs(instance)}
+    mods = {p.name: p for p in mod_inputs(instance, client)}
     if set(mods) != {row["filename"] for row in lock["mods"]}:
         raise ValueError("Mod inventory differs from its lock")
     prefix = "overrides/" if client else ""
@@ -262,6 +272,11 @@ def main():
             raise ValueError("Test manifest, mod lock and Modrinth index must match")
         if index != index_for(meta, lock["client"]):
             raise ValueError("Modrinth index differs from the client lock and download references")
+        client_mods = {row["filename"] for row in lock["client"]["mods"]}
+        if CLIENT_PERFORMANCE_MOD not in client_mods or any(map(retired_distance_mod, client_mods)):
+            raise ValueError("The client lock must include the current Expedition Client Performance adapter")
+        if BETTER_FPS_CONFIG.as_posix() in lock["client"]["files"]:
+            raise ValueError("Better FPS Render Distance configuration must be excluded")
         language_hash = hashlib.sha256(MECHANISM_LANGUAGE_SOURCE.read_bytes()).hexdigest()
         if lock["client"]["files"].get(MECHANISM_LANGUAGE.as_posix()) != language_hash:
             raise ValueError("The client lock must include the current CMI mechanism translations")

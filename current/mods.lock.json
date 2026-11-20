@@ -316,7 +316,6 @@
       "config/bclib/main.json": "4eb99605d7138f850900f86d11c987e6d53e4257dfa6e939dd4f84a16e49d94c",
       "config/better-advanced-tooltips-client.toml": "167486d8ac09ab9959c9b98c97c169365eaa9e5be0488b9ff8e6a04695d456e0",
       "config/betteradvancements-client.toml": "5b965898d5b13c5557b603c68ed4ac79a4f850f3a7205eb3dbfc6116f2caf19a",
-      "config/betterfpsdist.json": "f5c8e910c99faed4edfe7e9ef1f0128aad30b5df0c006ec5a0e19631e13cbf03",
       "config/biomesoplenty/biome_toggles.json": "adcd92e2dd2d6ca3528b4ded3a159fce6f4a3951e815d60494dc277d12289106",
       "config/biomesoplenty/gameplay.toml": "659a0e32bcbb7c13496cde1bcbc8f72291a2f5baef118f6ad23c46fa0edae8f4",
       "config/biomesoplenty/generation.toml": "ccc1fa8609ad0682df42623818265c46c92dc7b7fe04dce19414ab29aa291a99",
@@ -5422,14 +5421,6 @@
         "downloadUrl": "https://cdn.modrinth.com/data/7bdKEtKC/versions/oXFXNq58/bclib-21.0.29.jar"
       },
       {
-        "filename": "betterfpsdist-1.21.1-6.1.jar",
-        "bytes": 23505,
-        "sha1": "9c499f5133ebeed43da4ce42d48bf747cead6d24",
-        "sha256": "0c9a93977f574563b3fa425a8ea934333ce8ae4e282771dd3bcd4248d56f1b03",
-        "sha512": "10f8a202d3f8b4793153bb67113da52d9bb4ca757c62eaa7cafe9cf8e047ccae830392d6521eb81ebd4db581c6b6e9c7c2b81d517797f1d8833871a6aa0b8b10",
-        "downloadUrl": "https://edge.forgecdn.net/files/8319/712/betterfpsdist-1.21.1-6.1.jar"
-      },
-      {
         "filename": "bigcontraptions-neoforge-1.0.jar",
         "bytes": 5861,
         "sha1": "cf1af44de7042f26fce74549130e1eb7d937ced8",
@@ -5914,11 +5905,11 @@
         "sha512": "e23f1581f05a00494c05c3a2383b0f77d5d24f0f6e8dd67d197c9f0f113446eb81b3e2686cdc09d1d4b5090afe280e315d8dcbfb96c06faf63dd52ee5c09bf1f"
       },
       {
-        "filename": "expedition-client-performance-neoforge-1.0.0.jar",
-        "bytes": 1888,
-        "sha1": "a4d8ae1989a880455038eeea55b23ec09c4455a7",
-        "sha256": "a8270a4baa992b18d8921ac75f5d72154f6b61960a5f3b65d0d367ecdb4dda9a",
-        "sha512": "f129a32f17f1d6e5e48a0f78aac41e57b8d3c99dd8ab81882127a4656248278022696a3ad1083e64bf8d79089c5fb65313fa854e3db3b832ebb21a58c68489df"
+        "filename": "expedition-client-performance-neoforge-1.0.1.jar",
+        "bytes": 2608,
+        "sha1": "d9a414eebc9b23cbcbce8f6d9fa803479b49d180",
+        "sha256": "93cbd10d463a97bc647e23b0af002fad97c39ade559156b5e648bb69a6beed6f",
+        "sha512": "040b2d0dfe03e2c542736048101cc0bc24203357e48219146f14193541e5451b0945e189e5d79ecf66dde0cddda595b3034cbbd10bd6fdaa2116c2895df57242"
       },
       {
         "filename": "expedition-create-logistics-neoforge-1.0.0.jar",

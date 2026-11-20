@@ -1790,21 +1790,6 @@
       }
     },
     {
-      "path": "mods/betterfpsdist-1.21.1-6.1.jar",
-      "hashes": {
-        "sha1": "9c499f5133ebeed43da4ce42d48bf747cead6d24",
-        "sha512": "10f8a202d3f8b4793153bb67113da52d9bb4ca757c62eaa7cafe9cf8e047ccae830392d6521eb81ebd4db581c6b6e9c7c2b81d517797f1d8833871a6aa0b8b10"
-      },
-      "downloads": [
-        "https://edge.forgecdn.net/files/8319/712/betterfpsdist-1.21.1-6.1.jar"
-      ],
-      "fileSize": 23505,
-      "env": {
-        "client": "required",
-        "server": "unsupported"
-      }
-    },
-    {
       "path": "mods/bigcontraptions-neoforge-1.0.jar",
       "hashes": {
         "sha1": "cf1af44de7042f26fce74549130e1eb7d937ced8",

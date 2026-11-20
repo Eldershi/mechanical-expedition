@@ -41,9 +41,10 @@ ADAPTERS = {
         "id": "expedition_client_performance",
         "filename": "expedition-client-performance",
         "name": "Expedition Client Performance",
+        "version": "1.0.1",
         "package": "expedition.performance.client",
-        "mixins": ["DhQueueBackoff"],
-        "deps": {"distanthorizons": "3.3.3"},
+        "mixins": ["DhQueueBackoff", "SodiumVerticalRenderDistance"],
+        "deps": {"distanthorizons": "3.3.3", "sodium": "0.8.13+mc1.21.1"},
     },
     "armor-display": {
         "id": "expedition_armor_display",
