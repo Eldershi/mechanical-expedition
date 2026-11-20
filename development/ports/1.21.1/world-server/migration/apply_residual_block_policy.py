@@ -24,6 +24,11 @@ FLOWER_DATA = {
     "terramity:gaia_lily_ready": set(),
     "forbidden_arcanus:nipa": {"LastSpeck", "Players"},
 }
+RETIRED_ENTITY_DATA = {
+    "malum:void_conduit": {"progress", "streak", "lingeringRadiance"},
+    "terramity:cardboard_box": {"Items"},
+    "terramity:cardboard_box_marked": {"Items", "LootTable", "LootTableSeed"},
+}
 ENTITY_COORDINATES = {"id", "x", "y", "z", "keepPacked", "ForgeCaps"}
 
 
@@ -71,6 +76,11 @@ def handle_entities(old, mode, entities, positions, world, loot_tables):
             if set(entity) - ENTITY_COORDINATES - FLOWER_DATA[old] or entity.get("Players") or entity.get("ForgeCaps"):
                 raise ValueError(f"Plant {old} at {position} has unhandled saved data")
             del entities[position]
+        elif mode == "retired_entity" and entity["id"] == old and old in RETIRED_ENTITY_DATA:
+            active = ("Items", "ForgeCaps", "progress", "streak", "lingeringRadiance")
+            if set(entity) - ENTITY_COORDINATES - RETIRED_ENTITY_DATA[old] or any(entity.get(k) for k in active):
+                raise ValueError(f"Retired block {old} at {position} has unhandled saved data")
+            del entities[position]
         else:
             raise ValueError(f"Incompatible block entity for {old} at {position}")
 
@@ -88,7 +98,7 @@ def compact(states, palette, values):
     write_indices(states, result, np.asarray(remap, dtype=np.intp)[values])
 
 
-def update_chunk(chunk, dimension, policy, catalog, world, loot_tables, report):
+def update_chunk(chunk, dimension, policy, catalog, world, loot_tables, retired_fluids, report):
     entities = {tuple(int(e[k]) for k in "xyz"): e for e in chunk.get("block_entities", ())}
     if len(entities) != len(chunk.get("block_entities", ())):
         raise ValueError("Duplicate saved block entity position")
@@ -116,7 +126,7 @@ def update_chunk(chunk, dimension, policy, catalog, world, loot_tables, report):
             if rule.get("entity") or entity_sections[sy]:
                 positions = [block_position(chunk, section, int(slot)) for slot in occupied]
                 handle_entities(old, rule.get("entity"), entities, positions, world, loot_tables)
-            if new in AIR and "block_ticks" in chunk:
+            if new in AIR and chunk.get("block_ticks"):
                 removed_ticks.update((old, *block_position(chunk, section, int(slot))) for slot in occupied)
             palette[i] = replacement
             row = report.setdefault(old, {"targets": Counter(), "examples": []})
@@ -138,6 +148,12 @@ def update_chunk(chunk, dimension, policy, catalog, world, loot_tables, report):
         ticks = chunk["block_ticks"]
         chunk["block_ticks"] = type(ticks)(entry for entry in ticks
             if (entry["i"], *(int(entry[k]) for k in "xyz")) not in removed_ticks)
+    fluid_ticks = chunk.get("fluid_ticks", ())
+    if retired_fluids and fluid_ticks:
+        retained = [entry for entry in fluid_ticks if entry["i"] not in retired_fluids]
+        if len(retained) != len(fluid_ticks):
+            chunk["fluid_ticks"] = type(fluid_ticks)(retained)
+            changed = True
     if len(entities) != len(chunk.get("block_entities", ())):
         chunk["block_entities"] = nbtlib.List[nbtlib.Compound](entities.values())
     if relight:
@@ -156,7 +172,10 @@ def apply(world, output, policy, catalog, loot_tables):
             new = variant["target"]
             if old in catalog or new not in catalog or catalog[new]["block_entity"] != (mode == "quark_lootr_chest"):
                 raise ValueError(f"Invalid reviewed conversion {old} -> {new}")
-    markers = tuple(name.encode() for name in policy)
+            if mode in {"empty_plant", "retired_entity"} and new not in AIR:
+                raise ValueError(f"Block entity removal requires an air target for {old}")
+    retired_fluids = {name for rule in policy.values() for name in rule.get("fluid_ticks", ())}
+    markers = tuple(name.encode() for name in policy.keys() | retired_fluids)
     stats, report = Counter(), {}
     with TemporaryDirectory(dir=output.parent) as temp:
         staging = Path(temp) / "world"
@@ -171,7 +190,7 @@ def apply(world, output, policy, catalog, loot_tables):
                 if coords != (int(chunk["xPos"]), int(chunk["zPos"])):
                     raise ValueError(f"Misplaced source chunk {coords}")
                 try:
-                    changed = update_chunk(chunk, dimension, policy, catalog, world, loot_tables, report)
+                    changed = update_chunk(chunk, dimension, policy, catalog, world, loot_tables, retired_fluids, report)
                 except ValueError as error:
                     raise ValueError(f"{path.name} {coords}: {error}") from error
                 if changed:

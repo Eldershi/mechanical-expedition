@@ -156,6 +156,10 @@
     "relight": true,
     "target": "minecraft:cobblestone"
   },
+  "malum:primordial_soup": {
+    "category": "retired_feature",
+    "target": "minecraft:air"
+  },
   "malum:runewood_leaves": {
     "category": "plant",
     "target": "minecraft:air"
@@ -182,6 +186,11 @@
   "malum:tainted_rock_column_cap": {
     "category": "structure",
     "target": "minecraft:polished_deepslate"
+  },
+  "malum:void_conduit": {
+    "category": "retired_feature",
+    "entity": "retired_entity",
+    "target": "minecraft:air"
   },
   "malum:weeping_well_bricks": {
     "category": "structure",
@@ -249,6 +258,16 @@
     "relight": true,
     "target": "minecraft:black_concrete"
   },
+  "terramity:cardboard_box": {
+    "category": "retired_feature",
+    "entity": "retired_entity",
+    "target": "minecraft:air"
+  },
+  "terramity:cardboard_box_marked": {
+    "category": "retired_feature",
+    "entity": "retired_entity",
+    "target": "minecraft:air"
+  },
   "terramity:daemonium_stairs": {
     "category": "structure",
     "copy_properties": true,
@@ -294,6 +313,10 @@
     "relight": true,
     "target": "minecraft:deepslate"
   },
+  "terramity:embedded_sword": {
+    "category": "retired_feature",
+    "target": "minecraft:air"
+  },
   "terramity:fairystone": {
     "category": "structure",
     "target": "minecraft:polished_tuff"
@@ -311,10 +334,22 @@
     "relight": true,
     "target": "minecraft:deepslate"
   },
+  "terramity:grate": {
+    "category": "retired_feature",
+    "target": "minecraft:air"
+  },
   "terramity:igneo_ruby_ore": {
     "category": "mineral",
     "relight": true,
     "target": "minecraft:smooth_basalt"
+  },
+  "terramity:prism_solution": {
+    "category": "retired_feature",
+    "fluid_ticks": [
+      "terramity:prism_solution",
+      "terramity:flowing_prism_solution"
+    ],
+    "target": "minecraft:air"
   },
   "terramity:prismatic_crystal_block": {
     "category": "mineral",
