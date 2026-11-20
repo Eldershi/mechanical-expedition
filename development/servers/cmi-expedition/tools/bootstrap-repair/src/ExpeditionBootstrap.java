@@ -64,6 +64,10 @@ public final class ExpeditionBootstrap {
         List<String> command = new ArrayList<>(List.of(java.toString(),
                 "-Xms4G", "-Xmx12G", "-XX:+UseG1GC", "-XX:ActiveProcessorCount=6",
                 "-XshowSettings:vm"));
+        if (neoForgeDirectory != null) {
+            command.add("-Dsun.net.client.defaultConnectTimeout=10000");
+            command.add("-Dsun.net.client.defaultReadTimeout=15000");
+        }
         for (String argument : ManagementFactory.getRuntimeMXBean().getInputArguments()) {
             if (!argument.startsWith("-D") || argument.length() <= 2) continue;
             int equals = argument.indexOf('=', 2);
