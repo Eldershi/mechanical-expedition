@@ -27,6 +27,7 @@ public final class AccessoryEntry {
 
     public AccessoryEntry() {
         NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, AccessoryEntry::install);
+        NeoForge.EVENT_BUS.addListener(EventPriority.HIGHEST, AccessoryEntry::onMousePressed);
         NeoForge.EVENT_BUS.addListener(AccessoryEntry::closeOnEscape);
     }
 
@@ -54,6 +55,18 @@ public final class AccessoryEntry {
             var row = new DestinationButton(entry, destination, entry.rows.size());
             entry.rows.add(row);
             event.addListener(row);
+        }
+    }
+
+    private static void onMousePressed(ScreenEvent.MouseButtonPressed.Pre event) {
+        if (event.getButton() != GLFW.GLFW_MOUSE_BUTTON_LEFT) {
+            return;
+        }
+        for (GuiEventListener widget : event.getScreen().children()) {
+            if (widget instanceof EntryButton entry && entry.clickMenu(event.getMouseX(), event.getMouseY())) {
+                event.setCanceled(true);
+                return;
+            }
         }
     }
 
@@ -100,8 +113,31 @@ public final class AccessoryEntry {
 
         private void updatePosition() {
             boolean creative = inventory instanceof CreativeModeInventoryScreen;
-            setX(inventory.getGuiLeft() + (creative ? 96 : 66));
-            setY(inventory.getGuiTop() + (creative ? 6 : 8));
+            setX(inventory.getGuiLeft() + (creative ? 96 : 27));
+            setY(inventory.getGuiTop() + (creative ? 6 : 68));
+            for (DestinationButton row : rows) {
+                row.setX(inventory.getGuiLeft() + (creative ? 73 : 27));
+                row.setY(inventory.getGuiTop() + (creative ? 20 : 10) + row.index * 19);
+            }
+        }
+
+        boolean clickMenu(double x, double y) {
+            if (inventory instanceof InventoryScreen survival && survival.width < 379
+                    && survival.getRecipeBookComponent().isVisible()) {
+                return false;
+            }
+            updatePosition();
+            if (mouseClicked(x, y, GLFW.GLFW_MOUSE_BUTTON_LEFT)) {
+                inventory.setFocused(this);
+                return true;
+            }
+            for (DestinationButton row : rows) {
+                if (row.mouseClicked(x, y, GLFW.GLFW_MOUSE_BUTTON_LEFT)) {
+                    inventory.setFocused(this);
+                    return true;
+                }
+            }
+            return false;
         }
 
         @Override
@@ -117,8 +153,7 @@ public final class AccessoryEntry {
     }
 
     private static final class DestinationButton extends Button {
-        private final EntryButton entry;
-        private final int row;
+        private final int index;
 
         DestinationButton(EntryButton entry, Destination destination, int row) {
             super(entry.getX(), entry.getY(), 98, 18,
@@ -127,16 +162,13 @@ public final class AccessoryEntry {
                     entry.setExpanded(false);
                     destination.open().run();
                 }, DEFAULT_NARRATION);
-            this.entry = entry;
-            this.row = row;
+            this.index = row;
             visible = false;
             active = false;
         }
 
         @Override
         public void renderWidget(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
-            setX(entry.getX() - 18);
-            setY(entry.getY() + 12 + row * 19);
             graphics.pose().pushPose();
             graphics.pose().translate(0, 0, 450);
             super.renderWidget(graphics, mouseX, mouseY, delta);

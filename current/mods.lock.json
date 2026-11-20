@@ -5800,10 +5800,10 @@
       },
       {
         "filename": "expedition-accessory-entry-neoforge-1.0.0.jar",
-        "bytes": 8711,
-        "sha1": "5b4fee5cb1c080c1402e647952b8755fca350492",
-        "sha256": "ddb55a8ab3265392a6384488c5e6d6986d1ba8f18a16cd8030828ecd9d5db496",
-        "sha512": "8fd783acb8d190e4c7ea8bae29f0fc981e4af5987eb9d94f868c2dd9f4f75c94fad15f0da7d80147cfdd234fa4c9c6f89510236aaeaeaeb7c3c0f0d7b962f57f"
+        "bytes": 9311,
+        "sha1": "22f26a11e9bfff36350a3637ebeb54681059925c",
+        "sha256": "2a13adb44dac13e7b80ea807da215c720a10ce498d535e337c6c1d5358c13f2b",
+        "sha512": "d08bbb97da79d7eb1ade06656ae6a81bd51e0d041abc17472d7307f86d9169f7ae4e0dcb178073c27c2f27b8c305753e42e2b7b51ee07b4884a3a9bdd4c99e32"
       },
       {
         "filename": "expedition-alpine-climate-neoforge-1.0.0.jar",
