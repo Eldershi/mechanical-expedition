@@ -6,13 +6,15 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.jar.Attributes;
+import java.util.jar.JarFile;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.locks.ReentrantLock;
 
-/** Small parent process. The unmodified upstream jar launches Forge in a child JVM. */
+/** Starts the selected dedicated server and forwards the hosting console. */
 public final class ExpeditionBootstrap {
     private static final String UPSTREAM = "server-upstream-20261017.jar";
     private static final long STOP_GRACE_MS = boundedLong("expedition.bootstrap.stopGraceMs", 60_000);
@@ -51,9 +53,12 @@ public final class ExpeditionBootstrap {
     public static void main(String[] args) throws Exception {
         Path ownJar = Path.of(ExpeditionBootstrap.class.getProtectionDomain()
                 .getCodeSource().getLocation().toURI()).toRealPath();
-        Path upstream = ownJar.getParent().resolve(UPSTREAM).toRealPath();
-        if (!Files.isRegularFile(upstream) || Files.isSameFile(ownJar, upstream)) {
-            throw new IOException("Missing or invalid upstream jar: " + UPSTREAM);
+        String neoForgeDirectory;
+        String neoForgeVersion;
+        try (JarFile jar = new JarFile(ownJar.toFile())) {
+            Attributes manifest = jar.getManifest().getMainAttributes();
+            neoForgeDirectory = manifest.getValue("Expedition-NeoForge-Directory");
+            neoForgeVersion = manifest.getValue("Expedition-NeoForge-Version");
         }
         Path java = Path.of(System.getProperty("java.home"), "bin", "java").toRealPath();
         List<String> command = new ArrayList<>(List.of(java.toString(),
@@ -66,13 +71,38 @@ public final class ExpeditionBootstrap {
             if (key.equals("expedition.bootstrap") || key.startsWith("expedition.bootstrap.")) continue;
             command.add(argument);
         }
-        command.add("-jar");
-        command.add(upstream.toString());
+        Path workingDirectory = null;
+        String entryPoint = UPSTREAM;
+        if (neoForgeDirectory == null && neoForgeVersion == null) {
+            Path upstream = ownJar.getParent().resolve(UPSTREAM).toRealPath();
+            if (!Files.isRegularFile(upstream) || Files.isSameFile(ownJar, upstream)) {
+                throw new IOException("Missing or invalid upstream jar: " + UPSTREAM);
+            }
+            command.add("-jar");
+            command.add(upstream.toString());
+        } else {
+            if (neoForgeDirectory == null || !neoForgeDirectory.matches("[a-zA-Z0-9][a-zA-Z0-9._-]*")
+                    || neoForgeVersion == null || !neoForgeVersion.matches("[0-9]+\\.[0-9]+\\.[0-9]+")) {
+                throw new IOException("Invalid NeoForge directory or version in bootstrap manifest");
+            }
+            if (Runtime.version().feature() < 21) {
+                throw new IOException("NeoForge requires Java 21 or newer");
+            }
+            workingDirectory = ownJar.getParent().resolve(neoForgeDirectory);
+            String platform = System.getProperty("os.name").startsWith("Windows") ? "win" : "unix";
+            String argFile = "libraries/net/neoforged/neoforge/" + neoForgeVersion + "/" + platform + "_args.txt";
+            if (!Files.isRegularFile(workingDirectory.resolve(argFile))) {
+                throw new IOException("Missing installed NeoForge argument file: " + argFile);
+            }
+            command.add("@" + argFile);
+            entryPoint = "NeoForge " + neoForgeVersion;
+        }
         command.addAll(List.of(args));
         ProcessBuilder builder = new ProcessBuilder(command)
                 .redirectOutput(ProcessBuilder.Redirect.INHERIT)
                 .redirectError(ProcessBuilder.Redirect.INHERIT);
-        // Keep the existing working directory, environment, and original application args.
+        if (workingDirectory != null) builder.directory(workingDirectory.toFile());
+        // Keep the existing environment and original application args.
         // Retain explicit -D properties (timezone, language, etc.), never parent -X/agents.
         // In particular, do not pass the parent's -Xmx18G through to the child.
         for (String name : List.of("_JAVA_OPTIONS", "JAVA_TOOL_OPTIONS", "JDK_JAVA_OPTIONS")) {
@@ -80,7 +110,7 @@ public final class ExpeditionBootstrap {
                 log("Inherited " + name + " is present; verify the child's actual heap below.");
             }
         }
-        log("Starting " + UPSTREAM + " with -Xms4G -Xmx12G -XX:+UseG1GC "
+        log("Starting " + entryPoint + " with -Xms4G -Xmx12G -XX:+UseG1GC "
                 + "-XX:ActiveProcessorCount=6; applicationArgs=" + args.length);
         logCgroupMemory();
 
