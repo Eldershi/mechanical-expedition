@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "item": "modernfoundry:scorched_brick"
+    },
+    "C": {
+      "item": "create:sturdy_sheet"
+    }
+  },
+  "pattern": [
+    "#C#",
+    "   ",
+    "#C#"
+  ],
+  "result": {
+    "id": "modernfoundry:scorched_chute"
+  },
+  "show_notification": true
+}

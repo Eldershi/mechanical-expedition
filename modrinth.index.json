@@ -5135,15 +5135,30 @@
       }
     },
     {
-      "path": "config/paxi/resourcepacks/create-style-foundry-1.0.0-neoforge-1.21.1.zip",
+      "path": "config/paxi/resourcepacks/create-style-foundry-1.1.0-neoforge-1.21.1.zip",
       "hashes": {
-        "sha1": "89af6e7ff9fa68d36929d27823e0d2a2338b0237",
-        "sha512": "7bcbaf01ba51a704d26b7803693006a67cdefefc4adc99ba257f32ffcd3520c6a02d16fda2d00887e6d00e615f814e6c3ee8a7ae2d3439cb99352cbfd37b7ef6"
+        "sha1": "412f46570e67494e5ed7b34fdb230dd7a681fa03",
+        "sha512": "334bac88453ca85a83151f273f8f044e079738de8874431ea6d43d9a3f8ea53aa85fa79d46998e3b360901412efe89bf89ab2d64142ef436ed6e1917b03d2aad"
       },
       "downloads": [
-        "https://github.com/Eldershi/create-style-foundry/releases/download/v1.0.0/create-style-foundry-1.0.0-neoforge-1.21.1.zip"
+        "https://github.com/Eldershi/create-style-foundry/releases/download/v1.1.0/create-style-foundry-1.1.0-neoforge-1.21.1.zip"
       ],
-      "fileSize": 139651,
+      "fileSize": 140248,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "shaderpacks/BSL_v10.1.8.zip",
+      "hashes": {
+        "sha1": "e89818c8827d0131c102fb480c3c3446624db0df",
+        "sha512": "94a3c25d6820868db624e11347873e6b572e7cd571967d9ac6f4690ca5d37ca302a7645d85eec800e0654541e3825fba14d37b5a25d3996aaf038178552be26f"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/Q1vvjJYV/versions/Y68yiql9/BSL_v10.1.8.zip"
+      ],
+      "fileSize": 1134153,
       "env": {
         "client": "required",
         "server": "unsupported"

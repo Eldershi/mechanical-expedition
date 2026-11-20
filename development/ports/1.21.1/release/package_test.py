@@ -26,6 +26,7 @@ PRIVATE = {"oeb", "oei", "oef", "exports", "saves", "local", "logs", "screenshot
 PRIVATE_PACK = re.compile(r"(?i)(?:create[_ -]?mcgui|expedition.*(?:hnn|hud)|original.predictions|yellow.apple)")
 SAFE_DOWNLOADS = {"cdn.modrinth.com", "edge.forgecdn.net", "mediafilez.forgecdn.net",
                   "media.forgecdn.net", "github.com", "maven.neoforged.net"}
+BSL_PRESET = Path("shaderpacks/BSL_v10.1.8.zip.txt")
 
 
 def json_file(path):
@@ -84,6 +85,7 @@ def external_client_resources():
     for name in ("create-mcgui.json", "create-style-hnn.json", "neoforge-resourcepacks.json",
                  "create-style-foundry.json"):
         yield from json_file(directory / name)["clientFiles"]
+    yield from json_file(ROOT / "integrations/shaders/bsl.json")["clientFiles"]
 
 
 def selected(instance, client=False):
@@ -91,6 +93,9 @@ def selected(instance, client=False):
     if client:
         defaults = Path(__file__).with_name("client-options.txt")
         yield Path("options.txt"), defaults.read_bytes()
+        preset = instance / BSL_PRESET
+        if preset.is_file() and not preset.is_symlink():
+            yield BSL_PRESET, preset.read_bytes()
     for folder in sorted(ASSET_DIRS):
         for path in sorted((instance / folder).rglob("*")):
             relative = path.relative_to(instance)

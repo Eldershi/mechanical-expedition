@@ -5,6 +5,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import re
 import shutil
 from tempfile import TemporaryDirectory
 from urllib.request import urlopen
@@ -12,6 +13,7 @@ from urllib.request import urlopen
 HERE = Path(__file__).resolve().parent
 INTEGRATION = HERE.parents[4] / "integrations/resourcepacks/create-style-foundry.json"
 OLD_PACK = "Create-Style-Seared-NeoForge-1.21.1.zip"
+PUBLISHED_PACK = re.compile(r"create-style-foundry-\d+\.\d+\.\d+-neoforge-1\.21\.1\.zip")
 
 
 def mod_jar(instance, pattern):
@@ -45,7 +47,8 @@ def install_resource_pack(client, artifact=None):
             staged.replace(target)
 
     order["loadOrder"] = [
-        pack for pack in order.get("loadOrder", []) if pack not in (OLD_PACK, target.name)
+        pack for pack in order.get("loadOrder", [])
+        if pack != OLD_PACK and not PUBLISHED_PACK.fullmatch(pack)
     ] + [target.name]
     order_path.write_text(json.dumps(order, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 

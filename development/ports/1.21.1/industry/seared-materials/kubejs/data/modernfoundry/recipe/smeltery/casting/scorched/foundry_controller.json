@@ -1,0 +1,23 @@
+{
+  "type": "hilt:crafting_shaped_retextured",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "modernfoundry:foundry_bricks"
+    },
+    "S": {
+      "item": "create:sturdy_sheet"
+    }
+  },
+  "match_all": false,
+  "pattern": [
+    "S",
+    "S",
+    "#"
+  ],
+  "result": {
+    "id": "modernfoundry:foundry_controller"
+  },
+  "show_notification": true,
+  "texture": "#"
+}
