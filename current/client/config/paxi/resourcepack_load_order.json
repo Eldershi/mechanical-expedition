@@ -1,24 +1,35 @@
 {
   "loadOrder": [
+    "Stay_True_1.21.zip",
     "Rojak - 1.0.1.zip",
+    "BetterIE.zip",
+    "New AE2.zip",
     "Eternal-Snowstorm-s-MC-i18n-Chinese-pack.zip",
+    "PackResource.zip",
     "create_mcGUI_2.10.0.zip",
     "Fancy Crops v1.3.zip",
+    "Fine Armoury v1.8.zip",
     "Simple Grass Flowers v2.0.0.zip",
     "Fancy End - RP 1.15+ - 1.4.zip",
     "Cataclysm Reimagined v1.3.5 for NeoForge.zip",
     "Modded Omelet [120] [171].zip",
     "Os' Colorful Grasses (Tall).zip",
+    "Rainbow Enchanted Glint 1.1.zip",
     "repottery-v1-3-2.zip",
+    "waystones_1.21.1.zip",
+    "§bEnchanting§8-§bReimagined§0_§8[v1.4]§0.zip",
     "§fBetter §2§lLeaves §71.20.zip",
     "Ars Nouveau Refresh 1.0.zip",
+    "Pinnacle 3.0.0.zip",
     "MekaCreate.zip",
+    "Create_Applied_Energistics_2.zip",
     "Ender IO - Into the Void.zip",
     "Applied Mekanism v1.0 for 1.21.1.zip",
     "CreateSophBackpacks.zip",
     "Suren FTB Quests 1.0.1 1.20-1.20.1.zip",
     "create-style-hnn-1.1.0.zip",
     "Dyson-Create-Approved-Models-NeoForge-1.21.1.zip",
-    "Expedition-Chinese-Supplement.zip"
+    "Expedition-Chinese-Supplement.zip",
+    "Expedition-Resource-Compat-1.21.1.zip"
   ]
 }

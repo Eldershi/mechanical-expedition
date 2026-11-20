@@ -4760,6 +4760,21 @@
       }
     },
     {
+      "path": "config/paxi/resourcepacks/Stay_True_1.21.zip",
+      "hashes": {
+        "sha1": "6c14b584ecd205bbaa88a49c1a57574c9b38e79f",
+        "sha512": "bfb70d2c05ed1021801a168de3abbe271c4af391e2aef7c59936569b448eb004027b12fd595c69ca50547c76bcf6ca7246e73fa97c0ac20f5b9cb09e644b4503"
+      },
+      "downloads": [
+        "https://edge.forgecdn.net/files/5493/450/Stay_True_1.21.zip"
+      ],
+      "fileSize": 2152322,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
       "path": "config/paxi/resourcepacks/Rojak - 1.0.1.zip",
       "hashes": {
         "sha1": "b605b0c2655e15ffdc8447a5188361a885e2ddab",
@@ -4775,6 +4790,51 @@
       }
     },
     {
+      "path": "config/paxi/resourcepacks/BetterIE.zip",
+      "hashes": {
+        "sha1": "63adfefb9e9890be48505eff1dba1072a9122cd4",
+        "sha512": "e89c3251406c697382676f6d94d6efd207093b0f8449bf66c7bc1265d0b67983b526a9d68bc5d97510186de3c7209c3a57b5364b29666f988ed7794d0aab9f87"
+      },
+      "downloads": [
+        "https://raw.githubusercontent.com/Eternal-Snowstorm/Create-Mechanism-and-Innovation/a87ff71c8aaeca32d3eab224d15994c70b1e7473/config/paxi/resourcepacks/BetterIE.zip"
+      ],
+      "fileSize": 401786,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "config/paxi/resourcepacks/New AE2.zip",
+      "hashes": {
+        "sha1": "7e80519786ad86bd9601ced4135fc57451ae0ebe",
+        "sha512": "3a31e9e2a35ec0c009202b8aabbf51f78809ad08926f3cc0b31fbde383b9ceb6be24066e88c66d737d900b1132f406bc1589d72099d0dba775c9be8dc73c50fe"
+      },
+      "downloads": [
+        "https://raw.githubusercontent.com/Eternal-Snowstorm/Create-Mechanism-and-Innovation/a87ff71c8aaeca32d3eab224d15994c70b1e7473/config/paxi/resourcepacks/New%20AE2.zip"
+      ],
+      "fileSize": 1395013,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "config/paxi/resourcepacks/PackResource.zip",
+      "hashes": {
+        "sha1": "81f225b5cfdd7b94981ef617243804181070ebb0",
+        "sha512": "fff457844c1b6c317d4d1d6b390b5a9e9496cc2890a6706905c19ac17cd38487a1738a6684d7a1d156b9a1986c6143ff1553a1a43a229d54bd70bbfac5cd505e"
+      },
+      "downloads": [
+        "https://raw.githubusercontent.com/Eternal-Snowstorm/Create-Mechanism-and-Innovation/a87ff71c8aaeca32d3eab224d15994c70b1e7473/config/paxi/resourcepacks/PackResource.zip"
+      ],
+      "fileSize": 2398797,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
       "path": "config/paxi/resourcepacks/Fancy Crops v1.3.zip",
       "hashes": {
         "sha1": "788e5169eb064b696b2e20d4c5d998cceb387a2e",
@@ -4784,6 +4844,21 @@
         "https://cdn.modrinth.com/data/UGEVQ6t9/versions/ZJEBZjg6/Fancy%20Crops%20v1.3.zip"
       ],
       "fileSize": 92779,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "config/paxi/resourcepacks/Fine Armoury v1.8.zip",
+      "hashes": {
+        "sha1": "ed41729971231834724189e49748140bf8bfc7e7",
+        "sha512": "d298dec421c19f2f6dd329daaabc502b2e87f27689c11692e2a7ecc40ce49ca861e317dc320f8da88708ecd818642a36a97376043dc56f6d4d35d90761d06690"
+      },
+      "downloads": [
+        "https://edge.forgecdn.net/files/8058/232/Fine%20Armoury%20v1.8.zip"
+      ],
+      "fileSize": 85871,
       "env": {
         "client": "required",
         "server": "unsupported"
@@ -4865,6 +4940,21 @@
       }
     },
     {
+      "path": "config/paxi/resourcepacks/Rainbow Enchanted Glint 1.1.zip",
+      "hashes": {
+        "sha1": "603868a59e5ff6a3dff0f765a6693c5f50b3d30a",
+        "sha512": "863a2aa3d9c76309cd174b2847bdb2aee5d33e4d5793fa597257a3da4d726f4a715639114e1df507bdf37738361b67483fc2829fe608274d471d34e995b538e4"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/j4jO6gCp/versions/4aAhhR1m/Rainbow%20Enchanted%20Glint%201.1.zip"
+      ],
+      "fileSize": 152793,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
       "path": "config/paxi/resourcepacks/repottery-v1-3-2.zip",
       "hashes": {
         "sha1": "6baa8ebe2c737fab2bc47b9f597aa878f74239d7",
@@ -4874,6 +4964,36 @@
         "https://cdn.modrinth.com/data/v6u2uphV/versions/wtwUQLBK/repottery-v1-3-2.zip"
       ],
       "fileSize": 75059,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "config/paxi/resourcepacks/waystones_1.21.1.zip",
+      "hashes": {
+        "sha1": "1aa5e532d48308d361e97771070f776179485d21",
+        "sha512": "a109fe717c6b9b5a250e3394474658248606d2e2bd84cb7efd9d76fbc5f67ae28ac6331454574e967907f591e34a80e1e7385ffca66dfdc06737163b4b334466"
+      },
+      "downloads": [
+        "https://edge.forgecdn.net/files/5875/192/waystones_1.21.1.zip"
+      ],
+      "fileSize": 228331,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "config/paxi/resourcepacks/§bEnchanting§8-§bReimagined§0_§8[v1.4]§0.zip",
+      "hashes": {
+        "sha1": "27207cdb36752a16ff4aa049d5e70c290787a905",
+        "sha512": "5f00411290cf1359cfe95a7e4aa575a6e40ec81ef790b9cb59fbaf6f83974d353505138e63818bda9100e63242a3d952290860a5053cbc80ed44d898473a1b4f"
+      },
+      "downloads": [
+        "https://edge.forgecdn.net/files/7178/708/%C2%A7bEnchanting%C2%A78-%C2%A7bReimagined%C2%A70_%C2%A78%5Bv1.4%5D%C2%A70.zip"
+      ],
+      "fileSize": 2747978,
       "env": {
         "client": "required",
         "server": "unsupported"
@@ -4910,6 +5030,21 @@
       }
     },
     {
+      "path": "config/paxi/resourcepacks/Pinnacle 3.0.0.zip",
+      "hashes": {
+        "sha1": "d73901b09f59b708faacffd60475834b05012676",
+        "sha512": "b116045cedb71b4ec01397ecdcd181bbf96e5c7b78c3f2aaada5bca42be5d986271776f247618e0f3b3474a70300ebe1b37954953e597357318487bc6776276f"
+      },
+      "downloads": [
+        "https://edge.forgecdn.net/files/8088/38/Pinnacle%203.0.0.zip"
+      ],
+      "fileSize": 223179,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
       "path": "config/paxi/resourcepacks/MekaCreate.zip",
       "hashes": {
         "sha1": "95c7533a799320c769b56d55766e4ffe40ca0ebc",
@@ -4919,6 +5054,21 @@
         "https://edge.forgecdn.net/files/3819/145/MekaCreate.zip"
       ],
       "fileSize": 19524,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "config/paxi/resourcepacks/Create_Applied_Energistics_2.zip",
+      "hashes": {
+        "sha1": "69d11e76d636a372f08a314d28624edd855eecae",
+        "sha512": "d2636b4d739ec838fac3e0cb67349dc5abfbfd232f71a447ea7ecdac94e463a24ab4e91aff9b18617c8c7f7c7f300f36b947d3191fc29b434feb360e55ad1590"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/wNukWjYj/versions/Bs7kIwYJ/Create_Applied_Energistics_2.zip"
+      ],
+      "fileSize": 793469,
       "env": {
         "client": "required",
         "server": "unsupported"
