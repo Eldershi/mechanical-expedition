@@ -10,7 +10,7 @@ Run the registration builder from the migration branch for both sides.
 python3 build_registrations.py path/to/startup_scripts/register path/to/target/kubejs/startup_scripts/cmi --tinkers-namespace modernfoundry
 ```
 
-Reuse the pack's CMI and Nebula KubeJS assets on the client. To extract the mechanism textures from a local CMI Core JAR into the client assets, add `--core-art path/to/cmi-core.jar path/to/target/kubejs/assets`.
+Reuse the pack's CMI and Nebula KubeJS assets on the client. To extract the mechanism textures and animation metadata from a local CMI Core JAR into the client assets, add `--core-art path/to/cmi-core.jar path/to/target/kubejs/assets`.
 
 Generate the ore-drop datapack with the Minecraft 1.21.1 vanilla client JAR.
 

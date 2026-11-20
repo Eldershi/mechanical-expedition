@@ -30,6 +30,7 @@ BSL_PRESET = Path("shaderpacks/BSL_v10.1.8.zip.txt")
 SERVER_DIAGNOSTICS = Path("config/expedition-diagnostics.json")
 MECHANISM_LANGUAGE = Path("kubejs/client_scripts/ExpeditionMechanismLanguage.js")
 MECHANISM_LANGUAGE_SOURCE = HERE.parent / "industry" / MECHANISM_LANGUAGE
+MECHANISM_TEXTURES = Path("kubejs/assets/cmi/textures/item/mechanism")
 
 
 def json_file(path):
@@ -158,6 +159,17 @@ def mod_inputs(instance):
     return choices
 
 
+def check_mechanism_animations(files):
+    client_source = ROOT / "current/client"
+    for folder in ("complete", "incomplete"):
+        for metadata in sorted((client_source / MECHANISM_TEXTURES / folder).glob("*.png.mcmeta")):
+            relative = metadata.relative_to(client_source).as_posix()
+            texture = relative.removesuffix(".mcmeta")
+            digest = hashlib.sha256(metadata.read_bytes()).hexdigest()
+            if texture in files and files.get(relative) != digest:
+                raise ValueError(f"Missing or mismatched CMI animation metadata: {relative}")
+
+
 def snapshot(instance, downloads, client=False):
     mods = []
     for file in mod_inputs(instance):
@@ -169,6 +181,8 @@ def snapshot(instance, downloads, client=False):
         mods.append(row)
     files = {relative.as_posix(): hashlib.sha256(data).hexdigest()
              for relative, data in selected(instance, client=client)}
+    if client:
+        check_mechanism_animations(files)
     return {"files": files, "mods": mods}
 
 
@@ -247,6 +261,7 @@ def main():
         language_hash = hashlib.sha256(MECHANISM_LANGUAGE_SOURCE.read_bytes()).hexdigest()
         if lock["client"]["files"].get(MECHANISM_LANGUAGE.as_posix()) != language_hash:
             raise ValueError("The client lock must include the current CMI mechanism translations")
+        check_mechanism_animations(lock["client"]["files"])
         print(meta["version"])
         return
     if not args.client or not args.server:

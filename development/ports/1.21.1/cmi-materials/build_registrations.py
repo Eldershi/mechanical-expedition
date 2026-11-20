@@ -183,12 +183,23 @@ def build(source, target, tinkers_namespace):
 
 def install_mechanism_textures(core, assets):
     with ZipFile(core) as jar:
-        for name in jar.namelist():
-            if re.fullmatch(r"assets/cmi/textures/item/mechanism/(?:complete|incomplete)/(?!thermal)[a-z_]+\.png", name):
-                file = assets / name.removeprefix("assets/")
-                if not file.exists():
-                    file.parent.mkdir(parents=True, exist_ok=True)
-                    file.write_bytes(jar.read(name))
+        entries = set(jar.namelist())
+        for name in sorted(entries):
+            if not re.fullmatch(r"assets/cmi/textures/item/mechanism/(?:complete|incomplete)/(?!thermal)[a-z_]+\.png", name):
+                continue
+            texture = assets / name.removeprefix("assets/")
+            image = jar.read(name)
+            if texture.is_file():
+                if texture.read_bytes() != image:
+                    continue
+            else:
+                texture.parent.mkdir(parents=True, exist_ok=True)
+                texture.write_bytes(image)
+
+            metadata_name = name + ".mcmeta"
+            metadata = texture.with_suffix(".png.mcmeta")
+            if metadata_name in entries and not metadata.exists():
+                metadata.write_bytes(jar.read(metadata_name))
 
 
 if __name__ == "__main__":
