@@ -79,7 +79,10 @@ def excluded(relative):
     )
 
 
-def selected(instance):
+def selected(instance, client=False):
+    if client:
+        defaults = Path(__file__).with_name("client-options.txt")
+        yield Path("options.txt"), defaults.read_bytes()
     for folder in sorted(ASSET_DIRS):
         for path in sorted((instance / folder).rglob("*")):
             relative = path.relative_to(instance)
@@ -131,7 +134,7 @@ def mod_inputs(instance):
     return choices
 
 
-def snapshot(instance, downloads):
+def snapshot(instance, downloads, client=False):
     mods = []
     for file in mod_inputs(instance):
         hashes = fingerprints(file)
@@ -140,7 +143,8 @@ def snapshot(instance, downloads):
         if url:
             row["downloadUrl"] = url
         mods.append(row)
-    files = {relative.as_posix(): hashlib.sha256(data).hexdigest() for relative, data in selected(instance)}
+    files = {relative.as_posix(): hashlib.sha256(data).hexdigest()
+             for relative, data in selected(instance, client=client)}
     return {"files": files, "mods": mods}
 
 
@@ -174,7 +178,7 @@ def index_for(meta, lock):
 
 
 def build_archive(output, instance, lock, meta, client):
-    overlay = dict(selected(instance))
+    overlay = dict(selected(instance, client=client))
     if {name.as_posix(): hashlib.sha256(data).hexdigest() for name, data in overlay.items()} != lock["files"]:
         raise ValueError(f"{'Client' if client else 'Server'} configuration snapshot differs from its lock")
     mods = {p.name: p for p in mod_inputs(instance)}
@@ -225,7 +229,7 @@ def main():
     lock_path = ROOT / "current/mods.lock.json"
     if args.action == "lock":
         downloads = known_downloads(args.catalog)
-        client = snapshot(args.client, downloads)
+        client = snapshot(args.client, downloads, client=True)
         server = snapshot(args.server, downloads)
         write_json(lock_path, {"version": meta["version"], "minecraft": meta["minecraft"],
                                "neoforge": meta["neoforge"], "client": client, "server": server})

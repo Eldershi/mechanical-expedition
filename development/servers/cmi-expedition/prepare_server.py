@@ -20,7 +20,8 @@ notenoughcrashes quick_pack tslatentitystatus xaerominimap xaeroworldmap embeddi
 # Interlocked 1.1's common right-click handlers read a client KeyMapping. It has no
 # content registries/channels; omit the broken bulk-encasing feature on dedicated servers.
 CLIENT_ONLY.add('interlocked')
-CLIENT_ONLY.update({'culllessleaves', 'expedition_client_performance', 'renderscale'})
+CLIENT_ONLY.update({'culllessleaves', 'expedition_armor_display', 'expedition_client_performance',
+                    'expedition_map_writing', 'gnetum', 'renderscale', 'seleafculling'})
 FOLDERS=['config','defaultconfigs','hotai','ldlib','patchouli_books','moonlight-global-datapacks',
          'datapacks','oeb','oei','oef','tlm_custom_pack']
 SKIP_CONFIG={'fancymenu','paxi/resourcepacks','touhou_little_maid/sites','resourceful-config-web.json'}

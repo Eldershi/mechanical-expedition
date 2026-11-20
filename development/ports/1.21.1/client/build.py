@@ -45,6 +45,23 @@ ADAPTERS = {
         "mixins": ["DhQueueBackoff"],
         "deps": {"distanthorizons": "3.3.3"},
     },
+    "armor-display": {
+        "id": "expedition_armor_display",
+        "filename": "expedition-armor-display",
+        "name": "Expedition Armor Display Performance",
+        "package": "expedition.armordisplay.mixin",
+        "mixins": ["ArmorRenderMixin", "ArmorChunkMixin"],
+        "deps": {"protection_pixel": "2.2.1"},
+    },
+    "map-writing": {
+        "id": "expedition_map_writing",
+        "filename": "expedition-map-writing",
+        "name": "Expedition Singleplayer Map Writing",
+        "package": "expedition.mapwriting.mixin",
+        "mixins": ["MapWriterMixin"],
+        "deps": {"xaeroworldmap": "1.47.0"},
+        "bundled": {"xaerolib-neoforge-1.21.1-1.7.3.jar": "xaeroworldmap-neoforge-1.21.1-1.47.0.jar"},
+    },
     "tooltips": {
         "id": "expedition_item_tooltips",
         "filename": "expedition-item-tooltips",
@@ -79,6 +96,7 @@ ADAPTERS = {
                    "PonderTagIconAccess"],
         "deps": {"iss_ponder": "1.0.3", "irons_spellbooks": "1.21.1-3.16.3",
                  "ponder": "1.0.87+mc1.21.1"},
+        "bundled": {"ponder-neoforge-1.0.87+mc1.21.1.jar": "iss_ponder-neoforge1.21.1-1.0.3.jar"},
     },
 }
 
@@ -161,14 +179,11 @@ def main():
                     "package expedition.choice;", f'package {adapter["chooser"]};', 1), encoding="utf-8")
                 sources.append(chooser)
             adapter_classpath = list(classpath)
-            if name == "spells":
-                # The spell preview mod supplies the selected nested Ponder API.
-                ponder = f'ponder-neoforge-{adapter["deps"]["ponder"]}.jar'
-                if not any(path.name == ponder for path in adapter_classpath):
-                    provider = args.mods / f'iss_ponder-neoforge1.21.1-{adapter["deps"]["iss_ponder"]}.jar'
-                    with ZipFile(provider) as jar:
-                        path = work / ponder
-                        path.write_bytes(jar.read(f"META-INF/jarjar/{ponder}"))
+            for dependency, provider in adapter.get("bundled", {}).items():
+                if not any(path.name == dependency for path in adapter_classpath):
+                    with ZipFile(args.mods / provider) as jar:
+                        path = work / dependency
+                        path.write_bytes(jar.read(f"META-INF/jarjar/{dependency}"))
                         adapter_classpath.append(path)
             result = subprocess.run([args.java_home / "bin/javac", "--release", "21", "-proc:none",
                                      "-encoding", "UTF-8", "-cp", os.pathsep.join(map(str, adapter_classpath)),

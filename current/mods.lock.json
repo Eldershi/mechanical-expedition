@@ -1,10 +1,10 @@
 {
-  "version": "1.21.1-test.3",
+  "version": "1.21.1-test.4",
   "minecraft": "1.21.1",
   "neoforge": "21.1.267",
   "client": {
     "files": {
-      "config/DistantHorizons.toml": "8a27b6f792fac5824871216218d8dfef74bf7d15cfdf94e59e44fc353ae83797",
+      "options.txt": "818c62de4ec4d2604e630b39075396741de18f32178dd023ee06e20617c3ccaf",
       "config/Mekanism/client.toml": "5a3febd891fbed6961403ad21b32ff89e7165fdb2c5e82c43d6d5fc2d99b7cc0",
       "config/Mekanism/common.toml": "135c4f3482c6581b8d48843a004a88e15389c4932540d19560fb2ed11f5c5803",
       "config/Mekanism/startup.toml": "97f1eccffa97ae4b0638fa14314b214f7884f12b45ce1188b05b4f9c02bdeca2",
@@ -487,6 +487,7 @@
       "config/entityculling.json": "4a6d510b7e0157027b1cf2022184567fd5387aa09d08db108cb0369ba371ddbe",
       "config/eternal_starlight.json": "a205f5a2adc2b78b3f7485e69ec9d94835ac2c880a952d01603d1177e45316db",
       "config/expedition-boss-density.json": "a39482ce8e1854dab002be351f4cec58612d8283ca065ae87bf4edd281cb0540",
+      "config/expedition-map-writing.properties": "a5cf09c5395a71761a9aa3704f82fa0808ad9f427d23f4e44209ee38fc143095",
       "config/explorerscompass-client.toml": "482c9f241c7ba0f1492ee80ad7161a39eb93367a39fe6ff4d7d4be328ddce1ad",
       "config/explorerscompass-common.toml": "a0867628abd6f9e052a618e61cab635a2fc04f8b2cbf93419857ba8ecec21e25",
       "config/extendedae-common.toml": "87fa025e3fa343b7e2300a9044e39c5f83299f2443071df7cd99f0296a8d5a9e",
@@ -636,7 +637,7 @@
       "config/immersiveengineering-client.toml": "912425e0f8128c386af08b3ffe7caf82b3a01eac44b617e466295d5078696827",
       "config/immersiveengineering-startup.toml": "776cf15a4474e30ac7bdf944f44d0dca25851efad95b8d8055f3d3de29aad705",
       "config/iris-excluded.json": "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb",
-      "config/iris.properties": "33f9cc60a0dee5aee0fc7a0b20d4a5efa9692272545acbe85e540278e3dc39a3",
+      "config/iris.properties": "1ae6b62d30eae8d6323a8229689279ec4c0e5644cd1cd38434cb9dc356c0472f",
       "config/ironfurnaces-common.toml": "9b8cd662ffbbc93ec6daa406edf006e411623f11471d16c8d906a0a3903b318e",
       "config/irons_spellbooks-client.toml": "0eb35dca70dcf2a8b9184fe378be5b129ff3ee1fd755edb48e133aa9cfabd794",
       "config/irons_spellbooks_spell_config/global_config.json": "7a8fd5e37e183cccd59a72a4af0b9e1fe1b4d930cd034b2f11da7307a8741580",
@@ -761,7 +762,7 @@
       "config/simulated-client.toml": "944ba0d36dfe00436e814fffd736acdd51292da18a01a060ea6ffbcf3dc7388b",
       "config/smartercontraptionstorage-common.toml": "74a7f6dc16c2a068c972940010fda14fe48e0958e01a4afd8fdeb7354de25892",
       "config/sodium-mixins.properties": "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01",
-      "config/sodium-options.json": "44478bef0973f1aa587c0493568a5cbc5426233b611f14bd2be489b5b862fa7f",
+      "config/sodium-options.json": "39d471e9618382b3552966e3f4f6d727dc050b1a468e54c07c7de591fb9f4cac",
       "config/solcarrot-client.toml": "bcf86f1ca7b5747d42e7b62fda48f558ef28a2795d6b409d5489285846ec8780",
       "config/sophisticatedbackpacks-common.toml": "ce60ba4ebdbb1ba959f3ee6be206f84f2221b8dc436140c92cda412ef33f10e6",
       "config/sophisticatedbuilding-client.toml": "9687f2bd56baf630e6103f2b86cb43977df75517a0a4dbc66e02756c00d56ef3",
@@ -769,6 +770,7 @@
       "config/sophisticatedcore-client.toml": "467c9ffc84322873121a2e109258245030ec4d0608b7181a739681ce685a63c9",
       "config/sophisticatedcore-common.toml": "ed3e75e9408cea4a9b47b52ed4248f4d7517bb9eac6f3db36a93af6dacdcba84",
       "config/sophisticatedsorter-client.toml": "84a2742c3d4ab16b880699b38e4e61df7f3e566b4d6146873e29dc70d540464d",
+      "config/spark/config.json": "3cc236aa5b81417866544d571bf899c77610223c10f97d12d343ff93fb573bcf",
       "config/spawn-client.toml": "a46f16c49f94ffe1548c476812702d21dd27e1765782ab9c5869595f57794326",
       "config/spawn-server.toml": "f96ba8b87f54f6ed516c37b5a147fe2ff5c9052353d6320c06acfa0a65575cf9",
       "config/steampowered-common.toml": "2b7fbe7992c7428e8f6f589dfd5a53f5130b0dd68be7eb12adfad477dc129bcc",
@@ -4341,8 +4343,7 @@
       "tlm_custom_pack/touhou_little_maid-1.0.0/assets/touhou_little_maid_seihou/textures/entity/vivit_2.png": "5a6abaedda185451554e67712f85dcdcbde889ad7fa4f7586a70066f2fd06e08",
       "tlm_custom_pack/touhou_little_maid-1.0.0/assets/touhou_little_maid_seihou/textures/maid_icon.png": "7574819734336c027128905fd6df69be9585543ce75cb022eb4b9c82e32527a1",
       "tlm_custom_pack/touhou_little_maid-1.0.0/pack.mcmeta": "595f13f09777d8ecd28aacfa8f82bb8d14d656b290f50fc0aad02489e75944e1",
-      "tlm_custom_pack/touhou_little_maid-1.0.0/pack.png": "af1714bb66a877021ede496e61f35d2358fb69b8878eda7b553f07fb4588075f",
-      "config/spark/config.json": "3cc236aa5b81417866544d571bf899c77610223c10f97d12d343ff93fb573bcf"
+      "tlm_custom_pack/touhou_little_maid-1.0.0/pack.png": "af1714bb66a877021ede496e61f35d2358fb69b8878eda7b553f07fb4588075f"
     },
     "mods": [
       {
@@ -4502,14 +4503,6 @@
         "sha256": "082f181eac3d4b65a50a071605ca80174fea4262e1b2c0562a00c5ed05140507",
         "sha512": "5909ccf1becb519baba116fefb7e84d3079a7c3a8ee03301adffd4fe4706827a0fdfbcff15f6480eb974f78f939a4dee5785cf4a8cc51a46ab987ff172ae0799",
         "downloadUrl": "https://edge.forgecdn.net/files/6273/384/CustomWindowTitle-1.21.4%2bv1.4.1.jar"
-      },
-      {
-        "filename": "DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
-        "bytes": 28289212,
-        "sha1": "4357b4d19fab818780c94f0e43dad1cc931634b2",
-        "sha256": "864e70def5b0d54d619b940b66bb2784e91d3f3fc253064fdc1b3fc5786cbfab",
-        "sha512": "d14b32d3fd143a06514d6ad388eee11e9d657c84e1a937aaf8d033b1137fb43ef8b05cff1011a994cc42f3106823c51234f8bc18d72bb05bc317a20ea83c50ed",
-        "downloadUrl": "https://cdn.modrinth.com/data/uCdwusMi/versions/9w34y8ai/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar"
       },
       {
         "filename": "DungeonCrawl-NeoForge-1.21-2.3.17.jar",
@@ -5750,18 +5743,11 @@
         "sha512": "8b3e1a43077a3bb8b23c3787254dcee9ce6bf2d2637c3b898f26769882595e6df938fa864d3314e1a31626a7fae153d53a7661ec8ab3540dde639a6cd9710cd7"
       },
       {
-        "filename": "expedition-chunky-startup-guard-neoforge-1.0.0.jar",
-        "bytes": 1856,
-        "sha1": "dc747fcd01c79ade3032d2dabf3052592a974fe6",
-        "sha256": "0040cfea68a20683d1e7f443e68b708cd8e65a4c812be602f6daf3a704808970",
-        "sha512": "e23f1581f05a00494c05c3a2383b0f77d5d24f0f6e8dd67d197c9f0f113446eb81b3e2686cdc09d1d4b5090afe280e315d8dcbfb96c06faf63dd52ee5c09bf1f"
-      },
-      {
-        "filename": "expedition-client-performance-neoforge-1.0.0.jar",
-        "bytes": 1888,
-        "sha1": "a4d8ae1989a880455038eeea55b23ec09c4455a7",
-        "sha256": "a8270a4baa992b18d8921ac75f5d72154f6b61960a5f3b65d0d367ecdb4dda9a",
-        "sha512": "f129a32f17f1d6e5e48a0f78aac41e57b8d3c99dd8ab81882127a4656248278022696a3ad1083e64bf8d79089c5fb65313fa854e3db3b832ebb21a58c68489df"
+        "filename": "expedition-armor-display-neoforge-1.0.0.jar",
+        "bytes": 5384,
+        "sha1": "074888ba7b8c4d2771b7732d5916fbd204ac11f1",
+        "sha256": "fefb8ce39e793a3ebbfcaeac0a298d1669c671a3c7e3713c1a9695b9878d230c",
+        "sha512": "c7b763631627e3921948e13b6e38ea9795c92d93e0d3ad06fe7c33d99d217f1121a7838371bee3bc27df09c1b12cf44c8b3da912f91f76bd5874a519f9e632d4"
       },
       {
         "filename": "expedition-creeper-firework-compat-neoforge-1.0.0.jar",
@@ -5818,6 +5804,13 @@
         "sha1": "8ddf6a2ad7bcd95a26d56f8c01e4b5826a0f9be9",
         "sha256": "9c17e45e57ffed9fefbe359f0e61e2f01dbc6be5b60eed5aa1098102eb341f48",
         "sha512": "b9672482b08933a2186a6bc9fd6fc85336527bdb2bbe9013753a462b6f3a399c58cd6ebdcfadb2948a5c70e021da3021a860ffa2d63768b46b0f4f2703ce03f2"
+      },
+      {
+        "filename": "expedition-map-writing-neoforge-1.0.0.jar",
+        "bytes": 2937,
+        "sha1": "6ff6c591416c6451b52635b7cee9eb62734832b8",
+        "sha256": "006ee327a6f245c74ac7377788bacc5734586114e35de0989a009b81ef6a4162",
+        "sha512": "2df152a38c4a118e34dfa02f5e128f66d36b4896e4410718e28dff85f1460dd68e8b547f09f188aefd213876f7c007a86d82868aee9c4a0ce2172f9bba032e5c"
       },
       {
         "filename": "expedition-railway-avoidance-neoforge-1.0.0.jar",
@@ -6070,6 +6063,14 @@
         "sha256": "20a1995e4074f387ff549e2c57ea79dd7d41ee83c6afb9dd6a6e840e592d1c47",
         "sha512": "8dfa5f8c57224a5e34e5098367ea9819ca6dc9c11357cd3062c16da3455c8bd1a483098af7383debc4b9ce8e4d7ab3fdc799b415644eb829da83eb72a7335dfd",
         "downloadUrl": "https://edge.forgecdn.net/files/8893/490/geckolib-neoforge-1.21.1-4.9.3.jar"
+      },
+      {
+        "filename": "gnetum-3.3.7.jar",
+        "bytes": 120890,
+        "sha1": "c71f592fc679664d497518ca6cb6762460a2426f",
+        "sha256": "dc5972c634fa29fbc71a043ada8aa5d047692ee968356d350b99a3e6391ae61d",
+        "sha512": "15b8007782283b429662e0b4397b6827da5ffde536ab83efbf1fa578bf087968fef6bd0174c76468d955f8782b164f5c04e1becc22dd6012db52c9ce9f376d43",
+        "downloadUrl": "https://cdn.modrinth.com/data/7MoE34WK/versions/3WifnKNy/gnetum-3.3.7.jar"
       },
       {
         "filename": "goddamnrepackager-0.5.1-neoforge-alpha.jar",
@@ -6776,6 +6777,14 @@
         "sha1": "80396a60063bf784f7344a419c5edeb2a376795a",
         "sha256": "3838933ffdfabc5349ade7e9c3b605f852de8899b7860fc16d01a07ba3b294a6",
         "sha512": "8aaaeb87ff2a9ccdb8361492c1b8de03107319b4db9a359768872b8ce030b7855536006b91a6278e41634b905de9a58f66edb3f0506b929723779083acbc768c"
+      },
+      {
+        "filename": "seleafculling-neoforge-4.3.0+1.21.1.jar",
+        "bytes": 108914,
+        "sha1": "d99bb118a50405d8fde90b11c67bd0f698af1cc3",
+        "sha256": "f50d898b0ef8a83b3dad80196cb65688090491dbfb68d3265146a3b88a6d30d3",
+        "sha512": "60ab2f32fc3685c7db3bcd3096a9e9e3c91c1b35ac39d37e0f3ef16b85f5f2b756fe1131895986ae778b1b144aebaf1583bc3cbd76f83bd660db8120f038cb9f",
+        "downloadUrl": "https://github.com/Sumire-Labs/SodiumLeafCulling-Unofficial/releases/download/4.3.0/seleafculling-neoforge-4.3.0%2B1.21.1.jar"
       },
       {
         "filename": "servercore-neoforge-1.5.19+1.21.1.jar",

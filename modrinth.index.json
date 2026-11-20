@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "game": "minecraft",
-  "versionId": "1.21.1-test.3",
+  "versionId": "1.21.1-test.4",
   "name": "机械动力：远征 · NeoForge 测试",
   "files": [
     {
@@ -269,21 +269,6 @@
         "https://edge.forgecdn.net/files/6273/384/CustomWindowTitle-1.21.4%2bv1.4.1.jar"
       ],
       "fileSize": 24505,
-      "env": {
-        "client": "required",
-        "server": "unsupported"
-      }
-    },
-    {
-      "path": "mods/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar",
-      "hashes": {
-        "sha1": "4357b4d19fab818780c94f0e43dad1cc931634b2",
-        "sha512": "d14b32d3fd143a06514d6ad388eee11e9d657c84e1a937aaf8d033b1137fb43ef8b05cff1011a994cc42f3106823c51234f8bc18d72bb05bc317a20ea83c50ed"
-      },
-      "downloads": [
-        "https://cdn.modrinth.com/data/uCdwusMi/versions/9w34y8ai/DistantHorizons-3.3.3-1.21.1-fabric-neoforge.jar"
-      ],
-      "fileSize": 28289212,
       "env": {
         "client": "required",
         "server": "unsupported"
@@ -2795,6 +2780,21 @@
       }
     },
     {
+      "path": "mods/gnetum-3.3.7.jar",
+      "hashes": {
+        "sha1": "c71f592fc679664d497518ca6cb6762460a2426f",
+        "sha512": "15b8007782283b429662e0b4397b6827da5ffde536ab83efbf1fa578bf087968fef6bd0174c76468d955f8782b164f5c04e1becc22dd6012db52c9ce9f376d43"
+      },
+      "downloads": [
+        "https://cdn.modrinth.com/data/7MoE34WK/versions/3WifnKNy/gnetum-3.3.7.jar"
+      ],
+      "fileSize": 120890,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
       "path": "mods/goddamnrepackager-0.5.1-neoforge-alpha.jar",
       "hashes": {
         "sha1": "2e29d8804fc5f1473cf9071a44a683054e75362d",
@@ -4034,6 +4034,21 @@
         "https://cdn.modrinth.com/data/6jk8Pote/versions/D1y11uNH/roadweaver-neoforge-2.3.2-1.21.1.jar"
       ],
       "fileSize": 3879190,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/seleafculling-neoforge-4.3.0+1.21.1.jar",
+      "hashes": {
+        "sha1": "d99bb118a50405d8fde90b11c67bd0f698af1cc3",
+        "sha512": "60ab2f32fc3685c7db3bcd3096a9e9e3c91c1b35ac39d37e0f3ef16b85f5f2b756fe1131895986ae778b1b144aebaf1583bc3cbd76f83bd660db8120f038cb9f"
+      },
+      "downloads": [
+        "https://github.com/Sumire-Labs/SodiumLeafCulling-Unofficial/releases/download/4.3.0/seleafculling-neoforge-4.3.0%2B1.21.1.jar"
+      ],
+      "fileSize": 108914,
       "env": {
         "client": "required",
         "server": "unsupported"
