@@ -19,7 +19,7 @@ MODULES = {
     "equipment": ("expedition_equipment_rules", "1.0.0", "Expedition Curios Equipment", "", []),
     "ie-machine": ("expedition_ie_machine_compat", "1.0.0", "Expedition IE Machine Compatibility",
                    "expedition.iemachines.mixin", ["CokeOvenCapacityMixin", "FluidPipeConnectionMixin"]),
-    "island-rail": ("expedition_island_rail_transfer", "1.0.0", "Expedition Island Rail Transfer", "", []),
+    "island-rail": ("expedition_island_rail_transfer", "1.1.0", "Expedition Island Rail Transfer", "", []),
     "motion-guard": ("expedition_player_motion_guard", "1.1.0", "Expedition Player Motion Guard",
                      "expedition.motionguard.mixin", ["PlayerMotionMixin", "TeleportObservationMixin"]),
     "railway": ("expedition_railway_avoidance", "1.0.0", "Expedition Railway Avoidance",
@@ -79,6 +79,8 @@ def build(module, java, cp, output, mods, space_proof=False):
     if module in DEPENDENCIES:
         dependency_id, dependency_version, dependency_jar = DEPENDENCIES[module]
         cp += os.pathsep + str(mods / dependency_jar)
+    if module == "island-rail":
+        cp += os.pathsep + str(mods / DEPENDENCIES["railway"][2])
     if module == "space":
         cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in SPACE_DEPENDENCIES)
         if space_proof:
@@ -128,6 +130,8 @@ side="{side}"
         if mixins:
             metadata += f'[[mixins]]\nconfig="{mixin_config}"\n'
         module_dependencies = [DEPENDENCIES[module]] if module in DEPENDENCIES else []
+        if module == "island-rail":
+            module_dependencies.append(DEPENDENCIES["railway"])
         if module == "space":
             module_dependencies = SPACE_DEPENDENCIES
         for dependency_id, dependency_version, _ in module_dependencies:

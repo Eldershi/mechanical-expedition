@@ -7,5 +7,6 @@ public final class IslandRailTransfer {
     public IslandRailTransfer() {
         new IslandRailRebuild();
         new IslandBridgeTransfer();
+        new IslandThroughRail();
     }
 }

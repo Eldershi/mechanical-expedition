@@ -45,6 +45,10 @@ To reconnect an existing bridge and extend it straight to a new shore, provide `
 
 Load the bridge chunks and run `expeditionrailbridge build`, `expeditionrailbridge check`, `expeditionrailbridge land`, and `expeditionrailbridge check-land` in order. The checks traverse Create's graph in both directions. Save the copy after the checks pass and remove the transfer module before normal play.
 
+To connect the shore rail to an adjoining Create line, use `through-route.json` with ordered `knots`. Each knot specifies a rail block with `x`, `y`, `z` and its forward horizontal heading with `dx`, `dz`. The first and last knots must match the approach shape of existing tracks. Set `factoryEnd` and `adjoiningEnd` to graph positions on the two retained lines and `minimumDistance` to the minimum through journey in blocks. The route uses [TongDa Railway 1.1.6](https://github.com/Hello-LuckyHuang/TongDaRailway/releases/tag/v1.1.6-NeoForge) for straight segments and eased curves. It adds a track bed and founded piers along the curved spans. Set `clearNaturalLogs` to true where the new corridor crosses undeveloped forest.
+
+Load the entire connector, including neighboring blocks needed for the track bed. Run `expeditionrailthrough plan` to validate the geometry and affected terrain. Run `expeditionrailthrough build` to lay the connector, then `expeditionrailthrough check` to advance a native Create travelling point from the factory to the adjoining line and back. Repeat the check after saving and reopening the copy.
+
 Run the [Create inventory converter](create-inventory-migration/README.md) on a closed source region copy before opening it with 1.21.1. Use its output for the remaining region transformations.
 
 For a closed 1.21.1 migration copy containing Steam Letters contents, run `migration/replace_steam_letters_contents.py <world-copy> <new-output-directory>` with `nbtlib`. It exports only changed region and player files. Bronze casings become Create copper casings, stored steam becomes Mekanism steam at the saved volume, and retired recipe-book entries are removed. Overlay the output on the closed copy after checking the reported totals.
