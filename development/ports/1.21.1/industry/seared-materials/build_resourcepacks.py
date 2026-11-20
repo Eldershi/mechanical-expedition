@@ -15,6 +15,7 @@ SMELTERY = "block/smeltery/"
 FOUNDRY = "block/foundry/"
 FOUNDRY_TABLE_PLATE = FOUNDRY + "casting/table_plate"
 FOUNDRY_COVERED_PLATE = FOUNDRY + "casting/table_plate_covered"
+INDUSTRIAL_IRON = "assets/create/textures/block/industrial_iron_block"
 BRICKS = "seared/bricks"
 FANCY_BRICKS = "seared/fancy_bricks"
 GLASS = "seared_glass"
@@ -278,6 +279,37 @@ def build_seared_textures(mod, create, namespace):
     return textures
 
 
+def industrial_panel(source, width, height):
+    def coordinates(length):
+        rim = 2 if length >= 5 else 1
+        interior = length - 2 * rim
+        first = (16 - interior) // 2
+        return (*range(rim), *range(first, first + interior), *range(16 - rim, 16))
+
+    panel = Image.new("RGBA", (width, height))
+    panel.putdata([source.getpixel((x, y)) for y in coordinates(height) for x in coordinates(width)])
+    return panel
+
+
+def build_anvil_base_textures(create):
+    side = read_png(create, INDUSTRIAL_IRON + ".png")
+    top = read_png(create, INDUSTRIAL_IRON + "_top.png")
+    base = Image.new("RGBA", (16, 16))
+    base.paste(industrial_panel(top, 12, 12), (0, 0))
+    base.paste(industrial_panel(side, 12, 4), (0, 12))
+
+    # Preserve the pedestal's UV layout for the platform, neck and two braces.
+    upper = Image.new("RGBA", (16, 16))
+    upper.paste(industrial_panel(top, 8, 6), (0, 0))
+    for x, y, width, height in ((0, 6, 8, 3), (8, 0, 3, 6), (12, 0, 4, 7), (10, 9, 6, 7)):
+        upper.paste(industrial_panel(side, width, height), (x, y))
+
+    return {
+        "block/table/scorched_anvil_base": encode_png(base),
+        "block/table/scorched_anvil_base_upper": encode_png(upper),
+    }
+
+
 def build_scorched_textures(mod, create, namespace):
     textures = {
         FOUNDRY + target: create.read(f"{SCORIA}{source}.png")
@@ -294,8 +326,7 @@ def build_scorched_textures(mod, create, namespace):
         FOUNDRY + asset.removeprefix(prefix).removesuffix(".png")
         for asset in mod.namelist() if asset.startswith(prefix) and asset.endswith(".png")
     ]
-    surfaces.extend(("block/table/scorched_anvil_base", "block/table/scorched_anvil_base_upper",
-                     "item/materials/scorched_brick"))
+    surfaces.append("item/materials/scorched_brick")
     for path in surfaces:
         if path in textures:
             continue
@@ -318,6 +349,7 @@ def build_scorched_textures(mod, create, namespace):
         ):
             recess.putpixel(point, recess.getpixel(sample))
     textures[FOUNDRY_COVERED_PLATE] = encode_png(recess)
+    textures.update(build_anvil_base_textures(create))
     return textures
 
 
