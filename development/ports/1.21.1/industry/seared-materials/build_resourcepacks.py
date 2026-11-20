@@ -13,6 +13,8 @@ CREATE_BRICK = "assets/create/textures/block/palettes/stone_types/brick/scorchia
 CREATE_SMALL_BRICK = "assets/create/textures/block/palettes/stone_types/small_brick/scorchia_cut_small_brick.png"
 SMELTERY = "block/smeltery/"
 FOUNDRY = "block/foundry/"
+FOUNDRY_TABLE_PLATE = FOUNDRY + "casting/table_plate"
+FOUNDRY_COVERED_PLATE = FOUNDRY + "casting/table_plate_covered"
 BRICKS = "seared/bricks"
 FANCY_BRICKS = "seared/fancy_bricks"
 GLASS = "seared_glass"
@@ -298,10 +300,24 @@ def build_scorched_textures(mod, create, namespace):
         if path in textures:
             continue
         image = read_png(mod, asset_name(namespace, path))
-        shared = bricks if path.removeprefix(FOUNDRY).startswith(FOUNDRY_BRICK_BACKGROUNDS) else None
-        result = remap_surface(image, SCORCHED_STONE_COLORS, bricks=shared)
+        name = path.removeprefix(FOUNDRY)
+        shared = bricks if name.startswith(FOUNDRY_BRICK_BACKGROUNDS) else None
+        metal = BRASS_COLORS if name.startswith("io/duct_front_") else None
+        result = remap_surface(image, SCORCHED_STONE_COLORS, metal, shared)
         if image.tobytes() != result.tobytes():
             textures[path] = encode_png(result)
+
+    with Image.open(BytesIO(textures[FOUNDRY_TABLE_PLATE])) as plate:
+        recess = plate.convert("RGBA")
+    # The open casting surface has a gold ring visible through the covered model's gutter.
+    for offset in range(1, 15):
+        inner = min(13, max(2, offset))
+        for point, sample in (
+            ((offset, 1), (inner, 2)), ((offset, 14), (inner, 13)),
+            ((1, offset), (2, inner)), ((14, offset), (13, inner)),
+        ):
+            recess.putpixel(point, recess.getpixel(sample))
+    textures[FOUNDRY_COVERED_PLATE] = encode_png(recess)
     return textures
 
 
@@ -333,6 +349,11 @@ def write_pack(path, mod, namespace, pack_format, textures):
                 original = json.loads(mod.read(target))
                 original["textures"]["pane"] = f"{namespace}:{area}{glass}_pane"
                 resources[target] = json.dumps(original, indent=2) + "\n"
+
+    target = f"assets/{namespace}/models/{FOUNDRY}table_covered.json"
+    covered_table = json.loads(mod.read(target))
+    covered_table["textures"]["top"] = f"{namespace}:{FOUNDRY_COVERED_PLATE}"
+    resources[target] = json.dumps(covered_table, indent=2) + "\n"
 
     with ZipFile(path, "w", compression=ZIP_DEFLATED) as pack:
         for name, data in sorted(resources.items()):
