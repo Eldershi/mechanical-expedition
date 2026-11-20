@@ -1,7 +1,9 @@
-"""Source files shared by the NeoForge client and dedicated-server recipe overlays."""
+"""Shared production files and settings for NeoForge clients and dedicated servers."""
 
 from pathlib import Path
+import re
 import shutil
+import tomllib
 
 PORT = Path(__file__).resolve().parents[1]
 INDUSTRY = PORT / "industry"
@@ -66,6 +68,15 @@ CLIENT = {
 SPACE_MOD = "expedition-space-neoforge-1.0.1.jar"
 ITEM_COMPATIBILITY_MOD = "expedition-item-compatibility-neoforge-1.0.0.jar"
 REQUIRED_MODS = (SPACE_MOD, ITEM_COMPATIBILITY_MOD)
+QUARK_CONFIG = Path("config/quark-common.toml")
+
+
+def disable_scaffolding_replacement(payload):
+    updated, count = re.subn(rb'(?m)^([ \t]*"Replace Scaffolding"[ \t]*=[ \t]*)(?:true|false)\b',
+                             rb'\g<1>false', payload)
+    if count != 1 or tomllib.loads(updated.decode("utf-8-sig")).get("tweaks", {}).get("Replace Scaffolding") is not False:
+        raise ValueError(f"Expected the Replace Scaffolding setting in {QUARK_CONFIG}")
+    return updated
 
 
 def files(client):
@@ -77,3 +88,9 @@ def install_files(instance, client=False):
         destination = instance / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source, destination)
+    config = instance / QUARK_CONFIG
+    config.parent.mkdir(parents=True, exist_ok=True)
+    if config.exists():
+        config.write_bytes(disable_scaffolding_replacement(config.read_bytes()))
+    else:
+        config.write_bytes(b'[tweaks]\n"Replace Scaffolding" = false\n')

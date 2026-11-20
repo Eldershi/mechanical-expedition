@@ -127,6 +127,8 @@ def selected(instance, client=False):
             else:
                 payload, _ = privacy(relative.as_posix(), path.read_bytes())
                 if payload is not None:
+                    if relative == production_overlay.QUARK_CONFIG:
+                        payload = production_overlay.disable_scaffolding_replacement(payload)
                     yield relative, payload
 
 
