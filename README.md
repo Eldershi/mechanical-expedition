@@ -9,6 +9,8 @@
 | **1.20.1 · Forge** 正式维护 | [开发计划与 ATM 之星毕业路线](docs/roadmap.md) |
 | **1.21.1 · NeoForge** 测试开发 | [开发计划与地月远征](https://github.com/Eldershi/mechanical-expedition/blob/migration/1.21.1-neoforge/docs/roadmap.md) |
 
+体验 1.21.1 测试线请下载 [1.21.1-test.4](https://github.com/Eldershi/mechanical-expedition/releases/tag/v1.21.1-test.4)，导入为独立实例并选择 Java 21。
+
 ## 安装当前客户端
 
 1. 从 [发行页面](https://github.com/Eldershi/mechanical-expedition/releases) 下载 `mechanical-expedition-0.2.0-dev.2.mrpack`。
