@@ -64,6 +64,8 @@ def compatibility_assets():
 def write_pack(output, description, assets, *, filters=()):
     metadata = {"pack": {"pack_format": 34, "description": description}}
     if filters:
+        if len({rule["namespace"] for rule in filters}) != 1:
+            raise ValueError("Minecraft 1.21.1 combines namespace and path matches independently within a pack")
         metadata["filter"] = {"block": list(filters)}
     assets["pack.mcmeta"] = json.dumps(metadata).encode()
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -72,6 +74,21 @@ def write_pack(output, description, assets, *, filters=()):
             entry = ZipInfo(name, (2026, 1, 1, 0, 0, 0))
             entry.compress_type = ZIP_DEFLATED
             archive.writestr(entry, data)
+
+
+def write_compatibility_packs(output):
+    write_pack(output, "Expedition resource compatibility", compatibility_assets(), filters=(
+        {"namespace": "minecraft", "path": r"optifine/cem/enchanting_book(?:2?\.jem|\.properties)"},
+        {"namespace": "minecraft", "path": r"textures/entity/enchanting_table_book_[es]\.png"},
+    ))
+    write_pack(output.with_name("Expedition-Filter-Masterful-Machinery-1.21.1.zip"),
+               "Expedition Masterful Machinery model filter", {}, filters=(
+        {"namespace": "mm", "path": r"models/block/.*\.json"},
+    ))
+    write_pack(output.with_name("Expedition-Filter-Eden-Ring-1.21.1.zip"),
+               "Expedition Eden Ring portal texture filter", {}, filters=(
+        {"namespace": "edenring", "path": r"textures/block/portal_block_center_[ns]\.png"},
+    ))
 
 
 def main():
@@ -85,13 +102,7 @@ def main():
             parser.error("--source must be the Minecraft 1.21.1 client jar")
         write_pack(args.output, "Expedition vanilla hostile mobs", vanilla_mobs(args.source))
     else:
-        write_pack(args.output, "Expedition resource compatibility", compatibility_assets(), filters=(
-            # The upstream pack includes block models for Masterful Machinery, absent on NeoForge.
-            {"namespace": "mm", "path": r"models/block/.*\.json"},
-            {"namespace": "edenring", "path": r"textures/block/portal_block_center_[ns]\.png"},
-            {"namespace": "minecraft", "path": r"optifine/cem/enchanting_book(?:2?\.jem|\.properties)"},
-            {"namespace": "minecraft", "path": r"textures/entity/enchanting_table_book_[es]\.png"},
-        ))
+        write_compatibility_packs(args.output)
 
 
 if __name__ == "__main__":

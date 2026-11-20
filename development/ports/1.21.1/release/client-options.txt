@@ -9,3 +9,7 @@ biomeBlendRadius:2
 entityDistanceScaling:1.0
 entityShadows:false
 renderClouds:"false"
+key_gui.xaero_open_map:key.keyboard.m
+key_key.ftbchunks.map:key.keyboard.unknown
+key_key.enderio.toggle_magnet:key.keyboard.comma
+key_key.scguns.enable_exo_chestplate:key.keyboard.period

@@ -1,4 +1,3 @@
-
 ["Boss bars"]
 	#Our mod has the ability to modify how the healthbars of certain bosses appear. Pick the one that suits you most.
 	#"OFF" : Disable the healthbar from rendering.
@@ -23,7 +22,7 @@
 	#Allowed Values: DEFAULT, OFF, VANILLA, SIMPLE, FANCY
 	"What kind of healthbar should Helvar, the Underworld Knight use?" = "DEFAULT"
 	#Allowed Values: DEFAULT, OFF, VANILLA, SIMPLE, FANCY
-	"What kind of healthbar should Volrak, the Kraken use?" = "DEFAULT"
+	"What kind of healthbar should Nerakyss, the Kraken use?" = "DEFAULT"
 
 [Rolling]
 	"Will the camera rotate when rolling while in first-person view" = false
@@ -41,4 +40,3 @@
 	#You can also additionally offset the GUI element with the use of the X and Y offset values.
 	"Roll GUI element X offset (Bigger number goes right, negative goes left)" = 0
 	"Roll GUI element Y offset (Bigger number goes down, negative goes up)" = 0
-
