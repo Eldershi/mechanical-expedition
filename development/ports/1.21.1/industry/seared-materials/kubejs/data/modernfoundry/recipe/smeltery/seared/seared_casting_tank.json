@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "B": {
+      "item": "modernfoundry:seared_brick"
+    },
+    "C": {
+      "item": "create:andesite_alloy"
+    },
+    "G": {
+      "tag": "c:glass_blocks"
+    }
+  },
+  "pattern": [
+    "BGB",
+    "CGC",
+    "BGB"
+  ],
+  "result": {
+    "id": "modernfoundry:seared_casting_tank"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,19 @@
+{
+  "type": "modernfoundry:melting",
+  "id": "modernfoundry:smeltery/melting/metal/copper/smeltery_controller",
+  "byproducts": [
+    {
+      "amount": 1000,
+      "fluid": "modernfoundry:seared_stone"
+    }
+  ],
+  "ingredient": {
+    "item": "modernfoundry:smeltery_controller"
+  },
+  "result": {
+    "amount": 360,
+    "tag": "c:molten_andesite_alloy"
+  },
+  "temperature": 760,
+  "time": 175
+}

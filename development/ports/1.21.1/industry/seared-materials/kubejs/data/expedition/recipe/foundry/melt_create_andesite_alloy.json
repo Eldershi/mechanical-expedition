@@ -1,0 +1,13 @@
+{
+  "type": "modernfoundry:melting",
+  "id": "expedition:foundry/melt_create_andesite_alloy",
+  "ingredient": {
+    "item": "create:andesite_alloy"
+  },
+  "result": {
+    "fluid": "cmi:molten_andesite_alloy",
+    "amount": 90
+  },
+  "temperature": 760,
+  "time": 70
+}
