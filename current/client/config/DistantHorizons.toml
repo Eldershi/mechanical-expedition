@@ -1,0 +1,23 @@
+_version = 5
+
+[common.multiThreading]
+numberOfThreads = 4
+
+[common.worldGenerator]
+chunkGeneratorMode = "PRE_EXISTING_ONLY"
+generatorPlan = "CHUNKS_ONLY"
+limitIfServerUnhealthy = true
+pauseIfMovingQuickly = true
+showGenerationProgress = "DISABLED"
+
+[client.advanced.autoUpdater]
+enableAutoUpdater = false
+
+[client.advanced.debugging]
+rendererMode = "DEFAULT"
+
+[client.advanced.graphics.quality]
+lodChunkRenderDistanceRadius = 64
+horizontalQuality = "MEDIUM"
+verticalQuality = "MEDIUM"
+vanillaFadeMode = "DOUBLE_PASS"
