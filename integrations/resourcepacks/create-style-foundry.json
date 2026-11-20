@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "create-style-foundry",
+  "repository": "https://github.com/Eldershi/create-style-foundry",
+  "ref": "1759774b29427026821b4ada286b21fba638e296",
+  "release": "v1.0.0",
+  "minecraft": "1.21.1",
+  "artifacts": [
+    {
+      "name": "create-style-foundry-1.0.0-neoforge-1.21.1.zip",
+      "url": "https://github.com/Eldershi/create-style-foundry/releases/download/v1.0.0/create-style-foundry-1.0.0-neoforge-1.21.1.zip",
+      "bytes": 139651,
+      "sha256": "eacffd97dd247f95f7661684002019527a4ad30401f7c7ecc4f78e2c7b3a8239"
+    }
+  ],
+  "clientFiles": [
+    {
+      "path": "config/paxi/resourcepacks/create-style-foundry-1.0.0-neoforge-1.21.1.zip",
+      "officialVersionPage": "https://github.com/Eldershi/create-style-foundry/releases/tag/v1.0.0",
+      "downloadUrl": "https://github.com/Eldershi/create-style-foundry/releases/download/v1.0.0/create-style-foundry-1.0.0-neoforge-1.21.1.zip",
+      "bytes": 139651,
+      "sha1": "89af6e7ff9fa68d36929d27823e0d2a2338b0237",
+      "sha256": "eacffd97dd247f95f7661684002019527a4ad30401f7c7ecc4f78e2c7b3a8239",
+      "sha512": "7bcbaf01ba51a704d26b7803693006a67cdefefc4adc99ba257f32ffcd3520c6a02d16fda2d00887e6d00e615f814e6c3ee8a7ae2d3439cb99352cbfd37b7ef6"
+    }
+  ]
+}

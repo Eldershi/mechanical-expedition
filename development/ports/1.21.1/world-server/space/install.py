@@ -61,10 +61,6 @@ def update_fuel_quest(instance):
 
 
 def install(client, server, java):
-    from importlib.util import find_spec
-
-    if find_spec("PIL") is None:
-        raise ValueError("Pillow is required to build the seared smeltery resource pack")
     if not (client / "mods/adastra-1.21.1-1.16.26-neoforge.jar").is_file():
         raise ValueError("Client does not match the 1.21.1 space baseline")
     if not (server / "libraries/net/neoforged/neoforge/21.1.267/unix_args.txt").is_file():

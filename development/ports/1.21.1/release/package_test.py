@@ -81,7 +81,8 @@ def excluded(relative):
 
 def external_client_resources():
     directory = ROOT / "integrations/resourcepacks"
-    for name in ("create-mcgui.json", "create-style-hnn.json", "neoforge-resourcepacks.json"):
+    for name in ("create-mcgui.json", "create-style-hnn.json", "neoforge-resourcepacks.json",
+                 "create-style-foundry.json"):
         yield from json_file(directory / name)["clientFiles"]
 
 
