@@ -2514,6 +2514,7 @@
       "kubejs/client_scripts/ExpeditionFactoryLanguage.js": "1b0f04e6e09dcdb02881ffe0815f0968adc734e07b4139b8276cccb21dd1e5d7",
       "kubejs/client_scripts/ExpeditionKilnLanguage.js": "6ba9aacda52aef21fc3f2a1ea171b7a6045ea2ea1d10e9d2c12ee41ccb19541f",
       "kubejs/client_scripts/ExpeditionLogisticsVisibility.js": "c5f5508f257a5836c4ade91a2f57932a60ae4af3fc40091e52888551b7bd626c",
+      "kubejs/client_scripts/ExpeditionMechanismLanguage.js": "7415f2986df37dd7bfc2e2846d6483110adb1f6cd8bc1b484a39fc3a7714458b",
       "kubejs/client_scripts/ExpeditionLubricantLanguage.js": "aaf854a5a83595e20f9e3f7ca3b968bb0e7be98f830b074a3124318cb2676078",
       "kubejs/client_scripts/ExpeditionOilLanguage.js": "7e2ae60cf47527cc8d60007402f5f26880c68ab6b518f215a5a725a23a25c447",
       "kubejs/client_scripts/ExpeditionPolymerLanguage.js": "70ae537055893e77da992724029b5ec1d85a2a7fb8118b6df57c54d72f20cd42",

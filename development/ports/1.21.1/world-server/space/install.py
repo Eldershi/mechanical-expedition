@@ -116,6 +116,9 @@ def install(client, server, java):
             retire_items(instance)
             shutil.copytree(overlay, instance, dirs_exist_ok=True)
             shutil.copy2(adapter, instance / "mods")
+        client_scripts = client / "kubejs/client_scripts"
+        client_scripts.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(FACTORY / "kubejs/client_scripts/ExpeditionMechanismLanguage.js", client_scripts)
         subprocess.run([sys.executable, str(FACTORY / "seared-materials/install.py"),
                         "--client", str(client), "--server", str(server)], check=True)
 

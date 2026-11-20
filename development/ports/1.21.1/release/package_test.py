@@ -28,6 +28,8 @@ SAFE_DOWNLOADS = {"cdn.modrinth.com", "edge.forgecdn.net", "mediafilez.forgecdn.
                   "media.forgecdn.net", "github.com", "maven.neoforged.net"}
 BSL_PRESET = Path("shaderpacks/BSL_v10.1.8.zip.txt")
 SERVER_DIAGNOSTICS = Path("config/expedition-diagnostics.json")
+MECHANISM_LANGUAGE = Path("kubejs/client_scripts/ExpeditionMechanismLanguage.js")
+MECHANISM_LANGUAGE_SOURCE = HERE.parent / "industry" / MECHANISM_LANGUAGE
 
 
 def json_file(path):
@@ -94,6 +96,7 @@ def selected(instance, client=False):
     if client:
         defaults = Path(__file__).with_name("client-options.txt")
         yield Path("options.txt"), defaults.read_bytes()
+        yield MECHANISM_LANGUAGE, MECHANISM_LANGUAGE_SOURCE.read_bytes()
         preset = instance / BSL_PRESET
         if preset.is_file() and not preset.is_symlink():
             yield BSL_PRESET, preset.read_bytes()
@@ -102,7 +105,9 @@ def selected(instance, client=False):
     for folder in sorted(ASSET_DIRS):
         for path in sorted((instance / folder).rglob("*")):
             relative = path.relative_to(instance)
-            if relative.as_posix() in external_paths or (not client and relative == SERVER_DIAGNOSTICS):
+            if relative.as_posix() in external_paths:
+                continue
+            if relative == (MECHANISM_LANGUAGE if client else SERVER_DIAGNOSTICS):
                 continue
             if path.is_symlink() or not path.is_file() or excluded(relative) or skip_reason(relative.as_posix()):
                 continue
@@ -239,6 +244,9 @@ def main():
             raise ValueError("Test manifest, mod lock and Modrinth index must match")
         if index != index_for(meta, lock["client"]):
             raise ValueError("Modrinth index differs from the client lock and download references")
+        language_hash = hashlib.sha256(MECHANISM_LANGUAGE_SOURCE.read_bytes()).hexdigest()
+        if lock["client"]["files"].get(MECHANISM_LANGUAGE.as_posix()) != language_hash:
+            raise ValueError("The client lock must include the current CMI mechanism translations")
         print(meta["version"])
         return
     if not args.client or not args.server:
