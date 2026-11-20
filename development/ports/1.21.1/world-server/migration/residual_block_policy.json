@@ -1,0 +1,406 @@
+{
+  "forbidden_arcanus:arcane_crystal_ore": {
+    "category": "mineral",
+    "relight": true,
+    "target": "minecraft:cobblestone"
+  },
+  "forbidden_arcanus:carved_edelwood_log": {
+    "category": "plant",
+    "target": "minecraft:air"
+  },
+  "forbidden_arcanus:deepslate_arcane_crystal_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "forbidden_arcanus:edelwood_branch": {
+    "category": "plant",
+    "target": "minecraft:air"
+  },
+  "forbidden_arcanus:edelwood_log": {
+    "category": "plant",
+    "target": "minecraft:air"
+  },
+  "forbidden_arcanus:gilded_darkstone": {
+    "category": "mineral",
+    "relight": true,
+    "target": "minecraft:blackstone"
+  },
+  "forbidden_arcanus:nipa": {
+    "category": "plant",
+    "entity": "empty_plant",
+    "target": "minecraft:air"
+  },
+  "forbidden_arcanus:petrified_root": {
+    "category": "plant",
+    "target": "minecraft:air"
+  },
+  "forbidden_arcanus:runic_darkstone": {
+    "category": "mineral",
+    "relight": true,
+    "target": "minecraft:blackstone"
+  },
+  "forbidden_arcanus:runic_deepslate": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "forbidden_arcanus:runic_stone": {
+    "category": "mineral",
+    "relight": true,
+    "target": "minecraft:cobblestone"
+  },
+  "forbidden_arcanus:stella_arcanum": {
+    "category": "mineral",
+    "deep": {
+      "properties": {
+        "axis": "y"
+      },
+      "target": "minecraft:deepslate"
+    },
+    "relight": true,
+    "target": "minecraft:cobblestone"
+  },
+  "forbidden_arcanus:xpetrified_ore": {
+    "category": "mineral",
+    "deep": {
+      "properties": {
+        "axis": "y"
+      },
+      "target": "minecraft:deepslate"
+    },
+    "relight": true,
+    "target": "minecraft:cobblestone"
+  },
+  "lethality:nihilite_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "malum:brilliant_deepslate": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "malum:brilliant_stone": {
+    "category": "mineral",
+    "relight": true,
+    "target": "minecraft:cobblestone"
+  },
+  "malum:chiseled_tainted_rock": {
+    "category": "structure",
+    "target": "minecraft:chiseled_deepslate"
+  },
+  "malum:cthonic_gold_cluster": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "malum:cthonic_gold_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "malum:deepslate_quartz_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "malum:deepslate_soulstone_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "malum:exposed_runewood_log": {
+    "category": "plant",
+    "target": "minecraft:air"
+  },
+  "malum:hanging_runewood_leaves": {
+    "category": "plant",
+    "target": "minecraft:air"
+  },
+  "malum:natural_quartz_cluster": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "malum:natural_quartz_ore": {
+    "category": "mineral",
+    "relight": true,
+    "target": "minecraft:cobblestone"
+  },
+  "malum:runewood_leaves": {
+    "category": "plant",
+    "target": "minecraft:air"
+  },
+  "malum:runewood_log": {
+    "category": "plant",
+    "target": "minecraft:air"
+  },
+  "malum:soulstone_ore": {
+    "category": "mineral",
+    "relight": true,
+    "target": "minecraft:cobblestone"
+  },
+  "malum:tainted_rock_bricks_wall": {
+    "category": "structure",
+    "copy_properties": true,
+    "target": "minecraft:deepslate_brick_wall"
+  },
+  "malum:tainted_rock_column": {
+    "category": "structure",
+    "copy_properties": true,
+    "target": "minecraft:polished_basalt"
+  },
+  "malum:tainted_rock_column_cap": {
+    "category": "structure",
+    "target": "minecraft:polished_deepslate"
+  },
+  "malum:weeping_well_bricks": {
+    "category": "structure",
+    "target": "minecraft:deepslate_bricks"
+  },
+  "malum:weeping_well_central_encasement": {
+    "category": "structure",
+    "target": "minecraft:deepslate_bricks"
+  },
+  "malum:weeping_well_central_encasement_support": {
+    "category": "structure",
+    "target": "minecraft:polished_deepslate"
+  },
+  "malum:weeping_well_central_pillar": {
+    "category": "structure",
+    "target": "minecraft:polished_deepslate"
+  },
+  "malum:weeping_well_encasement": {
+    "category": "structure",
+    "target": "minecraft:deepslate_bricks"
+  },
+  "malum:weeping_well_encasement_corner": {
+    "category": "structure",
+    "target": "minecraft:chiseled_deepslate"
+  },
+  "malum:weeping_well_encasement_mirrored": {
+    "category": "structure",
+    "target": "minecraft:deepslate_bricks"
+  },
+  "malum:weeping_well_side_pillar": {
+    "category": "structure",
+    "target": "minecraft:polished_deepslate"
+  },
+  "quark:lootr_prismarine_trapped_chest": {
+    "category": "chest",
+    "copy_properties": true,
+    "entity": "quark_lootr_chest",
+    "target": "quark:trapped_lootr_prismarine_chest"
+  },
+  "quark:lootr_warped_trapped_chest": {
+    "category": "chest",
+    "copy_properties": true,
+    "entity": "quark_lootr_chest",
+    "target": "quark:trapped_lootr_warped_chest"
+  },
+  "smc:deepslate_perkin_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "smc:tuff_zinc_ore": {
+    "category": "mineral",
+    "target": "minecraft:tuff"
+  },
+  "smc:zinc_ore": {
+    "category": "mineral",
+    "relight": true,
+    "target": "minecraft:cobblestone"
+  },
+  "terramity:blank_void": {
+    "category": "structure",
+    "relight": true,
+    "target": "minecraft:black_concrete"
+  },
+  "terramity:daemonium_stairs": {
+    "category": "structure",
+    "copy_properties": true,
+    "target": "minecraft:polished_blackstone_brick_stairs"
+  },
+  "terramity:deepslate_dimlite_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "terramity:deepslate_iridescent_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "terramity:deepslate_iridium_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "terramity:deepslate_sapphire_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "terramity:deepslate_topaz_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "terramity:fairystone": {
+    "category": "structure",
+    "target": "minecraft:polished_tuff"
+  },
+  "terramity:gaia_lily_ready": {
+    "category": "plant",
+    "entity": "empty_plant",
+    "target": "minecraft:air"
+  },
+  "terramity:gaianite_cluster_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "terramity:igneo_ruby_ore": {
+    "category": "mineral",
+    "relight": true,
+    "target": "minecraft:smooth_basalt"
+  },
+  "terramity:prismatic_crystal_block": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "terramity:prismatic_crystal_cluster": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "terramity:profaned_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "terramity:sapphire_ore": {
+    "category": "mineral",
+    "relight": true,
+    "target": "minecraft:cobblestone"
+  },
+  "terramity:soul_lamp": {
+    "category": "structure",
+    "relight": true,
+    "target": "minecraft:sea_lantern"
+  },
+  "terramity:stone_tile_slab": {
+    "category": "structure",
+    "copy_properties": true,
+    "target": "supplementaries:stone_tile_slab"
+  },
+  "terramity:stone_tile_stairs": {
+    "category": "structure",
+    "copy_properties": true,
+    "target": "supplementaries:stone_tile_stairs"
+  },
+  "terramity:stone_tiles": {
+    "category": "structure",
+    "target": "supplementaries:stone_tile"
+  },
+  "terramity:topaz_ore": {
+    "category": "mineral",
+    "relight": true,
+    "target": "minecraft:cobblestone"
+  },
+  "thermal:apatite_ore": {
+    "category": "mineral",
+    "relight": true,
+    "target": "minecraft:cobblestone"
+  },
+  "thermal:deepslate_apatite_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "thermal:deepslate_niter_ore": {
+    "category": "mineral",
+    "properties": {
+      "axis": "y"
+    },
+    "relight": true,
+    "target": "minecraft:deepslate"
+  },
+  "thermal:niter_ore": {
+    "category": "mineral",
+    "relight": true,
+    "target": "minecraft:cobblestone"
+  },
+  "thermal:rubberwood_leaves": {
+    "category": "plant",
+    "target": "minecraft:air"
+  },
+  "thermal:rubberwood_log": {
+    "category": "plant",
+    "target": "minecraft:air"
+  }
+}
