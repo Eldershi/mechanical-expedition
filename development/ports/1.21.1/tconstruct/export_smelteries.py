@@ -64,7 +64,16 @@ def renamed(value, namespace):
     return String(f"{namespace}:{value.removeprefix(LEGACY)}") if value.startswith(LEGACY) else value
 
 
-def fluid(stack, namespace, excluded, withheld):
+def transfer_id(resource, namespace, excluded, registry):
+    target = renamed(resource, namespace)
+    if resource in excluded:
+        return None
+    if registry is None:
+        return None if resource.split(":", 1)[0] in THERMAL else target
+    return target if target in registry else None
+
+
+def fluid(stack, namespace, excluded, withheld, registry=None):
     if "FluidName" not in stack:
         return stack
     unexpected = stack.keys() - {"FluidName", "Amount", "Tag"}
@@ -72,10 +81,11 @@ def fluid(stack, namespace, excluded, withheld):
         raise ValueError(f"Unsupported legacy fluid data for {stack['FluidName']}")
     resource = stack["FluidName"]
     amount = int(stack["Amount"])
-    if resource.split(":", 1)[0] in THERMAL or resource in excluded:
+    target = transfer_id(resource, namespace, excluded, registry)
+    if target is None:
         withheld["fluid", str(resource)] += amount
         return Compound()
-    result = Compound({"id": renamed(resource, namespace), "amount": Int(amount)})
+    result = Compound({"id": target, "amount": Int(amount)})
     if stack.get("Tag"):
         if resource != "tconstruct:potion" or set(stack["Tag"]) != {"Potion"}:
             raise ValueError(f"Legacy fluid components need explicit conversion for {resource}")
@@ -83,8 +93,9 @@ def fluid(stack, namespace, excluded, withheld):
     return result
 
 
-def item(stack, namespace, excluded, withheld):
-    if stack["id"] in excluded or stack["id"].split(":", 1)[0] in THERMAL:
+def item(stack, namespace, excluded, withheld, registry=None):
+    target = transfer_id(stack["id"], namespace, excluded, registry)
+    if target is None:
         withheld["item", str(stack["id"])] += int(stack.get("Count", stack.get("count", 1)))
         return None
     if "Count" in stack:
@@ -93,11 +104,11 @@ def item(stack, namespace, excluded, withheld):
         stack["count"] = Int(stack.pop("Count"))
         stack.pop("tag", None)
         stack.pop("ForgeCaps", None)
-    stack["id"] = renamed(stack["id"], namespace)
+    stack["id"] = target
     return stack
 
 
-def convert(entity, namespace, excluded, withheld):
+def convert(entity, namespace, excluded, withheld, registry=None):
     result = deepcopy(entity)
     kind = str(result["id"]).removeprefix(LEGACY)
     if kind not in BLOCK_ENTITIES:
@@ -126,12 +137,14 @@ def convert(entity, namespace, excluded, withheld):
                 else:
                     structure[key] = List[IntArray](positions)
     tank = result.get("tank")
+    flu = registry["fluids"] if registry else None
+    items = registry["items"] if registry else None
     if tank:
         if "fluids" in tank:
-            converted = (fluid(value, namespace, excluded, withheld) for value in tank["fluids"])
+            converted = (fluid(value, namespace, excluded, withheld, flu) for value in tank["fluids"])
             tank["fluids"] = List[Compound](value for value in converted if value)
         elif "fluid" in tank:
-            replacement = fluid(tank.pop("fluid"), namespace, excluded, withheld)
+            replacement = fluid(tank.pop("fluid"), namespace, excluded, withheld, flu)
             if replacement:
                 tank["fluid"] = replacement
             else:
@@ -139,19 +152,19 @@ def convert(entity, namespace, excluded, withheld):
                     (tank if key == "filter" else result).pop(key, None)
                 tank["capacity"] = Int(0)
         elif "FluidName" in tank:
-            replacement = fluid(tank, namespace, excluded, withheld)
+            replacement = fluid(tank, namespace, excluded, withheld, flu)
             result["tank"] = Compound({"Fluid": replacement}) if replacement else Compound()
         if "filter" in tank:
             tank["filter"] = renamed(tank["filter"], namespace)
     for key in ("drained", "render_fluid"):
         if key in result:
-            result[key] = fluid(result[key], namespace, excluded, withheld)
+            result[key] = fluid(result[key], namespace, excluded, withheld, flu)
     if "Items" in result:
-        entries = (item(stack, namespace, excluded, withheld) for stack in result["Items"])
+        entries = (item(stack, namespace, excluded, withheld, items) for stack in result["Items"])
         result["Items"] = List[Compound](entry for entry in entries if entry is not None)
     inventory = result.get("inventory")
     if inventory and "items" in inventory:
-        entries = (item(stack, namespace, excluded, withheld) for stack in inventory["items"])
+        entries = (item(stack, namespace, excluded, withheld, items) for stack in inventory["items"])
         inventory["items"] = List[Compound](entry for entry in entries if entry is not None)
     return result
 
@@ -191,7 +204,7 @@ def bounds(controller):
             for key in ("min", "max")]
 
 
-def save_template(output, states, entities, namespace, palette_ids, excluded):
+def save_template(output, states, entities, namespace, palette_ids, excluded, registry=None):
     footprint = sorted(states)
     origin = tuple(min(pos[axis] for pos in footprint) for axis in range(3))
     size = [max(pos[axis] for pos in footprint) - origin[axis] + 1 for axis in range(3)]
@@ -215,7 +228,7 @@ def save_template(output, states, entities, namespace, palette_ids, excluded):
         })
         if pos in entities:
             before = sum(withheld.values())
-            record["nbt"] = convert(entities[pos], namespace, excluded, withheld)
+            record["nbt"] = convert(entities[pos], namespace, excluded, withheld, registry)
             if sum(withheld.values()) != before:
                 unresolved.append(entities[pos])
         records.append(record)
@@ -234,7 +247,8 @@ def save_template(output, states, entities, namespace, palette_ids, excluded):
     }
 
 
-def export(regions, namespace, target_jar, output, excluded, selected_controllers=()):
+def export(regions, namespace, target_jar, output, excluded, selected_controllers=(), registry=None,
+           extra_basins=()):
     prefix = f"assets/{namespace}/blockstates/"
     with ZipFile(target_jar) as jar:
         palette_ids = {f"{namespace}:{name[len(prefix):-5]}" for name in jar.namelist()
@@ -272,6 +286,17 @@ def export(regions, namespace, target_jar, output, excluded, selected_controller
             return (sum(max(lower - value, value - upper, 0) for value, lower, upper in zip(pos, lo, hi)),
                     sum(abs(a - b) for a, b in zip(pos, controllers[index])))
         selections[min(nearby, key=distance)][pos] = state
+    if extra_basins:
+        if len(selected) != 1:
+            raise ValueError("Select one controller when transferring detached casting basins")
+        controller, = selected
+        selection = selections[controller_indices[controller]]
+        for pos in map(tuple, extra_basins):
+            state = states.get(pos, {})
+            entity = entities.get(pos, {})
+            if state.get("Name") != "tconstruct:seared_basin" or entity.get("id") != "tconstruct:basin":
+                raise ValueError(f"No legacy seared casting basin at {pos}")
+            selection[pos] = state
     if output.exists():
         raise FileExistsError(output)
     with TemporaryDirectory(dir=output.parent) as temporary:
@@ -284,7 +309,7 @@ def export(regions, namespace, target_jar, output, excluded, selected_controller
             if controller not in selection:
                 raise ValueError(f"Controller palette is missing at {controller}")
             row = save_template(payload / f"smeltery_{index}.nbt", selection, entities,
-                                namespace, palette_ids, excluded)
+                                namespace, palette_ids, excluded, registry)
             report.append({"controller": controller, **row})
         (payload / "transfer.json").write_text(json.dumps(report, indent=2) + "\n")
         payload.rename(output)
@@ -296,8 +321,18 @@ if __name__ == "__main__":
     parser.add_argument("--target-jar", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--hold", action="append", default=[], help="Leave an absent item or fluid in the transfer report")
+    parser.add_argument("--target-registry", type=Path, help="JSON export with the target item and fluid IDs")
     parser.add_argument("--controller", type=int, nargs=3, action="append", default=[], metavar=("X", "Y", "Z"),
                         help="Export the selected controller only. Repeat as needed.")
+    parser.add_argument("--casting-basin", type=int, nargs=3, action="append", default=[], metavar=("X", "Y", "Z"),
+                        help="Also transfer a detached seared casting basin at the given position.")
     parser.add_argument("regions", type=Path, nargs="+")
     args = parser.parse_args()
-    export(args.regions, args.namespace, args.target_jar, args.output, set(args.hold), args.controller)
+    registry = None
+    if args.target_registry:
+        document = json.loads(args.target_registry.read_text())
+        registry = {key: frozenset(document[key]) for key in ("items", "fluids")}
+        if "minecraft:air" not in registry["items"] or "minecraft:water" not in registry["fluids"]:
+            parser.error("Expected registries from the target server")
+    export(args.regions, args.namespace, args.target_jar, args.output, set(args.hold), args.controller, registry,
+           args.casting_basin)
