@@ -2,16 +2,16 @@
 
 机械动力：远征客户端源码与安装包。游戏环境为 Minecraft 1.20.1、Forge 47.4.10、Java 17。
 
-## 版本与开发计划
+## 版本状态
 
-| 维护线 | 开发计划 |
+| 版本 | 开发计划 |
 | --- | --- |
-| **1.20.1 · Forge** 正式维护 | [开发计划与 ATM 之星毕业路线](docs/roadmap.md) |
-| **1.21.1 · NeoForge** 测试开发 | [开发计划与地月远征](https://github.com/Eldershi/mechanical-expedition/blob/migration/1.21.1-neoforge/docs/roadmap.md) |
+| **1.20.1 · Forge** 已停止开发 | [归档的 ATM 之星毕业路线](docs/roadmap.md) |
+| **1.21.1 · NeoForge** 当前开发线（测试中） | [开发计划与地月远征](https://github.com/Eldershi/mechanical-expedition/blob/migration/1.21.1-neoforge/docs/roadmap.md) |
 
 体验 1.21.1 测试线请下载 [1.21.1-test.4](https://github.com/Eldershi/mechanical-expedition/releases/tag/v1.21.1-test.4)，导入为独立实例并选择 Java 21。
 
-## 安装当前客户端
+## 安装 1.20.1 客户端
 
 1. 从 [发行页面](https://github.com/Eldershi/mechanical-expedition/releases) 下载 `mechanical-expedition-0.2.0-dev.2.mrpack`。
 2. 使用支持 Modrinth 整合包的启动器导入该文件，并新建独立实例；启动器会下载清单中的模组及 Create MC GUI 官方文件，Paxi 会自动启用界面材质。
