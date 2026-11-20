@@ -70,6 +70,18 @@ ADAPTERS = {
         "mixins": ["EnchantingTableResourceMixin"],
         "deps": {},
     },
+    "accessory-entry": {
+        "id": "expedition_accessory_entry",
+        "filename": "expedition-accessory-entry",
+        "name": "Expedition Accessory Entry",
+        "loader": "javafml",
+        "package": "expedition.accessoryentry.mixin",
+        "mixins": ["AccessoriesInventoryLayerMixin"],
+        "deps": {"curios": "9.5.1+1.21.1", "aether": "1.5.10",
+                 "accessories": "1.1.0-beta.48+1.21.1"},
+        "bundled": {"accessories-neoforge-1.1.0-beta.48+1.21.1.jar":
+                    "aether-1.21.1-1.5.10-neoforge.jar"},
+    },
     "tooltips": {
         "id": "expedition_item_tooltips",
         "filename": "expedition-item-tooltips",

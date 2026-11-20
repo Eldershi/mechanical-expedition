@@ -9,3 +9,5 @@ The preview controls read Minecraft's active button sprites. For the Expedition 
 Build the resource compatibility packs with `build_visual_overlays.py compatibility <output-zip> --source <ae2-jar>`. The compatibility pack supplies the original 64×64 AE2 charger texture for the active charger model. Keep the compatibility pack above the AE2 resource packs in Paxi.
 
 Distant Horizons 3.3.3 uses a 64-chunk LOD radius and four worker threads on the client. Build its Chunky compatibility adapter with `build.py --adapter chunky` and its client queue adapter with `build.py --adapter performance`. The dedicated server uses the Chunky adapter and a separate Distant Horizons configuration with two worker threads and LOD generation from existing chunks.
+
+Build the inventory accessory entry with `build.py --adapter accessory-entry` and install the JAR on the client. The inventory button opens Curios, the Aether accessory screen, and the Accessories screen through their native menu handlers.

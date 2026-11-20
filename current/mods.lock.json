@@ -2512,6 +2512,7 @@
       "kubejs/assets/minecraft/atlases/blocks.json": "6c3b9f0390341dfd18635526c002291b374ba88078d4f87034c71c820e21474e",
       "kubejs/client_scripts/ExpeditionAirtightDecorationLanguage.js": "8205421a83db5ef07a36f79f445deef994b66f8dd67a64213b9d18a3092298f6",
       "kubejs/client_scripts/ExpeditionFactoryLanguage.js": "1b0f04e6e09dcdb02881ffe0815f0968adc734e07b4139b8276cccb21dd1e5d7",
+      "kubejs/client_scripts/ExpeditionKilnLanguage.js": "6ba9aacda52aef21fc3f2a1ea171b7a6045ea2ea1d10e9d2c12ee41ccb19541f",
       "kubejs/client_scripts/ExpeditionLogisticsVisibility.js": "c5f5508f257a5836c4ade91a2f57932a60ae4af3fc40091e52888551b7bd626c",
       "kubejs/client_scripts/ExpeditionLubricantLanguage.js": "aaf854a5a83595e20f9e3f7ca3b968bb0e7be98f830b074a3124318cb2676078",
       "kubejs/client_scripts/ExpeditionOilLanguage.js": "7e2ae60cf47527cc8d60007402f5f26880c68ab6b518f215a5a725a23a25c447",
@@ -5796,6 +5797,13 @@
         "sha256": "e77369ad1a779036b243ef0f7b24776640a3ff84968e6f3be1931bc953e92b09",
         "sha512": "2bd7d2fbc478b3cc2b6426ff9cffddf8800b46aa2ca5a4570f9d9ed2f50d4aeadc83bea0c5c410bf26c2e9e0c6cc3296cb8adff233787897265aa2d7a1ad9a71",
         "downloadUrl": "https://cdn.modrinth.com/data/XvcfUGfB/versions/IyTc0Vvj/eternalstarlight-0.9.1%2B1.21.1%2Bneoforge.jar"
+      },
+      {
+        "filename": "expedition-accessory-entry-neoforge-1.0.0.jar",
+        "bytes": 8711,
+        "sha1": "5b4fee5cb1c080c1402e647952b8755fca350492",
+        "sha256": "ddb55a8ab3265392a6384488c5e6d6986d1ba8f18a16cd8030828ecd9d5db496",
+        "sha512": "8fd783acb8d190e4c7ea8bae29f0fc981e4af5987eb9d94f868c2dd9f4f75c94fad15f0da7d80147cfdd234fa4c9c6f89510236aaeaeaeb7c3c0f0d7b962f57f"
       },
       {
         "filename": "expedition-alpine-climate-neoforge-1.0.0.jar",

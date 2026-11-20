@@ -4063,6 +4063,7 @@ c10ff9b2bd6b0d0107ee7f66fb8f8e2c4beb260c1b1c409d7cd79818d892c7e5  current/client
 ceb5b95aa50298722454af767c7ff33895598fb4030bbc1c5bff2f0492d0b52f  current/client/kubejs/assets/thermal/models/item/tomato_seeds.json
 4d299cea1f488cae0918563fc131569b928bc3e8cfbe02dc77f214eeb85ba57f  current/client/kubejs/assets/waystones/lang/zh_cn.json
 30381577013e691e59eba23156667ca12aab1000ee69b026b6aad459362a53c7  current/client/kubejs/assets/xaerominimap/lang/zh_cn.json
+6ba9aacda52aef21fc3f2a1ea171b7a6045ea2ea1d10e9d2c12ee41ccb19541f  current/client/kubejs/client_scripts/ExpeditionKilnLanguage.js
 84a7139b28a90c3c1d797ad8b1749dd8ffd17accf53c456949b4d85c3f8a0e57  current/client/kubejs/client_scripts/event/EMI.js
 fd1815b41d477e7a4cb5a4bf7b8a31d2c6bdab8cde0aaee9fe6dd0d0a072ac2d  current/client/kubejs/client_scripts/event/ExpeditionRenderDefaults.js
 81e2fff2e053851401f2b91c56d535e2bdb74cf7adfa71e107700e823b6793f8  current/client/kubejs/client_scripts/event/ExpeditionShaderKeyMigration.js
@@ -5431,6 +5432,7 @@ a6e55c15bc3de4e8ccef7c8d25c7dcfb81a561786f67c97894670bc338796e4c  current/client
 e49fbdf06b9ac88f8c85391634ece603d0b5501b12e812e651c2319d6cc7bce7  current/client/mods/MultiBuilderTool-1.20.1-1.0.28.jar
 f2ced7adfa7c11bf9acb0de77a3c3b2a9f8241d764b64cbed381c8f517776208  current/client/mods/ars_controle-1.20.1-1.1.1.jar
 42f8dcb05d71ad714c1b9ac84186e33037ae3bb4a2893787843331575830590d  current/client/mods/auratip-forge-1.20.1-1.1.1-beta.jar
+ddb55a8ab3265392a6384488c5e6d6986d1ba8f18a16cd8030828ecd9d5db496  current/client/mods/expedition-accessory-entry-neoforge-1.0.0.jar
 44b01c12f6b4be699b48c4d91f5f79227bdb4fb28cf698243a16d3eb4000b676  current/client/mods/expedition-alpine-climate-1.0.0.jar
 fefb8ce39e793a3ebbfcaeac0a298d1669c671a3c7e3713c1a9695b9878d230c  current/client/mods/expedition-armor-display-neoforge-1.0.0.jar
 0040cfea68a20683d1e7f443e68b708cd8e65a4c812be602f6daf3a704808970  current/client/mods/expedition-chunky-startup-guard-neoforge-1.0.0.jar

@@ -2,7 +2,7 @@
 
 本线运行 Minecraft 1.21.1、NeoForge 21.1.267 和 Java 21。测试包版本使用 `1.21.1-test.N`。
 
-[1.20.1 正式线开发计划与 ATM 之星路线](https://github.com/Eldershi/mechanical-expedition/blob/main/docs/roadmap.md)
+[1.20.1 已停止开发 · ATM 之星路线归档](https://github.com/Eldershi/mechanical-expedition/blob/main/docs/roadmap.md)
 
 ## 近期优先开发
 
