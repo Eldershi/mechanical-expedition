@@ -209,7 +209,7 @@ ec6c6791d75a1d6ba3494c3aaea0cb2b5a86cc816f005324a5c3265a8fbd0575  current/client
 ec6c6791d75a1d6ba3494c3aaea0cb2b5a86cc816f005324a5c3265a8fbd0575  current/client/config/arsomega/glyph_propagate_underfoot.toml
 dfae4a12bf924a5e12380032ff257ec535c6b003fef539a3893adb05c0a69c56  current/client/config/artifacts/client.json5
 736bec8c910558091bb749ac7adb013822a253a02f1f70637eb193952768d2b1  current/client/config/artifacts/common.json5
-115db5d60501a2532fe3cb41fd126395005e2387c9e8e9bc9a11504090412f2b  current/client/config/asteorbar-client.toml
+6b0308f1673a3ba41553ba15e654d124e7ba30812df3fd238360666853758544  current/client/config/asteorbar-client.toml
 f772cacc4e6a3b9aab4426916b8a19d880b682096d91733b9a7eda4e8d8188a3  current/client/config/attributefix.json
 d263933ee4b13ea18ca743e8648d0cf2bc0f69a7d8c3f0e55829d9597d8c0c62  current/client/config/attributeslib.cfg
 e31ef59faee81b0cff9506c0b4137f6473f68ca469d2319203bc3ca50eed6d13  current/client/config/bclib/biomes.json
@@ -833,9 +833,9 @@ ec33aaed94954658d457f7f89cdb3b12b5f06f594595f57e1ff9f1a3e06dac54  current/client
 bc2232ee0eac7205da0ad529dbd6cb1faf42362333dbd259e6a16858f2ff2476  current/client/config/paxi/resourcepacks/Eternal-Snowstorm-s-MC-i18n-Chinese-pack 2.zip
 bc2232ee0eac7205da0ad529dbd6cb1faf42362333dbd259e6a16858f2ff2476  current/client/config/paxi/resourcepacks/Eternal-Snowstorm-s-MC-i18n-Chinese-pack.zip
 bb1f9a8eb622fd81b1c2f62eb13101e40324f6dc69221c28c5bf45efc59cfe50  current/client/config/paxi/resourcepacks/Expedition-Chinese-Supplement.zip
-aab96ddf7c0fb6972b320ad534adc927d599df6d596baab501ec1811f9ab7c87  current/client/config/paxi/resourcepacks/Expedition-Filter-Eden-Ring-1.21.1.zip
-054baade53017c812fcc389591c6a0c7f64d26b99bca491df5105474a9197c4e  current/client/config/paxi/resourcepacks/Expedition-Filter-Masterful-Machinery-1.21.1.zip
-6cabc3d906ef203047c70188be91d11213b009510ad0b1ca0f1f5ba2fe44c2b2  current/client/config/paxi/resourcepacks/Expedition-Resource-Compat-1.21.1.zip
+9131503db71797a516fe32bbf0af1edc57446ebe772a829fc2379b24250004c8  current/client/config/paxi/resourcepacks/Expedition-Filter-Eden-Ring-1.21.1.zip
+21cb04f8019dbff16f4567ddd477f7462a02662a3efb6bf9caff32627fa5d86e  current/client/config/paxi/resourcepacks/Expedition-Filter-Masterful-Machinery-1.21.1.zip
+f351cd386616bfb0dcdb591a50d3a01872ab175c0a4f19b0af90cbbb55c1a20b  current/client/config/paxi/resourcepacks/Expedition-Resource-Compat-1.21.1.zip
 21e0cb9bafbb4ca524f2a87125b2bc272ef5e02d6d9d4c019635003827aa6f48  current/client/config/paxi/resourcepacks/Expedition-Vanilla-Hostile-Mobs-1.20.1.zip
 0c26af02ec87d523e195cab9638391febbc0ce39bff3a8978d44b88e28771755  current/client/config/paxi/resourcepacks/Fancy Crops v1.3.zip
 4c17f30421ecaab2944ca6b28c3a07816e6d69a51c9c0b5404143fec45b8c759  current/client/config/paxi/resourcepacks/Fancy End - RP 1.15+ - 1.4.zip

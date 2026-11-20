@@ -4,6 +4,7 @@
 import argparse
 import json
 from pathlib import Path
+import re
 import struct
 from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 import zlib
@@ -66,7 +67,11 @@ def write_pack(output, description, assets, *, filters=()):
     if filters:
         if len({rule["namespace"] for rule in filters}) != 1:
             raise ValueError("Minecraft 1.21.1 combines namespace and path matches independently within a pack")
-        metadata["filter"] = {"block": list(filters)}
+        # Minecraft searches for a regex match, so require the entire namespace and path.
+        metadata["filter"] = {"block": [
+            {"namespace": f"^{re.escape(rule['namespace'])}$", "path": f"^(?:{rule['path']})$"}
+            for rule in filters
+        ]}
     assets["pack.mcmeta"] = json.dumps(metadata).encode()
     output.parent.mkdir(parents=True, exist_ok=True)
     with ZipFile(output, "w") as archive:
