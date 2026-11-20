@@ -6,5 +6,7 @@
   "gui.tooltips.advanced_ae.RegulateCategory": "调控",
   "gui.tooltips.advanced_ae.RegulateOff": "超出设定量时仍保留已输出的事物",
   "gui.tooltips.advanced_ae.RegulateOn": "尝试输入超出设定量的事物",
-  "gui.upgrades.advanced_ae.Pick-CraftUpgrade": "点选合成"
+  "gui.upgrades.advanced_ae.Pick-CraftUpgrade": "点选合成",
+  "advanced_ae.configuration.throughputMonitorCacheSize": "吞吐量监控器缓存大小",
+  "exported_setting.advanced_ae.allowed_output_sides": "可用面"
 }

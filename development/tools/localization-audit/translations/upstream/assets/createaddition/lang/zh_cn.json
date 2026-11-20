@@ -1,5 +1,9 @@
 {
   "item.createaddition.diamond_grit_sandpaper.tooltip.summary": "用来_打磨_物品的砂纸，可以用机械手来实现自动化。",
   "item.createaddition.diamond_grit_sandpaper.tooltip.behaviour1": "打磨_副手_上或者_准心所指_的物品",
-  "block.createaddition.electrum_block": "琥珀金块"
+  "block.createaddition.electrum_block": "琥珀金块",
+  "block.createaddition.electric_pump": "电动泵",
+  "createaddition.ponder.electric_pump_flow.text_2": "其上的箭头指示流体流向",
+  "createaddition.ponder.electric_pump_flow.text_3": "泵后的管道网络正在抽取流体……",
+  "createaddition.ponder.electric_pump_flow.text_4": "……而泵前的网络则在排放流体"
 }

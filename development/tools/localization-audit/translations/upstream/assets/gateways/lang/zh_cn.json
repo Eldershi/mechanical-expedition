@@ -1,3 +1,5 @@
 {
-  "failure.gateways.chance": "%s 几率 %s"
+  "failure.gateways.chance": "%s 几率 %s",
+  "tooltip.gateways.shift": "按住Shift以查看波次信息",
+  "tooltip.gateways.ctrl": "按住Ctrl以查看最终奖励"
 }

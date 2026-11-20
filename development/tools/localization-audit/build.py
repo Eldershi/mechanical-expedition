@@ -57,7 +57,8 @@ def build(source, output):
                                if not re.match(r"^_+comment", key, re.IGNORECASE)}
         entries[relative] = encoded(languages[relative])
     entries['pack.mcmeta'] = encoded({'pack': {
-        'pack_format': 15, 'description': '机械动力：远征 · 中文补全',
+        'pack_format': 34, 'supported_formats': [15, 34],
+        'description': '机械动力：远征 · 中文补全',
     }})
     entries['credits/README.txt'] = (
         'Mechanical Expedition Chinese supplement\n'

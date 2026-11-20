@@ -3,5 +3,7 @@
   "commands.curios.dropAll.success": "已将%s的所有槽位中物品丢出",
   "commands.curios.replace.success": "已将%3$s放入%2$s的槽位%1$s",
   "gui.curios.toggle.cosmetics": "切换时装",
-  "gui.curios.page": "页码 %d / %d"
+  "gui.curios.page": "页码 %d / %d",
+  "curios.tooltip.inactive": "未激活",
+  "curios.networking.failed": "饰品网络故障"
 }

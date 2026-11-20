@@ -25,8 +25,9 @@ def load_json(raw):
     try:
         return json.loads(text, strict=False)
     except json.JSONDecodeError:
-        # Several shipped language files use Gson's accepted trailing commas.
-        return json.loads(re.sub(r",\s*([}\]])", r"\1", text), strict=False)
+        # Gson accepts standalone comments and trailing commas in shipped language files.
+        uncommented = re.sub(r"(?m)^\s*//[^\r\n]*", "", text)
+        return json.loads(re.sub(r",\s*([}\]])", r"\1", uncommented), strict=False)
 
 
 def classify(key, english):

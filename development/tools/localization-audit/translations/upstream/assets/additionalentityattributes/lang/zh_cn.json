@@ -1,0 +1,7 @@
+{
+  "attribute.name.additionalentityattributes.generic.width": "宽度",
+  "attribute.name.additionalentityattributes.generic.height": "高度",
+  "attribute.name.additionalentityattributes.generic.model_scale": "模型缩放",
+  "attribute.name.additionalentityattributes.generic.magic_protection": "魔法保护",
+  "attribute.name.additionalentityattributes.player.critical_bonus_damage": "暴击伤害"
+}

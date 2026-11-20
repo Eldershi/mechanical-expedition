@@ -1,0 +1,8 @@
+{
+  "title.config.group.wover.server": "服务器设置",
+  "title.config.group.wover.structure": "结构",
+  "title.config.group.wover.performance": "性能",
+  "title.config.group.wover.ui": "用户界面",
+  "title.config.group.wover.rendering": "渲染",
+  "title.config.wover.main.log.verbose": "详细日志"
+}

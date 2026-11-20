@@ -1,0 +1,7 @@
+{
+  "gnetum.config.element.minecraft.hotbar": "快捷栏",
+  "gnetum.config.element.minecraft.effects": "特效",
+  "gnetum.config.element.minecraft.scoreboard_sidebar": "计分板",
+  "gnetum.config.element.minecraft.chat": "聊天",
+  "gnetum.config.element.minecraft.tab_list": "玩家列表"
+}

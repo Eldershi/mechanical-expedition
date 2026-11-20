@@ -2,5 +2,14 @@
   "block.regions_unexplored.dropleaf_plant": "垂叶藤",
   "block.regions_unexplored.glistering_ivy_plant": "闪熠常春藤",
   "block.regions_unexplored.kapok_vines_plant": "木棉藤蔓",
-  "block.regions_unexplored.spanish_moss_plant": "松萝铁兰"
+  "block.regions_unexplored.spanish_moss_plant": "松萝铁兰",
+  "biome.regions_unexplored.inferno": "点燃",
+  "biome.regions_unexplored.tundra": "苔原",
+  "config.regions_unexplored.category.client_options": "客户端选项",
+  "config.regions_unexplored.category.features": "功能配置",
+  "config.regions_unexplored.category.vanilla_changes": "原版修改",
+  "config.regions_unexplored.default": "默认： ",
+  "config.regions_unexplored.option.leaves": "树叶",
+  "config.regions_unexplored.option.saturation": "饱和度",
+  "item_group.regions_unexplored.main": "未至之地"
 }

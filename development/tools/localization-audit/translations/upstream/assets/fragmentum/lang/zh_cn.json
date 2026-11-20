@@ -1,0 +1,5 @@
+{
+  "config.fragmentum.format.seconds": "%s 秒",
+  "config.fragmentum.format.minutes": "%s 分钟",
+  "config.fragmentum.format.blocks": "%s 格"
+}

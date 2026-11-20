@@ -1,5 +1,11 @@
 {
   "enchantment.deeperdarker.catalysis.desc": "杀死生物会在附近生成幽匿脉络。",
   "enchantment.deeperdarker.sculk_smite.desc": "对幽匿生物造成额外伤害。",
-  "painting.deeperdarker.adventure.title": "冒险"
+  "painting.deeperdarker.adventure.title": "冒险",
+  "enchantment.deeperdarker.volume": "音量",
+  "item.deeperdarker.lite": "简洁",
+  "item.deeperdarker.smithing_template.resonarium_upgrade.applies_to": "铁制装备",
+  "item.deeperdarker.smithing_template.resonarium_upgrade.ingredients": "共鸣合金板",
+  "tag.item.deeperdarker.dampens_vibrations": "抑制振动",
+  "tag.item.deeperdarker.transmitter": "发信线圈"
 }

@@ -1,0 +1,10 @@
+{
+  "editor.view.assets": "资源",
+  "editor.assets.refresh": "刷新",
+  "editor.assets.sort_type": "类型",
+  "editor.assets.sort_ascending": "升序",
+  "editor.assets.sort_descending": "降序",
+  "editor.assets.paste": "粘贴",
+  "editor.assets.cut": "剪切",
+  "editor.assets.duplicate": "复制"
+}

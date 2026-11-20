@@ -1,0 +1,19 @@
+{
+  "ftbquests.keys": "FTB任务",
+  "key.ftbquests.gui.search": "搜索",
+  "key.ftbquests.gui.zoom_in": "放大",
+  "key.ftbquests.gui.zoom_out": "缩小",
+  "key.ftbquests.gui.player_prefs": "玩家偏好",
+  "key.ftbquests.gui_editor.select_all": "全选",
+  "key.ftbquests.gui_editor.copy": "复制",
+  "key.ftbquests.gui_editor.paste": "粘贴",
+  "key.ftbquests.gui_editor.redo": "重做",
+  "key.ftbquests.gui_editor.reload_theme": "重载主题",
+  "key.ftbquests.gui_quest_panel.edit_subtitle": "编辑副标题",
+  "ftbquests.image.click_action_type": "点击操作",
+  "ftbquests.image.text.text_shadow": "文本阴影",
+  "ftbquests.click_action_type.none": "无操作",
+  "ftbquests.quest_link.hide_dependency_lines": "隐藏依赖线",
+  "ftbquests.gui.redo": "重做",
+  "ftbquests.gui.rotate": "旋转"
+}

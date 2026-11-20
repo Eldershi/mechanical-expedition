@@ -1,3 +1,7 @@
 {
-  "ftbultimine.server_settings": "服务器设置"
+  "ftbultimine.server_settings": "服务器设置",
+  "sidebar_button.ftbultimine.config": "FTB Ultimine配置",
+  "ftbultimine.info.no_permission": "无权限编辑",
+  "ftbultimine.client_settings.rendering": "渲染",
+  "ftbultimine.server_settings.features": "功能配置"
 }

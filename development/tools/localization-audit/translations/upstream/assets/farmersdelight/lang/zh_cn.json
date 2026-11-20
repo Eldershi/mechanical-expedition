@@ -8,5 +8,7 @@
   "tag.item.forge.seeds.rice": "水稻种子",
   "tag.item.forge.seeds.tomato": "番茄种子",
   "tag.item.forge.tools.knives": "刀",
-  "tag.item.forge.vegetables.onion": "洋葱"
+  "tag.item.forge.vegetables.onion": "洋葱",
+  "tag.block.farmersdelight.cabinets.wooden": "木橱柜",
+  "tag.block.farmersdelight.mineable.knife": "可用刀挖掘"
 }

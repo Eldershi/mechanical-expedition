@@ -1,0 +1,18 @@
+{
+  "gui.veil.save": "保存",
+  "inspector_group.veil.default": "编辑器",
+  "inspector_group.veil.example": "示例",
+  "inspector_group.veil.renderer": "渲染方式",
+  "inspector_group.veil.info": "信息",
+  "inspector_group.veil.resource": "资源",
+  "editor.veil.default": "编辑器",
+  "inspector.veil.device_info.unsupported": "不支持",
+  "inspector.veil.resource.button.reload": "重载资源",
+  "resource.veil.action.copy_path": "复制路径",
+  "resource.veil.action.open_folder": "在资源管理器中打开",
+  "inspector.veil.shader.button.upload": "上传",
+  "inspector.veil.shader.button.refresh": "刷新",
+  "inspector.veil.shader.source.iris": "鸢尾花",
+  "inspector.veil.shader.source.sodium": "钠",
+  "inspector.veil.framebuffer.depth_attachment": "深度"
+}

@@ -1,3 +1,4 @@
 {
-  "rarity.aether.loot.name": "天境战利品"
+  "rarity.aether.loot.name": "天境战利品",
+  "entity.aether.floating_block_type": "浮空%s"
 }

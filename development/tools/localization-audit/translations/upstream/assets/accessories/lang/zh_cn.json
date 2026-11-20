@@ -1,0 +1,18 @@
+{
+  "accessories.slot.tooltip.singular": "槽位: ",
+  "accessories.slot.cape": "披风",
+  "accessories.slot.necklace": "项链",
+  "accessories.slot.ring": "戒指",
+  "accessories.slot.accessories.chest": "胸",
+  "accessories.slot_group.chest": "胸",
+  "accessories.key.category.accessories": "配件",
+  "text.config.accessories.category.clientOptions": "客户端选项",
+  "text.config.accessories.enum.screenType.original": "原始",
+  "text.config.accessories.enum.screenType.experimental_v1": "实验性",
+  "text.config.accessories.option.screenOptions.inventoryButtonOffset.x": "X偏移",
+  "text.config.accessories.option.screenOptions.inventoryButtonOffset.y": "Y偏移",
+  "text.config.accessories.option.screenOptions.creativeInventoryButtonOffset.x": "X偏移",
+  "text.config.accessories.option.screenOptions.creativeInventoryButtonOffset.y": "Y偏移",
+  "text.config.accessories.option.clientOptions.disabledDefaultRenders.targetType": "类型",
+  "text.config.accessories.enum.targetType.item": "物品"
+}

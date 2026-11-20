@@ -1,4 +1,6 @@
 {
   "bclib.updates.download_link": "下载",
-  "entity.bclib.chair": "坐垫"
+  "entity.bclib.chair": "坐垫",
+  "title.config.bclib.client.ui.survives_on_hint": "在提示框中显示“可生长于”提示",
+  "title.config.bclib.client.rendering.custom_fog_rendering": "自定义雾渲染"
 }

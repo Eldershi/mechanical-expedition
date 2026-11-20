@@ -1,3 +1,4 @@
 {
-  "ftbteams.team_already_exists": "队伍名称太短！（必须>=3字符）"
+  "ftbteams.team_already_exists": "队伍名称太短！（必须>=3字符）",
+  "ftbteams.gui.toggle_chat": "单击以切换"
 }

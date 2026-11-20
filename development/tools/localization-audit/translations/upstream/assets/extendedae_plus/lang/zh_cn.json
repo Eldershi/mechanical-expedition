@@ -1,4 +1,7 @@
 {
   "item.extendedae_plus.labeled_wireless_transceiver": "标签无线收发器",
-  "key.categories.extendedae_plus": "扩展AE Plus"
+  "key.categories.extendedae_plus": "扩展AE Plus",
+  "extendedae_plus.tooltip.frequency_secondary": "频率: %d",
+  "extendedae_plus.tooltip.locked_secondary": "状态：%s",
+  "config.extendedae_plus": "扩展AE Plus"
 }

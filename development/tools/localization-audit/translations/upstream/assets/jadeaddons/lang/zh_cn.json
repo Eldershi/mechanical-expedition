@@ -5,5 +5,6 @@
   "config.jade.plugin_jadeaddons.create.goggles.detailed": "仅在细节显示",
   "config.jade.plugin_jadeaddons.deepresonance.crystal": "水晶",
   "config.jade.plugin_jadeaddons.lootr.info": "信息",
-  "jade.modName.jadeaddons.tconstruct": "匠魂"
+  "jade.modName.jadeaddons.tconstruct": "匠魂",
+  "config.jade.plugin_jadeaddons.tconstruct.casting_table": "铸件台"
 }

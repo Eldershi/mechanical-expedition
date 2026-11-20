@@ -21,5 +21,6 @@
   "powergrid.generic.reset": "重置",
   "powergrid.message.nether.no_other_side": "目标传送门还未生成",
   "powergrid.ponder.circuit_label.header": "标签",
-  "powergrid.tooltip.resistance.maximum": "最大电阻："
+  "powergrid.tooltip.resistance.maximum": "最大电阻：",
+  "powergrid.solar_panel_bearing.slider": "并联路数 × 每路板数"
 }

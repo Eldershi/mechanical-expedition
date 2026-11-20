@@ -4,5 +4,9 @@
   "effect.kaleidoscope_nether.ghost_buff": "幽灵方块",
   "effect.kaleidoscope_nether.lava_walker": "熔岩行者",
   "effect.kaleidoscope_nether.glowing_buff": "荧光",
-  "enchantment.kaleidoscope_nether.blessing": "祝福"
+  "enchantment.kaleidoscope_nether.blessing": "祝福",
+  "item.kaleidoscope_nether.giant_beast_croissant": "巨兽牛角包",
+  "item.kaleidoscope_nether.magma_sweet_and_sour_pork": "魔眼咕噜肉",
+  "item.kaleidoscope_nether.magma_sweet_and_sour_pork.tooltip.line1": "§7食用后向四周召唤烈焰轰击",
+  "item.kaleidoscope_nether.ghast_pendant.tooltip.line2": "§7可以穿在胸甲栏位或饰品栏"
 }

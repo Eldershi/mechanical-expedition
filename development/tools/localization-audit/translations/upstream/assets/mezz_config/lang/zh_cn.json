@@ -1,0 +1,6 @@
+{
+  "mezz_config.config.name": "名称：%s",
+  "mezz_config.config.description": "描述：%s",
+  "mezz_config.config.valueValues": "有效值：%s",
+  "mezz_config.config.defaultValue": "默认值：%s"
+}

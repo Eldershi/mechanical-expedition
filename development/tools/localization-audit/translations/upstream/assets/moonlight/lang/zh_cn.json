@@ -1,0 +1,20 @@
+{
+  "gui.moonlight.config.mods_button": "模组",
+  "gui.moonlight.config.authors": "作者",
+  "gui.moonlight.config.save": "保存",
+  "gui.moonlight.config.reset": "重设为默认",
+  "gui.moonlight.config.schema_type": "类型",
+  "gui.moonlight.config.edit": "编辑",
+  "commands.moonlight.dice": "掷骰 D%1$d：%2$d",
+  "commands.moonlight.registry.copy_elements_names": "点击以将所有条目名复制至剪贴板",
+  "commands.moonlight.registry.elements_count": "售出：%s 单",
+  "commands.moonlight.registry.error.unknown_registry": "未知的注册项“%s”",
+  "commands.moonlight.registry.page_info": "%s <第%s页/共%s页>",
+  "moonlight.config.common.max": "最高等级",
+  "moonlight.configuration.test_category.test_block": "测试方块",
+  "moonlight.configuration.test_record_bean.label": "标签",
+  "moonlight.configuration.test_date.month": "月",
+  "moonlight.configuration.test_date.day": "天",
+  "moonlight.configuration.test_time.hour": "时",
+  "moonlight.configuration.test_time.minute": "分"
+}

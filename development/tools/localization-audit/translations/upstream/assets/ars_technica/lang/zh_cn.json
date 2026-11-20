@@ -18,5 +18,22 @@
   "block.ars_technica.precise_relay": "精确中转器",
   "create.gui.ars_technica.rune": "符文",
   "create.gui.ars_technica.relay": "精确中转器",
-  "create.gui.ars_technica.cooldown": "冷却"
+  "create.gui.ars_technica.cooldown": "冷却",
+  "ars_technica.tooltip.press_mode.pressing": "冲压",
+  "item.ars_technica.artificer_cap": "魔技师帽子",
+  "item.ars_technica.artificer_tunic": "魔技师外套",
+  "item.ars_technica.artificer_pants": "魔技师裤子",
+  "item.ars_technica.artificer_shoes": "魔技师鞋子",
+  "item.ars_technica.machinaguard_helmet": "机械护卫头盔",
+  "item.ars_technica.machinaguard_chestplate": "机械护卫胸甲",
+  "item.ars_technica.machinaguard_leggings": "机械护卫护腿",
+  "item.ars_technica.machinaguard_boots": "机械护卫靴子",
+  "ars_technica.armor_set.artificer": "魔技师套装",
+  "ars_technica.armor_set.artificer.desc": "减少来自机械动力机件的伤害，增加附近蓝图加农炮的运作速度",
+  "ars_technica.armor_set.machinaguard": "机械护卫套装",
+  "ars_technica.armor_set.machinaguard.desc": "减少来自机械动力机件的伤害，增加附近蓝图加农炮的运作速度",
+  "ars_technica.entry.transmutation": "嬗变",
+  "ars_technica.entry.arcane_wrench": "符文扳手",
+  "ars_technica.page.transmutation": "嬗变",
+  "ars_technica.page.arcane_wrench": "符文扳手"
 }

@@ -1,3 +1,6 @@
 {
-  "enchdesc.jei.compatible_items.title": "兼容物品"
+  "enchdesc.jei.compatible_items.title": "兼容物品",
+  "enchantment.minecraft.breach.desc": "增加对有盔甲目标的攻击效果。",
+  "enchantment.minecraft.density.desc": "根据下落距离增加伤害。",
+  "enchantment.minecraft.wind_burst.desc": "下落攻击会将使用者弹回空中。"
 }

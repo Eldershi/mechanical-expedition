@@ -1,0 +1,135 @@
+{
+  "name": "刷怪笼符文",
+  "icon": "apotheosis:spawner_rune",
+  "category": "apotheosis:spawner/spawner",
+  "flag": "apotheosis:spawner",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "读完$(l:apotheosis:spawner/stats)刷怪笼属性$()后，你可能想知道如何修改它们。$(p)这就要用到$(9)刷怪笼符文$()。手持符文右击$(9)刷怪笼$()即可应用。$(p)在 JEI 中查看刷怪笼的用途，可以查到所有符文及其效果。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "apotheosis:spawner_chain",
+      "title": "刷怪笼锁链",
+      "text": "符文以$(9)刷怪笼锁链$()制成。用爆炸摧毁刷怪笼时会获得锁链。$(p)第一次爆炸会引发连锁反应。几秒后刷怪笼爆开，释放内存的生物并掉落许多锁链。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "apotheosis:spawner_rune",
+      "title": "空白符文",
+      "text": "取得锁链后，先制作一些空白的$(9)刷怪笼符文$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "升级符文",
+      "text": "避风港以上的四个世界等级各有一种核心升级符文。$(p)它们能改变核心属性，包括最短和最长生成延迟、单次生成数量、实体数量上限与激活范围。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "拓荒者符文",
+      "recipe": "apotheosis:frontier_spawner_upgrade_rune",
+      "text": "每种等级符文都需要对应等级的$(9)稀有度材料$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "旅人符文",
+      "recipe": "apotheosis:ascent_spawner_upgrade_rune",
+      "text": "符文等级越高，核心属性提升越大。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "登山者符文",
+      "recipe": "apotheosis:summit_spawner_upgrade_rune",
+      "text": "较高等级的符文需要$(9)灌注刷怪笼符文$()和更稀有的材料。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "雷鸣符文",
+      "recipe": "apotheosis:pinnacle_spawner_upgrade_rune",
+      "text": "最高级的符文能把刷怪笼变成一台源源不断生成生物的机器。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "属性符文",
+      "text": "其他属性需要使用各自专用的符文。每项属性对应一种符文，效果越强，制作成本越高。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "生成范围",
+      "recipe": "apotheosis:spawn_range_spawner_rune",
+      "text": "此符文可修改刷怪笼的生物生成范围。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "红石控制",
+      "recipe": "apotheosis:redstone_control_spawner_rune",
+      "text": "此符文让刷怪笼受红石控制。没有红石信号时，刷怪笼停止工作。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "永恒暮色",
+      "recipe": "apotheosis:ignore_light_spawner_rune",
+      "text": "此符文让刷怪笼生成生物时忽略光照等级。$(p)原本只能在黑暗中出现的生物可以在亮处生成，反过来也一样。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "肃静！",
+      "recipe": "apotheosis:silent_spawner_rune",
+      "text": "此符文让生成的生物保持安静。$(p)它们不会发出受伤声、环境音或其他声音。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "青春之泉",
+      "recipe": "apotheosis:youthful_spawner_rune",
+      "text": "此符文让生成的生物变回幼年形态。$(p)没有幼年形态的生物不受影响。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "全部点燃！",
+      "recipe": "apotheosis:burning_spawner_rune",
+      "text": "此符文让生成的生物着火。$(p)免疫火焰的生物不受影响。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "apotheosis:infused_spawner_rune",
+      "title": "灌注符文",
+      "text": "效果较强的符文需要$(9)灌注刷怪笼符文$()。它可以通过灌注附魔获得。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "清空思绪",
+      "recipe": "apotheosis:no_ai_spawner_rune",
+      "text": "此灌注符文会禁用生成生物的 AI。$(p)这些生物仍然能被推动。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "无视规则",
+      "recipe": "apotheosis:ignore_conditions_spawner_rune",
+      "text": "此灌注符文是$(9)永恒暮色符文$()的升级版。$(p)生成时会忽略包括光照在内的所有生成条件，但仍需有足够的空间。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "孑然一身",
+      "recipe": "apotheosis:ignore_players_spawner_rune",
+      "text": "此灌注符文让刷怪笼在附近没有玩家时也能工作。$(p)生成的生物也许会觉得孤单。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "循环往复",
+      "recipe": "apotheosis:echoing_spawner_rune",
+      "text": "此灌注符文赋予回响效果，使生成的生物额外结算一次战利品表。$(p)该符文可以重复应用。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "反转符文",
+      "text": "应用符文时，副手持有$(9)下界石英$()可以反转符文效果。$(p)不会消耗石英。$(p)等级符文无法反转。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "补充说明",
+      "text": "属性符文受 JEI 所示上限约束，等级符文则直接设置属性值。$(p)将鼠标悬停在刷怪笼物品上并按住 Shift，即可查看属性。"
+    }
+  ]
+}

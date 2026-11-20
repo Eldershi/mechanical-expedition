@@ -1,0 +1,9 @@
+{
+  "gui.mbtool.me_access": "使用 ME 无线库存",
+  "gui.mbtool.me_autocraft": "自动合成缺失方块",
+  "message.mbtool.autocrafting_requested": "缺失方块已请求合成",
+  "message.mbtool.crafting_in_progress": "正在合成方块，请稍候...",
+  "message.mbtool.autocrafting_failed": "自动合成请求失败",
+  "message.mbtool.autocrafting_missing_ingredients": "%s 的自动合成失败：缺少材料",
+  "message.mbtool.autocrafting_no_grid": "自动合成失败：ME 网络不可用"
+}

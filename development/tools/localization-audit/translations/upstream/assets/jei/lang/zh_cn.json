@@ -4,5 +4,21 @@
   "jei.config.client.bookmarkList.buttonNavigationVisibility": "导航按钮可见性",
   "jei.config.client.bookmarkList.buttonNavigationVisibility.description": "顶部翻页按钮的可见性。AUTO_HIDE：仅在存在多页时显示按钮。",
   "jei.config.debug.debug.crashingTestItemsEnabled": "启用崩溃测试物品",
-  "jei.config.debug.debug.crashingTestItemsEnabled.description": "向JEI添加故意引发崩溃的原料，以帮助调试JEI。"
+  "jei.config.debug.debug.crashingTestItemsEnabled.description": "向JEI添加故意引发崩溃的原料，以帮助调试JEI。",
+  "jei.config.client.recipes": "配方",
+  "jei.config.client.recipes.showTagRecipesEnabled": "显示标签配方",
+  "jei.config.client.bookmarkList.bookmarkOutputAsRecipe": "将产物收藏为配方书签",
+  "jei.config.client.lists": "列表",
+  "jei.config.client.lists.navigationMode": "导航模式",
+  "jei.config.client.lists.navigationVisibility": "导航按钮可见性",
+  "jei.config.client.lists.navigationVisibility.disabled": "隐藏",
+  "jei.config.debug.debug.debugGuis.value.true.description": "启用调试界面模式",
+  "jei.config.debug.debug.debugInputs.value.true.description": "启用调试输入模式",
+  "jei.config.client.input.smoothScrollingEnabled": "平滑滚动",
+  "jei.config.client.lists.drawBackground.background": "背景",
+  "jei.config.client.input.mouse": "鼠标",
+  "jei.config.client.input.scrolling": "滚动",
+  "jei.config.client.recipes.appearance": "外观",
+  "jei.config.client.recipes.navigationMode.scrolling": "滚动",
+  "_comment": "原版魔咒描述"
 }

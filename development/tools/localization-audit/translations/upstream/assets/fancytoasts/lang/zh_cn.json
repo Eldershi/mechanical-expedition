@@ -1,0 +1,19 @@
+{
+  "fancytoasts.label.custom": "自定义",
+  "fancytoasts.label.description": "描述:",
+  "fancytoasts.gui.textures": "材质",
+  "fancytoasts.gui.animations": "动画",
+  "fancytoasts.gui.sounds": "声音",
+  "fancytoasts.gui.credits": "制作人员",
+  "fancytoasts.gui.reset": "重置",
+  "fancytoasts.gui.anchor": "锚",
+  "fancytoasts.toast_type.task": "目标",
+  "fancytoasts.toast_type.challenge": "挑战",
+  "fancytoasts.screen_behavior.transparent": "遁隐",
+  "fancytoasts.text_type.title": "标题",
+  "fancytoasts.filter.built_in": "内置",
+  "fancytoasts.filter.custom": "自定义",
+  "fancytoasts.toast.texture.nature": "自然",
+  "fancytoasts.toast.texture.modern": "现代",
+  "fancytoasts.toast.texture.neon": "霓虹"
+}

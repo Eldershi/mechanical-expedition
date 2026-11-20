@@ -128,5 +128,6 @@
   "variant.spawn.dodo.tar": "焦油",
   "variant.spawn.dodo.petrified": "石化",
   "variant.spawn.dodo.golden": "金质",
-  "block.spawn.moonstone": "月石"
+  "block.spawn.moonstone": "月石",
+  "config.spawn.section.vanilla_changes": "原版修改"
 }

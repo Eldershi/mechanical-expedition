@@ -39,5 +39,9 @@
   "tooltip.titanium.redstone.redstone": "红石模式：有红石信号时运行",
   "tooltip.titanium.redstone.once": "红石模式：按红石脉冲运行",
   "tooltip.titanium.unlocks": "解锁：",
-  "tooltip.titanium.locks": "锁定："
+  "tooltip.titanium.locks": "锁定：",
+  "tooltip.titanium.power": "能量：",
+  "tooltip.titanium.eta": "预计剩余时间：",
+  "tooltip.titanium.hold_moreinfo": "按住%s以查看更多信息",
+  "tooltip.titanium.energy": "能量："
 }

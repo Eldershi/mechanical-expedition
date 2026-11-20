@@ -1,0 +1,8 @@
+{
+  "config.cumulus_menus.client.menu.active_menu.tooltip": "设置当前启用的主菜单标题界面",
+  "config.cumulus_menus.client.menu.enable_menu_api.tooltip": "决定是否启用菜单 API",
+  "cumulus_menus.configuration.Menu.button": "选项",
+  "cumulus_menus.configuration.section.cumulus.menus.client.toml": "客户端设置",
+  "gui.cumulus_menus.menu.load": "快速载入",
+  "gui.cumulus_menus.menu.preview": "切换世界"
+}

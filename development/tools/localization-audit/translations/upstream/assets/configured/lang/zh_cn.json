@@ -59,5 +59,14 @@
   "configured.chat.config_updated": "%s更新了配置“%s”",
   "configured.chat.authorized_player": "%s试图在非开发者状态下更新服务端配置",
   "configured.chat.malformed_config_data": "%s在尝试更新%s时，向服务器发送了格式错误的配置数据",
-  "key.configured.open_mod_list": "打开模组列表"
+  "key.configured.open_mod_list": "打开模组列表",
+  "configured.gui.no_editing_published_lan_server": "此配置无法在开启LAN之后编辑",
+  "configured.gui.load_world_config_failed": "加载此世界配置失败",
+  "configured.gui.load_world_config_exception": "加载此世界配置时出现错误。查看日志以获取详细信息",
+  "configured.gui.update_error.generic": "配置上传失败",
+  "configured.gui.update_error.read_only": "配置上传失败，因为其是只读的",
+  "configured.gui.update_error.unloaded": "配置上传失败，因为其未被加载",
+  "configured.gui.neoforge.players_kicked": "需要所有玩家重新进入服务器以接受更改。保存完毕后，所有玩家都会被踢出。确定要保存？",
+  "configured.gui.neoforge.server_configs_updated": "服务端配置已更新。请重新进入以接受更改",
+  "key.categories.configured": "已配置"
 }

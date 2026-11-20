@@ -1,0 +1,9 @@
+{
+  "zeta.gui.config.save": "保存更改",
+  "zeta.gui.config.header": "%s配置",
+  "zeta.gui.config.default": "重置为默认",
+  "zeta.gui.config.onechild": "1个选项",
+  "zeta.gui.config.nchildren": "%d个选项",
+  "zeta.gui.config.defaultvalue": "默认：%s",
+  "zeta.gui.config.missingaddon": "你缺少此分类所需的附属模组"
+}

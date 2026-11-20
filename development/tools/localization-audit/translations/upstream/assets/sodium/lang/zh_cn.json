@@ -1,0 +1,8 @@
+{
+  "sodium.options.weather_quality.fancy": "幻想",
+  "sodium.options.leaves_quality.fancy": "幻想",
+  "sodium.options.chunk_fade_time.value": "%s秒",
+  "sodium.options.defer_chunk_updates.zero_frames": "立即",
+  "sodium.options.quad_splitting.safe": "保险箱",
+  "sodium.options.search": "搜索"
+}
