@@ -5803,6 +5803,13 @@
         "sha512": "c7b763631627e3921948e13b6e38ea9795c92d93e0d3ad06fe7c33d99d217f1121a7838371bee3bc27df09c1b12cf44c8b3da912f91f76bd5874a519f9e632d4"
       },
       {
+        "filename": "expedition-create-logistics-neoforge-1.0.0.jar",
+        "bytes": 15386,
+        "sha1": "ebb903042c6dec72e43a9fbff57bcd1605ec5ec0",
+        "sha256": "0ba17242d2382cfbf0f5dc8325794870250cfd76801b17a5f28a6b29036aa9ff",
+        "sha512": "8f5f7880b6c1d48a514d0089d40e902248621c7b142e7f34af3cab098443713babc55037dcff44522d9a691cb03226a03a48a14f8096bdd05db5a885bb60d57c"
+      },
+      {
         "filename": "expedition-creeper-firework-compat-neoforge-1.0.0.jar",
         "bytes": 5128,
         "sha1": "8dee828b01ecf6efacef7b4a46e3fd355cba05eb",
@@ -7717,7 +7724,7 @@
       "config/copycats-server.toml": "dac18a20718319d6556a7b2709d8f7a64b5da718d2b05ab9d32604087860322a",
       "config/craftingtweaks-common.toml": "f8e26cfe44eb0e6d4d084b9a2af90f5028da034becee64b6ddfd50cdfd5c7fe1",
       "config/create-common.toml": "1c632f62c30f4e1223669267196d2ff1a2c03e400bf565ff4fe81e20c7cd2bdf",
-      "config/create-server.toml": "f1a3edd31cdcf2b602b7d51d1fe8ba5e88d6403580ba382ba4cbfab1ecb3a365",
+      "config/create-server.toml": "55049fc146705a086f3010639f34a17b25c06ef01803a2b991c66c92479946f3",
       "config/create_central_kitchen-common.toml": "9181ff82252d2e51065cc6cbfbe612bc597d1246146a579b0a6f38cc444fc4e9",
       "config/create_connected-common.toml": "5e18ed787b1fb0fcd23abcc4baf7f73f5ebcf73f369bf1102ba251569fd06fd4",
       "config/create_connected-server.toml": "5b0f4cdc30aac70ead5b98c9768e0aa39868141b999cfcdebc3e49f18a8ac9eb",
@@ -8147,7 +8154,7 @@
       "config/sci4me/Torcherino.cfg": "3fd7975c028e3a3304160f6b008bdbf59ba188f60dde9910b11ac01b733324b2",
       "config/servercore/config.yml": "166620084b92bcf784093c8355f1f5b0428172e16b613520ef13c273e42a3e0f",
       "config/servercore/optimizations.yml": "63ba7034fdf1f45f1b40798d3212f8d838f7c299fbe5795075fbafe1e2265192",
-      "config/simplebackups-common.toml": "f875dd94e6d2ab9eb05a52cc768a3a2fe41566460740b9a3bd8d2052d9247fe2",
+      "config/simplebackups-common.toml": "7b6066223e1bdcd989fe943d5d58de72eece0b8c182b6cb5d74aeca1e00ea3b7",
       "config/simplebackups-server.toml": "bf73f138a476278c415bacc627026a81ddf7ebb4cb8e2613dc3bb2692c327922",
       "config/simulated-server.toml": "74ceaca226933e2471df76e5f6a8b1d0e2e339754419fd7c0c8f37fb3b90d243",
       "config/smartercontraptionstorage-common.toml": "74a7f6dc16c2a068c972940010fda14fe48e0958e01a4afd8fdeb7354de25892",
@@ -11458,6 +11465,20 @@
         "sha1": "7cf4a91f23734ed6ddb8a1c633302a56a11a0f6e",
         "sha256": "954b0793dd3fc9d460b7c23f9629088b603573a4066ef6279696fbf1bef6a065",
         "sha512": "8b3e1a43077a3bb8b23c3787254dcee9ce6bf2d2637c3b898f26769882595e6df938fa864d3314e1a31626a7fae153d53a7661ec8ab3540dde639a6cd9710cd7"
+      },
+      {
+        "filename": "expedition-backup-retention-neoforge-1.0.0.jar",
+        "bytes": 4295,
+        "sha1": "383c1d66c3a9e1fa75cdfb8e3b520ff53620422b",
+        "sha256": "47eabae55d38ee2753bd3683d2b3ff148c00d615195250e451f5f7f111224a2f",
+        "sha512": "135b4d91e4eedac6221e00bd094a5e89ec41454c1568d3eddf2bcaf754e96a82dc76c08dc4935dd061cda61cb1d00031d729690bf43761e46cd7595c08b8bb84"
+      },
+      {
+        "filename": "expedition-create-logistics-neoforge-1.0.0.jar",
+        "bytes": 15386,
+        "sha1": "ebb903042c6dec72e43a9fbff57bcd1605ec5ec0",
+        "sha256": "0ba17242d2382cfbf0f5dc8325794870250cfd76801b17a5f28a6b29036aa9ff",
+        "sha512": "8f5f7880b6c1d48a514d0089d40e902248621c7b142e7f34af3cab098443713babc55037dcff44522d9a691cb03226a03a48a14f8096bdd05db5a885bb60d57c"
       },
       {
         "filename": "expedition-creeper-firework-compat-neoforge-1.0.0.jar",

@@ -5432,6 +5432,7 @@ f2ced7adfa7c11bf9acb0de77a3c3b2a9f8241d764b64cbed381c8f517776208  current/client
 42f8dcb05d71ad714c1b9ac84186e33037ae3bb4a2893787843331575830590d  current/client/mods/auratip-forge-1.20.1-1.1.1-beta.jar
 44b01c12f6b4be699b48c4d91f5f79227bdb4fb28cf698243a16d3eb4000b676  current/client/mods/expedition-alpine-climate-1.0.0.jar
 fefb8ce39e793a3ebbfcaeac0a298d1669c671a3c7e3713c1a9695b9878d230c  current/client/mods/expedition-armor-display-neoforge-1.0.0.jar
+0ba17242d2382cfbf0f5dc8325794870250cfd76801b17a5f28a6b29036aa9ff  current/client/mods/expedition-create-logistics-neoforge-1.0.0.jar
 7d9912651b21cff360eb30f8f59fc04c1d0f544eeabdc838d09c9c49b6e39267  current/client/mods/expedition-creeper-firework-compat-1.0.0.jar
 96086a5be45ee8a9153729e93c4d1924013a4df6fa8c10f2e10b032b372defb5  current/client/mods/expedition-ftb-teams-client-compat-1.0.0.jar
 929f896dd4003a621f82b56cc373212b55733e7bcd5debf3703b26595fff5267  current/client/mods/expedition-maid-worldgen-guard-1.0.1.jar
@@ -6728,6 +6729,7 @@ abcc97a3a3bb08ec4c30523af871d4d1168259f91cf54ffb6e5ab9c47b4648dd  current/client
 af1714bb66a877021ede496e61f35d2358fb69b8878eda7b553f07fb4588075f  current/client/tlm_custom_pack/touhou_little_maid-1.0.0/pack.png
 399eb9350d55c49443c2a4bf73b82ba6cea160729144edb87c4b07a061485b90  current/mods.lock.json
 a38b42762eb20a0681b34eafb7c357ddb678ea6420ce52e606d9b8ab0113abec  current/server/config/almostunified/unify.json
+55049fc146705a086f3010639f34a17b25c06ef01803a2b991c66c92479946f3  current/server/config/create-server.toml
 2962da4591a3068a843ec9ec0be8288b2fa2c1ef5fbc54c71c390546066acb92  current/server/config/cso-common.toml
 4a7804ee7019ebc4780df70bd05580c1f57aba14f99d9bbdb247fe9e65821c5f  current/server/config/eclipticseasons-common.toml
 f5cf7b25e165bcacfa77436130d35543b6b06084db7fd9bda2bdfa454c6acbd4  current/server/config/expedition-boss-density.json
@@ -6735,6 +6737,7 @@ f5cf7b25e165bcacfa77436130d35543b6b06084db7fd9bda2bdfa454c6acbd4  current/server
 eacbdcb587fdc41a5b9a2b72be24e0d6fc777c62b159d1d47b36ab362dc09c87  current/server/config/fml.toml
 9cc927db50d2509473c74224d61afe11fa1de5f06305a3a122e642d0aa30e0b2  current/server/config/ftbquests/quests/chapters/prologue.snbt
 8829952ffe3dc710d8fb79b917a94b2774b555fd96db3a46f15a095447541223  current/server/config/lithium.properties
+7b6066223e1bdcd989fe943d5d58de72eece0b8c182b6cb5d74aeca1e00ea3b7  current/server/config/simplebackups-common.toml
 b487840ca614f7d8f0f8e483a444419da7b04e60fd1963ff4a2c0cabbc1310f3  current/server/config/smoothboot.json
 5a7abf7a0475f4b60bc911b5c4d1b6140c96cb7586522ce665b0decb1c9e6934  current/server/config/spark/config.json
 034024bd7999fd9d9593948571d5b0b51b538341fb301817ea83e30324ec7fd0  current/server/config/sparsestructures.json5
@@ -6762,6 +6765,8 @@ ee33ca1bd6b8a36df7c146e6d748469154703221c981210d4352a535fbed9f57  current/server
 2ca7d43485c2c9f97fed9ffcfd9c581ba774a732b8473b5868170b5b303360c8  current/server/mods/Create-Steam-Ages-1.0-expedition-steamletters-compat.jar
 91709031d559037fe66798202c1a2b05259ea28d5b639b8dcd734846616a5f66  current/server/mods/Oh-The-Trees-Youll-Grow-forge-1.20.1-1.7.3.jar
 a15224165ae9aa92071a09033601305bbc9f4b12851ad02e580a883f3df49626  current/server/mods/createfactorycontroller-1.2.1-forge-1.20.1.jar
+47eabae55d38ee2753bd3683d2b3ff148c00d615195250e451f5f7f111224a2f  current/server/mods/expedition-backup-retention-neoforge-1.0.0.jar
+0ba17242d2382cfbf0f5dc8325794870250cfd76801b17a5f28a6b29036aa9ff  current/server/mods/expedition-create-logistics-neoforge-1.0.0.jar
 5c66feb088f716fd90c7ca480b7e60db2a70bce0666b3e0f9e29983f3af49d7b  current/server/mods/expedition-terramity-curse-compat-1.0.1.jar
 99cbb24d261d709804c275720fd92fa2becf986ba15f630856c68296bc723b2f  current/server/mods/goddamnrepackager-0.5.1-forge-alpha.jar
 eaeb731a56a434894e1f7645b3f39f3ace30a928309b36d340d7f67a2651f06d  current/server/server-additions.json

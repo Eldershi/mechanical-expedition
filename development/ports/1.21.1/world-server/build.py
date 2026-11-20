@@ -15,7 +15,10 @@ MOTION = HERE.parents[2] / "tools/player-motion-guard"
 MODULES = {
     "alpine": ("expedition_alpine_climate", "1.0.0", "Expedition Local Alpine Climate",
                "expedition.alpine.mixin", ["BiomeTemperatureMixin", "BiomeTemperatureAccess", "SurfaceSystemMixin"]),
+    "backup-retention": ("expedition_backup_retention", "1.0.0", "Expedition Backup Retention",
+                         "expedition.backup.mixin", ["BackupThreadMixin"]),
     "block-catalog": ("expedition_block_catalog", "1.0.0", "Expedition Migration Block Catalog", "", []),
+    "create-logistics": ("expedition_create_logistics", "1.0.0", "Expedition Create Logistics", "", []),
     "equipment": ("expedition_equipment_rules", "1.0.0", "Expedition Curios Equipment", "", []),
     "ie-machine": ("expedition_ie_machine_compat", "1.0.0", "Expedition IE Machine Compatibility",
                    "expedition.iemachines.mixin", ["CokeOvenCapacityMixin", "FluidPipeConnectionMixin"]),
@@ -37,12 +40,18 @@ MODULES = {
 }
 COMMON_DIAGNOSTICS = ("BoundedRing", "DiagnosticsConfig", "DurableJsonLog", "JfrRecorder", "PlayerSnapshot")
 DEPENDENCIES = {
+    "backup-retention": ("simplebackups", "[1.21-4.0.21]", "SimpleBackups-1.21-4.0.21.jar"),
     "equipment": ("curios", "[9.5.1,10)", "curios-neoforge-9.5.1+1.21.1.jar"),
     "ie-machine": ("immersiveengineering", "[12.4.2-194]", "ImmersiveEngineering-1.21.1-12.4.2-194.jar"),
     "island-rail": ("create", "[6.0.10]", "create-1.21.1-6.0.10.jar"),
     "railway": ("tongdarailway", "[1.1.6+mc21.1]", "tongdarailway-1.1.6-mc21.1.jar"),
     "twilight": ("twilightforest", "[4.8.3345]", "twilightforest-1.21.1-4.8.3345-universal.jar"),
 }
+CREATE_LOGISTICS_DEPENDENCIES = (
+    ("create", "[6.0.10]", "create-1.21.1-6.0.10.jar"),
+    ("farmersdelight", "[1.3.4]", "FarmersDelight-1.21.1-1.3.4.jar"),
+    ("create_central_kitchen", "[2.6.2b]", "create-central-kitchen-2.6.2b.jar"),
+)
 SPACE_DEPENDENCIES = (
     ("ad_astra", "[1.16.26]", "adastra-1.21.1-1.16.26-neoforge.jar"),
     ("allthemodium", "[3.2.1]", "allthemodium-3.2.1_mc_1.21.1.jar"),
@@ -73,7 +82,7 @@ def classpath(server):
 
 def build(module, java, cp, output, mods, space_proof=False):
     modid, version, title, mixins_package, mixins = MODULES[module]
-    side = "SERVER" if module in {"block-catalog", "island-rail", "motion-guard", "teleport"} else "BOTH"
+    side = "SERVER" if module in {"backup-retention", "block-catalog", "island-rail", "motion-guard", "teleport"} else "BOTH"
     filename = f"{modid.replace('_', '-')}-neoforge-{version}.jar"
     sources = sorted((HERE / module / "src").rglob("*.java"))
     if module in DEPENDENCIES:
@@ -86,9 +95,11 @@ def build(module, java, cp, output, mods, space_proof=False):
         if space_proof:
             sources.extend(sorted((HERE / module / "tests").glob("*.java")))
             sources.extend(sorted((HERE / "brass-industry/tests").glob("*.java")))
+    if module == "create-logistics":
+        cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in CREATE_LOGISTICS_DEPENDENCIES)
     with tempfile.TemporaryDirectory() as temp:
         classes = Path(temp)
-        if module in {"island-rail", "space"}:
+        if module in {"island-rail", "space", "create-logistics"}:
             with ZipFile(mods / "create-1.21.1-6.0.10.jar") as create:
                 for entry in create.namelist():
                     if entry.startswith("META-INF/jarjar/") and entry.endswith(".jar"):
@@ -134,6 +145,8 @@ side="{side}"
             module_dependencies.append(DEPENDENCIES["railway"])
         if module == "space":
             module_dependencies = SPACE_DEPENDENCIES
+        if module == "create-logistics":
+            module_dependencies = CREATE_LOGISTICS_DEPENDENCIES
         for dependency_id, dependency_version, _ in module_dependencies:
             metadata += f'''[[dependencies.{modid}]]
 modId="{dependency_id}"
