@@ -14,6 +14,9 @@ SMELTERY = "textures/block/smeltery/"
 BRICKS = "seared/bricks"
 FANCY_BRICKS = "seared/fancy_bricks"
 GLASS = "seared_glass"
+PANE_FAMILIES = {"glass": GLASS, "soul_glass": "soul_glass"}
+PANE_MODELS = ("pane_post", "pane_side", "pane_side_alt",
+               "pane_noside", "pane_noside_alt", "pane_noside_edge")
 
 BRICK_BACKGROUNDS = (
     "controller/heater_",
@@ -153,17 +156,20 @@ def remap_device(name, image, original_brick, create_brick):
     return result
 
 
-def glass_frame(connections, original=None):
+def glass_frame(connections, original=None, pane=False):
     image = Image.new("RGBA", (16, 16))
     fill = original.getpixel((8, 8)) if original else (0, 0, 0, 0)
+    # The native pane model stops at its 2-pixel post on an unjoined side.
+    left = 7 if pane and "l" not in connections else 0
+    right = 8 if pane and "r" not in connections else 15
     for y in range(16):
-        for x in range(16):
+        for x in range(left, right + 1):
             if original:
                 interior = original.getpixel((x, y))
                 image.putpixel((x, y), interior if interior[3] < 255 else fill)
             edges = [
                 (distance, side)
-                for distance, side in ((y, "u"), (x, "l"), (15 - y, "d"), (15 - x, "r"))
+                for distance, side in ((y, "u"), (x - left, "l"), (15 - y, "d"), (right - x, "r"))
                 if side not in connections
             ]
             if not edges:
@@ -178,7 +184,9 @@ def glass_frame(connections, original=None):
                 continue
             image.putpixel((x, y), (*color, 255))
     for point, color in GLASS_REFLECTION.items():
-        image.putpixel(point, color)
+        x, y = point
+        if right - left >= 6:
+            image.putpixel((x + left, y), color)
     return image
 
 
@@ -215,6 +223,12 @@ def build_texture_set(mod, create, namespace):
         textures[glass] = encode_png(glass_frame("", original))
         for connection in CONNECTIONS[1:]:
             textures[f"{glass}/{connection}"] = encode_png(glass_frame(connection, original))
+    for glass in PANE_FAMILIES.values():
+        original = read_png(mod, asset_name(namespace, glass)) if glass != GLASS else None
+        pane = glass + "_pane"
+        textures[pane] = encode_png(glass_frame("", original, pane=True))
+        for connection in CONNECTIONS[1:]:
+            textures[f"{pane}/{connection}"] = encode_png(glass_frame(connection, original, pane=True))
 
     return textures
 
@@ -229,13 +243,19 @@ def write_pack(path, mod, namespace, pack_format, textures):
     mod_files = set(mod.namelist())
     for name, data in textures.items():
         target = asset_name(namespace, name)
-        original = read_png(mod, target)
         with Image.open(BytesIO(data)) as replacement:
-            if original.size != replacement.size:
+            if target in mod_files and read_png(mod, target).size != replacement.size:
                 raise ValueError(f"Dimension mismatch for {target}")
         resources[target] = data
         if target + ".mcmeta" in mod_files:
             resources[target + ".mcmeta"] = mod.read(target + ".mcmeta")
+
+    for folder, glass in PANE_FAMILIES.items():
+        for model in PANE_MODELS:
+            target = f"assets/{namespace}/models/block/smeltery/{folder}/{model}.json"
+            original = json.loads(mod.read(target))
+            original["textures"]["pane"] = f"{namespace}:block/smeltery/{glass}_pane"
+            resources[target] = json.dumps(original, indent=2) + "\n"
 
     with ZipFile(path, "w", compression=ZIP_DEFLATED) as pack:
         for name, data in sorted(resources.items()):
@@ -252,8 +272,12 @@ def main():
     destination = Path(__file__).resolve().parent
     with ZipFile(args.forge_tinkers) as forge, ZipFile(args.neoforge_tinkers) as neo, ZipFile(args.forge_create) as create:
         textures = build_texture_set(forge, create, "tconstruct")
+        native = set(forge.namelist())
         for name in textures:
-            left = forge.read(asset_name("tconstruct", name))
+            path = asset_name("tconstruct", name)
+            if path not in native:
+                continue
+            left = forge.read(path)
             right = neo.read(asset_name("modernfoundry", name))
             if left != right:
                 raise ValueError(f"Original textures are different between versions: {name}")
