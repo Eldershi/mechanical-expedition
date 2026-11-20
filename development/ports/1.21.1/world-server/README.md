@@ -31,6 +31,10 @@ Place the generated ZIP in the world's `datapacks` directory and enable it. The 
 
 `migration/migrate_level_metadata.py` uses `nbtlib` to write a candidate `level.dat` from the source world and a fresh world made with the target pack. It retains the source seed and converts the saved Overworld generator. Lithostitched wraps the migrated biome source, and the target pack applies its current generation rules. A full Overworld transfer includes the partially generated region data that continues the old biomes near explored terrain.
 
+`migration/repair_surface_continuity.py` takes the archived terrain, the deployed transition, the current region files, a chunk scope, and terrain settings. It uses a continuous height field for the coastline, keeps rooted trees on their original ground, and protects current structures and block entities. Each output region retains the current version of chunks outside the scope.
+
+`migration/restore_clipboard_contents.py` converts plain-text Create clipboard pages from the source world to NeoForge item components. The generated commands restore only existing clipboard blocks with empty pages and retain text, checkbox states, and the last open page.
+
 `migration/prepare_region_copy.py --track-spawners` transfers TongDa track spawner block IDs and block entity IDs while retaining the saved track data. Old TongDa planning areas have a different size. The old route cache needs separate verification before reuse with the current planner. Use `--eidolon-ores` to transfer existing silver and lead ore palettes to the matching Eidolon Repraised IDs.
 
 Use `migration/prepare_region_copy.py --create-curves` before opening the source regions in Minecraft 1.21.1. It converts Create's stored curve endpoint offsets to the target format. Use `migration/prepare_create_railway.py --source path/to/legacy/create_tracks.dat --output path/to/migrated/create_tracks.dat` to convert the matching saved graph's curves and its station, observer, and signal coordinates. Include all regions along the route when checking station or train connectivity.
