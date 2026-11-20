@@ -2,15 +2,26 @@
   "schemaVersion": 1,
   "id": "create-style-hnn",
   "repository": "https://github.com/Eldershi/create-style-hnn",
-  "ref": "04610bed44ee3906cc9f866640d94a63b72fcb4a",
-  "release": "v1.0.0",
-  "minecraft": "1.20.1",
+  "ref": "284eba7f9d63951cf64549a31c9af142a8467ff8",
+  "release": "v1.1.0",
+  "minecraft": "1.21.1",
   "artifacts": [
     {
-      "name": "create-style-hnn-1.0.0.zip",
-      "url": "https://github.com/Eldershi/create-style-hnn/releases/download/v1.0.0/create-style-hnn-1.0.0.zip",
-      "sha256": "3dba6c23980cb1ca562286e72fa901a199f73340baec3732fee9992c29816357",
-      "bytes": 23609
+      "name": "create-style-hnn-1.1.0.zip",
+      "url": "https://github.com/Eldershi/create-style-hnn/releases/download/v1.1.0/create-style-hnn-1.1.0.zip",
+      "bytes": 40383,
+      "sha256": "b031fdbd8e1984c97f2e9bce08269a4ee5dc5641b34ea233df598100e3a322b4"
+    }
+  ],
+  "clientFiles": [
+    {
+      "path": "config/paxi/resourcepacks/create-style-hnn-1.1.0.zip",
+      "officialVersionPage": "https://github.com/Eldershi/create-style-hnn/releases/tag/v1.1.0",
+      "downloadUrl": "https://github.com/Eldershi/create-style-hnn/releases/download/v1.1.0/create-style-hnn-1.1.0.zip",
+      "bytes": 40383,
+      "sha1": "d05cbe167ef5d12fef88d4418054700173e6fe02",
+      "sha256": "b031fdbd8e1984c97f2e9bce08269a4ee5dc5641b34ea233df598100e3a322b4",
+      "sha512": "e53889665e0fcdae3c166656324d56fe5b50ab13d311ec4f27b15e309c5e6bc5e68f426ba1ac4366c57c03fca0a88577b66b9df2daa0ef6adfcdc76ddffe391b"
     }
   ]
 }

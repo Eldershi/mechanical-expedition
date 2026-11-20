@@ -79,13 +79,22 @@ def excluded(relative):
     )
 
 
+def external_client_resources():
+    directory = ROOT / "integrations/resourcepacks"
+    for name in ("create-mcgui.json", "create-style-hnn.json", "neoforge-resourcepacks.json"):
+        yield from json_file(directory / name)["clientFiles"]
+
+
 def selected(instance, client=False):
+    external_paths = {file["path"] for file in external_client_resources()} if client else set()
     if client:
         defaults = Path(__file__).with_name("client-options.txt")
         yield Path("options.txt"), defaults.read_bytes()
     for folder in sorted(ASSET_DIRS):
         for path in sorted((instance / folder).rglob("*")):
             relative = path.relative_to(instance)
+            if relative.as_posix() in external_paths:
+                continue
             if path.is_symlink() or not path.is_file() or excluded(relative) or skip_reason(relative.as_posix()):
                 continue
             if relative.parts[-2:] == ("paxi", "resourcepack_load_order.json"):
@@ -167,8 +176,7 @@ def index_for(meta, lock):
               "downloads": [row["downloadUrl"]], "fileSize": row["bytes"],
               "env": {"client": "required", "server": "unsupported"}}
              for row in lock["mods"] if row.get("downloadUrl")]
-    gui = json_file(ROOT / "integrations/resourcepacks/create-mcgui.json")
-    for file in gui["clientFiles"]:
+    for file in external_client_resources():
         files.append({"path": file["path"], "hashes": {key: file[key] for key in ("sha1", "sha512")},
                       "downloads": [file["downloadUrl"]], "fileSize": file["bytes"],
                       "env": {"client": "required", "server": "unsupported"}})
