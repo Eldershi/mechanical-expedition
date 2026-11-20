@@ -136,15 +136,6 @@
       "sha512": "a109fe717c6b9b5a250e3394474658248606d2e2bd84cb7efd9d76fbc5f67ae28ac6331454574e967907f591e34a80e1e7385ffca66dfdc06737163b4b334466"
     },
     {
-      "path": "config/paxi/resourcepacks/§bEnchanting§8-§bReimagined§0_§8[v1.4]§0.zip",
-      "officialVersionPage": "https://www.curseforge.com/minecraft/texture-packs/enchanting-reimagined/files/7178708",
-      "downloadUrl": "https://edge.forgecdn.net/files/7178/708/%C2%A7bEnchanting%C2%A78-%C2%A7bReimagined%C2%A70_%C2%A78%5Bv1.4%5D%C2%A70.zip",
-      "bytes": 2747978,
-      "sha1": "27207cdb36752a16ff4aa049d5e70c290787a905",
-      "sha256": "111f340e24cf54f29de8e8718a4885b894bed809036924708cb88188980fd888",
-      "sha512": "5f00411290cf1359cfe95a7e4aa575a6e40ec81ef790b9cb59fbaf6f83974d353505138e63818bda9100e63242a3d952290860a5053cbc80ed44d898473a1b4f"
-    },
-    {
       "path": "config/paxi/resourcepacks/§fBetter §2§lLeaves §71.20.zip",
       "officialVersionPage": "https://modrinth.com/resourcepack/6AXoO5ip/version/Bff2E1TQ",
       "downloadUrl": "https://cdn.modrinth.com/data/6AXoO5ip/versions/Bff2E1TQ/%C2%A7fBetter%20%C2%A72%C2%A7lLeaves%20%C2%A771.20.zip",

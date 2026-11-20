@@ -821,7 +821,7 @@ f94b0db8cafe00267af706712466180596509d90535afb7f7f1960dc91c37e50  current/client
 d0976bf283fbcfdd4b7df97b263a0a8b22067ee31c2ba55e865ca6ddbb5e6afa  current/client/config/paintings-client.toml
 3b6236845f6a5ff8804487b63b0d74305b91316dc9a008362838607b0be3bd8e  current/client/config/patchouli-client.toml
 937e167e507127fc129514bfc5484b4c87fc4cd678fdd30e37843dea99274ca9  current/client/config/paxi/datapack_load_order.json
-f79812b46d88bccb1227b1a8d20fbe34295525b1ec464c834b69392898007ba5  current/client/config/paxi/resourcepack_load_order.json
+2ca6f0b4faed2e033b9db90aa58ad9a3e03c7c3bd9930174f16928c677becb9e  current/client/config/paxi/resourcepack_load_order.json
 9a263da7a684c478e09f3299ec7dad43d4deacbe9262b2b307b5d3100f2e9e7b  current/client/config/paxi/resourcepacks/Applied Mekanism v1.0 for 1.21.1.zip
 20a1fe8c484bb3d0918e49fdd9b3c2a1c88c5ffe971b60e344ce9af060980be6  current/client/config/paxi/resourcepacks/Ars Nouveau Refresh 1.0.zip
 faea9010cf433aa52399a8bffc062a1b240955c2cd8ed33228e68a86767a7da6  current/client/config/paxi/resourcepacks/BWG材质包 0.1.1.zip
@@ -851,7 +851,6 @@ d1889742c3613395cbee4cb48b6819f3fd46447da0841b5e8d06614d656a2430  current/client
 82b042f5324f7c0b6ce17b3dcab0d433fb8fa9c7f25ea4eb31349b74599c4a0b  current/client/config/paxi/resourcepacks/Suren FTB Quests 1.0.1 1.20-1.20.1.zip
 830f9da05c5aabcc836b28a3a1069f1957f78fe4775eacb8a93ad8b760412873  current/client/config/paxi/resourcepacks/repottery-v1-3-2.zip
 e4e17fab376fac1005c09790e2a747ad7a3bae9c2736f06d265b95b93790e677  current/client/config/paxi/resourcepacks/waystones_update_2_1.20.1.zip
-111f340e24cf54f29de8e8718a4885b894bed809036924708cb88188980fd888  current/client/config/paxi/resourcepacks/§bEnchanting§8-§bReimagined§0_§8[v1.4]§0.zip
 fc0107ce4663c7a5069a0fca35f652ba3ba6464a6c4abc784d00a1697818f4fc  current/client/config/paxi/resourcepacks/§fBetter §2§lLeaves §71.20.zip
 0f6ebf9d2cff4895973b6b170a6f047f42ce46549033b2c6d0385d230a0f779c  current/client/config/paxi/resourcepacks/§n§l§a更好的熔炉资源包.zip
 0571ab8ebe3be52f2cfe8a62a08bbb446ad6dff244c8f763ea3a5a64d831c0b8  current/client/config/paxi/resourcepacks/彩虹像素RainbowPixel~☆v3.5.4.zip

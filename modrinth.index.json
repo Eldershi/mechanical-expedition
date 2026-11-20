@@ -5270,21 +5270,6 @@
       }
     },
     {
-      "path": "config/paxi/resourcepacks/§bEnchanting§8-§bReimagined§0_§8[v1.4]§0.zip",
-      "hashes": {
-        "sha1": "27207cdb36752a16ff4aa049d5e70c290787a905",
-        "sha512": "5f00411290cf1359cfe95a7e4aa575a6e40ec81ef790b9cb59fbaf6f83974d353505138e63818bda9100e63242a3d952290860a5053cbc80ed44d898473a1b4f"
-      },
-      "downloads": [
-        "https://edge.forgecdn.net/files/7178/708/%C2%A7bEnchanting%C2%A78-%C2%A7bReimagined%C2%A70_%C2%A78%5Bv1.4%5D%C2%A70.zip"
-      ],
-      "fileSize": 2747978,
-      "env": {
-        "client": "required",
-        "server": "unsupported"
-      }
-    },
-    {
       "path": "config/paxi/resourcepacks/§fBetter §2§lLeaves §71.20.zip",
       "hashes": {
         "sha1": "bffd7ef4a52e9bb1a93ba723f3dacb7270c64dc9",
