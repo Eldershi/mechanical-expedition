@@ -5,14 +5,22 @@ import tempfile
 import unittest
 from zipfile import ZipFile
 
-from build_visual_overlays import write_compatibility_packs
+from build_visual_overlays import AE2_CHARGER, transparent_png, write_compatibility_packs
 
 
 class CompatibilityPackFiltersTest(unittest.TestCase):
     def test_filters_match_complete_paths_in_their_own_namespace(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            write_compatibility_packs(root / "Expedition-Resource-Compat-1.21.1.zip")
+            source = root / "ae2.jar"
+            charger = transparent_png(64, 64)
+            with ZipFile(source, "w") as pack:
+                pack.writestr(AE2_CHARGER, charger)
+            output = root / "Expedition-Resource-Compat-1.21.1.zip"
+            write_compatibility_packs(output, source)
+            with ZipFile(output) as pack:
+                self.assertEqual(pack.read(AE2_CHARGER), charger)
+                self.assertIn("ATTRIBUTION-AE2.txt", pack.namelist())
             filters = []
             for path in root.glob("*.zip"):
                 with ZipFile(path) as pack:

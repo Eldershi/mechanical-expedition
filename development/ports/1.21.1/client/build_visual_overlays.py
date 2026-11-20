@@ -11,6 +11,13 @@ import zlib
 
 
 ENTITY = "assets/minecraft/textures/entity/"
+AE2_CHARGER = "assets/ae2/textures/block/charger.png"
+AE2_CHARGER_NOTICE = """Applied Energistics 2 charger texture, used unmodified.
+Copyright (c) 2020 Ridanisaurus Rid and (c) 2013–2020 AlgorithmX2 et al.
+https://github.com/AppliedEnergistics/Applied-Energistics-2
+Creative Commons Attribution-NonCommercial-ShareAlike 3.0
+https://creativecommons.org/licenses/by-nc-sa/3.0/
+"""
 VANILLA_MOBS = (
     "creeper/creeper.png", "creeper/creeper_armor.png",
     "skeleton/skeleton.png", "skeleton/stray.png", "skeleton/stray_overlay.png",
@@ -81,8 +88,15 @@ def write_pack(output, description, assets, *, filters=()):
             archive.writestr(entry, data)
 
 
-def write_compatibility_packs(output):
-    write_pack(output, "Expedition resource compatibility", compatibility_assets(), filters=(
+def write_compatibility_packs(output, ae2_jar):
+    assets = compatibility_assets()
+    with ZipFile(ae2_jar) as source:
+        charger = source.read(AE2_CHARGER)
+    if not charger.startswith(b"\x89PNG\r\n\x1a\n") or struct.unpack(">II", charger[16:24]) != (64, 64):
+        raise ValueError("Use an AE2 jar with the 64×64 charger texture")
+    assets[AE2_CHARGER] = charger
+    assets["ATTRIBUTION-AE2.txt"] = AE2_CHARGER_NOTICE.encode()
+    write_pack(output, "Expedition resource compatibility", assets, filters=(
         {"namespace": "minecraft", "path": r"optifine/cem/enchanting_book(?:2?\.jem|\.properties)"},
         {"namespace": "minecraft", "path": r"textures/entity/enchanting_table_book_[es]\.png"},
     ))
@@ -107,7 +121,9 @@ def main():
             parser.error("--source must be the Minecraft 1.21.1 client jar")
         write_pack(args.output, "Expedition vanilla hostile mobs", vanilla_mobs(args.source))
     else:
-        write_compatibility_packs(args.output)
+        if not args.source:
+            parser.error("--source must be the Applied Energistics 2 jar")
+        write_compatibility_packs(args.output, args.source)
 
 
 if __name__ == "__main__":
