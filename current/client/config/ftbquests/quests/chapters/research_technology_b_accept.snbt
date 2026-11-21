@@ -246,14 +246,6 @@
 			shape: "rsquare"
 		}
 		{
-			id: "490FAE6329FBEDB3"
-			linked_quest: "7D751BF89E8C67BD"
-			x: 3.3d
-			y: -0.2d
-			size: 0.75d
-			shape: "rsquare"
-		}
-		{
 			id: "1FA8136CCAAB14A4"
 			linked_quest: "7270243136C8A000"
 			x: 6.4d
@@ -592,15 +584,6 @@
 		}
 		{
 			nodes: ["l:cef5a7186304d72" "q:2dc1691e9dd1ca9f"]
-		}
-		{
-			nodes: ["l:490fae6329fbedb3" "a:02a2c935-1a87-5bbb-8c5d-3f3a3567c145"]
-		}
-		{
-			nodes: ["a:02a2c935-1a87-5bbb-8c5d-3f3a3567c145" "a:42a6206b-77cf-52f0-b3c0-e7995d39b613"]
-		}
-		{
-			nodes: ["a:42a6206b-77cf-52f0-b3c0-e7995d39b613" "q:2dc1691e9dd1ca9f"]
 		}
 		{
 			nodes: ["l:1fa8136ccaab14a4" "a:04f1382d-90d9-5910-80e7-aac0648ebe8c"]

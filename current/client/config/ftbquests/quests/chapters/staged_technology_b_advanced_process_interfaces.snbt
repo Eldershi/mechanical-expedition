@@ -171,14 +171,6 @@
 			size: 0.75d
 			shape: "rsquare"
 		}
-		{
-			id: "73277F1C02B857A8"
-			linked_quest: "7D751BF89E8C67BD"
-			x: 0.2d
-			y: -5.7d
-			shape: "rsquare"
-			size: 1.0d
-		}
 	]
 	images: [
 		{
@@ -227,9 +219,6 @@
 		}
 	]
 	quest_enhance_decorative_lines: [
-		{
-			nodes: ["l:3f376bcf029154e0" "l:73277f1c02b857a8"]
-		}
 		{
 			nodes: ["l:3f376bcf029154e0" "a:63ac8b85-a4de-5e62-a43a-ab1005a59983"]
 		}
