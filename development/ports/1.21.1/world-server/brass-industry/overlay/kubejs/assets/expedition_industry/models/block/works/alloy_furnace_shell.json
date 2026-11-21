@@ -3,8 +3,8 @@
   "model": "expedition_industry:models/block/works/alloy_furnace_shell.obj",
   "automatic_culling": false,
   "shade_quads": true,
-  "flip_v": true,
+  "flip_v": false,
   "textures": {
-    "particle": "expedition_industry:block/works/alloy_oven_sheet"
+    "particle": "create:block/industrial_iron_block"
   }
 }

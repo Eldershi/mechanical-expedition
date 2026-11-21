@@ -1,18 +1,14 @@
 newmtl beam
 Kd 1 1 1
-map_Kd create:block/girder_pole_side
+map_Kd create:block/girder_pole_side_connected
 
 newmtl plate
 Kd 1 1 1
 map_Kd createdeco:block/palettes/plate_metal/industrial_iron_plate_metal
 
-newmtl copper
-Kd 1 1 1
-map_Kd createdeco:block/palettes/sheet_metal/copper_sheet_metal
-
-newmtl heat
-Kd 1 1 1
-map_Kd expedition_industry:block/works/alloy_oven_sheet
+newmtl tank_wall
+Kd 1.00 0.98 0.87
+map_Kd createcraftedbeginning:block/airtight_tank/vertical_connected
 
 newmtl flange
 Kd 1 1 1
@@ -23,25 +19,29 @@ Kd 1 1 1
 map_Kd expedition_industry:block/works/firebrick
 
 newmtl tank
-Kd 1 1 1
+Kd 1.00 0.98 0.87
 map_Kd createcraftedbeginning:block/airtight_tank/vertical
 
 newmtl cap
-Kd 1 1 1
-map_Kd createcraftedbeginning:block/airtight_tank/top
+Kd 1.00 0.98 0.87
+map_Kd createcraftedbeginning:block/airtight_tank/top_outer
 
 newmtl duct
 Kd 1 1 1
 map_Kd create:block/industrial_iron_block
 
-newmtl lamp
+newmtl access
 Kd 1 1 1
-map_Kd expedition_industry:block/works/andesite_floodlight
+map_Kd expedition_industry:block/works/alloy_access
+
+newmtl guard
+Kd 1 1 1
+map_Kd expedition_industry:block/works/alloy_guard
 
 newmtl grille
 Kd 1 1 1
-map_Kd expedition_industry:block/works/alloy_grille
+map_Kd create:block/redstone_requester
 
 newmtl throat
 Kd 1 1 1
-map_Kd expedition_industry:block/works/alloy_flue
+map_Kd create:block/blaze_heater_brazier

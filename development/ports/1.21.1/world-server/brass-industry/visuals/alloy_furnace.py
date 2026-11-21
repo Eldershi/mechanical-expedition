@@ -12,7 +12,7 @@ TANK = "createcraftedbeginning:block/airtight_tank/"
 METAL = "createdeco:block/palettes/"
 MODELS = "models/block/works"
 SHELL = "alloy_furnace_shell"
-RETAINED = frozenset(" BEJMm")
+RETAINED = frozenset(" BMQSUVm")
 
 
 def render_mask(structures):
@@ -27,18 +27,18 @@ def render_mask(structures):
     return ("\n".join(lines) + "\n").encode()
 
 TEXTURES = {
-    "beam": CREATE + "girder_pole_side",
+    "beam": CREATE + "girder_pole_side_connected",
     "plate": METAL + "plate_metal/industrial_iron_plate_metal",
-    "copper": METAL + "sheet_metal/copper_sheet_metal",
-    "heat": NS + ":block/works/alloy_oven_sheet",
+    "tank_wall": TANK + "vertical_connected",
     "flange": CREATE + "industrial_iron_block_top",
     "refractory": NS + ":block/works/firebrick",
     "tank": TANK + "vertical",
-    "cap": TANK + "top",
+    "cap": TANK + "top_outer",
     "duct": CREATE + "industrial_iron_block",
-    "lamp": NS + ":block/works/andesite_floodlight",
-    "grille": NS + ":block/works/alloy_grille",
-    "throat": NS + ":block/works/alloy_flue",
+    "access": NS + ":block/works/alloy_access",
+    "guard": NS + ":block/works/alloy_guard",
+    "grille": CREATE + "redstone_requester",
+    "throat": CREATE + "blaze_heater_brazier",
 }
 
 
@@ -54,7 +54,11 @@ class Shell:
 
     def box(self, low, high, material, turn=0):
         a, b = radial(low, turn), radial(high, turn)
-        self.solids.append((tuple(map(min, zip(a, b))), tuple(map(max, zip(a, b))), material))
+        low, high = tuple(map(min, zip(a, b))), tuple(map(max, zip(a, b)))
+        if material == "beam":
+            span = [y-x for x, y in zip(low, high)]
+            material = "beam_" + str(span.index(max(span)))
+        self.solids.append((low, high, material))
 
     def ring(self, low, high, wall, material):
         x, y, z = low
@@ -73,11 +77,11 @@ class Shell:
 
     def brace(self, turn):
         # Diagonal enters both node plates, leaving the other faces free.
-        polygon = ((86, 8), (89, 6), (102, 20), (99, 23))
-        points = [(x, y, z) for x in (38, 42) for y, z in polygon]
+        polygon = ((85, 9), (88, 9), (96, 19), (93, 21))
+        points = [(x, y, z) for x in (37, 43) for y, z in polygon]
         for indexes in ((0,1,2,3), (7,6,5,4), (4,5,1,0),
                         (5,6,2,1), (6,7,3,2), (7,4,0,3)):
-            self.panel(tuple(points[i] for i in reversed(indexes)), "beam", turn)
+            self.panel(tuple(points[i] for i in reversed(indexes)), "plate", turn)
 
     def axis_faces(self):
         """Extract only the boundary of the union and weld all internal seams."""
@@ -124,59 +128,109 @@ class Shell:
                         uv.append((raw_v, 16-raw_u))
                     else:
                         uv.append((raw_u, 16-raw_v))
-                yield tuple(points), material, tuple(uv)
+                surface, texture_coords = finish_face(material, axis, sign, points, uv)
+                yield tuple(points), surface, texture_coords
+
+
+def finish_face(material, axis, sign, points, uv):
+    if material.startswith("beam_"):
+        along = int(material[-1])
+        if axis == along:
+            return "plate", tuple(uv)
+        # Create's connected sprite contains four variants in a 32x32 atlas.
+        # Bottom-right is connected at both ends. Its central strip is fully opaque.
+        across = 3 - axis - along
+        start = min(p[across] for p in points)
+        end = max(p[across] for p in points)
+        center = (start + end)/2
+        width = end-start
+        longitudinal = [p[along] for p in points]
+        first_tile = min(longitudinal)//16 * 16
+        return "beam", tuple(
+            (12 + (p[across]-center)*min(1, 8/width)/2, 16-(p[along]-first_tile)/2)
+            for p in points
+        )
+    if material == "tank_wall":
+        if axis == 1:
+            return "cap", tuple(uv)
+        # The airtight tank uses Create's rectangular CT atlas. Preserve every pixel of
+        # a 16x16 tile, selecting the connected variant from its neighbours on the shell.
+        across = 2 if axis == 0 else 0
+        column = min(p[across] for p in points)//16 - 1
+        if (axis, sign) in {(0, 1), (2, -1)}:
+            column = 2 - column
+            uv = [(16-u, v) for u,v in uv]
+        height = min(p[1] for p in points)
+        row = 0 if height >= 80 else 2 if height < 48 else 1
+        return material, tuple((4*(column+1)+u/4, 4*row+v/4) for u,v in uv)
+    if material == "access" and (axis != 0 or points[0][0] != 4):
+        return "plate", tuple(uv)
+    return material, tuple(uv)
+
+
+def perimeter_ranges(turn):
+    # Cut the west deck around the ladder bay alongside the tank.
+    return ((9,48), (64,71)) if turn == 3 else ((9,71),)
+
+
+def guardrails(shell, turn):
+    # The ladders have an open bay at the deck edge.
+    post_centers = (24, 68) if turn == 3 else (24,56)
+    for x in post_centers:
+        shell.box((x-2,28,6), (x+2,53,10), "plate", turn)
+    if turn == 3:
+        shell.box((20,50,6), (46,53,10), "beam", turn)
+        shell.box((65,50,6), (71,53,10), "beam", turn)
+    else:
+        shell.box((20,50,6), (60,53,10), "beam", turn)
+
+    # One continuous punched skirt contains the burner bank.
+    apron = 16 if turn == 3 else 13
+    shell.box((16,4,apron), (64,6,17), "plate", turn)
+    shell.box((16,15,apron), (64,17,17), "plate", turn)
+    for x in (16,32,48):
+        z = (apron+17)/2
+        shell.panel(((x+16,6,z),(x,6,z),(x,15,z),(x+16,15,z)), "guard", turn,
+                    ((16,12),(0,12),(0,3),(16,3)))
 
 
 def form_shell():
     shell = Shell()
     for turn in range(4):
         for x in (24, 56):
+            if turn == 3 and x == 56:
+                continue
             # Flanged column, actual bearing plate, and a cross-member to the inner ring.
             shell.box((x-5,0,3), (x+5,2,13), "plate", turn)
             shell.box((x-4,2,4), (x+4,14,6), "beam", turn)
             shell.box((x-4,2,10), (x+4,14,12), "beam", turn)
             shell.box((x-1,2,6), (x+1,14,10), "beam", turn)
             shell.box((x-5,14,3), (x+5,17,13), "plate", turn)
+            shell.box((x-2,4,11), (x+2,6,16.5), "plate", turn)
             shell.box((x-3,17,9), (x+3,26,24), "beam", turn)
-            shell.box((x-7,24,3), (x+7,32,13), "plate", turn)
-        shell.box((10,16,6), (70,26,10), "beam", turn)
-        for y in (16,24):
-            shell.box((9,y,4), (71,y+2,12), "beam", turn)
+            shell.box((x-5,25,4), (x+5,30,12), "plate", turn)
+        for left, right in perimeter_ranges(turn):
+            shell.box((left,16,5), (right,29,11), "beam", turn)
         shell.box((8,18,8), (14,25,14), "plate", turn)
-        shell.box((34,20,8), (46,30,23), "plate", turn)
-        # Side column starts at the footing, and ties into the hot shell twice.
-        if turn == 0:
-            # The north column forks around the original lever. Its plate ends at the lever mount.
-            shell.box((30,25,7), (35,85,14), "beam")
-            shell.box((45,25,7), (50,85,14), "beam")
-            shell.box((33,51,16), (47,63,20), "plate")
-            for x in (31, 45):
-                shell.box((x,51,13), (x+4,63,17), "plate")
-            shell.box((29,24,6), (51,28,15), "plate")
-            shell.box((29,83,6), (51,85,15), "plate")
-        else:
-            shell.box((36,25,7), (44,88,14), "beam", turn)
-            shell.box((34,24,6), (46,28,15), "plate", turn)
+        shell.box((34,20,8), (46,29,23), "plate", turn)
+        shell.box((36,25,7 if turn else 17), (44,88,14 if turn else 24), "beam", turn)
+        shell.box((34,24,6 if turn else 15), (46,29,15 if turn else 24), "plate", turn)
         shell.box((35,46,12), (45,51,21), "plate", turn)
-        shell.box((34,83,6), (46,89,16), "plate", turn)
-        shell.box((34,98,18), (46,103,29), "plate", turn)
+        shell.box((34,84,6), (46,89,19 if turn == 0 else 15), "plate", turn)
+        shell.box((34,92,16), (46,96,25), "flange", turn)
         shell.brace(turn)
-    shell.ring((15,24,15), (65,30,65), 8, "plate")
+        guardrails(shell, turn)
+    # The service panel and ladder are adjacent. The upper landing has a bearing on the end cap.
+    shell.box((34,51,4), (46,64,9), "access", 3)
+    shell.box((16,110,16), (32,112,32), "plate")
+    shell.box((24,96,21), (30,110,30), "plate")
+    shell.ring((16,24,16), (64,30,64), 8, "plate")
     shell.ring((16,17,16), (64,24,64), 3, "refractory")
-    shell.ring((16,30,16), (64,34,64), 7, "flange")
-    shell.ring((19,34,19), (61,92,61), 4, "heat")
-    shell.ring((18,60,18), (62,63,62), 5, "copper")
-    shell.ring((16,92,16), (64,96,64), 8, "flange")
-    shell.ring((21,96,21), (59,100,59), 12, "flange")
-    # The original upward lights have a low housing on the upper bearing ring.
-    for turn in range(4):
-        shell.box((17,93,17), (31,97,31), "plate", turn)
-        shell.box((19,97,19), (29,100,29), "duct", turn)
-        for lo, hi in (((19,19),(29,20)), ((19,28),(29,29)), ((19,20),(20,28)), ((28,20),(29,28))):
-            shell.box((lo[0],100,lo[1]), (hi[0],101,hi[1]), "duct", turn)
-        x, z = 20, 20
-        shell.panel(((x,100.5,z),(x,100.5,z+8),(x+8,100.5,z+8),(x+8,100.5,z)),
-                    "lamp", turn, ((4,4),(4,12),(12,12),(12,4)))
+    shell.ring((16,30,16), (64,32,64), 7, "flange")
+    shell.ring((16,32,16), (64,96,64), 4, "tank_wall")
+    # The upper casing closes on a single end flange with its own shoulder and service neck.
+    shell.ring((16,96,16), (64,98,64), 12, "cap")
+    shell.ring((23,98,23), (57,100,57), 10, "cap")
     shell.ring((26,100,26), (54,104,54), 5, "cap")
     shell.ring((28,104,28), (52,112,52), 3, "tank")
     shell.ring((27,112,27), (53,114,53), 5, "cap")
@@ -188,18 +242,16 @@ def form_shell():
     shell.ring((46,128,46), (50,145,50), 1, "duct")
     shell.ring((32,144,32), (50,149,50), 2, "duct")
     shell.ring((32,149,32), (50,151,50), 4, "flange")
-    shell.ring((35,151,35), (45,170,45), 2, "duct")
+    shell.ring((34,151,34), (46,174,46), 2, "duct")
     for turn in range(4):
-        shell.box((37,148,26), (43,151,34), "plate", turn)
-        shell.box((28,150,28), (30,168,30), "plate", turn)
-        # The gaps are transparent pixels on a sheet in front of the actual duct.
-        shell.panel(((50,151,29),(30,151,29),(30,167,29),(50,167,29)), "grille", turn,
-                    ((0,16),(16,16),(16,0),(0,0)))
-        # One flared, open sheet on each side of the exhaust mouth.
-        shell.panel(((32,176,32),(48,176,32),(45,170,35),(35,170,35)), "throat", turn,
-                    ((0,9),(16,9),(13,16),(3,16)))
-    shell.ring((27,149,27), (53,151,53), 3, "plate")
-    shell.ring((27,167,27), (53,169,53), 3, "plate")
+        # Each grille is one two-sided face. Its narrow edge and slots are part of the texture.
+        shell.panel(((48,152,32),(32,152,32),(32,168,32),(48,168,32)), "grille", turn,
+                    ((8,7),(0,7),(0,0),(8,0)))
+        # The Blaze Burner cage has a short folded rim above its straight wall.
+        shell.panel(((46,174,34),(34,174,34),(32,176,32),(48,176,32)), "throat", turn,
+                    ((0.5,3.5),(7.5,3.5),(7.5,3),(0.5,3)))
+    shell.ring((32,151,32), (48,152,48), 4, "flange")
+    shell.ring((32,168,32), (48,170,48), 4, "flange")
     return shell
 
 
@@ -235,24 +287,19 @@ def panel_image(kind):
 
     picture = Image.new("RGBA", (16,16))
     d = ImageDraw.Draw(picture)
-    if kind == "grille":
-        for x in (0, 4, 8, 12, 15):
-            d.line((x,0,x,15), fill="#34404a")
-            if x < 15:
-                d.line((x+1,0,x+1,15), fill="#828989")
-        for y in (0, 15):
-            d.line((0,y,15,y), fill="#515959")
-    elif kind == "flue":
-        d.rectangle((0,0,15,15), fill="#505558")
-        d.rectangle((0,9,15,10), fill="#999087")
-        d.line((2,14,13,14), fill="#646767")
-        d.line((3,15,12,15), fill="#373a3c")
-    elif kind == "oven_sheet":
-        d.rectangle((0,0,15,15), fill="#555e61")
-        d.line((2,0,2,15), fill="#60686b")
-        d.line((3,0,3,15), fill="#5a6366")
-        d.line((12,0,12,15), fill="#4c5559")
-        d.line((13,0,13,15), fill="#495257")
+    if kind == "guard":
+        d.rectangle((0,0,15,15), fill="#4c5659")
+        for x in (2,6,10,14):
+            d.rectangle((x-1,5,x+1,10), fill="#252e33")
+            d.rectangle((x-1,6,x,9), fill=(0,0,0,0))
+            d.line((x-1,10,x,10), fill="#75807c")
+    elif kind == "access":
+        d.rectangle((0,0,15,15), fill="#6c7472")
+        d.rectangle((2,1,13,11), fill="#4b5551", outline="#929780")
+        d.rectangle((4,3,11,7), fill="#27424a", outline="#222e33")
+        d.line((5,5,10,5), fill="#80c4bd")
+        d.point((5,9), fill="#d2ae66")
+        d.line((8,9,10,9), fill="#acb0a0")
     elif kind == "case":
         d.rectangle((0,0,15,15), fill="#6c7472")
         d.line((0,0,15,0), fill="#a4a99a")
@@ -335,14 +382,17 @@ def console_model(elt):
 
 
 def add_shell(export):
+    # Neutralize the blue cast in the airtight-tank steel while keeping the native atlas.
+    tank_steel = dict.fromkeys(("tank_wall", "tank", "cap"), "1.00 0.98 0.87")
     export.files[f"{NS}/{MODELS}/{SHELL}.obj"] = obj(form_shell())
     export.files[f"{NS}/{MODELS}/{SHELL}.mtl"] = "\n".join(
-        f"newmtl {name}\nKd 1 1 1\nmap_Kd {texture}\n" for name,texture in TEXTURES.items()
+        f"newmtl {name}\nKd {tank_steel.get(name, '1 1 1')}\nmap_Kd {texture}\n"
+        for name, texture in TEXTURES.items()
     ).encode()
     export.json(NS, f"{MODELS}/{SHELL}", {
         "loader": "neoforge:obj", "model": f"{NS}:{MODELS}/{SHELL}.obj",
-        "automatic_culling": False, "shade_quads": True, "flip_v": True,
-        "textures": {"particle": TEXTURES["heat"]},
+        "automatic_culling": False, "shade_quads": True, "flip_v": False,
+        "textures": {"particle": TEXTURES["duct"]},
     })
-    for kind in ("case","ports","terminal","grille","flue","oven_sheet"):
+    for kind in ("case","ports","terminal","guard","access"):
         export.png(NS, f"block/works/alloy_{kind}", panel_image(kind))

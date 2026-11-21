@@ -71,6 +71,8 @@ def configure(machine_name, definition):
     for i, child in enumerate(children):
         child["index"] = Int(i)
     children[0]["data"]["text"]["translate"] = String(f"block.{NAMESPACE}.{machine_name}")
+    if machine_name == "alloy_furnace":
+        definition["multiblockSettings"]["showUIWhenClickStructure"] = Byte(1)
     definition["itemProperties"]["creativeTab"]["enable"] = Byte(0)
     if machine_name in STYLED_MACHINES:
         configure_visuals(machine_name, definition, machine_name in FLUID_INPUT, machine_name in FLUID_OUTPUT)

@@ -38,5 +38,17 @@
   ],
   "#dut_create:green_container": [
     "design_decor:green_container"
+  ],
+  "#expedition_industry:alloy_ladder_foot": [
+    "create:metal_girder",
+    "create:andesite_ladder"
+  ],
+  "#expedition_industry:alloy_ladder_floor": [
+    "create:industrial_iron_block",
+    "create:andesite_ladder"
+  ],
+  "#expedition_industry:alloy_ladder_rail": [
+    "design_decor:iron_railing",
+    "create:andesite_ladder"
   ]
 }

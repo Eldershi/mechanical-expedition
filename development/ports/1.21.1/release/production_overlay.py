@@ -91,6 +91,10 @@ INDUSTRIAL_DEFINITIONS.update({
     for machine in INDUSTRIAL_MACHINES.glob("*.mb")
     for recipe in (RECIPE_TYPES / f"expedition_{machine.stem}.rt",)
 })
+INDUSTRIAL_DEFINITIONS.update({
+    Path("ldlib2/assets/ldlib2/resources/global") / source.name: source
+    for source in sorted((BRASS.parent / "visuals/predicates").glob("*.predicate.nbt"))
+})
 SHARED.update(INDUSTRIAL_DEFINITIONS)
 CLIENT.update(INDUSTRIAL_VISUALS)
 SHARED.update({

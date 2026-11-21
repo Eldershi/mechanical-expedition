@@ -66,12 +66,15 @@ def build_layouts(output, namespace, layouts, configure, alternatives):
         fixture_states = definition_data.get("fixture_states", {})
         markers = [ANY, CONTROLLER, *part_names]
         optional = set(definition_data.get("optional", []))
+        ui_access = definition_data.get("ui_access")
         wildcard = GLOBAL / f"{namespace}_{name}_0.predicate.nbt"
         holders = []
         for index, marker in enumerate(markers):
             predicates = []
             if marker != CONTROLLER:
                 predicate = predicate_for(part_names.get(marker), alternatives)
+                if ui_access is not None:
+                    predicate["allowOpenUI"] = Byte(marker in ui_access)
                 relative = GLOBAL / f"{namespace}_{name}_{index}.predicate.nbt"
                 write(output, relative, {"type": String("predicate"), "data": predicate})
                 predicates.append(Compound({"built-in": Byte(0), "path": String(relative.as_posix())}))
