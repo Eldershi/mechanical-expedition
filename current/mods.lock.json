@@ -5989,6 +5989,13 @@
         "sha512": "2df152a38c4a118e34dfa02f5e128f66d36b4896e4410718e28dff85f1460dd68e8b547f09f188aefd213876f7c007a86d82868aee9c4a0ce2172f9bba032e5c"
       },
       {
+        "filename": "expedition-quest-lines-compat-neoforge-1.0.0.jar",
+        "bytes": 4867,
+        "sha1": "5294f183a9520f78a7e252faaec5561d07e0a052",
+        "sha256": "db85388f16b8bb6a886396f67f9e2f751c52a80e57719e5c056ce9f0158ac993",
+        "sha512": "a01b6dfd3f4a306067f30cf60341847a72163490cfe5cb3241e4725c4bae504cb0feb9914ffe6f1802f2327faaa030728a6bf9bb1b944f30ec4098f7d129b549"
+      },
+      {
         "filename": "expedition-railway-avoidance-neoforge-1.0.0.jar",
         "bytes": 8024,
         "sha1": "577e98ea57abba6217fba8ccbda3ed121727a537",

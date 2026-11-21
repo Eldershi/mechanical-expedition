@@ -29,6 +29,16 @@ ADAPTERS = {
         "mixins": ["ClientIdentityMixin", "InvitationSortMixin"],
         "deps": {"ftbteams": "2101.1.12"},
     },
+    "quest-lines": {
+        "id": "expedition_quest_lines_compat",
+        "filename": "expedition-quest-lines-compat",
+        "name": "Expedition Quest Lines Compatibility",
+        "package": "expedition.questlines.mixin",
+        "mixins": ["QuestPanelMixin"],
+        "plugin": "expedition.questlines.QuestLinesMixinPlugin",
+        "deps": {"ftbquests": "2101.1.39", "certain_questing_additions": "1.2.0.5",
+                 "quest_enhance": "1.21.1-neoforge-3.15"},
+    },
     "chunky": {
         "id": "expedition_chunky_guard",
         "filename": "expedition-chunky-startup-guard",
@@ -156,6 +166,7 @@ side = "CLIENT"
             "required": True, "minVersion": "0.8.7", "compatibilityLevel": "JAVA_21",
             "package": adapter["package"], "client": adapter["mixins"],
             "injectors": {"defaultRequire": 1},
+            **({"plugin": adapter["plugin"]} if "plugin" in adapter else {}),
         })
     resources["pack.mcmeta"] = json.dumps({"pack": {"pack_format": 34, "description": adapter["name"]}})
     resource_roots = [ROOT / "resources" / mod_id]
