@@ -172,7 +172,7 @@ def mod_inputs(instance, client):
     names = {p.name for p in choices}
     for required in ("adastra-1.21.1-1.16.26-neoforge.jar", "createcraftedbeginning-0.1.1.jar",
                      *production_overlay.REQUIRED_MODS, production_overlay.CREATE_NUCLEAR_MOD,
-                     *((CLIENT_PERFORMANCE_MOD,) if client else ())):
+                     *((CLIENT_PERFORMANCE_MOD, production_overlay.ALLOY_RENDER_MOD) if client else ())):
         if required not in names:
             raise ValueError(f"Missing tested NeoForge input: {required}")
     return choices
@@ -280,6 +280,10 @@ def main():
         client_mods = {row["filename"] for row in lock["client"]["mods"]}
         if CLIENT_PERFORMANCE_MOD not in client_mods or any(map(retired_distance_mod, client_mods)):
             raise ValueError("The client lock must include the current Expedition Client Performance adapter")
+        render_mod = production_overlay.ALLOY_RENDER_MOD
+        adapter = next((row for row in lock["client"]["mods"] if row["filename"] == render_mod), None)
+        if not adapter or adapter["sha256"] != fingerprints(ROOT / "current/client/mods" / render_mod)["sha256"]:
+            raise ValueError("The client lock must match the published alloy furnace renderer")
         if BETTER_FPS_CONFIG.as_posix() in lock["client"]["files"]:
             raise ValueError("Better FPS Render Distance configuration must be excluded")
         language_hash = hashlib.sha256(MECHANISM_LANGUAGE_SOURCE.read_bytes()).hexdigest()

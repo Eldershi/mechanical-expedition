@@ -99,6 +99,7 @@ SHARED.update({
 })
 
 
+ALLOY_RENDER_MOD = "expedition-alloy-furnace-render-neoforge-1.0.0.jar"
 SPACE_MOD = "expedition-space-neoforge-1.0.1.jar"
 ITEM_COMPATIBILITY_MOD = "expedition-item-compatibility-neoforge-1.0.0.jar"
 ROCK_GENERATOR_MOD = "expedition-rock-generator-neoforge-1.0.0.jar"
@@ -126,6 +127,10 @@ def install_files(instance, client=False):
         destination = instance / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source, destination)
+    if client:
+        mod = instance / "mods" / ALLOY_RENDER_MOD
+        mod.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(ROOT / "current/client/mods" / ALLOY_RENDER_MOD, mod)
     config = instance / QUARK_CONFIG
     config.parent.mkdir(parents=True, exist_ok=True)
     if config.exists():

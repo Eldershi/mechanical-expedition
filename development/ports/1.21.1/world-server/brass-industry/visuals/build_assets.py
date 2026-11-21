@@ -10,6 +10,8 @@ from zipfile import ZipFile
 
 from PIL import Image, ImageDraw
 
+from alloy_furnace import add_shell, console_model, console_screen
+
 HERE = Path(__file__).resolve().parent
 ASSETS = HERE.parent / "overlay/kubejs/assets"
 NS = "expedition_industry"
@@ -247,12 +249,13 @@ def port_strip(fluid_in, fluid_out):
 def add_controller(export, name, shell, roof, accent, kind, fluid_out):
     fluid_in = kind != "trade"
     skin = "full" if fluid_out else "in" if fluid_in else "item"
-    base = controller_model(shell, roof, accent, skin, f"{kind}_base")
+    base = console_model(element) if kind == "alloy" else controller_model(shell, roof, accent, skin, f"{kind}_base")
+    screen = console_screen if kind == "alloy" else lambda state, frame=None: cartridge(kind, frame, state)
     export.json(NS, f"models/block/{name}", base)
-    export.png(NS, f"gui/works/{kind}", cartridge(kind, 3, "ready"))
+    export.png(NS, f"gui/works/{kind}", screen("working", 3))
     for state in STATE_LIGHT:
-        export.png(NS, f"block/works/{kind}_{state}", cartridge(kind, None, state))
-    export.animated(f"block/works/{kind}_working", [cartridge(kind, i, "ready") for i in range(8)],
+        export.png(NS, f"block/works/{kind}_{state}", screen(state))
+    export.animated(f"block/works/{kind}_working", [screen("working", i) for i in range(8)],
                     3 if kind == "press" else 2)
     for state in ("ready", "working", "waiting", "suspend"):
         export.json(NS, f"models/block/works/{name}_{state}", {
@@ -506,6 +509,7 @@ def assemble():
         export.png(NS, f"block/works/ports_{skin}", ports(fluid_in, fluid_out))
         export.png(NS, f"block/works/strip_{skin}", port_strip(fluid_in, fluid_out))
     add_decor(export)
+    add_shell(export)
     add_moving_parts(export)
     add_items(export)
     add_gui(export)
@@ -518,10 +522,15 @@ def verify_donors(files, archives):
         with ZipFile(path) as jar:
             native.update(jar.namelist())
     for path, blob in files.items():
-        if not path.endswith(".json"):
+        if path.endswith(".json"):
+            textures = json.loads(blob).get("textures", {}).values()
+        elif path.endswith(".mtl"):
+            textures = (line.removeprefix("map_Kd ") for line in blob.decode().splitlines()
+                        if line.startswith("map_Kd "))
+        else:
             continue
-        for donor in json.loads(blob).get("textures", {}).values():
-            if donor.startswith(("create:", "createdeco:")):
+        for donor in textures:
+            if donor.startswith(("create:", "createdeco:", "createcraftedbeginning:")):
                 ns, tex = donor.split(":")
                 assert f"assets/{ns}/textures/{tex}.png" in native, (path, donor)
 

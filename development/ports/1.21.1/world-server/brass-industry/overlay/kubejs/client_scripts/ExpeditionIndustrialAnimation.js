@@ -7,6 +7,9 @@ const $WorksModelKey = Java.loadClass('net.minecraft.client.resources.model.Mode
 const $WorksResource = Java.loadClass('net.minecraft.resources.ResourceLocation')
 const $WorksRegisterModels = Java.loadClass('net.neoforged.neoforge.client.event.ModelEvent$RegisterAdditional')
 const $WorksParticles = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
+const $WorksAtlas = Java.loadClass('net.minecraft.client.renderer.texture.TextureAtlas')
+const $AlloyFurnaceRender = Platform.isLoaded('expedition_alloy_furnace_render')
+  ? Java.loadClass('expedition.alloyrender.AlloyFurnaceRender') : null
 
 const worksNamespace = 'expedition_industry:'
 const worksOrientations = {
@@ -16,6 +19,7 @@ const worksOrientations = {
   west: {degrees: 90, rightX: 0, rightZ: -1, backX: 1, backZ: 0},
 }
 const worksParts = {
+  alloy_furnace_shell: worksNamespace + 'block/works/alloy_furnace_shell',
   press_head: 'create:block/mechanical_press/head',
   press_yoke: worksNamespace + 'block/works/press_yoke',
   trade_counter: worksNamespace + 'block/works/trade_counter',
@@ -45,7 +49,9 @@ function drawWorksPart(context, name, x, y, z, sx, sy, sz) {
   try {
     stack.translate(x, y, z)
     stack.scale(sx, sy, sz)
-    const sink = context.bufferSource.getBuffer($WorksRenderType.cutout())
+    const layer = name === 'alloy_furnace_shell'
+      ? $WorksRenderType.entityCutoutNoCull($WorksAtlas.LOCATION_BLOCKS) : $WorksRenderType.cutout()
+    const sink = context.bufferSource.getBuffer(layer)
     client.getBlockRenderer().getModelRenderer().renderModel(
       stack.last(), sink, null, model, 1, 1, 1, context.packedLight, context.packedOverlay)
   } finally {
@@ -68,6 +74,13 @@ function worksMachinePose(context, render) {
 }
 
 MBDClientEvents.registerCustomRenderers(event => {
+  event.register(worksNamespace + 'alloy_furnace_motion')
+    .viewDistance(96).renderOffScreen(true).boundingBoxInflate(3, 9, 3)
+    .onRender(context => {
+      if (!$AlloyFurnaceRender || !$AlloyFurnaceRender.isVisible(context.getMachine())) return
+      worksMachinePose(context, () => drawWorksPart(context, 'alloy_furnace_shell', 0, 0, 0, 1, 1, 1))
+    })
+
   event.register(worksNamespace + 'hydropress_motion')
     .viewDistance(64).renderOffScreen(true).boundingBoxInflate(2, 6, 2)
     .onRender(context => worksMachinePose(context, () => {

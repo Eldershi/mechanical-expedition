@@ -1,0 +1,47 @@
+newmtl beam
+Kd 1 1 1
+map_Kd create:block/girder_pole_side
+
+newmtl plate
+Kd 1 1 1
+map_Kd createdeco:block/palettes/plate_metal/industrial_iron_plate_metal
+
+newmtl copper
+Kd 1 1 1
+map_Kd createdeco:block/palettes/sheet_metal/copper_sheet_metal
+
+newmtl heat
+Kd 1 1 1
+map_Kd expedition_industry:block/works/alloy_oven_sheet
+
+newmtl flange
+Kd 1 1 1
+map_Kd create:block/industrial_iron_block_top
+
+newmtl refractory
+Kd 1 1 1
+map_Kd expedition_industry:block/works/firebrick
+
+newmtl tank
+Kd 1 1 1
+map_Kd createcraftedbeginning:block/airtight_tank/vertical
+
+newmtl cap
+Kd 1 1 1
+map_Kd createcraftedbeginning:block/airtight_tank/top
+
+newmtl duct
+Kd 1 1 1
+map_Kd create:block/industrial_iron_block
+
+newmtl lamp
+Kd 1 1 1
+map_Kd expedition_industry:block/works/andesite_floodlight
+
+newmtl grille
+Kd 1 1 1
+map_Kd expedition_industry:block/works/alloy_grille
+
+newmtl throat
+Kd 1 1 1
+map_Kd expedition_industry:block/works/alloy_flue

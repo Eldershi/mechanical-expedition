@@ -118,7 +118,7 @@ def configure_visuals(name, definition, fluid_input, fluid_output):
             "type": String("json_model"),
             "data": Compound({"modelLocation": String(f"{NAMESPACE}:block/works/{name}_{visual}")}),
         })
-        if name in {"hydropress", "trading_station"}:
+        if name in {"alloy_furnace", "hydropress", "trading_station"}:
             animation = Compound({
                 "type": String("custom_script"),
                 "data": Compound({"rendererName": String(f"{NAMESPACE}:{name}_motion")}),
