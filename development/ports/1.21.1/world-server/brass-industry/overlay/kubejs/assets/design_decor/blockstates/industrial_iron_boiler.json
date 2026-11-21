@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "design_decor:block/industrial_iron_boiler"
+    },
+    "facing=east": {
+      "model": "design_decor:block/industrial_iron_boiler",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "design_decor:block/industrial_iron_boiler",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "design_decor:block/industrial_iron_boiler",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "design_decor:block/industrial_iron_boiler",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "design_decor:block/industrial_iron_boiler",
+      "x": 90
+    }
+  }
+}

@@ -43,5 +43,13 @@
   "fluid.expedition_industry.liquid_air": "Liquid Air",
   "item.expedition_industry.liquid_air_bucket": "Liquid Air Bucket",
   "fluid.expedition_industry.electro_hydro_fluid": "Electro-Hydraulic Fluid",
-  "item.expedition_industry.electro_hydro_fluid_bucket": "Electro-Hydraulic Fluid Bucket"
+  "item.expedition_industry.electro_hydro_fluid_bucket": "Electro-Hydraulic Fluid Bucket",
+  "gui.expedition_industry.item_input": "Items in",
+  "gui.expedition_industry.item_output": "Items out",
+  "gui.expedition_industry.fluid_input": "Fluid in",
+  "gui.expedition_industry.fluid_output": "Fluid out",
+  "gui.expedition_industry.trade_input": "Goods / payment",
+  "gui.expedition_industry.trade_output": "Delivery / payout",
+  "gui.expedition_industry.power": "Energy",
+  "gui.expedition_industry.inventory": "Inventory"
 }

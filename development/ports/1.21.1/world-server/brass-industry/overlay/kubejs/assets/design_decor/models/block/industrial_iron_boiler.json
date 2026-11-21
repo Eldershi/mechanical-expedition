@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "createdeco:block/palettes/hull/industrial_iron_hull_side",
+    "up": "createdeco:block/palettes/hull/industrial_iron_hull_side",
+    "north": "createdeco:block/palettes/hull/industrial_iron_hull_front",
+    "south": "create:block/industrial_iron_block",
+    "west": "createdeco:block/palettes/hull/industrial_iron_hull_side",
+    "east": "createdeco:block/palettes/hull/industrial_iron_hull_side",
+    "particle": "createdeco:block/palettes/hull/industrial_iron_hull_front"
+  }
+}

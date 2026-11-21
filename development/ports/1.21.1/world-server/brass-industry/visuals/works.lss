@@ -1,0 +1,75 @@
+.works-panel {
+  width: 218;
+  padding-all: 7;
+  gap-all: 4;
+  background: sprite(expedition_industry:textures/gui/works/panel.png);
+}
+.works-jei { width: 176; padding-all: 4; gap-all: 3; }
+.works-header {
+  height: 24;
+  padding-left: 4;
+  padding-right: 4;
+  flex-direction: row;
+  align-items: center;
+  gap-all: 5;
+  background: sprite(expedition_industry:textures/gui/works/header.png);
+}
+.works-jei .works-header { height: 17; }
+.works-title { text-color: #fff0cf; text-shadow: true; }
+.works-caption { text-color: #4b3729; text-shadow: false; height: 10; }
+.works-badge { width: 16; height: 16; flex-shrink: 0; }
+.works-alloy { background: sprite(expedition_industry:textures/gui/works/alloy.png); }
+.works-press { background: sprite(expedition_industry:textures/gui/works/press.png); }
+.works-shaft { background: sprite(expedition_industry:textures/gui/works/shaft.png); }
+.works-cell { background: sprite(expedition_industry:textures/gui/works/cell.png); }
+.works-trade { background: sprite(expedition_industry:textures/gui/works/trade.png); }
+.works-process-row {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4;
+  padding-right: 4;
+  padding-top: 4;
+  padding-bottom: 4;
+}
+.works-jei .works-process-row { padding-all: 0; }
+.works-column { gap-all: 2; width: 79; align-items: center; }
+.works-slots { flex-direction: row; gap-all: 1; }
+.works-slot { width: 18; height: 18; }
+.works-item-input { background: sprite(expedition_industry:textures/gui/works/item_input.png); }
+.works-item-output { background: sprite(expedition_industry:textures/gui/works/item_output.png); }
+.works-fluid-input { background: sprite(expedition_industry:textures/gui/works/fluid_input.png); }
+.works-fluid-output { background: sprite(expedition_industry:textures/gui/works/fluid_output.png); }
+.works-process:host { width: 23; height: 13; }
+.works-process .__progress-bar_bar-container__ {
+  background: sprite(expedition_industry:textures/gui/works/arrow_empty.png);
+}
+.works-process .__progress-bar_bar__ {
+  background: sprite(expedition_industry:textures/gui/works/arrow_fill.png);
+}
+.works-process label { text-color: #fff0cf; text-shadow: true; }
+.works-power-row {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap-all: 5;
+}
+.works-power:host { width: 139; height: 13; }
+.works-jei-power:host { width: 72; height: 11; }
+.works-power .__progress-bar_bar-container__,
+.works-jei-power .__progress-bar_bar-container__ {
+  background: sprite(expedition_industry:textures/gui/works/power_empty.png);
+}
+.works-power .__progress-bar_bar__,
+.works-jei-power .__progress-bar_bar__ {
+  background: sprite(expedition_industry:textures/gui/works/power_fill.png);
+}
+.works-power label, .works-jei-power label { text-color: #fff2cd; text-shadow: true; }
+.works-inventory { align-self: center; }
+.works-jei-fluids, .works-jei-details {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.works-jei .works-slot { width: 16; height: 16; }

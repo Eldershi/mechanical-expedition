@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "expedition_industry:block/works/firebrick",
+    "top": "expedition_industry:block/works/firebrick",
+    "side": "expedition_industry:block/works/firebrick"
+  }
+}

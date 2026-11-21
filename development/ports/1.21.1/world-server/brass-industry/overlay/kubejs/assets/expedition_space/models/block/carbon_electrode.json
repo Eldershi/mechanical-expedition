@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "createdeco:block/palettes/hull/copper_hull_front",
+    "up": "createdeco:block/palettes/hull/copper_hull_front",
+    "north": "create:block/dark_metal_block",
+    "south": "create:block/dark_metal_block",
+    "west": "create:block/dark_metal_block",
+    "east": "create:block/dark_metal_block",
+    "particle": "create:block/dark_metal_block"
+  }
+}

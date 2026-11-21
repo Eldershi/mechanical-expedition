@@ -43,5 +43,13 @@
   "fluid.expedition_industry.liquid_air": "液态空气",
   "item.expedition_industry.liquid_air_bucket": "液态空气桶",
   "fluid.expedition_industry.electro_hydro_fluid": "电流体",
-  "item.expedition_industry.electro_hydro_fluid_bucket": "电流体桶"
+  "item.expedition_industry.electro_hydro_fluid_bucket": "电流体桶",
+  "gui.expedition_industry.item_input": "物品输入",
+  "gui.expedition_industry.item_output": "物品输出",
+  "gui.expedition_industry.fluid_input": "流体输入",
+  "gui.expedition_industry.fluid_output": "流体输出",
+  "gui.expedition_industry.trade_input": "货物／付款",
+  "gui.expedition_industry.trade_output": "取货／结算",
+  "gui.expedition_industry.power": "电量",
+  "gui.expedition_industry.inventory": "物品栏"
 }

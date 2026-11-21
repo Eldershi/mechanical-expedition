@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "create:block/brass_casing",
+    "up": "create:block/fluid_tank_top",
+    "north": "createdeco:block/palettes/hull/brass_hull_side",
+    "south": "createdeco:block/palettes/hull/brass_hull_side",
+    "west": "createdeco:block/palettes/hull/brass_hull_side",
+    "east": "createdeco:block/palettes/hull/brass_hull_side",
+    "particle": "createdeco:block/palettes/hull/brass_hull_side"
+  }
+}

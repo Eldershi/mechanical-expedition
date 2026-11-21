@@ -1,0 +1,73 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "paper": "create:block/packager_particle",
+    "straps": "create:block/brass_block"
+  },
+  "elements": [
+    {
+      "from": [
+        6,
+        0,
+        11
+      ],
+      "to": [
+        10,
+        4,
+        15
+      ],
+      "faces": {
+        "down": {
+          "texture": "#paper"
+        },
+        "up": {
+          "texture": "#paper"
+        },
+        "north": {
+          "texture": "#paper"
+        },
+        "south": {
+          "texture": "#paper"
+        },
+        "west": {
+          "texture": "#paper"
+        },
+        "east": {
+          "texture": "#paper"
+        }
+      }
+    },
+    {
+      "from": [
+        7,
+        4,
+        11
+      ],
+      "to": [
+        8,
+        5,
+        15
+      ],
+      "faces": {
+        "down": {
+          "texture": "#straps"
+        },
+        "up": {
+          "texture": "#straps"
+        },
+        "north": {
+          "texture": "#straps"
+        },
+        "south": {
+          "texture": "#straps"
+        },
+        "west": {
+          "texture": "#straps"
+        },
+        "east": {
+          "texture": "#straps"
+        }
+      }
+    }
+  ]
+}

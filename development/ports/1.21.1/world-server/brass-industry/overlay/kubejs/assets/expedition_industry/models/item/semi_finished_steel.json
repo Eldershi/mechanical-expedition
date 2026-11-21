@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "expedition_industry:item/works/semi_finished_steel"
+  }
+}

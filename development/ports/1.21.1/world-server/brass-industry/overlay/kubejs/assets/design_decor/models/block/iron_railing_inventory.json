@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "createdeco:block/palettes/sheet_metal/industrial_iron_sheet_metal"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "createdeco:block/palettes/sheet_metal/industrial_iron_sheet_metal_connected",
+    "up": "createdeco:block/palettes/sheet_metal/industrial_iron_sheet_metal_connected",
+    "north": "createdeco:block/palettes/sheet_metal/industrial_iron_sheet_metal_connected",
+    "south": "createdeco:block/palettes/sheet_metal/industrial_iron_sheet_metal_connected",
+    "west": "expedition_industry:block/works/brace_reverse",
+    "east": "expedition_industry:block/works/brace",
+    "particle": "createdeco:block/palettes/sheet_metal/industrial_iron_sheet_metal_connected"
+  }
+}

@@ -14,6 +14,7 @@ sys.path.insert(0, str(HERE.parent / "space"))
 from build_structures import MACHINES, build_layouts, write
 sys.path.insert(0, str(HERE.parent))
 from recipe_ui import recipe_ui
+from visuals.configure import MACHINES as STYLED_MACHINES, configure_visuals, jei_ui
 
 NAMESPACE = "expedition_industry"
 FLUID_INPUT = {"alloy_furnace", "electro_hydro_resonant_tower", "electrolytic_cell",
@@ -71,6 +72,8 @@ def configure(machine_name, definition):
         child["index"] = Int(i)
     children[0]["data"]["text"]["translate"] = String(f"block.{NAMESPACE}.{machine_name}")
     definition["itemProperties"]["creativeTab"]["enable"] = Byte(0)
+    if machine_name in STYLED_MACHINES:
+        configure_visuals(machine_name, definition, machine_name in FLUID_INPUT, machine_name in FLUID_OUTPUT)
 
 
 def build(output):
@@ -88,6 +91,8 @@ def build(output):
         })
         ui = recipe_ui(fluid_in=2 if name in FLUID_INPUT else 0,
                        fluid_out=2 if name in FLUID_OUTPUT else 0)
+        if name in STYLED_MACHINES:
+            ui = jei_ui(name, ui, 2 if name in FLUID_INPUT else 0, 2 if name in FLUID_OUTPUT else 0)
         write(output, MACHINES.parent / "recipe_type" / f"expedition_{name}.rt",
               {"data": Compound({"recipe_type": definition, "ui": ui})})
     return build_layouts(output, NAMESPACE, layouts, configure, alternatives)

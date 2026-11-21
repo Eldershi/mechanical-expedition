@@ -18,6 +18,7 @@ DEPOSITS = PORT / "world-server/deposits/overlay"
 ITEM_COMPATIBILITY = PORT / "world-server/item-compatibility/overlay"
 RADAR = PORT / "radar-mbd2"
 RECIPE_TYPES = PORT / "world-server/brass-industry/recipe-types"
+INDUSTRIAL_MACHINES = BRASS.parent / "visuals/multiblock"
 
 SHARED = {
     Path(name): INDUSTRY / name
@@ -73,6 +74,30 @@ CLIENT = {
         Path("kubejs/client_scripts/ExpeditionSugarSyrupLanguage.js"),
     )
 }
+
+INDUSTRIAL_VISUALS = {
+    relative: source
+    for folder in ("assets", "client_scripts")
+    for source in sorted((BRASS / "kubejs" / folder).rglob("*"))
+    if source.is_file()
+    for relative in (source.relative_to(BRASS),)
+}
+INDUSTRIAL_DEFINITIONS = {
+    Path("ldlib2/assets/mbd2/multiblock") / source.name: source
+    for source in sorted(INDUSTRIAL_MACHINES.glob("*.mb"))
+}
+INDUSTRIAL_DEFINITIONS.update({
+    Path("ldlib2/assets/mbd2/recipe_type") / recipe.name: recipe
+    for machine in INDUSTRIAL_MACHINES.glob("*.mb")
+    for recipe in (RECIPE_TYPES / f"expedition_{machine.stem}.rt",)
+})
+SHARED.update(INDUSTRIAL_DEFINITIONS)
+CLIENT.update(INDUSTRIAL_VISUALS)
+SHARED.update({
+    path: source for path, source in INDUSTRIAL_VISUALS.items()
+    if path.parts[1:4] == ("assets", "expedition_industry", "lang")
+})
+
 
 SPACE_MOD = "expedition-space-neoforge-1.0.1.jar"
 ITEM_COMPATIBILITY_MOD = "expedition-item-compatibility-neoforge-1.0.0.jar"

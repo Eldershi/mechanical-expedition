@@ -1,0 +1,6 @@
+{
+  "parent": "expedition_industry:block/hydropress",
+  "textures": {
+    "screen": "expedition_industry:block/works/press_waiting"
+  }
+}

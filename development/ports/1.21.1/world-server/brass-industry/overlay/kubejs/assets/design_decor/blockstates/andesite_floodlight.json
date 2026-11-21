@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "design_decor:block/andesite_floodlight"
+    },
+    "facing=east": {
+      "model": "design_decor:block/andesite_floodlight",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "design_decor:block/andesite_floodlight",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "design_decor:block/andesite_floodlight",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "design_decor:block/andesite_floodlight",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "design_decor:block/andesite_floodlight",
+      "x": 90
+    }
+  }
+}

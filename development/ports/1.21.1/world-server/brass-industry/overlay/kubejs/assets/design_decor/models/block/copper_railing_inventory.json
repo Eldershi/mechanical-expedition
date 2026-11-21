@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "createdeco:block/palettes/sheet_metal/copper_sheet_metal"
+  }
+}

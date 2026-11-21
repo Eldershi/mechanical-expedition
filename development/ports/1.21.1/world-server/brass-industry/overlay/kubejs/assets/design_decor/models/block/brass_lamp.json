@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "create:block/brass_casing",
+    "up": "create:block/brass_casing",
+    "north": "expedition_industry:block/works/brass_lamp",
+    "south": "create:block/brass_casing",
+    "west": "create:block/brass_casing",
+    "east": "create:block/brass_casing",
+    "particle": "expedition_industry:block/works/brass_lamp"
+  }
+}

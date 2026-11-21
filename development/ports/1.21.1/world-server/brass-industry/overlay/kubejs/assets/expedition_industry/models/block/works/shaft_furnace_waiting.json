@@ -1,0 +1,6 @@
+{
+  "parent": "expedition_industry:block/shaft_furnace",
+  "textures": {
+    "screen": "expedition_industry:block/works/shaft_waiting"
+  }
+}
