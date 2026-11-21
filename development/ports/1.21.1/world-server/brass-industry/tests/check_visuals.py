@@ -89,8 +89,9 @@ def check_alloy_shell():
             assert any(min(high, end) <= max(low, start)
                        for (low, high), (start, end) in zip(a, b)), (a, b)
     for start, end, material in shell.solids:
-        assert end[0] <= 0 or start[0] >= 16 or end[2] <= 16 or start[2] >= 32, (material, start, end)
-    print("Alloy shell preserves a full-width ladder bay and has no overlapping coplanar rectangles.")
+        assert end[0] <= 37 or start[0] >= 43 or end[1] <= 115 or start[1] >= 123 or end[2] <= 47, (
+            material, start, end)
+    print("Alloy shell has no overlapping coplanar rectangles and leaves the rear FE opening clear.")
 
 
 if __name__ == "__main__":

@@ -3,49 +3,49 @@
     "layout": [
       [
         " A A ",
-        "SBBBA",
+        "ABBBA",
         " BBB ",
         "ABBBA",
         " A A "
       ],
       [
         " CCC ",
-        "UDDDC",
+        "CDDDC",
         "CDDDC",
         "CDDDC",
         " CCC "
       ],
       [
         " EFE ",
-        "VGGGE",
+        "EGGGE",
         "FGHGF",
         "EGGGE",
         " EIE "
       ],
       [
         "     ",
-        "QGGG ",
+        " GGG ",
         "RGHGF",
         " GGG ",
         "     "
       ],
       [
         "  A  ",
-        "QGGG ",
+        " GGG ",
         "AGHGA",
         " GGG ",
         "  F  "
       ],
       [
         "  A  ",
-        "QGGG ",
+        " GGG ",
         "AGHGA",
         " GGG ",
         "  A  "
       ],
       [
         "  K  ",
-        "QLCL ",
+        " LCL ",
         "KCICK",
         " LCL ",
         "  K  "
@@ -53,7 +53,7 @@
       [
         "     ",
         "     ",
-        "  I  ",
+        "  T  ",
         "     ",
         "     "
       ],
@@ -94,22 +94,16 @@
       "M": "#dut_create:funnel",
       "N": "design_decor:metal_support",
       "O": "railways:smokestack_oilburner",
-      "Q": "create:andesite_ladder[facing=west]",
       "R": "design_decor:diagonal_metal_support",
-      "S": "#expedition_industry:alloy_ladder_foot",
-      "U": "#expedition_industry:alloy_ladder_floor",
-      "V": "#expedition_industry:alloy_ladder_rail"
+      "T": "#expedition_industry:alloy_power_inlet"
     },
-    "optional": [
-      "Q"
-    ],
+    "optional": [],
     "ui_access": [
       "R"
     ],
     "fixture_states": {
       "1,0,0": "create:metal_girder[axis=y]",
       "3,0,0": "create:metal_girder[axis=y]",
-      "0,0,1": "create:andesite_ladder[facing=west]",
       "1,0,1": "createaddition:liquid_blaze_burner[facing=north,blaze=smouldering]",
       "2,0,1": "createaddition:liquid_blaze_burner[facing=north,blaze=smouldering]",
       "3,0,1": "createaddition:liquid_blaze_burner[facing=east,blaze=smouldering]",
@@ -127,7 +121,6 @@
       "1,2,0": "design_decor:iron_railing[east=false,west=true,north=true,south=false]",
       "2,2,0": "design_decor:diagonal_metal_support[facing=north]",
       "3,2,0": "design_decor:iron_railing[east=true,west=false,north=true,south=false]",
-      "0,2,1": "create:andesite_ladder[facing=west]",
       "4,2,1": "design_decor:iron_railing[east=true,west=false,north=true,south=false]",
       "0,2,2": "design_decor:diagonal_metal_support[facing=west]",
       "4,2,2": "design_decor:diagonal_metal_support[facing=east]",
@@ -161,11 +154,8 @@
       "2,10,2": "design_decor:industrial_iron_boiler[facing=down]",
       "3,10,2": "design_decor:diagonal_girder[facing=west,facing_up=false]",
       "2,10,3": "design_decor:diagonal_girder[facing=north,facing_up=false]",
-      "0,1,1": "create:andesite_ladder[facing=west]",
-      "0,3,1": "create:andesite_ladder[facing=west]",
-      "0,4,1": "create:andesite_ladder[facing=west]",
-      "0,5,1": "create:andesite_ladder[facing=west]",
-      "0,6,1": "create:andesite_ladder[facing=west]"
+      "0,0,1": "create:metal_girder[axis=y]",
+      "0,2,1": "design_decor:iron_railing[east=false,west=true,north=true,south=false]"
     }
   },
   "blasting_compressor": {

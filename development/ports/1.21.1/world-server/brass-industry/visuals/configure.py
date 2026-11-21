@@ -74,9 +74,15 @@ def machine_ui(name, template, fluids):
     ])
     inventory = deepcopy(inventory)
     inventory["data"]["classes"] = List[String]([String("works-inventory")])
-    children = [header, machine_rows, power, label("inventory", "works-caption"), inventory]
-    template["template"]["children"] = indexed(children)
-    template["template"]["classes"] = List[String]([String("works-panel")])
+    face = [header, machine_rows, power]
+    classes = ["works-panel"]
+    inventory_caption = label("inventory", "works-caption")
+    if name == "alloy_furnace":
+        face = [element(css=("alloy-display",), children=face)]
+        classes.append("alloy-panel")
+        inventory_caption["data"]["classes"].append(String("alloy-inventory-caption"))
+    template["template"]["children"] = indexed([*face, inventory_caption, inventory])
+    template["template"]["classes"] = List[String](map(String, classes))
     template["stylesheets"].append(String(f"{NAMESPACE}:lss/works"))
     template.pop("builtin_styles", None)
 
@@ -101,7 +107,10 @@ def jei_ui(name, template, fluid_in, fluid_out):
         element(key="@condition"),
     ]))
     template["template"]["children"] = indexed(rows)
-    template["template"]["classes"] = List[String]([String("works-panel"), String("works-jei")])
+    classes = ["works-panel", "works-jei"]
+    if name == "alloy_furnace":
+        classes.append("alloy-jei")
+    template["template"]["classes"] = List[String](map(String, classes))
     template["stylesheets"].append(String(f"{NAMESPACE}:lss/works"))
     template.pop("builtin_styles", None)
     return template

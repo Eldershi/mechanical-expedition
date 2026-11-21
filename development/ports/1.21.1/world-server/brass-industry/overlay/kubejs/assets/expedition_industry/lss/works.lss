@@ -73,3 +73,52 @@
 }
 
 .works-jei .works-slot { width: 16; height: 16; }
+
+.alloy-panel, .alloy-jei {
+  background: sprite(expedition_industry:textures/gui/works/alloy_case.png);
+}
+.alloy-display {
+  padding-all: 7;
+  gap-all: 3;
+  background: sprite(expedition_industry:textures/gui/works/alloy_screen.png);
+}
+.alloy-panel .works-header, .alloy-jei .works-header {
+  height: 17;
+  background: none;
+}
+.alloy-jei .works-header {
+  background: sprite(expedition_industry:textures/gui/works/alloy_screen.png);
+}
+.alloy-panel .works-title, .alloy-jei .works-title { text-color: #c6dfc6; }
+.alloy-panel .works-caption { text-color: #c1d3c2; }
+.alloy-panel .alloy-inventory-caption { text-color: #e6e8de; }
+.alloy-panel .works-process-row { padding-left: 0; padding-right: 0; }
+.alloy-panel .works-item-input, .alloy-jei .works-item-input {
+  background: sprite(expedition_industry:textures/gui/works/alloy_item_input.png);
+}
+.alloy-panel .works-item-output, .alloy-jei .works-item-output {
+  background: sprite(expedition_industry:textures/gui/works/alloy_item_output.png);
+}
+.alloy-panel .works-fluid-input, .alloy-jei .works-fluid-input {
+  background: sprite(expedition_industry:textures/gui/works/alloy_fluid_input.png);
+}
+.alloy-panel .works-fluid-output, .alloy-jei .works-fluid-output {
+  background: sprite(expedition_industry:textures/gui/works/alloy_fluid_output.png);
+}
+.alloy-panel .works-process:host { width: 26; }
+.alloy-panel .works-process .__progress-bar_bar-container__,
+.alloy-jei .works-process .__progress-bar_bar-container__ {
+  background: sprite(expedition_industry:textures/gui/works/alloy_process_empty.png);
+}
+.alloy-panel .works-process .__progress-bar_bar__, .alloy-jei .works-process .__progress-bar_bar__ {
+  background: sprite(expedition_industry:textures/gui/works/alloy_process_fill.png);
+}
+.alloy-panel .works-power:host { width: 126; }
+.alloy-panel .works-power .__progress-bar_bar-container__,
+.alloy-jei .works-jei-power .__progress-bar_bar-container__ {
+  background: sprite(expedition_industry:textures/gui/works/alloy_energy_empty.png);
+}
+.alloy-panel .works-power .__progress-bar_bar__,
+.alloy-jei .works-jei-power .__progress-bar_bar__ {
+  background: sprite(expedition_industry:textures/gui/works/alloy_energy_fill.png);
+}

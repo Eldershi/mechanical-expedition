@@ -1,6 +1,30 @@
 newmtl beam
 Kd 1 1 1
-map_Kd create:block/girder_pole_side_connected
+map_Kd expedition_industry:block/works/alloy_girder
+
+newmtl rail
+Kd 1 1 1
+map_Kd createdeco:block/palettes/catwalks/industrial_iron_catwalk_rail
+
+newmtl deck
+Kd 1 1 1
+map_Kd createdeco:block/palettes/sheet_metal/industrial_iron_sheet_metal
+
+newmtl rim
+Kd 1 1 1
+map_Kd expedition_industry:block/works/alloy_exhaust_rim
+
+newmtl keys
+Kd 1 1 1
+map_Kd expedition_industry:block/works/alloy_keys
+
+newmtl winding
+Kd 1 1 1
+map_Kd createdeco:block/palettes/sheet_metal/copper_sheet_metal
+
+newmtl ceramic
+Kd 1 1 1
+map_Kd create:block/andesite_block
 
 newmtl plate
 Kd 1 1 1
@@ -40,8 +64,8 @@ map_Kd expedition_industry:block/works/alloy_guard
 
 newmtl grille
 Kd 1 1 1
-map_Kd create:block/redstone_requester
+map_Kd expedition_industry:block/works/alloy_grille
 
 newmtl throat
 Kd 1 1 1
-map_Kd create:block/blaze_heater_brazier
+map_Kd expedition_industry:block/works/alloy_exhaust_fold
