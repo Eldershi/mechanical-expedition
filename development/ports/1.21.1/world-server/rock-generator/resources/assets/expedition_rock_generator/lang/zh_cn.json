@@ -1,0 +1,13 @@
+{
+  "block.expedition_rock_generator.rock_generator": "造石机",
+  "block.expedition_rock_generator.empty": "产物槽是空的。",
+  "block.expedition_rock_generator.redstone.ignored": "红石控制：忽略信号",
+  "block.expedition_rock_generator.redstone.low": "红石控制：无信号时运行",
+  "block.expedition_rock_generator.redstone.high": "红石控制：有信号时运行",
+  "block.expedition_rock_generator.controls": "空手右键取出产物，潜行时空手右键切换红石模式。",
+  "block.expedition_rock_generator.recipe.instructions": "在造石机两侧布置岩浆源和指定冷却材料。配方需要基底时，将它放在机器正下方。",
+  "block.expedition_rock_generator.recipe.water": "水源：圆石。正下方为岩浆块时产石头，为安山合金块时产安山岩，为滴水石块时产石灰岩。",
+  "block.expedition_rock_generator.recipe.ice": "蓝冰：黑石，搭配灵魂土产玄武岩。浮冰：深板岩圆石，搭配岩浆块产深板岩。",
+  "block.expedition_rock_generator.recipe.mod": "巧克力源：熔渣。熔融黏土源：焦黑圆石。侧面放玄武岩、下方放熔岩流体时产焦褐石头。",
+  "block.expedition_rock_generator.recipe.speed": "每 20 游戏刻产出 1 块，下界生物群系中每 10 刻产出 1 块。可用漏斗或物流设备取出。"
+}

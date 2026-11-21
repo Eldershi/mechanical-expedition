@@ -91,7 +91,7 @@ def excluded(relative):
 def external_client_resources():
     directory = ROOT / "integrations/resourcepacks"
     for name in ("create-mcgui.json", "create-style-hnn.json", "neoforge-resourcepacks.json",
-                 "create-style-foundry.json"):
+                 "create-style-foundry.json", production_overlay.THERMAL_STYLE):
         yield from json_file(directory / name)["clientFiles"]
     yield from json_file(ROOT / "integrations/shaders/bsl.json")["clientFiles"]
 
@@ -119,10 +119,12 @@ def selected(instance, client=False):
                 continue
             if path.is_symlink() or not path.is_file() or excluded(relative) or skip_reason(relative.as_posix()):
                 continue
-            if relative.parts[-2:] == ("paxi", "resourcepack_load_order.json"):
+            if relative == production_overlay.PAXI_ORDER:
                 order = json_file(path)
                 order["loadOrder"] = [value for value in order.get("loadOrder", [])
                                       if not PRIVATE_PACK.search(value) or value == "create_mcGUI_2.10.0.zip"]
+                if client:
+                    production_overlay.enable_thermal_style(order)
                 yield relative, (json.dumps(order, indent=2) + "\n").encode()
             else:
                 payload, _ = privacy(relative.as_posix(), path.read_bytes())
@@ -169,7 +171,8 @@ def mod_inputs(instance, client):
                and not re.search(r"(?i)expedition.*(?:-qa-|proof|probe)", f.name)]
     names = {p.name for p in choices}
     for required in ("adastra-1.21.1-1.16.26-neoforge.jar", "createcraftedbeginning-0.1.1.jar",
-                     *production_overlay.REQUIRED_MODS, *((CLIENT_PERFORMANCE_MOD,) if client else ())):
+                     *production_overlay.REQUIRED_MODS, production_overlay.CREATE_NUCLEAR_MOD,
+                     *((CLIENT_PERFORMANCE_MOD,) if client else ())):
         if required not in names:
             raise ValueError(f"Missing tested NeoForge input: {required}")
     return choices
@@ -288,7 +291,7 @@ def main():
             for path, source in production_overlay.files(side == "client").items():
                 if files.get(path.as_posix()) != hashlib.sha256(source.read_bytes()).hexdigest():
                     raise ValueError(f"The {side} lock must match the production overlay: {path}")
-            missing = set(production_overlay.REQUIRED_MODS) - {row["filename"] for row in lock[side]["mods"]}
+            missing = {*production_overlay.REQUIRED_MODS, production_overlay.CREATE_NUCLEAR_MOD} - {row["filename"] for row in lock[side]["mods"]}
             if missing:
                 raise ValueError(f"The {side} lock is missing {', '.join(sorted(missing))}")
         print(meta["version"])

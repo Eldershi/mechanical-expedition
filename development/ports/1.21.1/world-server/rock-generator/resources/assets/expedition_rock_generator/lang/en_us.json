@@ -1,0 +1,13 @@
+{
+  "block.expedition_rock_generator.rock_generator": "Igneous Extruder",
+  "block.expedition_rock_generator.empty": "The output slot is empty.",
+  "block.expedition_rock_generator.redstone.ignored": "Redstone: ignored",
+  "block.expedition_rock_generator.redstone.low": "Redstone: run without a signal",
+  "block.expedition_rock_generator.redstone.high": "Redstone: run with a signal",
+  "block.expedition_rock_generator.controls": "Empty hand: take output. Sneak-use: change redstone mode.",
+  "block.expedition_rock_generator.recipe.instructions": "Place a lava source and the listed coolant beside the extruder. Put recipe bases directly below.",
+  "block.expedition_rock_generator.recipe.water": "Water: Cobblestone. Add magma block for Stone, andesite alloy block for Andesite, or dripstone block for Limestone.",
+  "block.expedition_rock_generator.recipe.ice": "Blue ice: Blackstone, or Basalt above soul soil. Packed ice: Cobbled Deepslate, or Deepslate above magma.",
+  "block.expedition_rock_generator.recipe.mod": "Chocolate: Scoria. Molten clay: Seared Cobble. Basalt with magma fluid below: Scorched Stone.",
+  "block.expedition_rock_generator.recipe.speed": "Produces one block every 20 ticks, or every 10 ticks in Nether biomes. Use a hopper or other automation to collect the output."
+}

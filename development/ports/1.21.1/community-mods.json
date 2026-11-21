@@ -227,5 +227,15 @@
     },
     "version": "21.1.11",
     "sha256": "ccf46c442ed3c7fe41ad056f0940560829ec4dd88360985dfacd78f4614eb167"
+  },
+  "createnuclear": {
+    "file": {
+      "filename": "createnuclear-2.0.1-neoforge.jar",
+      "url": "https://cdn.modrinth.com/data/z611fdf7/versions/zNIyk0mQ/createnuclear-2.0.1-neoforge.jar",
+      "source": "https://modrinth.com/mod/createnuclear/version/zNIyk0mQ",
+      "sha1": "90977ec04d39c5d6de0d715218ef55e3401c4ba4"
+    },
+    "version": "2.0.1",
+    "sha256": "59f1be84e7a47ab44f0fb2f0260799fa348cec85b94cba3c7fc00ad3e35ea9db"
   }
 }

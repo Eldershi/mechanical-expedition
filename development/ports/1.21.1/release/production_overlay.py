@@ -1,11 +1,16 @@
 """Shared production files and settings for NeoForge clients and dedicated servers."""
 
+from hashlib import sha256
+import json
 from pathlib import Path
 import re
 import shutil
 import tomllib
+from tempfile import TemporaryDirectory
+from urllib.request import urlopen
 
 PORT = Path(__file__).resolve().parents[1]
+ROOT = PORT.parents[2]
 INDUSTRY = PORT / "industry"
 MATERIALS = PORT / "cmi-materials"
 BRASS = PORT / "world-server/brass-industry/overlay"
@@ -23,6 +28,7 @@ SHARED = {
         "kubejs/server_scripts/ExpeditionIndustry.js",
         "kubejs/server_scripts/ExpeditionLunarSilicon.js",
         "kubejs/server_scripts/ExpeditionManufacturingContinuity.js",
+        "kubejs/server_scripts/ExpeditionMechanismProgression.js",
         "kubejs/server_scripts/ExpeditionMetallurgy.js",
         "kubejs/server_scripts/ExpeditionMineralChemistry.js",
         "kubejs/server_scripts/ExpeditionPlantAsh.js",
@@ -36,7 +42,7 @@ SHARED = {
         "kubejs/data/createcraftedbeginning/tags/item/press_head_tools.json",
     )
 }
-for name in ("CmiDeposits.js", "CmiIndustrialMaterials.js", "CmiProcessFluids.js"):
+for name in ("CmiDeposits.js", "CmiIndustrialMaterials.js", "CmiMechanisms.js", "CmiProcessFluids.js"):
     SHARED[Path("kubejs/startup_scripts/cmi") / name] = MATERIALS / name
 BRASS_RECIPES = Path("kubejs/server_scripts/ExpeditionBrassIndustryRecipes.js")
 SHARED[BRASS_RECIPES] = BRASS / BRASS_RECIPES
@@ -60,14 +66,21 @@ SHARED.update({
 CLIENT = {
     path: INDUSTRY / path
     for path in (
+        Path("kubejs/assets/cmi/textures/item/mechanism/complete/andesite.png"),
+        Path("kubejs/assets/createnuclear/sounds.json"),
         Path("kubejs/client_scripts/ExpeditionMineralChemistryLanguage.js"),
+        Path("kubejs/client_scripts/ExpeditionRockGeneratorInfo.js"),
         Path("kubejs/client_scripts/ExpeditionSugarSyrupLanguage.js"),
     )
 }
 
 SPACE_MOD = "expedition-space-neoforge-1.0.1.jar"
 ITEM_COMPATIBILITY_MOD = "expedition-item-compatibility-neoforge-1.0.0.jar"
-REQUIRED_MODS = (SPACE_MOD, ITEM_COMPATIBILITY_MOD)
+ROCK_GENERATOR_MOD = "expedition-rock-generator-neoforge-1.0.0.jar"
+REQUIRED_MODS = (SPACE_MOD, ITEM_COMPATIBILITY_MOD, ROCK_GENERATOR_MOD)
+CREATE_NUCLEAR_MOD = "createnuclear-2.0.1-neoforge.jar"
+THERMAL_STYLE = "thermal-create-style.json"
+PAXI_ORDER = Path("config/paxi/resourcepack_load_order.json")
 QUARK_CONFIG = Path("config/quark-common.toml")
 
 
@@ -94,3 +107,40 @@ def install_files(instance, client=False):
         config.write_bytes(disable_scaffolding_replacement(config.read_bytes()))
     else:
         config.write_bytes(b'[tweaks]\n"Replace Scaffolding" = false\n')
+
+
+def thermal_style_resource():
+    integration = ROOT / "integrations/resourcepacks" / THERMAL_STYLE
+    resource, = json.loads(integration.read_text(encoding="utf-8"))["clientFiles"]
+    return resource
+
+
+def enable_thermal_style(order):
+    pack = Path(thermal_style_resource()["path"]).name
+    order["loadOrder"] = [name for name in order.get("loadOrder", []) if name != pack] + [pack]
+
+
+def fetch_verified(target, url, checksum):
+    if target.is_file() and sha256(target.read_bytes()).hexdigest() == checksum:
+        return
+    with urlopen(url, timeout=30) as response:
+        data = response.read()
+    if sha256(data).hexdigest() != checksum:
+        raise ValueError(f"Checksum mismatch for {target.name}")
+    target.parent.mkdir(parents=True, exist_ok=True)
+    with TemporaryDirectory(dir=target.parent) as directory:
+        staged = Path(directory) / target.name
+        staged.write_bytes(data)
+        staged.replace(target)
+
+
+def install_progression_downloads(client, server):
+    entry = json.loads((PORT / "community-mods.json").read_text(encoding="utf-8"))["createnuclear"]
+    for instance in (client, server):
+        fetch_verified(instance / "mods" / CREATE_NUCLEAR_MOD, entry["file"]["url"], entry["sha256"])
+    resource = thermal_style_resource()
+    fetch_verified(client / resource["path"], resource["downloadUrl"], resource["sha256"])
+    order_file = client / PAXI_ORDER
+    order = json.loads(order_file.read_text(encoding="utf-8")) if order_file.is_file() else {}
+    enable_thermal_style(order)
+    order_file.write_text(json.dumps(order, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -726,7 +726,7 @@
       "config/paintings-client.toml": "525959276a7072a5a503258ed4abed13252124ead27dd87db2f444dbaaf21995",
       "config/patchouli-client.toml": "af6a2ac2c40095993ccdc76bb8c74dd72ed4dd216276e39f5e835a87c1ab6e27",
       "config/paxi/datapack_load_order.json": "d0aaf3172f34275479f0669aa5b0a94b85788ae638f3062b948ec49d31c38293",
-      "config/paxi/resourcepack_load_order.json": "abaedd7d9d49d3576cc859ff393e6378e24ee7ce237b7a87a2d31c94c7773840",
+      "config/paxi/resourcepack_load_order.json": "978431cd1acb432521861a35940ffbcbee1bca5e7ab7910b82597ee64ec5b7c8",
       "config/paxi/resourcepacks/Dyson-Create-Approved-Models-NeoForge-1.21.1.zip": "b4dc06116b9ac803b39bf473d8d9b9f25fc9ced0f5c3a7829daf9949d833cfe1",
       "config/paxi/resourcepacks/Eternal-Snowstorm-s-MC-i18n-Chinese-pack.zip": "bc2232ee0eac7205da0ad529dbd6cb1faf42362333dbd259e6a16858f2ff2476",
       "config/paxi/resourcepacks/Expedition-Chinese-Supplement.zip": "c170008517cf317c2264ac0b25109c67b8d31b590c166c09d64b62666829e48e",
@@ -2675,7 +2675,7 @@
       "kubejs/startup_scripts/cmi/CmiFactoryParts.js": "768ba92f82f6e56d19af4c6e9ebb79a509550abd34477b9c9e687171ca4ed2ae",
       "kubejs/startup_scripts/cmi/CmiIndustrialMaterials.js": "3a4eb97c7a78c44122efb349e8513cb18d5fd4ba0712b0dfc1b99bedcca24705",
       "kubejs/startup_scripts/cmi/CmiLubricant.js": "72934e2c86e40278aa3286c35c11aeb5f7b691ce3d53b1b87159a863660d49c6",
-      "kubejs/startup_scripts/cmi/CmiMechanisms.js": "e44dc25c6873d53e19794316a7e934054514c49be9af477d086bc3a92654577d",
+      "kubejs/startup_scripts/cmi/CmiMechanisms.js": "c895b390e128e8d290c74589c18ec32f253bf02439b355aa7d8c807263c9cda1",
       "kubejs/startup_scripts/cmi/CmiMineralsAndPeat.js": "228fdfbc1e5948b1b08d97961df7a04f840c2d5d603e92176cacedab7a53dd13",
       "kubejs/startup_scripts/cmi/CmiMoltenMetals.js": "a045fa81c8557f9ccf29628b4e0a3ecbe40b13978e52bad26a68da527fe6ae4c",
       "kubejs/startup_scripts/cmi/CmiOilFluids.js": "20942f57cf1cbdb8dbefb318ba74b25e87e205724461c216876d819542553b1f",
@@ -4465,7 +4465,11 @@
       "kubejs/data/expedition/recipe/deposits/vanadium.json": "21b8957f6127ea19fabb76a2fa8bb67771c74eb198f752a51614b23862a7c5a5",
       "kubejs/client_scripts/ExpeditionSugarSyrupLanguage.js": "2599df0a73d832ba59dc459b67b4e76441effe32a319eea2f82bf5805e43c78d",
       "kubejs/data/expedition/item_compatibility.json": "76184d7aaab0c144313ae2b3bc1e2c2a0f8391c9b1be1f9ee89806146b6d2cdd",
-      "kubejs/server_scripts/ExpeditionItemCompatibilityTags.js": "1a0d1bf0a7a36a68d457410026a4a52eec9dc11920c7e4b6e8d51042470167de"
+      "kubejs/server_scripts/ExpeditionItemCompatibilityTags.js": "1a0d1bf0a7a36a68d457410026a4a52eec9dc11920c7e4b6e8d51042470167de",
+      "kubejs/server_scripts/ExpeditionMechanismProgression.js": "1d9d38e670661c81785688a7c09df27dbf53f8b66960a6e2fc37023a68595a6a",
+      "kubejs/assets/cmi/textures/item/mechanism/complete/andesite.png": "40ff377466d3cee9448b9b0ac3dcfb9aacb44e47c309e9b933c0e96e416a6be5",
+      "kubejs/client_scripts/ExpeditionRockGeneratorInfo.js": "10fae98725c20555434a515acfdd359edd354bea10e69577af177e909a205171",
+      "kubejs/assets/createnuclear/sounds.json": "4f10cafafbfcb10a6d3f086704199c918c450fd41744076e1fc552c07437ee92"
     },
     "mods": [
       {
@@ -5733,6 +5737,14 @@
         "downloadUrl": "https://edge.forgecdn.net/files/9224/923/createfactorycontroller-1.2.3-neoforge-1.21.1.jar"
       },
       {
+        "filename": "createnuclear-2.0.1-neoforge.jar",
+        "bytes": 8357375,
+        "sha1": "90977ec04d39c5d6de0d715218ef55e3401c4ba4",
+        "sha256": "59f1be84e7a47ab44f0fb2f0260799fa348cec85b94cba3c7fc00ad3e35ea9db",
+        "sha512": "f1bde1c921ae0091abaef338651778122923a9ac31218e6abb997d93cea60849f5a844e4d164aea485968d7125ed86dd09a3e635bd74a640b6bab2ccffc7ff42",
+        "downloadUrl": "https://cdn.modrinth.com/data/z611fdf7/versions/zNIyk0mQ/createnuclear-2.0.1-neoforge.jar"
+      },
+      {
         "filename": "cristellib-neoforge-1.21.1-3.1.7.jar",
         "bytes": 583525,
         "sha1": "d250804b7ecea365bc736ec36ec6fc3f933917f1",
@@ -6015,6 +6027,13 @@
         "sha1": "df0f1e926a01cda2194282b053785d743f8db053",
         "sha256": "95684fbecb8ad1232ef970d09af81494ccd9ed58145298a31937706c3535e270",
         "sha512": "6a28a20236ba9a8f9324dd2361f01f5006dcb1adf748957ad8709671930fd6cde7c5a20845335c04262cc747f70e3e2e1b009bb05a9fee16ca08dada6c33825a"
+      },
+      {
+        "filename": "expedition-rock-generator-neoforge-1.0.0.jar",
+        "bytes": 17643,
+        "sha1": "4208311fe422697287de59b5a9ca74f5ca17bd84",
+        "sha256": "c0d4494f4599fa1547c7257f0f2ac45cebe09d667abf4eadd5b048d91d488815",
+        "sha512": "b4b1fcbe0aaa4fe8dfb812b05872ff7d377aa91d19bcaf53bc8cb09a8fc3589793ff51c117905ccbf15be223d377885cecddcf8937db3e69cd9c35e3524a9782"
       },
       {
         "filename": "expedition-space-neoforge-1.0.1.jar",
@@ -8540,7 +8559,7 @@
       "kubejs/startup_scripts/cmi/CmiFactoryParts.js": "768ba92f82f6e56d19af4c6e9ebb79a509550abd34477b9c9e687171ca4ed2ae",
       "kubejs/startup_scripts/cmi/CmiIndustrialMaterials.js": "3a4eb97c7a78c44122efb349e8513cb18d5fd4ba0712b0dfc1b99bedcca24705",
       "kubejs/startup_scripts/cmi/CmiLubricant.js": "72934e2c86e40278aa3286c35c11aeb5f7b691ce3d53b1b87159a863660d49c6",
-      "kubejs/startup_scripts/cmi/CmiMechanisms.js": "e44dc25c6873d53e19794316a7e934054514c49be9af477d086bc3a92654577d",
+      "kubejs/startup_scripts/cmi/CmiMechanisms.js": "c895b390e128e8d290c74589c18ec32f253bf02439b355aa7d8c807263c9cda1",
       "kubejs/startup_scripts/cmi/CmiMineralsAndPeat.js": "228fdfbc1e5948b1b08d97961df7a04f840c2d5d603e92176cacedab7a53dd13",
       "kubejs/startup_scripts/cmi/CmiMoltenMetals.js": "a045fa81c8557f9ccf29628b4e0a3ecbe40b13978e52bad26a68da527fe6ae4c",
       "kubejs/startup_scripts/cmi/CmiOilFluids.js": "20942f57cf1cbdb8dbefb318ba74b25e87e205724461c216876d819542553b1f",
@@ -10323,7 +10342,8 @@
       "kubejs/data/expedition/recipe/deposits/platinum.json": "4ada824024d64e07a6aa924b6ac48f00989ab620adf97c189633f702f4798a60",
       "kubejs/data/expedition/recipe/deposits/vanadium.json": "21b8957f6127ea19fabb76a2fa8bb67771c74eb198f752a51614b23862a7c5a5",
       "kubejs/data/expedition/item_compatibility.json": "76184d7aaab0c144313ae2b3bc1e2c2a0f8391c9b1be1f9ee89806146b6d2cdd",
-      "kubejs/server_scripts/ExpeditionItemCompatibilityTags.js": "1a0d1bf0a7a36a68d457410026a4a52eec9dc11920c7e4b6e8d51042470167de"
+      "kubejs/server_scripts/ExpeditionItemCompatibilityTags.js": "1a0d1bf0a7a36a68d457410026a4a52eec9dc11920c7e4b6e8d51042470167de",
+      "kubejs/server_scripts/ExpeditionMechanismProgression.js": "1d9d38e670661c81785688a7c09df27dbf53f8b66960a6e2fc37023a68595a6a"
     },
     "mods": [
       {
@@ -11567,6 +11587,14 @@
         "downloadUrl": "https://edge.forgecdn.net/files/9224/923/createfactorycontroller-1.2.3-neoforge-1.21.1.jar"
       },
       {
+        "filename": "createnuclear-2.0.1-neoforge.jar",
+        "bytes": 8357375,
+        "sha1": "90977ec04d39c5d6de0d715218ef55e3401c4ba4",
+        "sha256": "59f1be84e7a47ab44f0fb2f0260799fa348cec85b94cba3c7fc00ad3e35ea9db",
+        "sha512": "f1bde1c921ae0091abaef338651778122923a9ac31218e6abb997d93cea60849f5a844e4d164aea485968d7125ed86dd09a3e635bd74a640b6bab2ccffc7ff42",
+        "downloadUrl": "https://cdn.modrinth.com/data/z611fdf7/versions/zNIyk0mQ/createnuclear-2.0.1-neoforge.jar"
+      },
+      {
         "filename": "cristellib-neoforge-1.21.1-3.1.7.jar",
         "bytes": 583525,
         "sha1": "d250804b7ecea365bc736ec36ec6fc3f933917f1",
@@ -11796,6 +11824,13 @@
         "sha1": "df0f1e926a01cda2194282b053785d743f8db053",
         "sha256": "95684fbecb8ad1232ef970d09af81494ccd9ed58145298a31937706c3535e270",
         "sha512": "6a28a20236ba9a8f9324dd2361f01f5006dcb1adf748957ad8709671930fd6cde7c5a20845335c04262cc747f70e3e2e1b009bb05a9fee16ca08dada6c33825a"
+      },
+      {
+        "filename": "expedition-rock-generator-neoforge-1.0.0.jar",
+        "bytes": 17643,
+        "sha1": "4208311fe422697287de59b5a9ca74f5ca17bd84",
+        "sha256": "c0d4494f4599fa1547c7257f0f2ac45cebe09d667abf4eadd5b048d91d488815",
+        "sha512": "b4b1fcbe0aaa4fe8dfb812b05872ff7d377aa91d19bcaf53bc8cb09a8fc3589793ff51c117905ccbf15be223d377885cecddcf8937db3e69cd9c35e3524a9782"
       },
       {
         "filename": "expedition-space-neoforge-1.0.1.jar",

@@ -24,7 +24,11 @@ The quartz diode is assembled by Create mechanical crafters and feeds light engi
 
 Run `python3 retire_thermal_content.py /path/to/instance` after copying the FTB quest data and assets. The chapter follows the pack's installed processing, fuel and assembly routes.
 
-The integrated workstation uses an ender mechanism for the AE2 wireless receiver, spatial IO port, spatial pylon, and Infinity Booster card. The basic Mekanism mechanism is an input for five processing machines, the boiler and turbine valves, and the induction port. The advanced Mekanism mechanism is an input for six airtight processing machines and four fission reactor components. The fission fuel assembly uses a chemical tank and Diesel Generators cement. Each of these routes has its own recipe alongside the mod's recipe.
+The integrated workstation uses an ender mechanism for the AE2 wireless receiver, spatial IO port, spatial pylon, and Infinity Booster card. The basic Mekanism mechanism is an input for five processing machines, the boiler and turbine valves, and the induction port. The advanced Mekanism mechanism is an input for six airtight processing machines and four fission reactor components. The fission fuel assembly uses a chemical tank and Diesel Generators cement. Native routes for these devices also require a mechanism.
+
+The andesite mechanism is crafted from an andesite alloy plate, a small and a large cogwheel, and a mechanical mechanism part. The Igneous Extruder uses one andesite mechanism above an andesite casing and piston. Its JEI information lists coolant and foundation combinations. The device produces one block every 20 ticks, or every 10 ticks in Nether biomes. Sneak-use it with an empty hand to cycle between ignoring redstone, running without a signal, and running with a signal. Empty-hand use or adjacent machinery can extract the output.
+
+Mekanism's first power, steel and chemistry devices use the andesite mechanism so they can supply the ingredients for later mechanisms. Main processing, logistics, storage and factory recipes use the corresponding CMI tiers. Power Grid rotors, commutators and motors and Create Crafts & Additions power equipment use the coil mechanism. Create's early kinetic parts can be crafted with their usual ingredients. Create Nuclear's controller and core use the nuclear mechanism. Create Nuclear reactor casings and fuel recipes remain available with their usual materials, and its reactor casings take steel from the pack's existing production routes.
 
 The integrated workstation makes the four tiers of Mekanism mechanism bases. Finish each tier on a Create sequenced assembly line. A deployer fits the matching control circuit and a chrome-plated steel gear. A Vintage Improvements laser cuts the workpiece, a spout adds 200 mB of redstone acid, and deployers fit a silicone rubber plate and a Mekanism mechanism part. Each pass yields one mechanism. The overview chapter in `quests/chapters` uses the same steps in its quest instructions.
 
@@ -44,7 +48,7 @@ Both cracking recipes accept an airtight steam line from Create Crafted Beginnin
 
 A superchilled Create Crafted Beginning Airtight Fractionation Tower processes 10,000 units of natural air per 200-tick batch. Layer 1 yields 210 mB of Mekanism liquid oxygen and layer 2 yields 780 mB of liquid nitrogen. Give each layer its own liquid outlet and ordinary fluid tank. Feed the tower with the existing airtight natural-air network.
 
-Refine IE plant oil and naphtha with a reusable copper plate to make lubricating oil. The heavy engineering mechanism uses this oil in its Create sequenced assembly and unlocks an additional recipe for the Diesel Generators huge engine.
+Refine IE plant oil and naphtha with a reusable copper plate to make lubricating oil. The heavy engineering mechanism uses this oil in its Create sequenced assembly and is required for the Diesel Generators huge engine.
 
 Ferment rice in a covered Create basin or an IE Fermenter. The distillation tower separates vinegar into acetic acid and water. A heated Create basin combines silicon and light olefins to make light silicone ether. An IE Refinery with a reusable copper plate polymerizes the ether and reacts the polymer with acetic acid to make liquid silicone rubber. A Hexa casting table yields a piece of rubber when empty or a rubber plate when fitted with a reusable plate cast.
 
@@ -86,7 +90,7 @@ Process unrefined waste in the airtight reactor kettle and pipe its waste gas in
 
 When actively cooling, a Snow Golem Freezer or Breeze Cooler supplies either mod's chilled basin mixing and compacting recipes and encased fan cooling. A fan tries its selected source's native recipe first. A captured Snow Golem Freezer without fuel still provides its original passive Dragons Plus freezing. Ordinary ice likewise supplies passive freezing. Airtight kettles and fractionation towers use their native thermoregulator sources.
 
-The bronze mechanism starts as a bronze plate curved with a mechanism mold. Fill it with molten bronze, then install a bronze cogwheel, a bronze plate, and a mechanical mechanism part. Steam Powered supplies the burners, boilers, engines, and flywheels for the steam power tasks. The three steam engines each have an additional recipe using the bronze mechanism. The Create spout and mechanical press handle filling and pressing.
+The bronze mechanism starts as a bronze plate curved with a mechanism mold. Fill it with molten bronze, then install a bronze cogwheel, a bronze plate, and a mechanical mechanism part. Steam Powered supplies the burners, boilers, engines, and flywheels for the steam power tasks. The three Steam Powered engines and the Create steam engine use a bronze mechanism. The Create spout and mechanical press handle filling and pressing.
 
 With `nbtlib==2.0.4`, export supported legacy Tinkers tools, parts and manuals from copies of Anvil terrain or entity regions.
 
