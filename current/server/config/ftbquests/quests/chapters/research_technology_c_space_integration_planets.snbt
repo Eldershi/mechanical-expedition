@@ -1,0 +1,566 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_technology_c_space_integration_planets"
+	group: "3346A01E0EAFD002"
+	icon: { id: "ad_astra:raw_desh" }
+	id: "6CDDEF1C860302D0"
+	images: [
+		{
+			height: 0.0d
+			id: "773949833C34830B"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.5d
+			y: -2.6d
+			click_action: "none:quest_enhance:decorative_anchor:2efd8e52-8521-53a4-bfac-84f013a19494"
+		}
+		{
+			height: 0.0d
+			id: "6730332F28B6FBA8"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.5d
+			y: -2.6d
+			click_action: "none:quest_enhance:decorative_anchor:d1774f1b-ab70-5f40-8783-1eb89d7139ba"
+		}
+		{
+			height: 0.0d
+			id: "4F2A8FDCF751DB6D"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 6.5d
+			y: -5.267d
+			click_action: "none:quest_enhance:decorative_anchor:8a3cf0eb-e9c2-5204-b2c4-84753b269349"
+		}
+		{
+			height: 0.0d
+			id: "564CE0692709CA08"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 5.5d
+			y: -3.933d
+			click_action: "none:quest_enhance:decorative_anchor:f4801998-b94d-59ca-a7d8-e1abbf5c8542"
+		}
+		{
+			height: 0.0d
+			id: "4D5B5B21CBCA7452"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 8.5d
+			y: -5.267d
+			click_action: "none:quest_enhance:decorative_anchor:e058b500-e3c9-5601-b159-724b06dbfa03"
+		}
+		{
+			height: 0.0d
+			id: "6713D1CBCE8C76C4"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 9.5d
+			y: -3.933d
+			click_action: "none:quest_enhance:decorative_anchor:16825a97-b845-5449-8f44-1ac36a585d9c"
+		}
+		{
+			height: 0.0d
+			id: "39136D0A4F0F6992"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 2.5d
+			y: -2.6d
+			click_action: "none:quest_enhance:decorative_anchor:974d0582-5c93-55b3-86b6-13cdc83378ab"
+		}
+		{
+			height: 0.0d
+			id: "5B4AA41F147775F0"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 3.5d
+			y: -2.6d
+			click_action: "none:quest_enhance:decorative_anchor:fd6be62a-b786-5135-86cb-60afe0c405bf"
+		}
+		{
+			height: 0.0d
+			id: "3F997248891CD89F"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 8.5d
+			y: -2.6d
+			click_action: "none:quest_enhance:decorative_anchor:7ef97585-f2ed-5dbc-aa38-73c287b3a813"
+		}
+		{
+			height: 0.0d
+			id: "5796534D33FC45EC"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 9.5d
+			y: -2.6d
+			click_action: "none:quest_enhance:decorative_anchor:679cd0de-0aa9-5519-987b-e100b2340b3a"
+		}
+	]
+	order_index: 5
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:205566bc2048d2ef"
+				"a:2efd8e52-8521-53a4-bfac-84f013a19494"
+			]
+		}
+		{
+			nodes: [
+				"a:2efd8e52-8521-53a4-bfac-84f013a19494"
+				"a:d1774f1b-ab70-5f40-8783-1eb89d7139ba"
+			]
+		}
+		{
+			nodes: [
+				"a:d1774f1b-ab70-5f40-8783-1eb89d7139ba"
+				"q:12dfa8976ad05660"
+			]
+		}
+		{
+			nodes: [
+				"q:3d4cc7fad01d1e5b"
+				"q:12dfa8976ad05660"
+			]
+		}
+		{
+			nodes: [
+				"q:3d4cc7fad01d1e5b"
+				"a:8a3cf0eb-e9c2-5204-b2c4-84753b269349"
+			]
+		}
+		{
+			nodes: [
+				"a:8a3cf0eb-e9c2-5204-b2c4-84753b269349"
+				"a:f4801998-b94d-59ca-a7d8-e1abbf5c8542"
+			]
+		}
+		{
+			nodes: [
+				"a:f4801998-b94d-59ca-a7d8-e1abbf5c8542"
+				"q:6bbe73a4f030a096"
+			]
+		}
+		{
+			nodes: [
+				"q:3d4cc7fad01d1e5b"
+				"a:e058b500-e3c9-5601-b159-724b06dbfa03"
+			]
+		}
+		{
+			nodes: [
+				"a:e058b500-e3c9-5601-b159-724b06dbfa03"
+				"a:16825a97-b845-5449-8f44-1ac36a585d9c"
+			]
+		}
+		{
+			nodes: [
+				"a:16825a97-b845-5449-8f44-1ac36a585d9c"
+				"q:4ae4be02d972f61f"
+			]
+		}
+		{
+			nodes: [
+				"q:5be45a4e53d87fc8"
+				"a:974d0582-5c93-55b3-86b6-13cdc83378ab"
+			]
+		}
+		{
+			nodes: [
+				"a:974d0582-5c93-55b3-86b6-13cdc83378ab"
+				"a:fd6be62a-b786-5135-86cb-60afe0c405bf"
+			]
+		}
+		{
+			nodes: [
+				"a:fd6be62a-b786-5135-86cb-60afe0c405bf"
+				"q:6bbe73a4f030a096"
+			]
+		}
+		{
+			nodes: [
+				"q:521b2e9163f7754e"
+				"a:7ef97585-f2ed-5dbc-aa38-73c287b3a813"
+			]
+		}
+		{
+			nodes: [
+				"a:7ef97585-f2ed-5dbc-aa38-73c287b3a813"
+				"a:679cd0de-0aa9-5519-987b-e100b2340b3a"
+			]
+		}
+		{
+			nodes: [
+				"a:679cd0de-0aa9-5519-987b-e100b2340b3a"
+				"q:4ae4be02d972f61f"
+			]
+		}
+		{
+			nodes: [
+				"l:5281f3286545f656"
+				"q:409e3e518b58a1d3"
+			]
+		}
+		{
+			nodes: [
+				"l:571a2fd7224f007e"
+				"q:60dbfafe0a1a818c"
+			]
+		}
+		{
+			nodes: [
+				"l:26e4d05bafbd183d"
+				"q:7a148eae8b51dcb4"
+			]
+		}
+		{
+			nodes: [
+				"l:19a521a564058977"
+				"q:1b84ee03d8ffd49"
+			]
+		}
+		{
+			nodes: [
+				"l:33e64eb5c4cc3c7"
+				"q:19af998bbfd37bcc"
+			]
+		}
+		{
+			nodes: [
+				"l:6e5756981edaf983"
+				"q:12e71f6b09497284"
+			]
+		}
+		{
+			nodes: [
+				"l:2b2f5f6fbb445008"
+				"q:3465b1a7027d81a3"
+			]
+		}
+		{
+			nodes: [
+				"q:409e3e518b58a1d3"
+				"q:616d1e3dc4dcdccf"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "5281F3286545F656"
+			linked_quest: "1728AD7C502EDA85"
+			shape: "rsquare"
+			size: 0.75d
+			x: -7.5d
+			y: 2.2d
+		}
+		{
+			id: "571A2FD7224F007E"
+			linked_quest: "4BFC30473684A5A5"
+			shape: "rsquare"
+			size: 0.75d
+			x: 4.5d
+			y: 6.2d
+		}
+		{
+			id: "26E4D05BAFBD183D"
+			linked_quest: "0F3E1BF11F8A20D2"
+			shape: "rsquare"
+			size: 0.75d
+			x: 7.5d
+			y: 6.6d
+		}
+		{
+			id: "19A521A564058977"
+			linked_quest: "02C8C66AF47F7757"
+			shape: "rsquare"
+			size: 0.75d
+			x: -10.5d
+			y: -1.8d
+		}
+		{
+			id: "033E64EB5C4CC3C7"
+			linked_quest: "75843FCDC1966205"
+			shape: "rsquare"
+			size: 0.75d
+			x: -4.5d
+			y: 0.4d
+		}
+		{
+			id: "6E5756981EDAF983"
+			linked_quest: "25D68FEDC946D6DF"
+			shape: "rsquare"
+			size: 0.75d
+			x: 1.5d
+			y: 2.6d
+		}
+		{
+			id: "2B2F5F6FBB445008"
+			linked_quest: "57D23A719AB4365B"
+			shape: "rsquare"
+			size: 0.75d
+			x: 7.5d
+			y: -0.95d
+		}
+	]
+	quests: [
+		{
+			id: "205566BC2048D2EF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "023A7968DE3AEED5"
+				item: { count: 1, id: "ad_astra:raw_desh" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.6d
+		}
+		{
+			id: "12DFA8976AD05660"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "7918C10536225E22"
+				item: { count: 1, id: "ad_astra:desh_ingot" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.6d
+		}
+		{
+			id: "5BE45A4E53D87FC8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "128F6BED763E24B6"
+				item: { count: 1, id: "ad_astra:raw_ostrum" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.6d
+		}
+		{
+			id: "6BBE73A4F030A096"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "1DB112A5DCCEC519"
+				item: { count: 1, id: "ad_astra:ostrum_ingot" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.6d
+		}
+		{
+			id: "521B2E9163F7754E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "2F8C19F486EFC2A2"
+				item: { count: 1, id: "ad_astra:raw_calorite" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.6d
+		}
+		{
+			id: "4AE4BE02D972F61F"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "13103DD0BAD75370"
+				item: { count: 1, id: "ad_astra:calorite_ingot" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.6d
+		}
+		{
+			id: "3D4CC7FAD01D1E5B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "044AA85E2B19DF47"
+					item: { count: 1, id: "ad_astra:etrionic_blast_furnace" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "00946BF7E71B3900"
+					type: "checkmark"
+				}
+			]
+			x: 7.5d
+			y: -6.6d
+		}
+		{
+			id: "01B84EE03D8FFD49"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5155D5D18C3B712E"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 0.4d
+		}
+		{
+			id: "19AF998BBFD37BCC"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "73F24BDD213EA5D3"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.4d
+		}
+		{
+			id: "12E71F6B09497284"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "24BFC4A31028E8F6"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 0.4d
+		}
+		{
+			id: "3465B1A7027D81A3"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "124A7E9812E40F27"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 0.4d
+		}
+		{
+			id: "409E3E518B58A1D3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "196528B4132A8BFD"
+				item: { count: 1, id: "ad_astra:oxygen_distributor" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.4d
+		}
+		{
+			id: "616D1E3DC4DCDCCF"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "2F33EB3B4DF61EFE"
+				item: { count: 1, id: "ad_astra:oxygen_sensor" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.4d
+		}
+		{
+			id: "67CB384926ED05D3"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "2A8B1023EF4EBB36"
+				item: { count: 1, id: "ad_astra:solar_panel" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.4d
+		}
+		{
+			id: "39F85C7A6533E3B5"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "09D2F213BDEF3A46"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 4.4d
+		}
+		{
+			id: "61CE35665CE316A7"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "6DF163447669117C"
+				item: { count: 1, id: "cmi:ionized_red_dust" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.6d
+		}
+		{
+			id: "60DBFAFE0A1A818C"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "7F98616CA7BC0B33"
+				item: { count: 1, id: "ad_astra_giselle_addon:oxygen_can" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.4d
+		}
+		{
+			id: "7A148EAE8B51DCB4"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "4D07A0743AE71A32"
+				item: { count: 1, id: "ad_astra_giselle_addon:module_space_breathing_unit" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 10.5d
+			y: 4.4d
+		}
+	]
+}

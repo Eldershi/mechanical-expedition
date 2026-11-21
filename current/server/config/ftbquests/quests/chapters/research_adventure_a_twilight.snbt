@@ -1,0 +1,638 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_adventure_a_twilight"
+	group: "54D4CAA40ADB5408"
+	icon: { id: "minecraft:diamond" }
+	id: "2E1E915E6363FF12"
+	images: [
+		{
+			height: 0.0d
+			id: "1CEE6884907D4DAB"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.96d
+			y: -2.28d
+			click_action: "none:quest_enhance:decorative_anchor:4fd32990-537d-5b2c-b807-b4be9acd63e9"
+		}
+		{
+			height: 0.0d
+			id: "5B7D0D1E3D858AC6"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.52d
+			y: -3.48d
+			click_action: "none:quest_enhance:decorative_anchor:d72623c7-1759-5730-b0ba-f79c89d49bb0"
+		}
+		{
+			height: 0.0d
+			id: "63BEC8EB4A4DABE9"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.96d
+			y: -1.08d
+			click_action: "none:quest_enhance:decorative_anchor:5da748e2-e6c7-514b-8f13-8e0c9a8a9ffc"
+		}
+		{
+			height: 0.0d
+			id: "7E5315C4F168CA0B"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.52d
+			y: -1.08d
+			click_action: "none:quest_enhance:decorative_anchor:1def8667-a3c4-5a05-b811-85ee6ec9a610"
+		}
+		{
+			height: 0.0d
+			id: "093BB292AC29BA5A"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -4.68d
+			y: 0.12d
+			click_action: "none:quest_enhance:decorative_anchor:376fcf12-e1cc-53ed-8884-b9c3d912bdfc"
+		}
+		{
+			height: 0.0d
+			id: "140055AF57DB453B"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.96d
+			y: 1.32d
+			click_action: "none:quest_enhance:decorative_anchor:2c20ec59-0bde-53d5-b2fb-a37d3f532051"
+		}
+		{
+			height: 0.0d
+			id: "03BB8EFCCA2C0D12"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 4.2d
+			y: -1.56d
+			click_action: "none:quest_enhance:decorative_anchor:a93578c0-d1e5-5c92-bb78-acf85d2a4414"
+		}
+		{
+			height: 0.0d
+			id: "4EE37296716BE4C0"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 5.16d
+			y: 1.56d
+			click_action: "none:quest_enhance:decorative_anchor:2825e067-45b5-5021-a4f1-9c6c7fd8dba7"
+		}
+		{
+			height: 0.0d
+			id: "00DA7DB6C2D2BE83"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 4.2d
+			y: -3.48d
+			click_action: "none:quest_enhance:decorative_anchor:6537c4bb-f3fa-57ff-8f77-a8bd47832c96"
+		}
+		{
+			height: 0.0d
+			id: "0E9A28BD388FFF99"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 5.16d
+			y: -2.28d
+			click_action: "none:quest_enhance:decorative_anchor:84526862-08b0-55b7-8ba8-9d7dbde698e9"
+		}
+		{
+			height: 0.0d
+			id: "395F757495694440"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 4.2d
+			y: -1.08d
+			click_action: "none:quest_enhance:decorative_anchor:c5845eaf-d642-5862-9f47-c28e057ea4d0"
+		}
+		{
+			height: 0.0d
+			id: "280248CAC7742E79"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 5.16d
+			y: -1.08d
+			click_action: "none:quest_enhance:decorative_anchor:7d050485-0ae9-5329-9a8e-c0c35a377072"
+		}
+		{
+			height: 0.0d
+			id: "124C192FBADFC8E8"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.36d
+			y: 2.52d
+			click_action: "none:quest_enhance:decorative_anchor:73862b34-c0d6-512e-8329-9ea69efad1d5"
+		}
+		{
+			height: 0.0d
+			id: "0474472DB55A5637"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 1.8d
+			y: 2.52d
+			click_action: "none:quest_enhance:decorative_anchor:1c57c87f-97d4-5344-8491-99ddd22ce530"
+		}
+		{
+			height: 0.0d
+			id: "391F62A85487CC6E"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 4.2d
+			y: 1.32d
+			click_action: "none:quest_enhance:decorative_anchor:1ae4af2d-f635-56c3-9183-322abdb503f7"
+		}
+		{
+			height: 0.0d
+			id: "359D39C5E6E33203"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 5.16d
+			y: 0.12d
+			click_action: "none:quest_enhance:decorative_anchor:62b66976-b1fe-5359-af76-247e9f7676df"
+		}
+	]
+	order_index: 2
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:679b86e7f9409629"
+				"q:3a71520bd117c2b7"
+			]
+		}
+		{
+			nodes: [
+				"q:3a71520bd117c2b7"
+				"a:4fd32990-537d-5b2c-b807-b4be9acd63e9"
+			]
+		}
+		{
+			nodes: [
+				"a:4fd32990-537d-5b2c-b807-b4be9acd63e9"
+				"a:d72623c7-1759-5730-b0ba-f79c89d49bb0"
+			]
+		}
+		{
+			nodes: [
+				"a:d72623c7-1759-5730-b0ba-f79c89d49bb0"
+				"q:2c86ba0975f5a4f5"
+			]
+		}
+		{
+			nodes: [
+				"q:3a71520bd117c2b7"
+				"a:5da748e2-e6c7-514b-8f13-8e0c9a8a9ffc"
+			]
+		}
+		{
+			nodes: [
+				"a:5da748e2-e6c7-514b-8f13-8e0c9a8a9ffc"
+				"a:1def8667-a3c4-5a05-b811-85ee6ec9a610"
+			]
+		}
+		{
+			nodes: [
+				"a:1def8667-a3c4-5a05-b811-85ee6ec9a610"
+				"q:6d033a641e7cdb81"
+			]
+		}
+		{
+			nodes: [
+				"q:3a71520bd117c2b7"
+				"a:376fcf12-e1cc-53ed-8884-b9c3d912bdfc"
+			]
+		}
+		{
+			nodes: [
+				"a:376fcf12-e1cc-53ed-8884-b9c3d912bdfc"
+				"a:2c20ec59-0bde-53d5-b2fb-a37d3f532051"
+			]
+		}
+		{
+			nodes: [
+				"a:2c20ec59-0bde-53d5-b2fb-a37d3f532051"
+				"q:48c1725308cd94b1"
+			]
+		}
+		{
+			nodes: [
+				"q:3a71520bd117c2b7"
+				"q:7aca6ae5dc4085da"
+			]
+		}
+		{
+			nodes: [
+				"q:2c86ba0975f5a4f5"
+				"q:69942dddcdf519f1"
+			]
+		}
+		{
+			nodes: [
+				"q:6d033a641e7cdb81"
+				"q:49ba83ab17aaf9d4"
+			]
+		}
+		{
+			nodes: [
+				"q:48c1725308cd94b1"
+				"q:68797b43b73b290b"
+			]
+		}
+		{
+			nodes: [
+				"q:68797b43b73b290b"
+				"a:73862b34-c0d6-512e-8329-9ea69efad1d5"
+			]
+		}
+		{
+			nodes: [
+				"a:73862b34-c0d6-512e-8329-9ea69efad1d5"
+				"a:1c57c87f-97d4-5344-8491-99ddd22ce530"
+			]
+		}
+		{
+			nodes: [
+				"a:1c57c87f-97d4-5344-8491-99ddd22ce530"
+				"q:5ec044ff18661219"
+			]
+		}
+		{
+			nodes: [
+				"q:68797b43b73b290b"
+				"q:4d5ac5f88952f906"
+			]
+		}
+		{
+			nodes: [
+				"q:69942dddcdf519f1"
+				"a:6537c4bb-f3fa-57ff-8f77-a8bd47832c96"
+			]
+		}
+		{
+			nodes: [
+				"a:6537c4bb-f3fa-57ff-8f77-a8bd47832c96"
+				"a:84526862-08b0-55b7-8ba8-9d7dbde698e9"
+			]
+		}
+		{
+			nodes: [
+				"a:84526862-08b0-55b7-8ba8-9d7dbde698e9"
+				"q:4d87e0d0c560e386"
+			]
+		}
+		{
+			nodes: [
+				"q:69942dddcdf519f1"
+				"a:a93578c0-d1e5-5c92-bb78-acf85d2a4414"
+			]
+		}
+		{
+			nodes: [
+				"a:a93578c0-d1e5-5c92-bb78-acf85d2a4414"
+				"a:2825e067-45b5-5021-a4f1-9c6c7fd8dba7"
+			]
+		}
+		{
+			nodes: [
+				"a:2825e067-45b5-5021-a4f1-9c6c7fd8dba7"
+				"q:556d46121f480c5b"
+			]
+		}
+		{
+			nodes: [
+				"q:5ec044ff18661219"
+				"a:1ae4af2d-f635-56c3-9183-322abdb503f7"
+			]
+		}
+		{
+			nodes: [
+				"a:1ae4af2d-f635-56c3-9183-322abdb503f7"
+				"a:62b66976-b1fe-5359-af76-247e9f7676df"
+			]
+		}
+		{
+			nodes: [
+				"a:62b66976-b1fe-5359-af76-247e9f7676df"
+				"q:4d87e0d0c560e386"
+			]
+		}
+		{
+			nodes: [
+				"q:5ec044ff18661219"
+				"q:556d46121f480c5b"
+			]
+		}
+		{
+			nodes: [
+				"q:49ba83ab17aaf9d4"
+				"a:c5845eaf-d642-5862-9f47-c28e057ea4d0"
+			]
+		}
+		{
+			nodes: [
+				"a:c5845eaf-d642-5862-9f47-c28e057ea4d0"
+				"a:7d050485-0ae9-5329-9a8e-c0c35a377072"
+			]
+		}
+		{
+			nodes: [
+				"a:7d050485-0ae9-5329-9a8e-c0c35a377072"
+				"q:4d87e0d0c560e386"
+			]
+		}
+		{
+			nodes: [
+				"q:4d87e0d0c560e386"
+				"q:20d3269dce8af2a4"
+			]
+		}
+		{
+			nodes: [
+				"q:20d3269dce8af2a4"
+				"q:4668d498c6a1058e"
+			]
+		}
+		{
+			nodes: [
+				"q:7a2da127cee7b72a"
+				"q:56981958904b4d7d"
+			]
+		}
+		{
+			nodes: [
+				"q:5c63e22cddae44b6"
+				"q:7a2da127cee7b72a"
+			]
+		}
+		{
+			nodes: [
+				"q:56981958904b4d7d"
+				"q:679b86e7f9409629"
+			]
+		}
+		{
+			nodes: [
+				"q:7aca6ae5dc4085da"
+				"q:2c86ba0975f5a4f5"
+			]
+		}
+		{
+			nodes: [
+				"q:4d5ac5f88952f906"
+				"q:5ec044ff18661219"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5C63E22CDDAE44B6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "73C9AB9B4A1D4FE9"
+				type: "checkmark"
+			}]
+			x: -11.88d
+			y: -1.08d
+		}
+		{
+			id: "7A2DA127CEE7B72A"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "6903E3783928E46A"
+				item: { count: 1, id: "twilightforest:magic_map_focus" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -11.88d
+			y: -3.24d
+		}
+		{
+			id: "56981958904B4D7D"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "2BC0BF4602265257"
+				item: { count: 1, id: "twilightforest:magic_map" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -9.72d
+			y: -3.24d
+		}
+		{
+			id: "679B86E7F9409629"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "twilightforest:progress_naga"
+				criterion: ""
+				id: "58250C87A8DFD294"
+				type: "advancement"
+			}]
+			x: -7.56d
+			y: -1.08d
+		}
+		{
+			id: "3A71520BD117C2B7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "twilightforest:progress_lich"
+				criterion: ""
+				id: "654079E9D4483281"
+				type: "advancement"
+			}]
+			x: -5.4d
+			y: -1.08d
+		}
+		{
+			id: "7ACA6AE5DC4085DA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "21EF7CD83BBB2504"
+				type: "checkmark"
+			}]
+			x: -3.24d
+			y: -4.68d
+		}
+		{
+			id: "2C86BA0975F5A4F5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "twilightforest:progress_labyrinth"
+				criterion: ""
+				id: "5FF72042EB417619"
+				type: "advancement"
+			}]
+			x: -1.08d
+			y: -4.68d
+		}
+		{
+			id: "69942DDDCDF519F1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "twilightforest:progress_hydra"
+				criterion: ""
+				id: "53D6D180EE4BDECB"
+				type: "advancement"
+			}]
+			x: 3.24d
+			y: -4.68d
+		}
+		{
+			id: "6D033A641E7CDB81"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "twilightforest:progress_yeti"
+				criterion: ""
+				id: "5BFFAAB001737209"
+				type: "advancement"
+			}]
+			x: -1.08d
+			y: -1.08d
+		}
+		{
+			id: "49BA83AB17AAF9D4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "twilightforest:progress_glacier"
+				criterion: ""
+				id: "66818469094D6181"
+				type: "advancement"
+			}]
+			x: 3.24d
+			y: -1.08d
+		}
+		{
+			id: "48C1725308CD94B1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "twilightforest:progress_trophy_pedestal"
+				criterion: ""
+				id: "24386466AAD72440"
+				type: "advancement"
+			}]
+			x: -3.24d
+			y: 2.52d
+		}
+		{
+			id: "68797B43B73B290B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "twilightforest:progress_knights"
+				criterion: ""
+				id: "2F3786F2F0E54389"
+				type: "advancement"
+			}]
+			x: -1.08d
+			y: 2.52d
+		}
+		{
+			id: "4D5AC5F88952F906"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6F9C053C2106656D"
+				type: "checkmark"
+			}]
+			x: 1.08d
+			y: 3.37d
+		}
+		{
+			id: "5EC044FF18661219"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "twilightforest:progress_ur_ghast"
+				criterion: ""
+				id: "4231FB57555ACCC0"
+				type: "advancement"
+			}]
+			x: 3.24d
+			y: 2.52d
+		}
+		{
+			id: "556D46121F480C5B"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "4F27AC6F802965CF"
+				item: { count: 1, id: "twilightforest:fiery_ingot" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 6.12d
+			y: 4.68d
+		}
+		{
+			id: "4D87E0D0C560E386"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "twilightforest:progress_merge"
+				criterion: ""
+				id: "5C4A9C39C9277894"
+				type: "advancement"
+			}]
+			x: 6.12d
+			y: -1.08d
+		}
+		{
+			id: "20D3269DCE8AF2A4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "twilightforest:progress_troll"
+				criterion: ""
+				id: "51D7B2930DD957E9"
+				type: "advancement"
+			}]
+			x: 9.0d
+			y: -1.08d
+		}
+		{
+			id: "4668D498C6A1058E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "twilightforest:progression_end"
+				criterion: ""
+				id: "31A2E38FB02C7C98"
+				type: "advancement"
+			}]
+			x: 11.88d
+			y: -1.08d
+		}
+	]
+}

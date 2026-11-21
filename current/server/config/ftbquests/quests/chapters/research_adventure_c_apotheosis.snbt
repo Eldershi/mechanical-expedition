@@ -1,0 +1,316 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_adventure_c_apotheosis"
+	group: "25C542C40E64ED41"
+	icon: { id: "apotheosis:salvaging_table" }
+	id: "3BEA3A0458FDD0A6"
+	images: [
+		{
+			height: 0.0d
+			id: "25373A10D5CEE2D7"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.96d
+			y: 2.52d
+			click_action: "none:quest_enhance:decorative_anchor:ce74327c-1b11-5825-ad19-d69895f816d1"
+		}
+		{
+			height: 0.0d
+			id: "1859D0BA9C371F4E"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.24d
+			y: 2.52d
+			click_action: "none:quest_enhance:decorative_anchor:0012c056-9d4a-55c7-bc31-952e7c1a0320"
+		}
+		{
+			height: 0.0d
+			id: "0BECD435DADC98DA"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.84d
+			y: -3.24d
+			click_action: "none:quest_enhance:decorative_anchor:dada212e-3bcc-5711-93e1-c5fab2dc0854"
+		}
+		{
+			height: 0.0d
+			id: "573BB9418F5EF1F3"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -1.92d
+			y: -3.96d
+			click_action: "none:quest_enhance:decorative_anchor:41d0ec29-56f8-5f5d-bbea-375f36b42186"
+		}
+		{
+			height: 0.0d
+			id: "4CA49A8ED0EBDCAB"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.88d
+			y: -2.52d
+			click_action: "none:quest_enhance:decorative_anchor:ca096e43-a4f0-5d83-b763-45d44a2f96fe"
+		}
+		{
+			height: 0.0d
+			id: "221B68D0C122C054"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.0d
+			y: -2.52d
+			click_action: "none:quest_enhance:decorative_anchor:ae64c069-d53f-5303-bd49-8f30c29e4ea9"
+		}
+	]
+	order_index: 4
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:46eee2f27b6a1ce2"
+				"q:282e52103ffa0294"
+			]
+		}
+		{
+			nodes: [
+				"q:46eee2f27b6a1ce2"
+				"a:dada212e-3bcc-5711-93e1-c5fab2dc0854"
+			]
+		}
+		{
+			nodes: [
+				"a:dada212e-3bcc-5711-93e1-c5fab2dc0854"
+				"a:41d0ec29-56f8-5f5d-bbea-375f36b42186"
+			]
+		}
+		{
+			nodes: [
+				"a:41d0ec29-56f8-5f5d-bbea-375f36b42186"
+				"q:1ad8cb7b991d2044"
+			]
+		}
+		{
+			nodes: [
+				"q:46eee2f27b6a1ce2"
+				"a:ca096e43-a4f0-5d83-b763-45d44a2f96fe"
+			]
+		}
+		{
+			nodes: [
+				"a:ca096e43-a4f0-5d83-b763-45d44a2f96fe"
+				"a:ae64c069-d53f-5303-bd49-8f30c29e4ea9"
+			]
+		}
+		{
+			nodes: [
+				"a:ae64c069-d53f-5303-bd49-8f30c29e4ea9"
+				"q:49e89f260d7bc11"
+			]
+		}
+		{
+			nodes: [
+				"q:59aad5c2521a05e7"
+				"q:74d7ef3fa45ff66c"
+			]
+		}
+		{
+			nodes: [
+				"q:74d7ef3fa45ff66c"
+				"a:ce74327c-1b11-5825-ad19-d69895f816d1"
+			]
+		}
+		{
+			nodes: [
+				"a:ce74327c-1b11-5825-ad19-d69895f816d1"
+				"a:0012c056-9d4a-55c7-bc31-952e7c1a0320"
+			]
+		}
+		{
+			nodes: [
+				"a:0012c056-9d4a-55c7-bc31-952e7c1a0320"
+				"q:2997bd06a2880b0f"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "282E52103FFA0294"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "5D788171A3BD3B31"
+				item: { count: 1, id: "apotheosis:salvaging_table" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -2.88d
+			y: -1.67d
+		}
+		{
+			id: "1AD8CB7B991D2044"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "2FF4FB1685C255CC"
+				item: { count: 1, id: "apotheosis:gem_cutting_table" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.68d
+		}
+		{
+			id: "049E89F260D7BC11"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "445C9AC8AF450017"
+				item: { count: 1, id: "apotheosis:simple_reforging_table" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 2.88d
+			y: -2.52d
+		}
+		{
+			id: "66E609AF1FCA0D7D"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "6C877697F16DB611"
+				item: { count: 1, id: "apotheosis:augmenting_table" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 5.76d
+			y: -2.52d
+		}
+		{
+			id: "59AAD5C2521A05E7"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "0F13BD185720476A"
+				item: { count: 1, id: "apothic_enchanting:infused_hellshelf" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -5.76d
+			y: 2.52d
+		}
+		{
+			id: "74D7EF3FA45FF66C"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "69F775CFB8FC0BB3"
+				item: { count: 1, id: "apothic_enchanting:library" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -2.16d
+			y: 2.52d
+		}
+		{
+			id: "2503875935BF6951"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "7F38BC48E03BF826"
+					item: { count: 1, id: "apothic_enchanting:inert_trident" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "04374CEED160A69E"
+					type: "checkmark"
+				}
+			]
+			x: -2.16d
+			y: 4.68d
+		}
+		{
+			id: "2EEB9E3820876037"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "3B32452977904A59"
+					item: { count: 1, id: "apothic_enchanting:ender_lead" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "6A6FE1A20F64D5D2"
+					type: "checkmark"
+				}
+			]
+			x: 4.32d
+			y: 4.68d
+		}
+		{
+			id: "46EEE2F27B6A1CE2"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "5A80C45782138704"
+				item: { count: 1, id: "apotheosis:gem_dust" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -5.76d
+			y: -2.52d
+		}
+		{
+			id: "68343FB6B0B1D17B"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "3B0445F46F0A65D6"
+				item: { count: 1, id: "apotheosis:sigil_of_rebirth" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.36d
+		}
+		{
+			id: "2997BD06A2880B0F"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "7A0B0D931832E87B"
+				item: { count: 1, id: "apothic_enchanting:ender_library" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.44d
+			y: 2.52d
+		}
+	]
+}

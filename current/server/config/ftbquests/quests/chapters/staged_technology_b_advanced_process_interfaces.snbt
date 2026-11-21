@@ -1,0 +1,122 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "staged_technology_b_advanced_process_interfaces"
+	group: "5B22564DA513617D"
+	icon: { id: "cmi:lithium_containing_electrolyte_bucket" }
+	id: "0803D640DA9A1663"
+	images: [
+		{
+			height: 0.0d
+			id: "17AA2635A4DBC313"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.0d
+			y: -2.767d
+			click_action: "none:quest_enhance:decorative_anchor:63ac8b85-a4de-5e62-a43a-ab1005a59983"
+		}
+		{
+			height: 0.0d
+			id: "53FB73C821AE857D"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -1.0d
+			y: -2.033d
+			click_action: "none:quest_enhance:decorative_anchor:c832298b-e370-5411-9e48-4ebc2f0d8a37"
+		}
+		{
+			height: 0.0d
+			id: "773802AF43E13E43"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.0d
+			y: -2.6d
+			click_action: "none:quest_enhance:decorative_anchor:739d49af-9be3-560c-8397-94c7060c9b16"
+		}
+		{
+			height: 0.0d
+			id: "6F85CC306CB11596"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.0d
+			y: -1.7d
+			click_action: "none:quest_enhance:decorative_anchor:4ce09c32-cec6-5d45-9432-d63569e6249b"
+		}
+	]
+	order_index: 7
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:4f2cb28e97579e74" "q:2b9237774cd43ef"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [{
+		id: "3F376BCF029154E0"
+		linked_quest: "304F1C5501224675"
+		shape: "rsquare"
+		size: 0.75d
+		x: -3.0d
+		y: -3.5d
+	}]
+	quests: [
+		{
+			id: "02B9237774CD43EF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7B23A39ADAF28B2E"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 5.7d
+		}
+		{
+			id: "059E3A5F6CA1428D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "4D70D009D85DF3F6"
+				item: { count: 1, id: "mekanism:hdpe_pellet" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.2d
+		}
+		{
+			id: "3609A07C53B3EDDA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "430FBCEE0611256F"
+				item: { count: 1, id: "mekanism:structural_glass" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.2d
+		}
+		{
+			id: "4F2CB28E97579E74"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "5A55175714C57A82"
+				item: { count: 1, id: "create:mechanical_mixer" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.2d
+		}
+	]
+}

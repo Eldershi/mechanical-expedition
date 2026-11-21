@@ -1,0 +1,353 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_adventure_b_irons_spellbooks"
+	group: "25C542C40E64ED41"
+	icon: { id: "irons_spellbooks:scroll" }
+	id: "5C6E821EA5A3E7C8"
+	images: [
+		{
+			height: 0.0d
+			id: "65FEA5839D642FEB"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 4.32d
+			y: 3.24d
+			click_action: "none:quest_enhance:decorative_anchor:d16a68f4-7a0a-5aa5-bdf6-6cd77ae26dca"
+		}
+		{
+			height: 0.0d
+			id: "623CE769D3BBF281"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 5.04d
+			y: 2.52d
+			click_action: "none:quest_enhance:decorative_anchor:f4d4523b-a77d-57e5-b7c5-a77069710fc6"
+		}
+	]
+	order_index: 2
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:5b89103dad287fe7"
+				"a:d16a68f4-7a0a-5aa5-bdf6-6cd77ae26dca"
+			]
+		}
+		{
+			nodes: [
+				"a:d16a68f4-7a0a-5aa5-bdf6-6cd77ae26dca"
+				"a:f4d4523b-a77d-57e5-b7c5-a77069710fc6"
+			]
+		}
+		{
+			nodes: [
+				"a:f4d4523b-a77d-57e5-b7c5-a77069710fc6"
+				"q:56194d8d5bc578bc"
+			]
+		}
+		{
+			nodes: [
+				"q:5b89103dad287fe7"
+				"q:30834e91069c3e62"
+			]
+		}
+		{
+			nodes: [
+				"q:3da661a1c503c00b"
+				"q:6186ff943085da1a"
+			]
+		}
+		{
+			nodes: [
+				"q:6186ff943085da1a"
+				"q:73c2f7430134a4"
+			]
+		}
+		{
+			nodes: [
+				"q:73c2f7430134a4"
+				"q:4d9f4ba33e699492"
+			]
+		}
+		{
+			nodes: [
+				"q:4d9f4ba33e699492"
+				"q:32125f9b08df7362"
+			]
+		}
+		{
+			nodes: [
+				"q:32125f9b08df7362"
+				"q:4ab598a4dab8a96"
+			]
+		}
+		{
+			nodes: [
+				"q:4ab598a4dab8a96"
+				"q:5c6d58f631e9df37"
+			]
+		}
+		{
+			nodes: [
+				"q:5c6d58f631e9df37"
+				"q:51456745fbedb065"
+			]
+		}
+		{
+			nodes: [
+				"q:51456745fbedb065"
+				"q:698aec1a0decbf06"
+			]
+		}
+		{
+			nodes: [
+				"q:698aec1a0decbf06"
+				"q:5b89103dad287fe7"
+			]
+		}
+		{
+			nodes: [
+				"q:30834e91069c3e62"
+				"q:536da4f94000544"
+			]
+		}
+		{
+			nodes: [
+				"q:536da4f94000544"
+				"q:42d0d871392a9b8c"
+			]
+		}
+		{
+			nodes: [
+				"q:42d0d871392a9b8c"
+				"q:53a7627436815826"
+			]
+		}
+		{
+			nodes: [
+				"q:53a7627436815826"
+				"q:56194d8d5bc578bc"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "3DA661A1C503C00B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "4EDE33962AAFDB13"
+				item: { count: 1, id: "irons_spellbooks:scroll" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -10.08d
+			y: 1.8d
+		}
+		{
+			id: "6186FF943085DA1A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "1F166D084324460B"
+					item: { components: { "irons_spellbooks:spell_container": { data: [ ], maxSpells: 5, mustEquip: 1b, spellWheel: 1b } }, count: 1, id: "irons_spellbooks:copper_spell_book" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "2DF7A2D195BCD061"
+					type: "checkmark"
+				}
+			]
+			x: -7.92d
+			y: 1.8d
+		}
+		{
+			id: "0073C2F7430134A4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "330153815FD00B74"
+				item: { count: 1, id: "irons_spellbooks:inscription_table" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -5.76d
+			y: 1.8d
+		}
+		{
+			id: "4D9F4BA33E699492"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "03C21108E6268B31"
+				item: { count: 1, id: "irons_spellbooks:common_ink" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -3.6d
+			y: -0.36d
+		}
+		{
+			id: "32125F9B08DF7362"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "6252ECE955E06B36"
+				item: { count: 1, id: "irons_spellbooks:alchemist_cauldron" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.44d
+			y: -0.36d
+		}
+		{
+			id: "04AB598A4DAB8A96"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "538F205BF73F301E"
+				item: { count: 1, id: "irons_spellbooks:divine_pearl" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -3.6d
+			y: 3.96d
+		}
+		{
+			id: "5C6D58F631E9DF37"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "69DAB6931FBC0325"
+				item: { count: 1, id: "irons_spellbooks:scroll_forge" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.44d
+			y: 1.8d
+		}
+		{
+			id: "51456745FBEDB065"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "2DDB6C30388B4027"
+				item: { count: 1, id: "irons_spellbooks:arcane_anvil" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.44d
+			y: 1.8d
+		}
+		{
+			id: "698AEC1A0DECBF06"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "61B45EBF4C5D675C"
+					item: { count: 1, id: "irons_spellbooks:eldritch_manuscript" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "672A7D23DE6BDFCD"
+					type: "checkmark"
+				}
+			]
+			x: 1.44d
+			y: -1.8d
+		}
+		{
+			id: "5B89103DAD287FE7"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "0288C4D706D34C6D"
+				item: { count: 1, id: "irons_spellbooks:magic_cloth" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 3.6d
+			y: 3.96d
+		}
+		{
+			id: "30834E91069C3E62"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "33C6D3864756960F"
+				item: { count: 1, id: "irons_spellbooks:upgrade_orb" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 5.76d
+			y: 3.96d
+		}
+		{
+			id: "0536DA4F94000544"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "72DF78C63F950C41"
+				item: { count: 1, id: "irons_spellbooks:wayward_compass" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 7.92d
+			y: -1.35d
+		}
+		{
+			id: "42D0D871392A9B8C"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3EACF078B6FF4DF7"
+				type: "checkmark"
+			}]
+			x: 10.08d
+			y: -1.8d
+		}
+		{
+			id: "53A7627436815826"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "440EACA1FF99D73E"
+				item: { count: 1, id: "irons_spellbooks:graybeard_staff" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 3.6d
+			y: -3.96d
+		}
+		{
+			id: "56194D8D5BC578BC"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "6FBA24E6739B7DF3"
+				item: { count: 1, id: "irons_spellbooks:lesser_spell_slot_upgrade" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 5.76d
+			y: 1.8d
+		}
+	]
+}

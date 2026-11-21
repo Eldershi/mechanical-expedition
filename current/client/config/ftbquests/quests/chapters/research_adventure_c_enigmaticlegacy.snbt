@@ -4,7 +4,7 @@
 	title: "神秘遗物"
 	group: "25C542C40E64ED41"
 	order_index: 217
-	icon: "enigmaticlegacy:cursed_ring"
+	icon: { id: "enigmaticlegacyplus:cursed_ring" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -480,9 +480,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:62d0b720-80ba-5581-9a55-ac09bc2341d5"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:62d0b720-80ba-5581-9a55-ac09bc2341d5"
 		}
 		{
 			x: 2.4d
@@ -491,9 +491,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:1c9d51c1-36ee-55dd-9ef9-3a7f955917f1"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:1c9d51c1-36ee-55dd-9ef9-3a7f955917f1"
 		}
 		{
 			x: 6.24d
@@ -502,9 +502,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:20726377-5096-5fa1-81a9-5e9b6bcbc71e"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:20726377-5096-5fa1-81a9-5e9b6bcbc71e"
 		}
 		{
 			x: 8.16d
@@ -513,9 +513,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:50523452-e78d-5d5d-a11b-403561ff84df"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:50523452-e78d-5d5d-a11b-403561ff84df"
 		}
 		{
 			x: -3.06d
@@ -524,9 +524,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:fe006aac-9146-57c9-bd98-87b1fa80ca74"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:fe006aac-9146-57c9-bd98-87b1fa80ca74"
 		}
 		{
 			x: -2.25d
@@ -535,9 +535,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:f235ec40-e084-5346-8fe0-3ca63b4acad2"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:f235ec40-e084-5346-8fe0-3ca63b4acad2"
 		}
 		{
 			x: 2.4d
@@ -546,9 +546,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:6df5f852-5c1d-5b99-b3d0-1ffbd4fcf4b4"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:6df5f852-5c1d-5b99-b3d0-1ffbd4fcf4b4"
 		}
 		{
 			x: 3.36d
@@ -557,9 +557,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:8a6ddff3-fef4-556a-a5db-83e81b9fe2b6"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:8a6ddff3-fef4-556a-a5db-83e81b9fe2b6"
 		}
 		{
 			x: 3.36d
@@ -568,9 +568,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:ba45f308-75ce-5ce2-838c-e23a2becbcf4"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:ba45f308-75ce-5ce2-838c-e23a2becbcf4"
 		}
 		{
 			x: 5.28d
@@ -579,9 +579,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:f8e97b99-2022-5aac-a011-05d31f0881bf"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:f8e97b99-2022-5aac-a011-05d31f0881bf"
 		}
 		{
 			x: 4.32d
@@ -590,9 +590,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:d22d1c9a-2f4e-54b4-b2ce-7d8ed1100b38"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:d22d1c9a-2f4e-54b4-b2ce-7d8ed1100b38"
 		}
 		{
 			x: 7.2d
@@ -601,9 +601,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:e696d449-9d74-5980-9e05-16871a5b2a31"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:e696d449-9d74-5980-9e05-16871a5b2a31"
 		}
 	]
 }

@@ -1,0 +1,163 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "expedition_pneumatic_engineering"
+	group: "5B22564DA513617D"
+	icon: { id: "createcraftedbeginning:shaft_driven_airtight_pump" }
+	id: "7DC59300AC3CAD0D"
+	images: [ ]
+	order_index: 10
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "182C1BA2F09BE6B8"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "438FFD5C41311B51"
+					item: { count: 1, id: "createcraftedbeginning:airtight_sheet" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "1F6B08FD94ABEFC4"
+					item: { count: 1, id: "createcraftedbeginning:airtight_pipe" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2BEE0F17A9DDC0B5"
+					item: { count: 1, id: "createcraftedbeginning:airtight_tank" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "640E8175D771F636"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "63E5DABAB08AE77D"
+					item: { count: 1, id: "createcraftedbeginning:shaft_driven_airtight_pump" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "683419CEBC95C4D7"
+					item: { count: 1, id: "createcraftedbeginning:airtight_manometer" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "1E97C1A87CC1333D"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "2C754A8B05ECA223"
+					item: { count: 1, id: "createcraftedbeginning:gas_injection_chamber" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "5AC05BDDE7D1F69B"
+					item: { count: 1, id: "createcraftedbeginning:aerogel_block" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "6A1A6D8387F20213"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "3EAD0ABE872AB108"
+				item: { count: 1, id: "createcraftedbeginning:airtight_forging_press" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "77B13B6357A11DF2"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "0FD9B8BAACD88504"
+				item: { count: 1, id: "createcraftedbeginning:airtight_fractionation_tower_instrument_panel" }
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "6F8D3A266C859DD7"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "61CE5FD2CBBDBA07"
+					item: { count: 1, id: "createcraftedbeginning:airtight_regulator_pump" }
+					type: "item"
+				}
+				{
+					id: "3FD17975926A5E3F"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			id: "7134EF9810B8A728"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "7EAF70A4761BB0FF"
+				item: { count: 1, id: "cmi:air_tight_mechanism" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			id: "042E5572B4E4C2C6"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "626B4829633778A4"
+					item: { count: 1, id: "createcraftedbeginning:airtight_handheld_drill" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "398B959BE5C29FC2"
+					item: { count: 1, id: "createcraftedbeginning:airtight_chestplate" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+	]
+}

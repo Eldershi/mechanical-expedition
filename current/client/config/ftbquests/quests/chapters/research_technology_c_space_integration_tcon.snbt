@@ -4,7 +4,7 @@
 	title: "匠魂·熔炼与构件铸造"
 	group: "050255AE19A93344"
 	order_index: 28
-	icon: "tconstruct:smeltery_controller"
+	icon: { id: "modernfoundry:smeltery_controller" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -173,9 +173,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:fa3f8f75-0136-5ddb-bf03-b33aecedf23d"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:fa3f8f75-0136-5ddb-bf03-b33aecedf23d"
 		}
 		{
 			x: -2.833d
@@ -184,9 +184,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:389ebe7b-46e1-52c3-8cb2-e4d0a9a90dc0"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:389ebe7b-46e1-52c3-8cb2-e4d0a9a90dc0"
 		}
 	]
 	quest_enhance_decorative_lines: [

@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "start"
 	group: "6A6C7C5BAEF247E2"
-	icon: "minecraft:cooked_beef"
+	icon: { id: "minecraft:cooked_beef" }
 	id: "7CF1214F39DD4E53"
 	order_index: 0
 	quest_enhance_decorative_lines: [ ]

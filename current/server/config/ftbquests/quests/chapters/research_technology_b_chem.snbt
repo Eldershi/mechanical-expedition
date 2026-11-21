@@ -1,0 +1,298 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_technology_b_chem"
+	group: "050255AE19A93344"
+	icon: { id: "createdieselgenerators:plant_oil_bucket" }
+	id: "6DA994CA58CA24B6"
+	images: [
+		{
+			height: 0.0d
+			id: "52CF02F5182E0C64"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.0d
+			y: -1.3d
+			click_action: "none:quest_enhance:decorative_anchor:7b6f2bd3-0969-53ee-9788-49448f73ef1d"
+		}
+		{
+			height: 0.0d
+			id: "5BB181C9982B202D"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.0d
+			y: -0.3d
+			click_action: "none:quest_enhance:decorative_anchor:07ca374a-dbbd-52cd-bcde-0545e584923a"
+		}
+		{
+			height: 0.0d
+			id: "4BF408C7463ACE41"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 1.067d
+			y: -2.233d
+			click_action: "none:quest_enhance:decorative_anchor:6615a2fb-baab-5b4d-b49b-078aedcc2288"
+		}
+		{
+			height: 0.0d
+			id: "5158264968965F05"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 2.133d
+			y: -2.967d
+			click_action: "none:quest_enhance:decorative_anchor:ed9dedb1-afe7-5915-a889-ba9e04d8c435"
+		}
+		{
+			height: 0.0d
+			id: "4B0C9DC7EE5D2B48"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -5.0d
+			y: 2.333d
+			click_action: "none:quest_enhance:decorative_anchor:8bb0d15d-274e-5d48-8535-131a7a607576"
+		}
+		{
+			height: 0.0d
+			id: "605DD5F13629D935"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -4.0d
+			y: 2.767d
+			click_action: "none:quest_enhance:decorative_anchor:ab34307a-c7ec-5c36-8a41-eab0e802e875"
+		}
+	]
+	order_index: 16
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:4b531eb57a1dda7e"
+				"a:7b6f2bd3-0969-53ee-9788-49448f73ef1d"
+			]
+		}
+		{
+			nodes: [
+				"a:7b6f2bd3-0969-53ee-9788-49448f73ef1d"
+				"a:07ca374a-dbbd-52cd-bcde-0545e584923a"
+			]
+		}
+		{
+			nodes: [
+				"a:07ca374a-dbbd-52cd-bcde-0545e584923a"
+				"q:5b8fa1f319cacc"
+			]
+		}
+		{
+			nodes: [
+				"l:38608059c8fab519"
+				"q:5b8fa1f319cacc"
+			]
+		}
+		{
+			nodes: [
+				"l:38608059c8fab519"
+				"a:6615a2fb-baab-5b4d-b49b-078aedcc2288"
+			]
+		}
+		{
+			nodes: [
+				"a:6615a2fb-baab-5b4d-b49b-078aedcc2288"
+				"a:ed9dedb1-afe7-5915-a889-ba9e04d8c435"
+			]
+		}
+		{
+			nodes: [
+				"a:ed9dedb1-afe7-5915-a889-ba9e04d8c435"
+				"l:3d8d43985e7daafc"
+			]
+		}
+		{
+			nodes: [
+				"q:5b8fa1f319cacc"
+				"q:aa308545f06c1c8"
+			]
+		}
+		{
+			nodes: [
+				"q:5986e2e649e383cb"
+				"q:318a623aa4201313"
+			]
+		}
+		{
+			nodes: [
+				"q:318a623aa4201313"
+				"q:42f4f4e01a30fd2e"
+			]
+		}
+		{
+			nodes: [
+				"l:167b242e0223a884"
+				"l:9baa71a8fc15cbf"
+			]
+		}
+		{
+			nodes: [
+				"l:167b242e0223a884"
+				"a:8bb0d15d-274e-5d48-8535-131a7a607576"
+			]
+		}
+		{
+			nodes: [
+				"a:8bb0d15d-274e-5d48-8535-131a7a607576"
+				"a:ab34307a-c7ec-5c36-8a41-eab0e802e875"
+			]
+		}
+		{
+			nodes: [
+				"a:ab34307a-c7ec-5c36-8a41-eab0e802e875"
+				"q:318a623aa4201313"
+			]
+		}
+		{
+			nodes: [
+				"q:5986e2e649e383cb"
+				"q:425f3f780114bfe2"
+			]
+		}
+		{
+			nodes: [
+				"l:56874925a713c48f"
+				"q:425f3f780114bfe2"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "38608059C8FAB519"
+			linked_quest: "42F4F4E01A30FD2E"
+			shape: "rsquare"
+			size: 0.75d
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			id: "167B242E0223A884"
+			linked_quest: "2B95E0E6947D013C"
+			shape: "rsquare"
+			size: 0.75d
+			x: -6.0d
+			y: 1.9d
+		}
+		{
+			id: "3D8D43985E7DAAFC"
+			linked_quest: "0D3272D24BE1D820"
+			shape: "rsquare"
+			x: 3.2d
+			y: -3.7d
+		}
+		{
+			id: "09BAA71A8FC15CBF"
+			linked_quest: "3488FFB237CC3F8F"
+			shape: "rsquare"
+			x: -2.8d
+			y: 1.0d
+		}
+		{
+			id: "56874925A713C48F"
+			linked_quest: "304F1C5501224675"
+			shape: "rsquare"
+			x: -9.0d
+			y: 6.7d
+		}
+	]
+	quests: [
+		{
+			id: "4B531EB57A1DDA7E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "307361C38B269A94"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -2.3d
+		}
+		{
+			id: "005B8FA1F319CACC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "63DD4A4F6D9102C7"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.7d
+		}
+		{
+			id: "0AA308545F06C1C8"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0366F884E6598178"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.1d
+		}
+		{
+			id: "5986E2E649E383CB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "084F31A730AC0EB2"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 3.7d
+		}
+		{
+			id: "318A623AA4201313"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3DDA190A6B161A80"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 3.2d
+		}
+		{
+			id: "42F4F4E01A30FD2E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1E01DD9A3164782E"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.7d
+		}
+		{
+			id: "425F3F780114BFE2"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "4E286D76F8CA8FC5"
+					item: { count: 1, id: "immersiveengineering:cloche" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "1251E4C514B653DC"
+					type: "checkmark"
+				}
+			]
+			x: -6.0d
+			y: 6.7d
+		}
+	]
+}

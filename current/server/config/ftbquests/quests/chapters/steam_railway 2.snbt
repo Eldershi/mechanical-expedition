@@ -1,0 +1,1082 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "steam_railway"
+	group: "050255AE19A93344"
+	icon: { id: "create:track" }
+	id: "677DD93464AC2B4A"
+	images: [{
+		height: 0.65d
+		id: "672E802632CE0066"
+		image: ""
+		order: -1
+		quest_enhance_exclude_from_box_selection: 0b
+		rotation: 0.0d
+		width: 5.0d
+		x: 4.5d
+		y: 6.0d
+	}]
+	order_index: 4
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:aeff215c5117388"
+				"q:378abb98a55ba2e3"
+			]
+		}
+		{
+			nodes: [
+				"q:aeff215c5117388"
+				"q:7d26c75b37e9ae3"
+			]
+		}
+		{
+			nodes: [
+				"q:aeff215c5117388"
+				"q:692b244d4ff0ee25"
+			]
+		}
+		{
+			nodes: [
+				"q:aeff215c5117388"
+				"q:441c10c5e2ba7780"
+			]
+		}
+		{
+			nodes: [
+				"q:208fc6b5bdd873d1"
+				"q:6b44f5ae41dd6b11"
+			]
+		}
+		{
+			nodes: [
+				"q:208fc6b5bdd873d1"
+				"q:22bb90f2fcb162ec"
+			]
+		}
+		{
+			nodes: [
+				"q:208fc6b5bdd873d1"
+				"q:665d8d79fbc91652"
+			]
+		}
+		{
+			nodes: [
+				"q:208fc6b5bdd873d1"
+				"q:2f05f5d977dc68d8"
+			]
+		}
+		{
+			nodes: [
+				"q:5f7504c3edec39cf"
+				"q:2d859b6c17e7cad2"
+			]
+		}
+		{
+			nodes: [
+				"q:5f7504c3edec39cf"
+				"q:1a9b2360d38263ef"
+			]
+		}
+		{
+			nodes: [
+				"q:5f7504c3edec39cf"
+				"q:207f65a4593333d4"
+			]
+		}
+		{
+			nodes: [
+				"q:5f7504c3edec39cf"
+				"q:433a22d2dc60c1f2"
+			]
+		}
+		{
+			nodes: [
+				"q:5f7504c3edec39cf"
+				"q:5124d1a592099a19"
+			]
+		}
+		{
+			nodes: [
+				"q:5f7504c3edec39cf"
+				"q:204269b6dabec6df"
+			]
+		}
+		{
+			nodes: [
+				"q:2d859b6c17e7cad2"
+				"q:227a76a9a4a11830"
+			]
+		}
+		{
+			nodes: [
+				"q:1a9b2360d38263ef"
+				"q:7ac3d9cc2b6124dc"
+			]
+		}
+		{
+			nodes: [
+				"q:51cd6dc2e4fdb99d"
+				"q:403cded4f8522412"
+			]
+		}
+		{
+			nodes: [
+				"q:51cd6dc2e4fdb99d"
+				"q:7b30e00963a99fef"
+			]
+		}
+		{
+			nodes: [
+				"l:1aafc230060d7597"
+				"q:5f7504c3edec39cf"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [{
+		dependency: "q:6ba8d6727d497f84"
+		reveal_on_hover: 0b
+		source: "q:5f7504c3edec39cf"
+	}]
+	quest_links: [
+		{
+			id: "1AAFC230060D7597"
+			linked_quest: "6BA8D6727D497F84"
+			shape: "rsquare"
+			size: 0.85d
+			x: -6.5d
+			y: 11.0d
+		}
+		{
+			id: "5A8759B76A5FD19E"
+			linked_quest: "34EDF40537E8BAAA"
+			shape: "rsquare"
+			size: 0.85d
+			x: -6.5d
+			y: 9.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["52AE29C9BB2B6F00"]
+			id: "2F00DD29F68238BA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					count: 8L
+					id: "0401B1B216CBE1B4"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(c:ingots/bronze)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3DEAF74096E11288"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(c:ingots/brass)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2E72074B83610585"]
+			id: "52AE29C9BB2B6F00"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 32
+				id: "24C0DB749E0A69D4"
+				item: {
+					count: 1
+					id: "modernfoundry:seared_bricks"
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "16D1FB7A773FC1D3"
+					item: { count: 1, id: "modernfoundry:smeltery_controller" }
+					type: "item"
+				}
+				{
+					id: "6E127B51EF4A27C2"
+					item: { count: 1, id: "modernfoundry:seared_drain" }
+					type: "item"
+				}
+				{
+					id: "15A01D75567DD5E3"
+					item: { count: 1, id: "modernfoundry:seared_fuel_tank" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"2F00DD29F68238BA"
+				"25B06B6489D3FB78"
+			]
+			id: "6BA8D6727D497F84"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "1CDC107B76CE8F87"
+				item: { count: 1, id: "cmi:railway_mechanism" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2FE21275DACCE692"]
+			id: "25B06B6489D3FB78"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 16
+				id: "0464910DBDAA4482"
+				item: {
+					count: 1
+					id: "cmi:dense_sturdy_sheet"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "64F12B529477C62C"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:plates/dense_obsidian)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E72074B83610585"]
+			id: "2FE21275DACCE692"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 32
+				id: "507F84919276B4FE"
+				item: {
+					count: 1
+					id: "create:sturdy_sheet"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F61B9E8D79DAE69"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:plates/obsidian)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			id: "2E72074B83610585"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4AD5422AE72805BE"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6BA8D6727D497F84"]
+			id: "58F03784745D9151"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "711479A47664BDAF"
+				item: {
+					count: 1
+					id: "create:railway_casing"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					id: "3537A7A71306AEB3"
+					item: { count: 1, id: "railways:track_coupler" }
+					type: "item"
+				}
+				{
+					id: "03738EBAE6036F28"
+					item: { count: 1, id: "create:track_station" }
+					type: "item"
+				}
+				{
+					id: "156174D14A490237"
+					item: { count: 1, id: "create:controls" }
+					type: "item"
+				}
+				{
+					id: "6E111E41FCDEFEB3"
+					item: { count: 1, id: "create:track_observer" }
+					type: "item"
+				}
+				{
+					id: "723C1D283B51E406"
+					item: { count: 1, id: "create:track_signal" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2FE21275DACCE692"]
+			id: "7C2BCD18D1BCEEC9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "66467CCD076737AE"
+				item: { count: 1, id: "create:schedule" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"58F03784745D9151"
+				"7C2BCD18D1BCEEC9"
+			]
+			id: "211642A0702308A1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "723FC72D7D13485C"
+				type: "xp"
+				xp: 1000
+			}]
+			size: 1.5d
+			tasks: [
+				{
+					id: "74FBEEDABA81E015"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(c:raw_materials/nickel)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "6E8EBF2A961EB705"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(c:raw_materials/silver)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "5115E1CC1FF5B62F"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(c:raw_materials/vanadium)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "13BBFA00ADB7401E"
+					item: { count: 1, id: "create_rns:deposit_scanner" }
+					type: "item"
+				}
+			]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2F00DD29F68238BA"]
+			id: "5BB078BA5116FE68"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "76B962C480950865"
+				item: { count: 1, id: "cmi:bronze_mechanism" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5BB078BA5116FE68"]
+			id: "12CEF39F02D4EB3A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 4
+				id: "7A618DFA911C57B7"
+				item: {
+					count: 1
+					id: "steam_letters:bronze_steam_pump"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4188D3211B77A4ED"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(steam_letters:steam_burners)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "73460A5ACF421A19"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(steam_letters:steam_boiler)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["12CEF39F02D4EB3A"]
+			id: "5227B74E4F8FF3F5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "28B90C13460DB00E"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(steam_letters:steam_engine)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "09E2ACD94822D674"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(steam_letters:steam_flywheel)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: -4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5BB078BA5116FE68"]
+			id: "08A35C2D450B20F3"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "185850C08239F46F"
+				item: {
+					count: 1
+					id: "create:copper_diving_boots"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "07C1B9885D628609"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(create:diving_helmets)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "53DC99CD242CB111"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(create:backtanks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["08A35C2D450B20F3"]
+			id: "667B8EFCF3ACD51D"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "07D706292973EFF7"
+				type: "xp"
+				xp: 500
+			}]
+			shape: "square"
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				icon: {
+					id: "ftbquests:custom_icon"
+				}
+				id: "6421E2122AF59746"
+				type: "dimension"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["667B8EFCF3ACD51D"]
+			id: "2802F9503EB14965"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "48CBA68351FB5DCC"
+					item: { count: 1, id: "minecraft:magma_block" }
+					type: "item"
+				}
+				{
+					id: "5BBBEB9AF7A2FF30"
+					item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:soul_sand)item(minecraft:soul_soil))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "1679D021A6195D70"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(c:netherracks)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2802F9503EB14965"]
+			id: "470156018DA261F4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "48E5C9079BDE5D65"
+					item: { count: 1, id: "modernfoundry:nether_grout" }
+					type: "item"
+				}
+				{
+					id: "45779C24F77CF39B"
+					item: { count: 1, id: "modernfoundry:scorched_brick" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["470156018DA261F4"]
+			id: "4A19D6FEC975D2B9"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "1860BC767D34F109"
+				item: { count: 1, id: "cmi:nether_mechanism" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"4A19D6FEC975D2B9"
+				"470156018DA261F4"
+			]
+			id: "5095EB55709B5982"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "0ACE9A42022D1627"
+					item: {
+						count: 1
+						id: "modernfoundry:scorched_table"
+					}
+					type: "item"
+				}
+				{
+					id: "764E9AC4268F7A5F"
+					item: {
+						count: 1
+						id: "modernfoundry:scorched_basin"
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [
+				{
+					id: "7FCFDEC97D4EA032"
+					item: { count: 1, id: "modernfoundry:foundry_controller" }
+					type: "item"
+				}
+				{
+					id: "0990F9AD4BA20AE7"
+					item: { count: 1, id: "modernfoundry:scorched_fuel_tank" }
+					type: "item"
+				}
+				{
+					id: "1E7CFF434B0E7ED2"
+					item: { count: 1, id: "modernfoundry:scorched_drain" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "292C1DEECD13C109"
+					item: { count: 1, id: "modernfoundry:scorched_faucet" }
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4A19D6FEC975D2B9"]
+			id: "04004B46385E2AF2"
+			quest_enhance_disable_scroll_paging: false
+			size: 1.0d
+			tasks: [{
+				id: "01452F41DB130491"
+				item: { count: 1, id: "create:blaze_burner" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["12CEF39F02D4EB3A"]
+			id: "3D5497B8DC0ED5B6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4DA038AAA531C439"
+				item: { count: 1, id: "mekanism:steam_bucket" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			id: "354FD58AE7B802BC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "680C74AB729DB665"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:dusts/sulfur)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5BB078BA5116FE68"]
+			id: "78250BAEED3506BA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "67F40EB3F00CDCA9"
+				item: { count: 1, id: "vintageimprovements:vacuum_chamber" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			id: "4C2F1D5F0FAA50F3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3B1D5348B5A8BD6B"
+				item: { count: 1, id: "create:belt_connector" }
+				type: "item"
+			}]
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4C2F1D5F0FAA50F3"]
+			id: "74A6E21C20513CEE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "00AC5371336EC8A7"
+				item: { count: 1, id: "create:belt_connector" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["12CEF39F02D4EB3A"]
+			id: "3426EEB10B251CA4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3642624664D89610"
+				item: { components: { "ftbfiltersystem:filter": "or(item(steam_letters:bronze_solar_boiler)item(cmi:cast_iron_solar_boiler)item(cmi:steel_solar_boiler))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["470156018DA261F4"]
+			id: "7FDB7DDAD23BB4C1"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "2FBEBC159FA56453"
+					item: {
+						count: 1
+						id: "minecraft:hopper"
+					}
+					type: "item"
+				}
+				{
+					id: "17AF5E16E2872B4C"
+					item: {
+						count: 1
+						id: "minecraft:bucket"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 2.0d
+			tasks: [
+				{
+					id: "7A5EDFB0C09B56D0"
+					item: { count: 1, id: "immersiveengineering:coal_coke" }
+					type: "item"
+				}
+				{
+					id: "61965F521A26CFDB"
+					item: { count: 1, id: "immersiveengineering:hammer" }
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "32B585DBF2A2E6CF"
+					item: { count: 1, id: "immersiveengineering:cokebrick" }
+					type: "item"
+				}
+				{
+					count: 21L
+					id: "29AE0BA3AF66FA68"
+					item: { count: 1, id: "modernfoundry:seared_bricks" }
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "2E51BA5C723A8179"
+					item: { count: 1, id: "ad_astra:vent" }
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2F00DD29F68238BA"]
+			id: "6859E72B22446793"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 16
+				id: "44A5B6E611CDC265"
+				item: {
+					count: 1
+					id: "ad_astra:desh_fluid_pipe"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "46F43A21A7B02A32"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(ad_astra:fluid_pipes)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5227B74E4F8FF3F5"]
+			id: "23EED5BF56818EA1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3658B798B9DFED5C"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(cmi:steam_upgrades)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2F00DD29F68238BA"]
+			id: "371E3D200A96A15A"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				count: 2
+				id: "6036AA3DAC58D169"
+				item: {
+					count: 1
+					id: "steam_letters:bronze_steam_pump"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "70B628DA3C3EA151"
+				item: { count: 1, id: "steam_letters:bronze_steam_pump" }
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6BA8D6727D497F84"]
+			id: "5F7504C3EDEC39CF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "05C9015694188E93"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["5F7504C3EDEC39CF"]
+			id: "0AEFF215C5117388"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "4FB081837549270C"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 11.0d
+		}
+		{
+			dependencies: ["0AEFF215C5117388"]
+			id: "51CD6DC2E4FDB99D"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "49C2259F21B00F48"
+				type: "checkmark"
+			}]
+			x: 12.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["51CD6DC2E4FDB99D"]
+			id: "208FC6B5BDD873D1"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 1.3d
+			tasks: [{
+				id: "06635D499CDFED45"
+				type: "checkmark"
+			}]
+			x: 19.5d
+			y: 11.0d
+		}
+		{
+			id: "378ABB98A55BA2E3"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "4F13A11F9D2D2278"
+				type: "checkmark"
+			}]
+			x: 2.6d
+			y: 8.75d
+		}
+		{
+			id: "07D26C75B37E9AE3"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "3734BD6314437C43"
+				type: "checkmark"
+			}]
+			x: 2.6d
+			y: 13.25d
+		}
+		{
+			id: "692B244D4FF0EE25"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "683E8356E9BAF340"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 8.75d
+		}
+		{
+			id: "441C10C5E2BA7780"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "20628E5CA917A095"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 13.25d
+		}
+		{
+			id: "6B44F5AE41DD6B11"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "168055937C40EEE7"
+				type: "checkmark"
+			}]
+			x: 17.6d
+			y: 8.75d
+		}
+		{
+			id: "22BB90F2FCB162EC"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "4E85948EFB6353B7"
+				type: "checkmark"
+			}]
+			x: 17.6d
+			y: 13.25d
+		}
+		{
+			id: "665D8D79FBC91652"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "093E7384E36DAF54"
+				type: "checkmark"
+			}]
+			x: 19.5d
+			y: 8.75d
+		}
+		{
+			id: "2F05F5D977DC68D8"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "4714B6C718F9BD90"
+				type: "checkmark"
+			}]
+			x: 19.5d
+			y: 13.25d
+		}
+		{
+			id: "2D859B6C17E7CAD2"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "6B9D38A1F1146889"
+				type: "checkmark"
+			}]
+			x: -4.9d
+			y: 8.75d
+		}
+		{
+			id: "1A9B2360D38263EF"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "7A60FB94ABD1EB8F"
+				type: "checkmark"
+			}]
+			x: -4.9d
+			y: 13.25d
+		}
+		{
+			id: "207F65A4593333D4"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "287BEDBFF9AFA94B"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 8.75d
+		}
+		{
+			id: "433A22D2DC60C1F2"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "12071C42053EFEE4"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 13.25d
+		}
+		{
+			id: "5124D1A592099A19"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "7F2C0A5A5070148A"
+				type: "checkmark"
+			}]
+			x: -1.1d
+			y: 8.75d
+		}
+		{
+			id: "204269B6DABEC6DF"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "182DA72846AC518B"
+				type: "checkmark"
+			}]
+			x: -1.1d
+			y: 13.25d
+		}
+		{
+			id: "227A76A9A4A11830"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "0213AFA82A6DEB8E"
+				type: "checkmark"
+			}]
+			x: -4.9d
+			y: 7.5d
+		}
+		{
+			id: "7AC3D9CC2B6124DC"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "2545BDECFB22A5DE"
+				type: "checkmark"
+			}]
+			x: -4.9d
+			y: 14.5d
+		}
+		{
+			id: "403CDED4F8522412"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "0A119E33C91B3DD4"
+				type: "checkmark"
+			}]
+			x: 10.1d
+			y: 8.75d
+		}
+		{
+			id: "7B30E00963A99FEF"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "66BAED87ADAEFDF2"
+				type: "checkmark"
+			}]
+			x: 10.1d
+			y: 13.25d
+		}
+	]
+}

@@ -4,7 +4,7 @@
 	title: "禁忌与奥秘"
 	group: "25C542C40E64ED41"
 	order_index: 210
-	icon: "forbidden_arcanus:arcane_crystal"
+	icon: { id: "forbidden_arcanus:arcane_crystal" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -489,9 +489,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:77f6936a-72cc-5228-80b8-323e33acba38"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:77f6936a-72cc-5228-80b8-323e33acba38"
 		}
 		{
 			x: 0.12d
@@ -500,9 +500,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:6ce05d2d-d507-5ae5-820f-61f5e7476026"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:6ce05d2d-d507-5ae5-820f-61f5e7476026"
 		}
 		{
 			x: -0.84d
@@ -511,9 +511,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:5bacad9a-1383-5d80-b4e1-5e6225f7b491"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:5bacad9a-1383-5d80-b4e1-5e6225f7b491"
 		}
 		{
 			x: 3.0d
@@ -522,9 +522,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:8a054c63-6cd5-5481-99d4-38e81e20da85"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:8a054c63-6cd5-5481-99d4-38e81e20da85"
 		}
 		{
 			x: 2.52d
@@ -533,9 +533,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:fe4e2820-9b6f-52ea-b472-451e70ae5bb7"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:fe4e2820-9b6f-52ea-b472-451e70ae5bb7"
 		}
 		{
 			x: 4.68d
@@ -544,9 +544,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:0046c832-aaba-5cf4-8146-27249c785440"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:0046c832-aaba-5cf4-8146-27249c785440"
 		}
 	]
 }

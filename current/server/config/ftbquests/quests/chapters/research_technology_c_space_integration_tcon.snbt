@@ -1,0 +1,167 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_technology_c_space_integration_tcon"
+	group: "050255AE19A93344"
+	icon: { id: "modernfoundry:smeltery_controller" }
+	id: "6DE22E2401A87F38"
+	images: [
+		{
+			height: 0.0d
+			id: "4AC85156BB9F58C2"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -4.167d
+			y: -1.333d
+			click_action: "none:quest_enhance:decorative_anchor:fa3f8f75-0136-5ddb-bf03-b33aecedf23d"
+		}
+		{
+			height: 0.0d
+			id: "503ED831AB56436F"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.833d
+			y: -0.667d
+			click_action: "none:quest_enhance:decorative_anchor:389ebe7b-46e1-52c3-8cb2-e4d0a9a90dc0"
+		}
+	]
+	order_index: 19
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:5106bfe412f97876"
+				"a:fa3f8f75-0136-5ddb-bf03-b33aecedf23d"
+			]
+		}
+		{
+			nodes: [
+				"a:fa3f8f75-0136-5ddb-bf03-b33aecedf23d"
+				"a:389ebe7b-46e1-52c3-8cb2-e4d0a9a90dc0"
+			]
+		}
+		{
+			nodes: [
+				"a:389ebe7b-46e1-52c3-8cb2-e4d0a9a90dc0"
+				"q:565f6da622bfbc30"
+			]
+		}
+		{
+			nodes: [
+				"q:429a2f41dd0a74b2"
+				"q:565f6da622bfbc30"
+			]
+		}
+		{
+			nodes: [
+				"q:565f6da622bfbc30"
+				"q:11bc5a8010b39ae6"
+			]
+		}
+		{
+			nodes: [
+				"q:565f6da622bfbc30"
+				"q:5c55cea486cc3d23"
+			]
+		}
+		{
+			nodes: [
+				"q:565f6da622bfbc30"
+				"q:68d5ce15ffc27295"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5106BFE412F97876"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "48C200286A6BA6D9"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			id: "429A2F41DD0A74B2"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "153732FB30D62F2E"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			id: "565F6DA622BFBC30"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "224372C45233F307"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "11BC5A8010B39AE6"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "3450BBDB08EE6C23"
+				item: { count: 1, id: "cmi:mechanism_cast" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			id: "5C55CEA486CC3D23"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "676FDA4FF78B6BE4"
+				item: { count: 1, id: "create:sturdy_sheet" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			id: "68D5CE15FFC27295"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "2963BF7C37D4F157"
+				item: { count: 1, id: "modernfoundry:silky_cloth" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			id: "1D9F2C07149AB372"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "722AC3C45E6F6DA3"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+	]
+}

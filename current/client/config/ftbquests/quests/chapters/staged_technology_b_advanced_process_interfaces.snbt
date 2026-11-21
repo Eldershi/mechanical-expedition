@@ -4,7 +4,7 @@
 	title: "钨、卤水与跨体系材料接口"
 	group: "5B22564DA513617D"
 	order_index: 40
-	icon: "cmi:lithium_containing_electrolyte_bucket"
+	icon: { id: "cmi:lithium_containing_electrolyte_bucket" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -188,9 +188,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:63ac8b85-a4de-5e62-a43a-ab1005a59983"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:63ac8b85-a4de-5e62-a43a-ab1005a59983"
 		}
 		{
 			x: -1.0d
@@ -199,9 +199,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:c832298b-e370-5411-9e48-4ebc2f0d8a37"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:c832298b-e370-5411-9e48-4ebc2f0d8a37"
 		}
 		{
 			x: -3.0d
@@ -210,9 +210,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:739d49af-9be3-560c-8397-94c7060c9b16"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:739d49af-9be3-560c-8397-94c7060c9b16"
 		}
 		{
 			x: -3.0d
@@ -221,9 +221,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:4ce09c32-cec6-5d45-9432-d63569e6249b"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:4ce09c32-cec6-5d45-9432-d63569e6249b"
 		}
 	]
 	quest_enhance_decorative_lines: [

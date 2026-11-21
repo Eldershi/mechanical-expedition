@@ -1,7 +1,7 @@
 {
 	filename: "expedition_technology"
 	group: "050255AE19A93344"
-	icon: "cmi:smart_mechanism"
+	icon: { id: "cmi:smart_mechanism" }
 	id: "40C38D01CD30EB4A"
 	order_index: 0
 	title: "动力与工业基础总览"

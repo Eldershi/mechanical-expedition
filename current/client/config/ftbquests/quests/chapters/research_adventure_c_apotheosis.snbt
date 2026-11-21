@@ -4,7 +4,7 @@
 	title: "神化"
 	group: "25C542C40E64ED41"
 	order_index: 215
-	icon: "apotheosis:salvaging_table"
+	icon: { id: "apotheosis:salvaging_table" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -327,9 +327,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:ce74327c-1b11-5825-ad19-d69895f816d1"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:ce74327c-1b11-5825-ad19-d69895f816d1"
 		}
 		{
 			x: 0.24d
@@ -338,9 +338,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:0012c056-9d4a-55c7-bc31-952e7c1a0320"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:0012c056-9d4a-55c7-bc31-952e7c1a0320"
 		}
 		{
 			x: -3.84d
@@ -349,9 +349,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:dada212e-3bcc-5711-93e1-c5fab2dc0854"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:dada212e-3bcc-5711-93e1-c5fab2dc0854"
 		}
 		{
 			x: -1.92d
@@ -360,9 +360,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:41d0ec29-56f8-5f5d-bbea-375f36b42186"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:41d0ec29-56f8-5f5d-bbea-375f36b42186"
 		}
 		{
 			x: -2.88d
@@ -371,9 +371,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:ca096e43-a4f0-5d83-b763-45d44a2f96fe"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:ca096e43-a4f0-5d83-b763-45d44a2f96fe"
 		}
 		{
 			x: 0.0d
@@ -382,9 +382,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:ae64c069-d53f-5303-bd49-8f30c29e4ea9"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:ae64c069-d53f-5303-bd49-8f30c29e4ea9"
 		}
 	]
 }

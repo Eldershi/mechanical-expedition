@@ -1,0 +1,414 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_adventure_a_undergarden"
+	group: "54D4CAA40ADB5408"
+	icon: { id: "undergarden:catalyst" }
+	id: "2F11ADFF254F3B36"
+	images: [
+		{
+			height: 0.0d
+			id: "07B167CAFB1748D8"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.72d
+			y: 0.0d
+			click_action: "none:quest_enhance:decorative_anchor:891026f0-93a0-5b90-8fb9-12e4d1d412b5"
+		}
+		{
+			height: 0.0d
+			id: "76117E54481601ED"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.76d
+			y: 0.0d
+			click_action: "none:quest_enhance:decorative_anchor:0ef7bc2f-0422-5f67-ae49-051f14612af5"
+		}
+		{
+			height: 0.0d
+			id: "6A94EE9AB285744B"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.72d
+			y: -0.72d
+			click_action: "none:quest_enhance:decorative_anchor:308a8efc-e312-531d-9a55-8d223cb7de4e"
+		}
+		{
+			height: 0.0d
+			id: "48A4812E0F0573A9"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.76d
+			y: -1.44d
+			click_action: "none:quest_enhance:decorative_anchor:f6f76185-2f10-5ebb-a7ad-cc48969e45b2"
+		}
+		{
+			height: 0.0d
+			id: "4FA7C063AB829919"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.87d
+			y: 0.72d
+			click_action: "none:quest_enhance:decorative_anchor:ff54fad8-de61-5122-871d-117a9dc66f0e"
+		}
+		{
+			height: 0.0d
+			id: "3CB9F24618C2B350"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.06d
+			y: 1.44d
+			click_action: "none:quest_enhance:decorative_anchor:1c68d7a4-3ad9-50ee-9c11-2921f9e802d8"
+		}
+		{
+			height: 0.0d
+			id: "5356E9050148A99A"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.76d
+			y: 0.96d
+			click_action: "none:quest_enhance:decorative_anchor:f1542e5c-744b-50d0-aa76-c489d601cb97"
+		}
+		{
+			height: 0.0d
+			id: "614CEC9C4425B851"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.84d
+			y: 1.92d
+			click_action: "none:quest_enhance:decorative_anchor:03d2514c-c371-5fdc-969b-04c92485dcdd"
+		}
+		{
+			height: 0.0d
+			id: "3CE20D38BC0413D3"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.72d
+			y: 1.44d
+			click_action: "none:quest_enhance:decorative_anchor:dd012224-cbfb-52f2-b0ae-1a9fa9c3c73c"
+		}
+		{
+			height: 0.0d
+			id: "70F932E496E2B2EA"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.76d
+			y: 2.88d
+			click_action: "none:quest_enhance:decorative_anchor:0215d5cc-56a2-56f7-b32d-54a0c06f8328"
+		}
+		{
+			height: 0.0d
+			id: "55B31DEBCC2C94B8"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 1.08d
+			y: 0.0d
+			click_action: "none:quest_enhance:decorative_anchor:63adc29e-2850-54bb-85b5-d1103efb65f9"
+		}
+		{
+			height: 0.0d
+			id: "401721C6DC78A020"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 3.96d
+			y: 0.0d
+			click_action: "none:quest_enhance:decorative_anchor:6ba59ed5-e708-5d32-9caa-21bf27f387c6"
+		}
+	]
+	order_index: 5
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:5df8edf19d9cf5c6"
+				"a:63adc29e-2850-54bb-85b5-d1103efb65f9"
+			]
+		}
+		{
+			nodes: [
+				"a:63adc29e-2850-54bb-85b5-d1103efb65f9"
+				"a:6ba59ed5-e708-5d32-9caa-21bf27f387c6"
+			]
+		}
+		{
+			nodes: [
+				"a:6ba59ed5-e708-5d32-9caa-21bf27f387c6"
+				"q:426a129224e7e319"
+			]
+		}
+		{
+			nodes: [
+				"q:544b7d0c7ee32271"
+				"q:426a129224e7e319"
+			]
+		}
+		{
+			nodes: [
+				"q:7b510a34a8c583a2"
+				"q:663e187af9378e3e"
+			]
+		}
+		{
+			nodes: [
+				"q:663e187af9378e3e"
+				"a:dd012224-cbfb-52f2-b0ae-1a9fa9c3c73c"
+			]
+		}
+		{
+			nodes: [
+				"a:dd012224-cbfb-52f2-b0ae-1a9fa9c3c73c"
+				"a:0215d5cc-56a2-56f7-b32d-54a0c06f8328"
+			]
+		}
+		{
+			nodes: [
+				"a:0215d5cc-56a2-56f7-b32d-54a0c06f8328"
+				"q:279f9f3c1df9a196"
+			]
+		}
+		{
+			nodes: [
+				"q:663e187af9378e3e"
+				"q:2ade3f2fdc13253d"
+			]
+		}
+		{
+			nodes: [
+				"q:663e187af9378e3e"
+				"a:891026f0-93a0-5b90-8fb9-12e4d1d412b5"
+			]
+		}
+		{
+			nodes: [
+				"a:891026f0-93a0-5b90-8fb9-12e4d1d412b5"
+				"a:0ef7bc2f-0422-5f67-ae49-051f14612af5"
+			]
+		}
+		{
+			nodes: [
+				"a:0ef7bc2f-0422-5f67-ae49-051f14612af5"
+				"q:5df8edf19d9cf5c6"
+			]
+		}
+		{
+			nodes: [
+				"q:663e187af9378e3e"
+				"a:308a8efc-e312-531d-9a55-8d223cb7de4e"
+			]
+		}
+		{
+			nodes: [
+				"a:308a8efc-e312-531d-9a55-8d223cb7de4e"
+				"a:f6f76185-2f10-5ebb-a7ad-cc48969e45b2"
+			]
+		}
+		{
+			nodes: [
+				"a:f6f76185-2f10-5ebb-a7ad-cc48969e45b2"
+				"q:5636484d8e227ae3"
+			]
+		}
+		{
+			nodes: [
+				"q:663e187af9378e3e"
+				"a:ff54fad8-de61-5122-871d-117a9dc66f0e"
+			]
+		}
+		{
+			nodes: [
+				"a:ff54fad8-de61-5122-871d-117a9dc66f0e"
+				"a:1c68d7a4-3ad9-50ee-9c11-2921f9e802d8"
+			]
+		}
+		{
+			nodes: [
+				"a:1c68d7a4-3ad9-50ee-9c11-2921f9e802d8"
+				"q:409a7223c28b75d5"
+			]
+		}
+		{
+			nodes: [
+				"q:663e187af9378e3e"
+				"a:f1542e5c-744b-50d0-aa76-c489d601cb97"
+			]
+		}
+		{
+			nodes: [
+				"a:f1542e5c-744b-50d0-aa76-c489d601cb97"
+				"a:03d2514c-c371-5fdc-969b-04c92485dcdd"
+			]
+		}
+		{
+			nodes: [
+				"a:03d2514c-c371-5fdc-969b-04c92485dcdd"
+				"q:1b82025c25c6156"
+			]
+		}
+		{
+			nodes: [
+				"q:1b82025c25c6156"
+				"q:544b7d0c7ee32271"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7B510A34A8C583A2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "6B7BCF2A309BAE72"
+				item: { count: 1, id: "undergarden:catalyst" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -6.84d
+			y: 0.0d
+		}
+		{
+			id: "663E187AF9378E3E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "undergarden:undergarden/enter_undergarden"
+				criterion: ""
+				id: "3EF7C8D1F5712859"
+				type: "advancement"
+			}]
+			x: -4.68d
+			y: 0.0d
+		}
+		{
+			id: "2ADE3F2FDC13253D"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "1A7C0380F0D88EFE"
+				item: { count: 1, id: "undergarden:gloomgourd_pie" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.8d
+			y: -4.32d
+		}
+		{
+			id: "5DF8EDF19D9CF5C6"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "1AD0D92572781482"
+				item: { count: 1, id: "undergarden:cloggrum_pickaxe" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.8d
+			y: 0.0d
+		}
+		{
+			id: "5636484D8E227AE3"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "67CBBC4F983C7D2C"
+				item: { count: 1, id: "undergarden:utherium_crystal" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.8d
+			y: -2.16d
+		}
+		{
+			id: "409A7223C28B75D5"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "undergarden:undergarden/stoneborn_trade"
+				criterion: ""
+				id: "3F3EC051C9ACDC12"
+				type: "advancement"
+			}]
+			x: -2.25d
+			y: 2.16d
+		}
+		{
+			id: "01B82025C25C6156"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "undergarden:undergarden/kill_forgotten_guardian"
+				criterion: ""
+				id: "1618163F37BAED18"
+				type: "advancement"
+			}]
+			x: 1.08d
+			y: 2.88d
+		}
+		{
+			id: "544B7D0C7EE32271"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "58807E4B815CEB9C"
+				item: { count: 1, id: "undergarden:forgotten_ingot" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 3.96d
+			y: 2.88d
+		}
+		{
+			id: "426A129224E7E319"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "6156D6C8E701A077"
+				item: { count: 1, id: "undergarden:forgotten_pickaxe" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 6.84d
+			y: 0.0d
+		}
+		{
+			id: "279F9F3C1DF9A196"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "undergarden:undergarden/shoot_slingshot"
+				criterion: ""
+				id: "58292F4316885F0C"
+				type: "advancement"
+			}]
+			x: -1.8d
+			y: 4.32d
+		}
+	]
+}

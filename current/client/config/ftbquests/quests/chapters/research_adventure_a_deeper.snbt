@@ -4,7 +4,7 @@
 	title: "Deeper and Darker"
 	group: "54D4CAA40ADB5408"
 	order_index: 205
-	icon: "minecraft:deepslate_tiles"
+	icon: { id: "minecraft:deepslate_tiles" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -388,9 +388,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:d4c2bd70-5f0d-52aa-81ab-c4fbb67a11cd"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:d4c2bd70-5f0d-52aa-81ab-c4fbb67a11cd"
 		}
 		{
 			x: -5.28d
@@ -399,9 +399,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:00a516d8-2f1f-53a4-ba32-f33aa986b173"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:00a516d8-2f1f-53a4-ba32-f33aa986b173"
 		}
 		{
 			x: -1.44d
@@ -410,9 +410,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:95428cb8-0e6a-51fe-8e8e-a6f812bc0e0e"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:95428cb8-0e6a-51fe-8e8e-a6f812bc0e0e"
 		}
 		{
 			x: 1.44d
@@ -421,9 +421,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:5f83089e-fde8-5b73-b31d-039c6cbfb121"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:5f83089e-fde8-5b73-b31d-039c6cbfb121"
 		}
 		{
 			x: -0.48d
@@ -432,9 +432,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:b9c7be76-162f-507a-9923-3217a5e04e32"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:b9c7be76-162f-507a-9923-3217a5e04e32"
 		}
 		{
 			x: 0.48d
@@ -443,9 +443,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:b3dee93c-a51b-5db7-8cac-599b9282ef98"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:b3dee93c-a51b-5db7-8cac-599b9282ef98"
 		}
 		{
 			x: 0.48d
@@ -454,9 +454,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:34a4aebb-7b98-5eb8-8a92-bda648b3be3f"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:34a4aebb-7b98-5eb8-8a92-bda648b3be3f"
 		}
 		{
 			x: 2.4d
@@ -465,9 +465,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:1390c76e-f712-5d68-b1a3-737c68279b74"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:1390c76e-f712-5d68-b1a3-737c68279b74"
 		}
 		{
 			x: 2.4d
@@ -476,9 +476,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:f69a97ae-ee45-55c3-8aa0-98f08ec64a99"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:f69a97ae-ee45-55c3-8aa0-98f08ec64a99"
 		}
 		{
 			x: 3.36d
@@ -487,9 +487,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:15cd2afd-0fb6-5f49-a1d2-564caac0e2a7"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:15cd2afd-0fb6-5f49-a1d2-564caac0e2a7"
 		}
 	]
 }

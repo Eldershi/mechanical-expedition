@@ -1,0 +1,168 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "expedition_technology"
+	group: "050255AE19A93344"
+	icon: { id: "cmi:smart_mechanism" }
+	id: "40C38D01CD30EB4A"
+	images: [ ]
+	order_index: 0
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"l:52b4177464ab2c81"
+				"q:49fac7f5b7f68763"
+			]
+		}
+		{
+			nodes: [
+				"q:49fac7f5b7f68763"
+				"q:4cd9e4503188c96b"
+			]
+		}
+		{
+			nodes: [
+				"q:49fac7f5b7f68763"
+				"q:7572ae4030d628d"
+			]
+		}
+		{
+			nodes: [
+				"q:4cd9e4503188c96b"
+				"l:14ed8f8eeb1fa0df"
+			]
+		}
+		{
+			nodes: [
+				"l:790c282aafee617a"
+				"q:7572ae4030d628d"
+			]
+		}
+		{
+			nodes: [
+				"l:77444406b0fc7c97"
+				"q:61a447533be35575"
+			]
+		}
+		{
+			nodes: [
+				"q:7572ae4030d628d"
+				"q:fbc53bee0ab7a92"
+			]
+		}
+		{
+			nodes: [
+				"q:fbc53bee0ab7a92"
+				"l:6ca4b2611d5726cd"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "52B4177464AB2C81"
+			linked_quest: "7B0B079E71A7815D"
+			shape: "rsquare"
+			x: -12.0d
+			y: -1.0d
+		}
+		{
+			id: "14ED8F8EEB1FA0DF"
+			linked_quest: "211642A0702308A1"
+			shape: "rsquare"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			id: "790C282AAFEE617A"
+			linked_quest: "1570B04A1D692BCC"
+			shape: "rsquare"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			id: "77444406B0FC7C97"
+			linked_quest: "304F1C5501224675"
+			shape: "rsquare"
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			id: "6CA4B2611D5726CD"
+			linked_quest: "54B7DF3F4B9BD3A4"
+			shape: "rsquare"
+			x: 10.0d
+			y: 2.0d
+		}
+	]
+	quests: [
+		{
+			id: "49FAC7F5B7F68763"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "2079063D8FF2FDFC"
+				item: { count: 1, id: "cmi:bronze_mechanism" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			id: "4CD9E4503188C96B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "3DFB21B9F171873E"
+				item: { count: 1, id: "cmi:railway_mechanism" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			id: "07572AE4030D628D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "332EC328297C9EAE"
+				item: { count: 1, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			id: "0FBC53BEE0AB7A92"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "4F45594E2146AE63"
+					item: { count: 1, id: "cmi:pig_iron_mechanism" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7AC6D2A0C3AA1702"
+					item: { count: 1, id: "cmi:smart_mechanism" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			id: "61A447533BE35575"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "5B8EE81878232AC4"
+				item: { count: 1, id: "cmi:coil_mechanism" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+	]
+}

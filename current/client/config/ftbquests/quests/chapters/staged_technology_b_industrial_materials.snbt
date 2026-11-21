@@ -4,7 +4,7 @@
 	title: "工业合金与锇材料"
 	group: "5B22564DA513617D"
 	order_index: 39
-	icon: "cmi:pure_semi_molten_osmium"
+	icon: { id: "cmi:pure_semi_molten_osmium" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false

@@ -1,0 +1,427 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_adventure_a_deeper"
+	group: "54D4CAA40ADB5408"
+	icon: { id: "minecraft:deepslate_tiles" }
+	id: "1B845BB91FBFEE08"
+	images: [
+		{
+			height: 0.0d
+			id: "296642FBAB84BC99"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -6.24d
+			y: -0.84d
+			click_action: "none:quest_enhance:decorative_anchor:d4c2bd70-5f0d-52aa-81ab-c4fbb67a11cd"
+		}
+		{
+			height: 0.0d
+			id: "1D17C68139AEC876"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -5.28d
+			y: -0.6d
+			click_action: "none:quest_enhance:decorative_anchor:00a516d8-2f1f-53a4-ba32-f33aa986b173"
+		}
+		{
+			height: 0.0d
+			id: "4C958218A743FA26"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -1.44d
+			y: -0.84d
+			click_action: "none:quest_enhance:decorative_anchor:95428cb8-0e6a-51fe-8e8e-a6f812bc0e0e"
+		}
+		{
+			height: 0.0d
+			id: "119FBAD70F02D3FE"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 1.44d
+			y: -1.32d
+			click_action: "none:quest_enhance:decorative_anchor:5f83089e-fde8-5b73-b31d-039c6cbfb121"
+		}
+		{
+			height: 0.0d
+			id: "543EAFF69FDF8A31"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.48d
+			y: 1.38d
+			click_action: "none:quest_enhance:decorative_anchor:b9c7be76-162f-507a-9923-3217a5e04e32"
+		}
+		{
+			height: 0.0d
+			id: "631EA5C182838AEF"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.48d
+			y: 2.67d
+			click_action: "none:quest_enhance:decorative_anchor:b3dee93c-a51b-5db7-8cac-599b9282ef98"
+		}
+		{
+			height: 0.0d
+			id: "5C9FA13BCEC373D1"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.48d
+			y: 1.38d
+			click_action: "none:quest_enhance:decorative_anchor:34a4aebb-7b98-5eb8-8a92-bda648b3be3f"
+		}
+		{
+			height: 0.0d
+			id: "0682DD81E5C6FE2F"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 2.4d
+			y: 2.67d
+			click_action: "none:quest_enhance:decorative_anchor:1390c76e-f712-5d68-b1a3-737c68279b74"
+		}
+		{
+			height: 0.0d
+			id: "5FBAD5FE01C0F250"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 2.4d
+			y: 0.12d
+			click_action: "none:quest_enhance:decorative_anchor:f69a97ae-ee45-55c3-8aa0-98f08ec64a99"
+		}
+		{
+			height: 0.0d
+			id: "113C3BC95D42E4AC"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 3.36d
+			y: 0.6d
+			click_action: "none:quest_enhance:decorative_anchor:15cd2afd-0fb6-5f49-a1d2-564caac0e2a7"
+		}
+	]
+	order_index: 6
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:64fcb0158e732acc"
+				"q:1bfe6ec55d7dbc89"
+			]
+		}
+		{
+			nodes: [
+				"q:1bfe6ec55d7dbc89"
+				"q:34fb355e9043a77f"
+			]
+		}
+		{
+			nodes: [
+				"q:5b73199e5be015c9"
+				"a:95428cb8-0e6a-51fe-8e8e-a6f812bc0e0e"
+			]
+		}
+		{
+			nodes: [
+				"a:95428cb8-0e6a-51fe-8e8e-a6f812bc0e0e"
+				"a:5f83089e-fde8-5b73-b31d-039c6cbfb121"
+			]
+		}
+		{
+			nodes: [
+				"a:5f83089e-fde8-5b73-b31d-039c6cbfb121"
+				"q:5729558e548f92de"
+			]
+		}
+		{
+			nodes: [
+				"q:5b73199e5be015c9"
+				"q:7c2109a64dcb4434"
+			]
+		}
+		{
+			nodes: [
+				"q:4201acdebb816d41"
+				"q:5729558e548f92de"
+			]
+		}
+		{
+			nodes: [
+				"q:4201acdebb816d41"
+				"a:f69a97ae-ee45-55c3-8aa0-98f08ec64a99"
+			]
+		}
+		{
+			nodes: [
+				"a:f69a97ae-ee45-55c3-8aa0-98f08ec64a99"
+				"a:15cd2afd-0fb6-5f49-a1d2-564caac0e2a7"
+			]
+		}
+		{
+			nodes: [
+				"a:15cd2afd-0fb6-5f49-a1d2-564caac0e2a7"
+				"q:5bb6dbb951e2cfbe"
+			]
+		}
+		{
+			nodes: [
+				"q:128ca1573d988d2a"
+				"q:64fcb0158e732acc"
+			]
+		}
+		{
+			nodes: [
+				"q:128ca1573d988d2a"
+				"a:d4c2bd70-5f0d-52aa-81ab-c4fbb67a11cd"
+			]
+		}
+		{
+			nodes: [
+				"a:d4c2bd70-5f0d-52aa-81ab-c4fbb67a11cd"
+				"a:00a516d8-2f1f-53a4-ba32-f33aa986b173"
+			]
+		}
+		{
+			nodes: [
+				"a:00a516d8-2f1f-53a4-ba32-f33aa986b173"
+				"q:5b73199e5be015c9"
+			]
+		}
+		{
+			nodes: [
+				"q:7c2109a64dcb4434"
+				"q:4201acdebb816d41"
+			]
+		}
+		{
+			nodes: [
+				"q:7c2109a64dcb4434"
+				"a:b9c7be76-162f-507a-9923-3217a5e04e32"
+			]
+		}
+		{
+			nodes: [
+				"a:b9c7be76-162f-507a-9923-3217a5e04e32"
+				"a:b3dee93c-a51b-5db7-8cac-599b9282ef98"
+			]
+		}
+		{
+			nodes: [
+				"a:b3dee93c-a51b-5db7-8cac-599b9282ef98"
+				"q:81e19c65eed0173"
+			]
+		}
+		{
+			nodes: [
+				"q:7c2109a64dcb4434"
+				"a:34a4aebb-7b98-5eb8-8a92-bda648b3be3f"
+			]
+		}
+		{
+			nodes: [
+				"a:34a4aebb-7b98-5eb8-8a92-bda648b3be3f"
+				"a:1390c76e-f712-5d68-b1a3-737c68279b74"
+			]
+		}
+		{
+			nodes: [
+				"a:1390c76e-f712-5d68-b1a3-737c68279b74"
+				"q:211da1dafa317540"
+			]
+		}
+		{
+			nodes: [
+				"q:211da1dafa317540"
+				"q:3c8f937707ce590a"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "128CA1573D988D2A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "deeperdarker:main/find_ancient_city"
+				criterion: ""
+				id: "4C98E1DF0A0590B1"
+				type: "advancement"
+			}]
+			x: -7.2d
+			y: -1.08d
+		}
+		{
+			id: "64FCB0158E732ACC"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "3C091AE3D8F7E7D1"
+				item: { count: 1, id: "deeperdarker:warden_carapace" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.32d
+			y: -3.96d
+		}
+		{
+			id: "1BFE6EC55D7DBC89"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "0C5C5A27C779C8EA"
+				item: { count: 1, id: "deeperdarker:reinforced_echo_shard" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.44d
+			y: -3.96d
+		}
+		{
+			id: "34FB355E9043A77F"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "54A8FDE5D1E1C80B"
+				item: { count: 1, id: "deeperdarker:warden_helmet" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.44d
+			y: -3.96d
+		}
+		{
+			id: "5B73199E5BE015C9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "65889CC233F04215"
+				item: { count: 1, id: "deeperdarker:heart_of_the_deep" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.32d
+			y: -0.36d
+		}
+		{
+			id: "7C2109A64DCB4434"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "deeperdarker:main/enter_otherside"
+				criterion: ""
+				id: "1349DAA9BE2F869B"
+				type: "advancement"
+			}]
+			x: -1.44d
+			y: 0.09d
+		}
+		{
+			id: "4201ACDEBB816D41"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "74A257BA315A5929"
+				item: { count: 1, id: "deeperdarker:sculk_bone" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.44d
+			y: -0.36d
+		}
+		{
+			id: "5729558E548F92DE"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "36C5B74EB52BE633"
+				item: { count: 1, id: "deeperdarker:sonorous_staff" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 4.32d
+			y: -1.8d
+		}
+		{
+			id: "5BB6DBB951E2CFBE"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "00B0BE2F82828F19"
+				item: { count: 1, id: "deeperdarker:soul_elytra" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 4.32d
+			y: 1.08d
+		}
+		{
+			id: "081E19C65EED0173"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "3C5079F2AE7910BE"
+				item: { count: 1, id: "deeperdarker:resonarium_plate" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.44d
+			y: 3.96d
+		}
+		{
+			id: "211DA1DAFA317540"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "deeperdarker:main/find_ancient_temple"
+				criterion: ""
+				id: "6C84C7FFBA3AF43E"
+				type: "advancement"
+			}]
+			x: 4.32d
+			y: 3.96d
+		}
+		{
+			id: "3C8F937707CE590A"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					advancement: "deeperdarker:main/obtain_sculk_transmitter"
+					criterion: ""
+					id: "22DF26533E935569"
+					type: "advancement"
+				}
+				{
+					id: "6BCBA7AF52DE3747"
+					type: "checkmark"
+				}
+			]
+			x: 7.2d
+			y: 3.96d
+		}
+	]
+}

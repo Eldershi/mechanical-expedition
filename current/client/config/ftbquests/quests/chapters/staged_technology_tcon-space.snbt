@@ -4,7 +4,7 @@
 	title: "匠魂·行星材料与太空强化"
 	group: "3346A01E0EAFD002"
 	order_index: 49
-	icon: "minecraft:book"
+	icon: { id: "minecraft:book" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false

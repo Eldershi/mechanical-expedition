@@ -4,7 +4,7 @@
 	title: "航天·行星资源与基地"
 	group: "3346A01E0EAFD002"
 	order_index: 48
-	icon: "ad_astra:raw_desh"
+	icon: { id: "ad_astra:raw_desh" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -469,9 +469,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:2efd8e52-8521-53a4-bfac-84f013a19494"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:2efd8e52-8521-53a4-bfac-84f013a19494"
 		}
 		{
 			x: -2.5d
@@ -480,9 +480,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:d1774f1b-ab70-5f40-8783-1eb89d7139ba"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:d1774f1b-ab70-5f40-8783-1eb89d7139ba"
 		}
 		{
 			x: 6.5d
@@ -491,9 +491,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:8a3cf0eb-e9c2-5204-b2c4-84753b269349"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:8a3cf0eb-e9c2-5204-b2c4-84753b269349"
 		}
 		{
 			x: 5.5d
@@ -502,9 +502,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:f4801998-b94d-59ca-a7d8-e1abbf5c8542"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:f4801998-b94d-59ca-a7d8-e1abbf5c8542"
 		}
 		{
 			x: 8.5d
@@ -513,9 +513,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:e058b500-e3c9-5601-b159-724b06dbfa03"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:e058b500-e3c9-5601-b159-724b06dbfa03"
 		}
 		{
 			x: 9.5d
@@ -524,9 +524,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:16825a97-b845-5449-8f44-1ac36a585d9c"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:16825a97-b845-5449-8f44-1ac36a585d9c"
 		}
 		{
 			x: 2.5d
@@ -535,9 +535,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:974d0582-5c93-55b3-86b6-13cdc83378ab"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:974d0582-5c93-55b3-86b6-13cdc83378ab"
 		}
 		{
 			x: 3.5d
@@ -546,9 +546,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:fd6be62a-b786-5135-86cb-60afe0c405bf"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:fd6be62a-b786-5135-86cb-60afe0c405bf"
 		}
 		{
 			x: 8.5d
@@ -557,9 +557,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:7ef97585-f2ed-5dbc-aa38-73c287b3a813"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:7ef97585-f2ed-5dbc-aa38-73c287b3a813"
 		}
 		{
 			x: 9.5d
@@ -568,9 +568,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:679cd0de-0aa9-5519-987b-e100b2340b3a"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:679cd0de-0aa9-5519-987b-e100b2340b3a"
 		}
 	]
 	quest_enhance_decorative_lines: [

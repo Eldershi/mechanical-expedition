@@ -1,0 +1,208 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_technology_b_heavy"
+	group: "050255AE19A93344"
+	icon: { id: "immersiveengineering:workbench" }
+	id: "07C1A0BCC828E598"
+	images: [
+		{
+			height: 0.0d
+			id: "3A6DED2D092C7C60"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.4d
+			y: -0.967d
+			click_action: "none:quest_enhance:decorative_anchor:de20b5de-c4aa-567c-b984-f6c2e60cbb48"
+		}
+		{
+			height: 0.0d
+			id: "1C05ECAA3BD0B2BA"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.4d
+			y: -2.133d
+			click_action: "none:quest_enhance:decorative_anchor:bf0fd1aa-8878-56c5-939b-567d96cdcafc"
+		}
+	]
+	order_index: 15
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"l:19c1dd7619c14586"
+				"q:3488ffb237cc3f8f"
+			]
+		}
+		{
+			nodes: [
+				"q:53ba140c34cdcb15"
+				"a:de20b5de-c4aa-567c-b984-f6c2e60cbb48"
+			]
+		}
+		{
+			nodes: [
+				"a:de20b5de-c4aa-567c-b984-f6c2e60cbb48"
+				"a:bf0fd1aa-8878-56c5-939b-567d96cdcafc"
+			]
+		}
+		{
+			nodes: [
+				"a:bf0fd1aa-8878-56c5-939b-567d96cdcafc"
+				"l:7581633a71d6f302"
+			]
+		}
+		{
+			nodes: [
+				"q:26fe7f96579ad070"
+				"q:7270243136c8a000"
+			]
+		}
+		{
+			nodes: [
+				"q:53ba140c34cdcb15"
+				"q:1a83e8e9c4279f00"
+			]
+		}
+		{
+			nodes: [
+				"q:652bec71b19a83"
+				"q:ee4e05a8a4330d6"
+			]
+		}
+		{
+			nodes: [
+				"l:3338f53684e6b570"
+				"q:ee4e05a8a4330d6"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "7581633A71D6F302"
+			linked_quest: "6ED98C2148C69BD7"
+			shape: "rsquare"
+			size: 0.75d
+			x: -1.4d
+			y: -3.3d
+		}
+		{
+			id: "19C1DD7619C14586"
+			linked_quest: "2B95E0E6947D013C"
+			shape: "rsquare"
+			x: -4.6d
+			y: -3.7d
+		}
+		{
+			id: "3338F53684E6B570"
+			linked_quest: "304F1C5501224675"
+			shape: "rsquare"
+			x: 4.6d
+			y: -3.2d
+		}
+	]
+	quests: [
+		{
+			id: "53BA140C34CDCB15"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "6EB3A04B659E1AC3"
+				item: { count: 1, id: "immersiveengineering:workbench" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.4d
+			y: 0.2d
+		}
+		{
+			id: "3488FFB237CC3F8F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6DF4C1C2AB4C12DD"
+				type: "checkmark"
+			}]
+			x: -1.4d
+			y: -1.5d
+		}
+		{
+			id: "00652BEC71B19A83"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "60657E4CA59F40AD"
+				type: "checkmark"
+			}]
+			x: 1.1d
+			y: 0.7d
+		}
+		{
+			id: "1DBC15EC02F88275"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "710E9488455BA115"
+				type: "checkmark"
+			}]
+			x: -1.4d
+			y: 2.2d
+		}
+		{
+			id: "26FE7F96579AD070"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "46538EEF6D56DFAC"
+				type: "checkmark"
+			}]
+			x: 1.6d
+			y: 3.7d
+		}
+		{
+			id: "7270243136C8A000"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3216690A845521F0"
+				type: "checkmark"
+			}]
+			x: 4.6d
+			y: 3.2d
+		}
+		{
+			id: "1A83E8E9C4279F00"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "08ECDDC0CAED3BCD"
+				type: "checkmark"
+			}]
+			x: -4.4d
+			y: 3.2d
+		}
+		{
+			id: "0EE4E05A8A4330D6"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "480B40A95C829304"
+					item: { count: 1, id: "minecraft:crafter" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "6BA57C5D4604EA90"
+					type: "checkmark"
+				}
+			]
+			x: 4.6d
+			y: -0.2d
+		}
+	]
+}

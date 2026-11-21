@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "precision_component"
 	group: "050255AE19A93344"
-	icon: "create:electron_tube"
+	icon: { id: "create:electron_tube" }
 	id: "50ABC60C1E3D3498"
 	order_index: 12
 	quest_enhance_decorative_lines: [ ]

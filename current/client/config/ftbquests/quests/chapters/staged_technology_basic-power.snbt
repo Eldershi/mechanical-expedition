@@ -4,7 +4,7 @@
 	title: "基础电源与压缩"
 	group: "050255AE19A93344"
 	order_index: 29
-	icon: "ad_astra:coal_generator"
+	icon: { id: "ad_astra:coal_generator" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -157,9 +157,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:33559c4b-74b9-582c-ba69-164db727772b"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:33559c4b-74b9-582c-ba69-164db727772b"
 		}
 		{
 			x: 3.533d
@@ -168,9 +168,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:d878db93-8d32-5808-b9a2-6b03de821c53"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:d878db93-8d32-5808-b9a2-6b03de821c53"
 		}
 		{
 			x: 2.467d
@@ -179,9 +179,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:28e06690-55c3-54e9-8503-70d5a30ab956"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:28e06690-55c3-54e9-8503-70d5a30ab956"
 		}
 		{
 			x: 3.533d
@@ -190,9 +190,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:603f910c-2432-5fa0-8285-beefcd94c01a"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:603f910c-2432-5fa0-8285-beefcd94c01a"
 		}
 	]
 	quest_enhance_decorative_lines: [

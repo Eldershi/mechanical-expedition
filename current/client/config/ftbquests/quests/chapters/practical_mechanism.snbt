@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "practical_mechanism"
 	group: "6A6C7C5BAEF247E2"
-	icon: "cmi:colorful_mechanism"
+	icon: { id: "minecraft:magenta_dye" }
 	id: "67C71691EE0FB154"
 	order_index: 2
 	quest_enhance_decorative_lines: [ ]

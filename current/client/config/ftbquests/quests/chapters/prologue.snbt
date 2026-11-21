@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "prologue"
 	group: ""
-	icon: "minecraft:oak_sapling"
+	icon: { id: "minecraft:oak_sapling" }
 	id: "29A4A4AB5A6C2147"
 	order_index: 0
 	quest_enhance_decorative_lines: [ ]

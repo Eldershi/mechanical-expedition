@@ -4,7 +4,7 @@
 	title: "天境"
 	group: "54D4CAA40ADB5408"
 	order_index: 203
-	icon: "minecraft:glowstone"
+	icon: { id: "minecraft:glowstone" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -424,9 +424,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:6bf9e845-69b6-57cc-b389-cf5ed6e892a7"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:6bf9e845-69b6-57cc-b389-cf5ed6e892a7"
 		}
 		{
 			x: -0.84d
@@ -435,9 +435,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:009a5e21-71e0-5389-b650-952f0e193311"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:009a5e21-71e0-5389-b650-952f0e193311"
 		}
 		{
 			x: -4.2d
@@ -446,9 +446,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:4729d141-317f-5000-826c-b079a4777219"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:4729d141-317f-5000-826c-b079a4777219"
 		}
 		{
 			x: -0.84d
@@ -457,9 +457,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:e83c044f-9a62-5fda-aff6-2e86856cb124"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:e83c044f-9a62-5fda-aff6-2e86856cb124"
 		}
 		{
 			x: -4.2d
@@ -468,9 +468,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:f634fd5c-3bfc-5b47-ad54-79ea54c8f0d5"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:f634fd5c-3bfc-5b47-ad54-79ea54c8f0d5"
 		}
 		{
 			x: -0.84d
@@ -479,9 +479,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:25baa78d-ca56-50cf-8fcb-bbc10199e485"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:25baa78d-ca56-50cf-8fcb-bbc10199e485"
 		}
 		{
 			x: -4.44d
@@ -490,9 +490,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:d091e3f0-70e0-5051-aa1f-4c2793f34ec7"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:d091e3f0-70e0-5051-aa1f-4c2793f34ec7"
 		}
 		{
 			x: -3.48d
@@ -501,9 +501,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:f2d80bd8-19d2-55c4-b194-6a5de7382a16"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:f2d80bd8-19d2-55c4-b194-6a5de7382a16"
 		}
 		{
 			x: -4.44d
@@ -512,9 +512,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:d48e6a44-ae57-5c3e-ac73-1fa4b1697705"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:d48e6a44-ae57-5c3e-ac73-1fa4b1697705"
 		}
 		{
 			x: -3.48d
@@ -523,9 +523,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:94f3bacb-5681-5c80-89b8-1469f3be2a97"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:94f3bacb-5681-5c80-89b8-1469f3be2a97"
 		}
 		{
 			x: -1.56d
@@ -534,9 +534,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:3f10ef11-357e-58af-b0d5-50a0a27fd6ac"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:3f10ef11-357e-58af-b0d5-50a0a27fd6ac"
 		}
 		{
 			x: -0.6d
@@ -545,9 +545,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:7ef9bd0c-6060-529e-97b3-54cdacd6a56c"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:7ef9bd0c-6060-529e-97b3-54cdacd6a56c"
 		}
 	]
 }

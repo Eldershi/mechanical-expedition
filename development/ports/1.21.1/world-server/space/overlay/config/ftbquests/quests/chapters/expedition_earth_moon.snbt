@@ -2,7 +2,7 @@
   filename: "expedition_earth_moon"
   group: "3346A01E0EAFD002"
   id: "56A3429C88271E20"
-  icon: "expedition_space:satellite_relay"
+  icon: { id: "expedition_space:satellite_relay" }
   title: "地月补给与月球异界门"
   order_index: 1
   quests: [

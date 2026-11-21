@@ -4,7 +4,7 @@
 	title: "数据模型·收集与训练"
 	group: "050255AE19A93344"
 	order_index: 32
-	icon: "hostilenetworks:blank_data_model"
+	icon: { id: "hostilenetworks:blank_data_model" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -98,9 +98,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:2384fe9e-b9df-5e9b-bf61-67419a8bfedb"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:2384fe9e-b9df-5e9b-bf61-67419a8bfedb"
 		}
 		{
 			x: 3.533d
@@ -109,9 +109,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:659b1a26-420e-5f0f-af84-4595ab0127ff"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:659b1a26-420e-5f0f-af84-4595ab0127ff"
 		}
 	]
 	quest_enhance_decorative_lines: [

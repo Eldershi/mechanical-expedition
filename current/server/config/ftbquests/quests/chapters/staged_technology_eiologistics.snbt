@@ -1,0 +1,537 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "staged_technology_eiologistics"
+	group: "050255AE19A93344"
+	icon: { id: "enderio:conduit_binder_composite" }
+	id: "279BFC214F76BD84"
+	images: [
+		{
+			height: 0.0d
+			id: "4F01F34362797ABF"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.5d
+			y: -0.233d
+			click_action: "none:quest_enhance:decorative_anchor:feaeeb3f-5f9d-5c60-a611-f20081429b2d"
+		}
+		{
+			height: 0.0d
+			id: "5D16CFCFA297A902"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.5d
+			y: -1.567d
+			click_action: "none:quest_enhance:decorative_anchor:5bb5b602-1988-5ca6-ae6d-1def63b9c3a2"
+		}
+		{
+			height: 0.0d
+			id: "4DF885AFED639304"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.5d
+			y: 0.667d
+			click_action: "none:quest_enhance:decorative_anchor:710717e3-fd3f-5946-bea8-0cb763d144b1"
+		}
+		{
+			height: 0.0d
+			id: "6744BDCF971CB5B9"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.5d
+			y: 0.233d
+			click_action: "none:quest_enhance:decorative_anchor:09f12c57-6eb8-58c5-bc90-2cb89923f713"
+		}
+		{
+			height: 0.0d
+			id: "57A97AACACDCB024"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -1.1d
+			y: 2.133d
+			click_action: "none:quest_enhance:decorative_anchor:791f97a3-cff5-5683-8600-bab318a9c57c"
+		}
+		{
+			height: 0.0d
+			id: "100DC7BE1F4CEDE9"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.7d
+			y: 3.167d
+			click_action: "none:quest_enhance:decorative_anchor:1a532f81-5145-5786-8255-5e2f547565bf"
+		}
+		{
+			height: 0.0d
+			id: "18F2FDE5349D0E0B"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.5d
+			y: 2.433d
+			click_action: "none:quest_enhance:decorative_anchor:5eb647a9-c3f1-5060-ab27-c35bd076f777"
+		}
+		{
+			height: 0.0d
+			id: "12F306CB27D2D69A"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.5d
+			y: 3.767d
+			click_action: "none:quest_enhance:decorative_anchor:217bed22-da18-5f30-8624-31ebaddb2bea"
+		}
+		{
+			height: 0.0d
+			id: "797EAD9ED372D5DA"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.0d
+			y: -0.067d
+			click_action: "none:quest_enhance:decorative_anchor:bd4916b3-7ac9-595b-95cc-319dfd861524"
+		}
+		{
+			height: 0.0d
+			id: "774135145A14B4D7"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 1.5d
+			y: -1.233d
+			click_action: "none:quest_enhance:decorative_anchor:1ebb65cb-adb0-53c8-bee5-d4be47aee865"
+		}
+		{
+			height: 0.0d
+			id: "6E0E864DD69FE00B"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.433d
+			y: 1.1d
+			click_action: "none:quest_enhance:decorative_anchor:570946b5-2322-5f4b-b40a-60e2758add91"
+		}
+		{
+			height: 0.0d
+			id: "4F9507EAE2D81B92"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.633d
+			y: 1.1d
+			click_action: "none:quest_enhance:decorative_anchor:e4550239-5557-5ccd-8af3-880bf14c2f92"
+		}
+		{
+			height: 0.0d
+			id: "0F2EDAB43E387256"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.433d
+			y: 1.833d
+			click_action: "none:quest_enhance:decorative_anchor:22637221-43dd-5444-afb9-7ddb81f94105"
+		}
+		{
+			height: 0.0d
+			id: "0C0C7D58E431D1DF"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.633d
+			y: 2.567d
+			click_action: "none:quest_enhance:decorative_anchor:3758f681-7426-5fab-b305-d44f36f886f8"
+		}
+		{
+			height: 0.0d
+			id: "14CAA4DAB953454D"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -1.033d
+			y: -0.233d
+			click_action: "none:quest_enhance:decorative_anchor:f229159d-3949-53a4-83f9-1027a0c244ac"
+		}
+		{
+			height: 0.0d
+			id: "599040D984D5B187"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.567d
+			y: -1.567d
+			click_action: "none:quest_enhance:decorative_anchor:cbb64f5a-3ab7-5f4e-9086-68bf324767c0"
+		}
+		{
+			height: 0.0d
+			id: "5BC8AB85FAFBA351"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 3.7d
+			y: -0.233d
+			click_action: "none:quest_enhance:decorative_anchor:9dafea3f-7e87-5e97-848f-95c28958d0ec"
+		}
+		{
+			height: 0.0d
+			id: "6744792E5D720415"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 4.1d
+			y: -1.567d
+			click_action: "none:quest_enhance:decorative_anchor:087944e0-3568-58d3-a794-f307d4b78c8a"
+		}
+	]
+	order_index: 25
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:1aa8b369e66c28d3" "q:3f1df80b31e706f5"]
+		}
+		{
+			nodes: ["q:3f1df80b31e706f5" "a:feaeeb3f-5f9d-5c60-a611-f20081429b2d"]
+		}
+		{
+			nodes: ["a:feaeeb3f-5f9d-5c60-a611-f20081429b2d" "a:5bb5b602-1988-5ca6-ae6d-1def63b9c3a2"]
+		}
+		{
+			nodes: ["a:5bb5b602-1988-5ca6-ae6d-1def63b9c3a2" "q:26b1f09986bc4067"]
+		}
+		{
+			nodes: ["q:3f1df80b31e706f5" "a:710717e3-fd3f-5946-bea8-0cb763d144b1"]
+		}
+		{
+			nodes: ["a:710717e3-fd3f-5946-bea8-0cb763d144b1" "a:09f12c57-6eb8-58c5-bc90-2cb89923f713"]
+		}
+		{
+			nodes: ["a:09f12c57-6eb8-58c5-bc90-2cb89923f713" "q:5eee04237f6ff8a9"]
+		}
+		{
+			nodes: ["q:3f1df80b31e706f5" "a:791f97a3-cff5-5683-8600-bab318a9c57c"]
+		}
+		{
+			nodes: ["a:791f97a3-cff5-5683-8600-bab318a9c57c" "a:1a532f81-5145-5786-8255-5e2f547565bf"]
+		}
+		{
+			nodes: ["a:1a532f81-5145-5786-8255-5e2f547565bf" "q:18ad25cd75c6d205"]
+		}
+		{
+			nodes: ["q:3f1df80b31e706f5" "a:5eb647a9-c3f1-5060-ab27-c35bd076f777"]
+		}
+		{
+			nodes: ["a:5eb647a9-c3f1-5060-ab27-c35bd076f777" "a:217bed22-da18-5f30-8624-31ebaddb2bea"]
+		}
+		{
+			nodes: ["a:217bed22-da18-5f30-8624-31ebaddb2bea" "q:4961d1414f87461a"]
+		}
+		{
+			nodes: ["q:3f1df80b31e706f5" "a:bd4916b3-7ac9-595b-95cc-319dfd861524"]
+		}
+		{
+			nodes: ["a:bd4916b3-7ac9-595b-95cc-319dfd861524" "a:1ebb65cb-adb0-53c8-bee5-d4be47aee865"]
+		}
+		{
+			nodes: ["a:1ebb65cb-adb0-53c8-bee5-d4be47aee865" "l:1b4ed4e30285bd4f"]
+		}
+		{
+			nodes: ["q:3f1df80b31e706f5" "a:570946b5-2322-5f4b-b40a-60e2758add91"]
+		}
+		{
+			nodes: ["a:570946b5-2322-5f4b-b40a-60e2758add91" "a:e4550239-5557-5ccd-8af3-880bf14c2f92"]
+		}
+		{
+			nodes: ["a:e4550239-5557-5ccd-8af3-880bf14c2f92" "l:141840490b970677"]
+		}
+		{
+			nodes: ["q:3f1df80b31e706f5" "a:22637221-43dd-5444-afb9-7ddb81f94105"]
+		}
+		{
+			nodes: ["a:22637221-43dd-5444-afb9-7ddb81f94105" "a:3758f681-7426-5fab-b305-d44f36f886f8"]
+		}
+		{
+			nodes: ["a:3758f681-7426-5fab-b305-d44f36f886f8" "l:322fc3592435c57b"]
+		}
+		{
+			nodes: ["q:3f1df80b31e706f5" "a:f229159d-3949-53a4-83f9-1027a0c244ac"]
+		}
+		{
+			nodes: ["a:f229159d-3949-53a4-83f9-1027a0c244ac" "a:cbb64f5a-3ab7-5f4e-9086-68bf324767c0"]
+		}
+		{
+			nodes: ["a:cbb64f5a-3ab7-5f4e-9086-68bf324767c0" "l:2a7a6961b18b9c2e"]
+		}
+		{
+			nodes: ["l:3a451f99f0277bd3" "q:26b1f09986bc4067"]
+		}
+		{
+			nodes: ["l:4a9c56233af4d0b" "q:4961d1414f87461a"]
+		}
+		{
+			nodes: ["l:9529d884471d81a" "a:9dafea3f-7e87-5e97-848f-95c28958d0ec"]
+		}
+		{
+			nodes: ["a:9dafea3f-7e87-5e97-848f-95c28958d0ec" "a:087944e0-3568-58d3-a794-f307d4b78c8a"]
+		}
+		{
+			nodes: ["a:087944e0-3568-58d3-a794-f307d4b78c8a" "q:28bf470b91fa7999"]
+		}
+		{
+			nodes: ["l:bf3a6f163fec0cd" "q:28bf470b91fa7999"]
+		}
+		{
+			nodes: ["q:5eee04237f6ff8a9" "q:3175f194e8e2046d"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "3A451F99F0277BD3"
+			linked_quest: "79FCD81B386AA433"
+			shape: "rsquare"
+			size: 0.75d
+			x: -1.5d
+			y: -5.1d
+		}
+		{
+			id: "04A9C56233AF4D0B"
+			linked_quest: "69F3D8A78308531D"
+			shape: "rsquare"
+			size: 0.75d
+			x: -1.5d
+			y: 5.1d
+		}
+		{
+			id: "09529D884471D81A"
+			linked_quest: "56D073BB3E76055E"
+			shape: "rsquare"
+			size: 0.75d
+			x: 3.3d
+			y: 1.1d
+		}
+		{
+			id: "0BF3A6F163FEC0CD"
+			linked_quest: "0FCB5E1822B7AA4E"
+			shape: "rsquare"
+			size: 0.75d
+			x: 1.5d
+			y: -5.1d
+		}
+		{
+			id: "1B4ED4E30285BD4F"
+			linked_quest: "1D67966126372B96"
+			shape: "rsquare"
+			x: 3.0d
+			y: -2.4d
+		}
+		{
+			id: "141840490B970677"
+			linked_quest: "007886A570B63016"
+			shape: "rsquare"
+			x: 1.7d
+			y: 1.1d
+		}
+		{
+			id: "322FC3592435C57B"
+			linked_quest: "0EB9C39BE200BF3A"
+			shape: "rsquare"
+			x: 1.7d
+			y: 3.3d
+		}
+		{
+			id: "2A7A6961B18B9C2E"
+			linked_quest: "6F6E8C0FABC99119"
+			shape: "rsquare"
+			x: -0.1d
+			y: -2.9d
+		}
+	]
+	quests: [
+		{
+			id: "1AA8B369E66C28D3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "2DBDBA4E0628E6C0"
+				item: { count: 1, id: "enderio:conduit_binder_composite" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.1d
+		}
+		{
+			id: "3F1DF80B31E706F5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "7CF789173FEEA6BF"
+				item: { count: 1, id: "enderio:conduit_binder" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.1d
+		}
+		{
+			icon: {
+				components: {
+					"enderio:conduit": "enderio:energy"
+				}
+				id: "enderio:conduit"
+			}
+			id: "26B1F09986BC4067"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "074044FCF08565B4"
+					item: { components: { "enderio:conduit": "enderio:energy" }, count: 1, id: "enderio:conduit" }
+					match_components: "strict"
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "7A7EB4B3BC04012C"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: -2.9d
+		}
+		{
+			icon: {
+				components: {
+					"enderio:conduit": "enderio:item"
+				}
+				id: "enderio:conduit"
+			}
+			id: "5EEE04237F6FF8A9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "2C6B0399AB063CEB"
+					item: { components: { "enderio:conduit": "enderio:item" }, count: 1, id: "enderio:conduit" }
+					match_components: "strict"
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "2BDE7ACFB64CEDBD"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: -0.2d
+		}
+		{
+			icon: {
+				components: {
+					"enderio:conduit": "enderio:fluid"
+				}
+				id: "enderio:conduit"
+			}
+			id: "18AD25CD75C6D205"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "2158F4405AE60D37"
+					item: { components: { "enderio:conduit": "enderio:fluid" }, count: 1, id: "enderio:conduit" }
+					match_components: "strict"
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "738D301CF684C9B7"
+					type: "checkmark"
+				}
+			]
+			x: -0.3d
+			y: 4.2d
+		}
+		{
+			icon: {
+				components: {
+					"enderio:conduit": "enderio:redstone"
+				}
+				id: "enderio:conduit"
+			}
+			id: "4961D1414F87461A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "4BA14CDAC8B52D23"
+					item: { components: { "enderio:conduit": "enderio:redstone" }, count: 1, id: "enderio:conduit" }
+					match_components: "strict"
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "3F9FB7F9EE1B90AE"
+					type: "checkmark"
+				}
+			]
+			x: 1.5d
+			y: 5.1d
+		}
+		{
+			id: "3175F194E8E2046D"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "1256970D25901022"
+					item: { count: 1, id: "enderio:basic_item_filter" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "3ECA240B618E227F"
+					type: "checkmark"
+				}
+			]
+			x: 4.5d
+			y: -0.2d
+		}
+		{
+			id: "28BF470B91FA7999"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "22C3312695A00682"
+				item: { count: 1, id: "enderio:wired_charger" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.9d
+		}
+	]
+}

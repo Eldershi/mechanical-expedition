@@ -3,7 +3,7 @@
   "filename": "expedition_flight_workshop",
   "group": "3346A01E0EAFD002",
   "title": "航空学 · 飞行器工坊",
-  "icon": "simulated:physics_assembler",
+  "icon": { "id": "simulated:physics_assembler" },
   "order_index": 30,
   "quests": [
     {

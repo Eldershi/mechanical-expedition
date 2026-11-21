@@ -4,7 +4,7 @@
 	title: "铁魔法"
 	group: "25C542C40E64ED41"
 	order_index: 209
-	icon: "irons_spellbooks:scroll"
+	icon: { id: "irons_spellbooks:scroll" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -471,9 +471,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:d16a68f4-7a0a-5aa5-bdf6-6cd77ae26dca"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:d16a68f4-7a0a-5aa5-bdf6-6cd77ae26dca"
 		}
 		{
 			x: 5.04d
@@ -482,9 +482,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:f4d4523b-a77d-57e5-b7c5-a77069710fc6"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:f4d4523b-a77d-57e5-b7c5-a77069710fc6"
 		}
 	]
 }

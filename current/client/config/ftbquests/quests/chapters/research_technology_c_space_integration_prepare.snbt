@@ -4,7 +4,7 @@
 	title: "航天·供氧与出发准备"
 	group: "3346A01E0EAFD002"
 	order_index: 46
-	icon: "minecraft:book"
+	icon: { id: "minecraft:book" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -374,9 +374,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:44864a0d-aadd-5631-94df-f5699efc1eb1"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:44864a0d-aadd-5631-94df-f5699efc1eb1"
 		}
 		{
 			x: 0.5d
@@ -385,9 +385,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:ad25ae2a-0959-5af0-96ac-a8b8d1fd5cbe"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:ad25ae2a-0959-5af0-96ac-a8b8d1fd5cbe"
 		}
 	]
 	quest_enhance_decorative_lines: [

@@ -1,7 +1,7 @@
 {
 	filename: "expedition_aerospace"
 	group: "3346A01E0EAFD002"
-	icon: "cmi:astronautic_mechanism"
+	icon: { id: "cmi:astronautic_mechanism" }
 	id: "7406E4576FD88E81"
 	order_index: 0
 	title: "航空与宇航总览"

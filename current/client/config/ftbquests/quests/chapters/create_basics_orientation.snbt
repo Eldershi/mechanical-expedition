@@ -4,7 +4,7 @@
 	default_quest_shape: ""
 	filename: "create_basics_orientation"
 	group: "050255AE19A93344"
-	icon: "create:andesite_alloy"
+	icon: { id: "create:andesite_alloy" }
 	id: "447F1A0F479DB44E"
 	order_index: 10
 	progression_mode: "flexible"

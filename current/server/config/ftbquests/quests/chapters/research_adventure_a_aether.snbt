@@ -1,0 +1,480 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_adventure_a_aether"
+	group: "54D4CAA40ADB5408"
+	icon: { id: "minecraft:glowstone" }
+	id: "05CCF453EC0F9A00"
+	images: [
+		{
+			height: 0.0d
+			id: "00CCBFB412970031"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -4.2d
+			y: -2.64d
+			click_action: "none:quest_enhance:decorative_anchor:6bf9e845-69b6-57cc-b389-cf5ed6e892a7"
+		}
+		{
+			height: 0.0d
+			id: "20B328A5C4546C15"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.84d
+			y: -3.84d
+			click_action: "none:quest_enhance:decorative_anchor:009a5e21-71e0-5389-b650-952f0e193311"
+		}
+		{
+			height: 0.0d
+			id: "11DA15C45088450A"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -4.2d
+			y: -1.44d
+			click_action: "none:quest_enhance:decorative_anchor:4729d141-317f-5000-826c-b079a4777219"
+		}
+		{
+			height: 0.0d
+			id: "6EFE93375524E642"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.84d
+			y: -1.44d
+			click_action: "none:quest_enhance:decorative_anchor:e83c044f-9a62-5fda-aff6-2e86856cb124"
+		}
+		{
+			height: 0.0d
+			id: "3BF6ECE94F69C62E"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -4.2d
+			y: 0.0d
+			click_action: "none:quest_enhance:decorative_anchor:f634fd5c-3bfc-5b47-ad54-79ea54c8f0d5"
+		}
+		{
+			height: 0.0d
+			id: "11BF48EB9E90B90C"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.84d
+			y: 1.44d
+			click_action: "none:quest_enhance:decorative_anchor:25baa78d-ca56-50cf-8fcb-bbc10199e485"
+		}
+		{
+			height: 0.0d
+			id: "47F22F465E964ABF"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -4.44d
+			y: 0.763d
+			click_action: "none:quest_enhance:decorative_anchor:d091e3f0-70e0-5051-aa1f-4c2793f34ec7"
+		}
+		{
+			height: 0.0d
+			id: "4D83992604B936D8"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.48d
+			y: 1.167d
+			click_action: "none:quest_enhance:decorative_anchor:f2d80bd8-19d2-55c4-b194-6a5de7382a16"
+		}
+		{
+			height: 0.0d
+			id: "717BC359DCD3A040"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -4.44d
+			y: 1.44d
+			click_action: "none:quest_enhance:decorative_anchor:d48e6a44-ae57-5c3e-ac73-1fa4b1697705"
+		}
+		{
+			height: 0.0d
+			id: "3A2069F2403EE072"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.48d
+			y: 2.52d
+			click_action: "none:quest_enhance:decorative_anchor:94f3bacb-5681-5c80-89b8-1469f3be2a97"
+		}
+		{
+			height: 0.0d
+			id: "125AF66C74C6EA69"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -1.56d
+			y: -3.42d
+			click_action: "none:quest_enhance:decorative_anchor:3f10ef11-357e-58af-b0d5-50a0a27fd6ac"
+		}
+		{
+			height: 0.0d
+			id: "50453C26346811BC"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.6d
+			y: -2.79d
+			click_action: "none:quest_enhance:decorative_anchor:7ef9bd0c-6060-529e-97b3-54cdacd6a56c"
+		}
+	]
+	order_index: 4
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:7569293d6c442094"
+				"q:7ff237eb327732f1"
+			]
+		}
+		{
+			nodes: [
+				"q:42064c7f80d25ed0"
+				"q:51d0a1e1f9f0c44a"
+			]
+		}
+		{
+			nodes: [
+				"q:42064c7f80d25ed0"
+				"a:3f10ef11-357e-58af-b0d5-50a0a27fd6ac"
+			]
+		}
+		{
+			nodes: [
+				"a:3f10ef11-357e-58af-b0d5-50a0a27fd6ac"
+				"a:7ef9bd0c-6060-529e-97b3-54cdacd6a56c"
+			]
+		}
+		{
+			nodes: [
+				"a:7ef9bd0c-6060-529e-97b3-54cdacd6a56c"
+				"q:5605b910287cb9c8"
+			]
+		}
+		{
+			nodes: [
+				"q:2f09c0af3bf154c9"
+				"q:45015216a2deb72b"
+			]
+		}
+		{
+			nodes: [
+				"q:15179af70dd72671"
+				"q:52d0b5eb5ea69499"
+			]
+		}
+		{
+			nodes: [
+				"q:15179af70dd72671"
+				"a:6bf9e845-69b6-57cc-b389-cf5ed6e892a7"
+			]
+		}
+		{
+			nodes: [
+				"a:6bf9e845-69b6-57cc-b389-cf5ed6e892a7"
+				"a:009a5e21-71e0-5389-b650-952f0e193311"
+			]
+		}
+		{
+			nodes: [
+				"a:009a5e21-71e0-5389-b650-952f0e193311"
+				"q:77ab412c687bde32"
+			]
+		}
+		{
+			nodes: [
+				"q:15179af70dd72671"
+				"a:4729d141-317f-5000-826c-b079a4777219"
+			]
+		}
+		{
+			nodes: [
+				"a:4729d141-317f-5000-826c-b079a4777219"
+				"a:e83c044f-9a62-5fda-aff6-2e86856cb124"
+			]
+		}
+		{
+			nodes: [
+				"a:e83c044f-9a62-5fda-aff6-2e86856cb124"
+				"q:7569293d6c442094"
+			]
+		}
+		{
+			nodes: [
+				"q:15179af70dd72671"
+				"a:f634fd5c-3bfc-5b47-ad54-79ea54c8f0d5"
+			]
+		}
+		{
+			nodes: [
+				"a:f634fd5c-3bfc-5b47-ad54-79ea54c8f0d5"
+				"a:25baa78d-ca56-50cf-8fcb-bbc10199e485"
+			]
+		}
+		{
+			nodes: [
+				"a:25baa78d-ca56-50cf-8fcb-bbc10199e485"
+				"q:3677c0c04731fea7"
+			]
+		}
+		{
+			nodes: [
+				"q:52d0b5eb5ea69499"
+				"q:42064c7f80d25ed0"
+			]
+		}
+		{
+			nodes: [
+				"q:52d0b5eb5ea69499"
+				"a:d091e3f0-70e0-5051-aa1f-4c2793f34ec7"
+			]
+		}
+		{
+			nodes: [
+				"a:d091e3f0-70e0-5051-aa1f-4c2793f34ec7"
+				"a:f2d80bd8-19d2-55c4-b194-6a5de7382a16"
+			]
+		}
+		{
+			nodes: [
+				"a:f2d80bd8-19d2-55c4-b194-6a5de7382a16"
+				"q:2f09c0af3bf154c9"
+			]
+		}
+		{
+			nodes: [
+				"q:52d0b5eb5ea69499"
+				"a:d48e6a44-ae57-5c3e-ac73-1fa4b1697705"
+			]
+		}
+		{
+			nodes: [
+				"a:d48e6a44-ae57-5c3e-ac73-1fa4b1697705"
+				"a:94f3bacb-5681-5c80-89b8-1469f3be2a97"
+			]
+		}
+		{
+			nodes: [
+				"a:94f3bacb-5681-5c80-89b8-1469f3be2a97"
+				"q:cbf4c0a76d77ced"
+			]
+		}
+		{
+			nodes: [
+				"q:3677c0c04731fea7"
+				"q:620b817c5fe829b6"
+			]
+		}
+		{
+			nodes: [
+				"q:620b817c5fe829b6"
+				"q:249b757cf0a10397"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "15179AF70DD72671"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "aether:enter_aether"
+				criterion: ""
+				id: "499CBFC8066BFE34"
+				type: "advancement"
+			}]
+			x: -7.56d
+			y: -1.44d
+		}
+		{
+			id: "52D0B5EB5EA69499"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "66C542A8BEE69923"
+				type: "checkmark"
+			}]
+			x: -5.4d
+			y: 0.36d
+		}
+		{
+			id: "42064C7F80D25ED0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "61DF83A2AB48886E"
+				item: { count: 1, id: "aether:altar" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -2.52d
+			y: -4.05d
+		}
+		{
+			id: "51D0A1E1F9F0C44A"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "404C11F6A8A377DC"
+				item: { count: 1, id: "aether:enchanted_gravitite" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.36d
+			y: -5.04d
+		}
+		{
+			id: "5605B910287CB9C8"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "2E3CFF7D85F74059"
+				item: { count: 1, id: "aether:healing_stone" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.36d
+			y: -2.16d
+		}
+		{
+			id: "2F09C0AF3BF154C9"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "4CB101827C31098E"
+				item: { count: 1, id: "aether:incubator" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -2.52d
+			y: 1.57d
+		}
+		{
+			id: "45015216A2DEB72B"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "aether:incubate_moa"
+				criterion: ""
+				id: "51121BD65334FE14"
+				type: "advancement"
+			}]
+			x: 0.36d
+			y: 0.72d
+		}
+		{
+			id: "0CBF4C0A76D77CED"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "6BE06181A058C5E7"
+				item: { count: 1, id: "aether:freezer" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -2.52d
+			y: 3.6d
+		}
+		{
+			id: "77AB412C687BDE32"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "aether:bronze_dungeon"
+				criterion: ""
+				id: "00BDD88C6B7211D7"
+				type: "advancement"
+			}]
+			x: 2.52d
+			y: -5.04d
+		}
+		{
+			id: "7569293D6C442094"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "3F44FBD42D4F0043"
+				item: { count: 1, id: "aether:victory_medal" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 2.52d
+			y: -1.44d
+		}
+		{
+			id: "7FF237EB327732F1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "aether:silver_dungeon"
+				criterion: ""
+				id: "7F2F3E7E667E723C"
+				type: "advancement"
+			}]
+			x: 5.4d
+			y: -1.44d
+		}
+		{
+			id: "3677C0C04731FEA7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "aether:gold_dungeon"
+				criterion: ""
+				id: "057069BF48B10665"
+				type: "advancement"
+			}]
+			x: 2.52d
+			y: 2.88d
+		}
+		{
+			id: "620B817C5FE829B6"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "06F9FD53ABDD4CCA"
+				item: { count: 1, id: "aether:sun_altar" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 5.4d
+			y: 2.88d
+		}
+		{
+			id: "249B757CF0A10397"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "aether:obsidian_armor"
+				criterion: ""
+				id: "18DACC959B38286D"
+				type: "advancement"
+			}]
+			x: 7.56d
+			y: 5.04d
+		}
+	]
+}

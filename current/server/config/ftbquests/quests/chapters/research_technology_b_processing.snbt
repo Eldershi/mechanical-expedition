@@ -1,0 +1,848 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_technology_b_processing"
+	group: "050255AE19A93344"
+	icon: { id: "create:crushing_wheel" }
+	id: "5021A923B4BF260B"
+	images: [
+		{
+			height: 0.0d
+			id: "4291A975CB7ECB17"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -7.56d
+			y: -5.645d
+			click_action: "none:quest_enhance:decorative_anchor:84cb3322-91fe-573b-b7c7-bf5b5aece9b7"
+		}
+		{
+			height: 0.0d
+			id: "761EE435FCE9C333"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -6.918d
+			y: -6.957d
+			click_action: "none:quest_enhance:decorative_anchor:a2eb5c04-72d1-5eda-8bf5-0a56a4786ced"
+		}
+		{
+			height: 0.0d
+			id: "6ED22450FDCAA312"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -6.742d
+			y: -4.627d
+			click_action: "none:quest_enhance:decorative_anchor:af733ffd-da3b-500b-b650-ef2500c6e629"
+		}
+		{
+			height: 0.0d
+			id: "6E1965CE0D1E8011"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -5.281d
+			y: -4.921d
+			click_action: "none:quest_enhance:decorative_anchor:c34b3257-b4f0-5271-908f-2431695bbb97"
+		}
+		{
+			height: 0.0d
+			id: "1BC2BFD960D07AC2"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -5.889d
+			y: -4.428d
+			click_action: "none:quest_enhance:decorative_anchor:1a5cc110-227a-55c4-80f8-78fc4bcc1aec"
+		}
+		{
+			height: 0.0d
+			id: "3217E7E7069C5DE8"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.575d
+			y: -4.525d
+			click_action: "none:quest_enhance:decorative_anchor:d6bb95cf-219d-5038-948e-4a97ca5a164b"
+		}
+		{
+			height: 0.0d
+			id: "39FCAC881462FAA3"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -8.261d
+			y: -2.44d
+			click_action: "none:quest_enhance:decorative_anchor:f7dbca0e-30a7-58f2-ba8a-599a557dd754"
+		}
+		{
+			height: 0.0d
+			id: "09AA2978AC94AA2A"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -8.32d
+			y: -0.549d
+			click_action: "none:quest_enhance:decorative_anchor:47f2d4a3-2308-5f22-a507-951fe5b01af2"
+		}
+		{
+			height: 0.0d
+			id: "47BADAA0C9BD9BE0"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -7.976d
+			y: -1.949d
+			click_action: "none:quest_enhance:decorative_anchor:3bad58d3-e0ba-50f7-851e-f0c0b42d8cb1"
+		}
+		{
+			height: 0.0d
+			id: "6776C5B8E40B282A"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -7.748d
+			y: 0.433d
+			click_action: "none:quest_enhance:decorative_anchor:22859aa7-6248-5748-8454-99f1f16f8442"
+		}
+		{
+			height: 0.0d
+			id: "1A314DF4464AF477"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -7.472d
+			y: -2.066d
+			click_action: "none:quest_enhance:decorative_anchor:a286b1bc-85e2-546d-ab46-b14910811fae"
+		}
+		{
+			height: 0.0d
+			id: "3D6F77AA6D8D3F05"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -6.741d
+			y: 0.201d
+			click_action: "none:quest_enhance:decorative_anchor:880bcaa7-09cb-5132-9210-41a0a3261262"
+		}
+		{
+			height: 0.0d
+			id: "40AA85FD26B7EF0B"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.294d
+			y: -2.089d
+			click_action: "none:quest_enhance:decorative_anchor:61395cb5-978b-5a71-b13c-da5aa6c4d300"
+		}
+		{
+			height: 0.0d
+			id: "749E8FEE53D1E4F6"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 1.614d
+			y: 0.155d
+			click_action: "none:quest_enhance:decorative_anchor:e958cd80-62c6-5017-99a1-4ec0f3874687"
+		}
+		{
+			height: 0.0d
+			id: "2FBA76BC38EE2E8B"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -4.122d
+			y: -0.957d
+			click_action: "none:quest_enhance:decorative_anchor:18df94b6-0b93-5c7f-a260-145d5ccd104c"
+		}
+		{
+			height: 0.0d
+			id: "05AB5AED712D9BFB"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.042d
+			y: 2.418d
+			click_action: "none:quest_enhance:decorative_anchor:4c3add38-c58e-5176-9443-26a2eefdd297"
+		}
+		{
+			height: 0.0d
+			id: "261B9520C0D35EA8"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -5.612d
+			y: -1.803d
+			click_action: "none:quest_enhance:decorative_anchor:8a7913f4-00b4-5068-8c04-3261d54b460b"
+		}
+		{
+			height: 0.0d
+			id: "495580E36A94DED0"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.022d
+			y: 0.726d
+			click_action: "none:quest_enhance:decorative_anchor:eec88710-3993-5f9e-8a7e-e6c75000da13"
+		}
+		{
+			height: 0.0d
+			id: "2CF281ADC0DB45BB"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -4.458d
+			y: -2.161d
+			click_action: "none:quest_enhance:decorative_anchor:960e5186-0f34-5bc2-9c69-77eab9fa0cf8"
+		}
+		{
+			height: 0.0d
+			id: "08560EF96F93DD8D"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.712d
+			y: 0.011d
+			click_action: "none:quest_enhance:decorative_anchor:18cc92ad-454b-5ec9-8f62-23e9872de736"
+		}
+		{
+			height: 0.0d
+			id: "274B0E3DEF6069FD"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -4.428d
+			y: -1.664d
+			click_action: "none:quest_enhance:decorative_anchor:7ae91e15-476a-5ee7-9154-732d43c34811"
+		}
+		{
+			height: 0.0d
+			id: "1952209757A3274E"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.652d
+			y: 1.004d
+			click_action: "none:quest_enhance:decorative_anchor:b11f796f-046b-55aa-9ee3-af539c075681"
+		}
+		{
+			height: 0.0d
+			id: "0EFF6907553990AA"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -5.72d
+			y: -0.756d
+			click_action: "none:quest_enhance:decorative_anchor:6f435170-850d-505c-bda2-c9808e90f13f"
+		}
+		{
+			height: 0.0d
+			id: "59A5E648CE8D9479"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.238d
+			y: 2.821d
+			click_action: "none:quest_enhance:decorative_anchor:65c57b58-52fe-5c1e-a270-435e5055b53d"
+		}
+		{
+			height: 0.0d
+			id: "2E4DB7AE41FAC0D4"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -8.31d
+			y: -5.511d
+			click_action: "none:quest_enhance:decorative_anchor:e744fd49-f94f-5880-bfe7-5e540676bc38"
+		}
+		{
+			height: 0.0d
+			id: "59E5DB5EB7D27FCD"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -8.418d
+			y: -6.691d
+			click_action: "none:quest_enhance:decorative_anchor:3f05a893-503a-57fa-b516-9a87f728b450"
+		}
+		{
+			height: 0.0d
+			id: "3461692B389588FB"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -6.948d
+			y: -5.289d
+			click_action: "none:quest_enhance:decorative_anchor:9f825749-d280-5a76-aebb-cb0edd840309"
+		}
+		{
+			height: 0.0d
+			id: "33BB7F3888EA35E0"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -5.694d
+			y: -6.245d
+			click_action: "none:quest_enhance:decorative_anchor:b5f9f8a9-c2a7-581f-989b-39be2e97a9f7"
+		}
+		{
+			height: 0.0d
+			id: "4FC4475B6725C54C"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -7.01d
+			y: -5.698d
+			click_action: "none:quest_enhance:decorative_anchor:b478ddbd-9578-571e-a21a-69f029184d51"
+		}
+		{
+			height: 0.0d
+			id: "554DB86210D40DEB"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -5.818d
+			y: -7.064d
+			click_action: "none:quest_enhance:decorative_anchor:6f3fb12f-1c95-51fb-a58e-13d3c015e464"
+		}
+		{
+			height: 0.0d
+			id: "57C073C32995382F"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.669d
+			y: 3.085d
+			click_action: "none:quest_enhance:decorative_anchor:12a8dcc7-7ced-5e6e-87b0-8c810004f8fd"
+		}
+		{
+			height: 0.0d
+			id: "35A1127E1D11B6F7"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -1.327d
+			y: 3.703d
+			click_action: "none:quest_enhance:decorative_anchor:9993872f-d80d-56b2-b821-5362365b30e5"
+		}
+		{
+			height: 0.0d
+			id: "2FCC0FB2E3392913"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.704d
+			y: 3.591d
+			click_action: "none:quest_enhance:decorative_anchor:4e8a98a7-d82f-51ac-a059-eef4571a57e1"
+		}
+		{
+			height: 0.0d
+			id: "29F3601BE9BB200B"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -1.398d
+			y: 4.715d
+			click_action: "none:quest_enhance:decorative_anchor:d75b0d4d-1419-54e5-82a6-5f794505905e"
+		}
+		{
+			height: 0.0d
+			id: "0FE4A5B7BD6C82D9"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.35d
+			y: 1.054d
+			click_action: "none:quest_enhance:decorative_anchor:98fa21dd-0d5a-5acd-8df8-bf7f0efdad55"
+		}
+		{
+			height: 0.0d
+			id: "0E920AD9B138DD88"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.689d
+			y: -0.359d
+			click_action: "none:quest_enhance:decorative_anchor:5cae6d93-c8d8-5977-9f5d-2f3b5d512d5a"
+		}
+		{
+			height: 0.0d
+			id: "4AB336543642F472"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -1.174d
+			y: -4.155d
+			click_action: "none:quest_enhance:decorative_anchor:bd3baeab-daee-5483-885c-0798edf4f309"
+		}
+		{
+			height: 0.0d
+			id: "7AA78D247117FE2C"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -1.086d
+			y: -3.69d
+			click_action: "none:quest_enhance:decorative_anchor:f802f352-d9cd-5057-9637-bb6cba5cd728"
+		}
+		{
+			height: 0.0d
+			id: "4E6824101445083A"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 4.534d
+			y: 6.105d
+			click_action: "none:quest_enhance:decorative_anchor:e3d01a6c-c0fc-59ed-9485-8bff85ce3499"
+		}
+		{
+			height: 0.0d
+			id: "45EEB8305479B2DB"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 5.03d
+			y: 6.418d
+			click_action: "none:quest_enhance:decorative_anchor:39ab8fd5-6dda-5487-b7de-23f86cc015ee"
+		}
+	]
+	order_index: 17
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:3d4be1a75ef3455" "a:af733ffd-da3b-500b-b650-ef2500c6e629"]
+		}
+		{
+			nodes: ["a:af733ffd-da3b-500b-b650-ef2500c6e629" "a:c34b3257-b4f0-5271-908f-2431695bbb97"]
+		}
+		{
+			nodes: ["a:c34b3257-b4f0-5271-908f-2431695bbb97" "q:6c3e873376a0f04e"]
+		}
+		{
+			nodes: ["l:3d4be1a75ef3455" "a:1a5cc110-227a-55c4-80f8-78fc4bcc1aec"]
+		}
+		{
+			nodes: ["a:1a5cc110-227a-55c4-80f8-78fc4bcc1aec" "a:d6bb95cf-219d-5038-948e-4a97ca5a164b"]
+		}
+		{
+			nodes: ["a:d6bb95cf-219d-5038-948e-4a97ca5a164b" "q:612ede8554525701"]
+		}
+		{
+			nodes: ["l:3d4be1a75ef3455" "a:f7dbca0e-30a7-58f2-ba8a-599a557dd754"]
+		}
+		{
+			nodes: ["a:f7dbca0e-30a7-58f2-ba8a-599a557dd754" "a:47f2d4a3-2308-5f22-a507-951fe5b01af2"]
+		}
+		{
+			nodes: ["a:47f2d4a3-2308-5f22-a507-951fe5b01af2" "q:f239ba7c812f3f0"]
+		}
+		{
+			nodes: ["l:3d4be1a75ef3455" "a:3bad58d3-e0ba-50f7-851e-f0c0b42d8cb1"]
+		}
+		{
+			nodes: ["a:3bad58d3-e0ba-50f7-851e-f0c0b42d8cb1" "a:22859aa7-6248-5748-8454-99f1f16f8442"]
+		}
+		{
+			nodes: ["a:22859aa7-6248-5748-8454-99f1f16f8442" "q:4c03b80a782716c4"]
+		}
+		{
+			nodes: ["l:3d4be1a75ef3455" "a:a286b1bc-85e2-546d-ab46-b14910811fae"]
+		}
+		{
+			nodes: ["a:a286b1bc-85e2-546d-ab46-b14910811fae" "a:880bcaa7-09cb-5132-9210-41a0a3261262"]
+		}
+		{
+			nodes: ["a:880bcaa7-09cb-5132-9210-41a0a3261262" "q:71540ed470ba2932"]
+		}
+		{
+			nodes: ["l:3d4be1a75ef3455" "a:61395cb5-978b-5a71-b13c-da5aa6c4d300"]
+		}
+		{
+			nodes: ["a:61395cb5-978b-5a71-b13c-da5aa6c4d300" "a:e958cd80-62c6-5017-99a1-4ec0f3874687"]
+		}
+		{
+			nodes: ["a:e958cd80-62c6-5017-99a1-4ec0f3874687" "q:c17e01f2da4b2a"]
+		}
+		{
+			nodes: ["l:3d4be1a75ef3455" "a:18df94b6-0b93-5c7f-a260-145d5ccd104c"]
+		}
+		{
+			nodes: ["a:18df94b6-0b93-5c7f-a260-145d5ccd104c" "a:4c3add38-c58e-5176-9443-26a2eefdd297"]
+		}
+		{
+			nodes: ["a:4c3add38-c58e-5176-9443-26a2eefdd297" "q:5450be78e1ab7df5"]
+		}
+		{
+			nodes: ["l:3d4be1a75ef3455" "a:8a7913f4-00b4-5068-8c04-3261d54b460b"]
+		}
+		{
+			nodes: ["a:8a7913f4-00b4-5068-8c04-3261d54b460b" "a:eec88710-3993-5f9e-8a7e-e6c75000da13"]
+		}
+		{
+			nodes: ["a:eec88710-3993-5f9e-8a7e-e6c75000da13" "q:bab052634edf208"]
+		}
+		{
+			nodes: ["l:3d4be1a75ef3455" "a:960e5186-0f34-5bc2-9c69-77eab9fa0cf8"]
+		}
+		{
+			nodes: ["a:960e5186-0f34-5bc2-9c69-77eab9fa0cf8" "a:18cc92ad-454b-5ec9-8f62-23e9872de736"]
+		}
+		{
+			nodes: ["a:18cc92ad-454b-5ec9-8f62-23e9872de736" "q:5b02e6f0f60d4f82"]
+		}
+		{
+			nodes: ["l:3d4be1a75ef3455" "a:7ae91e15-476a-5ee7-9154-732d43c34811"]
+		}
+		{
+			nodes: ["a:7ae91e15-476a-5ee7-9154-732d43c34811" "a:b11f796f-046b-55aa-9ee3-af539c075681"]
+		}
+		{
+			nodes: ["a:b11f796f-046b-55aa-9ee3-af539c075681" "q:421e9705d7334039"]
+		}
+		{
+			nodes: ["l:3d4be1a75ef3455" "a:6f435170-850d-505c-bda2-c9808e90f13f"]
+		}
+		{
+			nodes: ["a:6f435170-850d-505c-bda2-c9808e90f13f" "a:65c57b58-52fe-5c1e-a270-435e5055b53d"]
+		}
+		{
+			nodes: ["a:65c57b58-52fe-5c1e-a270-435e5055b53d" "q:28af43e6c8a64b86"]
+		}
+		{
+			nodes: ["l:3d4be1a75ef3455" "a:e744fd49-f94f-5880-bfe7-5e540676bc38"]
+		}
+		{
+			nodes: ["a:e744fd49-f94f-5880-bfe7-5e540676bc38" "a:3f05a893-503a-57fa-b516-9a87f728b450"]
+		}
+		{
+			nodes: ["a:3f05a893-503a-57fa-b516-9a87f728b450" "l:35f49b0ba7119f1c"]
+		}
+		{
+			nodes: ["l:3d4be1a75ef3455" "a:9f825749-d280-5a76-aebb-cb0edd840309"]
+		}
+		{
+			nodes: ["a:9f825749-d280-5a76-aebb-cb0edd840309" "a:b5f9f8a9-c2a7-581f-989b-39be2e97a9f7"]
+		}
+		{
+			nodes: ["a:b5f9f8a9-c2a7-581f-989b-39be2e97a9f7" "l:65a156d7906fa0d1"]
+		}
+		{
+			nodes: ["q:20269ad060f1c264" "l:205dd6ef78972d1"]
+		}
+		{
+			nodes: ["l:5b70aaa61b0814ad" "q:5450be78e1ab7df5"]
+		}
+		{
+			nodes: ["q:612ede8554525701" "a:bd3baeab-daee-5483-885c-0798edf4f309"]
+		}
+		{
+			nodes: ["a:bd3baeab-daee-5483-885c-0798edf4f309" "a:f802f352-d9cd-5057-9637-bb6cba5cd728"]
+		}
+		{
+			nodes: ["a:f802f352-d9cd-5057-9637-bb6cba5cd728" "q:11035ec084244524"]
+		}
+		{
+			nodes: ["q:5450be78e1ab7df5" "a:e3d01a6c-c0fc-59ed-9485-8bff85ce3499"]
+		}
+		{
+			nodes: ["a:e3d01a6c-c0fc-59ed-9485-8bff85ce3499" "a:39ab8fd5-6dda-5487-b7de-23f86cc015ee"]
+		}
+		{
+			nodes: ["a:39ab8fd5-6dda-5487-b7de-23f86cc015ee" "q:20269ad060f1c264"]
+		}
+		{
+			nodes: ["l:3d4be1a75ef3455" "q:ebd5ebf7494202a"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "03D4BE1A75EF3455"
+			linked_quest: "304F1C5501224675"
+			shape: "rsquare"
+			size: 0.75d
+			x: -8.203d
+			y: -4.332d
+		}
+		{
+			id: "0205DD6EF78972D1"
+			linked_quest: "7986071E20EEF73C"
+			shape: "rsquare"
+			size: 0.75d
+			x: 8.525d
+			y: 6.73d
+		}
+		{
+			id: "5B70AAA61B0814AD"
+			linked_quest: "1671818ACB0646EB"
+			shape: "rsquare"
+			size: 0.75d
+			x: -0.475d
+			y: 8.43d
+		}
+		{
+			id: "35F49B0BA7119F1C"
+			linked_quest: "425F3F780114BFE2"
+			shape: "rsquare"
+			x: -8.525d
+			y: -7.87d
+		}
+		{
+			id: "65A156D7906FA0D1"
+			linked_quest: "0EE4E05A8A4330D6"
+			shape: "rsquare"
+			x: -4.439d
+			y: -7.202d
+		}
+		{
+			id: "5A2EF0F0E904F860"
+			linked_quest: "304F1C5501224675"
+			shape: "rsquare"
+			x: 6.0d
+			y: -10.4d
+		}
+		{
+			id: "0013B21715C73C0A"
+			linked_quest: "6E87F1A6C2A966BD"
+			shape: "rsquare"
+			size: 0.75d
+			x: 9.0d
+			y: -7.4d
+		}
+		{
+			id: "24D839F9B93DE812"
+			linked_quest: "3B327E8B7CC4A27E"
+			shape: "rsquare"
+			size: 0.75d
+			x: 0.0d
+			y: -10.4d
+		}
+	]
+	quests: [
+		{
+			id: "6C3E873376A0F04E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "625668ADD162887C"
+				item: { count: 1, id: "create:crushing_wheel" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -3.82d
+			y: -5.216d
+		}
+		{
+			id: "612EDE8554525701"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "10688CFFC44AA551"
+				item: { count: 1, id: "enderio:alloy_smelter" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.261d
+			y: -4.621d
+		}
+		{
+			id: "0F239BA7C812F3F0"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "409B5C27935118BC"
+				item: { count: 1, id: "mekanism:energized_smelter" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -8.378d
+			y: 1.343d
+		}
+		{
+			id: "4C03B80A782716C4"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "3E20D5A765941B2F"
+				item: { count: 1, id: "create:mechanical_saw" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -7.521d
+			y: 2.816d
+		}
+		{
+			id: "71540ED470BA2932"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "75E8DEF5FAC54F11"
+				item: { count: 1, id: "create:spout" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -6.01d
+			y: 2.467d
+		}
+		{
+			id: "00C17E01F2DA4B2A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "64FE34B55F0131F0"
+				type: "checkmark"
+			}]
+			x: 6.523d
+			y: 2.398d
+		}
+		{
+			id: "5450BE78E1AB7DF5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5071D98DF1873387"
+				type: "checkmark"
+			}]
+			x: 4.039d
+			y: 5.793d
+		}
+		{
+			id: "0BAB052634EDF208"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "4B91D458FA847053"
+				item: { count: 1, id: "immersiveengineering:cokebrick" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -0.431d
+			y: 3.255d
+		}
+		{
+			id: "5B02E6F0F60D4F82"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "3DB20DDD3ABA24EC"
+				item: { count: 1, id: "modernfoundry:smeltery_controller" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 3.033d
+			y: 2.182d
+		}
+		{
+			id: "421E9705D7334039"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "7CC14049CEA95A84"
+					item: { count: 1, id: "create:mechanical_press" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "10355AFE3E99D9E2"
+					type: "checkmark"
+				}
+			]
+			x: 3.123d
+			y: 3.672d
+		}
+		{
+			id: "28AF43E6C8A64B86"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "77B944C2713E84EF"
+				item: { count: 1, id: "vintageimprovements:centrifuge" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -0.755d
+			y: 6.397d
+		}
+		{
+			id: "11035EC084244524"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "671AD7E2B708F831"
+				type: "checkmark"
+			}]
+			x: -0.999d
+			y: -3.224d
+		}
+		{
+			id: "20269AD060F1C264"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "611EB3CBB573FE61"
+				item: { count: 1, id: "cmi:pure_quartz_prism" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 5.525d
+			y: 6.73d
+		}
+		{
+			id: "0EBD5EBF7494202A"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "5E27D7AA09845E57"
+				item: { count: 1, id: "minecraft:brewing_stand" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.138d
+			y: -3.807d
+		}
+	]
+}

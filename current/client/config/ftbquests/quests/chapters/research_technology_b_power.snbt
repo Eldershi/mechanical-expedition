@@ -4,7 +4,7 @@
 	title: "早期供电与工厂物流"
 	group: "050255AE19A93344"
 	order_index: 19
-	icon: "immersiveengineering:dynamo"
+	icon: { id: "immersiveengineering:dynamo" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -288,9 +288,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:4327ba71-0378-531e-8153-b82bc671bd4c"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:4327ba71-0378-531e-8153-b82bc671bd4c"
 		}
 		{
 			x: -4.0d
@@ -299,9 +299,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:56acf8d8-1902-5377-a8ca-d3761e093dfd"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:56acf8d8-1902-5377-a8ca-d3761e093dfd"
 		}
 		{
 			x: -2.0d
@@ -310,9 +310,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:9bba4fb6-3581-567e-bdda-79a8aa49b7bd"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:9bba4fb6-3581-567e-bdda-79a8aa49b7bd"
 		}
 		{
 			x: -1.0d
@@ -321,9 +321,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:7b4b5cfc-2746-5027-a2b6-6dc428ee6e8e"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:7b4b5cfc-2746-5027-a2b6-6dc428ee6e8e"
 		}
 		{
 			x: -2.0d
@@ -332,9 +332,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:7094c095-3252-5919-bd45-4381507c2204"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:7094c095-3252-5919-bd45-4381507c2204"
 		}
 		{
 			x: -1.0d
@@ -343,9 +343,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:f1e1a6fc-03df-5c5c-8a62-20c91c326684"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:f1e1a6fc-03df-5c5c-8a62-20c91c326684"
 		}
 	]
 	quest_enhance_decorative_lines: [

@@ -1,0 +1,53 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "staged_technology_b_industrial_materials"
+	group: "5B22564DA513617D"
+	icon: { id: "cmi:pure_semi_molten_osmium" }
+	id: "167D591257DB3F19"
+	images: [ ]
+	order_index: 6
+	quest_enhance_decorative_lines: [{
+		nodes: [
+			"l:2a7e952592271615"
+			"q:3bd13ac3fe993063"
+		]
+	}]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [{
+		id: "2A7E952592271615"
+		linked_quest: "101D899A5AB27BBA"
+		shape: "rsquare"
+		x: -3.1d
+		y: -2.3d
+	}]
+	quests: [
+		{
+			id: "1671818ACB0646EB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "361231E5C200E61E"
+				item: { count: 1, id: "cmi:pure_semi_molten_osmium" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 3.1d
+			y: 2.3d
+		}
+		{
+			id: "3BD13AC3FE993063"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "3125A18D6F63F303"
+				item: { count: 1, id: "cmi:stainless_steel_ingot" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.1d
+			y: -0.1d
+		}
+	]
+}

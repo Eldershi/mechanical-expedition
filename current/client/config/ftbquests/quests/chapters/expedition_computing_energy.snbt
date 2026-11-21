@@ -1,7 +1,7 @@
 {
 	filename: "expedition_computing_energy"
 	group: "03D71190792A021E"
-	icon: "cmi:antimatter_mechanism"
+	icon: { id: "cmi:antimatter_mechanism" }
 	id: "13F1F75F1A5F8D58"
 	order_index: 0
 	title: "计算与高能工程总览"

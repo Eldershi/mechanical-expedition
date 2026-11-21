@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "ascend_on_burning_oil"
 	group: "050255AE19A93344"
-	icon: "createdieselgenerators:oil_scanner"
+	icon: { id: "createdieselgenerators:oil_scanner" }
 	id: "1D9532E61D127AFA"
 	order_index: 13
 	quest_enhance_decorative_lines: [ ]

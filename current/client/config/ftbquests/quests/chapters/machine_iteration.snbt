@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "machine_iteration"
 	group: "050255AE19A93344"
-	icon: "immersiveengineering:auto_workbench"
+	icon: { id: "immersiveengineering:auto_workbench" }
 	id: "09152524BFC19470"
 	order_index: 5
 	quest_enhance_decorative_lines: [ ]

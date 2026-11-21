@@ -4,7 +4,7 @@
 	title: "量子计算与跨域网络"
 	group: "03D71190792A021E"
 	order_index: 44
-	icon: "mekanism:teleportation_core"
+	icon: { id: "mekanism:teleportation_core" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -282,9 +282,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:893ac5a2-eb3b-5c83-a29f-dbc41ce3bdf9"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:893ac5a2-eb3b-5c83-a29f-dbc41ce3bdf9"
 		}
 		{
 			x: -4.0d
@@ -293,9 +293,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:6eae9a2e-b914-5fac-9b84-54aba8b545de"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:6eae9a2e-b914-5fac-9b84-54aba8b545de"
 		}
 	]
 	quest_enhance_decorative_lines: [

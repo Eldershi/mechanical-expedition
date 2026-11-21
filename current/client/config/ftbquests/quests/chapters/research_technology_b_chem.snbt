@@ -4,7 +4,7 @@
 	title: "农产、乙醇与生物柴油"
 	group: "050255AE19A93344"
 	order_index: 22
-	icon: "createdieselgenerators:plant_oil_bucket"
+	icon: { id: "createdieselgenerators:plant_oil_bucket" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -227,9 +227,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:7b6f2bd3-0969-53ee-9788-49448f73ef1d"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:7b6f2bd3-0969-53ee-9788-49448f73ef1d"
 		}
 		{
 			x: 0.0d
@@ -238,9 +238,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:07ca374a-dbbd-52cd-bcde-0545e584923a"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:07ca374a-dbbd-52cd-bcde-0545e584923a"
 		}
 		{
 			x: 1.067d
@@ -249,9 +249,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:6615a2fb-baab-5b4d-b49b-078aedcc2288"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:6615a2fb-baab-5b4d-b49b-078aedcc2288"
 		}
 		{
 			x: 2.133d
@@ -260,9 +260,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:ed9dedb1-afe7-5915-a889-ba9e04d8c435"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:ed9dedb1-afe7-5915-a889-ba9e04d8c435"
 		}
 		{
 			x: -5.0d
@@ -271,9 +271,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:8bb0d15d-274e-5d48-8535-131a7a607576"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:8bb0d15d-274e-5d48-8535-131a7a607576"
 		}
 		{
 			x: -4.0d
@@ -282,9 +282,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:ab34307a-c7ec-5c36-8a41-eab0e802e875"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:ab34307a-c7ec-5c36-8a41-eab0e802e875"
 		}
 	]
 	quest_enhance_decorative_lines: [

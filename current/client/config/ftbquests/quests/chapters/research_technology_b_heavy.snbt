@@ -4,7 +4,7 @@
 	title: "工程蓝图与常规机器"
 	group: "050255AE19A93344"
 	order_index: 21
-	icon: "immersiveengineering:workbench"
+	icon: { id: "immersiveengineering:workbench" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -233,9 +233,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:de20b5de-c4aa-567c-b984-f6c2e60cbb48"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:de20b5de-c4aa-567c-b984-f6c2e60cbb48"
 		}
 		{
 			x: -2.4d
@@ -244,9 +244,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:bf0fd1aa-8878-56c5-939b-567d96cdcafc"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:bf0fd1aa-8878-56c5-939b-567d96cdcafc"
 		}
 	]
 	quest_enhance_decorative_lines: [

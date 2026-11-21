@@ -4,7 +4,7 @@
 	title: "暮色森林"
 	group: "54D4CAA40ADB5408"
 	order_index: 201
-	icon: "minecraft:diamond"
+	icon: { id: "minecraft:diamond" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -543,9 +543,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:4fd32990-537d-5b2c-b807-b4be9acd63e9"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:4fd32990-537d-5b2c-b807-b4be9acd63e9"
 		}
 		{
 			x: -2.52d
@@ -554,9 +554,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:d72623c7-1759-5730-b0ba-f79c89d49bb0"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:d72623c7-1759-5730-b0ba-f79c89d49bb0"
 		}
 		{
 			x: -3.96d
@@ -565,9 +565,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:5da748e2-e6c7-514b-8f13-8e0c9a8a9ffc"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:5da748e2-e6c7-514b-8f13-8e0c9a8a9ffc"
 		}
 		{
 			x: -2.52d
@@ -576,9 +576,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:1def8667-a3c4-5a05-b811-85ee6ec9a610"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:1def8667-a3c4-5a05-b811-85ee6ec9a610"
 		}
 		{
 			x: -4.68d
@@ -587,9 +587,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:376fcf12-e1cc-53ed-8884-b9c3d912bdfc"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:376fcf12-e1cc-53ed-8884-b9c3d912bdfc"
 		}
 		{
 			x: -3.96d
@@ -598,9 +598,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:2c20ec59-0bde-53d5-b2fb-a37d3f532051"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:2c20ec59-0bde-53d5-b2fb-a37d3f532051"
 		}
 		{
 			x: 4.2d
@@ -609,9 +609,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:a93578c0-d1e5-5c92-bb78-acf85d2a4414"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:a93578c0-d1e5-5c92-bb78-acf85d2a4414"
 		}
 		{
 			x: 5.16d
@@ -620,9 +620,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:2825e067-45b5-5021-a4f1-9c6c7fd8dba7"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:2825e067-45b5-5021-a4f1-9c6c7fd8dba7"
 		}
 		{
 			x: 4.2d
@@ -631,9 +631,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:6537c4bb-f3fa-57ff-8f77-a8bd47832c96"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:6537c4bb-f3fa-57ff-8f77-a8bd47832c96"
 		}
 		{
 			x: 5.16d
@@ -642,9 +642,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:84526862-08b0-55b7-8ba8-9d7dbde698e9"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:84526862-08b0-55b7-8ba8-9d7dbde698e9"
 		}
 		{
 			x: 4.2d
@@ -653,9 +653,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:c5845eaf-d642-5862-9f47-c28e057ea4d0"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:c5845eaf-d642-5862-9f47-c28e057ea4d0"
 		}
 		{
 			x: 5.16d
@@ -664,9 +664,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:7d050485-0ae9-5329-9a8e-c0c35a377072"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:7d050485-0ae9-5329-9a8e-c0c35a377072"
 		}
 		{
 			x: 0.36d
@@ -675,9 +675,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:73862b34-c0d6-512e-8329-9ea69efad1d5"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:73862b34-c0d6-512e-8329-9ea69efad1d5"
 		}
 		{
 			x: 1.8d
@@ -686,9 +686,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:1c57c87f-97d4-5344-8491-99ddd22ce530"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:1c57c87f-97d4-5344-8491-99ddd22ce530"
 		}
 		{
 			x: 4.2d
@@ -697,9 +697,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:1ae4af2d-f635-56c3-9183-322abdb503f7"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:1ae4af2d-f635-56c3-9183-322abdb503f7"
 		}
 		{
 			x: 5.16d
@@ -708,9 +708,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:62b66976-b1fe-5359-af76-247e9f7676df"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:62b66976-b1fe-5359-af76-247e9f7676df"
 		}
 	]
 }

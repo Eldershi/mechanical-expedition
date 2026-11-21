@@ -1,0 +1,144 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "expedition_technology"
+	group: "050255AE19A93344"
+	icon: { id: "cmi:smart_mechanism" }
+	id: "6DB8641A79D29583"
+	images: [ ]
+	order_index: 1
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:3069f54e35f80481" "q:7f5f8e0eda8e34d6"]
+		}
+		{
+			nodes: ["q:7f5f8e0eda8e34d6" "q:936fff61a0a87c2"]
+		}
+		{
+			nodes: ["q:7f5f8e0eda8e34d6" "q:437e48a091c8f85d"]
+		}
+		{
+			nodes: ["q:936fff61a0a87c2" "l:7713e1164a34a228"]
+		}
+		{
+			nodes: ["l:4f3007a0338126d7" "q:437e48a091c8f85d"]
+		}
+		{
+			nodes: ["l:228155d4f6e0fe65" "q:1c48d383e2c7f714"]
+		}
+		{
+			nodes: ["q:437e48a091c8f85d" "q:1bfac80c584b949d"]
+		}
+		{
+			nodes: ["q:1bfac80c584b949d" "l:73c50511b5234ecc"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "3069F54E35F80481"
+			linked_quest: "7B0B079E71A7815D"
+			shape: "rsquare"
+			x: -12.0d
+			y: -1.0d
+		}
+		{
+			id: "7713E1164A34A228"
+			linked_quest: "211642A0702308A1"
+			shape: "rsquare"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			id: "4F3007A0338126D7"
+			linked_quest: "1570B04A1D692BCC"
+			shape: "rsquare"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			id: "228155D4F6E0FE65"
+			linked_quest: "304F1C5501224675"
+			shape: "rsquare"
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			id: "73C50511B5234ECC"
+			linked_quest: "54B7DF3F4B9BD3A4"
+			shape: "rsquare"
+			x: 10.0d
+			y: 2.0d
+		}
+	]
+	quests: [
+		{
+			id: "7F5F8E0EDA8E34D6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "7C319A7A6FD850F3"
+				item: { count: 1, id: "cmi:bronze_mechanism" }
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			id: "0936FFF61A0A87C2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "66A3C1565D728713"
+				item: { count: 1, id: "cmi:railway_mechanism" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			id: "437E48A091C8F85D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "588D0F21968F0F9C"
+				item: { count: 1, id: "create:precision_mechanism" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			id: "1BFAC80C584B949D"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "4F45594E2146AE63"
+					item: { components: { "ftbquests:missing_item": "cmi:pig_iron_mechanism" }, count: 1, id: "ftbquests:missing_item" }
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6956D860CADC9F7C"
+					item: { count: 1, id: "cmi:smart_mechanism" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			id: "1C48D383E2C7F714"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "422DC27F3CEA72E4"
+				item: { count: 1, id: "cmi:coil_mechanism" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+	]
+}

@@ -1,0 +1,130 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_technology_b_oil"
+	group: "050255AE19A93344"
+	icon: { id: "immersiveengineering:redstone_acid_bucket" }
+	id: "4F5A4B0A35B27EB2"
+	images: [
+		{
+			height: 0.0d
+			id: "363B8F6177A1C39C"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 3.9d
+			y: -0.217d
+			click_action: "none:quest_enhance:decorative_anchor:105b69e2-7aa7-534d-9691-eede97b90ee4"
+		}
+		{
+			height: 0.0d
+			id: "4684F655549ACE92"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 4.9d
+			y: 0.217d
+			click_action: "none:quest_enhance:decorative_anchor:fa815697-f7ef-50c6-9b52-52dd9587ff3f"
+		}
+		{
+			height: 0.0d
+			id: "63033B718E439CDC"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 3.967d
+			y: 2.717d
+			click_action: "none:quest_enhance:decorative_anchor:29f37ae7-9fb0-5e2b-becb-8f136f7cd20e"
+		}
+		{
+			height: 0.0d
+			id: "03C80061E684F28E"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 5.033d
+			y: 2.583d
+			click_action: "none:quest_enhance:decorative_anchor:afa8e89e-1a6c-5045-8568-9a9f68282e67"
+		}
+	]
+	order_index: 18
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["q:3b327e8b7cc4a27e" "l:3b15789e88176fdc"]
+		}
+		{
+			nodes: ["q:1d93ddbc96c96e3f" "q:28d5286e3edcca0a"]
+		}
+		{
+			nodes: ["q:1d93ddbc96c96e3f" "a:29f37ae7-9fb0-5e2b-becb-8f136f7cd20e"]
+		}
+		{
+			nodes: ["a:29f37ae7-9fb0-5e2b-becb-8f136f7cd20e" "a:afa8e89e-1a6c-5045-8568-9a9f68282e67"]
+		}
+		{
+			nodes: ["a:afa8e89e-1a6c-5045-8568-9a9f68282e67" "l:5a70c6b462dfc62a"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "45E3837B28739224"
+			linked_quest: "0BAB052634EDF208"
+			shape: "rsquare"
+			size: 0.75d
+			x: -6.1d
+			y: -3.35d
+		}
+		{
+			id: "3B15789E88176FDC"
+			linked_quest: "7C07B827BDFA9BBF"
+			shape: "rsquare"
+			x: 3.1d
+			y: 1.15d
+		}
+		{
+			id: "5A70C6B462DFC62A"
+			linked_quest: "095339324F7AABEE"
+			shape: "rsquare"
+			x: 6.1d
+			y: 2.45d
+		}
+	]
+	quests: [
+		{
+			id: "3B327E8B7CC4A27E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3944814628805F13"
+				type: "checkmark"
+			}]
+			x: -0.1d
+			y: 3.35d
+		}
+		{
+			id: "1D93DDBC96C96E3F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1722C3C7480A8807"
+				type: "checkmark"
+			}]
+			x: 2.9d
+			y: 2.85d
+		}
+		{
+			id: "28D5286E3EDCCA0A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "379DB200A41A1FD9"
+				type: "checkmark"
+			}]
+			x: 5.9d
+			y: 0.65d
+		}
+	]
+}

@@ -1,0 +1,224 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "staged_technology_aquantumnetwork"
+	group: "03D71190792A021E"
+	icon: { id: "mekanism:teleportation_core" }
+	id: "24107F69F32D6078"
+	images: [
+		{
+			height: 0.0d
+			id: "65D670300D42B86A"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -5.0d
+			y: -0.433d
+			click_action: "none:quest_enhance:decorative_anchor:893ac5a2-eb3b-5c83-a29f-dbc41ce3bdf9"
+		}
+		{
+			height: 0.0d
+			id: "2DA83B6BE600B471"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -4.0d
+			y: -1.167d
+			click_action: "none:quest_enhance:decorative_anchor:6eae9a2e-b914-5fac-9b84-54aba8b545de"
+		}
+	]
+	order_index: 3
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:481d4ad2812d0935" "q:7b8ed165b7f6763e"]
+		}
+		{
+			nodes: ["l:481d4ad2812d0935" "q:36861ea480e1bc04"]
+		}
+		{
+			nodes: ["l:481d4ad2812d0935" "q:4b776269265e4b82"]
+		}
+		{
+			nodes: ["l:49c3816b332632d1" "q:7b8ed165b7f6763e"]
+		}
+		{
+			nodes: ["l:23e2415943fcadcf" "q:4b776269265e4b82"]
+		}
+		{
+			nodes: ["l:430438924cdce9a6" "q:3603a98fddab86d9"]
+		}
+		{
+			nodes: ["l:49c3816b332632d1" "q:44cb015096f70e3"]
+		}
+		{
+			nodes: ["q:3603a98fddab86d9" "q:44cb015096f70e3"]
+		}
+		{
+			nodes: ["l:76640ed63cd75cb2" "a:893ac5a2-eb3b-5c83-a29f-dbc41ce3bdf9"]
+		}
+		{
+			nodes: ["a:893ac5a2-eb3b-5c83-a29f-dbc41ce3bdf9" "a:6eae9a2e-b914-5fac-9b84-54aba8b545de"]
+		}
+		{
+			nodes: ["a:6eae9a2e-b914-5fac-9b84-54aba8b545de" "q:93dafba3f592ce2"]
+		}
+		{
+			nodes: ["l:3b14f85c2ca48a7b" "q:93dafba3f592ce2"]
+		}
+		{
+			nodes: ["q:93dafba3f592ce2" "q:70ea37915f7e3d72"]
+		}
+		{
+			nodes: ["q:44cb015096f70e3" "q:70ea37915f7e3d72"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "23E2415943FCADCF"
+			linked_quest: "46232E7FAFB2584C"
+			shape: "rsquare"
+			size: 0.75d
+			x: 6.0d
+			y: 2.75d
+		}
+		{
+			id: "430438924CDCE9A6"
+			linked_quest: "0D54CCAFFA345070"
+			shape: "rsquare"
+			size: 0.75d
+			x: -9.0d
+			y: 4.1d
+		}
+		{
+			id: "76640ED63CD75CB2"
+			linked_quest: "37FB5D1A0B6D4E53"
+			shape: "rsquare"
+			size: 0.75d
+			x: -6.0d
+			y: 0.3d
+		}
+		{
+			id: "3B14F85C2CA48A7B"
+			linked_quest: "2BF7E103DDD10828"
+			shape: "rsquare"
+			size: 0.75d
+			x: -6.0d
+			y: -4.1d
+		}
+		{
+			id: "481D4AD2812D0935"
+			linked_quest: "449F767EA8BC229D"
+			shape: "rsquare"
+			x: 2.8d
+			y: -1.1d
+		}
+		{
+			id: "49C3816B332632D1"
+			linked_quest: "52CA348F51B691A6"
+			shape: "rsquare"
+			x: 2.8d
+			y: 1.1d
+		}
+	]
+	quests: [
+		{
+			id: "3603A98FDDAB86D9"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "6B81E3AAC21E698D"
+				item: { count: 1, id: "mekanism:teleportation_core" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.1d
+		}
+		{
+			id: "044CB015096F70E3"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "7F53E91AE28F129D"
+				item: { count: 1, id: "ae2:quantum_entangled_singularity" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.1d
+		}
+		{
+			id: "093DAFBA3F592CE2"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "41CDB20663586F55"
+				item: { count: 1, id: "ae2:quantum_ring" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.9d
+		}
+		{
+			id: "70EA37915F7E3D72"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "268261B634CF7B43"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 1.1d
+		}
+		{
+			id: "7B8ED165B7F6763E"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "4DDBDD7AE2FB0047"
+				item: { count: 1, id: "advanced_ae:quantum_core" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 6.45d
+			y: 0.65d
+		}
+		{
+			id: "36861EA480E1BC04"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "5978739B81BD59B0"
+				item: { count: 1, id: "advanced_ae:quantum_crafter" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.9d
+		}
+		{
+			id: "4B776269265E4B82"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "266CE1577535CE54"
+				item: { count: 1, id: "advanced_ae:quantum_chestplate" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.1d
+		}
+	]
+}

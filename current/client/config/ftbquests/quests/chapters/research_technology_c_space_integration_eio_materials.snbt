@@ -4,7 +4,7 @@
 	title: "末影接口·合金与基础机器"
 	group: "050255AE19A93344"
 	order_index: 30
-	icon: "enderio:grains_of_infinity"
+	icon: { id: "enderio:grains_of_infinity" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -545,9 +545,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:492ef28b-5b5b-5cf0-a6c6-54d3d787ad0d"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:492ef28b-5b5b-5cf0-a6c6-54d3d787ad0d"
 		}
 		{
 			x: -3.112d
@@ -556,9 +556,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:b36331c3-5552-59c3-b64d-c93a9ee5e7e7"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:b36331c3-5552-59c3-b64d-c93a9ee5e7e7"
 		}
 		{
 			x: -9.468d
@@ -567,9 +567,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:0fb9a098-2dc7-594a-8f16-7979e0ae2854"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:0fb9a098-2dc7-594a-8f16-7979e0ae2854"
 		}
 		{
 			x: -8.436d
@@ -578,9 +578,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:dcd14605-6ed4-5de9-8370-1a73cb9bc6ec"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:dcd14605-6ed4-5de9-8370-1a73cb9bc6ec"
 		}
 		{
 			x: -5.035d
@@ -589,9 +589,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:98032a0d-c890-58b2-a699-c6f91d08e231"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:98032a0d-c890-58b2-a699-c6f91d08e231"
 		}
 		{
 			x: -3.616d
@@ -600,9 +600,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:ab5695c1-4044-5725-8dac-c7751c51f1a3"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:ab5695c1-4044-5725-8dac-c7751c51f1a3"
 		}
 		{
 			x: -4.429d
@@ -611,9 +611,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:d6aa0b44-9938-5408-aa2b-ba8452d68d06"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:d6aa0b44-9938-5408-aa2b-ba8452d68d06"
 		}
 		{
 			x: -2.402d
@@ -622,9 +622,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:2e0d4e28-dd4c-5320-8a67-1360f7a38f85"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:2e0d4e28-dd4c-5320-8a67-1360f7a38f85"
 		}
 		{
 			x: -5.803d
@@ -633,9 +633,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:4a30d4b8-6a45-52fc-8ed5-16107a6055bd"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:4a30d4b8-6a45-52fc-8ed5-16107a6055bd"
 		}
 		{
 			x: -5.152d
@@ -644,9 +644,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:7e92b643-33e4-5fe7-9d39-18b63981e06f"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:7e92b643-33e4-5fe7-9d39-18b63981e06f"
 		}
 		{
 			x: -4.803d
@@ -655,9 +655,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:8b7c6169-8672-5aad-b466-88de53004e0a"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:8b7c6169-8672-5aad-b466-88de53004e0a"
 		}
 		{
 			x: -3.152d
@@ -666,9 +666,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:73cb830b-ecac-59f1-94f2-ac85a0597f04"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:73cb830b-ecac-59f1-94f2-ac85a0597f04"
 		}
 		{
 			x: -3.77d
@@ -677,9 +677,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:43537503-3659-57ca-8784-d322a9655df8"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:43537503-3659-57ca-8784-d322a9655df8"
 		}
 		{
 			x: -1.086d
@@ -688,9 +688,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:c12905d1-7a68-5f51-a88b-858f8ce54309"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:c12905d1-7a68-5f51-a88b-858f8ce54309"
 		}
 		{
 			x: -3.201d
@@ -699,9 +699,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:5309de48-1566-5580-b646-e8f25115ebb8"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:5309de48-1566-5580-b646-e8f25115ebb8"
 		}
 		{
 			x: 0.052d
@@ -710,9 +710,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:9b05e43e-8216-532b-ab41-b169c5065318"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:9b05e43e-8216-532b-ab41-b169c5065318"
 		}
 		{
 			x: -4.078d
@@ -721,9 +721,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:8cce570b-85b9-5067-869f-b834bccd57e8"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:8cce570b-85b9-5067-869f-b834bccd57e8"
 		}
 		{
 			x: -1.702d
@@ -732,9 +732,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:5eccd2ea-a547-515e-960c-8ed09d80f702"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:5eccd2ea-a547-515e-960c-8ed09d80f702"
 		}
 		{
 			x: -1.192d
@@ -743,9 +743,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:71c0c6a5-4027-5b49-936c-12dfe7ff4c45"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:71c0c6a5-4027-5b49-936c-12dfe7ff4c45"
 		}
 		{
 			x: 4.072d
@@ -754,9 +754,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:ea1f8bdc-e4bc-5bfc-9bf1-ac05db00fb42"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:ea1f8bdc-e4bc-5bfc-9bf1-ac05db00fb42"
 		}
 		{
 			x: -6.32d
@@ -765,9 +765,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:e44a22a2-fe9d-5ee9-a853-eefb15d543a4"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:e44a22a2-fe9d-5ee9-a853-eefb15d543a4"
 		}
 		{
 			x: -6.185d
@@ -776,9 +776,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:a2549c94-873a-5e21-b22d-add63ec75b9e"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:a2549c94-873a-5e21-b22d-add63ec75b9e"
 		}
 		{
 			x: -3.125d
@@ -787,9 +787,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:9e872953-2e71-5396-8f39-9707c4f91ee5"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:9e872953-2e71-5396-8f39-9707c4f91ee5"
 		}
 		{
 			x: -1.751d
@@ -798,9 +798,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:fb0fae96-bb1c-5923-b7dd-00b41e14c3da"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:fb0fae96-bb1c-5923-b7dd-00b41e14c3da"
 		}
 		{
 			x: 2.989d
@@ -809,9 +809,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:fbda735c-7146-5d63-a87e-86e1cc996b3c"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:fbda735c-7146-5d63-a87e-86e1cc996b3c"
 		}
 		{
 			x: 4.378d
@@ -820,9 +820,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:ad0cf4c7-e831-55e3-a872-282ea47e3cd8"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:ad0cf4c7-e831-55e3-a872-282ea47e3cd8"
 		}
 		{
 			x: -3.013d
@@ -831,9 +831,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:984a52d0-2215-5adc-87e7-8a50a3badbb1"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:984a52d0-2215-5adc-87e7-8a50a3badbb1"
 		}
 		{
 			x: 1.377d
@@ -842,9 +842,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:40e63260-9ff4-5b2b-a61a-4d6e089564cf"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:40e63260-9ff4-5b2b-a61a-4d6e089564cf"
 		}
 		{
 			x: -4.436d
@@ -853,9 +853,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:652b2626-dc6a-5c51-91f7-48381c609e37"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:652b2626-dc6a-5c51-91f7-48381c609e37"
 		}
 		{
 			x: -1.468d
@@ -864,9 +864,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:9fde6d0e-dfa6-5df6-bbb1-8c7936f298b9"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:9fde6d0e-dfa6-5df6-bbb1-8c7936f298b9"
 		}
 		{
 			x: 4.771d
@@ -875,9 +875,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:e40df8b0-7884-59a5-bdd7-4443b3a68736"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:e40df8b0-7884-59a5-bdd7-4443b3a68736"
 		}
 		{
 			x: 6.235d
@@ -886,9 +886,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:bf3936e3-9f5d-5b69-bfc8-6d4dffca0173"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:bf3936e3-9f5d-5b69-bfc8-6d4dffca0173"
 		}
 		{
 			x: -0.545d
@@ -897,9 +897,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:6b8c8d53-542d-5f41-a9fe-5f040615cc13"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:6b8c8d53-542d-5f41-a9fe-5f040615cc13"
 		}
 		{
 			x: 1.106d
@@ -908,9 +908,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:d00ff20a-99f7-56c0-bac1-c4fd96799736"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:d00ff20a-99f7-56c0-bac1-c4fd96799736"
 		}
 		{
 			x: 1.028d
@@ -919,9 +919,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:a296d903-a2b3-5a2f-a219-1fddd2e45dd7"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:a296d903-a2b3-5a2f-a219-1fddd2e45dd7"
 		}
 		{
 			x: 4.253d
@@ -930,9 +930,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:c08716d9-a53a-5f54-9270-cd1d1b344f66"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:c08716d9-a53a-5f54-9270-cd1d1b344f66"
 		}
 		{
 			x: -0.184d
@@ -941,9 +941,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:f8f62342-dd3a-57cc-839d-1caf6a3638bd"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:f8f62342-dd3a-57cc-839d-1caf6a3638bd"
 		}
 		{
 			x: 1.829d
@@ -952,9 +952,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:953f6345-ba76-5cce-9b90-531ba1ccaeb0"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:953f6345-ba76-5cce-9b90-531ba1ccaeb0"
 		}
 		{
 			x: -3.481d
@@ -963,9 +963,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:25372b1a-fa92-5a59-bcbe-4ac253ce9e80"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:25372b1a-fa92-5a59-bcbe-4ac253ce9e80"
 		}
 		{
 			x: -4.765d
@@ -974,9 +974,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:3b46a086-33a2-5f4b-ada0-05745909bebc"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:3b46a086-33a2-5f4b-ada0-05745909bebc"
 		}
 		{
 			x: 1.307d
@@ -985,9 +985,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:fd132a61-cd93-55ca-bc05-89403f355ec5"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:fd132a61-cd93-55ca-bc05-89403f355ec5"
 		}
 		{
 			x: 2.032d
@@ -996,9 +996,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:772a06c2-b11c-590b-ab84-d9955184e33e"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:772a06c2-b11c-590b-ab84-d9955184e33e"
 		}
 		{
 			x: 2.88d
@@ -1007,9 +1007,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:7a632a83-0431-5d2f-990d-1e92aab6da22"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:7a632a83-0431-5d2f-990d-1e92aab6da22"
 		}
 		{
 			x: 5.179d
@@ -1018,9 +1018,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:cdb2705c-e978-5d91-a973-3b86b67c91ce"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:cdb2705c-e978-5d91-a973-3b86b67c91ce"
 		}
 		{
 			x: 1.668d
@@ -1029,9 +1029,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:43268298-4321-5f19-8e65-c9653b0053a0"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:43268298-4321-5f19-8e65-c9653b0053a0"
 		}
 		{
 			x: 2.755d
@@ -1040,9 +1040,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:498b0d87-7088-5f00-ba4c-5e8c99c6f42a"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:498b0d87-7088-5f00-ba4c-5e8c99c6f42a"
 		}
 	]
 	quest_enhance_decorative_lines: [

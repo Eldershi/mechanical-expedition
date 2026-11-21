@@ -1,0 +1,1686 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "bumblezone_01_exploration"
+	group: "54D4CAA40ADB5408"
+	icon: { id: "the_bumblezone:honey_compass" }
+	id: "5BAAB2F63337EF1E"
+	images: [
+		{
+			height: 1.48d
+			id: "301506EFC33E9613"
+			image: "the_bumblezone:the_bumblezone_logo_large.png"
+			order: -1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 4.0d
+			x: -11.0d
+			y: -1.0d
+		}
+		{
+			height: 1.0d
+			id: "28B396184D7B8077"
+			image: "the_bumblezone:textures/entity_icon/bee_queen.png"
+			order: -1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			height: 0.8d
+			id: "70B74E847EFD596C"
+			image: "the_bumblezone:textures/item/essence/essence_of_the_bees.png"
+			order: -1
+			quest_enhance_exclude_from_box_selection: 0b
+			rotation: 0.0d
+			width: 0.8d
+			x: 8.1d
+			y: 5.2d
+		}
+	]
+	order_index: 0
+	progression_mode: "flexible"
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:9a465c933841630"
+				"q:70ab9e00ed2d0beb"
+			]
+		}
+		{
+			nodes: [
+				"q:9a465c933841630"
+				"q:74b9e37643840b33"
+			]
+		}
+		{
+			nodes: [
+				"q:79525fa6bb443977"
+				"q:2b01097f812deeff"
+			]
+		}
+		{
+			nodes: [
+				"q:4d7c3e330eeddd7f"
+				"q:4727c4d5a70f42fe"
+			]
+		}
+		{
+			nodes: [
+				"q:609a02136be7aef1"
+				"q:4d7c3e330eeddd7f"
+			]
+		}
+		{
+			nodes: [
+				"q:7fa6dbd38ca2490e"
+				"q:2fd3bbb55eeb80b5"
+			]
+		}
+		{
+			nodes: [
+				"q:6d8a39a347fe7e96"
+				"q:1e44b31ff0b6ba86"
+			]
+		}
+		{
+			nodes: [
+				"q:9a465c933841630"
+				"q:65af3e867db1ea9a"
+			]
+		}
+		{
+			nodes: [
+				"q:9a465c933841630"
+				"q:5c1317c9e645cf3f"
+			]
+		}
+		{
+			nodes: [
+				"q:79525fa6bb443977"
+				"q:708014be59d1bbf1"
+			]
+		}
+		{
+			nodes: [
+				"q:708014be59d1bbf1"
+				"q:36cab81f3136a07f"
+			]
+		}
+		{
+			nodes: [
+				"q:1e44b31ff0b6ba86"
+				"q:59a1b468df308920"
+			]
+		}
+		{
+			nodes: [
+				"q:9a465c933841630"
+				"q:71d55dfa6ab2d166"
+			]
+		}
+		{
+			nodes: [
+				"q:6d8a39a347fe7e96"
+				"q:2e806895fc39f8cd"
+			]
+		}
+		{
+			nodes: [
+				"q:7ddaf6e68c90191a"
+				"q:299bbd5ee259dc5c"
+			]
+		}
+		{
+			nodes: [
+				"q:392ffda4bc12c648"
+				"q:7fa6dbd38ca2490e"
+			]
+		}
+		{
+			nodes: [
+				"q:7fa6dbd38ca2490e"
+				"q:9a465c933841630"
+			]
+		}
+		{
+			nodes: [
+				"q:876ee9a191a9145"
+				"q:17603e7a5e306a3c"
+			]
+		}
+		{
+			nodes: [
+				"q:74b9e37643840b33"
+				"q:17603e7a5e306a3c"
+			]
+		}
+		{
+			nodes: [
+				"q:1474f777650358dc"
+				"q:17603e7a5e306a3c"
+			]
+		}
+		{
+			nodes: [
+				"q:708014be59d1bbf1"
+				"q:876ee9a191a9145"
+			]
+		}
+		{
+			nodes: [
+				"q:79525fa6bb443977"
+				"q:392ffda4bc12c648"
+			]
+		}
+		{
+			nodes: [
+				"q:7fa6dbd38ca2490e"
+				"q:392ffda4bc12c648"
+			]
+		}
+		{
+			nodes: [
+				"q:179c704e07a94364"
+				"q:29e4b4efaff18c6a"
+			]
+		}
+		{
+			nodes: [
+				"q:79525fa6bb443977"
+				"q:609a02136be7aef1"
+			]
+		}
+		{
+			nodes: [
+				"q:9a465c933841630"
+				"q:1474f777650358dc"
+			]
+		}
+		{
+			nodes: [
+				"q:1474f777650358dc"
+				"q:5b168e4a2c103e76"
+			]
+		}
+		{
+			nodes: [
+				"q:74b9e37643840b33"
+				"q:54bbd39da4808d33"
+			]
+		}
+		{
+			nodes: [
+				"q:609a02136be7aef1"
+				"q:67e0f54e174e5281"
+			]
+		}
+		{
+			nodes: [
+				"q:79525fa6bb443977"
+				"q:6d8a39a347fe7e96"
+			]
+		}
+		{
+			nodes: [
+				"q:3acf6610025a26da"
+				"q:2245f865dab8d2f7"
+			]
+		}
+		{
+			nodes: [
+				"q:9a465c933841630"
+				"q:3acf6610025a26da"
+			]
+		}
+		{
+			nodes: [
+				"q:67e0f54e174e5281"
+				"q:7ddaf6e68c90191a"
+			]
+		}
+		{
+			nodes: [
+				"q:5c1317c9e645cf3f"
+				"q:73506675b62eac5c"
+			]
+		}
+		{
+			nodes: [
+				"q:1954ddfe9a92c97c"
+				"q:179c704e07a94364"
+			]
+		}
+		{
+			nodes: [
+				"q:9a465c933841630"
+				"q:1faab6c7b8605b80"
+			]
+		}
+		{
+			nodes: [
+				"q:411ef06e5380febb"
+				"q:76cc63aad57c54ed"
+			]
+		}
+		{
+			nodes: [
+				"q:76cc63aad57c54ed"
+				"q:79525fa6bb443977"
+			]
+		}
+		{
+			nodes: [
+				"q:1faab6c7b8605b80"
+				"q:6a7925149a7f0b46"
+			]
+		}
+		{
+			nodes: [
+				"q:708014be59d1bbf1"
+				"q:2fd3bbb55eeb80b5"
+			]
+		}
+		{
+			nodes: [
+				"q:79525fa6bb443977"
+				"q:1e44b31ff0b6ba86"
+			]
+		}
+		{
+			nodes: [
+				"q:36cab81f3136a07f"
+				"q:74ee3358ef8c1a2"
+			]
+		}
+		{
+			nodes: [
+				"q:1e44b31ff0b6ba86"
+				"q:1954ddfe9a92c97c"
+			]
+		}
+		{
+			nodes: [
+				"q:29e4b4efaff18c6a"
+				"q:f183261d6297a01"
+			]
+		}
+		{
+			nodes: [
+				"q:76cc63aad57c54ed"
+				"q:1e44b31ff0b6ba86"
+			]
+		}
+		{
+			nodes: [
+				"q:179c704e07a94364"
+				"q:350758ff218cdf9c"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:8a120e7a6d5769e"
+			]
+		}
+		{
+			nodes: [
+				"q:8a120e7a6d5769e"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:2994a5208619af38"
+			]
+		}
+		{
+			nodes: [
+				"q:2994a5208619af38"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:3562d1bccd6c2562"
+			]
+		}
+		{
+			nodes: [
+				"q:3562d1bccd6c2562"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:605efdaef7f12497"
+			]
+		}
+		{
+			nodes: [
+				"q:605efdaef7f12497"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:79c9c2f36a8c32aa"
+			]
+		}
+		{
+			nodes: [
+				"q:79c9c2f36a8c32aa"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:5d129ea41ce992c4"
+			]
+		}
+		{
+			nodes: [
+				"q:5d129ea41ce992c4"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:597a4e97ed7e6241"
+			]
+		}
+		{
+			nodes: [
+				"q:597a4e97ed7e6241"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:302a9e90279f003b"
+			]
+		}
+		{
+			nodes: [
+				"q:302a9e90279f003b"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:5035f521c50af236"
+			]
+		}
+		{
+			nodes: [
+				"q:5035f521c50af236"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:14df53593495b81"
+			]
+		}
+		{
+			nodes: [
+				"q:14df53593495b81"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:7193a2df972cb583"
+			]
+		}
+		{
+			nodes: [
+				"q:7193a2df972cb583"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:67a56e5739d356c6"
+			]
+		}
+		{
+			nodes: [
+				"q:67a56e5739d356c6"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:52580a6b355fc6e7"
+			]
+		}
+		{
+			nodes: [
+				"q:52580a6b355fc6e7"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:3ce82d959dbc1d4b"
+			]
+		}
+		{
+			nodes: [
+				"q:3ce82d959dbc1d4b"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:27473729b4d39137"
+			]
+		}
+		{
+			nodes: [
+				"q:27473729b4d39137"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:350758ff218cdf9c"
+				"q:d6fcef40a7c8beb"
+			]
+		}
+		{
+			nodes: [
+				"q:d6fcef40a7c8beb"
+				"q:10ac04cb57f6817f"
+			]
+		}
+		{
+			nodes: [
+				"q:10ac04cb57f6817f"
+				"q:859f157598cfd16"
+			]
+		}
+		{
+			nodes: [
+				"q:859f157598cfd16"
+				"q:4c1e297551e1d15b"
+			]
+		}
+		{
+			nodes: [
+				"q:859f157598cfd16"
+				"q:75018f7f84681cc"
+			]
+		}
+		{
+			nodes: [
+				"q:859f157598cfd16"
+				"q:1d6497a7ce358290"
+			]
+		}
+		{
+			nodes: [
+				"q:859f157598cfd16"
+				"q:35ea5be41fc3680"
+			]
+		}
+		{
+			nodes: [
+				"q:859f157598cfd16"
+				"q:36550a2b516b73bf"
+			]
+		}
+		{
+			nodes: [
+				"q:859f157598cfd16"
+				"q:1343331faf0b3ea9"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			icon: {
+				id: "the_bumblezone:flower_headwear"
+			}
+			id: "70AB9E00ED2D0BEB"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "03387FBAFF689313"
+				item: { count: 1, id: "the_bumblezone:flower_headwear" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: -7.593d
+		}
+		{
+			icon: {
+				id: "the_bumblezone:stingless_bee_helmet_1"
+			}
+			id: "74B9E37643840B33"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "7FD0952C32E56330"
+					item: { components: { "ftbfiltersystem:filter": "or(item(the_bumblezone:stingless_bee_helmet_1)item(the_bumblezone:stingless_bee_helmet_2))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "42AEA1CCC22B5D43"
+					item: { components: { "ftbfiltersystem:filter": "or(item(the_bumblezone:bumble_bee_chestplate_1)item(the_bumblezone:bumble_bee_chestplate_2)item(the_bumblezone:bumble_bee_chestplate_trans_1)item(the_bumblezone:bumble_bee_chestplate_trans_2))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "56CD7FCED51383C2"
+					item: { components: { "ftbfiltersystem:filter": "or(item(the_bumblezone:honey_bee_leggings_1)item(the_bumblezone:honey_bee_leggings_2))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "7665C9C844D40CE4"
+					item: { components: { "ftbfiltersystem:filter": "or(item(the_bumblezone:carpenter_bee_boots_1)item(the_bumblezone:carpenter_bee_boots_2))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "6EA443C28B4A450E"
+					item: { count: 1, id: "the_bumblezone:stinger_spear" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2AFCAEEDA5AB56C1"
+					item: { count: 1, id: "the_bumblezone:honey_crystal_shield" }
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -4.437d
+		}
+		{
+			id: "2B01097F812DEEFF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:beds/sleep_in_bed"
+				criterion: ""
+				id: "1A9A37C68832D7E0"
+				type: "advancement"
+			}]
+			x: -6.75d
+			y: 1.424d
+		}
+		{
+			id: "4727C4D5A70F42FE"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:beehemoth/queen_beehemoth"
+				criterion: ""
+				id: "4003D948A45EEF3D"
+				type: "advancement"
+			}]
+			x: -3.25d
+			y: 5.562d
+		}
+		{
+			id: "4D7C3E330EEDDD7F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:beehemoth/tamed_beehemoth"
+				criterion: ""
+				id: "105472AD0F26CD62"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: 5.633d
+		}
+		{
+			id: "65AF3E867DB1EA9A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "451968523DF2AA47"
+					item: { count: 1, id: "the_bumblezone:super_candle" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4FE6739E7F098242"
+					item: { count: 1, id: "the_bumblezone:potion_candle" }
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -1.637d
+		}
+		{
+			id: "5C1317C9E645CF3F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "6F116300D33CE642"
+					item: { count: 1, id: "the_bumblezone:carvable_wax" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4444B6B374892225"
+					item: { count: 1, id: "the_bumblezone:ancient_wax_bricks" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "05AA7F9AB7C4A69A"
+					item: { count: 1, id: "the_bumblezone:luminescent_wax_channel_red" }
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -0.237d
+		}
+		{
+			id: "708014BE59D1BBF1"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "67E8272104D43D67"
+				item: { count: 1, id: "the_bumblezone:beehive_beeswax" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -6.75d
+			y: 0.072d
+		}
+		{
+			id: "36CAB81F3136A07F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:combs_and_wax/honey_cocoon_silk_touch"
+				criterion: ""
+				id: "492F37BF7A73AFD0"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: 0.89d
+		}
+		{
+			id: "59A1B468DF308920"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:crystalline_flower/enchant_crystalline_flower"
+				criterion: ""
+				id: "75E7CA83E89F116D"
+				type: "advancement"
+			}]
+			x: -3.25d
+			y: 4.162d
+		}
+		{
+			id: "71D55DFA6AB2D166"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "21AD66EA70C0AEE0"
+				item: { components: { "ftbfiltersystem:filter": "or(item(the_bumblezone:string_curtain_white)item(the_bumblezone:string_curtain_orange)item(the_bumblezone:string_curtain_magenta)item(the_bumblezone:string_curtain_light_blue)item(the_bumblezone:string_curtain_yellow)item(the_bumblezone:string_curtain_lime)item(the_bumblezone:string_curtain_pink)item(the_bumblezone:string_curtain_gray)item(the_bumblezone:string_curtain_light_gray)item(the_bumblezone:string_curtain_cyan)item(the_bumblezone:string_curtain_purple)item(the_bumblezone:string_curtain_blue)item(the_bumblezone:string_curtain_brown)item(the_bumblezone:string_curtain_green)item(the_bumblezone:string_curtain_red)item(the_bumblezone:string_curtain_black))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.163d
+		}
+		{
+			id: "2E806895FC39F8CD"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:decor/obtain_all_banner_patterns"
+				criterion: ""
+				id: "41E24F29F12A4EC4"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: 4.233d
+		}
+		{
+			id: "299BBD5EE259DC5C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "2F93867E6BEAA06E"
+				item: { count: 1, id: "the_bumblezone:dirt_pellet" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.781d
+		}
+		{
+			id: "09A465C933841630"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:effects/beenergized_maxed"
+				criterion: ""
+				id: "2C96C205DE8E2C12"
+				type: "advancement"
+			}]
+			x: -3.25d
+			y: -2.337d
+		}
+		{
+			icon: {
+				id: "minecraft:potion"
+			}
+			id: "17603E7A5E306A3C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:effects/brew_bee_soup"
+					criterion: ""
+					id: "2FD4BFC55907F92B"
+					type: "advancement"
+				}
+				{
+					advancement: "the_bumblezone:effects/brew_bee_stinger"
+					criterion: ""
+					id: "2273772764A10202"
+					type: "advancement"
+				}
+				{
+					advancement: "the_bumblezone:effects/brew_glistering_honey_crystal_block"
+					criterion: ""
+					id: "7A760BAD48C56B58"
+					type: "advancement"
+				}
+			]
+			x: 0.25d
+			y: -1.563d
+		}
+		{
+			id: "0876EE9A191A9145"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:effects/consume_bee_soup"
+				criterion: ""
+				id: "1748E4CD847B53B8"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: -2.086d
+		}
+		{
+			id: "392FFDA4BC12C648"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:effects/getting_protection"
+				criterion: ""
+				id: "65213E5E51D6E1A9"
+				type: "advancement"
+			}]
+			x: -6.75d
+			y: -1.328d
+		}
+		{
+			id: "7FA6DBD38CA2490E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:effects/honey_permission"
+				criterion: ""
+				id: "6C9668FCB00738AA"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: -0.686d
+		}
+		{
+			id: "10AC04CB57F6817F"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					advancement: "the_bumblezone:the_queens_desire/journeys_end"
+					criterion: ""
+					id: "372BB8D42105B6A6"
+					type: "advancement"
+				}
+				{
+					advancement: "the_bumblezone:essence/bee_essence_infusion"
+					criterion: ""
+					id: "623AD4714E37EE18"
+					type: "advancement"
+				}
+			]
+			x: 8.1d
+			y: 2.563d
+		}
+		{
+			id: "1D6497A7CE358290"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:essence/essence_calming"
+				criterion: ""
+				id: "1CA368767DE8DFD7"
+				type: "advancement"
+			}]
+			x: 11.6d
+			y: 2.563d
+		}
+		{
+			id: "1343331FAF0B3EA9"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:essence/essence_continuity"
+				criterion: ""
+				id: "3A31DCEE1EAC4F94"
+				type: "advancement"
+			}]
+			x: 13.05d
+			y: 4.013d
+		}
+		{
+			id: "075018F7F84681CC"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:essence/essence_knowing"
+				criterion: ""
+				id: "193441D479F8E913"
+				type: "advancement"
+			}]
+			x: 13.05d
+			y: 1.113d
+		}
+		{
+			id: "035EA5BE41FC3680"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:essence/essence_life"
+				criterion: ""
+				id: "1613794C52AA99A7"
+				type: "advancement"
+			}]
+			x: 13.05d
+			y: 2.563d
+		}
+		{
+			id: "36550A2B516B73BF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:essence/essence_radiance"
+				criterion: ""
+				id: "645C1657C93C178B"
+				type: "advancement"
+			}]
+			x: 11.6d
+			y: 4.013d
+		}
+		{
+			id: "4C1E297551E1D15B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:essence/essence_raging"
+				criterion: ""
+				id: "7947E3B422BDA0AD"
+				type: "advancement"
+			}]
+			x: 11.6d
+			y: 1.113d
+		}
+		{
+			id: "29E4B4EFAFF18C6A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "5144673046CDFE50"
+					item: { count: 1, id: "the_bumblezone:royal_jelly_bottle" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "41A9D85F9A60C157"
+					item: { count: 1, id: "the_bumblezone:royal_jelly_bucket" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "458CD5BDFB0A0CFE"
+					item: { count: 1, id: "the_bumblezone:royal_jelly_block" }
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: 0.25d
+			y: 5.963d
+		}
+		{
+			id: "609A02136BE7AEF1"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "7EDC041CF8AC24A0"
+				item: { count: 1, id: "the_bumblezone:honey_bucket" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -6.75d
+			y: 6.333d
+		}
+		{
+			id: "1474F777650358DC"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "020EA74CA45FCCA3"
+					item: { count: 1, id: "the_bumblezone:honey_crystal_shards" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "726A9C2F5B4471AD"
+					item: { count: 1, id: "the_bumblezone:honey_crystal" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "612FC4B1C65DDAF5"
+					item: { count: 1, id: "the_bumblezone:glistering_honey_crystal" }
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -3.037d
+		}
+		{
+			id: "5B168E4A2C103E76"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "40D8D61D2B70A04C"
+					item: { count: 1, id: "the_bumblezone:sticky_honey_residue" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "20151FE9E6D002FA"
+					item: { count: 1, id: "the_bumblezone:sticky_honey_redstone" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2F9DD2551CAE77B3"
+					item: { count: 1, id: "the_bumblezone:honey_web" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "65ACEB83F846BB96"
+					item: { count: 1, id: "the_bumblezone:redstone_honey_web" }
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: 0.25d
+			y: -2.963d
+		}
+		{
+			icon: {
+				id: "the_bumblezone:honey_crystal_shield"
+			}
+			id: "54BBD39DA4808D33"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:honey_crystal_shield/obtain_maxed_honey_crystal_shield"
+				criterion: ""
+				id: "58A67607EAA60A6A"
+				type: "advancement"
+			}]
+			x: 0.25d
+			y: -4.363d
+		}
+		{
+			id: "67E0F54E174E5281"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:honey_slime/honey_slime_harvest"
+				criterion: ""
+				id: "40DC3E3177431C91"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: 7.033d
+		}
+		{
+			id: "6D8A39A347FE7E96"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:music_discs/obtain_all_music_discs"
+				criterion: ""
+				id: "3158F8A7D0CD6230"
+				type: "advancement"
+			}]
+			x: -6.75d
+			y: 3.624d
+		}
+		{
+			id: "2245F865DAB8D2F7"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "546E4733EEB3DE3E"
+					item: { count: 1, id: "the_bumblezone:pile_of_pollen" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "2163A9551AB7A1D9"
+					item: { count: 1, id: "the_bumblezone:pile_of_pollen_suspicious" }
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: 3.25d
+			y: -2.25d
+		}
+		{
+			id: "3ACF6610025A26DA"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "23F7D92E67C04E0B"
+				item: { count: 1, id: "the_bumblezone:pollen_puff" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.25d
+		}
+		{
+			icon: {
+				id: "the_bumblezone:honeycomb_brood_block"
+			}
+			id: "411EF06E5380FEBB"
+			quest_enhance_disable_scroll_paging: false
+			shape: "rsquare"
+			size: 1.0d
+			tasks: [{
+				id: "46062864AA6E662B"
+				type: "checkmark"
+			}]
+			x: -12.0d
+			y: 2.563d
+		}
+		{
+			id: "7DDAF6E68C90191A"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:rootmin/rootmin_flower_swap"
+				criterion: ""
+				id: "54D481ED4A946273"
+				type: "advancement"
+			}]
+			x: -3.25d
+			y: 6.962d
+		}
+		{
+			id: "73506675B62EAC5C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:sentry_watcher/sentry_watcher_use_egg"
+				criterion: ""
+				id: "56DCC300A90939BF"
+				type: "advancement"
+			}]
+			x: 0.25d
+			y: 0.097d
+		}
+		{
+			id: "0859F157598CFD16"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:structures/enter_sempiternal_sanctum"
+				criterion: ""
+				id: "279910629D229684"
+				type: "advancement"
+			}]
+			x: 9.85d
+			y: 2.563d
+		}
+		{
+			id: "179C704E07A94364"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:structures/enter_throne_pillar"
+				criterion: ""
+				id: "2E9BB78C8A7A9946"
+				type: "advancement"
+			}]
+			x: -1.5d
+			y: 2.563d
+		}
+		{
+			id: "1FAAB6C7B8605B80"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "45F95C10891CCA71"
+					item: { count: 1, id: "the_bumblezone:sugar_water_bucket" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "430660CB2C32B8A9"
+					item: { count: 1, id: "the_bumblezone:sugar_water_bottle" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "0D7F669C848DF446"
+					item: { count: 1, id: "the_bumblezone:sugar_infused_cobblestone" }
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -6.193d
+		}
+		{
+			id: "76CC63AAD57C54ED"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				dimension: "the_bumblezone:the_bumblezone"
+				id: "4601E6A043B4E25C"
+				type: "dimension"
+			}]
+			x: -10.25d
+			y: 2.563d
+		}
+		{
+			id: "79525FA6BB443977"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:teleportation/teleport_out_of_bumblezone"
+				criterion: ""
+				id: "34D9E09F8BBD4A76"
+				type: "advancement"
+			}]
+			x: -8.5d
+			y: 1.163d
+		}
+		{
+			id: "5035F521C50AF236"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/back_in_action"
+				criterion: ""
+				id: "735E1DA8BEBA0202"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 3.288d
+		}
+		{
+			id: "0D6FCEF40A7C8BEB"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/crazy_trader"
+				criterion: ""
+				id: "4C3525CFEC49C4F4"
+				type: "advancement"
+			}]
+			x: 6.35d
+			y: 4.738d
+		}
+		{
+			id: "79C9C2F36A8C32AA"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/fighting_the_swarm"
+				criterion: ""
+				id: "33A164D20CC42C8C"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 1.838d
+		}
+		{
+			id: "08A120E7A6D5769E"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/flooding_the_housing_market"
+				criterion: ""
+				id: "5477D36F0E4AE59B"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 0.388d
+		}
+		{
+			id: "3562D1BCCD6C2562"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/honey_drunk"
+				criterion: ""
+				id: "7493279540C45499"
+				type: "advancement"
+			}]
+			x: 4.9d
+			y: 0.388d
+		}
+		{
+			id: "67A56E5739D356C6"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/hungry_hungry_bees"
+				criterion: ""
+				id: "4856D65F3152FCF2"
+				type: "advancement"
+			}]
+			x: 6.35d
+			y: 3.288d
+		}
+		{
+			id: "52580A6B355FC6E7"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/love_bees"
+				criterion: ""
+				id: "25FDE1F489BA93E0"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 4.738d
+		}
+		{
+			id: "3CE82D959DBC1D4B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/otherworldly_mites"
+				criterion: ""
+				id: "0E6F49CDA90D26DA"
+				type: "advancement"
+			}]
+			x: 3.45d
+			y: 4.738d
+		}
+		{
+			icon: {
+				id: "the_bumblezone:stinger_spear"
+			}
+			id: "7193A2DF972CB583"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/peak_inefficiency"
+				criterion: ""
+				id: "66A222E33D3B226F"
+				type: "advancement"
+			}]
+			x: 4.9d
+			y: 3.288d
+		}
+		{
+			id: "5D129EA41CE992C4"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/poison_warfare"
+				criterion: ""
+				id: "7D6CF5C1E8C5E90E"
+				type: "advancement"
+			}]
+			x: 3.45d
+			y: 1.838d
+		}
+		{
+			id: "605EFDAEF7F12497"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/pollen_fight"
+				criterion: ""
+				id: "3297378D27DF6803"
+				type: "advancement"
+			}]
+			x: 6.35d
+			y: 0.388d
+		}
+		{
+			id: "597A4E97ED7E6241"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/slimy_mitosis"
+				criterion: ""
+				id: "7209301A2353D85A"
+				type: "advancement"
+			}]
+			x: 4.9d
+			y: 1.838d
+		}
+		{
+			id: "302A9E90279F003B"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/terror_fangs"
+				criterion: ""
+				id: "1E2F9715398416D8"
+				type: "advancement"
+			}]
+			x: 6.35d
+			y: 1.838d
+		}
+		{
+			id: "350758FF218CDF9C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/the_beginning"
+				criterion: ""
+				id: "1C1DBA6AB60CEAD1"
+				type: "advancement"
+			}]
+			x: 0.25d
+			y: 2.563d
+		}
+		{
+			id: "014DF53593495B81"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/the_crazy_florist"
+				criterion: ""
+				id: "19576140150E12EC"
+				type: "advancement"
+			}]
+			x: 3.45d
+			y: 3.288d
+		}
+		{
+			id: "27473729B4D39137"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/the_great_dragon_slayer"
+				criterion: ""
+				id: "3AC952C68FFC7D4D"
+				type: "advancement"
+			}]
+			x: 4.9d
+			y: 4.738d
+		}
+		{
+			id: "2994A5208619AF38"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:the_queens_desire/too_many_legs"
+				criterion: ""
+				id: "03786AEC0E1232BE"
+				type: "advancement"
+			}]
+			x: 3.45d
+			y: 0.388d
+		}
+		{
+			id: "2FD3BBB55EEB80B5"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "027B643BA322757C"
+				item: { count: 1, id: "the_bumblezone:buzzing_briefcase" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -3.25d
+			y: -0.51d
+		}
+		{
+			icon: {
+				id: "the_bumblezone:crystal_cannon"
+			}
+			id: "6A7925149A7F0B46"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [
+				{
+					consume_items: false
+					id: "254DE19F35385D94"
+					item: { count: 1, id: "the_bumblezone:crystal_cannon" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					consume_items: false
+					id: "4156DE4EF54055B1"
+					item: { count: 1, id: "the_bumblezone:bee_cannon" }
+					only_from_crafting: false
+					type: "item"
+				}
+			]
+			x: 0.25d
+			y: -5.763d
+		}
+		{
+			icon: {
+				id: "minecraft:fishing_rod"
+			}
+			id: "074EE3358EF8C1A2"
+			quest_enhance_disable_scroll_paging: false
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:tools/fish_rare_loot"
+				criterion: ""
+				id: "56A8A2B4E54B9906"
+				type: "advancement"
+			}]
+			x: -3.25d
+			y: 0.89d
+		}
+		{
+			id: "1E44B31FF0B6BA86"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				consume_items: false
+				id: "615729E6E2D64896"
+				item: { count: 1, id: "the_bumblezone:honey_compass" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.563d
+		}
+		{
+			icon: {
+				id: "the_bumblezone:honey_compass"
+			}
+			id: "1954DDFE9A92C97C"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:tools/obtain_throne_honey_compass"
+				criterion: ""
+				id: "6E985891CC8F9578"
+				type: "advancement"
+			}]
+			x: -3.25d
+			y: 2.563d
+		}
+		{
+			id: "0F183261D6297A01"
+			quest_enhance_disable_scroll_paging: false
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				advancement: "the_bumblezone:windy_air/obtain_windy_air"
+				criterion: ""
+				id: "797B97FBCA4B8ED0"
+				type: "advancement"
+			}]
+			x: 2.0d
+			y: 5.963d
+		}
+	]
+}

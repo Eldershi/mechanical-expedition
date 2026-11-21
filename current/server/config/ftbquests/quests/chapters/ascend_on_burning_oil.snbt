@@ -1,0 +1,1247 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ascend_on_burning_oil"
+	group: "050255AE19A93344"
+	icon: { id: "createdieselgenerators:oil_scanner" }
+	id: "13C115D0D37C8340"
+	images: [ ]
+	order_index: 10
+	quest_enhance_decorative_lines: [ ]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1570B04A1D692BCC"]
+			id: "5F7FE5643EE885AA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "277159F6EF93842E"
+				item: { count: 1, id: "create:mechanical_crafter" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["588CB73822918D10"]
+			id: "41DCA8B756100264"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "075192D21599EA71"
+				item: { count: 1, id: "alltheores:invar_ingot" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6CCEECDF932F5041"]
+			id: "0081EA24D52AD1DB"
+			quest_enhance_disable_scroll_paging: false
+			require_sequential_tasks: false
+			tasks: [{
+				id: "2931CAC0AB179FC5"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:gears/constantan)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["541572E2CD225DD7"]
+			id: "4B92A14F36770FD1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7B2BB76C2749F1E0"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:plates/vanadium)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1570B04A1D692BCC"]
+			id: "3749B0A3EB0C58A3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4C4E2A5229F0CD32"
+				item: { count: 1, id: "create:mechanical_press" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"68D40E9E67F5C986"
+				"19422BB1CF729FC7"
+				"0468B914C2718A62"
+			]
+			id: "769811B07A4CC942"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0004FF0ACD993E8D"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:prisms/pure_quartz)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1570B04A1D692BCC"]
+			id: "139B280EC79FA929"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "06E07713DA278B95"
+				item: { count: 1, id: "cmi:crystal_catalyt_bucket" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["20227AC2A1D37ED9"]
+			id: "4B9631735249DBEC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "42FDEA113688C95B"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:dusts/pure_quartz)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["6A57D13406E9D6AA"]
+			id: "3D44E21E9159D611"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "10DF30C3E0C6D419"
+				item: { count: 1, id: "cmi:laser_diode" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7986071E20EEF73C"]
+			id: "20D686F2FBAA4E94"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "565A285093A6F792"
+				item: { count: 1, id: "immersiveengineering:component_electronic" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["042CA25C2CE9F78C"]
+			id: "276F15FDF8F57618"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "3E9AE1B4782A4F83"
+				item: { count: 1, id: "cmi:light_engineering_mechanism" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1570B04A1D692BCC"]
+			id: "13E46C60CE71D140"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1823939428834360"
+				item: { count: 1, id: "immersiveengineering:component_iron" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"6B467317FA711CD2"
+				"4FB2832A045C402D"
+				"7986071E20EEF73C"
+			]
+			id: "15C76941505C9A0A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "79A7056F8955E376"
+				item: { count: 1, id: "cmi:light_engineering_mechanism_augment" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"79461202D5061059"
+				"7AADB534F537AA83"
+			]
+			icon_scale: 2.0d
+			id: "1DFC36404B5621BB"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "412E46F4F0469820"
+				item: {
+					count: 1
+					id: "createdieselgenerators:oil_scanner"
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5B41FA16D7BE7453"
+					item: { count: 1, id: "createdieselgenerators:pumpjack_hole" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "7B4654FAD59981D1"
+					item: { count: 1, id: "createdieselgenerators:pumpjack_bearing" }
+					type: "item"
+				}
+				{
+					id: "49BC4D5D76AACC65"
+					item: { count: 1, id: "createdieselgenerators:pumpjack_crank" }
+					type: "item"
+				}
+				{
+					id: "303756197E1E7FEB"
+					item: { count: 1, id: "createdieselgenerators:pumpjack_head" }
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3B2F46F5F77D366F"]
+			id: "75F0339EA8D160DF"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "450D7516F19B56E5"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:ingots/steel)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"6DB900D5F5AF7298"
+				"7E4CDE7C3CBA9410"
+			]
+			id: "2E173BFD0840CCDF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0EC32714562469E0"
+				item: { count: 1, id: "modernfoundry:molten_steel_bucket" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"3279F199633ED633"
+				"037CEC7A15BC0B2F"
+				"1CFE963288EAA71A"
+			]
+			id: "76AA38C80B128123"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7162D4EB27074031"
+				item: { count: 1, id: "cmi:refined_iron_bloom" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["0CCAD3D0E6741560"]
+			id: "430830EE599BE30A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5FF33135680EE2F2"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:dusts/lime)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1570B04A1D692BCC"]
+			id: "3D5D14599B59396F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6ADA3BA1B66C5959"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(create:stone_types/limestone)item(minecraft:pointed_dripstone))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["78250BAEED3506BA"]
+			id: "46EE3617A77AA091"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [{
+				id: "40AE57CAFA6D20BC"
+				item: {
+					count: 1
+					id: "create:basin"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "59FA793BD168F38A"
+				item: { count: 1, id: "vintageimprovements:vacuum_chamber" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"7E4CDE7C3CBA9410"
+				"0FA1A601134C5105"
+			]
+			id: "7885CCA447E08A48"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "65F1E1D252F0EF55"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(c:ingots/cast_iron)item_tag(c:dusts/cast_iron))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["1570B04A1D692BCC"]
+			id: "05630868986A3759"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "04E63B4A02B6F54E"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:dusts/coal_coke)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 11.0d
+		}
+		{
+			dependencies: ["1570B04A1D692BCC"]
+			icon_scale: 2.0d
+			id: "3221AB2896BDDD3C"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					id: "0FDEF937ADC877C4"
+					item: {
+						count: 1
+						id: "immersiveengineering:graphite_electrode"
+					}
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0825574724C9768E"
+					item: {
+						count: 1
+						id: "immersiveengineering:blastbrick_reinforced"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "25155921B6730073"
+					item: { count: 1, id: "immersiveengineering:dust_hop_graphite" }
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "09CF21C4910DA2E2"
+					item: { count: 1, id: "immersiveengineering:graphite_electrode" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1826C7510A41FE80"
+					item: { count: 1, id: "immersiveengineering:sheetmetal_steel" }
+					type: "item"
+				}
+				{
+					id: "2221DBF3E63DDBB4"
+					item: { count: 1, id: "immersiveengineering:ingot_steel" }
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1570B04A1D692BCC"]
+			id: "5947037268CDD8AA"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "782B5B60A11B589A"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(c:raw_materials/nickel)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "1A1FB0EEEDE9875C"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(c:raw_materials/silver)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0FA1A601134C5105"]
+			icon_scale: 2.0d
+			id: "1F5B092215CF8FB9"
+			quest_enhance_disable_scroll_paging: false
+			rewards: [
+				{
+					count: 4
+					id: "4AAB3F23D74B6427"
+					item: {
+						count: 1
+						id: "immersiveengineering:wooden_barrel"
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7E16E4127F2633E1"
+					item: {
+						count: 1
+						id: "immersiveengineering:steel_fence"
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "167E9D5C27B42BB6"
+					item: { count: 1, id: "minecraft:piston" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "577C4A176C02CDE3"
+					item: { count: 1, id: "immersiveengineering:steel_scaffolding_standard" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2464F5AED9EC04F4"
+					item: { count: 1, id: "immersiveengineering:light_engineering" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "08EBAE2F554A0BB5"
+					item: { count: 1, id: "immersiveengineering:fluid_pipe" }
+					type: "item"
+				}
+				{
+					id: "4DECA4C367477C60"
+					item: { count: 1, id: "immersiveengineering:rs_engineering" }
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 12.75d
+		}
+		{
+			dependencies: ["6095C38E6A48D0AE"]
+			id: "4B071F09B4956821"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "6091894FBD06669B"
+					item: { count: 1, id: "cmi:smart_mechanism" }
+					type: "item"
+				}
+				{
+					id: "298167C139986E23"
+					item: { components: { "ftbfiltersystem:filter": "or(or(item(ae2:pattern_provider)item(extendedae:ex_pattern_provider)item(ae2:cable_pattern_provider)item(extendedae:ex_pattern_provider_part)item(advanced_ae:small_adv_pattern_provider)item(advanced_ae:adv_pattern_provider)item(advanced_ae:adv_pattern_provider_part)item(advanced_ae:small_adv_pattern_provider_part))or(item(ae2:formation_plane)item(extendedae:active_formation_plane))or(item(ae2:me_p2p_tunnel)item(ae2:redstone_p2p_tunnel)item(ae2:item_p2p_tunnel)item(ae2:fluid_p2p_tunnel)item(ae2:fe_p2p_tunnel)item(ae2:light_p2p_tunnel)item(appmek:chemical_p2p_tunnel))or(item(ae2:1k_crafting_storage)item(ae2:4k_crafting_storage)item(ae2:16k_crafting_storage)item(ae2:64k_crafting_storage)item(ae2:256k_crafting_storage)item(advanced_ae:quantum_storage_128)item(advanced_ae:quantum_storage_256))or(item(advanced_ae:stock_export_bus_part)item(ae2:export_bus)item(extendedae:ex_export_bus_part)item(extendedae:tag_export_bus)item(extendedae:mod_export_bus)item(extendedae:precise_export_bus)item(extendedae:threshold_export_bus))or(item(ae2:storage_bus)item(extendedae:tag_storage_bus)item(extendedae:mod_storage_bus)item(extendedae:precise_storage_bus))or(item(ae2:energy_acceptor)item(ae2:cable_energy_acceptor))or(item(ae2:interface)item(ae2:cable_interface))item(ae2:controller)item(ae2:chest)item(ae2:cell_workbench)item(ae2:io_port)item(ae2:annihilation_plane)item(ae2:terminal))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["59831FBE15050279"]
+			id: "7EE724ED9DF1EC5B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "025EAAFB09C988EB"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:plates/silicon)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["2902DA1D51BD15F5"]
+			id: "4ED71E3B33B3767B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "76E993A386C0CB42"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:silicon)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 11.0d
+		}
+		{
+			dependencies: [
+				"3DFED24F6C44D5E5"
+				"28AFE3C3BEFB431A"
+				"507D9B36A230C6E4"
+			]
+			id: "595763DE79D9D85C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "58A4558EF6FE7F97"
+				item: { count: 1, id: "cmi:smart_mechanism_augment" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["0FA1A601134C5105"]
+			id: "61945930632D77AB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "2DB393AC97011414"
+					item: { components: { "ftbfiltersystem:filter": "or(item(modernfoundry:seared_stone_bucket)item(modernfoundry:scorched_stone_bucket))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "6CA4942DA9B8E7C6"
+					item: { count: 1, id: "cmi:silicon_mixture" }
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["7CE3BF3F7F7FC1D9"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: false
+			id: "7871FD13E147C0BF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "288092B20F7A5C1F"
+				item: { count: 1, id: "createdieselgenerators:distillation_controller" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["3640CEE4D21C8BB5"]
+			hide_dependency_lines: true
+			id: "2E6AD12E1D0C0CAD"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "02276399D505751E"
+					item: { count: 1, id: "createdieselgenerators:crude_oil_bucket" }
+					type: "item"
+				}
+				{
+					id: "0884998C70A7E324"
+					item: { count: 1, id: "createdieselgenerators:distillation_controller" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["7CE3BF3F7F7FC1D9"]
+			id: "41BC9801DF4306F5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "6BA6515525903D15"
+					item: { count: 1, id: "cmi:kerosene_bucket" }
+					type: "item"
+				}
+				{
+					id: "4701F1173AD89966"
+					item: { count: 1, id: "cmi:sulfric_diesel_bucket" }
+					type: "item"
+				}
+				{
+					id: "6FE004A7432A4781"
+					item: { count: 1, id: "cmi:bitumen_bucket" }
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["7CE3BF3F7F7FC1D9"]
+			id: "2FA097E7A6BC09C6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3C3415BCFC55C1B5"
+				item: { count: 1, id: "cmi:conditioned_crude_oil_bucket" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["0E3481D80180E00C"]
+			id: "42E1247CAB9C154A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7589D1CFFFE86122"
+				item: { count: 1, id: "cmi:lubricating_oil_bucket" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["2916D3E15559DF0C"]
+			id: "7DE20B3E72E41BD0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "556F070B0E8083BC"
+				item: { count: 1, id: "createdieselgenerators:gasoline_bucket" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 17.0d
+		}
+		{
+			dependencies: ["7FA0A97798CCF465"]
+			id: "7E898FFFAF9649C3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4437829E0F30633F"
+				item: { count: 1, id: "cmi:sulfric_diesel_bucket" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["7FA0A97798CCF465"]
+			id: "1152A30182414053"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3EFC35703CD51BD7"
+				item: { count: 1, id: "cmi:kerosene_bucket" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["11B2066810421699"]
+			id: "29D9124A693B9AD4"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5FC4800E5E935E8C"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:dusts/sulfur)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["11B2066810421699"]
+			id: "3AB9D7ACE7343F55"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "08ED6786D29F6A81"
+				item: { count: 1, id: "createdieselgenerators:diesel_bucket" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["2916D3E15559DF0C"]
+			id: "47407E234B6C5840"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "234AB75B0DBD0437"
+				item: { count: 1, id: "cmi:naphtha_bucket" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["7CE3BF3F7F7FC1D9"]
+			id: "46ABF922DC2B2A21"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3C7931161B871AAD"
+				item: { count: 1, id: "cmi:light_olefin_bucket" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 24.0d
+		}
+		{
+			dependencies: ["77C1F236B853FAAE"]
+			id: "2AA48B9D62C40422"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "70D267E8514A316B"
+				item: { count: 1, id: "cmi:light_silicone_ether_bucket" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["2B95E0E6947D013C"]
+			id: "5D9FCDBEE3B7C761"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7922AEC71B24966A"
+				item: { count: 1, id: "cmi:polysilicone_ether_bucket" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 24.0d
+		}
+		{
+			dependencies: [
+				"693C6976F07FA0F5"
+				"2809F6E25BE835B0"
+				"05D42E0B78A3982E"
+			]
+			id: "7E0B459E8BE8DCD9"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "751616D9B0DF7553"
+					item: { count: 1, id: "cmi:silicon_rubber" }
+					type: "item"
+				}
+				{
+					id: "167F78678708A73C"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(c:plates/silicon_rubber)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 23.0d
+		}
+		{
+			dependencies: ["1570B04A1D692BCC"]
+			id: "2E7F8BEDA8150554"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5CDC106691A5A188"
+				item: { count: 1, id: "modernfoundry:seared_table" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 22.0d
+		}
+		{
+			dependencies: [
+				"762D51AFDCA86F29"
+				"7CE3BF3F7F7FC1D9"
+			]
+			id: "05BBCB1A5B376B68"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6F9BB0C583CF8F7B"
+				item: { count: 1, id: "cmi:vinegar_acid_bucket" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 21.0d
+		}
+		{
+			id: "7E3BC52F5390745F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0BAA0002F5C76697"
+				item: { count: 1, id: "cmi:vinegar_bucket" }
+				type: "item"
+			}]
+			x: 18.0d
+			y: 19.0d
+		}
+		{
+			dependencies: ["1570B04A1D692BCC"]
+			id: "61D498B3961AF4C6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4F512A8EB0BD9F9A"
+				item: { count: 1, id: "createdieselgenerators:distillation_controller" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["2916D3E15559DF0C"]
+			id: "4F5E05F53B86A55F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "55827ED5D3317A30"
+				item: { count: 1, id: "createdieselgenerators:gasoline_bucket" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["3D5497B8DC0ED5B6"]
+			id: "6C4BC9610FCB54CC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1525A295150297C1"
+				item: { components: { "ftbquests:missing_item": "steam_letters:steam_bucket" }, count: 1, id: "ftbquests:missing_item" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 23.0d
+		}
+		{
+			dependencies: [
+				"3B09C0DEB5D3ECB2"
+				"6F36365885BD89B1"
+			]
+			id: "43AA35FA82B64E7F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0305BBE61C26A73D"
+				item: { count: 1, id: "cmi:cracked_gasoline_bucket" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 21.0d
+		}
+		{
+			dependencies: ["654FBA59B16DF4C6"]
+			id: "76D2E702456DEA80"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "36AF065D8673593B"
+				item: { count: 1, id: "cmi:light_olefin_bucket" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["654FBA59B16DF4C6"]
+			id: "7D47C93B16633635"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7C729A57999CB182"
+				item: { count: 1, id: "cmi:benzene_bucket" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 19.0d
+		}
+		{
+			dependencies: [
+				"654FBA59B16DF4C6"
+				"7CE3BF3F7F7FC1D9"
+			]
+			id: "27DA70F2671FEDE7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "79936670E68A00B4"
+				item: { count: 1, id: "cmi:naphtha_bucket" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["7CE3BF3F7F7FC1D9"]
+			id: "14EB2EDABF23CB58"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "79AF0A0E9ADC851A"
+				item: { count: 1, id: "cmi:phenol_bucket" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["135EED5D795BB2D5"]
+			id: "5BB9A30B9E6608B3"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "28E5ED1D45FE6342"
+				item: { count: 1, id: "vintageimprovements:invar_sheet" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6229FE133326F148"]
+			id: "517D2D475C8A00A7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "5322DB98BA401728"
+				item: { count: 1, id: "ae2:logic_processor" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["6229FE133326F148"]
+			hide_dependent_lines: true
+			id: "2300391D130F6D32"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6364955A1673D7A2"
+				item: { count: 1, id: "ae2:calculation_processor" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"6229FE133326F148"
+				"1019BCBAAF646D37"
+				"668328B9C89163F6"
+			]
+			id: "54CDA4976B081386"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2F17E929E2807737"
+				item: { count: 1, id: "ae2:engineering_processor" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["050A77C0A80CFE30"]
+			id: "58CE3E8C49655230"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7823F93AAF19797E"
+				item: { count: 1, id: "cmi:inscribed_silicon" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["575444E3A9FA8314"]
+			id: "077BA514BA867F79"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "33FD40848ADBB70A"
+				item: { count: 1, id: "alltheores:sapphire" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["6681D48E57C00D0D"]
+			id: "6EE126EBFC672C82"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "7DB2E596D67D5472"
+				item: { count: 1, id: "alltheores:sapphire_dust" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6681D48E57C00D0D"]
+			id: "1AB03E415B07E154"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3F609555D1C1C274"
+				item: { count: 1, id: "ad_astra:etrium_ingot" }
+				type: "item"
+			}]
+			x: 16.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1570B04A1D692BCC"]
+			id: "3E3731F59FE15D79"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "15C11C3C93DD78ED"
+					item: { count: 1, id: "cmi:raw_etrium" }
+					type: "item"
+				}
+				{
+					id: "2561CD37B5DE2594"
+					item: { count: 1, id: "neoecoae:raw_aluminum_ore" }
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["5E07A1EE010AE757"]
+			id: "28B4E3B4E92196AE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_refinery"
+				criterion: ""
+				id: "3CB5A514C52116F9"
+				type: "advancement"
+			}]
+			x: 14.0d
+			y: 25.0d
+		}
+		{
+			dependencies: ["1570B04A1D692BCC"]
+			id: "2CD4BCA30516EAC1"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3DDAC8174D77EBAC"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:raw_materials/aluminum)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"16B82E736AC7FDCE"
+				"2849DC36ACEA7681"
+			]
+			id: "16581D3C88627C32"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "763FBE1B1B08AD36"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:dusts/aluminum)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1570B04A1D692BCC"]
+			hide_dependent_lines: true
+			id: "10E04E1771ED7556"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6BC8ABC58D32AB81"
+				item: { count: 1, id: "cmi:caustic_soda_solution_bucket" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3709AF32680BD5CD"]
+			id: "2AB4E75775B16268"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "448E2E619CE409B0"
+				item: { components: { "ftbfiltersystem:filter": "or(item_tag(c:gears/aluminum)item_tag(c:ingots/aluminum)item_tag(c:nuggets/aluminum)item_tag(c:plates/aluminum)item_tag(c:rods/aluminum))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6CCEECDF932F5041"]
+			id: "47A0F636C04ADCBF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2FEFF4A44BFCF3A6"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:rods/constantan)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["588CB73822918D10"]
+			id: "49ED186698545175"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					id: "51D1FAA79B6EF737"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(c:ingots/silver)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					id: "7AF7D516252A9C61"
+					item: { components: { "ftbfiltersystem:filter": "item_tag(c:plates/silver)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["407FD936195F18B0"]
+			id: "11BCF74BAF21F107"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "48560F558B07C2F6"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:ingots/electrum)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["44580C9FC3A043D2"]
+			id: "6643E35EAB578F2C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "095579A0EAB28D2A"
+				item: { count: 1, id: "createaddition:electrum_spool" }
+				type: "item"
+			}]
+			x: 6.0d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"44580C9FC3A043D2"
+				"721C20E88A98122E"
+				"050A77C0A80CFE30"
+			]
+			id: "761DCFAB934139FC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2DC6754A459579B8"
+				item: { count: 1, id: "ae2:logic_processor" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["430B1B3285C99CD3"]
+			id: "0A0940074FCD030A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "46BA06DAC2A48C8C"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:ingots/hop_graphite)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 10.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6ED3E5867F2A90AB"]
+			id: "7DF74A88DCC34CAB"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "659B38CB45CDD81B"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:dusts/hop_graphite)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["407FD936195F18B0"]
+			id: "42ACAB542757FC17"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2E84225943C108FB"
+				item: { components: { "ftbfiltersystem:filter": "item_tag(c:gears/silver)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["050A77C0A80CFE30"]
+			id: "2AE97CB3207A5C4E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "54AACA21C424F472"
+				item: { count: 1, id: "create_connected:control_chip" }
+				type: "item"
+			}]
+			x: 12.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["721C20E88A98122E"]
+			id: "79FC289C6C976602"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3240CD3BE8C16190"
+				item: { count: 1, id: "immersiveengineering:graphite_electrode" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3640CEE4D21C8BB5"]
+			hide_dependency_lines: true
+			id: "008BE133BC63E955"
+			quest_enhance_disable_scroll_paging: false
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "786DD72155763A5C"
+					item: { count: 1, id: "createdieselgenerators:crude_oil_bucket" }
+					type: "item"
+				}
+				{
+					id: "2C4CA5D36A476C18"
+					item: { count: 1, id: "createdieselgenerators:distillation_controller" }
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: 17.0d
+		}
+	]
+}

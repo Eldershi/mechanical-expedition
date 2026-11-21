@@ -1,0 +1,190 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "staged_technology_basicpower"
+	group: "050255AE19A93344"
+	icon: { id: "ad_astra:coal_generator" }
+	id: "5CDF868C7D35B733"
+	images: [
+		{
+			height: 0.0d
+			id: "31250B64FC805659"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 2.467d
+			y: 1.267d
+			click_action: "none:quest_enhance:decorative_anchor:33559c4b-74b9-582c-ba69-164db727772b"
+		}
+		{
+			height: 0.0d
+			id: "0135FC34DB87D542"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 3.533d
+			y: 0.533d
+			click_action: "none:quest_enhance:decorative_anchor:d878db93-8d32-5808-b9a2-6b03de821c53"
+		}
+		{
+			height: 0.0d
+			id: "3C6773FBDB6B509D"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 2.467d
+			y: 2.0d
+			click_action: "none:quest_enhance:decorative_anchor:28e06690-55c3-54e9-8503-70d5a30ab956"
+		}
+		{
+			height: 0.0d
+			id: "6E0D73D27FF42D25"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 3.533d
+			y: 2.0d
+			click_action: "none:quest_enhance:decorative_anchor:603f910c-2432-5fa0-8285-beefcd94c01a"
+		}
+	]
+	order_index: 24
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:4bfc30473684a5a5"
+				"q:66b2d46487c15af2"
+			]
+		}
+		{
+			nodes: [
+				"q:4bfc30473684a5a5"
+				"a:33559c4b-74b9-582c-ba69-164db727772b"
+			]
+		}
+		{
+			nodes: [
+				"a:33559c4b-74b9-582c-ba69-164db727772b"
+				"a:d878db93-8d32-5808-b9a2-6b03de821c53"
+			]
+		}
+		{
+			nodes: [
+				"a:d878db93-8d32-5808-b9a2-6b03de821c53"
+				"l:157d8f8813d1c504"
+			]
+		}
+		{
+			nodes: [
+				"q:4bfc30473684a5a5"
+				"a:28e06690-55c3-54e9-8503-70d5a30ab956"
+			]
+		}
+		{
+			nodes: [
+				"a:28e06690-55c3-54e9-8503-70d5a30ab956"
+				"a:603f910c-2432-5fa0-8285-beefcd94c01a"
+			]
+		}
+		{
+			nodes: [
+				"a:603f910c-2432-5fa0-8285-beefcd94c01a"
+				"l:7b3b622d83c3f3ec"
+			]
+		}
+		{
+			nodes: [
+				"q:3e79213f845f70a0"
+				"q:4bfc30473684a5a5"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "157D8F8813D1C504"
+			linked_quest: "28589AF4FB0BDA5B"
+			shape: "rsquare"
+			x: 4.6d
+			y: -0.2d
+		}
+		{
+			id: "7B3B622D83C3F3EC"
+			linked_quest: "6C4CF69064BA2C10"
+			shape: "rsquare"
+			x: 4.6d
+			y: 2.0d
+		}
+	]
+	quests: [
+		{
+			id: "66B2D46487C15AF2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "79514EF804934D33"
+				item: { count: 1, id: "ad_astra:coal_generator" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.6d
+			y: 0.0d
+		}
+		{
+			id: "4C0820CC65B5C9ED"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "147C1AEF3F1A1D36"
+					item: { count: 1, id: "ad_astra:steel_cable" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "2B005EC21AEE0301"
+					type: "checkmark"
+				}
+			]
+			x: -1.6d
+			y: -2.0d
+		}
+		{
+			id: "3E79213F845F70A0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "0B7C9D8E2F5B1A0B"
+				item: { count: 1, id: "ad_astra:compressor" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.6d
+			y: 2.0d
+		}
+		{
+			id: "4BFC30473684A5A5"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "54F622E86294776A"
+				type: "checkmark"
+			}]
+			x: 1.4d
+			y: 2.0d
+		}
+		{
+			id: "0FEFB8ADCB3D9F3C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6A0DEE75B7D0FD9B"
+				type: "checkmark"
+			}]
+			x: 1.4d
+			y: -2.0d
+		}
+	]
+}

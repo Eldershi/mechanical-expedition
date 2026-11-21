@@ -1,0 +1,525 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "staged_technology_anetworkexpansion"
+	group: "5B22564DA513617D"
+	icon: { id: "ae2:controller" }
+	id: "27A8F5FBA9E91CE7"
+	images: [
+		{
+			height: 0.0d
+			id: "41B2AA0C76F657BF"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -10.033d
+			y: -1.833d
+			click_action: "none:quest_enhance:decorative_anchor:d6ea8937-f956-5a97-b9bf-e987997ccc39"
+		}
+		{
+			height: 0.0d
+			id: "1F78761892995244"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -9.567d
+			y: -2.567d
+			click_action: "none:quest_enhance:decorative_anchor:260017b9-0d3f-552a-8914-30ec23e9bd81"
+		}
+		{
+			height: 0.0d
+			id: "3076191AE5330ECC"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -9.15d
+			y: -1.1d
+			click_action: "none:quest_enhance:decorative_anchor:eb4734d7-2f91-50bb-afc9-6ba5361c3e32"
+		}
+		{
+			height: 0.0d
+			id: "24E9DCC3D619F799"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -7.8d
+			y: -1.1d
+			click_action: "none:quest_enhance:decorative_anchor:1662538b-a5df-551c-867c-8c57f664386f"
+		}
+		{
+			height: 0.0d
+			id: "55F55393FC8BC21D"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -9.433d
+			y: -0.083d
+			click_action: "none:quest_enhance:decorative_anchor:6b57f822-6875-5978-a8bd-9335e5eb7d08"
+		}
+		{
+			height: 0.0d
+			id: "6AAA4DD7B6B5C8E9"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -8.367d
+			y: 0.933d
+			click_action: "none:quest_enhance:decorative_anchor:d95accfa-b5af-5f12-bf15-b2df640421aa"
+		}
+		{
+			height: 0.0d
+			id: "40BD1831310F0844"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -10.1d
+			y: -0.367d
+			click_action: "none:quest_enhance:decorative_anchor:43813cd9-c000-5d3b-a083-30992fa4d52f"
+		}
+		{
+			height: 0.0d
+			id: "2758F115468BFA95"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -9.7d
+			y: 0.367d
+			click_action: "none:quest_enhance:decorative_anchor:bb25ce8d-1ecb-5b0c-886c-7153aad57803"
+		}
+		{
+			height: 0.0d
+			id: "06B0214FC4C3EBD6"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -6.5d
+			y: -0.367d
+			click_action: "none:quest_enhance:decorative_anchor:dc4c884d-b020-5d58-90a5-b1575856fe3f"
+		}
+		{
+			height: 0.0d
+			id: "3CC0FA01A54FF574"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.5d
+			y: 0.367d
+			click_action: "none:quest_enhance:decorative_anchor:4ce597b0-63be-5113-8d2a-4e5b208fa3e1"
+		}
+		{
+			height: 0.0d
+			id: "76230B760B3E5805"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -5.5d
+			y: 0.633d
+			click_action: "none:quest_enhance:decorative_anchor:7e177de9-97e1-5040-a059-8d96855b80d0"
+		}
+		{
+			height: 0.0d
+			id: "0022E72107086FAC"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.5d
+			y: 2.367d
+			click_action: "none:quest_enhance:decorative_anchor:404e6af7-9b3c-5497-a2db-0beed5f7166d"
+		}
+		{
+			height: 0.0d
+			id: "057A94D1F5281CF5"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 8.567d
+			y: 3.367d
+			click_action: "none:quest_enhance:decorative_anchor:c0d7924d-3d03-56ae-8296-11591f563e2b"
+		}
+		{
+			height: 0.0d
+			id: "2E6B89DA9D049D21"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 9.633d
+			y: 2.633d
+			click_action: "none:quest_enhance:decorative_anchor:481717bb-0269-53f6-ba45-967e24de4d66"
+		}
+	]
+	order_index: 13
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"l:6f5b4d9d2afaeb46"
+				"a:d6ea8937-f956-5a97-b9bf-e987997ccc39"
+			]
+		}
+		{
+			nodes: [
+				"a:d6ea8937-f956-5a97-b9bf-e987997ccc39"
+				"a:260017b9-0d3f-552a-8914-30ec23e9bd81"
+			]
+		}
+		{
+			nodes: [
+				"a:260017b9-0d3f-552a-8914-30ec23e9bd81"
+				"l:33806e6761a9e70"
+			]
+		}
+		{
+			nodes: [
+				"l:6f5b4d9d2afaeb46"
+				"a:eb4734d7-2f91-50bb-afc9-6ba5361c3e32"
+			]
+		}
+		{
+			nodes: [
+				"a:eb4734d7-2f91-50bb-afc9-6ba5361c3e32"
+				"a:1662538b-a5df-551c-867c-8c57f664386f"
+			]
+		}
+		{
+			nodes: [
+				"a:1662538b-a5df-551c-867c-8c57f664386f"
+				"l:456a5314d3b70198"
+			]
+		}
+		{
+			nodes: [
+				"l:6f5b4d9d2afaeb46"
+				"a:6b57f822-6875-5978-a8bd-9335e5eb7d08"
+			]
+		}
+		{
+			nodes: [
+				"a:6b57f822-6875-5978-a8bd-9335e5eb7d08"
+				"a:d95accfa-b5af-5f12-bf15-b2df640421aa"
+			]
+		}
+		{
+			nodes: [
+				"a:d95accfa-b5af-5f12-bf15-b2df640421aa"
+				"l:2754e68aea36a0a9"
+			]
+		}
+		{
+			nodes: [
+				"l:6f5b4d9d2afaeb46"
+				"a:43813cd9-c000-5d3b-a083-30992fa4d52f"
+			]
+		}
+		{
+			nodes: [
+				"a:43813cd9-c000-5d3b-a083-30992fa4d52f"
+				"a:bb25ce8d-1ecb-5b0c-886c-7153aad57803"
+			]
+		}
+		{
+			nodes: [
+				"a:bb25ce8d-1ecb-5b0c-886c-7153aad57803"
+				"q:153c1c0e00b07b8f"
+			]
+		}
+		{
+			nodes: [
+				"l:6f5b4d9d2afaeb46"
+				"a:dc4c884d-b020-5d58-90a5-b1575856fe3f"
+			]
+		}
+		{
+			nodes: [
+				"a:dc4c884d-b020-5d58-90a5-b1575856fe3f"
+				"a:4ce597b0-63be-5113-8d2a-4e5b208fa3e1"
+			]
+		}
+		{
+			nodes: [
+				"a:4ce597b0-63be-5113-8d2a-4e5b208fa3e1"
+				"q:46232e7fafb2584c"
+			]
+		}
+		{
+			nodes: [
+				"l:6f5b4d9d2afaeb46"
+				"a:7e177de9-97e1-5040-a059-8d96855b80d0"
+			]
+		}
+		{
+			nodes: [
+				"a:7e177de9-97e1-5040-a059-8d96855b80d0"
+				"a:404e6af7-9b3c-5497-a2db-0beed5f7166d"
+			]
+		}
+		{
+			nodes: [
+				"a:404e6af7-9b3c-5497-a2db-0beed5f7166d"
+				"q:28ed1c912684ec46"
+			]
+		}
+		{
+			nodes: [
+				"l:104349caf551d172"
+				"q:153c1c0e00b07b8f"
+			]
+		}
+		{
+			nodes: [
+				"l:2e8d92e0d39c9320"
+				"q:2c89b9e03cb0fcdb"
+			]
+		}
+		{
+			nodes: [
+				"l:2e8d92e0d39c9320"
+				"q:5afc0a738b6a68c9"
+			]
+		}
+		{
+			nodes: [
+				"l:2e8d92e0d39c9320"
+				"q:46232e7fafb2584c"
+			]
+		}
+		{
+			nodes: [
+				"l:2e8d92e0d39c9320"
+				"q:28ed1c912684ec46"
+			]
+		}
+		{
+			nodes: [
+				"l:3fb9308cf913293f"
+				"q:2c89b9e03cb0fcdb"
+			]
+		}
+		{
+			nodes: [
+				"l:41be1996dffd5d06"
+				"q:2c89b9e03cb0fcdb"
+			]
+		}
+		{
+			nodes: [
+				"l:41be1996dffd5d06"
+				"q:5afc0a738b6a68c9"
+			]
+		}
+		{
+			nodes: [
+				"l:2754e68aea36a0a9"
+				"q:5afc0a738b6a68c9"
+			]
+		}
+		{
+			nodes: [
+				"l:c115f2a7cd67643"
+				"q:52ca348f51b691a6"
+			]
+		}
+		{
+			nodes: [
+				"q:52ca348f51b691a6"
+				"a:c0d7924d-3d03-56ae-8296-11591f563e2b"
+			]
+		}
+		{
+			nodes: [
+				"a:c0d7924d-3d03-56ae-8296-11591f563e2b"
+				"a:481717bb-0269-53f6-ba45-967e24de4d66"
+			]
+		}
+		{
+			nodes: [
+				"a:481717bb-0269-53f6-ba45-967e24de4d66"
+				"l:738e448e6c87d514"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "6F5B4D9D2AFAEB46"
+			linked_quest: "532403C34C70BA45"
+			shape: "rsquare"
+			size: 0.75d
+			x: -10.5d
+			y: -1.1d
+		}
+		{
+			id: "0C115F2A7CD67643"
+			linked_quest: "78E689F5D72AD3C4"
+			shape: "rsquare"
+			size: 0.75d
+			x: 4.5d
+			y: 2.3d
+		}
+		{
+			id: "033806E6761A9E70"
+			linked_quest: "3307636D8634B0DE"
+			shape: "rsquare"
+			x: -9.1d
+			y: -3.3d
+		}
+		{
+			id: "456A5314D3B70198"
+			linked_quest: "2C5DD7C116DE834A"
+			shape: "rsquare"
+			x: -6.45d
+			y: -1.1d
+		}
+		{
+			id: "2754E68AEA36A0A9"
+			linked_quest: "2238FE469E266CD2"
+			shape: "rsquare"
+			x: -7.3d
+			y: 1.95d
+		}
+		{
+			id: "104349CAF551D172"
+			linked_quest: "449F767EA8BC229D"
+			shape: "rsquare"
+			x: -10.7d
+			y: 0.7d
+		}
+		{
+			id: "2E8D92E0D39C9320"
+			linked_quest: "304F1C5501224675"
+			shape: "rsquare"
+			x: -7.7d
+			y: -4.1d
+		}
+		{
+			id: "3FB9308CF913293F"
+			linked_quest: "1484CE3E1DCDA5EA"
+			shape: "rsquare"
+			x: -7.7d
+			y: -1.9d
+		}
+		{
+			id: "41BE1996DFFD5D06"
+			linked_quest: "75197D36F4BB2971"
+			shape: "rsquare"
+			x: -5.1d
+			y: 1.6d
+		}
+		{
+			id: "738E448E6C87D514"
+			linked_quest: "1F998066C5E510F8"
+			shape: "rsquare"
+			x: 10.7d
+			y: 1.9d
+		}
+	]
+	quests: [
+		{
+			id: "153C1C0E00B07B8F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "593C82F44AE6040C"
+				item: { count: 1, id: "ae2:controller" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -9.3d
+			y: 1.1d
+		}
+		{
+			id: "2C89B9E03CB0FCDB"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "77642C73C30C7696"
+				item: { count: 1, id: "ae2:me_p2p_tunnel" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -3.65d
+			y: -2.75d
+		}
+		{
+			id: "50A822EA089E2261"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2828877FF3B38339"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -1.9d
+		}
+		{
+			id: "5AFC0A738B6A68C9"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "410907B60B703454"
+				item: { count: 1, id: "ae2:io_port" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.1d
+		}
+		{
+			id: "46232E7FAFB2584C"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "765502A818174169"
+				item: { count: 1, id: "ae2:wireless_access_point" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.1d
+		}
+		{
+			id: "28ED1C912684EC46"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "5FE26FE7925A44AB"
+				item: { count: 1, id: "ae2:condenser" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.1d
+		}
+		{
+			id: "52CA348F51B691A6"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "5AF894A7F9FD73A8"
+				item: { count: 1, id: "ae2:singularity" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.1d
+		}
+	]
+}

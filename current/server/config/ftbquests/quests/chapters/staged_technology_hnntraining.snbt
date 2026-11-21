@@ -1,0 +1,106 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "staged_technology_hnntraining"
+	group: "050255AE19A93344"
+	icon: { id: "hostilenetworks:blank_data_model" }
+	id: "05C5131E4E1C5465"
+	images: [
+		{
+			height: 0.0d
+			id: "14E5CE53D7278D83"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 2.467d
+			y: 0.367d
+			click_action: "none:quest_enhance:decorative_anchor:2384fe9e-b9df-5e9b-bf61-67419a8bfedb"
+		}
+		{
+			height: 0.0d
+			id: "653CF0A51CB61608"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 3.533d
+			y: -0.367d
+			click_action: "none:quest_enhance:decorative_anchor:659b1a26-420e-5f0f-af84-4595ab0127ff"
+		}
+	]
+	order_index: 26
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:39994c771ae2a786"
+				"q:332fd5434730715a"
+			]
+		}
+		{
+			nodes: [
+				"q:332fd5434730715a"
+				"a:2384fe9e-b9df-5e9b-bf61-67419a8bfedb"
+			]
+		}
+		{
+			nodes: [
+				"a:2384fe9e-b9df-5e9b-bf61-67419a8bfedb"
+				"a:659b1a26-420e-5f0f-af84-4595ab0127ff"
+			]
+		}
+		{
+			nodes: [
+				"a:659b1a26-420e-5f0f-af84-4595ab0127ff"
+				"l:10764758c8a61865"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [{
+		id: "10764758C8A61865"
+		linked_quest: "2CF576297E656B4C"
+		shape: "rsquare"
+		x: 4.6d
+		y: -1.1d
+	}]
+	quests: [
+		{
+			id: "0DA5597E5A56C217"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "1984B92D8591C461"
+				item: { count: 1, id: "hostilenetworks:blank_data_model" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.6d
+			y: -0.9d
+		}
+		{
+			id: "39994C771AE2A786"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "1187E0831C18EE21"
+				item: { count: 1, id: "hostilenetworks:deep_learner" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.6d
+			y: -0.9d
+		}
+		{
+			id: "332FD5434730715A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "36B43D638B4703D9"
+				type: "checkmark"
+			}]
+			x: 1.4d
+			y: 1.1d
+		}
+	]
+}

@@ -1,0 +1,112 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "expedition_aerospace"
+	group: "3346A01E0EAFD002"
+	icon: { id: "cmi:astronautic_mechanism" }
+	id: "7406E4576FD88E81"
+	images: [ ]
+	order_index: 0
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"l:6ecf24dfe49736fa"
+				"q:167d4dc0804da7ff"
+			]
+		}
+		{
+			nodes: [
+				"q:167d4dc0804da7ff"
+				"l:44d53d6b206d65e3"
+			]
+		}
+		{
+			nodes: [
+				"l:44d53d6b206d65e3"
+				"l:13e7ffaafc0e22ae"
+			]
+		}
+		{
+			nodes: [
+				"q:167d4dc0804da7ff"
+				"q:2d798437ef7625a7"
+			]
+		}
+		{
+			nodes: [
+				"q:2d798437ef7625a7"
+				"l:40ae2f7ccec8f9f5"
+			]
+		}
+		{
+			nodes: [
+				"q:2d798437ef7625a7"
+				"l:66d3b053ec9470e5"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "6ECF24DFE49736FA"
+			linked_quest: "18607CD35178CF9C"
+			shape: "rsquare"
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			id: "44D53D6B206D65E3"
+			linked_quest: "7155210392641F4C"
+			shape: "rsquare"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			id: "13E7FFAAFC0E22AE"
+			linked_quest: "01B84EE03D8FFD49"
+			shape: "rsquare"
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			id: "40AE2F7CCEC8F9F5"
+			linked_quest: "25D68FEDC946D6DF"
+			shape: "rsquare"
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			id: "66D3B053EC9470E5"
+			linked_quest: "39F85C7A6533E3B5"
+			shape: "rsquare"
+			x: 9.0d
+			y: 6.0d
+		}
+	]
+	quests: [
+		{
+			id: "167D4DC0804DA7FF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "5A896FEC3E07CFC0"
+				item: { count: 1, id: "cmi:aeronautic_mechanism" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			id: "2D798437EF7625A7"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "275F32B97B7C121A"
+				item: { count: 1, id: "cmi:astronautic_mechanism" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+	]
+}

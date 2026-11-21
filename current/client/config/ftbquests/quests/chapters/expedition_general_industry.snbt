@@ -1,7 +1,7 @@
 {
 	filename: "expedition_general_industry"
 	group: "5B22564DA513617D"
-	icon: "cmi:ultimate_mekanism_mechanism"
+	icon: { id: "cmi:ultimate_mekanism_mechanism" }
 	id: "6CD5E08EE5E785E0"
 	order_index: 0
 	title: "通用工业总览"

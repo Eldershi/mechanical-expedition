@@ -1,0 +1,217 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_technology_c_space_integration_hnn"
+	group: "5B22564DA513617D"
+	icon: { id: "hostilenetworks:prediction_matrix" }
+	id: "61728A288914BE2E"
+	images: [
+		{
+			height: 0.0d
+			id: "5FCF5DB79A992327"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.9d
+			y: -1.583d
+			click_action: "none:quest_enhance:decorative_anchor:451d43ae-e04c-52a9-b2b1-d7e3eb38ef3a"
+		}
+		{
+			height: 0.0d
+			id: "4827564FABEF3AF1"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -1.9d
+			y: -0.917d
+			click_action: "none:quest_enhance:decorative_anchor:b25eaedc-48fe-50bd-b60d-99a06a5befdd"
+		}
+		{
+			height: 0.0d
+			id: "6058861E69898C30"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 1.1d
+			y: 0.083d
+			click_action: "none:quest_enhance:decorative_anchor:1a03626a-54ef-5cbf-b359-73cd8c78126d"
+		}
+		{
+			height: 0.0d
+			id: "6ACC47F60A17E1F6"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 2.1d
+			y: 0.417d
+			click_action: "none:quest_enhance:decorative_anchor:14a2f1ed-ad2f-55fa-a227-9cdfe63dc380"
+		}
+	]
+	order_index: 9
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:3c3ae1c138a609e0"
+				"a:451d43ae-e04c-52a9-b2b1-d7e3eb38ef3a"
+			]
+		}
+		{
+			nodes: [
+				"a:451d43ae-e04c-52a9-b2b1-d7e3eb38ef3a"
+				"a:b25eaedc-48fe-50bd-b60d-99a06a5befdd"
+			]
+		}
+		{
+			nodes: [
+				"a:b25eaedc-48fe-50bd-b60d-99a06a5befdd"
+				"q:38f029b541635b97"
+			]
+		}
+		{
+			nodes: [
+				"q:2cf576297e656b4c"
+				"q:38f029b541635b97"
+			]
+		}
+		{
+			nodes: [
+				"q:38f029b541635b97"
+				"a:1a03626a-54ef-5cbf-b359-73cd8c78126d"
+			]
+		}
+		{
+			nodes: [
+				"a:1a03626a-54ef-5cbf-b359-73cd8c78126d"
+				"a:14a2f1ed-ad2f-55fa-a227-9cdfe63dc380"
+			]
+		}
+		{
+			nodes: [
+				"a:14a2f1ed-ad2f-55fa-a227-9cdfe63dc380"
+				"q:3f01fe007e2951ad"
+			]
+		}
+		{
+			nodes: [
+				"q:3108be439c7e51c6"
+				"q:3f01fe007e2951ad"
+			]
+		}
+		{
+			nodes: [
+				"l:47fc68d434fb42bd"
+				"q:2cf576297e656b4c"
+			]
+		}
+		{
+			nodes: [
+				"q:2cf576297e656b4c"
+				"q:75fd59c6db5be251"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [{
+		id: "47FC68D434FB42BD"
+		linked_quest: "332FD5434730715A"
+		shape: "rsquare"
+		x: -6.1d
+		y: -3.75d
+	}]
+	quests: [
+		{
+			id: "3C3AE1C138A609E0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "278B5E35425215F8"
+				item: { count: 1, id: "hostilenetworks:prediction_matrix" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -5.9d
+			y: -2.25d
+		}
+		{
+			id: "2CF576297E656B4C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [
+				{
+					consume_items: false
+					id: "0455063E469E1AB6"
+					item: { count: 1, id: "hostilenetworks:sim_chamber" }
+					only_from_crafting: false
+					type: "item"
+				}
+				{
+					id: "1CE29C2DC939E958"
+					type: "checkmark"
+				}
+			]
+			x: -2.9d
+			y: -0.25d
+		}
+		{
+			id: "38F029B541635B97"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "2C9BBA8700112AB1"
+				type: "checkmark"
+			}]
+			x: 0.1d
+			y: -0.25d
+		}
+		{
+			id: "3108BE439C7E51C6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "217513CB183AE942"
+				item: { count: 1, id: "hostilenetworks:loot_fabricator" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.1d
+			y: 3.75d
+		}
+		{
+			id: "3F01FE007E2951AD"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "46948823DB93CF75"
+				type: "checkmark"
+			}]
+			x: 3.1d
+			y: 0.75d
+		}
+		{
+			id: "75FD59C6DB5BE251"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "2C81628C70BC7010"
+				item: { count: 1, id: "hostilenetworks:overworld_prediction" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -2.9d
+			y: -3.25d
+		}
+		{
+			id: "770C3222E2D27486"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "58B7CADEA3DC0E77"
+				type: "checkmark"
+			}]
+			x: 6.1d
+			y: -0.25d
+		}
+	]
+}

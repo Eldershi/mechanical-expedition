@@ -3,7 +3,7 @@
   "filename": "expedition_pneumatic_engineering",
   "group": "5B22564DA513617D",
   "title": "机巧新生 · 气体工程",
-  "icon": "createcraftedbeginning:shaft_driven_airtight_pump",
+  "icon": { "id": "createcraftedbeginning:shaft_driven_airtight_pump" },
   "order_index": 30,
   "quests": [
     {

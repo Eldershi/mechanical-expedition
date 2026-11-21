@@ -1,0 +1,124 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "expedition_computing_energy"
+	group: "03D71190792A021E"
+	icon: { id: "cmi:antimatter_mechanism" }
+	id: "13F1F75F1A5F8D58"
+	images: [ ]
+	order_index: 0
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"l:2940aa8775029be8"
+				"q:20d4dd69dff2908e"
+			]
+		}
+		{
+			nodes: [
+				"l:723cf1effc1102ff"
+				"q:20d4dd69dff2908e"
+			]
+		}
+		{
+			nodes: [
+				"q:20d4dd69dff2908e"
+				"l:d9e6a44b7c38475"
+			]
+		}
+		{
+			nodes: [
+				"q:38ba9e1bf0e22aaf"
+				"l:1bcacdc5db28db43"
+			]
+		}
+		{
+			nodes: [
+				"q:38ba9e1bf0e22aaf"
+				"q:474488820bf6b55c"
+			]
+		}
+		{
+			nodes: [
+				"l:1bcacdc5db28db43"
+				"l:19fe8c2e91438e13"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "2940AA8775029BE8"
+			linked_quest: "3307636D8634B0DE"
+			shape: "rsquare"
+			x: -10.0d
+			y: -3.0d
+		}
+		{
+			id: "723CF1EFFC1102FF"
+			linked_quest: "46BA9BA6A4CD96BA"
+			shape: "rsquare"
+			x: -5.0d
+			y: -7.0d
+		}
+		{
+			id: "0D9E6A44B7C38475"
+			linked_quest: "25CF0940F94151F8"
+			shape: "rsquare"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			id: "1BCACDC5DB28DB43"
+			linked_quest: "2486CFBE14133E4A"
+			shape: "rsquare"
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			id: "19FE8C2E91438E13"
+			linked_quest: "7F374350577223E5"
+			shape: "rsquare"
+			x: 5.0d
+			y: 7.0d
+		}
+	]
+	quests: [
+		{
+			id: "20D4DD69DFF2908E"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "4991CAECC2C9FC6C"
+				item: { count: 1, id: "cmi:computing_mechanism" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			id: "38BA9E1BF0E22AAF"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "753A20F0CC3BFFC9"
+				item: { count: 1, id: "cmi:nuclear_mechanism" }
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			id: "474488820BF6B55C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "4E9CC21E1613A841"
+				item: { count: 1, id: "cmi:antimatter_mechanism" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+	]
+}

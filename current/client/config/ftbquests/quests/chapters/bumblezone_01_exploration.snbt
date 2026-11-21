@@ -3,7 +3,7 @@
 	filename: "bumblezone_01_exploration"
 	title: "蜜蜂领域"
 	group: "54D4CAA40ADB5408"
-	icon: "the_bumblezone:honey_compass"
+	icon: { id: "the_bumblezone:honey_compass" }
 	order_index: 3
 	progression_mode: "flexible"
 	consume_items: false

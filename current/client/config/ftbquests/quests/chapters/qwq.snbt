@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "qwq"
 	group: "050255AE19A93344"
+	icon: { id: "mekanism:sulfur_trioxide_bucket" }
 	id: "42D2EA9CFCAB4BB9"
 	order_index: 6
 	quest_enhance_decorative_lines: [ ]

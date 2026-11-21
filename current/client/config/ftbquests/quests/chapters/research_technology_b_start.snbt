@@ -4,7 +4,7 @@
 	title: "沉浸工程：炉窑与钢材"
 	group: "050255AE19A93344"
 	order_index: 17
-	icon: "neoecoae:aluminum_dust"
+	icon: { id: "neoecoae:aluminum_dust" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -458,9 +458,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:f840010b-ada1-596a-89ec-3bb44e5eeff3"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:f840010b-ada1-596a-89ec-3bb44e5eeff3"
 		}
 		{
 			x: 0.4d
@@ -469,9 +469,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:97b47bf9-dde1-5a23-87cb-1745eca92611"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:97b47bf9-dde1-5a23-87cb-1745eca92611"
 		}
 		{
 			x: 5.4d
@@ -480,9 +480,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:9bce01cd-548f-55cd-b523-6dbcd9f2ce8f"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:9bce01cd-548f-55cd-b523-6dbcd9f2ce8f"
 		}
 		{
 			x: 6.4d
@@ -491,9 +491,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:afc7f8c2-a045-5519-aa10-709a2be37304"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:afc7f8c2-a045-5519-aa10-709a2be37304"
 		}
 		{
 			x: -9.6d
@@ -502,9 +502,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:b476f9d5-3353-5038-9adb-0de294c9b87d"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:b476f9d5-3353-5038-9adb-0de294c9b87d"
 		}
 		{
 			x: -8.6d
@@ -513,9 +513,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:96237ab0-44e0-53bc-90f5-99f922085975"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:96237ab0-44e0-53bc-90f5-99f922085975"
 		}
 		{
 			x: -0.6d
@@ -524,9 +524,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:d939020c-4a79-505e-b46e-26026271dd75"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:d939020c-4a79-505e-b46e-26026271dd75"
 		}
 		{
 			x: 0.4d
@@ -535,9 +535,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:7949186a-5913-529c-bf9e-5efd49017c98"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:7949186a-5913-529c-bf9e-5efd49017c98"
 		}
 		{
 			x: 5.4d
@@ -546,9 +546,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:fa89a980-bec0-5ca6-8e1d-0235e63c0d61"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:fa89a980-bec0-5ca6-8e1d-0235e63c0d61"
 		}
 		{
 			x: 6.4d
@@ -557,9 +557,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:ead36d5e-0cc4-5e6c-880d-5995f8be21da"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:ead36d5e-0cc4-5e6c-880d-5995f8be21da"
 		}
 	]
 	quest_enhance_decorative_lines: [

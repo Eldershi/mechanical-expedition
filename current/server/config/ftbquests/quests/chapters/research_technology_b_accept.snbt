@@ -1,0 +1,564 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_technology_b_accept"
+	group: "5B22564DA513617D"
+	icon: { id: "create:mechanical_crafter" }
+	id: "0C99F9B406A37639"
+	images: [
+		{
+			height: 0.0d
+			id: "532EDBBED7B2E7EB"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 6.8d
+			y: -0.367d
+			click_action: "none:quest_enhance:decorative_anchor:9c8cbfb4-2602-55f5-8964-6b3ba533666c"
+		}
+		{
+			height: 0.0d
+			id: "0BDCADB2526C4140"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 7.2d
+			y: 0.367d
+			click_action: "none:quest_enhance:decorative_anchor:a2599312-f872-568a-9dd1-bbf383219f30"
+		}
+		{
+			height: 0.0d
+			id: "21D3573CAF27BCB4"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 5.6d
+			y: 1.1d
+			click_action: "none:quest_enhance:decorative_anchor:607209c5-6c50-582f-9553-f49d2b5ebcac"
+		}
+		{
+			height: 0.0d
+			id: "0CB38E98608BECCE"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 6.6d
+			y: 1.1d
+			click_action: "none:quest_enhance:decorative_anchor:b32b6656-82c3-5537-bfd6-8199884cadaf"
+		}
+		{
+			height: 0.0d
+			id: "6FAFF5604051BD69"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 5.6d
+			y: 2.567d
+			click_action: "none:quest_enhance:decorative_anchor:e6fcf876-955b-5c8f-ac91-35337eda1795"
+		}
+		{
+			height: 0.0d
+			id: "54DCA26CE3A77BA4"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 6.6d
+			y: 1.833d
+			click_action: "none:quest_enhance:decorative_anchor:582601bf-bceb-5fa7-b236-0404f4a3badc"
+		}
+		{
+			height: 0.0d
+			id: "12788DE4B38B74B6"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 4.733d
+			y: 0.233d
+			click_action: "none:quest_enhance:decorative_anchor:02a2c935-1a87-5bbb-8c5d-3f3a3567c145"
+		}
+		{
+			height: 0.0d
+			id: "456688F6C0DDEB69"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 6.167d
+			y: 0.667d
+			click_action: "none:quest_enhance:decorative_anchor:42a6206b-77cf-52f0-b3c0-e7995d39b613"
+		}
+		{
+			height: 0.0d
+			id: "1374940885EF4F97"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 6.8d
+			y: 2.567d
+			click_action: "none:quest_enhance:decorative_anchor:04f1382d-90d9-5910-80e7-aac0648ebe8c"
+		}
+		{
+			height: 0.0d
+			id: "2E96F94CE29450CE"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 7.2d
+			y: 1.833d
+			click_action: "none:quest_enhance:decorative_anchor:fe3ab461-91aa-531e-b71a-736522380aca"
+		}
+		{
+			height: 0.0d
+			id: "7D316A29CF60E74A"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.4d
+			y: -1.233d
+			click_action: "none:quest_enhance:decorative_anchor:d868aee0-35f2-5ba2-a581-266cb7353d1d"
+		}
+		{
+			height: 0.0d
+			id: "3BDF35C0008E9BA6"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.4d
+			y: -0.067d
+			click_action: "none:quest_enhance:decorative_anchor:b724ef89-71fe-5fc3-9f63-22599c52e6a6"
+		}
+		{
+			height: 0.0d
+			id: "3528E42FC31A4D88"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.4d
+			y: -1.9d
+			click_action: "none:quest_enhance:decorative_anchor:90eafcc3-888a-5366-89b4-11b5bc8a9796"
+		}
+		{
+			height: 0.0d
+			id: "014C8FC86DF657A9"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.4d
+			y: -1.4d
+			click_action: "none:quest_enhance:decorative_anchor:0f0d8d9b-e262-5e18-959e-a9bd3e2a6c1b"
+		}
+		{
+			height: 0.0d
+			id: "0516D0622EA0D6D9"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.4d
+			y: -0.733d
+			click_action: "none:quest_enhance:decorative_anchor:51bcd995-f934-53d9-a761-335ad8060f8c"
+		}
+		{
+			height: 0.0d
+			id: "3D57B58920655C91"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.4d
+			y: 0.933d
+			click_action: "none:quest_enhance:decorative_anchor:9f59ebea-db90-52d4-bc8e-c28d896eb0ec"
+		}
+		{
+			height: 0.0d
+			id: "227DA5D8A8F400EE"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.4d
+			y: -2.233d
+			click_action: "none:quest_enhance:decorative_anchor:38ccb6f9-3b98-525b-8ea0-1eccf6d6a877"
+		}
+		{
+			height: 0.0d
+			id: "6090DBF54CF495A3"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.6d
+			y: -1.567d
+			click_action: "none:quest_enhance:decorative_anchor:5b745663-922c-5f46-82c7-40f6f6baf2b9"
+		}
+		{
+			height: 0.0d
+			id: "130523E9414BB129"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 2.167d
+			y: 2.067d
+			click_action: "none:quest_enhance:decorative_anchor:529e1d22-9326-52aa-9455-eb48bf7fe5ec"
+		}
+		{
+			height: 0.0d
+			id: "47B80C17C8FF7324"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 2.733d
+			y: 3.233d
+			click_action: "none:quest_enhance:decorative_anchor:9707eb6c-dbaf-5cef-baf8-815f700b4c21"
+		}
+		{
+			height: 0.0d
+			id: "7F9A92139C168594"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -0.4d
+			y: 3.2d
+			click_action: "none:quest_enhance:decorative_anchor:6b8baa1c-565a-5f36-9809-e08fb69be06e"
+		}
+		{
+			height: 0.0d
+			id: "05FF6C48C8A5C680"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.6d
+			y: 2.9d
+			click_action: "none:quest_enhance:decorative_anchor:b829e1af-4f3a-538f-a1ea-3219ff5f936f"
+		}
+	]
+	order_index: 5
+	quest_enhance_decorative_lines: [
+		{
+			nodes: ["l:21a56d35b5232325" "a:9c8cbfb4-2602-55f5-8964-6b3ba533666c"]
+		}
+		{
+			nodes: ["a:9c8cbfb4-2602-55f5-8964-6b3ba533666c" "a:a2599312-f872-568a-9dd1-bbf383219f30"]
+		}
+		{
+			nodes: ["a:a2599312-f872-568a-9dd1-bbf383219f30" "q:2dc1691e9dd1ca9f"]
+		}
+		{
+			nodes: ["l:6f12ae4ded5e8a5e" "a:607209c5-6c50-582f-9553-f49d2b5ebcac"]
+		}
+		{
+			nodes: ["a:607209c5-6c50-582f-9553-f49d2b5ebcac" "a:b32b6656-82c3-5537-bfd6-8199884cadaf"]
+		}
+		{
+			nodes: ["a:b32b6656-82c3-5537-bfd6-8199884cadaf" "q:2dc1691e9dd1ca9f"]
+		}
+		{
+			nodes: ["l:26e2f5c49051816e" "a:e6fcf876-955b-5c8f-ac91-35337eda1795"]
+		}
+		{
+			nodes: ["a:e6fcf876-955b-5c8f-ac91-35337eda1795" "a:582601bf-bceb-5fa7-b236-0404f4a3badc"]
+		}
+		{
+			nodes: ["a:582601bf-bceb-5fa7-b236-0404f4a3badc" "q:2dc1691e9dd1ca9f"]
+		}
+		{
+			nodes: ["l:cef5a7186304d72" "q:2dc1691e9dd1ca9f"]
+		}
+		{
+			nodes: ["l:1fa8136ccaab14a4" "a:04f1382d-90d9-5910-80e7-aac0648ebe8c"]
+		}
+		{
+			nodes: ["a:04f1382d-90d9-5910-80e7-aac0648ebe8c" "a:fe3ab461-91aa-531e-b71a-736522380aca"]
+		}
+		{
+			nodes: ["a:fe3ab461-91aa-531e-b71a-736522380aca" "q:2dc1691e9dd1ca9f"]
+		}
+		{
+			nodes: ["l:3cff01d984af9f19" "q:d3272d24be1d820"]
+		}
+		{
+			nodes: ["q:64af7c9457ed0b6a" "q:d3272d24be1d820"]
+		}
+		{
+			nodes: ["q:64af7c9457ed0b6a" "a:d868aee0-35f2-5ba2-a581-266cb7353d1d"]
+		}
+		{
+			nodes: ["a:d868aee0-35f2-5ba2-a581-266cb7353d1d" "a:b724ef89-71fe-5fc3-9f63-22599c52e6a6"]
+		}
+		{
+			nodes: ["a:b724ef89-71fe-5fc3-9f63-22599c52e6a6" "q:3f09134fa028f978"]
+		}
+		{
+			nodes: ["q:64af7c9457ed0b6a" "a:90eafcc3-888a-5366-89b4-11b5bc8a9796"]
+		}
+		{
+			nodes: ["a:90eafcc3-888a-5366-89b4-11b5bc8a9796" "a:0f0d8d9b-e262-5e18-959e-a9bd3e2a6c1b"]
+		}
+		{
+			nodes: ["a:0f0d8d9b-e262-5e18-959e-a9bd3e2a6c1b" "q:65247900f77b19b"]
+		}
+		{
+			nodes: ["q:64af7c9457ed0b6a" "a:51bcd995-f934-53d9-a761-335ad8060f8c"]
+		}
+		{
+			nodes: ["a:51bcd995-f934-53d9-a761-335ad8060f8c" "a:9f59ebea-db90-52d4-bc8e-c28d896eb0ec"]
+		}
+		{
+			nodes: ["a:9f59ebea-db90-52d4-bc8e-c28d896eb0ec" "q:594186d5fee7cdf6"]
+		}
+		{
+			nodes: ["q:3f09134fa028f978" "q:65247900f77b19b"]
+		}
+		{
+			nodes: ["q:d3272d24be1d820" "a:38ccb6f9-3b98-525b-8ea0-1eccf6d6a877"]
+		}
+		{
+			nodes: ["a:38ccb6f9-3b98-525b-8ea0-1eccf6d6a877" "a:5b745663-922c-5f46-82c7-40f6f6baf2b9"]
+		}
+		{
+			nodes: ["a:5b745663-922c-5f46-82c7-40f6f6baf2b9" "q:65247900f77b19b"]
+		}
+		{
+			nodes: ["q:594186d5fee7cdf6" "q:2a6761920f737b0"]
+		}
+		{
+			nodes: ["l:3314bcac29140a86" "a:529e1d22-9326-52aa-9455-eb48bf7fe5ec"]
+		}
+		{
+			nodes: ["a:529e1d22-9326-52aa-9455-eb48bf7fe5ec" "a:9707eb6c-dbaf-5cef-baf8-815f700b4c21"]
+		}
+		{
+			nodes: ["a:9707eb6c-dbaf-5cef-baf8-815f700b4c21" "q:2a6761920f737b0"]
+		}
+		{
+			nodes: ["l:6c73400c6292639f" "q:3f09134fa028f978"]
+		}
+		{
+			nodes: ["l:686f3f54662fba5a" "q:594186d5fee7cdf6"]
+		}
+		{
+			nodes: ["l:3e1b2dfea45f3270" "a:6b8baa1c-565a-5f36-9809-e08fb69be06e"]
+		}
+		{
+			nodes: ["a:6b8baa1c-565a-5f36-9809-e08fb69be06e" "a:b829e1af-4f3a-538f-a1ea-3219ff5f936f"]
+		}
+		{
+			nodes: ["a:b829e1af-4f3a-538f-a1ea-3219ff5f936f" "q:594186d5fee7cdf6"]
+		}
+		{
+			nodes: ["l:11e46e892deaaa4b" "q:497f194549e2e457"]
+		}
+		{
+			nodes: ["l:11d4cff072172444" "q:95339324f7aabee"]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "21A56D35B5232325"
+			linked_quest: "02B9237774CD43EF"
+			shape: "rsquare"
+			size: 0.75d
+			x: 6.4d
+			y: -1.1d
+		}
+		{
+			id: "6F12AE4DED5E8A5E"
+			linked_quest: "02A6761920F737B0"
+			shape: "rsquare"
+			size: 0.75d
+			x: 4.6d
+			y: 1.1d
+		}
+		{
+			id: "26E2F5C49051816E"
+			linked_quest: "059E3A5F6CA1428D"
+			shape: "rsquare"
+			size: 0.75d
+			x: 4.6d
+			y: 3.3d
+		}
+		{
+			id: "0CEF5A7186304D72"
+			linked_quest: "3609A07C53B3EDDA"
+			shape: "rsquare"
+			size: 0.75d
+			x: 4.6d
+			y: -1.1d
+		}
+		{
+			id: "1FA8136CCAAB14A4"
+			linked_quest: "7270243136C8A000"
+			shape: "rsquare"
+			size: 0.75d
+			x: 6.4d
+			y: 3.3d
+		}
+		{
+			id: "3314BCAC29140A86"
+			linked_quest: "00C17E01F2DA4B2A"
+			shape: "rsquare"
+			size: 0.75d
+			x: 1.6d
+			y: 0.9d
+		}
+		{
+			id: "6C73400C6292639F"
+			linked_quest: "095339324F7AABEE"
+			shape: "rsquare"
+			size: 0.75d
+			x: -4.4d
+			y: 1.1d
+		}
+		{
+			id: "3E1B2DFEA45F3270"
+			linked_quest: "497F194549E2E457"
+			shape: "rsquare"
+			size: 0.75d
+			x: -1.4d
+			y: 3.5d
+		}
+		{
+			id: "11E46E892DEAAA4B"
+			linked_quest: "64AF7C9457ED0B6A"
+			shape: "rsquare"
+			size: 0.75d
+			x: -4.4d
+			y: 2.9d
+		}
+		{
+			id: "3CFF01D984AF9F19"
+			linked_quest: "42F4F4E01A30FD2E"
+			shape: "rsquare"
+			x: -4.6d
+			y: -5.1d
+		}
+		{
+			id: "686F3F54662FBA5A"
+			linked_quest: "7C07B827BDFA9BBF"
+			shape: "rsquare"
+			x: -0.75d
+			y: -0.45d
+		}
+		{
+			id: "11D4CFF072172444"
+			linked_quest: "1D93DDBC96C96E3F"
+			shape: "rsquare"
+			x: -7.6d
+			y: -1.6d
+		}
+	]
+	quests: [
+		{
+			id: "2DC1691E9DD1CA9F"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "16CB5D304A96FF31"
+				type: "checkmark"
+			}]
+			x: 7.6d
+			y: 1.1d
+		}
+		{
+			id: "64AF7C9457ED0B6A"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "4D7F3BCB2688BDE0"
+				type: "checkmark"
+			}]
+			x: -4.4d
+			y: -2.4d
+		}
+		{
+			id: "0D3272D24BE1D820"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "03911CD5B4A05C73"
+				type: "checkmark"
+			}]
+			x: -1.4d
+			y: -2.9d
+		}
+		{
+			id: "3F09134FA028F978"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "01489334CBCACEA3"
+				type: "checkmark"
+			}]
+			x: -1.4d
+			y: 1.1d
+		}
+		{
+			id: "065247900F77B19B"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "14C29924DF714413"
+				type: "checkmark"
+			}]
+			x: 1.6d
+			y: -0.9d
+		}
+		{
+			id: "594186D5FEE7CDF6"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "3A218ED313A8FD50"
+				type: "checkmark"
+			}]
+			x: 1.6d
+			y: 2.6d
+		}
+		{
+			id: "02A6761920F737B0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "1A1F122BC96B71A5"
+				item: { count: 1, id: "cmi:silicon_rubber_plate" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 3.3d
+			y: 4.4d
+		}
+		{
+			id: "095339324F7AABEE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "383C7CD913ECB593"
+				type: "checkmark"
+			}]
+			x: -4.4d
+			y: -0.7d
+		}
+		{
+			id: "497F194549E2E457"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6FC6E90E8E123533"
+				type: "checkmark"
+			}]
+			x: -1.4d
+			y: 5.1d
+		}
+	]
+}

@@ -1,0 +1,144 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "staged_technology_eioupgrade"
+	group: "5B22564DA513617D"
+	icon: { id: "enderio:double_layer_capacitor" }
+	id: "6D5422AD93E435A1"
+	images: [ ]
+	order_index: 14
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"l:7b5247d53f0e6200"
+				"q:213ec933dfef3b92"
+			]
+		}
+		{
+			nodes: [
+				"l:6459b63da96aaeb8"
+				"q:2079bdc520338c3c"
+			]
+		}
+		{
+			nodes: [
+				"l:72c6998a0a5d0e03"
+				"q:2079bdc520338c3c"
+			]
+		}
+		{
+			nodes: [
+				"l:398c01198005e71a"
+				"q:2079bdc520338c3c"
+			]
+		}
+		{
+			nodes: [
+				"l:21098883456f6f27"
+				"q:484837ae407c28fa"
+			]
+		}
+		{
+			nodes: [
+				"q:2079bdc520338c3c"
+				"q:484837ae407c28fa"
+			]
+		}
+		{
+			nodes: [
+				"l:546149879d3519ba"
+				"q:213ec933dfef3b92"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "7B5247D53F0E6200"
+			linked_quest: "182F442443FAC0F1"
+			shape: "rsquare"
+			x: -0.1d
+			y: 0.9d
+		}
+		{
+			id: "6459B63DA96AAEB8"
+			linked_quest: "6AB0D684D7502A14"
+			shape: "rsquare"
+			x: -3.1d
+			y: -3.1d
+		}
+		{
+			id: "72C6998A0A5D0E03"
+			linked_quest: "137A062E03ED7A3E"
+			shape: "rsquare"
+			x: -3.1d
+			y: -0.9d
+		}
+		{
+			id: "398C01198005E71A"
+			linked_quest: "632B57296ADEBE8E"
+			shape: "rsquare"
+			x: -3.1d
+			y: 1.3d
+		}
+		{
+			id: "21098883456F6F27"
+			linked_quest: "07EF583483D57FFB"
+			shape: "rsquare"
+			x: -0.1d
+			y: -3.1d
+		}
+		{
+			id: "546149879D3519BA"
+			linked_quest: "3BA36C9B0A8BF2CB"
+			shape: "rsquare"
+			x: -0.1d
+			y: 3.1d
+		}
+	]
+	quests: [
+		{
+			id: "2079BDC520338C3C"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "071D87B6723DC41E"
+				item: { count: 1, id: "enderio:double_layer_capacitor" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.1d
+			y: -0.9d
+		}
+		{
+			id: "484837AE407C28FA"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "62624471AAA2A167"
+				item: { count: 1, id: "enderio:octadic_capacitor" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 3.1d
+			y: -0.9d
+		}
+		{
+			id: "213EC933DFEF3B92"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "3BD33C102C186D2C"
+				item: { count: 1, id: "enderio:end_steel_ingot" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 3.1d
+			y: 3.1d
+		}
+	]
+}

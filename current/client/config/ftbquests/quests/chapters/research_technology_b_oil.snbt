@@ -4,7 +4,7 @@
 	title: "初步石化与红石酸"
 	group: "050255AE19A93344"
 	order_index: 25
-	icon: "immersiveengineering:redstone_acid_bucket"
+	icon: { id: "immersiveengineering:redstone_acid_bucket" }
 	consume_items: false
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
@@ -186,9 +186,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:105b69e2-7aa7-534d-9691-eede97b90ee4"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:105b69e2-7aa7-534d-9691-eede97b90ee4"
 		}
 		{
 			x: 4.9d
@@ -197,9 +197,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:fa815697-f7ef-50c6-9b52-52dd9587ff3f"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:fa815697-f7ef-50c6-9b52-52dd9587ff3f"
 		}
 		{
 			x: 3.967d
@@ -208,9 +208,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:29f37ae7-9fb0-5e2b-becb-8f136f7cd20e"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:29f37ae7-9fb0-5e2b-becb-8f136f7cd20e"
 		}
 		{
 			x: 5.033d
@@ -219,9 +219,9 @@
 			height: 0.0d
 			rotation: 0.0d
 			image: "quest_enhance:textures/icons/decorative_anchor.png"
-			click: "quest_enhance:decorative_anchor:afa8e89e-1a6c-5045-8568-9a9f68282e67"
 			dev: false
 			quest_enhance_exclude_from_box_selection: true
+			click_action: "none:quest_enhance:decorative_anchor:afa8e89e-1a6c-5045-8568-9a9f68282e67"
 		}
 	]
 	quest_enhance_decorative_lines: [

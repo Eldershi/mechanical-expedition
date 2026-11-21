@@ -1,0 +1,511 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_adventure_c_enigmaticlegacy"
+	group: "25C542C40E64ED41"
+	icon: { id: "enigmaticlegacyplus:cursed_ring" }
+	id: "04B0275EE4161060"
+	images: [
+		{
+			height: 0.0d
+			id: "782AE43040E02126"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.4d
+			y: -1.68d
+			click_action: "none:quest_enhance:decorative_anchor:62d0b720-80ba-5581-9a55-ac09bc2341d5"
+		}
+		{
+			height: 0.0d
+			id: "3959726C96F9C772"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 2.4d
+			y: -2.64d
+			click_action: "none:quest_enhance:decorative_anchor:1c9d51c1-36ee-55dd-9ef9-3a7f955917f1"
+		}
+		{
+			height: 0.0d
+			id: "3A95D78B38186F78"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 6.24d
+			y: -1.08d
+			click_action: "none:quest_enhance:decorative_anchor:20726377-5096-5fa1-81a9-5e9b6bcbc71e"
+		}
+		{
+			height: 0.0d
+			id: "0D9EEB965D61C763"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 8.16d
+			y: -1.08d
+			click_action: "none:quest_enhance:decorative_anchor:50523452-e78d-5d5d-a11b-403561ff84df"
+		}
+		{
+			height: 0.0d
+			id: "7E500E7E1F546A6E"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -3.06d
+			y: -0.72d
+			click_action: "none:quest_enhance:decorative_anchor:fe006aac-9146-57c9-bd98-87b1fa80ca74"
+		}
+		{
+			height: 0.0d
+			id: "3D91A05CF67AC6F5"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: -2.25d
+			y: -0.72d
+			click_action: "none:quest_enhance:decorative_anchor:f235ec40-e084-5346-8fe0-3ca63b4acad2"
+		}
+		{
+			height: 0.0d
+			id: "3FDE51C564A1923B"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 2.4d
+			y: 1.92d
+			click_action: "none:quest_enhance:decorative_anchor:6df5f852-5c1d-5b99-b3d0-1ffbd4fcf4b4"
+		}
+		{
+			height: 0.0d
+			id: "5A9BA8609CAED764"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 3.36d
+			y: 2.4d
+			click_action: "none:quest_enhance:decorative_anchor:8a6ddff3-fef4-556a-a5db-83e81b9fe2b6"
+		}
+		{
+			height: 0.0d
+			id: "47154E7446D0895F"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 3.36d
+			y: -3.42d
+			click_action: "none:quest_enhance:decorative_anchor:ba45f308-75ce-5ce2-838c-e23a2becbcf4"
+		}
+		{
+			height: 0.0d
+			id: "2834CE243D9A0E54"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 5.28d
+			y: -3.51d
+			click_action: "none:quest_enhance:decorative_anchor:f8e97b99-2022-5aac-a011-05d31f0881bf"
+		}
+		{
+			height: 0.0d
+			id: "196F276BE2176A74"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 4.32d
+			y: -2.58d
+			click_action: "none:quest_enhance:decorative_anchor:d22d1c9a-2f4e-54b4-b2ce-7d8ed1100b38"
+		}
+		{
+			height: 0.0d
+			id: "7F7C964E8F03B3D7"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 7.2d
+			y: -1.83d
+			click_action: "none:quest_enhance:decorative_anchor:e696d449-9d74-5980-9e05-16871a5b2a31"
+		}
+	]
+	order_index: 6
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"q:722dc5820b2474"
+				"a:fe006aac-9146-57c9-bd98-87b1fa80ca74"
+			]
+		}
+		{
+			nodes: [
+				"a:fe006aac-9146-57c9-bd98-87b1fa80ca74"
+				"a:f235ec40-e084-5346-8fe0-3ca63b4acad2"
+			]
+		}
+		{
+			nodes: [
+				"a:f235ec40-e084-5346-8fe0-3ca63b4acad2"
+				"q:5eeb8abbc14ab56e"
+			]
+		}
+		{
+			nodes: [
+				"q:2e322ba4e1fda03d"
+				"q:401efad0707d4f2c"
+			]
+		}
+		{
+			nodes: [
+				"q:2e322ba4e1fda03d"
+				"a:ba45f308-75ce-5ce2-838c-e23a2becbcf4"
+			]
+		}
+		{
+			nodes: [
+				"a:ba45f308-75ce-5ce2-838c-e23a2becbcf4"
+				"a:f8e97b99-2022-5aac-a011-05d31f0881bf"
+			]
+		}
+		{
+			nodes: [
+				"a:f8e97b99-2022-5aac-a011-05d31f0881bf"
+				"q:68ab61098ddb68e2"
+			]
+		}
+		{
+			nodes: [
+				"q:2e322ba4e1fda03d"
+				"a:d22d1c9a-2f4e-54b4-b2ce-7d8ed1100b38"
+			]
+		}
+		{
+			nodes: [
+				"a:d22d1c9a-2f4e-54b4-b2ce-7d8ed1100b38"
+				"a:e696d449-9d74-5980-9e05-16871a5b2a31"
+			]
+		}
+		{
+			nodes: [
+				"a:e696d449-9d74-5980-9e05-16871a5b2a31"
+				"q:54da375aa454c2a0"
+			]
+		}
+		{
+			nodes: [
+				"q:62c719e0d3a88a49"
+				"a:6df5f852-5c1d-5b99-b3d0-1ffbd4fcf4b4"
+			]
+		}
+		{
+			nodes: [
+				"a:6df5f852-5c1d-5b99-b3d0-1ffbd4fcf4b4"
+				"a:8a6ddff3-fef4-556a-a5db-83e81b9fe2b6"
+			]
+		}
+		{
+			nodes: [
+				"a:8a6ddff3-fef4-556a-a5db-83e81b9fe2b6"
+				"q:31c827cbc48d8aaf"
+			]
+		}
+		{
+			nodes: [
+				"q:555a40537536d1fd"
+				"q:31c827cbc48d8aaf"
+			]
+		}
+		{
+			nodes: [
+				"q:5fcf2e633b70d1b0"
+				"a:62d0b720-80ba-5581-9a55-ac09bc2341d5"
+			]
+		}
+		{
+			nodes: [
+				"a:62d0b720-80ba-5581-9a55-ac09bc2341d5"
+				"a:1c9d51c1-36ee-55dd-9ef9-3a7f955917f1"
+			]
+		}
+		{
+			nodes: [
+				"a:1c9d51c1-36ee-55dd-9ef9-3a7f955917f1"
+				"q:68ab61098ddb68e2"
+			]
+		}
+		{
+			nodes: [
+				"q:68ab61098ddb68e2"
+				"q:54da375aa454c2a0"
+			]
+		}
+		{
+			nodes: [
+				"q:285b80ee14cad987"
+				"a:20726377-5096-5fa1-81a9-5e9b6bcbc71e"
+			]
+		}
+		{
+			nodes: [
+				"a:20726377-5096-5fa1-81a9-5e9b6bcbc71e"
+				"a:50523452-e78d-5d5d-a11b-403561ff84df"
+			]
+		}
+		{
+			nodes: [
+				"a:50523452-e78d-5d5d-a11b-403561ff84df"
+				"q:54da375aa454c2a0"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			id: "53DD3EF9A31ECA58"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "55506CA7D5385289"
+				type: "checkmark"
+			}]
+			x: -10.08d
+			y: -0.72d
+		}
+		{
+			id: "5FCF2E633B70D1B0"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "2B2437DDD14BCD61"
+				item: { count: 1, id: "enigmaticlegacyplus:the_acknowledgment" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -7.2d
+			y: -0.72d
+		}
+		{
+			id: "292BCED589D417F7"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "2CC8AB53B8BC0C92"
+				item: { count: 1, id: "enigmaticlegacyplus:earth_heart" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.44d
+			y: -4.32d
+		}
+		{
+			id: "285B80EE14CAD987"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "7E5D9010E84F90CE"
+				item: { count: 1, id: "enigmaticlegacyplus:abyssal_heart" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 4.32d
+			y: -1.08d
+		}
+		{
+			id: "00722DC5820B2474"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "0687BB1347F857E1"
+				item: { count: 1, id: "enigmaticlegacyplus:magnet_ring" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -3.87d
+			y: -0.72d
+		}
+		{
+			id: "3CDDD55623AE15F5"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "48BC59555BBE4BFC"
+				item: { count: 1, id: "enigmaticlegacyplus:ocean_stone" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -4.32d
+			y: 2.16d
+		}
+		{
+			id: "31C827CBC48D8AAF"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "166A753FFFC081F9"
+				item: { count: 1, id: "enigmaticlegacyplus:fabulous_scroll" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 4.32d
+			y: 2.88d
+		}
+		{
+			id: "5D2DF38F6261CFFE"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "4CE228AC61CE0DCA"
+				item: { count: 1, id: "enigmaticlegacyplus:cursed_scroll" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 3.6d
+			y: 5.76d
+		}
+		{
+			id: "60FD4C1E0F41D6B2"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "11A3C27C56E1C3DE"
+				item: { count: 1, id: "enigmaticlegacyplus:twisted_mirror" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -5.04d
+			y: -3.96d
+		}
+		{
+			id: "401EFAD0707D4F2C"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "5F04C4CE27471F0D"
+				item: { count: 1, id: "enigmaticlegacyplus:curse_transposer" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 6.48d
+			y: 4.32d
+		}
+		{
+			id: "62C719E0D3A88A49"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "5E8D97907970A481"
+				item: { count: 1, id: "enigmaticlegacyplus:etherium_ingot" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.44d
+			y: 1.44d
+		}
+		{
+			id: "54DA375AA454C2A0"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "7D22484C05E78303"
+				item: { count: 1, id: "enigmaticlegacyplus:the_infinitum" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 10.08d
+			y: -1.08d
+		}
+		{
+			id: "555A40537536D1FD"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "771BC60D9484228F"
+				item: { count: 1, id: "enigmaticlegacyplus:astral_dust" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.44d
+			y: -5.76d
+		}
+		{
+			id: "2E322BA4E1FDA03D"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "034637F60645F52D"
+				item: { count: 1, id: "enigmaticlegacyplus:evil_essence" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 1.44d
+			y: -3.33d
+		}
+		{
+			id: "31C2B194ACDFBD55"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "04BC71A1DDCF1BE2"
+				item: { count: 1, id: "enigmaticlegacyplus:darkest_scroll" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 0.72d
+			y: 5.76d
+		}
+		{
+			id: "5EEB8ABBC14AB56E"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "5F78FF7F1AAA9C50"
+				item: { count: 1, id: "enigmaticlegacyplus:dislocation_ring" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.44d
+			y: -0.72d
+		}
+		{
+			id: "68AB61098DDB68E2"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "32F288AB7EBDB99C"
+				item: { count: 1, id: "enigmaticlegacyplus:the_twist" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 7.2d
+			y: -3.6d
+		}
+	]
+}

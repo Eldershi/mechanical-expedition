@@ -1,0 +1,292 @@
+{
+	consume_items: false
+	default_hide_dependency_lines: false
+	default_quest_shape: "circle"
+	filename: "research_technology_c_space_integration_prepare"
+	group: "3346A01E0EAFD002"
+	icon: { id: "minecraft:book" }
+	id: "51D1A0055547AF44"
+	images: [
+		{
+			height: 0.0d
+			id: "3FAC89D5849C090B"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 2.5d
+			y: -2.317d
+			click_action: "none:quest_enhance:decorative_anchor:44864a0d-aadd-5631-94df-f5699efc1eb1"
+		}
+		{
+			height: 0.0d
+			id: "5B20BDB85C32AEAF"
+			image: "quest_enhance:textures/icons/decorative_anchor.png"
+			quest_enhance_exclude_from_box_selection: 1b
+			rotation: 0.0d
+			width: 0.0d
+			x: 0.5d
+			y: -0.483d
+			click_action: "none:quest_enhance:decorative_anchor:ad25ae2a-0959-5af0-96ac-a8b8d1fd5cbe"
+		}
+	]
+	order_index: 3
+	quest_enhance_decorative_lines: [
+		{
+			nodes: [
+				"l:7e0591c3bf36cce6"
+				"q:28589af4fb0bda5b"
+			]
+		}
+		{
+			nodes: [
+				"l:7e0591c3bf36cce6"
+				"q:6c4cf69064ba2c10"
+			]
+		}
+		{
+			nodes: [
+				"q:28589af4fb0bda5b"
+				"q:1728ad7c502eda85"
+			]
+		}
+		{
+			nodes: [
+				"q:28589af4fb0bda5b"
+				"a:44864a0d-aadd-5631-94df-f5699efc1eb1"
+			]
+		}
+		{
+			nodes: [
+				"a:44864a0d-aadd-5631-94df-f5699efc1eb1"
+				"a:ad25ae2a-0959-5af0-96ac-a8b8d1fd5cbe"
+			]
+		}
+		{
+			nodes: [
+				"a:ad25ae2a-0959-5af0-96ac-a8b8d1fd5cbe"
+				"q:f3e1bf11f8a20d2"
+			]
+		}
+		{
+			nodes: [
+				"q:1728ad7c502eda85"
+				"q:1ccd913be0efd3bc"
+			]
+		}
+		{
+			nodes: [
+				"l:5460164c3f6a7993"
+				"q:6521f53c3d898739"
+			]
+		}
+		{
+			nodes: [
+				"l:554444c5e3d26ea3"
+				"q:1395ef178b2aff61"
+			]
+		}
+		{
+			nodes: [
+				"q:1395ef178b2aff61"
+				"q:5caa6e885f8db0bb"
+			]
+		}
+	]
+	quest_enhance_hidden_dependency_lines: [ ]
+	quest_links: [
+		{
+			id: "7E0591C3BF36CCE6"
+			linked_quest: "4BFC30473684A5A5"
+			shape: "rsquare"
+			x: 1.3d
+			y: -6.35d
+		}
+		{
+			id: "5460164C3F6A7993"
+			linked_quest: "64AF7C9457ED0B6A"
+			shape: "rsquare"
+			x: 10.0d
+			y: -5.65d
+		}
+		{
+			id: "554444C5E3D26EA3"
+			linked_quest: "3FB802D2B93DB101"
+			shape: "rsquare"
+			x: 4.5d
+			y: 0.85d
+		}
+	]
+	quests: [
+		{
+			id: "6521F53C3D898739"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "02C1BD08B4A68006"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: -5.65d
+		}
+		{
+			id: "5FF5B0E081F021FE"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "55BEADF507F26F08"
+				item: { count: 1, id: "patchouli:guide_book" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -7.5d
+			y: -0.15d
+		}
+		{
+			id: "18607CD35178CF9C"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "0270F0D372D4FE90"
+				type: "checkmark"
+			}]
+			x: -4.5d
+			y: -4.15d
+		}
+		{
+			id: "1728AD7C502EDA85"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "0E0440D8838DE9F7"
+				item: { count: 1, id: "ad_astra:oxygen_loader" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.15d
+		}
+		{
+			id: "1CCD913BE0EFD3BC"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "6190DEFC4C526C5F"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: -3.3d
+		}
+		{
+			id: "10BC7A03475694F0"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "126CB8F0095F4227"
+				item: { count: 1, id: "ad_astra:space_helmet" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.15d
+		}
+		{
+			id: "0F3E1BF11F8A20D2"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "4259F500B2281EE2"
+				item: { count: 1, id: "ad_astra:space_suit" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.35d
+		}
+		{
+			id: "2BF280B954FCA397"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "4F46C8FDCAB11C55"
+				item: { count: 1, id: "ad_astra:space_pants" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.85d
+		}
+		{
+			id: "6120C5EB18EDDE88"
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "0D22520D4D707E60"
+				item: { count: 1, id: "ad_astra:space_boots" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: -1.5d
+			y: 6.35d
+		}
+		{
+			id: "28589AF4FB0BDA5B"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "7597AFFCBD0B689D"
+				item: { count: 1, id: "ad_astra:gas_tank" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.15d
+		}
+		{
+			id: "1395EF178B2AFF61"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "1C5DB92D23BE2036"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 0.85d
+		}
+		{
+			id: "5CAA6E885F8DB0BB"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "63D276175050962A"
+				type: "checkmark"
+			}]
+			x: 4.5d
+			y: 3.35d
+		}
+		{
+			id: "02C57AADB9D8272F"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				id: "40DEF9FFC6E1F40D"
+				type: "checkmark"
+			}]
+			x: 1.5d
+			y: 5.85d
+		}
+		{
+			id: "6C4CF69064BA2C10"
+			optional: true
+			quest_enhance_disable_scroll_paging: false
+			tasks: [{
+				consume_items: false
+				id: "3A4F7082D8FE83BB"
+				item: { count: 1, id: "ad_astra_giselle_addon:fuel_loader" }
+				only_from_crafting: false
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.85d
+		}
+	]
+}
