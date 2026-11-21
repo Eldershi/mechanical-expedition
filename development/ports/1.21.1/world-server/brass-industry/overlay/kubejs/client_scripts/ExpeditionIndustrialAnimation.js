@@ -9,6 +9,12 @@ const $WorksRegisterModels = Java.loadClass('net.neoforged.neoforge.client.event
 const $WorksParticles = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
 
 const worksNamespace = 'expedition_industry:'
+const worksOrientations = {
+  north: {degrees: 0, rightX: 1, rightZ: 0, backX: 0, backZ: 1},
+  east: {degrees: -90, rightX: 0, rightZ: 1, backX: -1, backZ: 0},
+  south: {degrees: 180, rightX: -1, rightZ: 0, backX: 0, backZ: -1},
+  west: {degrees: 90, rightX: 0, rightZ: -1, backX: 1, backZ: 0},
+}
 const worksParts = {
   press_head: 'create:block/mechanical_press/head',
   press_yoke: worksNamespace + 'block/works/press_yoke',
@@ -24,8 +30,9 @@ NativeEvents.onEvent($WorksRegisterModels, event => {
   Object.keys(worksParts).forEach(name => event.register(worksModelKey(name)))
 })
 
-function worksFacing(machine) {
-  return machine.getFrontFacing().orElse($WorksDirection.NORTH)
+function worksOrientation(machine) {
+  const facing = String(machine.getFrontFacing().orElse($WorksDirection.NORTH))
+  return worksOrientations[facing] ?? worksOrientations.north
 }
 
 function drawWorksPart(context, name, x, y, z, sx, sy, sz) {
@@ -47,8 +54,7 @@ function drawWorksPart(context, name, x, y, z, sx, sy, sz) {
 }
 
 function worksMachinePose(context, render) {
-  const angles = {north: 0, east: -90, south: 180, west: 90}
-  const degrees = angles[worksFacing(context.getMachine()).getName()]
+  const {degrees} = worksOrientation(context.getMachine())
   const stack = context.poseStack
   stack.pushPose()
   try {
@@ -92,10 +98,9 @@ function worksVent(name, dx, dy, dz, interval, particle, speed) {
     if (machine.getMachineStateName() !== 'working') return
     const pos = machine.getPos()
     if (machine.getOffsetTimer() % interval !== 0) return
-    const front = worksFacing(machine)
-    const right = front.getClockWise()
-    const x = pos.getX() + 0.5 + dx * right.getStepX() - dz * front.getStepX()
-    const z = pos.getZ() + 0.5 + dx * right.getStepZ() - dz * front.getStepZ()
+    const {rightX, rightZ, backX, backZ} = worksOrientation(machine)
+    const x = pos.getX() + 0.5 + dx * rightX + dz * backX
+    const z = pos.getZ() + 0.5 + dx * rightZ + dz * backZ
     $WorksMinecraft.getInstance().particleEngine.createParticle(
       particle, x, pos.getY() + dy, z, 0, speed, 0)
   })

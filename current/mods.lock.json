@@ -4591,7 +4591,7 @@
       "kubejs/assets/expedition_industry/textures/item/works/semi_finished_steel.png": "f8b3084c2cd2bdbc4625d164ba5032016e75d816eb06721ddfd8f88a5df0de23",
       "kubejs/assets/expedition_industry/textures/item/works/trade_credit.png": "af5f23417fd7116a99813ec6348097b5aa4455d5e395f0cf9aee180c6c04d8b9",
       "kubejs/assets/expedition_space/models/block/carbon_electrode.json": "694dd6437db69adcbf5d2f7e7b4f6c9dc4036af663919093df373177d81e8152",
-      "kubejs/client_scripts/ExpeditionIndustrialAnimation.js": "79a9f05cfd36e004ba6734971ca366dd1986eaf3ae4870e7a0ed1793775916f9"
+      "kubejs/client_scripts/ExpeditionIndustrialAnimation.js": "1ed84042b7f4f451552d1d549267667be470d5feb1f1967f0f041bdc911e8f2d"
     },
     "mods": [
       {
