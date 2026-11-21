@@ -20,68 +20,68 @@ ServerEvents.recipes(event => {
     M: andesite, C: 'create:andesite_casing', P: 'minecraft:piston'
   }).id('expedition:factory/rock_generator')
 
-  const requirePart = (id, part, preferredSlot) => {
+  const applyParts = (id, placements) => {
     let found = false
     event.forEachRecipe({id: id}, recipe => {
       found = true
       const original = JSON.parse(String(recipe.originalJson))
-      const ingredient = {item: part}
-      if (original.ingredients && !original.pattern && original.ingredients.length < 9) {
-        recipe.merge({ingredients: original.ingredients.concat(ingredient)})
+      const automatic = placements[0].length === 1
+      if (automatic && original.ingredients && !original.pattern && original.ingredients.length < 9) {
+        recipe.merge({ingredients: original.ingredients.concat({item: placements[0][0]})})
         return
       }
 
       const rows = original.pattern.map(row => row.split(''))
       const key = original.key
-      const token = ['m', 'k', 'g', 'y'].find(letter => !key[letter])
-      if (!token) throw new Error('No free ingredient symbol for ' + id)
-
-      if (preferredSlot) {
-        rows[preferredSlot[0]][preferredSlot[1]] = token
-      } else {
-        var available = rows.find(row => row.includes(' '))
-        if (available) {
-          available[available.indexOf(' ')] = token
-        } else if (rows.length < 3) {
-          rows.unshift(rows[0].map((_, column) => column === 0 ? token : ' '))
+      let slots = placements
+      if (automatic) {
+        const part = placements[0][0]
+        const available = rows.findIndex(row => row.includes(' '))
+        if (available >= 0) slots = [[part, available, rows[available].indexOf(' ')]]
+        else if (rows.length < 3) {
+          rows.unshift(rows[0].map(() => ' '))
+          slots = [[part, 0, 0]]
         } else {
-          var cells = rows.reduce((cells, row) => cells.concat(row), [])
-          var repeated = cells.find(symbol => cells.indexOf(symbol) !== cells.lastIndexOf(symbol))
+          const cells = rows.reduce((cells, row) => cells.concat(row), [])
+          const repeated = cells.find(symbol => cells.indexOf(symbol) !== cells.lastIndexOf(symbol))
           if (!repeated) throw new Error('Choose an ingredient slot for ' + id)
-          var index = cells.indexOf(repeated)
-          rows[Math.floor(index / rows[0].length)][index % rows[0].length] = token
+          const index = cells.indexOf(repeated)
+          slots = [[part, Math.floor(index / rows[0].length), index % rows[0].length]]
         }
       }
 
+      slots.forEach(([part, row, column]) => {
+        const token = ['m', 'k', 'g', 'y'].find(letter => !key[letter])
+        if (!token) throw new Error('No free ingredient symbol for ' + id)
+        if (!rows[row] || rows[row][column] === undefined) throw new Error('Invalid ingredient slot for ' + id)
+        rows[row][column] = token
+        key[token] = {item: part}
+      })
       const pattern = rows.map(row => row.join(''))
       Object.keys(key).forEach(symbol => {
         if (!pattern.some(row => row.includes(symbol))) delete key[symbol]
       })
-      key[token] = ingredient
       recipe.merge({pattern: pattern, key: key})
     })
     if (!found) throw new Error('Missing equipment recipe ' + id)
   }
 
-  const requireParts = (namespace, part, recipes) => {
-    recipes.forEach(id => requirePart(namespace + ':' + id, part))
-  }
+  const requireParts = (namespace, part, recipes) =>
+    recipes.forEach(id => applyParts(namespace + ':' + id, [[part]]))
 
-  // These machines make the chemicals and steel needed for higher construct tiers.
+  // Early chemical machines can be built before the first Mekanism mechanism.
   requireParts('mekanism', andesite, [
-    'steel_casing', 'metallurgic_infuser', 'enrichment_chamber', 'electric_pump', 'electrolytic_separator',
-    'chemical_oxidizer', 'chemical_infuser', 'rotary_condensentrator', 'fluid_tank/basic', 'chemical_tank/basic'
+    'electric_pump', 'chemical_oxidizer', 'chemical_infuser', 'rotary_condensentrator'
   ])
+  requireParts('mekanism', coil, ['metallurgic_infuser', 'enrichment_chamber', 'supercharged_coil'])
   requireParts('mekanism', basic, [
     'crusher', 'combiner', 'energized_smelter', 'precision_sawmill', 'fuelwood_heater', 'fluidic_plenisher',
     'formulaic_assemblicator', 'logistical_sorter', 'oredictionificator', 'painting_machine', 'pigment_extractor',
-    'pigment_mixer', 'nutritional_liquifier', 'bin/basic', 'energy_cube/basic', 'chargepad', 'dynamic_tank',
-    'dynamic_valve', 'boiler_casing', 'boiler_valve', 'pressure_disperser', 'superheating_element',
-    'induction/casing', 'induction/port', 'thermal_evaporation/block', 'thermal_evaporation/controller',
-    'thermal_evaporation/valve', 'transmitter/diversion_transporter', 'transmitter/restrictive_transporter'
+    'pigment_mixer', 'nutritional_liquifier', 'bin/basic', 'energy_cube/basic', 'chargepad',
+    'boiler_valve', 'pressure_disperser'
   ])
   requireParts('mekanism', advanced, [
-    'osmium_compressor', 'purification_chamber', 'chemical_injection_chamber', 'pressurized_reaction_chamber',
+    'osmium_compressor', 'purification_chamber', 'chemical_injection_chamber',
     'seismic_vibrator', 'resistive_heater', 'laser', 'laser_amplifier', 'laser_tractor_beam'
   ])
   requireParts('mekanism', elite, [
@@ -89,63 +89,50 @@ ServerEvents.recipes(event => {
     'digital_miner', 'dimensional_stabilizer'
   ])
   requireParts('mekanism', ultimate, ['quantum_entangloporter', 'teleporter', 'modification_station'])
+  requireParts('mekanism', airtight, ['pressurized_reaction_chamber'])
   requireParts('mekanism', computing, [
-    'qio_drive_base', 'qio_dashboard', 'qio_importer', 'qio_exporter', 'qio_redstone_adapter'
+    'qio_drive_base', 'qio_dashboard', 'thermal_evaporation/controller'
   ])
-  requireParts('mekanism', nuclear, ['isotopic_centrifuge', 'radioactive_waste_barrel'])
+  requireParts('mekanism', nuclear, ['isotopic_centrifuge'])
   requireParts('mekanism', antimatter, ['antiprotonic_nucleosynthesizer'])
-  requireParts('mekanism', ultimate, ['sps_port', 'supercharged_coil'])
 
   const tiers = ['basic', 'advanced', 'elite', 'ultimate']
   const factories = ['combining', 'compressing', 'crushing', 'enriching', 'infusing',
     'injecting', 'purifying', 'sawing', 'smelting']
-  const transmitters = ['logistical_transporter', 'mechanical_pipe', 'pressurized_tube',
-    'thermodynamic_conductor', 'universal_cable']
   tiers.forEach(tier => {
     const part = tierPart(tier)
-    const ids = factories.map(name => 'factory/' + tier + '/' + name)
-      .concat(transmitters.map(name => 'transmitter/' + name + '/' + tier))
-      .concat(['tier_installer/', 'induction/cell/', 'induction/provider/'].map(path => path + tier))
-    if (tier !== 'basic') {
-      ids.push('bin/' + tier, 'energy_cube/' + tier, 'fluid_tank/' + tier, 'chemical_tank/' + tier)
-    }
+    const ids = factories.map(name => 'factory/' + tier + '/' + name).concat('tier_installer/' + tier)
+    if (tier !== 'basic') ids.push('bin/' + tier, 'energy_cube/' + tier)
     requireParts('mekanism', part, ids)
   })
 
   // Keep basic power available before electrical fabrication.
   requireParts('mekanismgenerators', andesite, ['generator/heat'])
-  requireParts('mekanismgenerators', basic, ['generator/bio', 'generator/solar'])
   requireParts('mekanismgenerators', coil, [
-    'generator/wind', 'generator/advanced_solar', 'generator/gas_burning',
-    'turbine/rotor', 'rotational_complex', 'electromagnetic_coil'
+    'generator/bio', 'generator/wind', 'generator/advanced_solar', 'electromagnetic_coil'
   ])
-  requireParts('mekanismgenerators', advanced, ['fission_reactor/casing', 'fission_reactor/port',
-    'fission_reactor/logic_adapter'])
-  requireParts('mekanismgenerators', nuclear, [
-    'fission_reactor/fuel_assembly', 'fission_reactor/control_rod_assembly', 'reactor/controller'
-  ])
+  requireParts('mekanismgenerators', computing, ['fission_reactor/logic_adapter'])
+  applyParts('mekanismgenerators:generator/solar', [[basic, 1, 1]])
+  applyParts('mekanismgenerators:generator/gas_burning', [[coil, 0, 1]])
+  applyParts('mekanismgenerators:reactor/controller', [[nuclear, 2, 0], [computing, 2, 2]])
 
-  requirePart('create:crafting/kinetics/steam_engine', bronze, [1, 0])
-  requireParts('createdieselgenerators', bronze, ['crafting/diesel_engine'])
+  applyParts('createdieselgenerators:crafting/diesel_engine', [[bronze, 0, 1]])
   event.remove({id: 'createdieselgenerators:crafting/huge_diesel_engine'})
   requireParts('steampowered', bronze, ['furnace_engine'])
-  requireParts('steampowered', coil, ['alternator'])
+  applyParts('steampowered:alternator', [[coil, 1, 2]])
   ;['bronze', 'cast_iron', 'steel'].forEach(metal => event.remove({id: 'steampowered:' + metal + '_steam_engine'}))
 
-  requireParts('createaddition', coil, [
-    'mechanical_crafting/alternator', 'mechanical_crafting/electric_motor', 'mechanical_crafting/electric_pump',
-    'crafting/modular_accumulator'
-  ])
+  applyParts('createaddition:mechanical_crafting/alternator', [[coil, 0, 2]])
+  applyParts('createaddition:mechanical_crafting/electric_motor', [[coil, 0, 2]])
+  applyParts('createaddition:crafting/modular_accumulator', [[coil, 1, 1]])
   event.remove({id: 'createaddition:crafting/portable_energy_interface'})
   event.remove({id: 'createaddition:mechanical_crafting/tesla_coil'})
 
-  requireParts('powergrid', coil, [
-    'mechanical_crafting/basin_heater', 'mechanical_crafting/electric_motor',
-    'mechanical_crafting/generator_commutator', 'mechanical_crafting/generator_induction_rotor',
-    'crafting/fe_inverter', 'crafting/hv_breaker'
-  ])
+  applyParts('powergrid:mechanical_crafting/electric_motor', [[coil, 3, 2]])
+  applyParts('powergrid:mechanical_crafting/generator_commutator', [[coil, 3, 1]])
+  applyParts('powergrid:crafting/hv_breaker', [['powergrid:electrical_gizmo', 0, 1]])
 
-  requirePart('createnuclear:mechanical_crafting/reactor_controller', nuclear, [2, 1])
-  requirePart('createnuclear:mechanical_crafting/reactor_core', nuclear, [2, 1])
+  applyParts('createnuclear:mechanical_crafting/reactor_controller', [[nuclear, 2, 0], [computing, 2, 4]])
+  applyParts('createnuclear:mechanical_crafting/reactor_core', [[nuclear, 2, 1]])
   event.remove({id: 'createnuclear:mixing/steel'})
 })

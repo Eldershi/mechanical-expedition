@@ -90,7 +90,7 @@ Process unrefined waste in the airtight reactor kettle and pipe its waste gas in
 
 When actively cooling, a Snow Golem Freezer or Breeze Cooler supplies either mod's chilled basin mixing and compacting recipes and encased fan cooling. A fan tries its selected source's native recipe first. A captured Snow Golem Freezer without fuel still provides its original passive Dragons Plus freezing. Ordinary ice likewise supplies passive freezing. Airtight kettles and fractionation towers use their native thermoregulator sources.
 
-The bronze mechanism starts as a bronze plate curved with a mechanism mold. Fill it with molten bronze, then install a bronze cogwheel, a bronze plate, and a mechanical mechanism part. Steam Powered supplies the burners, boilers, engines, and flywheels for the steam power tasks. The three Steam Powered engines and the Create steam engine use a bronze mechanism. The Create spout and mechanical press handle filling and pressing.
+The bronze mechanism starts as a bronze plate curved with a mechanism mold. Fill it with molten bronze, then install a bronze cogwheel, a bronze plate, and a mechanical mechanism part. Steam Powered supplies the burners, boilers, engines, and flywheels for the steam power tasks. The bronze, cast iron, and steel Steam Powered engines use a bronze mechanism. The Create spout and mechanical press handle filling and pressing.
 
 With `nbtlib==2.0.4`, export supported legacy Tinkers tools, parts and manuals from copies of Anvil terrain or entity regions.
 

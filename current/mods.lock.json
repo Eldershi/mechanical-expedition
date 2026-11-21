@@ -2626,7 +2626,7 @@
       "kubejs/server_scripts/ExpeditionBrassIndustryRecipes.js": "74b43af95afcbc07596c3a888c8df3c18306630521f38c13d24dc1f16104ad49",
       "kubejs/server_scripts/ExpeditionControlComponents.js": "ee460fd5ad256fbebc9c020e48a91fcf24e967f519a49614eac02baf5329b44e",
       "kubejs/server_scripts/ExpeditionDifferential.js": "13c7b88eabfdc9a3470de6a639ee20d223a22639906c15180f5fbdb06cc44b1a",
-      "kubejs/server_scripts/ExpeditionElectricalProgression.js": "7eace96205867d67a4c0d716980161adae3824c1c9a116e3de7c49c7f3774d9e",
+      "kubejs/server_scripts/ExpeditionElectricalProgression.js": "eeab428dbe49d314f7dbc659bdb808a74eacc3eca7cc6c735844ac273ff5db47",
       "kubejs/server_scripts/ExpeditionEngineerWorkbench.js": "bf5979d0bfb56500efdbac50ce8be2dc393f122d31dbc0069e215c95d27acb8c",
       "kubejs/server_scripts/ExpeditionFactoryFoundations.js": "318b37926c8f48b967e4e49dda31964d7e740dc30ef9741d760d17b00f1e2b77",
       "kubejs/server_scripts/ExpeditionFoundryRecipes.js": "f1d2972e1117c9931c42f1ea2de193387e574fe84c30e6b918e7401da47bbac8",
@@ -4466,7 +4466,7 @@
       "kubejs/client_scripts/ExpeditionSugarSyrupLanguage.js": "2599df0a73d832ba59dc459b67b4e76441effe32a319eea2f82bf5805e43c78d",
       "kubejs/data/expedition/item_compatibility.json": "76184d7aaab0c144313ae2b3bc1e2c2a0f8391c9b1be1f9ee89806146b6d2cdd",
       "kubejs/server_scripts/ExpeditionItemCompatibilityTags.js": "1a0d1bf0a7a36a68d457410026a4a52eec9dc11920c7e4b6e8d51042470167de",
-      "kubejs/server_scripts/ExpeditionMechanismProgression.js": "1d9d38e670661c81785688a7c09df27dbf53f8b66960a6e2fc37023a68595a6a",
+      "kubejs/server_scripts/ExpeditionMechanismProgression.js": "6d655b92712441de693d41a9895e94eff51f631f3edd1c106ba870912a843814",
       "kubejs/assets/cmi/textures/item/mechanism/complete/andesite.png": "40ff377466d3cee9448b9b0ac3dcfb9aacb44e47c309e9b933c0e96e416a6be5",
       "kubejs/client_scripts/ExpeditionRockGeneratorInfo.js": "10fae98725c20555434a515acfdd359edd354bea10e69577af177e909a205171",
       "kubejs/assets/createnuclear/sounds.json": "4f10cafafbfcb10a6d3f086704199c918c450fd41744076e1fc552c07437ee92"
@@ -8510,7 +8510,7 @@
       "kubejs/server_scripts/ExpeditionBrassIndustryRecipes.js": "74b43af95afcbc07596c3a888c8df3c18306630521f38c13d24dc1f16104ad49",
       "kubejs/server_scripts/ExpeditionControlComponents.js": "ee460fd5ad256fbebc9c020e48a91fcf24e967f519a49614eac02baf5329b44e",
       "kubejs/server_scripts/ExpeditionDifferential.js": "13c7b88eabfdc9a3470de6a639ee20d223a22639906c15180f5fbdb06cc44b1a",
-      "kubejs/server_scripts/ExpeditionElectricalProgression.js": "7eace96205867d67a4c0d716980161adae3824c1c9a116e3de7c49c7f3774d9e",
+      "kubejs/server_scripts/ExpeditionElectricalProgression.js": "eeab428dbe49d314f7dbc659bdb808a74eacc3eca7cc6c735844ac273ff5db47",
       "kubejs/server_scripts/ExpeditionEngineerWorkbench.js": "bf5979d0bfb56500efdbac50ce8be2dc393f122d31dbc0069e215c95d27acb8c",
       "kubejs/server_scripts/ExpeditionFactoryFoundations.js": "318b37926c8f48b967e4e49dda31964d7e740dc30ef9741d760d17b00f1e2b77",
       "kubejs/server_scripts/ExpeditionFoundryRecipes.js": "f1d2972e1117c9931c42f1ea2de193387e574fe84c30e6b918e7401da47bbac8",
@@ -10343,7 +10343,7 @@
       "kubejs/data/expedition/recipe/deposits/vanadium.json": "21b8957f6127ea19fabb76a2fa8bb67771c74eb198f752a51614b23862a7c5a5",
       "kubejs/data/expedition/item_compatibility.json": "76184d7aaab0c144313ae2b3bc1e2c2a0f8391c9b1be1f9ee89806146b6d2cdd",
       "kubejs/server_scripts/ExpeditionItemCompatibilityTags.js": "1a0d1bf0a7a36a68d457410026a4a52eec9dc11920c7e4b6e8d51042470167de",
-      "kubejs/server_scripts/ExpeditionMechanismProgression.js": "1d9d38e670661c81785688a7c09df27dbf53f8b66960a6e2fc37023a68595a6a"
+      "kubejs/server_scripts/ExpeditionMechanismProgression.js": "6d655b92712441de693d41a9895e94eff51f631f3edd1c106ba870912a843814"
     },
     "mods": [
       {
