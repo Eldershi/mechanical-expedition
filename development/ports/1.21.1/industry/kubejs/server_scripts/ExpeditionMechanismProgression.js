@@ -20,6 +20,20 @@ ServerEvents.recipes(event => {
     M: andesite, C: 'create:andesite_casing', P: 'minecraft:piston'
   }).id('expedition:factory/rock_generator')
 
+  const automaticSlot = (rows, ingredientId, recipeId) => {
+    const available = rows.findIndex(row => row.includes(' '))
+    if (available >= 0) return [ingredientId, available, rows[available].indexOf(' ')]
+    if (rows.length < 3) {
+      rows.unshift(rows[0].map(() => ' '))
+      return [ingredientId, 0, 0]
+    }
+    const cells = rows.reduce((all, row) => all.concat(row), [])
+    const repeated = cells.find(symbol => cells.indexOf(symbol) !== cells.lastIndexOf(symbol))
+    if (!repeated) throw new Error('Choose an ingredient slot for ' + recipeId)
+    const index = cells.indexOf(repeated)
+    return [ingredientId, Math.floor(index / rows[0].length), index % rows[0].length]
+  }
+
   const applyParts = (id, placements) => {
     let found = false
     event.forEachRecipe({id: id}, recipe => {
@@ -33,29 +47,16 @@ ServerEvents.recipes(event => {
 
       const rows = original.pattern.map(row => row.split(''))
       const key = original.key
-      let slots = placements
-      if (automatic) {
-        const part = placements[0][0]
-        const available = rows.findIndex(row => row.includes(' '))
-        if (available >= 0) slots = [[part, available, rows[available].indexOf(' ')]]
-        else if (rows.length < 3) {
-          rows.unshift(rows[0].map(() => ' '))
-          slots = [[part, 0, 0]]
-        } else {
-          const cells = rows.reduce((cells, row) => cells.concat(row), [])
-          const repeated = cells.find(symbol => cells.indexOf(symbol) !== cells.lastIndexOf(symbol))
-          if (!repeated) throw new Error('Choose an ingredient slot for ' + id)
-          const index = cells.indexOf(repeated)
-          slots = [[part, Math.floor(index / rows[0].length), index % rows[0].length]]
-        }
-      }
-
-      slots.forEach(([part, row, column]) => {
+      const slots = automatic ? [automaticSlot(rows, placements[0][0], id)] : placements
+      slots.forEach(slot => {
+        const item = slot[0]
+        const rowIndex = slot[1]
+        const columnIndex = slot[2]
         const token = ['m', 'k', 'g', 'y'].find(letter => !key[letter])
         if (!token) throw new Error('No free ingredient symbol for ' + id)
-        if (!rows[row] || rows[row][column] === undefined) throw new Error('Invalid ingredient slot for ' + id)
-        rows[row][column] = token
-        key[token] = {item: part}
+        if (!rows[rowIndex] || rows[rowIndex][columnIndex] === undefined) throw new Error('Invalid ingredient slot for ' + id)
+        rows[rowIndex][columnIndex] = token
+        key[token] = {item: item}
       })
       const pattern = rows.map(row => row.join(''))
       Object.keys(key).forEach(symbol => {

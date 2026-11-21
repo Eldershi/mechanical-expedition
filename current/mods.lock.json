@@ -4466,7 +4466,7 @@
       "kubejs/client_scripts/ExpeditionSugarSyrupLanguage.js": "2599df0a73d832ba59dc459b67b4e76441effe32a319eea2f82bf5805e43c78d",
       "kubejs/data/expedition/item_compatibility.json": "76184d7aaab0c144313ae2b3bc1e2c2a0f8391c9b1be1f9ee89806146b6d2cdd",
       "kubejs/server_scripts/ExpeditionItemCompatibilityTags.js": "1a0d1bf0a7a36a68d457410026a4a52eec9dc11920c7e4b6e8d51042470167de",
-      "kubejs/server_scripts/ExpeditionMechanismProgression.js": "6d655b92712441de693d41a9895e94eff51f631f3edd1c106ba870912a843814",
+      "kubejs/server_scripts/ExpeditionMechanismProgression.js": "7536fc031d87e0fcfe289ed3e086fe7ee51b290f1605a41f7f7df85987eeb9a9",
       "kubejs/assets/cmi/textures/item/mechanism/complete/andesite.png": "40ff377466d3cee9448b9b0ac3dcfb9aacb44e47c309e9b933c0e96e416a6be5",
       "kubejs/client_scripts/ExpeditionRockGeneratorInfo.js": "10fae98725c20555434a515acfdd359edd354bea10e69577af177e909a205171",
       "kubejs/assets/createnuclear/sounds.json": "4f10cafafbfcb10a6d3f086704199c918c450fd41744076e1fc552c07437ee92"
@@ -10343,7 +10343,7 @@
       "kubejs/data/expedition/recipe/deposits/vanadium.json": "21b8957f6127ea19fabb76a2fa8bb67771c74eb198f752a51614b23862a7c5a5",
       "kubejs/data/expedition/item_compatibility.json": "76184d7aaab0c144313ae2b3bc1e2c2a0f8391c9b1be1f9ee89806146b6d2cdd",
       "kubejs/server_scripts/ExpeditionItemCompatibilityTags.js": "1a0d1bf0a7a36a68d457410026a4a52eec9dc11920c7e4b6e8d51042470167de",
-      "kubejs/server_scripts/ExpeditionMechanismProgression.js": "6d655b92712441de693d41a9895e94eff51f631f3edd1c106ba870912a843814"
+      "kubejs/server_scripts/ExpeditionMechanismProgression.js": "7536fc031d87e0fcfe289ed3e086fe7ee51b290f1605a41f7f7df85987eeb9a9"
     },
     "mods": [
       {
