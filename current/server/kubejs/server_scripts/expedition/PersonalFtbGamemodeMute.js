@@ -1,16 +1,15 @@
-// Server-only, reloadable with `kubejs reload server_scripts`.
+// Server-only, reloadable with `kubejs reload server-scripts`.
 // Coupled to expedition-ftb-action-announcements 1.0.0's public observer API.
 // Pre-observe only Eldershi's exact FTB gamemode leaf. Its original handler
 // still runs once; the addon's duplicate-observation guard skips broadcasting.
 const ExpeditionFtbMuteObserver = Java.loadClass('expedition.ftb.SuccessfulFtbAction')
 const ExpeditionFtbMuteState = Java.loadClass('expedition.ftb.SuccessfulFtbAction$State')
 const ExpeditionFtbMutePlayer = Java.loadClass('net.minecraft.server.level.ServerPlayer')
-const ExpeditionFtbMuteCommand = Java.loadClass('net.minecraftforge.event.CommandEvent')
-const ExpeditionFtbMutePriority = Java.loadClass('net.minecraftforge.eventbus.api.EventPriority')
+const ExpeditionFtbMuteCommand = Java.loadClass('net.neoforged.neoforge.event.CommandEvent')
+const ExpeditionFtbMutePriority = Java.loadClass('net.neoforged.bus.api.EventPriority')
 const expeditionFtbMutedSnapshot = new ExpeditionFtbMuteState('muted', '')
 
-// EventJS unregisters server NativeEvents handlers before each scripts reload.
-NativeEvents.onEvent(ExpeditionFtbMutePriority.HIGH, false, ExpeditionFtbMuteCommand, event => {
+NativeEvents.onEvent(ExpeditionFtbMutePriority.HIGH, ExpeditionFtbMuteCommand, event => {
   if (event.isCanceled()) return
   const parse = event.getParseResults()
   const nodes = parse.getContext().getNodes()
