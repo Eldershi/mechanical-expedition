@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "id": "thermal-create-style",
+  "name": "Thermal Series - Create Styled",
+  "author": "VeroxUniverse",
+  "officialVersionPage": "https://www.curseforge.com/minecraft/texture-packs/thermal-series-create-version/files/5012316",
+  "clientFiles": [
+    {
+      "path": "config/paxi/resourcepacks/Thermal_Create_1.20.zip",
+      "bytes": 70557,
+      "sha1": "6570de14bbbd415b3ed32df1e06f1b681492adb0",
+      "sha256": "12e5c39b48d4e8009e8ca600145a11dfbeb030b3d87133c3ccb508fb83791503",
+      "sha512": "75f52277bc04364c2dea80eac16905e02e6c445c22c3e0cb1b11761efa21c90616fc7bb17b991a4f4aee217effa6af5380c05e9a21ac1c180102fac7e7c7658f",
+      "downloadUrl": "https://mediafilez.forgecdn.net/files/5012/316/Thermal_Create_1.20.zip"
+    }
+  ]
+}

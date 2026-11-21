@@ -1,0 +1,9 @@
+{
+  "alarm/reactor_alarm": {
+    "replace": true,
+    "subtitle": "createnuclear.subtitle.alarm/reactor_alarm",
+    "sounds": [
+      "createnuclear:alarm/alarm"
+    ]
+  }
+}

@@ -86,11 +86,13 @@ def install(client, server, java):
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(FACTORY / path, target)
         subprocess.run([sys.executable, str(HERE.parent / "build.py"), "--java", str(java),
-                        "--server", str(server), "--output", str(staged), "space", "item-compatibility"], check=True)
+                        "--server", str(server), "--output", str(staged), "space", "item-compatibility",
+                        "rock-generator"], check=True)
         adapter = staged / production["SPACE_MOD"]
         with ZipFile(adapter) as archive:
             if b"expedition_space_acceptance" in archive.read("META-INF/neoforge.mods.toml"):
                 raise ValueError("Acceptance mod may only be installed in a disposable verification instance")
+        production["install_progression_downloads"](client, server)
         for instance in (client, server):
             subprocess.run([sys.executable, str(FACTORY / "update_nether_quests.py"),
                             str(instance / "config/ftbquests/quests")], check=True)

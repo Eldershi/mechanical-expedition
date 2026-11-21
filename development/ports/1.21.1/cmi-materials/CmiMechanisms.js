@@ -14,7 +14,7 @@ StartupEvents.registry('item', event => {
       .tag('cmi:incomplete_items')
   })
 
-  finished.forEach(name => {
+  finished.concat('andesite').forEach(name => {
     event.create(`cmi:${name}_mechanism`)
       .texture(`cmi:item/mechanism/complete/${name}`)
       .tag('cmi:mechanisms')

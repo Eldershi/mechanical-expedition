@@ -1,0 +1,93 @@
+{
+  "parent": "expedition_rock_generator:block/rock_generator",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "north": "thermal:block/devices/device_rock_gen_active",
+    "side_active": "thermal:block/devices/device_rock_gen_side_active",
+    "lava": "minecraft:block/lava_still"
+  },
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "down": {
+          "texture": "#down",
+          "cullface": "down"
+        },
+        "up": {
+          "texture": "#up",
+          "cullface": "up"
+        },
+        "north": {
+          "texture": "#north",
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#side_active",
+          "cullface": "south"
+        },
+        "west": {
+          "texture": "#side_active",
+          "cullface": "west"
+        },
+        "east": {
+          "texture": "#side_active",
+          "cullface": "east"
+        }
+      }
+    },
+    {
+      "from": [
+        0.25,
+        0,
+        0
+      ],
+      "to": [
+        15.75,
+        16,
+        15.75
+      ],
+      "faces": {
+        "east": {
+          "texture": "#lava",
+          "cullface": "east",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "west": {
+          "texture": "#lava",
+          "cullface": "west",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        },
+        "south": {
+          "texture": "#lava",
+          "cullface": "south",
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ]
+        }
+      }
+    }
+  ]
+}
