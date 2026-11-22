@@ -11,7 +11,8 @@ from nbtlib import Byte, Compound, Int, List, String
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "space"))
-from build_structures import MACHINES, build_layouts, write
+from build_structures import MACHINES, build_layouts, predicate_for, write
+import alloy_furnace
 sys.path.insert(0, str(HERE.parent))
 from recipe_ui import recipe_ui
 from visuals.configure import MACHINES as STYLED_MACHINES, configure_visuals, jei_ui
@@ -71,8 +72,6 @@ def configure(machine_name, definition):
     for i, child in enumerate(children):
         child["index"] = Int(i)
     children[0]["data"]["text"]["translate"] = String(f"block.{NAMESPACE}.{machine_name}")
-    if machine_name == "alloy_furnace":
-        definition["multiblockSettings"]["showUIWhenClickStructure"] = Byte(1)
     definition["itemProperties"]["creativeTab"]["enable"] = Byte(0)
     if machine_name in STYLED_MACHINES:
         configure_visuals(machine_name, definition, machine_name in FLUID_INPUT, machine_name in FLUID_OUTPUT)
@@ -81,6 +80,7 @@ def configure(machine_name, definition):
 def build(output):
     layouts = json.loads((HERE / "structures.json").read_text())
     alternatives = json.loads((HERE / "structure-alternatives.json").read_text())
+    pattern, controller_boxes = alloy_furnace.layout_entry(layouts)
     for name in layouts:
         definition = Compound({
             "registryName": String(f"{NAMESPACE}:{name}"), "requireFuelForWorking": Byte(0),
@@ -97,7 +97,14 @@ def build(output):
             ui = jei_ui(name, ui, 2 if name in FLUID_INPUT else 0, 2 if name in FLUID_OUTPUT else 0)
         write(output, MACHINES.parent / "recipe_type" / f"expedition_{name}.rt",
               {"data": Compound({"recipe_type": definition, "ui": ui})})
-    return build_layouts(output, NAMESPACE, layouts, configure, alternatives)
+    def configure_definition(name, definition):
+        configure(name, definition)
+        if name == alloy_furnace.MACHINE:
+            alloy_furnace.configure_controller(definition, controller_boxes)
+
+    fixtures = build_layouts(output, NAMESPACE, layouts, configure_definition, alternatives)
+    alloy_furnace.apply_pattern(output, MACHINES / "alloy_furnace.mb", pattern, predicate_for, write)
+    return fixtures
 
 
 if __name__ == "__main__":

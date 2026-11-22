@@ -5,6 +5,7 @@ from collections import Counter
 from gzip import compress, decompress
 from io import BytesIO
 from itertools import product
+import json
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
@@ -216,6 +217,16 @@ def get_catalog(mods):
 
     add("CMI", "radar_antenna", "雷达天线", (4, 6, 3), radar_blocks(),
         "控制器朝向由蓝图保存。结构成型后为雷达充能，再放入对应任务的输入。")
+    layout = json.loads((ROOT.parent / "world-server/brass-industry/alloy-furnace/layout.json").read_text())
+    for family, label in (("andesite", "安山"), ("brass", "黄铜")):
+        entries = (
+            (tuple(cell["pos"]), palette_entry(
+                f"create:{family}_funnel" if cell["block"] == "create:andesite_funnel" else cell["block"],
+                cell.get("state")))
+            for cell in layout["cells"]
+        )
+        add("CMI", f"alloy_furnace_{family}", f"合金炉（{label}漏斗）", layout["size"], entries,
+            "放齐后由控制器识别。控制面相对蓝图朝西，烟道朝南，接线端为大型连接器。")
     return catalog
 
 

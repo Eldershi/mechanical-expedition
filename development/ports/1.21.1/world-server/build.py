@@ -13,6 +13,8 @@ from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 HERE = Path(__file__).resolve().parent
 MOTION = HERE.parents[2] / "tools/player-motion-guard"
 MODULES = {
+    "alloy-furnace": ("expedition_alloy_furnace", "1.0.0", "Expedition Alloy Furnace",
+                     "expedition.alloyfurnace.mixin", ["ControllerCapabilityMixin", "AlloyAssemblyMixin"]),
     "alpine": ("expedition_alpine_climate", "1.0.0", "Expedition Local Alpine Climate",
                "expedition.alpine.mixin", ["BiomeTemperatureMixin", "BiomeTemperatureAccess", "SurfaceSystemMixin"]),
     "backup-retention": ("expedition_backup_retention", "1.0.0", "Expedition Backup Retention",
@@ -69,6 +71,10 @@ CREATE_LOGISTICS_DEPENDENCIES = (
     ("farmersdelight", "[1.3.4]", "FarmersDelight-1.21.1-1.3.4.jar"),
     ("create_central_kitchen", "[2.6.2b]", "create-central-kitchen-2.6.2b.jar"),
 )
+ALLOY_DEPENDENCIES = (
+    ("mbd2", "[21.1.1.a]", "Multiblocked2-1.21-1.21.1-21.1.1.a-all.jar"),
+    ("ldlib2", "[2.2.46.a]", "ldlib2-neoforge-1.21.1-2.2.46.a-all.jar"),
+)
 SPACE_DEPENDENCIES = (
     ("ad_astra", "[1.16.26]", "adastra-1.21.1-1.16.26-neoforge.jar"),
     ("allthemodium", "[3.2.1]", "allthemodium-3.2.1_mc_1.21.1.jar"),
@@ -111,6 +117,8 @@ def build(module, java, cp, output, mods, space_proof=False):
     } else "BOTH"
     filename = f"{modid.replace('_', '-')}-neoforge-{version}.jar"
     sources = sorted((HERE / module / "src").rglob("*.java"))
+    if module == "alloy-furnace":
+        cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in ALLOY_DEPENDENCIES)
     if module in DEPENDENCIES:
         dependency_id, dependency_version, dependency_jar = DEPENDENCIES[module]
         cp += os.pathsep + str(mods / dependency_jar)
@@ -173,6 +181,8 @@ side="{side}"
         if mixins:
             metadata += f'[[mixins]]\nconfig="{mixin_config}"\n'
         module_dependencies = [DEPENDENCIES[module]] if module in DEPENDENCIES else []
+        if module == "alloy-furnace":
+            module_dependencies = ALLOY_DEPENDENCIES
         if module == "island-rail":
             module_dependencies.append(DEPENDENCIES["railway"])
         if module == "space":

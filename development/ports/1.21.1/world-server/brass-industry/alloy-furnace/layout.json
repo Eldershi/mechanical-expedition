@@ -1,0 +1,996 @@
+{
+  "size": [
+    5,
+    11,
+    5
+  ],
+  "cells": [
+    {
+      "pos": [
+        1,
+        0,
+        1
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "top": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        0,
+        1
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "top": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        0,
+        2
+      ],
+      "block": "create:blaze_burner"
+    },
+    {
+      "pos": [
+        1,
+        0,
+        3
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "top": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        0,
+        3
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "north": "true",
+        "south": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        0,
+        3
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "top": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        0,
+        4
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "east": "true",
+        "north": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        0,
+        4
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "up": "true",
+        "west": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        1,
+        1
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "top": "true",
+        "bottom": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        1,
+        1
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "top": "true",
+        "bottom": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        1,
+        2
+      ],
+      "block": "expedition_industry:alloy_furnace",
+      "state": {
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        2,
+        1,
+        2
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "south": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        1,
+        3
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "top": "true",
+        "bottom": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        1,
+        3
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "north": "true",
+        "south": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        1,
+        3
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "top": "true",
+        "bottom": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        1,
+        4
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "north": "true",
+        "south": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        1,
+        4
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "down": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        2,
+        1
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "x": "true",
+        "z": "true",
+        "bottom": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        2,
+        1
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "x": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        2,
+        1
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "x": "true",
+        "z": "true",
+        "bottom": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        2,
+        2
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "z": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        2,
+        2
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "down": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        2,
+        2
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "z": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        2,
+        3
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "x": "true",
+        "z": "true",
+        "bottom": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        2,
+        3
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "x": "true",
+        "z": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        2,
+        3
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "x": "true",
+        "z": "true",
+        "bottom": "true"
+      }
+    },
+    {
+      "pos": [
+        4,
+        2,
+        3
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "east": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        2,
+        4
+      ],
+      "block": "create:metal_girder",
+      "state": {
+        "z": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        2,
+        4
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "down": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        3,
+        0
+      ],
+      "block": "createdeco:industrial_iron_catwalk_railing",
+      "state": {
+        "south": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        3,
+        0
+      ],
+      "block": "createdeco:industrial_iron_catwalk_railing",
+      "state": {
+        "south": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        3,
+        0
+      ],
+      "block": "createdeco:industrial_iron_catwalk_railing",
+      "state": {
+        "south": "true"
+      }
+    },
+    {
+      "pos": [
+        0,
+        3,
+        1
+      ],
+      "block": "createdeco:industrial_iron_catwalk_railing",
+      "state": {
+        "east": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        3,
+        1
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        2,
+        3,
+        1
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        3,
+        3,
+        1
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        4,
+        3,
+        1
+      ],
+      "block": "createdeco:industrial_iron_catwalk_railing",
+      "state": {
+        "west": "true"
+      }
+    },
+    {
+      "pos": [
+        0,
+        3,
+        2
+      ],
+      "block": "createdeco:industrial_iron_catwalk_railing",
+      "state": {
+        "east": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        3,
+        2
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        3,
+        3,
+        2
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        4,
+        3,
+        2
+      ],
+      "block": "createdeco:industrial_iron_catwalk_railing",
+      "state": {
+        "west": "true"
+      }
+    },
+    {
+      "pos": [
+        0,
+        3,
+        3
+      ],
+      "block": "createdeco:industrial_iron_catwalk_railing",
+      "state": {
+        "east": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        3,
+        3
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        2,
+        3,
+        3
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        3,
+        3,
+        3
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        4,
+        3,
+        3
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "down": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        3,
+        4
+      ],
+      "block": "createdeco:industrial_iron_catwalk_railing",
+      "state": {
+        "north": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        3,
+        4
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "east": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        3,
+        4
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "down": "true",
+        "west": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        4,
+        1
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        2,
+        4,
+        1
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        3,
+        4,
+        1
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        1,
+        4,
+        2
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        2,
+        4,
+        2
+      ],
+      "block": "immersiveengineering:coil_lv"
+    },
+    {
+      "pos": [
+        3,
+        4,
+        2
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        1,
+        4,
+        3
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        2,
+        4,
+        3
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        3,
+        4,
+        3
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        4,
+        4,
+        3
+      ],
+      "block": "mekanism:block_charcoal"
+    },
+    {
+      "pos": [
+        2,
+        4,
+        4
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "down": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        4,
+        4
+      ],
+      "block": "createaddition:large_connector",
+      "state": {
+        "facing": "north",
+        "mode": "push"
+      }
+    },
+    {
+      "pos": [
+        1,
+        5,
+        1
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        2,
+        5,
+        1
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        3,
+        5,
+        1
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        1,
+        5,
+        2
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        3,
+        5,
+        2
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "east": "true",
+        "west": "true"
+      }
+    },
+    {
+      "pos": [
+        4,
+        5,
+        2
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "east": "true",
+        "west": "true"
+      }
+    },
+    {
+      "pos": [
+        1,
+        5,
+        3
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        2,
+        5,
+        3
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        3,
+        5,
+        3
+      ],
+      "block": "create:small_scoria_bricks"
+    },
+    {
+      "pos": [
+        4,
+        5,
+        3
+      ],
+      "block": "mekanism:block_charcoal"
+    },
+    {
+      "pos": [
+        2,
+        5,
+        4
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "down": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        6,
+        2
+      ],
+      "block": "create:chute",
+      "state": {
+        "facing": "down"
+      }
+    },
+    {
+      "pos": [
+        3,
+        6,
+        2
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "south": "true",
+        "west": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        6,
+        3
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "north": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        3,
+        6,
+        3
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "east": "true",
+        "north": "true"
+      }
+    },
+    {
+      "pos": [
+        4,
+        6,
+        3
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "down": "true",
+        "west": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        6,
+        4
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "down": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        7,
+        2
+      ],
+      "block": "create:chute",
+      "state": {
+        "facing": "down"
+      }
+    },
+    {
+      "pos": [
+        2,
+        7,
+        3
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "down": "true",
+        "south": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        7,
+        4
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "down": "true",
+        "north": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        8,
+        1
+      ],
+      "block": "create:andesite_funnel",
+      "state": {
+        "facing": "north",
+        "extracting": "false"
+      }
+    },
+    {
+      "pos": [
+        1,
+        8,
+        2
+      ],
+      "block": "create:andesite_funnel",
+      "state": {
+        "facing": "west",
+        "extracting": "false"
+      }
+    },
+    {
+      "pos": [
+        2,
+        8,
+        2
+      ],
+      "block": "create:andesite_alloy_block"
+    },
+    {
+      "pos": [
+        3,
+        8,
+        2
+      ],
+      "block": "create:andesite_funnel",
+      "state": {
+        "facing": "east",
+        "extracting": "false"
+      }
+    },
+    {
+      "pos": [
+        2,
+        8,
+        4
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "down": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        9,
+        4
+      ],
+      "block": "create:fluid_pipe",
+      "state": {
+        "down": "true",
+        "up": "true"
+      }
+    },
+    {
+      "pos": [
+        2,
+        10,
+        4
+      ],
+      "block": "railways:smokestack_oilburner",
+      "state": {
+        "style": "steel"
+      }
+    }
+  ],
+  "ports": {
+    "item_input": {
+      "pos": [
+        2,
+        8,
+        2
+      ],
+      "faces": [
+        "north",
+        "west",
+        "east"
+      ],
+      "io": "IN"
+    },
+    "item_output": {
+      "pos": [
+        4,
+        2,
+        3
+      ],
+      "faces": [
+        "east"
+      ],
+      "io": "OUT"
+    },
+    "fluid_input": {
+      "pos": [
+        4,
+        5,
+        2
+      ],
+      "faces": [
+        "east"
+      ],
+      "io": "IN"
+    },
+    "fluid_output": {
+      "pos": [
+        2,
+        1,
+        4
+      ],
+      "faces": [
+        "south"
+      ],
+      "io": "OUT"
+    },
+    "forge_energy_storage": {
+      "pos": [
+        3,
+        4,
+        3
+      ],
+      "faces": [
+        "south"
+      ],
+      "io": "IN"
+    }
+  }
+}

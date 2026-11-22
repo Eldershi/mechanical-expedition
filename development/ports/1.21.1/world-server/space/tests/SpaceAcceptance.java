@@ -63,6 +63,7 @@ public final class SpaceAcceptance {
 
     public SpaceAcceptance() {
         new expedition.industry.BrassIndustryAcceptance();
+        new expedition.industry.AlloyFurnaceAcceptance();
         NeoForge.EVENT_BUS.addListener(this::commands);
         NeoForge.EVENT_BUS.addListener(this::tick);
     }

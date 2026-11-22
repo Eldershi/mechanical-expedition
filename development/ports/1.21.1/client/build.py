@@ -13,14 +13,6 @@ from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 ROOT = Path(__file__).resolve().parent
 VERSION = "1.0.0"
 ADAPTERS = {
-    "alloy-furnace-render": {
-        "id": "expedition_alloy_furnace_render",
-        "filename": "expedition-alloy-furnace-render",
-        "name": "Expedition Alloy Furnace Rendering",
-        "package": "expedition.alloyrender.mixin",
-        "mixins": ["AlloyMachineMixin", "AlloySodiumMixin", "AlloyChunkMixin", "AlloySmokeMixin"],
-        "deps": {"sodium": "0.8.13+mc1.21.1"},
-    },
     "stock": {
         "id": "expedition_stock_keeper_tooltip_fix",
         "filename": "expedition-stock-keeper-tooltip-fix",
@@ -141,16 +133,6 @@ ADAPTERS = {
 }
 
 
-def alloy_render_mask():
-    source = ROOT.parent / "world-server/brass-industry"
-    sys.path.insert(0, str(source / "visuals"))
-    try:
-        from alloy_furnace import render_mask
-        return render_mask(source / "structures.json")
-    finally:
-        sys.path.pop(0)
-
-
 def build(adapter, classes, output):
     mod_id = adapter["id"]
     version = adapter.get("version", VERSION)
@@ -187,8 +169,6 @@ side = "CLIENT"
             "injectors": {"defaultRequire": 1},
             **({"plugin": adapter["plugin"]} if "plugin" in adapter else {}),
         })
-    if mod_id == "expedition_alloy_furnace_render":
-        resources["expedition-alloy-render-mask.txt"] = alloy_render_mask()
     resources["pack.mcmeta"] = json.dumps({"pack": {"pack_format": 34, "description": adapter["name"]}})
     resource_roots = [ROOT / "resources" / mod_id]
     if adapter.get("chooser"):

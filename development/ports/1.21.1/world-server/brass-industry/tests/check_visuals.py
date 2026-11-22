@@ -1,8 +1,6 @@
 """Verify that the installed art definitions preserve assembly and machine behavior."""
 
-from collections import defaultdict
 from copy import deepcopy
-from itertools import combinations
 from pathlib import Path
 import sys
 from tempfile import TemporaryDirectory
@@ -12,7 +10,7 @@ from nbtlib import load
 HERE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(HERE))
 import build
-from visuals.alloy_furnace import form_shell
+from alloy_furnace import construction
 
 
 def widgets(data):
@@ -74,26 +72,26 @@ def check_visual_snapshots():
     print(f"Visual snapshots preserve assembly, collision, capabilities and slot bindings for {len(styled)} machines.")
 
 
-def check_alloy_shell():
-    shell = form_shell()
-    planes = defaultdict(list)
-    for points, material, uv in (*shell.axis_faces(), *shell.faces):
-        assert all(0 <= coordinate <= 16 for pair in uv for coordinate in pair), (material, uv)
-        for axis in range(3):
-            if not all(p[axis] == points[0][axis] for p in points):
-                continue
-            span = [tuple(p[d] for p in points) for d in range(3) if d != axis]
-            planes[axis, points[0][axis]].append(tuple((min(s), max(s)) for s in span))
-    for rectangles in planes.values():
-        for a, b in combinations(rectangles, 2):
-            assert any(min(high, end) <= max(low, start)
-                       for (low, high), (start, end) in zip(a, b)), (a, b)
-    for start, end, material in shell.solids:
-        assert end[0] <= 37 or start[0] >= 43 or end[1] <= 115 or start[1] >= 123 or end[2] <= 47, (
-            material, start, end)
-    print("Alloy shell has no overlapping coplanar rectangles and leaves the rear FE opening clear.")
+def check_alloy_blueprints():
+    layout = construction()
+    cells = {tuple(cell["pos"]): (cell["block"], cell.get("state", {})) for cell in layout["cells"]}
+    source = HERE.parents[1] / "create-blueprints/schematics"
+    for family in ("andesite", "brass"):
+        file = source / f"Expedition_CMI_alloy_furnace_{family}.nbt"
+        blueprint = load(file, gzipped=True)
+        states = [{
+            "name": str(state["Name"]),
+            "props": {key: str(value) for key, value in state.get("Properties", {}).items()},
+        } for state in blueprint["palette"]]
+        actual = {tuple(cell["pos"]): (states[int(cell["state"])]["name"], states[int(cell["state"])]["props"])
+                  for cell in blueprint["blocks"]}
+        assert tuple(blueprint["size"]) == (5, 11, 5)
+        expected = {pos: (name.replace("create:andesite_funnel", f"create:{family}_funnel"), props)
+                    for pos, (name, props) in cells.items()}
+        assert len(actual) == 88 and actual == expected, file
+    print("Both blueprints match the 88-position alloy furnace pattern.")
 
 
 if __name__ == "__main__":
     check_visual_snapshots()
-    check_alloy_shell()
+    check_alloy_blueprints()

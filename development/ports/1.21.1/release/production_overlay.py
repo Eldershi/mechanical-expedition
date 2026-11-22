@@ -45,8 +45,9 @@ SHARED = {
 }
 for name in ("CmiDeposits.js", "CmiIndustrialMaterials.js", "CmiMechanisms.js", "CmiProcessFluids.js"):
     SHARED[Path("kubejs/startup_scripts/cmi") / name] = MATERIALS / name
-BRASS_RECIPES = Path("kubejs/server_scripts/ExpeditionBrassIndustryRecipes.js")
-SHARED[BRASS_RECIPES] = BRASS / BRASS_RECIPES
+for script in ("ExpeditionBrassIndustryRecipes.js", "ExpeditionAlloyFurnaceHeat.js"):
+    relative = Path("kubejs/server_scripts") / script
+    SHARED[relative] = BRASS / relative
 RADAR_RECIPES = Path("kubejs/server_scripts/RadarAcquisition.js")
 SHARED[RADAR_RECIPES] = RADAR / RADAR_RECIPES
 SHARED.update({
@@ -96,6 +97,10 @@ INDUSTRIAL_DEFINITIONS.update({
     for source in sorted((BRASS.parent / "visuals/predicates").glob("*.predicate.nbt"))
 })
 SHARED.update(INDUSTRIAL_DEFINITIONS)
+CLIENT.update({
+    Path("schematics") / source.name: source
+    for source in sorted((PORT / "create-blueprints/schematics").glob("Expedition_CMI_alloy_furnace_*.nbt"))
+})
 CLIENT.update(INDUSTRIAL_VISUALS)
 SHARED.update({
     path: source for path, source in INDUSTRIAL_VISUALS.items()
@@ -103,11 +108,11 @@ SHARED.update({
 })
 
 
-ALLOY_RENDER_MOD = "expedition-alloy-furnace-render-neoforge-1.0.0.jar"
 SPACE_MOD = "expedition-space-neoforge-1.0.1.jar"
 ITEM_COMPATIBILITY_MOD = "expedition-item-compatibility-neoforge-1.0.0.jar"
 ROCK_GENERATOR_MOD = "expedition-rock-generator-neoforge-1.0.0.jar"
-REQUIRED_MODS = (SPACE_MOD, ITEM_COMPATIBILITY_MOD, ROCK_GENERATOR_MOD)
+ALLOY_FURNACE_MOD = "expedition-alloy-furnace-neoforge-1.0.0.jar"
+REQUIRED_MODS = (SPACE_MOD, ITEM_COMPATIBILITY_MOD, ROCK_GENERATOR_MOD, ALLOY_FURNACE_MOD)
 CREATE_NUCLEAR_MOD = "createnuclear-2.0.1-neoforge.jar"
 THERMAL_STYLE = "thermal-create-style.json"
 PAXI_ORDER = Path("config/paxi/resourcepack_load_order.json")
@@ -132,9 +137,7 @@ def install_files(instance, client=False):
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source, destination)
     if client:
-        mod = instance / "mods" / ALLOY_RENDER_MOD
-        mod.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(ROOT / "current/client/mods" / ALLOY_RENDER_MOD, mod)
+        (instance / "mods/expedition-alloy-furnace-render-neoforge-1.0.0.jar").unlink(missing_ok=True)
     config = instance / QUARK_CONFIG
     config.parent.mkdir(parents=True, exist_ok=True)
     if config.exists():

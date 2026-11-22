@@ -87,7 +87,7 @@ def install(client, server, java):
             shutil.copy2(FACTORY / path, target)
         subprocess.run([sys.executable, str(HERE.parent / "build.py"), "--java", str(java),
                         "--server", str(server), "--output", str(staged), "space", "item-compatibility",
-                        "rock-generator"], check=True)
+                        "rock-generator", "alloy-furnace"], check=True)
         adapter = staged / production["SPACE_MOD"]
         with ZipFile(adapter) as archive:
             if b"expedition_space_acceptance" in archive.read("META-INF/neoforge.mods.toml"):

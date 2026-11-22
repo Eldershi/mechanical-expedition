@@ -7,9 +7,8 @@ const $WorksModelKey = Java.loadClass('net.minecraft.client.resources.model.Mode
 const $WorksResource = Java.loadClass('net.minecraft.resources.ResourceLocation')
 const $WorksRegisterModels = Java.loadClass('net.neoforged.neoforge.client.event.ModelEvent$RegisterAdditional')
 const $WorksParticles = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
+
 const $WorksAtlas = Java.loadClass('net.minecraft.client.renderer.texture.TextureAtlas')
-const $AlloyFurnaceRender = Platform.isLoaded('expedition_alloy_furnace_render')
-  ? Java.loadClass('expedition.alloyrender.AlloyFurnaceRender') : null
 
 const worksNamespace = 'expedition_industry:'
 const worksOrientations = {
@@ -18,13 +17,19 @@ const worksOrientations = {
   south: {degrees: 180, rightX: -1, rightZ: 0, backX: 0, backZ: -1},
   west: {degrees: 90, rightX: 0, rightZ: -1, backX: 1, backZ: 0},
 }
+const alloyParts = ['body', 'lamp', 'idle_blaze_head', 'idle_blaze_visor',
+  'fueled_blaze_head', 'fueled_blaze_visor', 'fueled_blaze_rods_large', 'fueled_blaze_rods_small',
+  'work_blaze_head', 'work_blaze_visor', 'work_blaze_flame', 'work_blaze_rods_large', 'work_blaze_rods_small']
 const worksParts = {
-  alloy_furnace_shell: worksNamespace + 'block/works/alloy_furnace_shell',
   press_head: 'create:block/mechanical_press/head',
   press_yoke: worksNamespace + 'block/works/press_yoke',
   trade_counter: worksNamespace + 'block/works/trade_counter',
   parcel: worksNamespace + 'block/works/parcel',
 }
+
+alloyParts.forEach(name => {
+  worksParts['alloy_' + name] = worksNamespace + 'block/alloy_assembly/' + name
+})
 
 function worksModelKey(name) {
   return $WorksModelKey.standalone($WorksResource.parse(worksParts[name]))
@@ -49,7 +54,7 @@ function drawWorksPart(context, name, x, y, z, sx, sy, sz) {
   try {
     stack.translate(x, y, z)
     stack.scale(sx, sy, sz)
-    const layer = name === 'alloy_furnace_shell'
+    const layer = name.startsWith('alloy_')
       ? $WorksRenderType.entityCutoutNoCull($WorksAtlas.LOCATION_BLOCKS) : $WorksRenderType.cutout()
     const sink = context.bufferSource.getBuffer(layer)
     client.getBlockRenderer().getModelRenderer().renderModel(
@@ -74,12 +79,25 @@ function worksMachinePose(context, render) {
 }
 
 MBDClientEvents.registerCustomRenderers(event => {
-  event.register(worksNamespace + 'alloy_furnace_motion')
-    .viewDistance(96).renderOffScreen(true).boundingBoxInflate(3, 9, 3)
-    .onRender(context => {
-      if (!$AlloyFurnaceRender || !$AlloyFurnaceRender.isVisible(context.getMachine())) return
-      worksMachinePose(context, () => drawWorksPart(context, 'alloy_furnace_shell', 0, 0, 0, 1, 1, 1))
-    })
+  event.register(worksNamespace + 'alloy_furnace_assembly')
+    .viewDistance(80).renderOffScreen(true).boundingBoxInflate(4, 11, 4)
+    .onRender(context => worksMachinePose(context, () => {
+      const machine = context.getMachine()
+      const working = String(machine.getMachineStateName()) === 'working'
+      const powered = machine.getCustomData().getBoolean('alloyHot')
+      const phase = working ? 'work' : powered ? 'fueled' : 'idle'
+      const time = context.getGameTime() + context.partialTick
+      const bob = Math.sin(time * 0.12)
+      drawWorksPart(context, 'alloy_body', 0, 0, 0, 1, 1, 1)
+      if (powered || working) drawWorksPart(context, 'alloy_lamp', 0, 0, 0, 1, 1, 1)
+      const hover = working ? 0.12 + 0.029 * bob : powered ? 0.018 * bob : 0
+      drawWorksPart(context, 'alloy_' + phase + '_blaze_head', 0, hover, 0, 1, 1, 1)
+      drawWorksPart(context, 'alloy_' + phase + '_blaze_visor', 0, hover, 0, 1, 1, 1)
+      if (!powered && !working) return
+      drawWorksPart(context, 'alloy_' + phase + '_blaze_rods_small', 0, 0.028 * bob, 0, 1, 1, 1)
+      drawWorksPart(context, 'alloy_' + phase + '_blaze_rods_large', 0, -0.028 * bob, 0, 1, 1, 1)
+      if (working) drawWorksPart(context, 'alloy_work_blaze_flame', 0, 0.018 * bob, 0, 1, 1, 1)
+    }))
 
   event.register(worksNamespace + 'hydropress_motion')
     .viewDistance(64).renderOffScreen(true).boundingBoxInflate(2, 6, 2)
@@ -120,7 +138,27 @@ function worksVent(name, dx, dy, dz, interval, particle, speed) {
 }
 
 // The stack, exhaust crown and exposed electrode gap are in the actual build patterns.
-worksVent('alloy_furnace', 0, 3.05, 0, 7, $WorksParticles.SMOKE, 0.045)
+MBDMachineEvents.onClientTick(worksNamespace + 'alloy_furnace', jsEvent => {
+  const machine = jsEvent.event.machine
+  const state = String(machine.getMachineStateName())
+  const engine = $WorksMinecraft.getInstance().particleEngine
+  const pos = machine.getPos()
+  const orientation = worksOrientation(machine)
+  function at(type, right, height, back, speed) {
+    return engine.createParticle(type,
+      pos.getX() + 0.5 + right * orientation.rightX + back * orientation.backX,
+      pos.getY() + height,
+      pos.getZ() + 0.5 + right * orientation.rightZ + back * orientation.backZ, 0, speed, 0)
+  }
+  if (state === 'working' && machine.getOffsetTimer() % 6 === 0) {
+    const smoke = at($WorksParticles.CAMPFIRE_SIGNAL_SMOKE, -1.75, 10.02, 1, 0.082)
+    if (smoke) smoke.setColor(0.21, 0.20, 0.19)
+  }
+  if (state !== 'base' && machine.getOffsetTimer() % 12 === 0 &&
+      machine.getCustomData().getBoolean('alloyHot')) {
+    at($WorksParticles.SMALL_FLAME, 0, -0.58, 0, 0.025)
+  }
+})
 worksVent('shaft_furnace', 0, 3.10, 0, 5, $WorksParticles.LARGE_SMOKE, 0.055)
 worksVent('electrolytic_cell', -1, 0.70, 0, 6, $WorksParticles.ELECTRIC_SPARK, 0.025)
 worksVent('electrolytic_cell', 1, 0.70, 0, 6, $WorksParticles.ELECTRIC_SPARK, 0.025)

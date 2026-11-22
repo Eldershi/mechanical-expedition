@@ -24,3 +24,6 @@ python build.py --mods /path/to/instance/mods --output expedition-create-bluepri
 沉浸工程的布局取自本版本的原生多方块结构资源，通用机械的六个机器布局取自 Multi Builder Tool 模板。冶炼和熔铸布局来自当前移植版的手册。AE 系列的矩阵和空间存储布局来自各自的 GuideME 手册。雷达布局使用仓库中对应的成型测试结构。
 
 生成器保留施工需要的方块、方向和接口，移除方块实体保存的库存、能量以及其他世界状态。预览中的空位在施工时应保持空置。
+
+合金炉提供 `Expedition_CMI_alloy_furnace_andesite.nbt` 和
+`Expedition_CMI_alloy_furnace_brass.nbt`，各 88 格。蓝图以控制器朝西为基准，搭齐后自动识别。

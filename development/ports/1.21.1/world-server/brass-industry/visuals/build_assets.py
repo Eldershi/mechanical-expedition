@@ -10,7 +10,7 @@ from zipfile import ZipFile
 
 from PIL import Image, ImageDraw
 
-from alloy_furnace import add_shell, console_model, console_screen
+from alloy_furnace import add_console_art, console_model, console_screen
 
 HERE = Path(__file__).resolve().parent
 ASSETS = HERE.parent / "overlay/kubejs/assets"
@@ -509,7 +509,7 @@ def assemble():
         export.png(NS, f"block/works/ports_{skin}", ports(fluid_in, fluid_out))
         export.png(NS, f"block/works/strip_{skin}", port_strip(fluid_in, fluid_out))
     add_decor(export)
-    add_shell(export)
+    add_console_art(export)
     add_moving_parts(export)
     add_items(export)
     add_gui(export)

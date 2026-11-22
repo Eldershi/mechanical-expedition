@@ -1,0 +1,10 @@
+{
+  "loader": "neoforge:obj",
+  "model": "expedition_industry:models/block/alloy_assembly/fueled_blaze_rods_small.obj",
+  "flip_v": true,
+  "automatic_culling": false,
+  "shade_quads": true,
+  "textures": {
+    "particle": "expedition_industry:block/alloy_assembly/atlas"
+  }
+}
