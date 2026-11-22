@@ -12,7 +12,7 @@
 
 ## 工业设施外观
 
-合金炉、液压机、工业高炉、大型电解池和自动贸易终端使用专用控制器模型、工作动画、机器 GUI 和 JEI 配方样式。物品和 FE 接口在五座机器的控制器上，流体接口以实际配置为准。可共用的锅炉、覆板、支撑、护栏和灯具随方块 ID 使用同一套外观。
+合金炉、液压机、工业高炉、大型电解池和自动贸易终端使用专用控制器模型、工作动画、机器 GUI 和 JEI 配方样式。合金炉的物品、FE 和流体有独立的成形端口。其他四座机器的端口按各自控制器配置。可共用的锅炉、覆板、支撑、护栏和灯具随方块 ID 使用同一套外观。
 
 [接口和资源构建说明](../development/ports/1.21.1/world-server/brass-industry/README.md#工业设施外观)
 
@@ -31,7 +31,7 @@
 ### 工业设施
 
 - [ ] **巨型粉碎机** `expedition_industry:huge_crusher`。进料、粉碎和多路出料。
-- [ ] **合金炉** `expedition_industry:alloy_furnace`。液体燃烧室热态、熔炼、出液。
+- [ ] **合金炉** `expedition_industry:alloy_furnace`。烈焰人待机和工作、炉顶排烟、独立进料和出料。
 - [ ] **液压机** `expedition_industry:hydropress`。装料、压头动作和复位、成品排出。
 - [ ] **爆破压缩机** `expedition_industry:blasting_compressor`。TNT 装填、机内压制、成品排出。
 - [ ] **工业高炉** `expedition_industry:shaft_furnace`。高炉热态、半成品出料、钢水排出。
