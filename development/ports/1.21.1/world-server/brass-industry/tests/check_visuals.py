@@ -11,6 +11,7 @@ HERE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(HERE))
 import build
 from alloy_furnace import construction
+from hydropress.model import construction as press_construction
 
 
 def widgets(data):
@@ -43,7 +44,7 @@ def check_visual_snapshots():
             name = path.stem.removeprefix("expedition_")
             if name not in styled or path.suffix not in {".rt", ".mb"}:
                 assert path.read_bytes() == expected.read_bytes(), relative
-                if path.name.startswith("expedition_industry_alloy_furnace_"):
+                if path.name.startswith(("expedition_industry_alloy_furnace_", "expedition_industry_hydropress_")):
                     packaged = HERE / "visuals/predicates" / path.name
                     assert path.read_bytes() == packaged.read_bytes(), packaged
                 continue
@@ -92,6 +93,18 @@ def check_alloy_blueprints():
     print("Both blueprints match the 88-position alloy furnace pattern.")
 
 
+def check_press_blueprint():
+    layout = press_construction()
+    source = HERE.parents[1] / "create-blueprints/schematics/Expedition_CMI_hydropress.nbt"
+    blue = load(source, gzipped=True)
+    palette = [(str(state["Name"]), dict(state.get("Properties", {}))) for state in blue["palette"]]
+    cells = {tuple(cell["pos"]): palette[cell["state"]] for cell in blue["blocks"]}
+    expected = {tuple(cell["pos"]): (cell["block"], cell.get("state", {})) for cell in layout["cells"]}
+    assert tuple(blue["size"]) == layout["size"] and cells == expected
+    print(f"The hydraulic press blueprint matches the {len(cells)}-position construction model.")
+
+
 if __name__ == "__main__":
     check_visual_snapshots()
     check_alloy_blueprints()
+    check_press_blueprint()

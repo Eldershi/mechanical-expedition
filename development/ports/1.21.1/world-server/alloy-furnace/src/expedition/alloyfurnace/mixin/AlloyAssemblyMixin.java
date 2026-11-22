@@ -18,7 +18,7 @@ abstract class AlloyAssemblyMixin {
         target = "Lcom/lowdragmc/mbd2/api/block/ProxyPartBlock;replaceOriginalBlock(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;I)V"),
         remap = false)
     private void expedition$preserveAlloyParts(BlockPos controller, Level level, BlockPos pos, int predicate) {
-        if (!AlloyFurnace.isController((MBDMachine) (Object) this)) {
+        if (!AlloyFurnace.usesPhysicalPorts((MBDMachine) (Object) this)) {
             ProxyPartBlock.replaceOriginalBlock(controller, level, pos, predicate);
             return;
         }

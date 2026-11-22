@@ -21,8 +21,6 @@ const alloyParts = ['body', 'lamp', 'idle_blaze_head', 'idle_blaze_visor',
   'fueled_blaze_head', 'fueled_blaze_visor', 'fueled_blaze_rods_large', 'fueled_blaze_rods_small',
   'work_blaze_head', 'work_blaze_visor', 'work_blaze_flame', 'work_blaze_rods_large', 'work_blaze_rods_small']
 const worksParts = {
-  press_head: 'create:block/mechanical_press/head',
-  press_yoke: worksNamespace + 'block/works/press_yoke',
   trade_counter: worksNamespace + 'block/works/trade_counter',
   parcel: worksNamespace + 'block/works/parcel',
 }
@@ -30,6 +28,16 @@ const worksParts = {
 alloyParts.forEach(name => {
   worksParts['alloy_' + name] = worksNamespace + 'block/alloy_assembly/' + name
 })
+
+const pressParts = ['body', 'ram', 'workpiece', 'plate', 'cast', 'ingot']
+pressParts.forEach(name => {
+  worksParts['press_' + name] = worksNamespace + 'block/hydropress_assembly/' + name
+})
+
+function pressEase(value) {
+  const t = Math.max(0, Math.min(1, value))
+  return t * t * (3 - 2 * t)
+}
 
 function worksModelKey(name) {
   return $WorksModelKey.standalone($WorksResource.parse(worksParts[name]))
@@ -54,7 +62,7 @@ function drawWorksPart(context, name, x, y, z, sx, sy, sz) {
   try {
     stack.translate(x, y, z)
     stack.scale(sx, sy, sz)
-    const layer = name.startsWith('alloy_')
+    const layer = name.startsWith('alloy_') || name.startsWith('press_')
       ? $WorksRenderType.entityCutoutNoCull($WorksAtlas.LOCATION_BLOCKS) : $WorksRenderType.cutout()
     const sink = context.bufferSource.getBuffer(layer)
     client.getBlockRenderer().getModelRenderer().renderModel(
@@ -99,16 +107,26 @@ MBDClientEvents.registerCustomRenderers(event => {
       if (working) drawWorksPart(context, 'alloy_work_blaze_flame', 0, 0.018 * bob, 0, 1, 1, 1)
     }))
 
-  event.register(worksNamespace + 'hydropress_motion')
-    .viewDistance(64).renderOffScreen(true).boundingBoxInflate(2, 6, 2)
+  event.register(worksNamespace + 'hydropress_assembly')
+    .viewDistance(72).renderOffScreen(true).boundingBoxInflate(4, 8, 7)
     .onRender(context => worksMachinePose(context, () => {
       const machine = context.getMachine()
-      const time = context.getGameTime() + context.partialTick
-      const stroke = machine.getMachineStateName() === 'working'
-        ? 0.34 * Math.pow(Math.max(0, Math.sin(Math.PI * (time % 28) / 28)), 2) : 0
-      // The carrier at (2,6,4) supports the yoke extending into the free bay at (2,6,3).
-      drawWorksPart(context, 'press_yoke', 0, 4, 2, 1, 1, 1)
-      drawWorksPart(context, 'press_head', 0.20, 4.27 - stroke, 2.12, 0.60, 0.60, 0.60)
+      const data = machine.getCustomData()
+      const mode = String(machine.getMachineStateName()) === 'working' ? data.getInt('pressMode') : 0
+      const t = (context.getGameTime() + context.partialTick - data.getLong('pressStart')) /
+        Math.max(1, data.getInt('pressDuration'))
+      const travel = mode === 1 ? 29 * (pressEase((t - .24) / .26) - pressEase((t - .58) / .22)) : 0
+      drawWorksPart(context, 'press_body', 0, 0, 0, 1, 1, 1)
+      drawWorksPart(context, 'press_ram', 0, -travel / 16, 0, 1, 1, 1)
+      if (mode === 1) {
+        const advance = t < .24 ? -20 * (1 - pressEase(t / .24)) : 27 * pressEase((t - .78) / .22)
+        drawWorksPart(context, t < .455 ? 'press_workpiece' : 'press_plate', advance / 16, 0, 0, 1, 1, 1)
+      }
+      if (mode === 2 && t > .14) {
+        const along = 19 * (1 - pressEase((t - .57) / .22))
+        const discharge = 26 * pressEase((t - .79) / .21)
+        drawWorksPart(context, t < .59 ? 'press_cast' : 'press_ingot', discharge / 16, 0, along / 16, 1, 1, 1)
+      }
     }))
 
   event.register(worksNamespace + 'trading_station_motion')

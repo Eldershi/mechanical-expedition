@@ -106,11 +106,11 @@ def layout_entry(layouts):
     return config, shapes[CONTROLLER]
 
 
-def proxy_settings(boxes, port):
+def proxy_settings(boxes, port, face_names=FACES_LOCAL):
     channels = []
     if port:
         name, data = port
-        enabled = {FACES_LOCAL[face] for face in data["faces"]}
+        enabled = {face_names[face] for face in data["faces"]}
         capability = {"internal": String("NONE"), **{
             face: String(data["io"] if face in enabled else "NONE") for face in FACES.values()
         }}
@@ -122,7 +122,7 @@ def proxy_settings(boxes, port):
     })
 
 
-def configure_controller(definition, boxes):
+def configure_controller(definition, boxes, machine=MACHINE):
     definition["multiblockSettings"]["showUIWhenClickStructure"] = Byte(0)
     for trait in definition["machineSettings"]["traitDefinitions"]:
         for face in trait["capabilityIO"]:
@@ -137,10 +137,10 @@ def configure_controller(definition, boxes):
     for state in root["children"]:
         state["shape"] = settings_shape(boxes)
         state["renderer"]["value"] = Compound({"type": String("custom_script"),
-            "data": Compound({"rendererName": String(f"{NAMESPACE}:{MACHINE}_assembly")})})
+            "data": Compound({"rendererName": String(f"{NAMESPACE}:{machine}_assembly")})})
 
 
-def apply_pattern(folder, path, config, predicate_for, write):
+def apply_pattern(folder, path, config, predicate_for, write, face_names=FACES_LOCAL):
     project = load(folder / path, gzipped=False)
     holders = project["data"]["placeholders"]["holders"]
     for index, (choices, boxes, port) in enumerate(config.values(), start=2):
@@ -152,7 +152,7 @@ def apply_pattern(folder, path, config, predicate_for, write):
             if choice.split("[", 1)[0] in (FUNNEL, "create:brass_funnel"):
                 predicate["requirements"].append(Compound({"property": String("extracting"), "value": String("false")}))
             if boxes is not None:
-                predicate["proxyWhileFormed"] = proxy_settings(boxes, port)
+                predicate["proxyWhileFormed"] = proxy_settings(boxes, port, face_names)
             relative = Path(existing.removesuffix(".predicate.nbt") + (f"_{alternative}" if alternative else "")
                             + ".predicate.nbt")
             write(folder, relative, {"type": String("predicate"), "data": predicate})

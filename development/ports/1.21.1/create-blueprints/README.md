@@ -27,3 +27,5 @@ python build.py --mods /path/to/instance/mods --output expedition-create-bluepri
 
 合金炉提供 `Expedition_CMI_alloy_furnace_andesite.nbt` 和
 `Expedition_CMI_alloy_furnace_brass.nbt`，各 88 格。蓝图以控制器朝西为基准，搭齐后自动识别。
+
+液压机蓝图为 `Expedition_CMI_hydropress.nbt`。北面为操作台，西侧固料进、东侧固料出，南面接配方流体，东后侧接电。

@@ -13,6 +13,6 @@ abstract class ControllerCapabilityMixin {
     // An empty handler still looks like an attachment to Create pipes.
     @Inject(method = "getCapContent", at = @At("HEAD"), cancellable = true, remap = false)
     private void expedition$usePhysicalPorts(MBDMachine machine, Object side, CallbackInfoReturnable<Object> callback) {
-        if (AlloyFurnace.isController(machine)) callback.setReturnValue(null);
+        if (AlloyFurnace.usesPhysicalPorts(machine)) callback.setReturnValue(null);
     }
 }

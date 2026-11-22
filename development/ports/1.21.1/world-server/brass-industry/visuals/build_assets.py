@@ -250,6 +250,9 @@ def add_controller(export, name, shell, roof, accent, kind, fluid_out):
     fluid_in = kind != "trade"
     skin = "full" if fluid_out else "in" if fluid_in else "item"
     base = console_model(element) if kind == "alloy" else controller_model(shell, roof, accent, skin, f"{kind}_base")
+    if kind == "press":
+        base = console_model(element)
+        base["textures"]["screen"] = f"{NS}:block/works/press_base"
     screen = console_screen if kind == "alloy" else lambda state, frame=None: cartridge(kind, frame, state)
     export.json(NS, f"models/block/{name}", base)
     export.png(NS, f"gui/works/{kind}", screen("working", 3))
@@ -469,6 +472,21 @@ def add_gui(export):
             draw.point((x, 3), GOLD)
             draw.point((x, 20), "#7d5439")
     png("header", (204, 24), header)
+
+    def press_panel(draw):
+        surface(draw, (0, 0, 217, 193), "#5f6762", "#929b93", "#333b36")
+        surface(draw, (2, 2, 215, 191), "#c7c4ac", "#ebe6cf", "#777c70")
+        draw.rectangle((4, 4, 213, 189), outline="#969985")
+        for x, y in ((4, 4), (213, 4), (4, 189), (213, 189)):
+            draw.point((x, y), "#545e57")
+    png("press_panel", (218, 194), press_panel)
+
+    def press_header(draw):
+        surface(draw, (0, 0, 203, 23), "#465650", "#77877a", "#283232")
+        draw.line((2, 21, 201, 21), fill="#9cb39c")
+        for x in (2, 201):
+            draw.point((x, 3), "#c4c2a8")
+    png("press_header", (204, 24), press_header)
 
     for medium, edge in (("item", "#786754"), ("fluid", "#605547")):
         for direction, mark in (("input", TEAL), ("output", GOLD)):

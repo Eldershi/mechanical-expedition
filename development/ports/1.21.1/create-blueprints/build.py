@@ -6,6 +6,7 @@ from gzip import compress, decompress
 from io import BytesIO
 from itertools import product
 import json
+import sys
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
@@ -13,6 +14,9 @@ from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 from nbtlib import Compound, File, Int, List, String, parse_nbt
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT.parent / "world-server/brass-industry"))
+from hydropress.model import construction as press_construction
+
 DATA_VERSION = 3955
 AIR = {"minecraft:air", "minecraft:cave_air", "minecraft:void_air", "minecraft:structure_void"}
 MEKANISM = {
@@ -227,6 +231,10 @@ def get_catalog(mods):
         )
         add("CMI", f"alloy_furnace_{family}", f"合金炉（{label}漏斗）", layout["size"], entries,
             "放齐后由控制器识别。控制面相对蓝图朝西，烟道朝南，接线端为大型连接器。")
+    press = press_construction()
+    add("CMI", "hydropress", "液压机", press["size"],
+        ((tuple(cell["pos"]), palette_entry(cell["block"], cell.get("state"))) for cell in press["cells"]),
+        "北面操作，西面漏斗进料，东面槽口出料，南面接进液管，东后侧接大型连接器。")
     return catalog
 
 

@@ -122,3 +122,10 @@
 .alloy-jei .works-jei-power .__progress-bar_bar__ {
   background: sprite(expedition_industry:textures/gui/works/alloy_energy_fill.png);
 }
+
+.press-panel, .press-jei {
+  background: sprite(expedition_industry:textures/gui/works/press_panel.png);
+}
+.press-panel .works-header, .press-jei .works-header {
+  background: sprite(expedition_industry:textures/gui/works/press_header.png);
+}

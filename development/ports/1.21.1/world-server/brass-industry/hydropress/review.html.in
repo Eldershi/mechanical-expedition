@@ -1,0 +1,227 @@
+<div id="hydraulic-press-review">
+  <div class="viz-controls">
+    <label class="form-label">模型
+      <select class="form-select" data-model><option value="material">材质</option><option value="white">白模</option></select>
+    </label>
+    <label class="form-label">视角
+      <select class="form-select" data-view>
+        <option value="orbit">整机</option><option value="section">剖面</option><option value="front">操作面</option>
+        <option value="side">出料面</option><option value="rear">接管面</option><option value="top">俯视</option>
+      </select>
+    </label>
+    <label class="form-label">工序
+      <select class="form-select" data-process><option value="idle">待机</option><option value="press">板材压制</option><option value="cast">熔液铸锭</option></select>
+    </label>
+    <label class="form-label" data-timeline hidden>进度 <output class="tabular-nums" data-value>0%</output>
+      <input class="form-range" data-scrub type="range" min="0" max="100" value="0">
+    </label>
+    <label class="form-label">路径
+      <select class="form-select" data-route><option value="">结构</option><option value="items">固料</option>
+        <option value="casting">浇注</option><option value="drive">供电与液压</option><option value="frame">承力</option></select>
+    </label>
+    <label class="form-check"><input class="form-check-input" type="checkbox" data-cells> 占位与接口</label>
+  </div>
+  <div data-stage>
+    <canvas data-scene role="img" aria-label="液压机。拖动旋转，滚轮缩放。"></canvas>
+    <canvas data-marks aria-hidden="true"></canvas>
+    <p class="text-small text-muted" data-scale>5 × 8 × 8 格 · 拖动旋转</p>
+  </div>
+  <p class="text-small" aria-live="polite" data-reading></p>
+  <p class="text-destructive" data-error role="alert" hidden>此窗口无法初始化 WebGL。</p>
+</div>
+<style>
+#hydraulic-press-review {display:grid;gap:calc(var(--font-size-base) * .5)}
+#hydraulic-press-review [data-stage] {position:relative;min-width:0;height:clamp(310px,57vw,500px);touch-action:none}
+#hydraulic-press-review canvas {position:absolute;display:block;width:100%;height:100%;inset:0}
+#hydraulic-press-review [data-marks],#hydraulic-press-review [data-scale] {pointer-events:none}
+#hydraulic-press-review [data-scale] {position:absolute;left:0;top:0}
+#hydraulic-press-review [hidden] {display:none}
+</style>
+<script>
+(()=>{
+const root=document.getElementById('hydraulic-press-review'), at=(n)=>root.querySelector('[data-'+n+']');
+const scene=__ASSEMBLY__;
+const stage=at('stage'),canvas=at('scene'),marking=at('marks'),ink=marking.getContext('2d');
+const view=at('view'),model=at('model'),process=at('process'),route=at('route'),cells=at('cells'),scrub=at('scrub');
+const gl=canvas.getContext('webgl',{antialias:true,alpha:true,preserveDrawingBuffer:true});
+if(!gl||!ink){at('error').hidden=false;return;}
+const vertex=`
+attribute vec3 point, normal;
+attribute vec2 uv;
+uniform vec3 right, up, eye, center, shift, scale;
+varying vec2 tex;
+varying float light, posZ;
+void main() {
+  vec3 world=point+shift, p=world-center;
+  gl_Position=vec4(dot(p,right)*scale.x,dot(p,up)*scale.y,-dot(p,eye)*scale.z,1.);
+  light=.63+.37*max(dot(normal,normalize(vec3(-.45,1.,-.56))),0.);
+  tex=uv;posZ=world.z;
+}`;
+const fragment=`
+precision mediump float;
+uniform sampler2D atlas;
+uniform float white, clipped;
+uniform vec3 gray;
+varying vec2 tex;
+varying float light,posZ;
+void main(){
+  if(clipped>.5&&posZ<46.)discard;
+  vec3 color=white>.5?gray:texture2D(atlas,tex).rgb;
+  gl_FragColor=vec4(color*light,1.);
+}`;
+function shader(kind,source){
+  const id=gl.createShader(kind);
+  gl.shaderSource(id,source);gl.compileShader(id);
+  if(!gl.getShaderParameter(id,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(id));
+  return id;
+}
+const program=gl.createProgram();
+gl.attachShader(program,shader(gl.VERTEX_SHADER,vertex));
+gl.attachShader(program,shader(gl.FRAGMENT_SHADER,fragment));
+gl.linkProgram(program);
+if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(program));
+gl.useProgram(program);gl.enable(gl.DEPTH_TEST);gl.enable(gl.CULL_FACE);
+const att=Object.fromEntries(['point','normal','uv'].map(k=>[k,gl.getAttribLocation(program,k)]));
+const uni=Object.fromEntries(['right','up','eye','center','shift','scale','white','clipped','gray'].map(k=>[k,gl.getUniformLocation(program,k)]));
+const texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);
+for(const k of [gl.TEXTURE_MIN_FILTER,gl.TEXTURE_MAG_FILTER])gl.texParameteri(gl.TEXTURE_2D,k,gl.NEAREST);
+for(const k of [gl.TEXTURE_WRAP_S,gl.TEXTURE_WRAP_T])gl.texParameteri(gl.TEXTURE_2D,k,gl.CLAMP_TO_EDGE);
+let ready=false,w=0,h=0,ratio=1,right,up,eye,px=1,zoom=1;
+const center=scene.size.map(n=>n*8),atlas=new Image();
+const angles={orbit:[-2.41,.35],section:[-2.89,.24],front:[Math.PI,0],side:[Math.PI/2,0],rear:[.4,.22],top:[Math.PI,Math.PI/2]};
+let [yaw,pitch]=angles.orbit;
+const dot=(a,b)=>a.reduce((s,n,i)=>s+n*b[i],0);
+const faces=[[0,1,2,3],[4,7,6,5],[0,4,5,1],[1,5,6,2],[2,6,7,3],[3,7,4,0]];
+const normals=[[0,-1,0],[0,1,0],[0,0,-1],[1,0,0],[0,0,1],[-1,0,0]];
+function geometry(part,cap=false){
+  if(!cap)return part.surface.flatMap(([i,v,uv])=>[0,1,2,0,2,3].flatMap(j=>[
+    ...v[j],...normals[i],...uv[j].map((u,k)=>u/scene.textureSize[k])]));
+  let [x,y,z,X,Y,Z]=part.bounds;
+  if(cap)z=46;
+  const v=[[x,y,z],[X,y,z],[X,y,Z],[x,y,Z],[x,Y,z],[X,Y,z],[X,Y,Z],[x,Y,Z]];
+  return faces.flatMap((f,i)=>cap&&i!==2?[]:[0,1,2,0,2,3].flatMap(j=>[
+    ...v[f[j]],...normals[i],...part.uv[i][j].map((u,k)=>u/scene.textureSize[k])]));
+}
+function buffer(values){
+  const id=gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER,id);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(values),gl.STATIC_DRAW);
+  return [id,values.length/8];
+}
+const meshes=Object.fromEntries(['body','native','ram','workpiece','plate','cast','ingot'].map(k=>
+  [k,buffer(scene.parts.filter(p=>p.motion===k).flatMap(p=>geometry(p)))]));
+const caps=buffer(scene.parts.filter(p=>p.motion==='body'&&p.bounds[2]<46&&p.bounds[5]>46).flatMap(p=>geometry(p,true)));
+function draw(mesh,shift=[0,0,0],toned=false){
+  gl.uniform3fv(uni.shift,shift);
+  gl.uniform1f(uni.white,(model.value==='white'||!ready||toned)?1:0);
+  gl.bindBuffer(gl.ARRAY_BUFFER,mesh[0]);
+  for(const [key,size,offset] of [['point',3,0],['normal',3,12],['uv',2,24]]) {
+    gl.enableVertexAttribArray(att[key]);gl.vertexAttribPointer(att[key],size,gl.FLOAT,false,32,offset);
+  }
+  gl.drawArrays(gl.TRIANGLES,0,mesh[1]);
+}
+const shade=(key)=>getComputedStyle(root).getPropertyValue('--'+key).trim();
+const curve=(v)=>{const t=Math.min(1,Math.max(0,v));return t*t*(3-2*t);};
+function project(p){
+  const v=p.map((n,i)=>n-center[i]);
+  return [w/2+dot(v,right)*px,h/2-dot(v,up)*px];
+}
+function line(points,color,width=1,dash=[]){
+  ink.beginPath();ink.setLineDash(dash);ink.strokeStyle=color;ink.lineWidth=width;
+  points.map(project).forEach(([x,y],i)=>i?ink.lineTo(x,y):ink.moveTo(x,y));
+  ink.stroke();ink.setLineDash([]);
+}
+function drawGuide(){
+  ink.setTransform(ratio,0,0,ratio,0,0);ink.clearRect(0,0,w,h);
+  const faint=shade('muted-foreground');
+  if(cells.checked){
+    for(const cell of scene.cells){
+      const v=Array.from({length:8},(_,i)=>cell.map((n,j)=>(n+((i>>j)&1))*16));
+      for(let i=0;i<8;i++)for(const k of [1,2,4])if(!(i&k))line([v[i],v[i|k]],faint,.75,[2,3]);
+    }
+    ink.font=getComputedStyle(at('scale')).font;
+    for(const [text,p] of scene.labels){
+      const [x,y]=project(p);
+      if(x<0||x>w||y<0||y>h)continue;
+      const dx=Math.min(w-ink.measureText(text).width-3,Math.max(3,x+6)),dy=Math.max(30,y-6);
+      ink.strokeStyle=shade('background');ink.lineWidth=4;ink.strokeText(text,dx,dy);
+      ink.fillStyle=shade('foreground');ink.fillText(text,dx,dy);
+    }
+  }
+  if(route.value){
+    const colors={items:'green',casting:'orange',drive:'blue',frame:'purple'};
+    for(const path of scene.routes[route.value])line(path,shade(colors[route.value]),2);
+  }
+  ink.strokeStyle=faint;ink.lineWidth=1;ink.beginPath();
+  const marker=16*px;
+  ink.moveTo(2,35);ink.lineTo(2+marker,35);ink.moveTo(2,32);ink.lineTo(2,38);
+  ink.moveTo(2+marker,32);ink.lineTo(2+marker,38);ink.stroke();
+}
+function render(){
+  if(!w||!h)return;
+  const sy=Math.sin(yaw),cy=Math.cos(yaw),sp=Math.sin(pitch),cp=Math.cos(pitch);
+  right=[cy,0,-sy];up=[-sy*sp,cp,-cy*sp];eye=[sy*cp,sp,cy*cp];
+  const extent=(axis)=>scene.size.reduce((s,n,i)=>s+16*n*Math.abs(axis[i]),0);
+  px=Math.min((w-20)/extent(right),(h-25)/extent(up))*.98*zoom;
+  gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);
+  for(const [key,v] of [['right',right],['up',up],['eye',eye],['center',center],['scale',[2*px/w,2*px/h,1/220]]])
+    gl.uniform3fv(uni[key],v);
+  gl.uniform3fv(uni.gray,[.82,.84,.83]);
+  gl.uniform1f(uni.clipped,view.value==='section'?1:0);
+  draw(meshes.body);
+  if(view.value==='section')draw(caps,[0,0,0],true);else draw(meshes.native);
+  const t=Number(scrub.value)/100, pressing=process.value==='press',casting=process.value==='cast';
+  const stroke=pressing?scene.stroke*(curve((t-.24)/.26)-curve((t-.58)/.22)):0;
+  draw(meshes.ram,[0,-stroke,0]);
+  if(pressing)draw(meshes[t<.455?'workpiece':'plate'],[t<.24?-20*(1-curve(t/.24)):27*curve((t-.78)/.22),0,0]);
+  if(casting&&t>.14)draw(meshes[t<.59?'cast':'ingot'],[26*curve((t-.79)/.21),0,19*(1-curve((t-.57)/.22))]);
+  drawGuide();
+  at('value').textContent=scrub.value+'%';
+  at('timeline').hidden=process.value==='idle';
+  const note=pressing?(t<.24?'进料':t<.5?'压头下行':t<.59?'压制':t<.8?'回程':'沿右侧槽出料')
+    :casting?(t<.35?'后侧进液':t<.58?'模内凝固':t<.79?'模座换位':'沿右侧槽出料'):'';
+  if(at('reading').textContent!==note)at('reading').textContent=note;
+}
+function resize(){
+  const bounds=stage.getBoundingClientRect();w=bounds.width;h=bounds.height;ratio=Math.min(window.devicePixelRatio||1,2);
+  for(const c of [canvas,marking]){c.width=Math.round(w*ratio);c.height=Math.round(h*ratio);}
+  gl.viewport(0,0,canvas.width,canvas.height);render();
+}
+function save(){
+  window.openai?.setWidgetState?.({modelContent:{view:view.value,model:model.value,process:process.value,
+    route:route.value,cells:cells.checked,progress:scrub.value}})?.catch(()=>{});
+}
+function restore(state){
+  const s=state?.modelContent;
+  if(!s)return;
+  for(const [key,input] of Object.entries({view,model,process,route})){
+    if([...input.options].some(o=>o.value===s[key]))input.value=s[key];
+  }
+  cells.checked=Boolean(s.cells);
+  if(Number.isFinite(Number(s.progress)))scrub.value=s.progress;
+  [yaw,pitch]=angles[view.value];render();
+}
+for(const input of [view,model,process,route,cells,scrub])input.addEventListener('change',()=>{
+  if(input===view){[yaw,pitch]=angles[view.value];zoom=1;}
+  if(input===process&&process.value!=='idle'){view.value='section';[yaw,pitch]=angles.section;zoom=1;}
+  render();save();
+});
+scrub.addEventListener('input',render);
+let drag;
+canvas.addEventListener('pointerdown',e=>{drag=[e.clientX,e.clientY];canvas.setPointerCapture(e.pointerId);});
+canvas.addEventListener('pointermove',e=>{
+  if(!drag)return;
+  yaw+=(e.clientX-drag[0])*.013;pitch=Math.max(-1.43,Math.min(1.55,pitch+(e.clientY-drag[1])*.011));
+  drag=[e.clientX,e.clientY];render();
+});
+for(const e of ['pointerup','pointercancel','lostpointercapture'])canvas.addEventListener(e,()=>{drag=null;});
+canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.min(2.5,Math.max(.58,zoom*Math.exp(-e.deltaY*.0016)));render();},{passive:false});
+atlas.onload=()=>{gl.bindTexture(gl.TEXTURE_2D,texture);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,atlas);
+  ready=true;render();};
+atlas.src=scene.atlas;
+new ResizeObserver(resize).observe(stage);
+new MutationObserver(render).observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme']});
+window.addEventListener('openai:set_globals',e=>restore(e.detail?.globals?.widgetState));
+restore(window.openai?.widgetState);
+resize();
+})();
+</script>

@@ -1,0 +1,3 @@
+newmtl press
+Kd 1 1 1
+map_Kd expedition_industry:block/hydropress_assembly/atlas

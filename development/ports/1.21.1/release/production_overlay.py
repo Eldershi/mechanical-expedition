@@ -99,7 +99,8 @@ INDUSTRIAL_DEFINITIONS.update({
 SHARED.update(INDUSTRIAL_DEFINITIONS)
 CLIENT.update({
     Path("schematics") / source.name: source
-    for source in sorted((PORT / "create-blueprints/schematics").glob("Expedition_CMI_alloy_furnace_*.nbt"))
+    for name in ("Expedition_CMI_alloy_furnace_andesite", "Expedition_CMI_alloy_furnace_brass", "Expedition_CMI_hydropress")
+    for source in (PORT / "create-blueprints/schematics" / f"{name}.nbt",)
 })
 CLIENT.update(INDUSTRIAL_VISUALS)
 SHARED.update({

@@ -1,0 +1,10 @@
+{
+  "loader": "neoforge:obj",
+  "model": "expedition_industry:models/block/hydropress_assembly/body.obj",
+  "flip_v": true,
+  "automatic_culling": false,
+  "shade_quads": true,
+  "textures": {
+    "particle": "expedition_industry:block/hydropress_assembly/atlas"
+  }
+}

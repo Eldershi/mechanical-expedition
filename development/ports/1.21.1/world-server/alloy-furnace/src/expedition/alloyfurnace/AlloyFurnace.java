@@ -8,7 +8,14 @@ import net.neoforged.fml.common.Mod;
 public final class AlloyFurnace {
     private static final ResourceLocation CONTROLLER = ResourceLocation.parse("expedition_industry:alloy_furnace");
 
-    public static boolean isController(MBDMachine machine) {
-        return CONTROLLER.equals(machine.getDefinition().id());
+    private static final ResourceLocation HYDRAULIC_PRESS = ResourceLocation.parse("expedition_industry:hydropress");
+
+    public static boolean usesPhysicalPorts(MBDMachine machine) {
+        var id = machine.getDefinition().id();
+        return CONTROLLER.equals(id) || isHydraulicPress(machine);
+    }
+
+    public static boolean isHydraulicPress(MBDMachine machine) {
+        return HYDRAULIC_PRESS.equals(machine.getDefinition().id());
     }
 }

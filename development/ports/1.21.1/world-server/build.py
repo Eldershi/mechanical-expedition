@@ -14,7 +14,7 @@ HERE = Path(__file__).resolve().parent
 MOTION = HERE.parents[2] / "tools/player-motion-guard"
 MODULES = {
     "alloy-furnace": ("expedition_alloy_furnace", "1.0.0", "Expedition Alloy Furnace",
-                     "expedition.alloyfurnace.mixin", ["ControllerCapabilityMixin", "AlloyAssemblyMixin"]),
+                     "expedition.alloyfurnace.mixin", ["ControllerCapabilityMixin", "AlloyAssemblyMixin", "HydraulicPressMotionMixin"]),
     "alpine": ("expedition_alpine_climate", "1.0.0", "Expedition Local Alpine Climate",
                "expedition.alpine.mixin", ["BiomeTemperatureMixin", "BiomeTemperatureAccess", "SurfaceSystemMixin"]),
     "backup-retention": ("expedition_backup_retention", "1.0.0", "Expedition Backup Retention",
