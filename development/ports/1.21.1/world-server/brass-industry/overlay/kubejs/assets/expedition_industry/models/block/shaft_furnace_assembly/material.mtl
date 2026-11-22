@@ -1,0 +1,3 @@
+newmtl worksite
+Kd 1 1 1
+map_Kd expedition_industry:block/shaft_furnace_assembly/atlas

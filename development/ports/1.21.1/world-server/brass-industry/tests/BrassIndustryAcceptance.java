@@ -26,6 +26,7 @@ import net.minecraft.world.item.crafting.CraftingInput;
 import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 import net.neoforged.neoforge.event.tick.ServerTickEvent;
@@ -211,6 +212,16 @@ public final class BrassIndustryAcceptance {
             for (var storage : tank.storages) {
                 var actual = storage.getFluidInTank(0);
                 if (BuiltInRegistries.FLUID.getKey(actual.getFluid()).equals(result)) amount += actual.getAmount();
+            }
+        }
+        if (sample.machine.equals("trading_station")) {
+            BlockPos vaultPos = machine.getPos().offset(2, -1, 3);
+            var vault = machine.getLevel().getCapability(Capabilities.ItemHandler.BLOCK, vaultPos, Direction.SOUTH);
+            if (vault != null) {
+                for (int i = 0; i < vault.getSlots(); i++) {
+                    var actual = vault.getStackInSlot(i);
+                    if (BuiltInRegistries.ITEM.getKey(actual.getItem()).equals(result)) amount += actual.getCount();
+                }
             }
         }
         return amount >= sample.output;

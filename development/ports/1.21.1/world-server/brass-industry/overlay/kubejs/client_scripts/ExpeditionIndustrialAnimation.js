@@ -20,9 +20,14 @@ const worksOrientations = {
 const alloyParts = ['body', 'lamp', 'idle_blaze_head', 'idle_blaze_visor',
   'fueled_blaze_head', 'fueled_blaze_visor', 'fueled_blaze_rods_large', 'fueled_blaze_rods_small',
   'work_blaze_head', 'work_blaze_visor', 'work_blaze_flame', 'work_blaze_rods_large', 'work_blaze_rods_small']
-const worksParts = {
-  trade_counter: worksNamespace + 'block/works/trade_counter',
-  parcel: worksNamespace + 'block/works/parcel',
+const worksParts = {}
+const worksites = {
+  shaft_furnace: [8, 14, 9],
+  electrolytic_cell: [8, 8, 8],
+  trading_station: [9, 9, 7],
+}
+for (const name of Object.keys(worksites)) {
+  worksParts[name + '_body'] = worksNamespace + 'block/' + name + '_assembly/body'
 }
 
 alloyParts.forEach(name => {
@@ -62,7 +67,7 @@ function drawWorksPart(context, name, x, y, z, sx, sy, sz) {
   try {
     stack.translate(x, y, z)
     stack.scale(sx, sy, sz)
-    const layer = name.startsWith('alloy_') || name.startsWith('press_')
+    const layer = name.startsWith('alloy_') || name.startsWith('press_') || name.endsWith('_body')
       ? $WorksRenderType.entityCutoutNoCull($WorksAtlas.LOCATION_BLOCKS) : $WorksRenderType.cutout()
     const sink = context.bufferSource.getBuffer(layer)
     client.getBlockRenderer().getModelRenderer().renderModel(
@@ -129,22 +134,20 @@ MBDClientEvents.registerCustomRenderers(event => {
       }
     }))
 
-  event.register(worksNamespace + 'trading_station_motion')
-    .viewDistance(48).renderOffScreen(true).boundingBoxInflate(2, 2, 2)
-    .onRender(context => worksMachinePose(context, () => {
-      drawWorksPart(context, 'trade_counter', 0, 0, -2, 1, 1, 1)
-      if (context.getMachine().getMachineStateName() !== 'working') return
-      const time = (context.getGameTime() + context.partialTick) % 32
-      if (time < 24) {
-        drawWorksPart(context, 'parcel', 0, 0.0625, -2 + 0.40 * time / 24, 1, 1, 1)
-      }
-    }))
+  Object.keys(worksites).forEach(name => {
+    const bounds = worksites[name]
+    event.register(worksNamespace + name + '_assembly')
+      .viewDistance(80).renderOffScreen(true).boundingBoxInflate(bounds[0], bounds[1], bounds[2])
+      .onRender(context => worksMachinePose(context, () => {
+        drawWorksPart(context, name + '_body', 0, 0, 0, 1, 1, 1)
+      }))
+  })
 })
 
 function worksVent(name, dx, dy, dz, interval, particle, speed) {
   MBDMachineEvents.onClientTick(worksNamespace + name, jsEvent => {
     const machine = jsEvent.event.machine
-    if (machine.getMachineStateName() !== 'working') return
+    if (String(machine.getMachineStateName()) !== 'working') return
     const pos = machine.getPos()
     if (machine.getOffsetTimer() % interval !== 0) return
     const {rightX, rightZ, backX, backZ} = worksOrientation(machine)
@@ -177,6 +180,6 @@ MBDMachineEvents.onClientTick(worksNamespace + 'alloy_furnace', jsEvent => {
     at($WorksParticles.SMALL_FLAME, 0, -0.58, 0, 0.025)
   }
 })
-worksVent('shaft_furnace', 0, 3.10, 0, 5, $WorksParticles.LARGE_SMOKE, 0.055)
-worksVent('electrolytic_cell', -1, 0.70, 0, 6, $WorksParticles.ELECTRIC_SPARK, 0.025)
-worksVent('electrolytic_cell', 1, 0.70, 0, 6, $WorksParticles.ELECTRIC_SPARK, 0.025)
+worksVent('shaft_furnace', 0, 10.88, 5, 5, $WorksParticles.CAMPFIRE_SIGNAL_SMOKE, 0.068)
+worksVent('electrolytic_cell', -1.125, 4.35, 2.7, 5, $WorksParticles.ELECTRIC_SPARK, 0.047)
+worksVent('electrolytic_cell', 1.125, 4.35, 2.7, 7, $WorksParticles.ELECTRIC_SPARK, 0.048)

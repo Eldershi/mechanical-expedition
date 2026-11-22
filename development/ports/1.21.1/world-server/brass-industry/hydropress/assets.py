@@ -47,8 +47,8 @@ def texture(archive, name):
     return Image.open(BytesIO(archive.read(f"assets/create/textures/block/{name}"))).convert("RGBA")
 
 
-def paint(w, h, material, x_axis, donor):
-    source_name, base = PALETTES[material]
+def paint(w, h, material, x_axis, donor, palette=PALETTES):
+    source_name, base = palette[material]
     source = donor[source_name]
     tones = [[sum(source.getpixel((x,y))[:3])//3 for x in range(source.width)] for y in range(source.height)]
     mid = sum(map(sum,tones))//(source.width*source.height)
@@ -80,6 +80,14 @@ def paint(w, h, material, x_axis, donor):
         for y in range(h//2-2,h//2+3,2):
             d.line((w//2-3,y,w//2+3,y),fill=offset(base,-20))
             d.point((w//2+4,y),fill=offset(base,10))
+    if material in {"send","receive"} and w>=13 and h>=4:
+        mid=w//2
+        tip=1 if material=="send" else h-2
+        tail=h-2 if material=="send" else 1
+        mark=offset(base,70)
+        d.line((mid,tip,mid,tail),fill=mark)
+        d.line((mid,tip,mid-2,(tip+tail)//2),fill=mark)
+        d.line((mid,tip,mid+2,(tip+tail)//2),fill=mark)
     if material == "screen" and w >= 7 and h >= 5:
         d.rectangle((1,1,w-2,h-2),outline=(63,89,78))
         d.line((3,3,w-4,3),fill=(133,174,133))
@@ -97,13 +105,13 @@ def length(a,b):
     return sum(abs(i-j) for i,j in zip(a,b))
 
 
-def atlas(donor):
+def atlas(donor, parts=PARTS, palette=PALETTES):
     image = Image.new("RGBA",(PIXELS,PIXELS))
     x = y = 1
     row = 0
     tiles = {}
     faces = []
-    for part in PARTS:
+    for part in parts:
         vertices = corners(part["bounds"])
         bounds = part["bounds"]
         maps = []
@@ -118,7 +126,7 @@ def atlas(donor):
                 if x+w+1 >= PIXELS:
                     x,y,row = 1,y+row+2,0
                 assert y+h+1 < PIXELS, "Hydraulic press atlas overflow"
-                image.paste(paint(w,h,material,key[3],donor),(x,y))
+                image.paste(paint(w,h,material,key[3],donor,palette),(x,y))
                 # Duplicate edge texels into a one-pixel gutter for the game atlas.
                 for crop, point in (((x,y,x+w,y+1),(x,y-1)),((x,y+h-1,x+w,y+h),(x,y+h)),
                                     ((x,y-1,x+1,y+h+1),(x-1,y-1)),
@@ -146,11 +154,11 @@ def subtract_rectangle(rectangle, mask):
     return [rect for rect in strips if rect[0]<rect[2] and rect[1]<rect[3]]
 
 
-def visible_faces(maps):
+def visible_faces(maps, parts=PARTS):
     """Keep only exposed surfaces, with unique ownership of coplanar pixels."""
-    static = [(i,part["bounds"]) for i,part in enumerate(PARTS) if part["motion"]=="body"]
+    static = [(i,part["bounds"]) for i,part in enumerate(parts) if part["motion"]=="body"]
     surfaces = []
-    for index,part in enumerate(PARTS):
+    for index,part in enumerate(parts):
         vertices = corners(part["bounds"])
         exposed=[]
         for face_no, (ids,(axis,sign)) in enumerate(zip(FACES,NORMALS)):

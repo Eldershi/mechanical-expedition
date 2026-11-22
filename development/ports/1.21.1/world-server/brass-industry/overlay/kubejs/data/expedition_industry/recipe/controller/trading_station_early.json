@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["IBI", "BSB", "CPC"],
+  "key": {
+    "I": {"tag": "c:plates/iron"},
+    "B": {"item": "create:brass_casing"},
+    "S": {"item": "create:precision_mechanism"},
+    "C": {"tag": "c:plates/copper"},
+    "P": {"item": "create_mobile_packages:bee_port"}
+  },
+  "result": {"id": "expedition_industry:trading_station", "count": 1}
+}

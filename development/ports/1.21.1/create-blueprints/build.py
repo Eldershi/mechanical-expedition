@@ -16,6 +16,7 @@ from nbtlib import Compound, File, Int, List, String, parse_nbt
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT.parent / "world-server/brass-industry"))
 from hydropress.model import construction as press_construction
+from worksites.models import SITES
 
 DATA_VERSION = 3955
 AIR = {"minecraft:air", "minecraft:cave_air", "minecraft:void_air", "minecraft:structure_void"}
@@ -235,6 +236,16 @@ def get_catalog(mods):
     add("CMI", "hydropress", "液压机", press["size"],
         ((tuple(cell["pos"]), palette_entry(cell["block"], cell.get("state"))) for cell in press["cells"]),
         "北面操作，西面漏斗进料，东面槽口出料，南面接进液管，东后侧接大型连接器。")
+    notes = {
+        "shaft_furnace": "装入两座有烈焰人的液体燃烧室，按格对齐氧气、熔铁和出钢管。",
+        "electrolytic_cell": "南面进液，分别为西、东侧产物管设置流体过滤。",
+        "trading_station": "西侧收货蜂港保持红石供电，东侧发货蜂港保持无红石信号。给两港配置独立地址。",
+    }
+    for name, site in SITES.items():
+        layout = site.construction()
+        add("CMI", name, site.label, layout["size"],
+            ((tuple(cell["pos"]), palette_entry(cell["block"],cell["state"])) for cell in layout["cells"]),
+            notes[name])
     return catalog
 
 

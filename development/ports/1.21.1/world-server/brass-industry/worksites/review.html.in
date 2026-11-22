@@ -1,0 +1,238 @@
+<div id="expedition-worksites-review">
+  <div class="viz-controls">
+    <label class="form-label">设备
+      <select class="form-select" data-site>
+        <option value="trading_station">商店</option>
+        <option value="shaft_furnace">工业高炉</option>
+        <option value="electrolytic_cell">大型电解池</option>
+      </select>
+    </label>
+    <label class="form-label">模型
+      <select class="form-select" data-style><option value="material">材质</option><option value="white">白模</option></select>
+    </label>
+    <label class="form-label">视角
+      <select class="form-select" data-view>
+        <option value="orbit">整机</option><option value="front">正面</option>
+        <option value="rear">背面</option><option value="top">俯视</option><option value="cut">剖面</option>
+      </select>
+    </label>
+    <label class="form-label">路径 <select class="form-select" data-route></select></label>
+    <label class="form-label" data-timeline hidden>路径进度
+      <input class="form-range" data-progress type="range" min="0" max="100" value="45">
+    </label>
+    <label class="form-check"><input class="form-check-input" data-grid type="checkbox">占位与接口</label>
+  </div>
+  <div data-stage>
+    <canvas data-model role="img" aria-label="远征多方块可旋转模型"></canvas>
+    <canvas data-guide aria-label="功能路径"></canvas>
+    <p class="text-small text-muted" data-scale></p>
+  </div>
+  <p class="text-destructive" data-error role="alert" hidden>此窗口无法初始化 WebGL。</p>
+</div>
+<style>
+#expedition-worksites-review {display:grid;gap:calc(var(--font-size-base) * .5)}
+#expedition-worksites-review [data-stage] {position:relative;min-width:0;height:clamp(340px,59vw,525px);touch-action:none}
+#expedition-worksites-review canvas {position:absolute;display:block;width:100%;height:100%;inset:0}
+#expedition-worksites-review [data-guide],#expedition-worksites-review [data-scale] {pointer-events:none}
+#expedition-worksites-review [data-scale] {position:absolute;left:0;top:0}
+#expedition-worksites-review [hidden] {display:none}
+</style>
+<script>
+(()=>{
+const root=document.getElementById('expedition-worksites-review'), find=k=>root.querySelector('[data-'+k+']');
+const scenes=__ASSEMBLY__;
+const stage=find('stage'), canvas=find('model'), marks=find('guide'), ink=marks.getContext('2d');
+const site=find('site'), style=find('style'), view=find('view'), route=find('route'), grid=find('grid'), progress=find('progress');
+const gl=canvas.getContext('webgl',{antialias:true,alpha:true,preserveDrawingBuffer:true});
+if(!gl||!ink){find('error').hidden=false;return;}
+function shader(kind,text){
+  const id=gl.createShader(kind);
+  gl.shaderSource(id,text);gl.compileShader(id);
+  if(!gl.getShaderParameter(id,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(id));
+  return id;
+}
+const program=gl.createProgram();
+gl.attachShader(program,shader(gl.VERTEX_SHADER,`
+attribute vec3 point,normal;
+attribute vec2 textureUV;
+uniform vec3 eyeX,eyeY,eyeZ,center,scale;
+varying vec2 uv;
+varying float light,x;
+void main(){
+  vec3 p=point-center;
+  gl_Position=vec4(dot(p,eyeX)*scale.x,dot(p,eyeY)*scale.y,-dot(p,eyeZ)*scale.z,1.);
+  uv=textureUV;x=point.x;
+  light=.66+.34*max(dot(normal,normalize(vec3(-.35,1.,-.5))),0.);
+}
+`));
+gl.attachShader(program,shader(gl.FRAGMENT_SHADER,`
+precision mediump float;
+uniform sampler2D atlas;
+uniform float whiteMode,cut;
+varying vec2 uv;
+varying float light,x;
+void main(){
+  if(x<cut)discard;
+  vec3 base=whiteMode>.5?vec3(.83,.85,.85):texture2D(atlas,uv).rgb;
+  gl_FragColor=vec4(base*light,1.);
+}
+`));
+gl.linkProgram(program);
+if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(program));
+gl.useProgram(program);gl.enable(gl.DEPTH_TEST);gl.enable(gl.CULL_FACE);
+const attributes=Object.fromEntries(['point','normal','textureUV'].map(k=>[k,gl.getAttribLocation(program,k)]));
+const uniforms=Object.fromEntries(['eyeX','eyeY','eyeZ','center','scale','whiteMode','cut'].map(k=>[k,gl.getUniformLocation(program,k)]));
+const buffer=gl.createBuffer(), tex=gl.createTexture();
+gl.bindTexture(gl.TEXTURE_2D,tex);
+for(const p of [gl.TEXTURE_MIN_FILTER,gl.TEXTURE_MAG_FILTER])gl.texParameteri(gl.TEXTURE_2D,p,gl.NEAREST);
+for(const p of [gl.TEXTURE_WRAP_S,gl.TEXTURE_WRAP_T])gl.texParameteri(gl.TEXTURE_2D,p,gl.CLAMP_TO_EDGE);
+gl.bindBuffer(gl.ARRAY_BUFFER,buffer);
+for(const [key,size,offset] of [['point',3,0],['normal',3,12],['textureUV',2,24]]){
+  gl.enableVertexAttribArray(attributes[key]);gl.vertexAttribPointer(attributes[key],size,gl.FLOAT,false,32,offset);
+}
+const angles={orbit:[-2.40,.48],front:[Math.PI,0],rear:[.36,.39],top:[Math.PI,Math.PI/2],cut:[-1.90,.23]};
+const norm=[[0,-1,0],[0,1,0],[0,0,-1],[1,0,0],[0,0,1],[-1,0,0]];
+const dot=(a,b)=>a.reduce((n,v,i)=>n+v*b[i],0);
+const css=t=>getComputedStyle(root).getPropertyValue('--'+t).trim();
+let [yaw,pitch]=angles.orbit;
+let scene,vertexCount=0,ready=false,w=0,h=0,ratio=1,zoom=1,right,up,eye,mid,px;
+let request=0;
+function changeSite(reset=true){
+  const key=site.value, oldRoute=route.value;
+  scene=scenes[key];
+  route.replaceChildren(new Option('结构',''),...Object.keys(scene.routes).map(v=>new Option(v,v)));
+  if(Object.hasOwn(scene.routes,oldRoute))route.value=oldRoute;
+  if(reset){[yaw,pitch]=angles[view.value];zoom=1;}
+  const numbers=scene.surfaces.flatMap(([face,quad,uv])=>[0,1,2,0,2,3].flatMap(i=>[
+    ...quad[i],...norm[face],...uv[i].map((u,k)=>u/scene.textureSize[k])]));
+  vertexCount=numbers.length/8;
+  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(numbers),gl.STATIC_DRAW);
+  ready=false;
+  const current=++request, image=new Image();
+  image.onload=()=>{
+    if(current!==request)return;
+    gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);
+    ready=true;render();
+  };
+  image.src=scene.atlas;
+  find('scale').textContent=scene.size.join(' × ')+' 格 · 拖动旋转';
+  render();
+}
+function project(point){
+  const p=point.map((v,i)=>v-mid[i]);
+  return [w/2+px*dot(p,right),h/2-px*dot(p,up)];
+}
+function line(points,color,width=1,dash=[]){
+  ink.beginPath();ink.setLineDash(dash);ink.strokeStyle=color;ink.lineWidth=width;
+  points.map(project).forEach(([a,b],i)=>i?ink.lineTo(a,b):ink.moveTo(a,b));
+  ink.stroke();ink.setLineDash([]);
+}
+function wire(bounds,color){
+  const p=Array.from({length:8},(_,i)=>bounds.slice(0,3).map((v,j)=>(i&(1<<j))?bounds[j+3]:v));
+  for(let i=0;i<8;i++)for(const m of [1,2,4])if(!(i&m))line([p[i],p[i|m]],color,.8,[2,3]);
+}
+function label(text,anchor){
+  const [x,y]=project(anchor);
+  const p=Math.max(1,Math.min(w-ink.measureText(text).width-2,x+4));
+  const q=Math.max(25,Math.min(h-8,y-5));
+  ink.strokeStyle=css('background');ink.lineWidth=4;ink.strokeText(text,p,q);
+  ink.fillStyle=css('foreground');ink.fillText(text,p,q);
+}
+function pathMark(path,p,color){
+  const lengths=path.slice(1).map((a,i)=>Math.hypot(...a.map((v,j)=>v-path[i][j])));
+  let where=p*lengths.reduce((sum,d)=>sum+d,0);
+  let i=0;
+  for(;i<lengths.length-1&&where>lengths[i];i++)where-=lengths[i];
+  const from=path[i], to=path[i+1], position=from.map((v,j)=>v+(to[j]-v)*where/Math.max(.1,lengths[i]));
+  const [x,y]=project(position);
+  ink.fillStyle=color;ink.fillRect(x-4,y-4,8,8);
+  ink.strokeStyle=css('background');ink.lineWidth=1;ink.strokeRect(x-4,y-4,8,8);
+}
+function render(){
+  if(!w||!h||!scene)return;
+  const path=scene.routes[route.value];
+  const sky=site.value==='trading_station'&&(path||grid.checked);
+  const bounds=[scene.bounds[0],sky?144:scene.bounds[1],scene.bounds[2]];
+  mid=bounds.map(v=>v/2);
+  const s=Math.sin(yaw),c=Math.cos(yaw),p=Math.sin(pitch),q=Math.cos(pitch);
+  right=[c,0,-s];up=[-s*p,q,-c*p];eye=[s*q,p,c*q];
+  const extent=axis=>bounds.reduce((sum,n,i)=>sum+n*Math.abs(axis[i]),0);
+  px=Math.min((w-12)/extent(right),(h-24)/extent(up))*.96*zoom;
+  gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);
+  for(const [key,value] of [['eyeX',right],['eyeY',up],['eyeZ',eye],['center',mid],['scale',[2*px/w,2*px/h,1/300]]])
+    gl.uniform3fv(uniforms[key],value);
+  gl.uniform1f(uniforms.whiteMode,style.value==='white'||!ready?1:0);
+  gl.uniform1f(uniforms.cut,view.value==='cut'?scene.bounds[0]*.37:-1);
+  gl.drawArrays(gl.TRIANGLES,0,vertexCount);
+  ink.setTransform(ratio,0,0,ratio,0,0);ink.clearRect(0,0,w,h);
+  const thin=css('muted-foreground');
+  ink.font=getComputedStyle(find('scale')).font;
+  if(grid.checked){
+    for(const cell of scene.cells){
+      const b=cell.map(v=>v*16);
+      wire([...b,...b.map(v=>v+16)],thin);
+    }
+  }
+  if(sky){
+    for(const x of [2,6]){
+      const air=scene.air.filter(p=>Math.abs(p[0]-x)<=1);
+      const lo=[0,1,2].map(i=>16*Math.min(...air.map(p=>p[i])));
+      const hi=[0,1,2].map(i=>16*(1+Math.max(...air.map(p=>p[i]))));
+      wire([...lo,...hi],css(x===2?'blue':'orange'));
+    }
+  }
+  if(grid.checked||sky)for(const [text,point] of scene.labels)label(text,point);
+  if(path){
+    const key=Object.keys(scene.routes).indexOf(route.value);
+    const color=css(['blue','orange','green'][key%3]);
+    for(const segment of path)line(segment,color,2);
+    pathMark(path[0],Number(progress.value)/100,color);
+  }
+  const scale=16*px;
+  ink.strokeStyle=thin;ink.lineWidth=1;ink.beginPath();
+  ink.moveTo(2,34);ink.lineTo(2+scale,34);ink.moveTo(2,30);ink.lineTo(2,38);
+  ink.moveTo(2+scale,30);ink.lineTo(2+scale,38);ink.stroke();
+  find('timeline').hidden=!path;
+}
+function resize(){
+  const b=stage.getBoundingClientRect();w=b.width;h=b.height;ratio=Math.min(window.devicePixelRatio||1,2);
+  for(const c of [canvas,marks]){c.width=Math.round(w*ratio);c.height=Math.round(h*ratio);}
+  gl.viewport(0,0,canvas.width,canvas.height);render();
+}
+function save(){
+  window.openai?.setWidgetState?.({modelContent:{site:site.value,style:style.value,view:view.value,route:route.value,
+    grid:grid.checked,progress:progress.value}})?.catch(()=>{});
+}
+function restore(snapshot){
+  const s=snapshot?.modelContent;
+  if(!s)return;
+  for(const [key,input] of Object.entries({site,style,view})){
+    if([...input.options].some(o=>o.value===s[key]))input.value=s[key];
+  }
+  changeSite();
+  if(Object.hasOwn(scene.routes,s.route))route.value=s.route;
+  grid.checked=Boolean(s.grid);
+  if(Number.isFinite(Number(s.progress)))progress.value=s.progress;
+  render();
+}
+for(const input of [site,style,view,route,grid,progress])input.addEventListener('change',()=>{
+  if(input===site)changeSite();
+  if(input===view){[yaw,pitch]=angles[view.value];zoom=1;}
+  render();save();
+});
+progress.addEventListener('input',render);
+let drag;
+canvas.addEventListener('pointerdown',e=>{drag=[e.clientX,e.clientY];canvas.setPointerCapture(e.pointerId);});
+canvas.addEventListener('pointermove',e=>{
+  if(!drag)return;
+  yaw+=(e.clientX-drag[0])*.013;pitch=Math.max(-1.45,Math.min(1.55,pitch+(e.clientY-drag[1])*.011));
+  drag=[e.clientX,e.clientY];render();
+});
+for(const event of ['pointerup','pointercancel','lostpointercapture'])canvas.addEventListener(event,()=>{drag=null;});
+canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.min(2.4,Math.max(.55,zoom*Math.exp(-e.deltaY*.0016)));render();},{passive:false});
+new ResizeObserver(resize).observe(stage);
+new MutationObserver(render).observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme']});
+window.addEventListener('openai:set_globals',e=>restore(e.detail?.globals?.widgetState));
+changeSite();restore(window.openai?.widgetState);resize();
+})();
+</script>

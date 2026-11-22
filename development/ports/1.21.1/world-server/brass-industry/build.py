@@ -14,6 +14,7 @@ sys.path.insert(0, str(HERE.parent / "space"))
 from build_structures import MACHINES, build_layouts, predicate_for, write
 import alloy_furnace
 from hydropress import pattern as hydropress
+from worksites import pattern as worksites
 sys.path.insert(0, str(HERE.parent))
 from recipe_ui import recipe_ui
 from visuals.configure import MACHINES as STYLED_MACHINES, configure_visuals, jei_ui
@@ -83,6 +84,7 @@ def build(output):
     alternatives = json.loads((HERE / "structure-alternatives.json").read_text())
     pattern, controller_boxes = alloy_furnace.layout_entry(layouts)
     press_pattern, press_boxes = hydropress.layout_entry(layouts)
+    sites = worksites.prepare(layouts)
     for name in layouts:
         definition = Compound({
             "registryName": String(f"{NAMESPACE}:{name}"), "requireFuelForWorking": Byte(0),
@@ -105,10 +107,14 @@ def build(output):
             alloy_furnace.configure_controller(definition, controller_boxes)
         if name == hydropress.MACHINE:
             hydropress.configure_controller(definition, press_boxes)
+        if name in sites:
+            worksites.configure_controller(name, definition, sites[name][1])
 
     fixtures = build_layouts(output, NAMESPACE, layouts, configure_definition, alternatives)
     alloy_furnace.apply_pattern(output, MACHINES / "alloy_furnace.mb", pattern, predicate_for, write)
     hydropress.apply_pattern(output, MACHINES / "hydropress.mb", press_pattern, predicate_for, write)
+    for name, (config, _) in sites.items():
+        worksites.apply_pattern(output, MACHINES / f"{name}.mb", config, predicate_for, write)
     return fixtures
 
 

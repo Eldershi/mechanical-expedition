@@ -29,3 +29,9 @@ python build.py --mods /path/to/instance/mods --output expedition-create-bluepri
 `Expedition_CMI_alloy_furnace_brass.nbt`，各 88 格。蓝图以控制器朝西为基准，搭齐后自动识别。
 
 液压机蓝图为 `Expedition_CMI_hydropress.nbt`。北面为操作台，西侧固料进、东侧固料出，南面接配方流体，东后侧接电。
+
+工业高炉、大型电解池与自动贸易终端分别使用 `Expedition_CMI_shaft_furnace.nbt`、
+`Expedition_CMI_electrolytic_cell.nbt` 和 `Expedition_CMI_trading_station.nbt`。三台设备的操作台朝北。
+工业高炉需要两座已点燃的液体烈焰人燃烧室。自动贸易终端的两个蜂港各需 3×3×4 格净空，
+物流蜂和地址在安装后通过 Create: Mobile Packages 配置。
+各端口见[工业多方块](../world-server/brass-industry/README.md#工业设施外观)。

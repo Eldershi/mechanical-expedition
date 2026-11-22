@@ -77,7 +77,7 @@ def machine_ui(name, template, fluids):
     face = [header, machine_rows, power]
     classes = ["works-panel"]
     inventory_caption = label("inventory", "works-caption")
-    if name == "hydropress":
+    if name in {"hydropress", "shaft_furnace", "electrolytic_cell", "trading_station"}:
         classes.append("press-panel")
     if name == "alloy_furnace":
         face = [element(css=("alloy-display",), children=face)]
@@ -112,7 +112,7 @@ def jei_ui(name, template, fluid_in, fluid_out):
     classes = ["works-panel", "works-jei"]
     if name == "alloy_furnace":
         classes.append("alloy-jei")
-    if name == "hydropress":
+    if name in {"hydropress", "shaft_furnace", "electrolytic_cell", "trading_station"}:
         classes.append("press-jei")
     template["template"]["classes"] = List[String](map(String, classes))
     template["stylesheets"].append(String(f"{NAMESPACE}:lss/works"))
@@ -131,7 +131,7 @@ def configure_visuals(name, definition, fluid_input, fluid_output):
             "type": String("json_model"),
             "data": Compound({"modelLocation": String(f"{NAMESPACE}:block/works/{name}_{visual}")}),
         })
-        if name in {"alloy_furnace", "trading_station"}:
+        if name == "alloy_furnace":
             animation = Compound({
                 "type": String("custom_script"),
                 "data": Compound({"rendererName": String(f"{NAMESPACE}:{name}_motion")}),

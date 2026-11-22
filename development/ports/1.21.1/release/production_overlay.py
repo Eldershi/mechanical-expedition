@@ -48,6 +48,8 @@ for name in ("CmiDeposits.js", "CmiIndustrialMaterials.js", "CmiMechanisms.js", 
 for script in ("ExpeditionBrassIndustryRecipes.js", "ExpeditionAlloyFurnaceHeat.js"):
     relative = Path("kubejs/server_scripts") / script
     SHARED[relative] = BRASS / relative
+TRADE_CONTROLLER = Path("kubejs/data/expedition_industry/recipe/controller/trading_station_early.json")
+SHARED[TRADE_CONTROLLER] = BRASS / TRADE_CONTROLLER
 RADAR_RECIPES = Path("kubejs/server_scripts/RadarAcquisition.js")
 SHARED[RADAR_RECIPES] = RADAR / RADAR_RECIPES
 SHARED.update({
@@ -99,7 +101,8 @@ INDUSTRIAL_DEFINITIONS.update({
 SHARED.update(INDUSTRIAL_DEFINITIONS)
 CLIENT.update({
     Path("schematics") / source.name: source
-    for name in ("Expedition_CMI_alloy_furnace_andesite", "Expedition_CMI_alloy_furnace_brass", "Expedition_CMI_hydropress")
+    for name in ("Expedition_CMI_alloy_furnace_andesite", "Expedition_CMI_alloy_furnace_brass", "Expedition_CMI_hydropress",
+                 "Expedition_CMI_shaft_furnace", "Expedition_CMI_electrolytic_cell", "Expedition_CMI_trading_station")
     for source in (PORT / "create-blueprints/schematics" / f"{name}.nbt",)
 })
 CLIENT.update(INDUSTRIAL_VISUALS)

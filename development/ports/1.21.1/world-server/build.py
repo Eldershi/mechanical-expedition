@@ -127,6 +127,7 @@ def build(module, java, cp, output, mods, space_proof=False):
     if module == "space":
         cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in SPACE_DEPENDENCIES)
         if space_proof:
+            cp += os.pathsep + str(mods / "create_mobile_packages-1.21.1-0.7.8.jar")
             sources.extend(sorted((HERE / module / "tests").glob("*.java")))
             sources.extend(sorted((HERE / "brass-industry/tests").glob("*.java")))
     if module == "create-logistics":
