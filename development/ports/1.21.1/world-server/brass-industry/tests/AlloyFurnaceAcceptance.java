@@ -66,6 +66,9 @@ public final class AlloyFurnaceAcceptance {
                 Fixture fixture = new Fixture(new BlockPos(324 + 32 * i, 140, 324), i == 1);
                 var origin = fixture.origin();
                 level.setChunkForced(origin.getX() >> 4, origin.getZ() >> 4, true);
+                level.removeBlock(fixture.beltEnd(), false);
+                level.removeBlock(fixture.motor(), false);
+                level.removeBlock(fixture.at(2,8,0), false);
                 level.removeBlock(fixture.core(), false);
                 for (var entry : layouts.getAsJsonArray("alloy_furnace")) {
                     var cell = entry.getAsJsonArray();
@@ -108,6 +111,12 @@ public final class AlloyFurnaceAcceptance {
                         "redstone leaked into another inlet");
                     require(machine(level, f).isFormedValid(), "redstone must not break formation");
                     level.removeBlock(f.at(2,8,0), false);
+                }
+                phase = 2;
+            }
+            if (phase == 2 && elapsed >= 105) {
+                for (var f : fixtures) {
+                    require(!powered(level.getBlockState(f.at(2,8,1))), "redstone must release the funnel");
                     level.setBlockAndUpdate(f.motor(), parse(level, "create:creative_motor[facing=north]"));
                     var shaft = parse(level, "create:shaft[axis=z]");
                     level.setBlockAndUpdate(f.beltStart(), shaft);
@@ -115,13 +124,14 @@ public final class AlloyFurnaceAcceptance {
                     require(BeltConnectorItem.canConnect(level, f.beltStart(), f.beltEnd()), "real belt route must be clear");
                     BeltConnectorItem.createBelts(level, f.beltStart(), f.beltEnd());
                 }
-                phase = 2;
+                phase = 3;
             }
-            if (phase == 2 && elapsed >= 120) {
+            if (phase == 3 && elapsed >= 130) {
                 for (var f : fixtures) {
                     var state = level.getBlockState(f.at(2,8,1));
                     require(state.getBlock() instanceof BeltFunnelBlock
-                            && state.getValue(BeltFunnelBlock.SHAPE) == BeltFunnelBlock.Shape.PULLING,
+                            && state.getValue(BeltFunnelBlock.SHAPE) == BeltFunnelBlock.Shape.PULLING
+                            && !powered(state),
                         "the Create belt must set the receiving funnel shape " + state);
                     require(!block(level.getBlockState(f.at(3,8,2))).endsWith("_belt_funnel")
                             && !block(level.getBlockState(f.at(2,8,3))).endsWith("_belt_funnel"),
@@ -137,9 +147,9 @@ public final class AlloyFurnaceAcceptance {
                     var belt = level.getCapability(Capabilities.ItemHandler.BLOCK, f.beltStart(), Direction.UP);
                     require(belt != null && belt.insertItem(0, stack, false).isEmpty(), "feed the moving belt");
                 }
-                phase = 3;
+                phase = 4;
             }
-            if (phase == 3 && elapsed >= 340) {
+            if (phase == 4 && elapsed >= 350) {
                 for (var f : fixtures) {
                     var items = level.getCapability(Capabilities.ItemHandler.BLOCK, f.at(2,8,2), Direction.NORTH);
                     int lapis = 0;
@@ -151,9 +161,9 @@ public final class AlloyFurnaceAcceptance {
                     level.removeBlock(f.beltEnd(), false);
                     level.removeBlock(f.motor(), false);
                 }
-                phase = 4;
+                phase = 5;
             }
-            if (phase == 4 && elapsed >= 380) {
+            if (phase == 5 && elapsed >= 380) {
                 for (var f : fixtures) {
                     require(!block(level.getBlockState(f.at(2,8,1))).endsWith("_belt_funnel"),
                         "disconnect must restore the wall funnel");
@@ -165,19 +175,19 @@ public final class AlloyFurnaceAcceptance {
                     require(level.getBlockEntity(support) instanceof ProxyPartBlockEntity, "structural proxy");
                     level.destroyBlock(support, false);
                 }
-                phase = 5;
+                phase = 6;
                 System.out.println("EXPEDITION_ALLOY_FUNNEL_STATES_PASS");
             }
-            if (phase == 5 && elapsed >= 400) {
+            if (phase == 6 && elapsed >= 400) {
                 for (var f : fixtures) {
                     require(!machine(level, f).isFormedValid(), "must invalidate after removing coil");
                     require(block(level.getBlockState(f.at(0,1,2))).equals("create:fluid_pipe"), "must restore original pipe");
                     require(block(level.getBlockState(f.at(1,4,3))).equals("create:small_scoria_bricks"), "must restore frame");
                     level.setBlockAndUpdate(f.at(2,4,2), parse(level, "immersiveengineering:coil_lv"));
                 }
-                phase = 6;
+                phase = 7;
             }
-            if (phase == 6 && elapsed >= 475) {
+            if (phase == 7 && elapsed >= 475) {
                 for (var f : fixtures) require(machine(level, f).isFormedValid(), "repair must reform " + f);
                 System.out.println("EXPEDITION_ALLOY_COMPLETE");
                 start = -1;
