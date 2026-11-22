@@ -5,6 +5,10 @@ import com.lowdragmc.mbd2.api.blockentity.ProxyPartBlockEntity;
 import com.lowdragmc.mbd2.api.machine.IMultiController;
 import com.lowdragmc.mbd2.common.machine.MBDMultiblockMachine;
 import com.lowdragmc.mbd2.common.trait.item.ItemSlotCapabilityTrait;
+import com.simibubi.create.content.kinetics.belt.item.BeltConnectorItem;
+import com.simibubi.create.content.logistics.funnel.BeltFunnelBlock;
+import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
+import com.simibubi.create.foundation.blockEntity.behaviour.filtering.FilteringBehaviour;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.neoforged.neoforge.fluids.FluidStack;
 import java.nio.file.Files;
@@ -34,6 +38,9 @@ public final class AlloyFurnaceAcceptance {
     private record Fixture(BlockPos origin, boolean brass) {
         BlockPos at(int x, int y, int z) { return origin.offset(x, y, z); }
         BlockPos core() { return origin.offset(CORE); }
+        BlockPos beltStart() { return at(-2,7,1); }
+        BlockPos beltEnd() { return at(2,7,1); }
+        BlockPos motor() { return beltStart().south(); }
     }
     private final List<Fixture> fixtures = new ArrayList<>();
     private long start = -1;
@@ -101,24 +108,56 @@ public final class AlloyFurnaceAcceptance {
                         "redstone leaked into another inlet");
                     require(machine(level, f).isFormedValid(), "redstone must not break formation");
                     level.removeBlock(f.at(2,8,0), false);
-                    level.setBlockAndUpdate(f.at(2,7,1), parse(level, "create:depot"));
+                    level.setBlockAndUpdate(f.motor(), parse(level, "create:creative_motor[facing=north]"));
+                    var shaft = parse(level, "create:shaft[axis=z]");
+                    level.setBlockAndUpdate(f.beltStart(), shaft);
+                    level.setBlockAndUpdate(f.beltEnd(), shaft);
+                    require(BeltConnectorItem.canConnect(level, f.beltStart(), f.beltEnd()), "real belt route must be clear");
+                    BeltConnectorItem.createBelts(level, f.beltStart(), f.beltEnd());
                 }
                 phase = 2;
             }
             if (phase == 2 && elapsed >= 120) {
                 for (var f : fixtures) {
                     var state = level.getBlockState(f.at(2,8,1));
-                    require(block(state).endsWith("_belt_funnel"), "the depot must set belt shape " + state);
-                    require(!block(level.getBlockState(f.at(3,8,2))).endsWith("_belt_funnel"),
+                    require(state.getBlock() instanceof BeltFunnelBlock
+                            && state.getValue(BeltFunnelBlock.SHAPE) == BeltFunnelBlock.Shape.PULLING,
+                        "the Create belt must set the receiving funnel shape " + state);
+                    require(!block(level.getBlockState(f.at(3,8,2))).endsWith("_belt_funnel")
+                            && !block(level.getBlockState(f.at(2,8,3))).endsWith("_belt_funnel"),
                         "belt shape leaked into another inlet");
                     require(machine(level, f).isFormedValid(), "belt input must not break formation");
-                    level.removeBlock(f.at(2,7,1), false);
+                    var stack = new ItemStack(Items.LAPIS_LAZULI, f.brass() ? 7 : 1);
+                    if (f.brass()) {
+                        var filter = BlockEntityBehaviour.get(level, f.at(2,8,1), FilteringBehaviour.TYPE);
+                        require(filter != null && filter.setFilter(stack.copyWithCount(1)), "native brass filter");
+                        filter.count = stack.getCount();
+                        filter.upTo = false;
+                    }
+                    var belt = level.getCapability(Capabilities.ItemHandler.BLOCK, f.beltStart(), Direction.UP);
+                    require(belt != null && belt.insertItem(0, stack, false).isEmpty(), "feed the moving belt");
                 }
                 phase = 3;
-                System.out.println("EXPEDITION_ALLOY_FUNNEL_STATES_PASS");
             }
-            if (phase == 3 && elapsed >= 380) {
+            if (phase == 3 && elapsed >= 340) {
                 for (var f : fixtures) {
+                    var items = level.getCapability(Capabilities.ItemHandler.BLOCK, f.at(2,8,2), Direction.NORTH);
+                    int lapis = 0;
+                    for (int slot = 0; slot < items.getSlots(); slot++) {
+                        var stack = items.getStackInSlot(slot);
+                        if (stack.is(Items.LAPIS_LAZULI)) lapis += stack.getCount();
+                    }
+                    require(lapis == (f.brass() ? 7 : 1), "native belt intake count " + lapis + " " + f);
+                    level.removeBlock(f.beltEnd(), false);
+                    level.removeBlock(f.motor(), false);
+                }
+                phase = 4;
+            }
+            if (phase == 4 && elapsed >= 380) {
+                for (var f : fixtures) {
+                    require(!block(level.getBlockState(f.at(2,8,1))).endsWith("_belt_funnel"),
+                        "disconnect must restore the wall funnel");
+                    require(machine(level, f).isFormedValid(), "disconnect must preserve formation");
                     var output = level.getCapability(Capabilities.FluidHandler.BLOCK, f.at(0,1,2), Direction.WEST);
                     var molten = output.drain(360, FluidAction.EXECUTE);
                     require(molten.getAmount() == 360, "expected 360 mB after processing, got " + molten);
@@ -126,18 +165,19 @@ public final class AlloyFurnaceAcceptance {
                     require(level.getBlockEntity(support) instanceof ProxyPartBlockEntity, "structural proxy");
                     level.destroyBlock(support, false);
                 }
-                phase = 4;
+                phase = 5;
+                System.out.println("EXPEDITION_ALLOY_FUNNEL_STATES_PASS");
             }
-            if (phase == 4 && elapsed >= 400) {
+            if (phase == 5 && elapsed >= 400) {
                 for (var f : fixtures) {
                     require(!machine(level, f).isFormedValid(), "must invalidate after removing coil");
                     require(block(level.getBlockState(f.at(0,1,2))).equals("create:fluid_pipe"), "must restore original pipe");
                     require(block(level.getBlockState(f.at(1,4,3))).equals("create:small_scoria_bricks"), "must restore frame");
                     level.setBlockAndUpdate(f.at(2,4,2), parse(level, "immersiveengineering:coil_lv"));
                 }
-                phase = 5;
+                phase = 6;
             }
-            if (phase == 5 && elapsed >= 475) {
+            if (phase == 6 && elapsed >= 475) {
                 for (var f : fixtures) require(machine(level, f).isFormedValid(), "repair must reform " + f);
                 System.out.println("EXPEDITION_ALLOY_COMPLETE");
                 start = -1;
