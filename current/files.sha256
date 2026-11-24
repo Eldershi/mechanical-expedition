@@ -5454,6 +5454,7 @@ db85388f16b8bb6a886396f67f9e2f751c52a80e57719e5c056ce9f0158ac993  current/client
 c0d4494f4599fa1547c7257f0f2ac45cebe09d667abf4eadd5b048d91d488815  current/client/mods/expedition-rock-generator-neoforge-1.0.0.jar
 972f7d7091bb03d20cb9f7978761579d7cf955f3d987141fa758fc0325f918cb  current/client/mods/expedition-space-neoforge-1.0.1.jar
 6e433479de30c59987305c572b1f011e8c87f6e7913073dfee7237d66c541953  current/client/mods/expedition-stock-keeper-tooltip-fix-1.0.0.jar
+497079a1b8ae1b997c9fdae701d14b949db64928db05a9c9741be30b87723dd2  current/client/mods/expedition-structure-lookup-neoforge-1.0.0.jar
 5c66feb088f716fd90c7ca480b7e60db2a70bce0666b3e0f9e29983f3af49d7b  current/client/mods/expedition-terramity-curse-compat-1.0.1.jar
 9d04bf9f26ba36aa4fb321603bdc359c227efcb10db8231a27ca6fb8faafe867  current/client/mods/expedition-upstream-compat-1.0.0.jar
 e85d5457dce343854c50e21c56f6de00a6eb97f5bbc1b7ec18763dc28f0babc4  current/client/mods/expedition-vanilla-enchanting-table-neoforge-1.0.0.jar
@@ -6865,6 +6866,7 @@ a15224165ae9aa92071a09033601305bbc9f4b12851ad02e580a883f3df49626  current/server
 41f67a62af68aa134b1f5e515b272e6c4aff07c03c39f9c10797cae35a11ed2b  current/server/mods/expedition-item-compatibility-neoforge-1.0.0.jar
 c0d4494f4599fa1547c7257f0f2ac45cebe09d667abf4eadd5b048d91d488815  current/server/mods/expedition-rock-generator-neoforge-1.0.0.jar
 972f7d7091bb03d20cb9f7978761579d7cf955f3d987141fa758fc0325f918cb  current/server/mods/expedition-space-neoforge-1.0.1.jar
+497079a1b8ae1b997c9fdae701d14b949db64928db05a9c9741be30b87723dd2  current/server/mods/expedition-structure-lookup-neoforge-1.0.0.jar
 5c66feb088f716fd90c7ca480b7e60db2a70bce0666b3e0f9e29983f3af49d7b  current/server/mods/expedition-terramity-curse-compat-1.0.1.jar
 99cbb24d261d709804c275720fd92fa2becf986ba15f630856c68296bc723b2f  current/server/mods/goddamnrepackager-0.5.1-forge-alpha.jar
 eaeb731a56a434894e1f7645b3f39f3ace30a928309b36d340d7f67a2651f06d  current/server/server-additions.json

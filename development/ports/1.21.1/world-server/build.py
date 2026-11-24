@@ -43,6 +43,9 @@ MODULES = {
                                          "PendingMiningProcessMixin", "FluidLogisticsBasinMixin",
                                          "BreezeBasinCoolingMixin", "AirCurrentCoolingMixin",
                                          "GasInjectionFanFilterMixin"]),
+    "structure-lookup": ("expedition_structure_lookup", "1.0.0", "Expedition Worldgen Structure Lookup",
+                         "expedition.structurelookup.mixin", ["FeatureDependenciesMixin",
+                                                               "WorldGenRegionAccess", "InStructurePredicateMixin"]),
     "twilight": ("expedition_worldgen_compat", "1.1.1", "Expedition Twilight Landmarks",
                  "expedition.twilight.mixin", ["MagicMapMixin", "LocateMixin"]),
     "world-rules": ("expedition_world_rules", "1.0.0", "Expedition World Rules", "", []),
@@ -64,6 +67,7 @@ DEPENDENCIES = {
     "ie-machine": ("immersiveengineering", "[12.4.2-194]", "ImmersiveEngineering-1.21.1-12.4.2-194.jar"),
     "island-rail": ("create", "[6.0.10]", "create-1.21.1-6.0.10.jar"),
     "railway": ("tongdarailway", "[1.1.6+mc21.1]", "tongdarailway-1.1.6-mc21.1.jar"),
+    "structure-lookup": ("lithostitched", "[1.8.1]", "lithostitched-1.8.1-neoforge-21.1.jar"),
     "twilight": ("twilightforest", "[4.8.3345]", "twilightforest-1.21.1-4.8.3345-universal.jar"),
 }
 CREATE_LOGISTICS_DEPENDENCIES = (
