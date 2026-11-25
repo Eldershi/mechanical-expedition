@@ -1,0 +1,3825 @@
+{
+  "textures": {
+    "textures/block/arcane_essence_block.png": {
+      "size": [
+        16,
+        256
+      ],
+      "layers": [
+        {
+          "source": "create_enchantment_industry:textures/block/super_experience_block.png",
+          "rect": [
+            0,
+            0,
+            16,
+            256
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "20c5b5ff": "38608fff",
+            "2ce0d8ff": "227c8fff",
+            "4aedd9ff": "227c8fff",
+            "d5fff6ff": "7cd7eaff",
+            "ffffffff": "7cd7eaff",
+            "a1fbe8ff": "71bbe2ff",
+            "1aaaa7ff": "38608fff",
+            "1c919aff": "64189aff",
+            "11727aff": "440863ff",
+            "145e53ff": "440863ff"
+          }
+        }
+      ]
+    },
+    "textures/block/crimson_essence_block.png": {
+      "size": [
+        16,
+        256
+      ],
+      "layers": [
+        {
+          "source": "create_enchantment_industry:textures/block/super_experience_block.png",
+          "rect": [
+            0,
+            0,
+            16,
+            256
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "20c5b5ff": "8c2538ff",
+            "2ce0d8ff": "8c2538ff",
+            "4aedd9ff": "802d4eff",
+            "d5fff6ff": "da4a7dff",
+            "ffffffff": "fa7faeff",
+            "a1fbe8ff": "802d4eff",
+            "1aaaa7ff": "5b0716ff",
+            "1c919aff": "5b0716ff",
+            "11727aff": "420000ff",
+            "145e53ff": "420000ff"
+          }
+        }
+      ]
+    },
+    "textures/block/arcane_hatch.png": {
+      "size": [
+        32,
+        32
+      ],
+      "layers": [
+        {
+          "source": "create_enchantment_industry:textures/block/experience_hatch.png",
+          "rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "2e6c55ff": "38608fff",
+            "38835fff": "38608fff",
+            "419760ff": "227c8fff",
+            "52b64cff": "227c8fff",
+            "6fc451ff": "71bbe2ff",
+            "a4db58ff": "7cd7eaff",
+            "b6e55fff": "7cd7eaff",
+            "8ad055ff": "71bbe2ff",
+            "47a759ff": "227c8fff"
+          }
+        }
+      ]
+    },
+    "textures/block/arcane_hatch_open.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "create_enchantment_industry:textures/block/experience_hatch_open.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "6fc451ff": "227c8fff",
+            "ccffeaff": "7cd7eaff",
+            "b2f8c6ff": "7cd7eaff",
+            "9df195ff": "71bbe2ff",
+            "a4db58ff": "71bbe2ff",
+            "8ad055ff": "227c8fff",
+            "b6e55fff": "71bbe2ff",
+            "52b64cff": "38608fff",
+            "ace973ff": "71bbe2ff",
+            "47a759ff": "38608fff",
+            "419760ff": "64189aff",
+            "a4ee86ff": "71bbe2ff",
+            "38835fff": "64189aff",
+            "2e6c55ff": "440863ff"
+          }
+        }
+      ]
+    },
+    "textures/block/cage.png": {
+      "size": [
+        32,
+        32
+      ],
+      "layers": [
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "272b30ff": "9e6947ff",
+            "303639ff": "bf8e55ff",
+            "5b6060ff": "f7cb6cff",
+            "1e2126ff": "592424ff",
+            "23262bff": "724731ff",
+            "2c3135ff": "af794fff",
+            "3a4043ff": "c79758ff",
+            "444b4cff": "cea05aff",
+            "505656ff": "e4b763ff",
+            "5a5f5eff": "eec168ff",
+            "787d7cff": "ffeb8cff",
+            "666a69ff": "fbdc7dff",
+            "4f5656ff": "d7aa5eff"
+          }
+        }
+      ]
+    },
+    "textures/block/chamber_brass.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "create:textures/block/brass_block.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "textures/block/chamber_amethyst.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/amethyst_block.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "textures/item/ascension_template.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/item/netherite_upgrade_smithing_template.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "652828ff": "b26247ff",
+            "723232ff": "e3826cff",
+            "854242ff": "fc9982ff",
+            "340e0eff": "4c2417ff",
+            "511515ff": "6d3421ff",
+            "209ab8ff": "7a5bb5ff",
+            "60e8e8ff": "fecbe6ff",
+            "4bc9c9ff": "a678f1ff"
+          }
+        }
+      ]
+    },
+    "textures/item/crimson_essence.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "irons_spellbooks:textures/item/arcane_essence.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "ffffff00": "00000000",
+            "227c8fff": "8c2538ff",
+            "1e808fff": "8c2538ff",
+            "5fd1e2ff": "da4a7dff",
+            "38608fff": "5b0716ff",
+            "7cd7eaff": "fa7faeff",
+            "71bbe2ff": "802d4eff",
+            "7dabe2ff": "802d4eff",
+            "87c9eaff": "da4a7dff",
+            "134b63ff": "5b0716ff",
+            "958ce2ff": "802d4eff",
+            "92bbeaff": "da4a7dff",
+            "a89feaff": "802d4eff",
+            "5a88c3ff": "8c2538ff",
+            "464998ff": "5b0716ff",
+            "1c3f63ff": "5b0716ff",
+            "2c2963ff": "420000ff",
+            "968be2ff": "802d4eff",
+            "5989c3ff": "8c2538ff",
+            "70bce2ff": "802d4eff",
+            "4c9ac3ff": "802d4eff",
+            "454a98ff": "5b0716ff",
+            "64189aff": "5b0716ff",
+            "440863ff": "420000ff",
+            "9938c3ff": "5b0716ff",
+            "316b97ff": "8c2538ff",
+            "7368c3ff": "8c2538ff",
+            "44086300": "00000000",
+            "64189a00": "00000000"
+          }
+        }
+      ]
+    },
+    "textures/item/arcane_solution_bucket.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/item/water_bucket.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "234fccff": "440863ff",
+            "2e58d3ff": "64189aff",
+            "446fe9ff": "5989c3ff",
+            "345fdaff": "454a98ff",
+            "5a82f3ff": "7cd7eaff"
+          }
+        }
+      ]
+    },
+    "textures/item/crimson_solution_bucket.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/item/water_bucket.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "234fccff": "420000ff",
+            "2e58d3ff": "5b0716ff",
+            "446fe9ff": "b74c60ff",
+            "345fdaff": "8c2538ff",
+            "5a82f3ff": "eeac18ff"
+          }
+        }
+      ]
+    },
+    "textures/item/ember_cake.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "create_enchantment_industry:textures/item/experience_cake.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "38835fff": "5b0716ff",
+            "47a759ff": "8c2538ff",
+            "8ad055ff": "b74c60ff",
+            "b6e55fff": "eeac18ff",
+            "52b64cff": "802d4eff",
+            "1a3d8fff": "281414ff",
+            "052463ff": "100808ff",
+            "5a82e2ff": "754343ff",
+            "345ec3ff": "5e3737ff",
+            "1c53a8ff": "3b2222ff",
+            "2e6c55ff": "420000ff"
+          }
+        }
+      ]
+    },
+    "textures/item/ember_cake_base.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "create_enchantment_industry:textures/item/experience_cake_base.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "1a3d8fff": "281414ff",
+            "5a82e2ff": "754343ff",
+            "7497eaff": "c16d0bff",
+            "345ec3ff": "5e3737ff",
+            "1c53a8ff": "3b2222ff",
+            "052463ff": "100808ff"
+          }
+        }
+      ]
+    },
+    "textures/item/uninked_scroll.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "irons_spellbooks:textures/item/scroll.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "423c2dff": "76668aff",
+            "524b39ff": "8c7e9fff",
+            "393325ff": "645578ff"
+          }
+        }
+      ]
+    },
+    "textures/entity/chamber/chamber_rods_active.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "create:textures/block/blaze_active.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "textures/entity/chamber/flame_active.png": {
+      "size": [
+        32,
+        32
+      ],
+      "layers": [
+        {
+          "source": "create:textures/block/blaze_burner_flame_scroll.png",
+          "rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "textures/entity/chamber/flame_super.png": {
+      "size": [
+        32,
+        32
+      ],
+      "layers": [
+        {
+          "source": "create:textures/block/blaze_burner_flame_superheated_scroll.png",
+          "rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "textures/block/chamber_skins/brass_cage.png": {
+      "size": [
+        32,
+        32
+      ],
+      "layers": [
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "272b30ff": "9e6947ff",
+            "303639ff": "bf8e55ff",
+            "5b6060ff": "f7cb6cff",
+            "1e2126ff": "592424ff",
+            "23262bff": "724731ff",
+            "2c3135ff": "af794fff",
+            "3a4043ff": "c79758ff",
+            "444b4cff": "cea05aff",
+            "505656ff": "e4b763ff",
+            "5a5f5eff": "eec168ff",
+            "787d7cff": "ffeb8cff",
+            "666a69ff": "fbdc7dff",
+            "4f5656ff": "d7aa5eff"
+          }
+        }
+      ]
+    },
+    "textures/block/chamber_skins/brass_base_wrap.png": {
+      "size": [
+        32,
+        32
+      ],
+      "layers": [
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "272b30ff": "9e6947ff",
+            "303639ff": "bf8e55ff",
+            "5b6060ff": "f7cb6cff",
+            "1e2126ff": "592424ff",
+            "23262bff": "724731ff",
+            "2c3135ff": "af794fff",
+            "3a4043ff": "c79758ff",
+            "444b4cff": "cea05aff",
+            "505656ff": "e4b763ff",
+            "5a5f5eff": "eec168ff",
+            "787d7cff": "ffeb8cff",
+            "666a69ff": "fbdc7dff",
+            "4f5656ff": "d7aa5eff"
+          }
+        }
+      ]
+    },
+    "textures/block/chamber_skins/mithril_base_wrap.png": {
+      "size": [
+        32,
+        32
+      ],
+      "layers": [
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "272b30ff": "496c84ff",
+            "303639ff": "7dacafff",
+            "5b6060ff": "dcfffeff",
+            "1e2126ff": "335160ff",
+            "411616ff": "335160ff",
+            "501b1bff": "335160ff",
+            "652828ff": "335160ff",
+            "511515ff": "335160ff",
+            "723232ff": "496c84ff",
+            "854242ff": "496c84ff",
+            "23262bff": "496c84ff",
+            "2c3135ff": "7dacafff",
+            "3a4043ff": "99cdd9ff",
+            "444b4cff": "bdf3f3ff",
+            "505656ff": "bdf3f3ff",
+            "5a5f5eff": "dcfffeff",
+            "787d7cff": "ffffffff",
+            "666a69ff": "ffffffff",
+            "4f5656ff": "bdf3f3ff"
+          }
+        }
+      ]
+    },
+    "textures/block/arcane_solution_still.png": {
+      "size": [
+        16,
+        512
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_still.png",
+          "rect": [
+            0,
+            0,
+            16,
+            512
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "c2c2c2b4": "316b97c8",
+            "aeaeaeb4": "64189ac8",
+            "a5a5a5b4": "53107dc8",
+            "d2d2d2b4": "6797cfc8",
+            "cfcfcfb4": "5d8cc6c8",
+            "d5d5d5b4": "72a1d9c8",
+            "d3d3d3b4": "6b9ad2c8",
+            "ffffffb4": "7cd7eac8",
+            "f9f9f9b4": "7cd0e9c8",
+            "b8b8b8b4": "454a98c8",
+            "cececeb4": "5989c3c8",
+            "d6d6d6b4": "76a4dcc8",
+            "d8d8d8b4": "7dabe2c8"
+          }
+        }
+      ]
+    },
+    "textures/block/arcane_solution_flow.png": {
+      "size": [
+        32,
+        1024
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_flow.png",
+          "rect": [
+            0,
+            0,
+            32,
+            1024
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "acacacb4": "601694c8",
+            "a9a9a9b4": "5b138ac8",
+            "a4a4a4b4": "510f7ac8",
+            "a1a1a1b4": "4c0c70c8",
+            "c2c2c2b4": "316b97c8",
+            "d6d6d6b4": "76a4dcc8",
+            "b1b1b1b4": "5b2799c8",
+            "cececeb4": "5989c3c8",
+            "aeaeaeb4": "64189ac8",
+            "d5d5d5b4": "72a1d9c8",
+            "b8b8b8b4": "454a98c8",
+            "9e9e9eb4": "460966c8",
+            "a6a6a6b4": "551080c8",
+            "a3a3a3b4": "4f0e76c8",
+            "d8d8d8b4": "7dabe2c8",
+            "9d9d9db4": "440863c8",
+            "f9f9f9b4": "7cd0e9c8",
+            "a2a2a2b4": "4d0d73c8",
+            "abababb4": "5e1590c8",
+            "a5a5a5b4": "53107dc8",
+            "b5b5b5b4": "4e3b99c8",
+            "b0b0b0b4": "5e229ac8",
+            "aaaaaab4": "5c148dc8",
+            "ffffffb4": "7cd7eac8",
+            "c4c4c4b4": "38709ec8",
+            "bebebeb4": "395e97c8"
+          }
+        }
+      ]
+    },
+    "textures/block/crimson_solution_still.png": {
+      "size": [
+        16,
+        512
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_still.png",
+          "rect": [
+            0,
+            0,
+            16,
+            512
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "c2c2c2b4": "802d4ef0",
+            "aeaeaeb4": "5b0716f0",
+            "a5a5a5b4": "4e030af0",
+            "d2d2d2b4": "a75866f0",
+            "cfcfcfb4": "b34f61f0",
+            "d5d5d5b4": "9c626af0",
+            "d3d3d3b4": "a45c67f0",
+            "ffffffb4": "eeac18f0",
+            "f9f9f9b4": "e0a225f0",
+            "b8b8b8b4": "8c2538f0",
+            "cececeb4": "b74c60f0",
+            "d6d6d6b4": "98656bf0",
+            "d8d8d8b4": "906b6ef0"
+          }
+        }
+      ]
+    },
+    "textures/block/crimson_solution_flow.png": {
+      "size": [
+        32,
+        1024
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_flow.png",
+          "rect": [
+            0,
+            0,
+            32,
+            1024
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "acacacb4": "580613f0",
+            "a9a9a9b4": "540510f0",
+            "a4a4a4b4": "4c0309f0",
+            "a1a1a1b4": "480205f0",
+            "c2c2c2b4": "802d4ef0",
+            "d6d6d6b4": "98656bf0",
+            "b1b1b1b4": "6a1020f0",
+            "cececeb4": "b74c60f0",
+            "aeaeaeb4": "5b0716f0",
+            "d5d5d5b4": "9c626af0",
+            "b8b8b8b4": "8c2538f0",
+            "9e9e9eb4": "430001f0",
+            "a6a6a6b4": "4f040cf0",
+            "a3a3a3b4": "4b0208f0",
+            "d8d8d8b4": "906b6ef0",
+            "9d9d9db4": "420000f0",
+            "f9f9f9b4": "e0a225f0",
+            "a2a2a2b4": "490206f0",
+            "abababb4": "570612f0",
+            "a5a5a5b4": "4e030af0",
+            "b5b5b5b4": "7d1c2ef0",
+            "b0b0b0b4": "650d1df0",
+            "aaaaaab4": "550511f0",
+            "ffffffb4": "eeac18f0",
+            "c4c4c4b4": "893251f0",
+            "bebebeb4": "852a45f0"
+          }
+        }
+      ]
+    },
+    "textures/block/ink/common_still.png": {
+      "size": [
+        16,
+        512
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_still.png",
+          "rect": [
+            0,
+            0,
+            16,
+            512
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "c2c2c2b4": "242526ff",
+            "aeaeaeb4": "232324ff",
+            "a5a5a5b4": "222223ff",
+            "d2d2d2b4": "262729ff",
+            "cfcfcfb4": "252527ff",
+            "d5d5d5b4": "262729ff",
+            "d3d3d3b4": "262729ff",
+            "ffffffb4": "262729ff",
+            "f9f9f9b4": "262729ff",
+            "b8b8b8b4": "242526ff",
+            "cececeb4": "252527ff",
+            "d6d6d6b4": "262729ff",
+            "d8d8d8b4": "262729ff"
+          }
+        }
+      ]
+    },
+    "textures/block/ink/common_flow.png": {
+      "size": [
+        16,
+        512
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_still.png",
+          "rect": [
+            0,
+            0,
+            16,
+            512
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "c2c2c2b4": "242526ff",
+            "aeaeaeb4": "232324ff",
+            "a5a5a5b4": "222223ff",
+            "d2d2d2b4": "262729ff",
+            "cfcfcfb4": "252527ff",
+            "d5d5d5b4": "262729ff",
+            "d3d3d3b4": "262729ff",
+            "ffffffb4": "262729ff",
+            "f9f9f9b4": "262729ff",
+            "b8b8b8b4": "242526ff",
+            "cececeb4": "252527ff",
+            "d6d6d6b4": "262729ff",
+            "d8d8d8b4": "262729ff"
+          }
+        }
+      ]
+    },
+    "textures/block/ink/uncommon_still.png": {
+      "size": [
+        16,
+        512
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_still.png",
+          "rect": [
+            0,
+            0,
+            16,
+            512
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "c2c2c2b4": "1c2b21ff",
+            "aeaeaeb4": "1b291fff",
+            "a5a5a5b4": "1b281eff",
+            "d2d2d2b4": "1e2d23ff",
+            "cfcfcfb4": "1d2b21ff",
+            "d5d5d5b4": "1e2d23ff",
+            "d3d3d3b4": "1e2d23ff",
+            "ffffffb4": "1e2d23ff",
+            "f9f9f9b4": "1e2d23ff",
+            "b8b8b8b4": "1c2b21ff",
+            "cececeb4": "1d2b21ff",
+            "d6d6d6b4": "1e2d23ff",
+            "d8d8d8b4": "1e2d23ff"
+          }
+        }
+      ]
+    },
+    "textures/block/ink/uncommon_flow.png": {
+      "size": [
+        16,
+        512
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_still.png",
+          "rect": [
+            0,
+            0,
+            16,
+            512
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "c2c2c2b4": "1c2b21ff",
+            "aeaeaeb4": "1b291fff",
+            "a5a5a5b4": "1b281eff",
+            "d2d2d2b4": "1e2d23ff",
+            "cfcfcfb4": "1d2b21ff",
+            "d5d5d5b4": "1e2d23ff",
+            "d3d3d3b4": "1e2d23ff",
+            "ffffffb4": "1e2d23ff",
+            "f9f9f9b4": "1e2d23ff",
+            "b8b8b8b4": "1c2b21ff",
+            "cececeb4": "1d2b21ff",
+            "d6d6d6b4": "1e2d23ff",
+            "d8d8d8b4": "1e2d23ff"
+          }
+        }
+      ]
+    },
+    "textures/block/ink/rare_still.png": {
+      "size": [
+        16,
+        512
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_still.png",
+          "rect": [
+            0,
+            0,
+            16,
+            512
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "c2c2c2b4": "1a2730ff",
+            "aeaeaeb4": "19252dff",
+            "a5a5a5b4": "19242cff",
+            "d2d2d2b4": "1c2933ff",
+            "cfcfcfb4": "1b2731ff",
+            "d5d5d5b4": "1c2933ff",
+            "d3d3d3b4": "1c2933ff",
+            "ffffffb4": "1c2933ff",
+            "f9f9f9b4": "1c2933ff",
+            "b8b8b8b4": "1a2730ff",
+            "cececeb4": "1b2731ff",
+            "d6d6d6b4": "1c2933ff",
+            "d8d8d8b4": "1c2933ff"
+          }
+        }
+      ]
+    },
+    "textures/block/ink/rare_flow.png": {
+      "size": [
+        16,
+        512
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_still.png",
+          "rect": [
+            0,
+            0,
+            16,
+            512
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "c2c2c2b4": "1a2730ff",
+            "aeaeaeb4": "19252dff",
+            "a5a5a5b4": "19242cff",
+            "d2d2d2b4": "1c2933ff",
+            "cfcfcfb4": "1b2731ff",
+            "d5d5d5b4": "1c2933ff",
+            "d3d3d3b4": "1c2933ff",
+            "ffffffb4": "1c2933ff",
+            "f9f9f9b4": "1c2933ff",
+            "b8b8b8b4": "1a2730ff",
+            "cececeb4": "1b2731ff",
+            "d6d6d6b4": "1c2933ff",
+            "d8d8d8b4": "1c2933ff"
+          }
+        }
+      ]
+    },
+    "textures/block/ink/epic_still.png": {
+      "size": [
+        16,
+        512
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_still.png",
+          "rect": [
+            0,
+            0,
+            16,
+            512
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "c2c2c2b4": "291d32ff",
+            "aeaeaeb4": "271c2fff",
+            "a5a5a5b4": "261b2eff",
+            "d2d2d2b4": "2b1f35ff",
+            "cfcfcfb4": "291e33ff",
+            "d5d5d5b4": "2b1f35ff",
+            "d3d3d3b4": "2b1f35ff",
+            "ffffffb4": "2b1f35ff",
+            "f9f9f9b4": "2b1f35ff",
+            "b8b8b8b4": "291d32ff",
+            "cececeb4": "291e33ff",
+            "d6d6d6b4": "2b1f35ff",
+            "d8d8d8b4": "2b1f35ff"
+          }
+        }
+      ]
+    },
+    "textures/block/ink/epic_flow.png": {
+      "size": [
+        16,
+        512
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_still.png",
+          "rect": [
+            0,
+            0,
+            16,
+            512
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "c2c2c2b4": "291d32ff",
+            "aeaeaeb4": "271c2fff",
+            "a5a5a5b4": "261b2eff",
+            "d2d2d2b4": "2b1f35ff",
+            "cfcfcfb4": "291e33ff",
+            "d5d5d5b4": "2b1f35ff",
+            "d3d3d3b4": "2b1f35ff",
+            "ffffffb4": "2b1f35ff",
+            "f9f9f9b4": "2b1f35ff",
+            "b8b8b8b4": "291d32ff",
+            "cececeb4": "291e33ff",
+            "d6d6d6b4": "2b1f35ff",
+            "d8d8d8b4": "2b1f35ff"
+          }
+        }
+      ]
+    },
+    "textures/block/ink/legendary_still.png": {
+      "size": [
+        16,
+        512
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_still.png",
+          "rect": [
+            0,
+            0,
+            16,
+            512
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "c2c2c2b4": "32291bff",
+            "aeaeaeb4": "30271aff",
+            "a5a5a5b4": "2f2619ff",
+            "d2d2d2b4": "352b1dff",
+            "cfcfcfb4": "33291cff",
+            "d5d5d5b4": "352b1dff",
+            "d3d3d3b4": "352b1dff",
+            "ffffffb4": "352b1dff",
+            "f9f9f9b4": "352b1dff",
+            "b8b8b8b4": "32291bff",
+            "cececeb4": "33291cff",
+            "d6d6d6b4": "352b1dff",
+            "d8d8d8b4": "352b1dff"
+          }
+        }
+      ]
+    },
+    "textures/block/ink/legendary_flow.png": {
+      "size": [
+        16,
+        512
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/water_still.png",
+          "rect": [
+            0,
+            0,
+            16,
+            512
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "c2c2c2b4": "32291bff",
+            "aeaeaeb4": "30271aff",
+            "a5a5a5b4": "2f2619ff",
+            "d2d2d2b4": "352b1dff",
+            "cfcfcfb4": "33291cff",
+            "d5d5d5b4": "352b1dff",
+            "d3d3d3b4": "352b1dff",
+            "ffffffb4": "352b1dff",
+            "f9f9f9b4": "352b1dff",
+            "b8b8b8b4": "32291bff",
+            "cececeb4": "33291cff",
+            "d6d6d6b4": "352b1dff",
+            "d8d8d8b4": "352b1dff"
+          }
+        }
+      ]
+    },
+    "textures/particle/ascension_cleanse_blue_1.png": {
+      "size": [
+        8,
+        8
+      ],
+      "layers": [
+        {
+          "source": "irons_spellbooks:textures/particle/trial_spawner_detection_1.png",
+          "rect": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "ffd988ff": "67baf0ff",
+            "fff8cfff": "b5e4ffff",
+            "ffc55fff": "347fdfff"
+          }
+        }
+      ]
+    },
+    "textures/particle/ascension_cleanse_blue_2.png": {
+      "size": [
+        8,
+        8
+      ],
+      "layers": [
+        {
+          "source": "irons_spellbooks:textures/particle/trial_spawner_detection_2.png",
+          "rect": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "fff8cfff": "b5e4ffff",
+            "ffd988ff": "67baf0ff",
+            "ffc55fff": "347fdfff"
+          }
+        }
+      ]
+    },
+    "textures/particle/ascension_cleanse_blue_3.png": {
+      "size": [
+        8,
+        8
+      ],
+      "layers": [
+        {
+          "source": "irons_spellbooks:textures/particle/trial_spawner_detection_3.png",
+          "rect": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "fff8cfff": "b5e4ffff"
+          }
+        }
+      ]
+    },
+    "textures/particle/ascension_cleanse_blue_4.png": {
+      "size": [
+        8,
+        8
+      ],
+      "layers": [
+        {
+          "source": "irons_spellbooks:textures/particle/trial_spawner_detection_3.png",
+          "rect": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "fff8cfff": "f0faffff"
+          }
+        }
+      ]
+    },
+    "textures/particle/ascension_cleanse_gold_1.png": {
+      "size": [
+        8,
+        8
+      ],
+      "layers": [
+        {
+          "source": "irons_spellbooks:textures/particle/trial_spawner_detection_1.png",
+          "rect": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "ffd988ff": "ffdc5bff",
+            "fff8cfff": "fff0aeff",
+            "ffc55fff": "f8ba27ff"
+          }
+        }
+      ]
+    },
+    "textures/particle/ascension_cleanse_gold_2.png": {
+      "size": [
+        8,
+        8
+      ],
+      "layers": [
+        {
+          "source": "irons_spellbooks:textures/particle/trial_spawner_detection_2.png",
+          "rect": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "fff8cfff": "fff0aeff",
+            "ffd988ff": "ffdc5bff",
+            "ffc55fff": "f8ba27ff"
+          }
+        }
+      ]
+    },
+    "textures/particle/ascension_cleanse_gold_3.png": {
+      "size": [
+        8,
+        8
+      ],
+      "layers": [
+        {
+          "source": "irons_spellbooks:textures/particle/trial_spawner_detection_3.png",
+          "rect": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "fff8cfff": "fff0aeff"
+          }
+        }
+      ]
+    },
+    "textures/particle/ascension_cleanse_gold_4.png": {
+      "size": [
+        8,
+        8
+      ],
+      "layers": [
+        {
+          "source": "irons_spellbooks:textures/particle/trial_spawner_detection_3.png",
+          "rect": [
+            0,
+            0,
+            8,
+            8
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "fff8cfff": "fffadfff"
+          }
+        }
+      ]
+    },
+    "textures/item/arcane_solution_bottle.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/item/potion_overlay.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "ffffffff": "7cd7eaff",
+            "9a9a9aff": "454a98ff",
+            "636363ff": "440863ff",
+            "c5c5c5ff": "7dabe2ff",
+            "aaaaaaff": "5989c3ff",
+            "949494ff": "64189aff",
+            "a6a6a6ff": "316b97ff",
+            "00000000": "00000000"
+          },
+          "alphaOnly": true
+        },
+        {
+          "source": "minecraft:textures/item/glass_bottle.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "alphaOnly": true
+        }
+      ]
+    },
+    "textures/item/crimson_solution_bottle.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/item/potion_overlay.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "ffffffff": "eeac18ff",
+            "9a9a9aff": "8c2538ff",
+            "636363ff": "420000ff",
+            "c5c5c5ff": "906b6eff",
+            "aaaaaaff": "b74c60ff",
+            "949494ff": "5b0716ff",
+            "a6a6a6ff": "802d4eff",
+            "00000000": "00000000"
+          },
+          "alphaOnly": true
+        },
+        {
+          "source": "minecraft:textures/item/glass_bottle.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "alphaOnly": true
+        }
+      ]
+    },
+    "textures/item/mana_supply_upgrade.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "sophisticatedbackpacks:textures/item/upgrade_base.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "minecraft:textures/block/amethyst_block.png",
+          "rect": [
+            2,
+            7,
+            10,
+            15
+          ],
+          "dest": [
+            4,
+            4
+          ],
+          "mask": "cross"
+        }
+      ]
+    },
+    "textures/item/unfinished_ascension_scroll.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "irons_spellbooks:textures/item/scroll.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "423c2dff": "5b3f8bff",
+            "524b39ff": "7a5bb5ff",
+            "393325ff": "3e2868ff"
+          }
+        }
+      ],
+      "paint": [
+        [
+          7,
+          6,
+          1,
+          1,
+          "fecbe6ff"
+        ],
+        [
+          8,
+          5,
+          1,
+          1,
+          "fecbe6ff"
+        ],
+        [
+          8,
+          6,
+          1,
+          1,
+          "a678f1ff"
+        ],
+        [
+          8,
+          7,
+          1,
+          1,
+          "a678f1ff"
+        ],
+        [
+          8,
+          8,
+          1,
+          1,
+          "7a5bb5ff"
+        ],
+        [
+          8,
+          9,
+          1,
+          1,
+          "5b3f8bff"
+        ],
+        [
+          9,
+          6,
+          1,
+          1,
+          "7a5bb5ff"
+        ]
+      ]
+    },
+    "textures/block/chamber_mithril.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "arcane_industry:textures/block/chamber_skins/mithril_base_wrap.png",
+          "rect": [
+            18,
+            16,
+            30,
+            20
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "resize": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    "textures/block/chamber_skins/brass_particle.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "arcane_industry:textures/block/chamber_skins/brass_base_wrap.png",
+          "rect": [
+            18,
+            16,
+            30,
+            20
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "resize": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    "textures/block/chamber_skins/mithril_particle.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "arcane_industry:textures/block/chamber_skins/mithril_base_wrap.png",
+          "rect": [
+            18,
+            16,
+            30,
+            20
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "resize": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    "textures/entity/arcane_blaze_super.png": {
+      "size": [
+        64,
+        32
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            0,
+            0,
+            64,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "ffd528ff": "7e43a8ff",
+            "fff847ff": "8f58b5ff",
+            "8b3401ff": "3a1a57ff",
+            "6c3100ff": "2b1243ff",
+            "5f0201ff": "1d0d2fff",
+            "ffff84ff": "ffe7a5ff",
+            "d17800ff": "5a2a81ff",
+            "fc9600ff": "6a3294ff",
+            "ab7501ff": "4a216cff",
+            "fcb217ff": "e4b763ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            1,
+            11,
+            2,
+            12
+          ],
+          "dest": [
+            9,
+            11
+          ],
+          "palette": {
+            "d17800ff": "5a2a81ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            2,
+            11,
+            3,
+            12
+          ],
+          "dest": [
+            10,
+            11
+          ],
+          "palette": {
+            "fff847ff": "8f58b5ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            5,
+            11,
+            6,
+            12
+          ],
+          "dest": [
+            13,
+            11
+          ],
+          "palette": {
+            "fc9600ff": "6a3294ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            6,
+            11,
+            7,
+            12
+          ],
+          "dest": [
+            14,
+            11
+          ],
+          "palette": {
+            "fc9600ff": "6a3294ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            0,
+            16,
+            8,
+            26
+          ],
+          "dest": [
+            0,
+            16
+          ],
+          "palette": {
+            "fff847ff": "f7cb6cff",
+            "ffff84ff": "fbdc7dff",
+            "ffd528ff": "eec168ff",
+            "fcb217ff": "e4b763ff",
+            "fc9600ff": "d7aa5eff",
+            "d17800ff": "c79758ff",
+            "ab7501ff": "bf8e55ff",
+            "8b3401ff": "af794fff",
+            "6c3100ff": "9e6947ff"
+          }
+        }
+      ],
+      "paint": [
+        [
+          9,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ],
+        [
+          10,
+          14,
+          1,
+          1,
+          "160b24ff"
+        ],
+        [
+          13,
+          14,
+          1,
+          1,
+          "160b24ff"
+        ],
+        [
+          14,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ]
+      ]
+    },
+    "textures/entity/arcane_blaze.png": {
+      "size": [
+        64,
+        32
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            0,
+            0,
+            64,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            1,
+            11,
+            2,
+            12
+          ],
+          "dest": [
+            9,
+            11
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            2,
+            11,
+            3,
+            12
+          ],
+          "dest": [
+            10,
+            11
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            5,
+            11,
+            6,
+            12
+          ],
+          "dest": [
+            13,
+            11
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            6,
+            11,
+            7,
+            12
+          ],
+          "dest": [
+            14,
+            11
+          ]
+        }
+      ],
+      "paint": [
+        [
+          9,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ],
+        [
+          10,
+          14,
+          1,
+          1,
+          "23122fff"
+        ],
+        [
+          13,
+          14,
+          1,
+          1,
+          "23122fff"
+        ],
+        [
+          14,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ]
+      ]
+    },
+    "textures/entity/arcane_blaze_idle.png": {
+      "size": [
+        64,
+        32
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            0,
+            0,
+            64,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "ffd528ff": "763424ff",
+            "fff847ff": "804725ff",
+            "8b3401ff": "3a111bff",
+            "6c3100ff": "2c0d12ff",
+            "5f0201ff": "290002ff",
+            "ffff84ff": "98582aff",
+            "d17800ff": "451916ff",
+            "fc9600ff": "56171cff",
+            "ab7501ff": "3e1a0eff",
+            "fcb217ff": "602014ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            1,
+            11,
+            2,
+            12
+          ],
+          "dest": [
+            9,
+            11
+          ],
+          "palette": {
+            "d17800ff": "451916ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            2,
+            11,
+            3,
+            12
+          ],
+          "dest": [
+            10,
+            11
+          ],
+          "palette": {
+            "fff847ff": "804725ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            5,
+            11,
+            6,
+            12
+          ],
+          "dest": [
+            13,
+            11
+          ],
+          "palette": {
+            "fc9600ff": "56171cff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            6,
+            11,
+            7,
+            12
+          ],
+          "dest": [
+            14,
+            11
+          ],
+          "palette": {
+            "fc9600ff": "56171cff"
+          }
+        }
+      ],
+      "paint": [
+        [
+          9,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ],
+        [
+          10,
+          14,
+          1,
+          1,
+          "190f20ff"
+        ],
+        [
+          13,
+          14,
+          1,
+          1,
+          "190f20ff"
+        ],
+        [
+          14,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ]
+      ]
+    },
+    "textures/entity/arcane_blaze_active.png": {
+      "size": [
+        64,
+        32
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            0,
+            0,
+            64,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            1,
+            11,
+            2,
+            12
+          ],
+          "dest": [
+            9,
+            11
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            2,
+            11,
+            3,
+            12
+          ],
+          "dest": [
+            10,
+            11
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            5,
+            11,
+            6,
+            12
+          ],
+          "dest": [
+            13,
+            11
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            6,
+            11,
+            7,
+            12
+          ],
+          "dest": [
+            14,
+            11
+          ]
+        }
+      ],
+      "paint": [
+        [
+          9,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ],
+        [
+          10,
+          14,
+          1,
+          1,
+          "23122fff"
+        ],
+        [
+          13,
+          14,
+          1,
+          1,
+          "23122fff"
+        ],
+        [
+          14,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ]
+      ]
+    },
+    "textures/entity/chamber/arcane_blaze_super.png": {
+      "size": [
+        64,
+        32
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            0,
+            0,
+            64,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "ffd528ff": "3e78d7ff",
+            "fff847ff": "62a9eaff",
+            "8b3401ff": "3a1a57ff",
+            "6c3100ff": "2b1243ff",
+            "5f0201ff": "1d0d2fff",
+            "ffff84ff": "84c6f1ff",
+            "d17800ff": "4b2e86ff",
+            "fc9600ff": "493da3ff",
+            "ab7501ff": "4a216cff",
+            "fcb217ff": "4055c0ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            1,
+            11,
+            2,
+            12
+          ],
+          "dest": [
+            9,
+            11
+          ],
+          "palette": {
+            "d17800ff": "4b2e86ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            2,
+            11,
+            3,
+            12
+          ],
+          "dest": [
+            10,
+            11
+          ],
+          "palette": {
+            "fff847ff": "62a9eaff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            5,
+            11,
+            6,
+            12
+          ],
+          "dest": [
+            13,
+            11
+          ],
+          "palette": {
+            "fc9600ff": "493da3ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            6,
+            11,
+            7,
+            12
+          ],
+          "dest": [
+            14,
+            11
+          ],
+          "palette": {
+            "fc9600ff": "493da3ff"
+          }
+        }
+      ],
+      "paint": [
+        [
+          9,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ],
+        [
+          10,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ],
+        [
+          13,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ],
+        [
+          14,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ]
+      ]
+    },
+    "textures/entity/chamber/arcane_blaze_super_closed.png": {
+      "size": [
+        64,
+        32
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            0,
+            0,
+            64,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "ffd528ff": "3e78d7ff",
+            "fff847ff": "62a9eaff",
+            "8b3401ff": "3a1a57ff",
+            "6c3100ff": "2b1243ff",
+            "5f0201ff": "1d0d2fff",
+            "ffff84ff": "84c6f1ff",
+            "d17800ff": "4b2e86ff",
+            "fc9600ff": "493da3ff",
+            "ab7501ff": "4a216cff",
+            "fcb217ff": "4055c0ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            1,
+            11,
+            2,
+            12
+          ],
+          "dest": [
+            9,
+            11
+          ],
+          "palette": {
+            "d17800ff": "4b2e86ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            2,
+            11,
+            3,
+            12
+          ],
+          "dest": [
+            10,
+            11
+          ],
+          "palette": {
+            "fff847ff": "62a9eaff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            5,
+            11,
+            6,
+            12
+          ],
+          "dest": [
+            13,
+            11
+          ],
+          "palette": {
+            "fc9600ff": "493da3ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            6,
+            11,
+            7,
+            12
+          ],
+          "dest": [
+            14,
+            11
+          ],
+          "palette": {
+            "fc9600ff": "493da3ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            1,
+            14,
+            2,
+            15
+          ],
+          "dest": [
+            9,
+            14
+          ],
+          "palette": {
+            "8b3401ff": "3a1a57ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            2,
+            14,
+            3,
+            15
+          ],
+          "dest": [
+            10,
+            14
+          ],
+          "palette": {
+            "6c3100ff": "2b1243ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            5,
+            14,
+            6,
+            15
+          ],
+          "dest": [
+            13,
+            14
+          ],
+          "palette": {
+            "6c3100ff": "2b1243ff"
+          }
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            6,
+            14,
+            7,
+            15
+          ],
+          "dest": [
+            14,
+            14
+          ],
+          "palette": {
+            "5f0201ff": "1d0d2fff"
+          }
+        }
+      ],
+      "paint": [
+        [
+          9,
+          15,
+          1,
+          1,
+          "3e316dff"
+        ],
+        [
+          10,
+          15,
+          1,
+          1,
+          "3e316dff"
+        ],
+        [
+          13,
+          15,
+          1,
+          1,
+          "3e316dff"
+        ],
+        [
+          14,
+          15,
+          1,
+          1,
+          "3e316dff"
+        ]
+      ]
+    },
+    "textures/entity/chamber/arcane_blaze_active_closed.png": {
+      "size": [
+        64,
+        32
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            0,
+            0,
+            64,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            1,
+            11,
+            2,
+            12
+          ],
+          "dest": [
+            9,
+            11
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            2,
+            11,
+            3,
+            12
+          ],
+          "dest": [
+            10,
+            11
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            5,
+            11,
+            6,
+            12
+          ],
+          "dest": [
+            13,
+            11
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            6,
+            11,
+            7,
+            12
+          ],
+          "dest": [
+            14,
+            11
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            1,
+            14,
+            2,
+            15
+          ],
+          "dest": [
+            9,
+            14
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            2,
+            14,
+            3,
+            15
+          ],
+          "dest": [
+            10,
+            14
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            5,
+            14,
+            6,
+            15
+          ],
+          "dest": [
+            13,
+            14
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            6,
+            14,
+            7,
+            15
+          ],
+          "dest": [
+            14,
+            14
+          ]
+        }
+      ],
+      "paint": [
+        [
+          9,
+          15,
+          1,
+          1,
+          "23122fff"
+        ],
+        [
+          10,
+          15,
+          1,
+          1,
+          "23122fff"
+        ],
+        [
+          13,
+          15,
+          1,
+          1,
+          "23122fff"
+        ],
+        [
+          14,
+          15,
+          1,
+          1,
+          "23122fff"
+        ]
+      ]
+    },
+    "textures/entity/chamber/arcane_blaze_active.png": {
+      "size": [
+        64,
+        32
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            0,
+            0,
+            64,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            1,
+            11,
+            2,
+            12
+          ],
+          "dest": [
+            9,
+            11
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            2,
+            11,
+            3,
+            12
+          ],
+          "dest": [
+            10,
+            11
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            5,
+            11,
+            6,
+            12
+          ],
+          "dest": [
+            13,
+            11
+          ]
+        },
+        {
+          "source": "minecraft:textures/entity/blaze.png",
+          "rect": [
+            6,
+            11,
+            7,
+            12
+          ],
+          "dest": [
+            14,
+            11
+          ]
+        }
+      ],
+      "paint": [
+        [
+          9,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ],
+        [
+          10,
+          14,
+          1,
+          1,
+          "23122fff"
+        ],
+        [
+          13,
+          14,
+          1,
+          1,
+          "23122fff"
+        ],
+        [
+          14,
+          14,
+          1,
+          1,
+          "ffffffff"
+        ]
+      ]
+    },
+    "textures/entity/chamber/blaze_inert_low_eyes.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "create:textures/block/blaze_inert.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        }
+      ],
+      "paint": [
+        [
+          7,
+          2,
+          1,
+          1,
+          "ec7e42ff"
+        ],
+        [
+          10,
+          2,
+          1,
+          1,
+          "b86033ff"
+        ],
+        [
+          7,
+          4,
+          1,
+          1,
+          "9b90a5ff"
+        ],
+        [
+          10,
+          4,
+          1,
+          1,
+          "9b90a5ff"
+        ]
+      ]
+    },
+    "textures/block/chamber_cage.png": {
+      "size": [
+        32,
+        32
+      ],
+      "layers": [
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "272b30ff": "9e6947ff",
+            "303639ff": "bf8e55ff",
+            "5b6060ff": "f7cb6cff",
+            "1e2126ff": "592424ff",
+            "23262bff": "904931ff",
+            "2c3135ff": "b26247ff",
+            "3a4043ff": "c79758ff",
+            "444b4cff": "cea05aff",
+            "505656ff": "e3826cff",
+            "5a5f5eff": "e3826cff",
+            "787d7cff": "fc9982ff",
+            "666a69ff": "fbdc7dff",
+            "4f5656ff": "d7aa5eff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            1,
+            5,
+            15,
+            16
+          ],
+          "dest": [
+            1,
+            5
+          ],
+          "palette": {
+            "1e2126ff": "7a3d28ff",
+            "272b30ff": "a75a40ff",
+            "23262bff": "904931ff",
+            "303639ff": "c26b4cff",
+            "2c3135ff": "b26247ff",
+            "3a4043ff": "c87456ff",
+            "444b4cff": "c87456ff",
+            "505656ff": "e3826cff",
+            "5a5f5eff": "e3826cff",
+            "5b6060ff": "e3826cff",
+            "787d7cff": "fc9982ff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            29,
+            16,
+            32,
+            21
+          ],
+          "dest": [
+            29,
+            16
+          ],
+          "palette": {
+            "444b4cff": "c87456ff",
+            "303639ff": "c26b4cff",
+            "272b30ff": "a75a40ff",
+            "1e2126ff": "7a3d28ff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            31,
+            25,
+            32,
+            26
+          ],
+          "dest": [
+            31,
+            25
+          ],
+          "palette": {
+            "5a5f5eff": "eec168ff"
+          }
+        }
+      ]
+    },
+    "textures/block/chamber_skins/mithril_cage.png": {
+      "size": [
+        32,
+        32
+      ],
+      "layers": [
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "272b30ff": "9e6947ff",
+            "303639ff": "bf8e55ff",
+            "5b6060ff": "f7cb6cff",
+            "1e2126ff": "592424ff",
+            "23262bff": "496c84ff",
+            "2c3135ff": "7dacafff",
+            "3a4043ff": "c79758ff",
+            "444b4cff": "cea05aff",
+            "505656ff": "bdf3f3ff",
+            "5a5f5eff": "dcfffeff",
+            "787d7cff": "ffffffff",
+            "666a69ff": "fbdc7dff",
+            "4f5656ff": "d7aa5eff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            1,
+            5,
+            15,
+            16
+          ],
+          "dest": [
+            1,
+            5
+          ],
+          "palette": {
+            "1e2126ff": "335160ff",
+            "272b30ff": "496c84ff",
+            "23262bff": "496c84ff",
+            "303639ff": "7dacafff",
+            "2c3135ff": "7dacafff",
+            "3a4043ff": "99cdd9ff",
+            "444b4cff": "bdf3f3ff",
+            "505656ff": "bdf3f3ff",
+            "5a5f5eff": "dcfffeff",
+            "5b6060ff": "dcfffeff",
+            "787d7cff": "ffffffff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            29,
+            16,
+            32,
+            21
+          ],
+          "dest": [
+            29,
+            16
+          ],
+          "palette": {
+            "444b4cff": "bdf3f3ff",
+            "303639ff": "7dacafff",
+            "272b30ff": "496c84ff",
+            "1e2126ff": "335160ff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            31,
+            25,
+            32,
+            26
+          ],
+          "dest": [
+            31,
+            25
+          ],
+          "palette": {
+            "5a5f5eff": "eec168ff"
+          }
+        }
+      ]
+    },
+    "textures/block/chamber_base_top.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/amethyst_block.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            18,
+            2,
+            30,
+            14
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "mask": "outerrim",
+          "palette": {
+            "272b30ff": "6d3421ff",
+            "303639ff": "904931ff",
+            "5b6060ff": "e3826cff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            18,
+            20,
+            30,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "mask": "innerrim",
+          "palette": {
+            "4f5656ff": "e3826cff",
+            "444b4cff": "d67b5bff",
+            "3a4043ff": "b26247ff",
+            "272b30ff": "6d3421ff"
+          }
+        }
+      ]
+    },
+    "textures/block/chamber_skins/brass_base_top.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/amethyst_block.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "create:textures/block/brass_block.png",
+          "rect": [
+            0,
+            0,
+            6,
+            6
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "mask": "rim"
+        },
+        {
+          "source": "create:textures/block/brass_block.png",
+          "rect": [
+            0,
+            10,
+            6,
+            16
+          ],
+          "dest": [
+            0,
+            6
+          ],
+          "mask": "rim"
+        },
+        {
+          "source": "create:textures/block/brass_block.png",
+          "rect": [
+            10,
+            0,
+            16,
+            6
+          ],
+          "dest": [
+            6,
+            0
+          ],
+          "mask": "rim"
+        },
+        {
+          "source": "create:textures/block/brass_block.png",
+          "rect": [
+            10,
+            10,
+            16,
+            16
+          ],
+          "dest": [
+            6,
+            6
+          ],
+          "mask": "rim"
+        }
+      ]
+    },
+    "textures/block/chamber_skins/mithril_base_top.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "minecraft:textures/block/amethyst_block.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        },
+        {
+          "source": "create:textures/block/brass_block.png",
+          "rect": [
+            0,
+            0,
+            6,
+            6
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "mask": "rim",
+          "palette": {
+            "724731ff": "496c84ff",
+            "9e6947ff": "496c84ff",
+            "cea05aff": "bdf3f3ff",
+            "f7cb6cff": "dcfffeff",
+            "fbdc7dff": "ffffffff",
+            "ffeb8cff": "ffffffff"
+          }
+        },
+        {
+          "source": "create:textures/block/brass_block.png",
+          "rect": [
+            0,
+            10,
+            6,
+            16
+          ],
+          "dest": [
+            0,
+            6
+          ],
+          "mask": "rim",
+          "palette": {
+            "9e6947ff": "496c84ff",
+            "ffeb8cff": "ffffffff",
+            "f7cb6cff": "dcfffeff",
+            "cea05aff": "bdf3f3ff",
+            "e4b763ff": "bdf3f3ff",
+            "592424ff": "335160ff",
+            "724731ff": "496c84ff"
+          }
+        },
+        {
+          "source": "create:textures/block/brass_block.png",
+          "rect": [
+            10,
+            0,
+            16,
+            6
+          ],
+          "dest": [
+            6,
+            0
+          ],
+          "mask": "rim",
+          "palette": {
+            "9e6947ff": "496c84ff",
+            "592424ff": "335160ff",
+            "ffeb8cff": "ffffffff",
+            "f7cb6cff": "dcfffeff",
+            "cea05aff": "bdf3f3ff",
+            "724731ff": "496c84ff",
+            "e4b763ff": "bdf3f3ff"
+          }
+        },
+        {
+          "source": "create:textures/block/brass_block.png",
+          "rect": [
+            10,
+            10,
+            16,
+            16
+          ],
+          "dest": [
+            6,
+            6
+          ],
+          "mask": "rim",
+          "palette": {
+            "f7cb6cff": "dcfffeff",
+            "724731ff": "496c84ff",
+            "e4b763ff": "bdf3f3ff",
+            "cea05aff": "bdf3f3ff",
+            "592424ff": "335160ff"
+          }
+        }
+      ]
+    },
+    "textures/entity/chamber/chamber_base_top.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "arcane_industry:textures/block/chamber_base_top.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "textures/entity/chamber/chamber_cage.png": {
+      "size": [
+        32,
+        32
+      ],
+      "layers": [
+        {
+          "source": "arcane_industry:textures/block/chamber_cage.png",
+          "rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "textures/entity/chamber/chamber_rods_super.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "create:textures/block/blaze_active.png",
+          "rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "ffff84ff": "84c6f1ff",
+            "fff847ff": "62a9eaff",
+            "fff747ff": "62a9eaff",
+            "fdf345ff": "62a9eaff",
+            "fdfa81ff": "84c6f1ff",
+            "ffd528ff": "3e78d7ff",
+            "fed328ff": "3e78d7ff",
+            "fc9600ff": "493da3ff",
+            "d17800ff": "4b2e86ff",
+            "8b3401ff": "3a1a57ff",
+            "6c3100ff": "2b1243ff",
+            "5f0201ff": "1d0d2fff",
+            "ab7501ff": "4a216cff",
+            "6b1103ff": "1d0d2fff",
+            "690f03ff": "1d0d2fff",
+            "fdd228ff": "3e78d7ff",
+            "fef546ff": "62a9eaff",
+            "fefc83ff": "84c6f1ff",
+            "fdfb82ff": "84c6f1ff",
+            "fdf446ff": "62a9eaff"
+          }
+        }
+      ],
+      "paint": [
+        [
+          0,
+          0,
+          1,
+          1,
+          "f6d47eff"
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          "d2a454ff"
+        ],
+        [
+          1,
+          4,
+          1,
+          1,
+          "b64b9eff"
+        ],
+        [
+          4,
+          0,
+          1,
+          1,
+          "84c6f1ff"
+        ],
+        [
+          4,
+          1,
+          1,
+          1,
+          "62a9eaff"
+        ],
+        [
+          5,
+          0,
+          1,
+          1,
+          "74b7eeff"
+        ],
+        [
+          5,
+          1,
+          1,
+          1,
+          "5a9fe4ff"
+        ]
+      ]
+    },
+    "textures/block/chamber_base_wrap.png": {
+      "size": [
+        32,
+        32
+      ],
+      "layers": [
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "palette": {
+            "272b30ff": "6d3421ff",
+            "303639ff": "904931ff",
+            "5b6060ff": "e3826cff",
+            "1e2126ff": "4c2417ff",
+            "411616ff": "6d3421ff",
+            "501b1bff": "6d3421ff",
+            "652828ff": "7a3d28ff",
+            "511515ff": "6d3421ff",
+            "723232ff": "82432eff",
+            "854242ff": "904931ff",
+            "23262bff": "904931ff",
+            "2c3135ff": "b26247ff",
+            "3a4043ff": "b26247ff",
+            "444b4cff": "d67b5bff",
+            "505656ff": "e3826cff",
+            "5a5f5eff": "e3826cff",
+            "787d7cff": "fc9982ff",
+            "666a69ff": "fc9982ff",
+            "4f5656ff": "e3826cff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            1,
+            5,
+            15,
+            16
+          ],
+          "dest": [
+            1,
+            5
+          ],
+          "palette": {
+            "1e2126ff": "7a3d28ff",
+            "272b30ff": "a75a40ff",
+            "23262bff": "904931ff",
+            "303639ff": "c26b4cff",
+            "2c3135ff": "b26247ff",
+            "3a4043ff": "c87456ff",
+            "444b4cff": "c87456ff",
+            "505656ff": "e3826cff",
+            "5a5f5eff": "e3826cff",
+            "5b6060ff": "e3826cff",
+            "787d7cff": "fc9982ff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            29,
+            16,
+            32,
+            21
+          ],
+          "dest": [
+            29,
+            16
+          ],
+          "palette": {
+            "444b4cff": "d67b5bff",
+            "303639ff": "904931ff",
+            "272b30ff": "6d3421ff",
+            "1e2126ff": "4c2417ff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            18,
+            2,
+            30,
+            14
+          ],
+          "dest": [
+            18,
+            2
+          ],
+          "palette": {
+            "272b30ff": "a75a40ff",
+            "303639ff": "c26b4cff",
+            "5b6060ff": "e3826cff",
+            "1e2126ff": "7a3d28ff",
+            "411616ff": "6d3421ff",
+            "501b1bff": "6d3421ff",
+            "652828ff": "7a3d28ff",
+            "511515ff": "6d3421ff",
+            "723232ff": "82432eff",
+            "854242ff": "904931ff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            18,
+            16,
+            30,
+            20
+          ],
+          "dest": [
+            18,
+            16
+          ],
+          "palette": {
+            "444b4cff": "d67b5bff",
+            "303639ff": "904931ff",
+            "3a4043ff": "b26247ff",
+            "666a69ff": "fc9982ff",
+            "272b30ff": "6d3421ff",
+            "1e2126ff": "4c2417ff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            18,
+            20,
+            30,
+            32
+          ],
+          "dest": [
+            18,
+            20
+          ],
+          "palette": {
+            "272b30ff": "6d3421ff",
+            "1e2126ff": "4c2417ff",
+            "4f5656ff": "e3826cff",
+            "444b4cff": "d67b5bff",
+            "3a4043ff": "b26247ff",
+            "303639ff": "904931ff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            30,
+            16,
+            32,
+            21
+          ],
+          "dest": [
+            30,
+            16
+          ],
+          "palette": {
+            "303639ff": "c26b4cff",
+            "1e2126ff": "7a3d28ff",
+            "272b30ff": "a75a40ff"
+          }
+        },
+        {
+          "source": "create:textures/block/blaze_heater_brazier.png",
+          "rect": [
+            31,
+            25,
+            32,
+            32
+          ],
+          "dest": [
+            31,
+            25
+          ],
+          "palette": {
+            "5a5f5eff": "e3826cff",
+            "4f5656ff": "d67b5bff",
+            "444b4cff": "c87456ff",
+            "3a4043ff": "c87456ff",
+            "303639ff": "c26b4cff",
+            "272b30ff": "a75a40ff",
+            "1e2126ff": "7a3d28ff"
+          }
+        }
+      ]
+    },
+    "textures/block/chamber_copper.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [
+        {
+          "source": "arcane_industry:textures/block/chamber_base_wrap.png",
+          "rect": [
+            18,
+            16,
+            30,
+            20
+          ],
+          "dest": [
+            0,
+            0
+          ],
+          "resize": [
+            16,
+            16
+          ]
+        }
+      ]
+    },
+    "textures/entity/chamber/chamber_base_wrap.png": {
+      "size": [
+        32,
+        32
+      ],
+      "layers": [
+        {
+          "source": "arcane_industry:textures/block/chamber_base_wrap.png",
+          "rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "dest": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "textures/entity/arcane_brows_idle.png": {
+      "size": [
+        64,
+        32
+      ],
+      "procedural": "stepped_brows",
+      "side": [
+        "5d3a9aff",
+        "5d3a9aff",
+        "64479eff"
+      ],
+      "front": [
+        "7a5bb5ff",
+        "8d6accff"
+      ],
+      "tips": [
+        "7a5bb5ff",
+        "8d6accff",
+        "8d6accff"
+      ],
+      "fold": [
+        "8d6accff",
+        "8d6accff"
+      ]
+    },
+    "textures/entity/arcane_brows_super.png": {
+      "size": [
+        64,
+        32
+      ],
+      "procedural": "stepped_brows",
+      "side": [
+        "230e37ff",
+        "38134fff",
+        "4d1d6bff"
+      ],
+      "front": [
+        "8948b3ff",
+        "ab70d4ff"
+      ],
+      "tips": [
+        "8948b3ff",
+        "ab70d4ff",
+        "ab70d4ff"
+      ],
+      "fold": [
+        "ab70d4ff",
+        "ab70d4ff"
+      ]
+    },
+    "textures/entity/arcane_brows_active.png": {
+      "size": [
+        64,
+        32
+      ],
+      "procedural": "stepped_brows",
+      "side": [
+        "5d3a9aff",
+        "64479eff",
+        "7a5bb5ff"
+      ],
+      "front": [
+        "a678f1ff",
+        "c890f0ff"
+      ],
+      "tips": [
+        "a678f1ff",
+        "c890f0ff",
+        "c890f0ff"
+      ],
+      "fold": [
+        "c890f0ff",
+        "c890f0ff"
+      ]
+    },
+    "textures/entity/chamber/arcane_brows_super.png": {
+      "size": [
+        64,
+        32
+      ],
+      "procedural": "stepped_brows",
+      "side": [
+        "431c3aff",
+        "4f2145ff",
+        "59254dff"
+      ],
+      "front": [
+        "a4438eff",
+        "b64b9eff"
+      ],
+      "tips": [
+        "c38183ff",
+        "eec27cff",
+        "f6d47eff"
+      ],
+      "fold": [
+        "ca6da2ff",
+        "e6af80ff"
+      ]
+    },
+    "textures/entity/chamber/arcane_brows_active.png": {
+      "size": [
+        64,
+        32
+      ],
+      "procedural": "stepped_brows",
+      "side": [
+        "5d3a9aff",
+        "64479eff",
+        "7a5bb5ff"
+      ],
+      "front": [
+        "7898f1ff",
+        "90a7f0ff"
+      ],
+      "tips": [
+        "787ef1ff",
+        "ae90f0ff",
+        "c890f0ff"
+      ],
+      "fold": [
+        "9390f0ff",
+        "ae90f0ff"
+      ]
+    },
+    "textures/entity/chamber/brows.png": {
+      "size": [
+        16,
+        16
+      ],
+      "layers": [],
+      "paint": [
+        [
+          0,
+          0,
+          2,
+          1,
+          "211b32ff"
+        ],
+        [
+          4,
+          0,
+          2,
+          1,
+          "211b32ff"
+        ]
+      ]
+    }
+  },
+  "metadata": {
+    "textures/block/arcane_essence_block.png.mcmeta": {
+      "source": "create_enchantment_industry:textures/block/super_experience_block.png.mcmeta"
+    },
+    "textures/block/arcane_solution_flow.png.mcmeta": {
+      "value": {
+        "animation": {
+          "width": 32,
+          "height": 32,
+          "frametime": 1,
+          "interpolate": false
+        }
+      }
+    },
+    "textures/block/arcane_solution_still.png.mcmeta": {
+      "value": {
+        "animation": {
+          "width": 16,
+          "height": 16,
+          "frametime": 2,
+          "interpolate": false
+        }
+      }
+    },
+    "textures/block/crimson_essence_block.png.mcmeta": {
+      "source": "create_enchantment_industry:textures/block/super_experience_block.png.mcmeta"
+    },
+    "textures/block/crimson_solution_flow.png.mcmeta": {
+      "value": {
+        "animation": {
+          "width": 32,
+          "height": 32,
+          "frametime": 1,
+          "interpolate": false
+        }
+      }
+    },
+    "textures/block/crimson_solution_still.png.mcmeta": {
+      "value": {
+        "animation": {
+          "width": 16,
+          "height": 16,
+          "frametime": 2,
+          "interpolate": false
+        }
+      }
+    },
+    "textures/block/ink/common_flow.png.mcmeta": {
+      "value": {
+        "animation": {
+          "frametime": 3
+        }
+      }
+    },
+    "textures/block/ink/common_still.png.mcmeta": {
+      "value": {
+        "animation": {
+          "frametime": 3
+        }
+      }
+    },
+    "textures/block/ink/epic_flow.png.mcmeta": {
+      "value": {
+        "animation": {
+          "frametime": 3
+        }
+      }
+    },
+    "textures/block/ink/epic_still.png.mcmeta": {
+      "value": {
+        "animation": {
+          "frametime": 3
+        }
+      }
+    },
+    "textures/block/ink/legendary_flow.png.mcmeta": {
+      "value": {
+        "animation": {
+          "frametime": 3
+        }
+      }
+    },
+    "textures/block/ink/legendary_still.png.mcmeta": {
+      "value": {
+        "animation": {
+          "frametime": 3
+        }
+      }
+    },
+    "textures/block/ink/rare_flow.png.mcmeta": {
+      "value": {
+        "animation": {
+          "frametime": 3
+        }
+      }
+    },
+    "textures/block/ink/rare_still.png.mcmeta": {
+      "value": {
+        "animation": {
+          "frametime": 3
+        }
+      }
+    },
+    "textures/block/ink/uncommon_flow.png.mcmeta": {
+      "value": {
+        "animation": {
+          "frametime": 3
+        }
+      }
+    },
+    "textures/block/ink/uncommon_still.png.mcmeta": {
+      "value": {
+        "animation": {
+          "frametime": 3
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "arcane_industry:block/ascension_chamber_active",
+  "textures": {
+    "cage": "arcane_industry:block/chamber_skins/mithril_cage",
+    "base_top": "arcane_industry:block/chamber_skins/mithril_base_top",
+    "base_wrap": "arcane_industry:block/chamber_skins/mithril_base_wrap",
+    "particle": "arcane_industry:block/chamber_skins/mithril_particle"
+  }
+}

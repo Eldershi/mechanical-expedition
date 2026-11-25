@@ -1,0 +1,271 @@
+{
+  "upstream": "https://github.com/Eldershi/create-arcane-crafts",
+  "commit": "57f4666a9c418d396aeb20415fd672f01c177d10",
+  "files": [
+    {
+      "path": "assets/arcane_industry/blockstates/arcane_essence_block.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/blockstates/arcane_essence_block.json",
+      "sha256": "212de3da0ac7548fbb222e59d2dc531268528454f28901e32a05a3a1ced57b07"
+    },
+    {
+      "path": "assets/arcane_industry/blockstates/arcane_grindstone.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/blockstates/arcane_grindstone.json",
+      "sha256": "3fa66e0c4080ce89f5d40d94e9fb787f606c1605e8cf197b55ebac35a684fca8"
+    },
+    {
+      "path": "assets/arcane_industry/blockstates/arcane_grindstone_drain.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/blockstates/arcane_grindstone_drain.json",
+      "sha256": "d337bec6b1dc031fa477ce55ee4ce3e10ab97624438642817697133ca774753e"
+    },
+    {
+      "path": "assets/arcane_industry/blockstates/arcane_hatch.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/blockstates/arcane_hatch.json",
+      "sha256": "0e8a87ae7efc9ca910efc7dcb6ee3de00def5c3ee635f059105fd45324969e06"
+    },
+    {
+      "path": "assets/arcane_industry/blockstates/arcane_solution.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/blockstates/arcane_solution.json",
+      "sha256": "7d63ac79bd9dec532a96e85f96374d7ec486bff032a2e47a10550d6ea735f556"
+    },
+    {
+      "path": "assets/arcane_industry/blockstates/ascension_chamber.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/blockstates/ascension_chamber.json",
+      "sha256": "60b8fe6efe4954090e14816182e667d3ffb2b727c9020c53540ef3d802038de3"
+    },
+    {
+      "path": "assets/arcane_industry/blockstates/crimson_essence_block.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/blockstates/crimson_essence_block.json",
+      "sha256": "7ed8bc2942ca277ac8f9ea6e34305f28733280fd19a746803139a13e157dd409"
+    },
+    {
+      "path": "assets/arcane_industry/blockstates/crimson_solution.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/blockstates/crimson_solution.json",
+      "sha256": "85dc62b06e588c22ebf99df5e4cd2b09f073a42825d06911569866432cbe8101"
+    },
+    {
+      "path": "assets/arcane_industry/lang/en_us.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/lang/en_us.json",
+      "sha256": "efb7cebdfd498c016e08fcfe324ea6f0b9c9546bfb55e5e5800ea5bff0ebf85a"
+    },
+    {
+      "path": "assets/arcane_industry/lang/zh_cn.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/lang/zh_cn.json",
+      "sha256": "b2014fba7d5123f656d15e3bd50dff91c57a45e1a9257a8b9f2e10c24dd4701a"
+    },
+    {
+      "path": "assets/arcane_industry/models/block/arcane_essence_block.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/block/arcane_essence_block.json",
+      "sha256": "9dc30a432e70e4b6ce4604abfcfab22e5b675d25c7aa5532d6b0775aa52a76a5"
+    },
+    {
+      "path": "assets/arcane_industry/models/block/arcane_grindstone_drain.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/block/arcane_grindstone_drain.json",
+      "sha256": "b075ec89887e030a5c50c5a37d22c390a74f26382daf81ba4da05960577ae088"
+    },
+    {
+      "path": "assets/arcane_industry/models/block/arcane_hatch.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/block/arcane_hatch.json",
+      "sha256": "f2da054d503028e4ad787766e3d7dcbf5f719342b234109729c7ddfb7ee8a513"
+    },
+    {
+      "path": "assets/arcane_industry/models/block/arcane_solution.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/block/arcane_solution.json",
+      "sha256": "c8a2f741c54aee9afc6b72c1edf9ecc404223aeab8bb4fd5fea827d599643d40"
+    },
+    {
+      "path": "assets/arcane_industry/models/block/ascension_chamber_active_brass.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/block/ascension_chamber_active_brass.json",
+      "sha256": "31ba985ec833d280defd4e0940761f4b809585c1acb855acdeacf58c44370379"
+    },
+    {
+      "path": "assets/arcane_industry/models/block/ascension_chamber_active_mithril.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/block/ascension_chamber_active_mithril.json",
+      "sha256": "16a158b764f82cfaa7f1fbf1fed914f0e04e3e56cb828ab05b3571636d52a59e"
+    },
+    {
+      "path": "assets/arcane_industry/models/block/ascension_chamber_idle_brass.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/block/ascension_chamber_idle_brass.json",
+      "sha256": "49e2762d21a128ec570d088c4582c23ea2ebe7859bc4feaf10407ef1cfaff1c6"
+    },
+    {
+      "path": "assets/arcane_industry/models/block/ascension_chamber_idle_mithril.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/block/ascension_chamber_idle_mithril.json",
+      "sha256": "4d2c2101b876d0e9363037b613ec6f5ad914f759cbbc45fe49072c9c48d1d42a"
+    },
+    {
+      "path": "assets/arcane_industry/models/block/ascension_chamber_super_brass.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/block/ascension_chamber_super_brass.json",
+      "sha256": "d81b7b319371e89a98edbe3d52f522b0baa5e5b675b50f6d42700b4941707044"
+    },
+    {
+      "path": "assets/arcane_industry/models/block/ascension_chamber_super_mithril.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/block/ascension_chamber_super_mithril.json",
+      "sha256": "a114b2afeda1d95d8b74aa64289b0b764f35fa0cf25e5b94d3dd6891da019172"
+    },
+    {
+      "path": "assets/arcane_industry/models/block/crimson_essence_block.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/block/crimson_essence_block.json",
+      "sha256": "00dc89b3095496b59101906647cf8e315c9c85509e1b554a8c82dd01818a57c1"
+    },
+    {
+      "path": "assets/arcane_industry/models/block/crimson_solution.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/block/crimson_solution.json",
+      "sha256": "25d05a6f3e9538d41ccb6315c9f03291853e1314d4844babbe11478d29112fb0"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/arcane_essence_block.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/arcane_essence_block.json",
+      "sha256": "a326b83d38609f58971ca966739a1c520db7417b2f43e6e6b8d803f90eb101b1"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/arcane_grindstone.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/arcane_grindstone.json",
+      "sha256": "2e60b8dfec47994eb99f3a9a53e1827e1cb1946b904603dd9de60feaf708b3ff"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/arcane_hatch.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/arcane_hatch.json",
+      "sha256": "c5ae7572d20c29ad9398f05b766ef6587e1781444d229ea7395d33f7cfeb470d"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/arcane_solution_bottle.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/arcane_solution_bottle.json",
+      "sha256": "536d10e5ba6de2088b298729b801a862eb91d8774e03b43eb1e6d2b6b9f104ae"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/arcane_solution_bucket.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/arcane_solution_bucket.json",
+      "sha256": "5bb7c5c8c9c0350f7c005a287ca3f9863c4ace6b2e7bd2246e71cab91ed04406"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/ascension_chamber.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/ascension_chamber.json",
+      "sha256": "b23e783d6323cd6461f92da9057c1fe14315f1d15c259a74b66913293c8bd55d"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/ascension_template.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/ascension_template.json",
+      "sha256": "4aae597e6ee856581a04948615b29bc765039c4f4311bf43e09e41c1413d325a"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/crimson_essence.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/crimson_essence.json",
+      "sha256": "f451d81d5435037855ef4c1e83d6f9b3396cff238bc9616aa59f475f2e5f3aa3"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/crimson_essence_block.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/crimson_essence_block.json",
+      "sha256": "3ff26d270a8b08655cd03ff67ceec73c7e2d5b76807e50078816352ee02c7055"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/crimson_solution_bottle.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/crimson_solution_bottle.json",
+      "sha256": "3523ebd0ab304c81c49f031f3d9a8acf53b0a5fe7323e6ce7c07e83de1b09852"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/crimson_solution_bucket.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/crimson_solution_bucket.json",
+      "sha256": "86d528dfa3aeb55a993fc2fba89dca7859ee81b35d76a15e30a70b3605fe521a"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/ember_cake.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/ember_cake.json",
+      "sha256": "23c79d8ea23cf38b694a8045085cd6f7af7263068772759b4cbe58cf0c4b00fd"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/ember_cake_base.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/ember_cake_base.json",
+      "sha256": "78dc61a9f7357a82771e370143c0cc2eb9fca7e53588d2514a2bec2f8d2f66c7"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/mana_supply_upgrade.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/mana_supply_upgrade.json",
+      "sha256": "19b6a56ac151bd049ee9a70c82033c360847b2c74f3c5364d2f9e15838f90935"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/unfinished_ascension_scroll.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/unfinished_ascension_scroll.json",
+      "sha256": "49bc9c02082e878b211218550f87169889521dd0b30ea10551921db27af49280"
+    },
+    {
+      "path": "assets/arcane_industry/models/item/uninked_scroll.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/models/item/uninked_scroll.json",
+      "sha256": "47a13dc8a75ea66159b95987c5fa13c18665a0ed43949aefbe81e44add49a97f"
+    },
+    {
+      "path": "assets/arcane_industry/particles/ascension_cleanse_blue.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/particles/ascension_cleanse_blue.json",
+      "sha256": "647d81cdf257e93d2734bb82b2f526daa0967218b606fdeae9ffc891c5abbcd5"
+    },
+    {
+      "path": "assets/arcane_industry/particles/ascension_cleanse_gold.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/particles/ascension_cleanse_gold.json",
+      "sha256": "47e5074e1d3358bc5fa03084fcf17d1c18f8777b21c16071cda932cfadd579fd"
+    },
+    {
+      "path": "assets/arcane_industry/runtime/chamber_effect_design.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/runtime/chamber_effect_design.json",
+      "sha256": "4201dd3e0cae8c93297fc63d3116dca7df1cda5ce2c03085bf6625e9e80fe7ff"
+    },
+    {
+      "path": "assets/arcane_industry/runtime/texture_transforms.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/runtime/texture_transforms.json",
+      "sha256": "c242ea73e5e6bafd4693590feb1fc101eb22cd07279d2ae54cfff2367061defe"
+    },
+    {
+      "path": "assets/arcane_industry/sounds.json",
+      "sourcePath": "src/main/resources/assets/arcane_industry/sounds.json",
+      "sha256": "35b49938094d43f39a4c361ea067c4d0d02b96854292065eb2d9248a30b535a3"
+    },
+    {
+      "path": "assets/arcane_industry/textures/block/casing.png",
+      "sourcePath": "src/main/resources/assets/arcane_industry/textures/block/casing.png",
+      "sha256": "30145b11f53b3357cae6d0846228e2aa7914f17c293000aa6a1952ab2a8a9965"
+    },
+    {
+      "path": "assets/arcane_industry/textures/block/core_active.png",
+      "sourcePath": "src/main/resources/assets/arcane_industry/textures/block/core_active.png",
+      "sha256": "de8957eefe1a2e1fcd0e4a87361fdab65a6c5c871dc8120f59f0952d142253a5"
+    },
+    {
+      "path": "assets/arcane_industry/textures/block/core_idle.png",
+      "sourcePath": "src/main/resources/assets/arcane_industry/textures/block/core_idle.png",
+      "sha256": "a89a4aaa9ab5c3511b7aa2daca75e3e11e8bb7b71757ea72bbe221ea859caf24"
+    },
+    {
+      "path": "assets/arcane_industry/textures/block/core_super.png",
+      "sourcePath": "src/main/resources/assets/arcane_industry/textures/block/core_super.png",
+      "sha256": "fa67688fd221d8b11ce395f355a39db167a7bc70e4f739aa12f61504cca05f6c"
+    },
+    {
+      "path": "assets/arcane_industry/textures/entity/chamber/arcane_runes_active.png",
+      "sourcePath": "src/main/resources/assets/arcane_industry/textures/entity/chamber/arcane_runes_active.png",
+      "sha256": "7cdc765438f06fe6461c04d54f5e82c05dc0143e3f6ac1b277a2f482a4fc6b76"
+    },
+    {
+      "path": "assets/arcane_industry/textures/entity/chamber/arcane_runes_active_s.png",
+      "sourcePath": "src/main/resources/assets/arcane_industry/textures/entity/chamber/arcane_runes_active_s.png",
+      "sha256": "f214c8cd6593643447f51802e05e62d78daf4a42bbb3b0253af789604c72b9ac"
+    },
+    {
+      "path": "assets/arcane_industry/textures/entity/chamber/arcane_runes_super.png",
+      "sourcePath": "src/main/resources/assets/arcane_industry/textures/entity/chamber/arcane_runes_super.png",
+      "sha256": "7e594ac2205c01f72cca1ef98e8ddaacebf999e5e3de2779f6bea9aff788c972"
+    },
+    {
+      "path": "assets/arcane_industry/textures/entity/chamber/arcane_runes_super_s.png",
+      "sourcePath": "src/main/resources/assets/arcane_industry/textures/entity/chamber/arcane_runes_super_s.png",
+      "sha256": "186829f5e1eb46ba8931f94a45f145c0fb0ae0bdcae5e003e49d665a565c1505"
+    },
+    {
+      "path": "LICENSE.md",
+      "sourcePath": "LICENSE.md",
+      "sha256": "dd785676beaa9075474838d0cdfc89ef537e7bca5e4e31ea5ceed02f47fade1f"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sourcePath": "THIRD_PARTY_NOTICES.md",
+      "sha256": "510d68733894fdda4d44049cb6aed32a404b0c5a75568ad4976bfe7fb14acfa9"
+    }
+  ]
+}

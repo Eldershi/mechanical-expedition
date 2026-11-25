@@ -1,0 +1,17 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "arcane_industry:block/arcane_grindstone",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "arcane_industry:block/arcane_grindstone"
+    },
+    "axis=z": {
+      "model": "arcane_industry:block/arcane_grindstone",
+      "x": 90,
+      "y": 180
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "create_enchantment_industry:block/experience_hatch",
+  "textures": {
+    "base": "arcane_industry:block/arcane_hatch",
+    "open": "arcane_industry:block/arcane_hatch_open",
+    "particle": "create:block/item_drain_side"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,waterlogged=false": {
+      "model": "arcane_industry:block/arcane_hatch"
+    },
+    "facing=north,waterlogged=true": {
+      "model": "arcane_industry:block/arcane_hatch"
+    },
+    "facing=east,waterlogged=false": {
+      "model": "arcane_industry:block/arcane_hatch",
+      "y": 90
+    },
+    "facing=east,waterlogged=true": {
+      "model": "arcane_industry:block/arcane_hatch",
+      "y": 90
+    },
+    "facing=south,waterlogged=false": {
+      "model": "arcane_industry:block/arcane_hatch",
+      "y": 180
+    },
+    "facing=south,waterlogged=true": {
+      "model": "arcane_industry:block/arcane_hatch",
+      "y": 180
+    },
+    "facing=west,waterlogged=false": {
+      "model": "arcane_industry:block/arcane_hatch",
+      "y": 270
+    },
+    "facing=west,waterlogged=true": {
+      "model": "arcane_industry:block/arcane_hatch",
+      "y": 270
+    }
+  }
+}

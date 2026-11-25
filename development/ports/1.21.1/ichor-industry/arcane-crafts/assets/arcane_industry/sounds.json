@@ -1,0 +1,8 @@
+{
+  "book_open": {"sounds": [{"name": "irons_spellbooks:equip_spell_book_2"}]},
+  "book_close": {"sounds": [{"name": "minecraft:item/book/close_put1"}]},
+  "select": {"sounds": [{"name": "minecraft:note/hat"}]},
+  "material": {"sounds": [{"name": "minecraft:entity/itemframe/add_item2"}]},
+  "work": {"sounds": [{"name": "irons_spellbooks:magic_spell_reverse_3"}]},
+  "success": {"sounds": [{"name": "minecraft:block/enchantment_table/enchant3"}]}
+}

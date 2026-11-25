@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/experience_block",
+  "textures": {
+    "all": "arcane_industry:block/arcane_essence_block",
+    "particle": "arcane_industry:block/arcane_essence_block"
+  }
+}

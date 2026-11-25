@@ -1,0 +1,41 @@
+{
+  "parent": "minecraft:block/block",
+  "loader": "forge:obj",
+  "flip_v": true,
+  "model": "arcane_industry:models/block/ascension_chamber/selected_item.obj",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "m_0": "arcane_industry:entity/chamber/chamber_cage",
+    "m_1": "arcane_industry:entity/chamber/chamber_base_top",
+    "m_2": "arcane_industry:entity/chamber/arcane_blaze_active",
+    "m_3": "arcane_industry:entity/chamber/arcane_brows_active",
+    "m_4": "arcane_industry:entity/chamber/chamber_rods_active",
+    "m_5": "arcane_industry:entity/chamber/chamber_base_wrap"
+  },
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        225,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    }
+  }
+}

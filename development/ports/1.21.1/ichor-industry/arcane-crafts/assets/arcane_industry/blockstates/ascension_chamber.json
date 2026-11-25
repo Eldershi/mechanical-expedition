@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "skin=copper,state=0": {
+      "model": "arcane_industry:block/ascension_chamber_idle"
+    },
+    "skin=copper,state=1": {
+      "model": "arcane_industry:block/ascension_chamber_active"
+    },
+    "skin=copper,state=2": {
+      "model": "arcane_industry:block/ascension_chamber_super"
+    },
+    "skin=brass,state=0": {
+      "model": "arcane_industry:block/ascension_chamber_idle_brass"
+    },
+    "skin=brass,state=1": {
+      "model": "arcane_industry:block/ascension_chamber_active_brass"
+    },
+    "skin=brass,state=2": {
+      "model": "arcane_industry:block/ascension_chamber_super_brass"
+    },
+    "skin=mithril,state=0": {
+      "model": "arcane_industry:block/ascension_chamber_idle_mithril"
+    },
+    "skin=mithril,state=1": {
+      "model": "arcane_industry:block/ascension_chamber_active_mithril"
+    },
+    "skin=mithril,state=2": {
+      "model": "arcane_industry:block/ascension_chamber_super_mithril"
+    }
+  }
+}

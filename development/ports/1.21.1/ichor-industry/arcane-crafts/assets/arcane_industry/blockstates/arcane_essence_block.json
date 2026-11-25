@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "arcane_industry:block/arcane_essence_block"
+    }
+  }
+}
