@@ -5626,6 +5626,13 @@
         "sha512": "9b6512d5984b72543c4c5ea8f7ce484dff6656b0ecab132c9edcee8050a0b85f77979c1f78f9ff7c38470071fb4eb650331db44f16852a4626704b05cd48e7ae"
       },
       {
+        "filename": "expedition-village-tree-lookup-neoforge-1.0.0.jar",
+        "bytes": 3924,
+        "sha1": "76eb73affbaeb90369b1dde64a74302d3acb69e8",
+        "sha256": "e7163c5073caf9a4480ecc784996860fe5aba7df3a9f0afdd09c3b9acb074b18",
+        "sha512": "9201af26edf339699d78b8c8fcf496c3aa43ae87d766fd7ac348ac47ea40e4d5dcf96bafc7bb90e70f427629e26afdcce3bb2b59ebc395e530be32e3eebcd38a"
+      },
+      {
         "filename": "ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
         "bytes": 174668,
         "sha1": "9f62af344988a6e2d855b113e61cf0e1611c7e0f",
@@ -12253,6 +12260,13 @@
         "sha1": "f24984ffe8f14d280efae8e3e29c328878606d5f",
         "sha256": "497079a1b8ae1b997c9fdae701d14b949db64928db05a9c9741be30b87723dd2",
         "sha512": "9b6512d5984b72543c4c5ea8f7ce484dff6656b0ecab132c9edcee8050a0b85f77979c1f78f9ff7c38470071fb4eb650331db44f16852a4626704b05cd48e7ae"
+      },
+      {
+        "filename": "expedition-village-tree-lookup-neoforge-1.0.0.jar",
+        "bytes": 3924,
+        "sha1": "76eb73affbaeb90369b1dde64a74302d3acb69e8",
+        "sha256": "e7163c5073caf9a4480ecc784996860fe5aba7df3a9f0afdd09c3b9acb074b18",
+        "sha512": "9201af26edf339699d78b8c8fcf496c3aa43ae87d766fd7ac348ac47ea40e4d5dcf96bafc7bb90e70f427629e26afdcce3bb2b59ebc395e530be32e3eebcd38a"
       },
       {
         "filename": "ExplorersCompass-1.21.1-3.4.0-neoforge.jar",

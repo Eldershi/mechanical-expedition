@@ -48,6 +48,8 @@ MODULES = {
                                                                "WorldGenRegionAccess", "InStructurePredicateMixin"]),
     "twilight": ("expedition_worldgen_compat", "1.1.1", "Expedition Twilight Landmarks",
                  "expedition.twilight.mixin", ["MagicMapMixin", "LocateMixin"]),
+    "village-tree-lookup": ("expedition_village_tree_lookup", "1.0.0", "Expedition Village Tree Lookup",
+                            "expedition.villagetreelookup.mixin", ["TreeFeatureMixin", "StructureManagerMixin"]),
     "world-rules": ("expedition_world_rules", "1.0.0", "Expedition World Rules", "", []),
 }
 COMMON_DIAGNOSTICS = ("BoundedRing", "DiagnosticsConfig", "DurableJsonLog", "JfrRecorder", "PlayerSnapshot")
@@ -69,6 +71,7 @@ DEPENDENCIES = {
     "railway": ("tongdarailway", "[1.1.6+mc21.1]", "tongdarailway-1.1.6-mc21.1.jar"),
     "structure-lookup": ("lithostitched", "[1.8.1]", "lithostitched-1.8.1-neoforge-21.1.jar"),
     "twilight": ("twilightforest", "[4.8.3345]", "twilightforest-1.21.1-4.8.3345-universal.jar"),
+    "village-tree-lookup": ("villagesandpillages", "[2.0.0]", "villagesandpillages-neoforge-2.0.0+mc1.21.1.jar"),
 }
 CREATE_LOGISTICS_DEPENDENCIES = (
     ("create", "[6.0.10]", "create-1.21.1-6.0.10.jar"),
@@ -128,6 +131,8 @@ def build(module, java, cp, output, mods, space_proof=False):
         cp += os.pathsep + str(mods / dependency_jar)
     if module == "island-rail":
         cp += os.pathsep + str(mods / DEPENDENCIES["railway"][2])
+    if module == "village-tree-lookup":
+        cp += os.pathsep + str(mods / "expedition-structure-lookup-neoforge-1.0.0.jar")
     if module == "space":
         cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in SPACE_DEPENDENCIES)
         if space_proof:
@@ -144,6 +149,15 @@ def build(module, java, cp, output, mods, space_proof=False):
         cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in GUIDE_DEPENDENCIES)
     with tempfile.TemporaryDirectory() as temp:
         classes = Path(temp)
+        if module == "village-tree-lookup":
+            neo_api, = (Path(path) for path in cp.split(os.pathsep)
+                        if Path(path).name.startswith("neoforge-") and path.endswith("-universal.jar"))
+            with ZipFile(neo_api) as neo:
+                entry, = (name for name in neo.namelist() if name.startswith("META-INF/jarjar/mixinextras-neoforge-")
+                          and name.endswith(".jar"))
+                embedded = classes / Path(entry).name
+                embedded.write_bytes(neo.read(entry))
+                cp += os.pathsep + str(embedded)
         if module in {"island-rail", "space", "create-logistics"}:
             with ZipFile(mods / "create-1.21.1-6.0.10.jar") as create:
                 for entry in create.namelist():
@@ -200,6 +214,8 @@ side="{side}"
             module_dependencies = CURSE_DEPENDENCIES
         if module == "guide-tome":
             module_dependencies = GUIDE_DEPENDENCIES
+        if module == "village-tree-lookup":
+            module_dependencies.append(("expedition_structure_lookup", "[1.0.0,2)", ""))
         for dependency_id, dependency_version, _ in module_dependencies:
             metadata += f'''[[dependencies.{modid}]]
 modId="{dependency_id}"
