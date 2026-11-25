@@ -78,6 +78,9 @@ CLIENT = {
     )
 }
 
+SERVERCORE_CONFIG = Path("config/servercore/config.yml")
+SERVER = {SERVERCORE_CONFIG: ROOT / "current/server" / SERVERCORE_CONFIG}
+
 INDUSTRIAL_VISUALS = {
     relative: source
     for folder in ("assets", "client_scripts")
@@ -135,7 +138,7 @@ def disable_scaffolding_replacement(payload):
 
 
 def files(client):
-    return SHARED | CLIENT if client else SHARED
+    return SHARED | (CLIENT if client else SERVER)
 
 
 def install_files(instance, client=False):

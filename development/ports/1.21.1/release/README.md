@@ -22,3 +22,5 @@ python3 development/ports/1.21.1/release/update_local_client.py --profile "<实�
 客户端和专用服共用[生产覆盖层](production_overlay.py)中的工业配方、矿床、机器配方界面和同名物品兼容规则。部署专用服时使用与客户端一致的构建。锁中退役的旧模组由本地客户端更新工具移除，服务端覆盖层部署时也要清除对应旧版本。
 
 客户端和专用服均关闭 Quark 的「替换脚手架」功能，脚手架沿用普通方块放置规则。
+
+专用服通过 ServerCore 的 `dynamic.default-values.VIEW_DISTANCE` 使用 12 区块视距。客户端的渲染距离可在视频设置中调整。
