@@ -828,7 +828,6 @@ faea9010cf433aa52399a8bffc062a1b240955c2cd8ed33228e68a86767a7da6  current/client
 e284a225ad56e9b55756d0c00490febd0389948325efffae9ee225546270b77b  current/client/config/paxi/resourcepacks/CreateSophBackpacks.zip
 40a765db8acdf61359f04317e7aede2c6a6cb8c6178ce6dd72aef84204794d66  current/client/config/paxi/resourcepacks/Create_Applied_Energistics_2-CMI-1.20.1.zip
 ec33aaed94954658d457f7f89cdb3b12b5f06f594595f57e1ff9f1a3e06dac54  current/client/config/paxi/resourcepacks/Ender IO - Into the Void.zip
-bc2232ee0eac7205da0ad529dbd6cb1faf42362333dbd259e6a16858f2ff2476  current/client/config/paxi/resourcepacks/Eternal-Snowstorm-s-MC-i18n-Chinese-pack 2.zip
 bc2232ee0eac7205da0ad529dbd6cb1faf42362333dbd259e6a16858f2ff2476  current/client/config/paxi/resourcepacks/Eternal-Snowstorm-s-MC-i18n-Chinese-pack.zip
 c170008517cf317c2264ac0b25109c67b8d31b590c166c09d64b62666829e48e  current/client/config/paxi/resourcepacks/Expedition-Chinese-Supplement.zip
 9131503db71797a516fe32bbf0af1edc57446ebe772a829fc2379b24250004c8  current/client/config/paxi/resourcepacks/Expedition-Filter-Eden-Ring-1.21.1.zip
@@ -5437,7 +5436,7 @@ e49fbdf06b9ac88f8c85391634ece603d0b5501b12e812e651c2319d6cc7bce7  current/client
 f2ced7adfa7c11bf9acb0de77a3c3b2a9f8241d764b64cbed381c8f517776208  current/client/mods/ars_controle-1.20.1-1.1.1.jar
 42f8dcb05d71ad714c1b9ac84186e33037ae3bb4a2893787843331575830590d  current/client/mods/auratip-forge-1.20.1-1.1.1-beta.jar
 2a13adb44dac13e7b80ea807da215c720a10ce498d535e337c6c1d5358c13f2b  current/client/mods/expedition-accessory-entry-neoforge-1.0.0.jar
-7048f53ba6f6d2df6d994bcc7a8ac72813a234bbfde83be630b3ccce8f6150db  current/client/mods/expedition-alloy-furnace-neoforge-1.0.0.jar
+ed83f72f7d2e3933a1c0e4bb68b70c9197aa504f6da069c42263904a09393cf1  current/client/mods/expedition-alloy-furnace-neoforge-1.0.0.jar
 44b01c12f6b4be699b48c4d91f5f79227bdb4fb28cf698243a16d3eb4000b676  current/client/mods/expedition-alpine-climate-1.0.0.jar
 fefb8ce39e793a3ebbfcaeac0a298d1669c671a3c7e3713c1a9695b9878d230c  current/client/mods/expedition-armor-display-neoforge-1.0.0.jar
 0040cfea68a20683d1e7f443e68b708cd8e65a4c812be602f6daf3a704808970  current/client/mods/expedition-chunky-startup-guard-neoforge-1.0.0.jar
@@ -6742,7 +6741,7 @@ abcc97a3a3bb08ec4c30523af871d4d1168259f91cf54ffb6e5ab9c47b4648dd  current/client
 7574819734336c027128905fd6df69be9585543ce75cb022eb4b9c82e32527a1  current/client/tlm_custom_pack/touhou_little_maid-1.0.0/assets/touhou_little_maid_seihou/textures/maid_icon.png
 595f13f09777d8ecd28aacfa8f82bb8d14d656b290f50fc0aad02489e75944e1  current/client/tlm_custom_pack/touhou_little_maid-1.0.0/pack.mcmeta
 af1714bb66a877021ede496e61f35d2358fb69b8878eda7b553f07fb4588075f  current/client/tlm_custom_pack/touhou_little_maid-1.0.0/pack.png
-399eb9350d55c49443c2a4bf73b82ba6cea160729144edb87c4b07a061485b90  current/mods.lock.json
+d1a5fb53d084b87082ca4f71f00c84022199a9b12684d2be0f7d2cb159760641  current/mods.lock.json
 4cbac47aa8a24b14356722f4dad59af884455e9e27a57cc32ea3d7a1b4218eae  current/server/config/DistantHorizons.toml
 a38b42762eb20a0681b34eafb7c357ddb678ea6420ce52e606d9b8ab0113abec  current/server/config/almostunified/unify.json
 7009d63a9b26373e559ffb0c414f5e7a32c5ad49569fbf970f8e9f3b122aee0c  current/server/config/carryon-common.toml
@@ -6857,7 +6856,7 @@ ee33ca1bd6b8a36df7c146e6d748469154703221c981210d4352a535fbed9f57  current/server
 2ca7d43485c2c9f97fed9ffcfd9c581ba774a732b8473b5868170b5b303360c8  current/server/mods/Create-Steam-Ages-1.0-expedition-steamletters-compat.jar
 91709031d559037fe66798202c1a2b05259ea28d5b639b8dcd734846616a5f66  current/server/mods/Oh-The-Trees-Youll-Grow-forge-1.20.1-1.7.3.jar
 a15224165ae9aa92071a09033601305bbc9f4b12851ad02e580a883f3df49626  current/server/mods/createfactorycontroller-1.2.1-forge-1.20.1.jar
-7048f53ba6f6d2df6d994bcc7a8ac72813a234bbfde83be630b3ccce8f6150db  current/server/mods/expedition-alloy-furnace-neoforge-1.0.0.jar
+ed83f72f7d2e3933a1c0e4bb68b70c9197aa504f6da069c42263904a09393cf1  current/server/mods/expedition-alloy-furnace-neoforge-1.0.0.jar
 47eabae55d38ee2753bd3683d2b3ff148c00d615195250e451f5f7f111224a2f  current/server/mods/expedition-backup-retention-neoforge-1.0.0.jar
 0040cfea68a20683d1e7f443e68b708cd8e65a4c812be602f6daf3a704808970  current/server/mods/expedition-chunky-startup-guard-neoforge-1.0.0.jar
 0ba17242d2382cfbf0f5dc8325794870250cfd76801b17a5f28a6b29036aa9ff  current/server/mods/expedition-create-logistics-neoforge-1.0.0.jar

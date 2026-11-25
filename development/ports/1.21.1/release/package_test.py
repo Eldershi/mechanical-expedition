@@ -291,6 +291,11 @@ def main():
             for path, source in production_overlay.files(side == "client").items():
                 if files.get(path.as_posix()) != hashlib.sha256(source.read_bytes()).hexdigest():
                     raise ValueError(f"The {side} lock must match the production overlay: {path}")
+            for row in lock[side]["mods"]:
+                snapshot = ROOT / "current" / side / "mods" / row["filename"]
+                if snapshot.is_file() and (snapshot.stat().st_size != row["bytes"] or
+                                           fingerprints(snapshot)["sha256"] != row["sha256"]):
+                    raise ValueError(f"The {side} lock must match the checked-in mod: {row['filename']}")
             missing = {*production_overlay.REQUIRED_MODS, production_overlay.CREATE_NUCLEAR_MOD} - {row["filename"] for row in lock[side]["mods"]}
             if missing:
                 raise ValueError(f"The {side} lock is missing {', '.join(sorted(missing))}")
