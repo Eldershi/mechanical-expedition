@@ -1,6 +1,8 @@
-# 远征 1.21.1-test.4
+# 远征 1.21.1-test.5
 
 适用于 Minecraft 1.21.1、NeoForge 21.1.267 和 Java 21。
+
+- 客户端包含 Mielon’s The Sift 2.0.6、远征 Sift 兼容模组和 Lightman’s Currency 2.3.0.6。多人游戏请在启动器中导入本版 MRPACK。
 
 - 客户端切换到 Sodium 的 12 区块近景，加入 Gnetum 和叶片剔除，使用快速树叶和天气渲染。默认关闭光影、云和实体阴影。
 - 盔甲展示在附近没有展示架时跳过逐帧扫描。Xaero 世界地图默认在后台持续更新。
