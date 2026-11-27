@@ -1,11 +1,14 @@
 package expedition.accessoryentry;
 
+import com.aetherteam.aether.client.AetherKeys;
 import com.aetherteam.aether.client.gui.component.inventory.AccessoryButton;
 import io.wispforest.accessories.client.AccessoriesClient;
-import java.util.ArrayList;
 import java.util.List;
+import net.blay09.mods.trashslot.client.LayoutManager;
+import net.blay09.mods.trashslot.client.gui.layout.SimpleGuiContainerLayout;
+import net.minecraft.client.KeyMapping;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.components.Tooltip;
 import net.minecraft.client.gui.components.events.GuiEventListener;
@@ -15,164 +18,126 @@ import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.network.chat.Component;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.EventPriority;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModList;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.client.event.ClientTickEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.client.event.ScreenEvent;
-import net.neoforged.neoforge.common.NeoForge;
 import org.lwjgl.glfw.GLFW;
+import top.theillusivec4.curios.client.KeyRegistry;
 import top.theillusivec4.curios.client.gui.CuriosButton;
 
-@Mod(value = "expedition_accessory_entry", dist = Dist.CLIENT)
+@EventBusSubscriber(modid = AccessoryMenuMod.ID, value = Dist.CLIENT)
 public final class AccessoryEntry {
-    private static final String TITLE = "expedition.accessory_entry.title";
+    static final String TITLE = "expedition.accessory_entry.title";
 
-    public AccessoryEntry() {
-        NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, AccessoryEntry::install);
-        NeoForge.EVENT_BUS.addListener(EventPriority.HIGHEST, AccessoryEntry::onMousePressed);
-        NeoForge.EVENT_BUS.addListener(AccessoryEntry::closeOnEscape);
+    @SubscribeEvent
+    static void registerScreen(RegisterMenuScreensEvent event) {
+        event.register(AccessoryMenuMod.MENU.get(), AccessoryScreen::new);
+        if (ModList.get().isLoaded("trashslot")) {
+            LayoutManager.registerLayout(AccessoryScreen.class, SimpleGuiContainerLayout.DEFAULT_ENABLED);
+        }
     }
 
-    private static void install(ScreenEvent.Init.Post event) {
+    @SubscribeEvent(priority = EventPriority.HIGHEST)
+    static void routeKeyBindings(ClientTickEvent.Pre event) {
+        var client = Minecraft.getInstance();
+        if (client.player == null || !client.isWindowActive()) {
+            return;
+        }
+        boolean opened = consume(KeyRegistry.openCurios) | consume(AetherKeys.OPEN_ACCESSORY_INVENTORY);
+        if (!net.minecraft.client.gui.screens.Screen.hasShiftDown()) {
+            opened |= consume(AccessoriesClient.OPEN_SCREEN);
+        }
+        if (opened) {
+            requestOpen();
+        }
+    }
+
+    private static boolean consume(KeyMapping key) {
+        if (key == null || !key.consumeClick()) {
+            return false;
+        }
+        while (key.consumeClick()) {
+            // Ignore repeated presses already queued for this tick.
+        }
+        return true;
+    }
+
+    private static void requestOpen() {
+        var player = Minecraft.getInstance().player;
+        if (player != null && player.inventoryMenu.getCarried().isEmpty()) {
+            PacketDistributor.sendToServer(AccessoryMenuMod.OpenMenu.INSTANCE);
+        }
+    }
+
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    static void install(ScreenEvent.Init.Post event) {
         if (!(event.getScreen() instanceof InventoryScreen)
                 && !(event.getScreen() instanceof CreativeModeInventoryScreen)) {
             return;
         }
-
-        List<Destination> destinations = new ArrayList<>();
         for (GuiEventListener widget : List.copyOf(event.getListenersList())) {
-            if (widget instanceof CuriosButton curios) {
-                destinations.addFirst(new Destination("curios", curios::onPress));
-                event.removeListener(curios);
-            } else if (widget instanceof AccessoryButton aether) {
-                destinations.add(new Destination("aether", aether::onPress));
-                event.removeListener(aether);
+            if (widget instanceof CuriosButton || widget instanceof AccessoryButton) {
+                event.removeListener(widget);
             }
         }
-        destinations.add(new Destination("accessories", AccessoriesClient::attemptToOpenScreen));
-
-        EntryButton entry = new EntryButton((AbstractContainerScreen<?>) event.getScreen());
-        event.addListener(entry);
-        for (Destination destination : destinations) {
-            var row = new DestinationButton(entry, destination, entry.rows.size());
-            entry.rows.add(row);
-            event.addListener(row);
-        }
+        event.addListener(new EntryButton((AbstractContainerScreen<?>) event.getScreen()));
     }
 
-    private static void onMousePressed(ScreenEvent.MouseButtonPressed.Pre event) {
+    @SubscribeEvent(priority = EventPriority.HIGHEST)
+    static void onMousePressed(ScreenEvent.MouseButtonPressed.Pre event) {
         if (event.getButton() != GLFW.GLFW_MOUSE_BUTTON_LEFT) {
             return;
         }
         for (GuiEventListener widget : event.getScreen().children()) {
-            if (widget instanceof EntryButton entry && entry.clickMenu(event.getMouseX(), event.getMouseY())) {
+            if (widget instanceof EntryButton entry && entry.clickInventory(event.getMouseX(), event.getMouseY())) {
                 event.setCanceled(true);
                 return;
             }
         }
     }
-
-    private static void closeOnEscape(ScreenEvent.KeyPressed.Pre event) {
-        if (event.getKeyCode() != GLFW.GLFW_KEY_ESCAPE) {
-            return;
-        }
-        for (GuiEventListener widget : event.getScreen().children()) {
-            if (widget instanceof EntryButton entry && entry.expanded) {
-                entry.setExpanded(false);
-                event.getScreen().setFocused(entry);
-                event.setCanceled(true);
-                return;
-            }
-        }
-    }
-
-    private record Destination(String key, Runnable open) {}
 
     private static final class EntryButton extends ImageButton {
         private final AbstractContainerScreen<?> inventory;
-        private final List<DestinationButton> rows = new ArrayList<>();
-        private boolean expanded;
 
         EntryButton(AbstractContainerScreen<?> inventory) {
-            super(0, 0, 10, 10, CuriosButton.BIG, button -> {}, Component.translatable(TITLE));
+            super(0, 0, 10, 10, CuriosButton.BIG,
+                button -> requestOpen(),
+                Component.translatable(TITLE));
             this.inventory = inventory;
             setTooltip(Tooltip.create(Component.translatable(TITLE)));
             updatePosition();
         }
 
-        @Override
-        public void onPress() {
-            setExpanded(!expanded);
-        }
-
-        void setExpanded(boolean expanded) {
-            this.expanded = expanded;
-            for (DestinationButton row : rows) {
-                row.visible = expanded;
-                row.active = expanded;
-            }
-        }
-
         private void updatePosition() {
             boolean creative = inventory instanceof CreativeModeInventoryScreen;
+            active = !(inventory instanceof CreativeModeInventoryScreen screen) || screen.isInventoryOpen();
             setX(inventory.getGuiLeft() + (creative ? 96 : 27));
             setY(inventory.getGuiTop() + (creative ? 6 : 68));
-            for (DestinationButton row : rows) {
-                row.setX(inventory.getGuiLeft() + (creative ? 73 : 27));
-                row.setY(inventory.getGuiTop() + (creative ? 20 : 10) + row.index * 19);
-            }
         }
 
-        boolean clickMenu(double x, double y) {
+        boolean clickInventory(double x, double y) {
             if (inventory instanceof InventoryScreen survival && survival.width < 379
                     && survival.getRecipeBookComponent().isVisible()) {
                 return false;
             }
             updatePosition();
-            if (mouseClicked(x, y, GLFW.GLFW_MOUSE_BUTTON_LEFT)) {
-                inventory.setFocused(this);
-                return true;
+            if (!mouseClicked(x, y, GLFW.GLFW_MOUSE_BUTTON_LEFT)) {
+                return false;
             }
-            for (DestinationButton row : rows) {
-                if (row.mouseClicked(x, y, GLFW.GLFW_MOUSE_BUTTON_LEFT)) {
-                    inventory.setFocused(this);
-                    return true;
-                }
-            }
-            return false;
+            inventory.setFocused(this);
+            return true;
         }
 
         @Override
         public void renderWidget(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
             updatePosition();
-            active = !(inventory instanceof CreativeModeInventoryScreen creative) || creative.isInventoryOpen();
-            if (!active) {
-                setExpanded(false);
-                return;
+            if (active) {
+                super.renderWidget(graphics, mouseX, mouseY, delta);
             }
-            super.renderWidget(graphics, mouseX, mouseY, delta);
-        }
-    }
-
-    private static final class DestinationButton extends Button {
-        private final int index;
-
-        DestinationButton(EntryButton entry, Destination destination, int row) {
-            super(entry.getX(), entry.getY(), 98, 18,
-                Component.translatable("expedition.accessory_entry." + destination.key()),
-                button -> {
-                    entry.setExpanded(false);
-                    destination.open().run();
-                }, DEFAULT_NARRATION);
-            this.index = row;
-            visible = false;
-            active = false;
-        }
-
-        @Override
-        public void renderWidget(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
-            graphics.pose().pushPose();
-            graphics.pose().translate(0, 0, 450);
-            super.renderWidget(graphics, mouseX, mouseY, delta);
-            graphics.pose().popPose();
         }
     }
 }

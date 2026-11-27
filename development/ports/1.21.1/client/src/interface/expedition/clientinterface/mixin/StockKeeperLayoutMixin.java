@@ -1,13 +1,10 @@
 package expedition.clientinterface.mixin;
 
 import expedition.clientinterface.StockKeeperBounds;
-
-
 import com.simibubi.create.content.logistics.stockTicker.StockKeeperRequestMenu;
 import com.simibubi.create.content.logistics.stockTicker.StockKeeperRequestScreen;
 import com.simibubi.create.foundation.gui.menu.AbstractSimiContainerScreen;
 import com.simibubi.create.foundation.gui.widget.IconButton;
-import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.client.renderer.Rect2i;
 import net.minecraft.network.chat.Component;
@@ -17,7 +14,6 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(value = StockKeeperRequestScreen.class, priority = 900, remap = false)
 abstract class StockKeeperLayoutMixin extends AbstractSimiContainerScreen<StockKeeperRequestMenu>
@@ -25,6 +21,7 @@ abstract class StockKeeperLayoutMixin extends AbstractSimiContainerScreen<StockK
     @Shadow int windowWidth;
     @Shadow int windowHeight;
     @Shadow boolean encodeRequester;
+    @Shadow private List<Rect2i> extraAreas;
 
     protected StockKeeperLayoutMixin(StockKeeperRequestMenu menu, Inventory inventory, Component title) {
         super(menu, inventory, title);
@@ -32,6 +29,10 @@ abstract class StockKeeperLayoutMixin extends AbstractSimiContainerScreen<StockK
 
     @Inject(method = "init", at = @At("TAIL"), order = 1100)
     private void expedition$alignRequestControls(CallbackInfo callback) {
+        int ordersX = expedition$ordersButtonX();
+        if (!encodeRequester && ordersX >= leftPos + windowWidth) {
+            extraAreas.add(new Rect2i(ordersX, expedition$ordersButtonY(), 18, 18));
+        }
         int bottom = topPos + windowHeight;
         for (var child : children()) {
             if (!(child instanceof IconButton button)) {
@@ -57,15 +58,5 @@ abstract class StockKeeperLayoutMixin extends AbstractSimiContainerScreen<StockK
     @Override
     public int expedition$ordersButtonY() {
         return leftPos + windowWidth + 22 <= width ? topPos + 24 : topPos + 2;
-    }
-
-    @Inject(method = "getExtraAreas", at = @At("RETURN"), cancellable = true, order = 1100)
-    private void expedition$reserveProductionButton(CallbackInfoReturnable<List<Rect2i>> callback) {
-        int x = expedition$ordersButtonX();
-        if (!encodeRequester && x >= leftPos + windowWidth) {
-            var extraAreas = new ArrayList<>(callback.getReturnValue());
-            extraAreas.add(new Rect2i(x, expedition$ordersButtonY(), 18, 18));
-            callback.setReturnValue(extraAreas);
-        }
     }
 }

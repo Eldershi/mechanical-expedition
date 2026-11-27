@@ -1,6 +1,9 @@
 {
   "expedition.accessory_entry.title": "饰品",
-  "expedition.accessory_entry.curios": "通用饰品（Curios）",
-  "expedition.accessory_entry.aether": "天境饰品",
-  "expedition.accessory_entry.accessories": "Accessories 槽位"
+  "expedition.accessory_entry.curios": "通用饰品",
+  "expedition.accessory_entry.accessories": "天境及其他饰品",
+  "expedition.accessory_entry.equipped": "装备",
+  "expedition.accessory_entry.cosmetic": "外观",
+  "expedition.accessory_entry.switch_view": "切换装备和外观槽位。按住 Shift 并右键装备槽可切换显示。",
+  "expedition.accessory_entry.syncing": "饰品槽位正在同步，请重新打开。"
 }

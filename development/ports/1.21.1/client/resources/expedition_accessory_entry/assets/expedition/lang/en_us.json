@@ -1,6 +1,9 @@
 {
   "expedition.accessory_entry.title": "Accessories",
   "expedition.accessory_entry.curios": "Curios",
-  "expedition.accessory_entry.aether": "Aether Accessories",
-  "expedition.accessory_entry.accessories": "Accessories Slots"
+  "expedition.accessory_entry.accessories": "Aether / Accessories",
+  "expedition.accessory_entry.equipped": "Equipped",
+  "expedition.accessory_entry.cosmetic": "Cosmetics",
+  "expedition.accessory_entry.switch_view": "Switch between equipment and cosmetic slots. Shift-right-click equipment to toggle its appearance.",
+  "expedition.accessory_entry.syncing": "Accessory slots are still syncing. Open the panel again."
 }

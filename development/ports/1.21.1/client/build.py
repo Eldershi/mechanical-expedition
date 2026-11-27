@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the client-only NeoForge adapters against a Minecraft 1.21.1 instance."""
+"""Build the NeoForge adapters against a Minecraft 1.21.1 instance."""
 import argparse
 import hashlib
 import json
@@ -25,6 +25,7 @@ ADAPTERS = {
     "interface": {
         "id": "expedition_client_interface",
         "filename": "expedition-client-interface",
+        "version": "1.0.1",
         "name": "Expedition Client Interface",
         "package": "expedition.clientinterface.mixin",
         "mixins": ["SorterSettingsMixin", "StockKeeperLayoutMixin", "ProductionOrdersButtonMixin",
@@ -97,6 +98,8 @@ ADAPTERS = {
     "accessory-entry": {
         "id": "expedition_accessory_entry",
         "filename": "expedition-accessory-entry",
+        "version": "1.1.0",
+        "side": "BOTH",
         "name": "Expedition Accessory Entry",
         "loader": "javafml",
         "package": "expedition.accessoryentry.mixin",
@@ -170,7 +173,7 @@ modId = "{dependency}"
 type = "required"
 versionRange = "[{required_version}]"
 ordering = "NONE"
-side = "CLIENT"
+side = "{adapter.get("side", "CLIENT")}"
 '''
     jar = output / f'{adapter["filename"]}-neoforge-{version}.jar'
     resources = {"META-INF/neoforge.mods.toml": metadata}

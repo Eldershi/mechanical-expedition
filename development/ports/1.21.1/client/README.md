@@ -12,6 +12,6 @@ Distant Horizons 3.3.3 uses a 64-chunk LOD radius and four worker threads on the
 
 The client performance adapter uses Sodium 0.8.13's horizontal terrain radius for all elevations. Client builds exclude Better FPS Render Distance, which would apply a second distance check to terrain and entities.
 
-Build the inventory accessory entry with `build.py --adapter accessory-entry` and install the JAR on the client. The inventory button opens Curios, the Aether accessory screen, and the Accessories screen through their native menu handlers.
+Build the accessory panel with `build.py --adapter accessory-entry` and install the same JAR on the client and dedicated server. It uses native Curios and Accessories item slots, including the Aether slots registered with Accessories. The two sections, equipment visibility, cosmetics, armor and crafting share one menu.
 
 Build the quest lines adapter with `build.py --adapter quest-lines` and install the JAR on the client. It draws Quest Enhance's decorative connections after Certain Questing Additions draws the quest background. Decorative connections use the pack's dependency-line texture and muted tint with a finer stroke for dense chapters.
