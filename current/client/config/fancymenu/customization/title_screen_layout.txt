@@ -635,7 +635,7 @@ element {
 
 element {
   interactable = true
-  source = Beta v2.5.0%n%已加载{"placeholder":"totalmods"}个Mod
+  source = Minecraft 1.21.1 · NeoForge%n%已加载{"placeholder":"totalmods"}个Mod
   source_mode = direct
   shadow = true
   enable_scrolling = true
