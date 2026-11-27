@@ -26,6 +26,13 @@ ServerEvents.recipes(event => {
       Ingredient.of(['#c:ingots/vanadium', '#c:dusts/vanadium']))
     .outputItems('2x cmi:polymerization_catalytic_alloy')
 
+  event.custom({
+    type: 'createcraftedbeginning:forging_press',
+    ingredients: [{item: 'cmi:polymerization_catalytic_alloy'}],
+    gas_ingredients: [{amount: 1000, ingredient: {gas: 'createcraftedbeginning:steam'}}],
+    results: [{id: 'cmi:ethylene_polymerization_catalytic_plate', count: 2}]
+  }).id(prefix + 'airtight_forging/ethylene_polymerization_catalytic_plate')
+
   const press = (name) => add('hydropress', name, 100, 2400)
   press('brass_plate').inputItems('create:brass_block').outputItems('9x create:brass_sheet')
   press('iron_plate').inputItems('minecraft:iron_block').outputItems('9x create:iron_sheet')

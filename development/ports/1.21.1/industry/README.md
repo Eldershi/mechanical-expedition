@@ -82,7 +82,7 @@ The Alloy Furnace makes one magnetic alloy from one iron ingot, one magnetic sou
 
 The Large Electrolytic Cell separates bromine and waste brine from alkaline brine and liquid chlorine. The airtight reactor kettle combines 200 mB of bromine with two refractory powder. The Mechanical Press compacts the resulting flame retardant with an Alex's Caves polymer plate in a superheated basin, yielding two flame-retardant plastic.
 
-The Alloy Furnace accepts ingots or dusts of chromium and vanadium to make two polymerization catalytic alloy. The Hydropress uses one alloy and 1 mB of water to make two ethylene polymerization catalytic plates. An IE Refinery uses the plate as a reusable catalyst for ethene. The Mechanical Press solidifies the HDPE into pellets in a heated basin. Mekanism's native HDPE route remains available.
+The Alloy Furnace accepts ingots or dusts of chromium and vanadium to make two polymerization catalytic alloy. The Hydropress uses one alloy and 1 mB of water to make two ethylene polymerization catalytic plates. The Crafted Beginning Airtight Forging Press also makes two plates from one alloy and 1,000 units of steam, supplied through an airtight pipe. An IE Refinery uses the plate as a reusable catalyst for ethene. The Mechanical Press solidifies the HDPE into pellets in a heated basin. Mekanism's native HDPE route remains available.
 
 Blast raw vanadium into a Vintage Improvements vanadium ingot, then press it into a vanadium sheet. IE's steam cracking recipes use the same sheet as a reusable catalyst.
 
