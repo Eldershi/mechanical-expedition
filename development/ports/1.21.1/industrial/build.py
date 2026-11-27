@@ -15,7 +15,7 @@ MODULES = {
     "liquefied-gases": (),
     "storage-adjustments": ("functionalstorage-", "sophisticatedcore-", "titanium-"),
     "engineering-adjustments": ("immersiveengineering-",),
-    "refinery-steam-compat": ("immersiveengineering-", "createcraftedbeginning-"),
+    "refinery-steam-compat": ("immersiveengineering-", "createcraftedbeginning-", "jei-1.21.1-neoforge-"),
 }
 
 
@@ -42,7 +42,8 @@ def build(module, java, server, output):
                         "--release", "21", "-proc:none", "-encoding", "UTF-8",
                         "-cp", classpath, "-d", str(classes), *map(str, sources)], check=True)
         output.mkdir(parents=True, exist_ok=True)
-        target = output / f"expedition-{module}-neoforge-1.0.0.jar"
+        version = "1.1.0" if module == "refinery-steam-compat" else "1.0.0"
+        target = output / f"expedition-{module}-neoforge-{version}.jar"
         with ZipFile(target, "w", compression=ZIP_DEFLATED) as jar:
             for directory in (classes, source / "resources"):
                 for file in sorted(path for path in directory.rglob("*") if path.is_file()):

@@ -27,6 +27,12 @@ SHARED = {
         "kubejs/server_scripts/ExpeditionElectricalProgression.js",
         "kubejs/server_scripts/ExpeditionFactoryFoundations.js",
         "kubejs/server_scripts/ExpeditionIndustry.js",
+        "kubejs/server_scripts/ExpeditionGasPhases.js",
+        "kubejs/server_scripts/ExpeditionGasSampleTasks.js",
+        "kubejs/server_scripts/ExpeditionOilProgression.js",
+        "kubejs/server_scripts/ExpeditionPolymerProgression.js",
+        "kubejs/server_scripts/ExpeditionSiliconeProgression.js",
+        "kubejs/startup_scripts/ExpeditionGasMaterials.js",
         "kubejs/server_scripts/ExpeditionLunarSilicon.js",
         "kubejs/server_scripts/ExpeditionManufacturingContinuity.js",
         "kubejs/server_scripts/ExpeditionMechanismProgression.js",
@@ -75,6 +81,7 @@ CLIENT = {
     for path in (
         Path("kubejs/assets/cmi/textures/item/mechanism/complete/andesite.png"),
         Path("kubejs/assets/createnuclear/sounds.json"),
+        Path("kubejs/client_scripts/ExpeditionGasLanguage.js"),
         Path("kubejs/client_scripts/ExpeditionMineralChemistryLanguage.js"),
         Path("kubejs/client_scripts/ExpeditionRockGeneratorInfo.js"),
         Path("kubejs/client_scripts/ExpeditionSugarSyrupLanguage.js"),
@@ -120,6 +127,7 @@ SHARED.update({
 
 SPACE_MOD = "expedition-space-neoforge-1.0.1.jar"
 ITEM_COMPATIBILITY_MOD = "expedition-item-compatibility-neoforge-1.0.0.jar"
+REFINERY_GAS_MOD = "expedition-refinery-steam-compat-neoforge-1.1.0.jar"
 ROCK_GENERATOR_MOD = "expedition-rock-generator-neoforge-1.0.0.jar"
 ALLOY_FURNACE_MOD = "expedition-alloy-furnace-neoforge-1.0.0.jar"
 STRUCTURE_LOOKUP_MOD = "expedition-structure-lookup-neoforge-1.0.0.jar"

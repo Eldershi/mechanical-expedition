@@ -15,14 +15,15 @@ ServerEvents.recipes(event => {
   refine('cracked_diesel', 'vanadium', 120, { fluid: 'createdieselgenerators:diesel', amount: 100 }, 200,
     { tag: 'c:steam', amount: 100 })
   event.custom({
-    type: 'createdieselgenerators:distillation',
-    ingredients: [{ type: 'fluid_tag', fluid_tag: 'cmi:cracked_diesel', amount: 1000 }],
-    heat_requirement: 'heated',
+    type: 'createcraftedbeginning:fractionation_tower',
+    ingredients: [{type: 'neoforge:single', fluid: 'cmi:cracked_diesel', amount: 1000}],
+    layer_outputs: [
+      {layer: 1, fluid: {id: 'cmi:light_aldehyde', amount: 750}},
+      {layer: 2, gas: {id: 'cmi:acetylene', amount: 250}}
+    ],
+    results: [],
     processing_time: 120,
-    results: [
-      { id: 'cmi:light_aldehyde', amount: 750 },
-      { id: 'cmi:acetylene', amount: 250 }
-    ]
+    temperature: 'heated'
   }).id(path + 'cracked_diesel_fractions')
   refine('vinyl_alcohol', 'silver', 120, { fluid: 'cmi:acetylene', amount: 100 }, 100)
   refine('polyvinyl_alcohol', 'copper', 6400, { fluid: 'cmi:vinyl_alcohol', amount: 2000 }, 2000)

@@ -4,6 +4,7 @@
   "package": "expedition.refinery.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": ["RefineryLogicMixin", "RefineryStateMixin"],
+  "client": ["RefineryJeiMixin"],
   "injectors": {
     "defaultRequire": 1
   }

@@ -866,8 +866,9 @@
 			tasks: [
 				{
 					id: "7F4410D119628533"
-					item: "cmi:acetylene_bucket"
-					type: "item"
+					recipe_focus: { count: 1, id: "createcraftedbeginning:gas_canister" }
+					title: "取样乙炔（气罐或气球，至少 50 GU）"
+					type: "custom"
 				}
 			]
 			x: -6.5d

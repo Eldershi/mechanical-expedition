@@ -13,6 +13,6 @@ Storage capacity upgrades sum their multipliers in Sophisticated storage and Fun
 
 The top hatch of the Immersive Engineering Arc Furnace exposes its three graphite electrode slots for item automation.
 
-Connect a Create Crafted Beginning airtight pipe to either of the Immersive Engineering Refinery’s original fluid inlets. Pressurized steam enters the existing input tank at one millibucket per gas unit. The other tank can receive fuel through a fluid pipe. This add-on uses Mekanism steam internally and pairs with the gasoline and diesel cracking recipes in the [industry overlay](../industry).
+Connect a Create Crafted Beginning airtight pipe to either of the Immersive Engineering Refinery’s original fluid inlets. The port accepts steam, acetylene, light olefins and ethene at one internal millibucket per gas unit. It uses the refinery’s existing input tanks, catalysts and energy rules. The refinery shows these inputs as gas in JEI. The [industry overlay](../industry) supplies the gas registry, fractionation and phase recipes.
 
 Fluids tagged `expedition:piped_liquefied_gases` use ordinary fluid pipes, machine tanks and storage tanks. Bucket pickup, filling, draining and pouring are disabled for those fluids. The industry overlay supplies the tag and the natural-air fractionation recipe.

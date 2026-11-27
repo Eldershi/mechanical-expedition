@@ -712,14 +712,15 @@
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "3C7931161B871AAD"
-				item: { count: 1, id: "cmi:light_olefin_bucket" }
-				type: "item"
+				recipe_focus: { count: 1, id: "createcraftedbeginning:gas_canister" }
+				title: "取样轻烯烃（气罐或气球，至少 50 GU）"
+				type: "custom"
 			}]
 			x: 12.0d
 			y: 24.0d
 		}
 		{
-			dependencies: ["77C1F236B853FAAE"]
+			dependencies: ["46ABF922DC2B2A21"]
 			id: "2AA48B9D62C40422"
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
@@ -860,8 +861,9 @@
 			quest_enhance_disable_scroll_paging: false
 			tasks: [{
 				id: "36AF065D8673593B"
-				item: { count: 1, id: "cmi:light_olefin_bucket" }
-				type: "item"
+				recipe_focus: { count: 1, id: "createcraftedbeginning:gas_canister" }
+				title: "取样轻烯烃（气罐或气球，至少 50 GU）"
+				type: "custom"
 			}]
 			x: 6.0d
 			y: 22.0d

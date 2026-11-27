@@ -13,13 +13,6 @@ ServerEvents.recipes(event => {
   ]).id(path + 'creosote_wood_chip_briquette')
 
   event.custom({
-    type: 'createdieselgenerators:distillation',
-    ingredients: [{type: 'fluid_stack', fluid: 'immersiveengineering:creosote', amount: 100}],
-    heat_requirement: 'heated',
-    processing_time: 120,
-    results: [{id: 'cmi:phenol', amount: 50}, {id: 'cmi:light_olefin', amount: 50}]
-  }).id(path + 'phenol')
-  event.custom({
     type: 'immersiveengineering:refinery',
     catalyst: {tag: 'c:plates/iron'},
     energy: 120,

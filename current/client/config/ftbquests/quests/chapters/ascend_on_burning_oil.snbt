@@ -1412,7 +1412,7 @@
 			y: 23.0d
 		}
 		{
-			title: "轻烯烃桶"
+			title: "轻烯烃取样"
 			dependencies: [
 				"0E3481D80180E00C"
 			]
@@ -1421,8 +1421,9 @@
 			tasks: [
 				{
 					id: "5B9DB50FA362B833"
-					item: "cmi:light_olefin_bucket"
-					type: "item"
+					recipe_focus: { count: 1, id: "createcraftedbeginning:gas_canister" }
+					title: "取样轻烯烃（气罐或气球，至少 50 GU）"
+					type: "custom"
 				}
 			]
 			x: 12.0d
@@ -1612,7 +1613,7 @@
 			y: 21.0d
 		}
 		{
-			title: "轻烯烃桶"
+			title: "轻烯烃取样"
 			dependencies: [
 				"654FBA59B16DF4C6"
 			]
@@ -1621,8 +1622,9 @@
 			tasks: [
 				{
 					id: "7A0344280C9F2302"
-					item: "cmi:light_olefin_bucket"
-					type: "item"
+					recipe_focus: { count: 1, id: "createcraftedbeginning:gas_canister" }
+					title: "取样轻烯烃（气罐或气球，至少 50 GU）"
+					type: "custom"
 				}
 			]
 			x: 6.0d

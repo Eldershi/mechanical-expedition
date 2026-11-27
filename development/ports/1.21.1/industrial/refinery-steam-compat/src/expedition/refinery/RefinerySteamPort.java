@@ -2,24 +2,15 @@ package expedition.refinery;
 
 import java.util.List;
 
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.fluids.capability.templates.FluidTank;
 import net.ty.createcraftedbeginning.api.gas.GasAction;
 import net.ty.createcraftedbeginning.api.gas.GasStack;
 import net.ty.createcraftedbeginning.api.gas.handler.GasTransferSnapshot;
 import net.ty.createcraftedbeginning.api.gas.pressure.GasPressureBoundary;
-import net.ty.createcraftedbeginning.registry.gas.CCBGases;
+import net.ty.createcraftedbeginning.api.gas.GasRegistries;
 
 public final class RefinerySteamPort implements GasPressureBoundary {
-    private static final TagKey<Fluid> STEAM = TagKey.create(Registries.FLUID,
-        ResourceLocation.fromNamespaceAndPath("c", "steam"));
-    private static final ResourceLocation INTERNAL_STEAM = ResourceLocation.fromNamespaceAndPath("mekanism", "steam");
-
     private final FluidTank leftInput;
     private final FluidTank rightInput;
     private final Runnable markDirty;
@@ -42,7 +33,7 @@ public final class RefinerySteamPort implements GasPressureBoundary {
 
     @Override
     public boolean isGasValid(int tank, GasStack stack) {
-        return tank == 0 && stack.is(CCBGases.STEAM.get()) && stack.isComponentsPatchEmpty();
+        return tank == 0 && input(stack) != null;
     }
 
     @Override
@@ -57,16 +48,14 @@ public final class RefinerySteamPort implements GasPressureBoundary {
 
     @Override
     public long fill(GasStack stack, GasAction action) {
-        if (stack.isEmpty() || !isGasValid(0, stack)) return 0;
-        var tank = steamInput();
+        var input = input(stack);
+        if (input == null) return 0;
+        var tank = inputTank(input);
         if (tank == null) return 0;
-        // Each gas unit supplies one mB of the refinery's existing steam ingredient.
         int amount = (int) Math.min(stack.getAmount(), tank.getCapacity() - tank.getFluidAmount());
         if (amount <= 0) return 0;
         var current = tank.getFluid();
-        var ingredient = current.isEmpty()
-            ? new FluidStack(BuiltInRegistries.FLUID.get(INTERNAL_STEAM), amount)
-            : current.copyWithAmount(amount);
+        FluidStack ingredient = current.isEmpty() ? input.stack(amount) : current.copyWithAmount(amount);
         int filled = tank.fill(ingredient, action.toFluidAction());
         if (action.execute() && filled > 0) markDirty.run();
         return filled;
@@ -75,19 +64,26 @@ public final class RefinerySteamPort implements GasPressureBoundary {
     @Override
     public AtomicFillResult tryFillAtomically(List<GasStack> stacks, GasAction action) {
         long total = 0;
-        GasStack steam = GasStack.EMPTY;
+        GasStack gas = GasStack.EMPTY;
         for (var stack : stacks) {
             if (stack == null || stack.isEmpty()) continue;
-            if (!isGasValid(0, stack) || stack.getAmount() > Integer.MAX_VALUE - total) {
+            if (!isGasValid(0, stack) || stack.getAmount() > Integer.MAX_VALUE - total
+                || (!gas.isEmpty() && !GasStack.isSameGasSameComponents(gas, stack))) {
                 return AtomicFillResult.REJECTED;
             }
             total += stack.getAmount();
-            steam = stack;
+            gas = stack;
         }
         if (total == 0) return AtomicFillResult.SUCCESS;
-        var batch = steam.copyWithAmount(total);
+        var batch = gas.copyWithAmount(total);
         if (fill(batch, GasAction.SIMULATE) != total) return AtomicFillResult.REJECTED;
-        if (action.execute()) fill(batch, GasAction.EXECUTE);
+        if (action.execute()) {
+            var snapshot = captureTransferSnapshot();
+            if (fill(batch, GasAction.EXECUTE) != total) {
+                snapshot.restore();
+                return AtomicFillResult.REJECTED;
+            }
+        }
         return AtomicFillResult.SUCCESS;
     }
 
@@ -107,9 +103,14 @@ public final class RefinerySteamPort implements GasPressureBoundary {
         };
     }
 
-    private FluidTank steamInput() {
-        if (rightInput.getFluid().is(STEAM)) return rightInput;
-        if (leftInput.getFluid().is(STEAM)) return leftInput;
+    private static RefineryGasInputs.Input input(GasStack stack) {
+        if (stack.isEmpty() || !stack.isComponentsPatchEmpty()) return null;
+        return RefineryGasInputs.byGas(GasRegistries.GAS_REGISTRY.getKey(stack.getGasType())).orElse(null);
+    }
+
+    private FluidTank inputTank(RefineryGasInputs.Input input) {
+        if (input.matches(rightInput.getFluid())) return rightInput;
+        if (input.matches(leftInput.getFluid())) return leftInput;
         if (rightInput.isEmpty()) return rightInput;
         if (leftInput.isEmpty()) return leftInput;
         return null;

@@ -22,10 +22,13 @@ ServerEvents.recipes(event => {
     results: [{ id: 'cmi:vinegar_acid', amount: 100 }, { id: 'minecraft:water', amount: 100 }]
   }).id(path + 'vinegar_acid')
 
-  event.recipes.create.mixing(Fluid.of('cmi:light_silicone_ether', 200), [
-    Ingredient.of('#c:silicon'),
-    Fluid.of('cmi:light_olefin', 100)
-  ]).heated().id(path + 'light_silicone_ether')
+  event.custom({
+    type: 'createcraftedbeginning:reactor_kettle',
+    ingredients: [{tag: 'c:silicon'}],
+    gas_ingredients: [{ingredient: {gas: 'cmi:light_olefin'}, amount: 100}],
+    results: [{id: 'cmi:light_silicone_ether', amount: 200}],
+    temperature: 'heated'
+  }).id(path + 'light_silicone_ether')
   event.custom({
     type: 'immersiveengineering:refinery',
     catalyst: { tag: 'c:plates/copper' },

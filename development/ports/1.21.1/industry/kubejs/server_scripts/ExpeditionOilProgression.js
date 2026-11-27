@@ -37,11 +37,24 @@ ServerEvents.recipes(event => {
     input1: { tag: 'c:steam', amount: 100 },
     result: { id: 'cmi:cracked_gasoline', amount: 200 }
   }).id(path + 'cracked_gasoline')
-  distill('cracked_gasoline_fractions', 'cmi:cracked_gasoline', 500, [
-    ['cmi:naphtha', 100], ['cmi:benzene', 100], ['cmi:light_olefin', 200]
+  const mixedFractions = (name, input, amount, layers) => {
+    event.custom({
+      type: 'createcraftedbeginning:fractionation_tower',
+      ingredients: [{type: 'neoforge:tag', tag: input, amount: amount}],
+      layer_outputs: layers,
+      results: [],
+      processing_time: 120,
+      temperature: 'heated'
+    }).id(path + name)
+  }
+  mixedFractions('cracked_gasoline_fractions', 'cmi:cracked_gasoline', 500, [
+    {layer: 1, fluid: {id: 'cmi:naphtha', amount: 100}},
+    {layer: 2, fluid: {id: 'cmi:benzene', amount: 100}},
+    {layer: 3, gas: {id: 'cmi:light_olefin', amount: 200}}
   ])
-  distill('creosote_fractions', 'c:creosote', 100, [
-    ['cmi:phenol', 50], ['cmi:light_olefin', 50]
+  mixedFractions('creosote_fractions', 'c:creosote', 100, [
+    {layer: 1, fluid: {id: 'cmi:phenol', amount: 50}},
+    {layer: 2, gas: {id: 'cmi:light_olefin', amount: 50}}
   ])
 
   create.milling([

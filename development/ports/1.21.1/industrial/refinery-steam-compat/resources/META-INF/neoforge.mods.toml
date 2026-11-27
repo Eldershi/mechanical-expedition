@@ -4,8 +4,8 @@ license="See repository license"
 
 [[mods]]
 modId="expedition_refinery_steam_compat"
-version="1.0.0"
-displayName="Expedition Refinery Steam Compatibility"
+version="1.1.0"
+displayName="Expedition Refinery Gas Compatibility"
 
 [[dependencies.expedition_refinery_steam_compat]]
 modId="minecraft"
