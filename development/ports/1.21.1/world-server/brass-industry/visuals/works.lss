@@ -130,6 +130,8 @@
   background: sprite(expedition_industry:textures/gui/works/press_header.png);
 }
 
+.trade-panel .works-caption { adaptive-width: true; }
+.trade-panel .works-process label { font-size: 8; }
 .trade-desk:host { flex-direction: column-reverse; }
 .trade-desk .__tab-view_tab_scroller__ { margin-bottom: 0; }
 .trade-desk .__tab-view_tab_content_container__ {
@@ -146,5 +148,6 @@
   padding-horizontal: 4;
   background: built-in(ui-mc:RECT_THIN) color(#e0d5bd);
 }
-.trade-name, .trade-note { text-color: #35291f; text-shadow: false; }
-.trade-rate { text-color: #673c13; text-shadow: false; }
+.trade-name, .trade-rate, .trade-note { adaptive-width: true; text-shadow: false; }
+.trade-name, .trade-note { text-color: #35291f; }
+.trade-rate { text-color: #673c13; flex-shrink: 0; }

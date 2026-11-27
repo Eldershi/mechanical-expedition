@@ -136,6 +136,7 @@ SIFT_COMPAT_MOD = "expedition-sift-compat-neoforge-1.0.0.jar"
 CREATE_NUCLEAR_MOD = "createnuclear-2.0.1-neoforge.jar"
 PROGRESSION_DOWNLOADS = {
     "createnuclear": CREATE_NUCLEAR_MOD,
+    "creategearsandtavern": "creategearsandtavern-1.2.0-1.21.1.jar",
     "lightmanscurrency": "lightmanscurrency-1.21-2.3.0.6.jar",
     "the_sift": "mielon-s-the-sift-2.0.6-mc1.21.1-neo.jar",
 }

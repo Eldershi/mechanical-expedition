@@ -3072,7 +3072,7 @@
       "ldlib2/assets/mbd2/multiblock/satellite_relay.mb": "d15b1d31058f14028682ec826e18ba6bb77a98d4660bb2332f935fabee002184",
       "ldlib2/assets/mbd2/multiblock/shaft_furnace.mb": "de3aca98056b701068b1352203434a11fa5bd617973e02f93478180abcb85530",
       "ldlib2/assets/mbd2/multiblock/space_elevator.mb": "ec993fae4868a36e09e974451da181b8d669e47ac3c3e18b4e7f3933ada8eb82",
-      "ldlib2/assets/mbd2/multiblock/trading_station.mb": "07464e25df2f5d4802830db1f0278d9ef0d63c790b1a6640412c9a84ee607945",
+      "ldlib2/assets/mbd2/multiblock/trading_station.mb": "c15a0511e02582a0762ba7778631aad9b98c2f060004fa5be047130118fbd80a",
       "ldlib2/assets/mbd2/recipe_type/expedition_alloy_furnace.rt": "4c589c65bee166822f699ab19099c37f251f6f39dc047b05974ed110ab85bcd2",
       "ldlib2/assets/mbd2/recipe_type/expedition_blasting_compressor.rt": "f10b5b2976b8e3f528a2ac45d7a17f8a521034fb49fc5498870fdfc7fbc9fbce",
       "ldlib2/assets/mbd2/recipe_type/expedition_condenser.rt": "cd929a9c716ee5d6a54548dae40c154858e4617e4115256d606b9807305cf7ef",
@@ -4505,7 +4505,7 @@
       "kubejs/assets/design_decor/models/block/iron_railing_side.json": "79af1ef81d84f41c5b4fa98099a8ae7b7f9985adeda98d2057c336fad675bdb5",
       "kubejs/assets/design_decor/models/block/metal_support.json": "58cc739a3337fc816affb3e44a1d584634a944b2b21c3d53d60a4876a04432c8",
       "kubejs/assets/design_decor/models/block/ornate_grate.json": "44aebeb893b31feae73114f4c76c2fcd6655564a69bf9b2cc16cdbffa9785b4c",
-      "kubejs/assets/expedition_industry/lss/works.lss": "86c8824fae8862e8f5710a09117d37bd34a396b45e2220df7386adb4fe53da78",
+      "kubejs/assets/expedition_industry/lss/works.lss": "a8d859c600515c428894c2584fed8fde500ef5bdd01e25c0d54c85e6412c5089",
       "kubejs/assets/expedition_industry/models/block/works/alloy_furnace_ready.json": "0d082199bf28012a4830a1a2d747f491e316fbaa471638777cb389935e2deacd",
       "kubejs/assets/expedition_industry/models/block/works/alloy_furnace_suspend.json": "2086b0c0110cc8904986f3f57558320cf17926a307c324c72f8d12cb81cf2617",
       "kubejs/assets/expedition_industry/models/block/works/alloy_furnace_waiting.json": "0cc98ccd6bab96e8f939b770726d64c91bc61f252707071a37c03cc96974e100",
@@ -6604,6 +6604,14 @@
         "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
         "sha512": "11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b",
         "downloadUrl": "https://edge.forgecdn.net/files/7963/363/create-1.21.1-6.0.10.jar"
+      },
+      {
+        "filename": "creategearsandtavern-1.2.0-1.21.1.jar",
+        "bytes": 160470,
+        "sha1": "bbd58dae03d8d26205950a5982853900c87c0625",
+        "sha256": "357e0d456130b7d4ab863e844565809a660a9d1de87432a04817cab745989aa2",
+        "sha512": "00f62226a3e78ce82f5ed3900ff38c05eb1f43788799d56146c29c5a309b5c19ed7fbb09c5a5338498fbfa62a388f3cdc5d55800da92ac46279590f116b240df",
+        "downloadUrl": "https://cdn.modrinth.com/data/ZjAeukl9/versions/2fjPxg1H/creategearsandtavern-1.2.0-1.21.1.jar"
       },
       {
         "filename": "create-aeronautics-bundled-1.21.1-1.3.2.jar",
@@ -9968,7 +9976,7 @@
       "ldlib2/assets/mbd2/multiblock/satellite_relay.mb": "d15b1d31058f14028682ec826e18ba6bb77a98d4660bb2332f935fabee002184",
       "ldlib2/assets/mbd2/multiblock/shaft_furnace.mb": "de3aca98056b701068b1352203434a11fa5bd617973e02f93478180abcb85530",
       "ldlib2/assets/mbd2/multiblock/space_elevator.mb": "ec993fae4868a36e09e974451da181b8d669e47ac3c3e18b4e7f3933ada8eb82",
-      "ldlib2/assets/mbd2/multiblock/trading_station.mb": "07464e25df2f5d4802830db1f0278d9ef0d63c790b1a6640412c9a84ee607945",
+      "ldlib2/assets/mbd2/multiblock/trading_station.mb": "c15a0511e02582a0762ba7778631aad9b98c2f060004fa5be047130118fbd80a",
       "ldlib2/assets/mbd2/recipe_type/expedition_alloy_furnace.rt": "4c589c65bee166822f699ab19099c37f251f6f39dc047b05974ed110ab85bcd2",
       "ldlib2/assets/mbd2/recipe_type/expedition_blasting_compressor.rt": "f10b5b2976b8e3f528a2ac45d7a17f8a521034fb49fc5498870fdfc7fbc9fbce",
       "ldlib2/assets/mbd2/recipe_type/expedition_condenser.rt": "cd929a9c716ee5d6a54548dae40c154858e4617e4115256d606b9807305cf7ef",
@@ -13276,6 +13284,14 @@
         "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
         "sha512": "11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b",
         "downloadUrl": "https://edge.forgecdn.net/files/7963/363/create-1.21.1-6.0.10.jar"
+      },
+      {
+        "filename": "creategearsandtavern-1.2.0-1.21.1.jar",
+        "bytes": 160470,
+        "sha1": "bbd58dae03d8d26205950a5982853900c87c0625",
+        "sha256": "357e0d456130b7d4ab863e844565809a660a9d1de87432a04817cab745989aa2",
+        "sha512": "00f62226a3e78ce82f5ed3900ff38c05eb1f43788799d56146c29c5a309b5c19ed7fbb09c5a5338498fbfa62a388f3cdc5d55800da92ac46279590f116b240df",
+        "downloadUrl": "https://cdn.modrinth.com/data/ZjAeukl9/versions/2fjPxg1H/creategearsandtavern-1.2.0-1.21.1.jar"
       },
       {
         "filename": "create-aeronautics-bundled-1.21.1-1.3.2.jar",

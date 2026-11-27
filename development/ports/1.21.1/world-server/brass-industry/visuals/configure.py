@@ -127,6 +127,7 @@ def machine_ui(name, template, fluids):
     if name in {"hydropress", "shaft_furnace", "electrolytic_cell", "trading_station"}:
         classes.append("press-panel")
     if name == "trading_station":
+        classes.append("trade-panel")
         face.insert(1, trade_tabs())
     if name == "alloy_furnace":
         face = [element(css=("alloy-display",), children=face)]

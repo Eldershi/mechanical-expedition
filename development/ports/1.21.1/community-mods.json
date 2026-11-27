@@ -257,5 +257,15 @@
     },
     "version": "2.0.6",
     "sha256": "10fec8260e1ac51fed4cedf7be7b9f22f2e766db80589a3d381d266ab798a4c1"
+  },
+  "creategearsandtavern": {
+    "file": {
+      "filename": "creategearsandtavern-1.2.0-1.21.1.jar",
+      "url": "https://cdn.modrinth.com/data/ZjAeukl9/versions/2fjPxg1H/creategearsandtavern-1.2.0-1.21.1.jar",
+      "source": "https://modrinth.com/mod/create-gears-and-tavern/version/1.2.0-1.21.1",
+      "sha1": "bbd58dae03d8d26205950a5982853900c87c0625"
+    },
+    "version": "1.2.0",
+    "sha256": "357e0d456130b7d4ab863e844565809a660a9d1de87432a04817cab745989aa2"
   }
 }
