@@ -1,6 +1,8 @@
-# 远征 1.21.1-test.6
+# 远征 1.21.1-test.7
 
 适用于 Minecraft 1.21.1、NeoForge 21.1.267 和 Java 21。
+
+- 客户端和专用服均加入 [Create Rancher 1.0.6](https://www.curseforge.com/minecraft/mc-mods/create-rancher)，作者为 Halex，许可为 MIT。集奶地板可以把牛奶送入机械动力流体管路。[乳品车间布局及操作](development/ports/1.21.1/world-server/dairy-workshop/)。
 
 - 客户端和专用服均加入 [Create CIR Addition 3.5.0](https://github.com/CIR-Server/Create-CIR-Addition/releases/tag/v3.5.0)，作者为 CIR Server 和 Real_Infinistar，许可为 CC BY-SA 4.0。启用 Create 机器优化，关闭自动清理、量子环限制和 Boss 保护，并沿用整合包的宝石切割规则。
 

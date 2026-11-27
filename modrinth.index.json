@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "game": "minecraft",
-  "versionId": "1.21.1-test.6",
+  "versionId": "1.21.1-test.7",
   "name": "机械动力：远征 · NeoForge 测试",
   "files": [
     {
@@ -2174,6 +2174,21 @@
         "https://cdn.modrinth.com/data/ZjAeukl9/versions/2fjPxg1H/creategearsandtavern-1.2.0-1.21.1.jar"
       ],
       "fileSize": 160470,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/createrancher-1.21.1-1.0.6.jar",
+      "hashes": {
+        "sha1": "fe69ede2cd7341506713fbd193aa9c8f5188573f",
+        "sha512": "c74ab55d1df36dcde91e822d8f7bb99beae5638a1ea4607b98aa965d22ae26d7ccba1fefc23d2647053212ef26e6cbdee6ed280adae3ec6307f91b70ba0c915f"
+      },
+      "downloads": [
+        "https://edge.forgecdn.net/files/9737/249/createrancher-1.21.1-1.0.6.jar"
+      ],
+      "fileSize": 1591231,
       "env": {
         "client": "required",
         "server": "unsupported"

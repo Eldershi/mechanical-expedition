@@ -1,5 +1,5 @@
 {
-  "version": "1.21.1-test.6",
+  "version": "1.21.1-test.7",
   "minecraft": "1.21.1",
   "neoforge": "21.1.267",
   "client": {
@@ -6622,6 +6622,14 @@
         "sha256": "357e0d456130b7d4ab863e844565809a660a9d1de87432a04817cab745989aa2",
         "sha512": "00f62226a3e78ce82f5ed3900ff38c05eb1f43788799d56146c29c5a309b5c19ed7fbb09c5a5338498fbfa62a388f3cdc5d55800da92ac46279590f116b240df",
         "downloadUrl": "https://cdn.modrinth.com/data/ZjAeukl9/versions/2fjPxg1H/creategearsandtavern-1.2.0-1.21.1.jar"
+      },
+      {
+        "filename": "createrancher-1.21.1-1.0.6.jar",
+        "bytes": 1591231,
+        "sha1": "fe69ede2cd7341506713fbd193aa9c8f5188573f",
+        "sha256": "3ac4a4a9abd381418dbef2d517a29815ae991946ad6c51cfad1d51fcaa2dff2e",
+        "sha512": "c74ab55d1df36dcde91e822d8f7bb99beae5638a1ea4607b98aa965d22ae26d7ccba1fefc23d2647053212ef26e6cbdee6ed280adae3ec6307f91b70ba0c915f",
+        "downloadUrl": "https://edge.forgecdn.net/files/9737/249/createrancher-1.21.1-1.0.6.jar"
       },
       {
         "filename": "create-aeronautics-bundled-1.21.1-1.3.2.jar",
@@ -13312,6 +13320,14 @@
         "sha256": "357e0d456130b7d4ab863e844565809a660a9d1de87432a04817cab745989aa2",
         "sha512": "00f62226a3e78ce82f5ed3900ff38c05eb1f43788799d56146c29c5a309b5c19ed7fbb09c5a5338498fbfa62a388f3cdc5d55800da92ac46279590f116b240df",
         "downloadUrl": "https://cdn.modrinth.com/data/ZjAeukl9/versions/2fjPxg1H/creategearsandtavern-1.2.0-1.21.1.jar"
+      },
+      {
+        "filename": "createrancher-1.21.1-1.0.6.jar",
+        "bytes": 1591231,
+        "sha1": "fe69ede2cd7341506713fbd193aa9c8f5188573f",
+        "sha256": "3ac4a4a9abd381418dbef2d517a29815ae991946ad6c51cfad1d51fcaa2dff2e",
+        "sha512": "c74ab55d1df36dcde91e822d8f7bb99beae5638a1ea4607b98aa965d22ae26d7ccba1fefc23d2647053212ef26e6cbdee6ed280adae3ec6307f91b70ba0c915f",
+        "downloadUrl": "https://edge.forgecdn.net/files/9737/249/createrancher-1.21.1-1.0.6.jar"
       },
       {
         "filename": "create-aeronautics-bundled-1.21.1-1.3.2.jar",
