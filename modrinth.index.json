@@ -725,6 +725,21 @@
       }
     },
     {
+      "path": "mods/lightmanscurrency-1.21-2.3.0.6.jar",
+      "hashes": {
+        "sha1": "bb16d428902b6d83c5203e9cf50984ef4b9f769a",
+        "sha512": "47ed278271e852ce76cee225b3c8dd762fce4c5a26c4351e449d5553578cd416c056627423597a9cac89228a240c2addf91748d2c5134b902d7da12e41e292a8"
+      },
+      "downloads": [
+        "https://edge.forgecdn.net/files/9048/585/lightmanscurrency-1.21-2.3.0.6.jar"
+      ],
+      "fileSize": 8073221,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
       "path": "mods/Mekanism-1.21.1-10.7.19.85.jar",
       "hashes": {
         "sha1": "b78945c40cfe7640408f3fd1e44da385a8c8b805",
@@ -749,6 +764,21 @@
         "https://edge.forgecdn.net/files/7904/61/MekanismGenerators-1.21.1-10.7.19.85.jar"
       ],
       "fileSize": 1114598,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/mielon-s-the-sift-2.0.6-mc1.21.1-neo.jar",
+      "hashes": {
+        "sha1": "1ef8b6b801038b0ee98d45c61773d41fb6b0580f",
+        "sha512": "d5f3af3a36df6ffe8b24564bf445ee61159483da474b801790a88d7b503b3b32bfe0dbfebe170964975cddcda3542d6b110f00b89ace58d120fb249afa542152"
+      },
+      "downloads": [
+        "https://edge.forgecdn.net/files/9725/872/mielon-s-the-sift-2.0.6-mc1.21.1-neo.jar"
+      ],
+      "fileSize": 80623750,
       "env": {
         "client": "required",
         "server": "unsupported"

@@ -129,3 +129,22 @@
 .press-panel .works-header, .press-jei .works-header {
   background: sprite(expedition_industry:textures/gui/works/press_header.png);
 }
+
+.trade-desk:host { flex-direction: column-reverse; }
+.trade-desk .__tab-view_tab_scroller__ { margin-bottom: 0; }
+.trade-desk .__tab-view_tab_content_container__ {
+  padding-all: 4;
+  background: built-in(ui-mc:RECT_THIN) color(#d1c4ad);
+}
+.trade-tab:host { padding-horizontal: 6; }
+.trade-page { height: 29; gap-all: 2; }
+.trade-offer {
+  height: 13;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-horizontal: 4;
+  background: built-in(ui-mc:RECT_THIN) color(#e0d5bd);
+}
+.trade-name, .trade-note { text-color: #35291f; text-shadow: false; }
+.trade-rate { text-color: #673c13; text-shadow: false; }

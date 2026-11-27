@@ -2,6 +2,7 @@
 """Build the server adapters against a NeoForge 1.21.1 installation."""
 
 import argparse
+from io import BytesIO
 import json
 import os
 from pathlib import Path
@@ -38,6 +39,8 @@ MODULES = {
     "teleport": ("expedition_teleport_fix", "1.0.0", "Expedition Async Teleport",
                  "expedition.teleport.mixin", ["TeleportCommandMixin"]),
     "rock-generator": ("expedition_rock_generator", "1.0.0", "Expedition Igneous Extruder", "", []),
+    "sift-compat": ("expedition_sift_compat", "1.0.0", "Expedition Sift Compatibility",
+                    "expedition.siftcompat.mixin", ["CivilMapMixin"]),
     "space": ("expedition_space", "1.0.1", "Expedition Earth–Moon Logistics",
               "expedition.space.mixin", ["BreathingReserveMixin", "OtherPadMixin", "EndStoneCrushingMixin",
                                          "PendingMiningProcessMixin", "FluidLogisticsBasinMixin",
@@ -70,6 +73,7 @@ DEPENDENCIES = {
     "island-rail": ("create", "[6.0.10]", "create-1.21.1-6.0.10.jar"),
     "railway": ("tongdarailway", "[1.1.6+mc21.1]", "tongdarailway-1.1.6-mc21.1.jar"),
     "structure-lookup": ("lithostitched", "[1.8.1]", "lithostitched-1.8.1-neoforge-21.1.jar"),
+    "sift-compat": ("the_sift", "[2.0.6]", "mielon-s-the-sift-2.0.6-mc1.21.1-neo.jar"),
     "twilight": ("twilightforest", "[4.8.3345]", "twilightforest-1.21.1-4.8.3345-universal.jar"),
     "village-tree-lookup": ("villagesandpillages", "[2.0.0]", "villagesandpillages-neoforge-2.0.0+mc1.21.1.jar"),
 }
@@ -149,6 +153,13 @@ def build(module, java, cp, output, mods, space_proof=False):
         cp += os.pathsep + os.pathsep.join(str(mods / jar) for _, _, jar in GUIDE_DEPENDENCIES)
     with tempfile.TemporaryDirectory() as temp:
         classes = Path(temp)
+        if module == "sift-compat":
+            with ZipFile(mods / "supplementaries-1.21.1-4.1.2-neoforge.jar") as parent:
+                wrapper = BytesIO(parent.read("META-INF/jarjar/mixinsquared-forge-0.3.8.jar"))
+            with ZipFile(wrapper) as jar:
+                library = classes / "MixinSquared.jar"
+                library.write_bytes(jar.read("META-INF/jars/MixinSquared-0.3.8.jar"))
+            cp += os.pathsep + str(library)
         if module == "village-tree-lookup":
             neo_api, = (Path(path) for path in cp.split(os.pathsep)
                         if Path(path).name.startswith("neoforge-") and path.endswith("-universal.jar"))
@@ -216,6 +227,12 @@ side="{side}"
             module_dependencies = GUIDE_DEPENDENCIES
         if module == "village-tree-lookup":
             module_dependencies.append(("expedition_structure_lookup", "[1.0.0,2)", ""))
+        if module == "sift-compat":
+            module_dependencies += [
+                ("civil", "[2.0.1-release]", ""),
+                ("kaleidoscope_end", "[1.0.14-neoforge+mc1.21.1]", ""),
+                ("supplementaries", "[1.21.1-4.1.2]", ""),
+            ]
         for dependency_id, dependency_version, _ in module_dependencies:
             metadata += f'''[[dependencies.{modid}]]
 modId="{dependency_id}"
@@ -228,6 +245,8 @@ side="{side}"
                   "compatibilityLevel": "JAVA_21", "mixins": mixins, "injectors": {"defaultRequire": 1}}
         if module == "space":
             config["plugin"] = "expedition.space.cooling.CoolingMixinPlugin"
+        if module == "sift-compat":
+            config["plugin"] = "expedition.siftcompat.SiftMixinPlugin"
         output.mkdir(parents=True, exist_ok=True)
         path = output / filename
         with ZipFile(path, "w", compression=ZIP_DEFLATED) as jar:

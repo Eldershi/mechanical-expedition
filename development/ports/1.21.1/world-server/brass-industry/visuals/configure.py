@@ -52,6 +52,53 @@ def decorate_bar(bar, css):
     return bar
 
 
+def trade_offer(name, rate):
+    return element(css=("trade-offer",), children=[
+        label(name, "trade-name"),
+        label(rate, "trade-rate"),
+    ])
+
+
+def trade_tabs():
+    pages = {
+        "sell": [
+            trade_offer("trade_copper", "trade_credit_2"),
+            trade_offer("trade_brass", "trade_credit_4"),
+        ],
+        "buy": [
+            trade_offer("trade_tin", "trade_cost_paper"),
+            trade_offer("trade_coolant", "trade_cost_bottle"),
+        ],
+        "contracts": [label("trade_contracts_unavailable", "trade-note")],
+        "delivery": [
+            label("trade_delivery_pickup", "trade-note"),
+            label("trade_delivery_unavailable", "trade-note"),
+        ],
+    }
+    tabs = []
+    panels = []
+    for page, widgets in pages.items():
+        tab = element("tab", key=f"trade-{page}", css=("trade-tab",))
+        tab["data"]["internal"] = List[Compound]([label(f"trade_tab_{page}")["data"]])
+        tabs.append(tab)
+        panels.append(element(css=("trade-page",), children=widgets))
+
+    # TabView restores its native content and header. The header's scroller
+    # nests the external Tab children in its scrollable internal container.
+    headers = Compound({"children": indexed(tabs)})
+    for _ in range(5):
+        headers = Compound({"internal": List[Compound]([headers])})
+    result = element("tab-view", key="trade-desk", css=("trade-desk",))
+    result["data"].update({
+        "internal": List[Compound]([Compound({"children": indexed(panels)}), headers]),
+        "tabs": List[Compound]([
+            Compound({"tab": Int(index), "content": Int(index)}) for index in range(len(tabs))
+        ]),
+        "selected": Int(0),
+    })
+    return result
+
+
 def machine_ui(name, template, fluids):
     title, _, *unused, progress, energy, inventory = template["template"]["children"]
     title = deepcopy(title)
@@ -79,6 +126,8 @@ def machine_ui(name, template, fluids):
     inventory_caption = label("inventory", "works-caption")
     if name in {"hydropress", "shaft_furnace", "electrolytic_cell", "trading_station"}:
         classes.append("press-panel")
+    if name == "trading_station":
+        face.insert(1, trade_tabs())
     if name == "alloy_furnace":
         face = [element(css=("alloy-display",), children=face)]
         classes.append("alloy-panel")

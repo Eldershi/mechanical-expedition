@@ -171,7 +171,7 @@ def mod_inputs(instance, client):
                and not re.search(r"(?i)expedition.*(?:-qa-|proof|probe|alloy-furnace-render)", f.name)]
     names = {p.name for p in choices}
     for required in ("adastra-1.21.1-1.16.26-neoforge.jar", "createcraftedbeginning-0.1.1.jar",
-                     *production_overlay.REQUIRED_MODS, production_overlay.CREATE_NUCLEAR_MOD,
+                     *production_overlay.REQUIRED_MODS,
                      *((CLIENT_PERFORMANCE_MOD,) if client else ())):
         if required not in names:
             raise ValueError(f"Missing tested NeoForge input: {required}")
@@ -296,7 +296,7 @@ def main():
                 if snapshot.is_file() and (snapshot.stat().st_size != row["bytes"] or
                                            fingerprints(snapshot)["sha256"] != row["sha256"]):
                     raise ValueError(f"The {side} lock must match the checked-in mod: {row['filename']}")
-            missing = {*production_overlay.REQUIRED_MODS, production_overlay.CREATE_NUCLEAR_MOD} - {row["filename"] for row in lock[side]["mods"]}
+            missing = set(production_overlay.REQUIRED_MODS) - {row["filename"] for row in lock[side]["mods"]}
             if missing:
                 raise ValueError(f"The {side} lock is missing {', '.join(sorted(missing))}")
         print(meta["version"])

@@ -237,5 +237,25 @@
     },
     "version": "2.0.1",
     "sha256": "59f1be84e7a47ab44f0fb2f0260799fa348cec85b94cba3c7fc00ad3e35ea9db"
+  },
+  "lightmanscurrency": {
+    "file": {
+      "filename": "lightmanscurrency-1.21-2.3.0.6.jar",
+      "url": "https://edge.forgecdn.net/files/9048/585/lightmanscurrency-1.21-2.3.0.6.jar",
+      "source": "https://www.curseforge.com/minecraft/mc-mods/lightmans-currency/files/9048585",
+      "sha1": "bb16d428902b6d83c5203e9cf50984ef4b9f769a"
+    },
+    "version": "2.3.0.6",
+    "sha256": "eab499cef7a837020e16ce61493ff07d15fd5b43e54e18a77bfa6c4ffcea05f4"
+  },
+  "the_sift": {
+    "file": {
+      "filename": "mielon-s-the-sift-2.0.6-mc1.21.1-neo.jar",
+      "url": "https://edge.forgecdn.net/files/9725/872/mielon-s-the-sift-2.0.6-mc1.21.1-neo.jar",
+      "source": "https://www.curseforge.com/minecraft/mc-mods/mielons-the-sift/files/9725872",
+      "sha1": "1ef8b6b801038b0ee98d45c61773d41fb6b0580f"
+    },
+    "version": "2.0.6",
+    "sha256": "10fec8260e1ac51fed4cedf7be7b9f22f2e766db80589a3d381d266ab798a4c1"
   }
 }

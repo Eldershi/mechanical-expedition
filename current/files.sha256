@@ -5451,6 +5451,7 @@ b9dddfcb298b58af27051d66d5282e42bea8cbb470a99a565cfa05970f1518dd  current/client
 db85388f16b8bb6a886396f67f9e2f751c52a80e57719e5c056ce9f0158ac993  current/client/mods/expedition-quest-lines-compat-neoforge-1.0.0.jar
 9ec8fd9fec718c3a40806f3ad8144198b1f48715393fde4e4f12646288568b1b  current/client/mods/expedition-railway-avoidance-1.0.0.jar
 c0d4494f4599fa1547c7257f0f2ac45cebe09d667abf4eadd5b048d91d488815  current/client/mods/expedition-rock-generator-neoforge-1.0.0.jar
+a038137bff5bb941f68cbce13d92eabd1687518af94aa22833dd9f1211459836  current/client/mods/expedition-sift-compat-neoforge-1.0.0.jar
 972f7d7091bb03d20cb9f7978761579d7cf955f3d987141fa758fc0325f918cb  current/client/mods/expedition-space-neoforge-1.0.1.jar
 6e433479de30c59987305c572b1f011e8c87f6e7913073dfee7237d66c541953  current/client/mods/expedition-stock-keeper-tooltip-fix-1.0.0.jar
 497079a1b8ae1b997c9fdae701d14b949db64928db05a9c9741be30b87723dd2  current/client/mods/expedition-structure-lookup-neoforge-1.0.0.jar
@@ -6866,6 +6867,7 @@ ed83f72f7d2e3933a1c0e4bb68b70c9197aa504f6da069c42263904a09393cf1  current/server
 4eb01334a939aad413b0cfa4a831a0d1a2b3cf60dcb0353672f55db2e8379e5e  current/server/mods/expedition-guide-tome-neoforge-1.0.0.jar
 41f67a62af68aa134b1f5e515b272e6c4aff07c03c39f9c10797cae35a11ed2b  current/server/mods/expedition-item-compatibility-neoforge-1.0.0.jar
 c0d4494f4599fa1547c7257f0f2ac45cebe09d667abf4eadd5b048d91d488815  current/server/mods/expedition-rock-generator-neoforge-1.0.0.jar
+a038137bff5bb941f68cbce13d92eabd1687518af94aa22833dd9f1211459836  current/server/mods/expedition-sift-compat-neoforge-1.0.0.jar
 972f7d7091bb03d20cb9f7978761579d7cf955f3d987141fa758fc0325f918cb  current/server/mods/expedition-space-neoforge-1.0.1.jar
 497079a1b8ae1b997c9fdae701d14b949db64928db05a9c9741be30b87723dd2  current/server/mods/expedition-structure-lookup-neoforge-1.0.0.jar
 e7163c5073caf9a4480ecc784996860fe5aba7df3a9f0afdd09c3b9acb074b18  current/server/mods/expedition-village-tree-lookup-neoforge-1.0.0.jar

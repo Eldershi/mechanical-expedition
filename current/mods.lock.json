@@ -2487,8 +2487,8 @@
       "kubejs/assets/expedition/tinkering/materials/legacy_soul_infused.json": "093935144fff8ccd4de5e522ebf3250f4c4ae1c834fa9728bd21f1a8704a03ac",
       "kubejs/assets/expedition_foundry/lang/en_us.json": "867059e5799bde37fc0e54738d5de651b5c5ee6d8c22f23eaef7cfd70ed94322",
       "kubejs/assets/expedition_foundry/lang/zh_cn.json": "55e94220aaf712cc376bca3c85314abaf8fa4c42428f819951213c094e3f41b1",
-      "kubejs/assets/expedition_industry/lang/en_us.json": "d650ec0d2664064b22db0a4c0b81a09380ed7b2e429ac7f18e2637bd17a3a183",
-      "kubejs/assets/expedition_industry/lang/zh_cn.json": "7f0a4ae0f34271d8ec1b03301889b73e7e9c870ce3c17abc6887e4459974567f",
+      "kubejs/assets/expedition_industry/lang/en_us.json": "9bf4281dbb2b1c0d700ee2c6974250471fd7586c1022e4b84b10c94bcb1fb711",
+      "kubejs/assets/expedition_industry/lang/zh_cn.json": "d4c8d2a78c3b5761d8395d645907df715de825321d5d64d62314e45ae20355dc",
       "kubejs/assets/expedition_industry/models/block/alloy_furnace.json": "0bdf6b3003b510ec5261f03fdf76af1a1a891e4992ce5e1719553c3d228f9963",
       "kubejs/assets/expedition_industry/models/block/blasting_compressor.json": "4703a51c7607588bec7c04512de0a96b2d210d147fb92537239819c3c9b5a82d",
       "kubejs/assets/expedition_industry/models/block/condenser.json": "a69126f8710a01e4cec9727455d8f0ed32450a9c5396f32c978463e7979ba538",
@@ -3072,7 +3072,7 @@
       "ldlib2/assets/mbd2/multiblock/satellite_relay.mb": "d15b1d31058f14028682ec826e18ba6bb77a98d4660bb2332f935fabee002184",
       "ldlib2/assets/mbd2/multiblock/shaft_furnace.mb": "de3aca98056b701068b1352203434a11fa5bd617973e02f93478180abcb85530",
       "ldlib2/assets/mbd2/multiblock/space_elevator.mb": "ec993fae4868a36e09e974451da181b8d669e47ac3c3e18b4e7f3933ada8eb82",
-      "ldlib2/assets/mbd2/multiblock/trading_station.mb": "9cfa62c5aec618dabd6fe50f4bb26f0cba37c3176d0713114d452c46edddfcbf",
+      "ldlib2/assets/mbd2/multiblock/trading_station.mb": "07464e25df2f5d4802830db1f0278d9ef0d63c790b1a6640412c9a84ee607945",
       "ldlib2/assets/mbd2/recipe_type/expedition_alloy_furnace.rt": "4c589c65bee166822f699ab19099c37f251f6f39dc047b05974ed110ab85bcd2",
       "ldlib2/assets/mbd2/recipe_type/expedition_blasting_compressor.rt": "f10b5b2976b8e3f528a2ac45d7a17f8a521034fb49fc5498870fdfc7fbc9fbce",
       "ldlib2/assets/mbd2/recipe_type/expedition_condenser.rt": "cd929a9c716ee5d6a54548dae40c154858e4617e4115256d606b9807305cf7ef",
@@ -4505,7 +4505,7 @@
       "kubejs/assets/design_decor/models/block/iron_railing_side.json": "79af1ef81d84f41c5b4fa98099a8ae7b7f9985adeda98d2057c336fad675bdb5",
       "kubejs/assets/design_decor/models/block/metal_support.json": "58cc739a3337fc816affb3e44a1d584634a944b2b21c3d53d60a4876a04432c8",
       "kubejs/assets/design_decor/models/block/ornate_grate.json": "44aebeb893b31feae73114f4c76c2fcd6655564a69bf9b2cc16cdbffa9785b4c",
-      "kubejs/assets/expedition_industry/lss/works.lss": "f92ebce3e6427aaaaf5da77a9b8ea64fc0a98cb075dd001c06a626cc4d894ced",
+      "kubejs/assets/expedition_industry/lss/works.lss": "86c8824fae8862e8f5710a09117d37bd34a396b45e2220df7386adb4fe53da78",
       "kubejs/assets/expedition_industry/models/block/works/alloy_furnace_ready.json": "0d082199bf28012a4830a1a2d747f491e316fbaa471638777cb389935e2deacd",
       "kubejs/assets/expedition_industry/models/block/works/alloy_furnace_suspend.json": "2086b0c0110cc8904986f3f57558320cf17926a307c324c72f8d12cb81cf2617",
       "kubejs/assets/expedition_industry/models/block/works/alloy_furnace_waiting.json": "0cc98ccd6bab96e8f939b770726d64c91bc61f252707071a37c03cc96974e100",
@@ -5431,7 +5431,9 @@
       "kubejs/assets/expedition_industry/textures/block/shaft_furnace_assembly/atlas.png": "0f47fb9727defb4bd5cc049522d06eadc7f0571aa25cd9f3b13912a998c234e3",
       "kubejs/assets/expedition_industry/textures/block/trading_station_assembly/atlas.png": "f89505c0692583796679397b3c4c01f24a70b5156d57cfa050d5fef8a4a8aef8",
       "kubejs/assets/expedition_industry/textures/gui/works/press_header.png": "06cba081c19b350032ec18d8b2a065b431b3c0686837603ab9b3790a8acd4227",
-      "kubejs/assets/expedition_industry/textures/gui/works/press_panel.png": "dedc68e3eedd8a7fdb2334453d81e52503e666be1439834f314a7caf6dfbe6ca"
+      "kubejs/assets/expedition_industry/textures/gui/works/press_panel.png": "dedc68e3eedd8a7fdb2334453d81e52503e666be1439834f314a7caf6dfbe6ca",
+      "config/lightmanscurrency-common.txt": "9e6826201d2bc9677af1d4774400c752cbc63bf968d51ad816b5617c77d52a46",
+      "config/lightmanscurrency-server.txt": "a196815f86dec2eccc7f477fcfe82af280ce550663a10f15ad231b2364a95d40"
     },
     "mods": [
       {
@@ -5631,6 +5633,13 @@
         "sha1": "76eb73affbaeb90369b1dde64a74302d3acb69e8",
         "sha256": "e7163c5073caf9a4480ecc784996860fe5aba7df3a9f0afdd09c3b9acb074b18",
         "sha512": "9201af26edf339699d78b8c8fcf496c3aa43ae87d766fd7ac348ac47ea40e4d5dcf96bafc7bb90e70f427629e26afdcce3bb2b59ebc395e530be32e3eebcd38a"
+      },
+      {
+        "filename": "expedition-sift-compat-neoforge-1.0.0.jar",
+        "bytes": 4210,
+        "sha1": "cd889ba01377486fc0778f80a69fc8681bb29cbb",
+        "sha256": "a038137bff5bb941f68cbce13d92eabd1687518af94aa22833dd9f1211459836",
+        "sha512": "f3a99a77d171c1d40bee06b1ff5ca8fcb6ecf3e2c89aec87c50e972072444fd0f45ce9004309bede7460ee2b47ff654f89ea787252b4191232ba961a0600376d"
       },
       {
         "filename": "ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
@@ -5833,6 +5842,14 @@
         "downloadUrl": "https://edge.forgecdn.net/files/8706/808/L_Ender%27s%20Cataclysm%201.21.1-3.33.jar"
       },
       {
+        "filename": "lightmanscurrency-1.21-2.3.0.6.jar",
+        "bytes": 8073221,
+        "sha1": "bb16d428902b6d83c5203e9cf50984ef4b9f769a",
+        "sha256": "eab499cef7a837020e16ce61493ff07d15fd5b43e54e18a77bfa6c4ffcea05f4",
+        "sha512": "47ed278271e852ce76cee225b3c8dd762fce4c5a26c4351e449d5553578cd416c056627423597a9cac89228a240c2addf91748d2c5134b902d7da12e41e292a8",
+        "downloadUrl": "https://edge.forgecdn.net/files/9048/585/lightmanscurrency-1.21-2.3.0.6.jar"
+      },
+      {
         "filename": "Mekanism-1.21.1-10.7.19.85.jar",
         "bytes": 11976009,
         "sha1": "b78945c40cfe7640408f3fd1e44da385a8c8b805",
@@ -5847,6 +5864,14 @@
         "sha256": "0e5783b111e756f27b48c62b2f0e02fff750c77f7985ff809bfadc5f444ba4ac",
         "sha512": "6c3d5b7ea2f67f43c3d169c97de2855a7085f38019cf426e015ccc8ca9bc4f66e96b1cdf4a9afdc92bef7b2e236f16c81415ed5e48736805d5961d29525316d6",
         "downloadUrl": "https://edge.forgecdn.net/files/7904/61/MekanismGenerators-1.21.1-10.7.19.85.jar"
+      },
+      {
+        "filename": "mielon-s-the-sift-2.0.6-mc1.21.1-neo.jar",
+        "bytes": 80623750,
+        "sha1": "1ef8b6b801038b0ee98d45c61773d41fb6b0580f",
+        "sha256": "10fec8260e1ac51fed4cedf7be7b9f22f2e766db80589a3d381d266ab798a4c1",
+        "sha512": "d5f3af3a36df6ffe8b24564bf445ee61159483da474b801790a88d7b503b3b32bfe0dbfebe170964975cddcda3542d6b110f00b89ace58d120fb249afa542152",
+        "downloadUrl": "https://edge.forgecdn.net/files/9725/872/mielon-s-the-sift-2.0.6-mc1.21.1-neo.jar"
       },
       {
         "filename": "ModernUI-NeoForge-1.21.1-3.13.0.1-universal.jar",
@@ -9364,8 +9389,8 @@
       "kubejs/assets/expedition/tinkering/materials/legacy_soul_infused.json": "093935144fff8ccd4de5e522ebf3250f4c4ae1c834fa9728bd21f1a8704a03ac",
       "kubejs/assets/expedition_foundry/lang/en_us.json": "867059e5799bde37fc0e54738d5de651b5c5ee6d8c22f23eaef7cfd70ed94322",
       "kubejs/assets/expedition_foundry/lang/zh_cn.json": "55e94220aaf712cc376bca3c85314abaf8fa4c42428f819951213c094e3f41b1",
-      "kubejs/assets/expedition_industry/lang/en_us.json": "d650ec0d2664064b22db0a4c0b81a09380ed7b2e429ac7f18e2637bd17a3a183",
-      "kubejs/assets/expedition_industry/lang/zh_cn.json": "7f0a4ae0f34271d8ec1b03301889b73e7e9c870ce3c17abc6887e4459974567f",
+      "kubejs/assets/expedition_industry/lang/en_us.json": "9bf4281dbb2b1c0d700ee2c6974250471fd7586c1022e4b84b10c94bcb1fb711",
+      "kubejs/assets/expedition_industry/lang/zh_cn.json": "d4c8d2a78c3b5761d8395d645907df715de825321d5d64d62314e45ae20355dc",
       "kubejs/assets/expedition_industry/models/block/alloy_furnace.json": "4703a51c7607588bec7c04512de0a96b2d210d147fb92537239819c3c9b5a82d",
       "kubejs/assets/expedition_industry/models/block/blasting_compressor.json": "4703a51c7607588bec7c04512de0a96b2d210d147fb92537239819c3c9b5a82d",
       "kubejs/assets/expedition_industry/models/block/condenser.json": "a69126f8710a01e4cec9727455d8f0ed32450a9c5396f32c978463e7979ba538",
@@ -9939,7 +9964,7 @@
       "ldlib2/assets/mbd2/multiblock/satellite_relay.mb": "d15b1d31058f14028682ec826e18ba6bb77a98d4660bb2332f935fabee002184",
       "ldlib2/assets/mbd2/multiblock/shaft_furnace.mb": "de3aca98056b701068b1352203434a11fa5bd617973e02f93478180abcb85530",
       "ldlib2/assets/mbd2/multiblock/space_elevator.mb": "ec993fae4868a36e09e974451da181b8d669e47ac3c3e18b4e7f3933ada8eb82",
-      "ldlib2/assets/mbd2/multiblock/trading_station.mb": "9cfa62c5aec618dabd6fe50f4bb26f0cba37c3176d0713114d452c46edddfcbf",
+      "ldlib2/assets/mbd2/multiblock/trading_station.mb": "07464e25df2f5d4802830db1f0278d9ef0d63c790b1a6640412c9a84ee607945",
       "ldlib2/assets/mbd2/recipe_type/expedition_alloy_furnace.rt": "4c589c65bee166822f699ab19099c37f251f6f39dc047b05974ed110ab85bcd2",
       "ldlib2/assets/mbd2/recipe_type/expedition_blasting_compressor.rt": "f10b5b2976b8e3f528a2ac45d7a17f8a521034fb49fc5498870fdfc7fbc9fbce",
       "ldlib2/assets/mbd2/recipe_type/expedition_condenser.rt": "cd929a9c716ee5d6a54548dae40c154858e4617e4115256d606b9807305cf7ef",
@@ -12091,7 +12116,9 @@
       "ldlib2/assets/ldlib2/resources/global/expedition_industry_trading_station_96.predicate.nbt": "f51fe93306e6a0381493c76abeda971913fcfc14d82b5b6f491290865e207701",
       "ldlib2/assets/ldlib2/resources/global/expedition_industry_trading_station_97.predicate.nbt": "2889630c59558d15880904b7f16478c7dfc8b44ef081c38d911339ad1c813655",
       "ldlib2/assets/ldlib2/resources/global/expedition_industry_trading_station_98.predicate.nbt": "d019762ce871612250959c8ceda8c6dcee70fff8f0434ac67773343d3f2dfb4b",
-      "ldlib2/assets/ldlib2/resources/global/expedition_industry_trading_station_99.predicate.nbt": "29cb35d4b6987df1e9287c99581c2735ba43c58f415e9a38ca5c18f4e92f655c"
+      "ldlib2/assets/ldlib2/resources/global/expedition_industry_trading_station_99.predicate.nbt": "29cb35d4b6987df1e9287c99581c2735ba43c58f415e9a38ca5c18f4e92f655c",
+      "config/lightmanscurrency-common.txt": "9e6826201d2bc9677af1d4774400c752cbc63bf968d51ad816b5617c77d52a46",
+      "config/lightmanscurrency-server.txt": "a196815f86dec2eccc7f477fcfe82af280ce550663a10f15ad231b2364a95d40"
     },
     "mods": [
       {
@@ -12267,6 +12294,13 @@
         "sha1": "76eb73affbaeb90369b1dde64a74302d3acb69e8",
         "sha256": "e7163c5073caf9a4480ecc784996860fe5aba7df3a9f0afdd09c3b9acb074b18",
         "sha512": "9201af26edf339699d78b8c8fcf496c3aa43ae87d766fd7ac348ac47ea40e4d5dcf96bafc7bb90e70f427629e26afdcce3bb2b59ebc395e530be32e3eebcd38a"
+      },
+      {
+        "filename": "expedition-sift-compat-neoforge-1.0.0.jar",
+        "bytes": 4210,
+        "sha1": "cd889ba01377486fc0778f80a69fc8681bb29cbb",
+        "sha256": "a038137bff5bb941f68cbce13d92eabd1687518af94aa22833dd9f1211459836",
+        "sha512": "f3a99a77d171c1d40bee06b1ff5ca8fcb6ecf3e2c89aec87c50e972072444fd0f45ce9004309bede7460ee2b47ff654f89ea787252b4191232ba961a0600376d"
       },
       {
         "filename": "ExplorersCompass-1.21.1-3.4.0-neoforge.jar",
@@ -12461,6 +12495,14 @@
         "downloadUrl": "https://edge.forgecdn.net/files/8706/808/L_Ender%27s%20Cataclysm%201.21.1-3.33.jar"
       },
       {
+        "filename": "lightmanscurrency-1.21-2.3.0.6.jar",
+        "bytes": 8073221,
+        "sha1": "bb16d428902b6d83c5203e9cf50984ef4b9f769a",
+        "sha256": "eab499cef7a837020e16ce61493ff07d15fd5b43e54e18a77bfa6c4ffcea05f4",
+        "sha512": "47ed278271e852ce76cee225b3c8dd762fce4c5a26c4351e449d5553578cd416c056627423597a9cac89228a240c2addf91748d2c5134b902d7da12e41e292a8",
+        "downloadUrl": "https://edge.forgecdn.net/files/9048/585/lightmanscurrency-1.21-2.3.0.6.jar"
+      },
+      {
         "filename": "Mekanism-1.21.1-10.7.19.85.jar",
         "bytes": 11976009,
         "sha1": "b78945c40cfe7640408f3fd1e44da385a8c8b805",
@@ -12475,6 +12517,14 @@
         "sha256": "0e5783b111e756f27b48c62b2f0e02fff750c77f7985ff809bfadc5f444ba4ac",
         "sha512": "6c3d5b7ea2f67f43c3d169c97de2855a7085f38019cf426e015ccc8ca9bc4f66e96b1cdf4a9afdc92bef7b2e236f16c81415ed5e48736805d5961d29525316d6",
         "downloadUrl": "https://edge.forgecdn.net/files/7904/61/MekanismGenerators-1.21.1-10.7.19.85.jar"
+      },
+      {
+        "filename": "mielon-s-the-sift-2.0.6-mc1.21.1-neo.jar",
+        "bytes": 80623750,
+        "sha1": "1ef8b6b801038b0ee98d45c61773d41fb6b0580f",
+        "sha256": "10fec8260e1ac51fed4cedf7be7b9f22f2e766db80589a3d381d266ab798a4c1",
+        "sha512": "d5f3af3a36df6ffe8b24564bf445ee61159483da474b801790a88d7b503b3b32bfe0dbfebe170964975cddcda3542d6b110f00b89ace58d120fb249afa542152",
+        "downloadUrl": "https://edge.forgecdn.net/files/9725/872/mielon-s-the-sift-2.0.6-mc1.21.1-neo.jar"
       },
       {
         "filename": "MoogsEndStructures-universal-1.21-2.1.1.jar",

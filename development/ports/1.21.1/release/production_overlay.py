@@ -50,6 +50,9 @@ for script in ("ExpeditionBrassIndustryRecipes.js", "ExpeditionAlloyFurnaceHeat.
     SHARED[relative] = BRASS / relative
 TRADE_CONTROLLER = Path("kubejs/data/expedition_industry/recipe/controller/trading_station_early.json")
 SHARED[TRADE_CONTROLLER] = BRASS / TRADE_CONTROLLER
+for name in ("lightmanscurrency-common.txt", "lightmanscurrency-server.txt"):
+    relative = Path("config") / name
+    SHARED[relative] = BRASS / relative
 RADAR_RECIPES = Path("kubejs/server_scripts/RadarAcquisition.js")
 SHARED[RADAR_RECIPES] = RADAR / RADAR_RECIPES
 SHARED.update({
@@ -121,9 +124,16 @@ ROCK_GENERATOR_MOD = "expedition-rock-generator-neoforge-1.0.0.jar"
 ALLOY_FURNACE_MOD = "expedition-alloy-furnace-neoforge-1.0.0.jar"
 STRUCTURE_LOOKUP_MOD = "expedition-structure-lookup-neoforge-1.0.0.jar"
 VILLAGE_TREE_LOOKUP_MOD = "expedition-village-tree-lookup-neoforge-1.0.0.jar"
-REQUIRED_MODS = (SPACE_MOD, ITEM_COMPATIBILITY_MOD, ROCK_GENERATOR_MOD, ALLOY_FURNACE_MOD,
-                 STRUCTURE_LOOKUP_MOD, VILLAGE_TREE_LOOKUP_MOD)
+SIFT_COMPAT_MOD = "expedition-sift-compat-neoforge-1.0.0.jar"
 CREATE_NUCLEAR_MOD = "createnuclear-2.0.1-neoforge.jar"
+PROGRESSION_DOWNLOADS = {
+    "createnuclear": CREATE_NUCLEAR_MOD,
+    "lightmanscurrency": "lightmanscurrency-1.21-2.3.0.6.jar",
+    "the_sift": "mielon-s-the-sift-2.0.6-mc1.21.1-neo.jar",
+}
+SPACE_INSTALL_ADAPTERS = (SPACE_MOD, ITEM_COMPATIBILITY_MOD, ROCK_GENERATOR_MOD, ALLOY_FURNACE_MOD, SIFT_COMPAT_MOD)
+REQUIRED_MODS = (*SPACE_INSTALL_ADAPTERS, STRUCTURE_LOOKUP_MOD, VILLAGE_TREE_LOOKUP_MOD,
+                 *PROGRESSION_DOWNLOADS.values())
 THERMAL_STYLE = "thermal-create-style.json"
 PAXI_ORDER = Path("config/paxi/resourcepack_load_order.json")
 QUARK_CONFIG = Path("config/quark-common.toml")
@@ -182,9 +192,11 @@ def fetch_verified(target, url, checksum):
 
 
 def install_progression_downloads(client, server):
-    entry = json.loads((PORT / "community-mods.json").read_text(encoding="utf-8"))["createnuclear"]
-    for instance in (client, server):
-        fetch_verified(instance / "mods" / CREATE_NUCLEAR_MOD, entry["file"]["url"], entry["sha256"])
+    catalog = json.loads((PORT / "community-mods.json").read_text(encoding="utf-8"))
+    for mod, filename in PROGRESSION_DOWNLOADS.items():
+        entry = catalog[mod]
+        for instance in (client, server):
+            fetch_verified(instance / "mods" / filename, entry["file"]["url"], entry["sha256"])
     resource = thermal_style_resource()
     fetch_verified(client / resource["path"], resource["downloadUrl"], resource["sha256"])
     order_file = client / PAXI_ORDER

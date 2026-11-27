@@ -85,14 +85,14 @@ def install(client, server, java):
             target = overlay / path
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(FACTORY / path, target)
+        production["install_progression_downloads"](client, server)
         subprocess.run([sys.executable, str(HERE.parent / "build.py"), "--java", str(java),
                         "--server", str(server), "--output", str(staged), "space", "item-compatibility",
-                        "rock-generator", "alloy-furnace"], check=True)
+                        "rock-generator", "alloy-furnace", "sift-compat"], check=True)
         adapter = staged / production["SPACE_MOD"]
         with ZipFile(adapter) as archive:
             if b"expedition_space_acceptance" in archive.read("META-INF/neoforge.mods.toml"):
                 raise ValueError("Acceptance mod may only be installed in a disposable verification instance")
-        production["install_progression_downloads"](client, server)
         for instance in (client, server):
             subprocess.run([sys.executable, str(FACTORY / "update_nether_quests.py"),
                             str(instance / "config/ftbquests/quests")], check=True)
@@ -100,7 +100,7 @@ def install(client, server, java):
             retire_items(instance)
             shutil.copytree(overlay, instance, dirs_exist_ok=True)
             install_production_files(instance, client=instance == client)
-            for filename in production["REQUIRED_MODS"]:
+            for filename in production["SPACE_INSTALL_ADAPTERS"]:
                 shutil.copy2(staged / filename, instance / "mods")
             (instance / "mods/expedition-space-neoforge-1.0.0.jar").unlink(missing_ok=True)
         client_scripts = client / "kubejs/client_scripts"
