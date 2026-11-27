@@ -1,5 +1,5 @@
 {
-  "version": "1.21.1-test.10",
+  "version": "1.21.1-test.11",
   "minecraft": "1.21.1",
   "neoforge": "21.1.267",
   "client": {
@@ -330,7 +330,7 @@
       "config/carryon-common.toml": "7009d63a9b26373e559ffb0c414f5e7a32c5ad49569fbf970f8e9f3b122aee0c",
       "config/cataclysm-client.toml": "60a93fbbdd17a6775241f8227b34dbfa71da706bc905444fc3f8c6de0dcbaa4c",
       "config/cataclysm-common.toml": "31dc938bcb1455ad20589f3083ed03dc74b0df260d1fa61d451407c9ff97dce6",
-      "config/catalogue.properties": "9355d649d8f41a9b3151cc721aae1def21ce6683dac181166ea230288f463d57",
+      "config/catalogue.properties": "81575d702bb63bb40c14621e4f5234310c7800e6b8c389c46b77ac3f6f62a890",
       "config/citadel-common.toml": "95d2d649bb8fbc282b539ae01db3e2a37b3c68aa998a1e7ce60fa8732748e1f7",
       "config/civil.properties": "875445a1039fdfe924e41f8e5aebf218dcedb7097bc300164ae76152ec8f827f",
       "config/colorwheel-client.toml": "53a5ca163195a69c27765a7cb62a510d8dd35c1e78273d60d98d487e18fc4226",
@@ -5456,12 +5456,14 @@
       "config/fancymenu/assets/button/single.gif": "6801a9296e1e6c3acdf34e3a890e80d6bb6ea8a0886aa7aa8344d93d5b9459df",
       "config/fancymenu/assets/button/small.png": "6aaeb90625a608421c47d93faec7b1d4f79dd0c600bb5571ee270e48eff4178a",
       "config/fancymenu/assets/expedition_title_v12.png": "4200df6ed3c4366f78335d8d3f5e9b4cfc4ee79db52bc019d524e130b33de093",
-      "config/fancymenu/customization/title_screen_layout.txt": "b768609ed7e7b7287f3629e59e35ce56b759a76dc167ffcdd70ea38f2e7d3e97",
+      "config/fancymenu/customization/title_screen_layout.txt": "01e2280f956e4e1e85eea6ed84b1d7227d14b23ace00c2bdb31125e29d73ff97",
       "config/fancymenu/slideshows/background/images/image_1.png": "cf56c464f3a388cac9c6d795e22b8ecc014121774fc48cda46a75b44dcf14c76",
       "config/fancymenu/slideshows/background/images/image_2.png": "415a1df68835157da20026033c67ccf55b430eb1589eb48b3ac33de40276de2b",
       "config/fancymenu/slideshows/background/images/image_3.png": "b5b371af093c3fc0b64eac7c198c906a453d5c3baabea8b51edafb5761dcadca",
       "config/fancymenu/slideshows/background/properties.txt": "1d30ad8c0ceabf4b32b424afa48ff0b67b9fbf092de9846d3c6f5b9ee163c391",
-      "config/obscuria/aquamirae-early.json": "dcad37b6e686a882523f99b8a0f83443597d2e791d1e7818714d045be01f211d"
+      "config/obscuria/aquamirae-early.json": "dcad37b6e686a882523f99b8a0f83443597d2e791d1e7818714d045be01f211d",
+      "config/fancymenu/assets/button/title/quark.png": "82b655d3df1b674bae4374be88c66229158957bd6b8b7d1d61abcc3eb84d3dbb",
+      "config/fancymenu/assets/button/title/quark_hover.png": "d2d99e6afb23af6755455415995bdb17e51aee01fe52ce20bd0c196d1b189c84"
     },
     "mods": [
       {
