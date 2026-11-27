@@ -9,7 +9,7 @@ Minecraft 1.21.1、NeoForge 21.1.267、Java 21。
 | **1.21.1 · NeoForge** 当前开发线（测试中） | [开发计划与地月远征](docs/roadmap.md) |
 | **1.20.1 · Forge** 已停止开发 | [归档的 ATM 之星毕业路线](https://github.com/Eldershi/mechanical-expedition/blob/main/docs/roadmap.md) |
 
-从 [1.21.1-test.5 预发布页](https://github.com/Eldershi/mechanical-expedition/releases/tag/v1.21.1-test.5) 下载客户端 MRPACK，使用支持 Modrinth 整合包的启动器导入为独立实例，并选择 Java 21。
+从 [1.21.1-test.6 预发布页](https://github.com/Eldershi/mechanical-expedition/releases/tag/v1.21.1-test.6) 下载客户端 MRPACK，使用支持 Modrinth 整合包的启动器导入为独立实例，并选择 Java 21。
 
 物品栏通过「饰品」按钮打开 Curios、天境饰品和 Accessories 槽位。电弧炉配方的成品名称为「耐火砖泥」。
 

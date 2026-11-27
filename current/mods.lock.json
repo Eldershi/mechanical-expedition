@@ -1,5 +1,5 @@
 {
-  "version": "1.21.1-test.5",
+  "version": "1.21.1-test.6",
   "minecraft": "1.21.1",
   "neoforge": "21.1.267",
   "client": {
@@ -5437,7 +5437,9 @@
       "kubejs/server_scripts/ExpeditionGasPhases.js": "2feb75f143bbcaf36274033334eced3374875b0d9d62640023f2ad872b08ec73",
       "kubejs/startup_scripts/ExpeditionGasMaterials.js": "75c200ca47a077e0475ed094349f6f8f83942468498e9b451370301b3381a434",
       "kubejs/client_scripts/ExpeditionGasLanguage.js": "76019625e131219379652c603585819f3ea0a4d550f77207e1cbe3f824e935c4",
-      "kubejs/server_scripts/ExpeditionGasSampleTasks.js": "adbb43d1400caae5ca0ffca75e83cf3d68df4d18df466cbe7618eb822612efec"
+      "kubejs/server_scripts/ExpeditionGasSampleTasks.js": "adbb43d1400caae5ca0ffca75e83cf3d68df4d18df466cbe7618eb822612efec",
+      "config/create_cir_addition-boss-guard.json": "073c59e96a3025c4530f25247984f3f84f137726cf19059ab82bbf91c9419982",
+      "config/create_cir_addition.toml": "439080aed9d32adf295977fd460f8b2bdc51a20cce848850e1559e3bfc13aa1b"
     },
     "mods": [
       {
@@ -6604,6 +6606,14 @@
         "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
         "sha512": "11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b",
         "downloadUrl": "https://edge.forgecdn.net/files/7963/363/create-1.21.1-6.0.10.jar"
+      },
+      {
+        "filename": "create_cir_addition-3.5.0.jar",
+        "bytes": 220096,
+        "sha1": "57169588b218c084c055c3e0d9d148eba8ae01f5",
+        "sha256": "8330c5a06c0e72b95965cbfaf47f2e87c5e64935cffae2e9147b59b8b8b399e5",
+        "sha512": "251863117504b576361ca8dc447cb71225ed7db4d31d4918708b7ca2806f2e5079ec53e52238f23ac536513f27d565b8d3592c09bc21e9ec18684a30436a6937",
+        "downloadUrl": "https://github.com/CIR-Server/Create-CIR-Addition/releases/download/v3.5.0/create_cir_addition-3.5.0.jar"
       },
       {
         "filename": "creategearsandtavern-1.2.0-1.21.1.jar",
@@ -8887,6 +8897,8 @@
       "config/craftingtweaks-common.toml": "f8e26cfe44eb0e6d4d084b9a2af90f5028da034becee64b6ddfd50cdfd5c7fe1",
       "config/create-common.toml": "1c632f62c30f4e1223669267196d2ff1a2c03e400bf565ff4fe81e20c7cd2bdf",
       "config/create-server.toml": "55049fc146705a086f3010639f34a17b25c06ef01803a2b991c66c92479946f3",
+      "config/create_cir_addition-boss-guard.json": "073c59e96a3025c4530f25247984f3f84f137726cf19059ab82bbf91c9419982",
+      "config/create_cir_addition.toml": "439080aed9d32adf295977fd460f8b2bdc51a20cce848850e1559e3bfc13aa1b",
       "config/create_central_kitchen-common.toml": "9181ff82252d2e51065cc6cbfbe612bc597d1246146a579b0a6f38cc444fc4e9",
       "config/create_connected-common.toml": "5e18ed787b1fb0fcd23abcc4baf7f73f5ebcf73f369bf1102ba251569fd06fd4",
       "config/create_connected-server.toml": "5b0f4cdc30aac70ead5b98c9768e0aa39868141b999cfcdebc3e49f18a8ac9eb",
@@ -13284,6 +13296,14 @@
         "sha256": "ef87fe5709f1ba1f5b8bb20a2925b5afb4669e178fd6d8bf10c167759eefe37a",
         "sha512": "11cc8fc049d2f67f6548c7abfada6b82a3adb5c7ca410a742de04bbca76e03862c518721b88d806f6e6d768a4d68531fdb903a85859b25d1484d550cc7bafd4b",
         "downloadUrl": "https://edge.forgecdn.net/files/7963/363/create-1.21.1-6.0.10.jar"
+      },
+      {
+        "filename": "create_cir_addition-3.5.0.jar",
+        "bytes": 220096,
+        "sha1": "57169588b218c084c055c3e0d9d148eba8ae01f5",
+        "sha256": "8330c5a06c0e72b95965cbfaf47f2e87c5e64935cffae2e9147b59b8b8b399e5",
+        "sha512": "251863117504b576361ca8dc447cb71225ed7db4d31d4918708b7ca2806f2e5079ec53e52238f23ac536513f27d565b8d3592c09bc21e9ec18684a30436a6937",
+        "downloadUrl": "https://github.com/CIR-Server/Create-CIR-Addition/releases/download/v3.5.0/create_cir_addition-3.5.0.jar"
       },
       {
         "filename": "creategearsandtavern-1.2.0-1.21.1.jar",

@@ -1,6 +1,8 @@
-# 远征 1.21.1-test.5
+# 远征 1.21.1-test.6
 
 适用于 Minecraft 1.21.1、NeoForge 21.1.267 和 Java 21。
+
+- 客户端和专用服均加入 [Create CIR Addition 3.5.0](https://github.com/CIR-Server/Create-CIR-Addition/releases/tag/v3.5.0)，作者为 CIR Server 和 Real_Infinistar，许可为 CC BY-SA 4.0。启用 Create 机器优化，关闭自动清理、量子环限制和 Boss 保护，并沿用整合包的宝石切割规则。
 
 - 客户端包含 Mielon’s The Sift 2.0.6、远征 Sift 兼容模组和 Lightman’s Currency 2.3.0.6。多人游戏请在启动器中导入本版 MRPACK。
 

@@ -1,7 +1,7 @@
 {
   "formatVersion": 1,
   "game": "minecraft",
-  "versionId": "1.21.1-test.5",
+  "versionId": "1.21.1-test.6",
   "name": "机械动力：远征 · NeoForge 测试",
   "files": [
     {
@@ -2144,6 +2144,21 @@
         "https://edge.forgecdn.net/files/7963/363/create-1.21.1-6.0.10.jar"
       ],
       "fileSize": 19123767,
+      "env": {
+        "client": "required",
+        "server": "unsupported"
+      }
+    },
+    {
+      "path": "mods/create_cir_addition-3.5.0.jar",
+      "hashes": {
+        "sha1": "57169588b218c084c055c3e0d9d148eba8ae01f5",
+        "sha512": "251863117504b576361ca8dc447cb71225ed7db4d31d4918708b7ca2806f2e5079ec53e52238f23ac536513f27d565b8d3592c09bc21e9ec18684a30436a6937"
+      },
+      "downloads": [
+        "https://github.com/CIR-Server/Create-CIR-Addition/releases/download/v3.5.0/create_cir_addition-3.5.0.jar"
+      ],
+      "fileSize": 220096,
       "env": {
         "client": "required",
         "server": "unsupported"
