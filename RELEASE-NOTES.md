@@ -1,6 +1,11 @@
-# 远征 1.21.1-test.7
+# 远征 1.21.1-test.8
 
 适用于 Minecraft 1.21.1、NeoForge 21.1.267 和 Java 21。
+
+- 修复七咒之戒末影箱打开整理设置时的报错。通用容器使用 Sophisticated Sorter 的整理、搜索和转移控件。
+- 生存物品栏、Curios 和精妙背包默认显示 TrashSlot 销毁槽。
+- 仓储管理员的下单选项移到独立一行，生产订单按钮避开地址收藏列。
+- 降低第一人称火焰遮罩的位置和不透明度，保留燃烧提示。
 
 - 客户端和专用服均加入 [Create Rancher 1.0.6](https://www.curseforge.com/minecraft/mc-mods/create-rancher)，作者为 Halex，许可为 MIT。集奶地板可以把牛奶送入机械动力流体管路。[乳品车间布局及操作](development/ports/1.21.1/world-server/dairy-workshop/)。
 

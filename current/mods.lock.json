@@ -1,5 +1,5 @@
 {
-  "version": "1.21.1-test.7",
+  "version": "1.21.1-test.8",
   "minecraft": "1.21.1",
   "neoforge": "21.1.267",
   "client": {
@@ -742,7 +742,7 @@
       "config/powergrid-client.toml": "727d1a70c9f9ea9993c639d979c8f3b68a2deed0e13a26312128d998019ee266",
       "config/powergrid-common.toml": "353ff57e22aba1ad258de34ff0ffce3a229bebeaec909e1b2501326cc55d73f1",
       "config/protection-pixel.toml": "2519e6c8289362558eabb7ca3a8f6b52518a7b57218db28ef9e4218908750b0a",
-      "config/quark-common.toml": "6892454f77934acd55b7fbcd78117ef0fdf3870631cbb9cf354cdc075617a6a7",
+      "config/quark-common.toml": "64e34b34e948323dd7ac422d1d5eac21c2fe4162c5d9fc09ca8bd85b2d4ae017",
       "config/quark_ponders-client.toml": "90c38e8b55a4bc6c711801d87f08912193349a9fc7118ecb049d3b89d563e143",
       "config/quest_enhance/pack.mcmeta": "2abf68eb43c4770705a549608c531252c60b61fe8d390d582d3c580a5c0f840c",
       "config/quest_enhance-client.toml": "e3216e304220cf2ac2fdf491c35fd60846074d7461453b0162b2d715c53e98ff",
@@ -8392,6 +8392,13 @@
         "sha256": "36ee58475c46c56e76c199eebe48dc95aacaa1133512617dcc46053339c2fb5d",
         "sha512": "23c50dc3d75da96d87b065381e32a979528017f872d056bf1cb012e085122734ab218ea8af7b5570403d83c88ebfb53296969af47198fdb637058753d3974278",
         "downloadUrl": "https://cdn.modrinth.com/data/OnlVIpq5/versions/9vSFkDAr/zfastnoise-1.0.13%2B1.21.1%2Bneoforge.jar"
+      },
+      {
+        "filename": "expedition-client-interface-neoforge-1.0.0.jar",
+        "bytes": 6734,
+        "sha1": "e7e7a8cf66bb35be53d11f4561155abbcc54c473",
+        "sha256": "838ccfb083260b3835bcc23a9bae0fc1aa18aad977334b9db39d06d6c5043184",
+        "sha512": "6c5e9726843715258e31d8dac5f7ea2c62f51eb734c5f7589539dd4c2be4861af8472c1a9c606095b7791ef0815582c37412c7deed18abd56e599ffee2dd1f17"
       }
     ]
   },

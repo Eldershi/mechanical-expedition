@@ -283,10 +283,10 @@
 
 [management]
 	"Automatic Tool Restock" = true
-	"Easy Transfering" = true
+	"Easy Transferring" = false
 	"Expanded Item Interactions" = true
 	"Hotbar Changer" = true
-	"Inventory Sorting" = true
+	"Inventory Sorting" = false
 	"Item Sharing" = true
 	"Quick Armor Swapping" = true
 
@@ -308,7 +308,7 @@
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
 
-	[management.easy_transfering]
+	[management.easy_transferring]
 		"Enable Shift Lock" = true
 
 	[management.expanded_item_interactions]

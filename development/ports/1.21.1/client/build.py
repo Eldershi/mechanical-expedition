@@ -22,6 +22,18 @@ ADAPTERS = {
         "mixins": ["StockKeeperTooltipMixin"],
         "deps": {"create": "6.0.10"},
     },
+    "interface": {
+        "id": "expedition_client_interface",
+        "filename": "expedition-client-interface",
+        "name": "Expedition Client Interface",
+        "package": "expedition.clientinterface.mixin",
+        "mixins": ["SorterSettingsMixin", "StockKeeperLayoutMixin", "ProductionOrdersButtonMixin",
+                   "TrashSlotDefaultsMixin", "LowFireOverlayMixin"],
+        "deps": {"create": "6.0.10", "createfactorycontroller": "1.2.3-neoforge-1.21.1",
+                 "sophisticatedsorter": "1.1.1", "sophisticatedcore": "1.5.38",
+                 "trashslot": "21.1.11"},
+        "bundled": {"ponder-neoforge-1.0.87+mc1.21.1.jar": "iss_ponder-neoforge1.21.1-1.0.3.jar"},
+    },
     "teams": {
         "id": "expedition_ftb_teams_client_compat",
         "filename": "expedition-ftb-teams-client-compat",
