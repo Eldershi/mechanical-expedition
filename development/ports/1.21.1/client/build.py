@@ -81,6 +81,7 @@ ADAPTERS = {
         "package": "expedition.l2spawn.mixin",
         "side": "BOTH",
         "mixins": ["SectionDistanceMixin"],
+        "common_mixins": True,
         "deps": {"l2hostility": "3.0.18"},
     },
     "armor-display": {
@@ -192,9 +193,10 @@ side = "{adapter.get("side", "CLIENT")}"
     jar = output / f'{adapter["filename"]}-neoforge-{version}.jar'
     resources = {"META-INF/neoforge.mods.toml": metadata}
     if adapter.get("mixins"):
+        mixin_side = "mixins" if adapter.get("common_mixins") else "client"
         resources[config] = json.dumps({
             "required": True, "minVersion": "0.8.7", "compatibilityLevel": "JAVA_21",
-            "package": adapter["package"], "client": adapter["mixins"],
+            "package": adapter["package"], mixin_side: adapter["mixins"],
             "injectors": {"defaultRequire": 1},
             **({"plugin": adapter["plugin"]} if "plugin" in adapter else {}),
         })

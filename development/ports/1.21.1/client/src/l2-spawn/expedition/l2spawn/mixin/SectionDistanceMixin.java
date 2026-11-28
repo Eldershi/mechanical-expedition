@@ -1,5 +1,6 @@
 package expedition.l2spawn.mixin;
 
+import dev.xkmc.l2hostility.content.capability.chunk.SectionDifficulty;
 import dev.xkmc.l2hostility.content.logic.MobDifficultyCollector;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
@@ -9,7 +10,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
-@Mixin(targets = "dev.xkmc.l2hostility.content.capability.chunk.SectionDifficulty", remap = false)
+@Mixin(value = SectionDifficulty.class, remap = false)
 abstract class SectionDistanceMixin {
     @Redirect(
         method = "modifyInstanceInternal",
