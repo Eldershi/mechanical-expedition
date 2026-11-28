@@ -1,5 +1,5 @@
 {
-  "version": "1.21.1-test.17",
+  "version": "1.21.1-test.18",
   "minecraft": "1.21.1",
   "neoforge": "21.1.267",
   "client": {
@@ -5463,8 +5463,8 @@
       "config/fancymenu/slideshows/background/properties.txt": "1d30ad8c0ceabf4b32b424afa48ff0b67b9fbf092de9846d3c6f5b9ee163c391",
       "config/obscuria/aquamirae-early.json": "dcad37b6e686a882523f99b8a0f83443597d2e791d1e7818714d045be01f211d",
       "config/fancymenu/assets/button/title/outline-49.png": "1cc51e3aca1a9313fe6d06f2dfadc723ee1fd79fd6aff29e714ae16a7c03047a",
-      "config/fancymenu/assets/button/title/quark.png": "82b655d3df1b674bae4374be88c66229158957bd6b8b7d1d61abcc3eb84d3dbb",
-      "config/fancymenu/assets/button/title/quark_hover.png": "d2d99e6afb23af6755455415995bdb17e51aee01fe52ce20bd0c196d1b189c84"
+      "config/fancymenu/assets/button/title/quark.png": "c9705dae5bf4bf9f4651bfe4454e65cadec244296dcabc7c2bb7558c10e2605b",
+      "config/fancymenu/assets/button/title/quark_hover.png": "8106b327359414604120aeb3e3b53d1796f0d6b8c8c90a607d86196b615f7f27"
     },
     "mods": [
       {
@@ -8419,11 +8419,11 @@
         "downloadUrl": "https://cdn.modrinth.com/data/OnlVIpq5/versions/9vSFkDAr/zfastnoise-1.0.13%2B1.21.1%2Bneoforge.jar"
       },
       {
-        "filename": "expedition-client-interface-neoforge-1.0.2.jar",
-        "bytes": 7329,
-        "sha1": "7888ecb0d93f8c6d38ab7fe9972ef63bf10c59ba",
-        "sha256": "c102220bf198eb75ffedb06d81b3587aac9ee4828cc85f6b5db2d52a0d41e6f3",
-        "sha512": "d806182594f7112636651de7e1caca3b0d2aee3b2bafb26fe5c3b507fb51d9ef9d26c7a1a084b9b9d99618c1b4c47ea8b067c9ad5b06aa2046f2ded3bcc03e03"
+        "filename": "expedition-client-interface-neoforge-1.0.3.jar",
+        "bytes": 9088,
+        "sha1": "608df709735eaa215ededfbfc2ae876f97ae4eff",
+        "sha256": "5c3839fb593bee757ca29f1a22bf3b19ec4397989e7e6d5dd52efe4622a54719",
+        "sha512": "fe47af51e6ae211318b048ffe503404e0b6cd682eab9871299885c2990b5401cac966e9dabf3bf176de7b9097382993498f965934ceeff97902b1d924d968f3e"
       }
     ]
   },

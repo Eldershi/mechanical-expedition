@@ -402,8 +402,8 @@ db2aa8d1e431e6909d0d5801dad89a718016ccdcf850f93e69b315e00ac9d8e8  current/client
 6801a9296e1e6c3acdf34e3a890e80d6bb6ea8a0886aa7aa8344d93d5b9459df  current/client/config/fancymenu/assets/button/single.gif
 6aaeb90625a608421c47d93faec7b1d4f79dd0c600bb5571ee270e48eff4178a  current/client/config/fancymenu/assets/button/small.png
 1cc51e3aca1a9313fe6d06f2dfadc723ee1fd79fd6aff29e714ae16a7c03047a  current/client/config/fancymenu/assets/button/title/outline-49.png
-82b655d3df1b674bae4374be88c66229158957bd6b8b7d1d61abcc3eb84d3dbb  current/client/config/fancymenu/assets/button/title/quark.png
-d2d99e6afb23af6755455415995bdb17e51aee01fe52ce20bd0c196d1b189c84  current/client/config/fancymenu/assets/button/title/quark_hover.png
+c9705dae5bf4bf9f4651bfe4454e65cadec244296dcabc7c2bb7558c10e2605b  current/client/config/fancymenu/assets/button/title/quark.png
+8106b327359414604120aeb3e3b53d1796f0d6b8c8c90a607d86196b615f7f27  current/client/config/fancymenu/assets/button/title/quark_hover.png
 069949d1aa5d9088592d525b13d81902d24869b1ac6d56a812b246db5c1a30da  current/client/config/fancymenu/assets/button/unused/blank.png
 22819971c89c9ee1b3fd37c134035b239caeb07f52e9aaa17f8fe05a91b7ecdb  current/client/config/fancymenu/assets/button/unused/blank2.png
 5db363a94fcf6cdbf37414866f7c638218e8216d17a1e57f83836f8ec31ecb4d  current/client/config/fancymenu/assets/button/unused/config.png
@@ -5445,7 +5445,7 @@ ed83f72f7d2e3933a1c0e4bb68b70c9197aa504f6da069c42263904a09393cf1  current/client
 44b01c12f6b4be699b48c4d91f5f79227bdb4fb28cf698243a16d3eb4000b676  current/client/mods/expedition-alpine-climate-1.0.0.jar
 fefb8ce39e793a3ebbfcaeac0a298d1669c671a3c7e3713c1a9695b9878d230c  current/client/mods/expedition-armor-display-neoforge-1.0.0.jar
 0040cfea68a20683d1e7f443e68b708cd8e65a4c812be602f6daf3a704808970  current/client/mods/expedition-chunky-startup-guard-neoforge-1.0.0.jar
-c102220bf198eb75ffedb06d81b3587aac9ee4828cc85f6b5db2d52a0d41e6f3  current/client/mods/expedition-client-interface-neoforge-1.0.2.jar
+5c3839fb593bee757ca29f1a22bf3b19ec4397989e7e6d5dd52efe4622a54719  current/client/mods/expedition-client-interface-neoforge-1.0.3.jar
 93cbd10d463a97bc647e23b0af002fad97c39ade559156b5e648bb69a6beed6f  current/client/mods/expedition-client-performance-neoforge-1.0.1.jar
 0ba17242d2382cfbf0f5dc8325794870250cfd76801b17a5f28a6b29036aa9ff  current/client/mods/expedition-create-logistics-neoforge-1.0.0.jar
 7d9912651b21cff360eb30f8f59fc04c1d0f544eeabdc838d09c9c49b6e39267  current/client/mods/expedition-creeper-firework-compat-1.0.0.jar

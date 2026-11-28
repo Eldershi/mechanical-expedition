@@ -25,11 +25,11 @@ ADAPTERS = {
     "interface": {
         "id": "expedition_client_interface",
         "filename": "expedition-client-interface",
-        "version": "1.0.2",
+        "version": "1.0.3",
         "name": "Expedition Client Interface",
         "package": "expedition.clientinterface.mixin",
         "mixins": ["SorterSettingsMixin", "SorterControlsMixin", "StockKeeperLayoutMixin", "ProductionOrdersButtonMixin",
-                   "TrashSlotDefaultsMixin", "LowFireOverlayMixin"],
+                   "TrashSlotDefaultsMixin", "LowFireOverlayMixin", "TitleButtonLabelMixin", "TitleCreateIconMixin"],
         "deps": {"create": "6.0.10", "createfactorycontroller": "1.2.3-neoforge-1.21.1",
                  "sophisticatedsorter": "1.1.1", "sophisticatedcore": "1.5.38",
                  "trashslot": "21.1.11"},
