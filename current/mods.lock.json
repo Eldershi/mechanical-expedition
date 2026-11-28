@@ -6980,11 +6980,11 @@
         "sha512": "e23f1581f05a00494c05c3a2383b0f77d5d24f0f6e8dd67d197c9f0f113446eb81b3e2686cdc09d1d4b5090afe280e315d8dcbfb96c06faf63dd52ee5c09bf1f"
       },
       {
-        "filename": "expedition-client-performance-neoforge-1.1.0.jar",
-        "bytes": 5808,
-        "sha1": "111935cd370e18135af671106ea78c17bc1b5267",
-        "sha256": "827440173aedc55f88c918fdf518662466ecf054d2fe45adccf99e5964e21b20",
-        "sha512": "807b4190bacf43e5dfafb60729ae1f5854f3dbeddf72b406297354d1ab77d12e1569dda4f7e5d324edd41f1afbee6323150492df579ff8b3a763a3e1d6ddbc20"
+        "filename": "expedition-client-performance-neoforge-1.2.0.jar",
+        "bytes": 7965,
+        "sha1": "ffdf2890fdae1b3126ba23f1e9ce31753c7dd50b",
+        "sha256": "5083944e01f6d38216f286a31d1fbe1e73ec370b1fe3a3dd737cb719100797e8",
+        "sha512": "65ac574882e8b5be8f21ba6002c55087a031122c6e0532a1764b69dba4e9a7c6ccb068ba460f25b11574398148f8bf75ea484dd759ecd705f5e20037518d180e"
       },
       {
         "filename": "expedition-create-logistics-neoforge-1.0.0.jar",

@@ -36,8 +36,8 @@
     "build": "client/build.py"
   },
   "expedition-client-performance-1.0.0.jar": {
-    "filename": "expedition-client-performance-neoforge-1.1.0.jar",
-    "sha256": "827440173aedc55f88c918fdf518662466ecf054d2fe45adccf99e5964e21b20",
+    "filename": "expedition-client-performance-neoforge-1.2.0.jar",
+    "sha256": "5083944e01f6d38216f286a31d1fbe1e73ec370b1fe3a3dd737cb719100797e8",
     "side": "CLIENT",
     "build": "client/build.py"
   },
