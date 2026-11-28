@@ -872,7 +872,7 @@ dc5b3cb09c94169b5f92d016a5f77c5d61eac644d785397a55c7fb17fad3f59b  current/client
 c0d362f470686c89a5105717322be2b942fc1c57d3de4cde6d6486912c68e856  current/client/config/powergrid-client.toml
 85567d5b1942458e891c9c0eda75d482112b54f122aa1dad11756d75d570b600  current/client/config/powergrid-common.toml
 a5d08b917ef15d63c2be151c5741f52ec8a892027c1dd6b3cf23a88282834229  current/client/config/protection-pixel.toml
-732f7e7e1fbee3511fa385e2bed2079ef8c85050aacb94c00f7d2ec77ebaf8f1  current/client/config/quark-common.toml
+6892454f77934acd55b7fbcd78117ef0fdf3870631cbb9cf354cdc075617a6a7  current/client/config/quark-common.toml
 a2b94dd59b1e889d56258d05d3456680371af61378bbc2ce7d48cfe5c3a6cb92  current/client/config/quark_ponders-client.toml
 7aedebef2a1f9fa48c4c24add57000a0063cebc5c8f597d4b5aa1c3c0eee25de  current/client/config/quest_enhance-client.toml
 7ae106147c1a91288116b8439099ca3ea564416266d59547c13049728b039b25  current/client/config/quest_enhance/pack.mcmeta
@@ -5439,11 +5439,12 @@ a6e55c15bc3de4e8ccef7c8d25c7dcfb81a561786f67c97894670bc338796e4c  current/client
 e49fbdf06b9ac88f8c85391634ece603d0b5501b12e812e651c2319d6cc7bce7  current/client/mods/MultiBuilderTool-1.20.1-1.0.28.jar
 f2ced7adfa7c11bf9acb0de77a3c3b2a9f8241d764b64cbed381c8f517776208  current/client/mods/ars_controle-1.20.1-1.1.1.jar
 42f8dcb05d71ad714c1b9ac84186e33037ae3bb4a2893787843331575830590d  current/client/mods/auratip-forge-1.20.1-1.1.1-beta.jar
-a77e70ccafabdef5cd02602b1ef085c0b9b5b1863587ac2a1edb1afd5d061c8f  current/client/mods/expedition-accessory-entry-neoforge-1.1.0.jar
+7a4ea4e2c940230fc7cfcf4c6ef593eef709a591f53755ea8431b19fd265ab21  current/client/mods/expedition-accessory-entry-neoforge-1.2.0.jar
 ed83f72f7d2e3933a1c0e4bb68b70c9197aa504f6da069c42263904a09393cf1  current/client/mods/expedition-alloy-furnace-neoforge-1.0.0.jar
 44b01c12f6b4be699b48c4d91f5f79227bdb4fb28cf698243a16d3eb4000b676  current/client/mods/expedition-alpine-climate-1.0.0.jar
 fefb8ce39e793a3ebbfcaeac0a298d1669c671a3c7e3713c1a9695b9878d230c  current/client/mods/expedition-armor-display-neoforge-1.0.0.jar
 0040cfea68a20683d1e7f443e68b708cd8e65a4c812be602f6daf3a704808970  current/client/mods/expedition-chunky-startup-guard-neoforge-1.0.0.jar
+c102220bf198eb75ffedb06d81b3587aac9ee4828cc85f6b5db2d52a0d41e6f3  current/client/mods/expedition-client-interface-neoforge-1.0.2.jar
 93cbd10d463a97bc647e23b0af002fad97c39ade559156b5e648bb69a6beed6f  current/client/mods/expedition-client-performance-neoforge-1.0.1.jar
 0ba17242d2382cfbf0f5dc8325794870250cfd76801b17a5f28a6b29036aa9ff  current/client/mods/expedition-create-logistics-neoforge-1.0.0.jar
 7d9912651b21cff360eb30f8f59fc04c1d0f544eeabdc838d09c9c49b6e39267  current/client/mods/expedition-creeper-firework-compat-1.0.0.jar
@@ -6863,7 +6864,7 @@ ee33ca1bd6b8a36df7c146e6d748469154703221c981210d4352a535fbed9f57  current/server
 2ca7d43485c2c9f97fed9ffcfd9c581ba774a732b8473b5868170b5b303360c8  current/server/mods/Create-Steam-Ages-1.0-expedition-steamletters-compat.jar
 91709031d559037fe66798202c1a2b05259ea28d5b639b8dcd734846616a5f66  current/server/mods/Oh-The-Trees-Youll-Grow-forge-1.20.1-1.7.3.jar
 a15224165ae9aa92071a09033601305bbc9f4b12851ad02e580a883f3df49626  current/server/mods/createfactorycontroller-1.2.1-forge-1.20.1.jar
-a77e70ccafabdef5cd02602b1ef085c0b9b5b1863587ac2a1edb1afd5d061c8f  current/server/mods/expedition-accessory-entry-neoforge-1.1.0.jar
+7a4ea4e2c940230fc7cfcf4c6ef593eef709a591f53755ea8431b19fd265ab21  current/server/mods/expedition-accessory-entry-neoforge-1.2.0.jar
 ed83f72f7d2e3933a1c0e4bb68b70c9197aa504f6da069c42263904a09393cf1  current/server/mods/expedition-alloy-furnace-neoforge-1.0.0.jar
 47eabae55d38ee2753bd3683d2b3ff148c00d615195250e451f5f7f111224a2f  current/server/mods/expedition-backup-retention-neoforge-1.0.0.jar
 0040cfea68a20683d1e7f443e68b708cd8e65a4c812be602f6daf3a704808970  current/server/mods/expedition-chunky-startup-guard-neoforge-1.0.0.jar

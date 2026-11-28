@@ -31,7 +31,7 @@ public final class AccessoryMenuMod {
     }
 
     private static void registerPayload(RegisterPayloadHandlersEvent event) {
-        event.registrar("1").playToServer(OpenMenu.TYPE, OpenMenu.CODEC, (payload, context) -> {
+        event.registrar("2").playToServer(OpenMenu.TYPE, OpenMenu.CODEC, (payload, context) -> {
             if (context.player() instanceof ServerPlayer player && player.isAlive()
                     && player.containerMenu == player.inventoryMenu
                     && player.inventoryMenu.getCarried().isEmpty()) {

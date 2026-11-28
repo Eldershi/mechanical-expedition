@@ -6,7 +6,7 @@ import io.wispforest.accessories.api.AccessoriesContainer;
 import io.wispforest.accessories.menu.AccessoriesInternalSlot;
 import io.wispforest.accessories.networking.server.SyncCosmeticToggle;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import net.minecraft.network.RegistryFriendlyByteBuf;
@@ -15,13 +15,18 @@ import net.minecraft.world.SimpleContainer;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.player.StackedContents;
+import net.minecraft.world.inventory.RecipeBookMenu;
+import net.minecraft.world.inventory.RecipeBookType;
 import net.minecraft.world.inventory.InventoryMenu;
 import net.minecraft.world.inventory.ResultContainer;
 import net.minecraft.world.inventory.ResultSlot;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.TransientCraftingContainer;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.CraftingInput;
+import net.minecraft.world.item.crafting.CraftingRecipe;
+import net.minecraft.world.item.crafting.RecipeHolder;
 import net.neoforged.neoforge.network.PacketDistributor;
 import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.type.ISlotType;
@@ -29,25 +34,21 @@ import top.theillusivec4.curios.api.type.inventory.ICurioStacksHandler;
 import top.theillusivec4.curios.common.inventory.CurioSlot;
 import top.theillusivec4.curios.common.network.server.sync.SPacketSyncRender;
 
-final class AccessoryMenu extends AbstractContainerMenu {
-    static final int COLUMNS = 9;
-    static final int PAGE_SIZE = COLUMNS * 2;
-    static final int INVENTORY_Y = 133;
-    private static final int PLAYER_SLOTS = 37;
-    private static final int ARMOR_END = PLAYER_SLOTS + 5;
+final class AccessoryMenu extends RecipeBookMenu<CraftingInput, CraftingRecipe> {
+    static final int INVENTORY_WIDTH = 176;
+    static final int INVENTORY_HEIGHT = 166;
+    static final int CELL = 18;
+    static final int INSET = 7;
+    static final int PREFERRED_COLUMNS = 8;
+    static final int PREFERRED_ROWS = 8;
+    private static final int INVENTORY_COLUMNS = 9;
     private static final int CRAFT_RESULT = 0;
-    private static final int PLAYER_START = 1;
-    private static final int ACCESSORY_START = ARMOR_END + 5;
+    private static final int PLAYER_START = 5;
+    private static final int PLAYER_END = PLAYER_START + 36;
+    private static final int ARMOR_START = PLAYER_END + 1;
+    static final int ACCESSORY_START = ARMOR_START + 4;
 
-    enum Group {
-        CURIOS(37), ACCESSORIES(87);
-
-        final int y;
-
-        Group(int y) {
-            this.y = y;
-        }
-    }
+    enum Group { CURIOS, ACCESSORIES }
 
     record SlotKey(Group group, String name, int index, boolean cosmetic) {}
 
@@ -97,10 +98,15 @@ final class AccessoryMenu extends AbstractContainerMenu {
     private final Layout layout;
     private final TransientCraftingContainer craft = new TransientCraftingContainer(this, 2, 2);
     private final ResultContainer result = new ResultContainer();
-    private final int[][] counts = new int[Group.values().length][2];
-    private final int[] pages = new int[Group.values().length];
+    private final int[] cells;
+    private final int accessoryCount;
     private final boolean layoutMatches;
+    private final boolean hasCosmetics;
     private boolean showingCosmetics;
+    private boolean accessoriesVisible = true;
+    private int columns = PREFERRED_COLUMNS;
+    private int rows = PREFERRED_ROWS;
+    private int firstRow;
 
     static AccessoryMenu fromServer(int id, Inventory inventory, RegistryFriendlyByteBuf buffer) {
         int signature = buffer.readInt();
@@ -120,18 +126,30 @@ final class AccessoryMenu extends AbstractContainerMenu {
         owner = inventory.player;
         this.layout = layout;
         layoutMatches = layout.keys().size() == slotCount && layout.signature() == signature;
+        var equipmentCells = new HashMap<SlotKey, Integer>();
+        for (SlotKey key : layout.keys()) {
+            if (!key.cosmetic()) {
+                equipmentCells.put(key, equipmentCells.size());
+            }
+        }
+        accessoryCount = equipmentCells.size();
+        hasCosmetics = layout.keys().stream().anyMatch(SlotKey::cosmetic);
+        cells = new int[layout.keys().size()];
+
         addSlot(new CraftOutput(owner, craft, result));
-        for (int index = 0; index < PLAYER_SLOTS - PLAYER_START; index++) {
-            boolean hotbar = index < COLUMNS;
-            int y = hotbar ? INVENTORY_Y + 58 : INVENTORY_Y + (index / COLUMNS - 1) * 18;
-            addSlot(new Slot(inventory, index, 8 + (index % COLUMNS) * 18, y));
-        }
-        addEquipment(inventory, owner.inventoryMenu.getSlot(InventoryMenu.SHIELD_SLOT), 226, 94);
+        // The recipe book requires its result and four input slots at menu indices 0–4.
         for (int index = 0; index < 4; index++) {
-            addEquipment(inventory, owner.inventoryMenu.getSlot(InventoryMenu.ARMOR_SLOT_START + index), 186, 24 + 18 * index);
+            addSlot(new Slot(craft, index, 98 + index % 2 * CELL, 18 + index / 2 * CELL));
         }
+        for (int index = 0; index < PLAYER_END - PLAYER_START; index++) {
+            boolean hotbar = index < INVENTORY_COLUMNS;
+            int y = hotbar ? 142 : 84 + (index / INVENTORY_COLUMNS - 1) * CELL;
+            addSlot(new Slot(inventory, index, 8 + (index % INVENTORY_COLUMNS) * CELL, y));
+        }
+        addEquipment(inventory, owner.inventoryMenu.getSlot(InventoryMenu.SHIELD_SLOT), 77, 62);
         for (int index = 0; index < 4; index++) {
-            addSlot(new Slot(craft, index, 185 + (index % 2) * 18, 133 + (index / 2) * 18));
+            addEquipment(inventory, owner.inventoryMenu.getSlot(InventoryMenu.ARMOR_SLOT_START + index),
+                8, 8 + CELL * index);
         }
         if (!layoutMatches) {
             // Accept the server's initial slot synchronization without touching unmatched equipment.
@@ -146,20 +164,18 @@ final class AccessoryMenu extends AbstractContainerMenu {
             }
             return;
         }
-        for (SlotKey key : layout.keys()) {
-            int i = counts[key.group().ordinal()][key.cosmetic() ? 1 : 0]++;
-            int cell = i % PAGE_SIZE;
-            int x = 8 + cell % COLUMNS * 18;
-            int y = key.group().y + cell / COLUMNS * 18;
-            int page = i / PAGE_SIZE;
+        for (int i = 0; i < layout.keys().size(); i++) {
+            SlotKey key = layout.keys().get(i);
+            int cell = equipmentCells.getOrDefault(new SlotKey(key.group(), key.name(), key.index(), false), -1);
+            cells[i] = cell;
             if (key.group() == Group.CURIOS) {
                 var handler = layout.curios().get(key.name());
                 var stacks = key.cosmetic() ? handler.getCosmeticStacks() : handler.getStacks();
-                addSlot(new CurioSlot(owner, stacks, key.index(), key.name(), x, y, handler.getRenders(),
+                addSlot(new CurioSlot(owner, stacks, key.index(), key.name(), 0, 0, handler.getRenders(),
                     handler.getActiveStates(), handler.canToggleRendering(), false, key.cosmetic()) {
                     @Override
                     public boolean isActive() {
-                        return super.isActive() && enabled(key, page);
+                        return super.isActive() && enabled(key, cell);
                     }
 
                     @Override
@@ -172,8 +188,8 @@ final class AccessoryMenu extends AbstractContainerMenu {
                 });
             } else {
                 var container = layout.accessories().get(key.name());
-                addSlot(new AccessoriesInternalSlot(container, key.cosmetic(), key.index(), x, y)
-                    .isActive(slot -> enabled(key, page)));
+                addSlot(new AccessoriesInternalSlot(container, key.cosmetic(), key.index(), 0, 0)
+                    .isActive(slot -> enabled(key, cell)));
             }
         }
     }
@@ -228,13 +244,17 @@ final class AccessoryMenu extends AbstractContainerMenu {
         return slot.container != result && super.canTakeItemForPickAll(stack, slot);
     }
 
-    private boolean enabled(SlotKey key, int page) {
-        return !owner.level().isClientSide()
-            || showingCosmetics == key.cosmetic() && pages[key.group().ordinal()] == page;
+    private boolean enabled(SlotKey key, int cell) {
+        return !owner.level().isClientSide() || (accessoriesVisible && showingCosmetics == key.cosmetic()
+            && cell >= firstRow * columns && cell < (firstRow + rows) * columns);
     }
 
     boolean layoutMatches() {
         return layoutMatches;
+    }
+
+    boolean hasCosmetics() {
+        return hasCosmetics;
     }
 
     boolean cosmetics() {
@@ -243,20 +263,90 @@ final class AccessoryMenu extends AbstractContainerMenu {
 
     void toggleCosmetics() {
         showingCosmetics = !showingCosmetics;
-        Arrays.fill(pages, 0);
     }
 
-    int page(Group group) {
-        return pages[group.ordinal()];
+    int accessoryCount() {
+        return accessoryCount;
     }
 
-    int pages(Group group) {
-        int count = counts[group.ordinal()][showingCosmetics ? 1 : 0];
-        return Math.max(1, (count + PAGE_SIZE - 1) / PAGE_SIZE);
+    int accessoryCell(int slotIndex) {
+        return cells[slotIndex - ACCESSORY_START];
     }
 
-    void changePage(Group group, int delta) {
-        pages[group.ordinal()] = Math.clamp(page(group) + delta, 0, pages(group) - 1);
+    int firstRow() {
+        return firstRow;
+    }
+
+    int rowCount() {
+        return Math.ceilDiv(accessoryCount, columns);
+    }
+
+    void setViewport(int columns, int rows) {
+        this.columns = columns;
+        this.rows = rows;
+        scrollRows(0);
+    }
+
+    void scrollRows(int delta) {
+        firstRow = Math.clamp(firstRow + delta, 0, Math.max(0, rowCount() - rows));
+    }
+
+    void setAccessoriesVisible(boolean visible) {
+        accessoriesVisible = visible;
+    }
+
+    boolean renderEnabled(Slot slot) {
+        if (slot instanceof CurioSlot curio) {
+            return curio.getRenderStatus();
+        }
+        SlotKey key = layout.keys().get(slot.index - ACCESSORY_START);
+        return layout.accessories().get(key.name()).shouldRender(key.index());
+    }
+
+    @Override
+    public void fillCraftSlotsStackedContents(StackedContents contents) {
+        craft.fillStackedContents(contents);
+    }
+
+    @Override
+    public void clearCraftingContent() {
+        result.clearContent();
+        craft.clearContent();
+    }
+
+    @Override
+    public boolean recipeMatches(RecipeHolder<CraftingRecipe> recipe) {
+        return recipe.value().matches(craft.asCraftInput(), owner.level());
+    }
+
+    @Override
+    public int getResultSlotIndex() {
+        return CRAFT_RESULT;
+    }
+
+    @Override
+    public int getGridWidth() {
+        return 2;
+    }
+
+    @Override
+    public int getGridHeight() {
+        return 2;
+    }
+
+    @Override
+    public int getSize() {
+        return PLAYER_START;
+    }
+
+    @Override
+    public RecipeBookType getRecipeBookType() {
+        return RecipeBookType.CRAFTING;
+    }
+
+    @Override
+    public boolean shouldMoveToInventory(int slot) {
+        return slot != CRAFT_RESULT;
     }
 
     @Override
@@ -310,13 +400,17 @@ final class AccessoryMenu extends AbstractContainerMenu {
         }
         ItemStack stack = slot.getItem();
         ItemStack before = stack.copy();
-        if (index >= PLAYER_SLOTS || index == CRAFT_RESULT) {
-            if (!moveItemStackTo(stack, PLAYER_START, PLAYER_SLOTS, true)) {
+        int mainStart = PLAYER_START + INVENTORY_COLUMNS;
+        if (index < PLAYER_START || index >= PLAYER_END) {
+            if (!moveItemStackTo(stack, PLAYER_START, PLAYER_END, true)) {
                 return ItemStack.EMPTY;
             }
-        } else if (!equip(stack) && !moveItemStackTo(stack, index <= COLUMNS ? COLUMNS + PLAYER_START : PLAYER_START,
-                index <= COLUMNS ? PLAYER_SLOTS : COLUMNS + PLAYER_START, false)) {
-            return ItemStack.EMPTY;
+        } else if (!equip(stack)) {
+            boolean fromHotbar = index < mainStart;
+            if (!moveItemStackTo(stack, fromHotbar ? mainStart : PLAYER_START,
+                    fromHotbar ? PLAYER_END : mainStart, false)) {
+                return ItemStack.EMPTY;
+            }
         }
         if (index == CRAFT_RESULT) {
             ((CraftOutput) slot).takeQuickCraft(stack, before);
@@ -335,7 +429,7 @@ final class AccessoryMenu extends AbstractContainerMenu {
 
     private static final class CraftOutput extends ResultSlot {
         CraftOutput(Player owner, TransientCraftingContainer craft, ResultContainer result) {
-            super(owner, craft, result, 0, 247, 142);
+            super(owner, craft, result, 0, 154, 28);
         }
 
         void takeQuickCraft(ItemStack remaining, ItemStack before) {
@@ -344,7 +438,7 @@ final class AccessoryMenu extends AbstractContainerMenu {
     }
 
     private boolean equip(ItemStack stack) {
-        for (int index = PLAYER_SLOTS + 1; index < ARMOR_END; index++) {
+        for (int index = ARMOR_START; index < ACCESSORY_START; index++) {
             if (!slots.get(index).hasItem() && moveItemStackTo(stack, index, index + 1, false)) {
                 return true;
             }

@@ -3,9 +3,7 @@
 from hashlib import sha256
 import json
 from pathlib import Path
-import re
 import shutil
-import tomllib
 from tempfile import TemporaryDirectory
 from urllib.request import urlopen
 
@@ -146,14 +144,7 @@ REQUIRED_MODS = (*SPACE_INSTALL_ADAPTERS, STRUCTURE_LOOKUP_MOD, VILLAGE_TREE_LOO
 THERMAL_STYLE = "thermal-create-style.json"
 PAXI_ORDER = Path("config/paxi/resourcepack_load_order.json")
 QUARK_CONFIG = Path("config/quark-common.toml")
-
-
-def disable_scaffolding_replacement(payload):
-    updated, count = re.subn(rb'(?m)^([ \t]*"Replace Scaffolding"[ \t]*=[ \t]*)(?:true|false)\b',
-                             rb'\g<1>false', payload)
-    if count != 1 or tomllib.loads(updated.decode("utf-8-sig")).get("tweaks", {}).get("Replace Scaffolding") is not False:
-        raise ValueError(f"Expected the Replace Scaffolding setting in {QUARK_CONFIG}")
-    return updated
+SHARED[QUARK_CONFIG] = ROOT / "current/client" / QUARK_CONFIG
 
 
 def files(client):
@@ -167,12 +158,6 @@ def install_files(instance, client=False):
         shutil.copyfile(source, destination)
     if client:
         (instance / "mods/expedition-alloy-furnace-render-neoforge-1.0.0.jar").unlink(missing_ok=True)
-    config = instance / QUARK_CONFIG
-    config.parent.mkdir(parents=True, exist_ok=True)
-    if config.exists():
-        config.write_bytes(disable_scaffolding_replacement(config.read_bytes()))
-    else:
-        config.write_bytes(b'[tweaks]\n"Replace Scaffolding" = false\n')
 
 
 def thermal_style_resource():

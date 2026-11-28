@@ -1,5 +1,5 @@
 {
-  "version": "1.21.1-test.12",
+  "version": "1.21.1-test.13",
   "minecraft": "1.21.1",
   "neoforge": "21.1.267",
   "client": {
@@ -742,7 +742,7 @@
       "config/powergrid-client.toml": "727d1a70c9f9ea9993c639d979c8f3b68a2deed0e13a26312128d998019ee266",
       "config/powergrid-common.toml": "353ff57e22aba1ad258de34ff0ffce3a229bebeaec909e1b2501326cc55d73f1",
       "config/protection-pixel.toml": "2519e6c8289362558eabb7ca3a8f6b52518a7b57218db28ef9e4218908750b0a",
-      "config/quark-common.toml": "64e34b34e948323dd7ac422d1d5eac21c2fe4162c5d9fc09ca8bd85b2d4ae017",
+      "config/quark-common.toml": "6892454f77934acd55b7fbcd78117ef0fdf3870631cbb9cf354cdc075617a6a7",
       "config/quark_ponders-client.toml": "90c38e8b55a4bc6c711801d87f08912193349a9fc7118ecb049d3b89d563e143",
       "config/quest_enhance/pack.mcmeta": "2abf68eb43c4770705a549608c531252c60b61fe8d390d582d3c580a5c0f840c",
       "config/quest_enhance-client.toml": "e3216e304220cf2ac2fdf491c35fd60846074d7461453b0162b2d715c53e98ff",
@@ -6944,11 +6944,11 @@
         "downloadUrl": "https://cdn.modrinth.com/data/XvcfUGfB/versions/IyTc0Vvj/eternalstarlight-0.9.1%2B1.21.1%2Bneoforge.jar"
       },
       {
-        "filename": "expedition-accessory-entry-neoforge-1.1.0.jar",
-        "bytes": 29502,
-        "sha1": "7fb4f5c5797b47da71777bd9005e7ce6dba8d55c",
-        "sha256": "a77e70ccafabdef5cd02602b1ef085c0b9b5b1863587ac2a1edb1afd5d061c8f",
-        "sha512": "eb1d4153b9fa0365b796d4eafbe18371ae0f9449218d0be04567b4eec48981dab74b2e358b2e4d192e99795fb9239c4b00f0f8fd4ef45a6e001d167cef43ebc7"
+        "filename": "expedition-accessory-entry-neoforge-1.2.0.jar",
+        "bytes": 34289,
+        "sha1": "9b74c2ed5b2ccfe7046400122991de63f366b71d",
+        "sha256": "7a4ea4e2c940230fc7cfcf4c6ef593eef709a591f53755ea8431b19fd265ab21",
+        "sha512": "7fea2bf993365d87af5ba020a41fd6a3e55bbf80e4b951db846b9acdb928486f7859394aeff428bc3b82b9b775f21dbb34a68afa1a42193d4cdb64e6026a34d0"
       },
       {
         "filename": "expedition-alloy-furnace-neoforge-1.0.0.jar",
@@ -8418,11 +8418,11 @@
         "downloadUrl": "https://cdn.modrinth.com/data/OnlVIpq5/versions/9vSFkDAr/zfastnoise-1.0.13%2B1.21.1%2Bneoforge.jar"
       },
       {
-        "filename": "expedition-client-interface-neoforge-1.0.1.jar",
-        "bytes": 6552,
-        "sha1": "6d91994979686aac9e5396081ecf3d51218fd2b7",
-        "sha256": "efbcc3f9b30503420beeb69d4db55d50656087c6eaa251781e0a2fd5bd832ff9",
-        "sha512": "d234418893ad0c9b0af55e5ad7bf7cf5ebcb87f6670d75fe8fe986360e921f7673b0dd1c1b2b879bc74b7ddd39b5fc140e3ac055290c2e1e830da25485c26548"
+        "filename": "expedition-client-interface-neoforge-1.0.2.jar",
+        "bytes": 7329,
+        "sha1": "7888ecb0d93f8c6d38ab7fe9972ef63bf10c59ba",
+        "sha256": "c102220bf198eb75ffedb06d81b3587aac9ee4828cc85f6b5db2d52a0d41e6f3",
+        "sha512": "d806182594f7112636651de7e1caca3b0d2aee3b2bafb26fe5c3b507fb51d9ef9d26c7a1a084b9b9d99618c1b4c47ea8b067c9ad5b06aa2046f2ded3bcc03e03"
       }
     ]
   },
@@ -9350,7 +9350,7 @@
       "config/powergrid-common.toml": "353ff57e22aba1ad258de34ff0ffce3a229bebeaec909e1b2501326cc55d73f1",
       "config/powergrid-server.toml": "5f599c3152055ffd12b338313fc16cb21e46733d63aad343a4079c9c149f4248",
       "config/protection-pixel.toml": "2519e6c8289362558eabb7ca3a8f6b52518a7b57218db28ef9e4218908750b0a",
-      "config/quark-common.toml": "d988018f7958037f77a1d333045db7032b612b0fe580a7c7fd9c927e78983f59",
+      "config/quark-common.toml": "6892454f77934acd55b7fbcd78117ef0fdf3870631cbb9cf354cdc075617a6a7",
       "config/railways-common.toml": "cf3c9c86459a6d341ff8419fd49bf332d7e12b9a25e5c2605cfe5c0b28e52e41",
       "config/railways-server.toml": "e0652d971e2a299460b13412ee5b6ebe5731fdf7717b798de73a8c9082dbb722",
       "config/regions_unexplored/client.json": "219a24a03c06a9171e1b04e1bd361a9332905dd79d0b94a4c805b4358a41ee1d",
@@ -13609,11 +13609,11 @@
         "downloadUrl": "https://cdn.modrinth.com/data/XvcfUGfB/versions/IyTc0Vvj/eternalstarlight-0.9.1%2B1.21.1%2Bneoforge.jar"
       },
       {
-        "filename": "expedition-accessory-entry-neoforge-1.1.0.jar",
-        "bytes": 29502,
-        "sha1": "7fb4f5c5797b47da71777bd9005e7ce6dba8d55c",
-        "sha256": "a77e70ccafabdef5cd02602b1ef085c0b9b5b1863587ac2a1edb1afd5d061c8f",
-        "sha512": "eb1d4153b9fa0365b796d4eafbe18371ae0f9449218d0be04567b4eec48981dab74b2e358b2e4d192e99795fb9239c4b00f0f8fd4ef45a6e001d167cef43ebc7"
+        "filename": "expedition-accessory-entry-neoforge-1.2.0.jar",
+        "bytes": 34289,
+        "sha1": "9b74c2ed5b2ccfe7046400122991de63f366b71d",
+        "sha256": "7a4ea4e2c940230fc7cfcf4c6ef593eef709a591f53755ea8431b19fd265ab21",
+        "sha512": "7fea2bf993365d87af5ba020a41fd6a3e55bbf80e4b951db846b9acdb928486f7859394aeff428bc3b82b9b775f21dbb34a68afa1a42193d4cdb64e6026a34d0"
       },
       {
         "filename": "expedition-alloy-furnace-neoforge-1.0.0.jar",

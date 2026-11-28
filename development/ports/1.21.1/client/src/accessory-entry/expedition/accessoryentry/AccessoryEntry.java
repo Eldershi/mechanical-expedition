@@ -26,6 +26,7 @@ import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.network.PacketDistributor;
 import net.neoforged.neoforge.client.event.ScreenEvent;
 import org.lwjgl.glfw.GLFW;
+import org.violetmoon.quark.content.management.client.screen.widgets.MiniInventoryButton;
 import top.theillusivec4.curios.client.KeyRegistry;
 import top.theillusivec4.curios.client.gui.CuriosButton;
 
@@ -37,7 +38,16 @@ public final class AccessoryEntry {
     static void registerScreen(RegisterMenuScreensEvent event) {
         event.register(AccessoryMenuMod.MENU.get(), AccessoryScreen::new);
         if (ModList.get().isLoaded("trashslot")) {
-            LayoutManager.registerLayout(AccessoryScreen.class, SimpleGuiContainerLayout.DEFAULT_ENABLED);
+            var layout = new SimpleGuiContainerLayout() {
+                @Override
+                public int getDefaultSlotX(AbstractContainerScreen<?> screen) {
+                    return screen.getXSize() / 2 - 28;
+                }
+            };
+            layout.enableDefaultCollision();
+            layout.enableDefaultSnaps();
+            layout.setEnabledByDefault();
+            LayoutManager.registerLayout(AccessoryScreen.class, layout);
         }
     }
 
@@ -75,6 +85,14 @@ public final class AccessoryEntry {
 
     @SubscribeEvent(priority = EventPriority.LOWEST)
     static void install(ScreenEvent.Init.Post event) {
+        if (event.getScreen() instanceof AccessoryScreen accessory) {
+            for (GuiEventListener widget : List.copyOf(event.getListenersList())) {
+                if (widget instanceof MiniInventoryButton button && !accessory.ownsSortButton(button)) {
+                    event.removeListener(widget);
+                }
+            }
+            return;
+        }
         if (!(event.getScreen() instanceof InventoryScreen)
                 && !(event.getScreen() instanceof CreativeModeInventoryScreen)) {
             return;
