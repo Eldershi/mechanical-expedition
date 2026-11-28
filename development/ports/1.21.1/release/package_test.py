@@ -33,7 +33,7 @@ MECHANISM_LANGUAGE = Path("kubejs/client_scripts/ExpeditionMechanismLanguage.js"
 MECHANISM_LANGUAGE_SOURCE = HERE.parent / "industry" / MECHANISM_LANGUAGE
 MECHANISM_TEXTURES = Path("kubejs/assets/cmi/textures/item/mechanism")
 BETTER_FPS_CONFIG = Path("config/betterfpsdist.json")
-CLIENT_PERFORMANCE_MOD = "expedition-client-performance-neoforge-1.0.1.jar"
+CLIENT_PERFORMANCE_MOD = "expedition-client-performance-neoforge-1.1.0.jar"
 
 
 def json_file(path):
