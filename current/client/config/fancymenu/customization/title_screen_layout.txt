@@ -1145,12 +1145,10 @@ element {
   [executable_block:expedition_mods_open_block][type:generic] = [executables:expedition_mods_open_action;]
   label = Mods
   button_element_executable_block_identifier = expedition_mods_open_block
-  backgroundnormal = [source:local]/config/fancymenu/assets/button/dark/small.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/button/small.png
   underline_label_on_hover = false
   transparent_background = false
   restartbackgroundanimations = true
-  nine_slice_custom_background = true
+  nine_slice_custom_background = false
   navigatable = true
   widget_active_state_requirement_container_identifier = expedition_mods_active
   [loading_requirement_container_meta:expedition_mods_active] = [groups:][instances:]
