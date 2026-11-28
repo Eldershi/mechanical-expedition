@@ -74,6 +74,15 @@ ADAPTERS = {
                  "flywheel": "1.0.6-41", "colorwheel": "1.3.2+mc1.21.1"},
         "bundled": {"flywheel-neoforge-1.21.1-1.0.6-41.jar": "QuarkPonders-1.5.1_NeoForge-1.21.1.jar"},
     },
+    "l2-spawn": {
+        "id": "expedition_l2_spawn",
+        "filename": "expedition-l2-spawn",
+        "name": "Expedition L2 Hostility Spawn Distance",
+        "package": "expedition.l2spawn.mixin",
+        "side": "BOTH",
+        "mixins": ["SectionDistanceMixin"],
+        "deps": {"l2hostility": "3.0.18"},
+    },
     "armor-display": {
         "id": "expedition_armor_display",
         "filename": "expedition-armor-display",

@@ -5652,6 +5652,13 @@
         "downloadUrl": "https://cdn.modrinth.com/data/ofdM7yJE/versions/ReqQpW6c/EclipticSeasons-1.21.1-neoforge-0.15.5.1.jar"
       },
       {
+        "filename": "expedition-l2-spawn-neoforge-1.0.0.jar",
+        "bytes": 2029,
+        "sha1": "4d2356b4302e292e1e0d337af747e6f493fc12d3",
+        "sha256": "4f50ad73fed0bf942480fb0cb68de1b6a7fb022ea4b428129eb7626a52f6d46d",
+        "sha512": "22de046ab0ac88c7f0b3622efe254f5fc35ed514563553b771d10cf20ee7f0cc36e8ddb1d613e3646837a99a3e360293d4401bc27f990072538f8443ca2b06b8"
+      },
+      {
         "filename": "expedition-structure-lookup-neoforge-1.0.0.jar",
         "bytes": 4995,
         "sha1": "f24984ffe8f14d280efae8e3e29c328878606d5f",
@@ -12347,6 +12354,13 @@
         "sha256": "8dedab797da54560dec2d824d2dce1802d8038151f8905c5dc876dfddb3df3b2",
         "sha512": "b9773b6c3152babcf46735f1fc7ceeb4efd4adfc2c15df348a3da57322d317765be4c44bdccb5bbb7430665496f3af87162a1e704d4eadbf61f580091aea0f30",
         "downloadUrl": "https://cdn.modrinth.com/data/ofdM7yJE/versions/ReqQpW6c/EclipticSeasons-1.21.1-neoforge-0.15.5.1.jar"
+      },
+      {
+        "filename": "expedition-l2-spawn-neoforge-1.0.0.jar",
+        "bytes": 2029,
+        "sha1": "4d2356b4302e292e1e0d337af747e6f493fc12d3",
+        "sha256": "4f50ad73fed0bf942480fb0cb68de1b6a7fb022ea4b428129eb7626a52f6d46d",
+        "sha512": "22de046ab0ac88c7f0b3622efe254f5fc35ed514563553b771d10cf20ee7f0cc36e8ddb1d613e3646837a99a3e360293d4401bc27f990072538f8443ca2b06b8"
       },
       {
         "filename": "expedition-structure-lookup-neoforge-1.0.0.jar",

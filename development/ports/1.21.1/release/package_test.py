@@ -33,6 +33,7 @@ MECHANISM_LANGUAGE = Path("kubejs/client_scripts/ExpeditionMechanismLanguage.js"
 MECHANISM_LANGUAGE_SOURCE = HERE.parent / "industry" / MECHANISM_LANGUAGE
 MECHANISM_TEXTURES = Path("kubejs/assets/cmi/textures/item/mechanism")
 BETTER_FPS_CONFIG = Path("config/betterfpsdist.json")
+L2_SPAWN_MOD = "expedition-l2-spawn-neoforge-1.0.0.jar"
 CLIENT_PERFORMANCE_MOD = "expedition-client-performance-neoforge-1.3.0.jar"
 
 
@@ -169,7 +170,7 @@ def mod_inputs(instance, client):
                and not re.search(r"(?i)expedition.*(?:-qa-|proof|probe|alloy-furnace-render)", f.name)]
     names = {p.name for p in choices}
     for required in ("adastra-1.21.1-1.16.26-neoforge.jar", "createcraftedbeginning-0.1.1.jar",
-                     *production_overlay.REQUIRED_MODS,
+                     *production_overlay.REQUIRED_MODS, L2_SPAWN_MOD,
                      *((CLIENT_PERFORMANCE_MOD,) if client else ())):
         if required not in names:
             raise ValueError(f"Missing tested NeoForge input: {required}")
@@ -294,7 +295,7 @@ def main():
                 if snapshot.is_file() and (snapshot.stat().st_size != row["bytes"] or
                                            fingerprints(snapshot)["sha256"] != row["sha256"]):
                     raise ValueError(f"The {side} lock must match the checked-in mod: {row['filename']}")
-            missing = set(production_overlay.REQUIRED_MODS) - {row["filename"] for row in lock[side]["mods"]}
+            missing = {*production_overlay.REQUIRED_MODS, L2_SPAWN_MOD} - {row["filename"] for row in lock[side]["mods"]}
             if missing:
                 raise ValueError(f"The {side} lock is missing {', '.join(sorted(missing))}")
         print(meta["version"])
