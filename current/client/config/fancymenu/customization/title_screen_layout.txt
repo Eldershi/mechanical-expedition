@@ -520,10 +520,10 @@ element {
   advanced_horizontal_tilt_mode = false
   should_be_affected_by_decoration_overlays = false
   in_editor_color = #FFC800FF
-  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"} - ((((290 + ({"placeholder":"guiwidth"} - 16) - abs(290 - ({"placeholder":"guiwidth"} - 16))) / 2) + (290 * (({"placeholder":"guiheight"} - 91 - 48 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)) - 8) / 134) - abs(((290 + ({"placeholder":"guiwidth"} - 16) - abs(290 - ({"placeholder":"guiwidth"} - 16))) / 2) - (290 * (({"placeholder":"guiheight"} - 91 - 48 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)) - 8) / 134))) / 2)) / 2","decimal":"false"}}
+  advanced_posx = {"placeholder":"calc","values":{"expression":"({"placeholder":"guiwidth"} - ((((290 + ({"placeholder":"guiwidth"} - 16) - abs(290 - ({"placeholder":"guiwidth"} - 16))) / 2) + (290 * (({"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)) - 8) / 134) - abs(((290 + ({"placeholder":"guiwidth"} - 16) - abs(290 - ({"placeholder":"guiwidth"} - 16))) / 2) - (290 * (({"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)) - 8) / 134))) / 2)) / 2","decimal":"false"}}
   advanced_posy = 2
-  advanced_width = {"placeholder":"calc","values":{"expression":"((((290 + ({"placeholder":"guiwidth"} - 16) - abs(290 - ({"placeholder":"guiwidth"} - 16))) / 2) + (290 * (({"placeholder":"guiheight"} - 91 - 48 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)) - 8) / 134) - abs(((290 + ({"placeholder":"guiwidth"} - 16) - abs(290 - ({"placeholder":"guiwidth"} - 16))) / 2) - (290 * (({"placeholder":"guiheight"} - 91 - 48 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)) - 8) / 134))) / 2)","decimal":"false"}}
-  advanced_height = {"placeholder":"calc","values":{"expression":"134 * ((((290 + ({"placeholder":"guiwidth"} - 16) - abs(290 - ({"placeholder":"guiwidth"} - 16))) / 2) + (290 * (({"placeholder":"guiheight"} - 91 - 48 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)) - 8) / 134) - abs(((290 + ({"placeholder":"guiwidth"} - 16) - abs(290 - ({"placeholder":"guiwidth"} - 16))) / 2) - (290 * (({"placeholder":"guiheight"} - 91 - 48 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)) - 8) / 134))) / 2) / 290","decimal":"false"}}
+  advanced_width = {"placeholder":"calc","values":{"expression":"((((290 + ({"placeholder":"guiwidth"} - 16) - abs(290 - ({"placeholder":"guiwidth"} - 16))) / 2) + (290 * (({"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)) - 8) / 134) - abs(((290 + ({"placeholder":"guiwidth"} - 16) - abs(290 - ({"placeholder":"guiwidth"} - 16))) / 2) - (290 * (({"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)) - 8) / 134))) / 2)","decimal":"false"}}
+  advanced_height = {"placeholder":"calc","values":{"expression":"134 * ((((290 + ({"placeholder":"guiwidth"} - 16) - abs(290 - ({"placeholder":"guiwidth"} - 16))) / 2) + (290 * (({"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)) - 8) / 134) - abs(((290 + ({"placeholder":"guiwidth"} - 16) - abs(290 - ({"placeholder":"guiwidth"} - 16))) / 2) - (290 * (({"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)) - 8) / 134))) / 2) / 290","decimal":"false"}}
   stretch_x = false
   stretch_y = false
   appearance_delay_seconds = 1.0
@@ -551,186 +551,6 @@ element {
   rounding_radius_bottom_right = 0.0
   rounding_radius_bottom_left = 0.0
 }
-
-
-
-element {
-  interactable = true
-  source = 1.21.1 · NeoForge
-  source_mode = direct
-  shadow = true
-  enable_scrolling = true
-  auto_line_wrapping = true
-  remove_html_breaks = true
-  code_block_single_color = #737373FF
-  code_block_multi_color = #565656FF
-  headline_line_color = #A9A9A9FF
-  separation_line_color = #A9A9A9FF
-  hyperlink_color = #0771FCFF
-  click_event_color = #0771FCFF
-  hover_event_color = #0771FCFF
-  quote_color = #818181FF
-  quote_italic = false
-  bullet_list_dot_color = #A9A9A9FF
-  parse_markdown = true
-  table_show_header = true
-  table_alternate_row_colors = true
-  table_line_color = #787878FF
-  table_header_background_color = #323232FF
-  table_row_background_color = #282828FF
-  table_alternate_row_color = #3C3C3CFF
-  element_type = text_v2
-  instance_identifier = e4c7913b-d86f-49b4-a47e-35fa4f10579c-1746169170865
-  appearance_delay = every_time
-  disappearance_delay = no_delay
-  fade_in_v2 = no_fading
-  fade_out = no_fading
-  auto_sizing = false
-  auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1011
-  auto_sizing_base_gui_scale = 0.0
-  sticky_anchor = false
-  anchor_point = bottom-left
-  x = 4
-  y = -13
-  width = 105
-  height = 12
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 16fbc742-5be7-4c05-8d82-7755c9ccd3d9-1746169170865
-  [loading_requirement_container_meta:16fbc742-5be7-4c05-8d82-7755c9ccd3d9-1746169170865] = [groups:][instances:]
-  enable_parallax = false
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  layer_hidden_in_editor = false
-  advanced_rotation_mode = false
-  advanced_vertical_tilt_mode = false
-  advanced_horizontal_tilt_mode = false
-  should_be_affected_by_decoration_overlays = false
-  in_editor_color = #FFC800FF
-  advanced_posx = -2147483648
-  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 13 - 14 * ((1 + abs(311.5 - {"placeholder":"guiwidth"}) / (311.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
-  advanced_width = -2147483648
-  advanced_height = -2147483648
-  stretch_x = false
-  stretch_y = false
-  appearance_delay_seconds = 1.0
-  disappearance_delay_seconds = 1.0
-  fade_in_speed = 1.0
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  parallax_intensity_x = 0.5
-  parallax_intensity_y = 0.5
-  rotation_degrees = 0.0
-  advanced_rotation_degrees = 0.0
-  vertical_tilt_degrees = 0.0
-  advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.0
-  advanced_horizontal_tilt_degrees = 0.0
-  base_color = #FFFFFFFF
-  scale = 1.0
-  text_border = 2
-  line_spacing = 2
-  quote_indent = 8.0
-  bullet_list_indent = 8.0
-  bullet_list_spacing = 3.0
-  table_line_thickness = 1.0
-  table_cell_padding = 8.0
-  table_margin = 4.0
-}
-
-element {
-  interactable = true
-  source = 中华人民共和国万岁！世界人民大团结万岁！
-  source_mode = direct
-  shadow = true
-  enable_scrolling = true
-  auto_line_wrapping = true
-  remove_html_breaks = true
-  code_block_single_color = #737373FF
-  code_block_multi_color = #565656FF
-  headline_line_color = #A9A9A9FF
-  separation_line_color = #A9A9A9FF
-  hyperlink_color = #0771FCFF
-  click_event_color = #0771FCFF
-  hover_event_color = #0771FCFF
-  quote_color = #818181FF
-  quote_italic = false
-  bullet_list_dot_color = #A9A9A9FF
-  parse_markdown = true
-  table_show_header = true
-  table_alternate_row_colors = true
-  table_line_color = #787878FF
-  table_header_background_color = #323232FF
-  table_row_background_color = #282828FF
-  table_alternate_row_color = #3C3C3CFF
-  element_type = text_v2
-  instance_identifier = 48241cae-4477-48cc-b2d0-868401e4430d-1759025745107
-  appearance_delay = no_delay
-  disappearance_delay = no_delay
-  fade_in_v2 = no_fading
-  fade_out = no_fading
-  auto_sizing = false
-  auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1011
-  auto_sizing_base_gui_scale = 0.0
-  sticky_anchor = false
-  anchor_point = element
-  anchor_point_element = title_screen_copyright_button
-  x = -2
-  y = -17
-  width = 197
-  height = 15
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = de0364b6-ae63-4569-a8fc-8be3c8df1e9c-1759025745107
-  [loading_requirement_container_meta:de0364b6-ae63-4569-a8fc-8be3c8df1e9c-1759025745107] = [groups:group_1759026003371;][instances:]
-  [loading_requirement_group:group_1759026003371] = [group_mode:and]
-  [loading_requirement:fancymenu_visibility_requirement_is_realtime_day][requirement_mode:if][group:group_1759026003371][req_id:fa59d527-7958-483a-b07d-ea4934f36b09-1759026004252] = 1,2,3,4,5,6,7
-  [loading_requirement:fancymenu_visibility_requirement_is_realtime_month][requirement_mode:if][group:group_1759026003371][req_id:4e65b5b5-c335-4e8e-92c0-62e35f45a904-1759026018673] = 10
-  enable_parallax = false
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  layer_hidden_in_editor = false
-  advanced_rotation_mode = false
-  advanced_vertical_tilt_mode = false
-  advanced_horizontal_tilt_mode = false
-  should_be_affected_by_decoration_overlays = false
-  in_editor_color = #FFC800FF
-  advanced_posx = -2147483648
-  advanced_posy = -2147483648
-  advanced_width = -2147483648
-  advanced_height = -2147483648
-  stretch_x = false
-  stretch_y = false
-  appearance_delay_seconds = 1.0
-  disappearance_delay_seconds = 1.0
-  fade_in_speed = 1.0
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  parallax_intensity_x = 0.5
-  parallax_intensity_y = 0.5
-  rotation_degrees = 0.0
-  advanced_rotation_degrees = 0.0
-  vertical_tilt_degrees = 0.0
-  advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.0
-  advanced_horizontal_tilt_degrees = 0.0
-  base_color = #FF0000
-  scale = 1.0
-  text_border = 2
-  line_spacing = 2
-  quote_indent = 8.0
-  bullet_list_indent = 8.0
-  bullet_list_spacing = 3.0
-  table_line_thickness = 1.0
-  table_cell_padding = 8.0
-  table_margin = 4.0
-}
-
-
 
 vanilla_button {
   hoverlabel = {"placeholder":"local","values":{"key":"menu.quit"}}
@@ -787,7 +607,7 @@ vanilla_button {
   should_be_affected_by_decoration_overlays = true
   in_editor_color = #FFC800FF
   advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"} / 2 + (55) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91 - 48 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
   advanced_width = -2147483648
   advanced_height = -2147483648
   stretch_x = false
@@ -816,13 +636,16 @@ vanilla_button {
 }
 
 vanilla_button {
+  background_texture_inactive = [source:location]minecraft:textures/gui/sprites/widget/button_disabled.png
+  backgroundhovered = [source:location]minecraft:textures/gui/sprites/widget/button_highlighted.png
+  backgroundnormal = [source:location]minecraft:textures/gui/sprites/widget/button.png
   hoverlabel = Realms
   button_element_executable_block_identifier = 93a8a8c0-eb96-4193-bc41-fbe2cf652cae-1742713606516
   [executable_block:93a8a8c0-eb96-4193-bc41-fbe2cf652cae-1742713606516][type:generic] = [executables:]
   underline_label_on_hover = false
   transparent_background = false
   restartbackgroundanimations = true
-  nine_slice_custom_background = false
+  nine_slice_custom_background = true
   label = Realms
   navigatable = true
   widget_active_state_requirement_container_identifier = 05efbd45-5fcb-4951-b8e5-bdf8333e9976-1742713606516
@@ -850,9 +673,9 @@ vanilla_button {
   sticky_anchor = false
   anchor_point = bottom-centered
   x = -152
-  y = -86
+  y = -91
   width = 44
-  height = 20
+  height = 25
   stay_on_screen = false
   element_loading_requirement_container_identifier = b451ed1b-ac3c-4a50-91da-fa05bd4ed3d9-1742713606516
   [loading_requirement_container_meta:b451ed1b-ac3c-4a50-91da-fa05bd4ed3d9-1742713606516] = [groups:][instances:]
@@ -868,7 +691,7 @@ vanilla_button {
   should_be_affected_by_decoration_overlays = true
   in_editor_color = #FFC800FF
   advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"} / 2 - 152 + 106 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 86","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91","decimal":"false"}}
   advanced_width = -2147483648
   advanced_height = -2147483648
   stretch_x = false
@@ -888,14 +711,13 @@ vanilla_button {
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
+  nine_slice_border_x = 3
+  nine_slice_border_y = 6
   nine_slice_slider_handle_border_x = 5
   nine_slice_slider_handle_border_y = 5
   automated_button_clicks = 0
   is_hidden = false
 }
-
 
 vanilla_button {
   hoverlabel = {"placeholder":"local","values":{"key":"options.language"}}
@@ -1141,6 +963,9 @@ vanilla_button {
 }
 
 element {
+  background_texture_inactive = [source:location]minecraft:textures/gui/sprites/widget/button_disabled.png
+  backgroundhovered = [source:location]minecraft:textures/gui/sprites/widget/button_highlighted.png
+  backgroundnormal = [source:location]minecraft:textures/gui/sprites/widget/button.png
   [executable_action_instance:expedition_mods_open_action][action_type:mimicbutton] = title_screen:titlescreen_mods_button
   [executable_block:expedition_mods_open_block][type:generic] = [executables:expedition_mods_open_action;]
   label = Mods
@@ -1148,7 +973,7 @@ element {
   underline_label_on_hover = false
   transparent_background = false
   restartbackgroundanimations = true
-  nine_slice_custom_background = false
+  nine_slice_custom_background = true
   navigatable = true
   widget_active_state_requirement_container_identifier = expedition_mods_active
   [loading_requirement_container_meta:expedition_mods_active] = [groups:][instances:]
@@ -1175,9 +1000,9 @@ element {
   sticky_anchor = false
   anchor_point = bottom-centered
   x = 108
-  y = -86
+  y = -91
   width = 44
-  height = 20
+  height = 25
   stay_on_screen = false
   element_loading_requirement_container_identifier = expedition_mods_loading
   [loading_requirement_container_meta:expedition_mods_loading] = [groups:][instances:]
@@ -1193,7 +1018,7 @@ element {
   should_be_affected_by_decoration_overlays = true
   in_editor_color = #FFC800FF
   advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"} / 2 + 108 - 106 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 86","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91","decimal":"false"}}
   advanced_width = -2147483648
   advanced_height = -2147483648
   stretch_x = false
@@ -1213,8 +1038,8 @@ element {
   advanced_horizontal_tilt_degrees = 0.0
   label_scale = 1.0
   label_shadow = true
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
+  nine_slice_border_x = 3
+  nine_slice_border_y = 6
   nine_slice_slider_handle_border_x = 5
   nine_slice_slider_handle_border_y = 5
 }
@@ -1274,7 +1099,7 @@ vanilla_button {
   should_be_affected_by_decoration_overlays = true
   in_editor_color = #FFC800FF
   advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"} / 2 + (-104) + 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91 - 48 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
   advanced_width = -2147483648
   advanced_height = -2147483648
   stretch_x = false
@@ -1521,7 +1346,7 @@ vanilla_button {
   should_be_affected_by_decoration_overlays = true
   in_editor_color = #FFC800FF
   advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"} / 2 + (-51) + 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91 - 48 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
   advanced_width = -2147483648
   advanced_height = -2147483648
   stretch_x = false
@@ -1684,7 +1509,7 @@ vanilla_button {
   should_be_affected_by_decoration_overlays = true
   in_editor_color = #FFC800FF
   advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"} / 2 + (2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
-  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91 - 48 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
   advanced_width = -2147483648
   advanced_height = -2147483648
   stretch_x = false
@@ -1949,85 +1774,6 @@ vanilla_button {
   is_hidden = true
 }
 
-vanilla_button {
-  button_element_executable_block_identifier = eea914a9-dc6e-4df0-be27-8afb4997ad99-1742713606517
-  [executable_block:eea914a9-dc6e-4df0-be27-8afb4997ad99-1742713606517][type:generic] = [executables:]
-  underline_label_on_hover = false
-  transparent_background = false
-  restartbackgroundanimations = true
-  nine_slice_custom_background = false
-  navigatable = true
-  widget_active_state_requirement_container_identifier = 07ffd4e6-65ed-4249-9d12-a53b34226bcb-1742713606517
-  [loading_requirement_container_meta:07ffd4e6-65ed-4249-9d12-a53b34226bcb-1742713606517] = [groups:][instances:]
-  is_template = false
-  template_apply_width = false
-  template_apply_height = false
-  template_apply_posx = false
-  template_apply_posy = false
-  template_apply_opacity = false
-  template_apply_visibility = false
-  template_apply_label = false
-  template_share_with = buttons
-  nine_slice_slider_handle = false
-  element_type = vanilla_button
-  instance_identifier = title_screen_copyright_button
-  appearance_delay = no_delay
-  disappearance_delay = no_delay
-  fade_in_v2 = no_fading
-  fade_out = no_fading
-  auto_sizing = false
-  auto_sizing_base_screen_width = 1920
-  auto_sizing_base_screen_height = 1011
-  auto_sizing_base_gui_scale = 0.0
-  sticky_anchor = false
-  anchor_point = bottom-right
-  x = -200
-  y = -12
-  width = 196
-  height = 10
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = 4ec8c1fc-1885-47eb-aa7e-cfdc0591fb64-1742713606517
-  [loading_requirement_container_meta:4ec8c1fc-1885-47eb-aa7e-cfdc0591fb64-1742713606517] = [groups:][instances:]
-  enable_parallax = false
-  invert_parallax = false
-  animated_offset_x = 0
-  animated_offset_y = 0
-  load_once_per_session = false
-  layer_hidden_in_editor = false
-  advanced_rotation_mode = false
-  advanced_vertical_tilt_mode = false
-  advanced_horizontal_tilt_mode = false
-  should_be_affected_by_decoration_overlays = true
-  in_editor_color = #FFC800FF
-  advanced_posx = -2147483648
-  advanced_posy = -2147483648
-  advanced_width = -2147483648
-  advanced_height = -2147483648
-  stretch_x = false
-  stretch_y = false
-  appearance_delay_seconds = 1.0
-  disappearance_delay_seconds = 1.0
-  fade_in_speed = 1.0
-  fade_out_speed = 1.0
-  base_opacity = 1.0
-  parallax_intensity_x = 0.5
-  parallax_intensity_y = 0.5
-  rotation_degrees = 0.0
-  advanced_rotation_degrees = 0.0
-  vertical_tilt_degrees = 0.0
-  advanced_vertical_tilt_degrees = 0.0
-  horizontal_tilt_degrees = 0.0
-  advanced_horizontal_tilt_degrees = 0.0
-  label_scale = 1.0
-  label_shadow = true
-  nine_slice_border_x = 5
-  nine_slice_border_y = 5
-  nine_slice_slider_handle_border_x = 5
-  nine_slice_slider_handle_border_y = 5
-  automated_button_clicks = 0
-  is_hidden = false
-}
-
 element {
   [executable_action_instance:expedition_quark_open_action_20261027][action_type:mimicbutton] = title_screen:376354
   [executable_block:expedition_quark_open_block_20261027][type:generic] = [executables:expedition_quark_open_action_20261027;]
@@ -2108,4 +1854,72 @@ element {
   nine_slice_border_y = 5
   nine_slice_slider_handle_border_x = 5
   nine_slice_slider_handle_border_y = 5
+}
+
+element {
+  element_type = image
+  instance_identifier = expedition_title_quit_outline
+  anchor_point = bottom-centered
+  x = 55
+  y = -91
+  width = 49
+  height = 49
+  stay_on_screen = false
+  advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"} / 2 + (55) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
+  source = [source:local]/config/fancymenu/assets/button/title/outline-49.png
+  repeat_texture = false
+  nine_slice_texture = false
+  image_tint = #FFFFFF
+}
+
+element {
+  element_type = image
+  instance_identifier = expedition_title_singleplayer_outline
+  anchor_point = bottom-centered
+  x = -104
+  y = -91
+  width = 49
+  height = 49
+  stay_on_screen = false
+  advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"} / 2 + (-104) + 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
+  source = [source:local]/config/fancymenu/assets/button/title/outline-49.png
+  repeat_texture = false
+  nine_slice_texture = false
+  image_tint = #FFFFFF
+}
+
+element {
+  element_type = image
+  instance_identifier = expedition_title_multiplayer_outline
+  anchor_point = bottom-centered
+  x = -51
+  y = -91
+  width = 49
+  height = 49
+  stay_on_screen = false
+  advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"} / 2 + (-51) + 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
+  source = [source:local]/config/fancymenu/assets/button/title/outline-49.png
+  repeat_texture = false
+  nine_slice_texture = false
+  image_tint = #FFFFFF
+}
+
+element {
+  element_type = image
+  instance_identifier = expedition_title_options_outline
+  anchor_point = bottom-centered
+  x = 2
+  y = -91
+  width = 49
+  height = 49
+  stay_on_screen = false
+  advanced_posx = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiwidth"} / 2 + (2) - 53 * ((1 + abs((215.5 - {"placeholder":"guiwidth"})) / (215.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
+  advanced_posy = {"placeholder":"calc","values":{"expression":"{"placeholder":"guiheight"} - 91 - 53 * ((1 + abs((311.5 - {"placeholder":"guiwidth"})) / (311.5 - {"placeholder":"guiwidth"})) / 2)","decimal":"false"}}
+  source = [source:local]/config/fancymenu/assets/button/title/outline-49.png
+  repeat_texture = false
+  nine_slice_texture = false
+  image_tint = #FFFFFF
 }
