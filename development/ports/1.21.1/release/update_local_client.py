@@ -80,16 +80,23 @@ def stage_paxi(target, existing, old_revision, expected):
     return True
 
 
-def quark_preferences_match(path, canonical):
+MANAGED_PREFERENCES = {
+    "config/quark-common.toml": ("management", ("Easy Transferring", "Inventory Sorting")),
+    "config/supplementaries-client.toml": ("general", ("configs_button",)),
+}
+
+
+def managed_preferences_match(name, path, canonical):
+    section, keys = MANAGED_PREFERENCES[name]
     with path.open("rb") as stream:
         existing = tomllib.load(stream)
     with canonical.open("rb") as stream:
         target = tomllib.load(stream)
-    management = existing.get("management")
-    if not isinstance(management, dict):
+    settings = existing.get(section)
+    if not isinstance(settings, dict):
         return False
-    for key in ("Easy Transferring", "Inventory Sorting"):
-        management[key] = target["management"][key]
+    for key in keys:
+        settings[key] = target[section][key]
     return existing == target
 
 
@@ -113,9 +120,9 @@ def plan(profile, before, target, previous_revision, work, preserved):
         if actual == expected:
             continue
         if actual is not None and actual != old:
-            compatible_quark = (name == production.QUARK_CONFIG.as_posix() and expected
-                                and quark_preferences_match(path, overlay[name]))
-            if not compatible_quark:
+            compatible_preferences = (name in MANAGED_PREFERENCES and expected
+                                      and managed_preferences_match(name, path, overlay.get(name, CLIENT / name)))
+            if not compatible_preferences:
                 raise ValueError(f"Locally modified managed file: {name}. Reconcile it or explicitly preserve it.")
         if expected:
             stage_file(work, name, expected, [overlay.get(name, CLIENT / name)])

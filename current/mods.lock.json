@@ -1,5 +1,5 @@
 {
-  "version": "1.21.1-test.13",
+  "version": "1.21.1-test.14",
   "minecraft": "1.21.1",
   "neoforge": "21.1.267",
   "client": {
@@ -782,7 +782,7 @@
       "config/stellarcreateoptimization-client.toml": "7988db6e1882ed9f1057c8d486249b756455f93634deb32a3d0166d20a810807",
       "config/structureessentials.json": "47336a3829a19eff93c6a4200bbd0b551444acb62880f506c78c76926d00a8bc",
       "config/structurify.json": "42036c3b4fe1f8d28eb0925cb7637cd93083b580482f11d6867c25def3e09aea",
-      "config/supplementaries-client.toml": "e901c5c0af103cc283ac9e1012f63b4b3933efdc3ad2f39b4a56b410bae39b3b",
+      "config/supplementaries-client.toml": "0e0d8be53215fc80cd8bffb2a564279c626769e1f13fc31e5673dcaf247307ec",
       "config/supplementaries-common.toml": "fa1fa46b689abbddec3a09a6703d8b817024f072197b8f3ad40b53f0902c9cd3",
       "config/teallib-client.toml": "77fdb57126a6f753d6b5e5cc5f5210cef12f55ed4ccc0d59ff1292af4e89512f",
       "config/tectonic.json": "9edbc0a7900f8446e515e3a603eb6dde591b471fed228d69e38417d772eb93c3",
@@ -5456,7 +5456,7 @@
       "config/fancymenu/assets/button/single.gif": "6801a9296e1e6c3acdf34e3a890e80d6bb6ea8a0886aa7aa8344d93d5b9459df",
       "config/fancymenu/assets/button/small.png": "6aaeb90625a608421c47d93faec7b1d4f79dd0c600bb5571ee270e48eff4178a",
       "config/fancymenu/assets/expedition_title_v12.png": "4200df6ed3c4366f78335d8d3f5e9b4cfc4ee79db52bc019d524e130b33de093",
-      "config/fancymenu/customization/title_screen_layout.txt": "f108eef57ac72d0d35ab9051f59715e73e3951ea52acdcdd0094b40da5f9e01c",
+      "config/fancymenu/customization/title_screen_layout.txt": "96d7085ad47124d14d4d9b11c84a48a8c223750b3d34aa591ecc08187a49b676",
       "config/fancymenu/slideshows/background/images/image_1.png": "cf56c464f3a388cac9c6d795e22b8ecc014121774fc48cda46a75b44dcf14c76",
       "config/fancymenu/slideshows/background/images/image_2.png": "415a1df68835157da20026033c67ccf55b430eb1589eb48b3ac33de40276de2b",
       "config/fancymenu/slideshows/background/images/image_3.png": "b5b371af093c3fc0b64eac7c198c906a453d5c3baabea8b51edafb5761dcadca",
