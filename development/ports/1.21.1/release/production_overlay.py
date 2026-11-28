@@ -86,6 +86,9 @@ CLIENT = {
     )
 }
 
+FOUNDRY_BIODIESEL_FUEL = Path("kubejs/data/expedition/recipe/tconstruct/fuel/biodiesel.json")
+SHARED[FOUNDRY_BIODIESEL_FUEL] = ROOT / "current/server" / FOUNDRY_BIODIESEL_FUEL
+
 SERVERCORE_CONFIG = Path("config/servercore/config.yml")
 SERVER = {SERVERCORE_CONFIG: ROOT / "current/server" / SERVERCORE_CONFIG}
 

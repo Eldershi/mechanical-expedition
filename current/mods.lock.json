@@ -2582,6 +2582,7 @@
       "kubejs/data/expedition/recipe/foundry/stainless_steel_mixing.json": "8542374ce7d89405ae6d765a1eb9fee6c333644e5d968e425d9c690ca48aef67",
       "kubejs/data/expedition/recipe/foundry/void_dust.json": "9647e7046d67feb284765d00ad6ba60400407748936f8057ee6df74b3145313a",
       "kubejs/data/expedition/recipe/fractionation/natural_air.json": "b5dfa26f8a7646412f14b0b51db7e4fe019e1bca3c96e86e887aee80d682f83c",
+      "kubejs/data/expedition/recipe/tconstruct/fuel/biodiesel.json": "c7ae06d839fecf9cd83b8a2b394f863f509388a94750faafb8984a18bb9ce657",
       "kubejs/data/expedition/tags/fluid/piped_liquefied_gases.json": "a7fbaa640bd789c0fb5bc38de18d848fda2ace1b3041b6278923a9104b2fd4b1",
       "kubejs/data/expedition/tags/item/concrete_for_cinder_bricks.json": "ddcd29e2951334a8046c6fe91f4c98bd011ebd6f6b14adfc95183261cf0943c4",
       "kubejs/data/expedition/tags/item/steam_power/boilers.json": "222cbd5be4eb991d106fbbf66de332a7e4e4cf281924275f7a4f7f4b582690a9",
