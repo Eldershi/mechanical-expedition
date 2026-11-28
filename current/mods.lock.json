@@ -6966,11 +6966,11 @@
         "sha512": "8b3e1a43077a3bb8b23c3787254dcee9ce6bf2d2637c3b898f26769882595e6df938fa864d3314e1a31626a7fae153d53a7661ec8ab3540dde639a6cd9710cd7"
       },
       {
-        "filename": "expedition-armor-display-neoforge-1.0.0.jar",
-        "bytes": 5384,
-        "sha1": "074888ba7b8c4d2771b7732d5916fbd204ac11f1",
-        "sha256": "fefb8ce39e793a3ebbfcaeac0a298d1669c671a3c7e3713c1a9695b9878d230c",
-        "sha512": "c7b763631627e3921948e13b6e38ea9795c92d93e0d3ad06fe7c33d99d217f1121a7838371bee3bc27df09c1b12cf44c8b3da912f91f76bd5874a519f9e632d4"
+        "filename": "expedition-armor-display-neoforge-1.1.0.jar",
+        "bytes": 3757,
+        "sha1": "6fd9f3b2536d972ce20ec95b372fcafd81e0336e",
+        "sha256": "c211a4fbf0b7f55fb21e82be0a961f86878fbecafe585129c70a8200f6e0d6ba",
+        "sha512": "647b35fe1e86a50a9070831648c4a156c07d436e74206d3e784a507263e8197cf09f455713a6c8f1e1ede521632dec8b60653f001ac40629db3b896e27255773"
       },
       {
         "filename": "expedition-chunky-startup-guard-neoforge-1.0.0.jar",

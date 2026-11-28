@@ -74,6 +74,7 @@ ADAPTERS = {
         "id": "expedition_armor_display",
         "filename": "expedition-armor-display",
         "name": "Expedition Armor Display Performance",
+        "version": "1.1.0",
         "package": "expedition.armordisplay.mixin",
         "mixins": ["ArmorRenderMixin", "ArmorChunkMixin"],
         "deps": {"protection_pixel": "2.2.1"},
